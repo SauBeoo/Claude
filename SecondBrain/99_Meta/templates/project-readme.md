@@ -23,7 +23,7 @@ tags: [project]
 
 ## 📂 Liên kết
 
-- Repo code (nếu có): `D:\Workspace\Projects\<tên>\`
+- Repo code (nếu có): `E:\Claude\Projects\<tên>\`
 - Drive/Canva/Capcut: 
 - Người cùng làm: 
 

@@ -3,48 +3,52 @@ type: moc
 topic: machine-learning
 updated: 2026-05-23
 tags: [moc, machine-learning]
+status: planned
 ---
 
 # 🗺️ Machine Learning — Map of Content
 
-Trang index cho mọi thứ liên quan đến ML trong vault. Khi vault còn ít note, MOC này gần như rỗng — cứ để vậy, bổ sung dần.
+> **Trạng thái:** Vault chưa có nội dung ML. MOC này là skeleton cho tương lai.  
+> Khi tạo note ML đầu tiên, xóa dòng này và bắt đầu điền.
 
 ## 🌱 Khái niệm nền tảng
 
-*(Atomic notes loại `concept` về ML)*
+*(Atomic notes `type: concept` về ML — đặt ở `50_Atomic/concepts/`)*
 
-- _(chưa có — tạo khi cần)_
+- *(chưa có)*
 
 ## 🛠️ Phương pháp & kỹ thuật
 
-*(Atomic notes loại `method`)*
+*(Atomic notes `type: method` — đặt ở `50_Atomic/methods/`)*
 
-- _(chưa có)_
+- *(chưa có)*
 
 ## 💭 Luận điểm đáng tranh luận
 
-*(Atomic notes loại `claim`)*
+*(Atomic notes `type: claim` — đặt ở `50_Atomic/claims/`)*
 
-- _(chưa có)_
+- *(chưa có)*
 
 ## ❓ Câu hỏi mở
 
-*(Atomic notes loại `question`)*
+*(Atomic notes `type: question` — đặt ở `50_Atomic/questions/`)*
 
-- _(chưa có)_
+- *(chưa có)*
 
 ## 📚 Tài liệu tham khảo
 
-*(Trong `30_Resources/machine-learning/`)*
+*(Paper summaries trong `30_Resources/machine-learning/` hoặc `10_Projects/<project>/papers/`)*
 
-- _(chưa có)_
+- *(chưa có)*
 
 ## 📂 Project liên quan
 
-*(Trong `10_Projects/`)*
+*(Projects trong `10_Projects/` có liên quan ML)*
 
-- _(chưa có)_
+- *(chưa có)*
 
 ---
 
-> **Cách dùng MOC:** Mỗi khi tạo atomic note hoặc resource mới về ML, thêm link vào đây. MOC là "cửa vào" tri thức theo chủ đề.
+**Cách dùng MOC này:**  
+Mỗi khi tạo atomic note hoặc resource mới về ML → thêm link vào đúng section. MOC là điểm vào duy nhất cho chủ đề.  
+Daily note ghi nhận tiến độ học → liên kết về đây khi note đủ chín để archive thành atomic.

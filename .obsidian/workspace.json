@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f7a482d8c50a4b7f",
+        "id": "4a0c7c51b697b1c1",
         "type": "tabs",
         "children": [
           {
-            "id": "02c5dec71436fb62",
+            "id": "96c8e4ee05fe4247",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "SecondBrain/60_Daily/2026/05/2026-05-24.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-05-24"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 482.5
   },
   "right": {
     "id": "bb1d5a0b82f72005",
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "SecondBrain/30_Resources/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "SecondBrain/30_Resources/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -150,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SecondBrain-starter/SecondBrain/README.md",
+                "file": "SecondBrain/30_Resources/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -177,43 +183,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "bf5dd3aaf62ca863",
+  "active": "96c8e4ee05fe4247",
   "lastOpenFiles": [
-    "SecondBrain/99_Meta/templates/video-script.md",
-    "SecondBrain/99_Meta/templates/project-readme.md",
-    "SecondBrain/99_Meta/templates/paper-summary.md",
-    "SecondBrain/99_Meta/templates/lecture.md",
-    "SecondBrain/99_Meta/templates/daily.md",
-    "SecondBrain/99_Meta/templates/atomic-question.md",
-    "SecondBrain/99_Meta/templates/atomic-method.md",
-    "SecondBrain/99_Meta/templates/atomic-concept.md",
-    "SecondBrain/99_Meta/templates/atomic-claim.md",
-    "SecondBrain/99_Meta/MOCs/ML-MOC.md",
-    "SecondBrain/99_Meta/templates",
-    "SecondBrain/99_Meta/tag-system.md",
-    "SecondBrain/99_Meta/README.md",
-    "SecondBrain/99_Meta/MOCs",
-    "SecondBrain/60_Daily/README.md",
-    "SecondBrain/60_Daily/2026",
-    "SecondBrain/50_Atomic/README.md",
-    "SecondBrain/50_Atomic/questions",
-    "SecondBrain/50_Atomic/methods",
-    "SecondBrain/50_Atomic/concepts",
-    "SecondBrain/50_Atomic/claims",
-    "SecondBrain/40_Archive/README.md",
-    "SecondBrain/30_Resources/web-development",
-    "SecondBrain/30_Resources/video-editing",
-    "SecondBrain/30_Resources/README.md",
-    "SecondBrain/30_Resources/people",
-    "SecondBrain/20_Areas/README.md",
-    "SecondBrain/10_Projects/README.md",
-    "SecondBrain/00_Inbox/README.md",
-    "SecondBrain/README.md",
-    "SecondBrain-starter/SecondBrain/99_Meta/README.md",
-    "SecondBrain-starter/SecondBrain/99_Meta/templates/daily.md",
-    "SecondBrain-starter/SecondBrain/99_Meta/templates/atomic-concept.md",
-    "SecondBrain-starter/SecondBrain/99_Meta/templates/atomic-claim.md",
-    "SecondBrain-starter/SecondBrain/99_Meta/MOCs/ML-MOC.md",
-    "SecondBrain-starter/SecondBrain/60_Daily/README.md"
+    "claude-code-101.md",
+    "SecondBrain/60_Daily/2026/05/2026-05-24.md",
+    "SecondBrain/60_Daily/2026/05/2026-05-23.md",
+    "SecondBrain/60_Daily/2026/05/2026-05-24.md.tmp.20288.c162e10dc87c",
+    "SecondBrain/99_Meta/MOCs/claude-code-MOC.md",
+    "SecondBrain/50_Atomic/claims/tech-debt-o-leaf-node-co-the-chap-nhan.md",
+    "SecondBrain/99_Meta/MOCs/affiliate-MOC.md",
+    "SecondBrain/99_Meta/MOCs/affiliate-MOC.md.tmp.20288.350491867f3d",
+    "SecondBrain/99_Meta/MOCs/claude-code-MOC.md.tmp.20288.eed8578cb973",
+    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md",
+    "SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase-trong-ai-workflow.md",
+    "SecondBrain/50_Atomic/concepts/subagent-reviewer-bu-bias-cua-session-chinh.md",
+    "SecondBrain/50_Atomic/methods/4-thanh-phan-cua-prompt-tot-claude-code.md",
+    "SecondBrain/50_Atomic/methods/plan-mode-workflow-5-buoc.md",
+    "SecondBrain/50_Atomic/concepts/chi-toi-uu-nhung-gi-trong-tam-kiem-soat.md",
+    "SecondBrain/50_Atomic/methods/4-thanh-phan-cua-prompt-tot-claude-code.md.tmp.20288.d2e6eb1e7be5",
+    "SecondBrain/50_Atomic/claims/tech-debt-o-leaf-node-co-the-chap-nhan.md.tmp.20288.3fd1b011f5b7",
+    "SecondBrain/50_Atomic/methods/calibrate-workflow-claude-code-theo-task-size.md.tmp.20288.ed39f0305975",
+    "SecondBrain/50_Atomic/concepts/subagent-reviewer-bu-bias-cua-session-chinh.md.tmp.20288.4f175cb07063",
+    "SecondBrain/50_Atomic/methods/test-suite-bien-code-phase-thanh-vong-lap-tu-sua.md.tmp.20288.410ffe860fcd",
+    "SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase-trong-ai-workflow.md.tmp.20288.6e5fad8b049a",
+    "SecondBrain/50_Atomic/claims/tech-debt-o-leaf-node-co-the-chap-nhan.md.tmp.20288.f5d493cefc40",
+    "SecondBrain/50_Atomic/methods/calibrate-workflow-claude-code-theo-task-size.md",
+    "SecondBrain/50_Atomic/methods/test-suite-bien-code-phase-thanh-vong-lap-tu-sua.md",
+    "SecondBrain/50_Atomic/distilled/epcc-workflow-claude-code.md",
+    "10_Projects/claude-code-101/README.md",
+    "claude-code-3-permission-modes.md",
+    "boris-3-task-framework-easy-medium-hard.md",
+    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md",
+    "SecondBrain/00_Inbox/paper-chua-doc/Claude code 101.md",
+    "10_Projects/idea-aff.md",
+    "lead-la-tai-san-dai-han.md",
+    "funnel-affiliate-vong-tron-khep-kin.md",
+    "Projects/student-grade-app/CLAUDE.md",
+    "SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md",
+    "SecondBrain/00_Inbox/paper-chua-doc/AI Affiliate.md"
   ]
 }

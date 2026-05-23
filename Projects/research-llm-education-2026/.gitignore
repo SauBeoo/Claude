@@ -1,0 +1,40 @@
+# Data (chứa thông tin sinh viên - không commit)
+data/
+*.csv
+*.xlsx
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_meta
+
+# Experiments output (lớn, không commit)
+experiments/*/output/
+experiments/*/logs/
+
+# LaTeX
+outputs/*.aux
+outputs/*.log
+outputs/*.out
+outputs/*.synctex.gz
+outputs/*.bbl
+outputs/*.blg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Secret
+.env
+*.key

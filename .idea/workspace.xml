@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.claude/commands/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/commands/daily.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/commands/inbox-clean.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/commands/link-notes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/commands/paper-atomize.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/commands/paper-full.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/commands/paper-summarize.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondBrain/00_Inbox/paper-chua-doc/AI Affiliate.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondBrain/00_Inbox/paper-chua-doc/Claude code 101.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/appearance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/ML-MOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/ML-MOC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/daily.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/daily.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/project-readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/project-readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="F:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe" />
+  <component name="ProjectId" id="3E7Lf2HFf4B5CsXAxq0nB1QD1db" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Claude/SecondBrain/00_Inbox/paper-chua-doc",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Claude\SecondBrain\00_Inbox\paper-chua-doc" />
+      <recent name="E:\Claude\.claude\commands" />
+      <recent name="E:\Claude\.obsidian" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="" />
+      <created>1779524761108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779524761108</updated>
+      <workItem from="1779524762115" duration="618000" />
+      <workItem from="1779525389553" duration="17632000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

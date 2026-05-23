@@ -69,6 +69,12 @@ Khi tạo note mới, dùng template tương ứng ở `99_Meta/templates/`:
 3. Dùng template phù hợp (`lecture.md`, `video-script.md`).
 4. Trong nội dung, link `[[...]]` tới các atomic notes đã dùng.
 
+## Khi tôi nhờ "tạo daily note"
+
+1. Tạo file theo template `daily.md` tại `60_Daily/<năm>/<tháng>/YYYY-MM-DD.md`.
+2. Không tự điền nội dung — chỉ tạo file theo template, chờ tôi tự điền.
+3. Section `📚 Đã chắt lọc` dùng để ghi lại source đã xử lý + atomic notes mới tạo trong ngày — không điền thay tôi.
+
 ## Khi tôi nhờ "dọn Inbox"
 
 1. List tất cả file trong `00_Inbox/` cùng ngày tạo.
@@ -92,6 +98,6 @@ Chạy checklist:
 
 ## Liên kết với Projects ngoài vault
 
-Project code thực tế đặt ở `D:\Workspace\Projects\<tên-project>\`. Trong vault, `10_Projects/<tên-project>/` chỉ chứa **ghi chú về project**, không chứa code.
+Project code thực tế đặt ở `E:\Claude\Projects\<tên-project>\`. Trong vault, `10_Projects/<tên-project>/` chỉ chứa **ghi chú về project**, không chứa code.
 
-Nếu cần đọc code → `cd D:\Workspace\Projects\<tên-project>\` rồi làm việc với Claude Code ở đó.
+Nếu cần đọc code → `cd E:\Claude\Projects\<tên-project>\` rồi làm việc với Claude Code ở đó.

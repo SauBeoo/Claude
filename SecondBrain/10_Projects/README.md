@@ -24,7 +24,7 @@ Ví dụ:
 └── meetings/           # Note họp với cộng sự/sinh viên
 ```
 
-Project repo (code thực tế) **đặt ngoài vault**, ở `D:\Workspace\Projects\<project-name>\`. Vault chỉ chứa **ghi chú về project**, không chứa code.
+Project repo (code thực tế) **đặt ngoài vault**, ở `E:\Claude\Projects\<project-name>\`. Vault chỉ chứa **ghi chú về project**, không chứa code.
 
 ## Khi project xong
 
