@@ -30,6 +30,9 @@ status: seed
 ## Liên quan
 - [[tech-debt-o-leaf-node-co-the-chap-nhan]]
 - [[4-thanh-phan-cua-prompt-tot-claude-code]]
+- [[subagent-context-isolation-pattern]] — generalization: pattern rộng hơn (context isolation), note này là case cụ thể (reviewer)
+- [[auto-compact-mat-nuance]] — cùng gốc nguyên nhân: bias từ context tích lũy; auto-compact mất nuance là dạng khác của vấn đề
+- [[context-window-tai-nguyen-huu-han]] — nền tảng: bias chỉ tồn tại vì context hữu hạn và tích lũy
 
 ## Câu hỏi mở
 - Subagent có bias riêng của nó không (vd: prompt đã frame "tìm bug" sẽ làm subagent over-report false positives)?

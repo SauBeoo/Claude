@@ -40,6 +40,8 @@ status: seed
 - [[epcc-workflow-claude-code]]
 - [[cost-thay-doi-tang-theo-phase-trong-ai-workflow]]
 - [[test-suite-bien-code-phase-thanh-vong-lap-tu-sua]]
+- [[compact-khi-do-dang-clear-khi-doi-task]] — cùng tinh thần calibrate: quyết định compact/clear phụ thuộc trạng thái task, không phải rule cứng
+- [[skill-on-demand-vs-claudemd-always]] — cùng nguyên tắc "load đúng thứ đúng lúc thay vì luôn luôn"
 
 ## Câu hỏi mở
 - Làm sao estimate task size *trước khi* explore? Đôi khi "tiny" thực ra là "hard" trá hình.

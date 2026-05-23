@@ -39,6 +39,7 @@ Thêm vào cuối prompt để kích hoạt extended thinking:
 ## Liên quan
 - [[plan-mode-workflow-5-buoc]]
 - [[subagent-reviewer-bu-bias-cua-session-chinh]]
+- [[prompt-cu-the-tiet-kiem-context-hon-prompt-ngan]] — giải thích *tại sao* cần specific: prompt mơ hồ tốn ~25k token "thám tử", prompt cụ thể ~3k
 
 ## Câu hỏi mở
 - Với task Easy (< 5 phút), có cần đủ 4 thành phần không, hay Context + Criteria là đủ?
