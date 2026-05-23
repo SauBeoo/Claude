@@ -4,14 +4,18 @@ Mỗi project = 1 thư mục con. Project có **deadline** và **kết quả c�
 
 ## Quy ước đặt tên thư mục
 
-`<loại>-<chủ-đề>-<thời-gian>`
+`<loại>-<chủ-đề>` hoặc `<chủ-đề>-<thời-gian>` nếu có thời hạn cụ thể
 
-Ví dụ:
-- `research-nlp-2026/` — nghiên cứu NLP năm 2026
-- `course-python-2026-spring/` — môn Python học kỳ xuân 2026
-- `book-deep-learning-vol1/` — sách Deep Learning quyển 1
-- `video-series-llm-explained/` — series video giải thích LLM
-- `product-app-quanly-sinhvien/` — sản phẩm app quản lý sinh viên
+**Đang active:**
+- `claude-code-101/` — học & viết content về Claude Code
+- `idea-aff/` — ý tưởng affiliate marketing
+
+**Pattern đặt tên gợi ý (cho project tương lai):**
+- `course-<môn>-<học-kỳ>/` — môn dạy theo học kỳ
+- `book-<chủ-đề>/` — viết/đọc sách theo chủ đề
+- `video-series-<chủ-đề>/` — series video
+- `research-<lĩnh-vực>-<năm>/` — nghiên cứu có deadline
+- `product-<tên-app>/` — sản phẩm cụ thể
 
 ## Cấu trúc bên trong mỗi project
 

@@ -14,9 +14,11 @@ Project xong → vào đây. **Không xóa** — vì 1 năm sau bạn vẫn có 
 Mỗi năm 1 thư mục con. Project archive đặt theo tên gốc:
 
 ```
-40_Archive/2025/research-cv-2025/
-40_Archive/2026/course-python-2026-spring/
+40_Archive/2025/<project-name>/
+40_Archive/2026/<project-name>/
 ```
+
+Ví dụ giả định: `40_Archive/2026/course-python-2026-spring/` sau khi khóa học kết thúc.
 
 ## Quy trình archive
 
@@ -29,7 +31,7 @@ Khi project xong, trước khi `mv` vào đây, hãy làm checklist:
 
 Sau đó:
 ```bash
-mv 10_Projects/research-nlp-2026 40_Archive/2026/
+mv 10_Projects/<project-name> 40_Archive/2026/
 ```
 
 ## Tại sao không xóa?

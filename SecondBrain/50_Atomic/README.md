@@ -54,7 +54,7 @@ status: seed | growing | evergreen
 
 ## Nguồn
 
-- [[10_Projects/research-nlp-2026/papers/attention-is-all-you-need]]
+- [[10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context]]
 - [Link bên ngoài nếu có]
 ```
 

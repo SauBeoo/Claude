@@ -27,7 +27,7 @@ Nếu không chắc → để ở `00_Inbox/` và **hỏi tôi**.
 ## Quy ước đặt tên file
 
 - **Atomic notes:** slug không dấu, gạch ngang. Ví dụ: `self-attention-la-weighted-sum.md`
-- **Project, Area, Resource:** slug không dấu. Ví dụ: `research-nlp-2026`, `teaching/`
+- **Project, Area, Resource:** slug không dấu. Ví dụ: `claude-code-101`, `idea-aff`, `teaching/`
 - **Daily:** `YYYY-MM-DD.md`
 - **Trong nội dung (heading, body):** dùng tiếng Việt có dấu tự nhiên.
 
