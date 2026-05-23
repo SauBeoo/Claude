@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "8545945556cfcd76",
+    "type": "split",
+    "children": [
+      {
+        "id": "f7a482d8c50a4b7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02c5dec71436fb62",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "488757dd2d54bdbe",
+    "type": "split",
+    "children": [
+      {
+        "id": "74c37f6b4348e323",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf5dd3aaf62ca863",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "72c4750d7778a31d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "167115362fde96de",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bb1d5a0b82f72005",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fb73469be2855cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e1ded2ae72e8d2cd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "759d16eafa53e552",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "2016e18a34c29cd6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f90ee164431194a8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1d5b2a85335de5b6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SecondBrain-starter/SecondBrain/README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "bf5dd3aaf62ca863",
+  "lastOpenFiles": [
+    "SecondBrain/99_Meta/templates/video-script.md",
+    "SecondBrain/99_Meta/templates/project-readme.md",
+    "SecondBrain/99_Meta/templates/paper-summary.md",
+    "SecondBrain/99_Meta/templates/lecture.md",
+    "SecondBrain/99_Meta/templates/daily.md",
+    "SecondBrain/99_Meta/templates/atomic-question.md",
+    "SecondBrain/99_Meta/templates/atomic-method.md",
+    "SecondBrain/99_Meta/templates/atomic-concept.md",
+    "SecondBrain/99_Meta/templates/atomic-claim.md",
+    "SecondBrain/99_Meta/MOCs/ML-MOC.md",
+    "SecondBrain/99_Meta/templates",
+    "SecondBrain/99_Meta/tag-system.md",
+    "SecondBrain/99_Meta/README.md",
+    "SecondBrain/99_Meta/MOCs",
+    "SecondBrain/60_Daily/README.md",
+    "SecondBrain/60_Daily/2026",
+    "SecondBrain/50_Atomic/README.md",
+    "SecondBrain/50_Atomic/questions",
+    "SecondBrain/50_Atomic/methods",
+    "SecondBrain/50_Atomic/concepts",
+    "SecondBrain/50_Atomic/claims",
+    "SecondBrain/40_Archive/README.md",
+    "SecondBrain/30_Resources/web-development",
+    "SecondBrain/30_Resources/video-editing",
+    "SecondBrain/30_Resources/README.md",
+    "SecondBrain/30_Resources/people",
+    "SecondBrain/20_Areas/README.md",
+    "SecondBrain/10_Projects/README.md",
+    "SecondBrain/00_Inbox/README.md",
+    "SecondBrain/README.md",
+    "SecondBrain-starter/SecondBrain/99_Meta/README.md",
+    "SecondBrain-starter/SecondBrain/99_Meta/templates/daily.md",
+    "SecondBrain-starter/SecondBrain/99_Meta/templates/atomic-concept.md",
+    "SecondBrain-starter/SecondBrain/99_Meta/templates/atomic-claim.md",
+    "SecondBrain-starter/SecondBrain/99_Meta/MOCs/ML-MOC.md",
+    "SecondBrain-starter/SecondBrain/60_Daily/README.md"
+  ]
+}

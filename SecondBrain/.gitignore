@@ -1,0 +1,41 @@
+# Obsidian — workspace local, không cần sync
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/types.json
+
+# Inbox riêng tư — tùy bạn có muốn sync GitHub không
+# Bỏ comment dòng dưới nếu KHÔNG muốn push Inbox lên GitHub
+# 00_Inbox/
+
+# Daily journal cá nhân (nếu sau này tách)
+70_Journal/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS (phòng khi sync giữa máy)
+.DS_Store
+.AppleDouble
+
+# Linux
+*~
+.fuse_hidden*
+
+# Tạm thời
+*.tmp
+*.swp
+*.bak
+~$*
+
+# File lớn không nên commit
+*.pdf
+*.mp4
+*.mov
+*.zip
+
+# Trừ paper PDF trong Projects nếu bạn muốn version chúng
+# !10_Projects/**/papers/*.pdf
