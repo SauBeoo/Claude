@@ -1,4 +1,4 @@
----
+ ---
 type: guide
 topic: secondbrain-workflow
 created: 2026-05-24
@@ -204,6 +204,8 @@ Claude Code là **trợ lý vận hành vault**, không phải thay thế suy ng
 | `find-related-notes` skill | Trước khi viết note mới về X | List note đã có về X |
 | `/inbox-clean` | Sunday review, dọn 00_Inbox | Đề xuất move (không tự move) |
 | `/moc-update` | Sunday review, sync MOC | List atomic chưa index |
+| `/archive-project <tên>` | Project xong, chuyển sang 40_Archive | Checklist → update README → log CHANGELOG → move folder |
+| `/promote-atomic [<slug>]` | Định kỳ (quý) nâng status seed→growing→evergreen | Báo cáo theo tiêu chí link/tuổi/usage, chờ duyệt từng note |
 | Agent `researcher` | Đọc paper khó/dài, cần chuyên sâu | Source note chi tiết |
 | Agent `creator` | Sản xuất output dài (blog, video script) | Output ở 10_Projects/<X>/outputs/ |
 | Agent `librarian` | Dọn vault, archive project, audit cấu trúc | Report + action items |
@@ -313,6 +315,68 @@ SecondBrain/
 - ☐ Trước khi nạp một nguồn lớn (paper >30 trang, sách)
 - ☐ Trước khi bắt đầu 1 project mới
 - ☐ Khi onboard ai khác vào hệ thống của mình
+
+---
+
+## 14. Quy tắc bảo trì hệ thống — guides & changelog
+
+> File hướng dẫn và changelog là **xương sống** của hệ thống. Không cập nhật → 3 tháng sau quên hết quy ước, lặp lại sai lầm cũ.
+
+### 14.1. Khi có quy tắc/workflow mới → phải vào guides
+
+Bất kỳ thay đổi nào tạo ra **quy tắc mới, command mới, skill mới, agent mới** đều phải được phản ánh trong file này (`huong-dan-van-hanh-secondbrain.md`). Trigger update:
+
+- Tạo command mới (`/<name>`) → thêm dòng vào **bảng mục 8** (Vai trò Claude Code).
+- Tạo skill/agent mới → thêm dòng vào mục 8.
+- Đổi convention đặt tên / cấu trúc thư mục → update mục 2 (Các loại note) hoặc mục 12 (Cấu trúc thư mục).
+- Đổi workflow định kỳ (daily/weekly/monthly) → update mục 3, 4, hoặc 9.
+- Đổi tiêu chí atomic / promote / archive → update mục 7 hoặc mục mới tương ứng.
+
+**Quy tắc:** *cùng commit / cùng turn* với thay đổi gốc — không "để sau". Nếu Claude làm thay đổi → Claude tự cập nhật guides ngay.
+
+### 14.2. Khi có thay đổi file đang tồn tại → phải vào CHANGELOG
+
+Mọi **edit** file đã có trong vault (do Claude thay mặt) đều phải log vào `99_Meta/CHANGELOG.md`. Quy tắc cụ thể:
+
+| Hành động | Log CHANGELOG? |
+|---|---|
+| Edit nội dung file đã có (do Claude) | ✅ Bắt buộc |
+| Tạo file mới hoàn toàn | ❌ Không (xem `git log --diff-filter=A`) |
+| Move file (vd archive project) | ✅ Bắt buộc — ghi cả đường đi từ-tới |
+| Đổi tên file | ✅ Bắt buộc — ghi tên cũ + tên mới |
+| Promote status atomic (seed → growing → ...) | ✅ Bắt buộc |
+| User trực tiếp gõ sửa | ❌ Không (chỉ log khi Claude thay mặt) |
+| Sửa MEMORY.md hoặc file ngoài vault | ❌ Không vào CHANGELOG vault — ghi vắn vào entry nếu liên quan |
+
+**Format entry** — xem mẫu cuối CHANGELOG.md, hoặc copy template sau:
+
+```markdown
+## YYYY-MM-DD — Tiêu đề đợt sửa
+
+**Bối cảnh:** lý do, link tham chiếu (vd: [[huong-dan-van-hanh-secondbrain]] section X).
+
+### 🔧 <Nhóm thay đổi>
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `path/to/file.md` | Tóm tắt 1 dòng | Vì sao đổi |
+```
+
+### 14.3. Thứ tự thao tác (cho Claude khi tự động hóa)
+
+Khi thực hiện thay đổi tự động (qua command, agent, hoặc tự ý đề xuất + user duyệt), thứ tự **bất biến**:
+
+1. **Làm thay đổi gốc** (move file, edit nội dung, tạo file, ...).
+2. **Update guides** nếu thay đổi tạo ra quy tắc/command mới (mục 14.1).
+3. **Update CHANGELOG** ghi lại thao tác (mục 14.2).
+4. **Báo cáo cuối** cho user — liệt kê: gì đã đổi, log ở đâu, cần manual gì.
+
+Bỏ bước nào → coi như chưa xong. Nếu user can thiệp giữa chừng → ghi lại trạng thái hiện tại, không "giả vờ đã xong".
+
+### 14.4. Audit định kỳ guides + CHANGELOG
+
+- **Mỗi tháng** (cùng dịp mục 9): mở guides, đọc lướt — có quy tắc nào không còn dùng? có command nào đã bỏ? Xóa hoặc đánh dấu deprecated.
+- **Mỗi quý**: scroll CHANGELOG, gom entry cùng chủ đề thành mục "lịch sử thay đổi" tóm gọn. CHANGELOG quá dài (>500 dòng) → tách file theo năm: `CHANGELOG-2026.md`, `CHANGELOG-2027.md`.
 
 ---
 

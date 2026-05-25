@@ -5,7 +5,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/coder.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/coder.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/creator.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/creator.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/librarian.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/librarian.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/researcher.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/researcher.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/teacher.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/teacher.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/daily.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/daily.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/inbox-clean.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/inbox-clean.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/link-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/link-notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/moc-update.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/moc-update.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/paper-atomize.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/paper-atomize.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/paper-full.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/paper-full.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/paper-summarize.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/paper-summarize.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/create-atomic-note/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/create-atomic-note/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/find-related-notes/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/find-related-notes/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/inbox-cleanup/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/inbox-cleanup/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/summarize-pdf-paper/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/summarize-pdf-paper/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/vault-routing/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/vault-routing/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/appearance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/core-plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/core-plugins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/research-llm-education-2026/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/research-llm-education-2026/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/research-llm-education-2026/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/student-grade-app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/student-grade-app/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/student-grade-app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/00_HOME.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/00_HOME.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/00_Inbox/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/00_Inbox/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/00_Inbox/paper-chua-doc/AI Affiliate.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/00_Inbox/paper-chua-doc/AI Affiliate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/20_Areas/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/coding-practices/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/20_Areas/coding-practices/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/content-creation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/20_Areas/content-creation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/research-methodology/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/20_Areas/research-methodology/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/teaching/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/20_Areas/teaching/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/books/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/books/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/courses/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/courses/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/machine-learning/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/machine-learning/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/people/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/people/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/video-editing/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/video-editing/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/web-development/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/web-development/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/40_Archive/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/40_Archive/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/compact-khi-do-dang-clear-khi-doi-task.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/compact-khi-do-dang-clear-khi-doi-task.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase-trong-ai-workflow.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase-trong-ai-workflow.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/mcp-server-overhead-cost-truoc-prompt.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/mcp-server-overhead-cost-truoc-prompt.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/prompt-cu-the-tiet-kiem-context-hon-prompt-ngan.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/prompt-cu-the-tiet-kiem-context-hon-prompt-ngan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/skill-on-demand-vs-claudemd-always.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/skill-on-demand-vs-claudemd-always.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/tech-debt-o-leaf-node-co-the-chap-nhan.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/tech-debt-o-leaf-node-co-the-chap-nhan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/auto-compact-mat-nuance.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/auto-compact-mat-nuance.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/chi-toi-uu-nhung-gi-trong-tam-kiem-soat.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/chi-toi-uu-nhung-gi-trong-tam-kiem-soat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/context-window-tai-nguyen-huu-han.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/context-window-tai-nguyen-huu-han.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/subagent-context-isolation-pattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/subagent-context-isolation-pattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/subagent-reviewer-bu-bias-cua-session-chinh.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/subagent-reviewer-bu-bias-cua-session-chinh.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/4-thanh-phan-cua-prompt-tot-claude-code.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/4-thanh-phan-cua-prompt-tot-claude-code.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/calibrate-workflow-claude-code-theo-task-size.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/calibrate-workflow-claude-code-theo-task-size.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/plan-mode-workflow-5-buoc.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/plan-mode-workflow-5-buoc.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/test-suite-bien-code-phase-thanh-vong-lap-tu-sua.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/test-suite-bien-code-phase-thanh-vong-lap-tu-sua.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-23.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-23.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-24.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-24.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/60_Daily/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/ML-MOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/ML-MOC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/affiliate-MOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/affiliate-MOC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/claude-code-MOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/claude-code-MOC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/tag-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/tag-system.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-claim.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-claim.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-concept.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-concept.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-method.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-method.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-question.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/atomic-question.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/daily.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/daily.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/lecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/lecture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/paper-summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/paper-summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/project-readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/project-readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/video-script.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/video-script.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,13 +108,22 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_E:/Claude" value="3E7Lf2HFf4B5CsXAxq0nB1QD1db" />
+    </persistenceIdMap>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="F:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1,
+  "fromUser": false
+}]]></component>
   <component name="ProjectId" id="3E7Lf2HFf4B5CsXAxq0nB1QD1db" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,8 +132,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Claude/SecondBrain/00_Inbox/paper-chua-doc",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Claude",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,10 +164,19 @@
       <updated>1779524761108</updated>
       <workItem from="1779524762115" duration="618000" />
       <workItem from="1779525389553" duration="21425000" />
+      <workItem from="1779703995343" duration="2255000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

@@ -96,6 +96,19 @@ Chạy checklist:
 - Commit Git — chỉ commit khi tôi yêu cầu rõ
 - Viết note thay quan điểm của tôi vào `20_Areas/` mà không xác nhận — Areas là kinh nghiệm của tôi, Claude chỉ ghi lại
 
+## Quy tắc bảo trì hệ thống (BẮT BUỘC)
+
+Mọi lần Claude thay đổi cấu trúc/quy tắc/file trong vault → phải làm **cùng turn**:
+
+1. **Có quy tắc/command/skill/agent mới** → thêm vào `99_Meta/guides/huong-dan-van-hanh-secondbrain.md` (đặc biệt mục 8 nếu là command). Không "để sau".
+2. **Có edit/move/rename file đã tồn tại** → ghi entry vào `99_Meta/CHANGELOG.md` theo format mẫu cuối file đó.
+3. **Tạo file mới** → KHÔNG cần log CHANGELOG (Git history đã đủ).
+4. **User trực tiếp gõ sửa** → KHÔNG log (chỉ log khi Claude thay mặt).
+
+Thứ tự thao tác: làm thay đổi → update guides (nếu cần) → update CHANGELOG → báo cáo cuối. Bỏ bước nào = chưa xong.
+
+Chi tiết: xem mục 14 trong `99_Meta/guides/huong-dan-van-hanh-secondbrain.md`.
+
 ## Liên kết với Projects ngoài vault
 
 Project code thực tế đặt ở `E:\Claude\Projects\<tên-project>\`. Trong vault, `10_Projects/<tên-project>/` chỉ chứa **ghi chú về project**, không chứa code.

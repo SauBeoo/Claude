@@ -17,6 +17,68 @@ tags: [meta, changelog, system-log]
 
 ---
 
+## 2026-05-25 — Dọn Inbox đợt 2 (`/inbox-clean` — folder `ai-luoi/`)
+
+**Bối cảnh:** chạy `/inbox-clean` lần 2. Inbox còn 1 folder `ai-luoi/` chứa 4 file meta-project (CLAUDE.md, ROADMAP, CONTENT-IDEAS, README) được tạo cùng ngày. Vault đã có sẵn `10_Projects/idea-aff/` với `ke-hoach-kinh-doanh-ai-luoi.md` — cùng project "AI Lười". User duyệt **Phương án A**: gộp vào project có sẵn thay vì tách project mới.
+
+### 🔧 Move file (relocate, không xoá)
+
+| File gốc | Đích | Lý do |
+|---|---|---|
+| `00_Inbox/ai-luoi/CLAUDE.md` | `10_Projects/idea-aff/CLAUDE.md` | Context file cho Claude Code khi `cd` vào project — giữ trong project folder. |
+| `00_Inbox/ai-luoi/ROADMAP-90DAYS.md` | `10_Projects/idea-aff/ROADMAP-90DAYS.md` | Plan thực thi 90 ngày của project — thuộc về project folder. |
+| `00_Inbox/ai-luoi/CONTENT-IDEAS.md` | `10_Projects/idea-aff/CONTENT-IDEAS.md` | 30 ý tưởng video + 3 script mẫu — output deliverable của project. |
+| `00_Inbox/ai-luoi/README.md` | `10_Projects/idea-aff/README.md` | Hướng dẫn cấu trúc 4 file trên — đi cùng cụm. Không conflict (idea-aff/ chưa có README). |
+
+### ⚠️ Ngoài lề
+
+- Folder `00_Inbox/ai-luoi/` rỗng sau khi move — để user quyết có xoá folder rỗng không (Claude không tự xoá).
+- Folder `00_Inbox/paper-chua-doc/` rỗng từ trước (4 file đã staged delete trong git index). Không thuộc phạm vi đợt này.
+
+---
+
+## 2026-05-25 — Dọn Inbox đợt 1 (`/inbox-clean`)
+
+**Bối cảnh:** chạy `/inbox-clean` lần đầu. Inbox có 4 file trong `paper-chua-doc/`, tất cả đều mới 0 ngày tuổi nên không có cảnh báo quá hạn, nhưng cần phân loại trước khi tích lũy. User duyệt phương án `Q1=b, Q2=a, Q3=a`.
+
+### 🔧 Move file (relocate, không xoá)
+
+| File gốc | Đích | Lý do |
+|---|---|---|
+| `00_Inbox/paper-chua-doc/AI Affiliate.md` | `10_Projects/idea-aff/papers/ai-affiliate-funnel.md` | Nội dung phục vụ trực tiếp project `idea-aff` đang chạy. Đổi tên về slug không dấu theo quy ước. Đáng `/paper-atomize` sau (5 nguyên tắc + 5 bước funnel). |
+| `00_Inbox/paper-chua-doc/Lập-kế-hoạch-kinh-doanh.md` | `10_Projects/idea-aff/ke-hoach-kinh-doanh-ai-luoi.md` | Đây là kế hoạch nội bộ project "AI Lười" (mảng affiliate cho seller) — gộp vào `idea-aff` thay vì tách project mới (Q2=a). Đổi slug. |
+| `00_Inbox/paper-chua-doc/mentor_dau_tu_hoi_thoai.md` | `20_Areas/investing/mentor-dau-tu-co-phieu-hoi-thoai.md` | Kinh nghiệm dài hạn về vai trò nhà đầu tư cá nhân, không gắn deadline → Area mới `investing` (Q3=a). Đổi slug. Đáng `/paper-atomize` (Mr. Market, Circle of Competence, Loss Aversion, bệnh nghe phím, cost-of-recovery math). |
+
+### 🆕 Folder mới (tạo khi cần đích)
+
+- `10_Projects/idea-aff/papers/` — chỗ chứa paper/clip ngoài phục vụ project.
+- `20_Areas/investing/` — Area mới cho vai trò đầu tư cá nhân.
+
+### ⚠️ Ngoài lề
+
+- `00_Inbox/paper-chua-doc/Claude code 101.md` (file rỗng) ở git index trạng thái staged delete TRƯỚC khi phiên `/inbox-clean` bắt đầu (không phải do Claude). User quyết định giữ nguyên trạng thái deleted (không restore).
+
+---
+
+## 2026-05-25 — Thêm 2 command + quy tắc bảo trì hệ thống
+
+**Bối cảnh:** user yêu cầu bù lỗ hổng automation cho 2 thao tác định kỳ (archive project, promote atomic) và bổ sung quy tắc bắt buộc về cập nhật guides + CHANGELOG. Tham chiếu: [[huong-dan-van-hanh-secondbrain]] mục 14 (mới), [[SecondBrain/.claude/CLAUDE.md]] section "Quy tắc bảo trì hệ thống".
+
+### 🆕 Command mới (ngoài vault — chỉ note vắn)
+
+- `E:\Claude\.claude\commands\archive-project.md` — quy trình archive 1 project: pre-flight → checklist (4 mục) → update README status: DONE → log CHANGELOG → `Move-Item` → báo cáo. Dùng PowerShell vì shell mặc định là PS.
+- `E:\Claude\.claude\commands\promote-atomic.md` — quét 50_Atomic, đề xuất nâng status seed→growing→evergreen theo rule (≥2/3 tiêu chí: link out, link in, tuổi, used_in_output). Có thể chạy batch hoặc cho 1 slug.
+
+### 🔧 Thay đổi file đang tồn tại
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `99_Meta/guides/huong-dan-van-hanh-secondbrain.md` | Mục 8: thêm 2 dòng cho `/archive-project` và `/promote-atomic` trong bảng "Vai trò Claude Code" | Phản ánh tool mới có sẵn để user biết khi nào dùng |
+| `99_Meta/guides/huong-dan-van-hanh-secondbrain.md` | Thêm mục 14 mới "Quy tắc bảo trì hệ thống — guides & changelog" (4 mục con: 14.1 khi cập nhật guides, 14.2 khi log CHANGELOG, 14.3 thứ tự thao tác, 14.4 audit định kỳ) | User yêu cầu quy tắc rõ ràng cho việc duy trì xương sống hệ thống |
+| `SecondBrain/.claude/CLAUDE.md` | Thêm section "Quy tắc bảo trì hệ thống (BẮT BUỘC)" sau "Việc Claude KHÔNG được tự ý làm" | Ép Claude tuân thủ ngay từ session sau — quy tắc thường trú |
+
+---
+
 ## 2026-05-24 — Audit cấu trúc vault lần 1
 
 **Bối cảnh:** vault ở giai đoạn Seed→Sapling. Audit tổng để fix các điểm yếu trước khi scale usage. Tham chiếu: [[00_HOME]] section "Vấn đề cần fix", [[huong-dan-van-hanh-secondbrain]].
