@@ -61,6 +61,7 @@ Khi tạo note mới, dùng template tương ứng ở `99_Meta/templates/`:
 3. Đặt ở `50_Atomic/<loại>/<slug>.md`
 4. **Tìm 3-5 note có sẵn liên quan** trong vault để gợi ý link `[[...]]`.
 5. Status mặc định = `seed`.
+6. **Viết thân note theo kiểu ELI5** — dễ như giải thích cho một đứa trẻ 5 tuổi: ví dụ/phép so sánh đời thường, câu ngắn, từ quen thuộc. Thuật ngữ kỹ thuật chỉ giữ ở tiêu đề hoặc khi bắt buộc, giải thích ngay bằng lời thường. (Áp dụng cho cả `/paper-atomize`.)
 
 ## Khi tôi nhờ "soạn bài giảng/video/content"
 

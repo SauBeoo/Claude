@@ -1,7 +1,7 @@
 ---
 type: changelog
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-27
 tags: [meta, changelog, system-log]
 ---
 
@@ -14,6 +14,28 @@ tags: [meta, changelog, system-log]
 > - ❌ Tạo file mới → KHÔNG log (xem qua `git log --diff-filter=A` hoặc Obsidian).
 > - ❌ Edit nội dung do user trực tiếp gõ → KHÔNG log (chỉ log khi Claude thay mặt).
 > - Mỗi entry: file path + tóm tắt thay đổi (1 dòng) + lý do.
+
+---
+
+## 2026-05-27 — Quy tắc viết atomic theo kiểu ELI5 (trẻ 5 tuổi hiểu được)
+
+**Bối cảnh:** user yêu cầu mọi atomic note phải trình bày dễ hiểu nhất, sao cho "một đứa trẻ 5 tuổi cũng hiểu được". User chọn phương án: **ELI5 là nội dung chính của thân note** (không thêm section riêng). Áp dụng nhất quán cho cả 2 đường tạo atomic (skill `create-atomic-note` + command `/paper-atomize`), template, và rule vault.
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `99_Meta/templates/atomic-concept.md` | Placeholder thân note thêm hướng dẫn ELI5 ("Tưởng tượng...", ví dụ đời thường, câu ngắn) | Nhắc phong cách ngay tại chỗ viết |
+| `99_Meta/templates/atomic-method.md` | Thêm dòng blockquote nhắc ELI5 dưới H1 (xoá sau khi điền) | Cùng lý do |
+| `99_Meta/templates/atomic-claim.md` | Thêm dòng blockquote nhắc ELI5 dưới H1 | Cùng lý do |
+| `99_Meta/templates/atomic-question.md` | Thêm dòng blockquote nhắc ELI5 dưới H1 | Cùng lý do |
+| `99_Meta/guides/huong-dan-van-hanh-secondbrain.md` | Mục 7: thêm tiêu chí "Trẻ 5 tuổi hiểu được (ELI5)" vào bảng + đoạn giải thích (kỹ thuật Feynman) | Đưa ELI5 thành tiêu chí atomic chính thức |
+| `SecondBrain/.claude/CLAUDE.md` | Section "Khi tôi nhờ tạo atomic note về X": thêm mục 6 về viết thân note kiểu ELI5 | Ép Claude tuân thủ ngay từ session sau |
+
+### 📝 Thay đổi ngoài vault (chỉ note vắn)
+
+- `E:\Claude\.claude\skills\create-atomic-note\SKILL.md` — Bước 4 (Body) trỏ tới nguyên tắc ELI5; thêm nguyên tắc #5 "Giải thích như cho trẻ 5 tuổi" (ví dụ đời thường, câu ngắn, thuật ngữ chỉ ở tiêu đề, tự kiểm).
+- `E:\Claude\.claude\commands\paper-atomize.md` — Phase 2 "Quy tắc viết atomic": thay "giải thích cho người chưa đọc paper" → "giải thích cho một đứa trẻ 5 tuổi (ELI5)".
 
 ---
 
