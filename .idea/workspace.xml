@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/.claude/commands/paper-atomize.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/paper-atomize.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/commands/paper-full.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/paper-full.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/commands/paper-summarize.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/paper-summarize.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/skills/create-atomic-note/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/create-atomic-note/SKILL.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/skills/find-related-notes/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/find-related-notes/SKILL.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/skills/inbox-cleanup/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/inbox-cleanup/SKILL.md" afterDir="false" />
@@ -173,7 +174,7 @@
       <workItem from="1779844666871" duration="1223000" />
       <workItem from="1779896869588" duration="222000" />
       <workItem from="1779930703942" duration="2689000" />
-      <workItem from="1780037159822" duration="1612000" />
+      <workItem from="1780037159822" duration="4113000" />
     </task>
     <servers />
   </component>
