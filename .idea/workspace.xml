@@ -25,6 +25,8 @@
       <change beforePath="$PROJECT_DIR$/.claude/skills/inbox-cleanup/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/inbox-cleanup/SKILL.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/skills/summarize-pdf-paper/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/summarize-pdf-paper/SKILL.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/skills/vault-routing/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/vault-routing/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Claude.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Claude.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -43,12 +45,12 @@
       <change beforePath="$PROJECT_DIR$/SecondBrain/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/00_HOME.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/00_HOME.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/00_Inbox/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/00_Inbox/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/00_Inbox/paper-chua-doc/AI Affiliate.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/00_Inbox/paper-chua-doc/AI Affiliate.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/papers/ai-affiliate-funnel.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/papers/ai-affiliate-funnel.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/20_Areas/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/coding-practices/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/20_Areas/coding-practices/README.md" afterDir="false" />
@@ -120,10 +122,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3E7Lf2HFf4B5CsXAxq0nB1QD1db" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -131,7 +133,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -165,6 +169,11 @@
       <workItem from="1779524762115" duration="618000" />
       <workItem from="1779525389553" duration="21425000" />
       <workItem from="1779703995343" duration="2255000" />
+      <workItem from="1779758443115" duration="1798000" />
+      <workItem from="1779844666871" duration="1223000" />
+      <workItem from="1779896869588" duration="222000" />
+      <workItem from="1779930703942" duration="2689000" />
+      <workItem from="1780037159822" duration="1612000" />
     </task>
     <servers />
   </component>

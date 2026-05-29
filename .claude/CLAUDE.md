@@ -47,6 +47,7 @@ Cấu hình Claude:
 - `create-atomic-note` — tạo atomic note với link tự động
 - `inbox-cleanup` — dọn Inbox, đề xuất phân loại
 - `find-related-notes` — tìm note liên quan trong vault trước khi viết mới
+- `tutor` — gia sư toàn diện: dạy 1 chủ đề/doc theo lộ trình (Socratic + giảng + thực hành + ôn tập), tạo atomic note & flashcard, theo dõi tiến độ
 
 ## Khi vault và project tương tác
 
