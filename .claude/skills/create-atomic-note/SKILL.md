@@ -69,7 +69,7 @@ status: seed       # mặc định, sẽ growing/evergreen sau
 
 Body:
 - **Heading H1:** tiêu đề tự nhiên có dấu tiếng Việt
-- **Nội dung:** 1-3 đoạn ngắn, mỗi đoạn 2-4 câu, BẰNG LỜI USER (không copy nguyên văn nguồn)
+- **Nội dung:** 1-3 đoạn ngắn, mỗi đoạn 2-4 câu, BẰNG LỜI USER (không copy nguyên văn nguồn). **Viết theo kiểu ELI5** — xem nguyên tắc #5 bên dưới.
 - **Liên hệ:** 3-5 link `[[...]]` đã tìm ở bước 3
 - **Nguồn:** link ngược về paper/note gốc
 
@@ -100,6 +100,11 @@ Cần điều chỉnh gì không?
 2. **Đứng độc lập.** Đọc note không cần đọc thứ khác cũng hiểu.
 3. **Lời của user.** Không copy nguyên văn. Diễn đạt lại.
 4. **Nhiều link.** Atomic note không có link = atomic note chết.
+5. **Giải thích như cho trẻ 5 tuổi (ELI5).** Thân note viết sao cho một đứa trẻ 5 tuổi cũng nắm được ý chính:
+   - Dùng **ví dụ / phép so sánh đời thường** (lớp học, đồ chơi, nấu ăn...). Mở đầu kiểu "Tưởng tượng..." rất hiệu quả.
+   - **Câu ngắn, từ quen thuộc.** Tránh câu lồng nhiều mệnh đề.
+   - **Thuật ngữ kỹ thuật chỉ giữ ở tiêu đề** hoặc khi bắt buộc — và phải giải thích ngay bằng lời thường ngay sau đó.
+   - Tự kiểm: *"Đọc câu này, một đứa trẻ có hình dung ra không?"* Nếu không → viết lại đơn giản hơn.
 
 ## Lưu ý
 

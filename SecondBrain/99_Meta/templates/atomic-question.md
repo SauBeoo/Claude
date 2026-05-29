@@ -7,6 +7,8 @@ status: open
 
 # Câu hỏi: 
 
+> ✍️ Viết kiểu ELI5 — dễ như giải thích cho trẻ 5 tuổi (ví dụ đời thường, câu ngắn). Xoá dòng này sau khi điền.
+
 ## Tại sao tôi thắc mắc điều này
 
 (Bối cảnh — bạn đang đọc/làm gì khi nảy ra câu hỏi)

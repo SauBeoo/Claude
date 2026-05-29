@@ -176,6 +176,9 @@ Atomic note **chết** = atomic không bao giờ được mở lại. Cách trá
 | **Có "Quan điểm của tôi"** | Bạn đồng ý/phản biện gì, confidence level | Chỉ tóm tắt người khác |
 | **Có nguồn truy vết** | Link về source note | Không rõ từ đâu ra |
 | **Tái sử dụng ≥3 lần** | Dùng được trong nhiều context khác nhau | Chỉ dùng được trong 1 paper đó |
+| **Trẻ 5 tuổi hiểu được (ELI5)** | "Tưởng tượng cả lớp nhìn nhau, ai quan trọng thì nghe nhiều hơn" | "Tính trọng số softmax trên dot-product Q·K" mà không giải thích bằng lời thường |
+
+> **ELI5 — giải thích như cho trẻ 5 tuổi:** thân atomic phải đơn giản tới mức một đứa trẻ 5 tuổi cũng nắm được ý chính. Dùng ví dụ/phép so sánh đời thường (mở đầu "Tưởng tượng..." rất tốt), câu ngắn, từ quen thuộc. Thuật ngữ kỹ thuật chỉ giữ ở tiêu đề hoặc khi bắt buộc — và giải thích ngay sau đó bằng lời thường. Đây là kỹ thuật Feynman: viết được đơn giản nghĩa là bạn đã thực sự hiểu.
 
 Frontmatter chuẩn:
 ```yaml

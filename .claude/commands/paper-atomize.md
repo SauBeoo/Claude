@@ -66,7 +66,7 @@ Với mỗi atomic được chọn:
 
 3. **Quy tắc viết atomic**:
    - 1 atomic = 1 ý. Nếu viết 2 ý, tách 2 file
-   - Viết như giải thích cho người chưa đọc paper
+   - **Viết theo kiểu ELI5 — như giải thích cho một đứa trẻ 5 tuổi**: dùng ví dụ/phép so sánh đời thường (mở đầu "Tưởng tượng..." rất tốt), câu ngắn, từ quen thuộc. Thuật ngữ kỹ thuật chỉ giữ ở tiêu đề hoặc khi bắt buộc — phải giải thích ngay bằng lời thường. Tự kiểm: "đứa trẻ đọc có hình dung ra không?"
    - Dưới 300 từ. Nếu dài hơn = chưa atomic đủ
 
 4. Sau khi tạo xong, sang Phase 3.
