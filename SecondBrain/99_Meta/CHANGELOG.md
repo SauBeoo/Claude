@@ -17,6 +17,22 @@ tags: [meta, changelog, system-log]
 
 ---
 
+## 2026-05-30 — Command mới `/daily-write` (tự viết daily)
+
+**Bối cảnh:** user muốn 1 command tự viết daily thay vì chỉ tạo template rỗng (`/daily`). Chọn phương án: command MỚI riêng biệt, nguồn dữ liệu = git activity + thay đổi vault hôm nay, tự viết 2 phần "Việc xong/chưa xong" + "Đã chắt lọc". Xem [[huong-dan-van-hanh-secondbrain]] mục 8.
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `99_Meta/guides/huong-dan-van-hanh-secondbrain.md` | Mục 8: thêm dòng `/daily-write` vào bảng vai trò Claude; làm rõ `/daily` chỉ tạo template rỗng | Đăng ký command mới theo quy tắc 14.1 |
+
+### 📝 Thay đổi ngoài vault (chỉ note vắn)
+
+- `E:\Claude\.claude\commands\daily-write.md` — file command mới (tạo mới, không cần log riêng).
+
+---
+
 ## 2026-05-27 — Quy tắc viết atomic theo kiểu ELI5 (trẻ 5 tuổi hiểu được)
 
 **Bối cảnh:** user yêu cầu mọi atomic note phải trình bày dễ hiểu nhất, sao cho "một đứa trẻ 5 tuổi cũng hiểu được". User chọn phương án: **ELI5 là nội dung chính của thân note** (không thêm section riêng). Áp dụng nhất quán cho cả 2 đường tạo atomic (skill `create-atomic-note` + command `/paper-atomize`), template, và rule vault.

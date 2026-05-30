@@ -58,6 +58,12 @@ Khởi động lại `claude` trong terminal. Gõ `/` xem command, gõ `/agent r
 | `/link-notes <note1> [note2...]` | Tìm note cũ liên quan + thêm `[[wiki link]]` |
 | `/paper-full <file> <project>` | Chạy cả 3 bước, dừng giữa mỗi phase |
 
+### Học tập (gia sư)
+
+| Command | Dùng khi |
+|---------|----------|
+| `/teach <file\|folder> [trình-độ] [mục-tiêu]` | Đọc 1 file/folder rồi dạy theo quy trình gia sư (skill `tutor`). Folder → gộp 1 learning track tổng hợp |
+
 ### Bảo trì bộ não
 
 | Command | Dùng khi |

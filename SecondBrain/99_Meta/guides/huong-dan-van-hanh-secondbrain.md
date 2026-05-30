@@ -199,7 +199,8 @@ Claude Code là **trợ lý vận hành vault**, không phải thay thế suy ng
 
 | Skill / Agent | Khi dùng | Output |
 |---|---|---|
-| `/daily` | Mỗi sáng | Mở daily note hôm nay |
+| `/daily` | Mỗi sáng | Mở/tạo daily note rỗng từ template (tôi tự điền) |
+| `/daily-write` | Cuối ngày (hoặc bất kỳ) | Tự viết daily: quét git + vault hôm nay, điền "Việc xong/chưa xong" + "Đã chắt lọc"; gắn marker `_(auto)_`, không chạm phần kế hoạch/quan điểm của tôi |
 | `/paper-summarize` | Có nguồn mới, chỉ cần tóm tắt | Source note ở 00_Inbox hoặc project |
 | `/paper-atomize` | Source note đã chín, muốn tách atomic | Atomic notes ở 50_Atomic/ |
 | `/paper-full` | Nguồn mới + muốn chạy nguyên workflow | Source + đề xuất atomic + link |
