@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.claude/agents/teacher.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/teacher.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/commands/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/compact-khi-do-dang-clear-khi-doi-task.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase-trong-ai-workflow.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/mcp-server-overhead-cost-truoc-prompt.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/prompt-cu-the-tiet-kiem-context-hon-prompt-ngan.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/skill-on-demand-vs-claudemd-always.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/tech-debt-o-leaf-node-co-the-chap-nhan.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/auto-compact-mat-nuance.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/chi-toi-uu-nhung-gi-trong-tam-kiem-soat.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/context-window-tai-nguyen-huu-han.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/subagent-context-isolation-pattern.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/subagent-reviewer-bu-bias-cua-session-chinh.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/4-thanh-phan-cua-prompt-tot-claude-code.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/calibrate-workflow-claude-code-theo-task-size.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/plan-mode-workflow-5-buoc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/test-suite-bien-code-phase-thanh-vong-lap-tu-sua.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-23.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-24.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/affiliate-MOC.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/claude-code-MOC.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +79,7 @@
       <workItem from="1779896869588" duration="222000" />
       <workItem from="1779930703942" duration="2689000" />
       <workItem from="1780037159822" duration="4113000" />
+      <workItem from="1780154173677" duration="3729000" />
     </task>
     <servers />
   </component>
