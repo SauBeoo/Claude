@@ -11,14 +11,10 @@
             "id": "96c8e4ee05fe4247",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SecondBrain/99_Meta/MOCs/claude-code-MOC.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "claude-code-MOC"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 268.5
   },
   "right": {
     "id": "bb1d5a0b82f72005",
@@ -183,8 +179,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "bf5dd3aaf62ca863",
+  "active": "96c8e4ee05fe4247",
   "lastOpenFiles": [
+    "Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md",
+    "SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md",
+    "SecondBrain/50_Atomic/concepts/progressive-disclosure-skills.md",
     "SecondBrain/00_HOME.md.tmp.22824.1e49a8447d2c",
     "SecondBrain/99_Meta/CHANGELOG.md",
     "SecondBrain/99_Meta/CHANGELOG.md.tmp.22824.75bafcc8f654",
@@ -202,13 +201,11 @@
     "SecondBrain/30_Resources/courses/README.md",
     "SecondBrain/30_Resources/courses/README.md.tmp.22824.563a35402943",
     "SecondBrain/30_Resources/books/README.md",
-    "SecondBrain/30_Resources/books/README.md.tmp.22824.5b28fb8b1c96",
     "SecondBrain/20_Areas/teaching/README.md",
     "SecondBrain/20_Areas/research-methodology/README.md",
     "SecondBrain/20_Areas/content-creation/README.md",
     "SecondBrain/20_Areas/coding-practices/README.md",
     "SecondBrain/00_HOME.md",
-    "SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md",
     "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md",
     "SecondBrain/99_Meta/MOCs/affiliate-MOC.md",
     "SecondBrain/99_Meta/MOCs/ML-MOC.md",
@@ -219,7 +216,6 @@
     "SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase-trong-ai-workflow.md",
     "SecondBrain/60_Daily/2026/05/2026-05-24.md",
     "SecondBrain/50_Atomic/claims/skill-on-demand-vs-claudemd-always.md",
-    "SecondBrain/50_Atomic/concepts/context-window-tai-nguyen-huu-han.md",
-    "SecondBrain/50_Atomic/concepts/subagent-context-isolation-pattern.md"
+    "SecondBrain/50_Atomic/concepts/context-window-tai-nguyen-huu-han.md"
   ]
 }

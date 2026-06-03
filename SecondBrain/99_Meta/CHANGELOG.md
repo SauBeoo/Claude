@@ -1,7 +1,7 @@
 ---
 type: changelog
 created: 2026-05-24
-updated: 2026-05-27
+updated: 2026-06-03
 tags: [meta, changelog, system-log]
 ---
 
@@ -14,6 +14,24 @@ tags: [meta, changelog, system-log]
 > - ❌ Tạo file mới → KHÔNG log (xem qua `git log --diff-filter=A` hoặc Obsidian).
 > - ❌ Edit nội dung do user trực tiếp gõ → KHÔNG log (chỉ log khi Claude thay mặt).
 > - Mỗi entry: file path + tóm tắt thay đổi (1 dòng) + lý do.
+
+---
+
+## 2026-06-03 — Buổi 4 Claude 101 + `/moc-update` lần đầu
+
+**Bối cảnh:** buổi học thứ 4 track [[../20_Areas/learning/claude-101/_track|claude-101]] (Module 5: Connectors/MCP + Enterprise Search + Research) tạo 4 atomic mới; sau đó chạy `/moc-update` quét batch — phát hiện đúng 4 orphan này, user duyệt "tất cả".
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `20_Areas/learning/claude-101/_track.md` | Module 5 → ✅; thêm nhật ký Buổi 4; checklist ôn Buổi 5; carry-over (Cowork/Code sai lần 2, "you see what you see" vấp 2 lần); `updated: 2026-06-03` | Quy trình chốt buổi của skill tutor |
+| `20_Areas/learning/claude-101/flashcards.md` | Thêm 7 thẻ Buổi 4 (MCP, connector types, security, Enterprise Search, decision tree 4 tools, meta-prompt) — tổng 26 thẻ | Cùng lý do |
+| `99_Meta/MOCs/claude-MOC.md` | Index 4 atomic mới vào đúng section (1 concept, 2 method, 1 claim); `updated: 2026-06-03` | `/moc-update` — không để atomic orphan |
+
+### 📝 File mới (không cần log chi tiết)
+
+- 4 atomic: `concepts/mcp-usb-c-cho-ai`, `claims/claude-chi-thay-cai-ban-thay`, `methods/chon-tool-theo-cau-hoi`, `methods/nho-ai-draft-prompt-truoc-khi-research`.
 
 ---
 

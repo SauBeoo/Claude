@@ -98,3 +98,33 @@ Upload ≥2 lần / dùng đi dùng lại (brand guide, template) → **knowledg
 Artifact tương tác (calculator, dashboard) xong có nên tin ngay không? Vì sao?
 ?
 Không. Artifact tương tác CÓ logic → có thể sai công thức/bug. Phải test 3–5 input trước khi ship — đúng tinh thần "trôi chảy ≠ đúng" (Discernment).
+
+<!-- ===== Buổi 4 (2026-06-03) — Connectors/MCP + Enterprise Search + Research ===== -->
+
+Vì sao công ty có tool nội bộ KHÔNG cần chờ Anthropic để Claude kết nối được?
+?
+Vì **MCP là chuẩn mở** (USB-C cho AI) — spec công khai, team tự viết **MCP server** cho tool của mình theo chuẩn → Claude (và mọi AI hỗ trợ MCP) cắm vào dùng ngay. Connector mọc từ cộng đồng, không từ Anthropic.
+
+Web connector vs Desktop extension khác nhau ở đâu?
+?
+**Web**: cloud services (Slack, Drive, Jira...), chạy cả web + desktop. **Desktop extension**: chạy **local** qua Claude Desktop — access file system, native app, browser control; không có trên web.
+
+Đồng nghiệp định cài MCP server vô danh từ GitHub vào máy có Gmail công ty — rủi ro THẬT là gì (và không phải là gì)?
+?
+KHÔNG phải "lộ toàn bộ hệ thống" — server chạy bằng credentials người cài, chỉ với tới data *của người đó*. Rủi ro thật: **exfiltrate inbox của họ** (vẫn đủ thành sự cố) + code local có thể xin thêm quyền file system. Quy trình: trusted source → review code → sandbox → minimal permissions.
+
+Vì sao nói "security boundary của bạn = security boundary của Claude"?
+?
+Mọi feature kết nối (Connectors, Enterprise Search, Research+integrations) chạy bằng **OAuth credentials của chính bạn** → tool gốc enforce phân quyền như khi bạn login tay. Claude thấy đúng cái bạn thấy — không hơn. Hệ quả: quyền của bạn chính là attack surface → grant tối thiểu.
+
+Enterprise Search khác gì "chat thường + connectors tự cắm"?
+?
+Connectors tự cắm = hộp đồ nghề **của bạn** (tự setup từng cái, phải biết data ở tool nào). Enterprise Search = hộp đồ nghề **của cả org, sắp sẵn**: admin setup 1 lần, custom instructions, Claude tự search nhiều nguồn đồng thời. Nhưng user vẫn authenticate credentials riêng → permissions không đổi.
+
+4 câu hỏi → 4 tool: chọn thế nào giữa Web search / Extended Thinking / Enterprise Search / Research?
+?
+Quick fact 1-2 nguồn → **Web search** (giây). Suy luận thuần không cần info ngoài → **Extended Thinking**. Knowledge nội bộ org → **Enterprise Search** (~30s). Đa nguồn + report + citation → **Research** (5-45 phút).
+
+Muốn chạy Research về domain mình mù tịt — làm sao viết được [SECTIONS]?
+?
+2 nhịp: (1) sections sinh từ **quyết định của bạn** (lo tiền → mục chi phí; phải chọn → mục khuyến nghị), không cần biết domain; (2) phần domain-specific → **chat thường nhờ Claude draft prompt trước** ("sections nào hữu ích? constraints nào nên có?"), duyệt xong mới bấm Research. 3-5 phút craft đỡ 30-60 phút report rác.

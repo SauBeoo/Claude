@@ -1,7 +1,7 @@
 ---
 type: learning-track
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-06-03
 subject: "Claude 101 — làm chủ hệ sinh thái Claude"
 source: "E:\\Claude\\SecondBrain\\00_Inbox\\Anthropic courses\\01 - Claude 101 (17 PDF)"
 level_start: "intermediate"   # đã rành agent/Claude Code, chưa chuyên sâu hệ sinh thái Claude.ai
@@ -26,7 +26,7 @@ Các module sắp theo thứ tự phụ thuộc. Trạng thái: ⬜ chưa học 
 | 2 | **AI Fluency: 4D Framework + Iteration + Eval (1.3)** ⭐ | ✅ đã thạo | Buổi 1 | 5 | 7 |
 | 3 | Môi trường: Chat / Cowork / Code (1.4) | ✅ đã thạo | Buổi 2 | 4 | 6 |
 | 4 | Tổ chức việc: Projects + Artifacts + Skills (1.5–1.7) ⭐ | ✅ đã thạo | Buổi 3 | 4 | 6 |
-| 5 | Mở rộng: Connectors/MCP + Enterprise Search + Research (1.8–1.10) | ⬜ | - | - | - |
+| 5 | Mở rộng: Connectors/MCP + Enterprise Search + Research (1.8–1.10) | ✅ đã thạo | Buổi 4 | 4 | 7 |
 | 6 | Thực chiến + Tổng kết + Tự kiểm tra (1.11–1.14) | ⬜ | - | - | - |
 
 ## Nhật ký buổi học
@@ -52,15 +52,24 @@ Các module sắp theo thứ tự phụ thuộc. Trạng thái: ⬜ chưa học 
 - **Atomic tạo:** [[projects-store-knowledge-skills-perform-tasks]], [[progressive-disclosure-skills]], [[instructions-project-nhu-code]], [[artifacts-output-tuong-tac]]
 - **Flashcards thêm:** 6 thẻ
 
-## Ôn buổi sau (đầu Buổi 4)
-- [ ] Anti-pattern "skill quá generic": khi nào KHÔNG nên tạo skill.
-- [ ] (Buổi 2) Cowork vs Code: đụng codebase → Code.
-- [ ] (Buổi 1) Delegation-Diligence loop: test trên data cũ có ground truth.
+### Buổi 4 — 2026-06-03 — Mở rộng: Connectors/MCP + Enterprise Search + Research
+- **Đã dạy:** Connectors giết vai middleware (read + take action); MCP = "USB-C cho AI" (chuẩn mở, ai cũng viết MCP server); 2 loại connector (web/desktop extension); security 4 nguyên tắc (scoped, you-see-what-you-see, revocable, review code untrusted); Enterprise Search = pre-built Project cho org, 2-step setup (admin configure / user authenticate riêng); Research mode agentic multi-step + decision tree 4 tools; craft prompt 5 phần; meta-prompt nhờ Claude draft trước khi Research.
+- **Bài tập / kết quả:** (1) Ôn đầu buổi 2/3: skill generic ✓ (nhớ "quy trình"), Cowork/Code ✗ (đoán thêm điều kiện sai — lần 2), ground truth ✓ (thiếu ý mẫu đủ lớn). (2) Decision tree 4 tools: **4/4 đúng**. (3) MCP server cho tool nội bộ — suy ra được sau scaffold USB-C. (4) Research prompt: ban đầu thiếu hẳn SECTIONS + CITATIONS; sau khi hạ độ khó ("section = câu hỏi cho quyết định") tự viết được 3 sections tốt; vẫn quên đưa 3 tính năng bắt buộc thành section check.
+- **Điểm user chưa chắc:** (a) Phản xạ "đọc được TOÀN BỘ hệ thống" — nói sai 2 lần trong buổi, ngược nguyên tắc you-see-what-you-see; (b) Cowork vs Code vẫn lung lay (lần 2); (c) Viết [SECTIONS] từ quyết định — mới vỡ ra trong buổi, cần luyện thêm.
+- **Atomic tạo:** [[mcp-usb-c-cho-ai]], [[claude-chi-thay-cai-ban-thay]], [[chon-tool-theo-cau-hoi]], [[nho-ai-draft-prompt-truoc-khi-research]]
+- **Flashcards thêm:** 7 thẻ
+
+## Ôn buổi sau (đầu Buổi 5)
+- [ ] (Buổi 4 — vấp 2 lần) "You see what you see": connector/Enterprise Search có đọc được "toàn bộ hệ thống" không? Vì sao không?
+- [ ] (Buổi 2 — vấp 2 lần) Cowork vs Code: đụng codebase → Code, không có điều kiện phụ.
+- [ ] (Buổi 4) Sections của Research prompt sinh ra từ đâu khi mù domain?
 
 ## Điểm yếu cần củng cố (carry-over)
 
-- [x] Iterate: ràng buộc độ dài/format — ✅ ôn đầu Buổi 2, đã chắc.
-- [x] Delegation-Diligence loop: test trên data cũ có đáp án — ✅ ôn đầu Buổi 2, đã chắc.
+- [x] Iterate: ràng buộc độ dài/format — ✅ tự nhớ ở Buổi 4 (ghi "500 từ" không cần nhắc), xóa sổ.
+- [x] Delegation-Diligence loop: test trên data cũ có đáp án — ✅ ôn đầu Buổi 2 + Buổi 4, đã chắc.
+- [x] Anti-pattern "skill quá generic" — ✅ ôn đầu Buổi 4, nhớ đúng chữ "quy trình/methodology".
+- [ ] Cowork vs Code — ✗ sai lần 2 ở Buổi 4 (tự chế điều kiện "test xong mới dùng Cowork"). Ôn lại Buổi 5.
 
 ## Ý tưởng mở rộng / câu hỏi mở
 
