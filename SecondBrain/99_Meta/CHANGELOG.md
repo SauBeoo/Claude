@@ -1,7 +1,7 @@
 ---
 type: changelog
 created: 2026-05-24
-updated: 2026-06-03
+updated: 2026-06-08
 tags: [meta, changelog, system-log]
 ---
 
@@ -14,6 +14,24 @@ tags: [meta, changelog, system-log]
 > - ❌ Tạo file mới → KHÔNG log (xem qua `git log --diff-filter=A` hoặc Obsidian).
 > - ❌ Edit nội dung do user trực tiếp gõ → KHÔNG log (chỉ log khi Claude thay mặt).
 > - Mỗi entry: file path + tóm tắt thay đổi (1 dòng) + lý do.
+
+---
+
+## 2026-06-08 — Buổi 5 Claude 101 (HOÀN TẤT KHÓA) + `/moc-update`
+
+**Bối cảnh:** buổi cuối track [[../20_Areas/learning/claude-101/_track|claude-101]] (Module 6: Use cases by role + Flavors + Tổng kết/Quiz 1.11–1.14). Tạo 2 atomic mới; chạy `/moc-update` phát hiện đúng 2 orphan, user duyệt "ok". Track chuyển `status: done` — 6/6 module, 18 atomic, 32 flashcards.
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `20_Areas/learning/claude-101/_track.md` | Module 6 → ✅; nhật ký Buổi 5; đánh dấu khóa hoàn tất; `status: learning→done`; carry-over còn lại (Context trong C-T-R, Research vs web search); `updated: 2026-06-08` | Quy trình chốt buổi của skill tutor |
+| `20_Areas/learning/claude-101/flashcards.md` | Thêm 6 thẻ Buổi 5 (scoring framework, flavors, Chrome preview, C-T-R Context) — tổng 32 thẻ | Cùng lý do |
+| `99_Meta/MOCs/claude-MOC.md` | Index 2 atomic mới (1 concept, 1 method); `updated: 2026-06-08` | `/moc-update` — không để atomic orphan |
+
+### 📝 File mới (không cần log chi tiết)
+
+- 2 atomic: `methods/cham-diem-chon-use-case`, `concepts/claude-flavors-cung-tri-tue-nhieu-cua`.
 
 ---
 

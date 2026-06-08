@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Rules",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,11 +70,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 386.5
   },
   "right": {
     "id": "bb1d5a0b82f72005",
@@ -181,41 +182,41 @@
   },
   "active": "96c8e4ee05fe4247",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "SecondBrain/99_Meta/CHANGELOG.md.tmp.15608.55dfd54ec323",
+    "SecondBrain/99_Meta/CHANGELOG.md.tmp.15608.e397956b9800",
+    "SecondBrain/99_Meta/MOCs/claude-MOC.md.tmp.15608.5d7b953c637c",
+    "SecondBrain/99_Meta/MOCs/claude-MOC.md.tmp.15608.1c7fe4919471",
+    "SecondBrain/99_Meta/MOCs/claude-MOC.md.tmp.15608.fb260ba85caa",
+    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.218889efb591",
+    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.487653c5e647",
+    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.d20458f6b902",
+    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.245b787c03d7",
+    "SecondBrain/20_Areas/learning/claude-101/flashcards.md.tmp.15608.a77de1495981",
+    "SecondBrain/50_Atomic/concepts/claude-flavors-cung-tri-tue-nhieu-cua.md",
+    "SecondBrain/99_Meta/MOCs/claude-MOC.md",
+    "SecondBrain/20_Areas/learning/claude-101/flashcards.md",
+    "SecondBrain/50_Atomic/methods/cham-diem-chon-use-case.md",
+    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md",
+    "SecondBrain/50_Atomic/concepts/4d-framework-ai-fluency.md",
+    "SecondBrain/50_Atomic/methods/nho-ai-draft-prompt-truoc-khi-research.md",
+    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md",
+    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md",
+    "SecondBrain/50_Atomic/claims/cowork-code-chung-engine-agentic.md",
+    "SecondBrain/50_Atomic/claims/delegate-repeatable-keep-judgment.md",
+    "SecondBrain/50_Atomic/claims/output-troi-chay-khong-dong-nghia-dung.md",
+    "SecondBrain/50_Atomic/claims/claude-chi-thay-cai-ban-thay.md",
+    "SecondBrain/50_Atomic/concepts/3-che-do-claude-desktop.md",
     "Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md",
     "SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md",
     "SecondBrain/50_Atomic/concepts/progressive-disclosure-skills.md",
-    "SecondBrain/00_HOME.md.tmp.22824.1e49a8447d2c",
     "SecondBrain/99_Meta/CHANGELOG.md",
-    "SecondBrain/99_Meta/CHANGELOG.md.tmp.22824.75bafcc8f654",
-    "SecondBrain/00_HOME.md.tmp.22824.057228332484",
-    "SecondBrain/00_HOME.md.tmp.22824.20bd749d0cee",
-    "SecondBrain/99_Meta/templates/daily.md.tmp.22824.4b2c009c50bc",
     "SecondBrain/30_Resources/web-development/README.md",
-    "SecondBrain/30_Resources/web-development/README.md.tmp.22824.84f8f57d8568",
     "SecondBrain/30_Resources/video-editing/README.md",
-    "SecondBrain/30_Resources/video-editing/README.md.tmp.22824.ad8ef0a41262",
     "SecondBrain/30_Resources/people/README.md",
-    "SecondBrain/30_Resources/people/README.md.tmp.22824.578b1bc63cea",
     "SecondBrain/30_Resources/machine-learning/README.md",
-    "SecondBrain/30_Resources/machine-learning/README.md.tmp.22824.fab5443d9687",
     "SecondBrain/30_Resources/courses/README.md",
-    "SecondBrain/30_Resources/courses/README.md.tmp.22824.563a35402943",
     "SecondBrain/30_Resources/books/README.md",
-    "SecondBrain/20_Areas/teaching/README.md",
-    "SecondBrain/20_Areas/research-methodology/README.md",
-    "SecondBrain/20_Areas/content-creation/README.md",
-    "SecondBrain/20_Areas/coding-practices/README.md",
-    "SecondBrain/00_HOME.md",
-    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md",
-    "SecondBrain/99_Meta/MOCs/affiliate-MOC.md",
-    "SecondBrain/99_Meta/MOCs/ML-MOC.md",
-    "SecondBrain/99_Meta/MOCs/claude-code-MOC.md",
-    "SecondBrain/50_Atomic/concepts/auto-compact-mat-nuance.md",
-    "SecondBrain/50_Atomic/claims/compact-khi-do-dang-clear-khi-doi-task.md",
-    "SecondBrain/50_Atomic/claims/mcp-server-overhead-cost-truoc-prompt.md",
-    "SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase-trong-ai-workflow.md",
-    "SecondBrain/60_Daily/2026/05/2026-05-24.md",
-    "SecondBrain/50_Atomic/claims/skill-on-demand-vs-claudemd-always.md",
-    "SecondBrain/50_Atomic/concepts/context-window-tai-nguyen-huu-han.md"
+    "SecondBrain/20_Areas/teaching/README.md"
   ]
 }

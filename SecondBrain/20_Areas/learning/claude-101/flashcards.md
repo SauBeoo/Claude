@@ -128,3 +128,29 @@ Quick fact 1-2 nguồn → **Web search** (giây). Suy luận thuần không c�
 Muốn chạy Research về domain mình mù tịt — làm sao viết được [SECTIONS]?
 ?
 2 nhịp: (1) sections sinh từ **quyết định của bạn** (lo tiền → mục chi phí; phải chọn → mục khuyến nghị), không cần biết domain; (2) phần domain-specific → **chat thường nhờ Claude draft prompt trước** ("sections nào hữu ích? constraints nào nên có?"), duyệt xong mới bấm Research. 3-5 phút craft đỡ 30-60 phút report rác.
+
+<!-- ===== Buổi 5 (2026-06-08) — Use cases by role + Flavors + Tổng kết khóa ===== -->
+
+Công thức chấm điểm chọn use case đầu tiên? Tiêu chí nào nặng nhất, nhẹ nhất, vì sao?
+?
+`Frequency×3 + Time saved×2 + Setup effort×1 + Variability×2`. **Frequency ×3 nặng nhất** (làm càng thường, lợi ích càng cộng dồn). **Setup ×1 nhẹ nhất** vì setup chỉ tốn *một lần*, còn lợi ích lặp mãi.
+
+Vì sao "chọn việc tốn nhiều giờ nhất mỗi lần để tự động hóa trước" là bẫy?
+?
+Vì nó chỉ nhìn **một lần**, quên tần suất. Việc ngốn 4h nhưng cả quý 1 lần thua xa việc 15 phút làm mỗi ngày. Insight: **tần suất × độ ổn định ăn đứt thời-gian-mỗi-lần**.
+
+"Claude" có phải là trang claude.ai không? "Flavor" nghĩa là gì?
+?
+Không. **Claude là trí tuệ**; claude.ai chỉ là một cánh cửa. Flavor = cùng trí tuệ đó đặt ngay nơi bạn làm việc (Code/Slack/Excel/Chrome) để cắt cú nhảy tool (~30s + đứt tập trung mỗi lần).
+
+Khi so 2 flavor nên hỏi câu gì? (KHÔNG phải "cái nào thông minh hơn")
+?
+Hỏi **"cái này cắt được thao tác thừa nào?"** — vì cùng một trí tuệ Claude cả, khác nhau ở **ma sát thao tác**. VD Claude for Excel sửa thẳng trong file đang mở, cắt vòng upload→tải→ghép tay của claude.ai.
+
+Claude for Chrome có gì phải dè chừng?
+?
+Đang là **research preview** (chưa tôi luyện kỹ) → chỉ việc low-stakes + web tin cậy. KHÔNG dùng cho giao dịch ngân hàng, nhập dữ liệu nhạy cảm, quyết định rủi ro cao.
+
+Công thức C-T-R viết prompt gồm 3 phần nào? Phần nào người ta hay quên?
+?
+**Context** (bạn là ai, làm gì, cho ai) + **Task** (động từ, làm gì cụ thể) + **Rules** (tone, format, độ dài, ràng buộc). Hay quên nhất là **Context** — mà đó là chữ quan trọng nhất: "Claude mang trí tuệ, BẠN mang context; prompt rỗng context → output rỗng".

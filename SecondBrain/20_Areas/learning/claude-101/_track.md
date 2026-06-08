@@ -1,13 +1,13 @@
 ---
 type: learning-track
 created: 2026-05-30
-updated: 2026-06-03
+updated: 2026-06-08
 subject: "Claude 101 — làm chủ hệ sinh thái Claude"
 source: "E:\\Claude\\SecondBrain\\00_Inbox\\Anthropic courses\\01 - Claude 101 (17 PDF)"
 level_start: "intermediate"   # đã rành agent/Claude Code, chưa chuyên sâu hệ sinh thái Claude.ai
 goal: "Hiểu để dùng việc + dạy lại được cho người khác"
 tags: [claude, ai-fluency, anthropic, learning]
-status: learning
+status: done
 ---
 
 # Lộ trình học: Claude 101 — làm chủ hệ sinh thái Claude
@@ -27,7 +27,7 @@ Các module sắp theo thứ tự phụ thuộc. Trạng thái: ⬜ chưa học 
 | 3 | Môi trường: Chat / Cowork / Code (1.4) | ✅ đã thạo | Buổi 2 | 4 | 6 |
 | 4 | Tổ chức việc: Projects + Artifacts + Skills (1.5–1.7) ⭐ | ✅ đã thạo | Buổi 3 | 4 | 6 |
 | 5 | Mở rộng: Connectors/MCP + Enterprise Search + Research (1.8–1.10) | ✅ đã thạo | Buổi 4 | 4 | 7 |
-| 6 | Thực chiến + Tổng kết + Tự kiểm tra (1.11–1.14) | ⬜ | - | - | - |
+| 6 | Thực chiến + Tổng kết + Tự kiểm tra (1.11–1.14) | ✅ đã thạo | Buổi 5 | 2 | 6 |
 
 ## Nhật ký buổi học
 
@@ -59,10 +59,21 @@ Các module sắp theo thứ tự phụ thuộc. Trạng thái: ⬜ chưa học 
 - **Atomic tạo:** [[mcp-usb-c-cho-ai]], [[claude-chi-thay-cai-ban-thay]], [[chon-tool-theo-cau-hoi]], [[nho-ai-draft-prompt-truoc-khi-research]]
 - **Flashcards thêm:** 7 thẻ
 
-## Ôn buổi sau (đầu Buổi 5)
-- [ ] (Buổi 4 — vấp 2 lần) "You see what you see": connector/Enterprise Search có đọc được "toàn bộ hệ thống" không? Vì sao không?
-- [ ] (Buổi 2 — vấp 2 lần) Cowork vs Code: đụng codebase → Code, không có điều kiện phụ.
-- [ ] (Buổi 4) Sections của Research prompt sinh ra từ đâu khi mù domain?
+### Buổi 5 — 2026-06-08 — Use cases by role + Flavors + Tổng kết khóa (1.11–1.14)
+- **Ôn đầu buổi (3 carry-over):** (1) "You see what you see" — user vẫn nói lệch (đổ cho "chưa set quyền account/MCP" thay vì "không có quyền file đó trong tool gốc"), đã giảng lại kỹ bằng analogy thẻ nhân viên; (2) Cowork vs Code — **lần đầu đúng cả 2 + nói được rule "đụng codebase → Code"** ✓ xóa sổ; (3) Research [SECTIONS] mù domain — quên, đã ôn lại (meta-prompt).
+- **Đã dạy:** Scoring framework chọn use case (Freq×3 + Time×2 + Setup×1 + Variability×2; bẫy "chọn việc tốn-giờ-nhất"); setup ×1 vì chi phí một lần; 4 flavors (Code/Slack/Excel/Chrome) — "Claude là trí tuệ, flavor là cánh cửa", match-to-context, hỏi "cắt thao tác thừa nào"; Chrome = research preview (low-stakes); Slack channel công khai. Dùng 1.13 (5 nguyên tắc) + quiz 1.14 làm thi tổng kết.
+- **Bài tập / kết quả:** (1) Chọn use case A vs B: **chọn đúng A + lý do tần suất + quick win** ✓. (2) Vì sao setup ×1: đúng ("chỉ tốn 1 lần, lợi ích lặp mãi") ✓. (3) Feynman "claude.ai làm Excel được rồi cần gì sidebar": **trả lời chung chung/đoán** ("chuyên hơn") → đã siết, chỉ ra mấu chốt thật là cắt vòng upload/download. (4) Thi 6 câu tổng kết: ~4.5/6 — sai/thiếu 2 chỗ (xem dưới).
+- **Điểm user chưa chắc:** (a) **C-T-R rơi mất "Context"** — trả lời prompt formula thành Task/Constraints/Success, thiếu Context (chữ quan trọng nhất); (b) **Research vs web search** — lẫn với chuyện "mù domain", chưa nắm lằn ranh thật là *số nguồn cần tổng hợp* (đã có note [[chon-tool-theo-cau-hoi]] cover); (c) phản xạ phản biện flavor còn nói cảm tính "chuyên hơn" thay vì chỉ ma sát thao tác.
+- **Atomic tạo:** [[cham-diem-chon-use-case]], [[claude-flavors-cung-tri-tue-nhieu-cua]]
+- **Flashcards thêm:** 6 thẻ
+
+## 🎓 KHÓA HOÀN TẤT (2026-06-08)
+Học 5 buổi, 6/6 module (Module 1 skip vì đã biết). Tổng: 18 atomic + 32 flashcards. Track chuyển `status: done`.
+
+## Điểm yếu còn lại để tự ôn (sau khóa)
+- [ ] **C-T-R phải có Context** — khi viết prompt, câu hỏi đầu tiên: "đã cho Claude đủ bối cảnh chưa?"
+- [ ] **Research vs web search** = lằn ranh ở *số nguồn cần tổng hợp* (đa nguồn+citation → Research; 1-2 nguồn → web). Ôn [[chon-tool-theo-cau-hoi]].
+- [ ] "You see what you see" — Claude đeo đúng thẻ nhân viên của bạn; không vượt quyền cá nhân. (Đã đúng dần nhưng nên ôn 1 lần nữa.)
 
 ## Điểm yếu cần củng cố (carry-over)
 

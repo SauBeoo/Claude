@@ -1,7 +1,7 @@
 ---
 type: moc
 topic: claude
-updated: 2026-06-03
+updated: 2026-06-08
 tags: [moc, claude, ai-fluency, anthropic]
 status: active
 ---
@@ -17,6 +17,7 @@ status: active
 - [[progressive-disclosure-skills]] — cách Skills nạp dần, cài nhiều mà context không bloat
 - [[artifacts-output-tuong-tac]] — output đứng-một-mình, tương tác trong cửa sổ riêng
 - [[mcp-usb-c-cho-ai]] — MCP là chuẩn cắm chung mở, ai cũng viết được MCP server cho tool của mình
+- [[claude-flavors-cung-tri-tue-nhieu-cua]] — Claude là trí tuệ, "flavors" (Code/Slack/Excel/Chrome) chỉ là các cánh cửa truy cập cùng một engine
 
 ## 🛠️ Phương pháp & kỹ thuật
 - [[delegation-diligence-loop]] — test AI trên data cũ có đáp án (ground truth) trước khi giao việc thật
@@ -25,6 +26,7 @@ status: active
 - [[instructions-project-nhu-code]] — viết Project instructions như code (IF/THEN, 4 phần)
 - [[chon-tool-theo-cau-hoi]] — decision tree chọn Web search / Extended Thinking / Enterprise Search / Research
 - [[nho-ai-draft-prompt-truoc-khi-research]] — mù domain thì chat thường nhờ Claude draft prompt trước, rồi mới bấm Research
+- [[cham-diem-chon-use-case]] — chấm điểm use case theo tần suất × thời gian tiết kiệm, không chọn theo cảm tính
 
 ## 💭 Luận điểm đáng tranh luận
 - [[output-troi-chay-khong-dong-nghia-dung]] — AI trả lời trôi chảy không đồng nghĩa với đúng
