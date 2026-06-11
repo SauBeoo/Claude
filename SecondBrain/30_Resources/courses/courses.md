@@ -19,9 +19,9 @@ Note ở đây là **note khi học khóa của người khác**: Coursera, Udem
 Khi học khóa nào nhiều, tạo subfolder theo tên khóa:
 ```
 courses/
-├── README.md (file này)
+├── courses.md (file này)
 ├── fast-ai-deep-learning-2024/
-│   ├── README.md (overview khóa)
+│   ├── <tên-khóa>.md (overview khóa)
 │   ├── module-1-notes.md
 │   └── ...
 └── claude-code-101/   ← lưu ý: nếu khóa này là PROJECT bạn đang theo

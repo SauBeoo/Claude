@@ -5,23 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.claude/agents/librarian.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/librarian.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/archive-project.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/archive-project.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/daily-write.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/daily-write.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/moc-update.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/moc-update.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/commands/promote-atomic.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/commands/promote-atomic.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/ai-luoi/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/ai-luoi/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/00_CHIEN_LUOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/freelance-kit/00_CHIEN_LUOC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/LOOM_SCRIPT.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/LOOM_SCRIPT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/research-llm-education-2026/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/student-grade-app/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/papers/ai-affiliate-funnel.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/papers/ai-affiliate-funnel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/00_HOME.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/00_HOME.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/00_Inbox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/glowup-studio/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/coding-practices/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/content-creation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/learning/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/research-methodology/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/20_Areas/teaching/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/books/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/courses/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/machine-learning/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/people/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/video-editing/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/30_Resources/web-development/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/40_Archive/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-30.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/05/2026-05-30.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/06/2026-06-03.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/60_Daily/2026/06/2026-06-03.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/60_Daily/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/claude-code-MOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/MOCs/claude-code-MOC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/tag-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/tag-system.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/daily.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/templates/daily.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +123,7 @@
       <workItem from="1780494266229" duration="6716000" />
       <workItem from="1780839905709" duration="5390000" />
       <workItem from="1780923833088" duration="10035000" />
-      <workItem from="1781184751841" duration="8009000" />
+      <workItem from="1781184751841" duration="10782000" />
     </task>
     <servers />
   </component>

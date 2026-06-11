@@ -45,7 +45,7 @@ Mục đích: định kỳ (quý hoặc khi cảm thấy "vault có note nhưng 
 ### Phase 1: Inventory
 
 1. Nếu có `$1`: tìm file `50_Atomic/**/<$1>.md`. Không thấy → báo lỗi, dừng.
-   Nếu không có `$1`: `Glob` `E:\Claude\SecondBrain\50_Atomic\**\*.md`, bỏ `README.md`.
+   Nếu không có `$1`: `Glob` `E:\Claude\SecondBrain\50_Atomic\**\*.md`, bỏ folder note `50_Atomic.md`.
 
 2. Với mỗi atomic, đọc frontmatter lấy: `type`, `status`, `created`, `tags`.
 

@@ -19,7 +19,7 @@
 | `daily.md` | Daily note hằng ngày |
 | `lecture.md` | Soạn 1 buổi giảng |
 | `video-script.md` | Kịch bản video |
-| `project-readme.md` | README cho project mới |
+| `project-readme.md` | Note tổng quan project mới (folder note `<project>.md`) |
 
 ## Cách cấu hình Obsidian dùng templates
 

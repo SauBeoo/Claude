@@ -56,3 +56,15 @@ Cấu hình Claude:
 - Bài học chung không gắn project → `SecondBrain\20_Areas\` hoặc `30_Resources\`
 
 Mỗi project repo nên có `CLAUDE.md` riêng chỉ rõ vault path tương ứng.
+
+## Đặt tên file tổng quan (folder-note) — graph hygiene
+
+**File tổng quan của một folder/project = tên folder, KHÔNG dùng `README.md`.**
+Vd: `Projects/glowup-studio/glowup-studio.md`, `SecondBrain/10_Projects/<x>/<x>.md`, `SecondBrain/50_Atomic/50_Atomic.md`.
+
+- Lý do: graph Obsidian lấy nhãn node = tên file → mỗi folder hiện 1 hub có nhãn rõ; tránh loạt chấm "README" trùng nhau; tránh bị filter `-file:"README"` ẩn nhầm node hub.
+- `README.md` chỉ giữ ở gốc workspace (`E:\Claude\README.md`) và các template.
+
+**Khi tạo project mới → tạo folder-note ở CẢ hai chỗ:**
+1. `Projects/<name>/<name>.md` — tổng quan repo code (mục tiêu, cấu trúc, cách chạy).
+2. `SecondBrain/10_Projects/<name>/<name>.md` — folder note tri thức (trỏ về repo, ghi research/bài học).

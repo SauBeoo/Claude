@@ -17,6 +17,33 @@ tags: [meta, changelog, system-log]
 
 ---
 
+## 2026-06-11 — Đổi README index → folder-note để graph đọc được; dọn lại filter graph
+
+**Bối cảnh:** graph rối vì (1) filter `search` trong `graph.json` bị reset về rỗng → index lại cả `Projects/`; (2) hàng chục file `README.md` (mỗi folder PARA + mỗi project) hiện cùng nhãn "README" trong graph → không phân biệt được node nào là gì. Xử lý: **đổi tên README index theo folder-note convention** (`<folder>/<folder>.md`) để node có nhãn rõ; và sau khi thử giữ cả Projects thấy vẫn rối, **chốt graph = chỉ tri thức SecondBrain** (khôi phục chuẩn cũ `path:SecondBrain`), ẩn node operational + ẩn chấm cô đơn.
+
+### 🔧 Thay đổi file đang tồn tại
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `E:\Claude\.obsidian\graph.json` | `search` rỗng → ẩn config + node operational (`-path:".obsidian" -path:".claude" -file:"CHANGELOG" -file:"README" -file:"CLAUDE" -file:"00_HOME" -file:"tag-system" -file:"flashcards" -file:"track" -path:"60_Daily" -path:"99_Meta/templates" -path:"99_Meta/guides"`) NHƯNG giữ Projects; `showOrphans:true→false`; 6 color group (5 tầng SecondBrain + Projects cam) | Graph = tri thức SecondBrain + cụm Projects, ẩn operational + chấm cô đơn |
+| 21× `SecondBrain/**/README.md` → `<folder>/<folder>.md` | Rename folder-note (vd `10_Projects/README.md`→`10_Projects/10_Projects.md`, `50_Atomic/README.md`→`50_Atomic/50_Atomic.md`) | Graph hiện nhãn folder rõ thay vì loạt "README" trùng |
+| 9× `Projects/**/README.md` → `<folder>/<folder>.md` | Rename README các code repo (glowup-studio + sub, ai-luoi, freelance-kit demos, research-llm, student-grade-app, youtube-kham-pha) | Cùng lý do |
+| `00_HOME.md` | 3 link `…/claude-code-101/README`, `…/idea-aff/README`, `50_Atomic/README` → folder-note mới | Theo file đã đổi tên |
+| `99_Meta/MOCs/claude-code-MOC.md`, `…/sources/2026-claude-code-101-epcc-workflow.md` | Link `…/claude-code-101/README` → `…/claude-code-101/claude-code-101` | nt |
+| `Projects/glowup-studio/glowup-studio.md`, `Projects/freelance-kit/00_CHIEN_LUOC.md`, `Projects/glowup-studio/CLAUDE.md` | Sửa link/text nội bộ trỏ README đã đổi tên | nt |
+| `.claude/commands/{archive-project,moc-update,promote-atomic}.md` | Bỏ hardcode `README.md`: archive đọc/ghi `10_Projects/$1/$1.md`; moc/promote bỏ glob `50_Atomic.md` | Command từng hardcode README → gãy sau rename |
+| `.claude/agents/librarian.md`, `.claude/CLAUDE.md` (vault) | Note dự án = folder note; cập nhật mục graph hygiene (5,6) theo filter mới (`path:SecondBrain` + ẩn operational, `showOrphans:false`) | Đồng bộ doc với thực tế |
+| `99_Meta/guides/huong-dan-van-hanh-secondbrain.md` | Cập nhật mục 15.5/15.6, sơ đồ cây, bảng command | nt |
+| `tag-system.md`, `99_Meta.md`, `40_Archive/40_Archive.md`, `10_Projects/10_Projects.md`, `30_Resources/courses/courses.md` | Sửa text/sơ đồ cây "README" → tên folder note | Đồng bộ tài liệu |
+| `60_Daily/2026/05/2026-05-30.md`, `60_Daily/2026/06/2026-06-03.md` | Gỡ toàn bộ `[[wikilink]]` trong section "📚 Đã chắt lọc" + EVENING → đổi thành text/backtick (atomic, MOC, _track, flashcards) | User muốn daily không nối vào cụm tri thức trong graph; giữ tên note dạng text để vẫn đọc được provenance |
+| `99_Meta/templates/daily.md`, `.claude/commands/daily-write.md` | Đổi quy ước section "📚 Đã chắt lọc": ghi tên note dạng text/backtick thay vì `[[wikilink]]` | Để daily TƯƠNG LAI cũng không tự nối vào graph (tutor không ghi daily nên không cần sửa) |
+
+**File mới (không thuộc diện log, ghi để truy vết):** `10_Projects/claude-code-101/claude-code-101.md`, `10_Projects/idea-aff/idea-aff.md` — folder note cho 2 project thiếu index (4 link trong `00_HOME`/MOC trước đó dangling, nay đã trỏ đúng).
+
+**Lưu ý:** chốt cuối — graph hiện **cả SecondBrain (tri thức) lẫn Projects (cụm cam)**; chìa khoá giữ gọn là ẩn hết node operational/config + `showOrphans:false` (thay vì loại nguyên `path:SecondBrain`). User đã chỉnh tay các thông số lực/hiển thị (`textFadeMultiplier`, `repelStrength`, `scale`...) → giữ nguyên, không đụng.
+
+---
+
 ## 2026-06-11 — Dọn graph: ẩn file operational ngoài SecondBrain, nối provenance idea-aff
 
 **Bối cảnh:** user thấy graph nhiều chấm lẻ. Nguyên nhân chính: vault Obsidian mở từ `E:\Claude` nên graph hiển thị cả ~35 file .md operational trong `Projects/` (roadmap, chiến lược, README các code repo) — không phải tri thức, không có link. Xử lý theo quy tắc graph hygiene: ẩn operational, chỉ nối link thật.

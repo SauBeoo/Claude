@@ -49,7 +49,7 @@ tags: [daily]
 
 ## 📚 Đã chắt lọc (OPTIONAL — Claude tự fill khi bạn dùng skill)
 
-*Source đã xử lý + atomic notes mới trong ngày — link đầy đủ.*
+*Source đã xử lý + atomic notes mới trong ngày — ghi **tên note dạng text/backtick**, KHÔNG dùng `[[wikilink]]` (để daily không kéo cụm tri thức trong graph). Muốn mở note → tra bằng tên hoặc Backlinks.*
 
 **Sources:**
 - 

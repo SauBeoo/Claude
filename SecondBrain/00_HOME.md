@@ -14,8 +14,8 @@ last_audit: 2026-05-24
 ## 🎯 Đang làm (Phase 3 commitments)
 
 **Project active:**
-- [[10_Projects/claude-code-101/README|claude-code-101]] — học & viết content về Claude Code
-- [[10_Projects/idea-aff/README|idea-aff]] — ý tưởng affiliate marketing
+- [[10_Projects/claude-code-101/claude-code-101|claude-code-101]] — học & viết content về Claude Code
+- [[10_Projects/idea-aff/idea-aff|idea-aff]] — ý tưởng affiliate marketing
 
 **Deliverable tuần này (2026 W21):**
 - [ ] [[thread-quan-ly-context]] — thread 5 sai lầm về context Claude Code *(draft v1 xong)*
@@ -41,7 +41,7 @@ last_audit: 2026-05-24
 
 **Tham chiếu thường xuyên:**
 - [[huong-dan-van-hanh-secondbrain]] — workflow tổng (đọc lại đầu tháng)
-- [[50_Atomic/README]] — quy tắc atomic note
+- [[50_Atomic/50_Atomic]] — quy tắc atomic note
 - `99_Meta/templates/` — template các loại note
 - [[99_Meta/CHANGELOG]] — log thay đổi hệ thống do Claude thực hiện
 

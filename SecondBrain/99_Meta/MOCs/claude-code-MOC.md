@@ -9,7 +9,7 @@ status: active
 # 🗺️ Claude Code — Vận hành chuyên nghiệp — Map of Content
 
 > Tri thức chắt từ khoá **Claude Code 101** (gốc Anthropic, bản tiếng Việt).
-> Project: [[../../10_Projects/claude-code-101/README|claude-code-101]] · Hệ sinh thái Claude.ai nói chung → [[claude-MOC]]
+> Project: [[../../10_Projects/claude-code-101/claude-code-101|claude-code-101]] · Hệ sinh thái Claude.ai nói chung → [[claude-MOC]]
 
 ## 📝 Bài 2.3 — Prompt Đầu Tiên
 - [[prompt-la-brief-khong-phai-command]] — prompt là bản brief cho kỹ sư mới, không phải câu lệnh

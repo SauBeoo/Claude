@@ -55,11 +55,11 @@ Khi user yêu cầu "chắt lọc tuần này":
 
 ## Quy trình archive project
 
-1. Đọc README project
+1. Đọc note dự án (folder note `<project>.md`)
 2. Chạy checklist:
    - [ ] Đã có ≥3 atomic notes từ project chưa? (Liệt kê)
    - [ ] Có `post-mortem.md` chưa?
-   - [ ] README có status DONE không?
+   - [ ] Note dự án có status DONE không?
    - [ ] Outputs cuối ở `outputs/` chưa?
 3. Báo cáo checklist, nhắc user điền cái còn thiếu
 4. Khi đầy đủ → đề xuất `mv 10_Projects/<X> 40_Archive/<năm>/`

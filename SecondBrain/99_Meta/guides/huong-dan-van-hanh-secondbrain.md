@@ -208,7 +208,7 @@ Claude Code là **trợ lý vận hành vault**, không phải thay thế suy ng
 | `find-related-notes` skill | Trước khi viết note mới về X | List note đã có về X |
 | `/inbox-clean` | Sunday review, dọn 00_Inbox | Đề xuất move (không tự move) |
 | `/moc-update` | Sunday review, sync MOC | List atomic chưa index |
-| `/archive-project <tên>` | Project xong, chuyển sang 40_Archive | Checklist → update README → log CHANGELOG → move folder |
+| `/archive-project <tên>` | Project xong, chuyển sang 40_Archive | Checklist → update note dự án → log CHANGELOG → move folder |
 | `/promote-atomic [<slug>]` | Định kỳ (quý) nâng status seed→growing→evergreen | Báo cáo theo tiêu chí link/tuổi/usage, chờ duyệt từng note |
 | Agent `researcher` | Đọc paper khó/dài, cần chuyên sâu | Source note chi tiết |
 | Agent `creator` | Sản xuất output dài (blog, video script) | Output ở 10_Projects/<X>/outputs/ |
@@ -291,7 +291,7 @@ SecondBrain/
 │
 ├── 10_Projects/           # Việc đang chạy, có deadline / mục tiêu
 │   └── <project>/
-│       ├── README.md      # Mục tiêu, status, deadline
+│       ├── <project>.md   # Folder note: mục tiêu, status, deadline
 │       ├── sources/       # Phase 1: source note
 │       ├── notes/         # Ghi chú họp, sinh viên
 │       └── outputs/       # Phase 3: deliverable thực tế
@@ -412,12 +412,17 @@ Nối hai cụm chủ đề chỉ bằng 1–2 nhịp cầu thật đắt giá, 
 - Note nguồn một khóa học → `30_Resources/courses/<slug>.md`.
 
 ### 15.5. Node nên ẩn khỏi global graph
-Loại operational/log/study (không phải tri thức) → lọc qua *Graph settings → Filters*: `daily`, `_track`, `flashcards`, `CHANGELOG`, `README`, `templates`, `guides`, `00_HOME`, và note nguồn khóa (fan trùng MOC). Provenance/log xem bằng **Local Graph** + Backlinks, không nhồi vào global.
+Loại operational/log/study (không phải tri thức) → lọc qua *Graph settings → Filters*: `daily`, `_track`, `flashcards`, `CHANGELOG`, `CLAUDE`, `README` (chỉ còn README gốc workspace + README các code repo chưa đổi tên), `templates`, `guides`, `00_HOME`, và note nguồn khóa (fan trùng MOC). Provenance/log xem bằng **Local Graph** + Backlinks, không nhồi vào global.
+
+> **Lưu ý (2026-06-11):** note index của mỗi folder PARA không còn tên `README.md` mà đổi theo **folder-note convention** (`<folder>/<folder>.md`, vd `10_Projects/10_Projects.md`, `50_Atomic/50_Atomic.md`). Nhờ vậy khi hiện trong graph chúng có nhãn rõ ràng (hub của folder) thay vì loạt chấm "README" trùng tên. README code repo trong `Projects/` cũng đã đổi tên theo folder.
 
 ### 15.6. Baseline `.obsidian/graph.json`
-`showOrphans:false`, `hideUnresolved:true`, `textFadeMultiplier` âm (nhãn chỉ hiện khi zoom gần), tô màu theo tầng PARA, `repelStrength` cao để giãn node.
+Vault Obsidian mở từ `E:\Claude` nên graph index cả `Projects/` lẫn `SecondBrain/`. Cấu hình hiện tại (2026-06-11) — **graph hiện cả tri thức SecondBrain lẫn cụm Projects**, giữ gọn bằng cách ẩn operational + orphan:
+- **Filter:** `-path:".obsidian" -path:".claude" -file:"CHANGELOG" -file:"README" -file:"CLAUDE" -file:"00_HOME" -file:"tag-system" -file:"flashcards" -file:"track" -path:"60_Daily" -path:"99_Meta/templates" -path:"99_Meta/guides"` — ẩn config + node operational (cả vault lẫn root), **không** loại `Projects/`.
+- **Color group**: 5 tầng PARA của SecondBrain + `Projects/` (cam) để tách cụm code/dự án khỏi tri thức.
+- `showOrphans:false` (đã thử `true` thấy rối → tắt chấm cô đơn; nhờ vậy file Projects lẻ không nối cũng không hiện), `hideUnresolved:true`. Thông số lực/hiển thị (`textFadeMultiplier`, `repelStrength`, `scale`...) do user tự tinh chỉnh trong app.
 
-> Chấm cô đơn còn lại trong graph = "đèn báo" chủ đề chưa được chắt/nối — hữu ích, không phải lỗi. Đừng cố nối ép.
+> Bài học: muốn graph gọn mà vẫn đủ → ẩn theo **vai trò** (operational/config) + tắt orphan, đừng loại nguyên một cây thư mục. Muốn xem "đèn báo" chủ đề chưa chắt → bật tạm `showOrphans`.
 
 ---
 

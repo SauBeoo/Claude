@@ -14,7 +14,7 @@ Dùng khi: cuối tuần / định kỳ muốn đảm bảo mọi atomic đều 
 
 ### Bước 1: Inventory
 
-1. Quét toàn bộ atomic: `Glob` `E:\Claude\SecondBrain\50_Atomic\**\*.md` (bỏ `README.md`).
+1. Quét toàn bộ atomic: `Glob` `E:\Claude\SecondBrain\50_Atomic\**\*.md` (bỏ folder note `50_Atomic.md`).
 
 2. Với mỗi atomic, đọc frontmatter, lấy:
    - `type` (concept/claim/method/question)

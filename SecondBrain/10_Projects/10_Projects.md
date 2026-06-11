@@ -21,7 +21,7 @@ Mỗi project = 1 thư mục con. Project có **deadline** và **kết quả c�
 
 ```
 <project-name>/
-├── README.md           # Mục tiêu, deadline, status, link tới project repo nếu có
+├── <project>.md        # Folder note: mục tiêu, deadline, status, link tới project repo nếu có
 ├── notes/              # Ghi chú quá trình làm
 ├── papers/             # (Nếu nghiên cứu) — atomic note cho từng paper đọc
 ├── outputs/            # Sản phẩm: slide, paper, video, code

@@ -26,7 +26,7 @@ Khi project xong, trước khi `mv` vào đây, hãy làm checklist:
 
 - [ ] Đã chắt lọc ít nhất 3 atomic notes từ project này chưa? (`50_Atomic/`)
 - [ ] Đã thêm "post-mortem.md" trong project: cái gì hay, cái gì dở, nếu làm lại sẽ làm khác?
-- [ ] Đã update README của project với status "DONE — <ngày>"?
+- [ ] Đã update note dự án (folder note) với status "DONE — <ngày>"?
 - [ ] Outputs cuối cùng (paper, slide, video link) đã được lưu trong `outputs/`?
 
 Sau đó:

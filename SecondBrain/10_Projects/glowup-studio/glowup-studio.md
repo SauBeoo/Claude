@@ -21,7 +21,7 @@ khoản nợ 1 tỷ (lãi 8%) từ ~7 năm xuống 3–4 năm, đồng thời x�
 
 ```
 10_Projects/glowup-studio/
-├── README.md      # file này
+├── glowup-studio.md  # file này (folder note)
 ├── sources/       # tư liệu tham khảo (web spa đẹp, đối thủ, mẫu báo giá, research n8n cho spa)
 └── outputs/       # sản phẩm tri thức rút ra (atomic notes, bài học sau mỗi khách, thread chia sẻ)
 ```

@@ -43,7 +43,7 @@ Khi tạo note mới, dùng template tương ứng ở `99_Meta/templates/`:
 - Daily → `daily.md`
 - Lecture → `lecture.md`
 - Video script → `video-script.md`
-- Project README → `project-readme.md`
+- Note dự án (folder note `<project>.md`) → `project-readme.md`
 
 ## Khi tôi nhờ "tóm tắt paper này"
 
@@ -82,9 +82,10 @@ Mục tiêu: graph là **đồ thị tri thức**, không phải đồ thị tha
    - Trong source/course note: liệt kê atomic đã chắt ra + link tới MOC.
    - Note nguồn của một khóa học đặt ở `30_Resources/courses/<slug>.md`.
 
-5. **Node nên ẩn khỏi global graph** (loại operational/log/study, không phải tri thức) qua *Graph settings → Filters*: `daily`, `_track`, `flashcards`, `CHANGELOG`, `README`, `templates`, `guides`, `00_HOME`, và note nguồn khóa (vì fan trùng MOC). Provenance/log xem bằng **Local Graph** + Backlinks, không nhồi vào global.
+5. **Node nên ẩn khỏi global graph** (loại operational/log/study, không phải tri thức) qua *Graph settings → Filters*: `daily`, `_track`, `flashcards`, `CHANGELOG`, `CLAUDE`, `README`, `templates`, `guides`, `00_HOME`, và note nguồn khóa (vì fan trùng MOC). Provenance/log xem bằng **Local Graph** + Backlinks, không nhồi vào global.
+   - **Note index folder** không còn tên `README.md` — đã đổi theo folder-note convention (`<folder>/<folder>.md`) nên khi hiện trong graph có nhãn rõ (hub của folder) thay vì loạt "README" trùng.
 
-6. **Cấu hình graph baseline** (`.obsidian/graph.json`): filter bắt đầu bằng `path:SecondBrain` (vault Obsidian mở từ `E:\Claude` nên phải loại file operational trong `Projects/` khỏi graph), `showOrphans:true` (chấm cô đơn = đèn báo chủ đề chưa chắt), `hideUnresolved:true`, `textFadeMultiplier` dương (nhãn hiện cả khi zoom xa), tô màu theo tầng PARA (gồm cả `40_Archive` màu xám).
+6. **Cấu hình graph baseline** (`.obsidian/graph.json`): vault mở từ `E:\Claude` (index cả `Projects/` lẫn `SecondBrain/`) → **graph hiện cả tri thức SecondBrain lẫn cụm Projects**, giữ gọn bằng ẩn operational + orphan. Filter ẩn config + node operational (`-path:".obsidian" -path:".claude" -file:"CHANGELOG" -file:"README" -file:"CLAUDE" -file:"00_HOME" -file:"tag-system" -file:"flashcards" -file:"track" -path:"60_Daily" -path:"99_Meta/templates" -path:"99_Meta/guides"`), **không** loại `Projects/`. **Color group**: 5 tầng PARA + `Projects/` (cam). `showOrphans:false` (đã thử true thấy rối → tắt), `hideUnresolved:true`. Thông số lực/hiển thị để user tự tinh chỉnh trong app.
 
 > Chấm cô đơn còn lại trong graph = "đèn báo" chủ đề chưa được chắt/nối — hữu ích, không phải lỗi. Đừng cố nối ép.
 
@@ -112,7 +113,7 @@ Mục tiêu: graph là **đồ thị tri thức**, không phải đồ thị tha
 Chạy checklist:
 1. Đã có ít nhất 3 atomic notes từ project này chưa? Liệt kê.
 2. Đã có file `post-mortem.md` trong project chưa? Nếu chưa, hỏi tôi để cùng viết.
-3. Cập nhật README của project: status = "DONE — <ngày>"
+3. Cập nhật note dự án (folder note `<X>.md`): status = "DONE — <ngày>"
 4. Đề xuất: `mv 10_Projects/<X> 40_Archive/<năm>/`
 
 ## Việc Claude KHÔNG được tự ý làm

@@ -53,7 +53,7 @@ Gom file đã đổi/tạo hôm nay thành 3 nhóm:
 | **Atomic mới** | `50_Atomic/{concepts,claims,methods,questions}/` | `📚 Đã chắt lọc → Atomic mới` |
 | **Việc khác** | Code trong `Projects/`, `.claude/` config, MOC, guide, template... | `🌙 EVENING → Việc xong / chưa xong` |
 
-- Link dạng Obsidian: `[[<slug-không-đuôi-md>]]` (vd `[[self-attention-la-weighted-sum]]`).
+- Ghi **tên note dạng text/backtick**, KHÔNG dùng `[[wikilink]]` (vd `` `self-attention-la-weighted-sum` ``) — để daily không tạo cạnh nối vào cụm tri thức trong graph.
 - File mới (`??`/`A`) = "đã tạo"; file `M` của note cũ = "đã cập nhật" — ghi rõ để phân biệt.
 
 ## Bước 3 — Viết & merge vào daily
@@ -67,7 +67,7 @@ Chỉ điền **2 vùng**, các vùng còn lại **không động tới** (chún
   việc đang làm dở, ghi vào — nhưng **đánh dấu là suy đoán**.
 
 ### b) `## 📚 Đã chắt lọc` → "Sources:" và "Atomic mới:"
-- Điền link `[[...]]` các source/atomic phát hiện ở Bước 2.
+- Điền **tên** các source/atomic phát hiện ở Bước 2 dưới dạng text/backtick (vd `` `self-attention-la-weighted-sum` ``). **KHÔNG** dùng `[[wikilink]]` — daily là log, không nên nối vào graph tri thức (xem Bước 2).
 
 ### Quy tắc merge (BẮT BUỘC — không phá nội dung tôi đã ghi)
 1. Placeholder rỗng (dòng chỉ có `- ` hoặc trống) → **điền vào**.

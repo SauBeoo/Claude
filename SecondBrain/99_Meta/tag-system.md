@@ -35,7 +35,7 @@ Lĩnh vực kiến thức. Mỗi note nên có **đúng 1 tag chủ đề chính
 - `video` — kịch bản video
 - `moc` — Map of Content
 - `daily` — daily note
-- `project` — project README
+- `project` — note tổng quan dự án (folder note)
 
 ### 🟡 Nhóm trạng thái/độ chín
 

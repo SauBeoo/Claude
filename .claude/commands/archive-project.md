@@ -1,5 +1,5 @@
 ---
-description: Archive 1 project từ 10_Projects sang 40_Archive sau khi chạy đủ checklist (≥3 atomic, post-mortem, README DONE, outputs)
+description: Archive 1 project từ 10_Projects sang 40_Archive sau khi chạy đủ checklist (≥3 atomic, post-mortem, note dự án DONE, outputs)
 argument-hint: <ten-project> (vd: claude-code-101)
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash
 ---
@@ -13,7 +13,7 @@ Sử dụng agent **librarian**. Trả lời bằng tiếng Việt.
 - ❌ KHÔNG `rm` — chỉ `mv` (PowerShell `Move-Item`).
 - ❌ KHÔNG move khi checklist chưa pass — phải báo cáo lý do, chờ user xác nhận skip hay fix.
 - ✅ Trước khi move, **bắt buộc** ghi entry vào `99_Meta/CHANGELOG.md`.
-- ✅ Update README của project: `status: DONE — YYYY-MM-DD` trước khi move.
+- ✅ Update note dự án (`<project>.md` — folder note): `status: DONE — YYYY-MM-DD` trước khi move.
 
 ## Đầu vào
 
@@ -29,7 +29,7 @@ Nếu `$1` rỗng hoặc folder không tồn tại → in lỗi, dừng. KHÔNG 
 
 1. Verify `10_Projects/$1/` tồn tại. Không có → báo lỗi, dừng.
 2. Verify `40_Archive/<năm>/` tồn tại. Không có → tạo bằng `New-Item -ItemType Directory`.
-3. Đọc `10_Projects/$1/README.md` lấy: status hiện tại, mô tả 1 dòng, deadline (nếu có).
+3. Đọc `10_Projects/$1/$1.md` (folder note) lấy: status hiện tại, mô tả 1 dòng, deadline (nếu có).
 
 ### Phase 2: Checklist (báo cáo, KHÔNG move)
 
@@ -39,7 +39,7 @@ Chạy 4 check và trình bày bảng:
 |---|---|---|---|
 | 1 | ≥3 atomic notes liên quan project? | ✅/❌ | List slug atomic match (grep `[[$1` hoặc `source.*$1` trong `50_Atomic/**/*.md`) |
 | 2 | Có `post-mortem.md` trong project? | ✅/❌ | File tồn tại không |
-| 3 | README có `status: DONE — <ngày>` không? | ✅/❌ | Đọc frontmatter README |
+| 3 | Note dự án có `status: DONE — <ngày>` không? | ✅/❌ | Đọc frontmatter `$1.md` |
 | 4 | Outputs cuối cùng trong `outputs/`? | ✅/❌ | List file `.md` trong `outputs/` |
 
 **Highlight:**
@@ -56,7 +56,7 @@ Khi checklist pass (hoặc user xác nhận skip một số check), trình bày:
   To:   E:\Claude\SecondBrain\40_Archive\<năm>\$1\
 
 Trước khi move sẽ làm:
-  1. Update README frontmatter: status: DONE — <YYYY-MM-DD>
+  1. Update note dự án (`$1.md`) frontmatter: status: DONE — <YYYY-MM-DD>
   2. Append entry vào 99_Meta/CHANGELOG.md
   3. Move folder (Move-Item, không copy)
 
@@ -67,7 +67,7 @@ Xác nhận? (yes / sửa lại / hủy)
 
 Theo thứ tự:
 
-1. **Update README**: dùng `Edit` đổi `status: <cũ>` → `status: DONE — <hôm nay>` trong frontmatter `10_Projects/$1/README.md`. Nếu README chưa có field `status` → thêm vào frontmatter.
+1. **Update note dự án**: dùng `Edit` đổi `status: <cũ>` → `status: DONE — <hôm nay>` trong frontmatter `10_Projects/$1/$1.md` (folder note). Nếu chưa có field `status` → thêm vào frontmatter.
 
 2. **Log CHANGELOG**: append entry vào `99_Meta/CHANGELOG.md` với format:
 
@@ -80,7 +80,7 @@ Theo thứ tự:
 
    | File | Thay đổi | Lý do |
    |---|---|---|
-   | `10_Projects/$1/README.md` | `status: <cũ>` → `status: DONE — <ngày>` | Đánh dấu hoàn thành trước khi archive |
+   | `10_Projects/$1/$1.md` | `status: <cũ>` → `status: DONE — <ngày>` | Đánh dấu hoàn thành trước khi archive |
    | `10_Projects/$1/` → `40_Archive/<năm>/$1/` | Move toàn bộ thư mục | Project xong, lưu kho |
 
    **Atomic notes đã chắt lọc từ project (sống tiếp ở 50_Atomic/):**
