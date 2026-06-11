@@ -44,8 +44,8 @@ CHỐT (5s):       "Tiệm của bạn cũng xứng đáng vậy — nhắn Glow
 
 - [ ] Lập kênh TikTok + Facebook + (tuỳ) Instagram, avatar/bìa đúng `00_BRAND.md`.
 - [ ] Viết bio theo mẫu trong `00_BRAND.md`.
-- [ ] **Clip #1 (khai trương):** "Tụi mình là ai + làm gì cho spa" — dùng `demo-spa-01` làm minh hoạ.
-- [ ] **Clip #2:** trước/sau với `demo-spa-01` ("dựng web spa từ con số 0").
+- [ ] **Clip #1 (khai trương):** xem kịch bản chi tiết ở `content/kich-ban-clip-01-khai-truong.md` — dùng demo `portfolio/demo-spa-01/` làm minh hoạ.
+- [ ] **Clip #2:** trước/sau với demo `portfolio/demo-spa-01/` ("dựng web spa từ con số 0").
 - [ ] **Clip #3:** tip "3 lỗi khiến web spa mất khách".
 - [ ] Chuẩn bị 5–7 clip "dự trữ" để đăng đều, không gãy nhịp.
 
@@ -74,3 +74,7 @@ CHỐT (5s):       "Tiệm của bạn cũng xứng đáng vậy — nhắn Glow
 - Tháng 1–2: **không** chạy theo lượt follow. KPI thật = **số người nhắn Zalo hỏi** + **số khách chốt**.
 - Content giai đoạn đầu phục vụ 2 việc: (1) làm bằng chứng năng lực khi đi chào khách; (2) gieo hạt để
   vài tháng sau có inbound. Viral là bonus, không phải mục tiêu.
+
+---
+
+↩ [[glowup-studio]] · tổng quan dự án & sơ đồ liên kết

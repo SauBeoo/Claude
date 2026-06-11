@@ -37,7 +37,7 @@ Câu chuyện cặp đôi *tự nó là content* → lợi thế marketing mà d
 
 ---
 
-## Sản phẩm (3 tầng — chi tiết `01_SAN_PHAM_GIA.md`)
+## Sản phẩm (3 tầng — chi tiết [[01_SAN_PHAM_GIA]])
 
 1. **Web** (một lần, 5–12tr) — mũi nhọn vào khách.
 2. **Automation n8n** (setup 3–8tr + 500k–1,5tr/tháng) — nhắc lịch, chăm khách, gom review/lead.
@@ -65,7 +65,7 @@ Note nghiên cứu/ý tưởng lưu ở vault: `E:\Claude\SecondBrain\10_Project
 
 ---
 
-## Mốc gần nhất (xem `05_ROADMAP_90D.md`)
+## Mốc gần nhất (xem [[05_ROADMAP_90D]])
 
 - **Tuần 1:** dựng demo + lập kênh + lập danh sách 20 khách.
 - **Tuần 2–3:** chào 20 khách (bắt đầu từ khách quen).
@@ -87,6 +87,7 @@ Mở `portfolio/demo-spa-01/index.html` bằng trình duyệt (double-click) —
 - [[01_SAN_PHAM_GIA|Sản phẩm + bảng giá]]
 - [[02_N8N_AUTOMATION|Playbook automation n8n]]
 - [[03_CONTENT_SOCIAL|Kênh + lịch content]]
+- [[kich-ban-clip-01-khai-truong|Kịch bản clip TikTok #1 (khai trương)]]
 - [[04_OUTREACH|Chào khách + danh sách 20 khách]]
 - [[05_ROADMAP_90D|Lộ trình 90 ngày]]
 - [[demo-spa-01/demo-spa-01|Web demo spa đầu tiên]]

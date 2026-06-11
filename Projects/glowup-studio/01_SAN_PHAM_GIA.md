@@ -21,7 +21,7 @@
 - Gallery hình ảnh / trước–sau.
 - Footer "Made by GlowUp Studio ✦" (lan truyền thương hiệu).
 
-> **Mẹo chốt:** luôn đưa khách xem `demo-spa-01` trước. "Mẫu này em làm cho tiệm giống bên mình — bên mình
+> **Mẹo chốt:** luôn đưa khách xem demo `portfolio/demo-spa-01/` trước. "Mẫu này em làm cho tiệm giống bên mình — bên mình
 > muốn tông nào ạ?" Bán cái nhìn-thấy-được, không bán lời hứa.
 
 ---
@@ -70,3 +70,7 @@ lớn nhất của spa: **khách quên hẹn (no-show)** và **khách không qua
 3. **Cọc 50%** trước khi làm, 50% khi bàn giao.
 4. Báo giá kèm **link demo** + thời gian hoàn thành cụ thể.
 5. Với khách đầu tiên: có thể giảm để lấy **case study + cho quay clip** — đổi giá lấy chứng cứ.
+
+---
+
+↩ [[glowup-studio]] · tổng quan dự án & sơ đồ liên kết

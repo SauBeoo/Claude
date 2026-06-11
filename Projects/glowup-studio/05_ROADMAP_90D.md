@@ -72,3 +72,7 @@
 | … |  |  |  |  |  |  |
 
 > Nhắc: KPI tháng 1 **không** phải doanh thu, mà là **demo xong + kênh chạy + 1 khách đầu**.
+
+---
+
+↩ [[glowup-studio]] · tổng quan dự án & sơ đồ liên kết

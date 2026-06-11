@@ -79,3 +79,7 @@ Với 1–3 khách đầu, chấp nhận giảm giá (hoặc làm gói cơ bản
 
 - Chào đủ **20 khách**. Tỉ lệ thực tế: 20 lần chào (có demo) → vài người quan tâm → **1 chốt** là đạt.
 - Đừng nản vì bị từ chối: ở giờ số 0, bị "không" nhiều là bình thường. Chỉ cần 1 cái "yes".
+
+---
+
+↩ [[glowup-studio]] · tổng quan dự án & sơ đồ liên kết

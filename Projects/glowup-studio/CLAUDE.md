@@ -153,13 +153,18 @@ Chi tiết đầy đủ + bảng giá: `01_SAN_PHAM_GIA.md`.
 
 ## 📚 REFERENCE FILES
 
+> Sơ đồ liên kết đầy đủ xem ở hub: [[glowup-studio]]. Dưới đây liệt kê dạng tên file
+> (không phải wiki-link) để CLAUDE.md không trở thành hub thứ 2 trong graph Obsidian.
+
 - `00_BRAND.md` — Bộ nhận diện thương hiệu đầy đủ (cho vợ dùng làm content).
 - `01_SAN_PHAM_GIA.md` — 3 tầng sản phẩm + bảng giá + mô tả gói.
 - `02_N8N_AUTOMATION.md` — Playbook automation cho spa.
 - `03_CONTENT_SOCIAL.md` — Kiến trúc kênh + lịch content + kịch bản.
+- `content/kich-ban-clip-01-khai-truong.md` — Kịch bản clip TikTok #1 (khai trương).
 - `04_OUTREACH.md` — Kịch bản chào khách + danh sách 20 khách + quy trình chốt.
 - `05_ROADMAP_90D.md` — Lộ trình 90 ngày.
 - `portfolio/demo-spa-01/` — Web demo spa đầu tiên.
+- `templates/` — n8n workflow + mẫu báo giá.
 - Vault note: `E:\Claude\SecondBrain\10_Projects\glowup-studio\`.
 
 ---

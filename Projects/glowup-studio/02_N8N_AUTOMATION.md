@@ -78,3 +78,7 @@
 1. Build **Flow 1 (Nhắc hẹn)** đầu tiên — dễ nhất, demo được ngay, bán được ngay.
 2. Có khách Tầng 2 đầu tiên → build Flow 2 + 3 cho chính khách đó (vừa làm vừa hoàn thiện template).
 3. Chuẩn hoá thành "Automation Pack cho spa" tái dùng cho mọi khách sau → biên lợi nhuận tăng dần.
+
+---
+
+↩ [[glowup-studio]] · tổng quan dự án & sơ đồ liên kết

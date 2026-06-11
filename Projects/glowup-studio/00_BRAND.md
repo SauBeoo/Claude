@@ -108,3 +108,7 @@ Nhắn tin để xem mẫu web miễn phí.
 - [ ] Mọi báo giá, web demo, slide đều dùng Playfair + Be Vietnam Pro.
 - [ ] Mọi caption kết bằng 1 CTA Zalo nhất quán.
 - [ ] Footer web demo có dòng "Made by GlowUp Studio ✦" (mỗi web là một tấm danh thiếp lan truyền).
+
+---
+
+↩ [[glowup-studio]] · tổng quan dự án & sơ đồ liên kết

@@ -2,7 +2,7 @@
 
 Web demo đầu tiên của GlowUp Studio. **Mục đích kép:**
 1. **Mẫu chào khách** — đưa chủ spa xem để họ hình dung ("tiệm mình cũng có web đẹp vậy").
-2. **Nguyên liệu content** — quay clip trước/sau khai trương kênh TikTok (xem `03_CONTENT_SOCIAL.md`).
+2. **Nguyên liệu content** — quay clip trước/sau khai trương kênh TikTok (xem `03_CONTENT_SOCIAL.md` và `content/kich-ban-clip-01-khai-truong.md`).
 
 > Đây là tiệm **giả định** để demo. Không phải khách thật.
 
@@ -44,3 +44,7 @@ nên cần mạng để hiển thị ảnh & style).
 Bản này cố tình là **1 file HTML tĩnh** để xem/deploy tức thì. Khi cần web khách nhiều trang, có blog/SEO,
 hoặc khách tự sửa nội dung → chuyển sang **Astro** hoặc **Next.js + Tailwind** (xem stack trong `CLAUDE.md`),
 giữ nguyên hệ màu & font để nhất quán thương hiệu.
+
+---
+
+↩ [[glowup-studio]] · tổng quan dự án & sơ đồ liên kết
