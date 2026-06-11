@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lụa Spa & Beauty — Thư giãn · Trẻ hoá · Tỏa sáng</title>
+  <meta name="description" content="Lụa Spa & Beauty — không gian chăm sóc da & thư giãn cao cấp. Đặt lịch ngay hôm nay." />
+
+  <!-- Demo do GlowUp Studio dựng. Mở trực tiếp file này bằng trình duyệt để xem. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:     '#FAF6F0',
+            pink:      '#F4C2C2',
+            pinkdark:  '#D98A8A',
+            champagne: '#E8C9A0',
+            brown:     '#5B4636',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans:    ['"Be Vietnam Pro"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #FAF6F0; }
+    .fade-line { background: linear-gradient(90deg, transparent, #E8C9A0, transparent); }
+  </style>
+</head>
+
+<body class="font-sans text-brown antialiased">
+
+  <!-- ===== NÚT NỔI (Gọi / Zalo / Đặt lịch) ===== -->
+  <div class="fixed bottom-4 right-4 z-50 flex flex-col gap-3">
+    <a href="tel:0900000000" aria-label="Gọi điện"
+       class="grid h-12 w-12 place-items-center rounded-full bg-brown text-cream shadow-lg transition hover:scale-105">
+      <span class="text-lg">📞</span>
+    </a>
+    <a href="https://zalo.me" target="_blank" rel="noopener" aria-label="Nhắn Zalo"
+       class="grid h-12 w-12 place-items-center rounded-full bg-pinkdark text-white shadow-lg transition hover:scale-105">
+      <span class="text-xs font-semibold">Zalo</span>
+    </a>
+    <a href="#dat-lich"
+       class="grid h-12 w-12 place-items-center rounded-full bg-champagne text-brown shadow-lg transition hover:scale-105">
+      <span class="text-lg">📅</span>
+    </a>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-40 border-b border-champagne/40 bg-cream/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#" class="font-display text-2xl font-bold tracking-wide text-brown">Lụa<span class="text-pinkdark"> Spa</span></a>
+      <nav class="hidden gap-8 text-sm font-medium md:flex">
+        <a href="#dich-vu" class="transition hover:text-pinkdark">Dịch vụ</a>
+        <a href="#bang-gia" class="transition hover:text-pinkdark">Bảng giá</a>
+        <a href="#hinh-anh" class="transition hover:text-pinkdark">Hình ảnh</a>
+        <a href="#ve-tiem" class="transition hover:text-pinkdark">Về tiệm</a>
+        <a href="#dat-lich" class="transition hover:text-pinkdark">Liên hệ</a>
+      </nav>
+      <a href="#dat-lich" class="rounded-full bg-pinkdark px-5 py-2 text-sm font-semibold text-white shadow transition hover:bg-brown">Đặt lịch</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
+      <div>
+        <p class="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Thư giãn · Trẻ hoá · Tỏa sáng</p>
+        <h1 class="font-display text-4xl font-bold leading-tight text-brown md:text-5xl">
+          Để làn da của bạn <span class="text-pinkdark">tỏa sáng</span> mỗi ngày
+        </h1>
+        <p class="mt-5 max-w-md text-brown/70">
+          Lụa Spa & Beauty — không gian chăm sóc da, body & thư giãn cao cấp. Đội ngũ kỹ thuật viên tận tâm,
+          sản phẩm chính hãng, quy trình chuẩn.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#dat-lich" class="rounded-full bg-pinkdark px-7 py-3 font-semibold text-white shadow-lg transition hover:bg-brown">Đặt lịch ngay</a>
+          <a href="#bang-gia" class="rounded-full border border-champagne px-7 py-3 font-semibold text-brown transition hover:bg-champagne/20">Xem bảng giá</a>
+        </div>
+        <div class="mt-8 flex items-center gap-6 text-sm text-brown/60">
+          <div><span class="font-display text-2xl font-bold text-brown">8+</span><br />năm kinh nghiệm</div>
+          <div class="h-8 w-px bg-champagne/60"></div>
+          <div><span class="font-display text-2xl font-bold text-brown">5.000+</span><br />khách hài lòng</div>
+          <div class="h-8 w-px bg-champagne/60"></div>
+          <div><span class="font-display text-2xl font-bold text-brown">4.9★</span><br />đánh giá</div>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80"
+             alt="Không gian spa" class="aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl" />
+        <div class="absolute -bottom-5 -left-5 hidden rounded-2xl bg-cream p-4 shadow-xl md:block">
+          <p class="font-display text-lg font-semibold text-brown">✦ Ưu đãi tháng này</p>
+          <p class="text-sm text-brown/70">Giảm 20% liệu trình facial cho khách mới</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DỊCH VỤ ===== -->
+  <section id="dich-vu" class="mx-auto max-w-6xl px-5 py-16">
+    <div class="mb-12 text-center">
+      <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Dịch vụ</p>
+      <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Chăm sóc trọn vẹn từ A đến Z</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      <!-- card -->
+      <div class="rounded-2xl border border-champagne/40 bg-white/60 p-7 transition hover:shadow-lg">
+        <div class="mb-4 grid h-12 w-12 place-items-center rounded-full bg-pink/40 text-xl">🌸</div>
+        <h3 class="font-display text-xl font-semibold text-brown">Chăm sóc da mặt</h3>
+        <p class="mt-2 text-sm text-brown/70">Làm sạch sâu, trẻ hoá, trị mụn & thâm nám với công nghệ hiện đại.</p>
+      </div>
+      <div class="rounded-2xl border border-champagne/40 bg-white/60 p-7 transition hover:shadow-lg">
+        <div class="mb-4 grid h-12 w-12 place-items-center rounded-full bg-pink/40 text-xl">💆‍♀️</div>
+        <h3 class="font-display text-xl font-semibold text-brown">Massage & thư giãn</h3>
+        <p class="mt-2 text-sm text-brown/70">Massage body, đá nóng, giảm căng cơ, tái tạo năng lượng.</p>
+      </div>
+      <div class="rounded-2xl border border-champagne/40 bg-white/60 p-7 transition hover:shadow-lg">
+        <div class="mb-4 grid h-12 w-12 place-items-center rounded-full bg-pink/40 text-xl">✨</div>
+        <h3 class="font-display text-xl font-semibold text-brown">Triệt lông & trẻ hoá</h3>
+        <p class="mt-2 text-sm text-brown/70">Triệt lông công nghệ cao, nâng cơ, căng bóng da an toàn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BẢNG GIÁ ===== -->
+  <section id="bang-gia" class="bg-white/50 py-16">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="mb-12 text-center">
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Bảng giá</p>
+        <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Liệu trình & ưu đãi</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-champagne/40 bg-cream p-8">
+          <h3 class="font-display text-xl font-semibold text-brown">Facial cơ bản</h3>
+          <p class="mt-3 font-display text-3xl font-bold text-pinkdark">350.000đ</p>
+          <ul class="mt-5 space-y-2 text-sm text-brown/70">
+            <li>• Làm sạch & tẩy tế bào chết</li>
+            <li>• Đắp mặt nạ dưỡng</li>
+            <li>• Massage thư giãn 60 phút</li>
+          </ul>
+        </div>
+        <div class="relative rounded-2xl border-2 border-pinkdark bg-cream p-8 shadow-xl">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-pinkdark px-4 py-1 text-xs font-semibold text-white">Phổ biến nhất</span>
+          <h3 class="font-display text-xl font-semibold text-brown">Trẻ hoá chuyên sâu</h3>
+          <p class="mt-3 font-display text-3xl font-bold text-pinkdark">650.000đ</p>
+          <ul class="mt-5 space-y-2 text-sm text-brown/70">
+            <li>• Toàn bộ gói cơ bản</li>
+            <li>• Công nghệ nâng cơ, căng bóng</li>
+            <li>• Serum đặc trị theo da</li>
+            <li>• Tư vấn chăm sóc tại nhà</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-champagne/40 bg-cream p-8">
+          <h3 class="font-display text-xl font-semibold text-brown">Liệu trình VIP</h3>
+          <p class="mt-3 font-display text-3xl font-bold text-pinkdark">1.200.000đ</p>
+          <ul class="mt-5 space-y-2 text-sm text-brown/70">
+            <li>• Trẻ hoá chuyên sâu</li>
+            <li>• Massage body đá nóng</li>
+            <li>• Phòng riêng cao cấp</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-6 text-center text-sm text-brown/60">* Giá tham khảo cho bản demo. Khách mới giảm 20% liệu trình đầu tiên.</p>
+    </div>
+  </section>
+
+  <!-- ===== HÌNH ẢNH (TRƯỚC / SAU + KHÔNG GIAN) ===== -->
+  <section id="hinh-anh" class="mx-auto max-w-6xl px-5 py-16">
+    <div class="mb-12 text-center">
+      <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Hình ảnh</p>
+      <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Không gian & kết quả thật</h2>
+    </div>
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80" alt="Spa 1" class="aspect-square w-full rounded-2xl object-cover" />
+      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=500&q=80" alt="Spa 2" class="aspect-square w-full rounded-2xl object-cover" />
+      <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=500&q=80" alt="Spa 3" class="aspect-square w-full rounded-2xl object-cover" />
+      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=500&q=80" alt="Spa 4" class="aspect-square w-full rounded-2xl object-cover" />
+    </div>
+  </section>
+
+  <!-- ===== VỀ TIỆM ===== -->
+  <section id="ve-tiem" class="bg-white/50 py-16">
+    <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
+      <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=800&q=80" alt="Về Lụa Spa" class="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl" />
+      <div>
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Về tiệm</p>
+        <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Lụa Spa & Beauty</h2>
+        <p class="mt-5 text-brown/70">
+          Hơn 8 năm đồng hành cùng vẻ đẹp của hàng nghìn khách hàng. Tại Lụa, mỗi liệu trình là một trải
+          nghiệm thư giãn trọn vẹn — không gian yên tĩnh, sản phẩm chính hãng và đội ngũ tận tâm.
+        </p>
+        <ul class="mt-6 space-y-3 text-sm text-brown/80">
+          <li>✦ Kỹ thuật viên được đào tạo bài bản</li>
+          <li>✦ Sản phẩm & thiết bị chính hãng</li>
+          <li>✦ Cam kết hoàn tiền nếu không hài lòng</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ĐẶT LỊCH / LIÊN HỆ ===== -->
+  <section id="dat-lich" class="mx-auto max-w-6xl px-5 py-16">
+    <div class="grid gap-10 md:grid-cols-2">
+      <div>
+        <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Đặt lịch</p>
+        <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Đặt lịch hẹn của bạn</h2>
+        <p class="mt-4 text-brown/70">Để lại thông tin, Lụa Spa sẽ gọi xác nhận trong ít phút.</p>
+
+        <form class="mt-6 space-y-4" onsubmit="event.preventDefault(); this.reset(); document.getElementById('ok').classList.remove('hidden');">
+          <input required type="text" placeholder="Họ tên"
+                 class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark" />
+          <input required type="tel" placeholder="Số điện thoại"
+                 class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark" />
+          <select class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark">
+            <option>Chọn dịch vụ</option>
+            <option>Facial cơ bản</option>
+            <option>Trẻ hoá chuyên sâu</option>
+            <option>Liệu trình VIP</option>
+            <option>Massage & thư giãn</option>
+          </select>
+          <input type="datetime-local" class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark" />
+          <button type="submit" class="w-full rounded-xl bg-pinkdark py-3 font-semibold text-white shadow-lg transition hover:bg-brown">Gửi yêu cầu đặt lịch</button>
+          <p id="ok" class="hidden rounded-xl bg-pink/40 px-4 py-3 text-center text-sm text-brown">✦ Cảm ơn bạn! Lụa Spa sẽ liên hệ xác nhận sớm. (Bản demo — chưa gửi thật)</p>
+        </form>
+      </div>
+
+      <div class="space-y-5">
+        <div class="rounded-2xl border border-champagne/40 bg-white/60 p-6">
+          <h3 class="font-display text-lg font-semibold text-brown">Thông tin liên hệ</h3>
+          <ul class="mt-3 space-y-2 text-sm text-brown/80">
+            <li>📍 123 Đường Hoa Sữa, Quận 1, TP.HCM</li>
+            <li>📞 0900 000 000</li>
+            <li>🕘 8:00 – 21:00 (cả tuần)</li>
+            <li>💬 Zalo: 0900 000 000</li>
+          </ul>
+        </div>
+        <iframe
+          title="Bản đồ"
+          class="h-64 w-full rounded-2xl border border-champagne/40"
+          loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=106.69%2C10.77%2C106.71%2C10.78&layer=mapnik">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="border-t border-champagne/40 bg-brown text-cream">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-8 md:flex-row">
+      <div>
+        <p class="font-display text-xl font-bold">Lụa Spa & Beauty</p>
+        <p class="text-sm text-cream/60">Thư giãn · Trẻ hoá · Tỏa sáng</p>
+      </div>
+      <a href="https://glowupstudio.vn" target="_blank" rel="noopener"
+         class="text-sm text-cream/70 transition hover:text-champagne">Made by GlowUp Studio ✦</a>
+    </div>
+  </footer>
+
+</body>
+</html>

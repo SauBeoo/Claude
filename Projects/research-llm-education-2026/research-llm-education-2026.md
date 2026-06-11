@@ -47,3 +47,7 @@ research-llm-education-2026/
 
 - Trước khi commit code thực nghiệm, **xóa dữ liệu cá nhân sinh viên**
 - Anonymize dataset trước khi public
+
+## 🔗 Liên kết nội bộ
+
+- [[research-llm-education-2026/CLAUDE|CLAUDE.md — cấu hình Claude cho project]]

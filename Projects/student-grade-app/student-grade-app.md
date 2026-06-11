@@ -73,3 +73,7 @@ Ví dụ kinh nghiệm đã rút ra từ project này:
 - [ ] Frontend forms
 - [ ] Import CSV từ Excel cũ
 - [ ] Export PDF
+
+## 🔗 Liên kết nội bộ
+
+- [[student-grade-app/CLAUDE|CLAUDE.md — cấu hình Claude cho project]]

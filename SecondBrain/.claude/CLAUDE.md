@@ -84,7 +84,7 @@ Mục tiêu: graph là **đồ thị tri thức**, không phải đồ thị tha
 
 5. **Node nên ẩn khỏi global graph** (loại operational/log/study, không phải tri thức) qua *Graph settings → Filters*: `daily`, `_track`, `flashcards`, `CHANGELOG`, `README`, `templates`, `guides`, `00_HOME`, và note nguồn khóa (vì fan trùng MOC). Provenance/log xem bằng **Local Graph** + Backlinks, không nhồi vào global.
 
-6. **Cấu hình graph baseline** (`.obsidian/graph.json`): `showOrphans:false`, `hideUnresolved:true`, `textFadeMultiplier` âm (nhãn chỉ hiện khi zoom gần), tô màu theo tầng PARA, `repelStrength` cao để giãn node.
+6. **Cấu hình graph baseline** (`.obsidian/graph.json`): filter bắt đầu bằng `path:SecondBrain` (vault Obsidian mở từ `E:\Claude` nên phải loại file operational trong `Projects/` khỏi graph), `showOrphans:true` (chấm cô đơn = đèn báo chủ đề chưa chắt), `hideUnresolved:true`, `textFadeMultiplier` dương (nhãn hiện cả khi zoom xa), tô màu theo tầng PARA (gồm cả `40_Archive` màu xám).
 
 > Chấm cô đơn còn lại trong graph = "đèn báo" chủ đề chưa được chắt/nối — hữu ích, không phải lỗi. Đừng cố nối ép.
 

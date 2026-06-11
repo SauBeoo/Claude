@@ -77,6 +77,7 @@ Traffic → Lead → Nuôi dưỡng → Chuyển đổi → Mở rộng
 
 ## Liên kết
 
+- Trích từ: [[ai-affiliate-funnel]]
 - Project: [[10_Projects/idea-aff]]
 - Atomic notes đã tạo:
   - [[50_Atomic/concepts/chi-toi-uu-nhung-gi-trong-tam-kiem-soat]]

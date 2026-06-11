@@ -1,79 +1,65 @@
 {
-  "collapse-filter": true,
-  "search": "-path:60_Daily -path:99_Meta/templates -path:99_Meta/guides -file:CHANGELOG -file:README -file:_track -file:00_HOME -file:claude-101-anthropic-academy -file:flashcards",
+  "collapse-filter": false,
+  "search": "-path:\".obsidian\" -path:\".claude\" -file:\"CHANGELOG\" -file:\"README\" -file:\"CLAUDE\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": false,
+  "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:00_Inbox",
+      "query": "path:\"SecondBrain/99_Meta/MOCs\"",
       "color": {
         "a": 1,
-        "rgb": 15158332
+        "rgb": 13073919
       }
     },
     {
-      "query": "path:10_Projects",
+      "query": "path:\"SecondBrain/50_Atomic\"",
       "color": {
         "a": 1,
-        "rgb": 4360949
+        "rgb": 5420936
       }
     },
     {
-      "query": "path:20_Areas",
+      "query": "path:\"SecondBrain/10_Projects\"",
       "color": {
         "a": 1,
-        "rgb": 3066993
+        "rgb": 4756975
       }
     },
     {
-      "query": "path:30_Resources",
+      "query": "path:\"SecondBrain/20_Areas\"",
       "color": {
         "a": 1,
-        "rgb": 15098914
+        "rgb": 3065014
       }
     },
     {
-      "query": "path:50_Atomic",
+      "query": "path:\"SecondBrain/30_Resources\"",
       "color": {
         "a": 1,
-        "rgb": 10181814
+        "rgb": 16739179
       }
     },
     {
-      "query": "path:60_Daily",
+      "query": "path:\"Projects\"",
       "color": {
         "a": 1,
-        "rgb": 1752220
-      }
-    },
-    {
-      "query": "path:MOCs",
-      "color": {
-        "a": 1,
-        "rgb": 15844367
-      }
-    },
-    {
-      "query": "path:99_Meta",
-      "color": {
-        "a": 1,
-        "rgb": 8359053
+        "rgb": 15247416
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": -1.2,
-  "nodeSizeMultiplier": 1.15,
-  "lineSizeMultiplier": 0.7,
+  "textFadeMultiplier": -0.1,
+  "nodeSizeMultiplier": 0.9421875,
+  "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.4,
-  "repelStrength": 18,
-  "linkStrength": 0.8,
+  "centerStrength": 0.630208333333333,
+  "repelStrength": 12,
+  "linkStrength": 0.7,
   "linkDistance": 180,
-  "scale": 0.2721655269759112,
-  "close": true
+  "scale": 0.7132754626224473,
+  "close": false
 }

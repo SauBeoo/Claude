@@ -60,3 +60,16 @@ Lý do:
 - Job đầu thường mất 2-4 tuần để có. Đừng nản nếu 20 proposal đầu im lặng — đó là tỷ lệ chuẩn.
 - < 10h/tuần, sau 2-3 tháng có review: ~$300-800/tháng là khả thi.
 - Đây là thu nhập phụ build dần, KHÔNG phải làm giàu nhanh.
+
+---
+
+## 🔗 Liên kết nội bộ
+
+- [[01_FIVERR_GIGS|Fiverr gigs]]
+- [[02_UPWORK_PROFILE|Upwork profile]]
+- [[03_PROPOSAL_TEMPLATES|Mẫu proposal]]
+- [[04_PORTFOLIO_IDEAS|Ý tưởng portfolio]]
+- [[1-web-scraper/1-web-scraper|Demo 1 — Web scraper]]
+- [[1-web-scraper/LOOM_SCRIPT|Script Loom — Web scraper]]
+- [[2-sheets-automation/2-sheets-automation|Demo 2 — Sheets automation]]
+- [[2-sheets-automation/LOOM_SCRIPT|Script Loom — Sheets automation]]

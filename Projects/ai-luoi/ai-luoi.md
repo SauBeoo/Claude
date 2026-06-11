@@ -91,6 +91,12 @@ Claude Code sẽ hiểu:
 | Quyết định brand/style | CLAUDE.md → Brand Guidelines |
 | Quyết định tech stack | CLAUDE.md → Tech Stack |
 
+## 🔗 Liên kết nội bộ
+
+- [[ai-luoi/CLAUDE|CLAUDE.md — context dự án]]
+- [[ai-luoi/ROADMAP-90DAYS|Roadmap 90 ngày]]
+- [[ai-luoi/CONTENT-IDEAS|Ý tưởng content + script mẫu]]
+
 ---
 
 *Generated 2026-05-25. Phase 1, Week 1.*

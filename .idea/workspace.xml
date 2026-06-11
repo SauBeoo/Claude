@@ -6,34 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/ai-luoi/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/ai-luoi/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/00_CHIEN_LUOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/freelance-kit/00_CHIEN_LUOC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/LOOM_SCRIPT.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/LOOM_SCRIPT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/research-llm-education-2026/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/student-grade-app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/claude-chi-thay-cai-ban-thay.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/claude-chi-thay-cai-ban-thay.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cowork-code-chung-engine-agentic.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cowork-code-chung-engine-agentic.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/delegate-repeatable-keep-judgment.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/delegate-repeatable-keep-judgment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/output-troi-chay-khong-dong-nghia-dung.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/output-troi-chay-khong-dong-nghia-dung.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/projects-store-knowledge-skills-perform-tasks.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/projects-store-knowledge-skills-perform-tasks.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/scheduled-tasks-tu-dong-hoa-viec-lap.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/scheduled-tasks-tu-dong-hoa-viec-lap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/3-che-do-claude-desktop.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/3-che-do-claude-desktop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/4d-framework-ai-fluency.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/4d-framework-ai-fluency.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/artifacts-output-tuong-tac.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/artifacts-output-tuong-tac.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/claude-flavors-cung-tri-tue-nhieu-cua.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/claude-flavors-cung-tri-tue-nhieu-cua.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/mcp-usb-c-cho-ai.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/mcp-usb-c-cho-ai.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/progressive-disclosure-skills.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/concepts/progressive-disclosure-skills.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/cham-diem-chon-use-case.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/cham-diem-chon-use-case.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/chon-che-do-chat-cowork-code.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/chon-che-do-chat-cowork-code.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/chon-tool-theo-cau-hoi.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/chon-tool-theo-cau-hoi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/delegation-diligence-loop.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/delegation-diligence-loop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/feedback-cu-the-khi-iterate-ai.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/feedback-cu-the-khi-iterate-ai.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/instructions-project-nhu-code.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/instructions-project-nhu-code.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/nho-ai-draft-prompt-truoc-khi-research.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/methods/nho-ai-draft-prompt-truoc-khi-research.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/papers/ai-affiliate-funnel.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/papers/ai-affiliate-funnel.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.canvas" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +101,7 @@
       <workItem from="1780494266229" duration="6716000" />
       <workItem from="1780839905709" duration="5390000" />
       <workItem from="1780923833088" duration="10035000" />
+      <workItem from="1781184751841" duration="8009000" />
     </task>
     <servers />
   </component>

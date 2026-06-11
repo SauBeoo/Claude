@@ -25,3 +25,14 @@
 ## Trạng thái hiện tại
 
 🟡 **Phase 0 — Chốt nền tảng.** Việc cần làm ngay: chọn sub-niche (xem `00_CHIEN_LUOC.md` mục "Bước 1").
+
+## 🔗 Liên kết nội bộ
+
+- [[youtube-kham-pha/CLAUDE|CLAUDE.md — context dự án]]
+- [[youtube-kham-pha/00_CHIEN_LUOC|Chiến lược + chọn niche]]
+- [[01_ROADMAP_90_NGAY|Roadmap 90 ngày]]
+- [[02_SETUP_KENH|Setup kênh]]
+- [[03_QUY_TRINH_FACELESS|Quy trình sản xuất video]]
+- [[04_CONTENT_IDEAS|Ngân hàng ý tưởng + template]]
+- [[05_MAIL_KENH_TRUST_2026|Mail/kênh + build trust]]
+- [[doi-thu|Nghiên cứu đối thủ]]

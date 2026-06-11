@@ -1,4 +1,4 @@
-gop# CLAUDE.md — AI Lười Project Context
+# CLAUDE.md — AI Lười Project Context
 
 > File này được Claude Code đọc tự động khi làm việc trong project.
 > Mục đích: cung cấp full context để Claude hiểu dự án, ra quyết định nhất quán, không cần giải thích lại mỗi session.

@@ -1,4 +1,5 @@
----
+
+\
 type: claim
 created: 2026-06-08
 tags: [claude-code, workflow, plan-mode]

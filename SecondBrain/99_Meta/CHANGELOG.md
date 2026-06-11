@@ -1,7 +1,7 @@
 ---
 type: changelog
 created: 2026-05-24
-updated: 2026-06-08
+updated: 2026-06-11
 tags: [meta, changelog, system-log]
 ---
 
@@ -14,6 +14,22 @@ tags: [meta, changelog, system-log]
 > - ❌ Tạo file mới → KHÔNG log (xem qua `git log --diff-filter=A` hoặc Obsidian).
 > - ❌ Edit nội dung do user trực tiếp gõ → KHÔNG log (chỉ log khi Claude thay mặt).
 > - Mỗi entry: file path + tóm tắt thay đổi (1 dòng) + lý do.
+
+---
+
+## 2026-06-11 — Dọn graph: ẩn file operational ngoài SecondBrain, nối provenance idea-aff
+
+**Bối cảnh:** user thấy graph nhiều chấm lẻ. Nguyên nhân chính: vault Obsidian mở từ `E:\Claude` nên graph hiển thị cả ~35 file .md operational trong `Projects/` (roadmap, chiến lược, README các code repo) — không phải tri thức, không có link. Xử lý theo quy tắc graph hygiene: ẩn operational, chỉ nối link thật.
+
+### 🔧 Thay đổi file đang tồn tại
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `E:\Claude\.obsidian\graph.json` | Filter thêm `path:SecondBrain` (loại toàn bộ `Projects/` + README gốc) và `-file:tag-system`; trước đó cùng đợt: `showOrphans:false→true`, `textFadeMultiplier` âm→dương, thêm color group `40_Archive` | Graph chỉ hiển thị tri thức trong vault; nhãn hiện không cần hover; user muốn thấy chấm đèn báo |
+| `10_Projects/idea-aff/sources/xay-he-thong-funnel-affiliate-voi-ai.md` | Thêm `- Trích từ: [[ai-affiliate-funnel]]` vào "## Liên kết" | Provenance summary→bản gốc (2 file cùng nội dung đang đứng lẻ trong graph) |
+| `.claude/CLAUDE.md` (vault) | Cập nhật điểm 6 mục graph hygiene: baseline mới `path:SecondBrain`, `showOrphans:true`, textFade dương | Đồng bộ rule với cấu hình thực tế user đã chốt |
+
+**Chấm lẻ giữ nguyên (đèn báo, không nối ép):** `ML-MOC` (skeleton, status: planned), `20_Areas/investing/mentor-dau-tu-co-phieu-hoi-thoai` (chủ đề investing chưa chắt atomic). Link `[[50_Atomic/concepts/chi-toi-uu-nhung-gi-trong-tam-kiem-soat]]` trong summary idea-aff đang **unresolved** — atomic ghi "đã tạo" nhưng chưa tồn tại.
 
 ---
 
