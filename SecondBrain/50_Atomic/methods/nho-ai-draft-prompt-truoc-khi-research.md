@@ -34,8 +34,8 @@ Chọn platform dạy lập trình online: tự viết được "so sánh chi ph
 
 - [[chon-tool-theo-cau-hoi]] — bước đứng trước: xác định có đáng dùng Research không
 - [[feedback-cu-the-khi-iterate-ai]] — cùng nguyên tắc: ràng buộc cụ thể quyết định chất lượng output
-- [[4d-framework-ai-fluency]] — đây là Description nâng cao: dùng AI để cải thiện chính brief cho AI
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Claude 101 — Bài 1.10: Research mode (Tip 4 + prompt template), Anthropic Academy, 2026

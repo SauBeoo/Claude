@@ -1,22 +1,79 @@
 {
   "collapse-filter": true,
-  "search": "",
+  "search": "-path:60_Daily -path:99_Meta/templates -path:99_Meta/guides -file:CHANGELOG -file:README -file:_track -file:00_HOME -file:claude-101-anthropic-academy -file:flashcards",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
-  "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:00_Inbox",
+      "color": {
+        "a": 1,
+        "rgb": 15158332
+      }
+    },
+    {
+      "query": "path:10_Projects",
+      "color": {
+        "a": 1,
+        "rgb": 4360949
+      }
+    },
+    {
+      "query": "path:20_Areas",
+      "color": {
+        "a": 1,
+        "rgb": 3066993
+      }
+    },
+    {
+      "query": "path:30_Resources",
+      "color": {
+        "a": 1,
+        "rgb": 15098914
+      }
+    },
+    {
+      "query": "path:50_Atomic",
+      "color": {
+        "a": 1,
+        "rgb": 10181814
+      }
+    },
+    {
+      "query": "path:60_Daily",
+      "color": {
+        "a": 1,
+        "rgb": 1752220
+      }
+    },
+    {
+      "query": "path:MOCs",
+      "color": {
+        "a": 1,
+        "rgb": 15844367
+      }
+    },
+    {
+      "query": "path:99_Meta",
+      "color": {
+        "a": 1,
+        "rgb": 8359053
+      }
+    }
+  ],
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.7132754626224527,
+  "textFadeMultiplier": -1.2,
+  "nodeSizeMultiplier": 1.15,
+  "lineSizeMultiplier": 0.7,
+  "collapse-forces": false,
+  "centerStrength": 0.4,
+  "repelStrength": 18,
+  "linkStrength": 0.8,
+  "linkDistance": 180,
+  "scale": 0.2721655269759112,
   "close": true
 }

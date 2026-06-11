@@ -59,9 +59,34 @@ Khi tạo note mới, dùng template tương ứng ở `99_Meta/templates/`:
 1. Hỏi tôi: concept, claim, method, hay question?
 2. Dùng template tương ứng.
 3. Đặt ở `50_Atomic/<loại>/<slug>.md`
-4. **Tìm 3-5 note có sẵn liên quan** trong vault để gợi ý link `[[...]]`.
+4. **Tìm note liên quan** trong vault, nhưng mục "## Liên hệ" chỉ giữ **tối đa 2 link load-bearing** (xem "Quy tắc liên kết & đồ thị" bên dưới).
 5. Status mặc định = `seed`.
 6. **Viết thân note theo kiểu ELI5** — dễ như giải thích cho một đứa trẻ 5 tuổi: ví dụ/phép so sánh đời thường, câu ngắn, từ quen thuộc. Thuật ngữ kỹ thuật chỉ giữ ở tiêu đề hoặc khi bắt buộc, giải thích ngay bằng lời thường. (Áp dụng cho cả `/paper-atomize`.)
+
+## Quy tắc liên kết & đồ thị (graph hygiene)
+
+Mục tiêu: graph là **đồ thị tri thức**, không phải đồ thị thao tác. Đừng để nó "lằng nhằng".
+
+1. **Mỗi note một vai trò** (không để nhiều note cùng index một bộ atomic → tránh "quạt trùng"):
+   - **MOC** = mục lục duy nhất theo chủ đề, giữ toàn bộ link + chia nhóm. Mỗi domain lớn một MOC riêng (vd `claude-MOC`, `claude-code-MOC`).
+   - **Source/course note** = provenance, chỉ fan tới atomic chắt ra từ chính nó.
+   - **daily** = nhật ký, chỉ link cái tạo ra hôm đó. **_track** = bảng tiến độ, link tối thiểu.
+   - **atomic** = (ngầm nối MOC) + tối đa **2** atomic load-bearing.
+
+2. **"## Liên hệ" của atomic: tối đa 2 link** mạnh nhất — cái thực sự sẽ bấm theo. KHÔNG liệt kê link "cùng tinh thần/anh em" mềm. MOC đã lo việc duyệt-theo-chủ-đề nên cắt link ngang không làm atomic mồ côi.
+
+3. **Cross-domain bridge tiết kiệm:** nối 2 cụm chủ đề chỉ bằng 1–2 nhịp cầu thật đắt giá, đừng dán mọi thứ thành một khối.
+
+4. **Provenance source→atomic (BẮT BUỘC khi chắt atomic):**
+   - Đầu section "## Nguồn" của atomic, thêm: `- Trích từ: [[<source/course note>]]`.
+   - Trong source/course note: liệt kê atomic đã chắt ra + link tới MOC.
+   - Note nguồn của một khóa học đặt ở `30_Resources/courses/<slug>.md`.
+
+5. **Node nên ẩn khỏi global graph** (loại operational/log/study, không phải tri thức) qua *Graph settings → Filters*: `daily`, `_track`, `flashcards`, `CHANGELOG`, `README`, `templates`, `guides`, `00_HOME`, và note nguồn khóa (vì fan trùng MOC). Provenance/log xem bằng **Local Graph** + Backlinks, không nhồi vào global.
+
+6. **Cấu hình graph baseline** (`.obsidian/graph.json`): `showOrphans:false`, `hideUnresolved:true`, `textFadeMultiplier` âm (nhãn chỉ hiện khi zoom gần), tô màu theo tầng PARA, `repelStrength` cao để giãn node.
+
+> Chấm cô đơn còn lại trong graph = "đèn báo" chủ đề chưa được chắt/nối — hữu ích, không phải lỗi. Đừng cố nối ép.
 
 ## Khi tôi nhờ "soạn bài giảng/video/content"
 

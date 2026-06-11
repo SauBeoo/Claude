@@ -17,6 +17,69 @@ tags: [meta, changelog, system-log]
 
 ---
 
+## 2026-06-08 — Sửa nhãn note nguồn Claude 101 cho trung thực
+
+**Bối cảnh:** user phát hiện note `claude-101-anthropic-academy` đội lốt `source-note` nhưng thực ra chỉ là index (không có nội dung tóm tắt — 15 PDF gốc chưa summarize, atomic được học thẳng qua `/teach`). User chọn "sửa nhãn cho trung thực" thay vì backfill.
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `30_Resources/courses/claude-101-anthropic-academy.md` | `type: source-note→source-index`, `status: distilled→index-only`, sửa path source_file đúng, thêm cảnh báo rõ "đây là bản đồ nguồn, KHÔNG phải tóm tắt; 15 PDF chưa summarize" | Không nói dối về việc đã gen source; phân biệt với Claude Code 101 (có source thật) |
+
+---
+
+## 2026-06-08 — Chốt quy tắc "graph hygiene" vào CLAUDE.md vault
+
+**Bối cảnh:** sau loạt việc dọn graph + provenance + tỉa link, user yêu cầu tổng hợp quy tắc đã áp vào CLAUDE.md để các phiên sau tự tuân.
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `.claude/CLAUDE.md` | Thêm mục "Quy tắc liên kết & đồ thị (graph hygiene)" (mỗi note một vai trò, atomic ≤2 link, cross-domain bridge tiết kiệm, provenance source→atomic bắt buộc, node nên ẩn khỏi global, baseline graph.json); chỉnh điểm 4 phần tạo atomic ("3-5 link" → "tối đa 2 load-bearing") | Đóng băng quy ước đã thống nhất trong phiên |
+| `99_Meta/guides/huong-dan-van-hanh-secondbrain.md` | Thêm **mục 15 "Graph hygiene"**; sửa các chỗ mâu thuẫn "≥3 link" → "≤2 load-bearing + MOC index" (mục 4 Bước 3, mục 7 bảng, mục 9 checklist, mục 10); thêm anti-pattern "Over-link/quạt trùng"; thêm trigger graph vào mục 14.1; `updated: 2026-06-08` | Đồng bộ guide với CLAUDE.md, gỡ mâu thuẫn nội bộ |
+
+---
+
+## 2026-06-08 — Tỉa link ngang giữa atomic (chống tangle)
+
+**Bối cảnh:** sau khi chắt 15 atomic Claude Code + nối provenance, graph atomic↔atomic quá đặc (107 link ngang / 34 atomic + quạt trùng MOC vs note nguồn khóa). User chọn "tỉa mạnh".
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| 26 atomic trong `50_Atomic/{concepts,claims,methods}/` | Tỉa mục "## Liên hệ" còn tối đa 2 link load-bearing/note; chỉ giữ 2 cầu nối cross-domain (`prompt-la-brief↔4d-framework`, `mcp-server-overhead↔mcp-usb-c`) | Giảm tangle: 107 → 66 link ngang. MOC vẫn giữ reachability nên không atomic nào bị mồ côi |
+
+### 📝 Không log
+
+- `.obsidian/graph.json`: thêm `-file:claude-101-anthropic-academy` vào filter để ẩn quạt trùng (note nguồn khóa) khỏi global graph — provenance vẫn xem qua Local Graph. (Config, không thuộc nội dung vault.)
+
+---
+
+## 2026-06-08 — Dọn graph view + thiết lập link provenance (nguồn → atomic)
+
+**Bối cảnh:** graph view "rối mắt", link "loạn không quy củ". Chẩn đoán: graph rối vì (a) config hiển thị mặc định kém và (b) 3 hub (MOC + _track + daily) cùng fan-out 18 atomic giống hệt nhau (log đúng-thiết-kế, không phải rác). Fix bằng filter graph + thiết lập provenance source→atomic, KHÔNG xóa link log. Sau đó user yêu cầu nối atomic với nguồn/sources project → làm cho cả 2 domain (Claude 101 + Claude Code 101).
+
+### 🔧 Thay đổi file đang tồn tại (trong vault)
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `50_Atomic/{concepts,claims,methods}/*.md` (19 file Claude 101) | Chèn `- Trích từ: [[claude-101-anthropic-academy]]` đầu section "## Nguồn" | Link provenance atomic → note nguồn |
+| `10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md` | Thay placeholder "Phase 2" bằng 5 link atomic đã chắt + link `claude-code-MOC` | Provenance 2 chiều source ↔ atomic (vá link gãy trong `thread-quan-ly-context`) |
+| `10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md` | Thay placeholder "chưa có" bằng 6 link atomic Bài 2.4 + `claude-code-MOC` | Provenance source ↔ atomic |
+| `10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md` | Thêm mục "Atomic đã chắt" (4 link Bài 2.3) + `claude-code-MOC` | Provenance source ↔ atomic |
+
+### 📝 File mới (không cần log chi tiết)
+
+- Note nguồn: `30_Resources/courses/claude-101-anthropic-academy.md` (provenance hub 19 atomic Claude 101).
+- **15 atomic Claude Code 101**: Bài 2.5 (5) — `context-window-tai-nguyen-huu-han`, `subagent-context-isolation-pattern`, `prompt-cu-the-tiet-kiem-context-hon-prompt-ngan`, `compact-khi-do-dang-clear-khi-doi-task`, `mcp-server-overhead-cost-truoc-prompt`; Bài 2.3 (4) — `prompt-la-brief-khong-phai-command`, `4-thanh-phan-prompt-tot`, `3-permission-modes-claude-code`, `3-task-framework-easy-medium-hard`; Bài 2.4 (6) — `epcc-workflow-bon-phase`, `cost-thay-doi-tang-theo-phase`, `test-suite-source-of-truth-voi-ai`, `claude-code-subagent-fresh-eyes`, `calibrate-workflow-theo-task-size`, `tech-debt-leaf-node-acceptable`.
+- MOC mới: `99_Meta/MOCs/claude-code-MOC.md` (index 15 atomic theo 3 bài).
+- (Config Obsidian `.obsidian/graph.json` — không thuộc nội dung vault, không log.)
+
+---
+
 ## 2026-06-08 — Buổi 5 Claude 101 (HOÀN TẤT KHÓA) + `/moc-update`
 
 **Bối cảnh:** buổi cuối track [[../20_Areas/learning/claude-101/_track|claude-101]] (Module 6: Use cases by role + Flavors + Tổng kết/Quiz 1.11–1.14). Tạo 2 atomic mới; chạy `/moc-update` phát hiện đúng 2 orphan, user duyệt "ok". Track chuyển `status: done` — 6/6 module, 18 atomic, 32 flashcards.

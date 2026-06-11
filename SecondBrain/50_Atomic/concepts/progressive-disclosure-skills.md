@@ -20,8 +20,8 @@ Hệ quả thực hành: **`description` của skill là tối quan trọng** �
 ## Liên hệ
 
 - [[projects-store-knowledge-skills-perform-tasks]] — Skill là cái "HOW"
-- [[context-window-tai-nguyen-huu-han]] — vì sao nạp-dần quan trọng (nếu note này tồn tại)
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.7, "Cách Skills hoạt động — progressive disclosure"

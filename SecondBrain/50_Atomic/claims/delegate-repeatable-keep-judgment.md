@@ -32,4 +32,5 @@ Tin cao. Đây là kim chỉ nam cho chữ D "Delegation". Nó cũng giải thí
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.0 & 1.3 ("Delegate what's repeatable, keep what needs judgment")

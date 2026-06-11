@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4a0c7c51b697b1c1",
+        "id": "eeb54a76696152ed",
         "type": "tabs",
         "children": [
           {
-            "id": "96c8e4ee05fe4247",
+            "id": "e2a5986776351e61",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "SecondBrain/99_Meta/MOCs/claude-code-MOC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "claude-code-MOC"
             }
           }
         ]
@@ -70,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,43 +183,45 @@
       "bases:Create new base": false
     }
   },
-  "active": "96c8e4ee05fe4247",
+  "active": "e2a5986776351e61",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "SecondBrain/99_Meta/CHANGELOG.md.tmp.15608.55dfd54ec323",
-    "SecondBrain/99_Meta/CHANGELOG.md.tmp.15608.e397956b9800",
-    "SecondBrain/99_Meta/MOCs/claude-MOC.md.tmp.15608.5d7b953c637c",
-    "SecondBrain/99_Meta/MOCs/claude-MOC.md.tmp.15608.1c7fe4919471",
-    "SecondBrain/99_Meta/MOCs/claude-MOC.md.tmp.15608.fb260ba85caa",
-    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.218889efb591",
-    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.487653c5e647",
-    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.d20458f6b902",
-    "SecondBrain/20_Areas/learning/claude-101/_track.md.tmp.15608.245b787c03d7",
-    "SecondBrain/20_Areas/learning/claude-101/flashcards.md.tmp.15608.a77de1495981",
-    "SecondBrain/50_Atomic/concepts/claude-flavors-cung-tri-tue-nhieu-cua.md",
+    "SecondBrain/99_Meta/CHANGELOG.md.tmp.13620.07ef114994e4",
+    "SecondBrain/30_Resources/courses/claude-101-anthropic-academy.md.tmp.13620.9ea115dec8ea",
+    "SecondBrain/30_Resources/courses/claude-101-anthropic-academy.md.tmp.13620.adfd2244f9dc",
+    "SecondBrain/99_Meta/CHANGELOG.md.tmp.13620.3299c93a796f",
+    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md.tmp.13620.25201f6428d4",
+    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md.tmp.13620.075cb88eb927",
+    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md.tmp.13620.cfa58012e4ae",
+    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md.tmp.13620.0423b3a24a47",
+    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md.tmp.13620.233f6a62e89b",
+    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md.tmp.13620.3d57f6083246",
+    "SecondBrain/99_Meta/guides/huong-dan-van-hanh-secondbrain.md.tmp.13620.34e8a4c1b318",
     "SecondBrain/99_Meta/MOCs/claude-MOC.md",
-    "SecondBrain/20_Areas/learning/claude-101/flashcards.md",
-    "SecondBrain/50_Atomic/methods/cham-diem-chon-use-case.md",
-    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-prompt-dau-tien.md",
-    "SecondBrain/50_Atomic/concepts/4d-framework-ai-fluency.md",
-    "SecondBrain/50_Atomic/methods/nho-ai-draft-prompt-truoc-khi-research.md",
-    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-epcc-workflow.md",
-    "SecondBrain/10_Projects/claude-code-101/sources/2026-claude-code-101-quan-ly-context.md",
-    "SecondBrain/50_Atomic/claims/cowork-code-chung-engine-agentic.md",
-    "SecondBrain/50_Atomic/claims/delegate-repeatable-keep-judgment.md",
-    "SecondBrain/50_Atomic/claims/output-troi-chay-khong-dong-nghia-dung.md",
+    "SecondBrain/50_Atomic/concepts/prompt-la-brief-khong-phai-command.md",
+    "SecondBrain/50_Atomic/methods/chon-tool-theo-cau-hoi.md",
+    "SecondBrain/30_Resources/courses/claude-101-anthropic-academy.md",
+    "SecondBrain/50_Atomic/methods/instructions-project-nhu-code.md",
+    "SecondBrain/50_Atomic/claims/tech-debt-leaf-node-acceptable.md",
+    "SecondBrain/50_Atomic/methods/calibrate-workflow-theo-task-size.md",
+    "SecondBrain/50_Atomic/concepts/claude-code-subagent-fresh-eyes.md",
+    "SecondBrain/50_Atomic/methods/test-suite-source-of-truth-voi-ai.md",
+    "SecondBrain/50_Atomic/claims/cost-thay-doi-tang-theo-phase.md",
+    "SecondBrain/50_Atomic/concepts/epcc-workflow-bon-phase.md",
+    "SecondBrain/50_Atomic/methods/3-task-framework-easy-medium-hard.md",
+    "SecondBrain/50_Atomic/concepts/3-permission-modes-claude-code.md",
+    "SecondBrain/50_Atomic/methods/4-thanh-phan-prompt-tot.md",
+    "Untitled 1.canvas",
+    "SecondBrain/99_Meta/MOCs/claude-code-MOC.md",
+    "SecondBrain/50_Atomic/concepts/subagent-context-isolation-pattern.md",
+    "SecondBrain/50_Atomic/claims/mcp-server-overhead-cost-truoc-prompt.md",
+    "SecondBrain/50_Atomic/claims/compact-khi-do-dang-clear-khi-doi-task.md",
+    "SecondBrain/50_Atomic/claims/prompt-cu-the-tiet-kiem-context-hon-prompt-ngan.md",
+    "SecondBrain/50_Atomic/concepts/context-window-tai-nguyen-huu-han.md",
     "SecondBrain/50_Atomic/claims/claude-chi-thay-cai-ban-thay.md",
-    "SecondBrain/50_Atomic/concepts/3-che-do-claude-desktop.md",
-    "Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md",
-    "SecondBrain/10_Projects/claude-code-101/outputs/thread-quan-ly-context.md",
-    "SecondBrain/50_Atomic/concepts/progressive-disclosure-skills.md",
-    "SecondBrain/99_Meta/CHANGELOG.md",
-    "SecondBrain/30_Resources/web-development/README.md",
-    "SecondBrain/30_Resources/video-editing/README.md",
-    "SecondBrain/30_Resources/people/README.md",
-    "SecondBrain/30_Resources/machine-learning/README.md",
-    "SecondBrain/30_Resources/courses/README.md",
-    "SecondBrain/30_Resources/books/README.md",
-    "SecondBrain/20_Areas/teaching/README.md"
+    "SecondBrain/50_Atomic/concepts/mcp-usb-c-cho-ai.md",
+    "Untitled.canvas",
+    "SecondBrain/50_Atomic/concepts/claude-flavors-cung-tri-tue-nhieu-cua.md",
+    "SecondBrain/20_Areas/learning/claude-101/flashcards.md",
+    "SecondBrain/50_Atomic/methods/cham-diem-chon-use-case.md"
   ]
 }

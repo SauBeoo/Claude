@@ -17,8 +17,8 @@ Hệ quả quan trọng nhất: công ty bạn có tool nội bộ → team tự
 
 - [[claude-chi-thay-cai-ban-thay]] — connector mạnh đến đâu vẫn bị chặn bởi permission của người dùng
 - [[progressive-disclosure-skills]] — cùng triết lý "chuẩn mở + nạp khi cần" của hệ sinh thái Claude
-- [[scheduled-tasks-tu-dong-hoa-viec-lap]] — connectors + scheduled task = workflow tự động cross-tool
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Claude 101 — Bài 1.8: Connectors — Kết nối tools qua MCP (Anthropic Academy, 2026)

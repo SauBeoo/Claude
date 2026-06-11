@@ -36,8 +36,8 @@ Muốn biết đề xuất sửa code của Claude có đáng tin không → đ�
 
 - [[output-troi-chay-khong-dong-nghia-dung]] — vấn đề mà loop này giải quyết
 - [[4d-framework-ai-fluency]] — loop vận hành 2 chữ D: Discernment + Diligence
-- [[delegate-repeatable-keep-judgment]] — sau khi validate, đây là tiêu chí quyết định có giao không
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.3, case study Rio (Valley Veterans Services)

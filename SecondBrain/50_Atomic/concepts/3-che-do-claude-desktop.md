@@ -19,8 +19,8 @@ Cả 3 dùng **cùng một trí tuệ Claude**, chỉ khác giao diện và quy�
 
 - [[cowork-code-chung-engine-agentic]] — vì sao Cowork & Code là anh em ruột
 - [[chon-che-do-chat-cowork-code]] — quy tắc chọn mode nào
-- [[scheduled-tasks-tu-dong-hoa-viec-lap]] — tính năng đắt nhất của Cowork
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.4 "Claude Desktop — Chat, Cowork, Code"

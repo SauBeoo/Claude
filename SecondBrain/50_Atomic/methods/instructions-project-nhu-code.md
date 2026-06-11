@@ -41,4 +41,5 @@ Vault SecondBrain như một Project: instruction = các rule trong `CLAUDE.md` 
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.5, "Add project instructions" & "RAG"

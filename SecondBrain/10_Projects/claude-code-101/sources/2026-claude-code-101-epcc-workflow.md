@@ -567,4 +567,5 @@ Claude follow rules trong mọi session, không cần nhắc lại (Bài 2.7).
 - Project: [[10_Projects/claude-code-101/README]]
 - Chapter tiếp theo: Bài 2.5 — Quản lý Context (`/context`, `/compact`, `/clear`)
 - Chapter liên quan: Bài 2.6 (Code Review & Git Workflow), Bài 2.7 (CLAUDE.md)
-- Atomic notes đã tạo: *(chưa có — chạy `/paper-atomize` để tách)*
+- Atomic đã chắt (2026-06-08): [[epcc-workflow-bon-phase]], [[cost-thay-doi-tang-theo-phase]], [[test-suite-source-of-truth-voi-ai]], [[claude-code-subagent-fresh-eyes]], [[calibrate-workflow-theo-task-size]], [[tech-debt-leaf-node-acceptable]]
+- Index: [[claude-code-MOC]]

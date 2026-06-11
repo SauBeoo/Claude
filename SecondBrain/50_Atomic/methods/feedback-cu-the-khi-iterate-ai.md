@@ -44,4 +44,5 @@ Bản nháp mô tả API endpoint bị dài dòng & thiếu ví dụ → feedbac
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.3, mục "Iteration Mindset"

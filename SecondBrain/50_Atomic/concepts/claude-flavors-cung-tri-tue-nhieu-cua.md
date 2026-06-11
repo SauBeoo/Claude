@@ -32,8 +32,8 @@ Tại sao quan trọng? Vì mỗi lần phải nhảy ra chỗ khác để hỏi
 
 - [[3-che-do-claude-desktop]] — Chat/Cowork/Code là 3 *chế độ trong Desktop*; flavor là chuyện rộng hơn: cùng trí tuệ ở nhiều *ứng dụng* khác nhau
 - [[mcp-usb-c-cho-ai]] — flavor là Claude tới chỗ bạn; MCP/connector là tool tới chỗ Claude — hai chiều của cùng một ý "đặt trí tuệ đúng nơi cần"
-- [[chon-che-do-chat-cowork-code]] — cùng tinh thần "chọn đúng môi trường theo việc"
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Claude 101 — Bài 1.12: Các cách khác làm việc với Claude (4 flavors + decision tree), Anthropic Academy, 2026

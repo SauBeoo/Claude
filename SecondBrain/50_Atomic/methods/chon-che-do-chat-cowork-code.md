@@ -38,9 +38,9 @@ Mỗi lần định giao một việc cho Claude trên Desktop và phân vân n�
 ## Liên hệ
 
 - [[3-che-do-claude-desktop]] — đặc tính từng mode
-- [[scheduled-tasks-tu-dong-hoa-viec-lap]] — xử lý việc lặp
 - [[delegate-repeatable-keep-judgment]] — quyết định giao việc nào trước khi chọn mode
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.4, "So sánh 3 chế độ" & "Anti-patterns khi chọn mode"

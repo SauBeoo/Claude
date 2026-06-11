@@ -34,8 +34,8 @@ Mỗi lần định hỏi Claude một câu cần thông tin — dừng 2 giây,
 
 - [[chon-che-do-chat-cowork-code]] — anh em song sinh: kia chọn *môi trường làm việc*, đây chọn *công cụ tra cứu*
 - [[claude-chi-thay-cai-ban-thay]] — Enterprise Search filter theo quyền của bạn
-- [[delegate-repeatable-keep-judgment]] — Research cho input, quyết định vẫn là của bạn
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Claude 101 — Bài 1.10: Research mode (decision tree + comparison matrix), Anthropic Academy, 2026

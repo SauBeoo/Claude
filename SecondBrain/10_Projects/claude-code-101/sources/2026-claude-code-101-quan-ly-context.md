@@ -136,7 +136,8 @@ Phép so sánh tác giả đánh giá chuẩn nhất với thực tế: *"trí n
 
 - Project: [[10_Projects/claude-code-101]]
 - Source note cùng module: [[2026-claude-code-101-epcc-workflow]], [[2026-claude-code-101-prompt-dau-tien]]
-- Atomic notes sẽ tạo từ source này → cập nhật ở Phase 2
+- Atomic đã chắt từ source này (2026-06-08): [[context-window-tai-nguyen-huu-han]], [[prompt-cu-the-tiet-kiem-context-hon-prompt-ngan]], [[compact-khi-do-dang-clear-khi-doi-task]], [[mcp-server-overhead-cost-truoc-prompt]], [[subagent-context-isolation-pattern]]
+- Index: [[claude-code-MOC]]
 
 ## Chỗ chưa chắc
 

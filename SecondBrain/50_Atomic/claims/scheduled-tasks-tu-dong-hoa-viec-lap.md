@@ -32,4 +32,5 @@ Tin cao. Đây là "killer feature" ít người dùng đủ. Quy tắc: thấy 
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.4, "Scheduled tasks (killer feature)"

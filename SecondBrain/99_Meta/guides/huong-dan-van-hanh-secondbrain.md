@@ -2,7 +2,7 @@
 type: guide
 topic: secondbrain-workflow
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-06-08
 tags: [guide, secondbrain, workflow, meta]
 status: active
 ---
@@ -103,7 +103,7 @@ Với mỗi source note tuần này:
 
 ### Bước 3 — Link và cập nhật MOC (10 phút)
 - Mở `/moc-update` skill → quét atomic notes chưa được index.
-- Với mỗi atomic mới, **đảm bảo có ≥3 link `[[...]]`** tới các note liên quan. Atomic không có link = atomic chết.
+- Với mỗi atomic mới: mục "## Liên hệ" giữ **tối đa 2 link load-bearing** + dòng `- Trích từ: [[source]]`. Atomic không bị mồ côi nhờ **được MOC index**, không phải nhờ nhồi nhiều link ngang (xem mục 15).
 - Thêm atomic mới vào MOC chủ đề tương ứng.
 
 ### Bước 4 — Đẩy 1 deliverable (15 phút tối thiểu)
@@ -172,7 +172,7 @@ Atomic note **chết** = atomic không bao giờ được mở lại. Cách trá
 | **1 ý duy nhất** | "Prompt cụ thể tiết kiệm context hơn prompt ngắn" | "Mọi thứ về prompt engineering" |
 | **Tự đứng vững** | Đọc mình nó hiểu được, không cần đọc source | "Như đã nói ở Bài 2.5..." (cần context bên ngoài) |
 | **Tiêu đề là câu hoàn chỉnh** | `prompt-cu-the-tiet-kiem-context-hon-prompt-ngan.md` | `prompt.md`, `note-1.md` |
-| **Có ≥3 link `[[...]]`** | Liên hệ với note họ hàng, đối lập, nền tảng | Cô lập, không link |
+| **Liên kết đúng mức** | ≤2 link ngang load-bearing + được MOC index + có link nguồn | Cô lập hoàn toàn, HOẶC nhồi mọi link "cùng tinh thần" |
 | **Có "Quan điểm của tôi"** | Bạn đồng ý/phản biện gì, confidence level | Chỉ tóm tắt người khác |
 | **Có nguồn truy vết** | Link về source note | Không rõ từ đâu ra |
 | **Tái sử dụng ≥3 lần** | Dùng được trong nhiều context khác nhau | Chỉ dùng được trong 1 paper đó |
@@ -223,7 +223,7 @@ Claude Code là **trợ lý vận hành vault**, không phải thay thế suy ng
 Mở vault, kiểm 7 câu này. Nếu ≥5 câu "không" → workflow đang lệch, ngồi xuống fix.
 
 1. ☐ Tháng này tôi đã sản xuất ≥1 output (Phase 3) dùng atomic notes có sẵn?
-2. ☐ Mỗi atomic note tôi tạo tháng này có ≥3 link `[[...]]`?
+2. ☐ Mỗi atomic tháng này: ≤2 link ngang load-bearing, được MOC index, có link nguồn?
 3. ☐ MOC chủ đề chính tôi đang theo đã được cập nhật trong 30 ngày qua?
 4. ☐ Inbox (`00_Inbox/`) có ≤10 file pending (không ứ đọng)?
 5. ☐ Có ≥1 project đang Active ở `10_Projects/` (vault không "ngủ đông")?
@@ -242,9 +242,13 @@ Mở vault, kiểm 7 câu này. Nếu ≥5 câu "không" → workflow đang lệ
 **Triệu chứng:** Một note 500+ dòng cover nhiều ý.
 **Chữa:** Mỗi atomic 1 ý. Note dài là source, không phải atomic.
 
-### ❌ "Note cô lập" — không link
-**Triệu chứng:** Atomic mới tạo không có `[[...]]` nào.
-**Chữa:** Trước khi save, mở MOC chủ đề → chèn ≥3 link.
+### ❌ "Note cô lập" — không vào MOC
+**Triệu chứng:** Atomic mới tạo không link gì và không được MOC nào index.
+**Chữa:** Thêm 1–2 link ngang load-bearing + đảm bảo MOC chủ đề có index nó. (Đừng nhồi link cho đủ số — xem mục 15.)
+
+### ❌ "Over-link / quạt trùng" — graph lằng nhằng
+**Triệu chứng:** Mỗi atomic link 4–6 note "cùng tinh thần"; nhiều hub (MOC + _track + daily + note nguồn) cùng fan tới một bộ atomic → mạng nhện.
+**Chữa:** Mỗi atomic ≤2 link load-bearing; mỗi node một vai trò; ẩn node log/provenance khỏi global graph (mục 15).
 
 ### ❌ "MOC trống" — không có sổ mục lục
 **Triệu chứng:** Có 30 atomic notes nhưng không MOC nào → không tìm lại được.
@@ -335,6 +339,7 @@ Bất kỳ thay đổi nào tạo ra **quy tắc mới, command mới, skill m�
 - Đổi convention đặt tên / cấu trúc thư mục → update mục 2 (Các loại note) hoặc mục 12 (Cấu trúc thư mục).
 - Đổi workflow định kỳ (daily/weekly/monthly) → update mục 3, 4, hoặc 9.
 - Đổi tiêu chí atomic / promote / archive → update mục 7 hoặc mục mới tương ứng.
+- Đổi quy tắc liên kết / đồ thị (graph) → update mục 15.
 
 **Quy tắc:** *cùng commit / cùng turn* với thay đổi gốc — không "để sau". Nếu Claude làm thay đổi → Claude tự cập nhật guides ngay.
 
@@ -381,6 +386,38 @@ Bỏ bước nào → coi như chưa xong. Nếu user can thiệp giữa chừng
 
 - **Mỗi tháng** (cùng dịp mục 9): mở guides, đọc lướt — có quy tắc nào không còn dùng? có command nào đã bỏ? Xóa hoặc đánh dấu deprecated.
 - **Mỗi quý**: scroll CHANGELOG, gom entry cùng chủ đề thành mục "lịch sử thay đổi" tóm gọn. CHANGELOG quá dài (>500 dòng) → tách file theo năm: `CHANGELOG-2026.md`, `CHANGELOG-2027.md`.
+
+---
+
+## 15. Graph hygiene — quy tắc liên kết & đồ thị
+
+> Graph là **đồ thị tri thức**, không phải đồ thị thao tác. Quy tắc giữ nó dễ đọc, dễ tìm (đúc kết 2026-06-08 sau đợt dọn graph "lằng nhằng"). Đồng bộ với `SecondBrain/.claude/CLAUDE.md` mục "Quy tắc liên kết & đồ thị".
+
+### 15.1. Mỗi node một vai trò (tránh "quạt trùng")
+Đừng để nhiều note cùng index một bộ atomic (vd MOC + _track + daily + note nguồn cùng fan tới 18 atomic → mạng nhện chồng nhau).
+- **MOC** = mục lục duy nhất theo chủ đề, giữ toàn bộ link + chia nhóm. Mỗi domain lớn một MOC riêng (vd `claude-MOC`, `claude-code-MOC`).
+- **Source/course note** = provenance, chỉ fan tới atomic chắt ra từ chính nó.
+- **daily** = nhật ký, chỉ link cái tạo ra hôm đó. **_track** = bảng tiến độ, link tối thiểu.
+- **atomic** = (được MOC index) + tối đa 2 link ngang load-bearing.
+
+### 15.2. Atomic: "## Liên hệ" tối đa 2 link
+Chỉ giữ 2 link mạnh nhất — cái thực sự sẽ bấm theo (note nền tảng / cặp vận hành / đối lập). KHÔNG liệt kê link "cùng tinh thần / anh em" mềm. **Câu cũ "atomic không link = chết" được thay bằng "atomic không vào MOC = chết"** — MOC lo reachability nên cắt link ngang không làm note mồ côi.
+
+### 15.3. Cross-domain bridge tiết kiệm
+Nối hai cụm chủ đề chỉ bằng 1–2 nhịp cầu thật đắt giá, đừng dán mọi thứ thành một khối (vd Claude 101 ↔ Claude Code 101 chỉ nối qua `prompt-la-brief↔4d-framework` và `mcp-server-overhead↔mcp-usb-c`).
+
+### 15.4. Provenance source→atomic (bắt buộc khi chắt)
+- Đầu "## Nguồn" của atomic: `- Trích từ: [[<source/course note>]]`.
+- Source/course note: liệt kê atomic đã chắt ra + link tới MOC.
+- Note nguồn một khóa học → `30_Resources/courses/<slug>.md`.
+
+### 15.5. Node nên ẩn khỏi global graph
+Loại operational/log/study (không phải tri thức) → lọc qua *Graph settings → Filters*: `daily`, `_track`, `flashcards`, `CHANGELOG`, `README`, `templates`, `guides`, `00_HOME`, và note nguồn khóa (fan trùng MOC). Provenance/log xem bằng **Local Graph** + Backlinks, không nhồi vào global.
+
+### 15.6. Baseline `.obsidian/graph.json`
+`showOrphans:false`, `hideUnresolved:true`, `textFadeMultiplier` âm (nhãn chỉ hiện khi zoom gần), tô màu theo tầng PARA, `repelStrength` cao để giãn node.
+
+> Chấm cô đơn còn lại trong graph = "đèn báo" chủ đề chưa được chắt/nối — hữu ích, không phải lỗi. Đừng cố nối ép.
 
 ---
 

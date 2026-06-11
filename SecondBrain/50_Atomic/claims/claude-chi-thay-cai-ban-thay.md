@@ -30,8 +30,8 @@ Tin ở mức cao — đây là nguyên tắc kiến trúc, không phải lời 
 
 - [[mcp-usb-c-cho-ai]] — chuẩn mở bên dưới các connector
 - [[chon-tool-theo-cau-hoi]] — Enterprise Search trong bộ 4 tool đều tôn trọng nguyên tắc này
-- [[output-troi-chay-khong-dong-nghia-dung]] — cùng họ "đừng tin mặc định, hiểu cơ chế rồi hãy tin"
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Claude 101 — Bài 1.8 (security model) + Bài 1.9 (Enterprise Search permissions), Anthropic Academy, 2026

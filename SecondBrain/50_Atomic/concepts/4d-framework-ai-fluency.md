@@ -20,12 +20,11 @@ Tưởng tượng bạn vừa được cấp một thực tập sinh siêu giỏ
 
 ## Liên hệ
 
-- [[delegate-repeatable-keep-judgment]] — quy tắc cho chữ D "Delegation"
 - [[output-troi-chay-khong-dong-nghia-dung]] — vì sao cần chữ D "Discernment"
 - [[delegation-diligence-loop]] — công cụ vận hành Discernment + Diligence
-- [[feedback-cu-the-khi-iterate-ai]] — kỹ năng cho chữ D "Description"
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.3 "AI Fluency & Iteration"
 - The AI Fluency Framework — https://www-cdn.anthropic.com/b383cf6baddbfc72fdf8b0ed533a518e2872d531.pdf

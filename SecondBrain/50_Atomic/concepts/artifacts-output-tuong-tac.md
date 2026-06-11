@@ -27,4 +27,5 @@ Share 3 kiểu: copy/download (cá nhân), share nội bộ org (Team/Enterprise
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.6 "Artifacts — Sáng tạo tương tác"

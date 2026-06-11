@@ -28,9 +28,8 @@ Tin cao. Test nhanh: nếu thứ đó là *thông tin để tra* → Project; n�
 
 - [[progressive-disclosure-skills]] — cơ chế Skill nạp dần
 - [[instructions-project-nhu-code]] — cách "lập trình" một Project
-- [[artifacts-output-tuong-tac]] — sản phẩm đầu ra mà Skill+Project có thể tạo ra
-- [[scheduled-tasks-tu-dong-hoa-viec-lap]] — tự động hoá việc lặp (liên quan delegation)
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.5 (Projects), 1.7 (Skills)

@@ -83,6 +83,12 @@ Chất lượng output của Claude Code phụ thuộc trực tiếp vào chất
 4. **4 thành phần của prompt tốt** — Context + Constraints + Success Criteria + Think Hard Trigger
 5. **Plan Mode workflow cho Medium task** — 5 bước align trước khi execute
 
+## Atomic đã chắt (2026-06-08)
+
+- [[prompt-la-brief-khong-phai-command]], [[4-thanh-phan-prompt-tot]], [[3-permission-modes-claude-code]], [[3-task-framework-easy-medium-hard]]
+- Index: [[claude-code-MOC]]
+- *(Ứng viên "Plan Mode workflow" đã gộp vào [[3-permission-modes-claude-code]] + [[epcc-workflow-bon-phase]] để tránh trùng.)*
+
 ## Trích dẫn quan trọng
 
 > "Don't use Claude Code to write code first. Use it to ask questions about the codebase."

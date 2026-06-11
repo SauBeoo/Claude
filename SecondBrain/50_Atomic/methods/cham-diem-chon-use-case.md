@@ -47,4 +47,5 @@ Daily standup note (5 lần/tuần, 15 phút, ổn định) ≈ **33 điểm** v
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Claude 101 — Bài 1.11: Claude theo vai trò (Scoring framework + anti-patterns), Anthropic Academy, 2026

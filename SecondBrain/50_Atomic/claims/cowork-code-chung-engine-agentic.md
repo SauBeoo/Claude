@@ -30,4 +30,5 @@ Tin cao. Đây là góc nhìn giúp người đã rành Claude Code học Cowork
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.4, "Cowork + Code chạy trên cùng engine (Claude Code)"

@@ -32,4 +32,5 @@ Tin cao. Mức độ thẩm định nên tỉ lệ với stakes: memo nội bộ
 
 ## Nguồn
 
+- Trích từ: [[claude-101-anthropic-academy]]
 - Khoá Claude 101 (Anthropic Academy) — bài 1.3, mục "5 common challenges" & "Diligence"
