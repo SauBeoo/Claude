@@ -8,21 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/50_Atomic/concepts/....md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/00_BRAND.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/00_BRAND.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/01_SAN_PHAM_GIA.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/01_SAN_PHAM_GIA.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/02_N8N_AUTOMATION.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/02_N8N_AUTOMATION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/03_CONTENT_SOCIAL.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/03_CONTENT_SOCIAL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/04_OUTREACH.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/04_OUTREACH.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/05_ROADMAP_90D.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/05_ROADMAP_90D.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/glowup-studio.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/glowup-studio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/portfolio/demo-spa-01/demo-spa-01.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/portfolio/demo-spa-01/demo-spa-01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/templates/templates.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/templates/templates.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled 1.canvas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled 2.canvas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled 3.canvas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.canvas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +89,7 @@
       <workItem from="1780494266229" duration="6716000" />
       <workItem from="1780839905709" duration="5390000" />
       <workItem from="1780923833088" duration="10035000" />
-      <workItem from="1781184751841" duration="12762000" />
+      <workItem from="1781184751841" duration="13370000" />
     </task>
     <servers />
   </component>

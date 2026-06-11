@@ -1,7 +1,7 @@
 ---
 type: changelog
 created: 2026-05-24
-updated: 2026-06-11
+updated: 2026-06-12
 tags: [meta, changelog, system-log]
 ---
 
@@ -14,8 +14,6 @@ tags: [meta, changelog, system-log]
 > - ❌ Tạo file mới → KHÔNG log (xem qua `git log --diff-filter=A` hoặc Obsidian).
 > - ❌ Edit nội dung do user trực tiếp gõ → KHÔNG log (chỉ log khi Claude thay mặt).
 > - Mỗi entry: file path + tóm tắt thay đổi (1 dòng) + lý do.
-
----
 
 ## 2026-06-11 — Đổi README index → folder-note để graph đọc được; dọn lại filter graph
 
