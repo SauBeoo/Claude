@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/.claude/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,8 @@
       <workItem from="1780494266229" duration="6716000" />
       <workItem from="1780839905709" duration="5390000" />
       <workItem from="1780923833088" duration="10035000" />
-      <workItem from="1781184751841" duration="13370000" />
+      <workItem from="1781184751841" duration="14589000" />
+      <workItem from="1781333985605" duration="4587000" />
     </task>
     <servers />
   </component>

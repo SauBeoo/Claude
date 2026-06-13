@@ -57,6 +57,7 @@ glowup-studio/
 ├── 03_CONTENT_SOCIAL.md   # kênh + lịch content + kịch bản
 ├── 04_OUTREACH.md         # chào khách + danh sách 20 khách
 ├── 05_ROADMAP_90D.md      # lộ trình 90 ngày
+├── 06_KY_NANG_BAN_HANG/   # kỹ năng mềm: chào khách, xử lý từ chối, báo giá (luyện dần)
 ├── portfolio/demo-spa-01/ # web demo spa đầu tiên (mở index.html xem ngay)
 └── templates/             # n8n workflows, mẫu tin nhắn, mẫu báo giá (điền dần)
 ```
@@ -89,6 +90,7 @@ Mở `portfolio/demo-spa-01/index.html` bằng trình duyệt (double-click) —
 - [[03_CONTENT_SOCIAL|Kênh + lịch content]]
 - [[kich-ban-clip-01-khai-truong|Kịch bản clip TikTok #1 (khai trương)]]
 - [[04_OUTREACH|Chào khách + danh sách 20 khách]]
+- [[06_KY_NANG_BAN_HANG|Kỹ năng bán hàng & chào khách]]
 - [[05_ROADMAP_90D|Lộ trình 90 ngày]]
 - [[demo-spa-01/demo-spa-01|Web demo spa đầu tiên]]
 - [[glowup-studio/templates/templates|Templates n8n + mẫu báo giá]]

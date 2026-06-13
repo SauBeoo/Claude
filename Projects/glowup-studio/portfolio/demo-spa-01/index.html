@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lụa Spa & Beauty — Thư giãn · Trẻ hoá · Tỏa sáng</title>
-  <meta name="description" content="Lụa Spa & Beauty — không gian chăm sóc da & thư giãn cao cấp. Đặt lịch ngay hôm nay." />
+  <title>GlowUp Studio — Demo sống cho spa / nail / salon</title>
+  <meta name="description" content="Web mẫu cao cấp cho ngành làm đẹp — đổi loại tiệm & tông màu ngay tại chỗ. Dựng bởi GlowUp Studio." />
 
-  <!-- Demo do GlowUp Studio dựng. Mở trực tiếp file này bằng trình duyệt để xem. -->
+  <!-- ============================================================
+       DEMO SỐNG — GlowUp Studio
+       Mở file này bằng trình duyệt. Bấm nút ⚙ góc trái để đổi:
+       tên tiệm · loại tiệm (spa/nail/salon) · tông màu.
+       Đổi xong bấm "Ẩn bảng" rồi đưa điện thoại cho khách xem.
+  ============================================================ -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <script>
+    // Màu trỏ vào CSS variable (dạng kênh RGB) -> đổi tông = đổi 5 biến, cả web đổi theo.
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            cream:     '#FAF6F0',
-            pink:      '#F4C2C2',
-            pinkdark:  '#D98A8A',
-            champagne: '#E8C9A0',
-            brown:     '#5B4636',
+            cream:     'rgb(var(--c-bg)   / <alpha-value>)',
+            pink:      'rgb(var(--c-soft) / <alpha-value>)',
+            pinkdark:  'rgb(var(--c-accent)/ <alpha-value>)',
+            champagne: 'rgb(var(--c-line) / <alpha-value>)',
+            brown:     'rgb(var(--c-ink)  / <alpha-value>)',
           },
           fontFamily: {
             display: ['"Playfair Display"', 'serif'],
@@ -32,34 +38,63 @@
     };
   </script>
   <style>
+    /* Tông mặc định: Hồng pastel */
+    :root { --c-bg:250 246 240; --c-soft:244 194 194; --c-accent:217 138 138; --c-line:232 201 160; --c-ink:91 70 54; }
     html { scroll-behavior: smooth; }
-    body { background: #FAF6F0; }
-    .fade-line { background: linear-gradient(90deg, transparent, #E8C9A0, transparent); }
+    body { background: rgb(var(--c-bg)); transition: background .4s ease; }
+    .themed { transition: background-color .4s ease, color .4s ease, border-color .4s ease; }
   </style>
 </head>
 
-<body class="font-sans text-brown antialiased">
+<body class="font-sans text-brown antialiased themed">
+
+  <!-- ============================================================
+       BẢNG ĐIỀU KHIỂN DEMO (chỉ bạn dùng — bấm "Ẩn bảng" khi đưa khách)
+  ============================================================ -->
+  <button id="gear" title="Mở bảng điều khiển demo"
+          class="fixed bottom-4 left-4 z-[60] hidden h-12 w-12 place-items-center rounded-full bg-neutral-900 text-white shadow-xl">
+    ⚙
+  </button>
+
+  <div id="panel" class="fixed bottom-4 left-4 z-[60] w-72 rounded-2xl bg-neutral-900/95 p-4 text-white shadow-2xl backdrop-blur">
+    <div class="mb-3 flex items-center justify-between">
+      <p class="text-sm font-semibold">🎛 Demo sống · GlowUp</p>
+      <button id="hide" class="rounded-md bg-white/10 px-2 py-1 text-xs hover:bg-white/20">Ẩn bảng</button>
+    </div>
+
+    <label class="mb-1 block text-xs text-white/60">Tên tiệm</label>
+    <input id="name-input" type="text"
+           class="mb-3 w-full rounded-lg bg-white/10 px-3 py-2 text-sm outline-none placeholder:text-white/40 focus:bg-white/20" />
+
+    <label class="mb-1 block text-xs text-white/60">Loại tiệm</label>
+    <div class="mb-3 grid grid-cols-3 gap-1.5">
+      <button data-type="spa"   class="type-btn rounded-lg bg-white/10 px-2 py-2 text-xs hover:bg-white/20">Spa da</button>
+      <button data-type="nail"  class="type-btn rounded-lg bg-white/10 px-2 py-2 text-xs hover:bg-white/20">Nail / Mi</button>
+      <button data-type="salon" class="type-btn rounded-lg bg-white/10 px-2 py-2 text-xs hover:bg-white/20">Salon tóc</button>
+    </div>
+
+    <label class="mb-1 block text-xs text-white/60">Tông màu</label>
+    <div id="themes" class="flex gap-2"></div>
+
+    <p class="mt-3 text-[11px] leading-snug text-white/45">
+      Đổi cho khớp tiệm đang chào → bấm <b>Ẩn bảng</b> → đưa máy cho khách xem.
+    </p>
+  </div>
 
   <!-- ===== NÚT NỔI (Gọi / Zalo / Đặt lịch) ===== -->
   <div class="fixed bottom-4 right-4 z-50 flex flex-col gap-3">
     <a href="tel:0900000000" aria-label="Gọi điện"
-       class="grid h-12 w-12 place-items-center rounded-full bg-brown text-cream shadow-lg transition hover:scale-105">
-      <span class="text-lg">📞</span>
-    </a>
+       class="grid h-12 w-12 place-items-center rounded-full bg-brown text-cream shadow-lg transition hover:scale-105"><span class="text-lg">📞</span></a>
     <a href="https://zalo.me" target="_blank" rel="noopener" aria-label="Nhắn Zalo"
-       class="grid h-12 w-12 place-items-center rounded-full bg-pinkdark text-white shadow-lg transition hover:scale-105">
-      <span class="text-xs font-semibold">Zalo</span>
-    </a>
-    <a href="#dat-lich"
-       class="grid h-12 w-12 place-items-center rounded-full bg-champagne text-brown shadow-lg transition hover:scale-105">
-      <span class="text-lg">📅</span>
-    </a>
+       class="grid h-12 w-12 place-items-center rounded-full bg-pinkdark text-white shadow-lg transition hover:scale-105"><span class="text-xs font-semibold">Zalo</span></a>
+    <a href="#dat-lich" aria-label="Đặt lịch"
+       class="grid h-12 w-12 place-items-center rounded-full bg-champagne text-brown shadow-lg transition hover:scale-105"><span class="text-lg">📅</span></a>
   </div>
 
   <!-- ===== HEADER ===== -->
-  <header class="sticky top-0 z-40 border-b border-champagne/40 bg-cream/90 backdrop-blur">
+  <header class="themed sticky top-0 z-40 border-b border-champagne/40 bg-cream/90 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-      <a href="#" class="font-display text-2xl font-bold tracking-wide text-brown">Lụa<span class="text-pinkdark"> Spa</span></a>
+      <a href="#" id="logo" class="font-display text-2xl font-bold tracking-wide text-brown"></a>
       <nav class="hidden gap-8 text-sm font-medium md:flex">
         <a href="#dich-vu" class="transition hover:text-pinkdark">Dịch vụ</a>
         <a href="#bang-gia" class="transition hover:text-pinkdark">Bảng giá</a>
@@ -75,32 +110,21 @@
   <section class="relative overflow-hidden">
     <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
       <div>
-        <p class="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Thư giãn · Trẻ hoá · Tỏa sáng</p>
-        <h1 class="font-display text-4xl font-bold leading-tight text-brown md:text-5xl">
-          Để làn da của bạn <span class="text-pinkdark">tỏa sáng</span> mỗi ngày
-        </h1>
-        <p class="mt-5 max-w-md text-brown/70">
-          Lụa Spa & Beauty — không gian chăm sóc da, body & thư giãn cao cấp. Đội ngũ kỹ thuật viên tận tâm,
-          sản phẩm chính hãng, quy trình chuẩn.
-        </p>
+        <p id="hero-eyebrow" class="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-pinkdark"></p>
+        <h1 id="hero-title" class="font-display text-4xl font-bold leading-tight text-brown md:text-5xl"></h1>
+        <p id="hero-desc" class="mt-5 max-w-md text-brown/70"></p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="#dat-lich" class="rounded-full bg-pinkdark px-7 py-3 font-semibold text-white shadow-lg transition hover:bg-brown">Đặt lịch ngay</a>
           <a href="#bang-gia" class="rounded-full border border-champagne px-7 py-3 font-semibold text-brown transition hover:bg-champagne/20">Xem bảng giá</a>
         </div>
-        <div class="mt-8 flex items-center gap-6 text-sm text-brown/60">
-          <div><span class="font-display text-2xl font-bold text-brown">8+</span><br />năm kinh nghiệm</div>
-          <div class="h-8 w-px bg-champagne/60"></div>
-          <div><span class="font-display text-2xl font-bold text-brown">5.000+</span><br />khách hài lòng</div>
-          <div class="h-8 w-px bg-champagne/60"></div>
-          <div><span class="font-display text-2xl font-bold text-brown">4.9★</span><br />đánh giá</div>
-        </div>
+        <div id="stats" class="mt-8 flex items-center gap-6 text-sm text-brown/60"></div>
       </div>
       <div class="relative">
-        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80"
-             alt="Không gian spa" class="aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl" />
+        <img id="hero-img" alt="Không gian tiệm" onerror="this.removeAttribute('src')"
+             class="aspect-[4/5] w-full rounded-3xl bg-pink/30 object-cover shadow-2xl" />
         <div class="absolute -bottom-5 -left-5 hidden rounded-2xl bg-cream p-4 shadow-xl md:block">
           <p class="font-display text-lg font-semibold text-brown">✦ Ưu đãi tháng này</p>
-          <p class="text-sm text-brown/70">Giảm 20% liệu trình facial cho khách mới</p>
+          <p class="text-sm text-brown/70">Giảm 20% cho khách mới</p>
         </div>
       </div>
     </div>
@@ -112,98 +136,40 @@
       <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Dịch vụ</p>
       <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Chăm sóc trọn vẹn từ A đến Z</h2>
     </div>
-    <div class="grid gap-6 md:grid-cols-3">
-      <!-- card -->
-      <div class="rounded-2xl border border-champagne/40 bg-white/60 p-7 transition hover:shadow-lg">
-        <div class="mb-4 grid h-12 w-12 place-items-center rounded-full bg-pink/40 text-xl">🌸</div>
-        <h3 class="font-display text-xl font-semibold text-brown">Chăm sóc da mặt</h3>
-        <p class="mt-2 text-sm text-brown/70">Làm sạch sâu, trẻ hoá, trị mụn & thâm nám với công nghệ hiện đại.</p>
-      </div>
-      <div class="rounded-2xl border border-champagne/40 bg-white/60 p-7 transition hover:shadow-lg">
-        <div class="mb-4 grid h-12 w-12 place-items-center rounded-full bg-pink/40 text-xl">💆‍♀️</div>
-        <h3 class="font-display text-xl font-semibold text-brown">Massage & thư giãn</h3>
-        <p class="mt-2 text-sm text-brown/70">Massage body, đá nóng, giảm căng cơ, tái tạo năng lượng.</p>
-      </div>
-      <div class="rounded-2xl border border-champagne/40 bg-white/60 p-7 transition hover:shadow-lg">
-        <div class="mb-4 grid h-12 w-12 place-items-center rounded-full bg-pink/40 text-xl">✨</div>
-        <h3 class="font-display text-xl font-semibold text-brown">Triệt lông & trẻ hoá</h3>
-        <p class="mt-2 text-sm text-brown/70">Triệt lông công nghệ cao, nâng cơ, căng bóng da an toàn.</p>
-      </div>
-    </div>
+    <div id="services" class="grid gap-6 md:grid-cols-3"></div>
   </section>
 
   <!-- ===== BẢNG GIÁ ===== -->
-  <section id="bang-gia" class="bg-white/50 py-16">
+  <section id="bang-gia" class="themed bg-white/50 py-16">
     <div class="mx-auto max-w-6xl px-5">
       <div class="mb-12 text-center">
         <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Bảng giá</p>
         <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Liệu trình & ưu đãi</h2>
       </div>
-      <div class="grid gap-6 md:grid-cols-3">
-        <div class="rounded-2xl border border-champagne/40 bg-cream p-8">
-          <h3 class="font-display text-xl font-semibold text-brown">Facial cơ bản</h3>
-          <p class="mt-3 font-display text-3xl font-bold text-pinkdark">350.000đ</p>
-          <ul class="mt-5 space-y-2 text-sm text-brown/70">
-            <li>• Làm sạch & tẩy tế bào chết</li>
-            <li>• Đắp mặt nạ dưỡng</li>
-            <li>• Massage thư giãn 60 phút</li>
-          </ul>
-        </div>
-        <div class="relative rounded-2xl border-2 border-pinkdark bg-cream p-8 shadow-xl">
-          <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-pinkdark px-4 py-1 text-xs font-semibold text-white">Phổ biến nhất</span>
-          <h3 class="font-display text-xl font-semibold text-brown">Trẻ hoá chuyên sâu</h3>
-          <p class="mt-3 font-display text-3xl font-bold text-pinkdark">650.000đ</p>
-          <ul class="mt-5 space-y-2 text-sm text-brown/70">
-            <li>• Toàn bộ gói cơ bản</li>
-            <li>• Công nghệ nâng cơ, căng bóng</li>
-            <li>• Serum đặc trị theo da</li>
-            <li>• Tư vấn chăm sóc tại nhà</li>
-          </ul>
-        </div>
-        <div class="rounded-2xl border border-champagne/40 bg-cream p-8">
-          <h3 class="font-display text-xl font-semibold text-brown">Liệu trình VIP</h3>
-          <p class="mt-3 font-display text-3xl font-bold text-pinkdark">1.200.000đ</p>
-          <ul class="mt-5 space-y-2 text-sm text-brown/70">
-            <li>• Trẻ hoá chuyên sâu</li>
-            <li>• Massage body đá nóng</li>
-            <li>• Phòng riêng cao cấp</li>
-          </ul>
-        </div>
-      </div>
-      <p class="mt-6 text-center text-sm text-brown/60">* Giá tham khảo cho bản demo. Khách mới giảm 20% liệu trình đầu tiên.</p>
+      <div id="prices" class="grid gap-6 md:grid-cols-3"></div>
+      <p class="mt-6 text-center text-sm text-brown/60">* Giá tham khảo cho bản demo. Khách mới giảm 20% lần đầu.</p>
     </div>
   </section>
 
-  <!-- ===== HÌNH ẢNH (TRƯỚC / SAU + KHÔNG GIAN) ===== -->
+  <!-- ===== HÌNH ẢNH ===== -->
   <section id="hinh-anh" class="mx-auto max-w-6xl px-5 py-16">
     <div class="mb-12 text-center">
       <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Hình ảnh</p>
       <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Không gian & kết quả thật</h2>
     </div>
-    <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
-      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80" alt="Spa 1" class="aspect-square w-full rounded-2xl object-cover" />
-      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=500&q=80" alt="Spa 2" class="aspect-square w-full rounded-2xl object-cover" />
-      <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=500&q=80" alt="Spa 3" class="aspect-square w-full rounded-2xl object-cover" />
-      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=500&q=80" alt="Spa 4" class="aspect-square w-full rounded-2xl object-cover" />
-    </div>
+    <div id="gallery" class="grid grid-cols-2 gap-4 md:grid-cols-4"></div>
   </section>
 
   <!-- ===== VỀ TIỆM ===== -->
-  <section id="ve-tiem" class="bg-white/50 py-16">
+  <section id="ve-tiem" class="themed bg-white/50 py-16">
     <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
-      <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=800&q=80" alt="Về Lụa Spa" class="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl" />
+      <img id="about-img" alt="Về tiệm" onerror="this.removeAttribute('src')"
+           class="aspect-[4/3] w-full rounded-3xl bg-pink/30 object-cover shadow-xl" />
       <div>
         <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Về tiệm</p>
-        <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Lụa Spa & Beauty</h2>
-        <p class="mt-5 text-brown/70">
-          Hơn 8 năm đồng hành cùng vẻ đẹp của hàng nghìn khách hàng. Tại Lụa, mỗi liệu trình là một trải
-          nghiệm thư giãn trọn vẹn — không gian yên tĩnh, sản phẩm chính hãng và đội ngũ tận tâm.
-        </p>
-        <ul class="mt-6 space-y-3 text-sm text-brown/80">
-          <li>✦ Kỹ thuật viên được đào tạo bài bản</li>
-          <li>✦ Sản phẩm & thiết bị chính hãng</li>
-          <li>✦ Cam kết hoàn tiền nếu không hài lòng</li>
-        </ul>
+        <h2 id="about-title" class="font-display text-3xl font-bold text-brown md:text-4xl"></h2>
+        <p id="about-text" class="mt-5 text-brown/70"></p>
+        <ul id="about-bullets" class="mt-6 space-y-3 text-sm text-brown/80"></ul>
       </div>
     </div>
   </section>
@@ -214,23 +180,17 @@
       <div>
         <p class="text-sm font-medium uppercase tracking-[0.2em] text-pinkdark">Đặt lịch</p>
         <h2 class="font-display text-3xl font-bold text-brown md:text-4xl">Đặt lịch hẹn của bạn</h2>
-        <p class="mt-4 text-brown/70">Để lại thông tin, Lụa Spa sẽ gọi xác nhận trong ít phút.</p>
+        <p class="mt-4 text-brown/70">Để lại thông tin, tiệm sẽ gọi xác nhận trong ít phút.</p>
 
         <form class="mt-6 space-y-4" onsubmit="event.preventDefault(); this.reset(); document.getElementById('ok').classList.remove('hidden');">
           <input required type="text" placeholder="Họ tên"
                  class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark" />
           <input required type="tel" placeholder="Số điện thoại"
                  class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark" />
-          <select class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark">
-            <option>Chọn dịch vụ</option>
-            <option>Facial cơ bản</option>
-            <option>Trẻ hoá chuyên sâu</option>
-            <option>Liệu trình VIP</option>
-            <option>Massage & thư giãn</option>
-          </select>
+          <select id="form-services" class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark"></select>
           <input type="datetime-local" class="w-full rounded-xl border border-champagne/60 bg-white px-4 py-3 outline-none focus:border-pinkdark" />
           <button type="submit" class="w-full rounded-xl bg-pinkdark py-3 font-semibold text-white shadow-lg transition hover:bg-brown">Gửi yêu cầu đặt lịch</button>
-          <p id="ok" class="hidden rounded-xl bg-pink/40 px-4 py-3 text-center text-sm text-brown">✦ Cảm ơn bạn! Lụa Spa sẽ liên hệ xác nhận sớm. (Bản demo — chưa gửi thật)</p>
+          <p id="ok" class="hidden rounded-xl bg-pink/40 px-4 py-3 text-center text-sm text-brown">✦ Cảm ơn bạn! <span id="ok-name"></span> sẽ liên hệ xác nhận sớm. (Bản demo — chưa gửi thật)</p>
         </form>
       </div>
 
@@ -244,27 +204,220 @@
             <li>💬 Zalo: 0900 000 000</li>
           </ul>
         </div>
-        <iframe
-          title="Bản đồ"
-          class="h-64 w-full rounded-2xl border border-champagne/40"
-          loading="lazy"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=106.69%2C10.77%2C106.71%2C10.78&layer=mapnik">
-        </iframe>
+        <iframe title="Bản đồ" class="h-64 w-full rounded-2xl border border-champagne/40" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=106.69%2C10.77%2C106.71%2C10.78&layer=mapnik"></iframe>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="border-t border-champagne/40 bg-brown text-cream">
+  <footer class="themed border-t border-champagne/40 bg-brown text-cream">
     <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-8 md:flex-row">
       <div>
-        <p class="font-display text-xl font-bold">Lụa Spa & Beauty</p>
-        <p class="text-sm text-cream/60">Thư giãn · Trẻ hoá · Tỏa sáng</p>
+        <p id="footer-name" class="font-display text-xl font-bold"></p>
+        <p id="footer-eyebrow" class="text-sm text-cream/60"></p>
       </div>
       <a href="https://glowupstudio.vn" target="_blank" rel="noopener"
          class="text-sm text-cream/70 transition hover:text-champagne">Made by GlowUp Studio ✦</a>
     </div>
   </footer>
 
+  <!-- ============================================================
+       ENGINE: dữ liệu 3 loại tiệm + 4 tông màu + render
+  ============================================================ -->
+  <script>
+    const THEMES = {
+      hong: { label:'Hồng pastel', sw:'#D98A8A', bg:'250 246 240', soft:'244 194 194', accent:'217 138 138', line:'232 201 160', ink:'91 70 54' },
+      tim:  { label:'Tím lavender', sw:'#965FC8', bg:'250 247 254', soft:'226 211 244', accent:'150 95 200', line:'214 196 234', ink:'60 47 78' },
+      nau:  { label:'Nâu champagne', sw:'#B88A5C', bg:'248 244 239', soft:'233 217 195', accent:'184 138 92', line:'214 191 162', ink:'62 47 34' },
+      mint: { label:'Xanh mint', sw:'#4BA587', bg:'242 249 246', soft:'190 224 210', accent:'75 165 135', line:'198 224 213', ink:'38 71 60' },
+    };
+
+    const DATA = {
+      spa: {
+        defaultName:'Lụa Spa & Beauty',
+        eyebrow:'Thư giãn · Trẻ hoá · Tỏa sáng',
+        titleA:'Để làn da của bạn ', titleHi:'tỏa sáng', titleB:' mỗi ngày',
+        desc:'{name} — không gian chăm sóc da, body & thư giãn cao cấp. Kỹ thuật viên tận tâm, sản phẩm chính hãng, quy trình chuẩn.',
+        stats:[['8+','năm kinh nghiệm'],['5.000+','khách hài lòng'],['4.9★','đánh giá']],
+        services:[
+          {icon:'🌸', title:'Chăm sóc da mặt', desc:'Làm sạch sâu, trẻ hoá, trị mụn & thâm nám với công nghệ hiện đại.'},
+          {icon:'💆‍♀️', title:'Massage & thư giãn', desc:'Massage body, đá nóng, giảm căng cơ, tái tạo năng lượng.'},
+          {icon:'✨', title:'Triệt lông & trẻ hoá', desc:'Triệt lông công nghệ cao, nâng cơ, căng bóng da an toàn.'},
+        ],
+        prices:[
+          {name:'Facial cơ bản', price:'350.000đ', items:['Làm sạch & tẩy tế bào chết','Đắp mặt nạ dưỡng','Massage thư giãn 60 phút']},
+          {name:'Trẻ hoá chuyên sâu', price:'650.000đ', popular:true, items:['Toàn bộ gói cơ bản','Công nghệ nâng cơ, căng bóng','Serum đặc trị theo da','Tư vấn chăm sóc tại nhà']},
+          {name:'Liệu trình VIP', price:'1.200.000đ', items:['Trẻ hoá chuyên sâu','Massage body đá nóng','Phòng riêng cao cấp']},
+        ],
+        serviceOptions:['Facial cơ bản','Trẻ hoá chuyên sâu','Liệu trình VIP','Massage & thư giãn'],
+        aboutText:'Hơn 8 năm đồng hành cùng vẻ đẹp của hàng nghìn khách hàng. Mỗi liệu trình là một trải nghiệm thư giãn trọn vẹn — không gian yên tĩnh, sản phẩm chính hãng và đội ngũ tận tâm.',
+        aboutBullets:['Kỹ thuật viên được đào tạo bài bản','Sản phẩm & thiết bị chính hãng','Cam kết hoàn tiền nếu không hài lòng'],
+        heroImg:'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80',
+        aboutImg:'https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=800&q=80',
+        gallery:[
+          'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=500&q=80',
+        ],
+      },
+      nail: {
+        defaultName:'Nina Nail & Lash',
+        eyebrow:'Nail · Mi · Phá cách',
+        titleA:'Đôi tay ', titleHi:'lộng lẫy', titleB:', nét riêng của bạn',
+        desc:'{name} — nail art, nối mi & chăm sóc móng theo phong cách riêng. Mẫu mới mỗi tuần, dụng cụ tiệt trùng, không gian sang xinh.',
+        stats:[['6+','năm trong nghề'],['3.000+','bộ nail đã làm'],['4.9★','đánh giá']],
+        services:[
+          {icon:'💅', title:'Nail Art & sơn gel', desc:'Mẫu nail theo mùa, sơn gel bền màu, vẽ tay tinh tế.'},
+          {icon:'👁️', title:'Nối mi & uốn mi', desc:'Nối mi volume, classic; uốn mi giữ nếp tự nhiên.'},
+          {icon:'🤍', title:'Chăm sóc móng', desc:'Cắt da, dưỡng móng, spa tay chân thư giãn.'},
+        ],
+        prices:[
+          {name:'Sơn gel', price:'150.000đ', items:['Cắt da, tạo dáng móng','Sơn gel 1 màu bền 3 tuần','Dưỡng da tay']},
+          {name:'Nail Art thiết kế', price:'350.000đ', popular:true, items:['Tạo dáng & sơn gel','Vẽ / đính theo mẫu chọn','Dưỡng & spa tay','Tư vấn mẫu hợp tay']},
+          {name:'Combo Nail + Mi', price:'550.000đ', items:['Nail art thiết kế','Nối mi volume','Ưu đãi khách combo']},
+        ],
+        serviceOptions:['Sơn gel','Nail Art thiết kế','Nối mi / uốn mi','Combo Nail + Mi'],
+        aboutText:'Hơn 6 năm làm đẹp cho đôi tay và ánh nhìn của hàng nghìn cô gái. Tại đây, mỗi bộ nail là một thiết kế riêng — hợp dáng tay, hợp gu bạn, và luôn an toàn vệ sinh.',
+        aboutBullets:['Dụng cụ tiệt trùng riêng từng khách','Mẫu cập nhật theo xu hướng','Sơn & keo mi chính hãng'],
+        heroImg:'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80',
+        aboutImg:'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80',
+        gallery:[
+          'https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=500&q=80',
+        ],
+      },
+      salon: {
+        defaultName:'Hương Hair Salon',
+        eyebrow:'Cắt · Nhuộm · Phục hồi',
+        titleA:'Mái tóc ', titleHi:'hoàn hảo', titleB:' định hình phong cách',
+        desc:'{name} — cắt, uốn, nhuộm & phục hồi tóc theo gương mặt và cá tính bạn. Stylist tay nghề cao, sản phẩm cao cấp.',
+        stats:[['10+','năm kinh nghiệm'],['4.000+','khách hài lòng'],['4.9★','đánh giá']],
+        services:[
+          {icon:'✂️', title:'Cắt & tạo kiểu', desc:'Tư vấn kiểu hợp gương mặt, cắt & sấy tạo kiểu chuẩn salon.'},
+          {icon:'🎨', title:'Uốn & nhuộm', desc:'Uốn giữ nếp, nhuộm thời thượng, bảo vệ tóc tối đa.'},
+          {icon:'💧', title:'Phục hồi & dưỡng', desc:'Hấp dầu, phục hồi tóc hư tổn, keratin mượt mà.'},
+        ],
+        prices:[
+          {name:'Cắt & gội tạo kiểu', price:'200.000đ', items:['Tư vấn kiểu tóc','Cắt & gội dưỡng','Sấy tạo kiểu']},
+          {name:'Uốn / Nhuộm thời thượng', price:'700.000đ', popular:true, items:['Tư vấn màu & kiểu','Uốn hoặc nhuộm cao cấp','Hấp dưỡng bảo vệ','Tạo kiểu hoàn thiện']},
+          {name:'Phục hồi chuyên sâu', price:'500.000đ', items:['Phục hồi keratin','Hấp dầu cao cấp','Tư vấn chăm sóc tại nhà']},
+        ],
+        serviceOptions:['Cắt & tạo kiểu','Uốn / Nhuộm','Phục hồi tóc','Gội dưỡng sinh'],
+        aboutText:'Hơn 10 năm tạo nên những mái tóc đẹp và tự tin. Mỗi kiểu tóc ở đây được tư vấn riêng — hợp gương mặt, hợp phong cách sống của bạn, với sản phẩm chăm tóc cao cấp.',
+        aboutBullets:['Stylist tay nghề cao','Sản phẩm chăm tóc cao cấp','Tư vấn kiểu hợp từng người'],
+        heroImg:'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80',
+        aboutImg:'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80',
+        gallery:[
+          'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1599387737838-626d6c1f1d4e?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=500&q=80',
+          'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=500&q=80',
+        ],
+      },
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const STATE = { type:'spa', theme:'hong', name:DATA.spa.defaultName };
+
+    function logoHtml(name){
+      const parts = name.trim().split(/\s+/);
+      if (parts.length === 1) return `<span class="text-brown">${name}</span>`;
+      const last = parts.pop();
+      return `${parts.join(' ')}<span class="text-pinkdark"> ${last}</span>`;
+    }
+
+    function applyTheme(key){
+      STATE.theme = key;
+      const t = THEMES[key], r = document.documentElement.style;
+      r.setProperty('--c-bg', t.bg); r.setProperty('--c-soft', t.soft);
+      r.setProperty('--c-accent', t.accent); r.setProperty('--c-line', t.line);
+      r.setProperty('--c-ink', t.ink);
+      document.querySelectorAll('[data-theme]').forEach(b =>
+        b.classList.toggle('ring-2', b.dataset.theme === key));
+    }
+
+    function applyContent(type){
+      STATE.type = type;
+      const d = DATA[type], name = STATE.name || d.defaultName;
+
+      $('logo').innerHTML = logoHtml(name);
+      $('hero-eyebrow').textContent = d.eyebrow;
+      $('hero-title').innerHTML = `${d.titleA}<span class="text-pinkdark">${d.titleHi}</span>${d.titleB}`;
+      $('hero-desc').textContent = d.desc.replace('{name}', name);
+      $('hero-img').src = d.heroImg;
+
+      $('stats').innerHTML = d.stats.map((s,i) =>
+        `<div><span class="font-display text-2xl font-bold text-brown">${s[0]}</span><br/>${s[1]}</div>` +
+        (i < d.stats.length-1 ? '<div class="h-8 w-px bg-champagne/60"></div>' : '')).join('');
+
+      $('services').innerHTML = d.services.map(s => `
+        <div class="themed rounded-2xl border border-champagne/40 bg-white/60 p-7 transition hover:shadow-lg">
+          <div class="mb-4 grid h-12 w-12 place-items-center rounded-full bg-pink/40 text-xl">${s.icon}</div>
+          <h3 class="font-display text-xl font-semibold text-brown">${s.title}</h3>
+          <p class="mt-2 text-sm text-brown/70">${s.desc}</p>
+        </div>`).join('');
+
+      $('prices').innerHTML = d.prices.map(p => `
+        <div class="themed relative rounded-2xl ${p.popular ? 'border-2 border-pinkdark shadow-xl' : 'border border-champagne/40'} bg-cream p-8">
+          ${p.popular ? '<span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-pinkdark px-4 py-1 text-xs font-semibold text-white">Phổ biến nhất</span>' : ''}
+          <h3 class="font-display text-xl font-semibold text-brown">${p.name}</h3>
+          <p class="mt-3 font-display text-3xl font-bold text-pinkdark">${p.price}</p>
+          <ul class="mt-5 space-y-2 text-sm text-brown/70">${p.items.map(i => `<li>• ${i}</li>`).join('')}</ul>
+        </div>`).join('');
+
+      $('gallery').innerHTML = d.gallery.map((g,i) =>
+        `<img src="${g}" alt="Ảnh ${i+1}" onerror="this.removeAttribute('src')"
+              class="aspect-square w-full rounded-2xl bg-pink/30 object-cover" />`).join('');
+
+      $('about-img').src = d.aboutImg;
+      $('about-title').textContent = name;
+      $('about-text').textContent = d.aboutText;
+      $('about-bullets').innerHTML = d.aboutBullets.map(b => `<li>✦ ${b}</li>`).join('');
+
+      $('form-services').innerHTML = '<option>Chọn dịch vụ</option>' +
+        d.serviceOptions.map(o => `<option>${o}</option>`).join('');
+
+      $('footer-name').textContent = name;
+      $('footer-eyebrow').textContent = d.eyebrow;
+      $('ok-name').textContent = name;
+    }
+
+    // ----- Khởi tạo bảng tông màu -----
+    $('themes').innerHTML = Object.entries(THEMES).map(([k,t]) =>
+      `<button data-theme="${k}" title="${t.label}" style="background:${t.sw}"
+               class="h-8 w-8 rounded-full ring-offset-2 ring-offset-neutral-900 ring-white"></button>`).join('');
+
+    // ----- Sự kiện -----
+    document.querySelectorAll('[data-theme]').forEach(b =>
+      b.addEventListener('click', () => applyTheme(b.dataset.theme)));
+
+    document.querySelectorAll('.type-btn').forEach(b =>
+      b.addEventListener('click', () => {
+        document.querySelectorAll('.type-btn').forEach(x => x.classList.remove('bg-white/30','font-semibold'));
+        b.classList.add('bg-white/30','font-semibold');
+        STATE.name = DATA[b.dataset.type].defaultName;   // đổi loại -> tên mặc định mới
+        $('name-input').value = STATE.name;
+        applyContent(b.dataset.type);
+      }));
+
+    $('name-input').addEventListener('input', (e) => {
+      STATE.name = e.target.value || DATA[STATE.type].defaultName;
+      applyContent(STATE.type);
+    });
+
+    // Ẩn / hiện bảng điều khiển
+    $('hide').addEventListener('click', () => { $('panel').classList.add('hidden'); $('gear').classList.remove('hidden'); $('gear').classList.add('grid'); });
+    $('gear').addEventListener('click', () => { $('gear').classList.add('hidden'); $('panel').classList.remove('hidden'); });
+
+    // ----- Chạy lần đầu -----
+    $('name-input').value = STATE.name;
+    document.querySelector('.type-btn[data-type="spa"]').classList.add('bg-white/30','font-semibold');
+    applyTheme('hong');
+    applyContent('spa');
+  </script>
 </body>
 </html>

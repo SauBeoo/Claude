@@ -11,10 +11,14 @@
             "id": "599a04f11b508402",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Projects/glowup-studio/content/kich-ban-clip-01-khai-truong.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "kich-ban-clip-01-khai-truong"
             }
           }
         ]
@@ -181,6 +185,9 @@
   },
   "active": "599a04f11b508402",
   "lastOpenFiles": [
+    "Projects/glowup-studio/06_KY_NANG_BAN_HANG/06_KY_NANG_BAN_HANG.md.tmp.27404.7e72d232805c",
+    "Projects/glowup-studio/06_KY_NANG_BAN_HANG/03-xu-ly-tu-choi.md",
+    "Projects/glowup-studio/06_KY_NANG_BAN_HANG/03-xu-ly-tu-choi.md.tmp.27404.dd4dc36a3f39",
     "Projects/glowup-studio/CLAUDE.md.tmp.1652.2aa173beb926",
     "Projects/glowup-studio/CLAUDE.md.tmp.1652.23ea49db6283",
     "Untitled 1.canvas",
@@ -191,8 +198,6 @@
     "Projects/glowup-studio/05_ROADMAP_90D.md.tmp.13896.18f4f7dd38a0",
     "Projects/glowup-studio/05_ROADMAP_90D.md.tmp.13896.df7401c9a895",
     "Projects/glowup-studio/05_ROADMAP_90D.md.tmp.13896.f988d024f5ad",
-    "Projects/glowup-studio/portfolio/demo-spa-01/demo-spa-01.md.tmp.13896.3fed05ca2268",
-    "Projects/glowup-studio/portfolio/demo-spa-01/demo-spa-01.md.tmp.13896.93ec88b81813",
     "Projects/glowup-studio/00_BRAND.md",
     "Untitled.canvas",
     "Projects/glowup-studio/content/kich-ban-clip-01-khai-truong.md",
@@ -220,7 +225,6 @@
     "SecondBrain/60_Daily/60_Daily.md",
     "SecondBrain/50_Atomic/50_Atomic.md",
     "SecondBrain/40_Archive/40_Archive.md",
-    "SecondBrain/30_Resources/30_Resources.md",
     "Untitled 4.canvas"
   ]
 }
