@@ -18,8 +18,8 @@ Tách ra để luyện từng kỹ năng một, dày dần theo thời gian.
 - [[01-chao-truc-tiep]] — Chào khách **gặp trực tiếp** (tiệm gần nhà / khách quen). ✅ đã luyện 13/06/2026
 - [[02-nhan-zalo-khach-la]] — Nhắn **Zalo cho khách lạ** (outreach lạnh, chống bị "seen"). ✅ đã luyện 13/06/2026
 - [[03-xu-ly-tu-choi]] — **Xử lý từ chối & rút lui có duyên** (đọc tín hiệu, tâm lý "trò chơi con số"). ✅ đã luyện 13/06/2026
-- ⏳ **Follow-up** — nuôi khách đã im 3–4 ngày. *(hẹn luyện 14/06/2026)*
-- *(sắp tới)* **Báo giá & chốt cọc** — quy trình 3 gói, xử lý "mắc quá".
+- [[04-follow-up]] — **Follow-up khách đã im** (món quà mới + dán link + ưu đãi có lý do + câu dễ gật). ✅ đã luyện 14/06/2026
+- [[05-bao-gia-chot-coc]] — **Báo giá & chốt cọc** — quy trình 3 gói, xử lý "mắc quá", chốt cọc. ⏳ *đang luyện dở (14/06), mai tiếp từ điểm dừng ghi trong file*
 
 ---
 

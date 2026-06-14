@@ -11,7 +11,7 @@
 **Mục tiêu:** có demo đẹp, kênh content chạy, chào 20 khách, **chốt 1 khách đầu tiên**.
 
 ### Tuần 1 — Vũ khí
-- [ ] Chồng: hoàn thiện **web demo spa** (`portfolio/demo-spa-01/`).
+- [x] Chồng: hoàn thiện **web demo spa** (`portfolio/demo-spa-01/`) — xong khung, *chưa deploy lấy link*.
 - [ ] Đăng ký handle `@glowup.studio` (TikTok/FB/IG) + check domain `glowupstudio.vn`.
 - [ ] Vợ: lập kênh TikTok + Facebook, avatar/bio theo `00_BRAND.md`.
 - [ ] Cả hai: lập danh sách **20 khách** tiềm năng (`04_OUTREACH.md`), ưu tiên khách quen.

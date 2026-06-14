@@ -24,6 +24,29 @@
 > **Mẹo chốt:** luôn đưa khách xem demo `portfolio/demo-spa-01/` trước. "Mẫu này em làm cho tiệm giống bên mình — bên mình
 > muốn tông nào ạ?" Bán cái nhìn-thấy-được, không bán lời hứa.
 
+### 🌐 Tên miền & Hosting (PHẢI nói rõ khi báo giá)
+
+Web có **2 loại chi phí** — tách bạch để khách không hiểu lầm "mua 1 lần xài mãi":
+
+| Loại | Là gì | Tính chất |
+|---|---|---|
+| **Phí làm web** (5–12tr) | Tiền **công** thiết kế + dựng | **Một lần** |
+| **Tên miền + hosting** | Chỗ web "sống" trên mạng | **Định kỳ hằng năm** |
+
+- **Tên miền:** `.vn` ~**750–830k/năm**, `.com` ~**250–350k/năm** (số ước lượng — check lại nhà đăng ký).
+- **Hosting:** web tĩnh/Astro/Next static → deploy **MIỄN PHÍ** (Vercel/Netlify/Cloudflare Pages), SSL free.
+  Chỉ tốn phí khi khách cần thứ nặng (WordPress + DB, email theo tên miền) — spa nhỏ hầu như không cần.
+  → Chi phí định kỳ thực tế gần như **chỉ là tên miền ~800k/năm**.
+
+**Mô hình tính (đã chốt 14/06): "Năm đầu tặng → năm 2 gộp bảo trì".**
+1. Giá web đã **bao tên miền + hosting MIỄN PHÍ năm đầu** (chi phí ~800k mình chịu, nhỏ — dùng làm điểm chốt).
+2. **Từ năm 2** → mời vào gói **Bảo trì (Tầng 3)**: phí tháng đã gồm tên miền + hosting + cập nhật nội dung.
+3. → Biến chi phí vận hành thành **dòng tiền lặp lại**, đúng triết lý "tiền bền ở Tầng 3".
+
+> **Câu nói mẫu với khách:** *"Phí 8tr là tiền em dựng web, trả một lần thôi. Tên miền với chỗ đặt web
+> thì **năm đầu em bao trọn** cho chị. Từ năm sau, gói bảo trì 500k/tháng em lo hết tên miền + chỗ đặt +
+> cập nhật bảng giá, banner khuyến mãi — chị khỏi đụng tay kỹ thuật gì cả."*
+
 ---
 
 ## Tầng 2 · TỰ ĐỘNG HOÁ (n8n) — upsell + phí tháng
@@ -47,7 +70,7 @@ lớn nhất của spa: **khách quên hẹn (no-show)** và **khách không qua
 
 | Gói | Nội dung | Giá/tháng |
 |---|---|---|
-| **Bảo trì web** | Hosting + cập nhật nội dung/bảng giá + đổi banner khuyến mãi + backup | **500k–800k** |
+| **Bảo trì web** | **Tên miền + hosting** + cập nhật nội dung/bảng giá + đổi banner khuyến mãi + backup | **500k–800k** |
 | **Bảo trì + Content** | Bảo trì web + X bài/clip content mỗi tháng do vợ làm | **1,2–2 triệu** |
 
 > Mục tiêu chiến lược: **gom 15–20 khách retainer** (Tầng 2 + 3) ≈ **10–30 triệu/tháng** gần như tự chảy.
@@ -70,6 +93,7 @@ lớn nhất của spa: **khách quên hẹn (no-show)** và **khách không qua
 3. **Cọc 50%** trước khi làm, 50% khi bàn giao.
 4. Báo giá kèm **link demo** + thời gian hoàn thành cụ thể.
 5. Với khách đầu tiên: có thể giảm để lấy **case study + cho quay clip** — đổi giá lấy chứng cứ.
+6. **Luôn tách "phí làm web (một lần)" và "tên miền+hosting (định kỳ)"** — bao năm đầu, năm 2 mời vào bảo trì (xem mục Tên miền & Hosting ở Tầng 1).
 
 ---
 

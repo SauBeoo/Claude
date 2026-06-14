@@ -121,17 +121,23 @@ Chi tiết đầy đủ + bảng giá: `01_SAN_PHAM_GIA.md`.
 
 ## 🎯 CURRENT STATUS (update mỗi tuần)
 
-**Tuần hiện tại:** 1 · **Phase:** 1 — Foundation
+**Tuần hiện tại:** 1 · **Phase:** 1 — Foundation · **Cập nhật:** 14/06/2026
 
 ### Tasks Tuần 1:
-- [ ] Dựng web demo spa đầu tiên (`portfolio/demo-spa-01/`) — đẹp, mobile-first.
+- [x] Dựng web demo spa đầu tiên (`portfolio/demo-spa-01/index.html`) — 1 file HTML tĩnh, mobile-first, đủ section + nút Gọi/Zalo/Đặt lịch. *(xong khung; chưa soi kỹ chất lượng/tốc độ & chưa deploy lấy link)*
 - [ ] Check & đăng ký handle `@glowup.studio` trên TikTok, Facebook, Zalo; check domain `glowupstudio.vn`.
 - [ ] Vợ: dựng kênh TikTok + Facebook theo `03_CONTENT_SOCIAL.md`, quay clip "dựng web spa từ 0".
 - [ ] Lập danh sách 20 spa/salon tiềm năng theo `04_OUTREACH.md` (ưu tiên khách quen trước).
 
+### Bonus đã làm (ngoài 4 task gốc):
+- [x] **Bộ kỹ năng bán hàng `06_KY_NANG_BAN_HANG/`** — luyện qua role-play, đã rút 4 file:
+  chào trực tiếp · nhắn Zalo khách lạ · xử lý từ chối *(13/06)* · **follow-up khách đã im** *(14/06)*.
+  → Kỹ năng kế tiếp: **Báo giá & chốt cọc**.
+
 ### Bottleneck hiện tại:
-- Chưa có demo → chưa có gì để chào khách & làm content (việc số 1).
+- Demo đã có khung nhưng **chưa deploy → chưa có link sống để gửi/chào khách** & chưa soi kỹ chất lượng.
 - Chưa chốt domain & handle.
+- **Chưa có danh sách 20 khách** → có kỹ năng chào nhưng chưa có ai để chào (mắt xích còn thiếu để vào việc thật).
 
 ### Next milestone:
 - Cuối Tuần 4: chào đủ 20 khách, mục tiêu **1 khách đầu tiên** (xem `05_ROADMAP_90D.md`).
@@ -182,6 +188,9 @@ Chi tiết đầy đủ + bảng giá: `01_SAN_PHAM_GIA.md`.
 |------|--------|------|
 | 2026-06-11 | Khởi tạo project GlowUp Studio | Phase 1, Tuần 1 — brand + scaffold + demo |
 | 2026-06-12 | Thêm rule phong cách trò chuyện "bạn tri kỉ" (tao–mày) | Theo yêu cầu founder |
+| 2026-06-13 | Dựng demo `index.html` + lập folder `06_KY_NANG_BAN_HANG` | Luyện 3 kỹ năng: chào trực tiếp, Zalo khách lạ, xử lý từ chối |
+| 2026-06-14 | Luyện + rút file `04-follow-up.md` (kỹ năng follow-up khách im) | Role-play; thêm chiến lược ưu đãi đổi-clip (gần) vs review/portfolio (xa) |
+| 2026-06-14 | Bổ sung mục **Tên miền & Hosting** vào `01_SAN_PHAM_GIA.md` | Chốt mô hình "năm đầu tặng → năm 2 gộp bảo trì" (biến chi phí thành retainer) |
 
 ---
 
