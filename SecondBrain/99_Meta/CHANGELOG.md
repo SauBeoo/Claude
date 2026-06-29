@@ -15,6 +15,26 @@ tags: [meta, changelog, system-log]
 > - ❌ Edit nội dung do user trực tiếp gõ → KHÔNG log (chỉ log khi Claude thay mặt).
 > - Mỗi entry: file path + tóm tắt thay đổi (1 dòng) + lý do.
 
+## 2026-06-29 — Thêm project youtube-jp-sukatto vào index 10_Projects
+
+**Bối cảnh:** tạo project mới `youtube-jp-sukatto` (kênh faceless AI朗読 thể loại スカッと/ざまぁ thị trường Nhật) từ kết quả skill trend-keywords; dựng folder-note ở cả repo (`Projects/`) lẫn vault (`10_Projects/`) và thêm vào danh sách project active.
+
+### 🔧 Thay đổi file đang tồn tại
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `SecondBrain/10_Projects/10_Projects.md` | Thêm `youtube-jp-sukatto/` vào mục "Đang active" | Project mới có folder-note vault, cần xuất hiện trong index |
+
+## 2026-06-24 — Thêm project youtube-kham-pha vào index 10_Projects
+
+**Bối cảnh:** pivot project `youtube-kham-pha` (Projects/) sang niche Unexplained Mysteries + chỉ long-form; tạo folder-note tri thức bên vault và thêm vào danh sách project active.
+
+### 🔧 Thay đổi file đang tồn tại
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `SecondBrain/10_Projects/10_Projects.md` | Thêm `youtube-kham-pha/` vào mục "Đang active" | Project mới có folder-note vault, cần xuất hiện trong index |
+
 ## 2026-06-11 — Đổi README index → folder-note để graph đọc được; dọn lại filter graph
 
 **Bối cảnh:** graph rối vì (1) filter `search` trong `graph.json` bị reset về rỗng → index lại cả `Projects/`; (2) hàng chục file `README.md` (mỗi folder PARA + mỗi project) hiện cùng nhãn "README" trong graph → không phân biệt được node nào là gì. Xử lý: **đổi tên README index theo folder-note convention** (`<folder>/<folder>.md`) để node có nhãn rõ; và sau khi thử giữ cả Projects thấy vẫn rối, **chốt graph = chỉ tri thức SecondBrain** (khôi phục chuẩn cũ `path:SecondBrain`), ẩn node operational + ẩn chấm cô đơn.

@@ -5,6 +5,22 @@
 
 ---
 
+## Bản đồ kênh kiếm khách (4 kênh)
+
+Chủ spa/nail/salon ở đâu thì mình tới đó. 4 kênh chính, xếp theo tốc độ ra tiền:
+
+| # | Kênh | Cách làm cốt lõi | Tốc độ ra khách | Chi phí | Ghi chú |
+|---|------|------------------|-----------------|---------|---------|
+| **1** | **Facebook Group ngành** | Vào group chủ spa/TMV, trả lời câu hỏi free → xây uy tín → khách tự inbox. KHÔNG spam quảng cáo. | Tuần–tháng | 0đ | Target chuẩn, cần kiên trì |
+| **2** | **Web demo + SEO/Google Maps local** | Làm web của chính mình đẹp + 2–3 demo, đăng ký Google Business Profile, SEO từ khoá "thiết kế web spa". | Chậm (1–3 tháng) | 0đ + công | Tài sản dài hạn, khách tự tìm tới |
+| **3** | **Cold outreach trúng đích** ⭐ | Lọc spa trên Google Maps/FB chưa có web / web xấu → nhắn-gọi chủ động với lý do cụ thể. | **Nhanh (trong tuần)** | 0đ + lì | **Đang đào sâu** — xem mục dưới |
+| **4** | **TikTok/Reels "before-after"** | Clip ngắn vạch lỗi web spa / demo automation chạy → reach chủ tiệm. (Vợ chủ lực.) | Trung bình | 0đ + công | Reach lớn, cần đều tay |
+
+**Chiến lược ưu tiên giai đoạn 0:** dồn **#3 (cold outreach) + #1 (group)** trước vì ra khách trong tuần,
+không chờ SEO ngấm. **#2 + #4** chạy song song nuôi dài hạn. Kịch bản chào bên dưới phục vụ trực tiếp cho #3.
+
+---
+
 ## Nguyên tắc
 
 1. **Bắt đầu từ khách ấm, không phải khách lạnh.** Thứ tự ưu tiên:

@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.claude/skills/script-healthy/SKILL.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/04_OUTREACH.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/04_OUTREACH.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/00_CHIEN_LUOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/00_CHIEN_LUOC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/01_ROADMAP_90_NGAY.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/01_ROADMAP_90_NGAY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/04_CONTENT_IDEAS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/04_CONTENT_IDEAS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/youtube-kham-pha.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/youtube-kham-pha.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/10_Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/10_Projects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,31 +47,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Quản lý dữ liệu&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Claude/.claude/skills/script-healthy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Console",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Claude\.claude\skills\script-healthy" />
+      <recent name="E:\Claude\.claude\skills" />
       <recent name="E:\Claude\SecondBrain\00_Inbox\paper-chua-doc" />
       <recent name="E:\Claude\.claude\commands" />
       <recent name="E:\Claude\.obsidian" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Claude\.claude\skills" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,6 +105,17 @@
       <workItem from="1781184751841" duration="14589000" />
       <workItem from="1781333985605" duration="4587000" />
       <workItem from="1781420556249" duration="628000" />
+      <workItem from="1781618066256" duration="5503000" />
+      <workItem from="1781705529281" duration="8355000" />
+      <workItem from="1781790963863" duration="3834000" />
+      <workItem from="1781953736650" duration="1049000" />
+      <workItem from="1782042748551" duration="55000" />
+      <workItem from="1782136550454" duration="5616000" />
+      <workItem from="1782309525859" duration="5872000" />
+      <workItem from="1782393842281" duration="7606000" />
+      <workItem from="1782538488907" duration="581000" />
+      <workItem from="1782574162101" duration="1861000" />
+      <workItem from="1782721854112" duration="15871000" />
     </task>
     <servers />
   </component>

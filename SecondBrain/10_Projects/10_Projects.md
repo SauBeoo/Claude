@@ -9,6 +9,8 @@ Mỗi project = 1 thư mục con. Project có **deadline** và **kết quả c�
 **Đang active:**
 - `claude-code-101/` — học & viết content về Claude Code
 - `idea-aff/` — ý tưởng affiliate marketing
+- `youtube-kham-pha/` — kênh faceless niche Unexplained Mysteries (view ngoại, repo ở `Projects/youtube-kham-pha/`)
+- `youtube-jp-sukatto/` — kênh faceless AI朗読 thể loại スカッと/ざまぁ thị trường Nhật (repo ở `Projects/youtube-jp-sukatto/`)
 
 **Pattern đặt tên gợi ý (cho project tương lai):**
 - `course-<môn>-<học-kỳ>/` — môn dạy theo học kỳ

@@ -191,6 +191,7 @@ Chi tiết đầy đủ + bảng giá: `01_SAN_PHAM_GIA.md`.
 | 2026-06-13 | Dựng demo `index.html` + lập folder `06_KY_NANG_BAN_HANG` | Luyện 3 kỹ năng: chào trực tiếp, Zalo khách lạ, xử lý từ chối |
 | 2026-06-14 | Luyện + rút file `04-follow-up.md` (kỹ năng follow-up khách im) | Role-play; thêm chiến lược ưu đãi đổi-clip (gần) vs review/portfolio (xa) |
 | 2026-06-14 | Bổ sung mục **Tên miền & Hosting** vào `01_SAN_PHAM_GIA.md` | Chốt mô hình "năm đầu tặng → năm 2 gộp bảo trì" (biến chi phí thành retainer) |
+| 2026-06-16 | Thêm **"Bản đồ kênh kiếm khách (4 kênh)"** vào đầu `04_OUTREACH.md` | FB group · web+SEO local · cold outreach (#3, ưu tiên) · TikTok before-after. Tiếp theo: đào sâu #3 |
 
 ---
 

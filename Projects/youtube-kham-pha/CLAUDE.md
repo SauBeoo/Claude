@@ -4,10 +4,10 @@
 
 ## Tổng quan
 
-- **Loại:** Kênh YouTube faceless, ngách **Kiến thức / Khám phá**.
-- **Định hướng cốt lõi:** **VIEW NGOẠI — khán giả nói tiếng Anh** (Tier-1: US/UK/CA/AU). KHÔNG nhắm khán giả Việt. Lý do: RPM gấp 5–10 lần, thị trường ~1.5 tỷ người, AI voice tiếng Anh cực tự nhiên.
-- **Format:** Shorts + Long-form. **100% faceless, AI voice tiếng Anh (ElevenLabs).**
-- **Quỹ thời gian:** 5–15h/tuần (bán nghiêm túc).
+- **Loại:** Kênh YouTube faceless, niche **Unexplained Mysteries** (bí ẩn chưa lời giải + hiện tượng khoa học kỳ lạ).
+- **Định hướng cốt lõi:** **VIEW NGOẠI — khán giả nói tiếng Anh** (US/UK, mở rộng CA/AU). KHÔNG nhắm khán giả Việt. Lý do: RPM gấp nhiều lần (US $4–8 vs VN $0.3–1), thị trường khổng lồ, AI voice tiếng Anh cực tự nhiên.
+- **Format:** **CHỈ long-form 8–12 phút** trong 3 tháng đầu (chưa Shorts, chưa trộn chủ đề). **100% faceless, AI voice tiếng Anh (ElevenLabs).**
+- **Người làm:** mới hoàn toàn; vốn 500k–2tr/tháng (ElevenLabs là khoản chính); 3–4h/ngày; **tiếng Anh yếu → dùng AI cho toàn bộ script + voiceover.**
 - **Bắt đầu:** Tháng 6/2026.
 - **Liên kết vault:** kiến thức làm YouTube/content → `E:\Claude\SecondBrain\20_Areas\` hoặc `30_Resources\`.
 
@@ -15,9 +15,10 @@
 
 1. ✅ Faceless 100%, AI voice — không lộ mặt, không giọng thật.
 2. ✅ Khán giả quốc tế / tiếng Anh — mọi thứ public bằng tiếng Anh.
-3. ✅ Shorts + Long-form kết hợp.
-4. ✅ **Sub-niche: SPACE / SCIENCE** (chốt 30/05/2026). Lý do: hook mạnh, view tiềm năng cao, kịch bản vừa sức để học nghề. RPM TB (~$3–6) nhưng view bù lại. Có thể mở rộng sang Tech/AI explained (RPM cao hơn, tận dụng nền IT) sau khi vững nghề.
-5. ⏳ Tên kênh: chưa chốt (tên tiếng Anh).
+3. ✅ **Niche: UNEXPLAINED MYSTERIES** (chốt 24/06/2026, pivot từ Space/Science). Lý do: hook tự nhiên cực mạnh, tư liệu vô tận, RPM TB ($4–8) nhưng view bù lại, AN TOÀN cho người mới (không dính YMYL). Tài chính RPM cao ($15–40) để nâng cấp sau.
+4. ✅ **Chỉ long-form 8–12 phút** trong GĐ đầu. Shorts để Phase 3+ (cắt từ long-form). Một niche + một định dạng + lặp lại → thuật toán hiểu để đề xuất.
+5. ✅ Quy trình script chống tiếng Anh yếu: dàn ý tiếng Việt → AI viết script EN giọng hồi hộp → rà dữ kiện → ElevenLabs đọc.
+6. ⏳ Tên kênh: chưa chốt (tên tiếng Anh).
 
 ## Nguyên tắc làm việc với user
 
@@ -31,19 +32,21 @@
 
 | File | Nội dung |
 |---|---|
-| `00_CHIEN_LUOC.md` | Định hướng view ngoại, chọn sub-niche, tên, kiếm tiền |
-| `01_ROADMAP_90_NGAY.md` | Lộ trình tuần-theo-tuần (bắt đầu 02/06/2026) |
+| `00_CHIEN_LUOC.md` | Niche Mysteries, định dạng, tên, kiếm tiền, nguyên tắc vàng + cạm bẫy |
+| `01_ROADMAP_90_NGAY.md` | Lộ trình tuần-theo-tuần (long-form only, bắt đầu 24/06/2026) |
 | `02_SETUP_KENH.md` | Checklist tạo & tối ưu kênh |
-| `03_QUY_TRINH_FACELESS.md` | Quy trình sản xuất 1 video A→Z + chiến lược batch |
-| `04_CONTENT_IDEAS.md` | Template kịch bản + ngân hàng ý tưởng |
+| `03_QUY_TRINH_FACELESS.md` | Quy trình sản xuất 1 long-form A→Z + chiến lược batch |
+| `04_CONTENT_IDEAS.md` | 20 ý tưởng Mysteries (EN + hook) + template kịch bản |
+| `05_MAIL_KENH_TRUST_2026.md` | Chọn mail/kênh, build trust, chính sách 2026 |
 | `research/` | Đối thủ, từ khóa | `scripts/` | Kịch bản | `assets/` | Brand kit |
 
 ## Trạng thái hiện tại
 
-🟡 **Phase 0 — Chốt nền tảng.** Việc tiếp theo: **chọn sub-niche** rồi brainstorm tên kênh.
+🟢 **Phase 0 — Nền tảng & công cụ** (tuần của 24/06/2026). Niche + định dạng đã chốt. Việc tiếp theo: cài bộ tool (VidIQ/CapCut/Canva/ElevenLabs), tạo Google account riêng, lập Google Sheet "YouTube Journey", nghiên cứu 5 đối thủ mystery, thử 30s giọng ElevenLabs, brainstorm tên kênh.
 
 ## Change log
 
 | Date | Change |
 |---|---|
 | 2026-05-30 | Tạo project. Chốt định hướng view ngoại/tiếng Anh (pivot từ khán giả Việt). |
+| 2026-06-24 | **Pivot in place:** niche Space/Science → **Unexplained Mysteries**; thu hẹp định dạng còn **chỉ long-form 8–12p** (bỏ Shorts GĐ đầu). Viết lại 00/01/03/04 theo hồ sơ người mới (3–4h/ngày, tiếng Anh yếu). Giữ nguyên 02 + 05 (hạ tầng niche-agnostic). |

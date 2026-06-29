@@ -1,19 +1,21 @@
-# YouTube Khám Phá — Kênh kiến thức faceless (view ngoại / tiếng Anh)
+# YouTube Khám Phá — Kênh faceless **Unexplained Mysteries** (view ngoại / tiếng Anh)
 
-> Project xây kênh YouTube **faceless** (AI voice tiếng Anh) ngách **Kiến thức / Khám phá**,
-> nhắm **khán giả quốc tế nói tiếng Anh** (Tier-1: US/UK/CA/AU) để RPM cao.
-> Format: Shorts + Long-form. Quỹ thời gian: 5–15h/tuần. Bắt đầu: 06/2026.
+> Project xây kênh YouTube **faceless** (AI voice tiếng Anh) niche **Unexplained Mysteries**
+> (bí ẩn chưa lời giải + hiện tượng khoa học kỳ lạ), nhắm **khán giả US/UK** để RPM cao.
+> Format: **CHỈ long-form 8–12 phút** (3 tháng đầu chưa làm Shorts). Quỹ thời gian: 3–4h/ngày. Bắt đầu: 06/2026.
+>
+> 👤 **Người làm:** mới hoàn toàn, vốn 500k–2tr/tháng, tiếng Anh yếu → dùng AI cho toàn bộ script + voiceover.
 
 ## Đọc theo thứ tự
 
 | File | Nội dung | Khi nào đọc |
 |---|---|---|
 | `CLAUDE.md` | Context dự án cho Claude Code | Tự động |
-| `00_CHIEN_LUOC.md` | Định vị + **chọn sub-niche** + tên kênh | **Đọc đầu tiên** |
-| `01_ROADMAP_90_NGAY.md` | Lộ trình tuần-theo-tuần | Sau khi chốt niche |
+| `00_CHIEN_LUOC.md` | Niche Mysteries + định dạng + tên kênh + nguyên tắc vàng | **Đọc đầu tiên** |
+| `01_ROADMAP_90_NGAY.md` | Lộ trình tuần-theo-tuần (long-form only) | Sau chiến lược |
 | `02_SETUP_KENH.md` | Checklist tạo & tối ưu kênh (các bước đầu tiên) | Tuần 1 |
-| `03_QUY_TRINH_FACELESS.md` | Quy trình sản xuất 1 video faceless A→Z | Tuần 2+ |
-| `04_CONTENT_IDEAS.md` | Ngân hàng ý tưởng + template kịch bản | Sau khi chốt niche |
+| `03_QUY_TRINH_FACELESS.md` | Quy trình sản xuất 1 video faceless A→Z + batch | Tuần 2+ |
+| `04_CONTENT_IDEAS.md` | 20 ý tưởng Mysteries + template kịch bản | Khi viết script |
 | `05_MAIL_KENH_TRUST_2026.md` | Chọn mail/kênh (mới vs cổ), build trust, chính sách 2026 | Trước khi tạo kênh |
 
 ## Thư mục
@@ -24,7 +26,7 @@
 
 ## Trạng thái hiện tại
 
-🟡 **Phase 0 — Chốt nền tảng.** Việc cần làm ngay: chọn sub-niche (xem `00_CHIEN_LUOC.md` mục "Bước 1").
+🟢 **Phase 0 — Nền tảng & công cụ** (tuần của 24/06/2026). Niche + định dạng đã chốt. Việc cần làm ngay (xem `01_ROADMAP_90_NGAY.md`): cài VidIQ/CapCut + tạo tài khoản Canva/ElevenLabs, tạo Google account riêng, lập Google Sheet "YouTube Journey", nghiên cứu 5 kênh đối thủ mystery, thử 30s giọng ElevenLabs.
 
 ## 🔗 Liên kết nội bộ
 
