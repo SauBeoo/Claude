@@ -2,6 +2,64 @@
 
 Workspace tổng hợp gồm bộ não 2 (SecondBrain) + project repos (Projects) + cấu hình Claude Code (.claude-global).
 
+## 🖥️ Clone về máy mới để làm video (cập nhật 2026-10-04)
+
+Repo `git@github.com:SauBeoo/Claude.git` **chỉ chứa CÔNG THỨC**: code tool, rule/skill/CLAUDE.md, kịch bản `.md`/`_TTS.md`/SLIDES, prompt `.txt`, font.
+**KHÔNG chứa** (chặn ở `.gitignore`): ảnh · video · âm thanh · `node_modules` · `_tts_cache` · output Remotion · model AI · `.exe` · `credentials/` · log.
+⇒ Clone xong phải làm đủ các bước dưới mới dựng được video.
+
+### 1. Clone đúng đường dẫn
+```powershell
+git clone git@github.com:SauBeoo/Claude.git E:\Claude
+```
+⚠️ Phải đặt ở **`E:\Claude\`** — rule, tool và `.cmd` dùng đường dẫn tuyệt đối `E:\Claude\...`.
+
+### 2. Cài phần mềm nền
+| Phần mềm | Dùng cho |
+|---|---|
+| Python 3.11+ | mọi tool trong `Projects/*/tools`, `_media_library` |
+| Node.js LTS | Remotion (`Projects/remotion-vox`) — nenkin dựng bằng đường này |
+| ffmpeg (có trong `PATH`) | ghép/encode, đo âm lượng, cắt clip |
+| VOICEVOX (bật app, cổng `50021`) | giọng đọc TTS |
+| Git + SSH key GitHub | pull/push |
+| Chrome | upload Studio theo profile kênh (`.claude/rules/channel-browser.md`) |
+
+### 3. Cài thư viện
+```powershell
+pip install pillow numpy opencv-python scipy requests pytrends rembg pymupdf onnxruntime faster-whisper openai-whisper playwright flask google-api-python-client google-auth-oauthlib
+python -m playwright install chromium
+cd E:\Claude\Projects\remotion-vox; npm install
+pip install -r E:\Claude\Projects\yt-dashboard\requirements.txt
+```
+
+### 4. Chép tay từ máy cũ (git không mang theo)
+| Chép folder/file | Vì sao cần |
+|---|---|
+| `Projects/*/assets/` (cast, icons, irasutoya, sfx_lab) | nhân vật + icon trên sân khấu |
+| `Projects/*/00_BRAND/`, `09_BRAND/`, `branding/` | banner, narrator, bộ nhận diện kênh |
+| `Projects/_media_library/props/`, `stage_icons/`, `avatars/` | đồ dùng chung của `make_stage` |
+| `Projects/*/06_VIDEO/bgm/`, `06_VIDEO/_sfx/` | BGM + SFX |
+| `Projects/remotion-vox/public/shared/`, `public/sfx/` | asset chung của Remotion (chỉ phần ảnh/âm thanh; font đã có trong git) |
+| `Projects/_media_library/models/depth_anything_v2_small.onnx` | model độ sâu (hoặc tải lại từ HuggingFace) |
+| `Projects/_tools/realesrgan/` (exe + `models/`) | upscale ảnh (hoặc tải `realesrgan-ncnn-vulkan` bản Windows) |
+| `Projects/*/credentials/` | OAuth token từng kênh cho `upload_api.py` / analytics — **tuyệt đối không commit** |
+| `**/.pexels_key` và các file `.*_key` | API key |
+| `C:\Users\<user>\.claude\` (agents, skills toàn cục, `projects\E--Claude\memory\`) | memory + cấu hình Claude Code — nằm ngoài repo |
+
+Không cần chép: `_tts_cache` (tự sinh lại khi synth), media trong `06_VIDEO/<slug>/` của video đã đăng.
+
+### 5. Kiểm tra máy đã sẵn sàng
+```powershell
+ffmpeg -version
+curl http://127.0.0.1:50021/version          # VOICEVOX đang chạy
+cd E:\Claude\Projects\remotion-vox; npx remotion --version
+```
+
+### ⚠️ Lưu ý
+- **Showa chưa render được từ repo**: renderer `video_render.py` + `channels.py` đang được dời khỏi `youtube-jp-health/tools/` (thư mục này đang rỗng) sang `Projects/_render/`. Dời xong phải commit + push thì máy mới có.
+- `git add -A` giờ an toàn (~3.000 file, ~10 giây). Đừng gỡ khối chặn media cuối `.gitignore` — một lần add 47.000 file media từng làm treo git và để lại 25 GB rác trong `.git`.
+- Workspace dùng nhiều phiên Claude cùng lúc → trước khi commit xem `git status` có file staged lạ không.
+
 ## 📂 Cấu trúc
 
 ```
