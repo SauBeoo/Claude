@@ -15,6 +15,27 @@ tags: [meta, changelog, system-log]
 > - ❌ Edit nội dung do user trực tiếp gõ → KHÔNG log (chỉ log khi Claude thay mặt).
 > - Mỗi entry: file path + tóm tắt thay đổi (1 dòng) + lý do.
 
+## 2026-08-15 — remotion-vox nâng thành tool dựng video kiểu CapCut
+
+**Bối cảnh:** user yêu cầu nâng `Projects/remotion-vox` thành tool tạo video "xử lý như CapCut" (timeline UI + auto-edit + kho hiệu ứng + caption karaoke). Build xong P0–P5 cùng ngày.
+
+### 🔧 Cập nhật note dự án
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `10_Projects/remotion-vox/remotion-vox.md` | Mô tả + trạng thái: repo demo JSX → tool data-driven (project.json + editor web + importer pipeline + karaoke mora) | Phản ánh nâng cấp lớn của repo code |
+| `.claude/skills/vox-collage-video/SKILL.md` | Thêm khối ⭐ đầu file: đường ưu tiên mới = auto_collage.py + editor, flow JSX per-video lỗi thời | Skill trỏ đúng flow sau nâng cấp |
+
+## 2026-07-26 — Chốt chiến lược kênh youtube-jp-akiya (実家とお金の整理ノート)
+
+**Bối cảnh:** đo lại benchmark ngách 実家じまい・空き家・相続登記 bằng YouTube Data API + autocomplete + Google Trends (2026-07-26) → kết quả lệch đánh giá ban đầu của [[youtube-niche-research-2026]] (2026-07-23). User chốt tên kênh, lõi nội dung, nhịp đăng, hạ tầng. Chi tiết số đo: `Projects/youtube-jp-akiya/CHANNEL_BENCHMARK_2026-07-26.md`.
+
+### 🔧 Thay đổi file đang tồn tại
+
+| File | Thay đổi | Lý do |
+|---|---|---|
+| `SecondBrain/10_Projects/youtube-jp-akiya/youtube-jp-akiya.md` | Viết lại: tên kênh chốt 「実家とお金の整理ノート」; bỏ "cung trống tuyệt đối" và "rebrand Profile 3 của shokutaku"; thêm mục bài học ngách (khuôn 「届く紙」, volume≠intent, rời lõi = chết, nhiễu Trends do phim) | 2 kết luận cũ đã bị số đo mới phủ nhận; bài học ngách dùng được cho kênh khác nên phải nằm ở vault |
+
 ## 2026-06-29 — Thêm project youtube-jp-sukatto vào index 10_Projects
 
 **Bối cảnh:** tạo project mới `youtube-jp-sukatto` (kênh faceless AI朗読 thể loại スカッと/ざまぁ thị trường Nhật) từ kết quả skill trend-keywords; dựng folder-note ở cả repo (`Projects/`) lẫn vault (`10_Projects/`) và thêm vào danh sách project active.

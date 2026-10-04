@@ -1,0 +1,447 @@
+{
+ "_note": "Video 16 REAL-FIRST v2 (2026-09-21). 4 phim USAF 1946, Public Domain Mark 1.0, chua tung dung o video nao (so den _footage_test/FOOTAGE_USED.json). grade=0 vi toan bo hieu chinh nam trong PRE+HOUSE cua cut_archival.py.",
+ "_caveat": "Phim 1946 cho bai ke 昭和30〜50年 — lech nien dai, chap nhan CO CHU DICH nhu video 01-08 (archival_spec_08._caveat). Le phuc 紋付・打掛 gan nhu khong doi giua 1946 va 1970. Giong doc KHONG BAO GIO noi 'day la canh nam 19xx'. Da loai moi vung co bang slate / linh chiem dong / do nat.",
+ "cuts": [
+  {
+   "id": "a16_000",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 370,
+   "dur": 5.2,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o0 (4.2s) · CAN co dau 打掛 + chu re — canh dat nhat cua phim"
+  },
+  {
+   "id": "a16_001",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 313,
+   "dur": 4.53,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o1 (3.53s) · co dau 色打掛 + phu dau, thung ruou o san den"
+  },
+  {
+   "id": "a16_002",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 356,
+   "dur": 4.08,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o2 (3.08s) · doan ruoc di tren soi, canh rong"
+  },
+  {
+   "id": "a16_003",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 398,
+   "dur": 5.92,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o3 (4.92s) · doan ruoc qua cong den"
+  },
+  {
+   "id": "a16_004",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 375.2,
+   "dur": 4.89,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o4 (3.89s) · CAN co dau 打掛 + chu re — canh dat nhat cua phim"
+  },
+  {
+   "id": "a16_005",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 317.53,
+   "dur": 4.89,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o5 (3.89s) · co dau 色打掛 + phu dau, thung ruou o san den"
+  },
+  {
+   "id": "a16_006",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 360.08,
+   "dur": 3.77,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o6 (2.77s) · doan ruoc di tren soi, canh rong"
+  },
+  {
+   "id": "a16_007",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 403.92,
+   "dur": 3.76,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o7 (2.76s) · doan ruoc qua cong den"
+  },
+  {
+   "id": "a16_008",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 380.09,
+   "dur": 5.23,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o8 (4.23s) · CAN co dau 打掛 + chu re — canh dat nhat cua phim"
+  },
+  {
+   "id": "a16_009",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 322.42,
+   "dur": 4.61,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o9 (3.61s) · co dau 色打掛 + phu dau, thung ruou o san den"
+  },
+  {
+   "id": "a16_010",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 363.85,
+   "dur": 4.2,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o10 (3.2s) · doan ruoc di tren soi, canh rong"
+  },
+  {
+   "id": "a16_011",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 385.32,
+   "dur": 4.2,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o11 (3.2s) · CAN co dau 打掛 + chu re — canh dat nhat cua phim"
+  },
+  {
+   "id": "a16_012",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 389.52,
+   "dur": 5.43,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o12 (4.43s) · CAN co dau 打掛 + chu re — canh dat nhat cua phim"
+  },
+  {
+   "id": "a16_013",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 488,
+   "dur": 15.6,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o13 (14.6s) · kien truc 平安神宮 do — canh tinh, dat loi chao"
+  },
+  {
+   "id": "a16_014",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 2,
+   "dur": 6.14,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o14 (5.14s) · ngo nha go, tre con, thung nuoc, san truoc"
+  },
+  {
+   "id": "a16_015",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 8.14,
+   "dur": 13.74,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o15 (12.74s) · ngo nha go, tre con, thung nuoc, san truoc"
+  },
+  {
+   "id": "a16_016",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 21.88,
+   "dur": 8.51,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o16 (7.51s) · ngo nha go, tre con, thung nuoc, san truoc"
+  },
+  {
+   "id": "a16_017",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 30.39,
+   "dur": 10.48,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o17 (9.48s) · ngo nha go, tre con, thung nuoc, san truoc"
+  },
+  {
+   "id": "a16_034",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 903,
+   "dur": 14.26,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o34 (13.26s) · 鏡台 + 縫い物 — co gai ngoi truoc guong, tay dang khau"
+  },
+  {
+   "id": "a16_035",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 917.26,
+   "dur": 12.82,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o35 (11.82s) · 鏡台 + 縫い物 — co gai ngoi truoc guong, tay dang khau"
+  },
+  {
+   "id": "a16_036",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 930.08,
+   "dur": 11.24,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o36 (10.24s) · 鏡台 + 縫い物 — co gai ngoi truoc guong, tay dang khau"
+  },
+  {
+   "id": "a16_038",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 255,
+   "dur": 5.89,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o38 (4.89s) · 祭壇/神棚 co do cung — dat 結納"
+  },
+  {
+   "id": "a16_039",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 600,
+   "dur": 14.69,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o39 (13.69s) · nguoi di le o hang rao den"
+  },
+  {
+   "id": "a16_040",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 260.89,
+   "dur": 10.33,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o40 (9.33s) · 祭壇/神棚 co do cung — dat 結納"
+  },
+  {
+   "id": "a16_041",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+   "ss": 614.69,
+   "dur": 10.41,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o41 (9.41s) · nguoi di le o hang rao den"
+  },
+  {
+   "id": "a16_060",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 967,
+   "dur": 15.29,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o60 (14.29s) · 台所 — phu nu 割烹着 nau an, noi lon tren bep"
+  },
+  {
+   "id": "a16_061",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 982.29,
+   "dur": 5.17,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o61 (4.17s) · 台所 — phu nu 割烹着 nau an, noi lon tren bep"
+  },
+  {
+   "id": "a16_062",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 987.46,
+   "dur": 6.75,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o62 (5.75s) · 台所 — phu nu 割烹着 nau an, noi lon tren bep"
+  },
+  {
+   "id": "a16_063",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 994.21,
+   "dur": 14.52,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o63 (13.52s) · 台所 — phu nu 割烹着 nau an, noi lon tren bep"
+  },
+  {
+   "id": "a16_064",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 1008.73,
+   "dur": 6.83,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o64 (5.83s) · 台所 — phu nu 割烹着 nau an, noi lon tren bep"
+  },
+  {
+   "id": "a16_092",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 1038,
+   "dur": 16.76,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o92 (15.76s) · rua bat o bon, bep"
+  },
+  {
+   "id": "a16_096",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 1223,
+   "dur": 6.89,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o96 (5.89s) · ben song Kamo, hang lieu, phu nu kimono, bien 鴨川"
+  },
+  {
+   "id": "a16_097",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 1133,
+   "dur": 13.8,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o97 (12.8s) · 舞妓 mac kimono trong vuon chua · ao ca koi"
+  },
+  {
+   "id": "a16_098",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 1093,
+   "dur": 14.58,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o98 (13.58s) · cau be rua chao lon o voi nuoc — doi song"
+  },
+  {
+   "id": "a16_099",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 1229.89,
+   "dur": 10.96,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o99 (9.96s) · ben song Kamo, hang lieu, phu nu kimono, bien 鴨川"
+  },
+  {
+   "id": "a16_100",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 1146.8,
+   "dur": 12.2,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o100 (11.2s) · 舞妓 mac kimono trong vuon chua · ao ca koi"
+  },
+  {
+   "id": "a16_109",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 60,
+   "dur": 11.08,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o109 (10.08s) · ngo nha go, hien nha, cua so shoji"
+  },
+  {
+   "id": "a16_110",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 90,
+   "dur": 8.72,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o110 (7.72s) · pho co xe keo cho thung, nguoi rua o be nuoc, nguoi quet san"
+  },
+  {
+   "id": "a16_111",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 98.72,
+   "dur": 14.02,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o111 (13.02s) · pho co xe keo cho thung, nguoi rua o be nuoc, nguoi quet san"
+  },
+  {
+   "id": "a16_112",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 112.74,
+   "dur": 11.77,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o112 (10.77s) · pho co xe keo cho thung, nguoi rua o be nuoc, nguoi quet san"
+  },
+  {
+   "id": "a16_137",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 585,
+   "dur": 15.79,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o137 (14.79s) · ⭐ gia dinh ngoi an quanh ちゃぶ台, rot tra, nang chen"
+  },
+  {
+   "id": "a16_138",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 713,
+   "dur": 13.85,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o138 (12.85s) · ⭐ vo gap thuc an cho chong, ca nha an com"
+  },
+  {
+   "id": "a16_139",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 600.79,
+   "dur": 10.48,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o139 (9.48s) · ⭐ gia dinh ngoi an quanh ちゃぶ台, rot tra, nang chen"
+  },
+  {
+   "id": "a16_140",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 726.85,
+   "dur": 9.47,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o140 (8.47s) · ⭐ vo gap thuc an cho chong, ca nha an com"
+  },
+  {
+   "id": "a16_141",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 611.27,
+   "dur": 11.68,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o141 (10.68s) · ⭐ gia dinh ngoi an quanh ちゃぶ台, rot tra, nang chen"
+  },
+  {
+   "id": "a16_142",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 736.32,
+   "dur": 15.43,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o142 (14.43s) · ⭐ vo gap thuc an cho chong, ca nha an com"
+  },
+  {
+   "id": "a16_143",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 622.95,
+   "dur": 16.54,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o143 (15.54s) · ⭐ gia dinh ngoi an quanh ちゃぶ台, rot tra, nang chen"
+  },
+  {
+   "id": "a16_144",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 751.75,
+   "dur": 15.84,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o144 (14.84s) · ⭐ vo gap thuc an cho chong, ca nha an com"
+  },
+  {
+   "id": "a16_145",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+   "ss": 639.49,
+   "dur": 7.12,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "o145 (6.12s) · ⭐ gia dinh ngoi an quanh ちゃぶ台, rot tra, nang chen"
+  }
+ ]
+}

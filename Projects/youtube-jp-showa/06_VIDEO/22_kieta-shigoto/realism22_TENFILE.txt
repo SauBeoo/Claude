@@ -1,0 +1,51 @@
+# ===== A. ANH TINH — realism22_STILL_FLOW.txt (dong i -> ten file) =====
+# bo vao 06_VIDEO/22_kieta-shigoto/cells_in_ai/
+01	ai_01_conductor_young.png	TTS dong 2	1914 ky
+02	ai_02_bag_coins.png	TTS dong 3	1404 ky
+03	ai_05_envelope_drawer.png	TTS dong 8	1475 ky
+04	ai_06_depot_rollcall.png	TTS dong 13	1787 ky
+05	ai_08_fingers_cracked.png	TTS dong 18	1399 ky
+06	ai_09_count_sales.png	TTS dong 19	1845 ky
+07	ai_10_conductor_last_day.png	TTS dong 32	1525 ky
+08	ai_11_sofu_keeper.png	TTS dong 35	1805 ky
+09	ai_13_girl_bento_hut.png	TTS dong 44	1366 ky
+10	ai_14_flag_ignored.png	TTS dong 48	1861 ky
+11	ai_16_miner_black_face.png	TTS dong 56	1458 ky
+12	ai_17_boy_sentan.png	TTS dong 58	1512 ky
+13	ai_18_father_bus_morning.png	TTS dong 71	1448 ky
+14	ai_19_coins_ready_palm.png	TTS dong 72	1465 ky
+15	ai_20_conductor_smile.png	TTS dong 73	1759 ky
+16	ai_22_headset_on.png	TTS dong 78	1629 ky
+17	ai_24_operators_row.png	TTS dong 81	1496 ky
+18	ai_25_dekasegi_phone.png	TTS dong 85	1197 ky
+19	ai_26_haha_listen.png	TTS dong 87	1526 ky
+20	ai_27_operators_reassigned.png	TTS dong 94	1506 ky
+21	ai_28_headset_stain.png	TTS dong 96	1342 ky
+22	ai_29_haha_typist.png	TTS dong 99	1739 ky
+23	ai_30_haha_rub_arm.png	TTS dong 103	1415 ky
+24	ai_31_wordpro_desk.png	TTS dong 107	1430 ky
+25	ai_32_wordpro_price.png	TTS dong 108	1260 ky
+26	ai_33_haha_wordpro.png	TTS dong 110	1626 ky
+27	ai_34_envelope_drawer2.png	TTS dong 112	1199 ky
+28	ai_35_electric_barrier.png	TTS dong 114	1345 ky
+29	ai_36_haha_bento_night.png	TTS dong 115	1422 ky
+30	ai_38_envelope_sealed.png	TTS dong 118	1397 ky
+31	ai_40_barrier_auto_night.png	TTS dong 122	1239 ky
+32	ai_42_haha77_bus2.png	TTS dong 126	1660 ky
+33	ai_43_envelope_bag.png	TTS dong 128	1515 ky
+34	ai_44_haha77_smile.png	TTS dong 129	1692 ky
+35	ai_45_envelope_old_hands.png	TTS dong 134	1486 ky
+
+# ===== B. ANH DE TAO VIDEO — realism22_VIDEO_STILL_FLOW.txt dong k + realism22_MOTION_FLOW.txt dong k =====
+# gen anh (Image) -> chon anh -> ⋮ Animate -> dan MOTION cung so dong -> tai .mp4
+# bo CA .png lan .mp4 vao cells_in_ai/ (khong gen duoc clip thi .png van dung lam anh tinh)
+01	ai_03_envelope_father.png -> Animate -> ai_03_envelope_father.mp4	TTS dong 4	envelope_father
+02	ai_04_haha77_bus.png -> Animate -> ai_04_haha77_bus.mp4	TTS dong 6	haha77_bus
+03	ai_07_conductor_lean.png -> Animate -> ai_07_conductor_lean.mp4	TTS dong 16	conductor_lean
+04	ai_12_sofu_handle.png -> Animate -> ai_12_sofu_handle.mp4	TTS dong 37	sofu_handle
+05	ai_15_miners_walk.png -> Animate -> ai_15_miners_walk.mp4	TTS dong 55	miners_walk
+06	ai_21_haha_switchboard.png -> Animate -> ai_21_haha_switchboard.mp4	TTS dong 77	haha_switchboard
+07	ai_23_plug_in.png -> Animate -> ai_23_plug_in.mp4	TTS dong 80	plug_in
+08	ai_37_envelope_reveal.png -> Animate -> ai_37_envelope_reveal.mp4	TTS dong 117	envelope_reveal
+09	ai_39_sofu_hand_over.png -> Animate -> ai_39_sofu_hand_over.mp4	TTS dong 119	sofu_hand_over
+10	ai_41_haha_cry_hut.png -> Animate -> ai_41_haha_cry_hut.mp4	TTS dong 123	haha_cry_hut

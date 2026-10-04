@@ -1,0 +1,188 @@
+{
+ "arrow_straight": {
+  "kind": "arrow",
+  "method": "key",
+  "w": 1081,
+  "h": 362,
+  "src": "Red_crayon_arrow_on_paper_202608080147.jpeg",
+  "anchors": {
+   "tail": [
+    8,
+    178
+   ],
+   "head": [
+    1066,
+    178
+   ]
+  }
+ },
+ "arrow_hook": {
+  "kind": "arrow",
+  "method": "key",
+  "w": 551,
+  "h": 575,
+  "src": "Red_crayon_drawing_arrow_202608080147.jpeg",
+  "anchors": {
+   "tail": [
+    49,
+    9
+   ],
+   "head": [
+    540,
+    455
+   ]
+  }
+ },
+ "arrow_curve": {
+  "kind": "arrow",
+  "method": "key",
+  "w": 1128,
+  "h": 515,
+  "src": "Red_crayon_drawn_arrow_202608080147.jpeg",
+  "anchors": {
+   "tail": [
+    7,
+    296
+   ],
+   "head": [
+    1118,
+    471
+   ]
+  }
+ },
+ "circle_1": {
+  "kind": "circle",
+  "method": "key",
+  "w": 878,
+  "h": 602,
+  "src": "Red_wax_crayon_circled_ellipse_202608080147.jpeg"
+ },
+ "circle_2": {
+  "kind": "circle",
+  "method": "key",
+  "w": 672,
+  "h": 653,
+  "src": "Red_crayon_hand-drawn_circle_202608080147.jpeg"
+ },
+ "cross_x": {
+  "kind": "mark",
+  "method": "key",
+  "w": 705,
+  "h": 693,
+  "src": "Red_crayon_X_cross_202608080147.jpeg"
+ },
+ "stamp_round": {
+  "kind": "stamp",
+  "method": "key",
+  "w": 724,
+  "h": 723,
+  "src": "Red_rubber_stamp_imprint_202608080147.jpeg"
+ },
+ "stamp_rect": {
+  "kind": "stamp",
+  "method": "key",
+  "w": 1105,
+  "h": 574,
+  "src": "Blank_red_rubber_stamp_imprint_202608080147.jpeg"
+ },
+ "stain_coffee": {
+  "kind": "decor",
+  "method": "key",
+  "w": 524,
+  "h": 524,
+  "src": "Dried_coffee_cup_ring_stain_202608080147.jpeg"
+ },
+ "smudge_ink": {
+  "kind": "decor",
+  "method": "key",
+  "w": 556,
+  "h": 440,
+  "src": "Red_fingerprint_on_white_background_202608080147.jpeg"
+ },
+ "string_arc": {
+  "kind": "string",
+  "method": "cut",
+  "w": 1160,
+  "h": 545,
+  "src": "Red_cotton_twine_curve_202608080147.jpeg"
+ },
+ "string_sag": {
+  "kind": "string",
+  "method": "cut",
+  "w": 1376,
+  "h": 317,
+  "src": "Red_cotton_twine_sagging_202608080147.jpeg"
+ },
+ "pin_red": {
+  "kind": "pin",
+  "method": "cut",
+  "w": 305,
+  "h": 302,
+  "src": "Red_push_pin_photographed_macro_202608080147.jpeg"
+ },
+ "pin_brass": {
+  "kind": "pin",
+  "method": "cut",
+  "w": 461,
+  "h": 460,
+  "src": "Vintage_brass_thumbtack_viewed_202608080147.jpeg"
+ },
+ "label_strip": {
+  "kind": "label",
+  "method": "cut",
+  "w": 1144,
+  "h": 372,
+  "src": "Blank_aged_washi_paper_strip_202608080147.jpeg"
+ },
+ "label_tag": {
+  "kind": "label",
+  "method": "cut",
+  "w": 1133,
+  "h": 520,
+  "src": "Torn_kraft_paper_macro_texture_202608080147.jpeg"
+ },
+ "label_wide": {
+  "kind": "label",
+  "method": "cut",
+  "w": 1241,
+  "h": 580,
+  "src": "Aged_manila_paper_torn_edges_202608080147.jpeg"
+ },
+ "tape_1": {
+  "kind": "tape",
+  "method": "cut",
+  "w": 981,
+  "h": 260,
+  "src": "Beige_washi_masking_tape_strip_202608080147.jpeg"
+ },
+ "tape_2": {
+  "kind": "tape",
+  "method": "cut",
+  "w": 1119,
+  "h": 251,
+  "src": "Tear_of_masking_tape_202608080147.jpeg"
+ },
+ "clip_1": {
+  "kind": "decor",
+  "method": "cut",
+  "w": 1047,
+  "h": 296,
+  "src": "Rusty_metal_paper_clip_202608080147.jpeg"
+ },
+ "bubble_left": {
+  "kind": "bubble",
+  "method": "flood",
+  "w": 1084,
+  "h": 726,
+  "src": "Crayon_speech_bubble_on_paper",
+  "note": "duoi chi TRAI"
+ },
+ "bubble_right": {
+  "kind": "bubble",
+  "method": "flood+flip",
+  "w": 1084,
+  "h": 726,
+  "src": "Crayon_speech_bubble_on_paper",
+  "note": "ban LAT ngang cua bubble_left (user gen ca 2 anh deu duoi trai)"
+ }
+}

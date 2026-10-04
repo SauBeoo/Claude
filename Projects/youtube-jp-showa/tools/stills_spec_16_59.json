@@ -1,0 +1,54 @@
+{
+ "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11059_kyoto_home_1946.mp4",
+ "stills": [
+  {
+   "id": "st16_018",
+   "t": 878,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phong tatami, phu nu kimono"
+  },
+  {
+   "id": "st16_019",
+   "t": 868,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phu nu kimono, cui trai futon"
+  },
+  {
+   "id": "st16_079",
+   "t": 300,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "xuong thu cong, nguoi lam"
+  },
+  {
+   "id": "st16_080",
+   "t": 286,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "quay hang, nguoi ban"
+  },
+  {
+   "id": "st16_106",
+   "t": 1118,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phu nu tre mac kimono trong vuon"
+  },
+  {
+   "id": "st16_107",
+   "t": 1140,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phu nu tre, can"
+  },
+  {
+   "id": "st16_146",
+   "t": 64,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "ngo nha go — tinh"
+  }
+ ]
+}

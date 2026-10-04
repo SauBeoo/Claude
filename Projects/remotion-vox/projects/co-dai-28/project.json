@@ -1,0 +1,3099 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "co-dai-28",
+  "channel": "co-dai",
+  "templateRef": "co-dai",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-09-04T00:00:00.000Z",
+  "modifiedAt": "2026-09-04T00:00:00.000Z"
+ },
+ "timeline": {
+  "durationInFrames": 33537
+ },
+ "sceneMarkers": [
+  {
+   "id": "sc-0",
+   "atFrame": 0,
+   "label": "v_A1_fan-curtain-still"
+  },
+  {
+   "id": "sc-1",
+   "atFrame": 191,
+   "label": "v_G1_clock-2am"
+  },
+  {
+   "id": "sc-2",
+   "atFrame": 438,
+   "label": "v_A2_hand-touch-ceiling"
+  },
+  {
+   "id": "sc-3",
+   "atFrame": 742,
+   "label": "v_A3_iron-cloth-steam"
+  },
+  {
+   "id": "sc-4",
+   "atFrame": 864,
+   "label": "v_A4_window-black-night"
+  },
+  {
+   "id": "sc-5",
+   "atFrame": 1001,
+   "label": "v_G2_sit-up-reach"
+  },
+  {
+   "id": "sc-6",
+   "atFrame": 1194,
+   "label": "v_G3_palm-macro"
+  },
+  {
+   "id": "sc-7",
+   "atFrame": 1341,
+   "label": "v_G4_100yen-shelf"
+  },
+  {
+   "id": "sc-8",
+   "atFrame": 1945,
+   "label": "v_G5_corridor-rooms"
+  },
+  {
+   "id": "sc-9",
+   "atFrame": 2289,
+   "label": "v_H1_close-curtain"
+  },
+  {
+   "id": "sc-10",
+   "atFrame": 3181,
+   "label": "v_H3_outdoor-thermo"
+  },
+  {
+   "id": "sc-11",
+   "atFrame": 3613,
+   "label": "v_B1_sun-on-tatami"
+  },
+  {
+   "id": "sc-12",
+   "atFrame": 3986,
+   "label": "v_H4_sun-on-wall"
+  },
+  {
+   "id": "sc-13",
+   "atFrame": 4145,
+   "label": "v_H5_wallclock-2am"
+  },
+  {
+   "id": "sc-14",
+   "atFrame": 4414,
+   "label": "v_H6_window-outside-night"
+  },
+  {
+   "id": "sc-15",
+   "atFrame": 4550,
+   "label": "v_H7_ceiling-streetlight"
+  },
+  {
+   "id": "sc-16",
+   "atFrame": 4769,
+   "label": "v_B2_open-hatch-dust"
+  },
+  {
+   "id": "sc-17",
+   "atFrame": 4993,
+   "label": "v_B3_attic-shimmer"
+  },
+  {
+   "id": "sc-18",
+   "atFrame": 5576,
+   "label": "v_B4_attic-thermometer"
+  },
+  {
+   "id": "sc-19",
+   "atFrame": 5750,
+   "label": "v_B5_roof-tiles-heat"
+  },
+  {
+   "id": "sc-20",
+   "atFrame": 5986,
+   "label": "v_H8_two-thermometers"
+  },
+  {
+   "id": "sc-21",
+   "atFrame": 6172,
+   "label": "v_B6_hot-water-bottle"
+  },
+  {
+   "id": "sc-22",
+   "atFrame": 6567,
+   "label": "v_I1_push-bottle-away"
+  },
+  {
+   "id": "sc-23",
+   "atFrame": 6787,
+   "label": "v_C2_feather-no-air"
+  },
+  {
+   "id": "sc-24",
+   "atFrame": 6903,
+   "label": "v_C1_campfire-radiant"
+  },
+  {
+   "id": "sc-25",
+   "atFrame": 7224,
+   "label": "v_I3_setting-sun-rays"
+  },
+  {
+   "id": "sc-26",
+   "atFrame": 7511,
+   "label": "v_I4_hand-near-cheek"
+  },
+  {
+   "id": "sc-27",
+   "atFrame": 7764,
+   "label": "v_I5_thermo-wall-vs-air"
+  },
+  {
+   "id": "sc-28",
+   "atFrame": 9081,
+   "label": "v_C4_wall-thermometer"
+  },
+  {
+   "id": "sc-29",
+   "atFrame": 9456,
+   "label": "v_C3_remote-24"
+  },
+  {
+   "id": "sc-30",
+   "atFrame": 9973,
+   "label": "v_C5_ceiling-pushin"
+  },
+  {
+   "id": "sc-31",
+   "atFrame": 10107,
+   "label": "v_I8_electric-meter"
+  },
+  {
+   "id": "sc-32",
+   "atFrame": 10764,
+   "label": "v_J1_blackout-curtain"
+  },
+  {
+   "id": "sc-33",
+   "atFrame": 11060,
+   "label": "v_J2_fabric-weave-macro"
+  },
+  {
+   "id": "sc-34",
+   "atFrame": 11358,
+   "label": "v_J3_ir-thermometer-gun"
+  },
+  {
+   "id": "sc-35",
+   "atFrame": 11623,
+   "label": "v_D1_foil-macro"
+  },
+  {
+   "id": "sc-36",
+   "atFrame": 11852,
+   "label": "v_D2_black-paper"
+  },
+  {
+   "id": "sc-37",
+   "atFrame": 12091,
+   "label": "v_J4_foil-vs-paper"
+  },
+  {
+   "id": "sc-38",
+   "atFrame": 12528,
+   "label": "v_J5_touch-hot-curtain"
+  },
+  {
+   "id": "sc-39",
+   "atFrame": 12894,
+   "label": "v_J6_unroll-foil"
+  },
+  {
+   "id": "sc-40",
+   "atFrame": 13012,
+   "label": "v_D3_foil-on-glass-WRONG"
+  },
+  {
+   "id": "sc-41",
+   "atFrame": 13243,
+   "label": "v_J7_hesitate-at-glass"
+  },
+  {
+   "id": "sc-42",
+   "atFrame": 13366,
+   "label": "v_D5_glass-crack"
+  },
+  {
+   "id": "sc-43",
+   "atFrame": 13748,
+   "label": "v_D4_wired-glass"
+  },
+  {
+   "id": "sc-44",
+   "atFrame": 14920,
+   "label": "v_D6_foil-air-gap"
+  },
+  {
+   "id": "sc-45",
+   "atFrame": 15593,
+   "label": "v_K1_turn-foil-wall-ceiling"
+  },
+  {
+   "id": "sc-46",
+   "atFrame": 16895,
+   "label": "v_E1_thatch-exterior"
+  },
+  {
+   "id": "sc-47",
+   "atFrame": 17176,
+   "label": "v_K3_thatch-village"
+  },
+  {
+   "id": "sc-48",
+   "atFrame": 17675,
+   "label": "v_K4_thatch-surface-sun"
+  },
+  {
+   "id": "sc-49",
+   "atFrame": 17905,
+   "label": "v_E3_thatch-interior"
+  },
+  {
+   "id": "sc-50",
+   "atFrame": 18097,
+   "label": "v_K5_thatch-underside"
+  },
+  {
+   "id": "sc-51",
+   "atFrame": 18388,
+   "label": "v_K6_woman-fan-farmhouse"
+  },
+  {
+   "id": "sc-52",
+   "atFrame": 18883,
+   "label": "v_K7_susuki-bundle"
+  },
+  {
+   "id": "sc-53",
+   "atFrame": 19059,
+   "label": "v_E2_thatch-stems-macro"
+  },
+  {
+   "id": "sc-54",
+   "atFrame": 19630,
+   "label": "v_K8_glasswool-macro"
+  },
+  {
+   "id": "sc-55",
+   "atFrame": 20086,
+   "label": "v_K9_thick-wall-window"
+  },
+  {
+   "id": "sc-56",
+   "atFrame": 20570,
+   "label": "v_E4_earth-wall-sun"
+  },
+  {
+   "id": "sc-57",
+   "atFrame": 21029,
+   "label": "v_E5_earth-wall-interior"
+  },
+  {
+   "id": "sc-58",
+   "atFrame": 21272,
+   "label": "v_K10_earthwall-section"
+  },
+  {
+   "id": "sc-59",
+   "atFrame": 21708,
+   "label": "v_E6_doma-cool"
+  },
+  {
+   "id": "sc-60",
+   "atFrame": 22331,
+   "label": "v_L1_doors-open-night"
+  },
+  {
+   "id": "sc-61",
+   "atFrame": 22483,
+   "label": "v_L2_engawa-lantern"
+  },
+  {
+   "id": "sc-62",
+   "atFrame": 22799,
+   "label": "v_L3_lock-window-night"
+  },
+  {
+   "id": "sc-63",
+   "atFrame": 23037,
+   "label": "v_L4_roof-turbine"
+  },
+  {
+   "id": "sc-64",
+   "atFrame": 23522,
+   "label": "v_L5_eave-vent-inside"
+  },
+  {
+   "id": "sc-65",
+   "atFrame": 24079,
+   "label": "v_F1_eave-vent"
+  },
+  {
+   "id": "sc-66",
+   "atFrame": 24532,
+   "label": "v_L6_hardware-store"
+  },
+  {
+   "id": "sc-67",
+   "atFrame": 25385,
+   "label": "v_F2_new-windows"
+  },
+  {
+   "id": "sc-68",
+   "atFrame": 26271,
+   "label": "v_L9_foil-vs-window-scale"
+  },
+  {
+   "id": "sc-69",
+   "atFrame": 26962,
+   "label": "v_M1_lift-panel-calm"
+  },
+  {
+   "id": "sc-70",
+   "atFrame": 27495,
+   "label": "v_L10_attic-thermo-dusk"
+  },
+  {
+   "id": "sc-71",
+   "atFrame": 27734,
+   "label": "v_M3_insulation-gap"
+  },
+  {
+   "id": "sc-72",
+   "atFrame": 28384,
+   "label": "v_M4_closet-to-bedroom"
+  },
+  {
+   "id": "sc-73",
+   "atFrame": 28696,
+   "label": "v_F3_tape-hatch-edge"
+  },
+  {
+   "id": "sc-74",
+   "atFrame": 29046,
+   "label": "v_F4_foil-on-panel"
+  },
+  {
+   "id": "sc-75",
+   "atFrame": 29507,
+   "label": "v_M5_stepladder-ready"
+  },
+  {
+   "id": "sc-76",
+   "atFrame": 29639,
+   "label": "v_M6_hand-along-wall"
+  },
+  {
+   "id": "sc-77",
+   "atFrame": 30902,
+   "label": "v_M8_roofers-distant"
+  },
+  {
+   "id": "sc-78",
+   "atFrame": 31292,
+   "label": "v_F5_closet-closing"
+  },
+  {
+   "id": "sc-79",
+   "atFrame": 31735,
+   "label": "v_M9_sleeping-dawn"
+  },
+  {
+   "id": "sc-80",
+   "atFrame": 32365,
+   "label": "v_M11_touch-ceiling-smile"
+  },
+  {
+   "id": "sc-81",
+   "atFrame": 32609,
+   "label": "v_M10_dawn-paper-screen"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-video",
+   "name": "clip thật",
+   "type": "video",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "v-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 191,
+     "asset": "assets/v_A1_fan-curtain-still.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-1",
+     "kind": "video",
+     "from": 179,
+     "durationInFrames": 259,
+     "asset": "assets/v_G1_clock-2am.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.927,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-2",
+     "kind": "video",
+     "from": 426,
+     "durationInFrames": 316,
+     "asset": "assets/v_A2_hand-touch-ceiling.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.759,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-3",
+     "kind": "video",
+     "from": 730,
+     "durationInFrames": 134,
+     "asset": "assets/v_A3_iron-cloth-steam.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-4",
+     "kind": "video",
+     "from": 852,
+     "durationInFrames": 149,
+     "asset": "assets/v_A4_window-black-night.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-5",
+     "kind": "video",
+     "from": 989,
+     "durationInFrames": 205,
+     "asset": "assets/v_G2_sit-up-reach.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-6",
+     "kind": "video",
+     "from": 1182,
+     "durationInFrames": 159,
+     "asset": "assets/v_G3_palm-macro.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-7",
+     "kind": "video",
+     "from": 1329,
+     "durationInFrames": 616,
+     "asset": "assets/v_G4_100yen-shelf.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.39,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-8",
+     "kind": "video",
+     "from": 1933,
+     "durationInFrames": 356,
+     "asset": "assets/v_G5_corridor-rooms.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.674,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-9",
+     "kind": "video",
+     "from": 2277,
+     "durationInFrames": 904,
+     "asset": "assets/v_H1_close-curtain.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.265,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-10",
+     "kind": "video",
+     "from": 3169,
+     "durationInFrames": 444,
+     "asset": "assets/v_H3_outdoor-thermo.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.541,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-11",
+     "kind": "video",
+     "from": 3601,
+     "durationInFrames": 385,
+     "asset": "assets/v_B1_sun-on-tatami.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.623,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-12",
+     "kind": "video",
+     "from": 3974,
+     "durationInFrames": 171,
+     "asset": "assets/v_H4_sun-on-wall.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-13",
+     "kind": "video",
+     "from": 4133,
+     "durationInFrames": 281,
+     "asset": "assets/v_H5_wallclock-2am.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.854,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-14",
+     "kind": "video",
+     "from": 4402,
+     "durationInFrames": 148,
+     "asset": "assets/v_H6_window-outside-night.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-15",
+     "kind": "video",
+     "from": 4538,
+     "durationInFrames": 231,
+     "asset": "assets/v_H7_ceiling-streetlight.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-16",
+     "kind": "video",
+     "from": 4757,
+     "durationInFrames": 236,
+     "asset": "assets/v_B2_open-hatch-dust.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-17",
+     "kind": "video",
+     "from": 4981,
+     "durationInFrames": 595,
+     "asset": "assets/v_B3_attic-shimmer.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.403,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-18",
+     "kind": "video",
+     "from": 5564,
+     "durationInFrames": 186,
+     "asset": "assets/v_B4_attic-thermometer.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-19",
+     "kind": "video",
+     "from": 5738,
+     "durationInFrames": 248,
+     "asset": "assets/v_B5_roof-tiles-heat.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.968,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-20",
+     "kind": "video",
+     "from": 5974,
+     "durationInFrames": 198,
+     "asset": "assets/v_H8_two-thermometers.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-21",
+     "kind": "video",
+     "from": 6160,
+     "durationInFrames": 407,
+     "asset": "assets/v_B6_hot-water-bottle.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.59,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-22",
+     "kind": "video",
+     "from": 6555,
+     "durationInFrames": 232,
+     "asset": "assets/v_I1_push-bottle-away.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-23",
+     "kind": "video",
+     "from": 6775,
+     "durationInFrames": 128,
+     "asset": "assets/v_C2_feather-no-air.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-24",
+     "kind": "video",
+     "from": 6891,
+     "durationInFrames": 333,
+     "asset": "assets/v_C1_campfire-radiant.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.721,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-25",
+     "kind": "video",
+     "from": 7212,
+     "durationInFrames": 299,
+     "asset": "assets/v_I3_setting-sun-rays.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.803,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-26",
+     "kind": "video",
+     "from": 7499,
+     "durationInFrames": 265,
+     "asset": "assets/v_I4_hand-near-cheek.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.906,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-27",
+     "kind": "video",
+     "from": 7752,
+     "durationInFrames": 1329,
+     "asset": "assets/v_I5_thermo-wall-vs-air.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.181,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-28",
+     "kind": "video",
+     "from": 9069,
+     "durationInFrames": 387,
+     "asset": "assets/v_C4_wall-thermometer.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.62,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-29",
+     "kind": "video",
+     "from": 9444,
+     "durationInFrames": 529,
+     "asset": "assets/v_C3_remote-24.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.454,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-30",
+     "kind": "video",
+     "from": 9961,
+     "durationInFrames": 146,
+     "asset": "assets/v_C5_ceiling-pushin.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-31",
+     "kind": "video",
+     "from": 10095,
+     "durationInFrames": 669,
+     "asset": "assets/v_I8_electric-meter.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.359,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-32",
+     "kind": "video",
+     "from": 10752,
+     "durationInFrames": 308,
+     "asset": "assets/v_J1_blackout-curtain.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.779,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-33",
+     "kind": "video",
+     "from": 11048,
+     "durationInFrames": 310,
+     "asset": "assets/v_J2_fabric-weave-macro.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.774,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-34",
+     "kind": "video",
+     "from": 11346,
+     "durationInFrames": 277,
+     "asset": "assets/v_J3_ir-thermometer-gun.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.866,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-35",
+     "kind": "video",
+     "from": 11611,
+     "durationInFrames": 241,
+     "asset": "assets/v_D1_foil-macro.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.996,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-36",
+     "kind": "video",
+     "from": 11840,
+     "durationInFrames": 251,
+     "asset": "assets/v_D2_black-paper.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.956,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-37",
+     "kind": "video",
+     "from": 12079,
+     "durationInFrames": 449,
+     "asset": "assets/v_J4_foil-vs-paper.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.535,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-38",
+     "kind": "video",
+     "from": 12516,
+     "durationInFrames": 378,
+     "asset": "assets/v_J5_touch-hot-curtain.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.635,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-39",
+     "kind": "video",
+     "from": 12882,
+     "durationInFrames": 130,
+     "asset": "assets/v_J6_unroll-foil.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-40",
+     "kind": "video",
+     "from": 13000,
+     "durationInFrames": 243,
+     "asset": "assets/v_D3_foil-on-glass-WRONG.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.988,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-41",
+     "kind": "video",
+     "from": 13231,
+     "durationInFrames": 135,
+     "asset": "assets/v_J7_hesitate-at-glass.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-42",
+     "kind": "video",
+     "from": 13354,
+     "durationInFrames": 394,
+     "asset": "assets/v_D5_glass-crack.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.609,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-43",
+     "kind": "video",
+     "from": 13736,
+     "durationInFrames": 1184,
+     "asset": "assets/v_D4_wired-glass.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.203,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-44",
+     "kind": "video",
+     "from": 14908,
+     "durationInFrames": 685,
+     "asset": "assets/v_D6_foil-air-gap.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.35,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-45",
+     "kind": "video",
+     "from": 15581,
+     "durationInFrames": 1314,
+     "asset": "assets/v_K1_turn-foil-wall-ceiling.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.183,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-46",
+     "kind": "video",
+     "from": 16883,
+     "durationInFrames": 293,
+     "asset": "assets/v_E1_thatch-exterior.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.819,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-47",
+     "kind": "video",
+     "from": 17164,
+     "durationInFrames": 511,
+     "asset": "assets/v_K3_thatch-village.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.47,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-48",
+     "kind": "video",
+     "from": 17663,
+     "durationInFrames": 242,
+     "asset": "assets/v_K4_thatch-surface-sun.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.992,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-49",
+     "kind": "video",
+     "from": 17893,
+     "durationInFrames": 204,
+     "asset": "assets/v_E3_thatch-interior.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-50",
+     "kind": "video",
+     "from": 18085,
+     "durationInFrames": 303,
+     "asset": "assets/v_K5_thatch-underside.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.792,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-51",
+     "kind": "video",
+     "from": 18376,
+     "durationInFrames": 507,
+     "asset": "assets/v_K6_woman-fan-farmhouse.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.473,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-52",
+     "kind": "video",
+     "from": 18871,
+     "durationInFrames": 188,
+     "asset": "assets/v_K7_susuki-bundle.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-53",
+     "kind": "video",
+     "from": 19047,
+     "durationInFrames": 583,
+     "asset": "assets/v_E2_thatch-stems-macro.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.412,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-54",
+     "kind": "video",
+     "from": 19618,
+     "durationInFrames": 468,
+     "asset": "assets/v_K8_glasswool-macro.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.513,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-55",
+     "kind": "video",
+     "from": 20074,
+     "durationInFrames": 496,
+     "asset": "assets/v_K9_thick-wall-window.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.484,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-56",
+     "kind": "video",
+     "from": 20558,
+     "durationInFrames": 471,
+     "asset": "assets/v_E4_earth-wall-sun.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.51,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-57",
+     "kind": "video",
+     "from": 21017,
+     "durationInFrames": 255,
+     "asset": "assets/v_E5_earth-wall-interior.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.941,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-58",
+     "kind": "video",
+     "from": 21260,
+     "durationInFrames": 448,
+     "asset": "assets/v_K10_earthwall-section.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.536,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-59",
+     "kind": "video",
+     "from": 21696,
+     "durationInFrames": 635,
+     "asset": "assets/v_E6_doma-cool.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.378,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-60",
+     "kind": "video",
+     "from": 22319,
+     "durationInFrames": 164,
+     "asset": "assets/v_L1_doors-open-night.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-61",
+     "kind": "video",
+     "from": 22471,
+     "durationInFrames": 328,
+     "asset": "assets/v_L2_engawa-lantern.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.732,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-62",
+     "kind": "video",
+     "from": 22787,
+     "durationInFrames": 250,
+     "asset": "assets/v_L3_lock-window-night.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.96,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-63",
+     "kind": "video",
+     "from": 23025,
+     "durationInFrames": 497,
+     "asset": "assets/v_L4_roof-turbine.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.483,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-64",
+     "kind": "video",
+     "from": 23510,
+     "durationInFrames": 569,
+     "asset": "assets/v_L5_eave-vent-inside.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.422,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-65",
+     "kind": "video",
+     "from": 24067,
+     "durationInFrames": 465,
+     "asset": "assets/v_F1_eave-vent.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.516,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-66",
+     "kind": "video",
+     "from": 24520,
+     "durationInFrames": 865,
+     "asset": "assets/v_L6_hardware-store.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.277,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-67",
+     "kind": "video",
+     "from": 25373,
+     "durationInFrames": 898,
+     "asset": "assets/v_F2_new-windows.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.267,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-68",
+     "kind": "video",
+     "from": 26259,
+     "durationInFrames": 703,
+     "asset": "assets/v_L9_foil-vs-window-scale.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.341,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-69",
+     "kind": "video",
+     "from": 26950,
+     "durationInFrames": 545,
+     "asset": "assets/v_M1_lift-panel-calm.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.44,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-70",
+     "kind": "video",
+     "from": 27483,
+     "durationInFrames": 251,
+     "asset": "assets/v_L10_attic-thermo-dusk.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.956,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-71",
+     "kind": "video",
+     "from": 27722,
+     "durationInFrames": 662,
+     "asset": "assets/v_M3_insulation-gap.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.363,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-72",
+     "kind": "video",
+     "from": 28372,
+     "durationInFrames": 324,
+     "asset": "assets/v_M4_closet-to-bedroom.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.741,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-73",
+     "kind": "video",
+     "from": 28684,
+     "durationInFrames": 362,
+     "asset": "assets/v_F3_tape-hatch-edge.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.663,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-74",
+     "kind": "video",
+     "from": 29034,
+     "durationInFrames": 473,
+     "asset": "assets/v_F4_foil-on-panel.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.507,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-75",
+     "kind": "video",
+     "from": 29495,
+     "durationInFrames": 144,
+     "asset": "assets/v_M5_stepladder-ready.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 1.0,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-76",
+     "kind": "video",
+     "from": 29627,
+     "durationInFrames": 1275,
+     "asset": "assets/v_M6_hand-along-wall.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.188,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-77",
+     "kind": "video",
+     "from": 30890,
+     "durationInFrames": 402,
+     "asset": "assets/v_M8_roofers-distant.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.597,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-78",
+     "kind": "video",
+     "from": 31280,
+     "durationInFrames": 455,
+     "asset": "assets/v_F5_closet-closing.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.527,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-79",
+     "kind": "video",
+     "from": 31723,
+     "durationInFrames": 642,
+     "asset": "assets/v_M9_sleeping-dawn.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.374,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-80",
+     "kind": "video",
+     "from": 32353,
+     "durationInFrames": 256,
+     "asset": "assets/v_M11_touch-ceiling-smile.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.938,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "v-81",
+     "kind": "video",
+     "from": 32597,
+     "durationInFrames": 940,
+     "asset": "assets/v_M10_dawn-paper-screen.mp4",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "speed": 0.255,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 12,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    }
+   ]
+  },
+  {
+   "id": "trk-panel",
+   "name": "panel dưới bảng",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": []
+  },
+  {
+   "id": "trk-stat",
+   "name": "bảng số liệu",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "st-0",
+     "kind": "text",
+     "from": 2537,
+     "durationInFrames": 270,
+     "preset": "flat-stat",
+     "content": "|窓・ドア 73%\n|屋根 11%\n|外壁 7%\n|換気 6%\n*|床 3%",
+     "color": "#F2B84B",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 420,
+      "y": 230,
+      "w": 1080
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-1",
+     "kind": "text",
+     "from": 5023,
+     "durationInFrames": 270,
+     "preset": "flat-stat",
+     "content": "|外気 33〜34度 → 小屋裏 50度\n*|外気 37度 → 小屋裏 60度",
+     "color": "#F2B84B",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 420,
+      "y": 230,
+      "w": 1080
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-2",
+     "kind": "text",
+     "from": 9111,
+     "durationInFrames": 270,
+     "preset": "flat-stat",
+     "content": "|空気 27度\n|天井の表面 35度\n*|体感 31度",
+     "color": "#F2B84B",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 420,
+      "y": 230,
+      "w": 1080
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-3",
+     "kind": "text",
+     "from": 11653,
+     "durationInFrames": 270,
+     "preset": "flat-stat",
+     "content": "|みがいたアルミ 0.04〜0.06\n*|黒い紙 0.90\n|差は 約20倍",
+     "color": "#F2B84B",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 420,
+      "y": 230,
+      "w": 1080
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-4",
+     "kind": "text",
+     "from": 17705,
+     "durationInFrames": 270,
+     "preset": "flat-stat",
+     "content": "|かやの表と裏 約40度の差\n|屋根の室内側 外気より10度低い\n*|室内の空気 外気より5度低い",
+     "color": "#F2B84B",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 420,
+      "y": 230,
+      "w": 1080
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-5",
+     "kind": "text",
+     "from": 20600,
+     "durationInFrames": 270,
+     "preset": "flat-stat",
+     "content": "|西壁の外面 最高52.9度\n|3時間で外面 +17.8度\n*|同じ時間 室内面 +0.9度",
+     "color": "#F2B84B",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 420,
+      "y": 230,
+      "w": 1080
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-6",
+     "kind": "text",
+     "from": 25415,
+     "durationInFrames": 270,
+     "preset": "flat-stat",
+     "content": "|高断熱窓 1125億円\n*|壁・天井など躯体 300億円",
+     "color": "#F2B84B",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 420,
+      "y": 230,
+      "w": 1080
+     },
+     "fontSize": 52
+    }
+   ]
+  },
+  {
+   "id": "trk-tag",
+   "name": "tag",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "tag-0",
+     "kind": "text",
+     "from": 4,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "天井に触れた夜",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-1",
+     "kind": "text",
+     "from": 2293,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "「窓が7割」の但し書き",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-2",
+     "kind": "text",
+     "from": 4554,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "天井裏 60度",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-3",
+     "kind": "text",
+     "from": 6571,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "風のない部屋でも届く熱",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-4",
+     "kind": "text",
+     "from": 10768,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "アルミと紙で20倍",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-5",
+     "kind": "text",
+     "from": 12898,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "貼ってはいけない場所",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-6",
+     "kind": "text",
+     "from": 16899,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "かやぶきと土壁の記録",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-7",
+     "kind": "text",
+     "from": 22335,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "跳ね返した熱の行き先",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-8",
+     "kind": "text",
+     "from": 24536,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "なぜ誰も売りに来ないのか",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-9",
+     "kind": "text",
+     "from": 26966,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "押し入れの45センチ",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "tag-10",
+     "kind": "text",
+     "from": 30734,
+     "durationInFrames": 210,
+     "preset": "tag",
+     "content": "万能ではありません",
+     "color": "#F5D58A",
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 54
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "giọng",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "v",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 33537,
+     "asset": "assets/voice.mp3",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 48,
+  "lines": [
+   {
+    "text": "去年の夏、二階の寝室に、3千円の扇風機を買い足しました。",
+    "startMs": 0,
+    "endMs": 5760
+   },
+   {
+    "text": "エアコンは24度。それでも、肌にまとわりつく重さで、朝までに二度、目が覚めます。",
+    "startMs": 6360,
+    "endMs": 13997
+   },
+   {
+    "text": "ある晩、寝たまま手を伸ばして、指先で天井に触れました。",
+    "startMs": 14597,
+    "endMs": 19547
+   },
+   {
+    "text": "ぬるい。ちりちりではなく、ぬるい。",
+    "startMs": 20247,
+    "endMs": 24119
+   },
+   {
+    "text": "手ざわりは、アイロンを当てたあとの布でした。",
+    "startMs": 24719,
+    "endMs": 28185
+   },
+   {
+    "text": "日はとうに沈んでいます。窓のせいではありません。",
+    "startMs": 28785,
+    "endMs": 32775
+   },
+   {
+    "text": "今夜、寝る前に、手のひらを天井へ、そっと当ててみてください。",
+    "startMs": 33375,
+    "endMs": 39188
+   },
+   {
+    "text": "指先に、空気よりはっきり温かいものが返ってきます。",
+    "startMs": 39788,
+    "endMs": 44108
+   },
+   {
+    "text": "その天井を、110円で冷ますことができます。",
+    "startMs": 44708,
+    "endMs": 48676
+   },
+   {
+    "text": "ただし、いちばん効く一枚は、最後にとっておきます。窓ではありません。",
+    "startMs": 49476,
+    "endMs": 56228
+   },
+   {
+    "text": "古代の秘訣へようこそ。今日もまた、時代に置き去りにされた知恵を一つ、掘り起こしていきます。",
+    "startMs": 56828,
+    "endMs": 64231
+   },
+   {
+    "text": "お住まいの家で、いちばん寝苦しい部屋はどこでしょうか。よければ、コメントで教えてください。",
+    "startMs": 64831,
+    "endMs": 72137
+   },
+   {
+    "text": "さて、ここからが今日の核心です。",
+    "startMs": 72737,
+    "endMs": 75713
+   },
+   {
+    "text": "暑さ対策と聞けば、まず窓、と誰もが言います。私もそう思っていました。",
+    "startMs": 76313,
+    "endMs": 82980
+   },
+   {
+    "text": "根拠になっている数字があります。冷房をつけた夏、家に入ってくる熱のうち、窓やドアなどの開口部が73パーセント。",
+    "startMs": 83580,
+    "endMs": 93960
+   },
+   {
+    "text": "屋根が11パーセント、外の壁が7パーセント、換気が6パーセント、床が3パーセントです。",
+    "startMs": 93960,
+    "endMs": 102076
+   },
+   {
+    "text": "数字そのものは、正しいのです。",
+    "startMs": 102676,
+    "endMs": 105439
+   },
+   {
+    "text": "ところが、この数字には、小さな但し書きがついていました。外の気温が33.4度、部屋が27度、そして「昼」。",
+    "startMs": 106039,
+    "endMs": 117505
+   },
+   {
+    "text": "昼の話だったのです。",
+    "startMs": 118105,
+    "endMs": 119844
+   },
+   {
+    "text": "昼のあいだ、窓から入ってくるのは日ざしです。ガラスを通り抜けて、その瞬間、部屋を温める。だから昼は、窓が7割を占めます。",
+    "startMs": 120444,
+    "endMs": 132263
+   },
+   {
+    "text": "けれど、私が目を覚ますのは、いつも夜中の2時でした。",
+    "startMs": 132863,
+    "endMs": 137556
+   },
+   {
+    "text": "そのころ窓の外は真っ暗で、日ざしは一筋も入ってきません。窓の仕事は、とっくに終わっているのです。",
+    "startMs": 138156,
+    "endMs": 146519
+   },
+   {
+    "text": "では、あの天井のぬるさは、どこから来たのか。",
+    "startMs": 147119,
+    "endMs": 151055
+   },
+   {
+    "text": "翌日の夕方、私は押し入れの天井にある四角い板を、初めて持ち上げました。",
+    "startMs": 151655,
+    "endMs": 158353
+   },
+   {
+    "text": "顔に、熱風が当たりました。夕方の、日が傾いたあとの時間に、です。",
+    "startMs": 158953,
+    "endMs": 165823
+   },
+   {
+    "text": "岩手県のある家で、7月の終わりに天井裏の温度を測り続けた記録があります。外の気温が33度から34度の日、",
+    "startMs": 166423,
+    "endMs": 176532
+   },
+   {
+    "text": "天井裏はおよそ50度。いちばん暑い日は、外が37度で、天井裏は60度まで上がっていました。",
+    "startMs": 176532,
+    "endMs": 185281
+   },
+   {
+    "text": "岩手です。東北の、涼しいはずの土地で、60度。",
+    "startMs": 185881,
+    "endMs": 191076
+   },
+   {
+    "text": "しかも上と下で4度から5度しか差がなく、天井裏の空気は、塊ごと熱くなっていました。",
+    "startMs": 191676,
+    "endMs": 198919
+   },
+   {
+    "text": "つまり私は、毎晩、大きな湯たんぽの下で眠っていたわけです。",
+    "startMs": 199519,
+    "endMs": 204937
+   },
+   {
+    "text": "ただし、湯たんぽなら、離れれば済みます。天井は離れられません。ではその熱は、",
+    "startMs": 205737,
+    "endMs": 212870
+   },
+   {
+    "text": "どうやって私まで降りてきたのでしょうか。風ではありません。",
+    "startMs": 212870,
+    "endMs": 218313
+   },
+   {
+    "text": "窓を閉めきって、扇風機も止めて、空気がまったく動いていない部屋を思い浮かべてください。",
+    "startMs": 218913,
+    "endMs": 225623
+   },
+   {
+    "text": "その部屋でも、天井の熱は届きます。",
+    "startMs": 226223,
+    "endMs": 229487
+   },
+   {
+    "text": "焚き火の前に立ったときを思い出してみてください。あいだの空気は、べつに熱くありません。それでも、顔だけがちりちりと熱くなります。",
+    "startMs": 230087,
+    "endMs": 240209
+   },
+   {
+    "text": "じつは熱には、空気に運んでもらわずに、まっすぐ飛んでいく渡り方があるのです。放射熱、と呼びます。",
+    "startMs": 240809,
+    "endMs": 249769
+   },
+   {
+    "text": "温度を持ったものは、すべてこの見えない熱を出しています。天井も、壁も、あなたの体も。",
+    "startMs": 250369,
+    "endMs": 258209
+   },
+   {
+    "text": "そして人が「暑い」と感じるとき、空気の温度と、まわりの表面から飛んでくる熱は、",
+    "startMs": 258809,
+    "endMs": 267020
+   },
+   {
+    "text": "ほぼ半分ずつを占めている。そう申し上げたら、意外でしょうか。",
+    "startMs": 267020,
+    "endMs": 273337
+   },
+   {
+    "text": "建物の世界には、作用温度という物差しがあります。風がほとんど動かない部屋では、",
+    "startMs": 273937,
+    "endMs": 281049
+   },
+   {
+    "text": "体が感じる温度は、おおよそ、空気の温度と、まわりの表面の温度を足して2で割った値になる。そういう考え方です。",
+    "startMs": 281049,
+    "endMs": 290897
+   },
+   {
+    "text": "厳密には暖房のときに使う目安ですが、放射が半分を握るという点は、風のない夏の夜も変わりません。",
+    "startMs": 291497,
+    "endMs": 299935
+   },
+   {
+    "text": "数字を入れてみます。",
+    "startMs": 300535,
+    "endMs": 302103
+   },
+   {
+    "text": "空気が27度。天井の表面が35度。足して2で割れば、31度。温度計は27度なのに、体は31度の部屋にいます。",
+    "startMs": 302703,
+    "endMs": 314607
+   },
+   {
+    "text": "そこで私は、設定を24度まで下げました。けれど天井は、そう簡単には冷めません。35度のままなら、体が感じるのは29度と少し。",
+    "startMs": 315207,
+    "endMs": 327633
+   },
+   {
+    "text": "空気を3度も下げて、体感は2度。",
+    "startMs": 328333,
+    "endMs": 331832
+   },
+   {
+    "text": "残りの半分を、天井が握ったままだからです。",
+    "startMs": 332432,
+    "endMs": 336315
+   },
+   {
+    "text": "私が電気代を払って冷やしていたのは、空気だけでした。暑さの半分には、一度も手が届いていなかったのです。",
+    "startMs": 336915,
+    "endMs": 345565
+   },
+   {
+    "text": "天井が半分を決めているなら、やることは一つ。飛んでくる熱を、跳ね返す。ところがこの跳ね返す力は、材料によって20倍も違いました。",
+    "startMs": 346365,
+    "endMs": 358184
+   },
+   {
+    "text": "夏になると、分厚い遮光カーテンや厚手の布が売れます。厚ければ効きそうだ、という感じは、私もよくわかります。",
+    "startMs": 358784,
+    "endMs": 368053
+   },
+   {
+    "text": "ところが放射熱に関しては、厚さがほとんど関係ありません。効くのは、表面が何でできているか、それだけです。",
+    "startMs": 368653,
+    "endMs": 377997
+   },
+   {
+    "text": "赤外線の計測器をつくる会社が、材料ごとに「熱をどれだけ放つか」をまとめた表を出しています。",
+    "startMs": 378597,
+    "endMs": 386832
+   },
+   {
+    "text": "みがいたアルミの面は、0.04から0.06。黒い紙は、0.90。",
+    "startMs": 387432,
+    "endMs": 394451
+   },
+   {
+    "text": "同じ温度に温まっていても、アルミは紙の20分の1ほどしか熱を放たない、ということです。",
+    "startMs": 395051,
+    "endMs": 402432
+   },
+   {
+    "text": "布や紙は、熱を受けるとまず自分が温まり、温まったぶんを、そっくり部屋へ放ち直します。",
+    "startMs": 403032,
+    "endMs": 410195
+   },
+   {
+    "text": "カーテンを閉めたのに暑いのは、カーテンそのものが新しい熱源になっているからです。",
+    "startMs": 410195,
+    "endMs": 417016
+   },
+   {
+    "text": "アルミは、その手前で跳ね返します。0.2ミリの薄いシートでも、飛んできた放射熱の97パーセントを返してしまう、という測定があります。",
+    "startMs": 417616,
+    "endMs": 429211
+   },
+   {
+    "text": "ここで、私の失敗を白状します。",
+    "startMs": 429811,
+    "endMs": 433149
+   },
+   {
+    "text": "その表を見た私が真っ先にしたのは、アルミのシートを買ってきて、窓ガラスに貼ることでした。",
+    "startMs": 433749,
+    "endMs": 440832
+   },
+   {
+    "text": "これが、いちばんやってはいけないことでした。",
+    "startMs": 441432,
+    "endMs": 444941
+   },
+   {
+    "text": "ガラスにシートを貼ると、ガラスの温まり方が場所によってばらつきます。すると膨らんだ部分とそうでない部分が押し合い、",
+    "startMs": 445541,
+    "endMs": 455286
+   },
+   {
+    "text": "割れる。熱割れ、と言います。",
+    "startMs": 455286,
+    "endMs": 457680
+   },
+   {
+    "text": "とくに危ないのが、中に金属の網が入った、あの網入りガラスです。ガラスと金属では、",
+    "startMs": 458280,
+    "endMs": 465753
+   },
+   {
+    "text": "熱で伸びる量が違う。伸びた網が、まだ冷たいガラスを押します。",
+    "startMs": 465753,
+    "endMs": 471357
+   },
+   {
+    "text": "熱を跳ね返すガラスや、表面に金属の膜がついたガラスも同じです。シートをつくる会社の説明書きにも、",
+    "startMs": 471957,
+    "endMs": 480149
+   },
+   {
+    "text": "こうした特殊なガラスには使えません、とはっきり書かれています。",
+    "startMs": 480149,
+    "endMs": 485440
+   },
+   {
+    "text": "見分け方は簡単です。ガラスに顔を近づけて、細い針金が格子状に入っていたら、それが網入り。迷ったら、貼らない。",
+    "startMs": 486040,
+    "endMs": 496749
+   },
+   {
+    "text": "もうひとつ、あとで知って赤面したことがあります。アルミは、貼るより浮かせるほうが効くのです。",
+    "startMs": 497349,
+    "endMs": 504603
+   },
+   {
+    "text": "ぴったり密着させると、跳ね返す前に、熱が触れ合った面をつたって向こう側へ渡ってしまいます。",
+    "startMs": 505203,
+    "endMs": 513051
+   },
+   {
+    "text": "数センチでいい、あいだに空気の層をつくる。それだけで、まるで違います。",
+    "startMs": 513051,
+    "endMs": 519155
+   },
+   {
+    "text": "では、どこへ置けばいいのか。",
+    "startMs": 519755,
+    "endMs": 522208
+   },
+   {
+    "text": "その答えを、いまから30年以上前に、数字で出していた家がありました。",
+    "startMs": 522808,
+    "endMs": 528835
+   },
+   {
+    "text": "エアコンも断熱材も持たない家が、どうやってそれをやってのけたのか。ここからです。",
+    "startMs": 529435,
+    "endMs": 536091
+   },
+   {
+    "text": "ここまでご覧いただき、ありがとうございます。この知恵に価値を感じていただけたなら、",
+    "startMs": 536691,
+    "endMs": 543622
+   },
+   {
+    "text": "高評価と、同じように知りたい誰かへのシェアで、古代の秘訣を支えていただけると嬉しく思います。",
+    "startMs": 543622,
+    "endMs": 551399
+   },
+   {
+    "text": "また、ご感想や、次に掘り起こしてほしいテーマがあれば、コメントでお寄せください。皆さまの声が、この番組をより深いものにしていきます。",
+    "startMs": 551399,
+    "endMs": 562557
+   },
+   {
+    "text": "かやぶき屋根、というものがあります。すすきや葦を、30センチから50センチもの厚さに重ねて葺いた屋根です。",
+    "startMs": 563157,
+    "endMs": 571947
+   },
+   {
+    "text": "花岡利昌という研究者が、鹿児島県の大隅半島で、7月の終わりにかやぶきの民家を測りました。",
+    "startMs": 572547,
+    "endMs": 582066
+   },
+   {
+    "text": "1991年の『伝統民家の生態学』に、その記録が残っています。",
+    "startMs": 582066,
+    "endMs": 588557
+   },
+   {
+    "text": "かやの外側の表面と、内側の表面。その差が、およそ40度ありました。",
+    "startMs": 589157,
+    "endMs": 596229
+   },
+   {
+    "text": "外が焼けるように熱くなっているあいだ、内側は、涼しい顔をしている。",
+    "startMs": 596829,
+    "endMs": 602621
+   },
+   {
+    "text": "そして室内側の屋根の面は、外の気温より10度低い。部屋の空気そのものも、外より5度低く保たれていました。",
+    "startMs": 603221,
+    "endMs": 612320
+   },
+   {
+    "text": "さきほどの足して2で割る計算を、あてはめてみてください。空気が5度低く、頭の上の面が10度低い。",
+    "startMs": 612920,
+    "endMs": 621901
+   },
+   {
+    "text": "体が感じる温度は、外より7度以上低いことになります。冷房のない家で、です。",
+    "startMs": 621901,
+    "endMs": 628824
+   },
+   {
+    "text": "なぜ、枯れた草を重ねただけで、そこまでの差がつくのでしょうか。",
+    "startMs": 629424,
+    "endMs": 634693
+   },
+   {
+    "text": "すすきや葦の茎は、中が空洞です。それを30センチ、50センチと積み上げれば、",
+    "startMs": 635293,
+    "endMs": 642301
+   },
+   {
+    "text": "屋根そのものが、細かい空気の粒をぎっしり抱えた層になります。熱を止めていたのは、草ではなく、草が閉じこめた空気のほうでした。",
+    "startMs": 642301,
+    "endMs": 653736
+   },
+   {
+    "text": "いまの断熱材が、ガラスを綿のようにほぐしてつくられているのも、狙いは同じです。",
+    "startMs": 654336,
+    "endMs": 661545
+   },
+   {
+    "text": "空気を、動けない形で捕まえる。素材が変わっただけで、考え方は千年前と同じでした。",
+    "startMs": 661545,
+    "endMs": 668939
+   },
+   {
+    "text": "壁のほうにも、記録があります。",
+    "startMs": 669539,
+    "endMs": 672259
+   },
+   {
+    "text": "金田正夫という研究者が、群馬県の山あいの赤岩という集落で、湯本家という古い民家を測りました。2000年の8月1日、西向きの壁です。",
+    "startMs": 672859,
+    "endMs": 685051
+   },
+   {
+    "text": "その日、壁の外側の表面は、最高で52.9度。",
+    "startMs": 685651,
+    "endMs": 691197
+   },
+   {
+    "text": "午後2時から5時のあいだ、外側は17.8度も上がりました。",
+    "startMs": 691797,
+    "endMs": 696640
+   },
+   {
+    "text": "同じ時間、部屋の内側の面は、",
+    "startMs": 697240,
+    "endMs": 700280
+   },
+   {
+    "text": "0.9度しか上がりませんでした。",
+    "startMs": 700980,
+    "endMs": 703849
+   },
+   {
+    "text": "厚さ、およそ19センチの土の壁です。",
+    "startMs": 704849,
+    "endMs": 708476
+   },
+   {
+    "text": "外で18度近く暴れている熱が、19センチの土を渡りきるころには、1度に満たないかすかな揺らぎになっている。",
+    "startMs": 709076,
+    "endMs": 717684
+   },
+   {
+    "text": "これは、跳ね返しているのではありません。遅らせているのです。",
+    "startMs": 718284,
+    "endMs": 722988
+   },
+   {
+    "text": "子どものころ、祖母の家の土間が、真夏でもひんやりしていたのを覚えています。",
+    "startMs": 723588,
+    "endMs": 729508
+   },
+   {
+    "text": "あれも同じ理屈だったのだと、この記録を読んで、ようやく合点がいきました。",
+    "startMs": 729508,
+    "endMs": 735268
+   },
+   {
+    "text": "ところがこの「遅らせる」やり方には、いまの家では、致命的な落とし穴があります。",
+    "startMs": 736068,
+    "endMs": 743769
+   },
+   {
+    "text": "遅れて届いた熱は、夜、どこへ行くのでしょうか。",
+    "startMs": 744369,
+    "endMs": 748817
+   },
+   {
+    "text": "昔の家は、夜になれば戸を開け放てました。遅れて届いた熱は、そのまま外へ出ていきます。それで話が終わっていたのです。",
+    "startMs": 749417,
+    "endMs": 759380
+   },
+   {
+    "text": "いまの家は、夜も閉めきります。遅れて届いた熱は、行き場を失って、部屋に残る。",
+    "startMs": 759980,
+    "endMs": 767297
+   },
+   {
+    "text": "だから現代の家では、遅らせるだけでは足りません。跳ね返して、外へ返してやる必要があります。",
+    "startMs": 767897,
+    "endMs": 775737
+   },
+   {
+    "text": "そしてここが、アルミのシートでつまずくところです。跳ね返した熱にも、行き先が要るのです。",
+    "startMs": 776337,
+    "endMs": 783473
+   },
+   {
+    "text": "天井裏にアルミを敷いても、その天井裏に空気の出口がなければ、熱は中をぐるぐる回って、",
+    "startMs": 784073,
+    "endMs": 791698
+   },
+   {
+    "text": "結局また降りてきます。屋根の職人が口をそろえて、軒下や棟の換気が働いていることが前提だ、と言うのは、そのためです。",
+    "startMs": 791698,
+    "endMs": 802047
+   },
+   {
+    "text": "ですから、たった一つだけ守ってください。天井裏の空気の出入り口は、絶対にふさがないこと。",
+    "startMs": 802647,
+    "endMs": 810320
+   },
+   {
+    "text": "ふさげば熱がこもるだけでなく、湿った空気も逃げ場を失い、カビの原因になります。",
+    "startMs": 810320,
+    "endMs": 817121
+   },
+   {
+    "text": "さて、ここで一つ、不思議に思われませんか。",
+    "startMs": 817721,
+    "endMs": 821860
+   },
+   {
+    "text": "天井裏にアルミを一枚、110円。この話を、誰も売りに来ないのはなぜでしょうか。",
+    "startMs": 822460,
+    "endMs": 830204
+   },
+   {
+    "text": "2025年の4月から、新しく建てる家は省エネの基準を満たすことが義務になりました。",
+    "startMs": 830804,
+    "endMs": 837847
+   },
+   {
+    "text": "国も断熱の改修にお金を出しています。2026年の制度では、リフォームで最大100万円まで。",
+    "startMs": 837847,
+    "endMs": 845577
+   },
+   {
+    "text": "その予算の内訳に、性格が出ています。断熱性能の高い窓に、1125億円。壁や天井まで含めた躯体の改修には、300億円。",
+    "startMs": 846177,
+    "endMs": 859415
+   },
+   {
+    "text": "窓に、4倍近い額が積まれているのです。",
+    "startMs": 860015,
+    "endMs": 863481
+   },
+   {
+    "text": "窓が悪いのではありません。窓は、商品になります。型番があり、寸法があり、見積りが出せて、補助金の書類も書ける。",
+    "startMs": 864081,
+    "endMs": 875111
+   },
+   {
+    "text": "天井裏に、拭いたアルミを一枚、浮かせて置く。この作業には型番も見積りも書類もありません。誰の売り上げにもならない。",
+    "startMs": 875711,
+    "endMs": 886100
+   },
+   {
+    "text": "売る側の都合であって、熱の都合ではないのです。",
+    "startMs": 886700,
+    "endMs": 890529
+   },
+   {
+    "text": "そして、いちばん効く一枚。冒頭でお約束した、窓ではない場所です。",
+    "startMs": 891529,
+    "endMs": 898132
+   },
+   {
+    "text": "最後にとっておいたのは、あの晩、私が初めて持ち上げた、押し入れの天井の四角い板でした。",
+    "startMs": 898732,
+    "endMs": 906689
+   },
+   {
+    "text": "天井の点検口、と言います。たいてい45センチ角ほどの、薄いベニヤが一枚はまっているだけです。",
+    "startMs": 907289,
+    "endMs": 915887
+   },
+   {
+    "text": "思い出してください。その板の向こうは、夕方でも50度から60度の空気が詰まった部屋でした。",
+    "startMs": 916487,
+    "endMs": 923879
+   },
+   {
+    "text": "家じゅうの天井には、たいてい断熱材が敷かれています。ところが、その板一枚のところだけ、",
+    "startMs": 924479,
+    "endMs": 932020
+   },
+   {
+    "text": "断熱材が途切れているのです。断熱の世界では、点検口のまわりは昔から弱点として知られています。",
+    "startMs": 932020,
+    "endMs": 940087
+   },
+   {
+    "text": "しかも夏は、そのすきまから熱い空気そのものが吹き込んできます。",
+    "startMs": 940087,
+    "endMs": 945524
+   },
+   {
+    "text": "そして点検口は、多くの家で押し入れの中にあります。押し入れの向こうは、たいてい寝室です。",
+    "startMs": 946124,
+    "endMs": 954028
+   },
+   {
+    "text": "やることは二つ。",
+    "startMs": 954628,
+    "endMs": 955929
+   },
+   {
+    "text": "一つ。板のまわりのすきまを、部屋の側からテープでふさぐ。マスキングテープでかまいません。",
+    "startMs": 956529,
+    "endMs": 963384
+   },
+   {
+    "text": "手間のわりに効き目が大きい手当てとして知られています。",
+    "startMs": 963384,
+    "endMs": 967591
+   },
+   {
+    "text": "二つ。板を外して、その裏側にアルミのシートを一枚。光る面を天井裏に向けて、",
+    "startMs": 968191,
+    "endMs": 975029
+   },
+   {
+    "text": "板のふちを利用して、少しだけ浮かせて留める。ぴったり貼らない、というさきほどの話です。",
+    "startMs": 975029,
+    "endMs": 982975
+   },
+   {
+    "text": "110円と、5分と、脚立が一つ。",
+    "startMs": 983575,
+    "endMs": 987372
+   },
+   {
+    "text": "ここまでの話は、すべて「面」のことでした。窓の面、壁の面、屋根の面。",
+    "startMs": 987972,
+    "endMs": 996612
+   },
+   {
+    "text": "ところが家の中でいちばん薄くて、いちばん無防備な面は、窓でも壁でもなく、押し入れの奥にある、あの45センチの板だったのです。",
+    "startMs": 997212,
+    "endMs": 1007921
+   },
+   {
+    "text": "安全のことも二つ。脚立は、できればどなたかに支えてもらってください。そして点検口は、",
+    "startMs": 1008521,
+    "endMs": 1015530
+   },
+   {
+    "text": "いざというとき人が上がるための入り口です。板を固定してしまわず、はがせるテープを使ってください。",
+    "startMs": 1015530,
+    "endMs": 1023540
+   },
+   {
+    "text": "正直に申し上げます。今日の話は、万能ではありません。",
+    "startMs": 1024340,
+    "endMs": 1029460
+   },
+   {
+    "text": "アルミ一枚で、家が新築の高断熱住宅に変わるわけではない。屋根そのものの断熱をやり直せば、",
+    "startMs": 1030060,
+    "endMs": 1038087
+   },
+   {
+    "text": "効き目はけた違いです。それは申し上げておきます。",
+    "startMs": 1038087,
+    "endMs": 1042465
+   },
+   {
+    "text": "私の二階の寝室も、涼しい部屋になったわけではありません。ただ、夜中の2時に目が覚めることは、",
+    "startMs": 1043065,
+    "endMs": 1050817
+   },
+   {
+    "text": "なくなりました。手を伸ばして天井に触れても、もうアイロンの布ではありません。",
+    "startMs": 1050817,
+    "endMs": 1057220
+   },
+   {
+    "text": "長いあいだ、私は温度計の数字だけを見て、空気ばかりを冷やしていました。けれど体は、",
+    "startMs": 1057820,
+    "endMs": 1065224
+   },
+   {
+    "text": "空気と表面から、半分ずつ暑さを受け取っている。かやぶきの家も、土の壁の家も、",
+    "startMs": 1065224,
+    "endMs": 1072085
+   },
+   {
+    "text": "温度計を持たないまま、そちらの半分をきちんと手当てしていたわけです。",
+    "startMs": 1072085,
+    "endMs": 1078225
+   },
+   {
+    "text": "問題はエアコンでも、アルミでもありませんでした。半分しか見ていなかった、ということのほうです。",
+    "startMs": 1078825,
+    "endMs": 1086377
+   },
+   {
+    "text": "今夜、手のひらを天井へ当ててみて、どうだったか。よろしければ、コメントで教えてください。",
+    "startMs": 1086977,
+    "endMs": 1094718
+   },
+   {
+    "text": "同じ家でも、部屋によってずいぶん違うはずです。",
+    "startMs": 1094718,
+    "endMs": 1098764
+   },
+   {
+    "text": "次にお話しする知恵は、もう少し重い意味を持っています。同じ落とし穴が、冬の家にも口を開けているからです。",
+    "startMs": 1099364,
+    "endMs": 1108217
+   },
+   {
+    "text": "古代の秘訣は、これからも暮らしの中に眠る宝を静かに掘り起こしていきます。それでは、次の知恵でまたお会いしましょう。",
+    "startMs": 1108817,
+    "endMs": 1117905
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F2EDE4"
+ }
+}

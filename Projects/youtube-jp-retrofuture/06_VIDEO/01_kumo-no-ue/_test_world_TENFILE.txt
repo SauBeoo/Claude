@@ -1,0 +1,5 @@
+# VONG 2 — toc do creep + vien tuong TIEN CANH + khoanh khac cam xuc
+# moc mau: {'median_px_per_8s': 36.5, 'p25': 13.6, 'p75': 100.2, 'pct_under_20px': 30, 'pct_under_40px': 54, 'jitter_median': 0.032, 'n_shot': 63, 'ref': 'PUotm8YDbKM · tools/measure_pace_ref.py'}
+1	test_W1_tabako.mp4	stand/creep · crowd=few · mega=CO · moment=tabako_ba
+2	test_W2_miharashi.mp4	stand/creep · crowd=none · mega=CO · moment=-
+3	test_W3_shoutengai.mp4	walk/creep · crowd=busy · mega=- · moment=trao_tien

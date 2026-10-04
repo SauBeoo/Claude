@@ -1,0 +1,401 @@
+{
+ "_readme": "Nguồn sự thật cho tab 📋 Dự án — pivot ngách 2026-07-23. status: active|rebranding|planning|paused. done_ticks = checklist user tick. Signals dò realtime. slots/tz/tz_name = lịch đăng ĐẶT TAY cho kênh NGOÀI CHANNELS (kênh mới chưa cấu hình engine); kênh TRONG CHANNELS lấy lịch từ upload_pack.py (đọc-chỉ ở đây). Đổi status kênh trong CHANNELS tự đồng bộ channels_state.json (paused = tắt khỏi lịch).",
+ "projects": [
+  {
+   "key": "suimin-rekishi",
+   "name_new": "睡眠用・長編歴史朗読",
+   "niche_vn": "Sử Nhật kể thành truyện 2–3h nghe trước ngủ",
+   "market": "JP",
+   "repo": "youtube-jp-suimin-rekishi",
+   "profile_dir": "Default",
+   "gmail": "tuananh96freemail@gmail.com",
+   "old_name": "真夜中の朗読便 (chouhen)",
+   "wave": 1,
+   "status": "rebranding",
+   "note": "Con bài TỐC ĐỘ — cửa sổ đang mở (benchmark 4,5 tháng → 40,5K subs). Có API full-auto. Rủi ro inauthentic → 5 khiên trong CLAUDE.md.",
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST",
+   "checklist": [
+    {
+     "id": "benchmark",
+     "label": "Mổ benchmark ぐっすり眠れる歴史 + おやすみ歴史館 (chương, giờ đăng, secret word)"
+    },
+    {
+     "id": "trends",
+     "label": "Đo Trends: 睡眠用 歴史 / 聞き流し 歴史 / 歴史 朗読"
+    },
+    {
+     "id": "identity",
+     "label": "Chốt tên kênh + giọng (voice test bền tai 10′) + lịch đăng"
+    },
+    {
+     "id": "rebrand",
+     "label": "Rebrand Studio: ẩn video cũ → đổi branding → cập nhật mapping"
+    },
+    {
+     "id": "script1",
+     "label": "Script #1 — 江戸庶民の暮らし bản dài",
+     "auto": "has_script"
+    }
+   ],
+   "done_ticks": []
+  },
+  {
+   "key": "akiya",
+   "name_new": "実家とお金の整理ノート",
+   "niche_vn": "TÀI SẢN nhà bố mẹ: 相続登記・固定資産税・実家じまいの費用",
+   "market": "JP",
+   "repo": "youtube-jp-akiya",
+   "profile_dir": "",
+   "gmail": "",
+   "old_name": "",
+   "wave": 9,
+   "status": "planning",
+   "note": "MỞ 2026-07-26 (KÊNH MỚI — user chốt KHÔNG rebrand shokutaku, cần Gmail + profile RIÊNG). Lõi 「届く紙・期限 × 実家の値段表」 — bằng chứng: 4/4 hit của kênh faceless きな子 (167K sub, view/video 146K) đều là 'tờ giấy + tháng + số tiền', gồm 固定資産税通知書 1,06M. ✅ Chốt: persona 案内役 vô danh + 6 cast gắn 6 CĂN NHÀ số cố định · giọng VOICEVOX 剣崎雌雄/21 @0.95, hệ số THẬT 308 ký/phút (20′ ≈ 6.150 ký) · 20:00 JST T6+CN, 2/tuần là TRẦN · cat 26 · rổ 12 tag · skill script-akiya · ĐÃ có entry CHANNELS + API_CFG. Cửa sổ deadline: 相続登記 ca hồi tố hết 2027-03-31 (còn ~8 tháng) · 空き家3000万控除 hết 2027-12-31. CẤM: đua 実家の片付け với vlog mặt thật · keyword 空き家/固定資産税 đơn lẻ (kéo tệp đầu tư + dân thi 宅建) · chạy volume (あまおう 1/ngày → view 1,3–32K; 勝部 rời lõi → 80 view). Ranh giới: kaigo = tiền CHĂM bố mẹ còn sống; akiya = TÀI SẢN (nhà/đất/mộ/thừa kế). ⏳ CHỜ USER: Gmail mới. Kế tiếp: script #1 相続登記 hạn 2027-03-31.",
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST",
+   "checklist": [
+    {
+     "id": "repo",
+     "label": "Repo + folder-note ×2 + CLAUDE.md + bible + strategy 30 đề + skill script-akiya",
+     "auto": "repo_exists"
+    },
+    {
+     "id": "benchmark",
+     "label": "Benchmark ngách qua API + Trends (giờ 20:00, cat 26, keyword intent)"
+    },
+    {
+     "id": "identity",
+     "label": "Chốt tên 実家とお金の整理ノート + persona 案内役 vô danh + cast/căn nhà"
+    },
+    {
+     "id": "voice",
+     "label": "Giọng VOICEVOX 剣崎雌雄/21 @0.95 + hệ số đo thật 308 ký/phút"
+    },
+    {
+     "id": "channels",
+     "label": "Entry CHANNELS (upload_pack) + API_CFG cat 26"
+    },
+    {
+     "id": "script1",
+     "label": "Script #1 — 相続登記 hạn 2027-03-31",
+     "auto": "has_script"
+    },
+    {
+     "id": "profile",
+     "label": "⏳ CẦN USER: Gmail mới → tạo Chrome profile yt-akiya (KHÔNG dùng Profile 3)",
+     "auto": "profile_exists"
+    },
+    {
+     "id": "video1",
+     "label": "Render video #1 + khoanh đỏ 原典",
+     "auto": "has_video"
+    },
+    {
+     "id": "token",
+     "label": "Google Cloud project riêng → credentials/token.json",
+     "auto": "has_token"
+    },
+    {
+     "id": "upload1",
+     "label": "Đăng video #1 (T6 20:00 JST)",
+     "auto": "has_upload"
+    }
+   ],
+   "done_ticks": [
+    "benchmark",
+    "identity",
+    "voice",
+    "channels"
+   ]
+  },
+  {
+   "key": "chikei",
+   "name_new": "地形と地名の日本史",
+   "niche_vn": "「その地形が、その歴史を決めた」 — địa hình quyết định lịch sử; bản đồ 国土地理院 làm lõi",
+   "market": "JP",
+   "repo": "youtube-jp-chikei",
+   "profile_dir": "Profile 12",
+   "gmail": "ladykiller301096@gmail.com",
+   "old_name": "사우 오디오 (kr-romfan)",
+   "wave": 2,
+   "status": "paused",
+   "note": "SUA 2026-09-16 (user chot): vat chu la kenh 사우 오디오/Profile 12, KHONG phai co-dai/Profile 6 nhu ke hoach cu. co-dai chay tiep binh thuong. Moat = gsi_map.py (ban do 国土地理院: 陰影起伏図/治水地形分類図/anh hang khong 1961/断面図 tu DEM). Ne tuyet doi 差別地名 — xem 00_CHANNEL_BIBLE.md §5.",
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST",
+   "checklist": [
+    {
+     "id": "trends",
+     "label": "Đo Trends: 地名 由来 / 川 歴史 / 災害 地名"
+    },
+    {
+     "id": "benchmark",
+     "label": "Mổ benchmark: 日本地名の解説 (vì sao bỏ kênh?), 数字は語る"
+    },
+    {
+     "id": "mapproof",
+     "label": "Dựng thử 1 bản đồ so sánh xưa–nay (proof khâu production mới)"
+    },
+    {
+     "id": "identity",
+     "label": "Chốt tên kênh + xác nhận giọng 青山龍星 + rebrand"
+    },
+    {
+     "id": "script1",
+     "label": "Script #1 (kiểu 「東京の地名」 — hit 542K là bằng chứng)",
+     "auto": "has_script"
+    }
+   ],
+   "done_ticks": []
+  },
+  {
+   "key": "yoyang",
+   "name_new": "장기요양·요양원 가족 가이드",
+   "niche_vn": "Thủ tục + tiền viện dưỡng lão Hàn, cho người nhà",
+   "market": "KR",
+   "repo": "youtube-kr-yoyang",
+   "profile_dir": "Profile 12",
+   "gmail": "ladykiller301096@gmail.com",
+   "old_name": "사우 오디오 (kr-romfan)",
+   "wave": 3,
+   "status": "on-hold",
+   "note": "⏸ 2026-09-16: suat nay MAT VAT CHU — kenh 사우 오디오/Profile 12 da duoc dung cho chikei (user chot). Muon lam 장기요양 thi phai cap kenh/Gmail khac. Chua quyet, giu nguyen ho so.",
+   "slots": [],
+   "tz": 9,
+   "tz_name": "KST",
+   "checklist": [
+    {
+     "id": "trends",
+     "label": "Đo Trends geo=KR: 장기요양등급 / 요양원 비용 / 가족요양"
+    },
+    {
+     "id": "benchmark",
+     "label": "Mổ benchmark: 누룽지, 치매똑똑 + đo giờ đăng ngách info"
+    },
+    {
+     "id": "framework",
+     "label": "Xây khung script info KR + đo hệ số ký tự/phút Azure"
+    },
+    {
+     "id": "identity",
+     "label": "Chốt tên + persona + voice test SunHi/InJoon + rebrand"
+    },
+    {
+     "id": "script1",
+     "label": "Script #1 info tiếng Hàn",
+     "auto": "has_script"
+    }
+   ],
+   "done_ticks": []
+  },
+  {
+   "key": "nenkin",
+   "name_new": "年金と老後のお金研究室",
+   "niche_vn": "Tiền hưu + chế độ: 年金・給付金・税 — \"tính số hộ cụ già\"",
+   "market": "JP",
+   "repo": "youtube-jp-nenkin",
+   "profile_dir": "Profile 17",
+   "gmail": "saugonn331@gmail.com",
+   "old_name": "",
+   "wave": 0,
+   "status": "active",
+   "note": "GIỮ — đã đúng hướng pivot 2026-07-23. KHÓA 3 trụ (年金 tính số · 給付金 取り逃し · 税・社会保険料), cắt 不動産 + 金融商品. Trong CHANNELS + API_CFG (cat 27) → lịch T2·T4·T6 19:00 JST theo rule (cold-start 3/tuần, chốt 2026-07-25) + ưu tiên đăng trước 支給日 (15 tháng chẵn). Persona 研究室, giọng VOICEVOX 雀松朱司/0.9. Roadmap 90 ngày: 02_CONTENT_PLAN.md.",
+   "checklist": [
+    {
+     "id": "producing",
+     "label": "Đang chạy đều T2·T4·T6 19:00 JST + rule 支給日",
+     "auto": "has_upload"
+    }
+   ],
+   "done_ticks": [],
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST"
+  },
+  {
+   "key": "shokutaku",
+   "name_new": "60代からの食卓",
+   "niche_vn": "Ăn uống & sức khỏe JP 60–80 tuổi (persona みのり) — kênh DUY NHẤT đang chạy volume",
+   "market": "JP",
+   "repo": "youtube-jp-shokutaku",
+   "profile_dir": "Profile 3",
+   "gmail": "tokyohot96@gmail.com",
+   "old_name": "",
+   "wave": 0,
+   "status": "paused",
+   "note": "⚠️ ĐÃ BỊ RƠI KHỎI BẢNG NÀY từ đợt pivot ngách 2026-07-23 → thêm lại 2026-07-30. Nguyên nhân gốc: lúc lập bảng, akiya được dự kiến REBRAND TỪ shokutaku nên shokutaku bị thay bằng akiya; sau đó user chốt KHÔNG rebrand (akiya thành kênh mới, cần Gmail+profile riêng) nhưng không ai thêm shokutaku trở lại. Kênh vẫn luôn nằm trong CHANNELS của engine + channels_state active:true, nên chỉ tab 📋 Dự án là mất, lịch/đóng gói không ảnh hưởng. TRẠNG THÁI: bật lại 2026-07-30 chạy 1 video/NGÀY cả 7 ngày — kênh duy nhất chạy volume, đi ngược số đo ngách (長生きの秘訣 3,37/tuần sụp 45×; 若返りアカデミア 0,25/tuần median 141K) và user biết vẫn chọn. Tồn kho ~2 ngày → nút thắt là năng lực render. Phanh: 3 video liên tiếp <50 view / AVD <25% / bỏ ≥2 slot vì thiếu hàng → hạ về T2·T3·CN 3/tuần.",
+   "checklist": [
+    {
+     "id": "producing",
+     "label": "Đang chạy đều theo lịch 1 video/ngày (cả 7 ngày)",
+     "auto": "has_upload"
+    }
+   ],
+   "done_ticks": [],
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST"
+  },
+  {
+   "key": "health",
+   "name_new": "みんなの健康ノート",
+   "niche_vn": "Sức khỏe senior JP — kênh khỏe nhất danh mục",
+   "market": "JP",
+   "repo": "youtube-jp-health",
+   "profile_dir": "Profile 13",
+   "gmail": "saubeooo04@gmail.com",
+   "old_name": "",
+   "wave": 0,
+   "status": "paused",
+   "note": "GIỮ — kênh duy nhất có tín hiệu (18,6K impressions). Chạy tiếp bằng tồn kho. Người kế vị nếu bỏ: ngách 介護とお金.",
+   "checklist": [
+    {
+     "id": "producing",
+     "label": "Đang chạy đều theo lịch T3·T5·T7·CN 19:00 JST",
+     "auto": "has_upload"
+    }
+   ],
+   "done_ticks": [],
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST"
+  },
+  {
+   "key": "chouhen",
+   "name_new": "真夜中の朗読便 (kênh cũ)",
+   "niche_vn": "スカッと朗読 báo thù — đang chuyển sang 睡眠用歴史",
+   "market": "JP",
+   "repo": "youtube-jp-chouhen",
+   "profile_dir": "Default",
+   "gmail": "tuananh96freemail@gmail.com",
+   "old_name": "",
+   "wave": 5,
+   "status": "paused",
+   "note": "KÊNH GỐC (đang trong CHANNELS, có API full-auto). Cùng profile Default với suimin-rekishi — khi rebrand xong thì chuyển status sang paused để nhường lịch.",
+   "checklist": [],
+   "done_ticks": [],
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST"
+  },
+  {
+   "key": "co-dai",
+   "name_new": "古代の秘訣",
+   "niche_vn": "生活の知恵 — mẹo xưa (KHÔNG rebrand nữa, user chốt 2026-09-16)",
+   "market": "JP",
+   "repo": "youtube-jp-co-dai",
+   "profile_dir": "Profile 6",
+   "gmail": "saubeo.killua@gmail.com",
+   "old_name": "",
+   "wave": 5,
+   "status": "paused",
+   "note": "SUA 2026-09-16: ke hoach cu dinh rebrand kenh nay thanh 地名・地形・河川史 — DA HUY, 地名 di voi kenh 사우 오디오. co-dai chay tiep binh thuong. ⚠️ slots duoi day DANG DE len upload_pack.py (rule ghi co-dai 13:00, o day la 19:00) — xem upload-schedule.md Muc 1.5. Bam \"↺ Ve rule\" tren the kenh neu muon bo de.",
+   "checklist": [],
+   "done_ticks": [],
+   "slots": [
+    [
+     0,
+     19
+    ],
+    [
+     2,
+     19
+    ],
+    [
+     4,
+     19
+    ]
+   ],
+   "tz": 9,
+   "tz_name": "JST"
+  },
+  {
+   "key": "kr-romfan",
+   "name_new": "사우 오디오 → ĐÃ ĐỔI NGÀNH thành chikei (2026-09-16)",
+   "niche_vn": "⏹ kênh này nay là 地形と地名の日本史 — xem entry `chikei`",
+   "market": "KR",
+   "repo": "youtube-kr-romfan",
+   "profile_dir": "Profile 12",
+   "gmail": "ladykiller301096@gmail.com",
+   "old_name": "",
+   "wave": 5,
+   "status": "converted",
+   "note": "CUNG MOT kenh YouTube voi entry \"chikei\" (UCfXuolJMQ-3CMpmTeQVkwKA). Khong phai 2 kenh. Giu de tra lich su; dung dat slots.",
+   "checklist": [],
+   "done_ticks": [],
+   "slots": []
+  },
+  {
+   "key": "kaigo",
+   "name_new": "親の介護とお金ノート",
+   "niche_vn": "Tiền + thủ tục chăm bố mẹ già (con cái 45–65)",
+   "market": "JP",
+   "repo": "youtube-jp-kaigo",
+   "profile_dir": "",
+   "gmail": "",
+   "old_name": "",
+   "wave": 9,
+   "status": "planning",
+   "note": "MỞ 2026-07-25. Lỗ trống đo được: không kênh nào >100K sub chuyên 介護×お金 (親ケア.com 864 video→view 42-1.276 = format 講座 chết; ケアまど chuyển từ 【介護とお金】 sang ケア/y tế → view sụp 51-64K xuống 43-594 = đối chứng nội bộ). Cụm ăn nhất là 'tiền của bố mẹ' (凍結/後見/相続/控除, trần 104K-707K), KHÔNG phải 介護費用 (20-120K). ✅ Chốt: persona 案内役 vô danh + cast gia đình · giọng No.7/29 @0.95, hệ số THẬT 315 ký/phút · 19:00 JST T2·T4·T6 (T6 mạnh nhất ngách) · cat 26 · rổ 12 tag · skill script-kaigo · script #1 xong (6.592 ký ≈21,9', GATE 5/5, 5 原典ショット). ⏳ CHỜ USER: Gmail mới. Còn lại: tool diagram 8 khuôn + 10 cast いらすとや → render. ⚙️ NHỊP: 5 video đầu T2·T4·T6 (cách 2-3 ngày) → TỪ VIDEO #6 tự lên 1/NGÀY (_kaigo_slots() đếm 07_UPLOADED, không phải sửa tay). Nhịp 1/ngày đi ngược benchmark 'volume thua' → 2 phanh: GATE 5 ĐIỂM mỗi video + ngưỡng số sau video #5 (08_ANALYTICS_LOG.md §0).",
+   "slots": [],
+   "tz": 9,
+   "tz_name": "JST",
+   "checklist": [
+    {
+     "id": "decide",
+     "label": "Quyết mở kênh riêng (không thay health)"
+    },
+    {
+     "id": "repo",
+     "label": "Repo + folder-note ×2 + CLAUDE.md + bible + strategy 5 trục + skill script-kaigo",
+     "auto": "repo_exists"
+    },
+    {
+     "id": "voice",
+     "label": "Giọng VOICEVOX No.7/29 @0.95 + hệ số đo thật 315 ký/phút"
+    },
+    {
+     "id": "slot",
+     "label": "Đo API benchmark → 19:00 JST, T6 mạnh nhất, cat 26"
+    },
+    {
+     "id": "script1",
+     "label": "Script #1 認知症→口座凍結 (6.592 ký, GATE 5/5, 5 原典ショット)",
+     "auto": "has_script"
+    },
+    {
+     "id": "profile",
+     "label": "⏳ CẦN USER: Gmail mới → tạo Chrome profile yt-kaigo",
+     "auto": "profile_exists"
+    },
+    {
+     "id": "diagram",
+     "label": "tools/make_diagrams_kaigo.py (8 khuôn cho 21 entry) + 10 ảnh cast いらすとや"
+    },
+    {
+     "id": "video1",
+     "label": "Render video #1 + khoanh đỏ 原典",
+     "auto": "has_video"
+    },
+    {
+     "id": "token",
+     "label": "Google Cloud project riêng → credentials/token.json",
+     "auto": "has_token"
+    },
+    {
+     "id": "upload1",
+     "label": "Đăng video #1 (T6 19:00 JST)",
+     "auto": "has_upload"
+    }
+   ],
+   "done_ticks": [
+    "decide",
+    "voice",
+    "slot"
+   ]
+  }
+ ]
+}

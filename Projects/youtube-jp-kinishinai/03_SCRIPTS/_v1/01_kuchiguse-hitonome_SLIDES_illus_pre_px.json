@@ -1,0 +1,1305 @@
+[
+ {
+  "match": "「すみません",
+  "_shot": 0,
+  "photo": true,
+  "static": true,
+  "_t": 0.0,
+  "_dur": 9.52,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "スーパーのレ",
+  "_shot": 1,
+  "photo": true,
+  "static": true,
+  "_t": 9.52,
+  "_dur": 10.8,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "「あんなこと",
+  "_shot": 2,
+  "photo": true,
+  "static": true,
+  "_t": 20.32,
+  "_dur": 7.32,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "私は、ずっと",
+  "_shot": 3,
+  "photo": true,
+  "static": true,
+  "_t": 27.64,
+  "_dur": 11.3,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "心理学の実験",
+  "_shot": 4,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "stat",
+   "lines": [
+    "「見られている」と感じる量は",
+    "実際の 約2倍",
+    "心理学の実験より"
+   ]
+  },
+  "_t": 38.93,
+  "_dur": 10.87
+ },
+ {
+  "match": "それでも気に",
+  "_shot": 5,
+  "photo": true,
+  "static": true,
+  "_t": 49.8,
+  "_dur": 12.61,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "職場で、嫁ぎ",
+  "_shot": 6,
+  "photo": true,
+  "static": true,
+  "_t": 62.41,
+  "_dur": 9.22,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "今日は、見張",
+  "_shot": 7,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "seven",
+   "open": 0,
+   "lines": [
+    "見張り番がささやく",
+    "七つの口ぐせ"
+   ]
+  },
+  "_t": 71.62,
+  "_dur": 13.53
+ },
+ {
+  "match": "なぜ、気をつ",
+  "_shot": 8,
+  "photo": true,
+  "static": true,
+  "_t": 85.16,
+  "_dur": 10.43,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "そして最後に",
+  "_shot": 9,
+  "photo": true,
+  "static": true,
+  "_t": 95.59,
+  "_dur": 10.48,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "家事をしなが",
+  "_shot": 10,
+  "photo": true,
+  "static": true,
+  "_t": 106.07,
+  "_dur": 11.38,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "その一。「す",
+  "_shot": 11,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その一",
+    "「すみません」"
+   ]
+  },
+  "_t": 117.45,
+  "_dur": 6.44
+ },
+ {
+  "match": "うれしいはず",
+  "_shot": 12,
+  "photo": true,
+  "static": true,
+  "_t": 123.88,
+  "_dur": 10.8,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "私が立ってい",
+  "_shot": 13,
+  "photo": true,
+  "static": true,
+  "_t": 134.68,
+  "_dur": 7.34,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "いまでも、い",
+  "_shot": 14,
+  "photo": true,
+  "static": true,
+  "_t": 142.02,
+  "_dur": 13.28,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "売り場では、",
+  "_shot": 15,
+  "photo": true,
+  "static": true,
+  "_t": 155.3,
+  "_dur": 11.28,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "アメリカの研",
+  "_shot": 16,
+  "photo": true,
+  "static": true,
+  "_t": 166.58,
+  "_dur": 11.13,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "見張り番は、い",
+  "_shot": 17,
+  "photo": true,
+  "static": true,
+  "_t": 177.71,
+  "_dur": 6.06,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "このままだと",
+  "_shot": 18,
+  "photo": true,
+  "static": true,
+  "_t": 183.76,
+  "_dur": 11.31,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "アメリカの、",
+  "_shot": 19,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "stat",
+   "lines": [
+    "「ありがとう」のひとことで",
+    "約3割 → 約6割",
+    "次も手伝ってくれた人"
+   ]
+  },
+  "_t": 195.07,
+  "_dur": 17.1
+ },
+ {
+  "match": "「ありがとう」は",
+  "_shot": 20,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "swap",
+   "lines": [
+    "すみません",
+    "ありがとう"
+   ]
+  },
+  "_t": 212.17,
+  "_dur": 11.42
+ },
+ {
+  "match": "去年の春、私",
+  "_shot": 21,
+  "photo": true,
+  "static": true,
+  "_t": 223.59,
+  "_dur": 9.81,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "その子が、照",
+  "_shot": 22,
+  "photo": true,
+  "static": true,
+  "_t": 233.41,
+  "_dur": 10.1,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "謝る相手は、",
+  "_shot": 23,
+  "photo": true,
+  "static": true,
+  "_t": 243.51,
+  "_dur": 12.18,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "その二。「ど",
+  "_shot": 24,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その二",
+    "「どう思われるかしら」"
+   ]
+  },
+  "_t": 255.69,
+  "_dur": 7.67
+ },
+ {
+  "match": "すれちがう人",
+  "_shot": 25,
+  "photo": true,
+  "static": true,
+  "_t": 263.37,
+  "_dur": 10.29,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "私も、新しい",
+  "_shot": 26,
+  "photo": true,
+  "static": true,
+  "_t": 273.66,
+  "_dur": 9.89,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "最初にお話し",
+  "_shot": 27,
+  "photo": true,
+  "static": true,
+  "_t": 283.55,
+  "_dur": 10.52,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "学生に、ちょ",
+  "_shot": 28,
+  "photo": true,
+  "static": true,
+  "_t": 294.06,
+  "_dur": 9.57,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "あとで、「何",
+  "_shot": 29,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "stat",
+   "lines": [
+    "「気づかれた」と思った人数の",
+    "ちょうど 半分",
+    "実際に気づいた人"
+   ]
+  },
+  "_t": 303.63,
+  "_dur": 19.22
+ },
+ {
+  "match": "このままだと、着",
+  "_shot": 30,
+  "photo": true,
+  "static": true,
+  "_t": 322.86,
+  "_dur": 15.24,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "「どう思われるかしら」が",
+  "_shot": 31,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "swap",
+   "lines": [
+    "どう思われるかしら",
+    "みんな、自分のことで忙しい"
+   ]
+  },
+  "_t": 338.1,
+  "_dur": 8.83
+ },
+ {
+  "match": "初夏のある日",
+  "_shot": 32,
+  "photo": true,
+  "static": true,
+  "_t": 346.93,
+  "_dur": 9.12,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "誰も、見てい",
+  "_shot": 33,
+  "photo": true,
+  "static": true,
+  "_t": 356.05,
+  "_dur": 12.21,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "知らない人の",
+  "_shot": 34,
+  "photo": true,
+  "static": true,
+  "_t": 368.26,
+  "_dur": 10.39,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "その三。「み",
+  "_shot": 35,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その三",
+    "「みんな、そうしてるから」"
+   ]
+  },
+  "_t": 378.66,
+  "_dur": 10.18
+ },
+ {
+  "match": "本当は、反対",
+  "_shot": 36,
+  "photo": true,
+  "static": true,
+  "_t": 388.83,
+  "_dur": 9.7,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "それは、輪を",
+  "_shot": 37,
+  "photo": true,
+  "static": true,
+  "_t": 398.53,
+  "_dur": 6.26,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "一九五〇年代",
+  "_shot": 38,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "asch",
+   "lines": [
+    "線の長さを比べる実験",
+    "（アッシュ, 1950年代）"
+   ]
+  },
+  "_t": 404.79,
+  "_dur": 14.27
+ },
+ {
+  "match": "ところが、周",
+  "_shot": 39,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "people",
+   "n": 4,
+   "hit": 3,
+   "lines": [
+    "周りに合わせて、まちがえた人",
+    "4人に3人"
+   ]
+  },
+  "_t": 419.06,
+  "_dur": 15.31
+ },
+ {
+  "match": "でも、この実",
+  "_shot": 40,
+  "photo": true,
+  "static": true,
+  "_t": 434.37,
+  "_dur": 12.98,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "つまり、あの",
+  "_shot": 41,
+  "photo": true,
+  "static": true,
+  "_t": 447.35,
+  "_dur": 13.32,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "周りにとって",
+  "_shot": 42,
+  "photo": true,
+  "static": true,
+  "_t": 460.67,
+  "_dur": 10.23,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "「みんなそう",
+  "_shot": 43,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "swap",
+   "lines": [
+    "みんなそうしてるから",
+    "私は、こうしたい"
+   ]
+  },
+  "_t": 470.9,
+  "_dur": 11.34
+ },
+ {
+  "match": "夏祭りの打ち",
+  "_shot": 44,
+  "photo": true,
+  "static": true,
+  "_t": 482.24,
+  "_dur": 6.35,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "帰りぎわ、隣",
+  "_shot": 45,
+  "photo": true,
+  "static": true,
+  "_t": 488.59,
+  "_dur": 9.0,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "ご近所の次は",
+  "_shot": 46,
+  "photo": true,
+  "static": true,
+  "_t": 497.59,
+  "_dur": 10.01,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "その四。「つ",
+  "_shot": 47,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その四",
+    "「つまらない話で、ごめんなさいね」"
+   ]
+  },
+  "_t": 507.6,
+  "_dur": 9.34
+ },
+ {
+  "match": "「私ばっかり",
+  "_shot": 48,
+  "photo": true,
+  "static": true,
+  "_t": 516.93,
+  "_dur": 9.67,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "見張り番が、今日",
+  "_shot": 49,
+  "photo": true,
+  "static": true,
+  "_t": 526.61,
+  "_dur": 6.61,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "アメリカの研究で、",
+  "_shot": 50,
+  "photo": true,
+  "static": true,
+  "_t": 533.22,
+  "_dur": 12.23,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "ほとんどの人",
+  "_shot": 51,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "相手の好意を、",
+    "実際より、低く見積もる。"
+   ],
+   "times": [
+    1.62,
+    3.37
+   ]
+  },
+  "_t": 545.46,
+  "_dur": 6.73
+ },
+ {
+  "match": "あなたが「つ",
+  "_shot": 52,
+  "photo": true,
+  "static": true,
+  "_t": 552.19,
+  "_dur": 10.23,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "このままだと、会",
+  "_shot": 53,
+  "photo": true,
+  "static": true,
+  "_t": 562.42,
+  "_dur": 9.9,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "別れぎわは、",
+  "_shot": 54,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "swap",
+   "lines": [
+    "つまらない話で、ごめんなさいね",
+    "楽しかった、ありがとう"
+   ]
+  },
+  "_t": 572.32,
+  "_dur": 6.47
+ },
+ {
+  "match": "秋のはじめ、",
+  "_shot": 55,
+  "photo": true,
+  "static": true,
+  "_t": 578.79,
+  "_dur": 11.69,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "すると向こう",
+  "_shot": 56,
+  "photo": true,
+  "static": true,
+  "_t": 590.48,
+  "_dur": 14.32,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "楽しい話は、",
+  "_shot": 57,
+  "photo": true,
+  "static": true,
+  "_t": 604.8,
+  "_dur": 11.05,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "その五。「こ",
+  "_shot": 58,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その五",
+    "「こんなこと言ったら、恥ずかしい」"
+   ]
+  },
+  "_t": 615.86,
+  "_dur": 6.65
+ },
+ {
+  "match": "でも、見張り番が止",
+  "_shot": 59,
+  "photo": true,
+  "static": true,
+  "_t": 622.51,
+  "_dur": 9.94,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "弱音を飲みこ",
+  "_shot": 60,
+  "photo": true,
+  "static": true,
+  "_t": 632.45,
+  "_dur": 6.43,
+  "video": true,
+  "_kb": "pr (noi tiep o 59)"
+ },
+ {
+  "match": "ドイツの研究",
+  "_shot": 61,
+  "photo": true,
+  "static": true,
+  "_t": 638.88,
+  "_dur": 14.04,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "なのに、ほか",
+  "_shot": 62,
+  "photo": true,
+  "static": true,
+  "_t": 652.92,
+  "_dur": 7.56,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "あなたが恥ず",
+  "_shot": 63,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "恥ずかしい打ち明け話は、",
+    "相手には、あたたかく映る。"
+   ],
+   "times": [
+    0.8,
+    4.52
+   ]
+  },
+  "_t": 660.48,
+  "_dur": 9.04
+ },
+ {
+  "match": "九十四の研究",
+  "_shot": 64,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "stat",
+   "lines": [
+    "94の研究をまとめると",
+    "打ち明ける人ほど 好かれやすい",
+    "Collins & Miller, 1994"
+   ]
+  },
+  "_t": 669.52,
+  "_dur": 9.11
+ },
+ {
+  "match": "このままだと、あ",
+  "_shot": 65,
+  "photo": true,
+  "static": true,
+  "_t": 678.63,
+  "_dur": 8.06,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "付き合いは続",
+  "_shot": 66,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "swap",
+   "lines": [
+    "こんなこと言ったら",
+    "ちょっと、聞いてくれる？"
+   ]
+  },
+  "_t": 686.7,
+  "_dur": 11.98
+ },
+ {
+  "match": "十月の夜、私",
+  "_shot": 67,
+  "photo": true,
+  "static": true,
+  "_t": 698.68,
+  "_dur": 9.73,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "すると妹が、",
+  "_shot": 68,
+  "photo": true,
+  "static": true,
+  "_t": 708.4,
+  "_dur": 8.74,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "弱音を一つ言",
+  "_shot": 69,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "seven",
+   "open": 5,
+   "lines": [
+    "ここまでで、",
+    "いくつ当てはまりましたか"
+   ]
+  },
+  "_t": 717.14,
+  "_dur": 10.09
+ },
+ {
+  "match": "人に弱音が言",
+  "_shot": 70,
+  "photo": true,
+  "static": true,
+  "_t": 727.23,
+  "_dur": 9.33,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "その六。「い",
+  "_shot": 71,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その六",
+    "「いい年して」"
+   ]
+  },
+  "_t": 736.56,
+  "_dur": 6.82
+ },
+ {
+  "match": "次の瞬間、自",
+  "_shot": 72,
+  "photo": true,
+  "static": true,
+  "_t": 743.38,
+  "_dur": 8.17,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "それは、昔の",
+  "_shot": 73,
+  "photo": true,
+  "static": true,
+  "_t": 751.54,
+  "_dur": 9.57,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "スタンフォー",
+  "_shot": 74,
+  "photo": true,
+  "static": true,
+  "_t": 761.11,
+  "_dur": 14.19,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "つまり、年を",
+  "_shot": 75,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "年を重ねるほど、",
+    "人の目より、自分の心を選ぶ。"
+   ],
+   "times": [
+    0.71,
+    2.36
+   ]
+  },
+  "_t": 775.3,
+  "_dur": 8.97
+ },
+ {
+  "match": "このままだと、や",
+  "_shot": 76,
+  "photo": true,
+  "static": true,
+  "_t": 784.27,
+  "_dur": 12.17,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "「いい年して」を",
+  "_shot": 77,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "swap",
+   "lines": [
+    "いい年して",
+    "この年だから"
+   ]
+  },
+  "_t": 796.44,
+  "_dur": 8.12
+ },
+ {
+  "match": "十二月、私は",
+  "_shot": 78,
+  "photo": true,
+  "static": true,
+  "_t": 804.56,
+  "_dur": 7.94,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "駅弁を、二つ",
+  "_shot": 79,
+  "photo": true,
+  "static": true,
+  "_t": 812.49,
+  "_dur": 15.18,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "でも、七つ目",
+  "_shot": 80,
+  "photo": true,
+  "static": true,
+  "_t": 827.67,
+  "_dur": 6.05,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "その七。「私",
+  "_shot": 81,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その七",
+    "「私さえ、我慢すれば」"
+   ]
+  },
+  "_t": 833.73,
+  "_dur": 8.13
+ },
+ {
+  "match": "見張り番が、心",
+  "_shot": 82,
+  "photo": true,
+  "static": true,
+  "_t": 841.86,
+  "_dur": 9.02,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "家族のけんか",
+  "_shot": 83,
+  "photo": true,
+  "static": true,
+  "_t": 850.88,
+  "_dur": 12.0,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "でも、ここに",
+  "_shot": 84,
+  "photo": true,
+  "static": true,
+  "_t": 862.88,
+  "_dur": 11.8,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "アメリカのス",
+  "_shot": 85,
+  "photo": true,
+  "static": true,
+  "_t": 874.68,
+  "_dur": 7.26,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "話をしている",
+  "_shot": 86,
+  "photo": true,
+  "static": true,
+  "_t": 881.94,
+  "_dur": 11.37,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "我慢している人",
+  "_shot": 87,
+  "photo": true,
+  "static": true,
+  "_t": 893.32,
+  "_dur": 12.12,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "最初にお話しした、",
+  "_shot": 88,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "concept",
+   "lines": [
+    "課題の分離",
+    "アドラー心理学"
+   ]
+  },
+  "_t": 905.43,
+  "_dur": 10.46
+ },
+ {
+  "match": "相手が、あな",
+  "_shot": 89,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "two",
+   "lines": [
+    "相手が、あなたを",
+    "どう思うか",
+    "相手の課題",
+    "あなたが、",
+    "どう生きるか",
+    "あなたの課題"
+   ]
+  },
+  "_t": 915.9,
+  "_dur": 14.3
+ },
+ {
+  "match": "今日、ひとつ",
+  "_shot": 90,
+  "photo": true,
+  "static": true,
+  "_t": 930.2,
+  "_dur": 11.76,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "あなたが一つ",
+  "_shot": 91,
+  "photo": true,
+  "static": true,
+  "_t": 941.97,
+  "_dur": 7.24,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "では最後に、",
+  "_shot": 92,
+  "photo": true,
+  "static": true,
+  "_t": 949.2,
+  "_dur": 14.38,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "こたつには、",
+  "_shot": 93,
+  "photo": true,
+  "static": true,
+  "_t": 963.58,
+  "_dur": 9.18,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "お雑煮を温め",
+  "_shot": 94,
+  "photo": true,
+  "static": true,
+  "_t": 972.76,
+  "_dur": 12.4,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "結婚してから",
+  "_shot": 95,
+  "photo": true,
+  "static": true,
+  "_t": 985.17,
+  "_dur": 7.71,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "今年のお正月も",
+  "_shot": 96,
+  "photo": true,
+  "static": true,
+  "_t": 992.88,
+  "_dur": 10.6,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "見張り番の声が",
+  "_shot": 97,
+  "photo": true,
+  "static": true,
+  "_t": 1003.48,
+  "_dur": 8.13,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "私は、その声",
+  "_shot": 98,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "ありがとう。",
+    "でも、今日は、休んでいいわ。"
+   ],
+   "times": [
+    5.3,
+    6.7
+   ]
+  },
+  "_t": 1011.61,
+  "_dur": 9.77
+ },
+ {
+  "match": "エプロンをは",
+  "_shot": 99,
+  "photo": true,
+  "static": true,
+  "_t": 1021.38,
+  "_dur": 7.5,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "一瞬、みんな",
+  "_shot": 100,
+  "photo": true,
+  "static": true,
+  "_t": 1028.88,
+  "_dur": 11.11,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "みんな、大笑",
+  "_shot": 101,
+  "photo": true,
+  "static": true,
+  "_t": 1039.99,
+  "_dur": 6.96,
+  "video": true,
+  "_kb": "pr"
+ },
+ {
+  "match": "「お母さんが",
+  "_shot": 102,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "quote",
+   "lines": [
+    "お母さんが台所に立ってるとね、",
+    "私たち、座ってていいのか、",
+    "ずっと、気をつかってたのよ。"
+   ]
+  },
+  "_t": 1046.95,
+  "_dur": 9.42
+ },
+ {
+  "match": "私は、そのと",
+  "_shot": 103,
+  "photo": true,
+  "static": true,
+  "_t": 1056.37,
+  "_dur": 13.82,
+  "video": true,
+  "_kb": "tu"
+ },
+ {
+  "match": "四十回のお正月、ず",
+  "_shot": 104,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "四十回のお正月、",
+    "ずっと、立っていたんですね、私。",
+    "……座っても、よかったんです。"
+   ],
+   "times": [
+    0.0,
+    2.29,
+    6.55
+   ]
+  },
+  "_t": 1070.18,
+  "_dur": 11.15
+ },
+ {
+  "match": "その日、私は",
+  "_shot": 105,
+  "photo": true,
+  "static": true,
+  "_t": 1081.34,
+  "_dur": 10.57,
+  "video": true,
+  "_kb": "zin"
+ },
+ {
+  "match": "いかがでした",
+  "_shot": 106,
+  "photo": true,
+  "static": true,
+  "_t": 1091.91,
+  "_dur": 12.11,
+  "video": true,
+  "_kb": "td"
+ },
+ {
+  "match": "だから、追い",
+  "_shot": 107,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "ありがとう。",
+    "もう、休んでいいよ。"
+   ],
+   "times": [
+    2.93,
+    4.15
+   ]
+  },
+  "_t": 1104.02,
+  "_dur": 9.77
+ },
+ {
+  "match": "気をつかうの",
+  "_shot": 108,
+  "photo": true,
+  "static": true,
+  "_t": 1113.79,
+  "_dur": 9.6,
+  "video": true,
+  "_kb": "pl"
+ },
+ {
+  "match": "七つのうち、",
+  "_shot": 109,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "seven",
+   "open": 7,
+   "lines": [
+    "七つのうち、",
+    "いくつ当てはまりましたか"
+   ]
+  },
+  "_t": 1123.39,
+  "_dur": 12.33
+ },
+ {
+  "match": "よろしければ",
+  "_shot": 110,
+  "photo": true,
+  "static": true,
+  "_t": 1135.72,
+  "_dur": 10.1,
+  "video": true,
+  "_kb": "zout"
+ },
+ {
+  "match": "あなたが、あ",
+  "_shot": 111,
+  "photo": true,
+  "static": true,
+  "_t": 1145.83,
+  "_dur": 6.81,
+  "video": true,
+  "_kb": "pr"
+ }
+]

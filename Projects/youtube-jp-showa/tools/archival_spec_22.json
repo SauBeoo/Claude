@@ -1,0 +1,96 @@
+{
+ "_note": "Video 22 (2026-10-03). 'R & R in Tokyo' 1951, US Navy, NARA 428-NPC-11736 naId 79127, federal work = PD (useRestriction Undetermined, cung muc Color Story). Bo 0-60s (linh thuy My), 291-312 (thap co bien quang cao), 402/516-522 (slate).",
+ "_caveat": "Phim 1951 = boi canh thoi dai, loi doc KHONG noi 'day la canh nam 19xx'.",
+ "cuts": [
+  {
+   "id": "film_n1",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 75.5,
+   "dur": 4.5,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "xe dien Tokyo 1951 chay ngang"
+  },
+  {
+   "id": "film_n2",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 360.0,
+   "dur": 6.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "hai phu nu kimono di bo tren via he"
+  },
+  {
+   "id": "film_n3",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 180.0,
+   "dur": 11.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "cau sat + xe dien di toi"
+  },
+  {
+   "id": "film_n4",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 336.0,
+   "dur": 7.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "pho dong, nguoi di bo"
+  },
+  {
+   "id": "film_n5",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 264.0,
+   "dur": 4.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "duong ray nhin tu tren cao"
+  },
+  {
+   "id": "film_n6",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 240.0,
+   "dur": 8.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "duong ray tren cao doc kenh"
+  },
+  {
+   "id": "film_n7",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 315.0,
+   "dur": 12.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "dam dong di lam buoi sang"
+  },
+  {
+   "id": "film_n8",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 81.0,
+   "dur": 9.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "pho rong, xe co, nguoi dap xe"
+  },
+  {
+   "id": "film_n9",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 552.0,
+   "dur": 10.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "co gai dap xe tren duong que"
+  },
+  {
+   "id": "film_n10",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\npc11736_sq.mp4",
+   "ss": 369.5,
+   "dur": 5.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "me dia con tren lung (pho)"
+  }
+ ]
+}

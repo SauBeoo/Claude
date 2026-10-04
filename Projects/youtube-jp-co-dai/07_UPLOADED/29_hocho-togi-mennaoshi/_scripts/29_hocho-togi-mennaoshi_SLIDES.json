@@ -1,0 +1,786 @@
+[
+ {
+  "match": "祖母の包丁は、40年ものでした。",
+  "video": true,
+  "_clip": "v_A1_futatsu-no-hocho.mp4",
+  "_no": 1,
+  "_line": 0
+ },
+ {
+  "match": "それでも、熟したトマトに、指先の力だけで、すっと入りました。",
+  "video": true,
+  "_clip": "v_A6_manaita-shizuku.mp4",
+  "_no": 42,
+  "_line": 2
+ },
+ {
+  "match": "私の包丁は、買って3年です。形は、買った日のまま。",
+  "video": true,
+  "_clip": "v_A2_sobo-tomato-kireru.mp4",
+  "_no": 2,
+  "_line": 3
+ },
+ {
+  "match": "皮の上を滑って、指先が白くなるほど押しても、入りません。",
+  "video": true,
+  "_clip": "v_A7_daidokoro-asahi.mp4",
+  "_no": 43,
+  "_line": 4
+ },
+ {
+  "match": "今夜、砥石の真ん中に、鉛筆で線を1本、塗ってみてください。",
+  "video": true,
+  "_clip": "v_A3_watashi-tomato-suberu.mp4",
+  "_no": 3,
+  "_line": 6
+ },
+ {
+  "match": "水をつけて、10秒だけ研ぎます。",
+  "video": true,
+  "_clip": "v_A8_nuno-toishi-oku.mp4",
+  "_no": 44,
+  "_line": 7
+ },
+ {
+  "match": "いちばん効く道具は、砥石でも、包丁でもありません。台所にある、紙です。最後に置いておきます。",
+  "video": true,
+  "_clip": "v_A4_enpitsu-koushi.mp4",
+  "_no": 4,
+  "_line": 9
+ },
+ {
+  "match": "古代の秘訣へようこそ。今日もまた、時代に置き去りにされた知恵を一つ、掘り起こしていきます。",
+  "video": true,
+  "_clip": "v_A9_yakan-mizu-sosogu.mp4",
+  "_no": 45,
+  "_line": 10
+ },
+ {
+  "match": "チャンネル登録は、この先の知恵を受け取る合図だと思っていただけたら嬉しいです。",
+  "video": true,
+  "_clip": "v_A5_10byo-togi-sen-nokoru.mp4",
+  "_no": 5,
+  "_line": 11
+ },
+ {
+  "match": "皆さんのお宅では、包丁を最後に研いだのは、いつでしたか。",
+  "video": true,
+  "_clip": "v_B4_shinpin-kami-kiru.mp4",
+  "_no": 46,
+  "_line": 12
+ },
+ {
+  "match": "あなたの包丁も、買った日には切れていたはずです。",
+  "video": true,
+  "_clip": "v_B1_shinpin-ha-hikaru.mp4",
+  "_no": 6,
+  "_line": 16
+ },
+ {
+  "match": "つまり、刃は最初からついていた。ついていたものが、なくなった。",
+  "video": true,
+  "_clip": "v_B5_hako-akeru.mp4",
+  "_no": 47,
+  "_line": 18
+ },
+ {
+  "match": "減ったのではなく、丸くなったのです。",
+  "video": true,
+  "_clip": "v_B2_marui-ha-macro.mp4",
+  "_no": 7,
+  "_line": 19
+ },
+ {
+  "match": "40年で、あそこまで磨り減るには、何百回と研ぐしかありません。",
+  "video": true,
+  "_clip": "v_B6_2hon-tateru.mp4",
+  "_no": 48,
+  "_line": 21
+ },
+ {
+  "match": "祖母は、研いでいたのです。ずっと。",
+  "video": true,
+  "_clip": "v_B3_yanagi-no-ha-toridasu.mp4",
+  "_no": 8,
+  "_line": 22
+ },
+ {
+  "match": "ほとんど研がれないまま、3年たったというだけの話です。",
+  "video": true,
+  "_clip": "v_B7_mune-to-ha.mp4",
+  "_no": 49,
+  "_line": 24
+ },
+ {
+  "match": "大阪の堺では、包丁づくりが、鍛冶と、刃付けと、柄付けの、三つの職に分かれています。",
+  "video": true,
+  "_clip": "v_C1_kaji-hi-hagane.mp4",
+  "_no": 9,
+  "_line": 30
+ },
+ {
+  "match": "鍛冶の技を身につけるだけで、10年から15年かかるとされています。",
+  "video": true,
+  "_clip": "v_C2_tsuchi-hibana.mp4",
+  "_no": 10,
+  "_line": 32
+ },
+ {
+  "match": "堺の刃物は、1543年に鉄砲とたばこが伝わったあと、たばこの葉を刻む包丁で名を上げました。",
+  "video": true,
+  "_clip": "v_C7_fuigo-sumi.mp4",
+  "_no": 50,
+  "_line": 34
+ },
+ {
+  "match": "その切れ味に、幕府は「堺極印」という品質の印を与え、専売を許しています。",
+  "video": true,
+  "_clip": "v_C3_hatsuke-shokunin.mp4",
+  "_no": 11,
+  "_line": 35
+ },
+ {
+  "match": "けれど、ここで話が合わなくなります。",
+  "video": true,
+  "_clip": "v_C4_etsuke.mp4",
+  "_no": 12,
+  "_line": 36
+ },
+ {
+  "match": "畑と、台所と、縫い物の人でした。",
+  "video": true,
+  "_clip": "v_C8_yaki-ire-yuge.mp4",
+  "_no": 51,
+  "_line": 38
+ },
+ {
+  "match": "つまり、職人の腕は、要らなかったということです。",
+  "video": true,
+  "_clip": "v_C5_sobo-hatake.mp4",
+  "_no": 13,
+  "_line": 40
+ },
+ {
+  "match": "答えは、包丁ではありませんでした。その下にありました。",
+  "video": true,
+  "_clip": "v_C6_sobo-nuimono.mp4",
+  "_no": 14,
+  "_line": 42
+ },
+ {
+  "match": "砥石は、使えば必ず、真ん中からへこみます。",
+  "video": true,
+  "_clip": "v_D7_toryu-macro.mp4",
+  "_no": 52,
+  "_line": 44
+ },
+ {
+  "match": "端まで使い切る人は、まずいません。手が自然と、真ん中を往復します。あなたの手も、そうではありませんか。",
+  "video": true,
+  "_clip": "v_D2_toishi-hekomi-yoko.mp4",
+  "_no": 16,
+  "_line": 46
+ },
+ {
+  "match": "半年も使えば、指先でなぞって、わかるほど沈みます。",
+  "video": true,
+  "_clip": "v_D1_mannaka-dake-togu.mp4",
+  "_no": 15,
+  "_line": 47
+ },
+ {
+  "match": "刃先は石の谷にすとんと落ち、当たっているのは、刃の腹ばかりになります。",
+  "video": true,
+  "_clip": "v_D12_kutabireta-ishi.mp4",
+  "_no": 57,
+  "_line": 49
+ },
+ {
+  "match": "削れているのは、刃先ではなく、その手前です。",
+  "video": true,
+  "_clip": "v_D4_hasaki-tani-ni-ochiru.mp4",
+  "_no": 18,
+  "_line": 50
+ },
+ {
+  "match": "「研いでいる人ほど切れないと言う」の正体が、これです。",
+  "video": true,
+  "_clip": "v_D11_doro-tani-umeru.mp4",
+  "_no": 56,
+  "_line": 52
+ },
+ {
+  "match": "定規でも、ガラスのコップの縁でも足ります。",
+  "video": true,
+  "_clip": "v_D8_nuno-de-fuku.mp4",
+  "_no": 53,
+  "_line": 54
+ },
+ {
+  "match": "真ん中に細い光の筋が見えたら、そこが谷です。",
+  "video": true,
+  "_clip": "v_D10_taira-sukima-nashi.mp4",
+  "_no": 55,
+  "_line": 56
+ },
+ {
+  "match": "直し方は、拍子抜けするほど簡単です。",
+  "video": true,
+  "_clip": "v_D3_jougi-hikari-no-suji.mp4",
+  "_no": 17,
+  "_line": 58
+ },
+ {
+  "match": "面直し用の石は、番手でいうと60番ほど。燕三条の藤次郎の説明にも、同じ60番が出てきます。",
+  "video": true,
+  "_clip": "v_D9_mizu-tamaru-tani.mp4",
+  "_no": 54,
+  "_line": 60
+ },
+ {
+  "match": "水をかけながら、鉛筆の線が全部消えるまで、こすり合わせるだけです。",
+  "video": true,
+  "_clip": "v_D5_menaoshi-ishi-doushi.mp4",
+  "_no": 19,
+  "_line": 62
+ },
+ {
+  "match": "では、これほど簡単なことを、なぜ誰も教えてくれなかったのでしょうか。",
+  "video": true,
+  "_clip": "v_D6_sen-ga-kieru.mp4",
+  "_no": 20,
+  "_line": 64
+ },
+ {
+  "match": "毎日研ぐ人は、毎日、石を直します。",
+  "video": true,
+  "_clip": "v_E1_shokunin-atarimae.mp4",
+  "_no": 21,
+  "_line": 67
+ },
+ {
+  "match": "見たことのないものは、注意のしようがない。",
+  "video": true,
+  "_clip": "v_E4_toishi-tana-narabu.mp4",
+  "_no": 58,
+  "_line": 69
+ },
+ {
+  "match": "石は少しずつ、しかし確実に沈んでいくのに、直すという一手間だけが、誰の口にも上らないまま消えていきました。",
+  "video": true,
+  "_clip": "v_E5_shokunin-oyayubi.mp4",
+  "_no": 59,
+  "_line": 71
+ },
+ {
+  "match": "失われた技術というのは、たいてい、難しいから失われたのではありません。",
+  "video": true,
+  "_clip": "v_E6_mise-hikari-hokori.mp4",
+  "_no": 60,
+  "_line": 72
+ },
+ {
+  "match": "当たり前すぎて、誰も口に出さなかったから消えるのです。",
+  "video": true,
+  "_clip": "v_E2_hikidashi-hokori-toishi.mp4",
+  "_no": 22,
+  "_line": 73
+ },
+ {
+  "match": "あれを、水でざっと流していませんか。",
+  "video": true,
+  "_clip": "v_F2_togijiru-nagasu-NG.mp4",
+  "_no": 25,
+  "_line": 78
+ },
+ {
+  "match": "石から剥がれた粒と、鉄の粉が混ざったもの。刃を仕上げているのは、石そのものより、この汁のほうです。",
+  "video": true,
+  "_clip": "v_F1_shiroi-togijiru.mp4",
+  "_no": 24,
+  "_line": 80
+ },
+ {
+  "match": "流してしまうのは、道具を自分で捨てているようなものです。",
+  "video": true,
+  "_clip": "v_F11_togijiru-atsuku.mp4",
+  "_no": 65,
+  "_line": 81
+ },
+ {
+  "match": "乾いてきたら、水を足すのではなく、汁を指で伸ばす。それで足ります。",
+  "video": true,
+  "_clip": "v_F12_yubi-de-nobasu.mp4",
+  "_no": 66,
+  "_line": 83
+ },
+ {
+  "match": "年の暮れになると、祖母は縁側に新聞紙を敷いて、包丁を研いでいました。",
+  "video": true,
+  "_clip": "v_F13_oke-nigoru.mp4",
+  "_no": 67,
+  "_line": 84
+ },
+ {
+  "match": "シャッ、シャッという音。桶の中の、白く濁った水。石と鉄の、雨上がりのような匂い。",
+  "video": true,
+  "_clip": "v_F14_sobo-niwa-suteru.mp4",
+  "_no": 68,
+  "_line": 85
+ },
+ {
+  "match": "子どもの私には、ただ汚れた水にしか見えませんでした。",
+  "video": true,
+  "_clip": "v_F15_chinden-macro.mp4",
+  "_no": 69,
+  "_line": 86
+ },
+ {
+  "match": "二つ目に捨てているのは、10分の時間です。",
+  "video": true,
+  "_clip": "v_E3_engawa-toshi-no-kure.mp4",
+  "_no": 23,
+  "_line": 88
+ },
+ {
+  "match": "貝印の説明では、人造の砥石は、気泡が出なくなるまで、およそ10分から20分、水に沈めておきます。",
+  "video": true,
+  "_clip": "v_F10_nuno-shiboru.mp4",
+  "_no": 64,
+  "_line": 90
+ },
+ {
+  "match": "私は、この10分が待てませんでした。",
+  "video": true,
+  "_clip": "v_F3_awa-shinsui.mp4",
+  "_no": 26,
+  "_line": 91
+ },
+ {
+  "match": "乾いた石は、削るのではなく、刃をこすって熱を持たせるだけです。",
+  "video": true,
+  "_clip": "v_F9_furudokei-furiko.mp4",
+  "_no": 63,
+  "_line": 93
+ },
+ {
+  "match": "砥石は、減る道具です。減ることで、切れる石であり続けます。",
+  "video": true,
+  "_clip": "v_F4_kawaita-ishi-NG.mp4",
+  "_no": 27,
+  "_line": 95
+ },
+ {
+  "match": "減らないように大事に使う。それが、いちばんの間違いでした。",
+  "video": true,
+  "_clip": "v_F8_awa-suichu-macro.mp4",
+  "_no": 62,
+  "_line": 96
+ },
+ {
+  "match": "藤次郎の分類では、荒砥石が80番から400番、中砥石が600番から2000番、仕上げ砥石が3000番から6000番。",
+  "video": true,
+  "_clip": "v_F7_shizuku-kawaita-ishi.mp4",
+  "_no": 61,
+  "_line": 98
+ },
+ {
+  "match": "80番は砂利、8000番は小麦粉、とお考えください。",
+  "video": true,
+  "_clip": "v_F16_shin-kyu-toishi.mp4",
+  "_no": 70,
+  "_line": 99
+ },
+ {
+  "match": "藤次郎も、初心者は800番から1000番の中砥石が一本あれば対応できる、としています。",
+  "video": true,
+  "_clip": "v_F5_sobo-engawa-togu.mp4",
+  "_no": 28,
+  "_line": 101
+ },
+ {
+  "match": "荒砥石は、刃が欠けたときの石です。欠けていない包丁をあれで削るのは、鉛筆を彫刻刀で削るようなものです。",
+  "video": true,
+  "_clip": "v_F6_banme-3shu.mp4",
+  "_no": 29,
+  "_line": 102
+ },
+ {
+  "match": "減ってはいます。ただ、祖母が40年かけたことを、こちらから3年に縮めています。",
+  "video": true,
+  "_clip": "v_F17_3banme-hyoumen.mp4",
+  "_no": 71,
+  "_line": 103
+ },
+ {
+  "match": "道具も、水も、番手もそろいました。",
+  "video": true,
+  "_clip": "v_F18_mannaka-erabu.mp4",
+  "_no": 72,
+  "_line": 104
+ },
+ {
+  "match": "その前に、ひと呼吸だけ、置かせてください。",
+  "video": true,
+  "_clip": "v_F19_arato-kizu-NG.mp4",
+  "_no": 73,
+  "_line": 106
+ },
+ {
+  "match": "刃を砥石に当てる角度は、およそ15度と言われています。",
+  "video": true,
+  "_clip": "v_CTA1_shizuka-na-daidokoro.mp4",
+  "_no": 74,
+  "_line": 108
+ },
+ {
+  "match": "分度器を持ち出す方は、いません。",
+  "video": true,
+  "_clip": "v_CTA2_ocha-yuge.mp4",
+  "_no": 75,
+  "_line": 110
+ },
+ {
+  "match": "10円玉を、2枚。",
+  "video": true,
+  "_clip": "v_CTA3_shoji-hikari.mp4",
+  "_no": 76,
+  "_line": 112
+ },
+ {
+  "match": "ちょうど入って、それ以上は入らない。その傾きが、およそ15度です。",
+  "video": true,
+  "_clip": "v_G10_sukima-kage.mp4",
+  "_no": 77,
+  "_line": 114
+ },
+ {
+  "match": "もっと確かな基準が、包丁のほうにもあります。",
+  "video": true,
+  "_clip": "v_G11_koin-ochiru-NG.mp4",
+  "_no": 78,
+  "_line": 115
+ },
+ {
+  "match": "藤次郎は、買ったときの小刃の幅こそが、その包丁の角度の基準だと書いています。",
+  "video": true,
+  "_clip": "v_G1_10endama-2mai.mp4",
+  "_no": 30,
+  "_line": 117
+ },
+ {
+  "match": "その幅が変わらないように研げていれば、角度は合っています。",
+  "video": true,
+  "_clip": "v_G12_koba-hikari.mp4",
+  "_no": 79,
+  "_line": 118
+ },
+ {
+  "match": "研ぎ始めから研ぎ終わりまで、その角度を変えないことです。",
+  "video": true,
+  "_clip": "v_G2_koba-haba.mp4",
+  "_no": 31,
+  "_line": 120
+ },
+ {
+  "match": "これをやると、刃先だけが丸く磨かれて、切れない包丁が仕上がります。",
+  "video": true,
+  "_clip": "v_G13_koba-hirogaru-NG.mp4",
+  "_no": 80,
+  "_line": 122
+ },
+ {
+  "match": "角度を保つこつは、手首ではなく、肘です。手首は、動かすたびに角度が変わります。",
+  "video": true,
+  "_clip": "v_G3_shakuri-togi-NG.mp4",
+  "_no": 32,
+  "_line": 123
+ },
+ {
+  "match": "肘から先を一枚の板だと思って、体ごと前後に動かしてください。",
+  "video": true,
+  "_clip": "v_G4_hiji-de-ugokasu.mp4",
+  "_no": 33,
+  "_line": 124
+ },
+ {
+  "match": "力が落ちていく手にとって、切れない包丁は、ただ不便な道具ではありません。",
+  "video": true,
+  "_clip": "v_G14_yubi3bon.mp4",
+  "_no": 81,
+  "_line": 128
+ },
+ {
+  "match": "斜めに置けば、当たる場所が狭くなり、少ない力で削れます。",
+  "video": true,
+  "_clip": "v_G5_naname-ni-oku.mp4",
+  "_no": 34,
+  "_line": 131
+ },
+ {
+  "match": "髪の毛1本分ほどの、わずかな引っかかり。",
+  "video": true,
+  "_clip": "v_G6_kaeri-yubi-de-saguru.mp4",
+  "_no": 35,
+  "_line": 134
+ },
+ {
+  "match": "藤次郎も、研げたかどうかの基準は、この「かえり」だと書いています。",
+  "video": true,
+  "_clip": "v_G20_bari-yokogao.mp4",
+  "_no": 87,
+  "_line": 136
+ },
+ {
+  "match": "先端から根元まで、順番に指を通していってください。",
+  "video": true,
+  "_clip": "v_G19_hitoyasumi.mp4",
+  "_no": 86,
+  "_line": 137
+ },
+ {
+  "match": "ここからが、いちばん大事なところです。",
+  "video": true,
+  "_clip": "v_G18_kata-rhythm.mp4",
+  "_no": 85,
+  "_line": 139
+ },
+ {
+  "match": "めくれた金属の、薄いひげだからです。",
+  "video": true,
+  "_clip": "v_G17_ura-karuku.mp4",
+  "_no": 84,
+  "_line": 141
+ },
+ {
+  "match": "研いだ直後だけよく切れて、3日で戻る。あの現象の正体が、これです。",
+  "video": true,
+  "_clip": "v_G16_ura-ni-kaesu.mp4",
+  "_no": 83,
+  "_line": 143
+ },
+ {
+  "match": "では、どうやって落とすのか。",
+  "video": true,
+  "_clip": "v_G15_moto-kara-saki.mp4",
+  "_no": 82,
+  "_line": 144
+ },
+ {
+  "match": "貝印の手順にも、新聞紙で両面をこすってバリを落とす、と書かれています。",
+  "video": true,
+  "_clip": "v_G21_oyayubi-yoko.mp4",
+  "_no": 88,
+  "_line": 146
+ },
+ {
+  "match": "台所にある一枚の紙が、最後の仕上げ砥石の代わりをします。",
+  "video": true,
+  "_clip": "v_G7_shinbunshi-bari-otosu.mp4",
+  "_no": 36,
+  "_line": 147
+ },
+ {
+  "match": "1枚を垂らすように持って、上から刃を通してみてください。",
+  "video": true,
+  "_clip": "v_G26_kamimen-kinzoku.mp4",
+  "_no": 93,
+  "_line": 149
+ },
+ {
+  "match": "途中で紙が折れたら、かえりが、まだどこかに残っています。",
+  "video": true,
+  "_clip": "v_G22_hikari-ni-kazasu.mp4",
+  "_no": 89,
+  "_line": 151
+ },
+ {
+  "match": "ところで、祖母が使っていた砥石は、京都の石でした。",
+  "video": true,
+  "_clip": "v_G25_ura-nuguu.mp4",
+  "_no": 92,
+  "_line": 153
+ },
+ {
+  "match": "鳴滝の合砥と呼ばれ、刃物の世界では最上級とされた石です。",
+  "video": true,
+  "_clip": "v_G24_omote-nuguu.mp4",
+  "_no": 91,
+  "_line": 155
+ },
+ {
+  "match": "人造砥石が広まり、質も値段も安定していたからです。",
+  "video": true,
+  "_clip": "v_G23_shinbun-yotsuori.mp4",
+  "_no": 90,
+  "_line": 157
+ },
+ {
+  "match": "石が消えたことより、大きな変化がありました。",
+  "video": true,
+  "_clip": "v_G8_shinbunshi-kiru.mp4",
+  "_no": 37,
+  "_line": 159
+ },
+ {
+  "match": "数百円の砥石を10年使う人は、その10年、何も買わないからです。",
+  "video": true,
+  "_clip": "v_G9_fuki-agete-shimau.mp4",
+  "_no": 38,
+  "_line": 161
+ },
+ {
+  "match": "切れなくなったら買い替える人は、3年ごとにお金を落とします。",
+  "video": true,
+  "_clip": "v_H7_kyoto-yama-kiri.mp4",
+  "_no": 97,
+  "_line": 162
+ },
+ {
+  "match": "数百円の砥石と、新聞紙。こちらは、10年で数百円のままです。",
+  "video": true,
+  "_clip": "v_H4_tennen-genseki.mp4",
+  "_no": 94,
+  "_line": 164
+ },
+ {
+  "match": "だから棚に並ぶのは、研がなくてよいと書かれた包丁と、引くだけの簡易研ぎ器です。",
+  "video": true,
+  "_clip": "v_H5_tennen-mon-macro.mp4",
+  "_no": 95,
+  "_line": 165
+ },
+ {
+  "match": "簡易研ぎ器は、たしかに一時的には切れます。ただ、あれは刃先を細かく削って、ぎざぎざを作る道具です。",
+  "video": true,
+  "_clip": "v_H1_kyoto-toishiyama.mp4",
+  "_no": 39,
+  "_line": 166
+ },
+ {
+  "match": "角度を、作り直しているわけではありません。",
+  "video": true,
+  "_clip": "v_H6_kouzan-tunnel.mp4",
+  "_no": 96,
+  "_line": 167
+ },
+ {
+  "match": "最後に置いておいた、あの一枚。新聞紙が家から消えかけているのも、同じ流れの中の話です。",
+  "video": true,
+  "_clip": "v_H8_kibako-toishi.mp4",
+  "_no": 98,
+  "_line": 169
+ },
+ {
+  "match": "正直に申し上げます。この方法は、万能ではありません。",
+  "video": true,
+  "_clip": "v_H13_hikidashi-mada-tsukaeru.mp4",
+  "_no": 103,
+  "_line": 170
+ },
+ {
+  "match": "そこは、迷わず専門の店へ持って行ってください。",
+  "video": true,
+  "_clip": "v_H12_suterareta-hocho.mp4",
+  "_no": 102,
+  "_line": 172
+ },
+ {
+  "match": "失われたのは、技術ではありませんでした。",
+  "video": true,
+  "_clip": "v_H11_gizagiza-ha.mp4",
+  "_no": 101,
+  "_line": 174
+ },
+ {
+  "match": "失われたのは、「直す」という一手間が当たり前だった、その当たり前のほうです。",
+  "video": true,
+  "_clip": "v_K9_yuugure-hocho.mp4",
+  "_no": 112,
+  "_line": 175
+ },
+ {
+  "match": "職人には言うまでもなく、祖母には身についていて、私たちにだけ、伝わらなかった。",
+  "video": true,
+  "_clip": "v_H10_kani-togiki-macro.mp4",
+  "_no": 100,
+  "_line": 176
+ },
+ {
+  "match": "商店街の研ぎ屋のご主人に、包丁を差し出したことがあります。",
+  "video": true,
+  "_clip": "v_H9_tana-hocho-narabu.mp4",
+  "_no": 99,
+  "_line": 177
+ },
+ {
+  "match": "ご主人は、包丁を受け取りませんでした。こう言ったのです。",
+  "video": true,
+  "_clip": "v_K8_daikon-kiru.mp4",
+  "_no": 111,
+  "_line": 178
+ },
+ {
+  "match": "「包丁じゃなくて、石を見せてごらん」",
+  "video": true,
+  "_clip": "v_K1_3ten-soroeru.mp4",
+  "_no": 104,
+  "_line": 179
+ },
+ {
+  "match": "奥のラジオが、野球の中継を流していました。",
+  "video": true,
+  "_clip": "v_H3_sobo-no-hocho-ima.mp4",
+  "_no": 41,
+  "_line": 180
+ },
+ {
+  "match": "あの店は、去年、閉まりました。シャッターに、貼り紙が一枚だけ。",
+  "video": true,
+  "_clip": "v_K2_sobo-tachiagaru.mp4",
+  "_no": 105,
+  "_line": 181
+ },
+ {
+  "match": "祖母の包丁は、いま、私の台所にあります。",
+  "video": true,
+  "_clip": "v_K3_engawa-karappo.mp4",
+  "_no": 106,
+  "_line": 182
+ },
+ {
+  "match": "柳の葉のように細くなった、あの一本です。",
+  "video": true,
+  "_clip": "v_K7_sobo-hocho-kake.mp4",
+  "_no": 110,
+  "_line": 183
+ },
+ {
+  "match": "あれは、すり減った包丁ではありませんでした。使い切られていた包丁でした。",
+  "video": true,
+  "_clip": "v_K4_togiya-gaikan.mp4",
+  "_no": 107,
+  "_line": 184
+ },
+ {
+  "match": "皆さんの台所にも、いつから使っているか思い出せない包丁が、ありませんか。",
+  "video": true,
+  "_clip": "v_K5_kanban.mp4",
+  "_no": 108,
+  "_line": 185
+ },
+ {
+  "match": "次の知恵は、その包丁を「しまう場所」の話です。切れ味を、いちばん静かに奪っているものの話になります。",
+  "video": true,
+  "_clip": "v_H2_shutter-harigami.mp4",
+  "_no": 40,
+  "_line": 186
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの中に眠る宝を静かに掘り起こしていきます。それでは、次の知恵でまたお会いしましょう。",
+  "video": true,
+  "_clip": "v_K6_to-o-shimeru.mp4",
+  "_no": 109,
+  "_line": 187
+ }
+]

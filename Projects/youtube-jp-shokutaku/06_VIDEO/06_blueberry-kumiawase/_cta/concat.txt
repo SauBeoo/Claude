@@ -1,0 +1,3 @@
+file 'E:/Claude/Projects/youtube-jp-shokutaku/06_VIDEO/06_blueberry-kumiawase/_cta/partA.mp4'
+file 'E:/Claude/Projects/youtube-jp-shokutaku/06_VIDEO/06_blueberry-kumiawase/_cta/mid.mp4'
+file 'E:/Claude/Projects/youtube-jp-shokutaku/06_VIDEO/06_blueberry-kumiawase/_cta/partC.mp4'

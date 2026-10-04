@@ -1,0 +1,35 @@
+{
+ "stickman": {
+  "active": false
+ },
+ "shokutaku": {
+  "active": false
+ },
+ "health": {
+  "active": false
+ },
+ "nenkin": {
+  "active": true
+ },
+ "co-dai": {
+  "active": false
+ },
+ "chouhen": {
+  "active": false
+ },
+ "kr-romfan": {
+  "active": false
+ },
+ "kaigo": {
+  "active": true
+ },
+ "akiya": {
+  "active": true
+ },
+ "chikei": {
+  "active": false
+ },
+ "yawa": {
+  "active": true
+ }
+}

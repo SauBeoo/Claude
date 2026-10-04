@@ -1,0 +1,5 @@
+# dong i cua thumb_prompts_FLOW.txt -> ten file trong _thumb_v2/
+01	thumb_T1_tv_color.png	baseline K-PHOTO mau am: bo kiet suc dem vai dong xu, TV mau moi (月賦) sau lung
+02	thumb_T2_tv_sepia.png	T1 doi tong -> sepia
+03	thumb_T3_furoshiki_face.png	layout mat to: bo om goi furoshiki di 質屋, TV sau lung
+# PLATE (khong chu) o thumb_prompts_PLATE.txt — duong lui, KHONG tron vao FLOW

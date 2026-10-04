@@ -1,0 +1,42 @@
+{
+ "file": "YTSave_YouTube_Media_3n9odfH-31E_002_720p.mp4",
+ "stem": "YTSave_YouTube_Media_3n9odfH-31E_002_720p",
+ "views": 826,
+ "label": "FLOP-mizumawari",
+ "dur": 2184.2,
+ "chars": 12135,
+ "cps": 5.56,
+ "entry_s": 51.0,
+ "entry_t": "1つ目は、自宅の水道の下線がどこにあるかを確認し、年に一度は",
+ "n_free45": 3,
+ "n_win": 7,
+ "gap_payoff_s": 99.0,
+ "n_flip": 11,
+ "first_flip_s": 495.0,
+ "n_open": 4,
+ "n_wave": 9,
+ "loop_close_pct": null,
+ "money_pct": 45,
+ "cta_pct": 15,
+ "cuts": 272,
+ "cuts_per_min": 7.47,
+ "cuts_first60": 7,
+ "hold_max_s": 8.2,
+ "hold_median_s": 8.0,
+ "fails": [
+  "O1 vào bài ở ~51s (+118 ký quá trần 30s)",
+  "O2 giây 0–45 có 1 câu MỤC LỤC/tuyên bố",
+  "O6 giây 0–45 có 3 câu KHÔNG TRẢ TIỀN (trần 1) → đây là cái vách làm @45s tụt còn 41–50%",
+  "O11 KHÔNG thấy chỗ đóng LOOP LỚN (câu gọi lại lời hứa cold open: 「冒頭でお約束した…」) → lời hứa mở mà không đóng = mất đuôi bài",
+  "O12 cú lật đầu ở ~8′15″ (trần phút 6) → nửa đầu không có gì xảy ra",
+  "O14 CTA ở ~5′21″ đứng ngay sau một payoff, KHÔNG có câu MỞ loop trong 3 câu trước → đây là cú rớt −14,7đ của video 07",
+  "O13 chỉ 4 câu MỞ loop / cần ≥8 (bài 36′ ≈ 9 sóng) → có sóng đóng gọn, không dẫn sang sóng kế"
+ ],
+ "warns": [
+  "O7 84 ký đầu (15s) chưa có STAKE cụ thể của người xem — cần con số/giá HOẶC cảnh giác quan/hậu quả (luật 2026-07-21, nới 2026-08-11: video 02 giữ 88,9% @15s bằng cảnh giác quan, 0 con số)",
+  "O18 chương dòng tiền ở 45% (SKILL đòi 72–80%) — sớm: đóng LOOP NGÀNH trước khi đuôi bài có lý do ở lại",
+  "O15 có 19 chỗ ≥4 câu LIỀN không trả tiền → nghi phạm, ĐỌC BẰNG MẮT: trang trí → CẮT · cơ chế → giữ. ⛔ cấm chèn số"
+ ],
+ "sheet": "E:\\Claude\\Projects\\youtube-jp-co-dai\\01_SOURCES\\_peer\\YTSave_YouTube_Media_3n9odfH-31E_002_720p_sheet.jpg",
+ "frames": 73
+}

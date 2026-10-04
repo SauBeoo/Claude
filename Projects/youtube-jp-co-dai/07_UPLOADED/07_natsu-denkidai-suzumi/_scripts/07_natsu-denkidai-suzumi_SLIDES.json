@@ -1,0 +1,788 @@
+[
+ {
+  "match": "窓のカーテンを閉めて、エアコンをつける。",
+  "video": true,
+  "qv": "sunlight through window curtain hot room"
+ },
+ {
+  "match": "ところが、日ざしの止め方としては、これがいちばん効きません。",
+  "photo": true,
+  "q": "hand holding air conditioner remote control hot room",
+  "min_score": 0.9
+ },
+ {
+  "match": "夏、家の中へ入り込む熱のうち、およそ7割は",
+  "photo": false,
+  "lines": [
+   "夏の熱の7割は",
+   "窓から入ってくる"
+  ],
+  "accent": true
+ },
+ {
+  "match": "壁でも、屋根でもなく、窓です。",
+  "photo": true,
+  "q": "sunlight and shadow on a wall beside a window",
+  "min_score": 0.9
+ },
+ {
+  "match": "内側から布をかぶせても、熱は、もう部屋の中に入っています。",
+  "photo": true,
+  "q": "closed curtain glowing with sunlight indoor",
+  "min_score": 0.9
+ },
+ {
+  "match": "そこで今日、いちばん先にお話しするのは、この二つです。",
+  "photo": false,
+  "lines": [
+   "すだれの吊り方",
+   "室外機の日除け"
+  ],
+  "accent": true
+ },
+ {
+  "match": "どちらも数百円から始められて、今日の夕方には終わります。",
+  "photo": true,
+  "q": "rolled bamboo blind on a porch",
+  "min_score": 0.9
+ },
+ {
+  "match": "あわせて、多くのご家庭が良いと思って続けている、三つの逆効果",
+  "photo": false,
+  "lines": [
+   "三つの",
+   "逆効果な涼み方"
+  ]
+ },
+ {
+  "match": "エアコンのなかった時代、日本人は、すだれと",
+  "photo": true,
+  "q": "old japanese wooden house engawa in summer",
+  "min_score": 0.9
+ },
+ {
+  "match": "その答えは、後半の「売られなくなった涼しさ」",
+  "photo": true,
+  "q": "昭和 町並み 夏 家",
+  "min_score": 0.9,
+  "src": "commons"
+ },
+ {
+  "match": "気温が35度を超える日は、迷わずエアコンをお使いください。",
+  "photo": true,
+  "q": "outdoor thermometer showing high temperature summer",
+  "min_score": 0.9
+ },
+ {
+  "match": "とくにご高齢の方は、部屋の中にいながら熱中症",
+  "photo": true,
+  "q": "senior man resting indoors with an electric fan",
+  "min_score": 0.9
+ },
+ {
+  "match": "古代の秘訣へようこそ。",
+  "photo": false,
+  "lines": [
+   "古代の秘訣"
+  ],
+  "accent": true
+ },
+ {
+  "match": "一つ目は、日ざしを、部屋の内側のカーテンだけで止めようとすることです。",
+  "photo": false,
+  "lines": [
+   "逆効果 その1",
+   "内側のカーテンだけ"
+  ],
+  "accent": true
+ },
+ {
+  "match": "日ざしがガラスを通り抜けると、その光は",
+  "photo": true,
+  "q": "sunbeam hitting wooden floor of a room",
+  "min_score": 0.9
+ },
+ {
+  "match": "部屋の中に、小さな暖房がいくつも置かれたようなものです。",
+  "photo": false,
+  "lines": [
+   "光は当たった場所で",
+   "熱に変わる"
+  ]
+ },
+ {
+  "match": "その布そのものが、じんわりと部屋を暖める側に回ってしまいます。",
+  "photo": true,
+  "q": "close up sunlit curtain fabric backlit",
+  "min_score": 0.9
+ },
+ {
+  "match": "昔の人は、日ざしを、家の外で止めていました。",
+  "photo": true,
+  "q": "traditional japanese eave with bamboo blind shade",
+  "min_score": 0.9
+ },
+ {
+  "match": "日ざしは、入ってから戦うのではなく、入る前に、外で止める。",
+  "photo": false,
+  "lines": [
+   "日ざしは",
+   "入る前に 外で止める"
+  ],
+  "accent": true
+ },
+ {
+  "match": "では、実際の吊り方です。",
+  "handmade": true,
+  "photo": true,
+  "q": "bamboo blind hanging on a wooden veranda",
+  "min_score": 0.9
+ },
+ {
+  "match": "竹を編んだすだれは、小さなもので数百円。",
+  "photo": true,
+  "q": "stack of rolled bamboo mats",
+  "min_score": 0.9
+ },
+ {
+  "match": "葦を並べたよしずなら、大きなものでも2千円ほどです。",
+  "photo": true,
+  "q": "reed screen leaning against a wall outdoors",
+  "min_score": 0.9
+ },
+ {
+  "match": "選ぶときは、窓より一回り大きいものを選んでください。",
+  "photo": false,
+  "lines": [
+   "窓より",
+   "一回り大きいものを"
+  ]
+ },
+ {
+  "match": "窓とちょうど同じ大きさだと、朝と夕方",
+  "photo": true,
+  "q": "low angle sunlight at the edge of a window",
+  "min_score": 0.9
+ },
+ {
+  "match": "吊る順番は、西向きの窓からです。",
+  "photo": false,
+  "lines": [
+   "まずは",
+   "西向きの窓から"
+  ],
+  "accent": true
+ },
+ {
+  "match": "西の日ざしは、低い角度で入ってくるので",
+  "photo": true,
+  "q": "late afternoon sun shining deep into a room",
+  "min_score": 0.9
+ },
+ {
+  "match": "壁に穴を開けたくない場合の、留め方もお話ししておきます。",
+  "photo": false,
+  "lines": [
+   "穴を開けない留め方",
+   "物干し竿・専用フック",
+   "磁石フック・突っ張り棒"
+  ]
+ },
+ {
+  "match": "物干し竿があれば、それに掛けるだけで足ります。",
+  "photo": true,
+  "q": "laundry drying pole on a balcony",
+  "min_score": 0.9
+ },
+ {
+  "match": "サッシの上枠に引っ掛ける、すだれ専用のフック",
+  "photo": true,
+  "q": "metal s hook hanging on a steel rod",
+  "min_score": 0.9
+ },
+ {
+  "match": "鉄の手すりなら、磁石のフックでも留まります。",
+  "photo": false,
+  "lines": [
+   "磁石のフックでも",
+   "留まります"
+  ]
+ },
+ {
+  "match": "そして、ここが多くの方が見落とすところです。",
+  "photo": false,
+  "lines": [
+   "ガラスから",
+   "少し離して吊る"
+  ],
+  "accent": true
+ },
+ {
+  "match": "すだれとガラスのあいだに隙間があれば",
+  "photo": true,
+  "q": "gap between bamboo blind and window glass",
+  "min_score": 0.9
+ },
+ {
+  "match": "最後に、下の端を、必ず留めること。",
+  "handmade": true,
+  "photo": true,
+  "q": "hand tying a rope to a balcony railing",
+  "min_score": 0.9
+ },
+ {
+  "match": "留めていないすだれは、風の強い日にあおられて",
+  "photo": true,
+  "q": "bamboo blind blowing in strong wind on balcony",
+  "min_score": 0.9
+ },
+ {
+  "match": "数百円と、十五分ほどの手間です。",
+  "photo": false,
+  "lines": [
+   "数百円",
+   "＋ 15分"
+  ],
+  "accent": true
+ },
+ {
+  "match": "あなたのお住まいでは、どの部屋がいちばん暑くなるでしょうか。",
+  "photo": false,
+  "lines": [
+   "どの部屋が",
+   "いちばん暑いですか？",
+   "コメントで教えてください"
+  ]
+ },
+ {
+  "match": "日ざしをさえぎるなら、厚い遮光カーテンのほうが良いのではないか。",
+  "photo": false,
+  "lines": [
+   "厚い遮光カーテンの",
+   "ほうが良いのでは？"
+  ]
+ },
+ {
+  "match": "すだれには、細いすき間が、無数にあります。",
+  "photo": true,
+  "q": "bamboo roll up blind exterior window",
+  "min_score": 0.9
+ },
+ {
+  "match": "厚い布は、光を止めるかわりに、風まで止めてしまう。",
+  "photo": false,
+  "lines": [
+   "涼しさ ＝",
+   "影 ＋ 風"
+  ],
+  "accent": true
+ },
+ {
+  "match": "日本の家には、もう一つの仕掛けがありました。",
+  "photo": true,
+  "q": "deep eave of a traditional japanese house",
+  "min_score": 0.9
+ },
+ {
+  "match": "夏の太陽は、空の高いところを通ります。",
+  "photo": false,
+  "lines": [
+   "夏の太陽は 高い",
+   "冬の太陽は 低い"
+  ]
+ },
+ {
+  "match": "深い軒は、高い夏の日ざしをさえぎり",
+  "photo": true,
+  "q": "軒 影 壁 夏",
+  "min_score": 0.9,
+  "src": "commons"
+ },
+ {
+  "match": "影の作り方には、生きているものもあります。",
+  "photo": true,
+  "q": "green curtain of goya vines on a window",
+  "min_score": 0.9
+ },
+ {
+  "match": "葉は、根から吸い上げた水を、裏側から空気の中へ",
+  "photo": true,
+  "q": "close up backlit leaf with water droplets",
+  "min_score": 0.9
+ },
+ {
+  "match": "板の日陰と、生きている日陰の違いです。",
+  "photo": true,
+  "q": "ivy covered wall next to bare concrete wall",
+  "min_score": 0.9
+ },
+ {
+  "match": "二つ目の逆効果は、部屋が冷えないからといって",
+  "photo": false,
+  "lines": [
+   "逆効果 その2",
+   "炎天下の室外機"
+  ],
+  "accent": true
+ },
+ {
+  "match": "そのとき、外に置かれた室外機は、真夏の日ざしに",
+  "photo": true,
+  "q": "hvac unit beside a house wall",
+  "min_score": 0.9
+ },
+ {
+  "match": "熱を捨てる相手が、すでに熱い。",
+  "photo": true,
+  "q": "室外機",
+  "min_score": 0.9,
+  "src": "commons"
+ },
+ {
+  "match": "やることは、影を作ることだけです。",
+  "photo": false,
+  "lines": [
+   "日除けの置き方",
+   "四つ"
+  ],
+  "accent": true
+ },
+ {
+  "match": "よしずやすのこは、室外機の南側か西側に、立てかけます。",
+  "photo": false,
+  "lines": [
+   "① 南側か西側に",
+   "立てかける"
+  ]
+ },
+ {
+  "match": "百円の店のすのこと、園芸の支柱でも、影は作れます。",
+  "photo": true,
+  "q": "wooden slat panel and garden stakes diy",
+  "min_score": 0.9
+ },
+ {
+  "match": "上に載せる場合は、直に置かないこと。",
+  "photo": false,
+  "lines": [
+   "② 直置きしない",
+   "5〜10センチ浮かす"
+  ]
+ },
+ {
+  "match": "室外機は、天板からも熱を逃がしています。",
+  "handmade": true,
+  "photo": true,
+  "q": "hands placing wooden slats on air conditioner outdoor unit",
+  "min_score": 0.9
+ },
+ {
+  "match": "風の吹き出し口の前は、必ず空けておくこと。",
+  "photo": false,
+  "lines": [
+   "③ 吹き出し口の前は",
+   "20〜30センチ空ける"
+  ]
+ },
+ {
+  "match": "ここをふさぐと、いま捨てたばかりの熱い空気を",
+  "photo": true,
+  "q": "air conditioning condenser unit outdoors",
+  "min_score": 0.9
+ },
+ {
+  "match": "室外機の周りの地面に、水をまいておくこと。",
+  "photo": false,
+  "lines": [
+   "④ 周りの地面に",
+   "打ち水"
+  ]
+ },
+ {
+  "match": "ただし、本体そのものに水をかけ続けるのは、避けてください。",
+  "photo": true,
+  "q": "rusty metal outdoor unit close up",
+  "min_score": 0.9
+ },
+ {
+  "match": "冷房の温度を1度上げるだけで、使う電気は",
+  "photo": false,
+  "lines": [
+   "設定を1度上げる",
+   "→ 電気 およそ1割減"
+  ],
+  "accent": true
+ },
+ {
+  "match": "数百円のよしずが、毎月の請求書を静かに削っていくわけです。",
+  "photo": true,
+  "q": "japanese yen coins and paper bill on a table",
+  "min_score": 0.9
+ },
+ {
+  "match": "この知恵に価値を感じていただけたなら",
+  "photo": true,
+  "q": "quiet old japanese house in summer evening light",
+  "min_score": 0.9
+ },
+ {
+  "match": "三つ目の逆効果は、打ち水です。",
+  "photo": false,
+  "lines": [
+   "逆効果 その3",
+   "真昼の打ち水"
+  ],
+  "accent": true
+ },
+ {
+  "match": "夕暮れどき、玄関先や庭に、ひとバケツの水をまく。",
+  "video": true,
+  "qv": "water splashing onto stone ground"
+ },
+ {
+  "match": "水は、蒸発するときに、まわりから熱を奪います。",
+  "photo": false,
+  "lines": [
+   "気化熱",
+   "水1グラムで",
+   "およそ540カロリー"
+  ],
+  "accent": true
+ },
+ {
+  "match": "汗をかくと涼しくなるのと、まったく同じ仕組みです。",
+  "photo": true,
+  "q": "wet asphalt road drying in strong sunlight",
+  "min_score": 0.9
+ },
+ {
+  "match": "茶の湯では、客を迎える前に、庭の通り道へ水を打ちます。",
+  "photo": true,
+  "q": "japanese tea garden wet stone path",
+  "min_score": 0.9
+ },
+ {
+  "match": "まくのは、朝の早いうちと、日が傾いてからの夕方。",
+  "photo": true,
+  "q": "japanese garden path at dawn with wet stones",
+  "min_score": 0.9
+ },
+ {
+  "match": "真昼の炎天下にまいた水は、あっという間に蒸発して",
+  "photo": false,
+  "lines": [
+   "真昼 × 日なた",
+   "＝ 逆効果"
+  ],
+  "accent": true
+ },
+ {
+  "match": "日なたのアスファルトではなく、日陰の土",
+  "photo": true,
+  "q": "watering shaded garden soil with a watering can",
+  "min_score": 0.9
+ },
+ {
+  "match": "そして、風上にまくこと。",
+  "handmade": true,
+  "photo": true,
+  "q": "hand pouring a bucket of water on the ground",
+  "min_score": 0.9
+ },
+ {
+  "match": "集合住宅のベランダなら、少しだけ気配りがいります。",
+  "photo": true,
+  "q": "laundry hanging on an apartment balcony",
+  "min_score": 0.9
+ },
+ {
+  "match": "洗濯物を干していない時間を選ぶのも",
+  "photo": false,
+  "lines": [
+   "ベランダは ひと桶だけ",
+   "排水口のある側へ"
+  ]
+ },
+ {
+  "match": "よしずやすだれ、そのものに水をかけるのも",
+  "photo": true,
+  "min_score": 0.9,
+  "q": "water poured from a bucket onto the ground"
+ },
+ {
+  "match": "もっとも、水道の水をたっぷり使うのでは、節約とは言えません。",
+  "photo": false,
+  "lines": [
+   "その水も",
+   "余った水でした"
+  ],
+  "accent": true
+ },
+ {
+  "match": "一度のお風呂に残る湯は、およそ180リットル。",
+  "photo": true,
+  "q": "japanese bathtub filled with water",
+  "min_score": 0.9
+ },
+ {
+  "match": "単純に計算すれば、180リットルで、およそ40円です。",
+  "photo": false,
+  "lines": [
+   "180リットル ≒ 40円",
+   "一年で 1万円超"
+  ],
+  "accent": true
+ },
+ {
+  "match": "残り湯の使い道は、三つです。",
+  "photo": false,
+  "lines": [
+   "洗濯の洗い",
+   "打ち水",
+   "植木の水やり"
+  ]
+ },
+ {
+  "match": "温かい水は、洗剤を溶かしやすく、皮脂の汚れをゆるめます。",
+  "photo": true,
+  "q": "washing machine with laundry",
+  "min_score": 0.9
+ },
+ {
+  "match": "昔の家では、風呂の湯を桶に移し、たらいで洗っていました。",
+  "photo": true,
+  "q": "old wooden washtub and washboard laundry",
+  "min_score": 0.9
+ },
+ {
+  "match": "ただし、使ってはいけない場合があります。",
+  "photo": false,
+  "lines": [
+   "使ってはいけない",
+   "場合"
+  ],
+  "accent": true
+ },
+ {
+  "match": "ですから、すすぎは、必ずきれいな水道水で行ってください。",
+  "photo": true,
+  "q": "clean tap water running from a faucet",
+  "min_score": 0.9
+ },
+ {
+  "match": "このあと、体そのものを冷やす昔のやり方と",
+  "photo": false,
+  "lines": [
+   "このあと",
+   "体の冷やし方・風の道",
+   "そして 今日の順番"
+  ]
+ },
+ {
+  "match": "昔の暮らしでは、井戸の水も、涼しさの道具でした。",
+  "photo": true,
+  "q": "old japanese water well with wooden bucket",
+  "min_score": 0.9
+ },
+ {
+  "match": "井戸に吊るした桶で、すいかや麦茶を冷やしていたのです。",
+  "photo": true,
+  "q": "watermelon cooling in cold water",
+  "min_score": 0.9
+ },
+ {
+  "match": "首、手首、足首。",
+  "photo": false,
+  "lines": [
+   "首・手首・足首",
+   "太い血管が皮膚のすぐ下"
+  ],
+  "accent": true
+ },
+ {
+  "match": "この三か所は、太い血管が、皮膚のすぐ下を通っています。",
+  "photo": true,
+  "q": "手ぬぐい",
+  "min_score": 0.9,
+  "src": "commons"
+ },
+ {
+  "match": "五つ目は、風の道です。",
+  "photo": false,
+  "lines": [
+   "風の道"
+  ],
+  "accent": true
+ },
+ {
+  "match": "窓を一つだけ開けて、風が入ってこないと嘆く。",
+  "photo": true,
+  "q": "single open window with still curtain",
+  "min_score": 0.9
+ },
+ {
+  "match": "ですから、開けるのは、向かい合った2か所です。",
+  "photo": true,
+  "q": "two open windows on opposite sides of a room",
+  "min_score": 0.9
+ },
+ {
+  "match": "風が入ってくる窓は小さく、出ていく窓は大きく開ける。",
+  "photo": false,
+  "lines": [
+   "入口は小さく",
+   "出口は大きく"
+  ],
+  "accent": true
+ },
+ {
+  "match": "そして扇風機は、自分ではなく、開けた窓の外へ向けてみてください。",
+  "photo": true,
+  "q": "electric fan facing an open window",
+  "min_score": 0.9
+ },
+ {
+  "match": "扇風機が使う電気は、およそ30ワット前後。",
+  "photo": false,
+  "lines": [
+   "扇風機 約30ワット",
+   "1時間で 1円未満"
+  ]
+ },
+ {
+  "match": "昔の家には、季節ごとの模様替えがありました。",
+  "photo": true,
+  "q": "traditional japanese room with reed sliding doors summer",
+  "min_score": 0.9
+ },
+ {
+  "match": "畳の上には、籐や竹のむしろを敷く。",
+  "photo": true,
+  "q": "bamboo mat on tatami floor",
+  "min_score": 0.9
+ },
+ {
+  "match": "風鈴も、ただの飾りではありません。",
+  "photo": true,
+  "q": "風鈴 軒",
+  "min_score": 0.9,
+  "src": "commons"
+ },
+ {
+  "match": "さて、冒頭でお約束した話をしましょう。",
+  "photo": true,
+  "q": "retro japanese living room 1970s interior",
+  "min_score": 0.9
+ },
+ {
+  "match": "調査によれば、1970年代の初めごろ、エアコンがある家は",
+  "photo": false,
+  "lines": [
+   "1970年代の初め",
+   "エアコンがある家は",
+   "十軒に一軒ほど"
+  ],
+  "accent": true
+ },
+ {
+  "match": "つまり、半世紀ほど前まで、この国の夏は",
+  "photo": true,
+  "q": "sepia old japanese house eave in summer",
+  "min_score": 0.9
+ },
+ {
+  "match": "一方で、冷房は、使うたびに電気を使います。",
+  "photo": true,
+  "q": "エアコン 室内機 壁",
+  "min_score": 0.9,
+  "src": "commons"
+ },
+ {
+  "match": "ただ、一度買えば何年も使えて、月々の請求も生まれない道具は",
+  "photo": false,
+  "lines": [
+   "一度買えば済む道具",
+   "毎月請求される電気"
+  ],
+  "accent": true
+ },
+ {
+  "match": "だから、静かに軒下から姿を消していったのかもしれません。",
+  "photo": true,
+  "q": "empty old wooden porch in the shade",
+  "min_score": 0.9
+ },
+ {
+  "match": "もったいないという言葉の奥には",
+  "photo": true,
+  "q": "old japanese house interior warm evening light",
+  "min_score": 0.9
+ },
+ {
+  "match": "気温が35度を超える日、寝苦しい熱帯夜。",
+  "photo": false,
+  "lines": [
+   "猛暑日・熱帯夜は",
+   "迷わずエアコンを"
+  ],
+  "accent": true
+ },
+ {
+  "match": "とくにご高齢の方は、暑さを感じる力が、少しずつ鈍っていきます。",
+  "photo": true,
+  "q": "elderly person drinking a glass of water indoors",
+  "min_score": 0.9
+ },
+ {
+  "match": "内側のカーテンだけに頼ること。",
+  "photo": false,
+  "lines": [
+   "内側のカーテンだけ",
+   "炎天下の室外機",
+   "真昼の打ち水"
+  ]
+ },
+ {
+  "match": "では、今日の夕方からの順番です。",
+  "photo": false,
+  "lines": [
+   "今日の夕方からの順番",
+   "① 西の窓にすだれ",
+   "② 室外機に日除け",
+   "③ 夕方 日陰へひと桶",
+   "④ 窓2か所＋扇風機は外へ"
+  ],
+  "accent": true
+ },
+ {
+  "match": "この並びには、意味があります。",
+  "photo": true,
+  "q": "cool japanese engawa veranda in the evening",
+  "min_score": 0.9
+ },
+ {
+  "match": "日ざしは外で止める。",
+  "photo": false,
+  "lines": [
+   "日ざしは外で止める",
+   "水は蒸発に任せる",
+   "空気は道を作る"
+  ],
+  "accent": true
+ },
+ {
+  "match": "次は、冷蔵庫がなかった時代の話をします。",
+  "photo": true,
+  "q": "梅干し",
+  "min_score": 0.9,
+  "src": "commons"
+ },
+ {
+  "match": "それでは、次の知恵で、またお会いしましょう。",
+  "photo": false,
+  "lines": [
+   "古代の秘訣"
+  ],
+  "accent": true
+ }
+]

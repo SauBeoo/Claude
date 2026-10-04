@@ -1,0 +1,15 @@
+raw_okra.jpg: Pexels id=7313505 by Gabriela Sakita — https://www.pexels.com/photo/green-vegetables-over-green-surface-7313505/
+raw_pot.jpg: Pexels id=32113155 by Jorryn Morais — https://www.pexels.com/photo/steam-rising-from-pot-on-stove-in-dark-kitchen-32113155/
+raw_sliced.jpg: Pexels id=10487763 by Victoria Bowers — https://www.pexels.com/photo/photograph-of-okra-with-seeds-10487763/
+raw_knife.jpg: Pexels id=349609 by Lukas Blazek — https://www.pexels.com/photo/kitchen-knife-on-table-349609/
+raw_senior.jpg: Pexels id=7364168 by Angela Roma — https://www.pexels.com/photo/positive-senior-ethnic-woman-with-granddaughter-preparing-jiaozi-in-kitchen-7364168/
+raw_clock.jpg: Pexels id=26184175 by Mehmet Fatih Bayram — https://www.pexels.com/photo/vintage-alarm-clocks-on-a-shelf-26184175/
+raw_gem.jpg: Pexels id=5442451 by The Glorious  Studio — https://www.pexels.com/photo/clear-gemstone-on-white-surface-5442451/
+raw_magnify.jpg: Pexels id=4144768 by Markus Winkler — https://www.pexels.com/photo/close-up-photo-of-magnifying-glass-on-blue-surface-4144768/
+raw_sink.jpg: Pexels id=34295401 by Zulfugar Karimov — https://www.pexels.com/photo/modern-chrome-kitchen-faucet-with-running-water-34295401/
+raw_glass.jpg: Pexels id=10482146 by Alexey Demidov — https://www.pexels.com/photo/clear-shot-glass-with-liquid-10482146/
+paper.jpg: Pexels id=20899958 by Артем Дворецкий — https://www.pexels.com/photo/white-paper-background-20899958/
+raw_okra2.jpg: Pexels id=5755069 by Anoop VS — https://www.pexels.com/photo/sliced-lady-s-finger-on-black-surface-5755069/
+raw_pot2.jpg: Pexels id=35041659 by Milton Das — https://www.pexels.com/photo/traditional-indian-sambar-in-stainless-steel-pot-35041659/
+raw_knife2.jpg: Pexels id=16494792 by Sternsteiger Stahlwaren — https://www.pexels.com/photo/sharp-kitchen-knife-16494792/
+raw_gem2.jpg: Pexels id=35451978 by Mr.  Pugo — https://www.pexels.com/photo/vibrant-green-emerald-gemstone-on-dark-surface-35451978/

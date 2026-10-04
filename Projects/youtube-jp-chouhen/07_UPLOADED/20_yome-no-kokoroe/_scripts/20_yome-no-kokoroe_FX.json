@@ -1,0 +1,338 @@
+{
+  "speakers": {
+    "節子": "villain",
+    "真弓": "hero",
+    "和成": "villain",
+    "由紀": "villain"
+  },
+  "lines": [
+    {
+      "match": "この家に、あなたの名前が入っている物は、一つもないの",
+      "speaker": "節子"
+    },
+    {
+      "match": "読んでごらんなさい",
+      "speaker": "節子"
+    },
+    {
+      "match": "だから、今日中に出ていってちょうだい",
+      "speaker": "節子"
+    },
+    {
+      "match": "私の名前が入っている物だけ、持って出ます",
+      "speaker": "真弓"
+    },
+    {
+      "match": "嫁のお給料は家のお金でしょう",
+      "speaker": "節子"
+    },
+    {
+      "match": "あなたみたいな、たかが事務員に何ができるの",
+      "speaker": "節子"
+    },
+    {
+      "match": "電気の検針票って、どこに来るんだっけ",
+      "speaker": "由紀"
+    },
+    {
+      "match": "明日からは、来ません",
+      "speaker": "真弓"
+    },
+    {
+      "match": "母さんが何とかするだろ",
+      "speaker": "和成"
+    },
+    {
+      "match": "私はもう、この家の者ではありませんので",
+      "speaker": "真弓"
+    },
+    {
+      "match": "総務の癖です",
+      "speaker": "真弓"
+    },
+    {
+      "match": "私の契約を、私が解約しました",
+      "speaker": "真弓"
+    },
+    {
+      "match": "今まで、その連絡網を回していたのは、私でしたね",
+      "speaker": "真弓"
+    },
+    {
+      "match": "保険証が使えないって、どういうことだよ",
+      "speaker": "和成"
+    },
+    {
+      "match": "その事務が、この二十二年、あなたの年金でした",
+      "speaker": "真弓"
+    },
+    {
+      "match": "その通りに、いたしました",
+      "speaker": "真弓"
+    },
+    {
+      "match": "七枚目が、これです",
+      "speaker": "真弓"
+    },
+    {
+      "match": "全部、あなたの名義だったの",
+      "speaker": "節子"
+    },
+    {
+      "match": "保険証がないと、病院にも行けないの",
+      "speaker": "節子"
+    },
+    {
+      "match": "戻りません",
+      "speaker": "真弓"
+    },
+    {
+      "match": "たかが事務員でも、家一軒は支えられるんです",
+      "speaker": "真弓"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "退院祝いの膳の上を",
+      "to": "あなたみたいな、たかが事務員に何ができるの",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "雪の残る二月だった",
+      "to": "あの音だけが、朝のうちで",
+      "name": "blizzard",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "義父の源一郎さんが倒れたのは",
+      "to": "それだけだった",
+      "name": "hospital_night",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "白状します",
+      "to": "私はずっと恥じている",
+      "name": "room_still",
+      "gain": -28
+    },
+    {
+      "type": "ambience",
+      "from": "義母が入院したのは、三か月前",
+      "to": "その行を空けたまま",
+      "name": "office_hum",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "翌朝、八時四十分",
+      "to": "総務の癖です",
+      "name": "hospital_night",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "三日後の午前中、私は携帯ショップにいた",
+      "to": "義母は、電話を切った",
+      "name": "night_snowplow",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "一週間後、義母の家に、白い封筒が",
+      "to": "その事務が、この二十二年、あなたの年金でした",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "その三日後、県内に大雨が降った",
+      "to": "自分の預金通帳を見たのだそうだ",
+      "name": "rain_window",
+      "gain": -23
+    },
+    {
+      "type": "ambience",
+      "from": "座敷の襖を開けたとき",
+      "to": "七十二年、この人が誰かに頭を下げる",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "畳に、両手をついた",
+      "to": "襖を閉めるとき",
+      "name": "room_still",
+      "gain": -28
+    },
+    {
+      "type": "ambience",
+      "from": "年が明けて、貞夫伯父から電話をもらった",
+      "to": "報われた気がした",
+      "name": "rain_window",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "四月になった",
+      "to": "四月の風が、廊下の奥まで入ってきた",
+      "name": "room_still",
+      "gain": -30
+    },
+    {
+      "type": "ambience",
+      "from": "退院の前日、私は病室にいた",
+      "to": "銀杏が黄色くなり始めていた",
+      "name": "hospital_night",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "そして、六枚分の記録",
+      "to": "家族のために使った金だったからだ",
+      "name": "office_hum",
+      "gain": -26
+    },
+    {
+      "type": "sfx",
+      "match": "退院祝いの膳の上を",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "親戚が六人、箸を止めた",
+      "name": "heartbeat",
+      "offset": 0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "七枚あった",
+      "name": "sub_drop",
+      "offset": -0.25,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "その時、廊下の襖が開いた",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -7
+    },
+    {
+      "type": "sfx",
+      "match": "そして私も、まだ気づいていなかった",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "七枚目。",
+      "name": "heartbeat",
+      "offset": 0.15,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "引き落とし？",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "その日の夕方、私のスマートフォンが震えた",
+      "name": "phone_buzz",
+      "offset": -0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "二十七回鳴った",
+      "name": "phone_buzz_urgent",
+      "offset": -0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "夫からの着信は、その日、四十一回あった",
+      "name": "phone_buzz_urgent",
+      "offset": -0.1,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "その事務が、この二十二年、あなたの年金でした",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "座敷が、しんとした",
+      "name": "heartbeat",
+      "offset": 0.2,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "七枚目が、これです",
+      "name": "sub_drop",
+      "offset": -0.25,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "たかが事務員でも、家一軒は支えられるんです",
+      "name": "sub_drop",
+      "offset": -0.25,
+      "gain": -5
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "私は上座の前に座り、袱紗から半紙を出した",
+      "cut": "座敷が、しんとした",
+      "resume": "この家の物には、一つも手を触れておりません"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "畳に、両手をついた",
+      "to": "戻りません"
+    },
+    {
+      "type": "card",
+      "match": "読んでごらんなさい",
+      "text": "この家の物は私の物ではない",
+      "style": "villain",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "あなたみたいな、たかが事務員に何ができるの",
+      "text": "たかが事務員に何ができるの",
+      "style": "villain",
+      "hold": 1.2
+    },
+    {
+      "type": "card",
+      "match": "その通りに、いたしました",
+      "text": "その通りに、いたしました",
+      "style": "hero",
+      "hold": 1.6
+    },
+    {
+      "type": "card",
+      "match": "たかが事務員でも、家一軒は支えられるんです",
+      "text": "事務員でも家一軒は支えられる",
+      "style": "hero",
+      "hold": 2.0
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+ "_readme": "Mapping kênh YouTube -> Chrome profile. Nguồn sự thật cho dashboard (tab Profiles) + upload_pack.py --open. Rule: .claude/rules/channel-browser.md",
+ "chrome_exe": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+ "profiles": {
+  "chouhen": {
+   "channel_name": "人生哲学の夜話",
+   "gmail": "tuananh96freemail@gmail.com",
+   "profile_dir": "Default",
+   "shortcut": "YT - chouhen.lnk",
+   "channel_id": "UCuzbgcFHVmAf4O6wU1wLyIQ",
+   "_note": "REBRAND 2026-09-28: 真夜中の朗読便 -> 人生哲学の夜話 (@jinsei-tetsugaku-yawa). Cung kenh/Gmail/Profile. Project moi: Projects/youtube-jp-yawa. Key van la chouhen trong tool cu."
+  },
+  "health": {
+   "channel_name": "みんなの健康ノート",
+   "gmail": "saubeooo04@gmail.com",
+   "profile_dir": "Profile 13",
+   "shortcut": "YT - health.lnk"
+  },
+  "shokutaku": {
+   "channel_name": "60代からの食卓",
+   "gmail": "tokyohot96@gmail.com",
+   "profile_dir": "Profile 3",
+   "shortcut": "YT - shokutaku.lnk"
+  },
+  "co-dai": {
+   "channel_name": "古代の秘訣",
+   "gmail": "saubeo.killua@gmail.com",
+   "profile_dir": "Profile 6",
+   "shortcut": "YT - co-dai.lnk"
+  },
+  "nenkin": {
+   "channel_name": "年金と老後のお金研究室",
+   "gmail": "saugonn331@gmail.com",
+   "profile_dir": "Profile 17",
+   "shortcut": "YT - nenkin.lnk"
+  },
+  "showa": {
+   "channel_name": "昭和くらし図鑑",
+   "gmail": "gonnsau@gmail.com",
+   "profile_dir": "Profile 15",
+   "shortcut": "YT - showa.lnk",
+   "channel_id": "UCT0CITcGxFErQk_YjQriZ_w",
+   "_note": "SUA 2026-08-16 (user chot): Gmail SO HUU la gonnsau@gmail.com = Chrome 'Profile 15' (ten profile: Gonn). Ban ghi cu saubeo.killuaa/Profile 9 la SAI - killuaa chi la account CO QUYEN quan ly (thay kenh trong channel_switcher), khong phai chu. Lap 2026-08-14 bang cach doi ten brand channel 'Gonn Sau' co san. Shortcut .lnk CHUA tao."
+  },
+  "chikei": {
+   "channel_name": "地形と地名の日本史",
+   "gmail": "ladykiller301096@gmail.com",
+   "profile_dir": "Profile 12",
+   "shortcut": "YT - chikei.lnk",
+   "channel_id": "UCfXuolJMQ-3CMpmTeQVkwKA",
+   "_note": "CHUYEN DOI tu kenh 사우 오디오 (kr-romfan) ngay 2026-09-16 — KHONG lap kenh moi, channelId/Gmail/Profile giu nguyen. Shortcut .lnk CHUA tao."
+  }
+ }
+}

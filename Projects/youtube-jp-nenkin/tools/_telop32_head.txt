@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+r"""telop32.py — chữ hiện trên khung cho các ô của video 32 (本人確認 2027 · 免許証の暗証番号2つ).
+
+Khuôn y nguyên `telop29.py` (đọc docstring ở đó trước khi sửa luật):
+  · Chữ rút TỪ CHÍNH lời đọc của ô. ⛔ Không thêm số mới, không thêm chế độ mới (YMYL).
+  · big ≤9 ký/dòng, ≤2 dòng · sub ≤14 ký, ≤3 thẻ · số viết Ả-rập (CLAUDE.md §② luật 7).
+  · `circle=True` chỉ ở khoảnh khắc lật, chỉ dòng có số.
+  · KHOÁ THEO CUE VĂN BẢN (mẩu lời đọc duy nhất của ô), không theo chỉ số ô.
+Khác v29: viết thẳng dữ kiện thứ hai vào `sub` của từng cue — không tách bảng ENRICH (v29 tách
+vì ENRICH là lượt vá sau). Ô nào sót cue thì tự rút từ lời đọc; gate báo ô CÓ SỐ mà thiếu cue.
+"""
+import json
+import re
+import sys
+from pathlib import Path
+
+PROJ = Path(__file__).resolve().parents[1]
+VD = PROJ / "06_VIDEO" / "32_ginko-honnin-kakunin-2027"
+
+NAVY, RED, TEAL = (31, 56, 100), (192, 57, 43), (62, 124, 120)
+

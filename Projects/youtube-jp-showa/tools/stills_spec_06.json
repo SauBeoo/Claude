@@ -1,0 +1,282 @@
+{
+ "_note": "Video 06 — ANH TINH cat tu Japan Today 1959 (CC0). Chon bang mat tren stills_v06_sheet_a/b.jpg 2026-08-29. Dung grab_stills.py.",
+ "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+ "stills": [
+  {
+   "id": "st06_01_boy_train_window",
+   "t": 542.3,
+   "ybias": 0.5,
+   "note": "be trai cua so tau — 集団就職 len Tokyo"
+  },
+  {
+   "id": "st06_02_boy_train_window_b",
+   "t": 546.9,
+   "ybias": 0.5,
+   "note": "tau, khuon mat qua cua so"
+  },
+  {
+   "id": "st06_03_sanrin_truck_street",
+   "t": 884.8,
+   "ybias": 0.5,
+   "note": "三輪トラック + o to tren pho"
+  },
+  {
+   "id": "st06_04_sanrin_truck_b",
+   "t": 889.2,
+   "ybias": 0.5,
+   "note": "三輪 gan hon"
+  },
+  {
+   "id": "st06_05_shopfront_woman",
+   "t": 893.5,
+   "ybias": 0.5,
+   "note": "mat tien tiem, phu nu di ngang"
+  },
+  {
+   "id": "st06_06_shopfront_kids",
+   "t": 897.8,
+   "ybias": 0.5,
+   "note": "tre em truoc tiem"
+  },
+  {
+   "id": "st06_07_family_street",
+   "t": 910.0,
+   "ybias": 0.5,
+   "note": "gia dinh di pho"
+  },
+  {
+   "id": "st06_08_street_signs_a",
+   "t": 948.1,
+   "ybias": 0.5,
+   "note": "pho bang hieu ban ngay"
+  },
+  {
+   "id": "st06_09_street_signs_b",
+   "t": 952.2,
+   "ybias": 0.5,
+   "note": "nguoi di bo, bang hieu"
+  },
+  {
+   "id": "st06_10_street_signs_c",
+   "t": 956.4,
+   "ybias": 0.5,
+   "note": "pho, bang hieu, xe"
+  },
+  {
+   "id": "st06_11_tokyo_tram_red_sign",
+   "t": 1119.8,
+   "ybias": 0.55,
+   "note": "pho Tokyo tau dien + bang do"
+  },
+  {
+   "id": "st06_12_tokyo_tram_wide",
+   "t": 1124.0,
+   "ybias": 0.55,
+   "note": "pho rong, tau dien"
+  },
+  {
+   "id": "st06_13_crowd_walking",
+   "t": 1140.5,
+   "ybias": 0.5,
+   "note": "dam nguoi di lam"
+  },
+  {
+   "id": "st06_14_crowd_business",
+   "t": 1153.0,
+   "ybias": 0.5,
+   "note": "dam dong com-le"
+  },
+  {
+   "id": "st06_15_department_store",
+   "t": 1165.5,
+   "ybias": 0.5,
+   "note": "bach hoa, co"
+  },
+  {
+   "id": "st06_16_globe_building",
+   "t": 1177.5,
+   "ybias": 0.5,
+   "note": "toa nha qua cau — Tokyo 1959"
+  },
+  {
+   "id": "st06_17_audience_a",
+   "t": 1182.5,
+   "ybias": 0.5,
+   "note": "khan gia ngoi"
+  },
+  {
+   "id": "st06_18_audience_b",
+   "t": 1197.0,
+   "ybias": 0.5,
+   "note": "khan gia — mat nguoi"
+  },
+  {
+   "id": "st06_19_women_crowd",
+   "t": 1214.5,
+   "ybias": 0.5,
+   "note": "phu nu trong dam dong"
+  },
+  {
+   "id": "st06_20_crowd_trams_a",
+   "t": 1234.2,
+   "ybias": 0.5,
+   "note": "dam dong + tau dien"
+  },
+  {
+   "id": "st06_21_crowd_trams_b",
+   "t": 1242.8,
+   "ybias": 0.5,
+   "note": "tau dien phia sau dam dong"
+  },
+  {
+   "id": "st06_22_young_men_crowd",
+   "t": 1247.2,
+   "ybias": 0.5,
+   "note": "thanh nien tre trong dam dong"
+  },
+  {
+   "id": "st06_23_young_men_b",
+   "t": 1251.5,
+   "ybias": 0.5,
+   "note": "thanh nien, ao khoac"
+  },
+  {
+   "id": "st06_24_man_hat_crowd",
+   "t": 1255.8,
+   "ybias": 0.5,
+   "note": "nguoi doi mu, dam dong"
+  },
+  {
+   "id": "st06_25_shirobasha_sign_a",
+   "t": 1371.0,
+   "ybias": 0.4,
+   "note": "bang hieu 白馬車 TEA ROOM — 喫茶店"
+  },
+  {
+   "id": "st06_26_shirobasha_sign_b",
+   "t": 1379.0,
+   "ybias": 0.4,
+   "note": "bang hieu 喫茶店 goc khac"
+  },
+  {
+   "id": "st06_27_nakamise_crowd",
+   "t": 1395.0,
+   "ybias": 0.5,
+   "note": "仲見世 dam dong long den"
+  },
+  {
+   "id": "st06_28_candy_stall",
+   "t": 1441.0,
+   "ybias": 0.5,
+   "note": "quay keo/bong bay"
+  },
+  {
+   "id": "st06_29_stall_lanterns",
+   "t": 1471.2,
+   "ybias": 0.5,
+   "note": "quay long den"
+  },
+  {
+   "id": "st06_30_nakamise_walk",
+   "t": 1476.5,
+   "ybias": 0.5,
+   "note": "nguoi di 仲見世"
+  },
+  {
+   "id": "st06_31_woman_stall",
+   "t": 1496.7,
+   "ybias": 0.5,
+   "note": "phu nu truoc quay"
+  },
+  {
+   "id": "st06_32_temple_crowd_a",
+   "t": 1534.2,
+   "ybias": 0.5,
+   "note": "dam dong san den"
+  },
+  {
+   "id": "st06_33_temple_crowd_b",
+   "t": 1543.2,
+   "ybias": 0.5,
+   "note": "dam dong, ong huong"
+  },
+  {
+   "id": "st06_34_market_stalls_a",
+   "t": 1629.5,
+   "ybias": 0.5,
+   "note": "quay hang cho"
+  },
+  {
+   "id": "st06_35_market_stalls_b",
+   "t": 1633.8,
+   "ybias": 0.5,
+   "note": "quay hang, nguoi mua"
+  },
+  {
+   "id": "st06_36_ox_plough",
+   "t": 1661.9,
+   "ybias": 0.5,
+   "note": "trau cay ruong"
+  },
+  {
+   "id": "st06_37_rice_planting_still",
+   "t": 1685.3,
+   "ybias": 0.5,
+   "note": "cay lua — anh tinh"
+  },
+  {
+   "id": "st06_38_dept_store_bldg",
+   "t": 1974.0,
+   "ybias": 0.55,
+   "note": "toa bach hoa lon"
+  },
+  {
+   "id": "st06_39_station_plaza_a",
+   "t": 1978.0,
+   "ybias": 0.5,
+   "note": "quang truong ga"
+  },
+  {
+   "id": "st06_40_station_plaza_b",
+   "t": 1982.0,
+   "ybias": 0.5,
+   "note": "quang truong, nguoi di"
+  },
+  {
+   "id": "st06_41_street_dept",
+   "t": 1998.0,
+   "ybias": 0.5,
+   "note": "pho truoc bach hoa"
+  },
+  {
+   "id": "st06_42_families_crowd_a",
+   "t": 2002.0,
+   "ybias": 0.5,
+   "note": "gia dinh dam dong"
+  },
+  {
+   "id": "st06_43_families_crowd_b",
+   "t": 2006.0,
+   "ybias": 0.5,
+   "note": "gia dinh, tre em"
+  },
+  {
+   "id": "st06_44_street_bus",
+   "t": 2020.0,
+   "ybias": 0.5,
+   "note": "pho co xe buyt"
+  },
+  {
+   "id": "st06_45_boy_camera",
+   "t": 2097.5,
+   "ybias": 0.5,
+   "note": "be trai cam may anh"
+  },
+  {
+   "id": "st06_46_schoolkids",
+   "t": 2123.1,
+   "ybias": 0.5,
+   "note": "hoc sinh"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+**/.pexels_key
+**/.elevenlabs_key
+**/.azure_key
+**/.gemini_key
+**/.atlas_key
+**/.wavespeed_key
+
+# YouTube API — chìa khóa OAuth + token từng kênh, TUYỆT ĐỐI không commit
+**/credentials/
+**/tokens/
+**/client_secret*.json
+**/token*.json
+
+# Kho media chung — chỉ track code + index, không track binary nặng
+Projects/_media_library/clips/
+Projects/_media_library/photos/
+
+# Gói upload (hardlink mp4 + metadata sinh tự động) — không track
+**/_upload/
+
+# yt-dashboard — log job + snapshot analytics sinh tự động, không track
+Projects/yt-dashboard/jobs/
+Projects/yt-dashboard/history/
+Projects/yt-dashboard/schedule_overrides.json
+Projects/yt-dashboard/channels_state.json
+Projects/yt-dashboard/extra_slots.json
+
+# =====================================================================
+# Repo chi chua CONG THUC + DO DUNG CHUNG (code, rule, skill, script,
+# prompt, asset dung chung). Media rieng tung video / cache / build
+# KHONG track — may moi clone ve tu sinh lai.
+# =====================================================================
+
+# --- Thu muc build / cache / dependency ---
+**/node_modules/
+**/__pycache__/
+*.pyc
+Projects/_tts_cache/
+Projects/remotion-vox/out/
+Projects/remotion-vox/public_*/
+Projects/remotion-vox/public/*
+!Projects/remotion-vox/public/shared/
+!Projects/remotion-vox/public/sfx/
+**/_tilecache/
+**/scratch*/
+Projects/yt-dashboard/wm_work/
+Projects/_tools/realesrgan/models/
+
+# --- File sinh tu dong ---
+*.log
+*.err
+*.ok
+*.sig
+*.bak
+*.npz
+*.bin
+*.param
+*.exe
+*.dll
+
+# --- Media: mac dinh KHONG track ---
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov
+*.webm
+*.mpeg
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+
+# --- ...tru asset DUNG CHUNG ma tool can de dung video ---
+!Projects/_media_library/props/**
+!Projects/_media_library/stage_icons/**
+!Projects/_media_library/avatars/**
+!Projects/*/assets/**
+!Projects/*/00_BRAND/**
+!Projects/*/09_BRAND/**
+!Projects/*/branding/**
+!Projects/*/06_VIDEO/bgm/**
+!Projects/*/06_VIDEO/_sfx/**
+!Projects/*/04_VIDEO/bgm/**
+!Projects/*/04_VIDEO/_sfx/**
+!Projects/remotion-vox/public/shared/**
+!Projects/remotion-vox/public/sfx/**
+!SecondBrain/**
+
+# --- ANH + VIDEO + AM THANH: KHONG BAO GIO track, ke ca folder chung o tren ---
+# (dong sau thang dong truoc — chi font + file text duoc mo lai)
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.flac
+*.opus
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.psd
+*.mp4
+*.mov
+*.webm
+*.mpeg
+*.m4v
+*.avi
+*.mkv
+
+# --- ...nhung bo ban nhap / ban goc trong cac folder chung ---
+**/_raw/
+**/_cand/
+**/_wm_orig/
+**/_qc/
+**/narrator_raw*/
+**/_demo_out/
+
+# Model AI tai lai duoc tu HuggingFace — khong track
+*.onnx
+*.pt
+*.pth
+*.safetensors
+Projects/remotion-vox/jobs/

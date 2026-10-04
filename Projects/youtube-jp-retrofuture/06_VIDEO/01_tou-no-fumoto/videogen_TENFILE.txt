@@ -1,0 +1,37 @@
+# TAP 01 「塔のふもとの一日」 — BAN B: BAN KHONG KHI, KHONG KE CHUYEN
+# 34 canh x 8s = 4:32 · moi canh TU DU, gen lai mot canh khong anh huong canh nao
+#
+01	ep01_01_yoake.mp4	stand · dawn/dawn · crowd=none · THAP · THO
+02	ep01_02_hoshimono.mp4	stand · dawn/dawn · crowd=none · THAP · THO
+03	ep01_03_pan.mp4	stand · dawn/dawn · crowd=few · EMO
+04	ep01_04_shutter.mp4	stand · dawn/dawn · crowd=few · EMO
+05	ep01_05_kiri.mp4	stand · dawn/dawn · crowd=none · THAP · THO
+06	ep01_06_tsuugaku.mp4	walk · day/day · crowd=some · THAP
+07	ep01_07_basutei.mp4	stand · day/day · crowd=some · EMO
+08	ep01_08_tabako.mp4	stand · day/day · crowd=few · THAP · EMO
+09	ep01_09_mizumaki.mp4	stand · day/day · crowd=few · EMO
+10	ep01_10_ichiba.mp4	walk · day/day · crowd=busy · THAP
+11	ep01_11_yaoya.mp4	stand · day/day · crowd=busy · EMO
+12	ep01_12_hanbaiki.mp4	stand · day/day · crowd=some · EMO
+13	ep01_13_mahiru.mp4	stand · day/day · crowd=none · THAP · THO
+14	ep01_14_shokudou.mp4	stand · window/interior · crowd=some · EMO
+15	ep01_15_hirune.mp4	stand · day/day · crowd=few · EMO
+16	ep01_16_kouri.mp4	stand · day/day · crowd=some · EMO
+17	ep01_17_denki.mp4	stand · day/day · crowd=few · EMO
+18	ep01_18_rojiura.mp4	stand · day/day · crowd=none · THO
+19	ep01_19_arcade.mp4	walk · window/interior · crowd=busy
+20	ep01_20_shagekou.mp4	stand · day/day · crowd=some · THAP
+21	ep01_21_sentou.mp4	stand · dusk/dusk · crowd=some · EMO
+22	ep01_22_kouen.mp4	stand · dusk/dusk · crowd=few · THAP · EMO
+23	ep01_23_monohoshi.mp4	stand · dusk/dusk · crowd=none · THO
+24	ep01_24_kage_gyaku.mp4	stand · dusk/dusk · crowd=none · THAP · THO
+25	ep01_25_hi_wo_ireru.mp4	stand · dusk/dusk · crowd=few · EMO
+26	ep01_26_kaerimichi.mp4	walk · dusk/dusk · crowd=some · THAP
+27	ep01_27_yuushoku.mp4	stand · night/interior_night · crowd=none · EMO
+28	ep01_28_terebi.mp4	stand · night/interior_night · crowd=none · THO
+29	ep01_29_yatai.mp4	stand · night/night · crowd=some · EMO
+30	ep01_30_arai.mp4	stand · night/interior_night · crowd=none · EMO
+31	ep01_31_yomichi.mp4	walk · night/night · crowd=few · THAP
+32	ep01_32_hotaru.mp4	stand · night/night · crowd=none · THO
+33	ep01_33_machi_yoru.mp4	stand · night/night · crowd=none · THAP · THO
+34	ep01_34_saigo_no_mado.mp4	stand · night/night · crowd=none · THAP · THO

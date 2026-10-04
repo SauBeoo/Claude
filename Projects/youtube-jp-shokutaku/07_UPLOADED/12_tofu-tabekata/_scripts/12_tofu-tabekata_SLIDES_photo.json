@@ -1,0 +1,677 @@
+[
+ {
+  "match": "横断歩道を渡り切る前に",
+  "photo": true,
+  "q": "block of fresh white tofu on wooden cutting board"
+ },
+ {
+  "match": "そんな日が、増えていませんか",
+  "photo": true,
+  "q": "pedestrian crossing signal street japan"
+ },
+ {
+  "match": "足の筋肉が、少しずつ、減っている",
+  "photo": true,
+  "q": "older woman legs walking on sidewalk"
+ },
+ {
+  "match": "ペットボトルの蓋が",
+  "photo": true,
+  "q": "hand opening a plastic water bottle"
+ },
+ {
+  "match": "買い物袋を、途中で持ち替える",
+  "photo": true,
+  "q": "elderly asian woman carrying shopping bag"
+ },
+ {
+  "match": "一人で外に出るのを",
+  "photo": true,
+  "q": "senior asian woman looking out window"
+ },
+ {
+  "match": "材料が、足りていないだけです",
+  "photo": true,
+  "q": "protein foods eggs fish tofu on table"
+ },
+ {
+  "match": "材料なら、明日の朝から変えられます",
+  "photo": true,
+  "q": "sunlight through window into a kitchen"
+ },
+ {
+  "match": "真面目に用意しているつもりの方が",
+  "photo": true,
+  "q": "plain white tofu block on a dark plate"
+ },
+ {
+  "match": "六十代が避けたい食べ方を三つ",
+  "photo": true,
+  "q": "refrigerated shelf in a grocery store"
+ },
+ {
+  "match": "まず、ご自分の足を、五秒で",
+  "photo": true,
+  "q": "human calf muscle leg closeup"
+ },
+ {
+  "match": "椅子に、腰かけていらっしゃいますか",
+  "photo": true,
+  "q": "elderly asian person sitting on chair"
+ },
+ {
+  "match": "片方のふくらはぎの、いちばん太いところ",
+  "photo": true,
+  "q": "hands massaging a calf muscle"
+ },
+ {
+  "match": "両手の親指と、人差し指で、輪っかを作って",
+  "photo": true
+ },
+ {
+  "match": "囲めない方",
+  "photo": true,
+  "diagram": true
+ },
+ {
+  "match": "指輪っかテスト、と呼ばれています",
+  "photo": true,
+  "q": "japanese seniors group walking outdoors"
+ },
+ {
+  "match": "ふくらはぎは、体の中でも、いちばん先に細くなって",
+  "photo": true,
+  "q": "thin bare legs of an old person seated"
+ },
+ {
+  "match": "鏡を見ても",
+  "photo": true,
+  "q": "older woman looking at her reflection in a mirror"
+ },
+ {
+  "match": "体重計にも、出てきません",
+  "photo": true,
+  "q": "bathroom weight scale feet"
+ },
+ {
+  "match": "痩せた、と喜んでいた二キロ",
+  "photo": true,
+  "q": "loose trousers waist belt closeup"
+ },
+ {
+  "match": "筋肉は、いくつになっても、材料が届けば",
+  "photo": true,
+  "q": "tofu egg fish ingredients kitchen counter"
+ },
+ {
+  "match": "いちばん多い止まり方から",
+  "photo": true,
+  "q": "open refrigerator interior food"
+ },
+ {
+  "match": "これは、いちばん体を思っていらっしゃる方に",
+  "photo": true,
+  "q": "woman cooking at the stove in a home kitchen",
+  "rank": "その1"
+ },
+ {
+  "match": "だから夕飯は、冷奴で軽く済ませる",
+  "photo": true,
+  "q": "cold tofu hiyayakko dish green onion"
+ },
+ {
+  "match": "その優しさが、筋肉を減らしている",
+  "photo": true,
+  "q": "simple japanese dinner small portions table"
+ },
+ {
+  "match": "けれども、木綿豆腐は、百グラムで",
+  "photo": true,
+  "q": "firm cotton tofu block on cutting board"
+ },
+ {
+  "match": "一方で、魚を一切れ",
+  "photo": true,
+  "q": "grilled salmon fillet on a plate"
+ },
+ {
+  "match": "同じ一皿で、材料は、半分以下です",
+  "photo": true,
+  "q": "two bowls of food compared side by side"
+ },
+ {
+  "match": "豆腐のパックの、横の表示です",
+  "photo": true,
+  "q": "栄養成分表示",
+  "src": "commons"
+ },
+ {
+  "match": "たんぱく質、と書かれた数字を見てください",
+  "photo": true,
+  "q": "hand holding a food package with label"
+ },
+ {
+  "match": "長いあいだ、肉は控えめに",
+  "photo": true,
+  "q": "meat counter supermarket display"
+ },
+ {
+  "match": "豆腐は、お肉の代わりではなく",
+  "photo": true,
+  "q": "japanese meal tray with tofu and grilled fish"
+ },
+ {
+  "match": "なぜ、半分ではそんなに困るのでしょうか",
+  "photo": true,
+  "q": "warm evening light in a home kitchen"
+ },
+ {
+  "match": "六十代からの食卓へ、ようこそ",
+  "photo": true,
+  "q": "clean wooden kitchen countertop at home"
+ },
+ {
+  "match": "私は、お医者様でも",
+  "photo": true,
+  "q": "older hands writing in a notebook"
+ },
+ {
+  "match": "短い診察の時間では",
+  "photo": true,
+  "q": "hospital waiting room chairs japan"
+ },
+ {
+  "match": "私たちの体は、毎日、少しずつ、自分を建て替えています",
+  "photo": true,
+  "q": "wooden house frame construction beams"
+ },
+ {
+  "match": "古い柱を外して、新しい柱を入れる",
+  "photo": true,
+  "q": "carpenter working on wooden beam"
+ },
+ {
+  "match": "使える材料は、その日に届いた分だけです",
+  "photo": true,
+  "q": "stacked lumber timber pile"
+ },
+ {
+  "match": "たんぱく質は、体に溜めておくことができない",
+  "photo": true,
+  "q": "empty wooden storage shelf"
+ },
+ {
+  "match": "どこかの柱を抜いて",
+  "photo": true,
+  "q": "bare wooden frame structure interior"
+ },
+ {
+  "match": "抜かれるのは、たいてい、足腰です",
+  "photo": true,
+  "q": "elderly person legs standing walking"
+ },
+ {
+  "match": "心臓や、頭は、後回しにできませんから",
+  "photo": true,
+  "q": "human heart anatomy model"
+ },
+ {
+  "match": "厚生労働省の食事摂取基準では",
+  "photo": true,
+  "q": "stack of official paper documents on a desk"
+ },
+ {
+  "match": "年を重ねると、同じ量を召し上がっても",
+  "photo": true,
+  "q": "elderly asian hands holding chopsticks bowl"
+ },
+ {
+  "match": "毎晩の半分は、そこから、静かに引かれて",
+  "photo": true,
+  "q": "half empty rice bowl"
+ },
+ {
+  "match": "保坂ミツエさん、七十一歳",
+  "photo": true,
+  "q": "old japanese hair salon interior"
+ },
+ {
+  "match": "ハサミだけは、年に一度、研ぎに出している",
+  "photo": true,
+  "q": "hairdressing scissors closeup metal"
+ },
+ {
+  "match": "六十五を過ぎた頃から、お肉が重たく",
+  "photo": true,
+  "q": "pork dish on plate untouched"
+ },
+ {
+  "match": "夕飯は冷奴とお漬物",
+  "photo": true,
+  "q": "cold tofu and japanese pickles small plates"
+ },
+ {
+  "match": "体重は、二年で三キロほど減りました",
+  "photo": true,
+  "q": "senior asian woman wearing a loose cardigan"
+ },
+ {
+  "match": "バスを降りるとき、手すりにつかまらないと",
+  "photo": true,
+  "q": "bus handrail grab bar interior"
+ },
+ {
+  "match": "私、ちゃんと食べてるつもりだったのよ",
+  "photo": true,
+  "q": "asian mother and adult daughter talking at home"
+ },
+ {
+  "match": "絹ごしを、木綿に",
+  "photo": true,
+  "q": "silken and firm tofu side by side"
+ },
+ {
+  "match": "朝の味噌汁に、賽の目の豆腐をひとつかみ",
+  "photo": true,
+  "q": "miso soup with tofu cubes bowl"
+ },
+ {
+  "match": "夕飯の冷奴の隣に、卵か",
+  "photo": true,
+  "q": "boiled egg and grilled fish on a japanese plate"
+ },
+ {
+  "match": "お孫さんの前髪を切ってあげられた",
+  "photo": true,
+  "q": "grandmother and grandchild together at home"
+ },
+ {
+  "match": "これは、中身ではありません",
+  "photo": true,
+  "q": "wall clock in kitchen",
+  "rank": "その2"
+ },
+ {
+  "match": "豆腐を食べるのは、夜だけ",
+  "photo": true,
+  "q": "japanese home dinner table in the evening"
+ },
+ {
+  "match": "昼はうどんかお蕎麦",
+  "photo": true,
+  "q": "bowl of udon noodles"
+ },
+ {
+  "match": "夕飯が六時で、翌日のお昼が十二時",
+  "photo": true,
+  "q": "clock face hands time closeup"
+ },
+ {
+  "match": "そのあいだ、およそ十八時間です",
+  "photo": true,
+  "q": "night window to dawn sky"
+ },
+ {
+  "match": "材料が来ないまま、柱を抜き続けています",
+  "photo": true,
+  "q": "dark wooden beams interior"
+ },
+ {
+  "match": "いちばん長く材料が切れているのが、朝です",
+  "photo": true,
+  "q": "japanese breakfast with rice and miso soup"
+ },
+ {
+  "match": "そこへ、ご飯とお茶だけを入れて",
+  "photo": true,
+  "q": "bowl of white rice and green tea"
+ },
+ {
+  "match": "朝の一食が、いちばん取り返しにくい",
+  "photo": true,
+  "q": "morning sunlight kitchen window"
+ },
+ {
+  "match": "これが、いちばん惜しい落とし穴です",
+  "photo": true,
+  "q": "elderly woman eating alone small meal",
+  "rank": "その3"
+ },
+ {
+  "match": "豆腐でお腹をいっぱいにしてしまう",
+  "photo": true,
+  "q": "large block of tofu in a bowl"
+ },
+ {
+  "match": "豆腐は、水分がとても多い食べ物です",
+  "photo": true,
+  "q": "tofu soaking in a container of water"
+ },
+ {
+  "match": "一丁召し上がっても、エネルギーは",
+  "photo": true,
+  "q": "bowl of steamed white rice"
+ },
+ {
+  "match": "薪で暖まっている家です",
+  "photo": true,
+  "q": "firewood burning in wood stove"
+ },
+ {
+  "match": "柱を、一本外して、燃やします",
+  "photo": true,
+  "q": "wooden logs burning fire closeup"
+ },
+ {
+  "match": "身軽になったね",
+  "photo": true,
+  "q": "two elderly women chatting outdoors"
+ },
+ {
+  "match": "減っているのが脂肪ではなく、柱だとしたら",
+  "photo": true,
+  "q": "thin wrist and forearm of an elderly person"
+ },
+ {
+  "match": "腎臓の働きが弱っていると言われている方は",
+  "photo": true,
+  "q": "doctor consulting an elderly patient"
+ },
+ {
+  "match": "ここまで聞いてくださって、ありがとうございます",
+  "photo": true,
+  "q": "warm kitchen table two cups of tea"
+ },
+ {
+  "match": "では、第三位から、まいりましょう",
+  "photo": true,
+  "q": "tofu packages in a supermarket refrigerator",
+  "rank": "第3位"
+ },
+ {
+  "match": "絹ごしと、木綿",
+  "photo": true,
+  "q": "silken tofu and firm tofu comparison"
+ },
+ {
+  "match": "絹ごしは、およそ五グラムです",
+  "photo": true,
+  "q": "smooth white silken tofu closeup"
+ },
+ {
+  "match": "木綿は、一度固めたものを、布を敷いた箱に",
+  "photo": true,
+  "q": "traditional tofu making cloth mold"
+ },
+ {
+  "match": "水が抜けた分だけ、中身が濃くなります",
+  "photo": true,
+  "q": "pressing water out of tofu with a plate"
+ },
+ {
+  "match": "豆腐の世界では、水が抜けているほど",
+  "photo": true,
+  "q": "tofu pressed with weight on plate"
+ },
+ {
+  "match": "喉ごしがよくて、飲み込みやすい",
+  "photo": true,
+  "q": "silken tofu with spoon soft dish"
+ },
+ {
+  "match": "お皿に載せて、上に小皿を一枚のせて",
+  "photo": true,
+  "q": "plate pressing tofu draining water"
+ },
+ {
+  "match": "昔は、夕方になると、豆腐屋さんのラッパ",
+  "photo": true,
+  "q": "old japanese tofu shop street vintage"
+ },
+ {
+  "match": "ボウルを持って出ていって",
+  "photo": true,
+  "q": "metal bowl held in hands"
+ },
+ {
+  "match": "コメント欄に、数字の、に、を書いて",
+  "photo": true,
+  "q": "hand typing on smartphone"
+ },
+ {
+  "match": "二つ目は、朝の話です",
+  "photo": true,
+  "q": "japanese breakfast miso soup rice morning",
+  "rank": "第2位"
+ },
+ {
+  "match": "賽の目に切って、ひとつかみ",
+  "photo": true,
+  "q": "cutting tofu into cubes on a board"
+ },
+ {
+  "match": "火を止めてから、入れてください",
+  "photo": true,
+  "q": "miso soup simmering in a pot on the stove"
+ },
+ {
+  "match": "ぐらぐら煮ると、豆腐は硬くなって",
+  "photo": true,
+  "q": "soup boiling with bubbles in a pot"
+ },
+ {
+  "match": "油揚げと、厚揚げ",
+  "photo": true,
+  "q": "aburaage fried tofu pouches japanese"
+ },
+ {
+  "match": "厚揚げは、百グラムでたんぱく質がおよそ十一グラム",
+  "photo": true,
+  "q": "atsuage thick fried tofu block"
+ },
+ {
+  "match": "薄い油揚げ一枚でも、およそ七グラム",
+  "photo": true,
+  "q": "油揚げ",
+  "src": "commons"
+ },
+ {
+  "match": "それだけで、十グラムを超えてきます",
+  "photo": true,
+  "q": "miso soup with tofu and fried tofu"
+ },
+ {
+  "match": "熱いお湯を回しかけて、油を落として",
+  "photo": true,
+  "q": "rinsing food in a colander under running water"
+ },
+ {
+  "match": "お椀の中から、湯気と一緒に上がってくる",
+  "photo": true,
+  "q": "steam rising from miso soup bowl"
+ },
+ {
+  "match": "では、お約束した、七倍のものです",
+  "photo": true,
+  "q": "kitchen cupboard shelf packages",
+  "rank": "第1位"
+ },
+ {
+  "match": "台所の、戸棚の奥",
+  "photo": true,
+  "q": "wooden cupboard shelf with jars in dim light"
+ },
+ {
+  "match": "乾いた、薄い、四角",
+  "photo": true,
+  "q": "高野豆腐",
+  "src": "commons"
+ },
+ {
+  "match": "高野豆腐です",
+  "photo": true,
+  "q": "凍り豆腐",
+  "src": "commons"
+ },
+ {
+  "match": "豆腐から水を抜いて、凍らせて、乾かしたもの",
+  "photo": true,
+  "q": "高野豆腐 乾物",
+  "src": "commons"
+ },
+ {
+  "match": "乾いた状態の百グラムで",
+  "photo": true,
+  "q": "dried tofu blocks on a kitchen scale"
+ },
+ {
+  "match": "一枚、およそ十六グラムほどの小さなものでも",
+  "photo": true,
+  "q": "boiled egg beside a block of tofu on a table"
+ },
+ {
+  "match": "しかも、常温で日持ちします",
+  "photo": true,
+  "q": "pantry shelf dry goods storage"
+ },
+ {
+  "match": "雨の日も、足の痛む日も",
+  "photo": true,
+  "q": "rain on window japanese house"
+ },
+ {
+  "match": "戻して、出汁で煮るだけ",
+  "photo": true,
+  "q": "simmering japanese dish in pot dashi"
+ },
+ {
+  "match": "飲み込む力が心配な方にも",
+  "photo": true,
+  "q": "soft simmered dish in bowl chopsticks"
+ },
+ {
+  "match": "私も長いあいだ、高野豆腐は",
+  "photo": true,
+  "q": "japanese simmered vegetables nishime plate"
+ },
+ {
+  "match": "戸棚の奥に、卵より濃い四角が、眠っています",
+  "photo": true,
+  "q": "dried tofu in dark cupboard light"
+ },
+ {
+  "match": "入れすぎると、煮汁を吸って",
+  "photo": true,
+  "q": "dark soy sauce broth simmering in a pot"
+ },
+ {
+  "match": "沖田カズオさん、六十九歳",
+  "photo": true,
+  "q": "old japanese post office building"
+ },
+ {
+  "match": "六十九にして初めて、台所に立った",
+  "photo": true,
+  "q": "elderly asian man standing in kitchen"
+ },
+ {
+  "match": "炊いたご飯と、買ってきたお惣菜",
+  "photo": true,
+  "q": "supermarket deli prepared food containers"
+ },
+ {
+  "match": "戸棚の奥から、法事のときに買った",
+  "photo": true,
+  "q": "opened paper bag of dried ingredients on a shelf"
+ },
+ {
+  "match": "これ、麩みたいなもんだと思っとった",
+  "photo": true,
+  "q": "麩",
+  "src": "commons"
+ },
+ {
+  "match": "袋の裏の作り方を読んで",
+  "photo": true,
+  "q": "hands reading food package instructions"
+ },
+ {
+  "match": "退院してきた奥様に、初めて",
+  "photo": true,
+  "q": "japanese simmered dish served at home"
+ },
+ {
+  "match": "その日の食卓の写真だけは",
+  "photo": true,
+  "q": "phone photo of meal on table"
+ },
+ {
+  "match": "今日のお話を、まとめます",
+  "photo": true,
+  "q": "notebook and pen on kitchen table"
+ },
+ {
+  "match": "お肉や魚の代わりに、豆腐を置くこと",
+  "photo": true,
+  "q": "tofu replacing meat on plate"
+ },
+ {
+  "match": "第三位、木綿を選んで、水を切る",
+  "photo": true,
+  "q": "firm tofu block draining on plate"
+ },
+ {
+  "match": "第一位、戸棚の高野豆腐を、切らさない",
+  "photo": true,
+  "q": "packages of dried food stored on a shelf"
+ },
+ {
+  "match": "絹より木綿、木綿より油揚げ",
+  "photo": true,
+  "q": "tofu products lined up on a table"
+ },
+ {
+  "match": "明日の朝、一つだけ選ぶとしたら",
+  "photo": true,
+  "q": "morning miso soup preparation"
+ },
+ {
+  "match": "もう一度、ふくらはぎを囲んでみてください",
+  "photo": true
+ },
+ {
+  "match": "皆さんのお宅では、豆腐は、絹と木綿",
+  "photo": true,
+  "q": "hands holding a plain plastic food package in a store"
+ },
+ {
+  "match": "どちらの都道府県からご覧くださっていますか",
+  "photo": true,
+  "q": "paper map of japan"
+ },
+ {
+  "match": "横断歩道の青が、点滅しはじめる前に",
+  "photo": true,
+  "q": "pedestrian crossing green signal walking"
+ },
+ {
+  "match": "お孫さんの手を、自分の手で引ける",
+  "photo": true,
+  "q": "grandparent holding grandchild hand walking"
+ },
+ {
+  "match": "迷惑をかけたくない",
+  "photo": true,
+  "q": "senior asian woman smiling at home"
+ },
+ {
+  "match": "この動画でお伝えした内容は",
+  "photo": true,
+  "q": "reading glasses resting on an open book"
+ },
+ {
+  "match": "今夜の食卓が、皆さんの明日の元気に",
+  "photo": true,
+  "q": "japanese dinner table warm family meal"
+ }
+]

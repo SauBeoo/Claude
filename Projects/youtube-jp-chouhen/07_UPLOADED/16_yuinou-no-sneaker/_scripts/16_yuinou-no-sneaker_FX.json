@@ -1,0 +1,279 @@
+{
+  "speakers": {
+    "志津子": "villain",
+    "麻里": "villain",
+    "泰三": "villain",
+    "佳世": "hero",
+    "洋一郎": "hero",
+    "遼": "hero"
+  },
+  "lines": [
+    {
+      "match": "もう赤で消してありますから",
+      "speaker": "志津子"
+    },
+    {
+      "match": "そのスニーカーで、娘さんの結納に",
+      "speaker": "志津子"
+    },
+    {
+      "match": "「これは、いただいておきます」",
+      "speaker": "佳世"
+    },
+    {
+      "match": "工場のご家族が並ぶと",
+      "speaker": "志津子"
+    },
+    {
+      "match": "つまり、無職ということね",
+      "speaker": "志津子"
+    },
+    {
+      "match": "お茶を淹れてくださる",
+      "speaker": "志津子"
+    },
+    {
+      "match": "「かしこまりました」",
+      "speaker": "佳世"
+    },
+    {
+      "match": "「少し、です」",
+      "speaker": "佳世"
+    },
+    {
+      "match": "保育士なんて格が違う",
+      "speaker": "志津子"
+    },
+    {
+      "match": "僕は君と、君の親が並んだ写真が撮りたい",
+      "speaker": "遼"
+    },
+    {
+      "match": "「私物化です」",
+      "speaker": "洋一郎"
+    },
+    {
+      "match": "私は、あなたを許しません",
+      "speaker": "佳世"
+    },
+    {
+      "match": "許さないまま、これから親戚になります",
+      "speaker": "佳世"
+    },
+    {
+      "match": "あなたは今夜ここへ来る前に",
+      "speaker": "佳世"
+    },
+    {
+      "match": "「お車代です。",
+      "speaker": "志津子"
+    },
+    {
+      "match": "今日はもう、お帰りになって",
+      "speaker": "志津子"
+    },
+    {
+      "match": "僕はこの結納を、なかったことにします",
+      "speaker": "遼"
+    },
+    {
+      "match": "あの園を運営している社会福祉法人",
+      "speaker": "志津子"
+    },
+    {
+      "match": "主人の後輩に、県議の先生が",
+      "speaker": "志津子"
+    },
+    {
+      "match": "消されても、受け取った十四人",
+      "speaker": "洋一郎"
+    },
+    {
+      "match": "お車代は、お返しします",
+      "speaker": "佳世"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "結納の品を挟んで",
+      "to": "その震えが、恐怖だった",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "思えば、三十年前",
+      "to": "私はその手が",
+      "name": "blizzard",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "志津子さんの声で、私は畳に戻った",
+      "to": "娘の縁ですから",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "深夜三時のおむつ替え",
+      "to": "五度の冬を越した",
+      "name": "night_snowplow",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "障子に、初秋の雨の影が動いていた",
+      "to": "通話は、一方的に切れた",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "庭の草むらから",
+      "to": "本当の意味で始まったのだ",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "sfx",
+      "match": "娘の結納の席で、娘の母が、車代を渡されて",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "僕はこの結納を、なかったことにします",
+      "name": "slap",
+      "offset": -0.25,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "座るしかなかったのだ",
+      "name": "heartbeat",
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "一枚で、全部写っていた",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "藤井佳世という四文字の上に",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "音を立てて凍りついた",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "二度目に凍りついた",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "料亭の廊下を走る音",
+      "name": "door_knock",
+      "offset": -0.2,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "三度目に凍りついた",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "高級な携帯が",
+      "name": "phone_buzz_urgent",
+      "offset": -0.2,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "ゆっくりと見開かれていく",
+      "name": "heartbeat",
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "「私物化です」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "私は、あなたを許しません",
+      "name": "heartbeat",
+      "gain": -9
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "理事長は大河原泰三様",
+      "cut": "「主人」の二文字",
+      "resume": "志津子か"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "白い紙のようになった",
+      "to": "真珠が、畳を擦って音を立てた"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "僕はこの結納を、なかったことにします",
+      "to": "座るしかなかったのだ"
+    },
+    {
+      "type": "card",
+      "match": "もう赤で消してありますから",
+      "text": "名前は赤で消してあります",
+      "style": "villain",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "今日はもう、お帰りになって",
+      "text": "お車代です。お帰りになって",
+      "style": "villain",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "あの園を運営している社会福祉法人",
+      "text": "あの園、主人の後輩の法人よ",
+      "style": "villain",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "あなたは今夜ここへ来る前に",
+      "text": "私の名前を消してから、来た",
+      "style": "hero",
+      "hold": 1.6
+    },
+    {
+      "type": "card",
+      "match": "私は、あなたを許しません",
+      "text": "私は、あなたを許しません",
+      "style": "hero",
+      "hold": 1.6
+    }
+  ]
+}

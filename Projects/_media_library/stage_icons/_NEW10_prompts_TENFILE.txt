@@ -1,0 +1,13 @@
+# Thứ tự DÒNG trong `_NEW10_prompts_FLOW.txt`  ↔  tên file phải lưu
+# Gen xong bỏ ảnh THÔ (chưa sửa gì) vào:  _media_library/stage_icons/_raw/
+# rồi chạy:  python _media_library/ingest_stage_icons.py
+1   hourglass.png       đồng hồ cát, cát vàng chảy — thay `clock` ở các beat "期限/時効"
+2   wallet_open.png     ví MỞ có 3 tờ tiền lòi ra — thay `wallet` ở beat "立て替える/現金"
+3   receipt.png         領収書, mép dưới răng cưa — cặp với wallet_open
+4   madoguchi.png       quầy 窓口 có vách kính + màn hình — thay `cityhall` khi nói "窓口"
+5   envelope_open.png   phong bì MỞ có tờ giấy nhô — thay `env` ở beat "通知書が届く"
+6   passbook_open.png   sổ MỞ nhìn từ trên, ô kẻ trống + 3 ô vàng — TRỤC HÌNH của video 13
+7   couple_senior.png   2 người già ngồi bàn có 2 chén trà — thay `couple` (đang dùng ×9)
+8   yen_coins.png       đồng ¥ lớn + cọc xu vàng — nhấn tiền, khác `money_pouch`
+9   shield_check.png    khiên vàng có ✓ navy — "có bảo hiểm / có quyền"
+10  shield_dash.png     khiên NÉT ĐỨT xám, rỗng — "không có / mất quyền"

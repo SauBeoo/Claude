@@ -1,0 +1,211 @@
+# -*- coding: utf-8 -*-
+r"""telop29.py — chữ hiện trên khung cho 95 ô của video 29.
+
+LUẬT VIẾT TELOP (giữ nguyên từ v27/v28, đừng sửa nếu chưa đọc):
+  · Chữ rút TỪ CHÍNH lời đọc của ô đó. ⛔ Không thêm số mới, không thêm chế độ mới (YMYL).
+  · Dòng chính ≤ 9 ký full-width/dòng, tối đa 2 dòng.
+  · `circle=True` chỉ cho dòng CÓ SỐ và chỉ ở khoảnh khắc lật.
+  · màu: NAVY mặc định · RED cho mất mát/cảnh báo · TEAL cho phần được/giải pháp.
+
+🔴🔴 KHOÁ THEO **CUE VĂN BẢN**, KHÔNG THEO CHỈ SỐ Ô — bài học phải trả giá hai lần trong
+cùng một buổi. Bản đầu của file này viết `OVERRIDE = {0: …, 1: …}` theo chỉ số ô đoán từ cấu
+trúc chương; đo lại thì **41/57 entry nằm sai ô**, trôi dần về cuối — tức hơn 2/3 video sẽ hiện
+chữ của đoạn khác. Và đúng lỗi này vừa được nêu ra ở `img29_prompts.py` vài giờ trước
+(*"chỉ số ô do plan sinh từ timeline, đổi HOLD_TARGET là lệch hết"*), rồi vẫn lặp lại ở đây.
+⇒ Cue là một mẩu lời đọc **có thật và duy nhất** trong ô đó; gate ở cuối file bắt cue trượt
+hoặc cue khớp nhiều ô.
+
+Phần không có cue → **tự rút từ chính lời đọc** (mệnh đề cuối câu đầu = vị ngữ). Lý do tự sinh:
+`build*.py` tra `TELOP[k]` bằng chỉ số trực tiếp, thiếu một ô là **KeyError giữa lượt render**.
+🔴 Gate bắt buộc: ô nào lời đọc có CHỮ SỐ mà không có cue ⇒ báo đỏ — bản tự sinh từng cắt
+「85歳」 thành 「8」/「5歳」.
+"""
+import json
+import re
+import sys
+from pathlib import Path
+
+PROJ = Path(__file__).resolve().parents[1]
+VD = PROJ / "06_VIDEO" / "29_shikaku-kakuninsho-8gatsu-85sai"
+
+NAVY, RED, TEAL = (31, 56, 100), (192, 57, 43), (62, 124, 120)
+
+# ── cue (mẩu lời đọc DUY NHẤT của ô) → telop. Số đều đã có trong `_TTS.md` ──
+CUES = [
+ ("この7月、あなたの家",      dict(big=["七月に届いた", "うすい封筒"], color=NAVY)),
+ ("それを8月、病院の受付",     dict(big=["一枚だけでは", "使えません"], color=RED)),
+ ("その日の会計は",          dict(big=["3千円が", "3万円に"], color=RED, size=120, circle=True,
+                                sub=["一割ではなく十割"])),
+ ("同じ日に、お隣にも",       dict(big=["お隣と", "中身が違う"], color=NAVY)),
+ ("去年1年のあいだに",       dict(big=["受付で", "何をしたか"], color=RED)),
+ ("そしてもう一つ、同じ紙を持つ", dict(big=["空いている欄", "が一つ"], color=RED)),
+ ("今日は、三つを順番に",      dict(big=["三つを", "確かめます"], color=NAVY)),
+ ("当研究室は、制度を",       dict(big=["まず、", "事実から"], color=NAVY)),
+ ("75歳以上のかたは",       dict(big=["八月から", "分かれました"], color=NAVY)),
+ ("手続きをした覚えが",       dict(big=["申請は", "要りません"], color=TEAL)),
+ ("去年までの健康保険証",      dict(big=["去年の保険証", "もう使えません"], color=RED,
+                                sub=["2025年12月1日で終了"])),
+ ("そのかわりに配られていた",   dict(big=["資格確認書", "という紙"], color=NAVY)),
+ ("令和8年の7月末まで",      dict(big=["全員に", "一律で"], color=NAVY, sub=["七月末まで"])),
+ ("「去年は、黙っていても",     dict(big=["去年は", "そうでした"], color=NAVY)),
+ ("暫定的な措置だった",       dict(big=["暫定的な", "措置でした"], color=NAVY)),
+ ("そして、その暫定措置が",     dict(big=["八月一日から", "二つに"], color=RED)),
+ ("並べてみると",           dict(big=["資格確認書"], color=TEAL, size=120, sub=["一枚で使える"])),
+ ("二つ目が、資格情報の",      dict(big=["資格情報の", "お知らせ"], color=RED)),
+ ("赤で囲んだところ、ご覧ください。マイナ保険証を持っていない",
+                          dict(big=["厚生労働省"], color=NAVY, size=110, sub=["申請によらず交付"])),
+ ("裏を返せば",            dict(big=["持っている人", "には違う"], color=NAVY)),
+ ("これは、あなたの保険の情報",  dict(big=["知らせる", "ための紙"], color=NAVY)),
+ ("ですから、一枚では",       dict(big=["カードと", "一緒に出す"], color=TEAL)),
+ ("カードを家に置いてきて",     dict(big=["確認できない", "扱いに"], color=RED)),
+ ("この一言に",            dict(big=["名前が似て", "いるだけ"], color=RED)),
+ ("では、どちらが届くのか",     dict(big=["分ける線は", "二本"], color=NAVY)),
+ ("団地の四階に",           dict(big=["原田さん", "84歳"], color=NAVY, sub=["月に一度の通院"])),
+ ("受付で、いつもマイナンバー",  dict(big=["いつも", "機械にのせて"], color=NAVY)),
+ ("小川さんは、どこも",       dict(big=["小川さん", "去年は二回"], color=NAVY)),
+ ("よく病院に行っていた",      dict(big=["よく行く人ほど", "使えない紙"], color=RED, size=84)),
+ ("過去12か月のあいだに",    dict(big=["12か月に", "6回以上"], color=RED, size=110, circle=True)),
+ ("この二つを満たした",       dict(big=["あなたは", "何回でしたか"], color=NAVY)),
+ ("つまり役所は",           dict(big=["困らせる", "ためではない"], color=TEAL)),
+ ("ただ、その判断は",        dict(big=["手ぶらで", "出ない前提"], color=RED)),
+ ("原田さんは、こうおっしゃい",  dict(big=["入れてる", "つもりでした"], color=RED)),
+ ("もう一本、年齢の線",       dict(big=["もう一本", "年齢の線"], color=NAVY)),
+ ("令和8年8月1日の時点で85歳以上のかたには、マイナ",
+                          dict(big=["8月1日時点で", "85歳以上"], color=NAVY, size=84)),
+ ("赤で囲んだところを",       dict(big=["85歳以上は", "無条件"], color=TEAL,
+                                sub=["千葉県広域連合"])),
+ ("ご自身か、ご家族に",       dict(big=["ご家族に", "いますか"], color=NAVY)),
+ ("ところが、その少し下に",     dict(big=["もう一行", "あります"], color=RED)),
+ ("もう一度、読みます",       dict(big=["8月1日なら", "届きます"], color=TEAL)),
+ ("8月2日に85歳に",       dict(big=["8月2日なら", "届きません"], color=RED, circle=True)),
+ ("84歳以下のかたは、さきほど", dict(big=["二本で", "分かれています"], color=NAVY,
+                                table=dict(head=["あなたは", "届くのは"],
+                                           rows=[["8月1日時点で85歳以上", "資格確認書"],
+                                                 ["84歳以下・6回以上", "資格情報のお知らせ"],
+                                                 ["84歳以下・6回未満", "資格確認書"]],
+                                           w=[560, 460]),
+                                src="千葉県後期高齢者医療広域連合")),
+ ("なお、この六回という",      dict(big=["広域連合ごと", "に違います"], color=NAVY, size=84)),
+ ("では、ここで四問だけ",      dict(big=["四問だけ"], color=NAVY, size=130)),
+ ("答えは丸で、これはそのまま",  dict(big=["丸"], color=TEAL, size=170, sub=["そのまま出せる"])),
+ ("答えはばつで、この紙は",     dict(big=["ばつ"], color=RED, size=170, sub=["カードと一緒に"])),
+ ("原田さんは、この二問目で",   dict(big=["三問目"], color=NAVY, size=130)),
+ ("答えは丸で、保険証として",   dict(big=["丸"], color=TEAL, size=170, sub=["カードだけでよい"])),
+ ("そのときのために",         dict(big=["機械が止まる", "日もあります"], color=NAVY, size=84)),
+ ("四問目、去年まで",        dict(big=["ばつ"], color=RED, size=170, sub=["2025年12月1日で終了"])),
+ ("うっかり古い保険証を",      dict(big=["特別扱いも", "終わりました"], color=RED, size=84)),
+ ("「これはもう、使えない",     dict(big=["猶予は", "ありません"], color=RED)),
+ ("二問目で迷ったかたは",      dict(big=["財布の中を", "ご覧ください"], color=TEAL, size=84,
+                                table=dict(head=["窓口に出すもの", "一枚で"],
+                                           rows=[["資格確認書", "丸"],
+                                                 ["資格情報のお知らせ", "ばつ"],
+                                                 ["マイナンバーカード", "丸"],
+                                                 ["去年までの健康保険証", "ばつ"]],
+                                           w=[560, 300]))),
+ ("それでは、ここからが",      dict(big=["ここからが", "本題です"], color=NAVY)),
+ ("冒頭で、もう一つ",        dict(big=["払う額が", "変わります"], color=RED)),
+ ("それに最初に気づいたのが",   dict(big=["その答えが", "ここです"], color=NAVY)),
+ ("表の下のほうに",          dict(big=["限度区分", "という欄"], color=NAVY)),
+ ("昔は、限度額適用認定証",     dict(big=["昔は別の紙", "がありました"], color=NAVY, size=84)),
+ ("その認定証は",           dict(big=["認定証は", "廃止されました"], color=NAVY, size=84)),
+ ("マイナ保険証のかたは",      dict(big=["手続き不要で", "減額"], color=TEAL, size=84)),
+ ("一方、資格確認書のかたは",   dict(big=["兵庫県", "広域連合"], color=NAVY, sub=["欄が空欄の場合"])),
+ ("限度区分の欄が空欄で",      dict(big=["申請すると", "記載されます"], color=TEAL, size=84)),
+ ("申請していなければ",       dict(big=["申請しなければ", "空いたまま"], color=RED, size=84)),
+ ("あとから高額療養費を",      dict(big=["戻っては", "きます"], color=NAVY)),
+ ("ですが、戻るまでの",       dict(big=["通帳から", "出たまま"], color=RED)),
+ ("前回の研究で",           dict(big=["小林さん", "75歳"], color=NAVY, sub=["埼玉県川口市"])),
+ ("小林さんは、封筒を開けて",   dict(big=["いちばん下が", "白かった"], color=RED, size=84)),
+ ("申請していないから",       dict(big=["書き忘れでは", "ありません"], color=RED, size=84)),
+ ("入院したときの上限額",      dict(big=["上限額も", "見直されました"], color=RED, size=84)),
+ ("段階的に変わる途中で",      dict(big=["来年また", "動きます"], color=NAVY)),
+ ("ご自身の資格確認書の",      dict(big=["いちばん下", "白いですか"], color=RED)),
+ ("もし、当日にどうにも",      dict(big=["いったん", "十割"], color=RED, size=130, circle=True,
+                                table=dict(head=["その日の会計", "払う額"],
+                                           rows=[["一割のとき", "3千円"],
+                                                 ["資格が確認できないとき", "3万円"]],
+                                           w=[560, 300]))),
+ ("ただ、そこで終わりでは",     dict(big=["療養費で", "戻ります"], color=TEAL)),
+ ("必要になるのは",          dict(big=["領収書は", "捨てないで"], color=TEAL)),
+ ("期限は、診療を受けた",      dict(big=["2年"], color=RED, size=170, circle=True, sub=["翌日から"])),
+ ("ここだけは、覚えて",       dict(big=["領収書と", "2年"], color=RED)),
+ ("7月に届いた封筒を",       dict(big=["封筒を", "出してください"], color=TEAL)),
+ ("お知らせのほうだったら",     dict(big=["カードを", "財布に戻す"], color=TEAL)),
+ ("資格確認書のかたは、いちばん", dict(big=["限度区分の欄", "を見る"], color=TEAL, size=84)),
+ ("窓口は、後期高齢者医療",     dict(big=["窓口は", "広域連合"], color=TEAL,
+                                sub=["年金事務所ではない"])),
+ ("原田さんは、あれから",      dict(big=["忘れたときに", "困るから"], color=NAVY, size=84)),
+ ("それでは、今日の研究ノート",  dict(big=["今日の", "研究ノート"], color=NAVY)),
+ ("8月からは、二つに",       dict(big=["どちらが", "届きましたか"], color=NAVY)),
+ ("8月1日の時点で85歳以上のかたには、資格確認書",
+                          dict(big=["8月1日時点", "85歳以上"], color=NAVY, size=84)),
+ ("8月2日以降に85歳に",    dict(big=["8月2日以降", "届きません"], color=RED, size=84)),
+ ("84歳以下は、過去12か月", dict(big=["12か月に", "6回以上"], color=RED, size=110)),
+ ("資格情報のお知らせは、一枚",  dict(big=["一枚では", "使えません"], color=RED)),
+ ("資格確認書の限度区分の欄が白い", dict(big=["白いときは", "申請できます"], color=TEAL, size=84)),
+ ("出てきた紙の名前は",       dict(big=["カードは", "どこですか"], color=NAVY)),
+ ("三つとも即答できた",       dict(big=["封筒を", "探すところから"], color=TEAL, size=84)),
+ ("次の年金支給日の前にも",     dict(big=["直前チェック", "をお届け"], color=TEAL, size=84)),
+ ("なお、今日お伝えした",      dict(big=["令和8年", "9月時点"], color=NAVY)),
+ ("ご自身の分は、お住まいの",   dict(big=["また次回の", "研究で"], color=NAVY)),
+]
+
+_TAIL = re.compile(r"[、。]")
+
+
+def _auto(text: str):
+    """Rút chữ từ chính lời đọc: mệnh đề CUỐI của câu đầu (vị ngữ), chẻ ≤9 ký, ≤2 dòng."""
+    s = re.sub(r"^(?:\[[^\]]*\])+", "", text).strip().split("。")[0]
+    parts = [p for p in _TAIL.split(s) if p]
+    body = parts[-1] if parts else s
+    if len(body) < 6 and len(parts) > 1:
+        body = parts[-2] + body
+    body = body[:18]
+    if len(body) <= 9:
+        return [body]
+    cut = 9
+    for i in range(9, max(4, len(body) - 4), -1):
+        if body[i - 1] in "はがをにでとのも":
+            cut = i
+            break
+    return [body[:cut], body[cut:18]]
+
+
+def _build():
+    shots = json.loads((VD / "plan29.json").read_text(encoding="utf-8"))["shots"]
+    hit, out = {}, {}
+    for cue, tel in CUES:
+        ks = [k for k, s in enumerate(shots) if cue in s["text"]]
+        hit[cue] = ks
+    taken = set()
+    for cue, tel in CUES:
+        for k in hit[cue]:
+            if k not in taken:
+                out[k] = tel
+                taken.add(k)
+                break
+    for k, s in enumerate(shots):
+        out.setdefault(k, dict(big=_auto(s["text"]), color=NAVY))
+    return out, hit, shots
+
+
+TELOP, _HIT, _SHOTS = _build()
+
+
+if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    miss = [c for c, ks in _HIT.items() if not ks]
+    multi = [(c, ks) for c, ks in _HIT.items() if len(ks) > 1]
+    nocue = [k for k, s in enumerate(_SHOTS)
+             if re.search(r"[0-9]", s["text"]) and k not in
+             {kk for c, _t in CUES for kk in _HIT[c][:1]}]
+    print(f"ô: {len(TELOP)} · cue {len(CUES)} · tự sinh {len(TELOP)-len(CUES)+len(miss)}")
+    print(f"🔴 cue KHÔNG khớp ô nào: {len(miss)}")
+    for c in miss[:10]:
+        print(f"     «{c}»")
+    print(f"⚠️ cue khớp NHIỀU ô: {len(multi)}")
+    for c, ks in multi[:6]:
+        print(f"     «{c}» -> {ks}")
+    print(f"🔴 ô CÓ SỐ mà không có cue: {len(nocue)} {nocue[:12]}")
+    over = [k for k, v in TELOP.items() if any(len(x) > 9 for x in v["big"])]
+    print(f"🔴 dòng >9 ký: {len(over)} {over[:8]}")

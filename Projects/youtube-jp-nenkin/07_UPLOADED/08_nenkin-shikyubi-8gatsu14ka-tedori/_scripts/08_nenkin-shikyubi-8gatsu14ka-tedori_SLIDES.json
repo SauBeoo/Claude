@@ -1,0 +1,1632 @@
+[
+ {
+  "photo": true,
+  "q": "japanese mailbox with postcard mail morning light",
+  "match": "この春、あなたの年金は"
+ },
+ {
+  "photo": true,
+  "q": "worried asian senior man looking at wallet at home",
+  "match": "では、なぜ、暮らしが楽に"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_smile",
+  "label": "田中さん(67)・横浜",
+  "match": "横浜にお住まいの田中さん"
+ },
+ {
+  "photo": true,
+  "cast": "prop_tsucho",
+  "label": "8月14日の記帳",
+  "match": "この8月14日、通帳に記録"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "同じ年金・違う手取り",
+   "rows": [
+    [
+     "8月14日",
+     "30万2千円"
+    ],
+    [
+     "10月15日",
+     "29万円",
+     "bad"
+    ],
+    [
+     "差",
+     "-1万2千円",
+     "bad"
+    ]
+   ]
+  },
+  "match": "ところが、10月15日の振込は"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_think",
+  "label": "田中さん(67)・横浜",
+  "match": "年金の額は、1円も変わって"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "下半期3回の合計",
+   "lines": [
+    "3万6千円",
+    "ひと月の食費に近い額"
+   ],
+   "mark": "cross"
+  },
+  "match": "下半期の3回を合わせると"
+ },
+ {
+  "photo": true,
+  "q": "stack of official letters in a wooden drawer",
+  "match": "そして田中さんは、これを6月の"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "年金振込通知書",
+   "quote": "8月以降の額は、予定額として6月の額を記載しています",
+   "source": "日本年金機構「年金振込通知書」"
+  },
+  "match": "書いてあったんです"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "label": "当研究室",
+  "match": "当研究室は、制度を読む"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "今日わかること",
+   "lines": [
+    "6つの欄の意味",
+    "10月にいくら減るか",
+    "自分で出せる表"
+   ]
+  },
+  "match": "今日は、そのハガキを一緒に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "覚えるのはこれだけ",
+   "lines": [
+    "8月14日の数字と",
+    "10月15日の数字は",
+    "違います"
+   ]
+  },
+  "match": "8月14日の数字と、10月15日"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "引き算は2回ある",
+   "lines": [
+    "天引きの前に",
+    "もう1回 引かれている"
+   ]
+  },
+  "match": "引き算の話をする前に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "6月に届く2枚",
+   "rows": [
+    [
+     "年金額改定通知書",
+     "額が変わった"
+    ],
+    [
+     "年金振込通知書",
+     "毎回いくら入る"
+    ]
+   ]
+  },
+  "match": "6月に届くハガキは、2種類"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "年金額改定通知書",
+   "lines": [
+    "額が変わりました",
+    "というお知らせ"
+   ]
+  },
+  "match": "まず、改定通知書のほうを"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "令和8年度の改定",
+   "rows": [
+    [
+     "老齢基礎年金",
+     "+1.9%",
+     "ok"
+    ],
+    [
+     "厚生年金(報酬比例)",
+     "+2.0%",
+     "ok"
+    ]
+   ]
+  },
+  "match": "令和8年度、つまり今年の4月分から"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_laugh",
+  "label": "田中さん(67)・横浜",
+  "match": "上がった。"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "上がったのに、なぜ",
+   "rows": [
+    [
+     "物価",
+     "+3.2%",
+     "bad"
+    ],
+    [
+     "年金",
+     "+2.0%"
+    ],
+    [
+     "実質",
+     "-1.2%",
+     "bad"
+    ]
+   ]
+  },
+  "match": "物価の変動率は"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_shock",
+  "label": "田中さん(67)・横浜",
+  "match": "この差の1.2は"
+ },
+ {
+  "photo": true,
+  "q": "japanese supermarket price tags vegetables",
+  "match": "あなたの暮らしの中で"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "2.0%になった道すじ",
+   "lines": [
+    "物価 +3.2%",
+    "賃金 +2.1%",
+    "スライド調整",
+    "年金 +2.0%"
+   ]
+  },
+  "match": "なぜ物価と同じだけ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "どちらも嘘ではない",
+   "lines": [
+    "紙は「上がった」",
+    "財布は「減った」"
+   ]
+  },
+  "match": "紙は「上がりました」と言い"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "今回の支給日",
+   "lines": [
+    "8月14日",
+    "金曜日"
+   ],
+   "mark": "ok"
+  },
+  "match": "2026年の8月15日は土曜"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "8月14日に入るのは",
+   "rows": [
+    [
+     "6月分",
+     "1つめ"
+    ],
+    [
+     "7月分",
+     "2つめ"
+    ],
+    [
+     "8月分",
+     "入りません",
+     "bad"
+    ]
+   ]
+  },
+  "match": "そして振り込まれるのは"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin_happy",
+  "label": "当研究室",
+  "match": "大事なのは、その日に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "年金振込通知書",
+   "rows": [
+    [
+     "届く時期",
+     "年1回・6月"
+    ],
+    [
+     "書いてある範囲",
+     "6月〜翌年4月"
+    ],
+    [
+     "中身",
+     "毎回の振込額"
+    ]
+   ]
+  },
+  "match": "では、振込通知書を開きます"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_smile",
+  "label": "田中さん(67)・横浜",
+  "match": "田中さんには、ちょっとした習慣"
+ },
+ {
+  "photo": true,
+  "cast": "prop_tsucho",
+  "label": "記帳しに行く朝",
+  "match": "支給日の翌日、朝いちばんに"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_smile",
+  "label": "田中さん(67)・横浜",
+  "match": "あの、機械が紙を吸い込んで"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_laugh",
+  "label": "田中さん(67)・横浜",
+  "match": "「べつに、増えているわけ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "田中さんが見た欄",
+   "rows": [
+    [
+     "左端 6月",
+     "確認した"
+    ],
+    [
+     "8月以降",
+     "見ていない",
+     "warn"
+    ]
+   ]
+  },
+  "match": "その田中さんが、6月に届いた"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_laugh",
+  "label": "田中さん(67)・横浜",
+  "match": "たいていの方が、そうします"
+ },
+ {
+  "photo": true,
+  "q": "magnifying glass over small print document",
+  "match": "ところが、その表の下に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "ここが落とし穴",
+   "lines": [
+    "予定額"
+   ],
+   "mark": "cross"
+  },
+  "match": "――予定額。"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "同じ1枚の中で",
+   "rows": [
+    [
+     "6月の欄",
+     "確定額",
+     "ok"
+    ],
+    [
+     "8月以降の欄",
+     "予定額",
+     "warn"
+    ]
+   ]
+  },
+  "match": "つまり、あのハガキの8月"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "年金振込通知書 注記",
+   "quote": "決定額は、市区町村から送付される通知書でご確認ください",
+   "source": "日本年金機構「年金振込通知書」"
+  },
+  "match": "こちらが、日本年金機構の"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_think",
+  "label": "田中さん(67)・横浜",
+  "match": "私たちは、役所から来た紙を"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "清書するのは誰か",
+   "lines": [
+    "市区町村"
+   ],
+   "mark": "ok"
+  },
+  "match": "では、清書するのは誰か"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "2つの役所の分担",
+   "lines": [
+    "年金機構 = 額面",
+    "市区町村 = 引かれる額",
+    "手取り"
+   ]
+  },
+  "match": "年金の額を決めるのは"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "label": "当研究室",
+  "match": "2つの役所が、1枚の"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "引き算をする4人",
+   "lines": [
+    "介護保険料",
+    "医療保険料",
+    "所得税",
+    "住民税+森林環境税"
+   ]
+  },
+  "match": "差し引く相手は、4人です"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "1人め 介護保険料",
+   "lines": [
+    "65歳以上の全員",
+    "今日の主役"
+   ],
+   "mark": "warn"
+  },
+  "match": "今日の主役はこの人ですから"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "2人め 医療保険料",
+   "rows": [
+    [
+     "75歳以上",
+     "後期高齢者医療"
+    ],
+    [
+     "65〜74歳",
+     "国民健康保険"
+    ]
+   ]
+  },
+  "match": "後期高齢者医療保険料、または"
+ },
+ {
+  "photo": true,
+  "q": "japanese tax form and calculator on desk",
+  "match": "3人めが、所得税と"
+ },
+ {
+  "photo": true,
+  "q": "japanese forest cedar trees sunlight",
+  "match": "4人めが、個人住民税と"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "森林環境税",
+   "lines": [
+    "お一人 年額1000円",
+    "住民税と一緒に集める"
+   ]
+  },
+  "match": "令和6年度から始まった国の税金で"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_idea",
+  "label": "田中さん(67)・横浜",
+  "match": "では、田中さんの階段を"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_think",
+  "label": "田中さん(67)・横浜",
+  "match": "これ、手続き漏れでは"
+ },
+ {
+  "photo": true,
+  "q": "asian senior man working at supermarket",
+  "match": "田中さんはまだ週5日勤めていて"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_surprise",
+  "label": "田中さん(67)・横浜",
+  "match": "働いているのに所得税がゼロ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "8月14日の手取り",
+   "rows": [
+    [
+     "年金支払額",
+     "32万円"
+    ],
+    [
+     "介護保険料",
+     "-1万2千円"
+    ],
+    [
+     "医療保険料",
+     "0円"
+    ],
+    [
+     "所得税",
+     "0円"
+    ],
+    [
+     "住民税ほか",
+     "-6千円"
+    ],
+    [
+     "控除後振込額",
+     "30万2千円",
+     "ok"
+    ]
+   ],
+   "anim": true,
+   "circle": 5
+  },
+  "match": "32万円から、1万2千円"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "田中さんの8月14日",
+   "lines": [
+    "30万2千円"
+   ],
+   "mark": "ok"
+  },
+  "match": "これが、田中さんの8月14日"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "label": "当研究室",
+  "match": "手を動かしていただきたいので"
+ },
+ {
+  "photo": true,
+  "q": "elderly hands holding a postcard at table",
+  "match": "お手元にハガキがあれば"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "あなたの番",
+   "rows": [
+    [
+     "いちばん上の額",
+     "?"
+    ],
+    [
+     "いちばん下の額",
+     "?"
+    ],
+    [
+     "差",
+     "?",
+     "warn"
+    ]
+   ]
+  },
+  "match": "この2つの数字を、引いてみて"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_shock",
+  "label": "田中さん(67)・横浜",
+  "match": "そして、その差は、10月から"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "特別徴収のしくみ",
+   "lines": [
+    "年金の額",
+    "先に引く",
+    "残りを振込"
+   ]
+  },
+  "match": "これは特別徴収という"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "引かれる条件は2本",
+   "lines": [
+    "年金が年18万円以上",
+    "介護+医療が年金の半分以下"
+   ]
+  },
+  "match": "ただ、誰でもそうなるわけでは"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "2本め の線",
+   "rows": [
+    [
+     "介護+医療の合計",
+     "年金の1/2まで"
+    ],
+    [
+     "超えたら",
+     "年金から引かない"
+    ]
+   ]
+  },
+  "match": "これが大事なんですが、介護保険料と"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_think",
+  "label": "田中さん(67)・横浜",
+  "match": "年金の半分が保険料で"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "よくある勘違い",
+   "lines": [
+    "空欄=払わなくていい",
+    "引かれないお金は別で来る"
+   ],
+   "mark": "cross"
+  },
+  "match": "ここで、間違えやすいことを"
+ },
+ {
+  "photo": true,
+  "q": "cardboard moving boxes in japanese apartment",
+  "match": "それから、引っ越したときや"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_idea",
+  "label": "田中さん(67)・横浜",
+  "match": "ハガキの数字が急に変わっていたら"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_surprise",
+  "label": "田中さん(67)・横浜",
+  "match": "では、いよいよ主役です"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "前半3回 = 仮徴収",
+   "rows": [
+    [
+     "4月",
+     "仮"
+    ],
+    [
+     "6月",
+     "仮"
+    ],
+    [
+     "8月",
+     "仮"
+    ]
+   ],
+   "mark": "warn"
+  },
+  "match": "まず、4月・6月・8月の3回"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "後半3回 = 本徴収",
+   "rows": [
+    [
+     "10月",
+     "本",
+     "bad"
+    ],
+    [
+     "12月",
+     "本",
+     "bad"
+    ],
+    [
+     "2月",
+     "本",
+     "bad"
+    ]
+   ]
+  },
+  "match": "そして、10月・12月・2月の3回"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_think",
+  "label": "田中さん(67)・横浜",
+  "match": "なぜ仮なのか"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "本徴収 1回分の出し方",
+   "lines": [
+    "年額から",
+    "仮徴収でもう払った分を引き",
+    "3で割る"
+   ]
+  },
+  "match": "そして7月に年額が確定したら"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "保険料の特別徴収",
+   "quote": "仮徴収(4月・6月・8月) / 本徴収(10月・12月・2月)は残額を3分割",
+   "source": "世田谷区「保険料の特別徴収」"
+  },
+  "match": "これも、役所のページに"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_smile",
+  "label": "田中さん(67)・横浜",
+  "match": "田中さんに当てはめます"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "今年度の年額",
+   "rows": [
+    [
+     "令和8年度 年額",
+     "10万8千円",
+     "warn"
+    ],
+    [
+     "上がった理由",
+     "去年よく働いた"
+    ]
+   ]
+  },
+  "match": "ところが令和8年度の年額は"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "後半で回収する分",
+   "rows": [
+    [
+     "年額",
+     "10万8千円"
+    ],
+    [
+     "前半で払った",
+     "-3万6千円"
+    ],
+    [
+     "残り",
+     "7万2千円"
+    ],
+    [
+     "1回あたり",
+     "2万4千円",
+     "bad"
+    ]
+   ]
+  },
+  "match": "残りは、10万8千円から"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "8月 と 10月",
+   "rows": [
+    [
+     "8月",
+     "1万2千円"
+    ],
+    [
+     "10月から",
+     "2万4千円",
+     "bad"
+    ],
+    [
+     "差",
+     "-1万2千円",
+     "bad"
+    ]
+   ],
+   "anim": true,
+   "circle": 2
+  },
+  "match": "10月からは、2万4千円に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "下半期の合計",
+   "lines": [
+    "3万6千円"
+   ],
+   "mark": "cross"
+  },
+  "match": "下半期3回で、3万6千円"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_think",
+  "label": "田中さん(67)・横浜",
+  "match": "田中さんの年金は、1円も減って"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_laugh",
+  "label": "田中さん(67)・横浜",
+  "match": "ここ、皮肉ですよね"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "重なる3か月",
+   "rows": [
+    [
+     "10月",
+     "本徴収 開始"
+    ],
+    [
+     "12月",
+     "本徴収"
+    ],
+    [
+     "2月",
+     "本徴収"
+    ]
+   ]
+  },
+  "match": "でも、これが下半期の3回に"
+ },
+ {
+  "photo": true,
+  "q": "japanese kerosene heater winter room",
+  "match": "灯油が上がり、電気が上がり"
+ },
+ {
+  "photo": true,
+  "q": "elderly japanese person warming hands winter",
+  "match": "いちばんお金がかかる3か月に"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_cry",
+  "label": "田中さん(67)・横浜",
+  "match": "子どもに「今月は少し厳しい」と"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "先に知っていれば",
+   "rows": [
+    [
+     "8月から よけておく",
+     "1万2千円 x3"
+    ],
+    [
+     "冬に慌てない",
+     "3万6千円",
+     "ok"
+    ]
+   ]
+  },
+  "match": "知っていれば、8月のうちから"
+ },
+ {
+  "photo": true,
+  "q": "envelope from japanese city office on table",
+  "match": "ご自身の額は、7月ごろに"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin_happy",
+  "label": "当研究室",
+  "match": "ここで、ひとつだけお願いです"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "label": "当研究室",
+  "match": "田中さんの所得税が、なぜ0円"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "多くの方が覚えている数字",
+   "lines": [
+    "158万円"
+   ],
+   "mark": "warn"
+  },
+  "match": "ここで、多くの方が古い数字を"
+ },
+ {
+  "photo": true,
+  "cast": "tanaka_surprise",
+  "label": "田中さん(67)・横浜",
+  "match": "その数字は、もう変わっています"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "令和7年度税制改正",
+   "quote": "公的年金の源泉徴収の対象とならない年金額が、158万円未満から205万円未満に引き上げられました",
+   "source": "日本年金機構"
+  },
+  "match": "「所得税の基礎控除の見直しに"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "二段階で動いた",
+   "rows": [
+    [
+     "もとの基準",
+     "158万円"
+    ],
+    [
+     "令和7年度改正",
+     "205万円"
+    ],
+    [
+     "令和8年度改正",
+     "214万円",
+     "ok"
+    ]
+   ],
+   "anim": true,
+   "circle": 3
+  },
+  "match": "205万円未満から、214万円未満へ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "動いた幅",
+   "lines": [
+    "56万円"
+   ],
+   "mark": "ok"
+  },
+  "match": "56万円も動いているんです"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "田中さんの場合",
+   "rows": [
+    [
+     "年金 年額",
+     "192万円"
+    ],
+    [
+     "基準",
+     "214万円"
+    ],
+    [
+     "所得税",
+     "0円",
+     "ok"
+    ]
+   ]
+  },
+  "match": "田中さんの年金は、月16万円の12か月"
+ },
+ {
+  "photo": true,
+  "cast": "takahashi_work",
+  "label": "高橋さん(65)・東京",
+  "match": "もうひとり、東京の高橋さんも"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "高橋さんの場合",
+   "rows": [
+    [
+     "年金 年額",
+     "197万円"
+    ],
+    [
+     "基準",
+     "214万円"
+    ],
+    [
+     "所得税",
+     "0円",
+     "ok"
+    ]
+   ]
+  },
+  "match": "合わせると、年でおよそ197万円"
+ },
+ {
+  "photo": true,
+  "cast": "takahashi_think",
+  "label": "高橋さん(65)・東京",
+  "match": "高橋さん、通知書を二度見した"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "今年だけの事情",
+   "lines": [
+    "11月まで 旧基準で徴収",
+    "12月に精算",
+    "多い分は戻る"
+   ]
+  },
+  "match": "令和8年度の改正は、令和8年分から"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "8月の所得税欄",
+   "rows": [
+    [
+     "いま載っている額",
+     "旧基準",
+     "warn"
+    ],
+    [
+     "12月",
+     "精算・還付",
+     "ok"
+    ]
+   ]
+  },
+  "match": "つまり、8月14日の通知書に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "確認するところ",
+   "lines": [
+    "年金事務所",
+    "ねんきんネット"
+   ],
+   "mark": "ok"
+  },
+  "match": "うちはいくら戻るのか"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "高橋さんの空欄3つ",
+   "lines": [
+    "介護保険料が空欄",
+    "基礎年金がない",
+    "住民税が小さい"
+   ]
+  },
+  "match": "高橋さんの通知書には、不思議な"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "空欄の意味",
+   "lines": [
+    "免除された",
+    "まだ順番が来ていない"
+   ],
+   "mark": "cross"
+  },
+  "match": "――残念ですが、そういう話では"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "はじめは普通徴収",
+   "lines": [
+    "納付書",
+    "口座振替"
+   ],
+   "mark": "warn"
+  },
+  "match": "65歳になったばかりの方は"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "切り替わる順番",
+   "lines": [
+    "65歳になる",
+    "しばらく納付書",
+    "年金から天引き"
+   ]
+  },
+  "match": "数か月から1年ほどで"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "持ち帰る一言",
+   "lines": [
+    "空欄は",
+    "まだ来ていないだけ"
+   ],
+   "mark": "warn"
+  },
+  "match": "ですから、空欄は「免除」ではなく"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "ふたつめ",
+   "rows": [
+    [
+     "載っている",
+     "厚生年金+加給年金"
+    ],
+    [
+     "載っていない",
+     "基礎年金(繰り下げ中)"
+    ]
+   ]
+  },
+  "match": "老齢基礎年金が、載っていません"
+ },
+ {
+  "photo": true,
+  "cast": "takahashi_work",
+  "label": "高橋さん(65)・東京",
+  "match": "以前の研究で、老齢厚生年金は"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "みっつめ",
+   "rows": [
+    [
+     "年金から引ける",
+     "年金にかかる分だけ"
+    ],
+    [
+     "給料にかかる分",
+     "納付書で別に来る",
+     "bad"
+    ]
+   ]
+  },
+  "match": "住民税の欄が小さいのに"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "退職の翌年に起きること",
+   "rows": [
+    [
+     "収入",
+     "減っている"
+    ],
+    [
+     "住民税の請求",
+     "いちばん高い",
+     "bad"
+    ]
+   ]
+  },
+  "match": "退職して収入が減った年に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "住民税の天引き開始",
+   "rows": [
+    [
+     "上半期",
+     "納付書"
+    ],
+    [
+     "10月分の年金から",
+     "天引き開始",
+     "warn"
+    ]
+   ]
+  },
+  "match": "65歳になって新しく「年金からの"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "高橋さんの10月",
+   "rows": [
+    [
+     "介護保険料",
+     "天引き開始",
+     "bad"
+    ],
+    [
+     "住民税",
+     "天引き開始",
+     "bad"
+    ]
+   ],
+   "anim": true,
+   "circle": 2
+  },
+  "match": "つまり高橋さんには、10月に二つ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "今日の持ち帰り",
+   "lines": [
+    "空欄は",
+    "まだ来ていないだけ"
+   ],
+   "mark": "warn"
+  },
+  "match": "「空欄は、まだ来ていないだけ」"
+ },
+ {
+  "photo": true,
+  "cast": "ito_cafe",
+  "label": "伊藤さん(68)・福岡",
+  "match": "もう一人だけ。福岡の伊藤さん"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "伊藤さんの年金",
+   "rows": [
+    [
+     "国民年金のみ",
+     "月6万5千円"
+    ],
+    [
+     "年額",
+     "78万円"
+    ]
+   ]
+  },
+  "match": "厚生年金がなく、国民年金だけ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "届くハガキの形",
+   "rows": [
+    [
+     "ふつう",
+     "はがきサイズ"
+    ],
+    [
+     "年金+給付金",
+     "大判はがき",
+     "ok"
+    ]
+   ]
+  },
+  "match": "大判のハガキ、つまり大きい一枚"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "2枚が1枚になる",
+   "lines": [
+    "改定通知書",
+    "振込通知書",
+    "大判はがき1枚"
+   ]
+  },
+  "match": "年金と、年金生活者支援給付金の"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "伊藤さんの額面",
+   "rows": [
+    [
+     "年金 2か月分",
+     "13万円"
+    ],
+    [
+     "支援給付金",
+     "1万1240円"
+    ],
+    [
+     "合計",
+     "14万1240円",
+     "ok"
+    ]
+   ]
+  },
+  "match": "年金の13万円と合わせて"
+ },
+ {
+  "photo": true,
+  "cast": "ito_cafe",
+  "label": "伊藤さん(68)・福岡",
+  "match": "伊藤さん、こう言っていました"
+ },
+ {
+  "photo": true,
+  "q": "warm light hands holding letter japanese home",
+  "match": "数字の話ばかりしてきましたけれど"
+ },
+ {
+  "photo": true,
+  "q": "tablet screen on desk japanese home",
+  "match": "ねんきんネットで見られます"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "よくある誤解 3つ",
+   "lines": [
+    "158万円までなら税金ゼロ",
+    "8月の額が下半期も続く",
+    "空欄は免除された"
+   ],
+   "mark": "cross"
+  },
+  "match": "最後に、この動画でいちばん"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "研究ノート｜年間手取り表",
+   "rows": [
+    [
+     "年金支払額",
+     "____"
+    ],
+    [
+     "介護保険料",
+     "____"
+    ],
+    [
+     "医療保険料",
+     "____"
+    ],
+    [
+     "所得税",
+     "____"
+    ],
+    [
+     "住民税ほか",
+     "____"
+    ],
+    [
+     "控除後振込額",
+     "____"
+    ]
+   ]
+  },
+  "match": "それでは、今日の研究ノートです"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "10月の欄の出し方",
+   "rows": [
+    [
+     "年額",
+     "____"
+    ],
+    [
+     "4・6・8月の合計",
+     "-____"
+    ],
+    [
+     "3で割る",
+     "= ____",
+     "bad"
+    ]
+   ]
+  },
+  "match": "10月の介護保険料は、年額から"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "この差額の意味",
+   "lines": [
+    "3をかけると",
+    "10月〜2月の合計"
+   ],
+   "mark": "warn"
+  },
+  "match": "この差額が、冬に効いてくる"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "介護保険料 決定通知書",
+   "lines": [
+    "7月ごろ 市区町村から",
+    "ここに年額が載っている"
+   ]
+  },
+  "match": "年額は、7月ごろに市区町村から"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "label": "当研究室",
+  "match": "なお、この表の数字は制度上の"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "8月14日 金曜日",
+   "lines": [
+    "6月分と7月分",
+    "が振り込まれます"
+   ]
+  },
+  "match": "6月分と7月分の年金が振り込まれます"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "6月のハガキに",
+   "lines": [
+    "もう書かれていた",
+    "ただし後半は下書き"
+   ],
+   "mark": "warn"
+  },
+  "match": "その金額は、6月に届いた1枚の"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "もう一度だけ",
+   "lines": [
+    "8月14日の数字と",
+    "10月15日の数字は",
+    "違います"
+   ]
+  },
+  "match": "もう一度だけ言います"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin_happy",
+  "label": "当研究室",
+  "match": "でも、この表を書いてしまえば"
+ },
+ {
+  "photo": true,
+  "q": "hand putting letter into japanese mailbox",
+  "match": "もしよろしければ、書いた1枚を"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "次回の研究",
+   "lines": [
+    "9月に届く",
+    "扶養親族等申告書"
+   ]
+  },
+  "match": "次回は、9月に届く「扶養親族等"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "label": "当研究室",
+  "match": "それでは、また次回の研究で"
+ }
+]

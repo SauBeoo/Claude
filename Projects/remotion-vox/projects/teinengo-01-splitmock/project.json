@@ -1,0 +1,162 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "teinengo-01-splitmock",
+  "channel": "teinengo",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080
+ },
+ "timeline": {
+  "durationInFrames": 240
+ },
+ "tracks": [
+  {
+   "id": "bg",
+   "name": "bg",
+   "type": "background",
+   "clips": [
+    {
+     "id": "bg0",
+     "kind": "background",
+     "from": 0,
+     "durationInFrames": 240,
+     "tint": "#1E2638",
+     "tintOpacity": 1,
+     "grid": false,
+     "dots": false
+    }
+   ]
+  },
+  {
+   "id": "pics",
+   "name": "pics",
+   "type": "video",
+   "clips": [
+    {
+     "id": "A",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 240,
+     "asset": "assets/A_left.png",
+     "layout": {
+      "x": 40,
+      "y": 170,
+      "w": 900,
+      "h": 506
+     },
+     "filter": {
+      "saturate": 0.35,
+      "brightness": 0.9
+     },
+     "fadeInFrames": 12
+    },
+    {
+     "id": "B",
+     "kind": "video",
+     "from": 9,
+     "durationInFrames": 231,
+     "asset": "assets/B_right.png",
+     "layout": {
+      "x": 980,
+      "y": 170,
+      "w": 900,
+      "h": 506
+     },
+     "filter": {
+      "saturate": 1.12,
+      "brightness": 1.04
+     },
+     "fadeInFrames": 12
+    }
+   ]
+  },
+  {
+   "id": "labels",
+   "name": "labels",
+   "type": "text",
+   "clips": [
+    {
+     "id": "lab_l",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 240,
+     "content": "退屈になる人",
+     "preset": "tag",
+     "color": "#AEB9CB",
+     "animation": "pop",
+     "layout": {
+      "x": 282,
+      "y": 52
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "lab_r",
+     "kind": "text",
+     "from": 9,
+     "durationInFrames": 231,
+     "content": "楽しくなる人",
+     "preset": "tag",
+     "color": "#FFB547",
+     "animation": "pop",
+     "layout": {
+      "x": 1222,
+      "y": 52
+     },
+     "fontSize": 58
+    }
+   ]
+  },
+  {
+   "id": "quotes",
+   "name": "quotes",
+   "type": "text",
+   "clips": [
+    {
+     "id": "q_l",
+     "kind": "text",
+     "from": 20,
+     "durationInFrames": 220,
+     "content": "「起きても、することがない」",
+     "preset": "telop",
+     "color": "#FFFFFF",
+     "animation": "pop",
+     "layout": {
+      "x": 112,
+      "y": 710
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "q_r",
+     "kind": "text",
+     "from": 40,
+     "durationInFrames": 200,
+     "content": "「とりあえず、着替えるか」",
+     "preset": "telop",
+     "color": "#FFFFFF",
+     "animation": "pop",
+     "layout": {
+      "x": 1079,
+      "y": 710
+     },
+     "fontSize": 54
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "none",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "たったこれだけの差が、一年後には、まるで別の人生になります。",
+    "startMs": 0,
+    "endMs": 8000
+   }
+  ]
+ }
+}

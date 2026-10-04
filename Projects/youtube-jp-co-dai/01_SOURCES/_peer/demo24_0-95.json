@@ -1,0 +1,37 @@
+{
+ "file": "demo24_0-95.mp4",
+ "stem": "demo24_0-95",
+ "views": null,
+ "label": "smoke",
+ "dur": 95.0,
+ "chars": 446,
+ "cps": 4.69,
+ "entry_s": 22.0,
+ "entry_t": "編みどう半分でとめず いっぱいまであけて寄せてください",
+ "n_free45": 3,
+ "n_win": 8,
+ "gap_payoff_s": 19.0,
+ "n_flip": 1,
+ "first_flip_s": 33.0,
+ "n_open": 2,
+ "n_wave": 1,
+ "loop_close_pct": null,
+ "money_pct": null,
+ "cta_pct": 61,
+ "cuts": 2,
+ "cuts_per_min": 1.26,
+ "cuts_first60": 2,
+ "hold_max_s": 44.6,
+ "hold_median_s": 39.5,
+ "fails": [
+  "O6 giây 0–45 có 3 câu KHÔNG TRẢ TIỀN (trần 1) → đây là cái vách làm @45s tụt còn 41–50%",
+  "O11 KHÔNG thấy chỗ đóng LOOP LỚN (câu gọi lại lời hứa cold open: 「冒頭でお約束した…」) → lời hứa mở mà không đóng = mất đuôi bài"
+ ],
+ "warns": [
+  "O7 84 ký đầu (15s) chưa có STAKE cụ thể của người xem — cần con số/giá HOẶC cảnh giác quan/hậu quả (luật 2026-07-21, nới 2026-08-11: video 02 giữ 88,9% @15s bằng cảnh giác quan, 0 con số)",
+  "O18 KHÔNG dò được chương 「vì sao bị mất」 (dòng tiền) sau 40% bài — thiếu chương, hoặc từ vựng ngoài MONEY_CH",
+  "O14 KHÔNG thấy câu CTA (「高評価」) — CTA giữa video là bắt buộc (`cta-midvideo.md` §2.4)"
+ ],
+ "sheet": "E:\\Claude\\Projects\\youtube-jp-co-dai\\01_SOURCES\\_peer\\demo24_0-95_sheet.jpg",
+ "frames": 4
+}

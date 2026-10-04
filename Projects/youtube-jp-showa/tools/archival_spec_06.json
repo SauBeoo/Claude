@@ -1,0 +1,159 @@
+{
+ "_note": "Video 06 初任給の家計簿 (昭和45年) — phim that 'Japan Today' (1959, NSC/CIA, gov.archives.arc.1692903, CC0, MAU, CAM). Cac doan duoi day deu NAM TRONG vung CHUA DUNG cua FOOTAGE_USED.json (kiem 2026-08-29, doi chieu tay + cut_archival tu chan). Contact sheet soi mat: 06_VIDEO/_footage_test/scrub_v06/*.jpg (W3_1808, X1_2803, X2_3148, X3_1232, X4_2241) + japan_today_scrub_fresh/J_ginza,K_bar_street.",
+ "_caveat": "PHIM 1959 dung cho video ke ve 1970 — chenh 11 nam. Chap nhan co chu dich: clip la B-ROLL KHONG KHI, khong phai bang chung nam thang; giong doc khong bao gio noi 'day la canh nam 1970'. Uu tien doan KHONG co moc thoi dai lo lieu (dam dong, dong ruong, hai che, mat tien quan). Cung tien le video 01/02/04/05.",
+ "cuts": [
+  {
+   "id": "jt06_01_crowd_toward",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1143,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "19:03-19:11 dam nguoi di bo huong ve may quay, ao khoac + com-le — COLD OPEN 'anh la ai trong dam nay'"
+  },
+  {
+   "id": "jt06_02_tokyo_skyline",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1089,
+   "dur": 10,
+   "ybias": 0.55,
+   "grade": 1.0,
+   "note": "18:09-18:19 duong pho + bang hieu cao tang + o to — 'dong nghiep len Tokyo'"
+  },
+  {
+   "id": "jt06_03_ginza_district",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1099,
+   "dur": 9,
+   "ybias": 0.55,
+   "grade": 1.0,
+   "note": "18:19-18:28 khu nha cao tang, bang hieu tron do, xe co — bo cuoc 'con lai bao nhieu'"
+  },
+  {
+   "id": "jt06_04_office_street",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1167,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "19:27-19:35 bien 地下鉄 + nguoi tre di duong + toa nha van phong — muc 1 額面/cong ty"
+  },
+  {
+   "id": "jt06_05_young_workers",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 788,
+   "dur": 6,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "note": "13:08-13:14 bon co gai dong phuc lao dong vua di vua cuoi — muc 2 集団就職/dong lua tuoi"
+  },
+  {
+   "id": "jt06_06_plaza_crossing",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1126,
+   "dur": 12,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "18:46-18:58 dam nguoi bang qua quang truong, tau dien phia sau — muc 2 duong ve ky tuc xa"
+  },
+  {
+   "id": "jt06_07_taue",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1687,
+   "dur": 12,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "28:07-28:19 田植え cay lua duoi ruong nuoc — muc 4 gia gao 10kg/1.880 yen"
+  },
+  {
+   "id": "jt06_08_ine_drying",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1738,
+   "dur": 10,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "28:58-29:08 bo lua phoi tren dong — muc 4, noi 'thu gao cua nha' vao bat com ky tuc xa"
+  },
+  {
+   "id": "jt06_09_shoten_street_day",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1310,
+   "dur": 7,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "21:50-21:57 pho hang quan BAN NGAY (bang hieu nha khoa, mai hien), nguoi di bo — DOI VI TRI 2026-08-29 sau khi duyet contact sheet: doan nay la BAN NGAY, khong hop muc 5 (quay mi DEM) -> chuyen sang muc 2 'duong di bo ve ky tuc xa'"
+  },
+  {
+   "id": "jt06_10_ongakukai_crowd",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1185,
+   "dur": 9,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "19:45-19:54 khan gia ngoi kin xem buoi dien ngoai troi — dat o CTA 'nguoi cung mot thoi'"
+  },
+  {
+   "id": "jt06_11_depaato_welcome",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1155,
+   "dur": 9,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "19:15-19:24 mat tien bach hoa + xe buyt — muc 6 'cuoi tuan ra pho xem phim'"
+  },
+  {
+   "id": "jt06_12_crowd_dense",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1280,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "21:20-21:28 dam dong day dac tren pho — muc 6, thang khong du tien thi dung nhin bang"
+  },
+  {
+   "id": "jt06_13_tearoom_men",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1361,
+   "dur": 8,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "22:41-22:49 nhom nam thanh nien com-le di ngang toa nha co bang TEA ROOM — muc 8 喫茶店 (doan dat nhat lo phim cho bai nay)"
+  },
+  {
+   "id": "jt06_14_chatsumi",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1777,
+   "dur": 12,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "29:37-29:49 hai che, non rom trang giua doi che — muc 9 仕送り/co huong"
+  },
+  {
+   "id": "jt06_15_wara_stacks",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1762,
+   "dur": 9,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "29:22-29:31 dong rom + mai che tren dong — muc 9, la thu cua me"
+  },
+  {
+   "id": "jt06_16_ekimae_plaza",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1963,
+   "dur": 9,
+   "ybias": 0.55,
+   "grade": 1.0,
+   "note": "32:43-32:52 quang truong truoc ga + toa nha bach hoa lon — muc 10 郵便局/pho co quan"
+  },
+  {
+   "id": "jt06_17_street_walk",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1984,
+   "dur": 12,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "33:04-33:16 nguoi xach tui di tren cau vuot/pho — muc 10, doi thang khep lai"
+  }
+ ]
+}

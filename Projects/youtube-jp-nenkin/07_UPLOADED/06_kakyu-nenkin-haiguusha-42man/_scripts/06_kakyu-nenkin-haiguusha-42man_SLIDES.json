@@ -1,0 +1,1053 @@
+[
+ {
+  "match": "大阪の山田さん、67歳。",
+  "photo": true,
+  "q": "senior hands holding a letter and envelope on wooden table"
+ },
+ {
+  "match": "その一年で、山田さんのご家庭から",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "待った一年の代償",
+   "rows": [
+    [
+     "本来もらえた",
+     "85万円"
+    ],
+    [
+     "実際にもらえた",
+     "42万円",
+     "bad"
+    ]
+   ],
+   "circle": 1
+  }
+ },
+ {
+  "match": "「増えるほうしか、見ていませんでした",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "山田さんの言葉",
+   "lines": [
+    "増えるほうしか、見ていなかった",
+    "減るほうがあるなんて"
+   ]
+  }
+ },
+ {
+  "match": "――加給年金。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "加給年金",
+   "lines": [
+    "配偶者が年下なら",
+    "年およそ42万円",
+    "月およそ3万5千円"
+   ]
+  }
+ },
+ {
+  "match": "年の差が5歳なら、総額で",
+  "photo": true,
+  "q": "older asian man and younger woman couple walking outdoors"
+ },
+ {
+  "match": "ひとつ。黙って待っていても",
+  "photo": true,
+  "q": "empty japanese mailbox at house entrance"
+ },
+ {
+  "match": "それでも1円も受け取れない方が",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "1円も出ない、ふた通りの人",
+   "lines": [
+    "その一　？",
+    "その二　？"
+   ]
+  }
+ },
+ {
+  "match": "年金と老後のお金研究室へ、ようこそ。",
+  "photo": false,
+  "lines": [
+   "年金と老後のお金研究室"
+  ]
+ },
+ {
+  "match": "はじめに、ひとつだけ。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "今日の対象",
+   "lines": [
+    "ご夫婦のどちらかが年下",
+    "夫が年下でも対象になります"
+   ]
+  }
+ },
+ {
+  "match": "そして、配偶者が年上の方。おひとりで",
+  "photo": true,
+  "cast": "kenkyuin"
+ },
+ {
+  "match": "東京の、高橋さん。65歳。",
+  "photo": true,
+  "cast": "takahashi_work"
+ },
+ {
+  "match": "その高橋さんが、年金の請求書を書いていた",
+  "photo": true,
+  "q": "japanese official application form on desk with pen"
+ },
+ {
+  "match": "「うちの家内は、ずっとパートですし",
+  "photo": true,
+  "q": "asian woman working part time in grocery store"
+ },
+ {
+  "match": "ところが、その空欄のまま出していたら",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "空欄のまま出すと",
+   "rows": [
+    [
+     "受け取り損ね",
+     "212万円",
+     "bad"
+    ]
+   ],
+   "circle": 0
+  }
+ },
+ {
+  "match": "――ペン先が、一度、止まったそうです。",
+  "photo": true,
+  "q": "close up hand hesitating with pen over document"
+ },
+ {
+  "match": "では、加給年金とは、いったい何なのか。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "加給年金とは",
+   "lines": [
+    "家族手当の、年金版"
+   ]
+  }
+ },
+ {
+  "match": "現役のころ、会社によっては、扶養手当や",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "昔の給与明細",
+   "lines": [
+    "扶養手当",
+    "家族手当"
+   ]
+  }
+ },
+ {
+  "match": "つまり、あなたの年金の一部ではなく",
+  "drawn": {
+   "layout": "flow",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "lines": [
+    "あなたの年金",
+    "＋加給年金",
+    "年下の配偶者へ"
+   ]
+  }
+ },
+ {
+  "match": "こちらが、日本年金機構のページです。",
+  "photo": true,
+  "genten": true
+ },
+ {
+  "match": "ふたつ目。あなたが65歳になった時点で",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "② 配偶者が65歳未満",
+   "lines": [
+    "つまり、年下であること"
+   ]
+  }
+ },
+ {
+  "match": "みっつ目。その配偶者の、前年の収入が",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "③ 前年収入 850万円未満",
+   "lines": [
+    "働いていても対象になります"
+   ]
+  }
+ },
+ {
+  "match": "週に3日、スーパーでパートに出ておられる",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "850万円の線まで",
+   "rows": [
+    [
+     "年収110万円",
+     "あと740万",
+     "ok"
+    ],
+    [
+     "年収400万円",
+     "あと450万",
+     "ok"
+    ]
+   ]
+  }
+ },
+ {
+  "match": "働いているから対象外、ではないんですね。",
+  "photo": true,
+  "cast": "kenkyuin_happy"
+ },
+ {
+  "match": "令和8年4月からの額で、配偶者の分が",
+  "photo": true,
+  "genten": true
+ },
+ {
+  "match": "年に、およそ42万円。",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "令和8年4月からの額",
+   "rows": [
+    [
+     "配偶者分",
+     "243,800円"
+    ],
+    [
+     "特別加算",
+     "179,900円"
+    ],
+    [
+     "合計",
+     "423,700円",
+     "ok"
+    ]
+   ],
+   "circle": 2
+  }
+ },
+ {
+  "match": "ここからが、当研究室の本題です。",
+  "photo": true,
+  "cast": "kenkyuin"
+ },
+ {
+  "match": "表にしてみましょう。",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "年の差早見表",
+   "rows": [
+    [
+     "1年",
+     "42万円"
+    ],
+    [
+     "2年",
+     "85万円"
+    ],
+    [
+     "3年",
+     "127万円"
+    ],
+    [
+     "5年",
+     "212万円",
+     "ok"
+    ],
+    [
+     "7年",
+     "297万円"
+    ],
+    [
+     "10年",
+     "424万円"
+    ]
+   ],
+   "circle": 3,
+   "anim": true,
+   "dur": 34,
+   "cps": 7
+  }
+ },
+ {
+  "match": "ここで、いったん、止めてください。",
+  "photo": true,
+  "q": "elderly asian person with calculator and notebook"
+ },
+ {
+  "match": "「うちは3つ違いだから、127万円か」。",
+  "photo": true,
+  "cast": "yamada_happy"
+ },
+ {
+  "match": "年の差が10歳あるご夫婦なら、424万円。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "年の差10歳なら",
+   "lines": [
+    "424万円"
+   ]
+  }
+ },
+ {
+  "match": "一年ぶんの固定資産税と、火災保険と",
+  "photo": true,
+  "q": "unopened bills and envelopes stacked on a table"
+ },
+ {
+  "match": "どちらにしても、取りに行かなければ、ゼロ。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "取りに行かなければ",
+   "lines": [
+    "ゼロ"
+   ]
+  }
+ },
+ {
+  "match": "――高橋さんの奥さまは、60歳。",
+  "photo": true,
+  "cast": "takahashi_think"
+ },
+ {
+  "match": "高橋さんは、この数字を電卓で出したあと",
+  "photo": true,
+  "q": "calculator on desk with paper documents"
+ },
+ {
+  "match": "「部長を12年やって",
+  "photo": true,
+  "cast": "takahashi_work"
+ },
+ {
+  "match": "念のため、この212万円を、暮らしの言葉に",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "212万円は、どれくらい？",
+   "rows": [
+    [
+     "夫婦の生活費",
+     "月25万円"
+    ],
+    [
+     "212万円",
+     "8か月分",
+     "ok"
+    ]
+   ],
+   "circle": 1
+  }
+ },
+ {
+  "match": "さて。冒頭の、約束です。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "1円も出ない、ふた通りの人",
+   "lines": [
+    "その一　繰り下げ待機中",
+    "その二　？"
+   ]
+  }
+ },
+ {
+  "match": "そして高橋さんも、危うく、同じ側に",
+  "photo": true,
+  "cast": "takahashi_think"
+ },
+ {
+  "match": "「年金は、繰り下げよう。70歳まで我慢すれば",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "70歳まで待てば",
+   "lines": [
+    "42パーセント増える"
+   ]
+  }
+ },
+ {
+  "match": "こちらが、日本年金機構の、繰り下げ受給のページです",
+  "photo": true,
+  "genten": true
+ },
+ {
+  "match": "「繰下げ待機期間中は、加給年金額や",
+  "photo": true,
+  "genten": true
+ },
+ {
+  "match": "繰り下げを待っている間、加給年金は、出ません。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "繰下げ待機中",
+   "lines": [
+    "加給年金　0円",
+    "増額の対象にもならない"
+   ]
+  }
+ },
+ {
+  "match": "つまり山田さんが本来受け取れたのは、2年分。",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "山田さんの2年",
+   "rows": [
+    [
+     "本来",
+     "85万円"
+    ],
+    [
+     "実際",
+     "42万円",
+     "bad"
+    ]
+   ],
+   "circle": 1
+  }
+ },
+ {
+  "match": "その天秤に、片方の皿しか乗っていなかった",
+  "photo": true,
+  "q": "old brass balance scale on dark background"
+ },
+ {
+  "match": "その5年をまるごと待機に使えば",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "高橋さんが5年待つと",
+   "rows": [
+    [
+     "加給年金",
+     "212万円"
+    ],
+    [
+     "待機したら",
+     "0円",
+     "bad"
+    ]
+   ],
+   "circle": 1
+  }
+ },
+ {
+  "match": "「老齢基礎年金と老齢厚生年金は、別々に",
+  "photo": true,
+  "genten": true
+ },
+ {
+  "match": "――別々、なんですね。",
+  "drawn": {
+   "layout": "flow",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "lines": [
+    "厚生年金は65歳から",
+    "加給年金も受け取る",
+    "基礎年金だけ繰下げ"
+   ]
+  }
+ },
+ {
+  "match": "高橋さんは、この形を選びました。",
+  "photo": true,
+  "cast": "takahashi_work"
+ },
+ {
+  "match": "ここで、誤解のないように、逆のことも",
+  "photo": true,
+  "cast": "kenkyuin"
+ },
+ {
+  "match": "配偶者がすでに65歳を超えている方。",
+  "drawn": {
+   "layout": "checklist",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "天秤に乗らないご家庭",
+   "lines": [
+    "配偶者が65歳以上",
+    "おひとり暮らし",
+    "配偶者が年上"
+   ]
+  }
+ },
+ {
+  "match": "制度の話でいちばん怖いのは、実は、知らないことよりも、",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "いちばん怖いのは",
+   "lines": [
+    "自分に関係のないルールを",
+    "自分に当てはめてしまうこと"
+   ]
+  }
+ },
+ {
+  "match": "ここで、ひとつだけお願いです。",
+  "photo": false,
+  "lines": [
+   "高評価・シェア",
+   "コメントで研究テーマを"
+  ]
+ },
+ {
+  "match": "ここからは、実際に「取りに行く」話をします。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "もらい忘れの入口",
+   "lines": [
+    "三つ、あります"
+   ]
+  }
+ },
+ {
+  "match": "ひとつ目。最初の請求書で、配偶者の欄を",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "入口①",
+   "lines": [
+    "請求書の配偶者欄を書かなかった"
+   ]
+  }
+ },
+ {
+  "match": "ふたつ目。65歳を過ぎてから、厚生年金が20年に",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "入口②",
+   "lines": [
+    "65歳の後で20年に届いた"
+   ]
+  }
+ },
+ {
+  "match": "あと、4か月。",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "あと4か月だった人",
+   "rows": [
+    [
+     "65歳の時点",
+     "19年8か月",
+     "bad"
+    ],
+    [
+     "足りない",
+     "4か月"
+    ]
+   ],
+   "circle": 0
+  }
+ },
+ {
+  "match": "そのあとで条件を満たしても、誰も、教えに来ては",
+  "photo": true,
+  "q": "empty mailbox close up outdoors"
+ },
+ {
+  "match": "240か月。この数字だけ、頭の隅に。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "240か月",
+   "lines": [
+    "ねんきんネットで確認できます"
+   ]
+  }
+ },
+ {
+  "match": "――さて、ここからが、今日いちばん、急いで",
+  "photo": true,
+  "q": "hourglass with sand running low dark background"
+ },
+ {
+  "match": "こちらが、日本年金機構の「年金の時効」のページです。",
+  "photo": true,
+  "genten": true
+ },
+ {
+  "match": "気づくのが1年遅れるごとに",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "時効の崖",
+   "rows": [
+    [
+     "1年遅れ",
+     "−42万円",
+     "bad"
+    ],
+    [
+     "2年遅れ",
+     "−85万円",
+     "bad"
+    ],
+    [
+     "3年遅れ",
+     "−127万円",
+     "bad"
+    ]
+   ],
+   "circle": 2
+  }
+ },
+ {
+  "match": "山田さんの42万円も、この崖の下に、あります。",
+  "photo": true,
+  "q": "cliff edge fog landscape"
+ },
+ {
+  "match": "様式第229号、老齢厚生年金",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "様式第229号",
+   "lines": [
+    "加給年金額加算開始事由該当届",
+    "窓口で「加給年金の届出」と言えば通じます"
+   ]
+  }
+ },
+ {
+  "match": "この書類、初めて見ると、どこを読めばいいのか",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "窓口では",
+   "lines": [
+    "「加給年金の届出をしたい」",
+    "と言えば通じます"
+   ]
+  }
+ },
+ {
+  "match": "当研究室からの、おすすめは、三つです。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "質問①",
+   "lines": [
+    "加入月数は、いま何か月ですか"
+   ]
+  }
+ },
+ {
+  "match": "ふたつ目。「私の年金に、いま加給年金は",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "質問②",
+   "lines": [
+    "加給年金は付いていますか",
+    "付かないなら、その理由は"
+   ]
+  }
+ },
+ {
+  "match": "――この「理由は何ですか」が、大事です。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "理由は何ですか",
+   "lines": [
+    "条件を満たしていないのか",
+    "届出が出ていないだけなのか"
+   ]
+  }
+ },
+ {
+  "match": "みっつ目。「妻、あるいは夫が65歳になったあと",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "質問③",
+   "lines": [
+    "振替加算の対象になりますか"
+   ]
+  }
+ },
+ {
+  "match": "さて、冒頭の約束の、ふた通り目です。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "その二",
+   "lines": [
+    "届出も出した",
+    "年の差もある",
+    "それでも1円も出ない"
+   ]
+  }
+ },
+ {
+  "match": "横浜の田中さん。67歳。",
+  "photo": true,
+  "cast": "tanaka_smile"
+ },
+ {
+  "match": "22年。20年を、超えています。",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "田中さんの奥さま",
+   "rows": [
+    [
+     "厚生年金",
+     "22年",
+     "bad"
+    ],
+    [
+     "月数では",
+     "264か月",
+     "bad"
+    ],
+    [
+     "20年の線",
+     "超えている"
+    ]
+   ],
+   "circle": 1
+  }
+ },
+ {
+  "match": "つまり田中さんの場合、奥さまが65歳になった日から",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "奥さまが65歳の日から",
+   "lines": [
+    "42万円　停止"
+   ]
+  }
+ },
+ {
+  "match": "「家内が真面目に働いた分だけ",
+  "photo": true,
+  "cast": "tanaka_cry"
+ },
+ {
+  "match": "ですから、窓口では、ご自分のことだけでなく",
+  "photo": true,
+  "q": "asian couple looking at laptop together at home"
+ },
+ {
+  "match": "最後に、期限の話です。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "ふたつの期限",
+   "lines": [
+    "2028年4月",
+    "配偶者が65歳になる日"
+   ]
+  }
+ },
+ {
+  "match": "この加給年金という形が作られたのは、昭和60年",
+  "photo": true,
+  "q": "vintage family photo album old paper"
+ },
+ {
+  "match": "――ところが、その40年で、前提のほうが",
+  "photo": true,
+  "q": "asian businesswoman working in modern office"
+ },
+ {
+  "match": "配偶者の加給年金額と特別加算が、およそ1割",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "2028年4月から",
+   "rows": [
+    [
+     "いま",
+     "408,100円"
+    ],
+    [
+     "改正後",
+     "367,200円",
+     "bad"
+    ],
+    [
+     "差",
+     "約4万円減",
+     "warn"
+    ]
+   ],
+   "circle": 1
+  }
+ },
+ {
+  "match": "令和10年3月31日の時点で",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "令和10年3月31日",
+   "lines": [
+    "この日までに受給権があれば",
+    "据え置き"
+   ]
+  }
+ },
+ {
+  "match": "賛成か反対かは、それぞれのお考えが",
+  "photo": true,
+  "q": "japanese government building exterior"
+ },
+ {
+  "match": "制度が縮む方向に動くとき",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "制度が縮むとき",
+   "lines": [
+    "いちばん損をするのは",
+    "変わったことを知らなかった人"
+   ]
+  }
+ },
+ {
+  "match": "ふたつ目の期限は、もっと静かです。",
+  "photo": true,
+  "q": "calendar page marked with red circle"
+ },
+ {
+  "match": "冒頭の、山田さんご夫妻。奥さまが、この夏",
+  "photo": true,
+  "cast": "yamada_happy"
+ },
+ {
+  "match": "この場合、振替加算の額は、年に16,335円。",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "加給年金 → 振替加算",
+   "rows": [
+    [
+     "先月まで",
+     "42万円"
+    ],
+    [
+     "今月から",
+     "1万6千円",
+     "bad"
+    ]
+   ],
+   "circle": 1
+  }
+ },
+ {
+  "match": "山田さんの奥さまは、通知を見て",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "25分の1",
+   "lines": [
+    "年42万円 → 年1万6千円"
+   ]
+  }
+ },
+ {
+  "match": "これは、制度の不備では、ありません。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "なぜ、こうなるのか",
+   "lines": [
+    "加給年金は「年下の配偶者を",
+    "養っている間」の上乗せだから"
+   ]
+  }
+ },
+ {
+  "match": "この振替加算にも、条件があります。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "振替加算の条件",
+   "lines": [
+    "配偶者の厚生年金が240月未満"
+   ]
+  }
+ },
+ {
+  "match": "――お気づきでしょうか。さきほどの田中さんの奥さま",
+  "drawn": {
+   "layout": "table",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "田中さんのご家庭",
+   "rows": [
+    [
+     "加給年金",
+     "停止",
+     "bad"
+    ],
+    [
+     "振替加算",
+     "対象外",
+     "bad"
+    ]
+   ]
+  }
+ },
+ {
+  "match": "そして、もうひとつ。振替加算も、自動では",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "振替加算も",
+   "lines": [
+    "自動では付かないことがあります"
+   ]
+  }
+ },
+ {
+  "match": "――そう。また、紙です。",
+  "photo": true,
+  "q": "stack of official paper forms on desk"
+ },
+ {
+  "match": "高橋さんの奥さまは、昭和41年の、6月生まれ。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "振替加算の線",
+   "lines": [
+    "昭和41年4月1日まで → あり",
+    "昭和41年4月2日以後 → なし"
+   ]
+  }
+ },
+ {
+  "match": "――そして、第1章で、お約束したことです。",
+  "photo": true,
+  "cast": "kenkyuin"
+ },
+ {
+  "match": "福岡の、伊藤さん。68歳。",
+  "photo": true,
+  "cast": "ito_cafe"
+ },
+ {
+  "match": "制度というのは、ひとつの窓が閉まっていても",
+  "photo": true,
+  "q": "open window with morning light indoors"
+ },
+ {
+  "match": "それでは、今日の研究ノートです。",
+  "drawn": {
+   "layout": "card",
+   "paper": "grid",
+   "lang": "jp-pen",
+   "title": "今日の研究ノート",
+   "lines": [
+    "年およそ42万円の上乗せ",
+    "20年・65歳未満・850万円未満",
+    "届出しないと1円も出ない",
+    "繰下げ待機中は0円",
+    "期限は2028年4月"
+   ]
+  }
+ },
+ {
+  "match": "今日、やっていただきたいことは、ひとつだけです。",
+  "photo": true,
+  "q": "hand marking date on paper calendar"
+ },
+ {
+  "match": "どうか、明日にでも、電話を一本。",
+  "photo": true,
+  "q": "elderly asian person using landline telephone at home"
+ },
+ {
+  "match": "次回は、特別支給の老齢厚生年金を研究します。",
+  "photo": false,
+  "lines": [
+   "次回の研究",
+   "特別支給の老齢厚生年金"
+  ]
+ }
+]

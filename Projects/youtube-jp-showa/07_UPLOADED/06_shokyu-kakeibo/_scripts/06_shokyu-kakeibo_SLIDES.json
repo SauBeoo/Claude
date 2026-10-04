@@ -1,0 +1,862 @@
+[
+ {
+  "match": "指先が、汗ばんでいました。",
+  "photo": true,
+  "source": "real_photos/px_envelope_kraft_hold_5899171.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "茶色い封筒。開ける前に、指で",
+  "offset": 3.66,
+  "photo": true,
+  "source": "real_photos/px_envelope_open_hand_7390817.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "あなたは、覚えていますか。初",
+  "video": true,
+  "offset": 0.54,
+  "source": "footage_raw/jt06_01_crowd_toward.mp4",
+  "dur": 8
+ },
+ {
+  "match": "昭和四十五年、ある新入社員の",
+  "video": true,
+  "source": "footage_raw/jt06_02_tokyo_skyline.mp4",
+  "dur": 10
+ },
+ {
+  "match": "昭和四十五年、ある新入社員の",
+  "offset": 10.0,
+  "photo": true,
+  "source": "real_photos/st06_13_crowd_walking.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "けれど、開ける前に、ひとつだ",
+  "offset": 0.68,
+  "photo": true,
+  "source": "real_photos/px_envelope_desk_5712451.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "けれど、開ける前に、ひとつだ",
+  "offset": 7.93,
+  "video": true,
+  "source": "footage_raw/jt06_03_ginza_district.mp4",
+  "dur": 9
+ },
+ {
+  "match": "けれど、開ける前に、ひとつだ",
+  "offset": 16.93,
+  "photo": true,
+  "source": "real_photos/cc_coin_10yen.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "中でも、九点目は、給料をもら",
+  "offset": 6.36,
+  "photo": true,
+  "source": "real_photos/st06_16_globe_building.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "中でも、九点目は、給料をもら",
+  "offset": 13.61,
+  "photo": true,
+  "source": "real_photos/st06_14_crowd_business.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "中でも、九点目は、給料をもら",
+  "offset": 20.87,
+  "photo": true,
+  "source": "real_photos/px_envelope_string_8250811.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "一点目、額面。",
+  "photo": true,
+  "source": "real_photos/cc_note_1000yen_seriesC_front.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "ここで、ひとつ聞かせてくださ",
+  "offset": 3.91,
+  "photo": true,
+  "source": "real_photos/st06_22_young_men_crowd.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "ここで、ひとつ聞かせてくださ",
+  "offset": 9.58,
+  "video": true,
+  "source": "footage_raw/jt06_04_office_street.mp4",
+  "dur": 8
+ },
+ {
+  "match": "私の隣の部屋に住んでいた、二",
+  "offset": 4.27,
+  "photo": true,
+  "source": "slides_img/slide_14.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "私の隣の部屋に住んでいた、二",
+  "offset": 9.94,
+  "photo": true,
+  "source": "real_photos/st06_23_young_men_b.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "答えです。高校を出て働き始め",
+  "offset": 0.29,
+  "photo": true,
+  "source": "real_photos/cc_note_10000yen_seriesC_front.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "答えです。高校を出て働き始め",
+  "offset": 5.95,
+  "photo": true,
+  "source": "real_photos/cc_note_500yen_seriesC_front.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "答えです。高校を出て働き始め",
+  "offset": 11.62,
+  "photo": true,
+  "source": "real_photos/st06_24_man_hat_crowd.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "答えです。高校を出て働き始め",
+  "offset": 17.29,
+  "photo": true,
+  "source": "real_photos/px_radio_dial_3098.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "この差、あとで、ちゃんと意味",
+  "offset": 2.62,
+  "photo": true,
+  "source": "real_photos/cc_note_5000yen_seriesC_front.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "封筒を胸ポケットにしまって、",
+  "photo": true,
+  "source": "real_photos/st06_01_boy_train_window.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "二点目、寮費と、食費。",
+  "offset": 0.14,
+  "video": true,
+  "source": "footage_raw/jt06_05_young_workers.mp4",
+  "dur": 6
+ },
+ {
+  "match": "集団就職で東京に出てきた人の",
+  "offset": 3.38,
+  "photo": true,
+  "source": "real_photos/st06_02_boy_train_window_b.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "集団就職で東京に出てきた人の",
+  "offset": 9.79,
+  "photo": true,
+  "source": "slides_img/slide_24.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "集団就職で東京に出てきた人の",
+  "offset": 16.21,
+  "photo": true,
+  "source": "real_photos/px_tatami_dark_35680939.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "私も、最初の給料日、思ったよ",
+  "offset": 0.53,
+  "video": true,
+  "source": "footage_raw/jt06_06_plaza_crossing.mp4",
+  "dur": 12
+ },
+ {
+  "match": "三畳の部屋に、布団と、小さな",
+  "offset": 4.24,
+  "photo": true,
+  "source": "slides_img/slide_27.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "三畳の部屋に、布団と、小さな",
+  "offset": 10.66,
+  "photo": true,
+  "source": "real_photos/px_radio_b_5161816.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "三畳の部屋に、布団と、小さな",
+  "offset": 17.08,
+  "video": true,
+  "source": "footage_raw/jt06_09_shoten_street_day.mp4",
+  "dur": 7
+ },
+ {
+  "match": "仕事を終えると、汗と埃で、体",
+  "offset": 2.74,
+  "photo": true,
+  "source": "real_photos/px_corridor_dark_5745572.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "仕事を終えると、汗と埃で、体",
+  "offset": 9.15,
+  "photo": true,
+  "source": "real_photos/px_night_street_a_33469141.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "三点目、銭湯。",
+  "photo": true,
+  "source": "real_photos/px_night_street_lantern_30209211.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "ここで、もうひとつ聞かせてください。この年、東京",
+  "offset": 4.59,
+  "photo": true,
+  "source": "real_photos/cc_sento_ichinoyu_01.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "ここで、もうひとつ聞かせてください。この年、東京",
+  "offset": 10.93,
+  "photo": true,
+  "source": "real_photos/cc_kerorin_bathpail.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "黄色いケロリンの桶が、カラン",
+  "offset": 4.22,
+  "photo": true,
+  "source": "real_photos/px_faucet_brass_tile_6653903.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "黄色いケロリンの桶が、カラン",
+  "offset": 10.57,
+  "photo": true,
+  "source": "real_photos/cc_sento_ichinoyu_03.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "答えです。この年の五月から、",
+  "offset": 1.1,
+  "photo": true,
+  "source": "real_photos/px_tiled_row_29017467.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "答えです。この年の五月から、",
+  "offset": 7.44,
+  "photo": true,
+  "source": "real_photos/cc_sento_ichinoyu_04.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "湯気の中で、健さんが、「今日",
+  "offset": 3.24,
+  "photo": true,
+  "source": "real_photos/px_faucet_b_7746104.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "湯気の中で、健さんが、「今日",
+  "offset": 9.59,
+  "photo": true,
+  "source": "slides_img/slide_40.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "湯気の中で、健さんが、「今日",
+  "offset": 15.93,
+  "photo": true,
+  "source": "real_photos/px_night_street_c_30037331.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "湯冷めしないうちに、急ぎ足で",
+  "offset": 4.45,
+  "photo": true,
+  "source": "real_photos/st06_44_street_bus.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "四点目、寮の、まかない。",
+  "photo": true,
+  "source": "real_photos/st06_34_market_stalls_a.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "白いご飯と、味噌汁と、焼き魚",
+  "offset": 3.38,
+  "photo": true,
+  "source": "real_photos/cc_chabudai.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "白いご飯と、味噌汁と、焼き魚",
+  "offset": 9.78,
+  "video": true,
+  "source": "footage_raw/jt06_07_taue.mp4",
+  "dur": 12
+ },
+ {
+  "match": "長い食卓に、寮生が並んで座り",
+  "offset": 4.21,
+  "photo": true,
+  "source": "real_photos/cc_kitchen_showa.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "長い食卓に、寮生が並んで座り",
+  "offset": 10.61,
+  "photo": true,
+  "source": "real_photos/st06_36_ox_plough.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "この年、米は十キロで、およそ",
+  "offset": 2.94,
+  "video": true,
+  "source": "footage_raw/jt06_08_ine_drying.mp4",
+  "dur": 10
+ },
+ {
+  "match": "この年、米は十キロで、およそ",
+  "offset": 12.94,
+  "photo": true,
+  "source": "real_photos/px_sacks_stacked_12293641.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "四点。頭の中の電卓は、もう、",
+  "offset": 1.52,
+  "photo": true,
+  "source": "real_photos/st06_37_rice_planting_still.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "四点。頭の中の電卓は、もう、",
+  "offset": 7.91,
+  "photo": true,
+  "source": "real_photos/px_sacks_store_30688218.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "五点目、中華そば。",
+  "photo": true,
+  "source": "real_photos/px_night_street_d_36580122.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "寮の門限ぎりぎりまで、みんな",
+  "offset": 3.48,
+  "photo": true,
+  "source": "real_photos/px_ramen_shoyu_5649309.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "寮の門限ぎりぎりまで、みんな",
+  "offset": 9.23,
+  "photo": true,
+  "source": "real_photos/st06_08_street_signs_a.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "寮の門限ぎりぎりまで、みんな",
+  "offset": 14.97,
+  "photo": true,
+  "source": "real_photos/px_night_street_lantern_b_31640564.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "湯気の向こうで、健さんが、「",
+  "offset": 0.38,
+  "photo": true,
+  "source": "real_photos/px_noodles_lift_a_1395319.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "湯気の向こうで、健さんが、「",
+  "offset": 6.12,
+  "photo": true,
+  "source": "real_photos/px_ramen_c_6646067.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "私も、いつもより多めに、麺を",
+  "offset": 1.32,
+  "photo": true,
+  "source": "real_photos/px_noodles_lift_b_36964057.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "私も、いつもより多めに、麺を",
+  "offset": 7.06,
+  "photo": true,
+  "source": "real_photos/px_yatai_c_33061228.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "video": true,
+  "source": "footage_raw/jt06_10_ongakukai_crowd.mp4",
+  "dur": 9
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 9.0,
+  "photo": true,
+  "source": "real_photos/st06_17_audience_a.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 14.83,
+  "photo": true,
+  "source": "real_photos/st06_18_audience_b.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 20.66,
+  "photo": true,
+  "source": "real_photos/st06_19_women_crowd.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 26.5,
+  "photo": true,
+  "source": "real_photos/st06_42_families_crowd_a.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 32.33,
+  "photo": true,
+  "source": "real_photos/st06_43_families_crowd_b.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "丼を空にして、寮に戻る道。健",
+  "photo": true,
+  "source": "real_photos/cc_kariya_cinema_showa20s.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "丼を空にして、寮に戻る道。健",
+  "offset": 5.82,
+  "video": true,
+  "source": "footage_raw/jt06_11_depaato_welcome.mp4",
+  "dur": 9
+ },
+ {
+  "match": "月に一度、給料日のあとの週末",
+  "offset": 3.02,
+  "photo": true,
+  "source": "real_photos/px_seats_b_7991489.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "月に一度、給料日のあとの週末",
+  "offset": 8.84,
+  "photo": true,
+  "source": "real_photos/px_seats_old_6198785.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "月に一度、給料日のあとの週末",
+  "offset": 14.66,
+  "video": true,
+  "source": "footage_raw/jt06_12_crowd_dense.mp4",
+  "dur": 8
+ },
+ {
+  "match": "暗い場内で、健さんはいつも、",
+  "offset": 4.33,
+  "photo": true,
+  "source": "real_photos/px_curtain_a_6899765.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "暗い場内で、健さんはいつも、",
+  "offset": 10.16,
+  "photo": true,
+  "source": "real_photos/px_projector_lens_5515483.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "答えは、三百五十一円。この二",
+  "offset": 4.43,
+  "photo": true,
+  "source": "real_photos/px_seats_a_7991381.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "懐に余裕のない月は、看板だけ",
+  "offset": 1.71,
+  "photo": true,
+  "source": "real_photos/st06_15_department_store.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "寮への道、健さんが、ポケット",
+  "photo": true,
+  "source": "real_photos/px_match_a_34934581.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "寮への道、健さんが、ポケット",
+  "offset": 6.46,
+  "photo": true,
+  "source": "real_photos/px_smoke_silhouette_8780929.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんに勧められて、初めて自",
+  "offset": 3.37,
+  "photo": true,
+  "source": "real_photos/px_match_b_6496361.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんに勧められて、初めて自",
+  "offset": 9.83,
+  "photo": true,
+  "source": "real_photos/px_ashtray_a_9565888.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんに勧められて、初めて自",
+  "offset": 16.28,
+  "photo": true,
+  "source": "real_photos/px_streetlight_fog_9266927.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "けむりの向こうに、故郷の駅の",
+  "offset": 3.41,
+  "photo": true,
+  "source": "real_photos/px_station_night_b_30258210.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "けむりの向こうに、故郷の駅の",
+  "offset": 9.86,
+  "photo": true,
+  "source": "real_photos/px_ashtray_b_28747786.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "八点目、喫茶店のコーヒー。",
+  "photo": true,
+  "source": "real_photos/st06_25_shirobasha_sign_a.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "休みの日、駅前の喫茶店で、一",
+  "offset": 3.27,
+  "video": true,
+  "source": "footage_raw/jt06_13_tearoom_men.mp4",
+  "dur": 8
+ },
+ {
+  "match": "休みの日、駅前の喫茶店で、一",
+  "offset": 11.27,
+  "photo": true,
+  "source": "real_photos/px_coffee_red_6207309.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "休みの日、駅前の喫茶店で、一",
+  "offset": 17.81,
+  "photo": true,
+  "source": "real_photos/px_coffee_top_8249580.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "コーヒー一杯、八十円台の後半",
+  "offset": 4.0,
+  "photo": true,
+  "source": "real_photos/st06_26_shirobasha_sign_b.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "八点まで来ました。あの賭け、",
+  "offset": 4.01,
+  "photo": true,
+  "source": "real_photos/px_record_wood_35279502.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "九点目、仕送り。",
+  "photo": true,
+  "source": "real_photos/px_envelope_kraft_hold_5899171.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "給料日の夜、封筒からいくらか",
+  "offset": 3.8,
+  "photo": true,
+  "source": "slides_img/slide_89.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "給料日の夜、封筒からいくらか",
+  "offset": 9.61,
+  "photo": true,
+  "source": "real_photos/px_letter_write_5425602.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "金額を書いた紙を、何度も見直",
+  "offset": 3.37,
+  "video": true,
+  "source": "footage_raw/jt06_14_chatsumi.mp4",
+  "dur": 12
+ },
+ {
+  "match": "金額を書いた紙を、何度も見直",
+  "offset": 15.37,
+  "photo": true,
+  "source": "real_photos/px_envelope_string_8250811.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "一度だけ、母から返事の手紙が",
+  "offset": 5.11,
+  "photo": true,
+  "source": "real_photos/px_tea_pickers_13760478.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "一度だけ、母から返事の手紙が",
+  "offset": 10.92,
+  "video": true,
+  "source": "footage_raw/jt06_15_wara_stacks.mp4",
+  "dur": 9
+ },
+ {
+  "match": "一度だけ、母から返事の手紙が",
+  "offset": 19.92,
+  "photo": true,
+  "source": "real_photos/px_irori_light_2187966.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんの仕送りは、少し様子が",
+  "offset": 5.64,
+  "photo": true,
+  "source": "real_photos/px_stamps_desk_18687845.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんの仕送りは、少し様子が",
+  "offset": 11.45,
+  "photo": true,
+  "source": "slides_img/slide_97.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "健さんの仕送りは、少し様子が",
+  "offset": 17.26,
+  "photo": true,
+  "source": "real_photos/px_sewing_a_5030573.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんの仕送りは、少し様子が",
+  "offset": 23.06,
+  "photo": true,
+  "source": "real_photos/px_tatami_sun_31355891.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "十点目、残ったお金。",
+  "photo": true,
+  "source": "real_photos/cc_coin_10yen.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "さあ、最後の計算です。寮費、",
+  "offset": 3.02,
+  "photo": true,
+  "source": "real_photos/px_envelope_desk_5712451.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "さあ、最後の計算です。寮費、",
+  "offset": 8.55,
+  "photo": true,
+  "source": "slides_img/slide_102.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "さあ、最後の計算です。寮費、",
+  "offset": 14.09,
+  "video": true,
+  "source": "footage_raw/jt06_16_ekimae_plaza.mp4",
+  "dur": 9
+ },
+ {
+  "match": "手元に残るのは、多い月で、千",
+  "offset": 7.52,
+  "photo": true,
+  "source": "real_photos/cc_note_1000yen_seriesC_front.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "その千円札を、郵便局の通帳に",
+  "offset": 1.0,
+  "photo": true,
+  "source": "slides_img/slide_105.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "その千円札を、郵便局の通帳に",
+  "offset": 6.53,
+  "photo": true,
+  "source": "real_photos/px_stamp_box_3838319.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "その千円札を、郵便局の通帳に",
+  "offset": 12.07,
+  "video": true,
+  "source": "footage_raw/jt06_17_street_walk.mp4",
+  "dur": 12
+ },
+ {
+  "match": "大学を出ていた同期は、私より",
+  "offset": 8.25,
+  "photo": true,
+  "source": "real_photos/st06_39_station_plaza_a.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "大学を出ていた同期は、私より",
+  "offset": 13.78,
+  "photo": true,
+  "source": "real_photos/st06_40_station_plaza_b.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "大学を出ていた同期は、私より",
+  "offset": 19.31,
+  "photo": true,
+  "source": "slides_img/slide_110.jpg (AI CAN GEN — xem scene_prompts_FLOW.txt)",
+  "kind": "ai"
+ },
+ {
+  "match": "これで、十点。全部、出そろい",
+  "offset": 4.51,
+  "photo": true,
+  "source": "real_photos/st06_41_street_dept.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "この通帳が、半年後、ある小さ",
+  "photo": true,
+  "source": "real_photos/px_watchshop_a_37235235.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "この通帳が、半年後、ある小さ",
+  "offset": 6.84,
+  "photo": true,
+  "source": "real_photos/px_watch_leather_8327544.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "自分の給料で買う、初めての、",
+  "offset": 3.89,
+  "photo": true,
+  "source": "real_photos/px_watch_repair_bw_34619339.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "時計店のガラスケースを覗き込",
+  "offset": 4.71,
+  "photo": true,
+  "source": "real_photos/px_watch_hands_6328850.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "特別な一日ではありませんでし",
+  "photo": true,
+  "source": "real_photos/px_envelope_open_hand_7390817.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "でも、あの茶色い封筒の重さは",
+  "offset": 2.09,
+  "photo": true,
+  "source": "real_photos/px_tatami_c_33097432.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "でも、あの茶色い封筒の重さは",
+  "offset": 8.2,
+  "photo": true,
+  "source": "real_photos/px_drawers_wall_5273174.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "でも、あの茶色い封筒の重さは",
+  "offset": 14.31,
+  "photo": true,
+  "source": "real_photos/px_drawer_papers_16514852.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんは、いまも年賀状をくれ",
+  "offset": 3.1,
+  "photo": true,
+  "source": "real_photos/px_watch_c_13028361.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "健さんは、いまも年賀状をくれ",
+  "offset": 9.21,
+  "photo": true,
+  "source": "real_photos/st06_45_boy_camera.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "あなたの家の初任給は、いくら",
+  "offset": 2.26,
+  "photo": true,
+  "source": "real_photos/px_photos_bw_stack_37947884.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "あなたの家の初任給は、いくら",
+  "offset": 8.37,
+  "photo": true,
+  "source": "real_photos/st06_46_schoolkids.jpg",
+  "kind": "still-1959"
+ },
+ {
+  "match": "この「昭和くらし図鑑」で、ま",
+  "offset": 1.42,
+  "photo": true,
+  "source": "real_photos/px_tatami_open_5220089.jpg",
+  "kind": "pexels"
+ }
+]

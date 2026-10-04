@@ -1,0 +1,42 @@
+{
+  "speakers": {
+    "由香里": "villain",
+    "律子": "hero",
+    "静江": "other",
+    "康平": "other",
+    "宗一郎": "other",
+    "恩田": "other",
+    "榊": "other"
+  },
+  "lines": [
+    {"match": "あの……ご予約のお客様でしょうか", "speaker": "静江"},
+    {"match": "四年も帰ってこなかった人が、今さら何しに来たんですかｗ", "speaker": "由香里"},
+    {"match": "私、一人でずっと介護してきたんですよ", "speaker": "由香里"},
+    {"match": "あれを、他人に触らせるな", "speaker": "宗一郎"},
+    {"match": "あなたを四年間、私が一人でお世話してまいりました", "speaker": "由香里"},
+    {"match": "私は今日から、母の任意後見人です", "speaker": "律子"},
+    {"match": "これは、静江の字じゃない", "speaker": "宗一郎"},
+    {"match": "母は、認知症ではありません", "speaker": "律子"},
+    {"match": "あんたの借金でしょ", "speaker": "由香里"},
+    {"match": "あなたが、律子なのね", "speaker": "静江"}
+  ],
+  "events": [
+    {"type": "sfx", "match": "あの……ご予約のお客様でしょうか", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "あれを、他人に触らせるな", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "数えると、二十七通あった", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "小さな鍵と、貸金庫の引換カードだった", "name": "sub_drop", "offset": -0.25, "gain": -5},
+    {"type": "sfx", "match": "襖が閉まる音が、広間に響いた", "name": "door_knock", "offset": -0.15, "gain": -8},
+    {"type": "sfx", "match": "これは、静江の字じゃない", "name": "sub_drop", "offset": -0.2, "gain": -5},
+    {"type": "sfx", "match": "あなたが、律子なのね", "name": "heartbeat", "offset": -0.1, "gain": -9},
+
+    {"type": "bgm_tense_cut", "from": "枕元に置かれた、赤いがま口", "cut": "小さな鍵と、貸金庫の引換カードだった", "resume": "伯父の言葉の意味が、ようやく分かった"},
+    {"type": "bgm_tense_cut", "from": "私は、母の手紙の署名を、隣に並べた", "cut": "靜江", "resume": "母は、名前を旧字体で書きます"},
+    {"type": "bgm_swell", "from": "あんたの借金でしょ", "to": "氷のような目で見下ろしていた"},
+    {"type": "bgm_swell", "from": "本家として言う", "to": "誰一人、二人に声をかけずに、広間を出ていった"},
+
+    {"type": "card", "match": "四年も帰ってこなかった人が、今さら何しに来たんですかｗ", "text": "「今さら何しに来たんですかｗ」", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "あなたを四年間、私が一人でお世話してまいりました", "text": "「四年間、私が一人でお世話しました」", "style": "villain", "hold": 1.4},
+    {"type": "card", "match": "私は今日から、母の任意後見人です", "text": "「私は今日から、母の任意後見人です」", "style": "hero", "hold": 1.6},
+    {"type": "card", "match": "母は、あのがま口の内布を、七回縫い直しています", "text": "「母は、がま口を七回縫い直していた」", "style": "hero", "hold": 1.5}
+  ]
+}

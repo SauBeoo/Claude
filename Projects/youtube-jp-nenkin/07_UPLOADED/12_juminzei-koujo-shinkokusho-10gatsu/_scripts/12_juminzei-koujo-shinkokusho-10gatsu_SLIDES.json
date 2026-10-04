@@ -1,0 +1,1323 @@
+[
+ {
+  "match": "日本年金機構から、まったく同じ封筒",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "来月10月、まったく同じ封筒が二軒に",
+   "img": "art_fuutou_futatsu.png",
+   "fly": "up",
+   "cap": "中身は「扶養親族等申告書」という紙、1枚だけです",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "一軒は、名前とご家族",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "同じ紙。置いた場所だけが違います",
+   "panels": [
+    {
+     "icon": "mailbox",
+     "cap": "一軒は"
+    },
+    {
+     "icon": "docs",
+     "cap": "もう一軒は"
+    }
+   ],
+   "rows": [
+    "書いて、ポストに入れた",
+    "引き出しに入れた"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "この二軒の差は",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "この二軒に生まれる差",
+   "value": "5万2千円",
+   "unit": "／年",
+   "tone": "bad",
+   "cap": "同じ年金額、同じご家族で、です",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "引き出しに入れたお宅の判断は",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "ただ、その判断は「去年までなら」正解でした",
+   "bgimg": "art_hikidashi.png",
+   "ok": [
+    [
+     "calendar",
+     "去年、本当に届かなかった"
+    ],
+    [
+     "form",
+     "去年は、出さなくてよかった"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "その「届かなかった」が",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "その「届かなかった」が",
+   "value": "今年の落とし穴",
+   "tone": "bad",
+   "cap": "去年の正解が、今年の間違いになります",
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "税金を引かれていない人の家に",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "今日の問いは、ひとつです",
+   "value": "なぜ、届くのか",
+   "tone": "amber",
+   "cap": "年金から税金を1円も引かれていない方にまで、届きます",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "こんにちは、年金と",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "今日も、原典を一緒に読みます",
+   "org": "年金と老後のお金研究室",
+   "doc": "日本年金機構と総務省のページを\n画面に出して、一行ずつ確かめます",
+   "note": "※出典は概要欄に記載しています",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "横浜の田中さん",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "モニター・田中さん（横浜）",
+   "panels": [
+    {
+     "icon": "avatar_tanaka",
+     "cap": "田中さん・67歳"
+    },
+    {
+     "icon": "wallet",
+     "cap": "年金 月16万円"
+    }
+   ],
+   "rows": [
+    "再雇用で、週に5日 働いている",
+    "1年で192万円",
+    "この紙は、毎年届いていた"
+   ],
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ところが去年の9月",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "ところが去年の9月",
+   "value": "届かなかった",
+   "tone": "amber",
+   "cap": "手違いでも、書き忘れでもありません",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "年金から所得税を引く基準が",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "去年、所得税を引く基準が上がりました",
+   "rows": [
+    [
+     "去年までの基準",
+     158,
+     "grey",
+     "158万円"
+    ],
+    [
+     "田中さんの年金",
+     192,
+     "amber",
+     "192万円"
+    ],
+    [
+     "去年からの基準",
+     205,
+     "bad",
+     "205万円"
+    ]
+   ],
+   "max": 214,
+   "note": "192万円は、線の下に出ました",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "その田中さんの家に、今年10月",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "その田中さんの家に、今年また届きます",
+   "img": "art_shinkokusho_fuyou.png",
+   "fly": "up",
+   "cap": "「扶養親族等申告書」",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "日本年金機構のページを、そのまま出します",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典①：日本年金機構（更新日 6月17日）",
+   "img": "genten_01_shot.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝ 148万円以上・令和8年10月より順次",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "令和8年10月より順次お送りします",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "今年、紙が届く方",
+   "value": "148万円",
+   "unit": "以上",
+   "tone": "bad",
+   "cap": "65歳以上の場合。65歳未満は98万円以上です",
+   "left": "sensei_serious",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "去年は線の下、今年は線の中",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "線が、57万円分だけ下に降りました",
+   "rows": [
+    [
+     "去年の基準",
+     205,
+     "grey",
+     "205万円"
+    ],
+    [
+     "田中さんの年金",
+     192,
+     "amber",
+     "192万円"
+    ],
+    [
+     "今年の基準",
+     148,
+     "bad",
+     "148万円"
+    ]
+   ],
+   "max": 214,
+   "note": "年金額は、1円も変わっていません",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "では、なぜ148万円なのか",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "住民税がかからない上限（65歳・おひとり暮らし）",
+   "rows": [
+    [
+     "1級地",
+     155,
+     "amber",
+     "155万円"
+    ],
+    [
+     "2級地",
+     151,
+     "amber",
+     "151.5万円"
+    ],
+    [
+     "3級地",
+     148,
+     "bad",
+     "148万円"
+    ]
+   ],
+   "max": 155,
+   "note": "お住まいの地域によって違います",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "機構は、そのいちばん低い148万円",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "だから、いちばん低い線に合わせています",
+   "bgimg": "bg_daidokoro.png",
+   "ok": [
+    [
+     "mailbox",
+     "148万円に合わせて送る"
+    ],
+    [
+     "person",
+     "取りこぼさないように、広めに"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "田中さんは、年金から所得税を",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "ところが、田中さんの通知書は",
+   "img": "art_tsuuchisho_ran.png",
+   "fly": "up",
+   "pins": [
+    [
+     "所得税 ０円",
+     0.62,
+     0.5
+    ]
+   ],
+   "cap": "年金から所得税は、引かれていません",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "そのゼロの方に",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "そのゼロの方に、なぜ税金の紙が来るのか",
+   "value": "答えは1枚の図",
+   "tone": "amber",
+   "cap": "機構が出している図に、はっきり描いてあります",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "もう一度、機構のページです",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典②：提出対象の範囲拡大イメージ",
+   "img": "genten_02_shot.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝ 去年グレーだった帯が、オレンジに",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "年金額を縦に積んだ棒が",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "年金額は、3つの帯に分かれます",
+   "rows": [
+    [
+     "所得税もかかる",
+     214,
+     "amber",
+     "214万円〜"
+    ],
+    [
+     "住民税だけかかる",
+     192,
+     "grey",
+     "148〜214万円"
+    ],
+    [
+     "どちらもかからない",
+     148,
+     "ok",
+     "〜148万円"
+    ]
+   ],
+   "max": 240,
+   "note": "田中さんの192万円は、真ん中の帯です",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "そのグレーが、今年",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "真ん中の帯が、今年から対象になりました",
+   "panels": [
+    {
+     "icon": "docs",
+     "cap": "去年の図"
+    },
+    {
+     "icon": "form",
+     "cap": "今年の図"
+    }
+   ],
+   "rows": [
+    "オレンジは、いちばん上だけ",
+    "真ん中の帯も、オレンジに"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "去年までのこの紙は",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "紙の意味が、変わりました",
+   "panels": [
+    {
+     "icon": "calc",
+     "cap": "去年まで"
+    },
+    {
+     "icon": "cityhall",
+     "cap": "今年から"
+    }
+   ],
+   "rows": [
+    "所得税のための紙",
+    "住民税のための紙でもある"
+   ],
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "これが、今日のいちばんの答え",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "これが、今日のいちばんの答えです",
+   "value": "住民税の紙",
+   "tone": "bad",
+   "cap": "所得税を引かれていない方にも届く、理由です",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "そして、その方の通知書には",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "いちばん自然な判断が、いちばん危ない",
+   "bgimg": "art_tsuuchisho_ran.png",
+   "ok": [
+    [
+     "docs",
+     "通知書の所得税の欄は、ゼロ"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "「うちは関係ない」と判断する"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "その、いちばん自然な判断を",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "その判断をされた方が",
+   "value": "いちばん損",
+   "tone": "bad",
+   "cap": "自然な判断であるほど、気づけません",
+   "left": "sensei_serious",
+   "right": "kikite_down"
+  }
+ },
+ {
+  "match": "封筒を書いてポストに入れた",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "ポストに入れたお宅 ＝ 高橋さん（東京）",
+   "panels": [
+    {
+     "icon": "avatar_takahashi",
+     "cap": "高橋さん・65歳"
+    },
+    {
+     "icon": "wallet",
+     "cap": "年金 月20万円"
+    }
+   ],
+   "rows": [
+    "この春まで、メーカーの部長",
+    "1年で240万円ほど"
+   ],
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "あのときは、212万円が",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "以前の研究の、あの高橋さんです",
+   "value": "212万円",
+   "tone": "amber",
+   "cap": "年金の請求書で、奥さまの欄を飛ばしそうになった方",
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "1年で240万円ほどですから",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "高橋さんは、従来どおり所得税が引かれます",
+   "rows": [
+    [
+     "源泉徴収の線",
+     214,
+     "grey",
+     "214万円"
+    ],
+    [
+     "高橋さんの年金",
+     240,
+     "amber",
+     "240万円ほど"
+    ]
+   ],
+   "max": 260,
+   "note": "214万円より上の帯です",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "奥さまは、昭和41年6月生まれ",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "そして、奥さまのこと",
+   "bgimg": "bg_daidokoro.png",
+   "ok": [
+    [
+     "couple",
+     "60歳（昭和41年6月生まれ）"
+    ],
+    [
+     "person",
+     "いまは、お勤めをされていない"
+    ],
+    [
+     "calc",
+     "つまり、配偶者控除に当たる"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "式は、機構が、はっきり2つ",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典③：機構が並べて書いている、ふたつの式",
+   "img": "genten_03_shot.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝ 出さなかった場合の式",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "同じように社会保険料を引いて",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "違うのは、引ける控除だけです",
+   "panels": [
+    {
+     "icon": "form",
+     "cap": "出した場合"
+    },
+    {
+     "icon": "warning",
+     "cap": "出さなかった場合"
+    }
+   ],
+   "rows": [
+    "基礎控除 ＋ 配偶者控除など",
+    "基礎控除だけ"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "差が出るのは、税率ではありません",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "税率は、どちらも同じ 5.105％",
+   "value": "引ける金額",
+   "tone": "amber",
+   "cap": "機構も「所得税率に差はありません」と書いています",
+   "left": "sensei_point",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "配偶者控除は、所得税では38万円",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "まず、所得税のぶん",
+   "value": "1万9千円",
+   "tone": "amber",
+   "cap": "38万円 × 5.105％ ＝ およそ1万9千円",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "住民税の配偶者控除は、33万円",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "同じ「配偶者控除」でも、額が違います",
+   "panels": [
+    {
+     "icon": "calc",
+     "cap": "所得税"
+    },
+    {
+     "icon": "cityhall",
+     "cap": "住民税"
+    }
+   ],
+   "rows": [
+    "配偶者控除 38万円 × 5.105％",
+    "配偶者控除 33万円 × 10％"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "ふたつ足すと",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "紙1枚で、1年にこれだけ変わります",
+   "rows": [
+    [
+     "所得税のぶん",
+     19399,
+     "amber",
+     "1万9千円"
+    ],
+    [
+     "住民税のぶん",
+     33000,
+     "bad",
+     "3万3千円"
+    ],
+    [
+     "合計",
+     52399,
+     "bad",
+     "5万2千円"
+    ]
+   ],
+   "max": 52399,
+   "note": "配偶者控除ひとつ、1年分です",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "この5万2千円は、配偶者控除だけを",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "ただし、固定の金額ではありません",
+   "bgimg": "bg_daidokoro.png",
+   "no": [
+    [
+     "warning",
+     "決まった金額ではない"
+    ]
+   ],
+   "ok": [
+    [
+     "cityhall",
+     "自治体やほかの控除で前後する"
+    ],
+    [
+     "magnifier",
+     "通知書と市区町村でご確認を"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "同じ状況が10年続けば",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "同じ状況が10年続くと",
+   "value": "およそ52万円",
+   "tone": "bad",
+   "cap": "単純に足した、目安の金額です",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "申告書を提出しない場合は",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "機構が書いている、いちばん怖い一文",
+   "org": "日本年金機構",
+   "doc": "「確定申告を行わないと\n配偶者控除等を受けることができません」",
+   "note": "※消えるのではなく、戻すのに確定申告が必要になります",
+   "left": "sensei_serious",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "来年の春に、ご自分で確定申告を",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "どちらが楽か、という話です",
+   "panels": [
+    {
+     "icon": "calendar",
+     "cap": "来年の春"
+    },
+    {
+     "icon": "form",
+     "cap": "いま"
+    }
+   ],
+   "rows": [
+    "自分で確定申告をする",
+    "届く紙に、名前を書く"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "ここで、ひとつだけお願い",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "この研究室について",
+   "org": "年金と老後のお金研究室",
+   "doc": "高評価・シェア・コメントが\n次の研究テーマになります",
+   "note": "※ご感想や、調べてほしいテーマをお寄せください",
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "機構は、出さなくていい方も",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "出さなくていい方も、はっきりいます",
+   "bgimg": "bg_daidokoro.png",
+   "ok": [
+    [
+     "person",
+     "障害者・寡婦などに当たらない"
+    ],
+    [
+     "couple",
+     "控除の対象になる家族もいない"
+    ],
+    [
+     "form",
+     "この方は、出す必要がない"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "新潟の渡辺さん",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "モニター・渡辺さん（新潟）",
+   "panels": [
+    {
+     "icon": "avatar_watanabe",
+     "cap": "渡辺さん・66歳"
+    },
+    {
+     "icon": "wallet",
+     "cap": "年金 月7万2千円"
+    }
+   ],
+   "rows": [
+    "新潟で、おひとり暮らし",
+    "1年で86万4千円 ＝ 148万円より下"
+   ],
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "148万円より下ですから",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "渡辺さんの家には",
+   "value": "届きません",
+   "tone": "ok",
+   "cap": "そして、何もしなくて大丈夫です",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "ただ、渡辺さんのような方に",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "ただ、ここに逆向きの穴があります",
+   "value": "逆の落とし穴",
+   "tone": "amber",
+   "cap": "「届かない」の意味を、間違えないでください",
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "個人住民税の課税対象となる場合は",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "機構は、こうも書いています",
+   "org": "日本年金機構",
+   "doc": "「住民税の申告が\n必要となる場合があります」",
+   "note": "※詳しくは、お住まいの市区町村にご確認ください",
+   "left": "sensei_serious",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "つまり、「届かない」は",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "「届かない」が意味すること",
+   "panels": [
+    {
+     "icon": "calc",
+     "cap": "所得税の紙"
+    },
+    {
+     "icon": "cityhall",
+     "cap": "住民税"
+    }
+   ],
+   "rows": [
+    "届かない ＝ 出さなくていい",
+    "何もしなくていい、とは限らない"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "気になる方は、市役所の税の窓口で",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "いちばん早くて、確かな方法",
+   "bgimg": "bg_shiyakusho_akari.png",
+   "steps": [
+    [
+     "phone",
+     "市役所の税の窓口へ"
+    ],
+    [
+     "magnifier",
+     "「住民税の申告は要りますか」"
+    ]
+   ],
+   "left": "sensei_point",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "よくある誤解を、3つだけ",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "よくある誤解 3つ（すべて違います）",
+   "bgimg": "bg_daidokoro.png",
+   "no": [
+    [
+     "calendar",
+     "去年届かなかったから、今年も"
+    ],
+    [
+     "calc",
+     "税金を引かれていないから関係ない"
+    ],
+    [
+     "scale",
+     "税率が下がらないから、同じ"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "住民税のための紙でもあります。みっつ",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "正しくは、こうです",
+   "bgimg": "bg_daidokoro.png",
+   "ok": [
+    [
+     "form",
+     "基準が、今年から変わった"
+    ],
+    [
+     "cityhall",
+     "住民税のための紙でもある"
+    ],
+    [
+     "calc",
+     "変わるのは、引ける金額"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "では、期限に間に合わなかったら",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "では、期限に遅れたら",
+   "value": "取り戻せます",
+   "tone": "ok",
+   "cap": "ここは、思ったより優しい制度です",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "その年の最初の年金のお支払いまで",
+  "video": true,
+  "stage": {
+   "layout": "timeline",
+   "title": "遅れても、さかのぼって計算し直されます",
+   "from": "期限に遅れた",
+   "to": "出した時点",
+   "label": "さかのぼって再計算",
+   "prog": 0.82,
+   "steps": [
+    [
+     "clock",
+     "遅れて\n気づく"
+    ],
+    [
+     "form",
+     "それでも\n提出する"
+    ],
+    [
+     "calc",
+     "最初の支払い\nまで再計算"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "去年の分では、出していない方に",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "去年は、もう一度お知らせが届きました",
+   "value": "2月6日",
+   "tone": "amber",
+   "cap": "今年も同じ運用なら、2月にもう一度チャンスがあります",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "昨年の申告書では、同封の返信用封筒に",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "紙で出す場合（昨年の申告書では）",
+   "steps": [
+    [
+     "env",
+     "同封の返信用封筒に入れる"
+    ],
+    [
+     "hanko",
+     "自分で切手を貼る（110円）"
+    ],
+    [
+     "mailbox",
+     "ポストに入れる"
+    ]
+   ],
+   "note": "※今年の分は、同封の案内でご確認ください",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "そして、切手もポストも要らない道",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "切手もポストも要らない道が、もう一本",
+   "panels": [
+    {
+     "icon": "mailbox",
+     "cap": "紙で出す"
+    },
+    {
+     "icon": "cashcard",
+     "cap": "画面から出す"
+    }
+   ],
+   "rows": [
+    "切手110円 ＋ ポストへ",
+    "マイナポータル ＋ ねんきんネット"
+   ],
+   "left": "sensei_present",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "しかも、一度これで出した方には",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "一度、画面から出しておくと",
+   "bgimg": "bg_daidokoro.png",
+   "ok": [
+    [
+     "form",
+     "翌年以降、紙が送られてこない"
+    ],
+    [
+     "calendar",
+     "毎年、封筒を探す手間がなくなる"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "書き方が分からないときは",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "書き方が分からないときは",
+   "org": "専用のお問い合わせダイヤル",
+   "doc": "0570-081-240\n扶養親族等申告書の専用窓口です",
+   "note": "※紙をなくした方は、機構のページから印刷できます",
+   "left": "sensei_point",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "封筒を書いて、ポストに入れたお宅",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "ポストに入れたお宅は",
+   "value": "高橋さん",
+   "tone": "ok",
+   "cap": "この春まで部長をされていた、あの高橋さんです",
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "あのときは、妻の名前を書く欄を",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "高橋さんは、少し笑って",
+   "value": "「二回やる\nところでした」",
+   "tone": "amber",
+   "cap": "年金の請求書と、この申告書は、別のものです",
+   "left": "sensei_explain",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "今年は、封筒を開けたら",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "高橋さんが、手帳を出して言ったこと",
+   "img": "art_techo_calendar.png",
+   "fly": "up",
+   "pins": [
+    [
+     "丸をつける",
+     0.5,
+     0.18
+    ]
+   ],
+   "cap": "「妻の名前を書くまで、消しません」",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "そして、引き出しに入れたお宅",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "あの二軒は、このお二人でした",
+   "panels": [
+    {
+     "icon": "avatar_takahashi",
+     "cap": "ポストへ"
+    },
+    {
+     "icon": "avatar_tanaka",
+     "cap": "引き出しへ"
+    }
+   ],
+   "rows": [
+    "高橋さん・65歳（東京）",
+    "田中さん・67歳（横浜）"
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "今年は、引き出しじゃなくて",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "田中さんが、今年決めたこと",
+   "img": "art_shokutaku_fuutou.png",
+   "fly": "up",
+   "pins": [
+    [
+     "目に入るところに",
+     0.5,
+     0.16
+    ]
+   ],
+   "cap": "「引き出しじゃなくて、食卓の上に置いておきます」",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "今年10月から、扶養親族等申告書が届く方が",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "研究ノート（1／2）",
+   "bgimg": "art_shinkokusho_fuyou.png",
+   "ok": [
+    [
+     "form",
+     "①10月から、148万円以上に"
+    ],
+    [
+     "cityhall",
+     "②住民税の控除も、この紙で"
+    ],
+    [
+     "avatar_tanaka",
+     "去年届かなかった方にも届く"
+    ]
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "出さないと、配偶者控除などが",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "研究ノート（2／2）",
+   "bgimg": "art_shinkokusho_fuyou.png",
+   "ok": [
+    [
+     "calc",
+     "③控除ひとつで、年5万2千円"
+    ],
+    [
+     "clock",
+     "④遅れても、さかのぼって再計算"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "出さないと、計算に入らない"
+    ]
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "そして最後に、3つだけ",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "セルフチェック 3問",
+   "steps": [
+    [
+     "wallet",
+     "年金額は、年148万円を超える？"
+    ],
+    [
+     "couple",
+     "控除の対象になる家族はいる？"
+    ],
+    [
+     "mailbox",
+     "届いた封筒を、どこに置く？"
+    ]
+   ],
+   "left": "sensei_present",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "封筒が届いたら、どこに置きますか",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "ここだけは、今日決めておいてください",
+   "panels": [
+    {
+     "icon": "docs",
+     "cap": "引き出し"
+    },
+    {
+     "icon": "mailbox",
+     "cap": "目に入るところ"
+    }
+   ],
+   "rows": [
+    "去年までの、正解",
+    "今年の、正解"
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "なお、この動画は2026年8月時点",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "ご確認のお願い",
+   "org": "2026年8月時点の情報です",
+   "doc": "金額と手続きは、年金事務所・\nねんきんネット・市区町村でご確認を",
+   "note": "※出典（日本年金機構・総務省）は概要欄に記載",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "さて、次回です",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "次回のお知らせ",
+   "steps": [
+    [
+     "postcard",
+     "12月の年金だけ、額が違う方"
+    ],
+    [
+     "calc",
+     "11月まで多めに引かれた分を精算"
+    ]
+   ],
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ }
+]

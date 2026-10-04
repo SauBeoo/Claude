@@ -1,0 +1,2078 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-21",
+  "channel": "nenkin",
+  "templateRef": "nenkin",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-09-04T00:00:00.000Z",
+  "modifiedAt": "2026-09-04T00:00:00.000Z"
+ },
+ "timeline": {
+  "durationInFrames": 25674
+ },
+ "sceneMarkers": [
+  {
+   "id": "sc-0",
+   "atFrame": 0,
+   "label": "百五十八万円という記憶"
+  },
+  {
+   "id": "sc-1",
+   "atFrame": 525,
+   "label": "この秋、封筒が届く"
+  },
+  {
+   "id": "sc-2",
+   "atFrame": 1304,
+   "label": "出さないほうが損をする紙"
+  },
+  {
+   "id": "sc-3",
+   "atFrame": 2231,
+   "label": "研究室・いちばん大きな誤解"
+  },
+  {
+   "id": "sc-4",
+   "atFrame": 3103,
+   "label": "原典①国税庁・二百五万円"
+  },
+  {
+   "id": "sc-5",
+   "atFrame": 3851,
+   "label": "四十七万円も上がった"
+  },
+  {
+   "id": "sc-6",
+   "atFrame": 4146,
+   "label": "控除だけが動いた"
+  },
+  {
+   "id": "sc-7",
+   "atFrame": 4794,
+   "label": "百十万＋九十五万＝二百五万"
+  },
+  {
+   "id": "sc-8",
+   "atFrame": 5126,
+   "label": "来年は二百十四万円"
+  },
+  {
+   "id": "sc-9",
+   "atFrame": 6079,
+   "label": "では、数字で見ていきます"
+  },
+  {
+   "id": "sc-10",
+   "atFrame": 6258,
+   "label": "東京の高橋さん、六十五歳"
+  },
+  {
+   "id": "sc-11",
+   "atFrame": 6756,
+   "label": "年末調整をしてくれる会社が、もうない"
+  },
+  {
+   "id": "sc-12",
+   "atFrame": 7205,
+   "label": "年二百四十万円・二百五万円を超える"
+  },
+  {
+   "id": "sc-13",
+   "atFrame": 7630,
+   "label": "奥さまは六十歳・配偶者控除"
+  },
+  {
+   "id": "sc-14",
+   "atFrame": 8054,
+   "label": "計算の式"
+  },
+  {
+   "id": "sc-15",
+   "atFrame": 8495,
+   "label": "配偶者の分が入る"
+  },
+  {
+   "id": "sc-16",
+   "atFrame": 8897,
+   "label": "三十九万円×五・一〇五％"
+  },
+  {
+   "id": "sc-17",
+   "atFrame": 9142,
+   "label": "紙一枚の差・二十年で四十万円"
+  },
+  {
+   "id": "sc-18",
+   "atFrame": 9555,
+   "label": "CTA・研究室を応援してください"
+  },
+  {
+   "id": "sc-19",
+   "atFrame": 10395,
+   "label": "誤解②税率が高くなる？"
+  },
+  {
+   "id": "sc-20",
+   "atFrame": 10838,
+   "label": "原典②年金機構・税率に差はない"
+  },
+  {
+   "id": "sc-21",
+   "atFrame": 11222,
+   "label": "控除が消える"
+  },
+  {
+   "id": "sc-22",
+   "atFrame": 12245,
+   "label": "控除の種類"
+  },
+  {
+   "id": "sc-23",
+   "atFrame": 13256,
+   "label": "紙一枚が重くなる"
+  },
+  {
+   "id": "sc-24",
+   "atFrame": 13422,
+   "label": "三つ目・今年の変化"
+  },
+  {
+   "id": "sc-25",
+   "atFrame": 13872,
+   "label": "来年分からは百四十八万円以上にも"
+  },
+  {
+   "id": "sc-26",
+   "atFrame": 14409,
+   "label": "住民税のためです"
+  },
+  {
+   "id": "sc-27",
+   "atFrame": 14882,
+   "label": "非課税の帯にいるかた"
+  },
+  {
+   "id": "sc-28",
+   "atFrame": 15378,
+   "label": "慌てないでください"
+  },
+  {
+   "id": "sc-29",
+   "atFrame": 16050,
+   "label": "期限は紙に印刷されている"
+  },
+  {
+   "id": "sc-30",
+   "atFrame": 16675,
+   "label": "原典③機構・期限に間に合わなくても"
+  },
+  {
+   "id": "sc-31",
+   "atFrame": 17176,
+   "label": "あとから出せば戻ってくる"
+  },
+  {
+   "id": "sc-32",
+   "atFrame": 17665,
+   "label": "五年間さかのぼれる"
+  },
+  {
+   "id": "sc-33",
+   "atFrame": 18022,
+   "label": "落とし穴・確定申告不要制度"
+  },
+  {
+   "id": "sc-34",
+   "atFrame": 18759,
+   "label": "原典④国税庁・還付には申告が必要"
+  },
+  {
+   "id": "sc-35",
+   "atFrame": 19311,
+   "label": "こちらから出す"
+  },
+  {
+   "id": "sc-36",
+   "atFrame": 19789,
+   "label": "復興特別所得税"
+  },
+  {
+   "id": "sc-37",
+   "atFrame": 20093,
+   "label": "五％＋二・一％分＝五・一〇五％"
+  },
+  {
+   "id": "sc-38",
+   "atFrame": 20521,
+   "label": "特別徴収・引かれているもの"
+  },
+  {
+   "id": "sc-39",
+   "atFrame": 21229,
+   "label": "手取りを守る第一歩"
+  },
+  {
+   "id": "sc-40",
+   "atFrame": 21689,
+   "label": "研究ノート"
+  },
+  {
+   "id": "sc-41",
+   "atFrame": 23015,
+   "label": "三つだけ確かめてください"
+  },
+  {
+   "id": "sc-42",
+   "atFrame": 24003,
+   "label": "時点情報・ご確認ください"
+  },
+  {
+   "id": "sc-43",
+   "atFrame": 24562,
+   "label": "次回・未支給年金"
+  },
+  {
+   "id": "sc-44",
+   "atFrame": 25049,
+   "label": "請求しなければ渡らない"
+  },
+  {
+   "id": "sc-45",
+   "atFrame": 25568,
+   "label": "締め・また次回"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-bg",
+   "name": "nen",
+   "type": "background",
+   "clips": [
+    {
+     "id": "bg",
+     "kind": "background",
+     "from": 0,
+     "durationInFrames": 25674,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55
+    }
+   ]
+  },
+  {
+   "id": "trk-video",
+   "name": "footage",
+   "type": "video",
+   "clips": [
+    {
+     "id": "v-0-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 280,
+     "asset": "assets/a21_kioku158.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.915
+    },
+    {
+     "id": "v-0-1",
+     "kind": "video",
+     "from": 262,
+     "durationInFrames": 281,
+     "asset": "assets/a21_zure47.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.915,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-1-0",
+     "kind": "video",
+     "from": 525,
+     "durationInFrames": 277,
+     "asset": "assets/a21_shizuka_ugoku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.923,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-1-1",
+     "kind": "video",
+     "from": 784,
+     "durationInFrames": 278,
+     "asset": "assets/a21_post_aki.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.923,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-1-2",
+     "kind": "video",
+     "from": 1044,
+     "durationInFrames": 278,
+     "asset": "assets/a21_ippen_mo.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.923,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-2-0",
+     "kind": "video",
+     "from": 1304,
+     "durationInFrames": 250,
+     "asset": "assets/a21_taisho_kazoku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-2-1",
+     "kind": "video",
+     "from": 1536,
+     "durationInFrames": 250,
+     "asset": "assets/a21_shinkoku_ue.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-2-2",
+     "kind": "video",
+     "from": 1768,
+     "durationInFrames": 249,
+     "asset": "assets/a21_gyaku_no_kami.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-2-3",
+     "kind": "video",
+     "from": 1999,
+     "durationInFrames": 250,
+     "asset": "assets/a21_ninen_2man.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-3-0",
+     "kind": "video",
+     "from": 2231,
+     "durationInFrames": 236,
+     "asset": "assets/a21_kenkyu_hiraku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-3-1",
+     "kind": "video",
+     "from": 2449,
+     "durationInFrames": 236,
+     "asset": "assets/a21_futatsu_narabe.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-3-2",
+     "kind": "video",
+     "from": 2667,
+     "durationInFrames": 236,
+     "asset": "assets/a21_ooi_gokai.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-3-3",
+     "kind": "video",
+     "from": 2885,
+     "durationInFrames": 236,
+     "asset": "assets/a21_mou_tsukawanai.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-5-0",
+     "kind": "video",
+     "from": 3851,
+     "durationInFrames": 166,
+     "asset": "assets/a21_yonjunana_agaru.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-5-1",
+     "kind": "video",
+     "from": 3999,
+     "durationInFrames": 165,
+     "asset": "assets/a21_riyuu_hakkiri.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-6-0",
+     "kind": "video",
+     "from": 4146,
+     "durationInFrames": 234,
+     "asset": "assets/a21_kojo_ugoku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-6-1",
+     "kind": "video",
+     "from": 4362,
+     "durationInFrames": 234,
+     "asset": "assets/a21_kawattenai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-6-2",
+     "kind": "video",
+     "from": 4578,
+     "durationInFrames": 216,
+     "asset": "assets/a21_tashizan_te.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-0",
+     "kind": "video",
+     "from": 5126,
+     "durationInFrames": 256,
+     "asset": "assets/a21_chuuigaki.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-1",
+     "kind": "video",
+     "from": 5364,
+     "durationInFrames": 257,
+     "asset": "assets/a21_rainen_mata.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-2",
+     "kind": "video",
+     "from": 5603,
+     "durationInFrames": 256,
+     "asset": "assets/a21_mainen_minaosu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-3",
+     "kind": "video",
+     "from": 5841,
+     "durationInFrames": 256,
+     "asset": "assets/a21_kyonen_no_joushiki.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-9-0",
+     "kind": "video",
+     "from": 6079,
+     "durationInFrames": 197,
+     "asset": "assets/a21_kazu_de_miru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-10-0",
+     "kind": "video",
+     "from": 6258,
+     "durationInFrames": 267,
+     "asset": "assets/a21_takahashi_asa.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.964,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-10-1",
+     "kind": "video",
+     "from": 6507,
+     "durationInFrames": 267,
+     "asset": "assets/a21_ekimae_sanpo.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.964,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-11-0",
+     "kind": "video",
+     "from": 6756,
+     "durationInFrames": 242,
+     "asset": "assets/a21_genyaku_koro.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-11-1",
+     "kind": "video",
+     "from": 6980,
+     "durationInFrames": 243,
+     "asset": "assets/a21_kaisha_ga_nai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-12-0",
+     "kind": "video",
+     "from": 7205,
+     "durationInFrames": 230,
+     "asset": "assets/a21_tsuki20man.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-12-1",
+     "kind": "video",
+     "from": 7417,
+     "durationInFrames": 231,
+     "asset": "assets/a21_koeteiru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-13-0",
+     "kind": "video",
+     "from": 7630,
+     "durationInFrames": 230,
+     "asset": "assets/a21_okusama_60.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-13-1",
+     "kind": "video",
+     "from": 7842,
+     "durationInFrames": 212,
+     "asset": "assets/a21_haigusha_kojo.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-17-0",
+     "kind": "video",
+     "from": 9142,
+     "durationInFrames": 224,
+     "asset": "assets/a21_kami_ichimai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-17-1",
+     "kind": "video",
+     "from": 9348,
+     "durationInFrames": 225,
+     "asset": "assets/a21_nijunen_40man.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-0",
+     "kind": "video",
+     "from": 9555,
+     "durationInFrames": 228,
+     "asset": "assets/a21_cta_cha.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-1",
+     "kind": "video",
+     "from": 9765,
+     "durationInFrames": 228,
+     "asset": "assets/a21_cta_mado.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-2",
+     "kind": "video",
+     "from": 9975,
+     "durationInFrames": 228,
+     "asset": "assets/a21_cta_note.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-3",
+     "kind": "video",
+     "from": 10185,
+     "durationInFrames": 228,
+     "asset": "assets/a21_cta_tsuzuki.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-19-0",
+     "kind": "video",
+     "from": 10395,
+     "durationInFrames": 240,
+     "asset": "assets/a21_gokai_zeiritsu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-19-1",
+     "kind": "video",
+     "from": 10617,
+     "durationInFrames": 239,
+     "asset": "assets/a21_sore_wa_chigau.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-21-0",
+     "kind": "video",
+     "from": 11222,
+     "durationInFrames": 274,
+     "asset": "assets/a21_kojo_kieru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.939,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-21-1",
+     "kind": "video",
+     "from": 11478,
+     "durationInFrames": 273,
+     "asset": "assets/a21_dake_ni_naru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.939,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-21-2",
+     "kind": "video",
+     "from": 11733,
+     "durationInFrames": 274,
+     "asset": "assets/a21_hiku_mae_no_gaku.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-21-3",
+     "kind": "video",
+     "from": 11989,
+     "durationInFrames": 256,
+     "asset": "assets/a21_hikareru_fueru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.939,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-23-0",
+     "kind": "video",
+     "from": 13256,
+     "durationInFrames": 184,
+     "asset": "assets/a21_omoku_naru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-24-0",
+     "kind": "video",
+     "from": 13422,
+     "durationInFrames": 243,
+     "asset": "assets/a21_mitsume.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-24-1",
+     "kind": "video",
+     "from": 13647,
+     "durationInFrames": 225,
+     "asset": "assets/a21_izen_wa_205.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-26-0",
+     "kind": "video",
+     "from": 14409,
+     "durationInFrames": 255,
+     "asset": "assets/a21_juuminzei_tame.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-26-1",
+     "kind": "video",
+     "from": 14646,
+     "durationInFrames": 254,
+     "asset": "assets/a21_kazoku_joho.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-27-0",
+     "kind": "video",
+     "from": 14882,
+     "durationInFrames": 266,
+     "asset": "assets/a21_kakaranai_obi.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.969,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-27-1",
+     "kind": "video",
+     "from": 15130,
+     "durationInFrames": 266,
+     "asset": "assets/a21_taisho_hirogaru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.969,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-28-0",
+     "kind": "video",
+     "from": 15378,
+     "durationInFrames": 242,
+     "asset": "assets/a21_totsuzen_todoku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-28-1",
+     "kind": "video",
+     "from": 15602,
+     "durationInFrames": 242,
+     "asset": "assets/a21_awatenai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-28-2",
+     "kind": "video",
+     "from": 15826,
+     "durationInFrames": 242,
+     "asset": "assets/a21_son_ni_naru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-29-0",
+     "kind": "video",
+     "from": 16050,
+     "durationInFrames": 226,
+     "asset": "assets/a21_itsumade.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-29-1",
+     "kind": "video",
+     "from": 16258,
+     "durationInFrames": 226,
+     "asset": "assets/a21_kigen_insatsu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-29-2",
+     "kind": "video",
+     "from": 16466,
+     "durationInFrames": 227,
+     "asset": "assets/a21_gojishin_no_kami.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-31-0",
+     "kind": "video",
+     "from": 17176,
+     "durationInFrames": 262,
+     "asset": "assets/a21_ato_kara.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.981,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-31-1",
+     "kind": "video",
+     "from": 17420,
+     "durationInFrames": 263,
+     "asset": "assets/a21_akiramenai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.981,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-32-0",
+     "kind": "video",
+     "from": 17665,
+     "durationInFrames": 196,
+     "asset": "assets/a21_gonen_sakanobore.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-32-1",
+     "kind": "video",
+     "from": 17843,
+     "durationInFrames": 197,
+     "asset": "assets/a21_ima_kara_demo.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-33-0",
+     "kind": "video",
+     "from": 18022,
+     "durationInFrames": 264,
+     "asset": "assets/a21_otoshiana.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-33-1",
+     "kind": "video",
+     "from": 18268,
+     "durationInFrames": 263,
+     "asset": "assets/a21_fuyou_seido.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.977,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-33-2",
+     "kind": "video",
+     "from": 18513,
+     "durationInFrames": 264,
+     "asset": "assets/a21_benri_ni_kikoeru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.977,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-35-0",
+     "kind": "video",
+     "from": 19311,
+     "durationInFrames": 257,
+     "asset": "assets/a21_kaettekonai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-35-1",
+     "kind": "video",
+     "from": 19550,
+     "durationInFrames": 257,
+     "asset": "assets/a21_kochira_kara.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-36-0",
+     "kind": "video",
+     "from": 19789,
+     "durationInFrames": 170,
+     "asset": "assets/a21_mou_hitotsu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-36-1",
+     "kind": "video",
+     "from": 19941,
+     "durationInFrames": 152,
+     "asset": "assets/a21_uwanose.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-38-0",
+     "kind": "video",
+     "from": 20521,
+     "durationInFrames": 254,
+     "asset": "assets/a21_zeikin_dake_de_nai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-38-1",
+     "kind": "video",
+     "from": 20757,
+     "durationInFrames": 254,
+     "asset": "assets/a21_tokubetsu_choushuu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-38-2",
+     "kind": "video",
+     "from": 20993,
+     "durationInFrames": 254,
+     "asset": "assets/a21_furikomi_sa.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-39-0",
+     "kind": "video",
+     "from": 21229,
+     "durationInFrames": 248,
+     "asset": "assets/a21_hitotsuzutsu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-39-1",
+     "kind": "video",
+     "from": 21459,
+     "durationInFrames": 230,
+     "asset": "assets/a21_tedori_mamoru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-41-0",
+     "kind": "video",
+     "from": 23015,
+     "durationInFrames": 265,
+     "asset": "assets/a21_kakunin_hizuke.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.971,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-41-1",
+     "kind": "video",
+     "from": 23262,
+     "durationInFrames": 265,
+     "asset": "assets/a21_kazoku_ran.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.971,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-41-2",
+     "kind": "video",
+     "from": 23509,
+     "durationInFrames": 265,
+     "asset": "assets/a21_dashiwasure.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.971,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-41-3",
+     "kind": "video",
+     "from": 23756,
+     "durationInFrames": 265,
+     "asset": "assets/a21_gonen_inai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.971,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-42-0",
+     "kind": "video",
+     "from": 24003,
+     "durationInFrames": 205,
+     "asset": "assets/a21_jiten_joho.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-42-1",
+     "kind": "video",
+     "from": 24190,
+     "durationInFrames": 204,
+     "asset": "assets/a21_madoguchi_de.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-42-2",
+     "kind": "video",
+     "from": 24376,
+     "durationInFrames": 204,
+     "asset": "assets/a21_madoguchi_te.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-43-0",
+     "kind": "video",
+     "from": 24562,
+     "durationInFrames": 262,
+     "asset": "assets/a21_jikai_hako.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.987,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-43-1",
+     "kind": "video",
+     "from": 24806,
+     "durationInFrames": 261,
+     "asset": "assets/a21_nikagetsu_bun.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.987,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-44-0",
+     "kind": "video",
+     "from": 25049,
+     "durationInFrames": 278,
+     "asset": "assets/a21_kieru_wake_denai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.924,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-44-1",
+     "kind": "video",
+     "from": 25309,
+     "durationInFrames": 277,
+     "asset": "assets/a21_seikyuu_shinakereba.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.924,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-45-0",
+     "kind": "video",
+     "from": 25568,
+     "durationInFrames": 106,
+     "asset": "assets/a21_shime_mata.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    }
+   ]
+  },
+  {
+   "id": "trk-genten",
+   "name": "原典",
+   "type": "video",
+   "clips": [
+    {
+     "id": "g-4-0",
+     "kind": "video",
+     "from": 3103,
+     "durationInFrames": 267,
+     "asset": "assets/genten21_01.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-4-1",
+     "kind": "video",
+     "from": 3352,
+     "durationInFrames": 268,
+     "asset": "assets/genten21_02.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-4-2",
+     "kind": "video",
+     "from": 3602,
+     "durationInFrames": 267,
+     "asset": "assets/genten21_03.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-20-0",
+     "kind": "video",
+     "from": 10838,
+     "durationInFrames": 210,
+     "asset": "assets/genten21_04.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-20-1",
+     "kind": "video",
+     "from": 11030,
+     "durationInFrames": 210,
+     "asset": "assets/genten21_05.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-30-0",
+     "kind": "video",
+     "from": 16675,
+     "durationInFrames": 268,
+     "asset": "assets/genten21_06.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-30-1",
+     "kind": "video",
+     "from": 16925,
+     "durationInFrames": 269,
+     "asset": "assets/genten21_07.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-34-0",
+     "kind": "video",
+     "from": 18759,
+     "durationInFrames": 202,
+     "asset": "assets/genten21_08.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-34-1",
+     "kind": "video",
+     "from": 18943,
+     "durationInFrames": 202,
+     "asset": "assets/genten21_09.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "g-34-2",
+     "kind": "video",
+     "from": 19127,
+     "durationInFrames": 202,
+     "asset": "assets/genten21_10.png",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    }
+   ]
+  },
+  {
+   "id": "trk-stat",
+   "name": "bang so",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t-15",
+     "kind": "text",
+     "from": 8495,
+     "durationInFrames": 402,
+     "content": "ひと月あたり|3万2,500円\n一年にすると|39万円\n*紙を出さないと|この行が空になる",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 455,
+      "y": 409,
+      "w": 1150
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "t-22",
+     "kind": "text",
+     "from": 12245,
+     "durationInFrames": 1011,
+     "content": "配偶者|ひと月3万2,500円\n70歳以上の配偶者・家族|ひと月4万円\n扶養家族 ひとりにつき|ひと月3万2,500円\n障害のあるかた|ひと月2万2,500円〜\n*家族の人数が多いほど|紙一枚が重くなる",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 426,
+      "y": 354,
+      "w": 1150
+     },
+     "fontSize": 48
+    },
+    {
+     "id": "t-25",
+     "kind": "text",
+     "from": 13872,
+     "durationInFrames": 537,
+     "content": "これまで（65歳以上）|年金205万円以上\n来年分から（65歳以上）|年金148万円以上\n*65歳未満は|98万円以上",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 429,
+      "y": 428,
+      "w": 1150
+     },
+     "fontSize": 48
+    },
+    {
+     "id": "t-40",
+     "kind": "text",
+     "from": 21689,
+     "durationInFrames": 1326,
+     "content": "所得税が引かれる線（65歳以上）|205万円\n来年分は|214万円\n紙を出しても出さなくても税率は|5.105％で同じ\n配偶者の控除だけで|年およそ2万円\n*来年分から届くのは|年金148万円以上",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 425,
+      "y": 377,
+      "w": 1150
+     },
+     "fontSize": 42
+    }
+   ]
+  },
+  {
+   "id": "trk-formula",
+   "name": "cong thuc",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t-7",
+     "kind": "text",
+     "from": 4794,
+     "durationInFrames": 332,
+     "content": "110万 ＋ 95万 ＝ 205万",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 441,
+      "y": 478,
+      "w": 1150
+     },
+     "fontSize": 80
+    },
+    {
+     "id": "t-14",
+     "kind": "text",
+     "from": 8054,
+     "durationInFrames": 441,
+     "content": "支給額 − 社会保険料 − 各種控除額 × 5.105％",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 383,
+      "y": 502,
+      "w": 1150
+     },
+     "fontSize": 48
+    },
+    {
+     "id": "t-16",
+     "kind": "text",
+     "from": 8897,
+     "durationInFrames": 245,
+     "content": "39万 × 5.105％ ≒ 1万9,900円",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 384,
+      "y": 484,
+      "w": 1150
+     },
+     "fontSize": 72
+    },
+    {
+     "id": "t-37",
+     "kind": "text",
+     "from": 20093,
+     "durationInFrames": 428,
+     "content": "5％ ＋ 2.1％分 ＝ 5.105％",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 378,
+      "y": 478,
+      "w": 1150
+     },
+     "fontSize": 80
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "giong",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "v",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 25674,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-bgm",
+   "name": "bgm",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "b0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 10914,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "b10914",
+     "kind": "audio",
+     "from": 10914,
+     "durationInFrames": 10914,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "b21828",
+     "kind": "audio",
+     "from": 21828,
+     "durationInFrames": 3846,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "年金に税金がかかりはじめるのは、年に百五十八万円から。",
+    "startMs": 0,
+    "endMs": 5227
+   },
+   {
+    "text": "そう覚えていらっしゃるなら、その数字は、いま四十七万円ずれています。",
+    "startMs": 5827,
+    "endMs": 11491
+   },
+   {
+    "text": "百五十八万円ではありません。二百五万円です。",
+    "startMs": 12491,
+    "endMs": 16885
+   },
+   {
+    "text": "去年、静かに動きました。テレビでも、あまり取り上げられませんでした。",
+    "startMs": 17485,
+    "endMs": 23480
+   },
+   {
+    "text": "そしてこの秋、これまで一度も税金の紙が届いたことのないお宅にも、税務の封筒が届きます。",
+    "startMs": 24080,
+    "endMs": 31685
+   },
+   {
+    "text": "年金だけで暮らしていて、所得税は一円も払っていない。そういうかたのお宅にも、です。",
+    "startMs": 32285,
+    "endMs": 39592
+   },
+   {
+    "text": "なぜ、いま届くのでしょうか。",
+    "startMs": 40392,
+    "endMs": 42877
+   },
+   {
+    "text": "対象は、年金を受け取っているかた。とくに、ご家族を扶養されているかたです。",
+    "startMs": 43477,
+    "endMs": 49931
+   },
+   {
+    "text": "その封筒の中身は、扶養親族等申告書という紙です。",
+    "startMs": 50531,
+    "endMs": 55331
+   },
+   {
+    "text": "税金を取り立てるための紙に見えます。ですが、中身は逆で、出さないほうが損をする紙なんです。",
+    "startMs": 55931,
+    "endMs": 63643
+   },
+   {
+    "text": "出すか出さないかで、一年に二万円。二十年なら、四十万円ほど変わります。",
+    "startMs": 64243,
+    "endMs": 71208
+   },
+   {
+    "text": "まず、事実から。",
+    "startMs": 71808,
+    "endMs": 73760
+   },
+   {
+    "text": "年金と老後のお金研究室です。今日も、国税庁と日本年金機構の原典を画面で開きながら、確かめていきます。",
+    "startMs": 74360,
+    "endMs": 84301
+   },
+   {
+    "text": "はじめに、いちばん大きな誤解をひとつ、片づけておきます。",
+    "startMs": 84901,
+    "endMs": 89680
+   },
+   {
+    "text": "年金から税金が引かれはじめるのは、年に百五十八万円から。そう覚えていらっしゃるかたが、とても多いんです。",
+    "startMs": 90280,
+    "endMs": 99219
+   },
+   {
+    "text": "その数字は、もう使われていません。",
+    "startMs": 99919,
+    "endMs": 102841
+   },
+   {
+    "text": "こちらが、国税庁のパンフレットです。赤で囲んだところを、ご覧ください。",
+    "startMs": 103441,
+    "endMs": 109713
+   },
+   {
+    "text": "六十五歳未満の場合は百五十五万円、六十五歳以上の場合は二百五万円を超える公的年金等について、所得税等が源泉徴収されます。",
+    "startMs": 110313,
+    "endMs": 122196
+   },
+   {
+    "text": "六十五歳以上のかたは、二百五万円です。",
+    "startMs": 123196,
+    "endMs": 127559
+   },
+   {
+    "text": "百五十八万円から、四十七万円も上がりました。",
+    "startMs": 128359,
+    "endMs": 132935
+   },
+   {
+    "text": "なぜ上がったのか。理由は、はっきりしています。",
+    "startMs": 133535,
+    "endMs": 137609
+   },
+   {
+    "text": "基礎控除という、誰にでも認められる控除があります。これが、四十八万円から九十五万円に引き上げられました。",
+    "startMs": 138209,
+    "endMs": 147543
+   },
+   {
+    "text": "一方で、年金を受け取るかたの控除、公的年金等控除のほうは、変わっていません。六十五歳以上で、百十万円のままです。",
+    "startMs": 148143,
+    "endMs": 159193
+   },
+   {
+    "text": "百十万円と、九十五万円。足すと、二百五万円。",
+    "startMs": 159793,
+    "endMs": 165297
+   },
+   {
+    "text": "この足し算が、そのまま新しい線になっているわけです。",
+    "startMs": 165897,
+    "endMs": 170271
+   },
+   {
+    "text": "そして、ここで終わりではありません。同じパンフレットの、注意書きの部分です。",
+    "startMs": 170871,
+    "endMs": 177111
+   },
+   {
+    "text": "令和九年分は、六十五歳未満の場合は百六十四万円、六十五歳以上の場合は二百十四万円となります。",
+    "startMs": 177711,
+    "endMs": 187407
+   },
+   {
+    "text": "来年は、また上がります。二百十四万円です。",
+    "startMs": 188007,
+    "endMs": 192423
+   },
+   {
+    "text": "ですから、去年の常識で今年を判断すると、ずれます。ここは、毎年見直すところだと思っておいてください。",
+    "startMs": 193023,
+    "endMs": 202047
+   },
+   {
+    "text": "では、その紙を出すと、何が変わるのか。数字で見ていきます。",
+    "startMs": 202647,
+    "endMs": 208001
+   },
+   {
+    "text": "東京の高橋さん、六十五歳。長く部長を務められて、去年、退職されたかたです。",
+    "startMs": 208601,
+    "endMs": 216399
+   },
+   {
+    "text": "退職された春から、朝は必ず駅前まで歩いてから帰ってくる、という習慣ができたそうです。",
+    "startMs": 216999,
+    "endMs": 224593
+   },
+   {
+    "text": "「現役のころは、税金なんて会社が全部やってくれていましたから」。高橋さんは、そうおっしゃっていました。",
+    "startMs": 225193,
+    "endMs": 233193
+   },
+   {
+    "text": "そこなんです。年末調整をしてくれる会社が、もう、ありません。",
+    "startMs": 233893,
+    "endMs": 239557
+   },
+   {
+    "text": "年金は、月に二十万円ほど。年にすると、二百四十万円になります。",
+    "startMs": 240157,
+    "endMs": 246717
+   },
+   {
+    "text": "二百五万円を超えていますから、高橋さんの年金からは、所得税が引かれます。",
+    "startMs": 247317,
+    "endMs": 253728
+   },
+   {
+    "text": "奥さまは六十歳。いまは、お勤めをされていません。",
+    "startMs": 254328,
+    "endMs": 258872
+   },
+   {
+    "text": "こういう場合、配偶者控除というものが使えます。ただし、使えるのは、あの紙を出したときだけです。",
+    "startMs": 259472,
+    "endMs": 267771
+   },
+   {
+    "text": "計算の式は、こうなっています。",
+    "startMs": 268471,
+    "endMs": 271233
+   },
+   {
+    "text": "年金の支給額から、社会保険料を引く。そこから、各種控除額を引く。残った額に、五・一〇五パーセントを掛ける。",
+    "startMs": 271833,
+    "endMs": 282553
+   },
+   {
+    "text": "紙を出すと、この各種控除額のところに、配偶者の分が入ります。ひと月あたり、三万二千五百円。",
+    "startMs": 283153,
+    "endMs": 292199
+   },
+   {
+    "text": "年にすると、三十九万円です。",
+    "startMs": 292799,
+    "endMs": 295956
+   },
+   {
+    "text": "三十九万円に、五・一〇五パーセント。およそ、一万九千九百円。",
+    "startMs": 296556,
+    "endMs": 303820
+   },
+   {
+    "text": "年に、二万円ほど。それが、紙一枚の差です。",
+    "startMs": 304720,
+    "endMs": 309883
+   },
+   {
+    "text": "十年、二十年と受け取っていく年金です。二十年なら、およそ四十万円になります。",
+    "startMs": 310483,
+    "endMs": 317896
+   },
+   {
+    "text": "ここで、ひとつだけお願いです。今日の内容が分かりやすいと感じていただけたら、高評価と、",
+    "startMs": 318496,
+    "endMs": 325772
+   },
+   {
+    "text": "同じように年金が気になるご家族やご友人へのシェアで、この研究室を応援していただけると嬉しいです。",
+    "startMs": 325772,
+    "endMs": 333895
+   },
+   {
+    "text": "ご感想や、調べてほしいテーマがあれば、ぜひコメントでお寄せください。皆さまの声が、次の研究テーマになります。",
+    "startMs": 333895,
+    "endMs": 343032
+   },
+   {
+    "text": "それでは、続きを見ていきましょう。",
+    "startMs": 343032,
+    "endMs": 345909
+   },
+   {
+    "text": "さて、ここで、よくある誤解をもうひとつ、はっきりさせておきます。",
+    "startMs": 346509,
+    "endMs": 352024
+   },
+   {
+    "text": "紙を出さないと、税率が高くなる。そう聞いたことはありませんか。",
+    "startMs": 352624,
+    "endMs": 357989
+   },
+   {
+    "text": "それは、違います。",
+    "startMs": 358789,
+    "endMs": 360677
+   },
+   {
+    "text": "日本年金機構のページを、要点だけまとめます。税率そのものに、差はありません。",
+    "startMs": 361277,
+    "endMs": 368435
+   },
+   {
+    "text": "出しても出さなくても、五・一〇五パーセントです。",
+    "startMs": 369035,
+    "endMs": 373461
+   },
+   {
+    "text": "では、何が変わるのか。控除が、消えるんです。",
+    "startMs": 374061,
+    "endMs": 378563
+   },
+   {
+    "text": "紙を出したかたは、基礎的な控除に加えて、配偶者の分、扶養しているご家族の分、障害のあるかたの分。そういう控除が、順番に引かれていきます。",
+    "startMs": 379163,
+    "endMs": 391813
+   },
+   {
+    "text": "出さなかったかたは、基礎的な控除だけ。ほかは、全部なくなります。",
+    "startMs": 392413,
+    "endMs": 398099
+   },
+   {
+    "text": "税率が上がるのではなく、引く前の額が大きくなる。結果として、引かれる税金が増える。そういう仕組みです。",
+    "startMs": 398699,
+    "endMs": 407552
+   },
+   {
+    "text": "ちなみに、この控除には、いくつか種類があります。",
+    "startMs": 408152,
+    "endMs": 412259
+   },
+   {
+    "text": "配偶者の控除が、ひと月三万二千五百円。七十歳以上の配偶者なら、四万円。",
+    "startMs": 412859,
+    "endMs": 420709
+   },
+   {
+    "text": "扶養しているご家族がいれば、ひとりにつき三万二千五百円。七十歳以上のご家族なら、四万円。",
+    "startMs": 421309,
+    "endMs": 429757
+   },
+   {
+    "text": "障害のあるかたがいらっしゃれば、ひと月二万二千五百円。等級によっては、三万五千円、六万二千五百円と上がっていきます。",
+    "startMs": 430357,
+    "endMs": 441280
+   },
+   {
+    "text": "ご家族の人数が多いかたほど、この紙の一枚が重くなります。",
+    "startMs": 441880,
+    "endMs": 446787
+   },
+   {
+    "text": "そして、三つ目です。今年、何が変わったのか。",
+    "startMs": 447387,
+    "endMs": 452069
+   },
+   {
+    "text": "これまで、この紙が届いていたのは、年金が二百五万円以上のかた。つまり、所得税を引かれるかただけでした。",
+    "startMs": 452669,
+    "endMs": 461800
+   },
+   {
+    "text": "来年分からは、六十五歳以上で年金が百四十八万円以上のかたにも、届きます。六十五歳未満なら、九十八万円以上。",
+    "startMs": 462400,
+    "endMs": 473792
+   },
+   {
+    "text": "なぜでしょうか。所得税がかからないのに、なぜ紙が要るのか。",
+    "startMs": 474392,
+    "endMs": 479299
+   },
+   {
+    "text": "住民税のためです。",
+    "startMs": 480299,
+    "endMs": 482165
+   },
+   {
+    "text": "冒頭の問いの、答えがここです。税金を取りに来たのではなく、住民税を正しく計算するために、ご家族の情報が要るようになった。それだけのことなんです。",
+    "startMs": 482965,
+    "endMs": 495477
+   },
+   {
+    "text": "所得税はかからなくても、住民税はかかる。そういう帯にいらっしゃるかたが、いるんです。",
+    "startMs": 496077,
+    "endMs": 503245
+   },
+   {
+    "text": "その住民税を計算するために、扶養しているご家族の情報が要る。だから、対象が広がりました。",
+    "startMs": 503845,
+    "endMs": 511984
+   },
+   {
+    "text": "これまで一度も受け取ったことのないかたのお宅に、突然、税金の紙が届く。驚かれるかもしれません。",
+    "startMs": 512584,
+    "endMs": 520851
+   },
+   {
+    "text": "ですが、慌てないでください。これは、増税の通知ではありません。控除を受けるための紙です。",
+    "startMs": 521451,
+    "endMs": 529387
+   },
+   {
+    "text": "出さないほうが損になる。そういう性質の紙です。",
+    "startMs": 530187,
+    "endMs": 534389
+   },
+   {
+    "text": "では、いつまでに出せばいいのか。ここは、正直に申し上げます。",
+    "startMs": 534989,
+    "endMs": 540472
+   },
+   {
+    "text": "日本年金機構は、締め切りの日付を、ホームページに載せていません。",
+    "startMs": 541072,
+    "endMs": 546597
+   },
+   {
+    "text": "期限は、届いた紙そのものに印刷されています。ですから、ご自身の紙をご覧いただくほかありません。",
+    "startMs": 547197,
+    "endMs": 555219
+   },
+   {
+    "text": "ただ、間に合わなかったかたに、救いはあります。",
+    "startMs": 555819,
+    "endMs": 559712
+   },
+   {
+    "text": "機構のページの、要点はこうです。期限に間に合わなくても、なるべく早く出してください。出せば、さかのぼって税額を計算しなおしてもらえます。",
+    "startMs": 560312,
+    "endMs": 571917
+   },
+   {
+    "text": "出し忘れても、あとから出せば、戻ってきます。諦めないでください。",
+    "startMs": 572517,
+    "endMs": 578821
+   },
+   {
+    "text": "さらに、そもそも紙を出さないまま一年が終わってしまったかた。この場合は、確定申告という道が残っています。",
+    "startMs": 579421,
+    "endMs": 588221
+   },
+   {
+    "text": "還付の申告は、その年の翌年一月一日から、五年間できます。",
+    "startMs": 588821,
+    "endMs": 594688
+   },
+   {
+    "text": "五年前の分まで、いまからでも取り戻せる、ということです。",
+    "startMs": 595288,
+    "endMs": 600131
+   },
+   {
+    "text": "ただし、ここに、多くのかたが引っかかる落とし穴があります。",
+    "startMs": 600731,
+    "endMs": 605520
+   },
+   {
+    "text": "年金を受け取っているかたには、確定申告不要制度、というものがあります。",
+    "startMs": 606120,
+    "endMs": 612275
+   },
+   {
+    "text": "年金の収入が四百万円以下で、それ以外の所得が二十万円以下。この二つを両方みたすかたは、確定申告をしなくてよい、という制度です。",
+    "startMs": 612875,
+    "endMs": 624693
+   },
+   {
+    "text": "便利な制度に聞こえますよね。ところが、国税庁のパンフレットには、その続きが書いてあります。",
+    "startMs": 625293,
+    "endMs": 633219
+   },
+   {
+    "text": "確定申告が必要ない場合であっても、所得税等の還付を受けるためには、確定申告書を提出する必要があります。",
+    "startMs": 633819,
+    "endMs": 643088
+   },
+   {
+    "text": "つまり、申告しなくていい、というのは、払いすぎていても返ってこない、ということでもあるんです。",
+    "startMs": 643688,
+    "endMs": 651411
+   },
+   {
+    "text": "戻してほしいなら、こちらから出す。年金の世界は、だいたいこの形をしています。",
+    "startMs": 652311,
+    "endMs": 659031
+   },
+   {
+    "text": "もうひとつ、ついでに申し上げておきます。",
+    "startMs": 659631,
+    "endMs": 662852
+   },
+   {
+    "text": "引かれた所得税には、復興特別所得税というものが上乗せされています。",
+    "startMs": 663452,
+    "endMs": 669169
+   },
+   {
+    "text": "もとの税率が五パーセント。それに、二・一パーセント分が加わって、五・一〇五パーセントになる。",
+    "startMs": 669769,
+    "endMs": 678345
+   },
+   {
+    "text": "これは、令和十九年分まで続くことが決まっています。",
+    "startMs": 678945,
+    "endMs": 683447
+   },
+   {
+    "text": "そして、年金から引かれているのは、税金だけではありません。",
+    "startMs": 684047,
+    "endMs": 689060
+   },
+   {
+    "text": "介護保険料。後期高齢者医療保険料、あるいは国民健康保険料。そして、住民税。",
+    "startMs": 689660,
+    "endMs": 698033
+   },
+   {
+    "text": "年金の年額が十八万円以上のかたは、これらが年金から直接引かれます。特別徴収といいます。",
+    "startMs": 698633,
+    "endMs": 707017
+   },
+   {
+    "text": "ですから、振込通知書に書かれている金額と、実際に口座に入る金額は、違います。",
+    "startMs": 707617,
+    "endMs": 715201
+   },
+   {
+    "text": "引かれるものを、ひとつずつ確かめておく。それが、手取りを守る第一歩になります。",
+    "startMs": 715801,
+    "endMs": 722351
+   },
+   {
+    "text": "それでは、今日の研究ノートです。",
+    "startMs": 722951,
+    "endMs": 725820
+   },
+   {
+    "text": "一。年金から所得税が引かれる線は、六十五歳以上で二百五万円。百五十八万円は、もう古い。",
+    "startMs": 726420,
+    "endMs": 735871
+   },
+   {
+    "text": "二。来年分は、さらに二百十四万円に上がる。",
+    "startMs": 736471,
+    "endMs": 740961
+   },
+   {
+    "text": "三。紙を出しても出さなくても、税率は五・一〇五パーセントで同じ。変わるのは、引ける控除。",
+    "startMs": 741561,
+    "endMs": 750201
+   },
+   {
+    "text": "四。配偶者の控除だけで、年におよそ二万円。ご家族が多いほど、差は大きくなる。",
+    "startMs": 750801,
+    "endMs": 758481
+   },
+   {
+    "text": "五。来年分からは、年金百四十八万円以上のかたにも届く。住民税のため。",
+    "startMs": 759081,
+    "endMs": 766559
+   },
+   {
+    "text": "最後に、三つだけ、確かめてみてください。",
+    "startMs": 767159,
+    "endMs": 771009
+   },
+   {
+    "text": "ひとつ。この秋、お手元に封筒は届きましたか。届いていたら、期限の日付を、まず見てください。",
+    "startMs": 771609,
+    "endMs": 780217
+   },
+   {
+    "text": "ふたつ。奥さま、ご主人、あるいは同居のご家族に、収入の少ないかたはいらっしゃいませんか。その欄が、そのまま控除になります。",
+    "startMs": 780817,
+    "endMs": 791559
+   },
+   {
+    "text": "みっつ。過去に出し忘れた年はありませんか。五年以内なら、確定申告で取り戻せます。",
+    "startMs": 792159,
+    "endMs": 799508
+   },
+   {
+    "text": "なお、今日の内容は、令和八年八月時点の情報です。税制は毎年改正されますし、実際の税額はお一人おひとりの状況で変わります。",
+    "startMs": 800108,
+    "endMs": 811871
+   },
+   {
+    "text": "ご判断の前に、お近くの税務署、または年金事務所でご確認ください。",
+    "startMs": 811871,
+    "endMs": 818145
+   },
+   {
+    "text": "さて、次回です。",
+    "startMs": 818745,
+    "endMs": 820612
+   },
+   {
+    "text": "年金を受け取っていたかたが亡くなると、必ず、まだ受け取っていない年金が残ります。",
+    "startMs": 821212,
+    "endMs": 827793
+   },
+   {
+    "text": "年金は、二か月分をまとめて、あとから振り込まれる仕組みだからです。",
+    "startMs": 828393,
+    "endMs": 834057
+   },
+   {
+    "text": "そのお金は、消えるわけではありません。ご家族が、請求できます。",
+    "startMs": 834957,
+    "endMs": 841272
+   },
+   {
+    "text": "ただし、請求しなければ、誰の手にも渡りません。",
+    "startMs": 841872,
+    "endMs": 846395
+   },
+   {
+    "text": "次回の研究で、その手続きを、一緒に確かめます。",
+    "startMs": 846995,
+    "endMs": 851677
+   },
+   {
+    "text": "それでは、また次回の研究でお会いしましょう。",
+    "startMs": 852277,
+    "endMs": 855808
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F2EDE4"
+ }
+}

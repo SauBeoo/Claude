@@ -1,0 +1,776 @@
+[
+ {
+  "match": "ガラスケースに、額をくっつけ",
+  "video": true,
+  "source": "footage_raw/jt_01_shop_barrels.mp4",
+  "dur": 10
+ },
+ {
+  "match": "一点目——カラン、カラン、カ",
+  "video": true,
+  "offset": 2.22,
+  "source": "footage_raw/jt_04_kids_miyage.mp4",
+  "dur": 14
+ },
+ {
+  "match": "手のひらの中には、十円玉が、",
+  "video": true,
+  "offset": 9.94,
+  "source": "footage_raw/jt_21_boy_greencap.mp4",
+  "dur": 12
+ },
+ {
+  "match": "覚えていたら、あなたも一点。",
+  "video": true,
+  "offset": 4.62,
+  "source": "footage_raw/jt_03_shotengai_walk.mp4",
+  "dur": 12
+ },
+ {
+  "match": "実は、この十枚のうち、九枚は",
+  "photo": true,
+  "offset": 8.83,
+  "source": "slides_img/ai_01_coldopen_glasscase.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "実は、この十枚のうち、九枚は",
+  "photo": true,
+  "offset": 14.4,
+  "source": "slides_img/ai_02_ten_coins_hand.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "実は、この十枚のうち、九枚は",
+  "photo": true,
+  "offset": 19.96,
+  "source": "slides_img/ai_03_smartball_wide.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "実は、この十枚のうち、九枚は",
+  "photo": true,
+  "offset": 25.53,
+  "source": "slides_img/ai_137_smartball_table_sub.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "さあ、そのスマートボール。台",
+  "photo": true,
+  "offset": 5.23,
+  "source": "slides_img/ai_04_smartball_balls_insert.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "さあ、そのスマートボール。台",
+  "photo": true,
+  "offset": 10.8,
+  "source": "slides_img/ai_05_lever_finger.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "さあ、そのスマートボール。台",
+  "photo": true,
+  "offset": 16.36,
+  "source": "slides_img/ai_06_coinslot_brass.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "さあ、そのスマートボール。台",
+  "photo": true,
+  "offset": 21.93,
+  "source": "slides_img/ai_07_second_table_idle.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このスマートボール、もともと",
+  "photo": true,
+  "offset": 1.63,
+  "source": "slides_img/ai_08_prize_jar.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このスマートボール、もともと",
+  "photo": true,
+  "offset": 7.2,
+  "source": "slides_img/ai_09_dust_beam.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このスマートボール、もともと",
+  "photo": true,
+  "offset": 12.76,
+  "source": "slides_img/ai_10_bulb_glow_wood.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このスマートボール、もともと",
+  "photo": true,
+  "offset": 18.33,
+  "source": "slides_img/ai_11_wood_grain_worn.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このスマートボール、もともと",
+  "photo": true,
+  "offset": 23.89,
+  "source": "slides_img/ai_12_sandals_step.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私の町の駄菓子屋にも、二台だ",
+  "photo": true,
+  "offset": 0.34,
+  "source": "slides_img/ai_13_wall_clock.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私の町の駄菓子屋にも、二台だ",
+  "photo": true,
+  "offset": 5.9,
+  "source": "slides_img/ai_14_doorway_threshold.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私の町の駄菓子屋にも、二台だ",
+  "photo": true,
+  "offset": 11.47,
+  "source": "slides_img/ai_15_noren_sway.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私の町の駄菓子屋にも、二台だ",
+  "photo": true,
+  "offset": 17.03,
+  "source": "slides_img/ai_16_candy_jars_bg.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "スマートボール台のすぐ横、ガ",
+  "photo": true,
+  "source": "real_photos/item2_kuji_aizu.jpg"
+ },
+ {
+  "match": "スマートボール台のすぐ横、ガ",
+  "photo": true,
+  "offset": 5.82,
+  "source": "slides_img/ai_138_kuji_tickets_wall_sub.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "二点目、くじ引き。三角の紙が",
+  "photo": true,
+  "offset": 4.12,
+  "source": "slides_img/ai_24_kuji_pull_hand.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "一枚十円。端をめくって、中の",
+  "photo": true,
+  "offset": 0.65,
+  "source": "slides_img/ai_25_kuji_unfold.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "一枚十円。端をめくって、中の",
+  "photo": true,
+  "offset": 6.48,
+  "source": "slides_img/ai_26_kuji_wall_wide.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "一枚十円。端をめくって、中の",
+  "photo": true,
+  "offset": 12.3,
+  "source": "slides_img/ai_27_candy_prize_tray.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "一枚十円。端をめくって、中の",
+  "photo": true,
+  "offset": 18.13,
+  "source": "slides_img/ai_28_hand_hesitate.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私も、何十枚と引いたはずです",
+  "photo": true,
+  "offset": 0.35,
+  "source": "slides_img/ai_29_winning_ticket.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私も、何十枚と引いたはずです",
+  "photo": true,
+  "offset": 6.18,
+  "source": "slides_img/ai_30_wall_corner_light.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私も、何十枚と引いたはずです",
+  "photo": true,
+  "offset": 12.0,
+  "source": "slides_img/ai_31_paper_scraps.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "くじの束から目を上げると、店",
+  "video": true,
+  "source": "footage_raw/jt_12_nakamise.mp4",
+  "dur": 22
+ },
+ {
+  "match": "パン、という乾いた音。当たっ",
+  "photo": true,
+  "offset": 2.17,
+  "source": "slides_img/ai_139_toy_rifle_red_sub.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "パン、という乾いた音。当たっ",
+  "photo": true,
+  "offset": 7.79,
+  "source": "slides_img/ai_32_cork_rifle_barrel.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "パン、という乾いた音。当たっ",
+  "photo": true,
+  "offset": 13.41,
+  "source": "slides_img/ai_33_prize_shelf.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "狙うのはいつも、いちばん大き",
+  "photo": true,
+  "offset": 0.2,
+  "source": "slides_img/ai_34_bench_wide_empty.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "狙うのはいつも、いちばん大き",
+  "photo": true,
+  "offset": 5.83,
+  "source": "slides_img/ai_35_cork_pellets_dish.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "狙うのはいつも、いちばん大き",
+  "photo": true,
+  "offset": 11.45,
+  "source": "slides_img/ai_36_red_cloth_light.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "店の奥、レジのすぐ横には、ま",
+  "video": true,
+  "source": "footage_raw/jt_11_stall_toys_kids.mp4",
+  "dur": 14
+ },
+ {
+  "match": "四点目、レバー式の十円ゲーム",
+  "photo": true,
+  "offset": 7.47,
+  "source": "real_photos/item4_shinkansen_game.jpg"
+ },
+ {
+  "match": "新幹線の絵が描かれたものや、",
+  "photo": true,
+  "offset": 0.8,
+  "source": "slides_img/ai_40_coinslot_10yen_plate.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "新幹線の絵が描かれたものや、",
+  "photo": true,
+  "offset": 6.67,
+  "source": "slides_img/ai_41_thumb_lever.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "新幹線の絵が描かれたものや、",
+  "photo": true,
+  "offset": 12.55,
+  "source": "slides_img/ai_42_ball_track.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "新幹線の絵が描かれたものや、",
+  "photo": true,
+  "offset": 18.42,
+  "source": "slides_img/ai_43_machine_near_register.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このゲーム、うまくいけば、景",
+  "photo": true,
+  "offset": 3.71,
+  "source": "slides_img/ai_44_metal_corner_worn.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このゲーム、うまくいけば、景",
+  "photo": true,
+  "offset": 9.59,
+  "source": "slides_img/ai_45_glass_front_reflect.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このゲーム、うまくいけば、景",
+  "photo": true,
+  "offset": 15.46,
+  "source": "slides_img/ai_46_ticket_dispenser.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "そのレバー式の機械の隣、店の",
+  "video": true,
+  "source": "footage_raw/jt_08_stall_lanterns_a.mp4",
+  "dur": 12
+ },
+ {
+  "match": "そのレバー式の機械の隣、店の",
+  "video": true,
+  "offset": 12.0,
+  "source": "footage_raw/jt_09_stall_redfish.mp4",
+  "dur": 10
+ },
+ {
+  "match": "このカプセルのおもちゃ、もと",
+  "photo": true,
+  "offset": 6.68,
+  "source": "slides_img/ai_49_gachagacha_wide.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このカプセルのおもちゃ、もと",
+  "photo": true,
+  "offset": 12.53,
+  "source": "slides_img/ai_50_gachagacha_crank_hand.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このカプセルのおもちゃ、もと",
+  "photo": true,
+  "offset": 18.37,
+  "source": "slides_img/ai_51_capsules_dome.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このカプセルのおもちゃ、もと",
+  "photo": true,
+  "offset": 24.21,
+  "source": "slides_img/ai_52_capsule_falling_tray.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ハンドルを回すときの、あの重",
+  "photo": true,
+  "offset": 5.44,
+  "source": "slides_img/ai_53_machine_legs_worn.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ハンドルを回すときの、あの重",
+  "photo": true,
+  "offset": 11.28,
+  "source": "slides_img/ai_54_doorway_light_machines.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ハンドルを回すときの、あの重",
+  "photo": true,
+  "offset": 17.12,
+  "source": "slides_img/ai_55_coinslot_machine_face.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "これで、五枚。手のひらには、",
+  "photo": true,
+  "offset": 2.88,
+  "source": "slides_img/ai_56_hand_cup_capsule.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "これで、五枚。手のひらには、",
+  "photo": true,
+  "offset": 8.72,
+  "source": "slides_img/ai_57_machine_shadow_wood.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "video": true,
+  "source": "footage_raw/jt_15_matsuri_street.mp4",
+  "dur": 16
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "video": true,
+  "offset": 16.0,
+  "source": "footage_raw/jt_20_shoeshine_street.mp4",
+  "dur": 12
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 28.0,
+  "source": "slides_img/ai_61_shop_wide_ambient.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 34.46,
+  "source": "slides_img/ai_62_shelves_blur.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "店の外に出ると、空き地に、子",
+  "video": true,
+  "source": "footage_raw/jt_22_street_kids.mp4",
+  "dur": 10
+ },
+ {
+  "match": "六点目、ベーゴマと、メンコの",
+  "video": true,
+  "offset": 2.97,
+  "source": "footage_raw/jt_16_lion_dance.mp4",
+  "dur": 13
+ },
+ {
+  "match": "駄菓子屋の店先の、木の台や、",
+  "photo": true,
+  "offset": 11.7,
+  "source": "slides_img/ai_68_lot_wide_crate.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "駄菓子屋の店先の、木の台や、",
+  "photo": true,
+  "offset": 18.2,
+  "source": "real_photos/item6_beigoma.jpg"
+ },
+ {
+  "match": "負けたら、相手にコマを取られ",
+  "photo": true,
+  "offset": 0.34,
+  "source": "real_photos/item6_menko.jpg"
+ },
+ {
+  "match": "負けたら、相手にコマを取られ",
+  "photo": true,
+  "offset": 6.84,
+  "source": "slides_img/ai_69_cord_wind_hand.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "負けたら、相手にコマを取られ",
+  "photo": true,
+  "offset": 13.34,
+  "source": "slides_img/ai_70_top_spinning_blur.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "その空き地の隅、たらいの水面",
+  "video": true,
+  "source": "footage_raw/jt_10_balloons_kusuri.mp4",
+  "dur": 14
+ },
+ {
+  "match": "水を張ったたらいに、輪ゴムの",
+  "video": true,
+  "offset": 3.96,
+  "source": "footage_raw/jt_19_kids_balloon_crowd.mp4",
+  "dur": 10
+ },
+ {
+  "match": "水を張ったたらいに、輪ゴムの",
+  "photo": true,
+  "offset": 13.96,
+  "source": "slides_img/ai_75_tarai_wide.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このこより、水に濡れると、あ",
+  "photo": true,
+  "offset": 2.18,
+  "source": "real_photos/item7_yoyo.jpg"
+ },
+ {
+  "match": "このこより、水に濡れると、あ",
+  "photo": true,
+  "offset": 7.72,
+  "source": "slides_img/ai_76_string_dip_balloon.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このこより、水に濡れると、あ",
+  "photo": true,
+  "offset": 13.27,
+  "source": "slides_img/ai_77_string_snap_drift.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このこより、水に濡れると、あ",
+  "photo": true,
+  "offset": 18.81,
+  "source": "slides_img/ai_78_folding_stool.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "濡れた手のまま、店の中に戻る",
+  "video": true,
+  "source": "footage_raw/jt_06_craftsman.mp4",
+  "dur": 10
+ },
+ {
+  "match": "八点目——これは、遊び道具で",
+  "video": true,
+  "offset": 2.97,
+  "source": "footage_raw/jt_13_ladies_lanterns.mp4",
+  "dur": 16
+ },
+ {
+  "match": "十円しか持っていないのに、十",
+  "video": true,
+  "offset": 9.18,
+  "source": "footage_raw/jt_14_toy_vendor_table.mp4",
+  "dur": 7
+ },
+ {
+  "match": "十円しか持っていないのに、十",
+  "photo": true,
+  "offset": 16.18,
+  "source": "slides_img/ai_83_obachan_hands_apron.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "十円しか持っていないのに、十",
+  "photo": true,
+  "offset": 22.32,
+  "source": "slides_img/ai_84_tissue_apron_pocket.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私の行っていたお店のおばちゃ",
+  "photo": true,
+  "offset": 4.85,
+  "source": "slides_img/ai_85_coins_counted_counter.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私の行っていたお店のおばちゃ",
+  "photo": true,
+  "offset": 10.99,
+  "source": "slides_img/ai_86_paperbag_folded.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私の行っていたお店のおばちゃ",
+  "photo": true,
+  "offset": 17.13,
+  "source": "slides_img/ai_87_register_area_wide.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "あのお店、私が中学に上がる年",
+  "photo": true,
+  "offset": 0.92,
+  "source": "slides_img/ai_88_abacus_shelf.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "あのお店、私が中学に上がる年",
+  "photo": true,
+  "offset": 7.06,
+  "source": "slides_img/ai_89_extra_candy_added.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "会計を終えて、もう一度だけ、",
+  "photo": true,
+  "offset": 3.91,
+  "source": "slides_img/ai_90_counter_low_eyelevel.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "九点目、型抜き。そして、これ",
+  "video": true,
+  "source": "footage_raw/jt_17_boy_camera.mp4",
+  "dur": 9
+ },
+ {
+  "match": "九点目、型抜き。そして、これ",
+  "video": true,
+  "offset": 9.0,
+  "source": "footage_raw/jt_18_schoolkids.mp4",
+  "dur": 11
+ },
+ {
+  "match": "薄い板状のお菓子に、動物や星",
+  "photo": true,
+  "offset": 6.69,
+  "source": "real_photos/item9_katanuki.jpg"
+ },
+ {
+  "match": "薄い板状のお菓子に、動物や星",
+  "photo": true,
+  "offset": 12.49,
+  "source": "slides_img/ai_97_candy_board_shapes.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "薄い板状のお菓子に、動物や星",
+  "photo": true,
+  "offset": 18.28,
+  "source": "slides_img/ai_98_needle_beside_board.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このお店では、割らずに、きれ",
+  "photo": true,
+  "offset": 3.99,
+  "source": "slides_img/ai_99_white_dust_fingertip.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このお店では、割らずに、きれ",
+  "photo": true,
+  "offset": 9.79,
+  "source": "slides_img/ai_100_board_edge_crack.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "このお店では、割らずに、きれ",
+  "photo": true,
+  "offset": 15.58,
+  "source": "slides_img/ai_101_needle_working_shape.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "十円で始めた遊びが、その何十",
+  "photo": true,
+  "offset": 5.05,
+  "source": "slides_img/ai_102_prize_coins_counted.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "十円で始めた遊びが、その何十",
+  "photo": true,
+  "offset": 10.85,
+  "source": "slides_img/ai_103_prize_chart_blurred.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "この遊び、昭和二十年代、紙芝",
+  "photo": true,
+  "offset": 4.84,
+  "source": "slides_img/ai_104_shape_lifted_free.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "この遊び、昭和二十年代、紙芝",
+  "photo": true,
+  "offset": 10.64,
+  "source": "slides_img/ai_105_intent_posture_behind.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "この遊び、昭和二十年代、紙芝",
+  "photo": true,
+  "offset": 16.43,
+  "source": "slides_img/ai_106_shoulders_still_behind.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "この遊び、昭和二十年代、紙芝",
+  "photo": true,
+  "offset": 22.23,
+  "source": "slides_img/ai_107_cracked_piece_aside.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私のクラスにも、いました。息",
+  "photo": true,
+  "offset": 2.66,
+  "source": "slides_img/ai_108_counter_scattered_dust.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私のクラスにも、いました。息",
+  "photo": true,
+  "offset": 8.46,
+  "source": "slides_img/ai_109_needle_tip_light.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私のクラスにも、いました。息",
+  "photo": true,
+  "offset": 14.25,
+  "source": "slides_img/ai_110_board_tilted_light.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "私のクラスにも、いました。息",
+  "photo": true,
+  "offset": 20.05,
+  "source": "slides_img/ai_111_hand_steady_edge.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "十枚で始めたはずの十円玉が、",
+  "photo": true,
+  "offset": 3.5,
+  "source": "slides_img/ai_112_glasscase_glow_wide.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "そして、十点目。これは、遊び",
+  "video": true,
+  "source": "footage_raw/jt_07_veg_cart.mp4",
+  "dur": 10
+ },
+ {
+  "match": "駄菓子屋が、いちばん元気だっ",
+  "video": true,
+  "offset": 1.97,
+  "source": "footage_raw/jt_02_alley_signs.mp4",
+  "dur": 10
+ },
+ {
+  "match": "駄菓子屋が、いちばん元気だっ",
+  "photo": true,
+  "offset": 11.97,
+  "source": "slides_img/ai_135_storefront_a.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "駄菓子屋が、いちばん元気だっ",
+  "photo": true,
+  "offset": 17.5,
+  "source": "slides_img/ai_16_dagashiya_wide_FALLBACK.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "けれど、平成三年には、全国に",
+  "photo": true,
+  "offset": 4.71,
+  "source": "slides_img/ai_136_storefront_b.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "けれど、平成三年には、全国に",
+  "photo": true,
+  "offset": 10.24,
+  "source": "slides_img/ai_116_priceboard_leaning.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "けれど、平成三年には、全国に",
+  "photo": true,
+  "offset": 15.77,
+  "source": "slides_img/ai_117_street_sign_dusk.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "けれど、平成三年には、全国に",
+  "photo": true,
+  "offset": 21.31,
+  "source": "slides_img/ai_118_bicycle_parked.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "十軒のうち、六軒以上が、もう",
+  "photo": true,
+  "offset": 5.0,
+  "source": "slides_img/ai_119_door_half_open.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "十軒のうち、六軒以上が、もう",
+  "photo": true,
+  "offset": 10.53,
+  "source": "slides_img/ai_120_weathered_signboard.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "これで、十点満点。あなたは、",
+  "video": true,
+  "source": "footage_raw/jt_05_kids_train.mp4",
+  "dur": 10
+ },
+ {
+  "match": "そういえば、はじめに十円の話",
+  "video": true,
+  "offset": 4.73,
+  "source": "footage_raw/px_coin_spinning.mp4",
+  "dur": 12
+ },
+ {
+  "match": "そういえば、はじめに十円の話",
+  "video": true,
+  "offset": 16.73,
+  "source": "footage_raw/px_coins_hand_jar.mp4",
+  "dur": 12
+ },
+ {
+  "match": "そういえば、はじめに十円の話",
+  "photo": true,
+  "offset": 28.73,
+  "source": "slides_img/ai_18_umaibou_coin_ending.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ガラスケースの前で、十円玉を",
+  "photo": true,
+  "offset": 4.61,
+  "source": "slides_img/ai_123_coin_spin_stop.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ガラスケースの前で、十円玉を",
+  "photo": true,
+  "offset": 10.12,
+  "source": "slides_img/ai_124_counter_quiet_evening.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "ガラスケースの前で、十円玉を",
+  "photo": true,
+  "offset": 15.63,
+  "source": "slides_img/ai_125_coin_release_gentle.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "あなたの町の駄菓子屋には、ど",
+  "photo": true,
+  "offset": 4.07,
+  "source": "slides_img/ai_126_shop_wide_still.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "あなたの町の駄菓子屋には、ど",
+  "photo": true,
+  "offset": 9.58,
+  "source": "slides_img/ai_127_dust_last_light.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "あなたの町の駄菓子屋には、ど",
+  "photo": true,
+  "offset": 15.09,
+  "source": "slides_img/ai_128_glasscase_reflect_once_more.jpg (AI, xem scene_prompts_FLOW.txt)"
+ },
+ {
+  "match": "あなたの町の駄菓子屋には、ど",
+  "photo": true,
+  "offset": 20.6,
+  "source": "slides_img/ai_129_wrapper_catch_light.jpg (AI, xem scene_prompts_FLOW.txt)"
+ }
+]

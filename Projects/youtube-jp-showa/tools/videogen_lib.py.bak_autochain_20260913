@@ -1,0 +1,1275 @@
+# -*- coding: utf-8 -*-
+"""videogen_lib — CONG THUC DUY NHAT cho prompt text-to-video (Veo/Flow) cua kenh 昭和くらし図鑑.
+
+Nguon su that ve LUAT: 04_VIDEOGEN_PROMPTS.md. File nay la ban thi hanh — hang so NGUYEN VAN + gate.
+gen_prompts.py cua MOI video chi khai bao P (preset boi canh) · C (cast) · S (scene) roi goi:
+
+    from videogen_lib import build, gate, write_outputs
+    rows = build(S, P, C)
+    gate(rows, S, P, C, whitelist_no_human={...}, strict=True)
+    write_outputs(rows, ".")
+
+⛔ KHONG chep STYLE/AVOID/MOTION vao gen_prompts.py — moi bai hoc them vao day thi lan sang moi video.
+
+Vi sao ton tai (video 10, 2026-09-06, soi 121/121 clip): 17 loi nang + 15 nhe + 120/120 khung phim.
+Moi loi truy ve MOT cau trong prompt:
+  khung phim + chu FUJI     <- "shot on 8mm home movie film"          -> STYLE v2 + AVOID dich danh
+  tay/chan cut lo lung      <- framing "hands only"/"feet only"        -> CAM framing khong co than
+  vat bien hinh             <- nhieu vat doi tay / mo ta khong nguyen van -> 1 vat 1 hanh dong, "the same X throughout"
+  dao chieu, quay mat lai   <- dong tu di chuyen khong co huong camera -> bat buoc huong + AVOID reversing
+  chu Latin tren vat        <- "no readable text" quá chung             -> "plain unmarked", AVOID letters on any object
+  mat chu the giua clip     <- khong co "remains in frame"              -> MOTION v2
+  nguoi gap/bien dang       <- tu the phuc tap (leans out of a window)  -> gate tu the cam
+  do                        <- khong co chuyen dong phu                 -> gate secondary motion
+"""
+import io, os, re, sys, collections
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+# =====================================================================================
+# §2 STYLE LOCK v2 — NGUYEN VAN. Bo "shot on 8mm home movie film" (model ve DAI PHIM),
+#    giu CHAT phim (mau/hat/mem) va ep anh phu kin khung.
+# =====================================================================================
+# ⭐⭐ STYLE v3 (2026-09-10) — BO MOI TU CHI VAT LIEU PHIM. Do tren 90 clip video 11:
+#    90/90 co DAI PHIM (lo sprocket + chu FUJI/FUJIFILM/166/2084 in doc mep), du AVOID da
+#    cam dich danh "film strip border, sprocket holes, film edge markings".
+#    🔴 NGUON LA HAI TU TRONG CHINH STYLE, khong phai negative yeu:
+#       · "8mm film"   -> model ve VAT LIEU phim  => lo sprocket
+#       · "Fujicolor"  -> model in TEN HANG len mep => chu FUJI/FUJIFILM
+#    §5 cua 04_VIDEOGEN_PROMPTS.md ghi dung hien tuong nay ("chu FUJI tren dai phim") va ban
+#    v2 chi bo "shot on 8mm home movie film" — GIU LAI ca "8mm film" lan "Fujicolor" nen va
+#    chua het. NEGATIVE KHONG BAO GIO THANG MOT TOKEN PHONG CACH: phai bo token.
+#    Giu nguyen thu lam nen ve nhin (bac mau am, tuong phan thap, hat min, vignette,
+#    documentary, luc/hoang xit); chat phim con duoc bu o khau grade (tools/grade_vintage.py).
+# ⭐⭐ VIET LAI 2026-09-11 (user: "phong cach quay, canh quay, cac hanh dong, nhan vat
+#     tao muon thiet ke theo kieu nhu the" — tro toi phim tu lieu THAT trong kho:
+#     Japan Today 1959 · Creation of New Wealth 1960).
+#     Ban cu la "anh hoai niem": faded, low contrast, fine grain, vignette. No day model ve
+#     phia ANH CHUP TINH — mot chu the, nen mo, anh sang diu. Phim tu lieu that thi nguoc:
+#     NET, sau truong lon, nhieu nguoi o nhieu cu ly, khong ai dien.
+#     ⛔ Bo "faded / low contrast / fine natural grain / slight vignette" — user chot
+#        "bo hat di, do net tang len".
+#     Ban cu giu o videogen_lib.py.bak_style_20260911.
+STYLE = ("1970s Japan (Showa era, around 1970), a colour picture in the observational documentary "
+         "manner of that time, "
+         # 2026-09-12 (user chot): DAO NGUOC phan CHAT ANH cua ban 09-11 — quay lai bo tu
+         #   vung anh hoai niem (bac mau, tuong phan thap, hat phim, vignette).
+         #   ⚠️ GIU nguyen phan CACH QUAY (candid / deep focus / nhieu cu ly / khong ai
+         #   biet co may quay) — do la thu da chua duoc loi "anh chup tinh, mot nguoi tren
+         #   san khau trong", khong lien quan den chat phim.
+         "faded warm 1970s colour, low contrast, fine natural grain, soft natural "
+         "light, slight vignette at the corners, "
+         "deep focus so both the foreground and the background stay readable, "
+         "candid unposed action filmed from a respectful distance, nobody aware of the camera, "
+         "life going on at several distances in the same frame, "
+         "natural imperfect framing with the subject slightly off-centre, "
+         "the picture is a clean rectangle that runs right out to all four edges with nothing "
+         "around it, no border and no strip of any kind, "
+         # 2026-09-12: chu "16:9" tran o cuoi cau de bi model luot qua. Viet ro thanh
+         #   KHO NGANG + ti le + kich thuoc, va noi thang la KHONG doc/khong vuong.
+         "horizontal landscape video in 16:9 aspect ratio, 1920x1080 widescreen, "
+         "clearly wider than it is tall, not vertical and not square")
+
+
+# 2026-09-12: canh SO SANH THOI NAY. Dung cho preset bat dau bang "ima_".
+#   Phai GO khoa 1970s va go luon bo tu vung hoai co, nhung GIU cach quay quan sat —
+#   hai canh xua/nay phai trong nhu cung mot nguoi cam may, chi khac THOI.
+STYLE_MODERN = ("present-day Japan, everyday digital video, clean and sharp, "
+                "true-to-life natural colour, natural available light, "
+                "deep focus so both the foreground and the background stay readable, "
+                "candid unposed action filmed from a respectful distance, nobody aware "
+                "of the camera, natural imperfect framing with the subject slightly "
+                "off-centre, the image fills the entire frame edge to edge, "
+                "horizontal landscape video in 16:9 aspect ratio, 1920x1080 widescreen, "
+                "clearly wider than it is tall, not vertical and not square")
+
+# Canh thoi nay thi cac lenh cam do vat hien dai cua AVOID phai duoc GO, neu khong
+# prompt tu danh nhau: vua doi "dieu hoa, tu lanh, duong nhua" vua cam chung.
+AVOID_MODERN = ("Avoid: any letters, words, numbers or logos on any object, brand logos, "
+                "western faces, anime style, oversaturated colors, HDR look, close-up "
+                "faces, fast cuts, camera shake, reversing motion, walking backwards, "
+                "turning to face the camera, disembodied hands, floating limbs, extra "
+                "fingers, morphing objects, objects changing shape or color, not posed "
+                "for the camera, nobody looking at the camera, no staged tableau, "
+                "no shallow blurred background, no cinematic bokeh")
+
+# =====================================================================================
+# §4 MOTION RULES v2 — NGUYEN VAN. Bien the EXIT dung khi canh CO Y cho nguoi di ra khoi khung.
+# =====================================================================================
+# "the camera holds one position and observes" = chu may quan sat cua phim tu lieu:
+# may KHONG di theo chu the, canh tu dien ra truoc mot may dung yen.
+MOTION      = ("slow deliberate natural human motion at one even speed from first frame to last, "
+               "the weight shifting through the body before each movement, "
+               "every action carried through once in a single unbroken arc and never undone, "
+               "continuous single take, no cuts, "
+               "the camera holds one position and observes, "
+               "the subject remains in frame for the whole shot, no reversing")
+MOTION_EXIT = ("slow deliberate natural human motion at one even speed from first frame to last, "
+               "the weight shifting through the body before each movement, "
+               "every action carried through once in a single unbroken arc and never undone, "
+               "continuous single take, no cuts, "
+               "the camera holds one position and observes, no reversing")
+EXIT_WORDS  = ("out of frame", "out of sight", "leaves the frame", "disappears", "walks off", "is gone")
+
+# 🔴 2026-09-11 — CAM LIA. MOTION goc khoa may DUNG YEN ("the camera holds one position and
+# observes", chot §9 sau khi do phim tu lieu that). Muon lia thi phai BO dung cau do, neu khong
+# prompt tu choi nhau. Ba cau bu vao la de chan ba benh cua t2v khi may di chuyen:
+#   · lia hai lan / lia roi lia nguoc  -> "one single slow continuous camera move and nothing else"
+#   · rung tay                          -> "the move is smooth and mechanical, as if on a tripod head"
+#   · nen bien dang khi luot            -> "the background stays solid and does not warp as it passes"
+MOVING_CAMS = ("pan", "tilt", "track")
+
+# ⭐ POV — hai khoi STYLE/MOTION goc CHOI voi goc nhin thu nhat, phai doi dung may cum:
+#   STYLE: "filmed from a respectful distance" va "the subject slightly off-centre" — POV thi
+#          khong co "subject" o xa, va khung troi theo dau chu khong lech co y.
+#   MOTION: "the camera holds one position" — dau nguoi luc nao cung nhuc nhich mot chut.
+# Giu nguyen phan con lai (deep focus · life at several distances) vi chung van dung cho POV.
+# 2026-09-12 (user bat): mot khuon POV cho moi canh la SAI hai duong —
+#   ① MOTION_POV cam moi di chuyen ("one unhurried look and nothing more")
+#   ② ep "torso + lap" o mep duoi ca khi canh chi nhin xuong long ban tay.
+# Tach 3 kieu. Phan THAN NGUOI van BAT BUOC o ca ba (POV thuan khong than = dung
+# cai `hands only` da hong 14/21 clip), chi khac PHAN NAO cua than.
+STEP_RE = re.compile(r"\b(one (more )?pace|a pace forward|one step forward|steps? forward"
+                     r"|shuffles? forward|edges? [^,]{0,14}forward|moves? one pace"
+                     r"|the line moves|moves? forward)\b", re.I)
+
+POV_CAMS   = ("pov", "pov_sit", "pov_stand", "pov_hand", "pov_walk", "pov_bike")
+POV_BODY = {
+# 🔴 2026-09-13 (user bat): ban cu la "their own torso and LAP" — ma "lap" (long, dui khi
+ #   NGOI) CHI ton tai khi ngoi. Moi canh pov DUNG (xep hang tiem chung, nam quai tau dien,
+ #   di hanh lang) deu bi model dung thanh NGOI. Do la cau tu ta SAI TU THE, khong phai
+ #   model hieu nham. -> "pov" gio TRUNG TINH (chi nguc + tay, khong chot tu the);
+ #   canh NGOI dung "pov_sit", canh DUNG dung "pov_stand". Chon mac dinh trung tinh vi
+ #   quen chon bien the thi chi MAT chi tiet, khong RA SAI tu the.
+ "pov":      "their own upper body and both arms stay in frame across the bottom of the picture",
+ "pov_sit":  "they are sitting, and their own torso, lap and knees stay in frame across the "
+             "bottom of the picture",
+ "pov_stand":"they are standing upright on their own two feet, so what they see of themselves "
+             "is their own upper body and both arms coming into the picture at the very bottom "
+             "edge, with the floor of the room lying well ahead of them",
+ "pov_hand": "their own forearms and hands stay in the lower half of the frame, the arms "
+             "running unbroken back to their own body at the bottom edge",
+ # 🔴 2026-09-12 (user bat lan 2): BO han chan khoi khung.
+ #   ① nguoi deo may o dau HIEM KHI thay chan minh — bat hien chan la lam nguoc doi thuc
+ #   ② chan dang buoc la DUNG cai khop AI luon dung hong (cung ho voi dap xe)
+ #   Cam giac "day la mat toi" o canh di bo den tu NHIP BUOC + duong tien toi, khong tu chan.
+ # user 2026-09-12: "di chuyen thi chi nen nhin thay tay thoi".
+ #   Tay VAN phai noi lien ra khoi mep khung — ban tay roi la dung loi `hands only`.
+ # 2026-09-12: noi tu "MOT ban tay" -> "ban tay hoac hai tay tuy canh" (keo cang xe,
+ #   bo dua, rot tra deu can hai tay). Tay VAN phai noi lien ra khoi mep khung.
+ # ⭐ pov_bike: ngoi tren yen thi CHAN va BAN DAP nam NGOAI khung — dung cai khop ma AI
+ #   luon dung hong (§9.1 ③: dap xe / dat xe deu hong). Chi con ghi dong + hai ban tay.
+ "pov_bike": "nothing of their own body in the picture except their own two hands gripping "
+             "the handlebar grips across the bottom of the frame, the forearms running back "
+             "out of shot at the bottom edge, and no part of their own legs, feet, the "
+             "pedals or the chain at any point",
+ "pov_walk": "nothing of their own body in the picture except their own hand or hands where "
+             "the action needs them, entering low at the bottom of the frame with the "
+             "forearms running back out of shot at the bottom edge, and no part of their "
+             "own legs or feet at any point",
+}
+
+# ⭐ Canh muc SOLO: bo 2 cau doi "nhieu nguoi o nhieu cu ly". Dat thanh HAM de
+#   builder va gate doc CUNG MOT cho — doi chuoi o mot ben roi quen ben kia la
+#   loi da dinh 3 lan trong mot phien.
+def solo_style(st):
+    return (st.replace("life going on at several distances in the same frame, ", "")
+              .replace("the scene going on around them at several distances, ", ""))
+
+def solo_avoid(av):
+    return av.replace(", no single person alone on an empty set", "")
+
+
+def _style_pov(st):
+    """STYLE goc ta may QUAN SAT TU XA -> hai cum choi voi POV. Doi TAI CHO, khong tao
+    ban STYLE thu hai (hai ban se troi lech nhau khi sua mot ben)."""
+    return (st.replace("candid unposed action filmed from a respectful distance",
+                       "candid unposed action seen from inside the scene by one of the people in it")
+              .replace("natural imperfect framing with the subject slightly off-centre",
+                       "natural imperfect framing that drifts a little as the head turns")
+              # 2026-09-12: 3 cum nua keo nguoc ve goc 3, phai doi cho POV.
+              .replace("a colour picture in the observational documentary manner of that time",
+                       "a colour picture seen from inside the moment by one of the people there")
+              .replace("nobody aware of the camera", "no one takes any notice of them")
+              .replace("life going on at several distances in the same frame",
+                       "the scene going on around them at several distances"))
+
+MOTION_POV = ("slow deliberate natural human motion at one even speed from first frame to last, "
+              "every action carried through once in a single unbroken arc and never undone, "
+              "continuous single take, no cuts, "
+              "the camera is the person's own head and drifts only as slowly as a head would, "
+              "one unhurried look and nothing more, no handheld shake, no whip, "
+              "their own body stays in the bottom of the frame throughout, no reversing")
+# POV DANG DI: dau nguoi tien len, KHONG phai may quay luot. Giu nhip len xuong cua buoc
+# chan, neu khong se ra kieu drone truot — thu da hong o cac clip "floating or gliding".
+MOTION_POV_STEP = ("slow deliberate natural human motion at one even speed from first frame "
+                   "to last, continuous single take, no cuts, the camera is the head of the "
+                   "person as they take one single pace forward and stop, the whole view "
+                   "carried forward by that one pace with a small even rise and fall as the "
+                   "foot lands — that one pace is the only forward movement in the shot and "
+                   "it happens once, no gliding, no drone move, no zoom, their own body stays "
+                   "in the bottom of the frame throughout, no handheld shake, no whip, no reversing")
+
+MOTION_POV_WALK = ("slow deliberate natural human motion at one even speed from first frame "
+                   "to last, continuous single take, no cuts, the camera is the head of the "
+                   "person as they walk forward, the view advancing steadily with a small "
+                   "even rise and fall at each step — that gentle step rhythm is the only "
+                   "sign that a person is carrying the camera — never faster than a walk, "
+                   "the head turning slowly once to look at what is off to one side and "
+                   "then settling back on the way ahead, one steady turn and no more, "
+                   "no handheld shake, no whip, no reversing")
+
+# POV tren yen xe: lan DEU, khong co nhip len xuong cua buoc chan. Tay lai hoi lac nhe —
+# do la thu duy nhat noi len co nguoi dang cam ghi dong.
+MOTION_POV_BIKE = ("slow deliberate natural motion at one even speed from first frame to "
+                   "last, continuous single take, no cuts, the camera is the head of the "
+                   "person riding, rolling forward smoothly with no up and down step "
+                   "rhythm at all, the handlebar shifting a little under their hands as "
+                   "the front wheel takes the loose ground, never faster than an easy "
+                   "cycling pace, the head turning slowly once to look at what is off to "
+                   "one side and then settling back on the way ahead, one steady turn and "
+                   "no more, no handheld shake, no whip, no reversing")
+
+MOTION_MOVE = ("slow deliberate natural human motion at one even speed from first frame to last, "
+               "the weight shifting through the body before each movement, "
+               "every action carried through once in a single unbroken arc and never undone, "
+               "continuous single take, no cuts, "
+               "the camera makes one single slow continuous move and nothing else, no second move "
+               "and no move back, the move is smooth and mechanical as if on a tripod head, "
+               "the background stays solid and does not warp or stretch as it passes, "
+               "the subject remains in frame for the whole shot, no reversing")
+
+# =====================================================================================
+# §5 NEGATIVE v2 — NGUYEN VAN. 4 nhom moi so voi v1: khung phim · dao chieu · chu tren vat · tay roi/vat bien hinh.
+# =====================================================================================
+AVOID = ("Avoid: stuttering or jerky motion, speed ramping, slow motion, skipped or repeated frames, looping or repeating action, an action played and then undone, rubbery bending limbs, feet sliding across the ground, floating or gliding movement, any frame or border around the image, "
+         "modern objects, smartphones, LED lights, plastic bottles, air conditioner, modern clothing, "
+         "sneakers with logos, any letters, words, numbers or logos on any object, bag, sign or box, "
+         "brand logos, western faces, anime style, oversaturated colors, HDR look, "
+         "close-up faces, fast cuts, camera shake, reversing motion, walking backwards, "
+         "turning to face the camera, disembodied hands, floating limbs, extra fingers, "
+         "morphing objects, objects changing shape or color, "
+         # 2026-09-11: chong "anh dan dung" — thu keo prompt ra xa phim tu lieu nhat
+         "not posed for the camera, nobody looking at the camera, no staged tableau, "
+         "no single person alone on an empty set, no shallow blurred background, "
+         "no cinematic bokeh, no dramatic studio lighting")
+
+# Ban cho POV: bo 3 cau coi camera la vat the ben ngoai, va them lenh cam DUT KHOAT
+# chong viec ve chinh nguoi deo may tu ngoai — do la cach POV hong nhieu nhat.
+AVOID_POV = (AVOID.replace(", turning to face the camera", "")
+                  .replace(", nobody looking at the camera", "")
+                  .replace(", camera shake", "")
+             + ", no third-person shot, no view from outside the person whose eyes "
+               "this is, their own face and their own back are never visible, no mirror, "
+               "no reflection showing their face")
+
+# =====================================================================================
+# §3 FRAMING — danh sach DONG. Khoa -> chuoi nguyen van. Moi framing deu co THAN NGUOI trong khung.
+# Scene co the ghi KHOA (khuyen dung) hoac chuoi tu do (se bi gate soi ky hon).
+# =====================================================================================
+FRAMINGS = {
+ "wide":    "static wide shot at chest height, the whole figure in frame",
+ "medium":  "static medium shot at chest height, the figure from the knees up in frame, seen from behind or in profile",
+ "ots":     "over the shoulder from just behind, the head, shoulders and both hands in frame with the work in front of them",
+ "behind":  "seen from behind at chest height, the whole figure in frame",
+ "low":     "static low angle at knee height, legs and body in frame",
+ "high":    "static high angle looking down, the figure and the ground in frame",
+ # 🔴 2026-09-11: `pan`/`tilt` truoc day KHONG DUNG DUOC — build() chon MOTION chi theo
+ #    EXIT_WORDS, nen prompt vua noi "slow pan" vua noi "the camera holds one position and
+ #    observes" => tu choi nhau. Da vabang MOTION_MOVE + MOVING_CAMS ngay duoi.
+ "pan":     "slow horizontal camera pan at chest height, one single continuous move, "
+            "the whole figure in frame by the end of the move",
+ "tilt":    "slow camera tilt at chest height, one single continuous move, "
+            "the whole figure in frame by the end of the move",
+ # ⭐ 2026-09-11 — GOC NHIN THU NHAT (主観ショット). 🔴 POV THUAN = khong co than nguoi =
+ #    dung cai §3 cam sau khi do (`hands only` hong 14/21 clip). Nen key nay BAT BUOC co
+ #    THAN: nguc + canh tay + dui cua chinh nguoi deo may nam o mep duoi khung.
+ "pov":     "first-person point of view at eye height, seen through the eyes of the person "
+            "themselves, their own upper body and both arms in frame across the bottom of the "
+            "picture, looking out at what is directly in front of them",
+ "pov_sit": "first-person point of view at seated eye height, seen through the eyes of the "
+            "person themselves, their own torso, lap and knees in frame across the bottom of "
+            "the picture, looking out at what is directly in front of them",
+ "pov_stand":"first-person point of view at standing eye height, seen through the eyes of the "
+            "person themselves, their own upper body and both arms in frame across the bottom of "
+            "the picture and the floor further down the frame, looking out at what is directly "
+            "in front of them",
+ "pov_hand": "first-person point of view at eye height, their own forearms and hands in the "
+             "lower half of the frame, the arms running unbroken back to their own torso "
+             "at the bottom edge",
+ "pov_bike": "first-person point of view from the saddle of a bicycle at eye height, the "
+             "handlebar and their own two hands across the bottom of the frame, the lane "
+             "running toward the view, their own body never seen from outside",
+ "pov_walk": "first-person walking point of view at eye height, the way ahead filling the "
+             "frame, only one of their own hands ever entering the bottom corner, the rest "
+             "of their own body below the frame and never seen from outside",
+ "still":   "static wide shot, no people",            # chi cho canh WHITELIST khong nguoi
+}
+# framing CAM — dung nguoi la 🔴 (14/21 clip hands-only cua video 10 hong).
+# Luat don gian de khong lot: framing NHAC toi tay/chan ma KHONG nhac toi than => cam.
+# (regex liet ke mau cu bo sot '14b hands and coin slot' va '08 planks and feet' trong selftest.)
+
+# =====================================================================================
+# 3.5 EXTRAS — NGUOI NEN (chot 2026-09-10, user: "toi muon canh dong duc, xum vay.
+#     Canh nao can don doc moi don doc thoi")
+#
+# 🔴 VI SAO PHAI CO LOP NAY: luat §8.5b muc 1 ghi "<=2 nguoi trong mot canh" va giai thich
+#    "moi nguoi them la mot truc sai lech nua". Cau do GOP HAI THU KHAC NHAU:
+#      · CAST co danh tinh, tai xuat hien nhieu clip  -> phai dong nhat -> tran 2 la DUNG
+#      · NGUOI NEN vo danh, chi xuat hien MOT clip    -> khong phai dong nhat voi bat cu gi
+#                                                     -> KHONG sinh truc sai lech nao
+#    Do tren video 11 (154 shot): 50% shot 0 nguoi, 36% shot 1 nguoi => 86% vang tanh,
+#    trong khi LOI KE nhac dong nguoi 30 lan (列 x3, 並び x2, 満員, 混んで, 町全体...).
+#    Hinh chi loi. Do la loi that, khong phai so thich.
+#
+# CACH DUNG: khai bao MUC theo PRESET (khong phai theo tung shot) o gen_prompts.py:
+#     CROWD = {"keiri": "full", "chanoma": ("solo", "khong ai bat chuyen luc dem tien"), ...}
+#     rows = build(S, P, C, crowd=CROWD)
+#   Ghi de cho MOT shot: them truong thu 9 vao tuple S.
+#
+# ⛔ NGUOI NEN PHAI VO DANH. EXTRA_LOCK dan kem moi lan => quay lung/ngoai tieu diem/
+#    khong mat nao huong camera. Thieu no thi model ve mat dam dong -> mat morphing,
+#    va dam dong lai thanh mot truc sai lech that (dung cai §8.5b lo).
+# =====================================================================================
+# 🔴 SUA 2026-09-11: cum "softly out of focus" DANH NHAU voi STYLE moi ("deep focus so both
+#    the foreground and the background stay readable"). Hai cau nguoc nhau trong CUNG mot
+#    prompt => model chon bua. Va lam mo hau canh chinh la thu keo anh ve phia "chan dung
+#    dien anh", nguoc han phim tu lieu (khung @18:16 cua Creation of New Wealth co 3 lop sau
+#    deu RO). Giu phan AN DANH (quay lung/nghieng, khong nhin may) — do la thu that su can.
+EXTRA_LOCK = ("all the other people are anonymous background figures, seen from behind or in "
+              "profile, none of them turns toward the camera and no face "
+              "is recognisable")
+
+# Ban cho canh POV: camera la MAT cua mot nguoi trong canh, nen moi cau noi ve
+# "camera" deu keo model ve phia coi camera la vat the ben ngoai.
+EXTRA_LOCK_POV = EXTRA_LOCK.replace("none of them turns toward the camera",
+                                    "none of them turns to look at them")
+
+# preset -> (few, full). Viet MOT LAN o day, giong STYLE LOCK; gen_prompts.py chi chon muc.
+EXTRAS = {
+ "keiri":   ("two other workers in plain work clothes waiting further along the counter",
+             "a long queue of workers in plain work clothes waiting down the counter and along the "
+             "wall behind him, more of them arriving from the corridor"),
+ "office":  ("two colleagues in plain shirts working at the desks on either side of him",
+             "a room full of colleagues in plain shirts at every desk, some standing and talking "
+             "over the partitions, one crossing the room behind him"),
+ "machi":   ("a few shoppers in plain coats passing along the shopfronts",
+             "a busy morning street full of people in plain coats, a queue outside the bank, "
+             "shoppers going in and out of the shopfronts, two cyclists passing"),
+ "michi":   ("two neighbours in plain clothes talking at a gate further down the street",
+             "the evening street busy with people walking home in plain coats, children playing by "
+             "a fence, a woman sweeping in front of a house"),
+ "densha_box":("a few other passengers in plain coats sitting in the box seats further along",
+             "every box seat down the carriage taken by passengers in plain coats, bags on the "
+             "racks overhead, two of them standing in the aisle"),
+ "densha":  ("a few other passengers in plain coats standing around him",
+             "the carriage packed solid with passengers in plain coats pressed shoulder to "
+             "shoulder, all of them swaying together, no empty space anywhere"),
+ "ekimae":  ("a few people in plain coats going in and out of the lit doorway",
+             "the station front crowded with people in plain coats, a group waiting under the "
+             "paper lanterns, more coming out through the hanging curtain"),
+ "genkan":  ("his wife waiting in the hall behind him",
+             "the whole family gathered in the hall, the wife on the step and two children "
+             "further back in the doorway"),
+ "chanoma": ("another member of the family sitting further back on the tatami",
+             "the family gathered around the low table on the tatami, two children and an older "
+             "woman sitting behind her"),
+ "keijiban":("two other workers in plain shirts reading the board beside them",
+             "a crowd of workers in plain shirts pressed around the notice board, more of them "
+             "walking up along the corridor"),
+ "sento":   ("two bathers in plain clothes going in past the curtain",
+             "a crowd of bathers in plain clothes queuing at the bathhouse entrance, families "
+             "with wash basins going in and out through the curtain"),
+ "tokoya":  ("one customer in plain clothes waiting on the bench behind him",
+             "the barbershop full, every chair taken and three customers in plain clothes waiting "
+             "on the bench along the wall"),
+ "ginkou":  ("two other customers in plain coats waiting at the counter beside him",
+             "the small bank crowded, a queue of customers in plain coats at every grille and "
+             "more waiting on the benches behind them"),
+ # ---- video 12 (natsu-atarimae) — mua he 1970, nha go + ngo xom + truong -------------
+ # ⛔ Khong mot chuoi nao duoc chua tu bi CHILD_WORDS chan (" child/boy/girl/pupil"...).
+ #    Tre em ta bang "small figure(s)" — dung khuon CAST BIBLE §6.
+ "zashiki":  ("two more small figures already lying close beside them on the same bedding under "
+              "the same net, all three packed in side by side",
+              "the whole family under one mosquito net, three small figures side by side on the "
+              "bedding and a woman kneeling at the far corner tucking the hem down"),
+ "engawa":   ("another member of the family sitting right beside them on the same stretch of "
+              "veranda boards, close enough that their shoulders almost touch",
+              "the whole family sitting together along one stretch of the open veranda, two small "
+              "figures side by side with their legs hanging over the edge and an older woman "
+              "just behind them in the doorway"),
+ "ido":      ("a small figure waiting at the well kerb beside her",
+              "two small figures crowding round the well kerb and an older woman coming out of the "
+              "kitchen door behind them"),
+ "daidokoro":("a small figure standing in the kitchen doorway behind her", ""),
+ "michi_natsu":("two neighbours in plain summer clothes talking at a gate further down the lane",
+              "the summer lane busy, small figures running ahead between the wooden fences, two "
+              "women in plain aprons talking at a gate, a man riding a bicycle slowly past in the "
+              # 2026-09-12: DAT xe cung hong nhu DAP xe (user). Duong thu ba: THA TROI —
+              #   ngoi tren xe, hai chan DE YEN tren ban dap, xe luot. Khong co vong quay
+              #   ban dap de lech xich, cung khong co khop "vua di bo vua day xe".
+              "middle distance, sitting upright and coasting with both feet resting "
+              "still on the pedals"),
+ "koriya":   ("two small figures walking behind the handcart",
+              "a straggling line of small figures following the handcart down the lane, more coming "
+              "out through the gates on both sides, two women in plain aprons waiting with basins"),
+ "undoujou": ("two more small figures in white gym shirts standing further along the line",
+              "rows of small figures in white gym shirts and navy shorts drawn up in lines across "
+              "the bare ground, more of them waiting along the far edge in the sun"),
+ "mizunomi": ("two more small figures in white gym shirts filing past the taps",
+              "a long line of small figures in white gym shirts filing past the row of taps without "
+              "stopping, more of them coming along the path behind"),
+ "genkansaki":("a neighbour in a plain apron out in front of the next house with her own pail",
+              "women in plain aprons out in front of every house along the lane, each with a wooden "
+              "pail, the dirt darkening in front of one gate after another"),
+ "nokishita":("a small figure sitting in the shade right next to them under the same eaves", ""),
+ "niwa_yoru":("another member of the family sitting on the bench by the hedge",
+              "the family out in the garden after dark, a woman beside the wash tub, two small "
+              "figures with sparklers by the hedge and a man on the wooden bench"),
+ "machi_yoru":("a neighbour sitting out in front of the next house, fanning herself",
+              "people out in front of every house along the lane, families on wooden benches, small "
+              "figures running between the hedges, paper fans moving everywhere in the dark"),
+ "yakei":   ("", ""),          # duong dem trong = NOI DUNG, khong bao gio them nguoi
+ "yorugenkan": ("", ""),       # nha dem muon trong = NOI DUNG cua khoi END
+}
+
+# Boi canh CONG CONG: loi ke goi nhung cho nay la dong => solo o day la 🔴 (phai co ly do).
+PUBLIC_PRESETS = {"keiri", "office", "machi", "densha", "densha_box", "ekimae", "keijiban",
+                  "sento", "tokoya", "ginkou",
+                  # video 12: loi ke goi thang la DONG ("子どもが何人も", "列になって",
+                  # "道の両側が、いっせいに", "どの家からも、人が出てきます") => solo o day
+                  # phai co ly do, dung nhu luat §3.5.
+                  "michi_natsu", "koriya", "undoujou", "mizunomi", "genkansaki", "machi_yoru"}
+
+# ACT/preset da tu ta dam dong roi thi chi can dan LOC VO DANH, dung ta lai lan hai:
+# canh K5 tung ra "figures pressed together in the crowded carriage" + preset "crowded train"
+# + extras "packed solid" = noi CHAT CUNG ba lan trong mot prompt.
+HAS_CROWD = re.compile(r"\b(crowded|packed with|packed solid|queue|a line of figures|figures in|other (?:passengers|workers|customers|bathers|colleagues)|group of|crowd)\b", re.I)
+
+def _extras(preset, level, act=""):
+    """level: 'solo' | 'few' | 'full' | ('solo','ly do') | None(=few neu la noi cong cong).
+    Tra ve (chuoi_chen, level, ly_do)."""
+    why = ""
+    if isinstance(level, (tuple, list)):
+        level, why = (level[0], level[1] if len(level) > 1 else "")
+    if level is None:
+        level = "few" if preset in PUBLIC_PRESETS else "solo"
+    if level == "solo":
+        return "", level, why
+    few, full = EXTRAS.get(preset, ("", ""))
+    s = full if level == "full" else few
+    if not s:
+        return "", level, why
+    if HAS_CROWD.search(act or ""):
+        return EXTRA_LOCK, level, why          # da co dam dong trong ACT -> chi khoa vo danh
+    return f"{s}, {EXTRA_LOCK}", level, why
+
+
+
+# =====================================================================================
+# 3.6 HO DONG TAC — chong "nhac len ha xuong" (chot 2026-09-10)
+#     user: "toi kiem tra video toan nhung hanh dong, nhac len ha xuong. No bi nham chan.
+#            Khong co kieu vui choi hoac quay quan cung nhau"
+#
+# Do tren 154 shot video 11 (ban truoc): 431 luot dong tu, trong do
+#   · nhac/dat/an/vuot/gap/xoay  = 287 luot = 66%
+#   · vui choi/quay quan/tro chuyen/an uong = 4 luot = 0%
+# Top: hold 33 · press 29 · draw 28 · turn 27 · set 20 · fold 17 · lift 16.
+#
+# 🔴 VI SAO RA THE — khong phai nguoi viet lam: ba luat ACT o §1.1 ("mot vat giu nguyen",
+#    "tu the don gian", "3 nhip") cong chuoi framing CHAT (ots/medium = than+tay) day moi
+#    canh ve THAO TAC BAN TAY VOI MOT VAT. Cong them bai hoc "AI hong o thao tac tay voi
+#    vat nho" (58/73 clip) lam nguoi viet chon cai AN TOAN — va cai an toan tro thanh cai
+#    nham. ⚠️ Ma no khong an toan that: canh NHOM dong tac lon (cung ly, tre con chay,
+#    ca nha quanh cai TV) it hong hon thao tac ngon tay nhieu.
+# =====================================================================================
+ACT_FAM = {
+ "MANIP":  r"lift|set|press|place|put|square|fold|tap|rest|draw|slide|hold|pick|straighten|"
+           r"wipe|smooth|brush|turn|close|open|push|pull|feed|pinch|tip|stack|hook",
+ "SOCIAL": r"laugh|smile|talk|speak|chat|toast|clink|greet|bow to|nod to|share|hand.{0,12}to|"
+           r"gather|crowd round|lean in together|listen",
+ "PLAY":   r"play|run|chase|skip|jump|spin|kick|throw|cheer|clap|wave|hopscotch|marbles",
+ "STROLL": r"stroll|wander|amble|saunter|window.?shop|browse the shopfronts|look around|gaze|"
+           r"admire|take in the view|stop to look|lean on the railing|point out.{0,14}to|sightsee",
+ "VEHICLE":r"bicycle|bike|pedal|scooter|motorbike|moped|three.?wheel|drive|driving|car|truck|"
+           r"bus|tram|handcart|rickshaw|sidecar",
+ "EAT":    r"eat|drink|pour|sip|chew|serve|ladle|slurp|bite|fill.{0,10}cup|raise.{0,10}glass",
+ "WORK":   r"carry|haul|sweep|scrub|hammer|saw|dig|wash|hang|knead|stir|chop|wring|beat.{0,8}futon",
+ "MOVE":   r"walk|step|climb|descend|enter|leave|cross|queue|file in|crowd in",
+ "REACT":  r"look up|turn.{0,10}head|start|flinch|freeze|stare|widen|cover.{0,8}mouth|sigh|"
+           r"shake.{0,8}head|rub.{0,8}eyes",
+ "CARE":   r"comb|dress|tie.{0,12}(sash|apron|shoelace)|carry.{0,10}(child|baby)|tuck|wrap|"
+           r"hold.{0,10}(child|baby)|pat.{0,8}head",
+}
+ACT_RE = {k: __import__("re").compile(v, __import__("re").I) for k, v in ACT_FAM.items()}
+
+# Nguong cho MOT video (do tu ca hong video 11; chua co so cua nganh — xem canh bao §3.6b)
+MANIP_MAX   = 0.45     # ti le shot mà ho AP DAO la MANIP
+SOCIAL_MIN  = 12       # so shot co SOCIAL hoac PLAY hoac EAT
+FAM_MIN     = 5        # so ho khac nhau phai co mat
+
+def act_fams(act):
+    """Tra ve set ho dong tac cua mot ACT (mot ACT co the thuoc nhieu ho)."""
+    return {k for k, r in ACT_RE.items() if r.search(act or "")}
+
+def act_report(S, C, quiet=False):
+    """Dem ho dong tac tren ca video. Tra ve (n_red, dict dem)."""
+    import collections
+    cnt = collections.Counter(); manip_only = 0; joy = 0
+    for s in S:
+        f = act_fams(expand(s[2], C))
+        for k in f: cnt[k] += 1
+        if f == {"MANIP"} or (f and f <= {"MANIP", "MOVE"}): manip_only += 1
+        if f & {"SOCIAL", "PLAY", "EAT"}: joy += 1
+    n = max(1, len(S))
+    red, warn = [], []
+    # ⚠️ TRAN MANIP la nguong DOAN (khong co so do cua nganh) => CANH BAO, khong CHAN.
+    #    De no CHAN thi moi video se do man, roi bi bo qua — dung benh "luat kiem bang mat se troi".
+    if manip_only / n > MANIP_MAX:
+        warn.append(f"{manip_only}/{n} shot ({manip_only*100//n}%) chi co MANIP/MOVE — "
+                    f"tran DE XUAT {int(MANIP_MAX*100)}%. Benh 'nhac len ha xuong'")
+    # 🔴 CHOT 2026-09-11 — user: "y la dung cho nhung script co canh do, chu khong phai
+    #    them vo toi va". => MOI nguong duoi day la CANH BAO, khong CHAN. Vi neu chan thi
+    #    chinh cai gate nay ep nguoi viet NHET canh vao script khong co beat do — dung cai
+    #    user vua kết an. Gate chi hoi "script nay co beat vui choi ma minh bo qua khong?";
+    #    script THAT SU khong co thi sua o tang SCRIPT, khong nhet canh o tang prompt.
+    if joy < SOCIAL_MIN:
+        warn.append(f"chi {joy} shot co SOCIAL/PLAY/EAT (nguong tham khao {SOCIAL_MIN}). "
+                    f"Doc lai loi ke: co beat quay quan nao bi bien thanh 'mot nguoi xu ly mot vat' "
+                    f"khong? Neu script that su khong co thi BO QUA canh bao nay")
+    if len(cnt) < FAM_MIN:
+        warn.append(f"chi {len(cnt)} ho dong tac ({sorted(cnt)}) — tham khao >= {FAM_MIN}")
+    for _f, _n in (("STROLL", 4), ("VEHICLE", 4)):
+        if cnt[_f] < _n:
+            warn.append(f"chi {cnt[_f]} shot co {_f} (tham khao >= {_n}) — CHI them khi script "
+                        f"co beat do; ⛔ dung nhet de lam xanh gate")
+    if not quiet:
+        print(f"{'ho dong tac':20}: " + " · ".join(f"{k} {v}" for k, v in cnt.most_common()))
+        print(f"{'chi MANIP/MOVE':20}: {manip_only}/{n} ({manip_only*100//n}%)  "
+              f"[tran de xuat {int(MANIP_MAX*100)}%]")
+        print(f"{'co VUI CHOI/QUAY QUAN':20}: {joy} shot  [can >= {SOCIAL_MIN}]")
+    return red, warn, cnt
+
+
+
+# =====================================================================================
+# 5.6 VAT DI VAO TRONG VAT KHAC = MODEL HONG (chot 2026-09-10)
+#     user, xem clip K13b: "render video no dang loi khi dut phong bi vao ao"
+#
+# 🔴 CO CHE: t2v khong dung duoc canh mot vat BIEN MAT vao trong quan ao / khe / lop vai.
+#    Ban tay xuyen qua vat ao · vat NHAN BAN · hoac vat noi lai o ngoai. Day la ban nang
+#    cua benh da ghi so ("AI hong o THAO TAC TAY voi vat nho", 58/73 clip) nhung NANG HON
+#    vi them yeu to CHE KHUAT. Quet video 11: 7/154 shot dinh (M18 K13b F5 M22 HS3 HS3b HS6).
+#
+# ✅ BA KHUON AN TOAN — y "da cho vao roi" van doc duoc:
+#    ① vat DUNG o mep       : ap vat len NGOAI ao roi keo vat ao che LEN TAY (tay con thay)
+#    ② VAI di, vat dung yen : keo khan/vat ao TRUM LEN vat (chuyen dong la cua VAI — de hon)
+#    ③ dat CHONG len        : dat to giay LEN phong bi roi vo phang duoi long ban tay
+#    Nhip sau chi con vo BEN NGOAI tui — do moi la nhip dat gia (「胸を押さえる癖」).
+#
+# ⚠️ Va: dung ghep CU CHAM VAO NGUOI ("someone bumps his shoulder") vao canh thao tac tay.
+#    Hai thu kho cung luc thi hong ca hai.
+# =====================================================================================
+OCCLUDE = re.compile(r"(?:slides?|feeds?|puts?|tucks?|slips?|pushes?|drops?|posts?)"
+                     r"[^.,]{0,40}?\b(?:into|inside|in under|under)\s+"
+                     r"(?:the\s+)?(?:inside\s+)?(?:pocket|jacket|coat|lapel|cloth|"
+                     r"drawer|envelope|sleeve|apron|bag|box|rice|slot)\b", re.I)
+LIMB_WORDS = re.compile(r"\b(hands?|feet|foot|legs?|fingers?|arms?)\b|close[- ]?up|macro", re.I)
+BODY_WORDS = re.compile(r"torso|whole figure|the figure|body|figures|shoulder|legs and body", re.I)
+def bad_framing(cam):
+    cl = cam.lower()
+    return bool(LIMB_WORDS.search(cl)) and not BODY_WORDS.search(cl)
+
+# =====================================================================================
+# GATE — cac danh sach tu
+# =====================================================================================
+# 🔴 VAT ROI TREN MAT DAT (chot 2026-09-06, sau 3 vong gen hong lien tiep o canh C3 video 10).
+# Model NHAN BAN vat roi thay vi DOI CHO no: xin "hai cap dat duoi dat roi hai dua nhat len"
+# thi frame cuoi co SAU cai cap (2 deo + 2 cam + 2 VAN nam duoi dat). Cau dem chat den may
+# cung khong chua duoc — cang siet cang te (3 cai -> 4 -> 6).
+# Doi chung: moi clip chi co vat DEO/CAM dinh vao nguoi deu dung so tuyet doi.
+# => Vat phai DINH VAO NGUOI. Canh co vat roi + nguoi cui xuong nhat = thiet ke lai canh.
+GROUND_OBJ = re.compile(
+    r"\b(on|onto|off|from)\s+the\s+(ground|floor|road|path|dirt|gravel|pavement)\b"
+    r"|\b(set|left|lying|lie|lies|standing|stood|placed|resting)\s+(down\s+)?"
+    r"(upright\s+)?(on|in)\s+the\s+(ground|floor|road|path|dirt|gravel)\b", re.I)
+# Cau PHU DINH ("no bag anywhere on the ground") la cach VIET DUNG de chan vat roi => khong bat.
+GROUND_NEG = re.compile(r"\b(no|not|nothing|without|neither)\b[^.]{0,60}?"
+                        r"\b(on|in)\s+the\s+(ground|floor|road|path|dirt|gravel)\b", re.I)
+PICK_UP = re.compile(r"\b(picks?|pick|lifts?|lift|scoops?|grabs?|takes?|hoists?)\s+"
+                     r"(it|them|one|up|the\s+\w+|(its|their|his|her)\s+own\s+\w+)\b", re.I)
+
+CHILD_WORDS = [" child", " children", " kid", " kids", " boy", " girl", " elementary", "toddler", "infant", "schoolchild", "pupil"]
+HUMAN_WORDS = ["hand", "woman", "man ", "figure", "figures", "family", "people", "passer", "workman", "workmen",
+               "shopkeeper", "cyclist", "someone", "owner", "group", "feet", "foot", "shoes", "caps", "satchel",
+               "traffic", "student", "students", "adult", "worker", "attendant", "waitress", "cook", "grandmother"]
+# chi dong tu DI CHUYEN XUYEN KHUNG (H1 hong vi 'walks' khong co huong). 'steps aside', 'passes behind'
+# khong can huong -> khong liet ke, tranh 62/121 canh bi 🔴 oan (selftest lan 1).
+MOVE_VERBS  = re.compile(r"\b(walk|walks|walking|cross|crosses|crossing|march|marches|"
+                         r"file|files|wander|wanders|stroll|strolls|approach|approaches|"
+                         r"hurr|hurries|dash|dashes|jog|jogs|cycles?|pedals?)\b|"
+                         # 🔴 2026-09-11 (video 12): `run` TACH RIENG vi hai nghia khong phai chay bo
+                         #   (a) CHAT LONG chay: "the melt runs down" / "condensation runs down" -> xu
+                         #       bang SUBJ_AMBIENT (danh tu chat long da them vao chu ngu ambient)
+                         #   (b) NGOAI DONG: "runs the door half shut" / "runs the flat of her hand
+                         #       along the hem" -> chay bo KHONG BAO GIO co tan ngu truc tiep.
+                         #   Cung ho voi `drift`(v2) · `round`(09-10) · `head`(09-11): tu vua la dong
+                         #   tu di chuyen vua la thu khac => bao oan neu bat tran.
+                         r"\brun(?:s|ning)?\b(?!\s+(?:the|a|an|his|her|its|their|both|two)\b)|"
+
+                         # 2026-09-10: BO `round|rounds` khoi danh sach. Quet 154 ACT: 7/7 cho dung
+                         #   chu "round" deu la GIOI TU (round him / round the table / round the chair),
+                         #   0 cho la dong tu => bare `round` chi sinh BAO OAN "di chuyen khong co
+                         #   huong" (da dinh 2 lan: S3b, K12). Nghia dong tu giu bang dang co tuc ngu:
+                         r"\brounds?\s+the\s+(?:corner|bend)\b|"
+                         # 2026-09-11 (video 12): CUNG BENH VOI `round`, o chu `head`. Mau cu bat luon
+                         #   "his head back" / "turns her head toward" / "tilting head back" = DANH TU
+                         #   GIAI PHAU, khong phai di chuyen. Quet moi prompt trong repo: 6/6 cho khop
+                         #   deu la danh tu, 0 la dong tu => bao oan 100%. Siet: bat buoc chu `s` (ngoi
+                         #   3 so it) VA khong dung ngay sau mot chu thuong khac (his/her/the/tilting).
+                         #   "A_KO heads toward the gate" van bat duoc.
+                         r"(?<!his\s)(?<!her\s)(?<!its\s)(?<!the\s)(?<!ing\s)\bheads\s+(?:toward|for|back|off|out|down|up|into|straight)\b", re.I)
+# 🔴 2026-09-06 (lo 54 prompt nenkin) — hai bao oan cua MOVE_VERBS, cung ho voi ca "drift" da va o v2:
+#  ① "head" la BO PHAN CO THE. "tilts his head" · "shakes his head" · "her head tilted" bi bat oan
+#     4/54 shot. Dong tu di chuyen thuc su la "heads TOWARD/FOR/BACK/...".
+#  ② CHU NGU LA BONG/ANH SANG/BUI thi dong tu di chuyen la CHUYEN DONG PHU, khong phai nguoi di,
+#     nen khong can huong camera: "the shadow CROSSES his arm" bi bat oan.
+SUBJ_AMBIENT = re.compile(r"\b(shadow|shadows|light|dust|steam|smoke|breeze|wind|curtain|air|"
+                          r"reflection|sunlight|daylight|"
+                          # 🔴 2026-09-11 (video 12): chu `run` bao oan 6/8 shot — "the melt RUNS
+                          #    down the heel", "the water is RUNNING hard", "lets the slats RUN back
+                          #    down". Cung ho voi `drift` (v2) · `round` (09-10) · `head` (09-11):
+                          #    tu vua la dong tu di chuyen vua la thu khac. Chua bang dung CO CHE
+                          #    DA CO — them danh tu CHAT LONG/VAT vao chu ngu ambient.
+                          r"water|meltwater|melt|stream|sweat|bead|drip|drips|haze|mist|glow|condensation|"
+                          r"spark|sparks|sawdust|lime|rope|slats|blind|hair|tap|water goes|"
+                          r"ripples)\b[^,.]{0,28}?\b(?:cross\w*|move\w*|"
+                          r"travel\w*|creep\w*|slid\w*|run\w*|pass\w*|spill\w*|spread\w*)\b", re.I)
+# ('drift' bo khoi MOVE_VERBS: 'dust drifts' la chuyen dong PHU, bat oan canh 24)
+# 🔴 2026-09-10: them "towards" (Anh-Anh). TOWARD_CAM ngay duoi da nhan `toward(s)?` tu dau,
+#    DIRECTION thi khong => ACT viet "towards the camera" bi cham la THIEU HUONG. Lo cua gate,
+#    khong phai loi cua nguoi viet.
+DIRECTION   = re.compile(r"towards? the camera|away from the camera|left to right|right to left|across the frame|"
+                         r"past the camera|into (?:the )?frame|out of (?:the )?frame|out of sight|"
+                         r"from the far end|to the far end|down the lane|up the lane|deeper into|"
+                         r"getting smaller|growing smaller|growing larger|from behind|in place|on the spot", re.I)
+SECONDARY   = re.compile(r"breeze|wind|sway|swings|swinging|flutter|ripple|dust|steam|smoke|shadow|shadows|"
+                         r"shifts (?:his|her|its)? ?weight|weight shift|drips|dripping|drops|bounc|rustl|flap|stirring|"
+                         r"catch(?:es|ing) the light|light (?:moves|spreading|spreads)|glint|curtain|hair|cloth|"
+                         r"sleeve|hem|leaves|grass|awning|drift", re.I)
+BAD_POSE    = re.compile(r"leans? out of|bends? double|contort|upside down|hangs? from|lean(?:s|ing)? far out|"
+                         r"twists? around|spins?|somersault|jumps? over the camera", re.I)
+FACE_CAM    = re.compile(r"looks? (?:straight )?(?:at|into) the camera|faces? the camera|turns? to (?:face|look at) the camera|"
+                         r"smiles? at the camera|eye contact", re.I)
+POSSESSIVE  = re.compile(r"A_[A-Z]+'s")
+PLAIN_WORDS = ("plain", "unmarked")
+
+# =====================================================================================
+# BUILD
+# =====================================================================================
+def expand(act, C):
+    """Thay token A_XXX -> mo ta cast. Token = 'A_' + ten khoa viet hoa (A_ME, A_HAHA, AN_ATTENDANT...)."""
+    # 🔴 PHAI thay token DAI TRUOC: dict order lam 'A_KO' an truoc 'A_KO2'/'A_KORI'
+    #    -> ra rac 'barefoot2' / 'barefootRI' (7 dong cua video 12, bat 2026-09-11).
+    for k in sorted(C, key=len, reverse=True):
+        v = C[k]
+        for tok in (f"A_{k.upper()}", f"AN_{k.upper()}"):
+            act = act.replace(tok, v)
+    return act
+
+def _framing(cam):
+    return FRAMINGS.get(cam, cam)
+
+# HO SO KENH (2026-09-06). Kenh nenkin dung cung cong thuc nhung KHAC ba khoi: STYLE
+# (Nhat HIEN DAI, khong phim 8mm) va AVOID (khong co dai phim, nhung phai cam DICH DANH
+# chu tren giay + doi trang thai vat/kinh — hai thu lam hong 4/6 clip cua nenkin v21).
+# Truyen `prof`; khong truyen => nguyen showa, khong video cu nao phai gen lai.
+def _prof(prof):
+    if not prof:
+        return STYLE, MOTION, MOTION_EXIT, AVOID
+    return (prof.get("STYLE", STYLE), prof.get("MOTION", MOTION),
+            prof.get("MOTION_EXIT", MOTION_EXIT), prof.get("AVOID", AVOID))
+
+
+def build(S, P, C, prof=None, plates=None, crowd=None):
+    """S: list (sid, blk, act, preset, framing_key_or_str, tier[, chain, out, crowd]).
+    crowd: dict preset -> 'solo'|'few'|'full'|('solo','ly do'). -> rows (sid,blk,preset,tier,cam,prompt)."""
+    ST, MO, MOX, AV = _prof(prof)
+    rows = []
+    prev_chain, prev_out = None, None
+    for _row in S:
+        sid, blk, act, preset, cam, tier, chain, out = _srow(_row)
+        # NOI LIEN: canh khong phai dau chuoi thi MO bang TRANG THAI KET cua canh truoc
+        _in_chain = bool(chain and chain == prev_chain and prev_out)
+        if _in_chain and USE_CHAIN_LOCK:
+            act = CONT_LEAD.format(out=short_ref(prev_out, C)) + act
+        prev_chain, prev_out = chain, (out if chain else None)
+        _ptok, _ = plate_for(act, plates)
+        act_x = expand_with_plate(act, C, _ptok) if _ptok else expand(act, C)
+        camx  = _framing(cam)
+        motion = MOX if any(w in act_x.lower() for w in EXIT_WORDS) else MO
+        # framing co CAM DI CHUYEN thi phai bo cau "camera holds one position" (xem MOTION_MOVE)
+        if cam in MOVING_CAMS:
+            motion = MOTION_MOVE
+            if any(w in act_x.lower() for w in EXIT_WORDS):
+                motion = motion.replace(", the subject remains in frame for the whole shot", "")
+        elif cam in POV_CAMS:
+            motion = {"pov_walk": MOTION_POV_WALK,
+                      "pov_bike": MOTION_POV_BIKE}.get(cam, MOTION_POV)
+            # ACT bao "tien len mot buoc" ma MOTION_POV cam tinh tien => phai doi MOTION,
+            # khong phai doi cau van (xem MOTION_POV_STEP).
+            if cam not in ("pov_walk", "pov_bike") and STEP_RE.search(act_x):
+                motion = MOTION_POV_STEP
+        _lock = f", {CHAIN_LOCK}" if (_in_chain and USE_CHAIN_LOCK) else ""
+        ex, _lvl, _ = _extras(preset, _crowd_of(_row, crowd), act_x)
+        place = f"{P[preset]}, {ex}" if ex else P[preset]
+        _ima = preset.startswith("ima_")          # canh so sanh thoi nay
+        _ST, _AVx = (STYLE_MODERN, AVOID_MODERN) if _ima else (ST, AV)
+        ST_x = _style_pov(_ST) if cam in POV_CAMS else _ST
+        # 🔴 2026-09-12: canh muc SOLO la canh CO Y chi co mot nguoi (gieng sau nha, bep,
+        #   duoi mai hien...). De nguyen 2 cau nay thi prompt tu cai nhau — no vua doi
+        #   "doi song o nhieu cu ly" vua cam "mot nguyen mot minh tren san trong".
+        #   Dinh 31/165 prompt truoc khi va.
+        if _lvl == "solo":
+            ST_x, _AVx = solo_style(ST_x), solo_avoid(_AVx)
+        # co ti le dat o CUOI prompt. ⚠️ `--ar` da do duoc la BI BO QUA o tool gen ANH
+        #   (media-library.md §2.10 ①: xin 16:10/5:4/16:9 -> 18/18 anh van ra 1376x768).
+        #   Chua do tren Flow VIDEO; them vao vo hai, nhung DUNG coi no la bao dam —
+        #   cai that su ganh ti le la cau chu trong STYLE.
+        # ⭐ 2026-09-12 (user bat): POV KHONG duoc ghep nhu moi canh khac.
+        #   Cach cu dat act_x LEN DAU, ma act_x mo bang ca doan ta cast ("a small figure in a
+        #   plain white cotton undershirt...") => prompt mo bang MOT NGUOI NHIN TU NGOAI, va
+        #   cau khai bao POV mai sau ACT moi toi. Model dung xong bo cuc goc 3 roi.
+        #   Sua: khai bao POV len TRUOC, va cast doi vai tu CHU NGU thanh "nhin qua mat cua".
+        #   Quy uoc viet ACT cho POV: mo bang "A_XXX: " roi ta CAI MINH THAY, khong ta minh.
+        if cam in POV_CAMS:
+            _m = re.match(r"\s*(A_[A-Z0-9]+)\s*:\s*", act)
+            if _m:
+                _k = _m.group(1)[2:].lower()
+                # 🔴 KHONG dung mo ta cast thuong: no ta quan ao/chan tay NHIN TU NGOAI
+                #   ("a small figure in a plain white cotton undershirt... barefoot") va chinh
+                #   cau do keo model ve goc 3. Ban "<ten>_pov" ta DUNG PHAN minh tu nhin thay.
+                _desc = (C.get(_k + "_" + cam) or C.get(_k + "_pov")
+                         or C.get(_k, "the person"))
+                act_x = expand(act[_m.end():], C)
+                camx = ("a first-person shot: the camera IS their own eyes and nothing else, "
+                        "the whole scene is only ever seen out of that one head and never "
+                        "from outside it, " + POV_BODY[cam] + " — " + _desc +
+                        " — and no part of them is ever seen from any angle but their own")
+            # loc vo danh + danh sach cam deu phai bo cac cau coi camera la vat the ben ngoai
+            place = place.replace(EXTRA_LOCK, EXTRA_LOCK_POV)
+            if not _ima:
+                _AVx = AVOID_POV
+                if cam == "pov_stand":
+                    _AVx += (", no lap, no knees and no thighs anywhere in the picture, "
+                             "the person whose eyes this is is not sitting down")
+            prompt = f"{camx}, {act_x}, {place}, {ST_x}, {motion}{_lock}. {_AVx}. --ar 16:9"
+        else:
+            prompt = f"{act_x}, {camx}, {place}, {ST_x}, {motion}{_lock}. {_AVx}. --ar 16:9"
+        rows.append((sid, blk, preset, tier, camx, prompt))
+    return rows
+
+# =====================================================================================
+# §11 CHUOI HANH DONG (chain) + §12 CAST LOCK — chot 2026-09-06
+#   user: "hanh dong cua prompt truoc phai duoc noi lien voi hanh dong cua prompt sau"
+#         "kich ban phai dong nhat nhan vat, video phai nhat quan"
+#
+# 🔴 GIOI HAN THAT, noi truoc khi hua: t2v gen TUNG clip TU DAU, KHONG co character-lock.
+#    Cung mot cau chu van ra hai khuon mat khac nhau. Nen "dong nhat" o day = dong nhat
+#    NHUNG THU MODEL GIU DUOC: mau mu · mau ao · mau/chat lieu vat deo · huong di · boi
+#    canh · anh sang. Bang chung video 10: clip GIAU MAT (H1, 13:14, C3 vong 5) dong nhat
+#    tuyet doi; clip THAY MAT thi moi lan mot nguoi khac.
+#    => Nhan vat tai xuat hien >= 2 clip thi PHAI giau mat.
+# =====================================================================================
+# 🔴 CHOT 2026-09-07 — DO DEMO 5 CLIP: noi bang CHU KHONG GIU DUOC BOI CANH.
+#   chuoi A (2 clip cung preset "duong dem mua"): clip 2 ra BAN NGAY, ngo KHAC.
+#   chuoi B (3 clip cung preset "van phong"):     ra BA van phong khac nhau.
+#   => CONT_LEAD/CHAIN_LOCK van giu trong thu vien (dung duoc neu doi sang tool co frame-dau),
+#      nhung MAC DINH TAT. Cach noi thuc te: xem WIDE_FRAMINGS + gate V1 ben duoi.
+USE_CHAIN_LOCK = False
+
+CONT_LEAD = "continuing in the same place a moment later, {out}, and "
+
+# KHOA CU MAY — chen vao MOI canh khong phai dau chuoi. Khong co Extend (phai bam tay trong UI
+# Flow, ma user gen bang tool ngoai) thi day la don bay MANH NHAT con lai bang text: bao thang
+# cho model rang day la CUNG mot cu may, CUNG anh sang voi canh truoc.
+# Ba thu mat bat ngay o cho cat: goc may · huong nang · co chu the trong khung.
+CHAIN_LOCK = ("the camera has not moved since the previous shot, the same lens height and the same "
+              "distance to the subject, the light comes from the same direction and the shadows fall "
+              "the same way")
+
+# framing GIAU MAT — an toan cho nhan vat tai xuat hien
+FACE_HIDDEN = {"behind", "ots", "high"}
+HIDE_WORDS = re.compile(r"seen from behind|from behind|back to the camera|looking down|"
+                        r"head bowed|over the shoulder", re.I)
+# huong di — dung de chan cu LAT NGUOC giua hai canh lien nhau trong cung chuoi
+TOWARD_CAM = re.compile(r"toward(s)?\s+the\s+camera|approach(es|ing)\s+the\s+camera|"
+                        r"walks?\s+up\s+to\s+the\s+camera", re.I)
+AWAY_CAM = re.compile(r"away\s+from\s+the\s+camera|from\s+behind|grow(s|ing)?\s+smaller", re.I)
+CAST_TOKEN = re.compile(r"A_([A-Z0-9]+)")
+MAX_CAST_IN_SCENE = 2      # >2 nguoi trong mot canh = moi lan gen mot kieu
+MAX_CAST_IN_VIDEO = 3      # tran nhan vat CO TEN cho ca video
+
+
+HEAD_NOUNS = ("figure", "woman", "man", "workman", "shopkeeper", "person")
+
+
+def short_ref(act, C):
+    """Trong menh de NOI TIEP, A_XXX -> 'the same figure/woman/...' thay vi bung ca mo ta.
+    Vi sao: ① prompt khong phinh ② chu 'the same' chinh la thu noi voi model rang DAY LA
+    CUNG MOT NGUOI voi canh truoc — bung lai mo ta dai chi lam model ve lai tu dau."""
+    def rep(m):
+        d = (C.get(m.group(1).lower()) or "").lower()
+        for n in HEAD_NOUNS:
+            if n in d:
+                return f"the same {n}"
+        return "the same person"
+    return CAST_TOKEN.sub(rep, act)
+
+
+PLATE_REF = "matching the reference image exactly"
+
+
+def plate_for(act, plates):
+    """Canh nay dung ANH THAM CHIEU cua NHAN VAT nao?
+
+    Tool chi nhan 1 ANH -> moi clip khoa duoc DUNG MOT nhan vat. Chon theo thu tu uu tien
+    trong `plates` (dict giu thu tu khai bao), lay nguoi dau tien co mat trong canh.
+    """
+    if not plates:
+        return None, None
+    toks = set(CAST_TOKEN.findall(act))
+    for tok, path in plates.items():
+        if tok.upper() in toks:
+            return tok.upper(), path
+    return None, None
+
+
+def expand_with_plate(act, C, tok):
+    """Nhan vat DA co anh tham chieu thi KHONG ta lai quan ao/mau nua.
+
+    🔴 Vi sao: dua ca ANH lan MO TA DAI la cho model hai nguon co the mau thuan, no se tron
+    hai thu lai. Anh cho HINH DANG, chu cho HANH DONG. Nhan vat co plate -> 'the figure
+    matching the reference image exactly'; nhan vat khong co plate -> bung mo ta day du.
+    """
+    def rep(m):
+        t = m.group(1)
+        if t.upper() == tok:
+            d = (C.get(t.lower()) or "").lower()
+            for n in HEAD_NOUNS:
+                if n in d:
+                    return f"the {n} {PLATE_REF}"
+            return f"the person {PLATE_REF}"
+        return C.get(t.lower(), m.group(0))
+    return CAST_TOKEN.sub(rep, act)
+
+
+def plate_prompt(tok, C, extra=""):
+    """Prompt de GEN tam anh tham chieu cua mot nhan vat.
+
+    Anh nay se di kem MOI clip co nhan vat do, nen no phai la anh DE HOC:
+      · dung yen, toan than, chinh dien hoi cheo 3/4 -> model thay du quan ao + ti le nguoi
+      · nen TRON, sang, khong do dac -> khong hoc nham boi canh vao nhan vat
+      · anh sang deu, khong do bong gat -> khong khoa nham mot huong nang
+      · CUNG STYLE voi clip (cung palette 1970s) -> khong lech tong khi ghep
+    ⛔ Khong ta mat/tuoi/toc o day nua — chinh tam anh se quyet dinh nhung thu do, va do la
+       diem cua ca cach lam nay: chuyen viec giu khuon mat tu CHU sang ANH.
+    """
+    d = C[tok.lower()]
+    return (f"full-body reference photograph of {d}, standing still and relaxed, "
+            f"three-quarter view facing slightly toward the camera, arms at the sides, "
+            f"plain seamless light grey studio background, no props, no furniture, no scenery, "
+            f"even soft frontal light with no harsh shadows, sharp focus, the whole body from "
+            f"head to shoes inside the frame with a little space above the head, "
+            f"{STYLE}{(', ' + extra) if extra else ''}. {AVOID}.")
+
+
+def write_plate_prompts(C, plates, outdir=".", prefix="cast_plates"):
+    """Xuat prompt gen anh cho tung nhan vat co trong `plates` (1 prompt / 1 dong)."""
+    lines, names = [], []
+    for tok, path in plates.items():
+        lines.append(" ".join(plate_prompt(tok, C).split()))
+        names.append(f"{len(names) + 1:3d}  {os.path.basename(path)}   (A_{tok.upper()})")
+    io.open(os.path.join(outdir, f"{prefix}_FLOW.txt"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+    io.open(os.path.join(outdir, f"{prefix}_TENFILE.txt"), "w", encoding="utf-8").write(
+        "# dong FLOW.txt  ->  ten file anh  (thu tu PHAI khop)\n" + "\n".join(names) + "\n")
+    print(f"da ghi {prefix}_FLOW.txt ({len(lines)} dong) · {prefix}_TENFILE.txt -> {os.path.abspath(outdir)}")
+    return lines
+
+
+def plate_map(S, plates):
+    """{sid: duong dan anh} — de xuat ra file cho nguoi gen biet clip nao dinh kem anh nao."""
+    out = {}
+    for row in S:
+        r = _srow(row)
+        tok, path = plate_for(r[2], plates)
+        if path:
+            out[r[0]] = path
+    return out
+
+
+# Framing RONG = thay ca can phong -> hai canh rong lien tiep thi mat CHO nó khop, va no khong khop.
+# Framing CHAT = than nguoi choan khung, phong nen it/mo -> doi phong KHONG AI BIET.
+# Day la cho GIAU su thay doi. Ngu phap dung phim: rong -> chat -> rong.
+WIDE_FRAMINGS  = {"wide", "behind", "pan", "high", "still"}
+TIGHT_FRAMINGS = {"medium", "ots", "low", "tilt"}
+
+
+def autochain(S, cut=(), min_run=2):
+    """NOI LIEN LA MAC DINH, KHONG phai tuy chon.
+
+    Tu dong gom cac canh LIEN NHAU cung (khoi, preset) thanh mot chuoi. Nguoi viet chi con
+    phai lam MOT viec: dien 'out' (trang thai ket) cho moi canh khong phai canh cuoi chuoi —
+    va gate se doi cho bang duoc. Muon CAT HAN (doi canh, doi thoi diem) thi bo sid vao `cut`.
+
+    Vi sao dao mac dinh (do tren video 10): 57/120 cap canh dung ngay canh nhau, CUNG khoi,
+    CUNG boi canh — ma van la 57 canh roi, vi 'chain' luc do la tuy chon nen khong ai khai.
+    """
+    cut = set(cut)
+    rows = [list(_srow(x)) for x in S]
+    i, n = 0, len(rows)
+    _pov = lambda r: str(r[4]).startswith("pov")
+    while i < n:
+        # 2026-09-12: canh POV KHONG BAO GIO la mat xich — ke ca lam DAU chuoi.
+        #   `cut` chi chan viec bi noi vao sau, nen mot canh POV van co the mo mot chuoi
+        #   roi gate doi no phai co 'out'. POV la cu may khac han, noi vao canh goc 3
+        #   lien truoc/sau deu vo nghia.
+        if _pov(rows[i]):
+            i += 1
+            continue
+        j = i
+        while (j + 1 < n and rows[j + 1][0] not in cut and not _pov(rows[j + 1])
+               and rows[j + 1][1] == rows[i][1] and rows[j + 1][3] == rows[i][3]):
+            j += 1
+        if j - i + 1 >= min_run:
+            cid = f"auto_{rows[i][0]}"
+            for k in range(i, j + 1):
+                if not rows[k][6]:
+                    rows[k][6] = cid
+        i = j + 1
+    return [tuple(r) for r in rows]
+
+
+def linkage(S):
+    """Do DO AN TOAN CUA MOI NOI (doi nghia 2026-09-07, sau khi do demo).
+
+    Truoc: dem xem co khai chain/out chua. Nhung do thuc te cho thay chain/out KHONG giu
+    duoc boi canh, nen dem no la dem mot thu khong co that.
+    Nay: dem xem moi noi giua hai canh CUNG BOI CANH co it nhat MOT canh CHAT hay khong —
+    do la thu that su giau duoc viec model doi can phong.
+    """
+    R = [_srow(x) for x in S]
+    safe = risky = 0
+    for a, b in zip(R, R[1:]):
+        if a[1] == b[1] and a[3] == b[3]:
+            risky += 1
+            if a[4] in TIGHT_FRAMINGS or b[4] in TIGHT_FRAMINGS:
+                safe += 1
+    return safe, risky, (100.0 * safe / risky if risky else 100.0)
+
+
+def _srow(row):
+    """6-tuple (cu) / 8-tuple / 9-tuple: (sid, blk, act, preset, cam, tier, chain, out, crowd)."""
+    if len(row) >= 9:
+        return row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]
+    if len(row) >= 8:
+        return row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7]
+    return row[0], row[1], row[2], row[3], row[4], row[5], None, None
+
+
+def _crowd_of(row, crowd):
+    """Muc dam dong cua MOT shot: truong thu 9 cua tuple thang map theo preset.
+
+    🔴 KHONG truyen `crowd` => tra ve 'solo' cho MOI shot, tuc lop EXTRAS TAT HOAN TOAN.
+    Co y: video da gen truoc 2026-09-10 goi build() khong co `crowd`, va neu de mac din
+    'few' cho PUBLIC_PRESETS thi prompt cua chung DOI im lang (preset ten 'office' o
+    video khac se tu nhien co nguoi nen). Cung nguyen tac voi `prof`: khong video cu nao
+    phai gen lai."""
+    if len(row) >= 9 and row[8] is not None:
+        return row[8]
+    if not crowd:
+        return "solo"
+    return crowd.get(row[3], "solo")
+
+
+# =====================================================================================
+# GATE
+# =====================================================================================
+def gate(rows, S, P, C, whitelist_no_human=None, interior=None, strict=True, quiet=False,
+         prof=None, chain_strict=None, crowd=None):
+    """In bang + return (n_red, n_warn). strict=True: 3 nhip + chuyen dong phu la 🔴 (video moi);
+    strict=False: chi ⚠️ (video da gen, chi vá clip loi).
+
+    chain_strict: rieng cho luat CHUOI (canh roi C6). Mac dinh = strict.
+      Video VIET TRUOC luat chuoi (video 10) dat chain_strict=False de khong bi bat oan,
+      nhung VAN giu strict cho 3 nhip / chuyen dong phu / huong camera.
+      ⛔ Video 11 tro di KHONG duoc dat False — do la ca luat, khong phai tuy chon."""
+    if chain_strict is None:
+        chain_strict = strict
+    wl = whitelist_no_human or {}
+    interior = interior or set()
+    acts = {s[0]: s[2] for s in S}
+    cams = {s[0]: s[4] for s in S}
+    SR = [_srow(x) for x in S]                       # (sid, blk, act, preset, cam, tier, chain, out)
+    idx = {r[0]: i for i, r in enumerate(SR)}
+    red, warn = [], []
+    def R(sid, why): red.append((sid, why))
+    def W(sid, why): warn.append((sid, why))
+
+    ids = [r[0] for r in rows]
+    for k, v in collections.Counter(ids).items():
+        if v > 1: R(k, f"id trung {v} lan")
+
+    for sid, blk, pre, tier, cam, prompt in rows:
+        act = acts[sid]; al = act.lower(); pl = prompt.lower(); cl = cam.lower()
+        # 1 so huu cach tren token cast
+        if POSSESSIVE.search(act): R(sid, "A_XXX's -> expand hong ngu phap")
+        # 2 filter tre em
+        if any(w in pl for w in CHILD_WORDS): R(sid, "tu tre em (filter Veo)")
+        # 3 framing cam / khong co than
+        if bad_framing(cl):
+            R(sid, f"framing KHONG CO THAN: '{cam[:40]}'")
+        elif cams[sid] not in FRAMINGS and not BODY_WORDS.search(cl) and "no people" not in cl:
+            W(sid, f"framing tu do, khong neu than nguoi: '{cam[:40]}'")
+        # 4 khong co nguoi
+        has_human = any(w in pl for w in HUMAN_WORDS)
+        if not has_human and sid not in wl: R(sid, "KHONG co nguoi/tay (khong whitelist)")
+        # 5b VAT DI VAO TRONG VAT KHAC (§5.6) — model khong dung duoc canh vat bien mat
+        _om = OCCLUDE.search(al)
+        if _om:
+            (R if strict else W)(sid, f"VAT BIEN MAT vao trong vat khac: '{_om.group(0)[:46]}' — "
+                                      f"model xuyen tay/nhan ban vat. Xem §5.6, dung 1 trong 3 khuon "
+                                      f"an toan (ap len NGOAI · keo VAI trum len · dat CHONG len)")
+        # 5 di chuyen ma khong co huong camera
+        al_h = SUBJ_AMBIENT.sub(" ", al)      # bo cum chuyen dong PHU truoc khi do
+        # 🔴 2026-09-11: "runs her fingertips along the row" KHONG phai di chuyen, nhung
+        #    `run|runs` nam trong MOVE_VERBS nen gate bat oan va doi "huong tuong doi camera".
+        #    Gate bat oan thi nguoi ta se lach bang mot menh de vo nghia ("drawing it toward
+        #    the camera") — dung cai da xay ra o C12. Sua GATE, dung sua cau van.
+        al_h = re.sub(r"\bruns?\s+(?:her|his|their|a|the|one)\s+"
+                      r"(?:finger\w*|hand|palm|thumb|knuckle\w*|nail)\b", " ", al_h, flags=re.I)
+        if MOVE_VERBS.search(al_h) and not DIRECTION.search(al):
+            (R if strict else W)(sid, "di chuyen khong co HUONG tuong doi camera (H1 quay mat lai vi thieu cai nay)")
+        # 6 nhin/quay ve camera
+        if FACE_CAM.search(al): R(sid, "nhin/quay ve camera")
+        # 7 tu the cam
+        if BAD_POSE.search(al): R(sid, "tu the phuc tap (leans out/bends double/...)")
+        # 8 ba nhip
+        n_then = al.count(", then ")
+        if n_then == 0: R(sid, "0 'then' — mot nhip = canh do")
+        elif n_then == 1: (R if strict else W)(sid, "chi 1 'then' — can 2 (3 nhip)")
+        # 9 chuyen dong phu (co hon)
+        if has_human and not SECONDARY.search(al): (R if strict else W)(sid, "khong co chuyen dong PHU (breeze/sway/dust/shadow/weight)")
+        # 11 VAT ROI tren mat dat + nguoi nhat len => model nhan ban vat (xem GROUND_OBJ)
+        _ground = GROUND_OBJ.search(act) and not GROUND_NEG.search(act)
+        if has_human and _ground and PICK_UP.search(act):
+            R(sid, "VAT ROI duoi dat + hanh dong NHAT LEN -> model nhan ban vat, thiet ke lai canh")
+        elif has_human and _ground:
+            W(sid, "co VAT ROI duoi dat — de bi nhan ban, uu tien vat DEO/CAM tren nguoi")
+        # 10 interior lan street
+        if pre in interior and ("shopping street" in pl or "asphalt" in pl): R(sid, "preset interior ma prompt co street/asphalt")
+        # 11 style/motion/avoid dong nhat
+        _ST, _MO, _MOX, _AV = _prof(prof)
+        # MOTION_MOVE la bien the HOP LE cho framing cam di chuyen (pan/tilt/track) — xem MOVING_CAMS
+        _MOM = MOTION_MOVE
+        _MOM_X = _MOM.replace(", the subject remains in frame for the whole shot", "")
+        _ok_style = any(s in prompt for s in (_ST, _style_pov(_ST),
+                                              solo_style(_ST), solo_style(_style_pov(_ST))))
+        # canh SO SANH THOI NAY (preset "ima_") mang STYLE_MODERN + AVOID_MODERN;
+        # gate phai chap nhan ca hai bo, neu khong no bao oan chinh canh minh vua them.
+        _ok_mod = ((STYLE_MODERN in prompt or _style_pov(STYLE_MODERN) in prompt) and AVOID_MODERN in prompt)
+        if _ok_mod:
+            _ok_style, _AV = True, AVOID_MODERN
+        # canh POV dung AVOID_POV (da bo 3 cau coi camera la vat the ngoai)
+        elif AVOID_POV in prompt:
+            _AV = AVOID_POV
+        if solo_avoid(_AV) in prompt and _AV not in prompt:
+            _AV = solo_avoid(_AV)
+        if not _ok_style or _AV not in prompt or not (
+                _MO in prompt or _MOX in prompt or _MOM in prompt or _MOM_X in prompt
+                or MOTION_POV in prompt or MOTION_POV_WALK in prompt
+                or MOTION_POV_STEP in prompt
+                or MOTION_POV_BIKE in prompt):
+            R(sid, "STYLE/MOTION/AVOID khong nguyen van")
+        # 12 cau cam trong STYLE cu
+        if "shot on" in pl or "home movie" in pl: R(sid, "con 'shot on ... film' -> ve dai phim")
+    # 13 cast: vat cam/deo phai 'plain unmarked'
+    for k, v in C.items():
+        vl = v.lower()
+        if any(o in vl for o in ("satchel", "bag", "box", "flag", "sign", "bottle", "cap", "hat", "apron", "jacket")):
+            if not all(w in vl for w in PLAIN_WORDS):
+                W(f"cast:{k}", "vat cam/deo thieu 'plain unmarked' -> model in chu/logo")
+
+    # ---------------------------------------------------------------------------------
+    # §11 CHUOI HANH DONG — noi lien canh truoc voi canh sau
+    # ---------------------------------------------------------------------------------
+    chains = {}
+    for i, r in enumerate(SR):
+        if r[6]: chains.setdefault(r[6], []).append(i)
+    for cid, ii in chains.items():
+        sid0 = SR[ii[0]][0]
+        # C1: cac canh cua mot chuoi phai LIEN NHAU trong S (user gen theo dung thu tu file FLOW)
+        if ii != list(range(ii[0], ii[0] + len(ii))):
+            R(sid0, f"chuoi '{cid}' bi chen canh khac vao giua — phai lien nhau trong S")
+        # C2: cung chuoi = cung BOI CANH (preset). Doi preset giua chuoi = doi canh, khong con noi lien
+        pres = {SR[i][3] for i in ii}
+        if len(pres) > 1:
+            R(sid0, f"chuoi '{cid}' dung {len(pres)} preset khac nhau: {sorted(pres)}")
+        for a, b in zip(ii, ii[1:]):
+            sa, sb = SR[a], SR[b]
+            # C3: canh truoc PHAI khai 'out' thi canh sau moi noi vao duoc
+            if not sa[7]:
+                R(sa[0], f"trong chuoi '{cid}' nhung THIEU 'out' (trang thai ket) — canh sau khong noi vao duoc")
+            elif len(sa[7]) > 110:
+                W(sa[0], f"'out' dai {len(sa[7])} ky — viet ngan (vi tri + tu the + vat), canh sau se mo bang no")
+            # C4: cam LAT NGUOC huong giua hai canh lien nhau
+            if AWAY_CAM.search(sa[2]) and TOWARD_CAM.search(sb[2]):
+                R(sb[0], f"lat nguoc huong ngay sau {sa[0]} (dang di XA roi quay lai DI VE phia camera)")
+            # C5: framing khong duoc nhay qua 2 bac trong cung chuoi
+            # Trong mot chuoi, doi framing = doi cu may = mat cam giac lien tuc.
+            # Khong co Extend thi day la thu duy nhat con giu duoc su lien mach o cho cat.
+            if sa[4] != sb[4]:
+                W(sb[0], f"doi framing GIUA chuoi '{cid}': {sa[4]} -> {sb[4]} "
+                         f"(muon doi cu may thi CAT chuoi, dung 'cut=')")
+
+    # V1 (thay C6 tu 2026-09-07): HAI CANH RONG LIEN TIEP trong cung boi canh.
+    #   Do thuc te: model KHONG giu duoc can phong qua hai lan gen. Hai canh RONG lien tiep
+    #   => mat CHO no khop => thay dut. Chen mot canh CHAT vao giua thi doi phong khong ai biet.
+    for a, b in zip(SR, SR[1:]):
+        if (a[1] == b[1] and a[3] == b[3]
+                and a[4] in WIDE_FRAMINGS and b[4] in WIDE_FRAMINGS):
+            (R if chain_strict else W)(
+                b[0], f"hai canh RONG lien tiep ({a[0]}:{a[4]} -> {b[0]}:{b[4]}) cung boi canh — "
+                      f"mat se CHO chung khop ma model khong giu duoc phong. Chen mot canh CHAT "
+                      f"({'/'.join(sorted(TIGHT_FRAMINGS))}) vao giua")
+
+    # C7: moi KHOI phai mo bang nhip DEN NOI — nhan vat DI TOI cho do, khong dung san.
+    #     Day la mo lien ket giua hai khoi: khong co no thi du trong khoi co noi lien,
+    #     nguoi xem van thay bai la mot chuoi tieu muc roi rac (benh cua kich ban dang muc).
+    _first = {}
+    for r in SR:
+        _first.setdefault(r[1], r)
+    for blk, r in _first.items():
+        if blk in ("HOOK", "END"):
+            continue                       # mo/dong bai co luat rieng
+        if not MOVE_VERBS.search(SUBJ_AMBIENT.sub(" ", r[2].lower())):
+            W(r[0], f"khoi '{blk}' mo bang canh DUNG SAN — nen mo bang nhip DEN NOI "
+                    f"(nhan vat di toi tu cho truoc), xem §8.6")
+
+    # ---------------------------------------------------------------------------------
+    # §12 CAST LOCK — it nhan vat, va nhan vat tai xuat hien thi phai GIAU MAT
+    # ---------------------------------------------------------------------------------
+    seen = collections.Counter()
+    for r in SR:
+        toks = set(CAST_TOKEN.findall(r[2]))
+        seen.update(toks)
+        if len(toks) > MAX_CAST_IN_SCENE:
+            W(r[0], f"{len(toks)} nhan vat trong MOT canh ({sorted(toks)}) — moi nguoi them la mot truc sai lech")
+    if len(seen) > MAX_CAST_IN_VIDEO:
+        W(SR[0][0], f"video dung {len(seen)} nhan vat co ten ({sorted(seen)}) — tran de giu dong nhat la {MAX_CAST_IN_VIDEO}")
+    for tok, n in seen.items():
+        if n < 2: continue
+        ho = [r for r in SR if f"A_{tok}" in r[2]
+              and r[4] not in FACE_HIDDEN and not HIDE_WORDS.search(r[2])]
+        if ho:
+            W(ho[0][0], f"A_{tok} xuat hien {n} clip nhung {len(ho)} clip THAY MAT "
+                        f"({', '.join(x[0] for x in ho[:4])}) — t2v khong khoa duoc mat, hay giau mat")
+
+    # ---------------------------------------------------------------------------------
+    # §3.5 DAM DONG — solo o NOI CONG CONG phai co ly do (loi ke goi nhung cho nay la dong)
+    # ---------------------------------------------------------------------------------
+    _lv = collections.Counter()
+    _solo_public = []
+    for _r in S:
+        _pre = _r[3]
+        _, _lvl, _why = _extras(_pre, _crowd_of(_r, crowd), _r[2])
+        _lv[_lvl] += 1
+        if _lvl == "solo" and _pre in PUBLIC_PRESETS:
+            (_solo_public.append((_r[0], _pre, _why)))
+    for _sid, _pre, _why in _solo_public:
+        if not _why:
+            R(_sid, f"SOLO o noi cong cong '{_pre}' ma khong khai ly do — dat "
+                    f"crowd=('solo','<vi sao>') hoac doi sang 'few'/'full'")
+    _n = max(1, len(S))
+    _solo_pct = _lv["solo"] * 100 // _n
+
+    _ared, _awarn, _ac = act_report(S, C, quiet=True)
+    for _m in _ared:  R(SR[0][0], "HO DONG TAC: " + _m)
+    for _m in _awarn: W(SR[0][0], "HO DONG TAC: " + _m)
+
+    _lk, _cd, _pc = linkage(S)
+    if not quiet:
+        act_report(S, C)
+        print(f"{'dam dong':20}: full {_lv['full']} · few {_lv['few']} · solo {_lv['solo']} "
+              f"({_solo_pct}% solo)")
+        print(f"{'do AN TOAN moi noi':20}: {_lk}/{_cd} cap da noi ({_pc:.0f}%)  "
+              f"[muc tieu >=70% — xem 04_VIDEOGEN_PROMPTS.md §8.6]")
+        print("SO PROMPT           :", len(rows))
+        print("do dai prompt       : min", min(len(r[5]) for r in rows), "max", max(len(r[5]) for r in rows))
+        print("tier                :", dict(collections.Counter(r[3] for r in rows)))
+        print("khoi                :", dict(collections.Counter(r[1] for r in rows)))
+        print("preset dung         :", len(set(r[2] for r in rows)), "/", len(P))
+        for k in sorted(wl): print(f"   i ngoai le khong nguoi [{k}]: {wl[k]}")
+        if warn:
+            print(f"⚠️  CANH BAO ({len(warn)}):")
+            for s, w in warn: print(f"   {s:6} {w}")
+        if red:
+            print(f"🔴 LOI ({len(red)}) — CHAN:")
+            for s, w in red: print(f"   {s:6} {w}")
+        else:
+            print("✅ GATE SACH")
+    return len(red), len(warn)
+
+# =====================================================================================
+# OUTPUT
+# =====================================================================================
+def write_outputs(rows, outdir=".", prefix="videogen", only=None, prof=None):
+    """FLOW.txt (1 prompt/1 dong, bom extension) · TENFILE.txt (thu tu <-> ten clip) · BLOCKS.md (nguoi doc)."""
+    sel = [r for r in rows if (only is None or r[0] in only)]
+    os.makedirs(outdir, exist_ok=True)
+    with io.open(os.path.join(outdir, f"{prefix}_FLOW.txt"), "w", encoding="utf-8") as f:
+        for r in sel: f.write(r[5] + "\n")
+    with io.open(os.path.join(outdir, f"{prefix}_TENFILE.txt"), "w", encoding="utf-8") as f:
+        f.write("# dong FLOW.txt  ->  ten file clip  (thu tu PHAI khop)\n")
+        for i, r in enumerate(sel, 1):
+            f.write(f"{i:>3}  clip_{r[0]}_{r[1].lower()}_{r[2]}.mp4   [{r[3]}]\n")
+    with io.open(os.path.join(outdir, f"{prefix}_BLOCKS.md"), "w", encoding="utf-8") as f:
+        f.write(f"# {prefix} — ban nguoi doc (6 khoi, thu tu co dinh)\n\n")
+        _ST, _MO, _MOX, _AV = _prof(prof)
+        f.write("STYLE: " + _ST + "\n\nMOTION: " + _MO + "\n\nAVOID: " + _AV + "\n\n---\n\n")
+        for i, r in enumerate(sel, 1):
+            act = r[5].split(", " + r[4])[0]
+            f.write(f"## {i}. {r[0]} [{r[1]} · {r[2]} · {r[3]}]\n\nACT: {act}\n\nFRAMING: {r[4]}\n\n")
+    print(f"da ghi {prefix}_FLOW.txt ({len(sel)} dong) · {prefix}_TENFILE.txt · {prefix}_BLOCKS.md ->", outdir)
+
+# =====================================================================================
+# SELFTEST — gate phai BAT DUOC loi da xay ra o video 10 (ban v1)
+# =====================================================================================
+def _selftest():
+    v1 = r"E:\Claude\Projects\youtube-jp-showa\06_VIDEO\10_tsugakuro\gen_prompts_v1.py.bak"
+    g = {"__name__": "_i"}
+    exec(io.open(v1, encoding="utf-8").read(), g)
+    S, P, C = g["S"], g["P"], g["C"]
+    # v1 dung STYLE/AVOID cu — build lai bang lib de gate soi ACT + FRAMING cua v1
+    rows = build(S, P, C)
+    n_red, n_warn = gate(rows, S, P, C, whitelist_no_human={"K2": "", "Y1": "", "Y2": "", "E2": "", "E5": "", "E8": "", "E9": "", "E10": ""},
+                         interior={"genkan_uchi"}, strict=False, quiet=True)
+    reds = collections.Counter()
+    # dem theo loai
+    acts = {s[0]: s[2] for s in S}; cams = {s[0]: s[4] for s in S}
+    hands = [s[0] for s in S if bad_framing(s[4])]
+    poss  = [s[0] for s in S if POSSESSIVE.search(s[2])]
+    nodir = [s[0] for s in S if MOVE_VERBS.search(s[2].lower()) and not DIRECTION.search(s[2].lower())]
+    print("SELFTEST tren S cua video 10 (v1):")
+    print(f"  framing khong co than : {len(hands)}  (ky vong >= 21: 21 hands-only + feet-only)  {'OK' if len(hands) >= 21 else 'THIEU'}")
+    print(f"     -> {hands}")
+    print(f"  A_XXX's               : {len(poss)}  (ky vong 0 — v1 da sua)  {poss}")
+    print(f"  di chuyen thieu huong : {len(nodir)}  (ky vong >= 2, trong do H1)  {'OK' if 'H1' in nodir else 'H1 KHONG BI BAT'}")
+    print(f"     -> {nodir[:12]}{' ...' if len(nodir) > 12 else ''}")
+    print(f"  tong 🔴 {n_red} · ⚠️ {n_warn}")
+    ok = len(hands) >= 21 and "H1" in nodir
+    print("SELFTEST", "PASS" if ok else "FAIL")
+    return 0 if ok else 1
+
+if __name__ == "__main__":
+    if "--selftest" in sys.argv: sys.exit(_selftest())
+    print(__doc__)

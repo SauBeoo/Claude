@@ -1,0 +1,949 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "teinengo-01-demo",
+  "channel": "teinengo",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080
+ },
+ "timeline": {
+  "durationInFrames": 3376
+ },
+ "tracks": [
+  {
+   "id": "bg",
+   "name": "bg",
+   "type": "background",
+   "clips": [
+    {
+     "id": "bg0",
+     "kind": "background",
+     "from": 0,
+     "durationInFrames": 3376,
+     "tint": "#1E2638",
+     "tintOpacity": 1,
+     "grid": false,
+     "dots": false
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "name": "title photo",
+   "type": "video",
+   "clips": [
+    {
+     "id": "T0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 189,
+     "asset": "assets/00_title_sono1.png",
+     "fadeInFrames": 0,
+     "filter": {
+      "brightness": 0.72
+     }
+    }
+   ]
+  },
+  {
+   "id": "bgimg",
+   "name": "bg image",
+   "type": "video",
+   "clips": [
+    {
+     "id": "bgi",
+     "kind": "video",
+     "from": 177,
+     "durationInFrames": 531,
+     "asset": "assets/bg_split.png",
+     "fadeInFrames": 12
+    }
+   ]
+  },
+  {
+   "id": "pics",
+   "name": "pics",
+   "type": "video",
+   "clips": [
+    {
+     "id": "A",
+     "kind": "video",
+     "from": 177,
+     "durationInFrames": 531,
+     "asset": "assets/A_left.png",
+     "fadeInFrames": 12,
+     "layout": {
+      "x": 40,
+      "y": 170,
+      "w": 900,
+      "h": 506
+     },
+     "filter": {
+      "saturate": 0.35,
+      "brightness": 0.9
+     }
+    },
+    {
+     "id": "B",
+     "kind": "video",
+     "from": 339,
+     "durationInFrames": 369,
+     "asset": "assets/B_right.png",
+     "fadeInFrames": 12,
+     "layout": {
+      "x": 980,
+      "y": 170,
+      "w": 900,
+      "h": 506
+     },
+     "filter": {
+      "saturate": 1.12,
+      "brightness": 1.04
+     }
+    },
+    {
+     "id": "s0",
+     "kind": "video",
+     "from": 696,
+     "durationInFrames": 245,
+     "asset": "assets/09_porch.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s1",
+     "kind": "video",
+     "from": 929,
+     "durationInFrames": 530,
+     "asset": "assets/07_door.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s2",
+     "kind": "video",
+     "from": 1447,
+     "durationInFrames": 162,
+     "asset": "assets/01_tie.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s3",
+     "kind": "video",
+     "from": 1597,
+     "durationInFrames": 288,
+     "asset": "assets/02_gate.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s4",
+     "kind": "video",
+     "from": 1873,
+     "durationInFrames": 181,
+     "asset": "assets/03_closet.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s5",
+     "kind": "video",
+     "from": 2042,
+     "durationInFrames": 254,
+     "asset": "assets/04_sofa.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s6",
+     "kind": "video",
+     "from": 2284,
+     "durationInFrames": 370,
+     "asset": "assets/05_dusk.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s7",
+     "kind": "video",
+     "from": 2642,
+     "durationInFrames": 288,
+     "asset": "assets/06_dress.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s8",
+     "kind": "video",
+     "from": 2918,
+     "durationInFrames": 307,
+     "asset": "assets/08_mailbox.png",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s9",
+     "kind": "video",
+     "from": 3213,
+     "durationInFrames": 163,
+     "asset": "assets/10_hall.png",
+     "fadeInFrames": 12
+    }
+   ]
+  },
+  {
+   "id": "split",
+   "name": "split text",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t_no",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 183,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "その一",
+         "a": 0.0,
+         "b": 0.461,
+         "hot": false
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 765,
+      "y": 420
+     },
+     "fontSize": 130
+    },
+    {
+     "id": "lab_l",
+     "kind": "text",
+     "from": 174,
+     "durationInFrames": 534,
+     "content": "退屈になる人",
+     "preset": "tei-label",
+     "color": "#96A6BE",
+     "animation": "none",
+     "animationParams": {
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 40,
+      "y": 44,
+      "w": 900
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "lab_r",
+     "kind": "text",
+     "from": 336,
+     "durationInFrames": 372,
+     "content": "楽しくなる人",
+     "preset": "tei-label",
+     "color": "#F4A85C",
+     "animation": "none",
+     "animationParams": {
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 980,
+      "y": 44,
+      "w": 900
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "q_l",
+     "kind": "text",
+     "from": 253,
+     "durationInFrames": 455,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "「起きても、することがない」",
+         "a": 0.165,
+         "b": 2.661,
+         "hot": false
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 112,
+      "y": 706
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "q_r",
+     "kind": "text",
+     "from": 401,
+     "durationInFrames": 307,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "「とりあえず、着替えるか」",
+         "a": 0.139,
+         "b": 2.401,
+         "hot": false
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 1079,
+      "y": 706
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "q_mid",
+     "kind": "text",
+     "from": 532,
+     "durationInFrames": 176,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "一年後、",
+         "a": 0.154,
+         "b": 0.695,
+         "hot": false
+        },
+        {
+         "t": "まるで",
+         "a": 1.515,
+         "b": 1.9,
+         "hot": false
+        },
+        {
+         "t": "別の人生",
+         "a": 1.914,
+         "b": 2.41,
+         "hot": true
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 690,
+      "y": 820
+     },
+     "fontSize": 64
+    }
+   ]
+  },
+  {
+   "id": "cards",
+   "name": "cards",
+   "type": "text",
+   "clips": [
+    {
+     "id": "c_ba",
+     "kind": "text",
+     "from": 987,
+     "durationInFrames": 460,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "行動活性化",
+         "a": 0.158,
+         "b": 0.982,
+         "hot": true
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 90,
+      "y": 80
+     },
+     "fontSize": 96
+    },
+    {
+     "id": "c_ba2",
+     "kind": "text",
+     "from": 1067,
+     "durationInFrames": 380,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "やる気は、",
+         "a": 0.14,
+         "b": 1.041,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "動いたあとから",
+         "a": 1.285,
+         "b": 2.54,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "ついてくる",
+         "a": 2.723,
+         "b": 3.645,
+         "hot": true
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 90,
+      "y": 220
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "c_gone",
+     "kind": "text",
+     "from": 1904,
+     "durationInFrames": 72,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#B9C8E2",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "合図が、",
+         "a": 0.144,
+         "b": 0.589,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "すべて消えた",
+         "a": 0.796,
+         "b": 1.769,
+         "hot": true
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 90,
+      "y": 80
+     },
+     "fontSize": 92
+    },
+    {
+     "id": "c_kono",
+     "kind": "text",
+     "from": 1971,
+     "durationInFrames": 313,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#B9C8E2",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "このままだと…",
+         "a": 0.153,
+         "b": 0.996,
+         "hot": false
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 90,
+      "y": 80
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "c_time",
+     "kind": "text",
+     "from": 2037,
+     "durationInFrames": 247,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#B9C8E2",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "九時",
+         "a": 0.151,
+         "b": 0.411,
+         "hot": false
+        },
+        {
+         "arrow": true,
+         "a": 0.431,
+         "b": 0.571
+        },
+        {
+         "t": "十時",
+         "a": 0.571,
+         "b": 0.856,
+         "hot": false
+        },
+        {
+         "arrow": true,
+         "a": 0.901,
+         "b": 2.381
+        },
+        {
+         "t": "昼",
+         "a": 2.381,
+         "b": 2.501,
+         "hot": true
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 1000,
+      "y": 250
+     },
+     "fontSize": 86
+    },
+    {
+     "id": "c_case",
+     "kind": "text",
+     "from": 2281,
+     "durationInFrames": 361,
+     "content": "元営業部長",
+     "preset": "tei-label",
+     "color": "#96A6BE",
+     "animation": "none",
+     "animationParams": {
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 1060,
+      "y": 100
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "c_quote",
+     "kind": "text",
+     "from": 2528,
+     "durationInFrames": 114,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "「着替える理由が、",
+         "a": 0.146,
+         "b": 1.22,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "ひとつも、なかった」",
+         "a": 1.638,
+         "b": 3.069,
+         "hot": false
+        }
+       ]
+      ],
+      "box": true,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 1060,
+      "y": 230
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "c_tano",
+     "kind": "text",
+     "from": 2637,
+     "durationInFrames": 281,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "楽しくなる人",
+         "a": 0.151,
+         "b": 1.031,
+         "hot": true
+        },
+        {
+         "t": "は",
+         "a": 1.101,
+         "b": 1.221,
+         "hot": false
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 90,
+      "y": 80
+     },
+     "fontSize": 80
+    },
+    {
+     "id": "c_steps",
+     "kind": "text",
+     "from": 2775,
+     "durationInFrames": 143,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "① 七時に着替える",
+         "a": 0.154,
+         "b": 1.326,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "② 玄関の外に出る",
+         "a": 1.91,
+         "b": 2.854,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "③ 新聞を取りに行く",
+         "a": 3.354,
+         "b": 4.518,
+         "hot": false
+        }
+       ]
+      ],
+      "box": true,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 1250,
+      "y": 300
+     },
+     "fontSize": 66
+    },
+    {
+     "id": "c_rule",
+     "kind": "text",
+     "from": 2955,
+     "durationInFrames": 258,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "これをしたら",
+         "a": 0.134,
+         "b": 0.818,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "一日が始まる",
+         "a": 0.808,
+         "b": 1.528,
+         "hot": true
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 90,
+      "y": 80
+     },
+     "fontSize": 92
+    },
+    {
+     "id": "c_next",
+     "kind": "text",
+     "from": 3223,
+     "durationInFrames": 153,
+     "content": "",
+     "preset": "tei-reveal",
+     "color": "#FFC46B",
+     "animation": "none",
+     "animationParams": {
+      "lines": [
+       [
+        {
+         "t": "差がつくのは",
+         "a": 0.16,
+         "b": 0.995,
+         "hot": false
+        }
+       ],
+       [
+        {
+         "t": "人の前に出た瞬間",
+         "a": 1.539,
+         "b": 3.306,
+         "hot": true
+        }
+       ]
+      ],
+      "box": false,
+      "ink": "#FFFFFF"
+     },
+     "layout": {
+      "x": 90,
+      "y": 80
+     },
+     "fontSize": 84
+    }
+   ]
+  },
+  {
+   "id": "aud",
+   "name": "audio",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "voice",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3376,
+     "asset": "assets/voice.wav",
+     "volume": 1
+    },
+    {
+     "id": "bgm",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3376,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "その一。「することがない」と言う人、",
+    "startMs": 0,
+    "endMs": 3084
+   },
+   {
+    "text": "「とりあえず着替える」人。",
+    "startMs": 3084,
+    "endMs": 5311
+   },
+   {
+    "text": "退屈になる人は、朝、こう言います。",
+    "startMs": 5912,
+    "endMs": 8779
+   },
+   {
+    "text": "「起きても、することがない」。",
+    "startMs": 8779,
+    "endMs": 11309
+   },
+   {
+    "text": "楽しくなる人は、こう言います。「とりあえず、着替えるか」。",
+    "startMs": 11309,
+    "endMs": 15917
+   },
+   {
+    "text": "たったこれだけの差が、一年後には、まるで別の人生になります。",
+    "startMs": 15917,
+    "endMs": 21005
+   },
+   {
+    "text": "あなたは、どちらでしょうか。",
+    "startMs": 21005,
+    "endMs": 23192
+   },
+   {
+    "text": "多くの人は、やる気が出たら動こう、と考えます。",
+    "startMs": 23192,
+    "endMs": 27256
+   },
+   {
+    "text": "でも、心理学の答えは、逆です。",
+    "startMs": 27656,
+    "endMs": 30973
+   },
+   {
+    "text": "心理療法で使われる「行動活性化」という考え方では、",
+    "startMs": 30973,
+    "endMs": 35462
+   },
+   {
+    "text": "やる気は、動いたあとから、ついてくるものだとされています。",
+    "startMs": 35462,
+    "endMs": 40669
+   },
+   {
+    "text": "待っていても、やる気は来ない。先に体を動かした人にだけ、",
+    "startMs": 40669,
+    "endMs": 45381
+   },
+   {
+    "text": "気持ちが、あとから追いついてくる。",
+    "startMs": 45381,
+    "endMs": 48242
+   },
+   {
+    "text": "会社員だったころ、あなたを動かしていたのも、",
+    "startMs": 48242,
+    "endMs": 51577
+   },
+   {
+    "text": "やる気ではありません。",
+    "startMs": 51577,
+    "endMs": 53245
+   },
+   {
+    "text": "ネクタイを締める、首もとの感触。改札に定期券を当てる、",
+    "startMs": 53245,
+    "endMs": 58300
+   },
+   {
+    "text": "「ピッ」という音。毎朝の、決まった合図です。",
+    "startMs": 58300,
+    "endMs": 62418
+   },
+   {
+    "text": "定年で、その合図が、すべて消えました。",
+    "startMs": 62418,
+    "endMs": 65853
+   },
+   {
+    "text": "このままだと、どうなるか。",
+    "startMs": 65853,
+    "endMs": 68050
+   },
+   {
+    "text": "九時が十時になり、十時が昼になる。",
+    "startMs": 68050,
+    "endMs": 71038
+   },
+   {
+    "text": "昼と夜の境目がなくなり、昨日と今日の区別が、つかなくなる。",
+    "startMs": 71038,
+    "endMs": 76136
+   },
+   {
+    "text": "元営業部長のある男性は、定年から三か月後、",
+    "startMs": 76136,
+    "endMs": 79834
+   },
+   {
+    "text": "気がつくと、パジャマのまま夕方を迎えていたそうです。",
+    "startMs": 79834,
+    "endMs": 84413
+   },
+   {
+    "text": "「着替える理由が、ひとつも、なかったんですよ」。",
+    "startMs": 84413,
+    "endMs": 88050
+   },
+   {
+    "text": "楽しくなる人は、合図を、自分で作りなおしています。",
+    "startMs": 88050,
+    "endMs": 92509
+   },
+   {
+    "text": "朝七時に着替える。玄関の外に出る。新聞を取りに行く。",
+    "startMs": 92509,
+    "endMs": 97277
+   },
+   {
+    "text": "小さくていい。「これをしたら一日が始まる」という決まりを、",
+    "startMs": 97277,
+    "endMs": 101743
+   },
+   {
+    "text": "ひとつだけ持つことです。",
+    "startMs": 101743,
+    "endMs": 103592
+   },
+   {
+    "text": "ただし、朝の合図は、ひとりでも作れます。",
+    "startMs": 103592,
+    "endMs": 107112
+   },
+   {
+    "text": "本当に差がつくのは、人の前に出た、その瞬間です。",
+    "startMs": 107112,
+    "endMs": 111517
+   }
+  ]
+ }
+}

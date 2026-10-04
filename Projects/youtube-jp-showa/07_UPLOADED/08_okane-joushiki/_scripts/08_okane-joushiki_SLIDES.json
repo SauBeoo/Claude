@@ -1,0 +1,854 @@
+[
+ {
+  "match": "玄関の外で、下駄の音が、止ま",
+  "video": true,
+  "source": "footage_raw/jt08_01_rain_umbrellas.mp4",
+  "dur": 6
+ },
+ {
+  "match": "毎月、決まった日の、決まった",
+  "offset": 2.51,
+  "photo": true,
+  "source": "real_photos/px_geta_stone_step_37252613.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "卓袱台の上に、小銭と、皺の寄",
+  "offset": 1.24,
+  "photo": true,
+  "source": "real_photos/cc_geta_feet_awa.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "卓袱台の上に、小銭と、皺の寄",
+  "offset": 6.75,
+  "photo": true,
+  "source": "real_photos/cc_coins_yen_closeup.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "母は立ち上がって、茶箪笥の、",
+  "offset": 2.36,
+  "photo": true,
+  "source": "real_photos/cc_notes_old_recto.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "母は立ち上がって、茶箪笥の、",
+  "offset": 7.87,
+  "photo": true,
+  "source": "real_photos/px_cabinet_drawers_wood_4140920.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "私は、見てしまいました。けれ",
+  "offset": 4.03,
+  "photo": true,
+  "source": "real_photos/px_hand_open_old_drawer_38371820.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "玄関に立っていたのは、集金人",
+  "photo": true,
+  "source": "real_photos/px_wood_door_bicycle_30953502.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "玄関に立っていたのは、集金人",
+  "offset": 7.95,
+  "photo": true,
+  "source": "real_photos/px_doorbell_brass_1978.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "新聞代、保険の掛け金、そして",
+  "offset": 6.18,
+  "photo": true,
+  "source": "real_photos/px_inkpad_seals_6213061.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "うちに来ていたおじさんは、夏",
+  "offset": 0.01,
+  "photo": true,
+  "source": "real_photos/px_tv_attic_old_34729461.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "うちに来ていたおじさんは、夏",
+  "offset": 7.96,
+  "video": true,
+  "source": "footage_raw/ai08_01_genkan_getabako.mp4",
+  "dur": 8
+ },
+ {
+  "match": "ここで、ひとつ聞かせてくださ",
+  "offset": 5.13,
+  "photo": true,
+  "source": "real_photos/px_briefcase_latch_35859938.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "昭和四十三年に、カラー契約と",
+  "offset": 3.54,
+  "photo": true,
+  "source": "real_photos/px_geta_temple_door_13684423.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "母はそのお金を、朝のうちに数",
+  "offset": 2.14,
+  "photo": true,
+  "source": "real_photos/px_wood_stamp_radio_38978902.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "昭和のお金は、今よりずっと、",
+  "photo": true,
+  "source": "real_photos/cc_notes_old_verso.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "昭和のお金は、今よりずっと、",
+  "offset": 6.5,
+  "photo": true,
+  "source": "real_photos/px_ledger_columns_164686.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "茶箪笥の奥から出てきたお金の",
+  "offset": 0.7,
+  "photo": true,
+  "source": "real_photos/st08_22_temple_path_crowd.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "茶箪笥の奥から出てきたお金の",
+  "offset": 7.19,
+  "photo": true,
+  "source": "real_photos/cc_note_1000_back.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "では、なぜ月末に足りなくなっ",
+  "offset": 0.11,
+  "photo": true,
+  "source": "real_photos/px_hand_reach_shelf_7303858.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "二点目、給料袋。",
+  "photo": true,
+  "source": "real_photos/px_kraft_envelopes_8250874.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "二十五日。父は、茶色い封筒を",
+  "offset": 4.88,
+  "photo": true,
+  "source": "real_photos/cc_tatami_room_lowtable.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "二十五日。父は、茶色い封筒を",
+  "offset": 11.23,
+  "photo": true,
+  "source": "real_photos/cc_note_500_seriesB.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "給料は、現金でした。会社の経",
+  "offset": 1.43,
+  "photo": true,
+  "source": "real_photos/cc_soroban_23rods.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "給料は、現金でした。会社の経",
+  "offset": 7.78,
+  "photo": true,
+  "source": "real_photos/st08_05_kinkakuji_crowd.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "昭和四十三年、その現金輸送を",
+  "offset": 3.3,
+  "photo": true,
+  "source": "real_photos/cc_station_1968_small.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "昭和四十三年、その現金輸送を",
+  "offset": 9.65,
+  "photo": true,
+  "source": "real_photos/cc_shotengai_showa20s.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "昭和四十三年、その現金輸送を",
+  "offset": 16.0,
+  "photo": true,
+  "source": "real_photos/px_arcade_lanterns_793432.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "昭和四十三年、その現金輸送を",
+  "offset": 22.35,
+  "photo": true,
+  "source": "real_photos/px_shop_dark_kanji_8050439.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "給料日の夕方だけ、商店街は、",
+  "offset": 6.31,
+  "photo": true,
+  "source": "real_photos/px_shoten_lantern_alley_7631461.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "その封筒が、年に二度だけ、別",
+  "video": true,
+  "source": "footage_raw/jt08_03_park_bicycles.mp4",
+  "dur": 8
+ },
+ {
+  "match": "夏と、冬。父はその日だけ、玄",
+  "offset": 1.03,
+  "photo": true,
+  "source": "real_photos/cc_note_5000_back.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "夏と、冬。父はその日だけ、玄",
+  "offset": 8.38,
+  "photo": true,
+  "source": "real_photos/st08_06_park_family_pond.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "聞かせてください。昭和四十五年の",
+  "offset": 4.54,
+  "photo": true,
+  "source": "real_photos/px_fan_yellow_old_1374448.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "答えです。十三万八千八百九十",
+  "offset": 1.98,
+  "photo": true,
+  "source": "real_photos/cc_fans_80s.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "来年はもっと増える。あの頃は",
+  "offset": 2.73,
+  "photo": true,
+  "source": "real_photos/px_fridge_yellow_dim_5668902.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "この封筒で、テレビが来た家が",
+  "offset": 4.57,
+  "photo": true,
+  "source": "real_photos/cc_first_electric_goods.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "さて、その厚い封筒の中身を、",
+  "photo": true,
+  "source": "real_photos/cc_note_10000_back.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "四点目、一万円札。",
+  "offset": 0.72,
+  "photo": true,
+  "source": "real_photos/cc_soroban_counter.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "今は、財布に一枚あっても、な",
+  "offset": 6.39,
+  "photo": true,
+  "source": "real_photos/px_shop_night_old_8050435.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "日本ではじめて一万円札が刷ら",
+  "offset": 5.27,
+  "photo": true,
+  "source": "real_photos/px_desk_clock_notebook_159618.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "そして昭和四十五年、大学を出",
+  "offset": 0.48,
+  "photo": true,
+  "source": "real_photos/px_coins_on_low_table_144233.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "そして昭和四十五年、大学を出",
+  "offset": 7.8,
+  "video": true,
+  "source": "footage_raw/ai08_02_hands_count_notes.mp4",
+  "dur": 8
+ },
+ {
+  "match": "だから、豆腐屋で出すと、困っ",
+  "offset": 5.89,
+  "photo": true,
+  "source": "real_photos/cc_coin_10yen_pair.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "細かくするために、母は翌朝、",
+  "photo": true,
+  "source": "real_photos/px_old_lane_morning_7146301.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "ここで、聞かせてください。日",
+  "offset": 3.0,
+  "photo": true,
+  "source": "real_photos/px_wall_clock_wood_191703.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "それまで、お金をおろすという",
+  "offset": 2.52,
+  "video": true,
+  "source": "footage_raw/ai08_03_bank_counter.mp4",
+  "dur": 8
+ },
+ {
+  "match": "それまで、お金をおろすという",
+  "offset": 10.52,
+  "photo": true,
+  "source": "real_photos/cc_jnr_steam_station.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "答えです。昭和四十四年、十二",
+  "offset": 3.61,
+  "video": true,
+  "source": "footage_raw/ai08_04_cash_dispenser.mp4",
+  "dur": 8
+ },
+ {
+  "match": "答えです。昭和四十四年、十二",
+  "offset": 11.61,
+  "photo": true,
+  "source": "real_photos/px_wall_clock_bracket_23916841.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "それでも、並ばずにお金が出て",
+  "offset": 3.6,
+  "photo": true,
+  "source": "real_photos/cc_wooden_seals.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "財布を細かくして、母は、商店",
+  "video": true,
+  "source": "footage_raw/jt08_02_kimono_women_walk.mp4",
+  "dur": 8
+ },
+ {
+  "match": "米屋、酒屋、豆腐屋。買い物の",
+  "offset": 2.86,
+  "photo": true,
+  "source": "real_photos/st08_01_kimono_women_close.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "米屋、酒屋、豆腐屋。買い物の",
+  "offset": 8.95,
+  "photo": true,
+  "source": "real_photos/px_shop_wood_person_31376737.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "米屋、酒屋、豆腐屋。買い物の",
+  "offset": 15.05,
+  "photo": true,
+  "source": "real_photos/cc_rice_shop_naha_1935.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "母は、その通い帳を、茶箪笥の",
+  "offset": 4.44,
+  "photo": true,
+  "source": "real_photos/px_shop_facade_old_17776658.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "顔を知っているから、貸せる。",
+  "offset": 3.74,
+  "photo": true,
+  "source": "real_photos/cc_shotengai_hiroshima_1955.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "顔を知っているから、貸せる。",
+  "offset": 9.83,
+  "photo": true,
+  "source": "real_photos/cc_chabudai_round.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "ただ、月末に帳面をひらくとき",
+  "offset": 2.17,
+  "photo": true,
+  "source": "real_photos/st08_02_kimono_women_smile.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "月がすすみます。お金は、家の",
+  "video": true,
+  "source": "footage_raw/bp08_01_tram_street.mp4",
+  "dur": 8
+ },
+ {
+  "match": "聞かせてください。昭和四十五年、",
+  "offset": 1.94,
+  "photo": true,
+  "source": "real_photos/cc_ticket_hard_odawara.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "券売機ではなく、窓口で、小さ",
+  "offset": 0.46,
+  "photo": true,
+  "source": "real_photos/cc_kaisatsu_basami.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "券売機ではなく、窓口で、小さ",
+  "offset": 6.68,
+  "photo": true,
+  "source": "real_photos/cc_jnr101_orange_mountain.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "答えです。三十円。都電やバス",
+  "offset": 2.44,
+  "photo": true,
+  "source": "real_photos/cc_toden_1968_stop.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "十年前、電車は十円だったそう",
+  "offset": 1.14,
+  "photo": true,
+  "source": "real_photos/cc_toden_1968_street.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "十年前、電車は十円だったそう",
+  "offset": 7.36,
+  "photo": true,
+  "source": "real_photos/cc_rail_1968_crossing.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "source": "real_photos/st08_10_seashore_crowd.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 7.29,
+  "photo": true,
+  "source": "real_photos/cc_toden_1968_platform.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 14.59,
+  "photo": true,
+  "source": "real_photos/bp08_st_01_street_buses.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 21.88,
+  "photo": true,
+  "source": "real_photos/px_tram_bw_pair_15164392.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "遠くの声を聞きたいときも、や",
+  "photo": true,
+  "source": "real_photos/cc_red_phone_stand.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "八点目、公衆電話。",
+  "offset": 1.05,
+  "photo": true,
+  "source": "real_photos/cc_red_phone_museum.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "赤い電話、青い電話、そして箱",
+  "offset": 5.22,
+  "photo": true,
+  "source": "real_photos/cc_red_phone_dial.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "赤い電話、青い電話、そして箱",
+  "offset": 11.04,
+  "photo": true,
+  "source": "real_photos/px_rotary_black_handset_13758303.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "だから、電話ボックスの前には",
+  "offset": 4.02,
+  "video": true,
+  "source": "footage_raw/jt08_04_tea_pickers_wide.mp4",
+  "dur": 8
+ },
+ {
+  "match": "私も、うしろに並びながら、そ",
+  "offset": 0.64,
+  "photo": true,
+  "source": "real_photos/px_hand_dial_red_10397356.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "それが変わったのが、昭和四十",
+  "offset": 0.59,
+  "photo": true,
+  "source": "real_photos/cc_black_phone_showa.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "それが変わったのが、昭和四十",
+  "offset": 6.41,
+  "photo": true,
+  "source": "real_photos/cc_red_phone_wall.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "それが変わったのが、昭和四十",
+  "offset": 12.23,
+  "video": true,
+  "source": "footage_raw/jt08_05_tea_picker_hat.mp4",
+  "dur": 8
+ },
+ {
+  "match": "母が田舎の祖母にかけるときだ",
+  "offset": 2.07,
+  "photo": true,
+  "source": "real_photos/st08_08_tea_picker_hat_turn.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "さて、封筒はもう、だいぶ薄く",
+  "photo": true,
+  "source": "real_photos/px_tv_shelf_old_33805706.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "さて、封筒はもう、だいぶ薄く",
+  "offset": 6.83,
+  "photo": true,
+  "source": "real_photos/cc_tv_console_museum.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "大きな買い物は、分けて払うも",
+  "offset": 4.12,
+  "video": true,
+  "source": "footage_raw/jt08_07_sumo_bout.mp4",
+  "dur": 10
+ },
+ {
+  "match": "では、聞かせてください。カラ",
+  "offset": 5.31,
+  "photo": true,
+  "source": "real_photos/px_radio_dials_16183458.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "大学を出た人の初任給が、一万",
+  "offset": 0.77,
+  "photo": true,
+  "source": "real_photos/st08_16_stage_dancers.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "大学を出た人の初任給が、一万",
+  "offset": 7.6,
+  "photo": true,
+  "source": "real_photos/st08_12_sumo_audience.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "それが昭和四十五年には、十六",
+  "offset": 2.87,
+  "video": true,
+  "source": "footage_raw/jt08_08_sumo_b.mp4",
+  "dur": 10
+ },
+ {
+  "match": "それが昭和四十五年には、十六",
+  "offset": 12.87,
+  "photo": true,
+  "source": "real_photos/px_hagaki_postcards_4410164.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "うちのテレビも、月賦でした。",
+  "offset": 4.48,
+  "video": true,
+  "source": "footage_raw/ai08_05_livingroom_tv.mp4",
+  "dur": 8
+ },
+ {
+  "match": "そして、その二つが重なった月",
+  "photo": true,
+  "source": "real_photos/px_pawn_window_clocks_2029594.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "月末、どうしても足りない。そ",
+  "offset": 0.71,
+  "photo": true,
+  "source": "real_photos/px_silk_cream_folds_8465943.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "月末、どうしても足りない。そ",
+  "offset": 8.39,
+  "photo": true,
+  "source": "real_photos/px_camera_watch_wood_6113.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "あずけると、質札という小さな",
+  "offset": 2.13,
+  "photo": true,
+  "source": "real_photos/px_gold_rings_wood_37488824.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "あずけると、質札という小さな",
+  "offset": 9.82,
+  "photo": true,
+  "source": "real_photos/px_jewelry_shop_small_39272820.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "うしろ暗い店ではありませんで",
+  "offset": 2.45,
+  "photo": true,
+  "source": "real_photos/px_fabrics_stacked_365066.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "うしろ暗い店ではありませんで",
+  "offset": 10.14,
+  "photo": true,
+  "source": "real_photos/px_old_town_street_7146295.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "今は、二千軒あまり。あの、質",
+  "offset": 5.89,
+  "photo": true,
+  "source": "real_photos/st08_18_rice_planter_b.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "十一点目、へそくり。",
+  "photo": true,
+  "source": "real_photos/px_drawer_papers_upright_5089125.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "銀行にも、郵便局にも、預けな",
+  "offset": 4.75,
+  "photo": true,
+  "source": "real_photos/px_butsudan_home_27500610.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "銀行にも、郵便局にも、預けな",
+  "offset": 11.34,
+  "video": true,
+  "source": "footage_raw/ai08_06_hesokuri_drawer.mp4",
+  "dur": 8
+ },
+ {
+  "match": "給料日の夕方、母が封筒から何",
+  "offset": 6.31,
+  "photo": true,
+  "source": "real_photos/px_piggy_terracotta_31191992.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "通帳には残らないお金でした。",
+  "offset": 0.79,
+  "photo": true,
+  "source": "real_photos/px_old_house_facade_8495950.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "通帳には残らないお金でした。",
+  "offset": 7.38,
+  "photo": true,
+  "source": "real_photos/cc_geta_makers_old.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "それでも、急な出費のとき、い",
+  "offset": 5.89,
+  "photo": true,
+  "source": "real_photos/st08_09_tea_field_two.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "さあ、残るは、ひとつ。使わず",
+  "photo": true,
+  "source": "real_photos/cc_post_office_shimoyama.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "さあ、残るは、ひとつ。使わず",
+  "offset": 6.29,
+  "photo": true,
+  "source": "real_photos/cc_yubin_old_sign.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "郵便局に、定額貯金というもの",
+  "offset": 4.31,
+  "photo": true,
+  "source": "real_photos/cc_postal_savings_sign.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "郵便局に、定額貯金というもの",
+  "offset": 10.6,
+  "photo": true,
+  "source": "real_photos/px_postbox_red_street_10698491.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "では、いよいよ、最初の質問で",
+  "offset": 4.04,
+  "video": true,
+  "source": "footage_raw/ai08_07_passbook_stamp.mp4",
+  "dur": 8
+ },
+ {
+  "match": "八パーセントです。",
+  "offset": 1.4,
+  "photo": true,
+  "source": "real_photos/cc_post_office_ushikubo.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "昭和四十九年の九月から、五十",
+  "offset": 6.03,
+  "photo": true,
+  "source": "real_photos/cc_jnr101_yellow_nanbu.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "昭和四十九年の九月から、五十",
+  "offset": 12.32,
+  "video": true,
+  "source": "footage_raw/ai08_08_post_counter.mp4",
+  "dur": 8
+ },
+ {
+  "match": "百万円が、二百十九万円。何も",
+  "offset": 4.91,
+  "photo": true,
+  "source": "real_photos/px_coins_stack_rising_8369695.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "十二点満点。あなたは、何点で",
+  "photo": true,
+  "source": "real_photos/px_smartphone_hands_6969811.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "昭和のお金は、封筒の厚みで分",
+  "offset": 4.97,
+  "photo": true,
+  "source": "real_photos/cc_children_tea_party_old.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "昭和のお金は、封筒の厚みで分",
+  "offset": 13.25,
+  "photo": true,
+  "source": "real_photos/st08_15_daibutsu_students.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "今、お金は、手のひらの画面の",
+  "offset": 6.3,
+  "video": true,
+  "source": "footage_raw/jt08_09_schoolgirls_crowd.mp4",
+  "dur": 5
+ },
+ {
+  "match": "今、お金は、手のひらの画面の",
+  "offset": 11.3,
+  "photo": true,
+  "source": "real_photos/px_books_two_old_5984609.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "あの通い帳は、もう、どこにも",
+  "offset": 1.78,
+  "photo": true,
+  "source": "real_photos/px_pencils_wood_notebook_419635.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "あの通い帳は、もう、どこにも",
+  "offset": 10.05,
+  "video": true,
+  "source": "footage_raw/jt08_10_schoolboys_crowd.mp4",
+  "dur": 6
+ },
+ {
+  "match": "あの通い帳は、もう、どこにも",
+  "offset": 16.05,
+  "photo": true,
+  "source": "real_photos/px_books_stack_old_1333742.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "あとになって、知りました。茶",
+  "offset": 3.04,
+  "video": true,
+  "source": "footage_raw/ai08_09_passbook_pencil.mp4",
+  "dur": 8
+ },
+ {
+  "match": "あなたの家では、お金は、どこ",
+  "offset": 4.81,
+  "photo": true,
+  "source": "real_photos/st08_19_rice_field_wide.jpg",
+  "kind": "still-film"
+ },
+ {
+  "match": "あなたの家では、お金は、どこ",
+  "offset": 13.08,
+  "video": true,
+  "source": "footage_raw/jt08_11_seashore_crowd.mp4",
+  "dur": 6
+ }
+]

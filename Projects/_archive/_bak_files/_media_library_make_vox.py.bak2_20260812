@@ -1,0 +1,2670 @@
+# -*- coding: utf-8 -*-
+r"""
+make_vox.py — THẺ HÌNH KIỂU VOX, tool DÙNG CHUNG mọi kênh (viết lại 2026-08-06).
+
+VÌ SAO VIẾT LẠI (đọc trước khi sửa) — user: "tool gen video vox của mày không đúng lắm"
+────────────────────────────────────────────────────────────────────────────────
+Đo trên bản đã dựng thật (`16_tsukemono-shio-no-dan_SLIDES.json`, 120 entry / 62 thẻ vox):
+  · `title` (băng vàng + chữ)          39 thẻ = 63%  → 39 khung CÙNG MỘT layout = PowerPoint,
+                                                       không phải Vox; còn là rủi ro
+                                                       "inauthentic content" (youtube-compliance §1)
+  · `flow` (ảnh thật + mũi tên ĐÈ)      1 thẻ        → đúng chữ ký Vox, dùng 1 lần
+  · ảnh full-khung KHÔNG annotation     58 entry     → 2 lớp chạy song song, không bao giờ
+                                                       gặp nhau trong 1 khung
+  · collage/timeline/process/line/dot   0            → vốn từ vựng hình thiếu gần hết
+Bản health cũ (`youtube-jp-health/tools/make_vox.py`) còn xa hơn: giấy kem + chữ tay MẢNH
++ 1 cutout trôi giữa khung trống → là zine, không phải Vox.
+
+BA QUYẾT ĐỊNH USER CHỐT 2026-08-06 (đừng tự đổi):
+  1. **100% LOCAL, FREE.** rembg cutout + PIL/ffmpeg. KHÔNG dùng Higgsfield MCP: 19 video/tuần
+     × ~60 cue = không kham chi phí; clip AI realistic còn BẮT BUỘC tick altered/synthetic
+     (youtube-compliance §2); và gen lại mỗi lần ra file khác → phá chunk-resume.
+  2. **ẢNH THẬT LÀ NỀN CỦA THẺ VOX** — chữ/mũi tên/số đè lên chính nó (`"bg": "photo"`).
+     Đây là cú đổi cấu trúc chính, chữa bệnh "58 ảnh không có annotation nào".
+  3. **1 tool dùng chung**, palette/font/safe-zone theo `--channel` (đọc `channels.py`).
+
+⚠️ NÓ LÀ LỚP NHẬN DIỆN, KHÔNG PHẢI LỚP THỦ CÔNG (`handmade-layer.md` §0.1).
+   Cờ SLIDES là `"video": true`, TUYỆT ĐỐI KHÔNG được gắn `"handmade": true` cho output
+   của tool này — hai cờ đếm vào hai chỗ khác nhau, lẫn là mất khả năng biết video nào có moat.
+
+12 KIND (bảng luật chọn kind: `.claude/skills/video-vox/SKILL.md` GĐ2)
+────────────────────────────────────────────────────────────────────────────────
+  ẢNH THẬT làm nền   flow · collage · compare(1 bên ảnh) · stat/title (bg:"photo")
+  SỐ                 stat (số khổng lồ) · bar · line · dot (1 chấm = N đơn vị)
+  CƠ CHẾ VÔ HÌNH     room (3 preset) · process
+  KHÁC               timeline · source (thẻ 原典) · title (TRẦN 4/video)
+
+GHÉP VÀO PIPELINE — KHÔNG mổ renderer
+────────────────────────────────────────────────────────────────────────────────
+`video_render.py` đã nhận `"video": true` + `clips/clip_XX.mp4` và tự loop+trim theo cue.
+Mỗi thẻ xuất mp4 ≥CLIP_SEC=30s = (INTRO entrance 2.5–4.5s @30fps) + (IDLE LOOP 4s thở
+nhẹ, lặp không mối nối tới hết clip). Cue chưa bao giờ >30s nên intro không chạy lại.
+⭐ ĐẠI TU 2026-08-07 (user: "video gen ra xấu quá") — 4 bệnh đã chữa:
+  ① nửa dưới khung trống  → BG ZONE full-frame, đồ hoạ/khối màu TRÀN dưới SB
+                            (chữ có nghĩa vẫn trên SB — gate X4 nguyên)
+  ② ảnh nền nhợt như ma   → treat_photo darken/duotone thay scrim trắng
+  ③ phẳng như wireframe   → grain + ghost number + highlight + sticker cutout + split
+  ④ động 4s rồi đứng 26s  → intro 30fps + idle loop (osc cycle nguyên, assert loop-sạch)
+
+    {"match": "<chuỗi có thật trong _TTS.md>", "photo": false, "video": true,
+     "vox": {"kind": "flow", "bg": "photo", "kicker": "…", "head": "…", "arrows": [[…]]}}
+
+🔴 SAFE ZONE TÍNH TỪ HỒ SƠ KÊNH, KHÔNG HARDCODE.
+   Bản cũ ghi `SAFE_BOTTOM = 780` rồi phải sửa tay xuống 600 khi co-dai lên pill/26 —
+   và trong lúc chưa sửa thì `kind=flow` vẽ `body` ở y=682/734 bị hộp phụ đề ĐÈ MẤT CHỮ.
+   Nay `safe_bottom()` suy từ `sub_style` + `sub_size` của `channels.py` (công thức + hiệu
+   chuẩn ở ngay hàm đó). Đổi phụ đề của kênh → vùng an toàn tự theo, không phải nhớ.
+
+CHẠY
+────────────────────────────────────────────────────────────────────────────────
+    python make_vox.py demo <out_dir> --channel co-dai            # 12 thẻ mẫu + sheet
+    python make_vox.py <SLIDES.json> <clips_dir> --channel co-dai            # mp4 thật
+    python make_vox.py <SLIDES.json> <clips_dir> --channel co-dai --still    # PNG duyệt mắt
+    python make_vox.py <SLIDES.json> <clips_dir> --channel co-dai --only 7 22
+    python make_vox.py sheet <clips_dir>                          # dựng lại contact sheet
+
+Duyệt MẮT contact sheet TRƯỚC khi render (media-library.md §3). Che chữ đi mà không nhận ra
+beat nói gì → đổi thẻ, đừng cho qua.
+"""
+import argparse
+import hashlib
+import json
+import math
+import random
+import shutil
+import subprocess
+import sys
+from functools import lru_cache
+from pathlib import Path
+
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+VERSION = "vox-2026-08-09-props8"          # vào signature → đổi tool là thẻ tự dựng lại
+# ⚠️ ĐỔI BẤT KỲ hằng số motion/style nào dưới đây (FPS_IN, IDLE_SEC, ANIM_SEC, grain…)
+#    ⇒ BUMP VERSION. Chúng không nằm trong spec nên chỉ VERSION mới invalidate .sig.
+
+W, H = 1920, 1080
+FPS_IN = 30                         # fps INTRO — 15fps làm count-up/wipe giật (đại tu 2026-08-07)
+FPS_IDLE = 30                       # ⚠️ 15→30 (2026-08-08 tối): camera THỞ chạy trong idle —
+                                    # chuyển động liên tục dựng 15fps nhân đôi lên 30 là judder
+                                    # (một trong hai nguồn của cái user gọi là "giật giật")
+FPS = FPS_IN                        # giữ tên cũ cho chỗ nào còn tham chiếu
+OUT_FPS = 30                        # chuẩn hoá đầu ra khớp renderer
+CLIP_SEC = 30.0
+IDLE_SEC = 8.0                      # chu kỳ idle — mọi oscillator SỐ CYCLE NGUYÊN trong đây.
+                                    # 4→8 (2026-08-08 tối): hơi thở camera 8s mới đủ chậm/điềm
+MARGIN_X = 120                      # lề trái/phải chuẩn của kênh
+
+# Cửa sổ intro theo kind (đại tu 2026-08-07 — giết cảnh "4s động + 26s đứng hình").
+# Số dưới đây đối chiếu end-time stagger THẬT trong từng k_* (vd flow: mũi tên cuối
+# kết ở 0.6+0.5·(n−1)+1.8). `settle_time()` còn tính floor theo spec — anim thật =
+# max(bảng, settle+0.35) nên kind nào nhiều element vẫn không bị cắt entrance.
+ANIM_SEC = {"title": 2.5, "source": 2.5, "stat": 3.6, "collage": 3.0,
+            "bar": 3.5, "line": 3.5, "dot": 3.5, "compare": 3.5,
+            "process": 3.5, "timeline": 3.5, "room": 4.5, "flow": 4.0,
+            "board": 3.5}
+
+HEALTH_TOOLS = Path(r"E:\Claude\Projects\youtube-jp-health\tools")
+FONTS = Path(__file__).resolve().parent / "fonts"
+
+sys.path.insert(0, str(HEALTH_TOOLS))
+import channels as CH                                            # noqa: E402
+
+
+# ══════════════════════════════════════════════════════════════════ hồ sơ kênh
+
+PALETTES = {
+    # "bright" — chốt 2026-08-04 cho co-dai. Nhất quán khuôn thumbnail B1; khám kênh
+    # 2026-07-30 đã KẾT ÁN nền tối moody, đừng quay lại.
+    "bright": {
+        "bg": (247, 246, 242), "panel": (255, 255, 255), "ink": (22, 24, 29),
+        "muted": (138, 140, 149), "accent": (255, 210, 0), "warn": (224, 58, 58),
+        "cool": (58, 122, 224), "hot": (232, 96, 72), "ok": (46, 160, 96),
+        "scrim": (250, 250, 246), "line": (206, 206, 200),
+    },
+}
+
+FONTSETS = {
+    "noto-jp": {"black": "NotoSansJP-Black.otf", "bold": "NotoSansJP-Bold.otf",
+                "med": "NotoSansJP-Medium.otf"},
+}
+
+# Duotone cho ảnh nền (đại tu 2026-08-07): (đen, trắng) của ImageOps.colorize.
+# Dùng cho vế ✗ của compare, ảnh tư liệu timeline, title bg:"photo".
+DUOTONES = {
+    "ink":  ((18, 20, 26), (250, 248, 240)),
+    "blue": ((10, 28, 64), (235, 240, 250)),
+    "warm": ((64, 28, 10), (250, 242, 230)),
+}
+
+# Style knob tầng kênh — apply_profile() ghi đè từ channels.py khối "vox".
+VOXSTYLE = {"photo_treatment": "darken", "duotone": "ink", "grain": 8,
+            "ghost": True, "sticker": True, "highlight": True,
+            "camera": "breath",  # settle 0.5s + thở 1.4%/8s (affine sub-pixel PIL)
+            "parallax": True}    # tách chủ thể ảnh clean → 2 lớp trôi lệch tốc độ (2.5D)
+
+# Thang chữ Vox (plan 2026-08-06). Bệnh cũ: chữ head chỉ ~76px trên khung 1080 → thẻ
+# trông như slide họp. Vox lấp khung bằng chữ.
+SZ_HERO, SZ_HERO_MIN = 380, 200      # con số/1–2 chữ đắt nhất
+SZ_HEAD, SZ_HEAD_MIN = 112, 84       # câu message
+SZ_LABEL_MIN = 44                    # nhãn trong sơ đồ
+REVEAL_BUDGET = 3                    # ≤3 event xuất hiện/thẻ (audience-45plus §2)
+
+# 🔴 LƯỚI DỌC — mọi thẻ bố cục THEO `SB`, KHÔNG toạ độ cố định.
+# Bệnh bắt được ở vòng duyệt sheet demo đầu (2026-08-06): các kind dùng số cứng
+# (y0=340, note ở SB-120…) trong khi co-dai có SB=588 ⇒ dòng message ĐÈ LÊN đồ hoạ ở
+# 9/12 thẻ. Với phụ đề pill/26 hai dòng, vùng chữ chỉ còn ~400px — nửa khung là của
+# phụ đề. Đó là sự thật của kênh, không phải lỗi: hệ quả thiết kế là MỘT ý/thẻ.
+Y_KICK, Y_TOP = 96, 176
+# ⚠️ Hero KHÔNG thể vừa ≥1/3 khung vừa có dòng message — đúng cái đã đo ở
+# `audience-45plus.md` §6.10 với thumbnail (3/3 ca rớt trần 1/3 mà vẫn đọc rõ).
+# Ở đây lấy trần MỀM: hero ăn ≤85% vùng chữ, và cảnh báo khi phải xuống dưới 200px.
+
+
+def zone(head_h=0):
+    """(top, bottom) của vùng vẽ đồ hoạ sau khi trừ kicker + dòng message."""
+    return Y_TOP + (head_h + 26 if head_h else 0), SB - 8
+
+P = PALETTES["bright"]               # bị apply_profile() ghi đè theo --channel
+FSET = FONTSETS["noto-jp"]
+SB = 600                             # safe_bottom hiện hành
+TITLE_CAP = 4
+
+
+def safe_bottom(sub_style="pill", sub_size=None, lines=2, pad=40):
+    """Mép dưới vùng chữ CÓ NGHĨA, suy từ phụ đề burn-in của kênh.
+
+    libass render `force_style` theo PlayResY mặc định 288 → hệ số 1080/288 = 3.75.
+    Chiều cao chiếm chỗ = MarginV + lines × FontSize × 1.2 + 2 × Outline (BorderStyle=4
+    vẽ hộp nền nên Outline là padding hộp), tất cả × 3.75, cộng `pad` an toàn.
+
+    Hiệu chuẩn bằng 3 số đo thật:
+      · co-dai pill/26, 2 dòng → hộp ăn từ y≈600 (đo trên bản render video 16)
+      · health pill/22, 1 dòng → mép trên hộp y≈815 (make_drawn.py SAFE_BOT 0.74)
+      · pill/17,       2 dòng → video_render.py dùng SUB_RESERVE = 330 ⇒ y = 750
+    Công thức dưới cho 588 / 780 / 669 — bằng hoặc thấp hơn số đo ⇒ luôn an toàn.
+    """
+    st = _sub_style_str(sub_style)
+    size = sub_size or _ass_num(st, "FontSize", 17)
+    marg = _ass_num(st, "MarginV", 34)
+    outl = _ass_num(st, "Outline", 3) if "BorderStyle=4" in st else 0
+    sf = 1080 / 288
+    return int(H - (marg + lines * size * 1.2 + 2 * outl) * sf - pad)
+
+
+@lru_cache(maxsize=1)
+def _sub_styles():
+    """Đọc SUB_STYLES từ SOURCE của video_render.py (regex, KHÔNG import).
+
+    Cố ý không `import video_render`: nó là module render nặng, và đọc source thì bảng
+    style luôn đồng bộ với renderer mà không kéo theo dependency nào.
+    """
+    import re
+    src = (HEALTH_TOOLS / "video_render.py").read_text(encoding="utf-8", errors="replace")
+    m = re.search(r"SUB_STYLES\s*=\s*\{(.*?)\n\}", src, re.S)
+    out = {}
+    if m:
+        for name, body in re.findall(r'"(\w+)":\s*\((.*?)\),\n', m.group(1) + "\n", re.S):
+            out[name] = "".join(re.findall(r'"([^"]*)"', body))
+    return out
+
+
+def _sub_style_str(name):
+    return _sub_styles().get(name, _sub_styles().get("pill", "FontSize=17,MarginV=40,Outline=9,BorderStyle=4"))
+
+
+def _ass_num(style, key, default):
+    import re
+    m = re.search(rf"{key}=(\d+)", style)
+    return int(m.group(1)) if m else default
+
+
+def apply_profile(channel):
+    """Nạp palette/font/safe-zone của kênh. `vox: None` = CHƯA duyệt demo → chặn.
+
+    Cùng nguyên tắc `drawn` của channels.py: giá trị None nghĩa là chưa chốt, đừng điền
+    bừa cho hết đỏ — bản sắc hình của kênh phải được duyệt mắt trước khi khoá.
+    """
+    global P, FSET, SB, TITLE_CAP
+    if not channel:
+        return
+    c = CH.get(channel)
+    v = c.get("vox")
+    if not v:
+        raise SystemExit(
+            f"[LỖI] kênh '{channel}' chưa khoá hồ sơ vox trong channels.py.\n"
+            "       Thêm khối \"vox\": {\"palette\": …, \"font\": …, \"title_cap\": 4} SAU KHI\n"
+            "       duyệt demo bằng mắt (skill video-vox GĐ5). Đừng điền bừa.")
+    P = PALETTES[v.get("palette", "bright")]
+    FSET = FONTSETS[v.get("font", "noto-jp")]
+    TITLE_CAP = v.get("title_cap", 4)
+    for k in VOXSTYLE:                      # knob style: kênh chỉ cần ghi key muốn đổi
+        if k in v:
+            VOXSTYLE[k] = v[k]
+    SB = v.get("safe_bottom") or safe_bottom(c.get("sub_style", "pill"), c.get("sub_size"))
+    print(f"[hồ sơ] {channel}: palette={v.get('palette','bright')} font={v.get('font','noto-jp')} "
+          f"safe_bottom=y{SB} (phụ đề {c.get('sub_style')}/{c.get('sub_size') or 'mặc định'}) "
+          f"title_cap={TITLE_CAP}")
+
+
+# ══════════════════════════════════════════════════════════════════ primitives
+
+@lru_cache(maxsize=64)
+def _f(weight, size):
+    return ImageFont.truetype(str(FONTS / FSET[weight]), int(size))
+
+
+def _tw(d, xy, s, font, fill, anchor="la", stroke=0, sfill=None):
+    d.text(xy, s, font=font, fill=fill, anchor=anchor,
+           stroke_width=stroke, stroke_fill=sfill or P["bg"])
+
+
+def _wide(font, s):
+    b = font.getbbox(s)
+    return b[2] - b[0]
+
+
+def _fit(text, weight, max_w, start, min_size=40):
+    """Giảm cỡ tới khi vừa chiều rộng. Chữ khổ Vox rất hay tràn khung."""
+    s = int(start)
+    while s > min_size:
+        if _wide(_f(weight, s), text) <= max_w:
+            return _f(weight, s)
+        s -= 4
+    return _f(weight, min_size)
+
+
+def _fit_warn(text, weight, max_w, start, min_size, what):
+    """Như _fit nhưng CẢNH BÁO khi phải xuống dưới ngưỡng thang chữ Vox.
+    Chữ nhỏ coi như vô hình với tệp 45+ (audience-45plus.md §1) — thấy cảnh báo thì
+    rút ngắn CÂU, đừng chấp nhận chữ bé."""
+    f = _fit(text, weight, max_w, start, min_size)
+    if _wide(f, text) > max_w:
+        warn_once(f"  ⚠ {what}: '{text[:22]}…' không vừa ở cỡ tối thiểu {min_size}px → RÚT NGẮN CÂU")
+    return f
+
+
+def ease(t):
+    """ease-out cubic — chuyển động Vox không bao giờ tuyến tính."""
+    t = max(0.0, min(1.0, t))
+    return 1 - (1 - t) ** 3
+
+
+def ease_io(t):
+    """smoothstep in-out — cho thứ DI CHUYỂN VỊ TRÍ (băng title, panel)."""
+    t = max(0.0, min(1.0, t))
+    return t * t * (3 - 2 * t)
+
+
+def ease_back(t, s=1.15):
+    """settle-overshoot mềm ≤4% — pin/dấu ✗○/step box 'đậu' xuống, không nảy."""
+    if t <= 0:
+        return 0.0
+    if t >= 1:
+        return 1.0
+    t -= 1
+    return 1 + t * t * ((s + 1) * t + s)
+
+
+def idle_u(v, t):
+    """Pha idle (giây tính từ lúc intro settle). 0 trong suốt intro → mọi element idle
+    khởi ở biên độ 0 ⇒ khớp nối intro→idle không giật."""
+    return max(0.0, t - v.get("_anim", 4.0))
+
+
+def osc(v, t, cycles=1):
+    """Oscillator 0→1→0 chu kỳ IDLE_SEC/cycles. `cycles` PHẢI NGUYÊN — đó là điều kiện
+    toán học để frame(anim) == frame(anim+IDLE_SEC) byte-for-byte (loop-sạch, build()
+    có assert). Giá trị = 0 tại pha 0 ⇒ intro không đổi gì."""
+    u = idle_u(v, t)
+    return 0.5 - 0.5 * math.cos(2 * math.pi * cycles * u / IDLE_SEC)
+
+
+@lru_cache(maxsize=32)
+def _glow_sprite(r, color):
+    """Đốm sáng tròn mờ dần ra mép (RGBA, alpha đỉnh 255 — caller scale khi paste)."""
+    s = Image.new("L", (2 * r, 2 * r), 0)
+    dd = ImageDraw.Draw(s)
+    for i in range(r, 0, -2):
+        dd.ellipse([r - i, r - i, r + i, r + i], fill=int(255 * (1 - i / r) ** 2))
+    out = Image.new("RGBA", (2 * r, 2 * r), color + (0,))
+    out.putalpha(s)
+    return out
+
+
+def paste_glow(im, cx, cy, r, color, alpha):
+    """Dán glow tâm (cx,cy), alpha 0..1 — nhịp thở idle. alpha 0 → bỏ luôn (frame intro
+    không khác gì bản không glow)."""
+    if alpha <= 0.004:
+        return
+    sp = _glow_sprite(int(r), tuple(color)).copy()
+    sp.putalpha(sp.getchannel("A").point(lambda a: int(a * alpha)))
+    im.paste(sp, (int(cx - r), int(cy - r)), sp)
+
+
+def draw_ring(im, cx, cy, r, color, alpha, width=8):
+    """Vòng pulse lan ra (kiểu chấm ticker 'đang sống'). Vẽ trên lớp RGBA nhỏ rồi dán."""
+    if alpha <= 0.004 or r <= 2:
+        return
+    pad = width + 4
+    s = int(2 * (r + pad))
+    lay = Image.new("RGBA", (s, s), (0, 0, 0, 0))
+    ImageDraw.Draw(lay).ellipse([pad, pad, s - pad, s - pad],
+                                outline=tuple(color) + (int(255 * alpha),), width=width)
+    im.paste(lay, (int(cx - s / 2), int(cy - s / 2)), lay)
+
+
+def seeded(*parts):
+    return random.Random(hashlib.md5("|".join(map(str, parts)).encode()).hexdigest())
+
+
+_WARNED = set()
+
+
+def warn_once(msg):
+    """Cảnh báo 1 lần/nội dung — kind chạy lại MỖI FRAME (165×/thẻ từ bản motion
+    2026-08-07), print trần trong hàm vẽ là spam 165 dòng cùng một câu vào log."""
+    if msg not in _WARNED:
+        _WARNED.add(msg)
+        print(msg)
+
+
+def arrow(d, pts, color=None, width=14, head=34, prog=1.0, dashed=False):
+    """Mũi tên theo polyline, chỉ vẽ `prog` phần đầu → hiệu ứng TỰ VẼ."""
+    color = color or P["warn"]
+    if prog <= 0 or len(pts) < 2:
+        return
+    seg = [math.dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1)]
+    total = sum(seg) or 1
+    want = total * prog
+    path, acc = [pts[0]], 0.0
+    for i, L in enumerate(seg):
+        if acc + L <= want:
+            path.append(pts[i + 1]); acc += L
+        else:
+            r = (want - acc) / L
+            path.append((pts[i][0] + (pts[i + 1][0] - pts[i][0]) * r,
+                         pts[i][1] + (pts[i + 1][1] - pts[i][1]) * r))
+            break
+    if len(path) < 2:
+        return
+    if dashed:
+        for i in range(0, len(path) - 1, 2):
+            d.line([path[i], path[i + 1]], fill=color, width=width)
+    else:
+        d.line(path, fill=color, width=width, joint="curve")
+    if prog > 0.92 and head:
+        (x0, y0), (x1, y1) = path[-2], path[-1]
+        a = math.atan2(y1 - y0, x1 - x0)
+        d.polygon([(x1, y1),
+                   (x1 - head * math.cos(a - .45), y1 - head * math.sin(a - .45)),
+                   (x1 - head * math.cos(a + .45), y1 - head * math.sin(a + .45))], fill=color)
+
+
+def curve(p0, p1, bend=0.28, n=26):
+    """Polyline cong (quadratic) — mũi tên Vox luôn cong, không thẳng cứng."""
+    mx, my = (p0[0] + p1[0]) / 2, (p0[1] + p1[1]) / 2
+    dx, dy = p1[0] - p0[0], p1[1] - p0[1]
+    cx, cy = mx - dy * bend, my + dx * bend
+    return [((1 - t) ** 2 * p0[0] + 2 * (1 - t) * t * cx + t * t * p1[0],
+             (1 - t) ** 2 * p0[1] + 2 * (1 - t) * t * cy + t * t * p1[1])
+            for t in [i / n for i in range(n + 1)]]
+
+
+def kicker(d, text, y=118, on_photo=False):
+    """Dòng dẫn nhỏ + gạch vàng — mở đầu mọi thẻ, giữ nhận diện giữa các kind.
+    `on_photo`: chữ trắng + stroke ink (ảnh tối theo treat_photo darken)."""
+    if not text:
+        return
+    f = _f("bold", 34)
+    if on_photo:
+        _tw(d, (MARGIN_X, y), text, f, (255, 255, 255), stroke=5, sfill=P["ink"])
+    else:
+        _tw(d, (MARGIN_X, y), text, f, P["ink"])
+    d.rectangle([MARGIN_X, y + 50, MARGIN_X + max(_wide(f, text), 90), y + 58], fill=P["accent"])
+
+
+def src_label(d, text, on_photo=False):
+    """Nhãn 出典 — chữ ký minh bạch kiểu Vox.
+    ⚠️ Đặt góc PHẢI-TRÊN: đáy khung là vùng phụ đề burn-in (bản đầu để y=H-44 thì phụ đề
+    đè mất), còn góc dưới-PHẢI là của YouTube (timestamp thời lượng —
+    feedback_thumbnail_goc_duoi_phai_cua_youtube)."""
+    if not text:
+        return
+    if on_photo:
+        _tw(d, (W - MARGIN_X, 132), f"出典：{text}", _f("med", 27), (243, 243, 240),
+            anchor="rs", stroke=3, sfill=P["ink"])
+    else:
+        _tw(d, (W - MARGIN_X, 132), f"出典：{text}", _f("med", 27), P["muted"], anchor="rs")
+
+
+def _wrap(text, font, max_w, max_lines=2):
+    """Ngắt câu Nhật theo bề rộng (không có khoảng trắng → ngắt theo ký tự, ưu tiên
+    sau dấu 、。・ để không cắt giữa cụm)."""
+    lines, cur = [], ""
+    for ch in text:
+        if _wide(font, cur + ch) > max_w and cur:
+            lines.append(cur)
+            cur = ch
+            if len(lines) == max_lines:
+                break
+        else:
+            cur += ch
+    if cur and len(lines) < max_lines:
+        lines.append(cur)
+    return lines
+
+
+def head_line(d, text, y=Y_TOP, max_w=W - 2 * MARGIN_X, size=SZ_HEAD, highlight=False):
+    """Câu message của thẻ — chữ TO. Mặc định nằm TRÊN đồ hoạ (headline-first, kiểu Vox):
+    người xem đọc kết luận trước, đồ hoạ là bằng chứng.
+    `highlight=True`: khối vàng highlighter sau TỪNG DÒNG (chữ ký Vox) — cũng là bảo
+    hiểm legibility khi chữ nằm trên ảnh (nền vàng đặc + chữ ink đọc được trên MỌI ảnh,
+    an toàn hơn chữ trắng cho tệp 45+).
+    Trả về CHIỀU CAO đã chiếm để caller tính vùng còn lại (đừng đoán)."""
+    if not text:
+        return 0
+    f = _fit(text, "black", max_w, size, SZ_HEAD_MIN)
+    lines = [text] if _wide(f, text) <= max_w else _wrap(text, f, max_w)
+    if len(lines) > 1:
+        f = _fit(lines[0], "black", max_w, min(size, 96), SZ_HEAD_MIN)
+        lines = _wrap(text, f, max_w)
+    adv = int(f.size * 1.26)
+    if highlight:
+        rj = seeded("hl", text)
+        for i, ln in enumerate(lines):
+            yy = y + i * adv
+            # đo MỰC THẬT — font.getbbox hụt đuôi glyph, chữ tràn khỏi nền vàng
+            bb = d.textbbox((MARGIN_X, yy), ln, font=f)
+            pad = 22
+            d.rectangle([bb[0] - pad + rj.randint(-3, 3), min(bb[1] - 10, yy + int(f.size * 0.04)),
+                         bb[2] + pad + rj.randint(-3, 3), max(bb[3] + 12, yy + int(f.size * 1.14))],
+                        fill=P["accent"])
+    for i, ln in enumerate(lines):
+        _tw(d, (MARGIN_X, y + i * adv), ln, f, P["ink"])
+    return adv * len(lines)
+
+
+def scrim(im, y0, y1, strength=200, blur=90):
+    """(LEGACY — đại tu 2026-08-07) Dải SÁNG mờ vùng chữ. Bị thay bằng `treat_photo()`
+    vì kết quả đo mắt trên sheet AB: scrim trắng tẩy ảnh thành ma (thẻ 8人, kệ siêu thị
+    gần như trắng xoá). Chỉ còn dùng khi kênh khai `photo_treatment: "scrim"`."""
+    m = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(m).rectangle([0, y0, W, y1], fill=strength)
+    return Image.composite(Image.new("RGB", (W, H), P["scrim"]), im,
+                           m.filter(ImageFilter.GaussianBlur(blur)))
+
+
+def shadow_for(w, h):
+    """Bóng ellipse mờ dưới chân cutout — cho vật 'ngồi' trên nền, không trôi lơ lửng."""
+    sh = Image.new("RGBA", (w + 80, int(w * 0.16) + 60), (0, 0, 0, 0))
+    ImageDraw.Draw(sh).ellipse([40, 20, sh.size[0] - 40, sh.size[1] - 20], fill=(60, 52, 40, 78))
+    return sh.filter(ImageFilter.GaussianBlur(16))
+
+
+def to_gray(im):
+    """Bản xám giữ alpha — cho vế ✗ của compare. Nâng sáng mạnh vì chủ thể tối
+    (kabocha gần đen) mà chỉ khử màu thì thành cục đen."""
+    g = ImageOps.grayscale(im.convert("RGB")).point(lambda v: min(255, int(v * 0.72 + 74)))
+    return Image.merge("RGBA", (g, g, g, im.getchannel("A")))
+
+
+# ─────────────────────────── lớp art-direction (đại tu 2026-08-07) ───────────────────
+# Bệnh user xác nhận: thẻ phẳng như wireframe (chỉ kem+đen+đỏ+vàng, không khối màu lớn,
+# không texture, không chiều sâu) + nửa dưới khung trống trơn. Nguyên tắc mới:
+#   BG ZONE   = full khung, ĐƯỢC tràn xuống dưới SB (phụ đề đè lên phần trang trí là
+#               chấp nhận — tiền lệ k_room bleed SB+200 có sẵn từ bản 08-06).
+#   MESSAGE   = y 96..SB như cũ — mọi chữ CÓ NGHĨA vẫn trên safe_bottom (gate X4 nguyên).
+
+def grain(im, strength=None, key=""):
+    """Hạt giấy tĩnh — đắp lên nền PHẲNG cho hết cảm giác wireframe. Seeded theo nội
+    dung thẻ → render lại ra đúng ảnh cũ (không shimmer, không phá .sig).
+    Tính MỘT lần trong prep_base, không bao giờ gọi trong frame(t)."""
+    strength = VOXSTYLE["grain"] if strength is None else strength
+    if not strength:
+        return im
+    import numpy as np
+    rng = np.random.default_rng(int(hashlib.md5(("grain|" + key).encode()).hexdigest()[:8], 16))
+    n = rng.integers(-strength, strength + 1, (H // 2, W // 2), dtype=np.int16)
+    n = np.asarray(Image.fromarray((n + 128).astype("uint8"), "L").resize((W, H),
+                                                                          Image.BILINEAR),
+                   dtype=np.int16) - 128
+    a = np.asarray(im.convert("RGB"), dtype=np.int16) + n[:, :, None]
+    return Image.fromarray(np.clip(a, 0, 255).astype("uint8"), "RGB")
+
+
+def ghost_number(im, s, size=760, alpha=18, color=None):
+    """Số/chữ MA khổng lồ tràn góc dưới-phải — trang trí lấp khung, KHÔNG phải data.
+    Cố ý bị mép khung + phụ đề cắt (nằm dưới SB là thiết kế). Mỗi thẻ tối đa 1 cái."""
+    if not s or not VOXSTYLE.get("ghost", True):
+        return
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    f = _f("black", size)
+    ImageDraw.Draw(lay).text((W + 30, H + int(size * 0.14)), str(s), font=f,
+                             fill=tuple(color or P["ink"]) + (alpha,), anchor="rs")
+    im.paste(Image.alpha_composite(im.convert("RGBA"), lay).convert("RGB"), (0, 0))
+
+
+def side_panel(im, x0, color=None, alpha=255):
+    """Khối màu đặc full-height x0..W — dựng cấu trúc khung kiểu Vox."""
+    d = ImageDraw.Draw(im, "RGBA")
+    d.rectangle([x0, 0, W, H], fill=tuple(color or P["accent"]) + (alpha,))
+
+
+def tint_block(im, box, color, alpha):
+    """Tấm màu bán trong suốt (split-frame compare, dải era timeline…)."""
+    ImageDraw.Draw(im, "RGBA").rectangle(box, fill=tuple(color) + (alpha,))
+
+
+def sticker(cut, stroke=14, shadow=True):
+    """Cutout kiểu STICKER die-cut: viền trắng dày theo silhouette + bóng đổ thật +
+    màu tươi lại (chữa bệnh rembg xám lem). Chạy MỘT lần trong prep_images."""
+    from PIL import ImageEnhance
+    cut = cut.convert("RGBA")
+    r, g_, b, a = cut.split()
+    rgb = ImageEnhance.Color(Image.merge("RGB", (r, g_, b))).enhance(1.15)
+    cut = Image.merge("RGBA", (*rgb.split(), a))
+    a2 = a.filter(ImageFilter.MaxFilter(2 * stroke + 1))
+    pad = stroke + 26
+    out = Image.new("RGBA", (cut.size[0] + 2 * pad, cut.size[1] + 2 * pad + 18), (0, 0, 0, 0))
+    if shadow:
+        shm = Image.new("L", out.size, 0)
+        shm.paste(a2, (pad + 4, pad + 20))
+        shm = shm.filter(ImageFilter.GaussianBlur(18)).point(lambda x: int(x * 0.32))
+        sh = Image.new("RGBA", out.size, (24, 20, 14, 255))
+        sh.putalpha(shm)
+        out = Image.alpha_composite(out, sh)
+    wm = Image.new("L", out.size, 0)
+    wm.paste(a2, (pad, pad))
+    white = Image.new("RGBA", out.size, (255, 255, 255, 255))
+    white.putalpha(wm)
+    out = Image.alpha_composite(out, white)
+    out.paste(cut, (pad, pad), cut)
+    return out
+
+
+def text_luma(im, box):
+    """Độ sáng trung bình vùng chữ — probe legibility cho chữ trắng trên ảnh."""
+    x0, y0, x1, y1 = [int(x) for x in box]
+    region = im.convert("L").crop((max(0, x0), max(0, y0), min(W, x1), min(H, y1)))
+    import numpy as np
+    return float(np.asarray(region).mean()) if region.size[0] and region.size[1] else 0.0
+
+
+def _vgrad(y_from, y_to, a_from, a_to):
+    """Mask 'L' gradient dọc: alpha a_from tại y_from → a_to tại y_to, giữ a_to tới đáy."""
+    m = Image.new("L", (W, H), 0)
+    g = Image.linear_gradient("L").resize((W, max(2, y_to - y_from)))
+    g = g.point(lambda v: int(a_from + (a_to - a_from) * v / 255))
+    m.paste(g, (0, y_from))
+    if y_to < H:
+        ImageDraw.Draw(m).rectangle([0, y_to, W, H], fill=a_to)
+    if y_from > 0 and a_from > 0:
+        ImageDraw.Draw(m).rectangle([0, 0, W, y_from], fill=a_from)
+    return m
+
+
+def treat_photo(im, v=None):
+    """Xử lý ảnh nền THAY scrim trắng (đại tu 2026-08-07 — bệnh 'ảnh nhợt như ma').
+
+    `darken` (mặc định): ảnh ĐẬM lên (Color 1.12 + Contrast 1.06) rồi phủ gradient ĐEN
+    dưới→trên cho dải message + gradient nhẹ vùng kicker. Chữ trên ảnh = trắng+stroke
+    hoặc highlight vàng — không tẩy ảnh nữa.
+    `duotone[:ink|blue|warm]`: hai tông kiểu tư liệu — vẫn phủ gradient đáy.
+    `scrim`: đường lui legacy (giữ cho kênh nào lỡ thích bản cũ).
+
+    Probe `text_luma` vùng message: còn sáng >130 → nâng alpha đáy từng nấc 20 (trần
+    210). Chữ trắng luôn kèm stroke ink nên đây là dây an toàn thứ hai, không phải duy
+    nhất."""
+    from PIL import ImageEnhance
+    style = ((v or {}).get("photo_style") or VOXSTYLE["photo_treatment"]).lower()
+    if style == "clean":
+        # Ảnh MINH HOẠ AI gen theo prompt có sẵn copy-space (quy trình 2026-08-08:
+        # user gen ảnh washi → tool chỉ annotate). KHÔNG darken/gradient — tranh không
+        # phải ảnh stock; legibility đã lo bằng highlight vàng + stroke của pin.
+        return im.convert("RGB")
+    if style == "scrim":
+        top = (v or {}).get("scrim_top", SB - 200)
+        return scrim(im, top, H, (v or {}).get("scrim_strength", 205))
+    if style.startswith("duotone"):
+        name = style.split(":", 1)[1] if ":" in style else VOXSTYLE["duotone"]
+        blk, wht = DUOTONES.get(name, DUOTONES["ink"])
+        im = ImageOps.colorize(ImageOps.grayscale(im.convert("RGB")), black=blk, white=wht,
+                               blackpoint=25, whitepoint=235).convert("RGB")
+    else:
+        im = ImageEnhance.Color(im.convert("RGB")).enhance(1.12)
+        im = ImageEnhance.Contrast(im).enhance(1.06)
+    black = Image.new("RGB", (W, H), (10, 11, 14))
+    a_bot = 150
+    while True:
+        out = Image.composite(black, im, _vgrad(int(H * 0.30), H - 40, 0, a_bot))
+        if text_luma(out, (MARGIN_X, SB - 250, W - MARGIN_X, SB + 60)) <= 130 or a_bot >= 210:
+            break
+        a_bot += 20
+    if a_bot >= 210 and text_luma(out, (MARGIN_X, SB - 250, W - MARGIN_X, SB + 60)) > 130:
+        print("  ⚠ ảnh nền quá sáng vùng message ngay cả ở gradient trần — cân nhắc đổi "
+              "crop/ảnh (chữ vẫn đọc được nhờ stroke, nhưng sát biên)")
+    # dải nhẹ vùng kicker/出典 để chữ trắng góc trên không chìm vào trời sáng
+    out = Image.composite(black, out, _vgrad(0, 230, 70, 0))
+    return out
+
+
+# ═══════════════════════════════ lớp ĐẠO CỤ ANALOG (đại tu 2 — 2026-08-08) ═════════
+# User chê hiệu ứng vector PIL: "đường nét vẽ ra cũng xấu, mũi tên thô không mượt".
+# Mổ video tham chiếu (VOX_COLLAGE_PLAN_2026-08-08.md): cái đẹp = annotation là VẬT
+# CÓ CHẤT LIỆU (sáp đỏ, dây chỉ, giấy xé, con dấu grunge), không phải nét code vẽ.
+# → Bộ prop PNG user gen 1 lần ở `props/` (INDEX.json từ props_prep.py). Có prop thì
+# DÁN + LÀM ĐỘNG; thiếu prop (kênh khác chưa gen) → tự rơi về đường vector cũ.
+
+PROPS_DIR = Path(__file__).resolve().parent / "props"
+
+
+@lru_cache(maxsize=1)
+def props_index():
+    p = PROPS_DIR / "INDEX.json"
+    if not p.exists():
+        return {}
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+def props_ready(*names):
+    idx = props_index()
+    return all(n in idx and (PROPS_DIR / f"{n}.png").exists() for n in names)
+
+
+@lru_cache(maxsize=48)
+def load_prop(name):
+    return Image.open(PROPS_DIR / f"{name}.png").convert("RGBA")
+
+
+def _rot_pt(pt, c, ang_rad, c2):
+    """Điểm `pt` sau khi ảnh xoay quanh tâm `c` (expand=True, tâm mới `c2`).
+    PIL rotate(angle) quay NGƯỢC chiều kim đồng hồ với trục y hướng xuống."""
+    dx, dy = pt[0] - c[0], pt[1] - c[1]
+    ca, sa = math.cos(ang_rad), math.sin(ang_rad)
+    return (c2[0] + dx * ca + dy * sa, c2[1] - dx * sa + dy * ca)
+
+
+def _fit_prop_vec(name, p0, p1, flip=False):
+    """Scale + xoay prop sao cho vector tail→head (INDEX.json) trùng p0→p1.
+    Trả (ảnh đã biến đổi, toạ độ dán). Toàn bộ phép tính là hình học thuần —
+    deterministic, không phụ thuộc frame."""
+    prop = load_prop(name)
+    a = props_index()[name]["anchors"]
+    tail, head = a["tail"], a["head"]
+    if flip:
+        prop = prop.transpose(Image.FLIP_TOP_BOTTOM)
+        tail = (tail[0], prop.size[1] - tail[1])
+        head = (head[0], prop.size[1] - head[1])
+    vp = (head[0] - tail[0], head[1] - tail[1])
+    vt = (p1[0] - p0[0], p1[1] - p0[1])
+    lp, lt = math.hypot(*vp) or 1, math.hypot(*vt) or 1
+    s = lt / lp
+    im2 = prop.resize((max(8, int(prop.width * s)), max(8, int(prop.height * s))),
+                      Image.LANCZOS)
+    tail_s = (tail[0] * s, tail[1] * s)
+    ang = math.degrees(math.atan2(vp[1], vp[0]) - math.atan2(vt[1], vt[0]))
+    rot = im2.rotate(ang, expand=True, resample=Image.BICUBIC)
+    c = (im2.width / 2, im2.height / 2)
+    c2 = (rot.width / 2, rot.height / 2)
+    tail_r = _rot_pt(tail_s, c, math.radians(ang), c2)
+    return rot, (int(p0[0] - tail_r[0]), int(p0[1] - tail_r[1]))
+
+
+def _wipe(prop_im, p_from, p_to, prog, feather=90):
+    """Reveal 'ĐANG VẼ TAY': alpha nhân mask lăn theo hướng p_from→p_to (toạ độ
+    TRONG prop đã biến đổi). prog 0..1."""
+    if prog >= 1.0:
+        return prop_im
+    import numpy as np
+    a = np.asarray(prop_im, dtype=np.uint8).copy()
+    h, w = a.shape[:2]
+    dx, dy = p_to[0] - p_from[0], p_to[1] - p_from[1]
+    L = math.hypot(dx, dy) or 1
+    ux, uy = dx / L, dy / L
+    yy, xx = np.mgrid[0:h, 0:w]
+    u = ((xx - p_from[0]) * ux + (yy - p_from[1]) * uy) / L        # 0..1 dọc trục
+    m = np.clip((prog - u) * L / feather + 0.5, 0, 1)
+    a[:, :, 3] = (a[:, :, 3] * m).astype("uint8")
+    return Image.fromarray(a, "RGBA")
+
+
+def prop_arrow(im, p0, p1, prog, bend=0.2):
+    """Mũi tên SÁP ĐỎ thật thay polyline PIL. Chọn prop theo độ cong yêu cầu; bend
+    âm → lật prop cong. Reveal kiểu đang vẽ từ đuôi tới đầu."""
+    if prog <= 0.01:
+        return
+    name = "arrow_curve" if abs(bend) >= 0.12 else "arrow_straight"
+    rot, off = _fit_prop_vec(name, p0, p1, flip=(name == "arrow_curve" and bend < 0))
+    pf = (p0[0] - off[0], p0[1] - off[1])
+    pt = (p1[0] - off[0], p1[1] - off[1])
+    rot = _wipe(rot, pf, pt, ease(prog))
+    im.paste(rot, off, rot)
+
+
+def prop_mark(im, kind, cx, cy, size, pe, rng=None):
+    """✗ / ○ bằng sáp thật. pe = ease_back tiến trình; pop nhẹ khi đậu."""
+    if pe <= 0:
+        return
+    name = "cross_x" if kind == "x" else "circle_2"
+    prop = load_prop(name)
+    rng = rng or seeded("mark", kind, cx, cy)
+    s = size * 2.2 / max(prop.size)
+    s *= 0.82 + 0.18 * min(pe, 1.04)
+    p2 = prop.resize((max(8, int(prop.width * s)), max(8, int(prop.height * s))),
+                     Image.LANCZOS).rotate(rng.uniform(-9, 9), expand=True,
+                                           resample=Image.BICUBIC)
+    if pe < 1:
+        p2.putalpha(p2.getchannel("A").point(lambda a: int(a * min(1, pe * 1.6))))
+    im.paste(p2, (int(cx - p2.width / 2), int(cy - p2.height / 2)), p2)
+
+
+def prop_circle(im, cx, cy, w, h, prog, rng=None):
+    """Vòng khoanh sáp reveal THEO GÓC (như đang khoanh tay), bắt đầu từ hướng 10h."""
+    if prog <= 0.01:
+        return
+    prop = load_prop("circle_1")
+    p2 = prop.resize((max(12, int(w)), max(12, int(h))), Image.LANCZOS)
+    if prog < 1:
+        m = Image.new("L", p2.size, 0)
+        ImageDraw.Draw(m).pieslice([-p2.width, -p2.height, p2.width * 2, p2.height * 2],
+                                   -250, -250 + 360 * ease(prog), fill=255)
+        a = p2.getchannel("A")
+        p2.putalpha(Image.composite(a, Image.new("L", p2.size, 0), m))
+    im.paste(p2, (int(cx - p2.width / 2), int(cy - p2.height / 2)), p2)
+
+
+def _soft_shadow(layer, blur=10, alpha=0.34, dx=0, dy=10):
+    sh = Image.new("RGBA", layer.size, (0, 0, 0, 0))
+    m = layer.getchannel("A").filter(ImageFilter.GaussianBlur(blur))
+    m = m.point(lambda v: int(v * alpha))
+    black = Image.new("RGBA", layer.size, (24, 20, 14, 255))
+    black.putalpha(m)
+    sh.paste(black, (dx, dy), black)
+    return sh
+
+
+def _label_layer(text, size=48, fastener="pin", rng=None, max_w=None):
+    """Lớp nhãn (giấy xé + CHỮ NHẬT THẬT + đinh/băng dính), CHƯA xoay chưa dán —
+    dùng chung cho prop_label (thả rơi) và k_board (bay vào trang hồ sơ)."""
+    rng = rng or seeded("label", text)
+    f = _f("black", size)
+    tw_ = _wide(f, text)
+    if max_w and tw_ > max_w - 70:
+        f = _fit(text, "black", max_w - 70, size, 30)
+        tw_ = _wide(f, text)
+    name = "label_tag" if tw_ < 300 else ("label_strip" if tw_ < 620 else "label_wide")
+    prop = load_prop(name)
+    lw = tw_ + 110
+    lh = int(prop.height * lw / prop.width)
+    min_h = int(f.size * 1.9)
+    if lh < min_h:
+        lh = min_h
+        lw = max(lw, int(prop.width * lh / prop.height * 0.8))
+    lay = Image.new("RGBA", (lw + 60, lh + 70), (0, 0, 0, 0))
+    paper = prop.resize((lw, lh), Image.LANCZOS)
+    lay.paste(paper, (30, 34), paper)
+    d = ImageDraw.Draw(lay)
+    _tw(d, (30 + lw / 2, 34 + lh / 2 - 2), text, f, (48, 38, 30), anchor="mm")
+    if fastener == "none":
+        pass
+    elif fastener == "tape":
+        tp = load_prop("tape_1" if rng.random() < 0.5 else "tape_2")
+        tp = tp.resize((int(lw * 0.44), int(tp.height * lw * 0.44 / tp.width)),
+                       Image.LANCZOS).rotate(rng.uniform(-8, 8), expand=True,
+                                             resample=Image.BICUBIC)
+        lay.paste(tp, (int(30 + lw / 2 - tp.width / 2), max(0, 34 - tp.height // 2)), tp)
+    else:
+        pin = load_prop("pin_red" if rng.random() < 0.7 else "pin_brass")
+        ps = 52 / max(pin.size)
+        pin = pin.resize((int(pin.width * ps), int(pin.height * ps)), Image.LANCZOS)
+        lay.paste(pin, (int(30 + lw / 2 - pin.width / 2), max(0, 30 - pin.height // 3)), pin)
+    return lay
+
+
+def prop_label(im, cx, cy, text, pe, rng=None, size=48, fastener="pin", max_w=None,
+               sway=0.0):
+    """Nhãn thả rơi + nảy (flow pins, collage). Trả bbox đã dán để caller tránh đè."""
+    if pe <= 0:
+        return None
+    rng = rng or seeded("label", text)
+    lay = _label_layer(text, size, fastener, rng, max_w)
+    # sway: nhãn LẮC quanh đinh ghim theo nhịp thở idle (±~0.4°, chu kỳ IDLE_SEC —
+    # sin nguyên chu kỳ nên loop vẫn sạch). Giấy ghim 1 đinh thì phải đung đưa.
+    lay = lay.rotate(rng.uniform(-2.6, 2.6) + sway, expand=True, resample=Image.BICUBIC)
+    p = min(pe, 1.0)
+    # rơi + NẢY 1 nhịp (đại tu 3): 72% đầu rơi ease-in, 28% cuối nảy 7px rồi lịm —
+    # kết thúc ĐÚNG 0 tại p=1 (sin(pi)=0) nên idle/loop không bị đụng
+    if p < 0.72:
+        q = p / 0.72
+        drop = int(-46 * (1 - q * q))
+    else:
+        q = (p - 0.72) / 0.28
+        drop = int(-7 * math.sin(math.pi * q) * (1 - q))
+    x0 = int(cx - lay.width / 2)
+    y0 = int(cy - lay.height / 2 + drop)
+    sh = _soft_shadow(lay, blur=12, alpha=0.30 * p, dy=12 + int((1 - p) * 10))
+    im.paste(sh, (x0, y0), sh)
+    if p < 1:
+        lay.putalpha(lay.getchannel("A").point(lambda a: int(a * min(1, p * 1.7))))
+    im.paste(lay, (x0, y0), lay)
+    return (x0, y0, x0 + lay.width, y0 + lay.height)
+
+
+def prop_stamp(im, cx, cy, text, pe, kind="round", rng=None):
+    """CON DẤU grunge + chữ đỏ bên trong, SLAM xuống (scale 1.7→1 + xoay đậu).
+    Cho con số chốt / năm chốt / 原典 — thay khối accent phẳng."""
+    if pe <= 0:
+        return
+    rng = rng or seeded("stamp", text)
+    prop = load_prop("stamp_round" if kind == "round" else "stamp_rect")
+    f = _f("black", 96 if kind == "round" else 88)
+    tw_ = _wide(f, text)
+    if kind == "round":
+        side = max(int(tw_ * 1.75), 300)
+        base = prop.resize((side, side), Image.LANCZOS)
+    else:
+        bw = max(int(tw_ * 1.5), 340)
+        bh = int(prop.height * bw / prop.width)
+        if bh < int(f.size * 1.9):
+            bh = int(f.size * 1.9)
+        base = prop.resize((bw, bh), Image.LANCZOS)
+    d = ImageDraw.Draw(base)
+    _tw(d, (base.width / 2, base.height / 2), text, f, (188, 34, 30), anchor="mm")
+    # chữ cũng phải LEM như dấu thật: đục lỗ alpha bằng noise seeded
+    import numpy as np
+    rng2 = np.random.default_rng(int(hashlib.md5(("stampnoise|" + text).encode())
+                                     .hexdigest()[:8], 16))
+    noise = rng2.random((base.height, base.width)) > 0.16
+    a = np.asarray(base, dtype=np.uint8).copy()
+    a[:, :, 3] = a[:, :, 3] * noise
+    base = Image.fromarray(a, "RGBA")
+    p = min(pe, 1.0)
+    sc = 1.7 - 0.7 * ease(min(1, p * 1.15))
+    rot = rng.uniform(-7, 7) * (1 if p >= 1 else (2 - p))
+    b2 = base.resize((max(8, int(base.width * sc)), max(8, int(base.height * sc))),
+                     Image.LANCZOS).rotate(rot, expand=True, resample=Image.BICUBIC)
+    if p < 1:
+        b2.putalpha(b2.getchannel("A").point(lambda v: int(v * min(1, p * 2.2))))
+    im.paste(b2, (int(cx - b2.width / 2), int(cy - b2.height / 2)), b2)
+
+
+def prop_string(im, p0, p1, prog, rng=None):
+    """DÂY CHỈ ĐỎ căng giữa 2 đinh ghim (bảng điều tra) — thay đường nối vector."""
+    if prog <= 0.01:
+        return
+    prop = load_prop("string_sag")
+    import numpy as np
+    a = np.asarray(prop.getchannel("A"))
+    ys, xs = np.nonzero(a > 60)
+    left = (int(xs.min()), int(np.median(ys[xs <= xs.min() + 6])))
+    right = (int(xs.max()), int(np.median(ys[xs >= xs.max() - 6])))
+    name_anch = {"tail": left, "head": right}
+    idx = props_index()
+    idx.setdefault("string_sag", {}).setdefault("anchors", name_anch)
+    rot, off = _fit_prop_vec("string_sag", p0, p1)
+    pf = (p0[0] - off[0], p0[1] - off[1])
+    pt = (p1[0] - off[0], p1[1] - off[1])
+    rot = _wipe(rot, pf, pt, ease(prog), feather=60)
+    im.paste(rot, off, rot)
+    pin = load_prop("pin_red")
+    ps = 46 / max(pin.size)
+    pin = pin.resize((int(pin.width * ps), int(pin.height * ps)), Image.LANCZOS)
+    for q, need in ((p0, True), (p1, prog > 0.96)):
+        if need:
+            im.paste(pin, (int(q[0] - pin.width / 2), int(q[1] - pin.height / 2)), pin)
+
+
+def _land_dust(im, cx, cy, sp, rng, w=260):
+    """BỤI GIẤY lúc vật ĐÁP xuống trang (gói sinh động 2026-08-09): 4 hạt li ti bung
+    ra từ mép dưới trong 0.14s rồi tắt. sp = giây ĐÃ QUA kể từ lúc chạm."""
+    if not (0.0 <= sp < 0.14):
+        return
+    q = sp / 0.14
+    d = ImageDraw.Draw(im, "RGBA")
+    for k in range(4):
+        ang = rng.uniform(2.6, 3.9) + k * 0.55           # toả xuống hai bên
+        dist = (14 + 26 * ease(q)) * (0.6 + 0.12 * k)
+        px = cx + math.cos(ang) * dist * (w / 160)
+        py = cy + abs(math.sin(ang)) * dist * 0.5
+        r = 3.4 - 1.4 * q + (k % 2)
+        a = int(150 * (1 - q))
+        d.ellipse([px - r, py - r, px + r, py + r], fill=(176, 166, 148, a))
+
+
+def _check_mark(im, cx, cy, prog, rng, size=46):
+    """Tick ✓ SÁP ĐỎ vẽ tay (2 nét tuần tự, jitter seeded) — đánh dấu hàng ĐÃ XONG."""
+    if prog <= 0:
+        return
+    d = ImageDraw.Draw(im, "RGBA")
+    j = [rng.uniform(-2.5, 2.5) for _ in range(6)]
+    p1 = [(cx - size * 0.42 + j[0], cy + 0.02 * size + j[1]),
+          (cx - size * 0.10 + j[2], cy + size * 0.36 + j[3])]
+    p2 = [p1[1], (cx + size * 0.52 + j[4], cy - size * 0.42 + j[5])]
+    col = (188, 34, 30, 235)
+    e1 = min(1.0, ease(prog) * 2.0)                       # nét 1 vẽ nửa đầu
+    e2 = max(0.0, min(1.0, ease(prog) * 2.0 - 1.0))       # nét 2 nửa sau
+    for pts, e in ((p1, e1), (p2, e2)):
+        if e <= 0:
+            continue
+        (x0, y0), (x1, y1) = pts
+        xe, ye = x0 + (x1 - x0) * e, y0 + (y1 - y0) * e
+        d.line([x0, y0, xe, ye], fill=col, width=13)
+        d.ellipse([xe - 6, ye - 6, xe + 6, ye + 6], fill=col)
+
+
+def _fly_in(im, lay, cx, cy, p, rng, side=None, breath=0.0, dust_sp=None):
+    """'BAY VÀO GẮN LÊN TRANG' (kind board): layer bay từ mép gần nhất, vừa bay vừa
+    xoay về vị trí đậu, bóng đổ CO LẠI khi chạm giấy (vật đang lơ lửng → nằm xuống).
+    p đã clamp phía caller; p≥1 = đã nằm yên (deterministic cho item cũ)."""
+    if p <= 0:
+        return
+    e = ease(min(p, 1.0))
+    side = side or ("l" if cx < W / 2 else "r")
+    sx = -lay.width - 80 if side == "l" else W + lay.width + 80
+    sy = cy - 48       # gần như cùng độ cao đích — đường bay không quét qua hàng khác
+    x = sx + (cx - sx) * e
+    y = sy + (cy - sy) * e
+    rot = (14 if side == "l" else -14) * (1 - e)
+    l2 = lay.rotate(rot, expand=True, resample=Image.BICUBIC) if abs(rot) > 0.15 else lay
+    # bóng THỞ ±1.6px (gói sinh động 2026-08-09): giấy nằm trên bàn thật, không dán
+    # chết — sin nguyên chu kỳ IDLE_SEC nên loop vẫn sạch, khung KHÔNG zoom
+    sh = _soft_shadow(l2, blur=14, alpha=0.30 * e,
+                      dy=10 + int((1 - e) * 24) + int(round(breath)))
+    im.paste(sh, (int(x - l2.width / 2), int(y - l2.height / 2)), sh)
+    im.paste(l2, (int(x - l2.width / 2), int(y - l2.height / 2)), l2)
+    if dust_sp is not None:
+        _land_dust(im, x, y + l2.height * 0.42, dust_sp, rng, w=l2.width)
+
+
+def k_board(v, t, base=None):
+    """TRANG HỒ SƠ (user chốt 2026-08-08 đêm: "1 trang giấy trắng, đọc thông tin nào
+    thì thông tin đó BAY VÀO gắn vào trang").
+
+    Cách SYNC với lời đọc: MỖI CUE một thẻ board — item cũ nằm sẵn từ frame 0, item
+    mang `"new": true` bay vào trong intro của cue đó (stagger nếu nhiều). Ranh giới
+    cue có dissolve 0.4s của renderer + nội dung trang giữ nguyên → nhìn liền mạch
+    như MỘT trang giấy sống được đắp dần theo lời kể. Món mới nhất có glow thở.
+
+    items = [{"type": "label|photo|stamp|text|arrow|circle|cross|string", "x","y",
+              "new": true, "t": <đè thời điểm>, ...}] — label: text/size/fastener ·
+    photo: cut (path|idx, qua sticker) + h · stamp: text + stamp:"round|rect" ·
+    text: chữ ink trên highlight vàng · arrow/string: x2,y2 · circle: w,h.
+    ⚠️ Chữ CÓ NGHĨA (label/text/stamp) đặt trên safe_bottom như mọi kind."""
+    im = base.copy()
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    items = v["items"]
+    news = [i for i, it in enumerate(items) if it.get("new")]
+    if not news:
+        news = list(range(len(items)))        # thẻ đứng một mình: tất cả lần lượt bay vào
+    stagger = v.get("stagger", 0.7)
+    newest = news[-1] if news else None
+    for i, it in enumerate(items):
+        rng = seeded("board", i, it.get("text", str(it.get("cut", ""))))
+        if i in news:
+            t0 = it.get("t", 0.35 + news.index(i) * stagger)
+            p = (t - t0) / 0.55
+        else:
+            p = 1.0                            # đã nằm trên trang từ cue trước
+        if p <= 0:
+            continue
+        typ = it.get("type", "label")
+        x, y = it.get("x", W // 2), it.get("y", H // 2)
+        if typ == "arrow":
+            prop_arrow(im, (x, y), (it["x2"], it["y2"]), p, bend=it.get("bend", 0.18))
+            d = ImageDraw.Draw(im)
+            continue
+        if typ == "string":
+            prop_string(im, (x, y), (it["x2"], it["y2"]), p)
+            d = ImageDraw.Draw(im)
+            continue
+        if typ == "circle":
+            prop_circle(im, x, y, it.get("w", 320), it.get("h", 210), p, rng)
+            continue
+        if typ == "cross":
+            prop_mark(im, "x", x, y, it.get("size", 60), min(p, 1.04), rng)
+            continue
+        if typ == "stamp":
+            if i == newest and p >= 1:
+                paste_glow(im, x, y, 230, P["accent"], 0.14 * osc(v, t))
+            prop_stamp(im, x, y, it["text"], p, kind=it.get("stamp", "rect"), rng=rng)
+            d = ImageDraw.Draw(im)
+            continue
+        if typ == "row":
+            # HÀNG BẢNG 3 cột: ①số ②tiêu đề trên giấy xé ③CHI TIẾT chữ ink — user chốt
+            # 2026-08-09 ("cái tao cần là chi tiết", trình bày kiểu bảng, không đè nhau).
+            # Vào bằng DROP TẠI CHỖ 26px + fade, không bay ngang.
+            pe2 = min(p, 1.0)
+            rowW = it.get("w", 1660)
+            rowH = 124
+            lay = Image.new("RGBA", (rowW, rowH), (0, 0, 0, 0))
+            dd = ImageDraw.Draw(lay)
+            if props_ready("circle_2"):
+                chip = load_prop("circle_2").resize((92, 92), Image.LANCZOS)
+                lay.paste(chip, (4, rowH // 2 - 46), chip)
+            _tw(dd, (50, rowH // 2), str(it.get("n", "")), _f("black", 54),
+                (188, 34, 30), anchor="mm")
+            # tiêu đề trên dải giấy xé THẤP (không dùng _label_layer — canvas của nó
+            # chừa chỗ đinh ghim nên cao hơn hàng, tràn khung)
+            ft = _fit(it["title"], "black", 470, it.get("size", 46), 34)
+            tw2 = _wide(ft, it["title"])
+            paper = load_prop("label_strip").resize((tw2 + 84, 90), Image.LANCZOS)
+            lay.paste(paper, (118, rowH // 2 - 45), paper)
+            _tw(dd, (118 + (tw2 + 84) // 2, rowH // 2 - 2), it["title"], ft,
+                (48, 38, 30), anchor="mm")
+            detail = it.get("detail", "")
+            # MÁY CHỮ (gói sinh động 2026-08-09): hàng MỚI thì chi tiết VIẾT DẦN
+            # ~14 ký/giây như có người đang điền hồ sơ theo lời đọc; hàng cũ hiện đủ.
+            if i in news and detail:
+                ns = max(0, int((t - t0 - 0.45) * 14.0))
+                detail_show = detail[:ns]
+            else:
+                detail_show = detail
+            fd = _fit(detail, "bold", rowW - 740, 40, 30)
+            dlines = _wrap(detail_show, fd, rowW - 740)[:2] if detail_show else []
+            adv = int(fd.size * 1.28)
+            nfull = len(_wrap(detail, fd, rowW - 740)[:2]) if detail else 0
+            dy0 = rowH // 2 - (adv * max(nfull, 1)) // 2 + 2
+            for j, ln in enumerate(dlines):
+                _tw(dd, (720, dy0 + j * adv), ln, fd, (70, 64, 56))
+            if i == newest and p >= 1:
+                paste_glow(im, x, y, rowW // 3, P["accent"], 0.10 * osc(v, t))
+            yo = int((1 - ease(pe2)) * -26)
+            if pe2 < 1:
+                lay.putalpha(lay.getchannel("A").point(lambda a: int(a * min(1, pe2 * 1.8))))
+            br = 1.6 * math.sin(2 * math.pi * idle_u(v, t) / IDLE_SEC + i * 1.3)
+            sh = _soft_shadow(lay, blur=10, alpha=0.22 * pe2, dy=8 + int(round(br)))
+            im.paste(sh, (int(x - rowW / 2), int(y - rowH / 2 + yo)), sh)
+            im.paste(lay, (int(x - rowW / 2), int(y - rowH / 2 + yo)), lay)
+            if i in news:
+                _land_dust(im, x, y + rowH * 0.4, t - (t0 + 0.55), rng, w=rowW)
+            # TICK ✓ hàng ĐÃ XONG: cue sau đánh dấu hàng trước ("done": true) —
+            # trang thành checklist đang được điền thật
+            if it.get("done"):
+                _check_mark(im, int(x - rowW / 2) + 50, y - 6,
+                            (t - 0.45) / 0.4, seeded("tick", i), size=44)
+            d = ImageDraw.Draw(im)
+            continue
+        if typ == "photo":
+            cut = it.get("_im")
+            if cut is None:
+                warn_once(f"  ⚠ board item {i}: thiếu ảnh 'cut' → bỏ qua")
+                continue
+            hh_ = it.get("h", 330)
+            lay = cut.resize((max(8, int(cut.width * hh_ / cut.height)), max(8, hh_)),
+                             Image.LANCZOS)
+        elif typ == "text":
+            f = _f("black", it.get("size", 64))
+            tw_ = _wide(f, it["text"])
+            lay = Image.new("RGBA", (tw_ + 48, int(f.size * 1.5)), (0, 0, 0, 0))
+            dd = ImageDraw.Draw(lay)
+            dd.rectangle([0, int(f.size * 0.08), tw_ + 44, int(f.size * 1.22)],
+                         fill=tuple(P["accent"]) + (255,))
+            _tw(dd, (22, int(f.size * 0.12)), it["text"], f, P["ink"])
+        else:
+            lay = _label_layer(it["text"], it.get("size", 50),
+                               it.get("fastener", "pin"), rng)
+            lay = lay.rotate(rng.uniform(-2.6, 2.6), expand=True, resample=Image.BICUBIC)
+        if i == newest and p >= 1:
+            paste_glow(im, x, y, max(lay.size) // 2 + 90, P["accent"], 0.13 * osc(v, t))
+        br = 1.6 * math.sin(2 * math.pi * idle_u(v, t) / IDLE_SEC + i * 1.3)
+        _fly_in(im, lay, x, y, p, rng, side=it.get("from"), breath=br,
+                dust_sp=((p - 1.0) * 0.55) if i in news else None)
+        d = ImageDraw.Draw(im)
+    src_label(d, v.get("source"))
+    return im
+
+
+def prop_decor(im, v):
+    """1 vết đời sống (vết cà phê / vệt mực / kẹp giấy) ở vùng KHÔNG có nghĩa —
+    tầng analog cho nền phẳng, seeded theo thẻ, alpha thấp."""
+    rng = seeded("decor", json.dumps(_clean(v), ensure_ascii=False, sort_keys=True))
+    if rng.random() < 0.45:
+        return
+    name = rng.choice(["stain_coffee", "smudge_ink", "stain_coffee"])
+    prop = load_prop(name)
+    s = rng.uniform(0.5, 0.8) * 420 / max(prop.size)
+    p2 = prop.resize((max(8, int(prop.width * s)), max(8, int(prop.height * s))),
+                     Image.LANCZOS).rotate(rng.uniform(0, 360), expand=True)
+    p2.putalpha(p2.getchannel("A").point(lambda a: int(a * 0.5)))
+    x = rng.choice([rng.randint(40, 260), rng.randint(W - 420, W - 160)])
+    y = rng.randint(SB + 20, H - 120)
+    im.paste(p2, (x, y), p2)
+
+
+def mock_subs(im):
+    """Vẽ MOCK phụ đề lên PNG duyệt (--sub-mock): kiểm cùng lúc 'chữ có nghĩa không bị đè'
+    + 'nửa dưới không còn trống'. Chỉ dùng lúc duyệt, KHÔNG vào mp4.
+
+    🔴 SỬA 2026-08-11 — bản cũ vẽ **hộp pill trắng đục** `fill=(252,252,250,245)` ở y=640
+    và 770. Sai hai chuyện, và nó làm người duyệt kết luận sai:
+      ① Từ 2026-08-10 **mọi kênh dùng `sub_style: "outline"`** (`audience-45plus.md` §3.1)
+         = chữ trần có viền, NỀN TRONG SUỐT. Không kênh nào còn `pill` ⇒ mock vẽ hộp đục
+         là mô phỏng một thứ không còn tồn tại.
+      ② Nó vẽ CAO hơn thực tế: outline có `MarginV=34` nên phụ đề nằm ở dải **y > SB**
+         (SB = safe_bottom, co-dai = 678). Mock cũ tràn lên 640 ⇒ trông như đè cả chữ
+         nằm trong vùng an toàn.
+    Hậu quả thật: khi duyệt video 18 đã BỎ OAN dòng `verdict` của 4 thẻ compare (y≈610)
+    vì tưởng hộp phụ đề luôn che nó. Mock sai thì vòng duyệt mắt sai theo."""
+    d = ImageDraw.Draw(im, "RGBA")
+    f = _f("bold", 54)
+    for i, s in enumerate(("ここに焼き込み字幕の一行目が入ります", "二行目はここまで伸びます")):
+        y = SB + 40 + i * 116
+        _tw(d, (W / 2, y), s, f, (255, 255, 255), anchor="ma",
+            stroke=6, sfill=(12, 13, 16))
+    return im
+
+
+# ══════════════════════════════════════════════════════════════════ ảnh nguồn
+
+def _keep_main_component(alpha, min_frac=0.06, scale=8):
+    """Bỏ mảnh alpha RỜI (vệt ma, mảnh nền sót của rembg)."""
+    import numpy as np
+    a = np.asarray(alpha, dtype=np.uint8)
+    small = np.asarray(alpha.resize((max(1, alpha.size[0] // scale),
+                                     max(1, alpha.size[1] // scale)), Image.BILINEAR),
+                       dtype=np.uint8) > 0
+    lab = np.zeros(small.shape, dtype=np.int32)
+    cur, hh, ww = 0, *small.shape
+    for sy in range(hh):
+        for sx in range(ww):
+            if small[sy, sx] and lab[sy, sx] == 0:
+                cur += 1
+                stack = [(sy, sx)]
+                lab[sy, sx] = cur
+                while stack:
+                    y, x = stack.pop()
+                    for ny, nx in ((y - 1, x), (y + 1, x), (y, x - 1), (y, x + 1)):
+                        if 0 <= ny < hh and 0 <= nx < ww and small[ny, nx] and lab[ny, nx] == 0:
+                            lab[ny, nx] = cur
+                            stack.append((ny, nx))
+    if cur <= 1:
+        return alpha
+    sizes = np.bincount(lab.ravel())[1:]
+    keep = (np.nonzero(sizes >= sizes.max() * min_frac)[0] + 1).tolist()
+    mask = Image.fromarray((np.isin(lab, keep).astype("uint8") * 255), "L").resize(
+        alpha.size, Image.BILINEAR)
+    return Image.fromarray((a * (np.asarray(mask, dtype=np.uint8) > 127)).astype("uint8"), "L")
+
+
+def load_cutout(path, lo=140, hi=230, max_h=900):
+    """PNG RGBA từ rembg: lọc haze + bỏ mảnh rời + trim bbox.
+    ⚠️ Đo thật (ảnh kabocha): vệt ma nằm ở alpha 60–180, phần đặc ≥240 → cắt <lo, ramp
+    lo→hi giữ mép antialias. **Floor thấp kiểu 28/40 KHÔNG diệt được haze — đừng thử lại.**"""
+    im = Image.open(path).convert("RGBA")
+    a = im.getchannel("A").point(
+        lambda v: 0 if v < lo else (255 if v >= hi else int((v - lo) * 255 / (hi - lo))))
+    im.putalpha(_keep_main_component(a))
+    bb = im.getbbox()
+    im = im.crop(bb) if bb else im
+    if im.size[1] > max_h:                     # ảnh gốc 6000px: resize mỗi frame là vô ích
+        im = im.resize((int(im.size[0] * max_h / im.size[1]), max_h), Image.LANCZOS)
+    return im
+
+
+def cutout_of(src, cache_dir):
+    """rembg có cache theo mtime nguồn. Lần đầu hơi lâu (nạp model)."""
+    src = Path(src)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    dst = cache_dir / f"cut_{src.stem}.png"
+    if not dst.exists() or dst.stat().st_mtime < src.stat().st_mtime:
+        print(f"  → rembg tách nền {src.name}…")
+        from rembg import remove
+        remove(Image.open(src)).save(dst)
+    return load_cutout(dst)
+
+
+def _alpha_frac(im):
+    """Tỉ lệ pixel có alpha đáng kể — đo 'chủ thể chiếm bao nhiêu khung'."""
+    import numpy as np
+    return float((np.asarray(im.getchannel("A")) > 60).mean())
+
+
+def _bg_subject(src, cache_dir):
+    """Chủ thể của ẢNH NỀN cho parallax: rembg (cache mtime) + lọc haze, giữ nguyên
+    kích thước & vị trí (khác load_cutout: KHÔNG trim, không resize)."""
+    src = Path(src)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    dst = cache_dir / f"cut_{src.stem}.png"
+    if not dst.exists() or dst.stat().st_mtime < src.stat().st_mtime:
+        print(f"  → rembg tách chủ thể parallax {src.name}…")
+        from rembg import remove
+        remove(Image.open(src)).save(dst)
+    im = Image.open(dst).convert("RGBA")
+    a = im.getchannel("A").point(
+        lambda q: 0 if q < 140 else (255 if q >= 230 else int((q - 140) * 255 / 90)))
+    im.putalpha(_keep_main_component(a))
+    return im
+
+
+def cover(im, w=W, h=H):
+    sc = max(w / im.width, h / im.height)
+    im = im.resize((int(im.width * sc) + 1, int(im.height * sc) + 1), Image.LANCZOS)
+    return im.crop(((im.width - w) // 2, (im.height - h) // 2,
+                    (im.width - w) // 2 + w, (im.height - h) // 2 + h))
+
+
+def find_slide(img_dir, idx):
+    if not img_dir:
+        return None
+    for ext in (".jpg", ".jpeg", ".png"):
+        for c in (img_dir / f"slide_{idx:02d}{ext}", img_dir / "_raw" / f"slide_{idx:02d}{ext}"):
+            if c.exists():
+                return c
+    return None
+
+
+def prep_base(v, bg_img):
+    """Nền của thẻ, tính MỘT LẦN mỗi thẻ (đại tu 2026-08-07 — refactor P0).
+
+    Bản cũ `base_frame()` chạy lại mỗi frame (60×/thẻ): rẻ khi nền chỉ là màu phẳng,
+    nhưng treat_photo/grain/duotone thì KHÔNG được phép trả giá đó. build() gọi hàm này
+    một lần, kind nhận `base` và chỉ `base.copy()` mỗi frame.
+
+    Fallback CÓ Ý: khai `bg:"photo"` mà thiếu ảnh → hạ về nền phẳng + in cảnh báo,
+    KHÔNG dim đè hay dựng khung rỗng im lặng. Cờ `v["_photo"]` cho kind biết đang đứng
+    trên ảnh (chọn màu chữ) — key `_` bị _clean strip nên không ảnh hưởng .sig."""
+    if v.get("bg") == "photo" and bg_img is not None:
+        v["_photo"] = True
+        # _light: ảnh minh hoạ CLEAN (tranh sáng) → chữ ink + highlight vàng thay vì
+        # chữ trắng viền (trắng chỉ hợp ảnh đã darken)
+        style = (v.get("photo_style") or VOXSTYLE["photo_treatment"]).lower()
+        v["_light"] = style == "clean"
+        base = treat_photo(cover(bg_img.copy()), v)
+        # PARALLAX 2.5D (đại tu 3 — 2026-08-08): tách chủ thể khỏi nền để camera thở
+        # làm 2 lớp trôi LỆCH TỐC ĐỘ → có chiều sâu thật. Chỉ style "clean" (ảnh AI
+        # pipeline mới — treat là identity nên fg/bg đồng nhất màu); lớp fg đã được
+        # prep_images tách sẵn (v["_pl_cut"], cùng kích thước ảnh gốc).
+        if v.get("_light") and v.get("_pl_cut") is not None:
+            fg = cover(v["_pl_cut"])                  # cùng phép cover với nền
+            frac = _alpha_frac(fg)
+            if 0.04 < frac < 0.62:                    # không chủ thể rõ / choán khung → bỏ
+                bgL = base.copy()
+                m = fg.getchannel("A").filter(ImageFilter.MaxFilter(15))
+                blurred = base.filter(ImageFilter.GaussianBlur(25))
+                bgL.paste(blurred, (0, 0), m)         # vá blur dưới chân fg — khe hở
+                v["_pl_bg"] = bgL                     # lộ ra khi fg trôi chỉ 2–5px
+                v["_pl_fg"] = fg
+            else:
+                v["_pl_bg"] = v["_pl_fg"] = None
+        return base
+    v["_photo"] = False
+    tone = v.get("tone")
+    if tone == "accent":
+        im = Image.new("RGB", (W, H), P["accent"])
+    else:
+        im = Image.new("RGB", (W, H), P["bg"])
+    im = grain(im, key=json.dumps(_clean(v), ensure_ascii=False, sort_keys=True))
+    if props_ready("stain_coffee", "smudge_ink"):
+        prop_decor(im, v)                      # 1 vết đời sống dưới SB — tầng analog
+    return im
+
+
+# ══════════════════════════════════════════════════════════════════ kind: số
+
+def k_stat(v, t, base=None):
+    """Con số khổng lồ đếm lên (+ cột so sánh). Ở kind này SỐ chính là headline —
+    `note` đi xuống dòng phụ nhỏ, không dựng thêm dòng message to (hết chỗ).
+    Đại tu 2026-08-07: ghost number tràn góc dưới-phải lấp khung; có `bars` thì cột
+    nằm trong SIDE PANEL vàng full-height; idle = glow thở sau con số."""
+    im = base.copy()
+    on_ph = v.get("_photo") and not v.get("_light")
+    bars = v.get("bars") or []
+    if bars:
+        side_panel(im, 1400)                      # panel vàng ăn hết mép phải, bleed đáy
+        # (trên ảnh cũng vẽ — khối màu đè 1/4 phải ảnh chính là ngữ pháp Vox)
+    elif not on_ph:
+        ghost_number(im, str(v["big"]) + v.get("unit", ""))
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""), on_photo=on_ph)
+    zt, zb = zone()
+
+    big = str(v["big"])
+    # đuôi quartic: số giảm tốc lâu hơn → đọc điềm hơn ở 30fps (đại tu motion)
+    tc = max(0.0, min(1.0, t / v.get("count_sec", 2.2)))
+    p = 1 - (1 - tc) ** 4
+    digits = big.replace(",", "")
+    # ⚠️ NĂM không có dấu phẩy hàng nghìn (bắt được ở vòng duyệt sheet: 1894 → 「1,894」).
+    is_year = digits.isdigit() and len(digits) == 4 and 1000 <= int(digits) <= 2999
+    use_comma = v.get("comma", not is_year)
+    try:
+        n = int(round(int(digits) * p))
+        shown = f"{n:,}" if use_comma else str(n)
+    except ValueError:
+        shown, p = big, 1.0
+
+    note = v.get("note")
+    box_w = 940 if bars else W - 2 * MARGIN_X
+    # 🔴 ĐẶT CHỖ TRƯỚC cho sub + note rồi mới co hero — KHÔNG kẹp ngược dòng note lên
+    # bằng min(): bản trước làm thế và note bị KÉO LÊN ĐÈ SUB (thấy ở sheet vòng 2).
+    SZ_SUB, SZ_NOTE = 46, 56
+    reserve = (int(SZ_SUB * 1.34) if v.get("sub") else 0) + \
+              (int(SZ_NOTE * 1.30) if note else 0) + 20
+    # 🔴 Chọn cỡ theo CHIỀU CAO MỰC THẬT, không theo cỡ danh nghĩa: mực chữ số chỉ ~72%
+    # em, nên `size = room/1.05` cho ra con số cao ~170px trên vùng 404px — không phải
+    # "hero". Vòng lặp dưới đo bằng `textbbox` rồi hạ dần → số luôn lấp gần hết vùng.
+    target_h = zb - zt - reserve
+    size = min(SZ_HERO, int(target_h / 0.70))
+    while size > SZ_HERO_MIN:
+        fb = _f("black", size)
+        bb = d.textbbox((MARGIN_X, zt), shown, font=fb, anchor="la")
+        if _wide(fb, shown + v.get("unit", "")) <= box_w and bb[3] - bb[1] <= target_h:
+            break
+        size -= 6
+    else:
+        fb = _f("black", SZ_HERO_MIN)
+        warn_once(f"  ⚠ stat '{big}': hero xuống {SZ_HERO_MIN}px — số quá dài hoặc vùng chữ quá hẹp")
+    # 🔴 NEO THEO ĐỈNH MỰC, không theo đỉnh ascender: `textbbox` với anchor "la" trả
+    # bbox[1] > y vẽ (khoảng trống ascender ~15% em). Đo trên khung thật: đặt y=176 thì
+    # mực chữ số bắt đầu ở 245 ⇒ mất 70px và số nhìn nhỏ hơn hẳn vùng nó được cấp.
+    bb = d.textbbox((MARGIN_X, zt), shown, font=fb, anchor="la")
+    zt_draw = zt + 18 - (bb[1] - zt)      # +18 = đệm khỏi gạch vàng kicker (mực sát quá thì chạm)
+    ink = (255, 255, 255) if on_ph else P["ink"]
+    # idle: glow ấm THỞ sau con số (1 cycle/4s) — vẽ TRƯỚC chữ nên số không đổi hình
+    gb = d.textbbox((MARGIN_X, zt_draw), shown, font=fb, anchor="la")
+    paste_glow(im, (gb[0] + gb[2]) / 2, (gb[1] + gb[3]) / 2,
+               max(220, (gb[2] - gb[0]) // 2 + 90), P["accent"], 0.10 * osc(v, t))
+    d = ImageDraw.Draw(im)
+    _tw(d, (MARGIN_X, zt_draw), shown, fb, ink,
+        stroke=8 if on_ph else 0, sfill=P["ink"])
+    # 🔴 ĐO MỰC THẬT bằng `d.textbbox` (toạ độ ảnh), KHÔNG dùng `font.getbbox`:
+    # `font.getbbox` tính từ ĐỈNH ASCENDER, mà chữ số nằm thấp hơn ascender ~15% ⇒ sub bị
+    # đặt LÊN TRÊN đáy chữ số. Đo thật vòng duyệt 3: đáy số ở y≈450 mà công thức cũ cho
+    # 395. Đây là chỗ đã sai hai lần — đừng "tối ưu" lại bằng hệ số.
+    ib = d.textbbox((MARGIN_X, zt_draw), shown, font=fb, anchor="la")
+    if v.get("unit"):
+        fu = _f("bold", max(56, int(fb.size * 0.32)))
+        _tw(d, (ib[2] + 20, ib[3] - fu.size), v["unit"], fu, ink,
+            stroke=6 if on_ph else 0, sfill=P["ink"])
+    y = ib[3] + 14
+    if v.get("sub"):
+        fs = _fit(v["sub"], "med", box_w, SZ_SUB, 34)
+        _tw(d, (MARGIN_X + 4, y), v["sub"], fs,
+            (222, 222, 218) if on_ph else P["muted"],
+            stroke=3 if on_ph else 0, sfill=P["ink"])
+        y += int(fs.size * 1.34)
+    if bars:
+        _panel_bars(im, bars, t, v)
+    if note:
+        fn = _fit(note, "black", (1340 if bars else W - MARGIN_X) - MARGIN_X, SZ_NOTE, 38)
+        if on_ph:
+            _tw(d, (MARGIN_X, y), note, fn, (255, 255, 255), stroke=6, sfill=P["ink"])
+        else:
+            _tw(d, (MARGIN_X, y), note, fn, P["ink"])
+    src_label(d, v.get("source"), on_photo=on_ph)
+    return im
+
+
+def _panel_bars(im, bars, t, v):
+    """Cột so sánh TRONG side panel vàng (stat) — nhãn TRÊN cột vì panel hẹp.
+    Cột hot = ink đặc, còn lại trắng viền ink. Panel bleed đáy nên cột được ăn sâu
+    hơn SB một chút, nhưng NHÃN/SỐ vẫn kẹp trên SB."""
+    d = ImageDraw.Draw(im)
+    x0, wmax = 1460, 380
+    hot = v.get("hot", 0) % len(bars)
+    mx = max(b[1] for b in bars) or 1
+    gap = max(96, min(150, int((SB - Y_TOP - 40) / max(len(bars), 1))))
+    bh = max(40, min(72, gap - 58))
+    for i, (lab, val) in enumerate(bars):
+        yy = Y_TOP + 26 + i * gap
+        bp = ease((t - 1.4 - i * 0.35) / 1.1)
+        L = int(wmax * (val / mx) * bp)
+        _tw(d, (x0, yy), str(lab), _f("bold", 38), P["ink"])
+        by = yy + 48
+        if i == hot:
+            d.rectangle([x0, by, x0 + L, by + bh], fill=P["ink"])
+        else:
+            d.rectangle([x0, by, x0 + L, by + bh], fill=(255, 255, 255),
+                        outline=P["ink"], width=4)
+        if bp > 0.98:
+            fv = _f("black", 44)
+            s = f"{val:,}"
+            vx = x0 + L + 16
+            if vx + _wide(fv, s) > W - 24:
+                _tw(d, (x0 + L - 12, by + bh / 2), s,
+                    fv, (255, 255, 255) if i == hot else P["ink"], anchor="rm",
+                    sfill=P["ink"] if i == hot else None)
+            else:
+                _tw(d, (vx, by + bh / 2), s, fv, P["ink"], anchor="lm")
+            if i == hot:
+                paste_glow(im, min(vx + 40, W - 60), by + bh / 2, 120, (255, 255, 255),
+                           0.14 * osc(v, t))
+                d = ImageDraw.Draw(im)
+
+
+def _bars(d, bars, t, x, y, w, gap=130, t0=1.4, hot=0):
+    """Cột ngang mọc dần (k_bar). `gap` do caller tính từ vùng chữ. `hot` = index cột
+    ĐANG NÓI (tô đỏ; cột đắt nhất là cột CUỐI thì khai `"hot": -1`).
+    Trả về (x_cuối, y_giữa) của cột hot — caller đặt glow idle."""
+    mx = max(b[1] for b in bars) or 1
+    bh = max(38, min(110, gap - 46))              # 74→110 (đại tu): cột BÉO lấp khung
+    hot = hot % len(bars)
+    hot_pos = None
+    for i, (lab, val) in enumerate(bars):
+        yy = y + i * gap
+        bp = ease((t - t0 - i * 0.35) / 1.1)
+        L = int(w * (val / mx) * bp)
+        col = P["warn"] if i == hot else P["cool"]
+        d.rectangle([x, yy, x + L, yy + bh], fill=col)
+        _tw(d, (x - 18, yy + bh / 2), lab, _f("bold", max(40, int(bh * 0.62))), P["ink"],
+            anchor="rm")
+        if bp > 0.98:
+            # ⚠️ Nhãn số phải KẸP trong khung: bản đầu đặt cứng x+L+22 → 50,173 bị cắt
+            # thành 「50,17」. Hết chỗ ngoài thì vẽ TRONG cột, chữ trắng.
+            fv = _f("black", max(40, int(bh * 0.78)))
+            s = f"{val:,}"
+            if x + L + 20 + _wide(fv, s) <= W - MARGIN_X:
+                _tw(d, (x + L + 20, yy + bh / 2), s, fv, col, anchor="lm")
+                if i == hot:
+                    hot_pos = (x + L + 20 + _wide(fv, s) / 2, yy + bh / 2)
+            else:
+                _tw(d, (x + L - 18, yy + bh / 2), s, fv, (255, 255, 255), anchor="rm", sfill=col)
+                if i == hot:
+                    hot_pos = (x + L - 60, yy + bh / 2)
+    return hot_pos
+
+
+def k_bar(v, t, base=None):
+    """Chart cột — 2+ số so nhau. Cột đầu là cột ĐANG NÓI (đỏ), còn lại xanh.
+    Đại tu 2026-08-07: thước dọc accent full-height dựng khung + ghost giá trị hot +
+    idle glow sau con số hot."""
+    im = base.copy()
+    bars = v["bars"]
+    hot_i = v.get("hot", 0) % len(bars)
+    ghost_number(im, f"{bars[hot_i][1]:,}")
+    d = ImageDraw.Draw(im)
+    # thước dọc accent — mảnh nhưng chạy hết khung, phá cảm giác "nửa dưới trống"
+    d.rectangle([MARGIN_X + 232, 0, MARGIN_X + 244, H], fill=P["accent"])
+    kicker(d, v.get("kicker", ""))
+    # 🔴 VÁ 2026-08-12 (co-dai video 19): dải vàng highlight sau tiêu đề chỉ được nối
+    #   vào `flow`/`timeline`; bar/line/compare/process gọi head_line() TRẦN nên tiêu đề
+    #   mực đậm nằm trên ảnh tối là MẤT CHỮ. Docstring head_line ghi rõ highlight là
+    #   "bảo hiểm legibility khi chữ nằm trên ảnh" — chỉ là chưa ai wire vào 4 kind này.
+    #   Chỉ bật khi thẻ CÓ ảnh (_photo) nên kênh không dùng ảnh ở các kind này không đổi gì.
+    on_ph = v.get("_photo", False) and not v.get("_light")
+    hh = head_line(d, v.get("title") or v.get("note", ""), highlight=on_ph)
+    zt, zb = zone(hh)
+    gap = max(70, int((zb - zt) / max(len(bars), 1)))
+    hp = _bars(d, bars, t, x=MARGIN_X + 290, y=zt + 18, w=W - MARGIN_X * 2 - 490, gap=gap,
+               hot=v.get("hot", 0))
+    if hp:
+        paste_glow(im, hp[0], hp[1], 130, P["warn"], 0.12 * osc(v, t))
+    src_label(d, v.get("source"))
+    return im
+
+
+def k_line(v, t, base=None):
+    """Đường xu hướng vẽ dần + nhãn điểm cuối. points = [[nhãn, giá trị], …]
+    Đại tu 2026-08-07: FILL màu dưới đường tràn tới đáy khung (khối màu lớn kiểu Vox)
+    + ghost giá trị cuối + idle pulse-ring ở điểm chốt."""
+    im = base.copy()
+    ghost_number(im, str(v.get("last_label") or f"{v['points'][-1][1]:,}"))
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    # 🔴 VÁ 2026-08-12 (co-dai video 19): dải vàng highlight sau tiêu đề chỉ được nối
+    #   vào `flow`/`timeline`; bar/line/compare/process gọi head_line() TRẦN nên tiêu đề
+    #   mực đậm nằm trên ảnh tối là MẤT CHỮ. Docstring head_line ghi rõ highlight là
+    #   "bảo hiểm legibility khi chữ nằm trên ảnh" — chỉ là chưa ai wire vào 4 kind này.
+    #   Chỉ bật khi thẻ CÓ ảnh (_photo) nên kênh không dùng ảnh ở các kind này không đổi gì.
+    on_ph = v.get("_photo", False) and not v.get("_light")
+    hh = head_line(d, v.get("title") or v.get("note", ""), highlight=on_ph)
+    zt, zb = zone(hh)
+    pts = v["points"]
+    x0, x1 = MARGIN_X + 40, W - MARGIN_X - 230
+    y0, y1 = zt + 40, zb - 52                     # chừa 52px dưới trục cho nhãn mốc
+    vmax = max(p[1] for p in pts) or 1
+    vmin = min(min(p[1] for p in pts), 0)
+    poly = [(x0 + (x1 - x0) * i / max(len(pts) - 1, 1),
+             y1 - (y1 - y0) * (p[1] - vmin) / max(vmax - vmin, 1)) for i, p in enumerate(pts)]
+    prog = ease(t / 2.2)
+    shown = poly[:max(2, int(len(poly) * prog))]
+    # khối màu dưới đường — TRÀN qua trục xuống đáy khung (bleed dưới SB là thiết kế)
+    if len(shown) >= 2:
+        ImageDraw.Draw(im, "RGBA").polygon(
+            shown + [(shown[-1][0], H), (shown[0][0], H)], fill=P["warn"] + (36,))
+        d = ImageDraw.Draw(im)
+    d.line([x0 - 30, y1, x1 + 70, y1], fill=P["line"], width=5)
+    d.line(shown, fill=P["warn"], width=13, joint="curve")
+    for i, (lab, val) in enumerate(pts):
+        if prog < (i / max(len(pts) - 1, 1)) - 0.02:
+            continue
+        cx, cy = poly[i]
+        d.ellipse([cx - 13, cy - 13, cx + 13, cy + 13], fill=P["warn"])
+        _tw(d, (cx, y1 + 14), str(lab), _f("bold", 36), P["muted"], anchor="ma")
+    if prog > 0.96:
+        cx, cy = poly[-1]
+        s = str(v.get("last_label") or f"{pts[-1][1]:,}")
+        _tw(d, (cx + 28, cy), s, _f("black", 92), P["warn"], anchor="lm")
+        # idle: vòng pulse lan từ điểm chốt (2 cycles — nhịp ticker "đang sống")
+        g = osc(v, t, 2)
+        draw_ring(im, cx, cy, 18 + 26 * g, P["warn"], 0.55 * (1 - g))
+        d = ImageDraw.Draw(im)
+    src_label(d, v.get("source"))
+    return im
+
+
+def k_dot(v, t, base=None):
+    """Unit chart — 1 chấm = N đơn vị, phần "đang nói" tô accent.
+    Ngôn ngữ Vox mạnh nhất cho tỉ lệ người ("95% ở trong nhà").
+    Đại tu 2026-08-07: ghost % + idle pulse-ring ở chấm cuối cùng vừa cháy."""
+    im = base.copy()
+    ghost_number(im, str(v.get("hit_label") or f"{v['hit']}"))
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    hh = head_line(d, v.get("note") or v.get("title", ""))
+    zt, zb = zone(hh)
+    total, hit = int(v["total"]), int(v["hit"])
+    cols = int(v.get("cols", 20))
+    rows = math.ceil(total / cols)
+    grid_w = W - 2 * MARGIN_X - 480                # chừa 480px bên phải cho nhãn %
+    step = int(min(grid_w / cols, (zb - zt) / max(rows, 1)))
+    r = max(7, (step - 8) // 2)
+    prog = ease(t / 2.4)
+    last_on = None
+    for i in range(total):
+        cx = MARGIN_X + (i % cols) * step + step // 2
+        cy = zt + (i // cols) * step + step // 2
+        on = i < hit and i < max(1, hit * prog)
+        if on:
+            last_on = (cx, cy)
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=P["warn"] if on else P["line"])
+    if prog > 0.98 and last_on:
+        g = osc(v, t, 2)
+        draw_ring(im, last_on[0], last_on[1], r + 6 + 22 * g, P["warn"], 0.55 * (1 - g), 6)
+        d = ImageDraw.Draw(im)
+    lab = v.get("hit_label") or f"{hit}/{total}"
+    fl = _fit(lab, "black", 440, 148, 72)
+    _tw(d, (W - MARGIN_X, zt + 6), lab, fl, P["warn"], anchor="ra")
+    if v.get("unit_note"):
+        _tw(d, (W - MARGIN_X, zt + fl.size + 30), v["unit_note"], _f("med", 38),
+            P["muted"], anchor="ra")
+    src_label(d, v.get("source"))
+    return im
+
+
+# ══════════════════════════════════════════════════════════════════ kind: ảnh thật
+
+def k_flow(v, t, base=None):
+    """ẢNH THẬT full khung + mũi tên đỏ tự vẽ + chữ đè. Chữ ký Vox — đây là kind
+    MẶC ĐỊNH cho mọi beat nói về vật, không phải kind hiếm.
+
+    🔴 `body` của bản cũ nằm ở y=682/734 → BỊ HỘP PHỤ ĐỀ ĐÈ. Nay mọi dòng neo theo SB.
+    Đại tu 2026-08-07: nền qua treat_photo (đậm + gradient đen đáy, KHÔNG scrim trắng);
+    head = highlighter vàng + chữ ink (đọc được trên MỌI ảnh, an toàn 45+); idle =
+    arrowhead 'press' + glow pin đầu."""
+    im = base.copy()
+    on_ph = v.get("_photo", False)
+    dark = on_ph and not v.get("_light")
+    if not on_ph and v.get("bg") == "photo":
+        warn_once("  ⚠ flow thiếu ảnh nền → nền phẳng (fetch ảnh rồi dựng lại)")
+    d = ImageDraw.Draw(im)
+    # 🔴 flow là kind DUY NHẤT đặt message ở ĐÁY: ảnh phủ trọn khung nên headline-first
+    # sẽ che mất chủ thể. Neo theo SB, không phải số cứng (bản cũ để body ở y=682/734
+    # → bị hộp phụ đề đè mất chữ). Tính TRƯỚC để mũi tên/pin biết đường tránh.
+    band_top = SB
+    if v.get("head"):
+        nb = 2 if v.get("body") else 0
+        fh = _fit(v["head"], "black", W - 2 * MARGIN_X, SZ_HEAD, SZ_HEAD_MIN)
+        band_top = SB - int(fh.size * 1.26) - nb * 54 - 12
+
+    # ĐẢO THỨ TỰ VẼ (user 2026-08-09: "text đừng che mũi tên"): băng chữ vẽ TRƯỚC,
+    # mũi tên/pin vẽ SAU → annotation nằm TRÊN như người thật vẽ đè lên tài liệu.
+    # (Spec vẫn nên tránh cho mũi tên cắt ngang CHỮ — tool chỉ bảo đảm không bị nuốt.)
+    if v.get("head"):
+        hy = band_top + head_line(d, v["head"], band_top, highlight=on_ph)
+        if v.get("body") and t > 1.6:
+            for i, ln in enumerate(v["body"][:2]):
+                if dark:
+                    _tw(d, (MARGIN_X + 4, hy + 6 + i * 54), ln, _f("med", 42),
+                        (245, 245, 242), stroke=4, sfill=P["ink"])
+                else:
+                    _tw(d, (MARGIN_X + 4, hy + 6 + i * 54), ln, _f("med", 42), (60, 62, 70))
+
+    use_props = props_ready("arrow_straight", "arrow_curve", "label_tag", "pin_red")
+    hp = 1 + 0.12 * osc(v, t)                     # idle: đầu mũi tên 'nhấn' nhẹ 1 cycle
+    for i, a in enumerate(v.get("arrows", [])):
+        ap = ease((t - 0.6 - i * 0.5) / 1.8)
+        if use_props:
+            # đại tu 2 (2026-08-08): mũi tên SÁP THẬT thay polyline — chữa "mũi tên thô"
+            prop_arrow(im, (a[0], a[1]), (a[2], a[3]), ap,
+                       bend=a[4] if len(a) > 4 else .22)
+            d = ImageDraw.Draw(im)
+        else:
+            arrow(d, curve((a[0], a[1]), (a[2], a[3]), a[4] if len(a) > 4 else .22),
+                  P["warn"], 15, int(36 * hp), ap)
+    for i, lb in enumerate(v.get("pins", [])):        # nhãn ghim vào vị trí trên ảnh
+        pe = ease_back((t - 0.9 - i * 0.4) / 0.45)
+        if pe <= 0:
+            continue
+        x, y, s = lb[0], lb[1], lb[2]
+        f = _f("black", max(SZ_LABEL_MIN, lb[3] if len(lb) > 3 else 56))
+        if y > band_top - f.size * 1.0:               # ⚠️ pin không được lấn dải message
+            warn_once(f"  ⚠ flow pin '{s}' ở y={y} lấn dải message/phụ đề (mốc {int(band_top)}) → dời lên")
+            y = int(band_top - f.size * 1.15)
+        if i == 0:
+            paste_glow(im, x, y, 150, P["accent"], 0.15 * osc(v, t))
+            d = ImageDraw.Draw(im)
+        if use_props:
+            sw = 0.45 * math.sin(2 * math.pi * idle_u(v, t) / IDLE_SEC + i * 2.1)
+            prop_label(im, x, y, s, pe, rng=seeded("flowpin", s, i),
+                       size=max(SZ_LABEL_MIN, lb[3] if len(lb) > 3 else 52), sway=sw)
+            d = ImageDraw.Draw(im)
+        else:
+            fs = _f("black", max(SZ_LABEL_MIN, int((lb[3] if len(lb) > 3 else 56) *
+                                                   (0.85 + 0.15 * pe))))
+            _tw(d, (x, y), s, fs, (255, 255, 255), anchor="mm", stroke=8, sfill=P["ink"])
+    kicker(d, v.get("kicker", ""), on_photo=dark)
+    src_label(d, v.get("source"), on_photo=dark)
+    return im
+
+
+def k_collage(v, t, base=None):
+    """2–4 cutout ảnh thật xếp lớp + nhãn + dấu ✗/○ — paper-collage kiểu Vox.
+    items = [{"cut": <path|idx>, "label": "…", "mark": "x"|"o"|None}]
+    Đại tu 2026-08-07: cutout là STICKER die-cut (viền trắng + bóng, prep_images làm
+    sẵn), được BLEED xuống dưới SB (~SB+140) cho ảnh TO thật; blob màu sau item giữa;
+    nhãn trên 'tape chip' trắng nghiêng; idle = item đầu thở ±0.4°."""
+    im = base.copy()
+    d = ImageDraw.Draw(im)
+    items = v["items"][:4]
+    n = len(items)
+    # blob accent mờ sau item giữa — khối màu lớn, nửa dưới SB (trang trí, được đè)
+    rngb = seeded("blob", v.get("title", ""), n)
+    bx = MARGIN_X + (W - 2 * MARGIN_X) * (0.5 if n != 2 else 0.28) + rngb.randint(-40, 40)
+    paste_glow(im, bx, SB - 40, 380, P["accent"], 0.55)
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    # ⚠️ collage: ẢNH là nội dung → head dùng cỡ NÉN (đủ đọc, không ăn chỗ ảnh).
+    # Với vùng chữ ~400px của kênh, head cỡ đầy 112px chỉ để lại 237px cho 3 ảnh → cutout
+    # cao ~156px, nhìn như icon (thấy ở A/B vòng 1).
+    hh = head_line(d, v.get("title") or v.get("note", ""), size=88)
+    top, bot_msg = zone(hh)
+    bot = min(H - 150, SB + 140)                  # BLEED: đáy ảnh được xuống dưới SB
+    cw = (W - 2 * MARGIN_X) // n
+    ch = bot - top
+    rng = seeded(v.get("title", ""), n)
+    wob = 0.4 * math.sin(2 * math.pi * idle_u(v, t) / IDLE_SEC)   # idle ±0.4°, chu kỳ 4s
+    for i, it in enumerate(items):
+        pe = ease_back((t - 0.3 - i * 0.45) / 0.5)
+        if pe <= 0:
+            continue
+        cut = it.get("_im")
+        cx = MARGIN_X + cw * i + cw // 2
+        tilt = rng.uniform(-3.5, 3.5) + (wob if i == 0 else 0)
+        if cut is not None:
+            hh_i = int(ch * 0.80 * (0.9 + 0.1 * min(pe, 1.0)))
+            ww = int(cut.size[0] * hh_i / cut.size[1])
+            if ww > cw - 16:
+                ww, hh_i = cw - 16, int(cut.size[1] * (cw - 16) / cut.size[0])
+            if hh_i < 300 and i == 0:
+                warn_once(f"  ⚠ collage: ảnh chỉ cao {hh_i}px — {n} ô là quá nhiều. "
+                      f"Bớt về 2 ô, hoặc chuyển sang flow (1 ảnh + annotation).")
+            cur = cut.resize((max(ww, 8), max(hh_i, 8)), Image.LANCZOS).rotate(
+                tilt, expand=True, resample=Image.BICUBIC)
+            if it.get("mark") == "x":
+                cur = to_gray(cur)
+            im.paste(cur, (int(cx - cur.size[0] / 2), top), cur)
+            d = ImageDraw.Draw(im)
+            ly = top + cur.size[1] - 26
+        else:
+            d.rounded_rectangle([cx - cw // 2 + 24, top, cx + cw // 2 - 24, top + int(ch * 0.62)],
+                                24, fill=P["panel"], outline=P["line"], width=6)
+            ly = top + int(ch * 0.66)
+        ly = min(ly, SB - 86)                     # nhãn = chữ CÓ NGHĨA → kẹp trên SB
+        if it.get("label"):
+            if props_ready("label_tag", "tape_1"):
+                sw = 0.35 * math.sin(2 * math.pi * idle_u(v, t) / IDLE_SEC + i * 1.7)
+                prop_label(im, cx, ly + 30, it["label"], min(pe, 1.0),
+                           rng=seeded("colab", it["label"], i), size=50,
+                           fastener="tape", max_w=cw - 20, sway=sw)
+                d = ImageDraw.Draw(im)
+            else:
+                f = _fit(it["label"], "bold", cw - 60, 62, SZ_LABEL_MIN)
+                lw = _wide(f, it["label"])
+                chip = Image.new("RGBA", (lw + 56, int(f.size * 1.5)), (0, 0, 0, 0))
+                dd = ImageDraw.Draw(chip)
+                dd.rectangle([0, 0, chip.size[0] - 1, chip.size[1] - 1],
+                             fill=(255, 255, 255, 240),
+                             outline=(210, 208, 200, 255), width=2)
+                _tw(dd, (28, int(f.size * 0.14)), it["label"], f, P["ink"])
+                chip = chip.rotate(rng.uniform(-2.0, 2.0), expand=True,
+                                   resample=Image.BICUBIC)
+                im.paste(chip, (int(cx - chip.size[0] / 2), int(ly)), chip)
+                d = ImageDraw.Draw(im)
+        if it.get("mark") and t > 0.9 + i * 0.45:
+            if props_ready("cross_x", "circle_2"):
+                prop_mark(im, it["mark"], cx + cw // 2 - 70, top + 34, 40,
+                          ease_back((t - 0.9 - i * 0.45) / 0.4))
+                d = ImageDraw.Draw(im)
+            else:
+                _mark(d, it["mark"], cx + cw // 2 - 70, top + 30, 38)
+    src_label(d, v.get("source"))
+    return im
+
+
+def _mark(d, kind, cx, cy, s):
+    col = P["warn"] if kind == "x" else P["ok"]
+    if kind == "x":
+        d.line([cx - s, cy - s, cx + s, cy + s], fill=col, width=16)
+        d.line([cx + s, cy - s, cx - s, cy + s], fill=col, width=16)
+    else:
+        d.ellipse([cx - s, cy - s, cx + s, cy + s], outline=col, width=16)
+
+
+def k_compare(v, t, base=None):
+    """2 vế ✗/○. ⚠️ CHỈ có nghĩa khi hai bên ĐỐI NHAU — demo đầu đặt ○ cả hai bên
+    thì thẻ mất hết tương phản, nhìn ra ngay ở sheet. Đừng lặp lại.
+    Đại tu 2026-08-07: bỏ 2 panel trắng lơ lửng → SPLIT-FRAME full-height (trái tint
+    đỏ / phải tint xanh, vạch ink giữa, tràn tới đáy khung); idle = glow sau dấu ○."""
+    im = base.copy()
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    # 🔴 VÁ 2026-08-12 (co-dai video 19): dải vàng highlight sau tiêu đề chỉ được nối
+    #   vào `flow`/`timeline`; bar/line/compare/process gọi head_line() TRẦN nên tiêu đề
+    #   mực đậm nằm trên ảnh tối là MẤT CHỮ. Docstring head_line ghi rõ highlight là
+    #   "bảo hiểm legibility khi chữ nằm trên ảnh" — chỉ là chưa ai wire vào 4 kind này.
+    #   Chỉ bật khi thẻ CÓ ảnh (_photo) nên kênh không dùng ảnh ở các kind này không đổi gì.
+    on_ph = v.get("_photo", False) and not v.get("_light")
+    hh = head_line(d, v.get("title") or v.get("note", ""), highlight=on_ph)
+    py0, py1 = zone(hh)
+    mid = W // 2
+    pw = mid - MARGIN_X - 40
+    for i, side in enumerate(("left", "right")):
+        s = v.get(side) or {}
+        bad = s.get("mark", "x") == "x"
+        col = P["warn"] if bad else P["ok"]
+        px = MARGIN_X if i == 0 else mid + 40
+        # tấm màu vế: từ mép khung, TRÀN xuống đáy — phụ đề đè phần dưới là thiết kế
+        x_edge0 = 0 if i == 0 else mid + 5
+        x_edge1 = mid - 5 if i == 0 else W
+        pp = ease_io((t - 0.2 - i * 0.3) / 0.6)
+        if pp > 0:
+            tint_block(im, (x_edge0, int(py0 - 24 * pp), x_edge1, H), col, int(20 * pp))
+            d = ImageDraw.Draw(im)
+        # 🔴 CÓ ẢNH thì BỎ nhãn chữ — ảnh CHÍNH LÀ nhãn (sticker từ prep_images).
+        has_im = s.get("_im") is not None
+        ph_total = py1 - py0
+        if has_im:
+            cut = s["_im"]
+            # ảnh là NHÂN VẬT CHÍNH của vế: cho ăn tới ~SB+150 (bleed), paste ngay dưới
+            # mark — bản đầu ph=265px làm tủ lạnh thành sliver tàng hình (sheet AI demo)
+            ph = int(min(H - 200, SB + 150) - py0 - 46)
+            pwi = int(cut.size[0] * ph / cut.size[1])
+            if pwi > pw - 24:
+                pwi, ph = pw - 24, int(cut.size[1] * (pw - 24) / cut.size[0])
+            cur = cut.resize((max(pwi, 8), max(ph, 8)), Image.LANCZOS)
+            if bad:
+                # chỉ gray-hoá vật TỐI — vật vốn sáng/nhạt (tủ lạnh mint) qua to_gray
+                # thành gần trắng = tàng hình trên tint (bắt ở AI demo). Vật sáng giữ
+                # màu; dấu ✗ + tint đỏ của vế đã nói đủ nghĩa.
+                import numpy as _np
+                a_ = _np.asarray(cur.convert("RGBA"))
+                mask_ = a_[:, :, 3] > 40
+                if mask_.any() and a_[:, :, :3][mask_].mean() < 150:
+                    cur = to_gray(cur)
+            im.paste(cur, (px + (pw - cur.size[0]) // 2, py0 + 46), cur)
+            d = ImageDraw.Draw(im)
+            if s.get("label"):
+                warn_once(f"  ⓘ compare.{side}: có ảnh nên BỎ nhãn '{s['label']}' — "
+                      f"đưa ý đó vào 'verdict' nếu cần chữ")
+        me = ease_back((t - 0.4 - i * 0.4) / 0.45)
+        if me > 0:
+            if not bad:
+                paste_glow(im, px + 74, py0 + 58, 120, P["ok"], 0.16 * osc(v, t))
+                d = ImageDraw.Draw(im)
+            if props_ready("cross_x", "circle_2"):
+                prop_mark(im, "x" if bad else "o", px + 74, py0 + 58, 46, me)
+                d = ImageDraw.Draw(im)
+            else:
+                _mark(d, "x" if bad else "o", px + 74, py0 + 58, int(44 * min(me, 1.04)))
+        if not has_im:
+            _tw(d, (px + 146, py0 + 26), s.get("label", ""),
+                _fit(s.get("label", ""), "bold", pw - 186, 62, SZ_LABEL_MIN), P["ink"])
+        if t > 1.5 + i * 0.4 and s.get("verdict"):
+            fv = _fit(s["verdict"], "black", pw - 80, 68, 42)
+            vy = py1 - int(fv.size * 1.45)
+            # chip TRẮNG ĐỤC — verdict phải đọc được cả khi nằm đè lên cutout
+            ImageDraw.Draw(im, "RGBA").rectangle(
+                [px - 14, vy - 8, px + _wide(fv, s["verdict"]) + 18, vy + int(fv.size * 1.24)],
+                fill=(255, 255, 255, 216))
+            d = ImageDraw.Draw(im)
+            _tw(d, (px, vy), s["verdict"], fv, col)
+    # vạch chia ink giữa khung, full-height — cấu trúc split rõ ràng
+    d.rectangle([mid - 5, py0 - 30, mid + 5, H], fill=P["ink"])
+    src_label(d, v.get("source"))
+    return im
+
+
+# ══════════════════════════════════════════════════════════════ kind: cơ chế
+
+def _house(d, zt, zb, floors=1):
+    """Mặt cắt căn nhà, nét dày kiểu Vox — CO VÀO vùng chữ (zt..zb).
+    ⚠️ floors="tall" (preset mix) = nhà HẸP + CAO: mix diễn tầng nhiệt theo CHIỀU DỌC,
+    nhà rộng-dẹt thì mũi tên đi lên trông gần như NẰM NGANG (bắt ở vòng duyệt sheet 2).
+    ⚠️ Bản đầu hardcode yb=620..660 — vượt SB=588 của co-dai ⇒ nền đất nằm dưới hộp
+    phụ đề. Nay mọi toạ độ suy từ vùng chữ."""
+    yb = zb - 30                                  # chừa 24px cho dải nền đất
+    yt = zt + 8
+    # ⚠️ BỀ NGANG phải hẹp. Bản cũ rộng 1280–1320px trên chiều cao ~370 = tỉ lệ 3,5:1
+    # → "trông như hộp bánh", và vùng chữ của kênh chỉ ~400px nên KHÔNG cao lên được
+    # ⇒ cách duy nhất giữ tỉ lệ đọc-ra-căn-nhà là THU HẸP (≈2,2–2,6:1).
+    if floors == "tall":                          # hẹp-cao (preset mix): dồn bề ngang nhất
+        x0, x1, mid = 640, 1280, None
+        floors = 1
+    elif floors == 2:
+        x0, x1 = 500, 1420
+        mid = yt + int((yb - yt) * 0.46)
+    else:
+        x0, x1, mid = 520, 1400, None
+        yt = zt + int((zb - zt) * 0.10)           # nhà 1 tầng: hạ nóc, để chỗ mũi tên trên
+    d.rectangle([x0, yt, x1, yb], fill=P["panel"], outline=P["ink"], width=9)
+    # nền đất: full-width + TRÀN tới đáy khung (đại tu 2026-08-07 — khối màu lớn thay
+    # cho vạch mỏng 24px; phụ đề nằm đè lên là đúng chỗ lower-third)
+    d.rectangle([0, yb, W, H], fill=P["ink"])
+    if floors == 2:
+        d.line([x0, mid, x1, mid], fill=P["ink"], width=8)
+        step = max(20, int((yb - mid) / 7))
+        for i in range(6):
+            xs = 900 + i * 26
+            d.line([xs, yb - 18 - i * step, xs + 66, yb - 18 - i * step], fill=P["ink"], width=7)
+        d.line([900, yb - 18, 1056, mid], fill=P["line"], width=5)
+    return x0, x1, yt, yb
+
+
+def _window(d, x, y, wide=True):
+    w, h = (30, 150) if wide else (30, 76)
+    d.rectangle([x - w // 2, y - h // 2, x + w // 2, y + h // 2],
+                fill=P["bg"], outline=P["ink"], width=7)
+
+
+def _fan(d, cx, cy, s=52, face="right"):
+    d.ellipse([cx - s, cy - s, cx + s, cy + s], fill=P["panel"], outline=P["ink"], width=8)
+    for k in range(3):
+        a = k * 2.094 + (0 if face == "right" else 0.5)
+        d.line([cx, cy, cx + s * .78 * math.cos(a), cy + s * .78 * math.sin(a)],
+               fill=P["ink"], width=7)
+    d.line([cx, cy + s, cx, cy + s + 30], fill=P["ink"], width=9)
+    d.line([cx - 30, cy + s + 30, cx + 30, cy + s + 30], fill=P["ink"], width=9)
+
+
+def k_room(v, t, base=None):
+    """Mặt cắt nhà + luồng khí. preset: exchange (2 cửa sổ) / mix (tầng nhiệt) / stack (ống khói).
+    ⚠️ Nhãn trong sơ đồ phải nằm ĐÚNG chỗ nó nói tới và không đè nhau/đè mũi tên — toạ độ
+    dưới đây ĐÃ duyệt bằng mắt (bản đầu: 「かき混ぜる」đè cái quạt, 「足元は涼しい」đặt trên trần)."""
+    im = base.copy()
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    hh = head_line(d, v.get("head", ""))
+    zt, _ = zone(hh)
+    # tấm 'trời' cool nhạt sau căn nhà — thêm tầng màu, hết cảm giác wireframe
+    tint_block(im, (0, zt - 10, W, min(H - 140, SB + 200) - 20), P["cool"], 12)
+    d = ImageDraw.Draw(im)
+    # 🔴 `room` là kind DUY NHẤT cho hình BLEED xuống dưới safe_bottom.
+    # Lý do: vùng chữ của kênh chỉ ~400px, trừ tiếp dòng message còn ~240px ⇒ căn nhà
+    # thành 3,2:1 = "hộp bánh" y như bản cũ, tức sửa bề ngang cũng không cứu được.
+    # Cho KHUNG NHÀ + nền đất chạy xuống ~y780 (hộp phụ đề đè lên đáy nhà — đúng cách
+    # mọi explainer đặt lower-third), còn MỌI CHỮ/quạt/nhãn vẫn bị kẹp trên safe_bottom.
+    zb = min(H - 140, SB + 200)
+    preset = v.get("preset", "exchange")
+    floors = 2 if preset == "stack" else ("tall" if preset == "mix" else 1)
+    x0, x1, yt, yb = _house(d, zt, zb, floors)
+    band_h = max(60, int((yb - yt) * 0.30))
+    ytxt = SB - 56                              # trần dưới cho chữ trong sơ đồ
+    yobj = SB - 100                             # trần dưới cho vật (quạt/cửa sổ)
+    hp = 1 + 0.12 * osc(v, t)                   # idle: đầu mũi tên 'nhấn' theo nhịp thở
+
+    if v.get("heat", True):
+        band = Image.new("RGB", (x1 - x0 - 18, band_h), P["hot"])
+        m = Image.linear_gradient("L").resize((x1 - x0 - 18, band_h))
+        im.paste(band, (x0 + 9, yt + 9),
+                 m.transpose(Image.FLIP_TOP_BOTTOM).point(lambda q: q // 2))
+        d = ImageDraw.Draw(im)
+        _tw(d, (x0 + 30, yt + 16), "熱", _f("black", min(58, band_h - 8)), (255, 255, 255))
+
+    if preset == "exchange":
+        wy = min(yt + int((yb - yt) * 0.52), yobj)
+        _window(d, x1, wy, True)
+        _window(d, x0, wy + 60, False)
+        _fan(d, x1 - 200, wy + 10, 46, "right")
+        arrow(d, curve((x1 - 128, wy - 8), (x1 + 180, yt - 24), .16), P["warn"], 16,
+              int(38 * hp), ease(t / 2.2))
+        arrow(d, curve((x0 - 180, wy + 62), (x0 + 240, wy + 84), -.12), P["cool"], 13,
+              int(32 * hp), ease((t - 1.3) / 2.0))
+        if t > 2.6:
+            _tw(d, (x1 + 120, yt - 84), "熱が出る", _f("black", 48), P["warn"], anchor="ma")
+            _tw(d, (x0 - 116, min(wy + 96, ytxt)), "涼しい空気", _f("black", 42), P["cool"],
+                anchor="ma")
+    elif preset == "mix":
+        cx = (x0 + x1) // 2
+        fy = min(yb - 78, yobj)
+        _fan(d, cx, fy, 46, "up")
+        for i, dx in enumerate((-190, 0, 190)):
+            arrow(d, curve((cx, fy - 54), (cx + dx, yt + band_h + 20),
+                           .07 * (1 if dx >= 0 else -1)),
+                  P["warn"], 13, int(30 * hp), ease((t - 0.5 - i * 0.3) / 1.6))
+        if t > 2.4:
+            _tw(d, (cx, yt + 16), "かき混ぜる", _f("black", min(50, band_h - 10)),
+                (255, 255, 255), anchor="ma")
+            # ⚠️ Hai nhãn nhiệt-độ ở CỘT TRÁI, MỘT DÒNG mỗi nhãn: bản 2 dòng + toạ độ
+            # theo chiều cao nhà làm chúng ĐÈ LÊN NHAU (thấy ở khung full-size vox_08).
+            _tw(d, (330, yt + 20), "頭の上は熱い", _f("black", 44), P["hot"], anchor="ma")
+            _tw(d, (330, ytxt), "足元は涼しい", _f("black", 44), P["cool"], anchor="ma")
+    else:                                          # stack — cầu thang làm ống khói
+        mid = yt + int((yb - yt) * 0.46)
+        _window(d, x0, min(yb - 60, yobj), False)
+        _window(d, x1, yt + band_h + 40, True)
+        arrow(d, curve((x0 - 180, min(yb - 56, yobj)), (880, min(yb - 36, yobj + 20)), -.09),
+              P["cool"], 13, int(32 * hp), ease(t / 1.8))
+        arrow(d, curve((884, min(yb - 54, yobj)), (1090, mid), .10), P["warn"], 15, 0,
+              ease((t - 1.0) / 1.5))
+        arrow(d, curve((1090, mid), (x1 + 180, yt + band_h + 20), .12), P["warn"], 16,
+              int(38 * hp), ease((t - 2.0) / 1.8))
+        if t > 3.2:
+            _tw(d, (1330, ytxt), "階段が煙突になる", _f("black", 44), P["ink"], anchor="ma")
+
+    src_label(d, v.get("source"))
+    return im
+
+
+def k_process(v, t, base=None):
+    """A → B → C: 3–4 bước, mũi tên nối, hiện lần lượt. Cho cơ chế/quy trình vô hình.
+    Đại tu 2026-08-07: step box thành CỘT full-height tràn tới đáy khung (hết cảnh
+    3 hộp lơ lửng giữa biển kem); hot = cột vàng đặc; idle = halo thở quanh cột hot.
+    Chữ vẫn căn trong vùng MESSAGE (y0..SB)."""
+    im = base.copy()
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    # 🔴 VÁ 2026-08-12 (co-dai video 19): dải vàng highlight sau tiêu đề chỉ được nối
+    #   vào `flow`/`timeline`; bar/line/compare/process gọi head_line() TRẦN nên tiêu đề
+    #   mực đậm nằm trên ảnh tối là MẤT CHỮ. Docstring head_line ghi rõ highlight là
+    #   "bảo hiểm legibility khi chữ nằm trên ảnh" — chỉ là chưa ai wire vào 4 kind này.
+    #   Chỉ bật khi thẻ CÓ ảnh (_photo) nên kênh không dùng ảnh ở các kind này không đổi gì.
+    on_ph = v.get("_photo", False) and not v.get("_light")
+    hh = head_line(d, v.get("title") or v.get("note", ""), highlight=on_ph)
+    steps = v["steps"][:4]
+    n = len(steps)
+    y0, y1 = zone(hh)
+    gap = 56
+    bw = (W - 2 * MARGIN_X - gap * (n - 1)) // n
+    for i, st in enumerate(steps):
+        pe = ease_back((t - 0.25 - i * 0.55) / 0.5)
+        if pe <= 0:
+            continue
+        x = MARGIN_X + i * (bw + gap)
+        hot = bool(st.get("hot"))
+        yb_col = H + 40                            # cột TRÀN khỏi đáy (bo góc dưới ra ngoài khung)
+        ytop = int(y0 + (1 - min(pe, 1.0)) * 40)
+        if hot:
+            paste_glow(im, x + bw // 2, (y0 + SB) // 2, bw // 2 + 130, P["accent"],
+                       0.18 * osc(v, t))
+            d = ImageDraw.Draw(im)
+        d.rounded_rectangle([x, ytop, x + bw, yb_col], 26,
+                            fill=P["accent"] if hot else P["panel"],
+                            outline=P["ink"], width=7)
+        lab = st["label"] if isinstance(st, dict) else str(st)
+        f = _fit(lab, "black", bw - 48, 92, SZ_LABEL_MIN)
+        cy = (y0 + min(y1, SB - 8)) // 2           # chữ căn trong vùng message, không theo cột
+        _tw(d, (x + bw // 2, cy - (20 if st.get("sub") else 0)), lab, f, P["ink"], anchor="mm")
+        if st.get("sub"):
+            _tw(d, (x + bw // 2, cy + f.size * 0.55), st["sub"],
+                _fit(st["sub"], "med", bw - 30, 40, 30), P["muted"], anchor="ma")
+        if i and t > 0.45 + i * 0.55:
+            ax = x - gap - 6
+            arrow(d, [(ax - 22, cy), (ax + gap - 16, cy)],
+                  P["warn"], 13, 30, ease((t - 0.45 - i * 0.55) / 0.5))
+    src_label(d, v.get("source"))
+    return im
+
+
+# ══════════════════════════════════════════════════════════ kind: timeline/source/title
+
+def k_timeline(v, t, base=None):
+    """Trục thời gian ngang, mốc hiện trái→phải. marks = [[năm, nhãn], …]
+    Đại tu 2026-08-07: dải ERA xen kẽ full-height (khung có cấu trúc, hết trống) +
+    khối accent sau năm chốt + ghost năm chốt + idle pulse-ring mốc cuối."""
+    im = base.copy()
+    v["_shakes"] = [2.80] if props_ready("stamp_rect") else []
+    marks = v["marks"]
+    n = len(marks)
+    ax = MARGIN_X + 40
+    bx = W - MARGIN_X - 40
+    on_ph = v.get("_photo", False)
+    if not on_ph:
+        # dải era xen kẽ — biên giữa các mốc, tràn từ dưới kicker tới đáy khung
+        for i in range(n):
+            xa = ax + (bx - ax) * (i / max(n - 1, 1))
+            xbnd = ax + (bx - ax) * ((i + 1) / max(n - 1, 1)) if i < n - 1 else W
+            if i % 2 == 1:
+                tint_block(im, (int(xa), Y_TOP - 12, int(xbnd), H), P["ink"], 10)
+        ghost_number(im, str(marks[-1][0]))
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", ""))
+    hh = head_line(d, v.get("title") or v.get("note", ""), highlight=on_ph)
+    zt, zb = zone(hh)
+    ay = zt + int((zb - zt) * 0.52)               # trục giữa vùng: chừa chỗ năm ở trên, nhãn dưới
+    if on_ph:
+        # trên ẢNH/TRANH: trục + nhãn phải đứng trên DẢI CUỘN sáng đục — chữ đặt trần
+        # lên tranh là chìm vào nhà cửa/sông (bắt ở sheet AI demo thẻ timeline)
+        tint_block(im, (0, ay - 130, W, min(ay + 168, H)), P["scrim"], 216)
+        d = ImageDraw.Draw(im)
+    prog = ease(t / 2.4)
+    d.line([ax, ay, ax + (bx - ax) * prog, ay], fill=P["ink"], width=9)
+    for i, (year, lab) in enumerate(marks):
+        fx = i / max(n - 1, 1)
+        if prog < fx - 0.02:
+            continue
+        x = ax + (bx - ax) * fx
+        hot = i == n - 1
+        col = P["warn"] if hot else P["ink"]
+        d.ellipse([x - 17, ay - 17, x + 17, ay + 17], fill=col)
+        if hot and prog > 0.98:
+            g = osc(v, t, 2)
+            draw_ring(im, x, ay, 22 + 26 * g, P["warn"], 0.55 * (1 - g))
+            d = ImageDraw.Draw(im)
+        # ⚠️ Mốc ĐẦU/CUỐI phải canh lề, không canh giữa: anchor "ma" ở x=bx đẩy nửa chữ
+        # RA NGOÀI khung (bắt ở sheet: 「売り場から消えた」bị cắt mất đuôi).
+        anc = "la" if i == 0 else ("ra" if i == n - 1 else "ma")
+        fy = _f("black", 72 if hot else 56)
+        if hot and props_ready("stamp_rect"):
+            # đại tu 2: năm chốt = CON DẤU grunge slam xuống, thay khối accent phẳng
+            yw = _wide(fy, str(year))
+            scx = x - yw / 2 if anc[0] == "r" else (x + yw / 2 if anc[0] == "l" else x)
+            prop_stamp(im, scx, ay - 46 - fy.size / 2, str(year),
+                       ease((t - 2.45) / 0.4), kind="rect", rng=seeded("tlstamp", year))
+            d = ImageDraw.Draw(im)
+        else:
+            if hot:
+                yw = _wide(fy, str(year))
+                xa0 = x - yw - 16 if anc[0] == "r" else (x - 16 if anc[0] == "l" else x - yw / 2 - 16)
+                d.rectangle([xa0, ay - 42 - fy.size - 6, xa0 + yw + 32, ay - 34],
+                            fill=P["accent"])
+            _tw(d, (x, ay - 42), str(year), fy, col, anchor=anc[0] + "d")
+        # Nhãn ngắt dòng để các mốc cạnh nhau không đè nhau.
+        slot = (bx - ax) / max(n - 1, 1) - 20
+        f = _fit(str(lab), "bold", slot * 1.5, 44, 30)
+        for j, ln in enumerate(_wrap(str(lab), f, slot)):
+            _tw(d, (x, ay + 40 + j * int(f.size * 1.24)), ln, f,
+                (96, 98, 106), anchor=anc[0] + "a")
+    src_label(d, v.get("source"))
+    return im
+
+
+def k_source(v, t, base=None):
+    """Thẻ 原典 — cơ quan + 年月時点 + câu số trích đúng. Đây là lớp KHÔNG COPY ĐƯỢC của
+    kênh (handmade-layer.md §3.1/§3.2: `genten` là việc của Claude lúc viết script).
+    Gate `check_vox.py` X5 đòi ≥1 thẻ này mỗi video.
+    Đại tu 2026-08-07: panel = TỜ TÀI LIỆU TRÀN KHỎI ĐÁY khung (mép dưới bị phụ đề đè
+    là thiết kế — tài liệu 'chạy tiếp'); gờ vàng full-height THỞ nhẹ; highlighter vàng
+    trên dòng quote đầu; idle glow sau con số."""
+    im = base.copy()
+    v["_shakes"] = [1.45] if (v.get("number") and props_ready("stamp_round")) else []
+    d = ImageDraw.Draw(im)
+    kicker(d, v.get("kicker", "出典"))
+    x0, y0 = MARGIN_X, Y_TOP
+    x1, y1 = W - MARGIN_X, H + 30                 # panel bleed khỏi đáy khung
+    d.rounded_rectangle([x0, y0, x1, y1], 20, fill=P["panel"], outline=P["line"], width=5)
+    # gờ vàng: idle thở ±8% độ sáng (1 cycle) — 'tài liệu đang mở', không phải ảnh chết
+    g = osc(v, t)
+    acc = tuple(min(255, int(c + (255 - c) * 0.08 * g)) for c in P["accent"])
+    d.rectangle([x0, y0, x0 + 18, y1], fill=acc)
+    tx, tw = x0 + 58, x1 - x0 - 130
+    y = y0 + 32
+    org = v.get("org", "")
+    forg = _fit(org, "black", tw, 68, 44)
+    _tw(d, (tx, y), org, forg, P["ink"])
+    y += int(forg.size * 1.3)
+    if v.get("asof"):
+        _tw(d, (tx + 2, y), v["asof"], _f("med", 38), P["muted"])
+        y += 54
+    # Con số trích ĐỨNG CẠNH câu (không xuống đáy card): khối phải-trên là chỗ mắt tới sau
+    # tên cơ quan, và đáy card đã sát vùng phụ đề.
+    if v.get("number") and t > 1.1:
+        if props_ready("stamp_round"):
+            # đại tu 2: số trích = CON DẤU TRÒN grunge slam — đúng cử chỉ "đóng dấu 原典"
+            cxs, cys = x1 - 350, y0 + 300
+            paste_glow(im, cxs, cys, 240, P["warn"], 0.10 * osc(v, t))
+            prop_stamp(im, cxs, cys, str(v["number"]), ease((t - 1.1) / 0.4),
+                       kind="round", rng=seeded("srcstamp", v.get("org", "")))
+            d = ImageDraw.Draw(im)
+        else:
+            fn = _fit(str(v["number"]), "black", 520, 132, 72)
+            nw = _wide(fn, str(v["number"]))
+            paste_glow(im, x1 - 46 - nw / 2, y0 + 34 + fn.size / 2, max(140, int(nw * 0.7)),
+                       P["warn"], 0.10 * osc(v, t))
+            d = ImageDraw.Draw(im)
+            _tw(d, (x1 - 46, y0 + 34), str(v["number"]), fn, P["warn"], anchor="ra")
+    quote = v.get("quote", "")
+    if quote and t > 0.5:
+        f = _fit(quote, "bold", tw, 74, 42)
+        lines = _wrap(quote, f, tw)
+        # highlighter vàng trên DÒNG ĐẦU của câu trích — đúng cử chỉ 'khoanh nguồn'
+        if lines:
+            lw = _wide(f, lines[0])
+            ImageDraw.Draw(im, "RGBA").rectangle(
+                [tx - 10, y + int(f.size * 0.08), tx + lw + 14, y + int(f.size * 1.14)],
+                fill=P["accent"] + (150,))
+            d = ImageDraw.Draw(im)
+        for j, ln in enumerate(lines):
+            _tw(d, (tx, y + j * int(f.size * 1.26)), ln, f, P["ink"])
+    return im
+
+
+def k_title(v, t, base=None):
+    """Thẻ tiêu đề chương — khối vàng trượt vào + chữ khổng lồ.
+    🔴 TRẦN `title_cap` (mặc định 4)/video. Bệnh gốc của tool cũ: 39 thẻ title trong 1
+    video = 39 khung giống nhau. Gate check_vox.py X1 chặn.
+    Đại tu 2026-08-07: băng CAO hơn (≥320px, chạm gần SB) + ghost số chương khổng lồ +
+    2 biến thể: `"tone":"accent"` = cả khung vàng chữ ink; `bg:"photo"` = duotone +
+    chữ trắng. Idle = sheen quét nhẹ mép phải băng."""
+    im = base.copy()
+    on_ph = v.get("_photo", False) and not v.get("_light")
+    tone_accent = v.get("tone") == "accent"
+    # ghost chỉ khi số chương là CHỮ SỐ Ả RẬP — kanji (三) ở cỡ 800px alpha thấp chỉ còn
+    # là mấy sọc ngang kỳ dị, không đọc ra số (bắt ở sheet demo3 thẻ 12)
+    gnum = "".join(ch for ch in str(v.get("num", "")) if ch.isdigit())
+    if gnum and not on_ph:
+        ghost_number(im, gnum, size=820, alpha=16 if not tone_accent else 26)
+    d = ImageDraw.Draw(im)
+    zt, zb = zone()
+    p = ease_io(t / 0.9)
+    band_h = max(min(320, zb - zt - 60), min(260, int((zb - zt) * 0.58)))
+    by = zt + (40 if v.get("num") else 0)
+    if v.get("num"):
+        _tw(d, (MARGIN_X, zt), v["num"], _f("black", 84),
+            (255, 255, 255) if on_ph else P["ink"],
+            stroke=5 if on_ph else 0, sfill=P["ink"])
+        by = zt + 108
+    band_bot = min(by + band_h, SB - 8)
+    if tone_accent:
+        # cả khung ĐÃ vàng (prep_base) → không băng; chữ ink khổng lồ là đủ
+        if t > 0.55:
+            f = _fit_warn(v["title"], "black", W - 2 * MARGIN_X, 168, SZ_HEAD_MIN, "title")
+            _tw(d, (MARGIN_X, (by + band_bot) / 2), v["title"], f, P["ink"], anchor="lm")
+    elif on_ph:
+        if t > 0.55:
+            f = _fit_warn(v["title"], "black", 1540, min(band_h - 40, 150), SZ_HEAD_MIN, "title")
+            _tw(d, (MARGIN_X, (by + band_bot) / 2), v["title"], f, (255, 255, 255),
+                anchor="lm", stroke=10, sfill=P["ink"])
+    else:
+        # ⚠️ Băng vàng rộng 1700 (không phải 1560): câu 17 ký ở cỡ tối thiểu 84px cần
+        # ~1430px + lề 120 → 1560 làm chữ TRÀN KHỎI BĂNG.
+        d.rectangle([0, by, int(1700 * p), band_bot], fill=P["accent"])
+        # idle: sheen — dải sáng hơn quét ±10px ở mép phải băng (1 cycle)
+        g = osc(v, t)
+        if p >= 1.0 and g > 0.01:
+            shx = 1700 - 60 + int(10 * math.sin(2 * math.pi * idle_u(v, t) / IDLE_SEC))
+            ImageDraw.Draw(im, "RGBA").rectangle(
+                [shx, by, shx + 24, band_bot], fill=(255, 236, 120, int(110 * g)))
+            d = ImageDraw.Draw(im)
+        if t > 0.55:
+            f = _fit_warn(v["title"], "black", 1540, min(band_h - 40, 168), SZ_HEAD_MIN, "title")
+            _tw(d, (MARGIN_X, (by + band_bot) / 2), v["title"], f, P["ink"], anchor="lm")
+    if v.get("sub") and t > 1.1:
+        _tw(d, (MARGIN_X + 4, min(band_bot + 26, zb - 56)), v["sub"],
+            _fit(v["sub"], "bold", 1600, 54, 38),
+            (240, 240, 238) if on_ph else (70, 72, 80))
+    src_label(d, v.get("source"), on_photo=on_ph)
+    return im
+
+
+KINDS = {"stat": k_stat, "bar": k_bar, "line": k_line, "dot": k_dot,
+         "flow": k_flow, "collage": k_collage, "compare": k_compare,
+         "room": k_room, "process": k_process,
+         "timeline": k_timeline, "source": k_source, "title": k_title,
+         "board": k_board}
+PHOTO_KINDS = {"flow", "collage"}        # kind vốn đã mang ảnh thật (gate X2)
+
+
+# ══════════════════════════════════════════════════════════════════ build clip
+
+def _clean(o):
+    """Bỏ mọi khoá `_` (ảnh đã nạp) ở MỌI cấp — `_im` nằm lồng trong items/left/right,
+    strip 1 cấp là chưa đủ (TypeError: Image is not JSON serializable)."""
+    if isinstance(o, dict):
+        return {k: _clean(x) for k, x in o.items() if not k.startswith("_")}
+    if isinstance(o, list):
+        return [_clean(x) for x in o]
+    return o
+
+
+def _sig(v, bg_path):
+    """Chữ ký nội dung → sidecar .sig. Đổi spec/ảnh/tool/style kênh ⇒ dựng lại; giống
+    hệt ⇒ skip. Bắt buộc phải có: `render-background.md` §2.5 — resume phải biết ASSET
+    ĐÃ ĐỔI, không được chỉ hỏi 'file tồn tại chưa'.
+    VOXSTYLE vào sig: đổi knob style trong channels.py là thẻ tự dựng lại, không cần
+    nhớ bump VERSION (VERSION vẫn phải bump khi đổi HẰNG SỐ trong tool)."""
+    h = hashlib.md5(json.dumps(_clean(v), ensure_ascii=False,
+                               sort_keys=True).encode()).hexdigest()
+    hs = hashlib.md5(json.dumps(VOXSTYLE, sort_keys=True).encode()).hexdigest()[:8]
+    extra = ""
+    if bg_path:
+        st = Path(bg_path).stat()
+        extra = f"|{Path(bg_path).name}:{int(st.st_mtime)}:{st.st_size}"
+    return f"{VERSION}|{hs}|{h}{extra}"
+
+
+def settle_time(v):
+    """Floor cửa sổ intro theo SPEC — thời điểm entrance CUỐI CÙNG kết thúc.
+    ANIM_SEC là mặc định theo kind; kind nhiều element (4 mũi tên, 4 cột…) cần floor
+    tính từ chính spec, nếu không entrance bị cắt và idle-loop assert sẽ kêu."""
+    kind = v.get("kind", "stat")
+    ends = [0.0]
+    if kind == "stat":
+        ends.append(v.get("count_sec", 2.2))
+        if v.get("bars"):
+            ends.append(1.4 + 0.35 * (len(v["bars"]) - 1) + 1.1)
+    elif kind == "bar":
+        ends.append(1.4 + 0.35 * (len(v.get("bars") or []) - 1) + 1.1)
+    elif kind == "line":
+        ends.append(2.2)
+    elif kind == "dot":
+        ends.append(2.4)
+    elif kind == "flow":
+        na = len(v.get("arrows") or [])
+        np_ = len(v.get("pins") or [])
+        ends += [0.6 + 0.5 * max(na - 1, 0) + 1.8 if na else 0,
+                 0.9 + 0.4 * max(np_ - 1, 0) + 0.45 if np_ else 0, 1.6]
+    elif kind == "collage":
+        n = len(v.get("items") or [])
+        ends += [0.3 + 0.45 * max(n - 1, 0) + 0.5, 0.9 + 0.45 * max(n - 1, 0)]
+    elif kind == "compare":
+        ends.append(1.5 + 0.4 + 0.2)
+    elif kind == "room":
+        ends.append({"exchange": 3.3, "mix": 2.9, "stack": 3.8}.get(
+            v.get("preset", "exchange"), 3.3))
+    elif kind == "process":
+        n = len(v.get("steps") or [])
+        ends.append(0.45 + 0.55 * max(n - 1, 0) + 0.5)
+    elif kind == "timeline":
+        ends.append(3.25 if props_ready("stamp_rect") else 2.4)
+    elif kind == "source":
+        ends.append(1.9 if props_ready("stamp_round") else 1.1)
+    elif kind == "title":
+        ends.append(1.1 if v.get("sub") else 0.9)
+    elif kind == "board":
+        its = v.get("items", [])
+        news_ = [it for it in its if it.get("new")] or its
+        st = v.get("stagger", 0.7)
+        emax = 0.0
+        for idx, it in enumerate(news_):
+            t0_ = it.get("t", 0.35 + idx * st)
+            dur = 0.55
+            if it.get("type") == "row":
+                dur = max(dur, 0.45 + len(it.get("detail", "")) / 14.0)  # máy chữ
+            emax = max(emax, t0_ + dur)
+        ends.append(emax + 0.85)   # + tick ✓ / bụi / glow đậu
+    return max(ends)
+
+
+def build(v, out_mp4, bg_img=None, still_only=False, anim=None):
+    """Render clip = INTRO (entrance, 30fps) + IDLE LOOP 4s lặp tới CLIP_SEC.
+
+    Đại tu 2026-08-07 — giết cảnh 'động 4s rồi đứng hình 26s': phần sau intro giờ là
+    vòng idle THỞ (glow/pulse-ring/sheen per-kind) lặp không mối nối. Điều kiện toán:
+    mọi oscillator có SỐ CYCLE NGUYÊN trong IDLE_SEC và mọi entrance settle trước
+    `anim` ⇒ frame(anim) == frame(anim+IDLE_SEC) từng byte — có assert dưới, lệch là
+    kêu TO chứ không im lặng giao clip giật."""
+    kind = v.get("kind", "stat")
+    if kind not in KINDS:
+        raise SystemExit(f"[LỖI] kind '{kind}' không có. Có: {', '.join(sorted(KINDS))}")
+    fn = KINDS[kind]
+    anim = float(anim or v.get("anim_sec") or
+                 max(ANIM_SEC.get(kind, 3.5), settle_time(v) + 0.35))
+    anim = max(anim, settle_time(v) + 0.3)        # spec khai nhỏ hơn floor thì nâng lên
+    v["_anim"] = anim                             # cho osc()/idle_u() biết idle bắt đầu đâu
+    out_mp4 = Path(out_mp4)
+    out_mp4.parent.mkdir(parents=True, exist_ok=True)
+
+    base = prep_base(v, bg_img)                   # nền + treat_photo/grain: MỘT lần/thẻ
+
+    def frame(t):
+        # CAMERA (viết lại 2026-08-08 tối — user: "video giật giật"): toàn bộ chuyển
+        # động máy quay = AFFINE SUB-PIXEL trong PIL, KHÔNG zoompan.
+        # ⛔ zoompan bị trục xuất: zoom chậm → bước zoom < 1px/frame → nó làm tròn về
+        # pixel nguyên = nhảy bậc thang li ti (đúng cái "giật" user thấy). Affine
+        # inverse-mapping bicubic lấy mẫu FLOAT → mượt ở mọi tốc độ.
+        #   settle: 1.045→1.0 trong 0.5s đầu (máy quay 'đậu' xuống tài liệu, khớp dissolve)
+        #   breath: 1.0↔1.014 sin nguyên chu kỳ IDLE_SEC=8s — sống mà điềm, loop sạch
+        #           (osc = 0 tại u=0 nên intro→idle không có khớp nối)
+        z = 1.0
+        if VOXSTYLE.get("camera"):
+            zs = 1 + 0.045 * (1 - ease(min(1.0, t / 0.5)))
+            zb = 1 + 0.014 * osc(v, t)
+            z = zs * zb
+        b = base
+        # PARALLAX 2.5D (đại tu 3): chủ thể phóng thêm 50% biên độ camera → 2 lớp trôi
+        # lệch tốc độ = chiều sâu. fg cũng biến đổi bằng affine float (không resize int
+        # — resize theo bậc pixel nguyên là tái phạm đúng bệnh zoompan).
+        if v.get("_pl_fg") is not None:
+            b = v["_pl_bg"].copy()
+            fz = 1 + 0.5 * (z - 1)
+            if fz > 1.0004:
+                af = 1.0 / fz
+                fgT = v["_pl_fg"].transform(
+                    (W, H), Image.AFFINE,
+                    (af, 0, (1 - af) * W / 2, 0, af, (1 - af) * H / 2),
+                    resample=Image.BICUBIC)
+            else:
+                fgT = v["_pl_fg"]
+            b.paste(fgT, (0, 0), fgT)
+        im = fn(v, t, b)
+        # DƯ CHẤN con dấu (đại tu 3): khung rung dọc 4px tắt dần 0.45s sau cú slam —
+        # cắt CỨNG sau 0.45s (exp không bao giờ về 0 tuyệt đối, để trôi là vỡ assert
+        # loop-sạch vì mỗi pha idle lệch nhau vài phần nghìn pixel).
+        dy = 0.0
+        for ts_ in v.get("_shakes", ()):
+            dt_ = t - ts_
+            if 0 <= dt_ < 0.45:
+                dy += 4.0 * math.exp(-8 * dt_) * math.sin(2 * math.pi * 11 * dt_)
+        if z > 1.0006 or abs(dy) > 0.05:
+            a = 1.0 / z
+            im = im.transform((W, H), Image.AFFINE,
+                              (a, 0, (1 - a) * W / 2, 0, a, (1 - a) * H / 2 + dy),
+                              resample=Image.BICUBIC)
+        return im
+
+    last = frame(anim)                            # = pha idle 0 (mọi osc = 0) — ảnh 'nghỉ'
+    if still_only:
+        p = out_mp4.with_suffix(".png")
+        last.convert("RGB").save(p)
+        return p
+
+    # assert loop-sạch: pha 0 và pha IDLE_SEC phải trùng từng byte
+    if last.convert("RGB").tobytes() != frame(anim + IDLE_SEC).convert("RGB").tobytes():
+        print(f"  ⚠ {kind}: idle KHÔNG loop-sạch — có element chưa settle trước "
+              f"anim={anim:.2f}s hoặc oscillator cycle lẻ. Clip sẽ giật ở mối nối idle.")
+
+    tmp = out_mp4.parent / f"_tmp_{out_mp4.stem}"
+    if tmp.exists():
+        shutil.rmtree(tmp)
+    (tmp / "in").mkdir(parents=True, exist_ok=True)
+    (tmp / "id").mkdir(parents=True, exist_ok=True)
+    for i in range(int(anim * FPS_IN)):
+        frame(i / FPS_IN).convert("RGB").save(tmp / "in" / f"f{i:05d}.png")
+    # idle: render pha 0..N-1 (KHÔNG render pha N — nó trùng pha 0, render là double
+    # frame ở mỗi mối nối loop)
+    for j in range(int(IDLE_SEC * FPS_IDLE)):
+        frame(anim + j / FPS_IDLE).convert("RGB").save(tmp / "id" / f"f{j:05d}.png")
+
+    a = out_mp4.parent / f"_a_{out_mp4.stem}.mp4"
+    b = out_mp4.parent / f"_b_{out_mp4.stem}.mp4"
+    # grain phim `noise` cài ở khâu ENCODE: 30fps sống trên toàn thẻ với 0 frame PIL
+    # thêm — đồng thời dither banding của gradient treat_photo. -g 60 = GOP đóng 2s để
+    # concat -c copy luôn cắt ở keyframe.
+    qa = ["-vf", "noise=alls=4:allf=t,format=yuv420p",
+          "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-g", "60", "-r", str(OUT_FPS)]
+    qb = ["-vf", "noise=alls=4:allf=t,format=yuv420p",
+          "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-g", "60", "-r", str(OUT_FPS)]
+    try:
+        subprocess.run(["ffmpeg", "-y", "-framerate", str(FPS_IN),
+                        "-i", str(tmp / "in" / "f%05d.png"), *qa, str(a)],
+                       check=True, capture_output=True)
+        subprocess.run(["ffmpeg", "-y", "-framerate", str(FPS_IDLE),
+                        "-i", str(tmp / "id" / "f%05d.png"), *qb, str(b)],
+                       check=True, capture_output=True)
+        reps = max(1, math.ceil((CLIP_SEC - anim) / IDLE_SEC))
+        lst = out_mp4.parent / f"_cat_{out_mp4.stem}.txt"
+        lst.write_text(f"file '{a.name}'\n" + f"file '{b.name}'\n" * reps, encoding="utf-8")
+        # (2026-08-08 tối) KHÔNG còn zoompan hậu kỳ — camera nằm trong từng frame PIL
+        # (affine sub-pixel). concat -c copy giữ nguyên, không re-encode.
+        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
+                        "-c", "copy", "-movflags", "+faststart", str(out_mp4)],
+                       check=True, capture_output=True)
+        lst.unlink(missing_ok=True)
+    except subprocess.CalledProcessError as e:
+        raise SystemExit(f"[LỖI] ffmpeg: {e.stderr.decode('utf-8', 'replace')[-1200:]}")
+    finally:
+        for p in (a, b):
+            p.unlink(missing_ok=True)
+        shutil.rmtree(tmp, ignore_errors=True)
+    # PNG cạnh mp4 để dựng contact sheet không phải trích frame lại (pha idle 0 —
+    # deterministic, không bao giờ dính giữa đỉnh pulse)
+    last.convert("RGB").save(out_mp4.with_suffix(".png"))
+    return out_mp4
+
+
+def prep_images(v, idx, img_dir, cache_dir):
+    """Nạp ảnh nền + cutout cho thẻ. Trả (bg_img, bg_path).
+    Cutout đi qua `sticker()` NGAY Ở ĐÂY (một lần/thẻ, không phải mỗi frame) — viền
+    trắng die-cut + bóng + màu tươi lại, chữa bệnh rembg xám lem."""
+    bg_img = bg_path = None
+    if v.get("bg") == "photo":
+        bg_path = Path(v["photo"]) if v.get("photo") else find_slide(img_dir, idx)
+        if bg_path and Path(bg_path).exists():
+            bg_img = Image.open(bg_path).convert("RGB")
+            # PARALLAX 2.5D: tách chủ thể (rembg cache) — GIỮ NGUYÊN kích thước ảnh,
+            # KHÔNG trim (cần đúng vị trí để đè khớp lên nền). Chỉ style clean (ảnh AI).
+            style = (v.get("photo_style") or VOXSTYLE["photo_treatment"]).lower()
+            if style == "clean" and VOXSTYLE.get("parallax", True):
+                v["_pl_cut"] = _bg_subject(bg_path, cache_dir)
+        else:
+            bg_path = None
+    def _cut(src):
+        src = Path(src) if Path(str(src)).exists() else find_slide(img_dir, int(src))
+        if not src:
+            return None
+        c = cutout_of(src, cache_dir)
+        return sticker(c) if VOXSTYLE.get("sticker", True) else c
+    for it in (v.get("items") or []):
+        if it.get("cut"):
+            im_ = _cut(it["cut"])
+            if im_ is not None:
+                it["_im"] = im_
+    for side in ("left", "right"):
+        s = v.get(side)
+        if isinstance(s, dict) and s.get("cut"):
+            im_ = _cut(s["cut"])
+            if im_ is not None:
+                s["_im"] = im_
+    return bg_img, bg_path
+
+
+def sheet(paths, out, cols=3):
+    tw = 620
+    th = int(tw * H / W)
+    rows = max(1, (len(paths) + cols - 1) // cols)
+    sh = Image.new("RGB", (cols * tw, rows * th), (30, 30, 32))
+    for i, p in enumerate(paths):
+        sh.paste(Image.open(p).convert("RGB").resize((tw, th), Image.LANCZOS),
+                 ((i % cols) * tw, (i // cols) * th))
+    sh.save(out, quality=92)
+    print(f"[SHEET] {out}")
+    return out
+
+
+def reveal_check(v):
+    """Đếm event xuất hiện — quá REVEAL_BUDGET thì thẻ thành pháo hoa, không phải Vox."""
+    if v.get("kind") == "board":
+        # board là trang TÍCH LUỸ: item cũ nằm im từ frame 0, chỉ item MỚI là reveal
+        its = v.get("items", [])
+        n = sum(1 for it in its if it.get("new")) or len(its)
+    else:
+        n = len(v.get("arrows") or []) + len(v.get("pins") or []) + len(v.get("items") or []) \
+            + len(v.get("steps") or []) + (1 if v.get("note") else 0) \
+            + (1 if v.get("bars") else 0) + (1 if v.get("marks") else 0)
+    if n > REVEAL_BUDGET + 2:
+        print(f"  ⚠ {v.get('kind')}: ~{n} event reveal (> {REVEAL_BUDGET}+2) → bớt element")
+
+
+# ══════════════════════════════════════════════════════════════════ demo
+
+def demo_specs():
+    """12 thẻ, mỗi kind một thẻ — bộ duyệt mắt trước khi mở cho video thật.
+    Nội dung lấy từ script co-dai đã có thật (15 扇風機 / 16 漬物) để so được với sheet cũ."""
+    return [
+        {"kind": "stat", "kicker": "令和6年夏・東京23区", "big": "306", "unit": "人",
+         "sub": "暑さで亡くなった方", "bars": [["屋内", 291], ["屋外", 15]],
+         "note": "亡くなった方の95％は、家の中だった", "source": "東京都監察医務院"},
+        {"kind": "bar", "kicker": "塩の量で変わる", "title": "濃くすると、食べられなくなる",
+         "bars": [["3％", 15], ["5％", 62], ["10％", 96]], "hot": -1,
+         "source": "日本食品標準成分表"},
+        {"kind": "line", "kicker": "冷蔵庫のある家", "title": "道具が一つ増えた年",
+         "points": [["1960", 10], ["1970", 89], ["1980", 99], ["2020", 99]],
+         "last_label": "99％", "note": "台所から、道具が一つ消えた",
+         "source": "内閣府 消費動向調査"},
+        {"kind": "dot", "kicker": "同じ漬物で起きたこと", "total": 100, "hit": 95,
+         "hit_label": "95％", "unit_note": "1つの点＝1人",
+         "note": "亡くなった方の95％は、家の中だった", "source": "東京都監察医務院"},
+        {"kind": "flow", "kicker": "一つ目・窓は二つ", "head": "冷やすのではなく、入れ替える",
+         "arrows": [[1480, 400, 1800, 300, .16], [180, 470, 620, 500, -.12]],
+         "pins": [[1660, 240, "熱が出る"], [340, 540, "涼しい空気"]]},
+        {"kind": "collage", "kicker": "漬ける道具", "title": "残ったのは、たった三つ",
+         "items": [{"label": "重石", "mark": "o"}, {"label": "冷蔵庫", "mark": "x"},
+                   {"label": "塩", "mark": "o"}],
+         "note": "道具では持てない技術"},
+        {"kind": "compare", "kicker": "同じ1台の扇風機", "title": "向きだけで、仕事が変わる",
+         "left": {"label": "体に向ける", "mark": "x", "verdict": "部屋の熱はそのまま"},
+         "right": {"label": "窓の外へ向ける", "mark": "o", "verdict": "熱が出ていく"},
+         "note": "乾かしているのは、部屋ではなく、あなた"},
+        {"kind": "room", "preset": "exchange", "kicker": "一つ目・窓は二つ",
+         "head": "冷やすのではなく、入れ替える"},
+        {"kind": "room", "preset": "mix", "kicker": "二つ目・部屋に夏が二つ",
+         "head": "天井の熱を、かき混ぜて落とす"},
+        {"kind": "process", "kicker": "ここからが核心", "title": "乳酸菌は、空気が嫌いです",
+         "steps": [{"label": "重石", "sub": "水が上がる"}, {"label": "水の膜", "sub": "空気が切れる"},
+                   {"label": "乳酸菌", "sub": "働きだす", "hot": True}],
+         "note": "漬ける道具ではなく、空気を抜く道具"},
+        {"kind": "timeline", "kicker": "千年続いた三つの段",
+         "title": "塩を、一粒も使わない漬物",
+         "marks": [["縄文", "土に埋める"], ["天平", "木簡に残る"], ["延喜式", "作り方が載る"],
+                   ["2024", "売り場から消えた"]],
+         "note": "記録は、途切れていなかった"},
+        {"kind": "source", "kicker": "出典", "org": "厚生労働省",
+         "asof": "令和6年6月時点", "quote": "家庭での発生が、全体の多くを占める",
+         "number": "169人", "note": "数字は、何が守っているかを教えてくれる"},
+        # ── biến thể ẢNH/tone (đại tu 2026-08-07) — chỉ chạy khi có --img-dir,
+        #    riêng title tone:accent không cần ảnh nên chạy luôn
+        {"kind": "title", "tone": "accent", "num": "第三章",
+         "title": "水だけで、二年もつ", "sub": "塩を使わない漬物の正体"},
+        {"kind": "stat", "bg": "photo", "kicker": "スーパーの棚から",
+         "big": "0", "unit": "円", "sub": "追加でかかるお金",
+         "note": "道具は、台所にもうある", "_needs_photo": True},
+        {"kind": "title", "bg": "photo", "photo_style": "duotone:ink",
+         "num": "第二章", "title": "冷蔵庫が来た日", "_needs_photo": True},
+        {"kind": "flow", "bg": "photo", "kicker": "見えない仕事",
+         "head": "膜が、空気を切っている",
+         "arrows": [[1450, 380, 1750, 260, .18]],
+         "pins": [[1560, 200, "ここが膜"]], "_needs_photo": True},
+    ]
+
+
+def cmd_demo(a):
+    out = Path(a.target)
+    out.mkdir(parents=True, exist_ok=True)
+    cache = out / "_cut"
+    paths = []
+    specs = demo_specs()
+    if not a.img_dir:
+        n0 = len(specs)
+        specs = [v for v in specs if not v.get("_needs_photo")]
+        if len(specs) < n0:
+            print(f"[demo] bỏ {n0 - len(specs)} thẻ biến thể ảnh (không có --img-dir)")
+    for i, v in enumerate(specs):
+        v.pop("_needs_photo", None)
+        reveal_check(v)
+        bg_img, _ = prep_images(v, i, Path(a.img_dir) if a.img_dir else None, cache)
+        p = build(v, out / f"vox_{i:02d}.mp4", bg_img, still_only=not a.mp4)
+        if not a.mp4 and getattr(a, "sub_mock", False):
+            mock_subs(Image.open(p).convert("RGB")).save(p)
+        print(f"  [{i:02d}] {v['kind']:9s} → {Path(p).name}")
+        paths.append(Path(p).with_suffix(".png") if a.mp4 else p)
+    sheet(paths, out / "_vox_sheet.jpg", cols=a.cols)
+    print(f"\n✅ {len(paths)} thẻ → {out}\n→ DUYỆT MẮT contact sheet trước khi mở cho video thật.")
+
+
+# ══════════════════════════════════════════════════════════════════ SLIDES
+
+def cmd_slides(a):
+    slides = Path(a.target)
+    clips = Path(a.clips_dir)
+    clips.mkdir(parents=True, exist_ok=True)
+    cfg = json.loads(slides.read_text(encoding="utf-8"))
+    img_dir = Path(a.img_dir) if a.img_dir else clips.parent / (
+        CH.get(a.channel)["img_subdir"] if a.channel else "slides_img")
+    cache = clips / "_cut"
+    only = set(a.only or [])
+    n_title, made, skipped = 0, [], 0
+    for i, e in enumerate(cfg):
+        v = e.get("vox")
+        if not v or (only and i not in only):
+            continue
+        if v.get("kind") == "title":
+            n_title += 1
+        reveal_check(v)
+        bg_img, bg_path = prep_images(v, i, img_dir, cache)
+        out = clips / f"clip_{i:02d}.mp4"
+        sig_p = clips / f"clip_{i:02d}.sig"
+        sig = _sig(v, bg_path)
+        if not a.still and not a.force and out.exists() and sig_p.exists() \
+                and sig_p.read_text(encoding="utf-8") == sig:
+            print(f"  [{i:02d}] {v.get('kind'):9s} — không đổi, skip")
+            skipped += 1
+            made.append(out.with_suffix(".png"))
+            continue
+        p = build(v, out, bg_img, still_only=a.still)
+        if a.still and getattr(a, "sub_mock", False):
+            mock_subs(Image.open(p).convert("RGB")).save(p)
+        if not a.still:
+            sig_p.write_text(sig, encoding="utf-8")
+        print(f"  [{i:02d}] {v.get('kind'):9s} → {Path(p).name}"
+              + ("" if bg_path else ("  (nền phẳng)" if v.get("bg") == "photo" else "")))
+        made.append(Path(p) if a.still else out.with_suffix(".png"))
+    print(f"— dựng {len(made) - skipped} thẻ, skip {skipped} —")
+    if n_title > TITLE_CAP:
+        print(f"🔴 GATE VOX X1: {n_title} thẻ 'title' > trần {TITLE_CAP} → thẻ chữ đang thay "
+              f"nội dung hình. Đổi sang flow/collage/stat (skill video-vox GĐ2).")
+    if made:
+        sheet([p for p in made if Path(p).exists()], clips / "_vox_sheet.jpg", cols=a.cols)
+
+
+def cmd_sheet(a):
+    d = Path(a.target)
+    ps = sorted(d.glob("clip_*.png")) or sorted(d.glob("vox_*.png"))
+    if not ps:
+        raise SystemExit(f"[LỖI] không thấy PNG thẻ nào trong {d}")
+    sheet(ps, d / "_vox_sheet.jpg", cols=a.cols)
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Thẻ hình kiểu Vox — tool dùng chung mọi kênh")
+    ap.add_argument("target", help="'demo' | 'sheet' | đường dẫn SLIDES.json")
+    ap.add_argument("clips_dir", nargs="?", help="folder clips (bắt buộc khi target là SLIDES.json); "
+                                                 "với demo/sheet là folder ra/vào")
+    ap.add_argument("--channel", help="nạp hồ sơ vox từ channels.py (palette/font/safe_bottom)")
+    ap.add_argument("--img-dir", help="folder ảnh nền (mặc định suy từ hồ sơ kênh)")
+    ap.add_argument("--only", nargs="*", type=int, help="chỉ dựng vài slot")
+    ap.add_argument("--still", action="store_true", help="chỉ xuất PNG frame cuối (duyệt nhanh)")
+    ap.add_argument("--sub-mock", dest="sub_mock", action="store_true",
+                    help="vẽ MOCK phụ đề pill 2 dòng lên PNG duyệt — kiểm 'không đè chữ "
+                         "có nghĩa' + 'nửa dưới hết trống' trong một lần nhìn")
+    ap.add_argument("--mp4", action="store_true", help="demo: xuất cả mp4, không chỉ PNG")
+    ap.add_argument("--force", action="store_true", help="bỏ qua .sig, dựng lại hết")
+    ap.add_argument("--cols", type=int, default=3, help="số cột contact sheet")
+    ap.add_argument("--clip-sec", type=float,
+                    help=f"độ dài clip (mặc định {CLIP_SEC:.0f}s = anim + giữ hình, renderer tự "
+                         f"trim theo cue). Chỉ hạ khi làm DEMO xem chuyển động — clip ngắn hơn "
+                         f"cue thì renderer LOOP, tức đoạn hoạt hoạ chạy lại giữa bài.")
+    a = ap.parse_args()
+    if a.clip_sec:
+        globals()["CLIP_SEC"] = a.clip_sec
+
+    if a.target in ("demo", "sheet") and not a.clips_dir:
+        ap.error(f"'{a.target}' cần thêm đường dẫn folder")
+    if a.target == "demo":
+        a.target, a.clips_dir = a.clips_dir, None
+        apply_profile(a.channel)
+        return cmd_demo(a)
+    if a.target == "sheet":
+        a.target = a.clips_dir
+        return cmd_sheet(a)
+    if not a.clips_dir:
+        ap.error("thiếu <clips_dir>")
+    apply_profile(a.channel)
+    cmd_slides(a)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,392 @@
+[
+ {
+  "match": "九十二歳で、いまも毎週",
+  "photo": true,
+  "q": "MANUAL: Tetsuko_Kuroyanagi_201511.jpg (Wikimedia Commons, CC BY 4.0, 文部科学省) — tải tay, ghi ATTRIBUTIONS"
+ },
+ {
+  "match": "テレビの司会を、五十年",
+  "photo": true,
+  "q": "MANUAL: Tetsuko_Kuroyanagi_1956.jpg (Wikimedia Commons, PD-Japan) — ảnh thời trẻ, cặp so sánh"
+ },
+ {
+  "match": "「元気すぎて、怖いくらい」",
+  "photo": true,
+  "q": "television studio lights dark stage"
+ },
+ {
+  "match": "三つの小さな習慣が見えてきます",
+  "drawn": {
+   "layout": "table",
+   "title": "徹子さんの健康ノート",
+   "rows": [
+    [
+     "一つ目",
+     "？"
+    ],
+    [
+     "二つ目",
+     "？"
+    ],
+    [
+     "三つ目",
+     "？"
+    ]
+   ],
+   "paper": "cream"
+  }
+ },
+ {
+  "match": "いちばんの驚きは、夜の「五十回」",
+  "photo": true,
+  "q": "night window warm lamp japanese living room"
+ },
+ {
+  "match": "毎晩、寝る前の、スクワット五十回です",
+  "rank": "その1",
+  "photo": true,
+  "q": "asian woman squat exercise home",
+  "video": true,
+  "qv": "bodyweight squat living room girl"
+ },
+ {
+  "match": "教えたのは、プロレスラーの",
+  "rank": "その1",
+  "photo": true,
+  "q": "wrestling ring ropes spotlight dark arena"
+ },
+ {
+  "match": "「毎日五十回続ければ、百歳まで舞台に立てますよ」",
+  "rank": "その1",
+  "photo": true,
+  "q": "theater stage red curtain spotlight"
+ },
+ {
+  "match": "旅行先のホテルでも",
+  "rank": "その1",
+  "photo": true,
+  "q": "hotel room bed warm lamp evening"
+ },
+ {
+  "match": "太ももは、体の中でいちばん大きな",
+  "rank": "その1",
+  "photo": true,
+  "q": "climbing stairs sneakers close up feet"
+ },
+ {
+  "match": "歩くのがおっくうになる",
+  "rank": "その1",
+  "photo": true,
+  "q": "asian elderly man sitting window alone home"
+ },
+ {
+  "match": "先に弱っていくのは足腰ではなく",
+  "rank": "その1",
+  "photo": true,
+  "q": "empty park bench autumn leaves"
+ },
+ {
+  "match": "七十歳を過ぎてからの転倒は",
+  "rank": "その1",
+  "photo": true,
+  "q": "handrail stairs home senior hand safety"
+ },
+ {
+  "match": "「私は毎日歩いているから大丈夫」と思った方",
+  "rank": "その1",
+  "photo": true,
+  "q": "asian senior walking sneakers park morning"
+ },
+ {
+  "match": "ここで、ノートに一枚、紙を貼ります",
+  "rank": "その1",
+  "drawn": {
+   "layout": "table",
+   "title": "運動ガイド2023（厚労省）",
+   "rows": [
+    [
+     "公表",
+     "2024年1月"
+    ],
+    [
+     "筋トレ",
+     "週2〜3日",
+     "ok"
+    ],
+    [
+     "対象",
+     "高齢者もふくむ"
+    ],
+    [
+     "自重スクワット",
+     "筋トレに入る"
+    ]
+   ],
+   "circle": 1,
+   "paper": "cream",
+   "anim": true
+  }
+ },
+ {
+  "match": "今日から始めるなら、朝と晩に、五回ずつで十分",
+  "rank": "その1",
+  "photo": true,
+  "q": "wooden chair dining table home interior"
+ },
+ {
+  "match": "回数より、「毎晩」のほうが",
+  "rank": "その1",
+  "drawn": {
+   "layout": "table",
+   "title": "一つ目のコツ",
+   "rows": [
+    [
+     "始めは",
+     "朝晩5回ずつ"
+    ],
+    [
+     "支え",
+     "椅子の背に手"
+    ],
+    [
+     "痛むとき",
+     "深さを減らす"
+    ],
+    [
+     "大事なのは",
+     "毎晩",
+     "ok"
+    ]
+   ],
+   "paper": "cream"
+  }
+ },
+ {
+  "match": "ほとんど毎日のぼりつづけている、白い野菜",
+  "photo": true,
+  "q": "japanese kitchen counter morning light"
+ },
+ {
+  "match": "この、みんなの健康ノートには",
+  "photo": true,
+  "q": "open notebook fountain pen wooden desk"
+ },
+ {
+  "match": "毎日の、玉ねぎです",
+  "rank": "その2",
+  "photo": true,
+  "q": "onions yellow many pile"
+ },
+ {
+  "match": "サラダに、お味噌汁に、炒めものに",
+  "rank": "その2",
+  "photo": true,
+  "q": "miso soup bowl onion japanese table"
+ },
+ {
+  "match": "玉ねぎの、もう一つの良いところ",
+  "rank": "その2",
+  "photo": true,
+  "q": "onion basket rustic wooden"
+ },
+ {
+  "match": "ケルセチンという成分",
+  "rank": "その2",
+  "photo": true,
+  "q": "red onion half layers macro purple"
+ },
+ {
+  "match": "言い切れる証拠は、まだありません",
+  "rank": "その2",
+  "drawn": {
+   "layout": "table",
+   "title": "正直に書くノート",
+   "rows": [
+    [
+     "玉ねぎで長生き",
+     "証拠はまだ",
+     "warn"
+    ],
+    [
+     "言えること",
+     "研究がつづく"
+    ]
+   ],
+   "paper": "cream"
+  }
+ },
+ {
+  "match": "毎日の献立に、「軸」が一本ある",
+  "rank": "その2",
+  "photo": true,
+  "q": "home cooked meal rice bowl table asian"
+ },
+ {
+  "match": "悪いものを食べることではなく、食べないこと",
+  "rank": "その2",
+  "photo": true,
+  "q": "empty plate on table single chair"
+ },
+ {
+  "match": "卵、豆腐、お肉、お魚。たんぱく質です",
+  "rank": "その2",
+  "photo": true,
+  "q": "tofu egg grilled fish japanese protein dishes"
+ },
+ {
+  "match": "「よく笑って、よく食べる」",
+  "rank": "その2",
+  "photo": true,
+  "q": "asian elderly couple laughing eating together japanese"
+ },
+ {
+  "match": "さて、ここで折り返しです",
+  "photo": true,
+  "q": "green tea cup steam window afternoon"
+ },
+ {
+  "match": "ここで少し一息ですね",
+  "photo": true,
+  "q": "teapot pouring tea cup warm"
+ },
+ {
+  "match": "「断固として、七時間」の睡眠です",
+  "rank": "その3",
+  "photo": true,
+  "q": "peaceful bedroom night bedside lamp"
+ },
+ {
+  "match": "筋肉の手入れ",
+  "rank": "その3",
+  "photo": true,
+  "q": "moonlight through bedroom window calm night"
+ },
+ {
+  "match": "ここで、もう一枚、紙を貼ります",
+  "rank": "その3",
+  "drawn": {
+   "layout": "table",
+   "title": "睡眠ガイド2023（厚労省）",
+   "rows": [
+    [
+     "公表",
+     "2024年2月"
+    ],
+    [
+     "高齢者の目安",
+     "床は8時間まで",
+     "ok"
+    ],
+    [
+     "注意",
+     "寝すぎも逆効果",
+     "warn"
+    ]
+   ],
+   "circle": 1,
+   "paper": "cream",
+   "anim": true
+  }
+ },
+ {
+  "match": "長く寝れば寝るほど良い、では、ないんです",
+  "rank": "その3",
+  "photo": true,
+  "q": "alarm clock bedside table morning"
+ },
+ {
+  "match": "「何時に起きるか」を先に固定する",
+  "rank": "その3",
+  "photo": true,
+  "q": "morning sunrise open curtains bedroom light"
+ },
+ {
+  "match": "一つは、早く床に入りすぎること",
+  "rank": "その3",
+  "photo": true,
+  "q": "dark bedroom early evening clock"
+ },
+ {
+  "match": "もう一つは、寝酒です",
+  "rank": "その3",
+  "photo": true,
+  "q": "sake bottle cup japanese wooden table"
+ },
+ {
+  "match": "三十分ほどの短い昼寝",
+  "rank": "その3",
+  "photo": true,
+  "q": "asian elderly man napping sofa home"
+ },
+ {
+  "match": "どれも、「仕事を続けるため」の習慣なんです",
+  "photo": true,
+  "q": "MANUAL: Tetsuko_Kuroyanagi_201511.jpg (dùng lại chân dung Commons — copy sang slot này)"
+ },
+ {
+  "match": "馬場さんの言葉を、思い出してください",
+  "photo": true,
+  "q": "empty theater stage spotlight from seats"
+ },
+ {
+  "match": "車椅子を使うことがあると伝えられています",
+  "photo": true,
+  "q": "backstage corridor theater soft light"
+ },
+ {
+  "match": "定年で仕事を離れると",
+  "photo": true,
+  "q": "front door house entrance morning light"
+ },
+ {
+  "match": "頑張りどころを、一点に絞る",
+  "photo": true,
+  "q": "spotlight empty stage dark theater beam"
+ },
+ {
+  "match": "では、今日のノートを、まとめます",
+  "rank": "まとめ",
+  "drawn": {
+   "layout": "table",
+   "title": "徹子さんの健康ノート",
+   "rows": [
+    [
+     "一つ目",
+     "夜のスクワット"
+    ],
+    [
+     "二つ目",
+     "毎日の玉ねぎ"
+    ],
+    [
+     "三つ目",
+     "断固7時間"
+    ],
+    [
+     "四つ目",
+     "自分の舞台",
+     "ok"
+    ]
+   ],
+   "circle": 3,
+   "paper": "cream",
+   "anim": true
+  }
+ },
+ {
+  "match": "あなたの「舞台」は、どこでしょうか",
+  "rank": "まとめ",
+  "photo": true,
+  "q": "asian elderly woman gardening vegetables"
+ },
+ {
+  "match": "日野原重明先生の、「朝の一さじ」",
+  "photo": true,
+  "q": "olive oil spoon glass morning kitchen light"
+ },
+ {
+  "match": "今日の一口が、十年後のあなたをつくります",
+  "photo": true,
+  "q": "japanese breakfast table warm morning light"
+ }
+]

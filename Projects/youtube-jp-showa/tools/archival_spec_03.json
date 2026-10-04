@@ -1,0 +1,36 @@
+{
+ "_note": "Video 03 - phim that (theo luat moi CLAUDE.md: mo dau BAT BUOC video that + ghep nhieu video that cang nhieu cang tot). 3 clip: (1) Japan Today 1959 CC0 cho cold open (2)(3) Children of Japan 1941 (Children1941, licenseurl=creativecommons.org/licenses/publicdomain) - lop hoc that voi day ban, hoc sinh dang viet, tim thay bang cach quet 10s/frame ca file 641s.",
+ "_CANH_BAO": "id PHAI la vi tri THAT trong mang SLIDES.json sau khi merge voi SCENES (video_render.py doc clip_{i:02d}.mp4 theo VI TRI MANG, khong phai theo chi so dong noi dung). Da dinh loi nay 2026-08-22: dat id theo chi so dong (04,05) trong khi vi tri mang that su la (02,03) vi co anh AI '02_tessitsu_kiru' xen giua - phai doi ten file tay. Truoc khi chay lai: chay build_scenes_03.py TRUOC de biet vi tri that, roi moi dat id o day cho khop.",
+ "cuts": [
+  {
+   "id": "clip_00",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/children1941/children1941_full.mp4",
+   "ss": 214.5,
+   "dur": 8.0,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "line": 0,
+   "note": "THAY 2026-08-22 (user: giong clip khac, doi cai khac): ke giay dep truong hoc rong, may quay lia doc theo day o cua go, vai doi giay le loi, ket thuc gan toi den. Khop dung canh 'giao vien vao lop luc chua ai toi' hon canh di bo dong nguoi cu (japan_today). Vi tri mang SLIDES = 0"
+  },
+  {
+   "id": "clip_02",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/children1941/children1941_full.mp4",
+   "ss": 325.0,
+   "dur": 8.0,
+   "ybias": 0.3,
+   "grade": 1.0,
+   "line": 4,
+   "note": "lop hoc that 1941 - toan canh day ban, hoc sinh dang viet - thay 03_kyoshitsu_yoake (anh AI). Chi so dong=4 nhung VI TRI MANG SLIDES = 2 (co anh 02_tessitsu_kiru o dong 3 xen giua)"
+  },
+  {
+   "id": "clip_03",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/children1941/children1941_full.mp4",
+   "ss": 335.0,
+   "dur": 8.0,
+   "ybias": 0.35,
+   "grade": 1.0,
+   "line": 5,
+   "note": "can canh hoc sinh dang viet (ao thuy thu) - thay 27_asahi_desks (anh AI). Chi so dong=5 nhung VI TRI MANG SLIDES = 3"
+  }
+ ]
+}

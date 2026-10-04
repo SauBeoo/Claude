@@ -1,0 +1,737 @@
+[
+ {
+  "match": "いま敷いている布団に、ダニは何匹いると思われるでしょうか。",
+  "video": true,
+  "_clip": "asa_futon_tatami.mp4",
+  "_no": 1,
+  "_line": 0
+ },
+ {
+  "match": "今朝それを畳んだとき、部屋の空気は、ふだんの1000倍まで濃くなりました。",
+  "video": true,
+  "_clip": "macro_wata_hokori.mp4",
+  "_no": 2,
+  "_line": 2
+ },
+ {
+  "match": "今夜は叩かず、掃除機を片面に40秒かけてください。",
+  "video": true,
+  "_clip": "tatamu_hokori.mp4",
+  "_no": 3,
+  "_line": 4
+ },
+ {
+  "match": "それは、薬でも、機械でもありません。日にちです。",
+  "video": true,
+  "_clip": "hakobu_senaka.mp4",
+  "_no": 4,
+  "_line": 6
+ },
+ {
+  "match": "私たちは毎年、それとは正反対の日を選んで、干しています。",
+  "video": true,
+  "_clip": "nozzle_oku.mp4",
+  "_no": 5,
+  "_line": 8
+ },
+ {
+  "match": "この番組を気に入っていただけましたら、チャンネル登録を。皆さまのお住まいでは、布団をどのくらいの間隔で干していらっしゃいますか。よろしければ、コメントで教えてください。",
+  "video": true,
+  "_clip": "macro_nozzle.mp4",
+  "_no": 6,
+  "_line": 10
+ },
+ {
+  "match": "まず、相手の顔を、はっきりさせておきましょう。",
+  "video": true,
+  "_clip": "macro_seni_hikari.mp4",
+  "_no": 7,
+  "_line": 11
+ },
+ {
+  "match": "体の長さは、0.3ミリから0.5ミリ。目では、まず見えません。",
+  "video": true,
+  "_clip": "hikari_toosu.mp4",
+  "_no": 8,
+  "_line": 13
+ },
+ {
+  "match": "刺しません。血も吸いません。人を襲うようなことは、何もしないのです。",
+  "video": true,
+  "_clip": "kakuhi_otiru.mp4",
+  "_no": 9,
+  "_line": 14
+ },
+ {
+  "match": "成虫の寿命は、およそ2か月。そのあいだに、メス1匹が200個から300個の卵を産みます。",
+  "video": true,
+  "_clip": "wata_dansou.mp4",
+  "_no": 10,
+  "_line": 16
+ },
+ {
+  "match": "何もしない生き物が、なぜこれほど嫌われるのか。答えは、生きているあいだの話ではありません。",
+  "video": true,
+  "_clip": "koyomi_kabe.mp4",
+  "_no": 11,
+  "_line": 17
+ },
+ {
+  "match": "よく晴れた夏の日に、4時間しっかり干せば、ダニは死ぬ。",
+  "video": true,
+  "_clip": "hosu_ranakan.mp4",
+  "_no": 12,
+  "_line": 18
+ },
+ {
+  "match": "日革研究所という、ダニを専門に調べている研究所が、2017年8月31日に実験をしています。",
+  "video": true,
+  "_clip": "ondokei_ue.mp4",
+  "_no": 13,
+  "_line": 20
+ },
+ {
+  "match": "気温31度、湿度30パーセント、4時間の天日干し。",
+  "video": true,
+  "_clip": "macro_netsu.mp4",
+  "_no": 14,
+  "_line": 21
+ },
+ {
+  "match": "けれど、ダニが死ぬ温度は、50度です。7度、届きませんでした。",
+  "video": true,
+  "_clip": "te_osu_atsui.mp4",
+  "_no": 15,
+  "_line": 23
+ },
+ {
+  "match": "生き残ったダニは、およそ8割。冬に同じ実験をすると、9割以上が生きていました。",
+  "video": true,
+  "_clip": "urasokumen_kage.mp4",
+  "_no": 16,
+  "_line": 24
+ },
+ {
+  "match": "布団は、熱を逃がさないように作られた道具です。",
+  "video": true,
+  "_clip": "dansou_hikari.mp4",
+  "_no": 17,
+  "_line": 26
+ },
+ {
+  "match": "布団が優秀であればあるほど、ダニはよく守られる。皮肉な話です。",
+  "video": true,
+  "_clip": "yuuhi_futon.mp4",
+  "_no": 18,
+  "_line": 28
+ },
+ {
+  "match": "では、干すのは無駄なのか。いいえ。ただ、私たちが思っていた意味とは、まるで違っていました。",
+  "video": true,
+  "_clip": "sentakubasami.mp4",
+  "_no": 19,
+  "_line": 29
+ },
+ {
+  "match": "ダニが好むのは、温度20度から30度、そして湿度60から80パーセント。これも大阪府が挙げている条件です。",
+  "video": true,
+  "_clip": "shitsudokei.mp4",
+  "_no": 20,
+  "_line": 30
+ },
+ {
+  "match": "干して奪えるのは、このうちの、湿度のほうです。",
+  "video": true,
+  "_clip": "yuge_agaru.mp4",
+  "_no": 21,
+  "_line": 31
+ },
+ {
+  "match": "殺す道具ではなく、住みにくくする道具。それが、天日干しの正体でした。",
+  "video": true,
+  "_clip": "macro_shizuku.mp4",
+  "_no": 22,
+  "_line": 33
+ },
+ {
+  "match": "この一行を、覚えておいてください。今日の話は、最後にここへ戻ってきます。",
+  "video": true,
+  "_clip": "kaze_fukuramu.mp4",
+  "_no": 23,
+  "_line": 34
+ },
+ {
+  "match": "さて、取り込むときの、あの一叩きです。",
+  "video": true,
+  "_clip": "futontataki_kake.mp4",
+  "_no": 24,
+  "_line": 35
+ },
+ {
+  "match": "目黒区の資料は、はっきり書いています。叩いても、アレルゲンを取り除く効果はあまり期待できない。むしろ、布団の表面のアレルゲンを増やすことになる、と。",
+  "video": true,
+  "_clip": "te_furiageru.mp4",
+  "_no": 25,
+  "_line": 37
+ },
+ {
+  "match": "私の母は、秋の夕方になると、団地の物干し場で、必ず2回、大きく叩いていました。",
+  "video": true,
+  "_clip": "tataku_shunkan.mp4",
+  "_no": 26,
+  "_line": 38
+ },
+ {
+  "match": "乾いた綿のにおいがして、あれが季節の変わり目の合図でした。",
+  "video": true,
+  "_clip": "hokori_taiyou.mp4",
+  "_no": 27,
+  "_line": 39
+ },
+ {
+  "match": "あの音は、汚れが落ちた音ではありませんでした。奥のものが、表に出てきた音だったのです。",
+  "video": true,
+  "_clip": "macro_ochiru.mp4",
+  "_no": 28,
+  "_line": 41
+ },
+ {
+  "match": "では、叩かずに、どうやって外へ出すのか。順番が、逆だったのです。",
+  "video": true,
+  "_clip": "danchi_monohoshi.mp4",
+  "_no": 29,
+  "_line": 42
+ },
+ {
+  "match": "ここで、掃除機の話をします。",
+  "video": true,
+  "_clip": "souji_futon.mp4",
+  "_no": 30,
+  "_line": 43
+ },
+ {
+  "match": "表面のダニは、サイクロン式で77パーセント吸えました。ここまでは、悪くありません。",
+  "video": true,
+  "_clip": "macro_tatsu.mp4",
+  "_no": 31,
+  "_line": 45
+ },
+ {
+  "match": "ところが、中間の層では0.7パーセント。いちばん深いところでは、0.06パーセントです。",
+  "video": true,
+  "_clip": "dansou_ugokanai.mp4",
+  "_no": 32,
+  "_line": 46
+ },
+ {
+  "match": "なぜでしょうか。ダニの脚の先には、吸盤のような構造があります。",
+  "video": true,
+  "_clip": "kyuuban_shigamitsuku.mp4",
+  "_no": 33,
+  "_line": 48
+ },
+ {
+  "match": "掃除機は、風で吸う道具です。しがみつく相手には、もともと向いていませんでした。",
+  "video": true,
+  "_clip": "dust_box.mp4",
+  "_no": 34,
+  "_line": 50
+ },
+ {
+  "match": "では、掃除機は無駄か。ここが、今日いちばんお伝えしたいところです。",
+  "video": true,
+  "_clip": "akeru_shiroi.mp4",
+  "_no": 35,
+  "_line": 51
+ },
+ {
+  "match": "吸えるのは、死骸とフンです。そして、私たちを苦しめているのは、そちらのほうなのです。",
+  "video": true,
+  "_clip": "koyomi_kasanaru.mp4",
+  "_no": 36,
+  "_line": 53
+ },
+ {
+  "match": "生きているダニより、死骸とフンのほうが、アレルゲンとしては刺激が強いと言われています。",
+  "video": true,
+  "_clip": "oshiire_sukima.mp4",
+  "_no": 37,
+  "_line": 54
+ },
+ {
+  "match": "ダニの数そのものが増えるのは、6月から8月。ところが、アレルゲンの量がいちばん多くなるのは、8月から10月です。",
+  "video": true,
+  "_clip": "oshiire_akeru.mp4",
+  "_no": 38,
+  "_line": 56
+ },
+ {
+  "match": "その量が積み上がりきるまでに、およそ2か月かかります。",
+  "video": true,
+  "_clip": "asa_suwaru.mp4",
+  "_no": 39,
+  "_line": 57
+ },
+ {
+  "match": "かけ方には、目安があります。",
+  "video": true,
+  "_clip": "ippoukou.mp4",
+  "_no": 40,
+  "_line": 59
+ },
+ {
+  "match": "速く動かすと、繊維の奥から出てきません。ゆっくり、押しつけず、まっすぐに。",
+  "video": true,
+  "_clip": "stopwatch.mp4",
+  "_no": 41,
+  "_line": 62
+ },
+ {
+  "match": "ここまでは、死んだあとの話でした。生きているダニをどうするか、本当に効くのは、ここからです。",
+  "video": true,
+  "_clip": "tekubi_yurumeru.mp4",
+  "_no": 42,
+  "_line": 64
+ },
+ {
+  "match": "日革研究所によれば、50度以上なら数時間、60度以上なら15分。",
+  "video": true,
+  "_clip": "sheets_hagasu.mp4",
+  "_no": 43,
+  "_line": 66
+ },
+ {
+  "match": "家でできる形にすると、三つあります。",
+  "video": true,
+  "_clip": "kansouki_sasu.mp4",
+  "_no": 44,
+  "_line": 68
+ },
+ {
+  "match": "二つ、コインランドリーの大型乾燥機で、高温で回す。水を吸わせず、乾いたまま回すのがこつです。",
+  "video": true,
+  "_clip": "fukuramu_futon.mp4",
+  "_no": 45,
+  "_line": 70
+ },
+ {
+  "match": "三つ、道具がなければ、黒いポリ袋です。布団を入れて口をしっかり閉じ、真夏の直射日光の下に置く。",
+  "video": true,
+  "_clip": "timer_tatami.mp4",
+  "_no": 46,
+  "_line": 71
+ },
+ {
+  "match": "黒は光を熱に変えますから、袋の中は、外の気温よりずっと高くなります。",
+  "video": true,
+  "_clip": "coin_laundry.mp4",
+  "_no": 47,
+  "_line": 72
+ },
+ {
+  "match": "白状しますと、私は布団乾燥機を買った最初の年、大事なことを一つ、知りませんでした。",
+  "video": true,
+  "_clip": "drum_mado.mp4",
+  "_no": 48,
+  "_line": 73
+ },
+ {
+  "match": "温めたあと、ふっくらした布団をそのまま押し入れにしまって、満足していたのです。",
+  "video": true,
+  "_clip": "kuroi_fukuro.mp4",
+  "_no": 49,
+  "_line": 74
+ },
+ {
+  "match": "殺して終わり、ではありません。連れ出して、はじめて終わりです。",
+  "video": true,
+  "_clip": "macro_kuroi.mp4",
+  "_no": 50,
+  "_line": 76
+ },
+ {
+  "match": "昔の家に、布団乾燥機はありませんでした。掃除機もありません。",
+  "video": true,
+  "_clip": "ondokei_fukuro.mp4",
+  "_no": 51,
+  "_line": 78
+ },
+ {
+  "match": "ここまでご覧いただき、ありがとうございます。この知恵に価値を感じていただけたなら、高評価と、同じように知りたい誰かへのシェアで、古代の秘訣を支えていただけると嬉しく思います。",
+  "video": true,
+  "_clip": "fukuro_akeru.mp4",
+  "_no": 52,
+  "_line": 80
+ },
+ {
+  "match": "また、ご感想や、次に掘り起こしてほしいテーマがあれば、コメントでお寄せください。皆さまの声が、この番組をより深いものにしていきます。",
+  "video": true,
+  "_clip": "shimau_manzoku.mp4",
+  "_no": 53,
+  "_line": 81
+ },
+ {
+  "match": "ここで少し立ち止まって、お金の話をさせてください。",
+  "video": true,
+  "_clip": "souji_atotsuki.mp4",
+  "_no": 54,
+  "_line": 82
+ },
+ {
+  "match": "ただ、共通していることが一つあります。毎年、あるいは数年ごとに、買い直すものだということです。",
+  "video": true,
+  "_clip": "shimau_shimeru.mp4",
+  "_no": 55,
+  "_line": 84
+ },
+ {
+  "match": "一方で、昔から伝わってきたやり方には、代金がかかりません。日にちと、少しの手間だけです。",
+  "video": true,
+  "_clip": "tana_sheets.mp4",
+  "_no": 56,
+  "_line": 85
+ },
+ {
+  "match": "売り場の側から見れば、そのほうが困るでしょう。誰かを責める話ではありません。",
+  "video": true,
+  "_clip": "spray_toru.mp4",
+  "_no": 57,
+  "_line": 86
+ },
+ {
+  "match": "ただ、お金のかからない一手には、広めてくれる人がいません。だから、静かに忘れられていきます。",
+  "video": true,
+  "_clip": "kago_oku.mp4",
+  "_no": 58,
+  "_line": 87
+ },
+ {
+  "match": "昔の人が持っていた答えは、二つあります。",
+  "video": true,
+  "_clip": "kozeni_tsukue.mp4",
+  "_no": 59,
+  "_line": 88
+ },
+ {
+  "match": "打ち直し、といいます。じつは、いまも全国の布団店で受けている仕事です。",
+  "video": true,
+  "_clip": "engawa_karappo.mp4",
+  "_no": 60,
+  "_line": 90
+ },
+ {
+  "match": "布団を解いて、中の綿を全部取り出し、機械でほぐします。ごみと古い綿ぼこりを落とし、新しい生地に入れて、仕立て直す。",
+  "video": true,
+  "_clip": "futonya_omote.mp4",
+  "_no": 61,
+  "_line": 91
+ },
+ {
+  "match": "名前の由来は、道具にあります。機械がなかったころは、弓のようにしなる棒で、綿を叩きほぐしていました。",
+  "video": true,
+  "_clip": "furui_futon_yuka.mp4",
+  "_no": 62,
+  "_line": 92
+ },
+ {
+  "match": "干すことも、吸うことも、外側からの手当てです。打ち直しだけが、中身そのものを、いったん家の外へ出します。",
+  "video": true,
+  "_clip": "ito_hodoku.mp4",
+  "_no": 63,
+  "_line": 93
+ },
+ {
+  "match": "4万匹という数字が、そこで一度、0に戻ります。",
+  "video": true,
+  "_clip": "wata_dasu.mp4",
+  "_no": 64,
+  "_line": 94
+ },
+ {
+  "match": "機械にかけられた綿が、薄い雲のような層になって出てくる。それを何度も折り返して、また通す。",
+  "video": true,
+  "_clip": "macro_katamari.mp4",
+  "_no": 65,
+  "_line": 96
+ },
+ {
+  "match": "固まって板のようになっていた綿が、1枚ずつ、もとの繊維に戻っていきます。",
+  "video": true,
+  "_clip": "kikai_mawaru.mp4",
+  "_no": 66,
+  "_line": 97
+ },
+ {
+  "match": "出来上がった布団は、預けたときより厚く、そして軽くなって帰ってきました。手ざわりで、はっきり分かります。",
+  "video": true,
+  "_clip": "wata_kumo.mp4",
+  "_no": 67,
+  "_line": 98
+ },
+ {
+  "match": "費用は、木綿のシングルで、12800円ほどから。3年から5年に一度が目安です。",
+  "video": true,
+  "_clip": "sou_kasaneru.mp4",
+  "_no": 68,
+  "_line": 99
+ },
+ {
+  "match": "新しい布団を1枚買えば、3万円、5万円は当たり前ですから、半分以下の値段で、中身は新品に戻る計算になります。",
+  "video": true,
+  "_clip": "fuchi_tatamu.mp4",
+  "_no": 69,
+  "_line": 100
+ },
+ {
+  "match": "昭和30年から50年ごろまでは、ほとんどの家庭が、毎年これをしていました。",
+  "video": true,
+  "_clip": "atarashii_nuno.mp4",
+  "_no": 70,
+  "_line": 101
+ },
+ {
+  "match": "毎年です。年に一度、布団屋さんが荷車を引いて町内をまわる。それが、当たり前の風景でした。",
+  "video": true,
+  "_clip": "wata_ireru.mp4",
+  "_no": 71,
+  "_line": 102
+ },
+ {
+  "match": "「敷いて3年、掛けて5年」という言い方が、いまも残っています。",
+  "video": true,
+  "_clip": "hari_toosu.mp4",
+  "_no": 72,
+  "_line": 103
+ },
+ {
+  "match": "そして、木綿の寿命は、80年から100年です。",
+  "video": true,
+  "_clip": "atsui_futon.mp4",
+  "_no": 73,
+  "_line": 105
+ },
+ {
+  "match": "正直にお伝えしておきます。いま多く売られている、化学繊維の布団は、打ち直しができません。値段は3分の1でも、直す道はありません。",
+  "video": true,
+  "_clip": "osu_modoru.mp4",
+  "_no": 74,
+  "_line": 107
+ },
+ {
+  "match": "軽くて安く手に入るようになった代わりに、直すという道が、静かに閉じられました。",
+  "video": true,
+  "_clip": "watayumi_kabe.mp4",
+  "_no": 75,
+  "_line": 108
+ },
+ {
+  "match": "では、職人に頼めない家は、どうすればいいのでしょうか。ここで、お金のかからない、もう一つの答えが出てきます。",
+  "video": true,
+  "_clip": "riyakaa_mae.mp4",
+  "_no": 76,
+  "_line": 109
+ },
+ {
+  "match": "昔の日本には、布団や着物を干す日に、名前がついていました。",
+  "video": true,
+  "_clip": "koyomi_hashira.mp4",
+  "_no": 77,
+  "_line": 110
+ },
+ {
+  "match": "7月下旬から8月ごろの、土用干し。",
+  "video": true,
+  "_clip": "kibako_akeru.mp4",
+  "_no": 78,
+  "_line": 112
+ },
+ {
+  "match": "そして、1月下旬から2月ごろの、寒干し。",
+  "video": true,
+  "_clip": "azekura_tooku.mp4",
+  "_no": 79,
+  "_line": 114
+ },
+ {
+  "match": "奈良の正倉院では、いまも10月の下旬から11月のはじめに、宝物に風を通しています。",
+  "video": true,
+  "_clip": "kura_tobira.mp4",
+  "_no": 80,
+  "_line": 116
+ },
+ {
+  "match": "1200年、途切れずに続いている作業です。",
+  "video": true,
+  "_clip": "kofu_take.mp4",
+  "_no": 81,
+  "_line": 117
+ },
+ {
+  "match": "寒干しです。1月から2月、1年でいちばん寒い時期に、布団を外に出します。",
+  "video": true,
+  "_clip": "nuno_kakeru.mp4",
+  "_no": 82,
+  "_line": 119
+ },
+ {
+  "match": "凍えるような日に、なぜ。私も、はじめて知ったときは、意味が分かりませんでした。",
+  "video": true,
+  "_clip": "shimo_niwa.mp4",
+  "_no": 83,
+  "_line": 120
+ },
+ {
+  "match": "東京の、月ごとの平均湿度です。8月は、74パーセント。",
+  "video": true,
+  "_clip": "fuyu_hosu.mp4",
+  "_no": 84,
+  "_line": 122
+ },
+ {
+  "match": "思い出してください。ダニが増えるのに必要な湿度は、60から80パーセントでした。",
+  "video": true,
+  "_clip": "shiroi_iki.mp4",
+  "_no": 85,
+  "_line": 124
+ },
+ {
+  "match": "ダニにとって、ちょうどいい湿り気の中に、わざわざ広げていたことになります。",
+  "video": true,
+  "_clip": "shitsudokei_fuyu.mp4",
+  "_no": 86,
+  "_line": 126
+ },
+ {
+  "match": "冒頭で、いちばん最後に置いておくと申し上げた、あの日です。",
+  "video": true,
+  "_clip": "fuyu_hikari.mp4",
+  "_no": 87,
+  "_line": 128
+ },
+ {
+  "match": "布団を干すのにいちばん向いた日は、真夏の晴れた日ではありませんでした。真冬の、晴れて風のある日です。",
+  "video": true,
+  "_clip": "macro_kawaita.mp4",
+  "_no": 88,
+  "_line": 129
+ },
+ {
+  "match": "先ほど、覚えておいてくださいとお願いした一行が、ここで効いてきます。",
+  "video": true,
+  "_clip": "te_tsumetai.mp4",
+  "_no": 89,
+  "_line": 130
+ },
+ {
+  "match": "乾かす道具なら、いちばん乾いた日に使う。じつは、当たり前のことでした。",
+  "video": true,
+  "_clip": "tatamu_hokori_nashi.mp4",
+  "_no": 90,
+  "_line": 132
+ },
+ {
+  "match": "ところが私たちは、太陽の熱をあてにして、夏を選んできました。けれど熱では、43度までしか上がりません。",
+  "video": true,
+  "_clip": "hikaku_natsu.mp4",
+  "_no": 91,
+  "_line": 133
+ },
+ {
+  "match": "梅雨のあとに一度、秋に一度、そして、いちばん乾く真冬に、もう一度。",
+  "video": true,
+  "_clip": "hikaku_fuyu.mp4",
+  "_no": 92,
+  "_line": 135
+ },
+ {
+  "match": "やり方は、難しくありません。",
+  "video": true,
+  "_clip": "kakedokei.mp4",
+  "_no": 93,
+  "_line": 136
+ },
+ {
+  "match": "途中で一度、裏返してください。日の当たらない下側は、湿ったままです。",
+  "video": true,
+  "_clip": "urakaesu.mp4",
+  "_no": 94,
+  "_line": 138
+ },
+ {
+  "match": "取り込んだら、叩かずに、片面40秒の掃除機。ここまでが、一組です。",
+  "video": true,
+  "_clip": "toriKomu.mp4",
+  "_no": 95,
+  "_line": 139
+ },
+ {
+  "match": "そして、すぐ押し入れにしまわないこと。30分ほど部屋に置いて、布団の熱が冷めてからにしてください。温かいうちにしまうと、その湿気が、戸の内側にこもります。",
+  "video": true,
+  "_clip": "samasu_yuge.mp4",
+  "_no": 96,
+  "_line": 140
+ },
+ {
+  "match": "私の母は、秋の終わりになると、布団屋さんを家に呼んでいました。",
+  "video": true,
+  "_clip": "genkan_aku.mp4",
+  "_no": 97,
+  "_line": 141
+ },
+ {
+  "match": "「綿は、くたびれるだけよ。死にはせん」",
+  "video": true,
+  "_clip": "tsumamu_wata.mp4",
+  "_no": 98,
+  "_line": 143
+ },
+ {
+  "match": "綿は死なない。くたびれているだけだから、起こしてやればいい。",
+  "video": true,
+  "_clip": "peshanko_genkan.mp4",
+  "_no": 99,
+  "_line": 145
+ },
+ {
+  "match": "失われたのは、寒干しや打ち直しという、やり方ではありません。",
+  "video": true,
+  "_clip": "tenohira_wata.mp4",
+  "_no": 100,
+  "_line": 147
+ },
+ {
+  "match": "その、あまりにも当たり前だった前提のほうです。",
+  "video": true,
+  "_clip": "oshiire_oku.mp4",
+  "_no": 101,
+  "_line": 149
+ },
+ {
+  "match": "今夜は、叩くのをやめて、片面に40秒。",
+  "video": true,
+  "_clip": "techou_hiraku.mp4",
+  "_no": 105,
+  "_line": 150
+ },
+ {
+  "match": "そして手帳の1月のところに、晴れて風のある日、と書き込んでおいてください。",
+  "video": true,
+  "_clip": "hikidasu.mp4",
+  "_no": 102,
+  "_line": 151
+ },
+ {
+  "match": "その日に干した布団は、たぶん、あなたが今まで干してきたどの布団より、軽くなっています。",
+  "video": true,
+  "_clip": "engawa_fuyu.mp4",
+  "_no": 104,
+  "_line": 152
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの中に眠る宝を静かに掘り起こしていきます。それでは、次の知恵でまたお会いしましょう。",
+  "video": true,
+  "_clip": "hirogeru_fuyu.mp4",
+  "_no": 103,
+  "_line": 153
+ }
+]

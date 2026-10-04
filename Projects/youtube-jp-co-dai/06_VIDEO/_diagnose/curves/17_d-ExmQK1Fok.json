@@ -1,0 +1,56 @@
+{
+ "nn": "17",
+ "videoId": "d-ExmQK1Fok",
+ "title": "排水溝の掃除はもういらない？10円玉5枚が始める静かな防衛――1893年の科学",
+ "published": "2026-08-10",
+ "dur_s": 1444,
+ "views": 18,
+ "organic": 10,
+ "ext": 0,
+ "srt_match": "dur",
+ "avd_s": 172,
+ "avd_pct": 11.93,
+ "day1": {
+  "views": 0,
+  "avd_s": 0,
+  "avd_pct": 0
+ },
+ "marks": {
+  "@15s": null,
+  "@30s": null,
+  "@45s": null,
+  "@60s": null
+ },
+ "floor": {
+  "@3m": null,
+  "@10m": null,
+  "@20m": null
+ },
+ "traffic": [
+  {
+   "src": "YT_SEARCH",
+   "views": 8,
+   "min": 13
+  },
+  {
+   "src": "SUBSCRIBER",
+   "views": 1,
+   "min": 2
+  },
+  {
+   "src": "YT_CHANNEL",
+   "views": 1,
+   "min": 9
+  },
+  {
+   "src": "NO_LINK_OTHER",
+   "views": 0,
+   "min": 0
+  }
+ ],
+ "srt_folder": "17_haisuiko-numeri-10endama",
+ "drops": [],
+ "curve": [],
+ "relperf": [],
+ "pulled": "2026-09-06"
+}

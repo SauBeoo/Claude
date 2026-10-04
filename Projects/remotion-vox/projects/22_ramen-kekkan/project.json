@@ -1,0 +1,5036 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "22_ramen-kekkan",
+  "channel": "shokutaku",
+  "templateRef": "shokutaku",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-08-31T03:06:17.726543+00:00",
+  "modifiedAt": "2026-08-31T03:06:17.726543+00:00"
+ },
+ "timeline": {
+  "durationInFrames": 29499
+ },
+ "sceneMarkers": [],
+ "tracks": [
+  {
+   "id": "trk-slides",
+   "name": "Slides",
+   "type": "video",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "slide-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 185,
+     "asset": "assets/slide_00.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-1",
+     "kind": "video",
+     "from": 171,
+     "durationInFrames": 515,
+     "asset": "assets/slide_01.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-2",
+     "kind": "video",
+     "from": 671,
+     "durationInFrames": 248,
+     "asset": "assets/slide_02.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-3",
+     "kind": "video",
+     "from": 905,
+     "durationInFrames": 240,
+     "asset": "assets/slide_03.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-4",
+     "kind": "video",
+     "from": 1131,
+     "durationInFrames": 673,
+     "asset": "assets/slide_04.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-5",
+     "kind": "video",
+     "from": 1790,
+     "durationInFrames": 779,
+     "asset": "assets/slide_05.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-6",
+     "kind": "video",
+     "from": 2556,
+     "durationInFrames": 708,
+     "asset": "assets/slide_06.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-7",
+     "kind": "video",
+     "from": 3250,
+     "durationInFrames": 384,
+     "asset": "assets/slide_07.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-8",
+     "kind": "video",
+     "from": 3620,
+     "durationInFrames": 615,
+     "asset": "assets/slide_08.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-9",
+     "kind": "video",
+     "from": 4221,
+     "durationInFrames": 509,
+     "asset": "assets/slide_09.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-10",
+     "kind": "video",
+     "from": 4716,
+     "durationInFrames": 392,
+     "asset": "assets/slide_10.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-11",
+     "kind": "video",
+     "from": 5093,
+     "durationInFrames": 309,
+     "asset": "assets/slide_11.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-12",
+     "kind": "video",
+     "from": 5388,
+     "durationInFrames": 360,
+     "asset": "assets/slide_12.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-13",
+     "kind": "video",
+     "from": 5735,
+     "durationInFrames": 611,
+     "asset": "assets/slide_13.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-14",
+     "kind": "video",
+     "from": 6332,
+     "durationInFrames": 286,
+     "asset": "assets/slide_14.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-15",
+     "kind": "video",
+     "from": 6604,
+     "durationInFrames": 486,
+     "asset": "assets/slide_15.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-16",
+     "kind": "video",
+     "from": 7075,
+     "durationInFrames": 301,
+     "asset": "assets/slide_16.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-17",
+     "kind": "video",
+     "from": 7362,
+     "durationInFrames": 762,
+     "asset": "assets/slide_17.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-18",
+     "kind": "video",
+     "from": 8110,
+     "durationInFrames": 1901,
+     "asset": "assets/slide_18.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-19",
+     "kind": "video",
+     "from": 9997,
+     "durationInFrames": 276,
+     "asset": "assets/slide_19.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-20",
+     "kind": "video",
+     "from": 10259,
+     "durationInFrames": 322,
+     "asset": "assets/slide_20.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-21",
+     "kind": "video",
+     "from": 10567,
+     "durationInFrames": 473,
+     "asset": "assets/slide_21.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-22",
+     "kind": "video",
+     "from": 11026,
+     "durationInFrames": 456,
+     "asset": "assets/slide_22.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-23",
+     "kind": "video",
+     "from": 11468,
+     "durationInFrames": 546,
+     "asset": "assets/slide_23.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-24",
+     "kind": "video",
+     "from": 12000,
+     "durationInFrames": 539,
+     "asset": "assets/slide_24.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-25",
+     "kind": "video",
+     "from": 12525,
+     "durationInFrames": 704,
+     "asset": "assets/slide_25.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-26",
+     "kind": "video",
+     "from": 13214,
+     "durationInFrames": 277,
+     "asset": "assets/slide_26.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-27",
+     "kind": "video",
+     "from": 13477,
+     "durationInFrames": 502,
+     "asset": "assets/slide_27.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-28",
+     "kind": "video",
+     "from": 13965,
+     "durationInFrames": 287,
+     "asset": "assets/slide_28.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-29",
+     "kind": "video",
+     "from": 14238,
+     "durationInFrames": 397,
+     "asset": "assets/slide_29.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-30",
+     "kind": "video",
+     "from": 14621,
+     "durationInFrames": 277,
+     "asset": "assets/slide_30.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-31",
+     "kind": "video",
+     "from": 14885,
+     "durationInFrames": 411,
+     "asset": "assets/slide_31.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-32",
+     "kind": "video",
+     "from": 15281,
+     "durationInFrames": 538,
+     "asset": "assets/slide_32.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-33",
+     "kind": "video",
+     "from": 15805,
+     "durationInFrames": 503,
+     "asset": "assets/slide_33.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-34",
+     "kind": "video",
+     "from": 16294,
+     "durationInFrames": 764,
+     "asset": "assets/slide_34.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-35",
+     "kind": "video",
+     "from": 17044,
+     "durationInFrames": 307,
+     "asset": "assets/slide_35.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-36",
+     "kind": "video",
+     "from": 17337,
+     "durationInFrames": 583,
+     "asset": "assets/slide_36.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-37",
+     "kind": "video",
+     "from": 17906,
+     "durationInFrames": 656,
+     "asset": "assets/slide_37.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-38",
+     "kind": "video",
+     "from": 18548,
+     "durationInFrames": 778,
+     "asset": "assets/slide_38.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-39",
+     "kind": "video",
+     "from": 19312,
+     "durationInFrames": 633,
+     "asset": "assets/slide_39.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-40",
+     "kind": "video",
+     "from": 19931,
+     "durationInFrames": 297,
+     "asset": "assets/slide_40.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-41",
+     "kind": "video",
+     "from": 20214,
+     "durationInFrames": 531,
+     "asset": "assets/slide_41.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-42",
+     "kind": "video",
+     "from": 20732,
+     "durationInFrames": 617,
+     "asset": "assets/slide_42.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-43",
+     "kind": "video",
+     "from": 21335,
+     "durationInFrames": 678,
+     "asset": "assets/slide_43.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-44",
+     "kind": "video",
+     "from": 21999,
+     "durationInFrames": 707,
+     "asset": "assets/slide_44.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-45",
+     "kind": "video",
+     "from": 22692,
+     "durationInFrames": 680,
+     "asset": "assets/slide_45.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-46",
+     "kind": "video",
+     "from": 23358,
+     "durationInFrames": 459,
+     "asset": "assets/slide_46.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-47",
+     "kind": "video",
+     "from": 23803,
+     "durationInFrames": 702,
+     "asset": "assets/slide_47.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-48",
+     "kind": "video",
+     "from": 24491,
+     "durationInFrames": 345,
+     "asset": "assets/slide_48.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-49",
+     "kind": "video",
+     "from": 24821,
+     "durationInFrames": 1021,
+     "asset": "assets/slide_49.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-50",
+     "kind": "video",
+     "from": 25829,
+     "durationInFrames": 393,
+     "asset": "assets/slide_50.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-51",
+     "kind": "video",
+     "from": 26208,
+     "durationInFrames": 515,
+     "asset": "assets/slide_51.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-52",
+     "kind": "video",
+     "from": 26709,
+     "durationInFrames": 574,
+     "asset": "assets/slide_52.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-53",
+     "kind": "video",
+     "from": 27268,
+     "durationInFrames": 1630,
+     "asset": "assets/slide_53.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-54",
+     "kind": "video",
+     "from": 28885,
+     "durationInFrames": 614,
+     "asset": "assets/slide_54.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "Voice",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "voice-1",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 29499,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-overlay",
+   "name": "Overlay",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "wm",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 29499,
+     "content": "60代の食卓",
+     "preset": "tag",
+     "color": "#FFD24A",
+     "animation": "none",
+     "animationParams": {},
+     "layout": {
+      "x": 1586,
+      "y": 40,
+      "rotation": 0
+     },
+     "fontSize": 40
+    },
+    {
+     "id": "tx-427",
+     "kind": "text",
+     "from": 427,
+     "durationInFrames": 90,
+     "content": "1日分超え",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-3634",
+     "kind": "text",
+     "from": 3634,
+     "durationInFrames": 90,
+     "content": "管が硬く",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-5402",
+     "kind": "text",
+     "from": 5402,
+     "durationInFrames": 90,
+     "content": "6〜8g",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-6346",
+     "kind": "text",
+     "from": 6346,
+     "durationInFrames": 90,
+     "content": "汁は半分",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-11482",
+     "kind": "text",
+     "from": 11482,
+     "durationInFrames": 90,
+     "content": "動脈硬化",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-18125",
+     "kind": "text",
+     "from": 18125,
+     "durationInFrames": 90,
+     "content": "血管のサビ",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-20228",
+     "kind": "text",
+     "from": 20228,
+     "durationInFrames": 90,
+     "content": "3つの場面",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-21349",
+     "kind": "text",
+     "from": 21349,
+     "durationInFrames": 90,
+     "content": "ひと言",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-299",
+     "kind": "sticker",
+     "from": 299,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-549",
+     "kind": "sticker",
+     "from": 549,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-788",
+     "kind": "sticker",
+     "from": 788,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-1018",
+     "kind": "sticker",
+     "from": 1018,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-1296",
+     "kind": "sticker",
+     "from": 1296,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-1460",
+     "kind": "sticker",
+     "from": 1460,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-1625",
+     "kind": "sticker",
+     "from": 1625,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-1982",
+     "kind": "sticker",
+     "from": 1982,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-2173",
+     "kind": "sticker",
+     "from": 2173,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-2364",
+     "kind": "sticker",
+     "from": 2364,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-2730",
+     "kind": "sticker",
+     "from": 2730,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-2903",
+     "kind": "sticker",
+     "from": 2903,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-3076",
+     "kind": "sticker",
+     "from": 3076,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-3435",
+     "kind": "sticker",
+     "from": 3435,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-3830",
+     "kind": "sticker",
+     "from": 3830,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-4025",
+     "kind": "sticker",
+     "from": 4025,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-4386",
+     "kind": "sticker",
+     "from": 4386,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-4551",
+     "kind": "sticker",
+     "from": 4551,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-4904",
+     "kind": "sticker",
+     "from": 4904,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-5240",
+     "kind": "sticker",
+     "from": 5240,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-5568",
+     "kind": "sticker",
+     "from": 5568,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-5934",
+     "kind": "sticker",
+     "from": 5934,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-6133",
+     "kind": "sticker",
+     "from": 6133,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-6475",
+     "kind": "sticker",
+     "from": 6475,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-6761",
+     "kind": "sticker",
+     "from": 6761,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-6918",
+     "kind": "sticker",
+     "from": 6918,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-7218",
+     "kind": "sticker",
+     "from": 7218,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-7549",
+     "kind": "sticker",
+     "from": 7549,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-7736",
+     "kind": "sticker",
+     "from": 7736,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-7923",
+     "kind": "sticker",
+     "from": 7923,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-8320",
+     "kind": "sticker",
+     "from": 8320,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-8529",
+     "kind": "sticker",
+     "from": 8529,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-8739",
+     "kind": "sticker",
+     "from": 8739,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-8949",
+     "kind": "sticker",
+     "from": 8949,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-9158",
+     "kind": "sticker",
+     "from": 9158,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-9368",
+     "kind": "sticker",
+     "from": 9368,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-9578",
+     "kind": "sticker",
+     "from": 9578,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-9787",
+     "kind": "sticker",
+     "from": 9787,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-10128",
+     "kind": "sticker",
+     "from": 10128,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-10413",
+     "kind": "sticker",
+     "from": 10413,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-10720",
+     "kind": "sticker",
+     "from": 10720,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-10873",
+     "kind": "sticker",
+     "from": 10873,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-11173",
+     "kind": "sticker",
+     "from": 11173,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-11321",
+     "kind": "sticker",
+     "from": 11321,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-11655",
+     "kind": "sticker",
+     "from": 11655,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-11827",
+     "kind": "sticker",
+     "from": 11827,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-12175",
+     "kind": "sticker",
+     "from": 12175,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-12350",
+     "kind": "sticker",
+     "from": 12350,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-12697",
+     "kind": "sticker",
+     "from": 12697,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-12870",
+     "kind": "sticker",
+     "from": 12870,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-13042",
+     "kind": "sticker",
+     "from": 13042,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-13346",
+     "kind": "sticker",
+     "from": 13346,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-13640",
+     "kind": "sticker",
+     "from": 13640,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-13802",
+     "kind": "sticker",
+     "from": 13802,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-14102",
+     "kind": "sticker",
+     "from": 14102,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-14430",
+     "kind": "sticker",
+     "from": 14430,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-14753",
+     "kind": "sticker",
+     "from": 14753,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-15083",
+     "kind": "sticker",
+     "from": 15083,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-15456",
+     "kind": "sticker",
+     "from": 15456,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-15630",
+     "kind": "sticker",
+     "from": 15630,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-15968",
+     "kind": "sticker",
+     "from": 15968,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-16131",
+     "kind": "sticker",
+     "from": 16131,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-16482",
+     "kind": "sticker",
+     "from": 16482,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-16669",
+     "kind": "sticker",
+     "from": 16669,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-16856",
+     "kind": "sticker",
+     "from": 16856,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-17190",
+     "kind": "sticker",
+     "from": 17190,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-17527",
+     "kind": "sticker",
+     "from": 17527,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-17716",
+     "kind": "sticker",
+     "from": 17716,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-18016",
+     "kind": "sticker",
+     "from": 18016,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-18266",
+     "kind": "sticker",
+     "from": 18266,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-18407",
+     "kind": "sticker",
+     "from": 18407,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-18739",
+     "kind": "sticker",
+     "from": 18739,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-18930",
+     "kind": "sticker",
+     "from": 18930,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-19121",
+     "kind": "sticker",
+     "from": 19121,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-19518",
+     "kind": "sticker",
+     "from": 19518,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-19725",
+     "kind": "sticker",
+     "from": 19725,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-20072",
+     "kind": "sticker",
+     "from": 20072,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-20396",
+     "kind": "sticker",
+     "from": 20396,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-20564",
+     "kind": "sticker",
+     "from": 20564,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-20933",
+     "kind": "sticker",
+     "from": 20933,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-21134",
+     "kind": "sticker",
+     "from": 21134,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-21512",
+     "kind": "sticker",
+     "from": 21512,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-21674",
+     "kind": "sticker",
+     "from": 21674,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-21836",
+     "kind": "sticker",
+     "from": 21836,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-22172",
+     "kind": "sticker",
+     "from": 22172,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-22346",
+     "kind": "sticker",
+     "from": 22346,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-22519",
+     "kind": "sticker",
+     "from": 22519,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-22858",
+     "kind": "sticker",
+     "from": 22858,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-23025",
+     "kind": "sticker",
+     "from": 23025,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-23192",
+     "kind": "sticker",
+     "from": 23192,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-23506",
+     "kind": "sticker",
+     "from": 23506,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-23655",
+     "kind": "sticker",
+     "from": 23655,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-23975",
+     "kind": "sticker",
+     "from": 23975,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-24147",
+     "kind": "sticker",
+     "from": 24147,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-24319",
+     "kind": "sticker",
+     "from": 24319,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-24656",
+     "kind": "sticker",
+     "from": 24656,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-25023",
+     "kind": "sticker",
+     "from": 25023,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-25224",
+     "kind": "sticker",
+     "from": 25224,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-25426",
+     "kind": "sticker",
+     "from": 25426,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-25627",
+     "kind": "sticker",
+     "from": 25627,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-26018",
+     "kind": "sticker",
+     "from": 26018,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-26375",
+     "kind": "sticker",
+     "from": 26375,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-26542",
+     "kind": "sticker",
+     "from": 26542,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-26895",
+     "kind": "sticker",
+     "from": 26895,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-27082",
+     "kind": "sticker",
+     "from": 27082,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-27470",
+     "kind": "sticker",
+     "from": 27470,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-27672",
+     "kind": "sticker",
+     "from": 27672,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-27874",
+     "kind": "sticker",
+     "from": 27874,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-28076",
+     "kind": "sticker",
+     "from": 28076,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-28279",
+     "kind": "sticker",
+     "from": 28279,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-28481",
+     "kind": "sticker",
+     "from": 28481,
+     "durationInFrames": 45,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-28683",
+     "kind": "sticker",
+     "from": 28683,
+     "durationInFrames": 45,
+     "asset": "assets/ex_furatsuki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-29090",
+     "kind": "sticker",
+     "from": 29090,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-29294",
+     "kind": "sticker",
+     "from": 29294,
+     "durationInFrames": 45,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -6
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "voicevox-mora",
+  "style": "karaoke",
+  "enabled": true,
+  "fontSize": 38,
+  "lines": [
+   {
+    "text": "湯気の向こうから、豚骨と醤油の匂いが、漂ってきます。",
+    "startMs": 0,
+    "endMs": 5557
+   },
+   {
+    "text": "その匂いに誘われて、汁まで、つい飲み干してしまう方、いらっしゃいませんか。",
+    "startMs": 6157,
+    "endMs": 13624
+   },
+   {
+    "text": "実は、その一杯の塩分だけで、一日分の目安を、超えてしまうことがあります。",
+    "startMs": 14224,
+    "endMs": 22245
+   },
+   {
+    "text": "食べた次の日、指輪や靴下のあとが、いつもより、きつく感じませんか。",
+    "startMs": 22845,
+    "endMs": 30045
+   },
+   {
+    "text": "健診で、血圧の数値に、あらためて丸がついたことは、ありませんか。",
+    "startMs": 30645,
+    "endMs": 37568
+   },
+   {
+    "text": "濃い味に慣れて、薄味のおみそ汁を、物足りなく感じることは、ありませんか。",
+    "startMs": 38168,
+    "endMs": 45699
+   },
+   {
+    "text": "我慢して、大好きなラーメンをやめる必要は、ありません。",
+    "startMs": 46299,
+    "endMs": 51707
+   },
+   {
+    "text": "けれども、食べ方ひとつで、血管への影響は、大きく変わってきます。",
+    "startMs": 52307,
+    "endMs": 59539
+   },
+   {
+    "text": "今日は、ラーメンが、血管という水道管に、何をしているのかを、三つの場面からお話しします。",
+    "startMs": 60139,
+    "endMs": 69824
+   },
+   {
+    "text": "実は、その中に、いつもの注文に、たったひと言付け加えるだけの、意外な工夫があります。",
+    "startMs": 70424,
+    "endMs": 79917
+   },
+   {
+    "text": "それは、このあと、じっくりお話しいたします。",
+    "startMs": 80517,
+    "endMs": 85051
+   },
+   {
+    "text": "まず、いちばん見えにくいところから、お話しします。",
+    "startMs": 85651,
+    "endMs": 90792
+   },
+   {
+    "text": "透明で、においも、あまり感じません。",
+    "startMs": 91392,
+    "endMs": 95573
+   },
+   {
+    "text": "けれども、血管には、いちばん重くのしかかっているものがあります。",
+    "startMs": 96173,
+    "endMs": 102285
+   },
+   {
+    "text": "その正体は、スープに溶け込んだ、塩分です。",
+    "startMs": 102885,
+    "endMs": 108197
+   },
+   {
+    "text": "血管は、家中を巡る、一本の水道管のようなものです。",
+    "startMs": 108797,
+    "endMs": 115016
+   },
+   {
+    "text": "若い頃の管は、しなやかで、弾力があります。",
+    "startMs": 115616,
+    "endMs": 120533
+   },
+   {
+    "text": "塩分をとりすぎる生活が続くと、管の壁は、少しずつ、硬く、もろくなっていきます。",
+    "startMs": 121133,
+    "endMs": 130051
+   },
+   {
+    "text": "硬くなった管には、水圧——つまり血圧の力が、そのまま伝わってしまいます。",
+    "startMs": 130651,
+    "endMs": 138437
+   },
+   {
+    "text": "ご存知でしたか。",
+    "startMs": 139037,
+    "endMs": 140563
+   },
+   {
+    "text": "厚生労働省の「日本人の食事摂取基準」では、一日の塩分の目標量を、男性でななてんごグラム未満、",
+    "startMs": 141163,
+    "endMs": 152240
+   },
+   {
+    "text": "女性でろくてんごグラム未満としています。",
+    "startMs": 152240,
+    "endMs": 157056
+   },
+   {
+    "text": "すでに血圧が高めと言われている方については、日本高血圧学会が、さらに厳しく、",
+    "startMs": 157656,
+    "endMs": 165649
+   },
+   {
+    "text": "一日ろくグラム未満を目安としています。",
+    "startMs": 165649,
+    "endMs": 169645
+   },
+   {
+    "text": "世界保健機関、WHOの目標は、さらに厳しい、ごグラム未満です。",
+    "startMs": 170245,
+    "endMs": 179483
+   },
+   {
+    "text": "ラーメンの汁を、まるごと飲み干すと、それだけで、ろくグラムからはちグラムほどの塩分になる、",
+    "startMs": 180083,
+    "endMs": 188877
+   },
+   {
+    "text": "という報告があります。",
+    "startMs": 188877,
+    "endMs": 191027
+   },
+   {
+    "text": "つまり、一杯の汁だけで、一日分の目安に、届いてしまうことがあるのです。",
+    "startMs": 191627,
+    "endMs": 199456
+   },
+   {
+    "text": "先ほどの数字は、たとえではありません。",
+    "startMs": 200056,
+    "endMs": 203896
+   },
+   {
+    "text": "この水道管を、塩分から守る、いちばん簡単な工夫があります。",
+    "startMs": 204496,
+    "endMs": 210917
+   },
+   {
+    "text": "汁を、半分だけ残していただくだけで、塩分は、およそ半分に減ると言われています。",
+    "startMs": 211517,
+    "endMs": 219997
+   },
+   {
+    "text": "ただし、麺を食べ終えたあとに、ライスを頼んで、残った汁につけて食べてしまうと、",
+    "startMs": 220597,
+    "endMs": 228453
+   },
+   {
+    "text": "せっかくの工夫が、台無しになってしまいます。",
+    "startMs": 228453,
+    "endMs": 232885
+   },
+   {
+    "text": "もったいない話ですよね。",
+    "startMs": 233485,
+    "endMs": 235715
+   },
+   {
+    "text": "汁を、全部残す必要はありません。",
+    "startMs": 236315,
+    "endMs": 240155
+   },
+   {
+    "text": "半分だけ、それだけで、じゅうぶんなのです。",
+    "startMs": 240755,
+    "endMs": 245277
+   },
+   {
+    "text": "麺とスープが分かれた、つけ麺という食べ方もあります。",
+    "startMs": 245877,
+    "endMs": 250517
+   },
+   {
+    "text": "スープに浸す量を、ご自分で加減できるので、塩分を抑えやすい、と言われています。",
+    "startMs": 251117,
+    "endMs": 259299
+   },
+   {
+    "text": "今日、覚えて帰っていただきたいのは、この、ただ一つです。",
+    "startMs": 259899,
+    "endMs": 265851
+   },
+   {
+    "text": "塩分は、水道管を、硬くする。",
+    "startMs": 266451,
+    "endMs": 270205
+   },
+   {
+    "text": "さて、ここで少し、休憩をかねて、ご挨拶をさせてください。",
+    "startMs": 270805,
+    "endMs": 277227
+   },
+   {
+    "text": "皆さん、こんにちは。",
+    "startMs": 277827,
+    "endMs": 280152
+   },
+   {
+    "text": "六十代からの食卓へ、ようこそ。",
+    "startMs": 280752,
+    "endMs": 284528
+   },
+   {
+    "text": "案内人の、みのりです。",
+    "startMs": 285128,
+    "endMs": 287667
+   },
+   {
+    "text": "その前に、一つだけ教えてください。",
+    "startMs": 288267,
+    "endMs": 291755
+   },
+   {
+    "text": "今日は、どちらの都道府県から、ご覧くださっていますか。",
+    "startMs": 292355,
+    "endMs": 297613
+   },
+   {
+    "text": "コメント欄に、お住まいの地域を、書いていただけたら、嬉しいです。",
+    "startMs": 298213,
+    "endMs": 304827
+   },
+   {
+    "text": "全て、読ませていただいております。",
+    "startMs": 305427,
+    "endMs": 308723
+   },
+   {
+    "text": "まだのかたは、チャンネル登録もしていただけると、次の食卓でも、またお会いできます。",
+    "startMs": 309323,
+    "endMs": 317024
+   },
+   {
+    "text": "それから、もう一つ、大切なことがあります。",
+    "startMs": 317624,
+    "endMs": 322221
+   },
+   {
+    "text": "血圧やコレステロールのお薬を、すでに服用されている方は、食事の目安が、",
+    "startMs": 322821,
+    "endMs": 329886
+   },
+   {
+    "text": "人によって異なる場合があります。",
+    "startMs": 329886,
+    "endMs": 333115
+   },
+   {
+    "text": "今日のお話を、始める前に、まずは、かかりつけの先生に、ご確認ください。",
+    "startMs": 333715,
+    "endMs": 341832
+   },
+   {
+    "text": "さて、水道管のお話に、戻りましょう。",
+    "startMs": 342432,
+    "endMs": 346848
+   },
+   {
+    "text": "塩分だけが、この管を傷めているわけではありません。",
+    "startMs": 347448,
+    "endMs": 352088
+   },
+   {
+    "text": "スープの表面に、うっすらと浮いている、あの膜。",
+    "startMs": 352688,
+    "endMs": 357765
+   },
+   {
+    "text": "それが、背脂や、豚骨から溶け出した、動物性の脂です。",
+    "startMs": 358365,
+    "endMs": 364797
+   },
+   {
+    "text": "思い浮かべてみてください。",
+    "startMs": 365397,
+    "endMs": 367392
+   },
+   {
+    "text": "台所の排水管に、少しずつ、油がこびりついていく様子を。",
+    "startMs": 367992,
+    "endMs": 374499
+   },
+   {
+    "text": "血管という水道管の内側でも、同じようなことが、起きているとされています。",
+    "startMs": 375099,
+    "endMs": 382139
+   },
+   {
+    "text": "それが積み重なると、管が狭くなる、動脈硬化につながる、と考えられています。",
+    "startMs": 382739,
+    "endMs": 390856
+   },
+   {
+    "text": "動物性の脂をとりすぎると、悪玉コレステロールが増えやすくなる、という報告があります。",
+    "startMs": 391456,
+    "endMs": 399861
+   },
+   {
+    "text": "醤油ラーメンや、塩ラーメンは、豚骨ラーメンに比べて、脂の量が、控えめだと言われています。",
+    "startMs": 400461,
+    "endMs": 410051
+   },
+   {
+    "text": "とはいえ、豚骨がお好きな方に、我慢しなさいとは、申しません。",
+    "startMs": 410651,
+    "endMs": 417360
+   },
+   {
+    "text": "表面に浮いた脂を、レンゲで、少しだけすくって、よけていただく。",
+    "startMs": 417960,
+    "endMs": 424851
+   },
+   {
+    "text": "それだけでも、口に入る量は、ずいぶん変わります。",
+    "startMs": 425451,
+    "endMs": 430443
+   },
+   {
+    "text": "半熟卵と、背脂増しを、毎日のように重ねるのは、少し、負担が大きいかもしれません。",
+    "startMs": 431043,
+    "endMs": 440344
+   },
+   {
+    "text": "週に一度、ゆっくり味わう。",
+    "startMs": 440944,
+    "endMs": 444208
+   },
+   {
+    "text": "それくらいで、じゅうぶん、続けていけます。",
+    "startMs": 444808,
+    "endMs": 449096
+   },
+   {
+    "text": "カップ麺や、袋入りのインスタントラーメンも、考え方は同じです。",
+    "startMs": 449696,
+    "endMs": 456128
+   },
+   {
+    "text": "付属のスープを、半分だけ使う。",
+    "startMs": 456728,
+    "endMs": 460013
+   },
+   {
+    "text": "それだけで、ご自宅でも、同じ工夫ができます。",
+    "startMs": 460613,
+    "endMs": 465360
+   },
+   {
+    "text": "例えば、こんな方がいらっしゃるとします。",
+    "startMs": 465960,
+    "endMs": 469555
+   },
+   {
+    "text": "三重県の、正治さん、六十九歳。",
+    "startMs": 470155,
+    "endMs": 474475
+   },
+   {
+    "text": "長いあいだ、自動車部品の工場に、お勤めでした。",
+    "startMs": 475075,
+    "endMs": 480333
+   },
+   {
+    "text": "今も、庭先で、盆栽の手入れをするのが、日課だそうです。",
+    "startMs": 480933,
+    "endMs": 487248
+   },
+   {
+    "text": "正治さんは、工場の帰りに、行きつけの豚骨ラーメン屋さんに、よく立ち寄っていました。",
+    "startMs": 487848,
+    "endMs": 496019
+   },
+   {
+    "text": "汁まで飲み干して、替え玉も、当たり前でした。",
+    "startMs": 496619,
+    "endMs": 501323
+   },
+   {
+    "text": "ところが、去年の健診で、コレステロールの数値に、丸がついたそうです。",
+    "startMs": 501923,
+    "endMs": 509240
+   },
+   {
+    "text": "「あんなに好きなもの、やめられるわけないだろう」",
+    "startMs": 509840,
+    "endMs": 513627
+   },
+   {
+    "text": "正治さんは、最初、そうこぼしていたと聞きました。",
+    "startMs": 514227,
+    "endMs": 519219
+   },
+   {
+    "text": "そこで、やめる代わりに、汁を半分残して、脂をレンゲでよける。",
+    "startMs": 519819,
+    "endMs": 526709
+   },
+   {
+    "text": "それだけを、続けてみることにしたそうです。",
+    "startMs": 527309,
+    "endMs": 531064
+   },
+   {
+    "text": "ここまでのお話が、お役に立っているようでしたら、コメント欄に、数字の「に」を、",
+    "startMs": 531664,
+    "endMs": 540508
+   },
+   {
+    "text": "書いていただけますか。",
+    "startMs": 540508,
+    "endMs": 543003
+   },
+   {
+    "text": "そして、今日の内容が、良さそうだと思ってくださったら、良いねと、",
+    "startMs": 543603,
+    "endMs": 549824
+   },
+   {
+    "text": "離れて暮らすご家族やお友達にも、そっと分けてあげてください。",
+    "startMs": 549824,
+    "endMs": 555656
+   },
+   {
+    "text": "気づいたことやご感想があれば、どうぞコメントで教えてくださいね。",
+    "startMs": 556256,
+    "endMs": 561803
+   },
+   {
+    "text": "皆さんの声を励みに、もっと良いお話をお届けしていきます。",
+    "startMs": 562403,
+    "endMs": 567992
+   },
+   {
+    "text": "さて、三つ目の場面です。",
+    "startMs": 568592,
+    "endMs": 571376
+   },
+   {
+    "text": "この水道管に、今度は、急な水流が流れ込みます。",
+    "startMs": 571976,
+    "endMs": 577768
+   },
+   {
+    "text": "麺を、勢いよくすすって、あっという間に、食べ終えたとき。",
+    "startMs": 578368,
+    "endMs": 585408
+   },
+   {
+    "text": "体の中では、静かに、ある変化が起きています。",
+    "startMs": 586008,
+    "endMs": 591075
+   },
+   {
+    "text": "それが、食後の血糖値の、急な上がり方です。",
+    "startMs": 591675,
+    "endMs": 596720
+   },
+   {
+    "text": "血糖値が、急に大きく上がることを繰り返すと、この水道管の内側に、",
+    "startMs": 597320,
+    "endMs": 604158
+   },
+   {
+    "text": "サビのようなものができていく、と考えられています。",
+    "startMs": 604158,
+    "endMs": 609501
+   },
+   {
+    "text": "ちょうど、長く使った水道管の内側に、赤茶けたサビが浮くのと、よく似ています。",
+    "startMs": 610101,
+    "endMs": 618133
+   },
+   {
+    "text": "麺は、ほとんどが、小麦からできた、糖質です。",
+    "startMs": 618733,
+    "endMs": 623864
+   },
+   {
+    "text": "そこに、汁の塩分と、脂が重なると、水道管への負担は、さらに大きくなります。",
+    "startMs": 624464,
+    "endMs": 633541
+   },
+   {
+    "text": "ですから、食べる順番を、少し変えるだけで、この上がり方は、ゆるやかになる、と言われています。",
+    "startMs": 634141,
+    "endMs": 643613
+   },
+   {
+    "text": "もやしや、メンマ、ネギといった野菜を、先に、一口。",
+    "startMs": 644213,
+    "endMs": 650827
+   },
+   {
+    "text": "それから、麺に、箸をつける。",
+    "startMs": 651427,
+    "endMs": 654915
+   },
+   {
+    "text": "たったそれだけです。",
+    "startMs": 655515,
+    "endMs": 657157
+   },
+   {
+    "text": "替え玉を、勢いのまま、追加してしまうのも、避けたいところです。",
+    "startMs": 657757,
+    "endMs": 664243
+   },
+   {
+    "text": "一杯を、ゆっくり、味わって食べる。",
+    "startMs": 664843,
+    "endMs": 669419
+   },
+   {
+    "text": "それだけで、じゅうぶんな工夫になります。",
+    "startMs": 670019,
+    "endMs": 673677
+   },
+   {
+    "text": "硬くする塩、詰まらせる脂、サビさせる糖。",
+    "startMs": 674277,
+    "endMs": 679013
+   },
+   {
+    "text": "覚えていらっしゃいますか。",
+    "startMs": 679613,
+    "endMs": 681597
+   },
+   {
+    "text": "まだ大丈夫という方は、コメント欄に、数字の「さん」と、書いてみてください。",
+    "startMs": 682197,
+    "endMs": 690923
+   },
+   {
+    "text": "ここで少しだけ、お約束していたお話を、いたしましょう。",
+    "startMs": 691523,
+    "endMs": 696984
+   },
+   {
+    "text": "そして何より、いちばん効果があるのは、新しい知識を覚えることではありません。",
+    "startMs": 697584,
+    "endMs": 704752
+   },
+   {
+    "text": "いつもの注文に、たったひと言、付け加えるだけのことです。",
+    "startMs": 705352,
+    "endMs": 711027
+   },
+   {
+    "text": "その言葉とは、「汁は、半分で大丈夫です」。",
+    "startMs": 711627,
+    "endMs": 716395
+   },
+   {
+    "text": "たったこれだけで、塩分は、およそ半分に減ります。",
+    "startMs": 716995,
+    "endMs": 722435
+   },
+   {
+    "text": "麺の量も、味も、いつもと同じです。",
+    "startMs": 723035,
+    "endMs": 727472
+   },
+   {
+    "text": "変わったのは、たったひと言だけ。",
+    "startMs": 728072,
+    "endMs": 731251
+   },
+   {
+    "text": "それだけです。",
+    "startMs": 731851,
+    "endMs": 733163
+   },
+   {
+    "text": "実を言いますと、この夏、行きつけのお店で、私も、この言葉を、実際に使ってみました。",
+    "startMs": 733763,
+    "endMs": 742819
+   },
+   {
+    "text": "店員さんは、何も、驚きませんでした。",
+    "startMs": 743419,
+    "endMs": 747675
+   },
+   {
+    "text": "汁を、少なめにしてくれるだけで、いつものラーメンが、ちゃんと、おいしいままでした。",
+    "startMs": 748275,
+    "endMs": 756264
+   },
+   {
+    "text": "例えば、こんな方も、いらっしゃいます。",
+    "startMs": 756864,
+    "endMs": 761035
+   },
+   {
+    "text": "山形県の、幸子さん、七十三歳。",
+    "startMs": 761635,
+    "endMs": 766424
+   },
+   {
+    "text": "長いあいだ、和裁の先生を、なさっていました。",
+    "startMs": 767024,
+    "endMs": 771877
+   },
+   {
+    "text": "いまも、教え子から届く着物の相談に、乗っているそうです。",
+    "startMs": 772477,
+    "endMs": 778461
+   },
+   {
+    "text": "幸子さんは、味噌ラーメンが大好きで、替え玉も、いつも二回でした。",
+    "startMs": 779061,
+    "endMs": 785909
+   },
+   {
+    "text": "娘さんから、血圧のことを、たびたび、心配されていたそうです。",
+    "startMs": 786509,
+    "endMs": 793293
+   },
+   {
+    "text": "ただ、汁を半分にすることと、替え玉を一回に減らすことだけ、続けてみました。",
+    "startMs": 793893,
+    "endMs": 801595
+   },
+   {
+    "text": "三ヶ月ほど経って、健診の数値が、少し落ち着いてきたそうです。",
+    "startMs": 802195,
+    "endMs": 808584
+   },
+   {
+    "text": "湯気の向こうで、幸子さんは、少し照れくさそうに、笑っていらっしゃいました。",
+    "startMs": 809184,
+    "endMs": 816224
+   },
+   {
+    "text": "「同じラーメンなのに、体が、ちょっと軽くなった気がするの」",
+    "startMs": 816824,
+    "endMs": 822125
+   },
+   {
+    "text": "そう、幸子さんは、教えてくださいました。",
+    "startMs": 822725,
+    "endMs": 827248
+   },
+   {
+    "text": "血管という、一本の水道管を、今日は、三つの場面から見てきました。",
+    "startMs": 827848,
+    "endMs": 835027
+   },
+   {
+    "text": "塩で、硬くなる。",
+    "startMs": 835627,
+    "endMs": 837760
+   },
+   {
+    "text": "脂で、詰まる。",
+    "startMs": 838360,
+    "endMs": 840216
+   },
+   {
+    "text": "糖で、サビる。",
+    "startMs": 840816,
+    "endMs": 842853
+   },
+   {
+    "text": "それでも、守り方は、驚くほど、シンプルです。",
+    "startMs": 843453,
+    "endMs": 848776
+   },
+   {
+    "text": "そして何より、いちばん効果がある工夫は、注文のときの、たったひと言。",
+    "startMs": 849376,
+    "endMs": 857013
+   },
+   {
+    "text": "「汁は、半分で大丈夫です」。",
+    "startMs": 857613,
+    "endMs": 860824
+   },
+   {
+    "text": "今夜、ラーメンを召し上がるときに、ぜひ、試してみてください。",
+    "startMs": 861424,
+    "endMs": 868357
+   },
+   {
+    "text": "よろしければ、コメント欄で、教えてください。",
+    "startMs": 868957,
+    "endMs": 873469
+   },
+   {
+    "text": "汁を残すのと、脂をよけるのと、食べる順番を変えるのと、まず、どれから始めてみますか。",
+    "startMs": 874069,
+    "endMs": 884587
+   },
+   {
+    "text": "いただいたお声を、次のお話に、生かしてまいります。",
+    "startMs": 885187,
+    "endMs": 890157
+   },
+   {
+    "text": "それから、この動画を、もう一人のかたに、届けていただけませんか。",
+    "startMs": 890757,
+    "endMs": 896997
+   },
+   {
+    "text": "ラーメンが大好きな、ご家族やご友人に。",
+    "startMs": 897597,
+    "endMs": 901469
+   },
+   {
+    "text": "たったひと言の工夫が、誰かの水道管を、そっと守るかもしれません。",
+    "startMs": 902069,
+    "endMs": 908811
+   },
+   {
+    "text": "最後に、一つだけ、大切なお願いです。",
+    "startMs": 909411,
+    "endMs": 913923
+   },
+   {
+    "text": "この動画でお伝えした内容は、公表されている研究や、公的な資料をもとにした、",
+    "startMs": 914523,
+    "endMs": 922636
+   },
+   {
+    "text": "健康に関する一般的な情報です。",
+    "startMs": 922636,
+    "endMs": 925925
+   },
+   {
+    "text": "お一人おひとりに合わせた、医療のアドバイスではありません。",
+    "startMs": 926525,
+    "endMs": 931507
+   },
+   {
+    "text": "とくに、血圧やコレステロールのお薬を、すでに服用されている方は、食事の目安が、",
+    "startMs": 932107,
+    "endMs": 940079
+   },
+   {
+    "text": "人によって異なる場合があります。",
+    "startMs": 940079,
+    "endMs": 943349
+   },
+   {
+    "text": "持病のある方や、お薬を飲んでいる方は、食事を変える前に、必ず、",
+    "startMs": 943949,
+    "endMs": 950763
+   },
+   {
+    "text": "かかりつけの先生にご相談ください。",
+    "startMs": 950763,
+    "endMs": 954499
+   },
+   {
+    "text": "今日のお話が、先生との会話のきっかけになれば、何より嬉しいです。",
+    "startMs": 955099,
+    "endMs": 962085
+   },
+   {
+    "text": "今夜のラーメンは、汁を半分で。",
+    "startMs": 963285,
+    "endMs": 966699
+   },
+   {
+    "text": "今夜の食卓が、皆さんの明日の元気に、つながりますように。",
+    "startMs": 967699,
+    "endMs": 973480
+   },
+   {
+    "text": "六十代からの食卓、みのりでした。",
+    "startMs": 974080,
+    "endMs": 977547
+   },
+   {
+    "text": "どうか、ご自分の体を、大切になさってくださいね。",
+    "startMs": 978147,
+    "endMs": 983288
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#2A3A58"
+ }
+}

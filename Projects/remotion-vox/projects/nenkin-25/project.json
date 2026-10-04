@@ -1,0 +1,5587 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-25",
+  "channel": "nenkin",
+  "templateRef": null,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "",
+  "modifiedAt": ""
+ },
+ "timeline": {
+  "durationInFrames": 23726
+ },
+ "sceneMarkers": [
+  {
+   "id": "m0",
+   "atFrame": 0,
+   "label": "一年で{3万3千円}"
+  },
+  {
+   "id": "m1",
+   "atFrame": 185,
+   "label": "{65歳}から天引き"
+  },
+  {
+   "id": "m2",
+   "atFrame": 336,
+   "label": "満額は{7万608円}"
+  },
+  {
+   "id": "m3",
+   "atFrame": 534,
+   "label": "2か月で{5,500円}"
+  },
+  {
+   "id": "m4",
+   "atFrame": 725,
+   "label": "本題は{別}にある"
+  },
+  {
+   "id": "m5",
+   "atFrame": 861,
+   "label": "{7万3千円}の方"
+  },
+  {
+   "id": "m6",
+   "atFrame": 1109,
+   "label": "減る方は{見える}"
+  },
+  {
+   "id": "m7",
+   "atFrame": 1294,
+   "label": "見えない{お金}"
+  },
+  {
+   "id": "m8",
+   "atFrame": 1405,
+   "label": "今日は{三つ}"
+  },
+  {
+   "id": "m9",
+   "atFrame": 1666,
+   "label": "{研究室}です"
+  },
+  {
+   "id": "m10",
+   "atFrame": 1887,
+   "label": "{6月}に届く紙"
+  },
+  {
+   "id": "m11",
+   "atFrame": 2096,
+   "label": "中まで{読んだ}？"
+  },
+  {
+   "id": "m12",
+   "atFrame": 2202,
+   "label": "一つ目{いくら入る}"
+  },
+  {
+   "id": "m13",
+   "atFrame": 2341,
+   "label": "{480か月}で満額"
+  },
+  {
+   "id": "m14",
+   "atFrame": 2545,
+   "label": "{原典}で確かめる"
+  },
+  {
+   "id": "m15",
+   "atFrame": 2749,
+   "label": "令和8年度の満額"
+  },
+  {
+   "id": "m16",
+   "atFrame": 3066,
+   "label": "{生年月日}で違う"
+  },
+  {
+   "id": "m17",
+   "atFrame": 3255,
+   "label": "足りない分{減る}"
+  },
+  {
+   "id": "m18",
+   "atFrame": 3436,
+   "label": "あなたの年金額"
+  },
+  {
+   "id": "m19",
+   "atFrame": 3597,
+   "label": "満額の人は{少ない}"
+  },
+  {
+   "id": "m20",
+   "atFrame": 3728,
+   "label": "毎月は{来ません}"
+  },
+  {
+   "id": "m21",
+   "atFrame": 3852,
+   "label": "振り込みの形"
+  },
+  {
+   "id": "m22",
+   "atFrame": 3991,
+   "label": "通帳は{2か月分}"
+  },
+  {
+   "id": "m23",
+   "atFrame": 4108,
+   "label": "引かれた{あとの額}"
+  },
+  {
+   "id": "m24",
+   "atFrame": 4280,
+   "label": "通帳を{開きます}"
+  },
+  {
+   "id": "m25",
+   "atFrame": 4388,
+   "label": "福岡の{伊藤さん}"
+  },
+  {
+   "id": "m26",
+   "atFrame": 4568,
+   "label": "椅子{五つ}の店"
+  },
+  {
+   "id": "m27",
+   "atFrame": 4751,
+   "label": "伊藤さんの記録"
+  },
+  {
+   "id": "m28",
+   "atFrame": 4966,
+   "label": "{4年}払えなかった"
+  },
+  {
+   "id": "m29",
+   "atFrame": 5111,
+   "label": "{払えなかった}"
+  },
+  {
+   "id": "m30",
+   "atFrame": 5266,
+   "label": "{負い目}だった"
+  },
+  {
+   "id": "m31",
+   "atFrame": 5446,
+   "label": "あとで{効きます}"
+  },
+  {
+   "id": "m32",
+   "atFrame": 5581,
+   "label": "免除も{半分}数える"
+  },
+  {
+   "id": "m33",
+   "atFrame": 5809,
+   "label": "納めた月の数え方"
+  },
+  {
+   "id": "m34",
+   "atFrame": 6073,
+   "label": "伊藤さんの年金額"
+  },
+  {
+   "id": "m35",
+   "atFrame": 6340,
+   "label": "2か月で{13万円}"
+  },
+  {
+   "id": "m36",
+   "atFrame": 6532,
+   "label": "それが{入らない}"
+  },
+  {
+   "id": "m37",
+   "atFrame": 6695,
+   "label": "実際は{12万4,500}"
+  },
+  {
+   "id": "m38",
+   "atFrame": 6857,
+   "label": "差の5,500円"
+  },
+  {
+   "id": "m39",
+   "atFrame": 7164,
+   "label": "一年分にすると"
+  },
+  {
+   "id": "m40",
+   "atFrame": 7301,
+   "label": "{旅行}に一回"
+  },
+  {
+   "id": "m41",
+   "atFrame": 7424,
+   "label": "{年金が少ない}と"
+  },
+  {
+   "id": "m42",
+   "atFrame": 7667,
+   "label": "二つ目{なぜ引く}"
+  },
+  {
+   "id": "m43",
+   "atFrame": 7783,
+   "label": "{ルール}です"
+  },
+  {
+   "id": "m44",
+   "atFrame": 7942,
+   "label": "{原典}年金Q&A"
+  },
+  {
+   "id": "m45",
+   "atFrame": 8129,
+   "label": "特別徴収の条件"
+  },
+  {
+   "id": "m46",
+   "atFrame": 8457,
+   "label": "月{1万5千円}以上"
+  },
+  {
+   "id": "m47",
+   "atFrame": 8661,
+   "label": "だけでも{届く}"
+  },
+  {
+   "id": "m48",
+   "atFrame": 8771,
+   "label": "国保も{同じ}"
+  },
+  {
+   "id": "m49",
+   "atFrame": 9046,
+   "label": "一行の{但し書き}"
+  },
+  {
+   "id": "m50",
+   "atFrame": 9163,
+   "label": "天引きされない時"
+  },
+  {
+   "id": "m51",
+   "atFrame": 9469,
+   "label": "得を{する}？"
+  },
+  {
+   "id": "m52",
+   "atFrame": 9625,
+   "label": "納付書で{自分で}"
+  },
+  {
+   "id": "m53",
+   "atFrame": 9759,
+   "label": "{払わなくていい}？"
+  },
+  {
+   "id": "m54",
+   "atFrame": 9975,
+   "label": "国保は{待たない}"
+  },
+  {
+   "id": "m55",
+   "atFrame": 10202,
+   "label": "いくらが{普通}？"
+  },
+  {
+   "id": "m56",
+   "atFrame": 10314,
+   "label": "{原典}厚生労働省"
+  },
+  {
+   "id": "m57",
+   "atFrame": 10650,
+   "label": "介護保険料の目安"
+  },
+  {
+   "id": "m58",
+   "atFrame": 10836,
+   "label": "{非課税}は低い段階"
+  },
+  {
+   "id": "m59",
+   "atFrame": 11009,
+   "label": "{市区町村}で違う"
+  },
+  {
+   "id": "m60",
+   "atFrame": 11349,
+   "label": "ここからが{本題}"
+  },
+  {
+   "id": "m61",
+   "atFrame": 11511,
+   "label": "{応援}おねがいします"
+  },
+  {
+   "id": "m62",
+   "atFrame": 12183,
+   "label": "三つ目{上乗せ}"
+  },
+  {
+   "id": "m63",
+   "atFrame": 12269,
+   "label": "{原典}給付金"
+  },
+  {
+   "id": "m64",
+   "atFrame": 12493,
+   "label": "三つの条件"
+  },
+  {
+   "id": "m65",
+   "atFrame": 12910,
+   "label": "{生年月日}で違う"
+  },
+  {
+   "id": "m66",
+   "atFrame": 13091,
+   "label": "伊藤さんは{78万3千}"
+  },
+  {
+   "id": "m67",
+   "atFrame": 13228,
+   "label": "あと{5千円}"
+  },
+  {
+   "id": "m68",
+   "atFrame": 13514,
+   "label": "{ぎりぎり}です"
+  },
+  {
+   "id": "m69",
+   "atFrame": 13634,
+   "label": "一番{伝えたい数字}"
+  },
+  {
+   "id": "m70",
+   "atFrame": 13827,
+   "label": "{原典}計算式"
+  },
+  {
+   "id": "m71",
+   "atFrame": 13951,
+   "label": "納めた期間の分"
+  },
+  {
+   "id": "m72",
+   "atFrame": 14214,
+   "label": "免除された期間の分"
+  },
+  {
+   "id": "m73",
+   "atFrame": 14497,
+   "label": "免除の方が{高い}？"
+  },
+  {
+   "id": "m74",
+   "atFrame": 14652,
+   "label": "{高い}んです"
+  },
+  {
+   "id": "m75",
+   "atFrame": 14779,
+   "label": "1か月あたりの単価"
+  },
+  {
+   "id": "m76",
+   "atFrame": 15032,
+   "label": "{2倍以上}"
+  },
+  {
+   "id": "m77",
+   "atFrame": 15145,
+   "label": "年金では{半分}"
+  },
+  {
+   "id": "m78",
+   "atFrame": 15461,
+   "label": "{恥ずかしい}こと？"
+  },
+  {
+   "id": "m79",
+   "atFrame": 15590,
+   "label": "一番{効く記録}"
+  },
+  {
+   "id": "m80",
+   "atFrame": 15725,
+   "label": "伊藤さんの給付金"
+  },
+  {
+   "id": "m81",
+   "atFrame": 16006,
+   "label": "一年分の給付金"
+  },
+  {
+   "id": "m82",
+   "atFrame": 16189,
+   "label": "4年が{1万4千円}"
+  },
+  {
+   "id": "m83",
+   "atFrame": 16343,
+   "label": "負い目が{働いた}"
+  },
+  {
+   "id": "m84",
+   "atFrame": 16524,
+   "label": "{返ってくるのか}"
+  },
+  {
+   "id": "m85",
+   "atFrame": 16725,
+   "label": "あなたの{免除}は"
+  },
+  {
+   "id": "m86",
+   "atFrame": 16904,
+   "label": "{7万3千円}がこれ"
+  },
+  {
+   "id": "m87",
+   "atFrame": 17155,
+   "label": "{手取り}で比べる"
+  },
+  {
+   "id": "m88",
+   "atFrame": 17289,
+   "label": "給付金なしの手取り"
+  },
+  {
+   "id": "m89",
+   "atFrame": 17540,
+   "label": "給付金ありの手取り"
+  },
+  {
+   "id": "m90",
+   "atFrame": 17731,
+   "label": "紙一枚で{月6千円}"
+  },
+  {
+   "id": "m91",
+   "atFrame": 17839,
+   "label": "超えた人の受け皿"
+  },
+  {
+   "id": "m92",
+   "atFrame": 18265,
+   "label": "全部{消える}？"
+  },
+  {
+   "id": "m93",
+   "atFrame": 18384,
+   "label": "所得は{毎年変わる}"
+  },
+  {
+   "id": "m94",
+   "atFrame": 18644,
+   "label": "{申告}が要る"
+  },
+  {
+   "id": "m95",
+   "atFrame": 18919,
+   "label": "{ゼロ}でも申告"
+  },
+  {
+   "id": "m96",
+   "atFrame": 19229,
+   "label": "必ず{年金事務所}"
+  },
+  {
+   "id": "m97",
+   "atFrame": 19491,
+   "label": "今日の{研究ノート}"
+  },
+  {
+   "id": "m98",
+   "atFrame": 19575,
+   "label": "研究ノート ①"
+  },
+  {
+   "id": "m99",
+   "atFrame": 19842,
+   "label": "研究ノート ②"
+  },
+  {
+   "id": "m100",
+   "atFrame": 20183,
+   "label": "研究ノート ③"
+  },
+  {
+   "id": "m101",
+   "atFrame": 20507,
+   "label": "{ねんきんネット}で"
+  },
+  {
+   "id": "m102",
+   "atFrame": 20683,
+   "label": "研究ノート ④"
+  },
+  {
+   "id": "m103",
+   "atFrame": 20918,
+   "label": "研究ノート ⑤"
+  },
+  {
+   "id": "m104",
+   "atFrame": 21107,
+   "label": "まるばつ{3問}"
+  },
+  {
+   "id": "m105",
+   "atFrame": 21279,
+   "label": "Q1 毎月{15日}？"
+  },
+  {
+   "id": "m106",
+   "atFrame": 21455,
+   "label": "{ばつ}偶数月"
+  },
+  {
+   "id": "m107",
+   "atFrame": 21620,
+   "label": "Q2 免除は{不利}？"
+  },
+  {
+   "id": "m108",
+   "atFrame": 21819,
+   "label": "{ばつ}有利です"
+  },
+  {
+   "id": "m109",
+   "atFrame": 21967,
+   "label": "Q3 内訳{分かる}？"
+  },
+  {
+   "id": "m110",
+   "atFrame": 22176,
+   "label": "{まる}捨てないで"
+  },
+  {
+   "id": "m111",
+   "atFrame": 22398,
+   "label": "{令和8年9月}時点"
+  },
+  {
+   "id": "m112",
+   "atFrame": 22833,
+   "label": "{チャンネル登録}を"
+  },
+  {
+   "id": "m113",
+   "atFrame": 23117,
+   "label": "介護保険料は{下がる}？"
+  },
+  {
+   "id": "m114",
+   "atFrame": 23276,
+   "label": "上越の{中村さん}"
+  },
+  {
+   "id": "m115",
+   "atFrame": 23465,
+   "label": "{一年でいくら}変わる"
+  },
+  {
+   "id": "m116",
+   "atFrame": 23642,
+   "label": "また{次回}の研究で"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-video",
+   "name": "collage t2v",
+   "type": "video",
+   "clips": [
+    {
+     "id": "v0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 188,
+     "asset": "assets/clip_0a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     }
+    },
+    {
+     "id": "v1",
+     "kind": "video",
+     "from": 181,
+     "durationInFrames": 188,
+     "asset": "assets/clip_1a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v2",
+     "kind": "video",
+     "from": 363,
+     "durationInFrames": 188,
+     "asset": "assets/clip_2a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v3",
+     "kind": "video",
+     "from": 544,
+     "durationInFrames": 188,
+     "asset": "assets/clip_3a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v4",
+     "kind": "video",
+     "from": 861,
+     "durationInFrames": 151,
+     "asset": "assets/clip_5a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v5",
+     "kind": "video",
+     "from": 1006,
+     "durationInFrames": 151,
+     "asset": "assets/clip_5b.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v6",
+     "kind": "video",
+     "from": 1150,
+     "durationInFrames": 151,
+     "asset": "assets/clip_6a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v7",
+     "kind": "video",
+     "from": 1666,
+     "durationInFrames": 150,
+     "asset": "assets/clip_9a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v8",
+     "kind": "video",
+     "from": 1809,
+     "durationInFrames": 150,
+     "asset": "assets/clip_9b.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v9",
+     "kind": "video",
+     "from": 1952,
+     "durationInFrames": 150,
+     "asset": "assets/clip_10a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v10",
+     "kind": "video",
+     "from": 2341,
+     "durationInFrames": 204,
+     "asset": "assets/clip_13a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9418,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v11",
+     "kind": "video",
+     "from": 3066,
+     "durationInFrames": 192,
+     "asset": "assets/clip_16a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v12",
+     "kind": "video",
+     "from": 3251,
+     "durationInFrames": 192,
+     "asset": "assets/clip_17a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v13",
+     "kind": "video",
+     "from": 3728,
+     "durationInFrames": 131,
+     "asset": "assets/clip_20a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v14",
+     "kind": "video",
+     "from": 3991,
+     "durationInFrames": 152,
+     "asset": "assets/clip_22a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v15",
+     "kind": "video",
+     "from": 4135,
+     "durationInFrames": 152,
+     "asset": "assets/clip_23a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v16",
+     "kind": "video",
+     "from": 4388,
+     "durationInFrames": 188,
+     "asset": "assets/clip_25a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v17",
+     "kind": "video",
+     "from": 4570,
+     "durationInFrames": 188,
+     "asset": "assets/clip_26a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v18",
+     "kind": "video",
+     "from": 4966,
+     "durationInFrames": 176,
+     "asset": "assets/clip_28a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v19",
+     "kind": "video",
+     "from": 5134,
+     "durationInFrames": 176,
+     "asset": "assets/clip_29a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v20",
+     "kind": "video",
+     "from": 5303,
+     "durationInFrames": 176,
+     "asset": "assets/clip_30a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v21",
+     "kind": "video",
+     "from": 5472,
+     "durationInFrames": 176,
+     "asset": "assets/clip_31a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v22",
+     "kind": "video",
+     "from": 5641,
+     "durationInFrames": 176,
+     "asset": "assets/clip_32a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v23",
+     "kind": "video",
+     "from": 6340,
+     "durationInFrames": 184,
+     "asset": "assets/clip_35a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v24",
+     "kind": "video",
+     "from": 6517,
+     "durationInFrames": 184,
+     "asset": "assets/clip_36a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v25",
+     "kind": "video",
+     "from": 7301,
+     "durationInFrames": 129,
+     "asset": "assets/clip_40a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v26",
+     "kind": "video",
+     "from": 7783,
+     "durationInFrames": 166,
+     "asset": "assets/clip_43a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v27",
+     "kind": "video",
+     "from": 8457,
+     "durationInFrames": 184,
+     "asset": "assets/clip_46a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v28",
+     "kind": "video",
+     "from": 8634,
+     "durationInFrames": 184,
+     "asset": "assets/clip_47a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v29",
+     "kind": "video",
+     "from": 8810,
+     "durationInFrames": 184,
+     "asset": "assets/clip_48a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v30",
+     "kind": "video",
+     "from": 8987,
+     "durationInFrames": 184,
+     "asset": "assets/clip_49a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v31",
+     "kind": "video",
+     "from": 9625,
+     "durationInFrames": 142,
+     "asset": "assets/clip_52a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v32",
+     "kind": "video",
+     "from": 10836,
+     "durationInFrames": 180,
+     "asset": "assets/clip_58a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v33",
+     "kind": "video",
+     "from": 11511,
+     "durationInFrames": 175,
+     "asset": "assets/clip_61a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v34",
+     "kind": "video",
+     "from": 11679,
+     "durationInFrames": 175,
+     "asset": "assets/clip_61b.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v35",
+     "kind": "video",
+     "from": 11847,
+     "durationInFrames": 175,
+     "asset": "assets/clip_61c.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v36",
+     "kind": "video",
+     "from": 12015,
+     "durationInFrames": 175,
+     "asset": "assets/clip_61d.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v37",
+     "kind": "video",
+     "from": 12910,
+     "durationInFrames": 166,
+     "asset": "assets/clip_65a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v38",
+     "kind": "video",
+     "from": 13069,
+     "durationInFrames": 166,
+     "asset": "assets/clip_66a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v39",
+     "kind": "video",
+     "from": 14497,
+     "durationInFrames": 148,
+     "asset": "assets/clip_73a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v40",
+     "kind": "video",
+     "from": 14638,
+     "durationInFrames": 148,
+     "asset": "assets/clip_74a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v41",
+     "kind": "video",
+     "from": 15032,
+     "durationInFrames": 150,
+     "asset": "assets/clip_76a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v42",
+     "kind": "video",
+     "from": 15175,
+     "durationInFrames": 150,
+     "asset": "assets/clip_77a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v43",
+     "kind": "video",
+     "from": 15318,
+     "durationInFrames": 150,
+     "asset": "assets/clip_77b.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v44",
+     "kind": "video",
+     "from": 15590,
+     "durationInFrames": 142,
+     "asset": "assets/clip_79a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v45",
+     "kind": "video",
+     "from": 16189,
+     "durationInFrames": 186,
+     "asset": "assets/clip_82a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v46",
+     "kind": "video",
+     "from": 16368,
+     "durationInFrames": 186,
+     "asset": "assets/clip_83a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v47",
+     "kind": "video",
+     "from": 16546,
+     "durationInFrames": 186,
+     "asset": "assets/clip_84a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v48",
+     "kind": "video",
+     "from": 16904,
+     "durationInFrames": 192,
+     "asset": "assets/clip_86a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9983,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v49",
+     "kind": "video",
+     "from": 17096,
+     "durationInFrames": 192,
+     "asset": "assets/clip_87a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9983,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v50",
+     "kind": "video",
+     "from": 18265,
+     "durationInFrames": 204,
+     "asset": "assets/clip_92a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9398,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v51",
+     "kind": "video",
+     "from": 18470,
+     "durationInFrames": 204,
+     "asset": "assets/clip_93a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9398,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v52",
+     "kind": "video",
+     "from": 18674,
+     "durationInFrames": 204,
+     "asset": "assets/clip_94a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9398,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v53",
+     "kind": "video",
+     "from": 18878,
+     "durationInFrames": 204,
+     "asset": "assets/clip_95a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9398,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v54",
+     "kind": "video",
+     "from": 19083,
+     "durationInFrames": 204,
+     "asset": "assets/clip_95b.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9398,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v55",
+     "kind": "video",
+     "from": 19287,
+     "durationInFrames": 204,
+     "asset": "assets/clip_96a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9398,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v56",
+     "kind": "video",
+     "from": 21279,
+     "durationInFrames": 186,
+     "asset": "assets/clip_105a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v57",
+     "kind": "video",
+     "from": 21466,
+     "durationInFrames": 186,
+     "asset": "assets/clip_106a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v58",
+     "kind": "video",
+     "from": 21652,
+     "durationInFrames": 186,
+     "asset": "assets/clip_107a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v59",
+     "kind": "video",
+     "from": 21839,
+     "durationInFrames": 186,
+     "asset": "assets/clip_108a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v60",
+     "kind": "video",
+     "from": 22025,
+     "durationInFrames": 186,
+     "asset": "assets/clip_109a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v61",
+     "kind": "video",
+     "from": 22211,
+     "durationInFrames": 186,
+     "asset": "assets/clip_110a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v62",
+     "kind": "video",
+     "from": 22833,
+     "durationInFrames": 186,
+     "asset": "assets/clip_112a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v63",
+     "kind": "video",
+     "from": 23012,
+     "durationInFrames": 186,
+     "asset": "assets/clip_112b.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v64",
+     "kind": "video",
+     "from": 23190,
+     "durationInFrames": 186,
+     "asset": "assets/clip_114a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v65",
+     "kind": "video",
+     "from": 23369,
+     "durationInFrames": 186,
+     "asset": "assets/clip_114b.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v66",
+     "kind": "video",
+     "from": 23548,
+     "durationInFrames": 179,
+     "asset": "assets/clip_115a.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    }
+   ]
+  },
+  {
+   "id": "trk-genten",
+   "name": "genten",
+   "type": "video",
+   "clips": [
+    {
+     "id": "g14_0",
+     "kind": "video",
+     "from": 2545,
+     "durationInFrames": 102,
+     "asset": "assets/genten_mangaku.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g14_1",
+     "kind": "video",
+     "from": 2647,
+     "durationInFrames": 102,
+     "asset": "assets/genten_mangaku_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g44_0",
+     "kind": "video",
+     "from": 7942,
+     "durationInFrames": 94,
+     "asset": "assets/genten_tenbiki.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g44_1",
+     "kind": "video",
+     "from": 8036,
+     "durationInFrames": 94,
+     "asset": "assets/genten_tenbiki_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g56_0",
+     "kind": "video",
+     "from": 10314,
+     "durationInFrames": 112,
+     "asset": "assets/genten_kaigo.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g56_1",
+     "kind": "video",
+     "from": 10426,
+     "durationInFrames": 112,
+     "asset": "assets/genten_kaigo_k9.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g56_2",
+     "kind": "video",
+     "from": 10538,
+     "durationInFrames": 112,
+     "asset": "assets/genten_kaigo_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g63_0",
+     "kind": "video",
+     "from": 12269,
+     "durationInFrames": 112,
+     "asset": "assets/genten_youken.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g63_1",
+     "kind": "video",
+     "from": 12381,
+     "durationInFrames": 112,
+     "asset": "assets/genten_youken_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g70_0",
+     "kind": "video",
+     "from": 13827,
+     "durationInFrames": 62,
+     "asset": "assets/genten_keisan.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g70_1",
+     "kind": "video",
+     "from": 13889,
+     "durationInFrames": 62,
+     "asset": "assets/genten_keisan_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "hoa la canh",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "fx3",
+     "kind": "fx",
+     "from": 540,
+     "durationInFrames": 179,
+     "variant": "coins",
+     "density": 18,
+     "color": "#FFC83A",
+     "seed": 121,
+     "area": {
+      "x": 66,
+      "y": 6,
+      "w": 30,
+      "h": 40
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx8",
+     "kind": "fx",
+     "from": 1411,
+     "durationInFrames": 249,
+     "variant": "sparkle",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 156,
+     "area": {
+      "x": 2,
+      "y": 8,
+      "w": 32,
+      "h": 84
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx30",
+     "kind": "fx",
+     "from": 5272,
+     "durationInFrames": 168,
+     "variant": "vignette",
+     "density": 10,
+     "color": "#FFC83A",
+     "seed": 310,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx35",
+     "kind": "fx",
+     "from": 6346,
+     "durationInFrames": 181,
+     "variant": "glow",
+     "density": 22,
+     "color": "#FFC83A",
+     "seed": 345,
+     "area": {
+      "x": 64,
+      "y": 34,
+      "w": 32,
+      "h": 52
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx41",
+     "kind": "fx",
+     "from": 7430,
+     "durationInFrames": 231,
+     "variant": "stampx",
+     "density": 1,
+     "color": "#1C2A4A",
+     "seed": 387,
+     "area": {
+      "x": 6,
+      "y": 26,
+      "w": 24,
+      "h": 30
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx51",
+     "kind": "fx",
+     "from": 9475,
+     "durationInFrames": 143,
+     "variant": "stampx",
+     "density": 1,
+     "color": "#1C2A4A",
+     "seed": 457,
+     "area": {
+      "x": 6,
+      "y": 26,
+      "w": 24,
+      "h": 30
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx60",
+     "kind": "fx",
+     "from": 11355,
+     "durationInFrames": 150,
+     "variant": "rays",
+     "density": 14,
+     "color": "#FFC83A",
+     "seed": 520,
+     "area": {
+      "x": 4,
+      "y": 4,
+      "w": 30,
+      "h": 44
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx69",
+     "kind": "fx",
+     "from": 13640,
+     "durationInFrames": 181,
+     "variant": "sparkle",
+     "density": 14,
+     "color": "#FFC83A",
+     "seed": 583,
+     "area": {
+      "x": 6,
+      "y": 40,
+      "w": 28,
+      "h": 48
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx76",
+     "kind": "fx",
+     "from": 15038,
+     "durationInFrames": 101,
+     "variant": "confetti",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 632,
+     "area": {
+      "x": 68,
+      "y": 14,
+      "w": 26,
+      "h": 62
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx82",
+     "kind": "fx",
+     "from": 16195,
+     "durationInFrames": 142,
+     "variant": "coins",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 674,
+     "area": {
+      "x": 66,
+      "y": 6,
+      "w": 30,
+      "h": 40
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx90",
+     "kind": "fx",
+     "from": 17737,
+     "durationInFrames": 97,
+     "variant": "glow",
+     "density": 22,
+     "color": "#FFC83A",
+     "seed": 730,
+     "area": {
+      "x": 2,
+      "y": 8,
+      "w": 32,
+      "h": 84
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx97",
+     "kind": "fx",
+     "from": 19497,
+     "durationInFrames": 71,
+     "variant": "rays",
+     "density": 12,
+     "color": "#FFC83A",
+     "seed": 779,
+     "area": {
+      "x": 4,
+      "y": 4,
+      "w": 30,
+      "h": 44
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    }
+   ]
+  },
+  {
+   "id": "trk-stat",
+   "name": "khoi chu font",
+   "type": "text",
+   "clips": [
+    {
+     "id": "b4",
+     "kind": "text",
+     "from": 733,
+     "durationInFrames": 124,
+     "content": "引かれる|1年で3万3千円\n*今日の本題|これではありません",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b7",
+     "kind": "text",
+     "from": 1302,
+     "durationInFrames": 98,
+     "content": "減るお金|通帳が減るから見える\n*増えないお金|通帳では何も起きない",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 431,
+      "w": 1326
+     },
+     "fontSize": 80
+    },
+    {
+     "id": "b8",
+     "kind": "text",
+     "from": 1413,
+     "durationInFrames": 249,
+     "content": "一|いくら入るのか\n二|いくら引かれるのか\n*三|いくら上乗せできるのか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b11",
+     "kind": "text",
+     "from": 2104,
+     "durationInFrames": 95,
+     "content": "*中まで読んだ方|どれくらいでしょうか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 496,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b12",
+     "kind": "text",
+     "from": 2210,
+     "durationInFrames": 127,
+     "content": "今日は|一緒に開きます\n*一つ目|いくら入るのか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b15",
+     "kind": "text",
+     "from": 2757,
+     "durationInFrames": 306,
+     "content": "年額|84万7,300円\n月額|7万608円\n*前年度から|1.9％の引き上げ",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b19",
+     "kind": "text",
+     "from": 3605,
+     "durationInFrames": 118,
+     "content": "*満額を受け取る方|そう多くありません",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 496,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b21",
+     "kind": "text",
+     "from": 3860,
+     "durationInFrames": 127,
+     "content": "支給日|偶数月の15日\n一回分|2か月分ずつ\n*一年で|6回",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b24",
+     "kind": "text",
+     "from": 4288,
+     "durationInFrames": 96,
+     "content": "*その通帳を|一緒に見てみます",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 483,
+      "w": 1326
+     },
+     "fontSize": 92
+    },
+    {
+     "id": "b27",
+     "kind": "text",
+     "from": 4759,
+     "durationInFrames": 203,
+     "content": "納付済み|420か月\n*全額免除|48か月",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b37",
+     "kind": "text",
+     "from": 6703,
+     "durationInFrames": 151,
+     "content": "年金額（2か月分）|およそ13万円\n*通知書の振込額|12万4,500円",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b38",
+     "kind": "text",
+     "from": 6865,
+     "durationInFrames": 295,
+     "content": "介護保険料|3,600円\n国民健康保険料|1,900円\n*一回の差|5,500円",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b41",
+     "kind": "text",
+     "from": 7432,
+     "durationInFrames": 231,
+     "content": "伊藤さんの思い|年金が少ない\n*本当は|引かれていた",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 606,
+      "y": 435,
+      "w": 1020
+     },
+     "fontSize": 77
+    },
+    {
+     "id": "b42",
+     "kind": "text",
+     "from": 7675,
+     "durationInFrames": 105,
+     "content": "*二つ目|なぜ勝手に引かれるのか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 486,
+      "w": 1326
+     },
+     "fontSize": 88
+    },
+    {
+     "id": "b45",
+     "kind": "text",
+     "from": 8137,
+     "durationInFrames": 316,
+     "content": "対象|65歳以上のかた\n*年金が|年18万円以上",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b50",
+     "kind": "text",
+     "from": 9171,
+     "durationInFrames": 294,
+     "content": "介護＋国保が|年金の2分の1超\n*その時|国保は自分で納める",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b51",
+     "kind": "text",
+     "from": 9477,
+     "durationInFrames": 143,
+     "content": "超えたら|引かれない\n得をする？|いいえ\n*逆|です",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 606,
+      "y": 378,
+      "w": 1020
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b53",
+     "kind": "text",
+     "from": 9767,
+     "durationInFrames": 203,
+     "content": "通帳から引かれない|だから\n*払わなくていい|と思ってしまう",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b54",
+     "kind": "text",
+     "from": 9983,
+     "durationInFrames": 215,
+     "content": "年金|勝手に引いてくれる\n国保|待っていてくれない\n*同じ紙なのに|扱いが違う",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b55",
+     "kind": "text",
+     "from": 10210,
+     "durationInFrames": 100,
+     "content": "*その介護保険料|いくらが普通なのか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 492,
+      "w": 1326
+     },
+     "fontSize": 81
+    },
+    {
+     "id": "b57",
+     "kind": "text",
+     "from": 10658,
+     "durationInFrames": 174,
+     "content": "対象期間|第9期 令和6〜8年度\n*全国の加重平均|月6,225円",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b59",
+     "kind": "text",
+     "from": 11017,
+     "durationInFrames": 328,
+     "content": "段階の刻みも金額も|市区町村ごとに違う\n全国平均|あくまで目安\n*ご自分の額|お手元の通知書で",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 385,
+      "w": 1326
+     },
+     "fontSize": 73
+    },
+    {
+     "id": "b60",
+     "kind": "text",
+     "from": 11357,
+     "durationInFrames": 150,
+     "content": "ここまで|減るお金の話\n*ここから|本題です",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b62",
+     "kind": "text",
+     "from": 12191,
+     "durationInFrames": 74,
+     "content": "*三つ目|いくら上乗せできるのか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 486,
+      "w": 1326
+     },
+     "fontSize": 88
+    },
+    {
+     "id": "b64",
+     "kind": "text",
+     "from": 12501,
+     "durationInFrames": 405,
+     "content": "①|65歳以上・老齢基礎年金\n②|世帯全員が住民税非課税\n*③|前年の収入 80万9千円以下",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b67",
+     "kind": "text",
+     "from": 13236,
+     "durationInFrames": 274,
+     "content": "伊藤さんの合計|80万3千円\n*基準額|80万9千円以下",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b68",
+     "kind": "text",
+     "from": 13522,
+     "durationInFrames": 108,
+     "content": "伊藤さんの合計|80万3千円\n*基準額|80万9千円以下",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b69",
+     "kind": "text",
+     "from": 13642,
+     "durationInFrames": 181,
+     "content": "この給付金の金額|ここに\n*一番お伝えしたい|数字があります",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b75",
+     "kind": "text",
+     "from": 14787,
+     "durationInFrames": 241,
+     "content": "納めた月|11円70銭\n*免除の月|24円50銭",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b78",
+     "kind": "text",
+     "from": 15469,
+     "durationInFrames": 117,
+     "content": "*免除を受けていたこと|恥ずかしいこと？",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 497,
+      "w": 1326
+     },
+     "fontSize": 74
+    },
+    {
+     "id": "b81",
+     "kind": "text",
+     "from": 16014,
+     "durationInFrames": 172,
+     "content": "月額|6,095円\n*一年で|7万3,140円",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b85",
+     "kind": "text",
+     "from": 16733,
+     "durationInFrames": 167,
+     "content": "ご自分の記録|思い出してください\n*免除の期間|ありませんでしたか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b88",
+     "kind": "text",
+     "from": 17297,
+     "durationInFrames": 239,
+     "content": "年金|78万3千円\n天引き|−3万3千円\n*手取り|年75万円・月6万2千円",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b89",
+     "kind": "text",
+     "from": 17548,
+     "durationInFrames": 178,
+     "content": "手取り|75万円\n給付金|＋7万3千円\n*合計|年82万3千円・月6万8千円",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b90",
+     "kind": "text",
+     "from": 17739,
+     "durationInFrames": 97,
+     "content": "出さないと|月6万2千円\n出すと|月6万8千円\n*差|月6千円",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b91",
+     "kind": "text",
+     "from": 17847,
+     "durationInFrames": 414,
+     "content": "補足的給付金|80万9千円を超えて\n*上限|90万9千円以下",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b97",
+     "kind": "text",
+     "from": 19499,
+     "durationInFrames": 71,
+     "content": "*それでは|今日の研究ノート",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 483,
+      "w": 1326
+     },
+     "fontSize": 92
+    },
+    {
+     "id": "b98",
+     "kind": "text",
+     "from": 19583,
+     "durationInFrames": 255,
+     "content": "通帳の額は|年金額ではない\n*65歳以上＋年18万円以上|介護保険料は天引き",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 452,
+      "w": 1326
+     },
+     "fontSize": 66
+    },
+    {
+     "id": "b99",
+     "kind": "text",
+     "from": 19850,
+     "durationInFrames": 330,
+     "content": "国民健康保険料も|65歳〜75歳未満は対象\n*介護＋国保が2分の1超|自分で納める側へ",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 444,
+      "w": 1326
+     },
+     "fontSize": 71
+    },
+    {
+     "id": "b100",
+     "kind": "text",
+     "from": 20191,
+     "durationInFrames": 312,
+     "content": "令和8年度の満額|年84万7,300円\n*納めた月数を|480で割った分だけ",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b101",
+     "kind": "text",
+     "from": 20515,
+     "durationInFrames": 164,
+     "content": "三番|記録を見ないと分からない\n*ねんきんネットで|確かめてください",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 429,
+      "w": 1326
+     },
+     "fontSize": 81
+    },
+    {
+     "id": "b102",
+     "kind": "text",
+     "from": 20691,
+     "durationInFrames": 223,
+     "content": "納めた月|5,620円の単価\n*免除された月|11,768円の単価",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b103",
+     "kind": "text",
+     "from": 20926,
+     "durationInFrames": 177,
+     "content": "非課税の判定は|申告があってはじめて動く\n*所得がなくても|申告は要る",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 451,
+      "w": 1326
+     },
+     "fontSize": 67
+    },
+    {
+     "id": "b104",
+     "kind": "text",
+     "from": 21115,
+     "durationInFrames": 160,
+     "content": "*最後に|まるばつクイズ 3問",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 483,
+      "w": 1326
+     },
+     "fontSize": 92
+    },
+    {
+     "id": "b111",
+     "kind": "text",
+     "from": 22406,
+     "durationInFrames": 423,
+     "content": "時点|令和8年9月\n段階や金額|市区町村によって変わる\n*ご判断の前に|年金事務所か市区町村の窓口",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 399,
+      "w": 1326
+     },
+     "fontSize": 67
+    }
+   ]
+  },
+  {
+   "id": "trk-formula",
+   "name": "cong thuc",
+   "type": "text",
+   "clips": [
+    {
+     "id": "fm18",
+     "kind": "text",
+     "from": 3444,
+     "durationInFrames": 149,
+     "content": "八十四万七千三百円 × 納めた月数 ÷ 四百八十",
+     "preset": "papercut-formula",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 470,
+      "w": 1326
+     },
+     "fontSize": 57
+    },
+    {
+     "id": "fm33",
+     "kind": "text",
+     "from": 5817,
+     "durationInFrames": 251,
+     "content": "四百二十か月 ＋ 二十四か月 = 四百四十四か月",
+     "preset": "papercut-formula",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 470,
+      "w": 1326
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "fm34",
+     "kind": "text",
+     "from": 6081,
+     "durationInFrames": 255,
+     "content": "八十四万七千三百円 × 四百四十四 ÷ 四百八十 ≒ 七十八万三千円",
+     "preset": "papercut-formula",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 470,
+      "w": 1326
+     },
+     "fontSize": 54
+    },
+    {
+     "id": "fm39",
+     "kind": "text",
+     "from": 7172,
+     "durationInFrames": 125,
+     "content": "五千五百円 × 六回 = 三万三千円",
+     "preset": "papercut-formula",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 470,
+      "w": 1326
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "fm71",
+     "kind": "text",
+     "from": 13959,
+     "durationInFrames": 252,
+     "content": "五千六百二十円 × 納付済み月数 ÷ 四百八十",
+     "preset": "papercut-formula",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 470,
+      "w": 1326
+     },
+     "fontSize": 60
+    },
+    {
+     "id": "fm72",
+     "kind": "text",
+     "from": 14222,
+     "durationInFrames": 270,
+     "content": "一万千七百六十八円 × 免除月数 ÷ 四百八十",
+     "preset": "papercut-formula",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 470,
+      "w": 1326
+     },
+     "fontSize": 60
+    },
+    {
+     "id": "fm80",
+     "kind": "text",
+     "from": 15733,
+     "durationInFrames": 268,
+     "content": "四千九百十八円 ＋ 千百七十七円 = 六千九十五円",
+     "preset": "papercut-formula",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 470,
+      "w": 1326
+     },
+     "fontSize": 62
+    }
+   ]
+  },
+  {
+   "id": "trk-telop",
+   "name": "telop",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t0",
+     "kind": "text",
+     "from": 3,
+     "durationInFrames": 180,
+     "content": "一年で{3万3千円}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "from": 188,
+     "durationInFrames": 146,
+     "content": "{65歳}から天引き",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t2",
+     "kind": "text",
+     "from": 339,
+     "durationInFrames": 193,
+     "content": "満額は{7万608円}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t3",
+     "kind": "text",
+     "from": 537,
+     "durationInFrames": 186,
+     "content": "2か月で{5,500円}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t4",
+     "kind": "text",
+     "from": 728,
+     "durationInFrames": 131,
+     "content": "本題は{別}にある",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t5",
+     "kind": "text",
+     "from": 864,
+     "durationInFrames": 242,
+     "content": "{7万3千円}の方",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t6",
+     "kind": "text",
+     "from": 1112,
+     "durationInFrames": 181,
+     "content": "減る方は{見える}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t7",
+     "kind": "text",
+     "from": 1297,
+     "durationInFrames": 105,
+     "content": "見えない{お金}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t8",
+     "kind": "text",
+     "from": 1408,
+     "durationInFrames": 256,
+     "content": "今日は{三つ}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t9",
+     "kind": "text",
+     "from": 1669,
+     "durationInFrames": 217,
+     "content": "{研究室}です",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t10",
+     "kind": "text",
+     "from": 1890,
+     "durationInFrames": 203,
+     "content": "{6月}に届く紙",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t11",
+     "kind": "text",
+     "from": 2099,
+     "durationInFrames": 102,
+     "content": "中まで{読んだ}？",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t12",
+     "kind": "text",
+     "from": 2205,
+     "durationInFrames": 134,
+     "content": "一つ目{いくら入る}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t13",
+     "kind": "text",
+     "from": 2344,
+     "durationInFrames": 199,
+     "content": "{480か月}で満額",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t14",
+     "kind": "text",
+     "from": 2548,
+     "durationInFrames": 199,
+     "content": "{原典}で確かめる",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t15",
+     "kind": "text",
+     "from": 2752,
+     "durationInFrames": 313,
+     "content": "令和8年度の満額",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t16",
+     "kind": "text",
+     "from": 3069,
+     "durationInFrames": 183,
+     "content": "{生年月日}で違う",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t17",
+     "kind": "text",
+     "from": 3258,
+     "durationInFrames": 176,
+     "content": "足りない分{減る}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t18",
+     "kind": "text",
+     "from": 3439,
+     "durationInFrames": 156,
+     "content": "あなたの年金額",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t19",
+     "kind": "text",
+     "from": 3600,
+     "durationInFrames": 125,
+     "content": "満額の人は{少ない}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t20",
+     "kind": "text",
+     "from": 3731,
+     "durationInFrames": 119,
+     "content": "毎月は{来ません}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t21",
+     "kind": "text",
+     "from": 3855,
+     "durationInFrames": 134,
+     "content": "振り込みの形",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t22",
+     "kind": "text",
+     "from": 3994,
+     "durationInFrames": 112,
+     "content": "通帳は{2か月分}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t23",
+     "kind": "text",
+     "from": 4111,
+     "durationInFrames": 167,
+     "content": "引かれた{あとの額}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t24",
+     "kind": "text",
+     "from": 4283,
+     "durationInFrames": 103,
+     "content": "通帳を{開きます}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t25",
+     "kind": "text",
+     "from": 4391,
+     "durationInFrames": 175,
+     "content": "福岡の{伊藤さん}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t26",
+     "kind": "text",
+     "from": 4571,
+     "durationInFrames": 178,
+     "content": "椅子{五つ}の店",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t27",
+     "kind": "text",
+     "from": 4754,
+     "durationInFrames": 210,
+     "content": "伊藤さんの記録",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t28",
+     "kind": "text",
+     "from": 4969,
+     "durationInFrames": 140,
+     "content": "{4年}払えなかった",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t29",
+     "kind": "text",
+     "from": 5114,
+     "durationInFrames": 150,
+     "content": "{払えなかった}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t30",
+     "kind": "text",
+     "from": 5269,
+     "durationInFrames": 175,
+     "content": "{負い目}だった",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t31",
+     "kind": "text",
+     "from": 5449,
+     "durationInFrames": 130,
+     "content": "あとで{効きます}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t32",
+     "kind": "text",
+     "from": 5584,
+     "durationInFrames": 223,
+     "content": "免除も{半分}数える",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t33",
+     "kind": "text",
+     "from": 5812,
+     "durationInFrames": 258,
+     "content": "納めた月の数え方",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t34",
+     "kind": "text",
+     "from": 6076,
+     "durationInFrames": 262,
+     "content": "伊藤さんの年金額",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t35",
+     "kind": "text",
+     "from": 6343,
+     "durationInFrames": 188,
+     "content": "2か月で{13万円}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t36",
+     "kind": "text",
+     "from": 6535,
+     "durationInFrames": 157,
+     "content": "それが{入らない}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t37",
+     "kind": "text",
+     "from": 6698,
+     "durationInFrames": 158,
+     "content": "実際は{12万4,500}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t38",
+     "kind": "text",
+     "from": 6860,
+     "durationInFrames": 302,
+     "content": "差の5,500円",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t39",
+     "kind": "text",
+     "from": 7167,
+     "durationInFrames": 132,
+     "content": "一年分にすると",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t40",
+     "kind": "text",
+     "from": 7304,
+     "durationInFrames": 117,
+     "content": "{旅行}に一回",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t41",
+     "kind": "text",
+     "from": 7427,
+     "durationInFrames": 238,
+     "content": "{年金が少ない}と",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t42",
+     "kind": "text",
+     "from": 7670,
+     "durationInFrames": 112,
+     "content": "二つ目{なぜ引く}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t43",
+     "kind": "text",
+     "from": 7786,
+     "durationInFrames": 154,
+     "content": "{ルール}です",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t44",
+     "kind": "text",
+     "from": 7945,
+     "durationInFrames": 182,
+     "content": "{原典}年金Q&A",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t45",
+     "kind": "text",
+     "from": 8132,
+     "durationInFrames": 323,
+     "content": "特別徴収の条件",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t46",
+     "kind": "text",
+     "from": 8460,
+     "durationInFrames": 199,
+     "content": "月{1万5千円}以上",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t47",
+     "kind": "text",
+     "from": 8664,
+     "durationInFrames": 105,
+     "content": "だけでも{届く}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t48",
+     "kind": "text",
+     "from": 8774,
+     "durationInFrames": 270,
+     "content": "国保も{同じ}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t49",
+     "kind": "text",
+     "from": 9049,
+     "durationInFrames": 112,
+     "content": "一行の{但し書き}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t50",
+     "kind": "text",
+     "from": 9166,
+     "durationInFrames": 301,
+     "content": "天引きされない時",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t51",
+     "kind": "text",
+     "from": 9472,
+     "durationInFrames": 150,
+     "content": "得を{する}？",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t52",
+     "kind": "text",
+     "from": 9628,
+     "durationInFrames": 130,
+     "content": "納付書で{自分で}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t53",
+     "kind": "text",
+     "from": 9762,
+     "durationInFrames": 210,
+     "content": "{払わなくていい}？",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t54",
+     "kind": "text",
+     "from": 9978,
+     "durationInFrames": 222,
+     "content": "国保は{待たない}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t55",
+     "kind": "text",
+     "from": 10205,
+     "durationInFrames": 107,
+     "content": "いくらが{普通}？",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t56",
+     "kind": "text",
+     "from": 10317,
+     "durationInFrames": 332,
+     "content": "{原典}厚生労働省",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t57",
+     "kind": "text",
+     "from": 10653,
+     "durationInFrames": 181,
+     "content": "介護保険料の目安",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t58",
+     "kind": "text",
+     "from": 10839,
+     "durationInFrames": 168,
+     "content": "{非課税}は低い段階",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t59",
+     "kind": "text",
+     "from": 11012,
+     "durationInFrames": 335,
+     "content": "{市区町村}で違う",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t60",
+     "kind": "text",
+     "from": 11352,
+     "durationInFrames": 157,
+     "content": "ここからが{本題}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t61",
+     "kind": "text",
+     "from": 11514,
+     "durationInFrames": 667,
+     "content": "{応援}おねがいします",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t62",
+     "kind": "text",
+     "from": 12186,
+     "durationInFrames": 81,
+     "content": "三つ目{上乗せ}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t63",
+     "kind": "text",
+     "from": 12272,
+     "durationInFrames": 219,
+     "content": "{原典}給付金",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t64",
+     "kind": "text",
+     "from": 12496,
+     "durationInFrames": 412,
+     "content": "三つの条件",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t65",
+     "kind": "text",
+     "from": 12913,
+     "durationInFrames": 176,
+     "content": "{生年月日}で違う",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t66",
+     "kind": "text",
+     "from": 13094,
+     "durationInFrames": 132,
+     "content": "伊藤さんは{78万3千}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t67",
+     "kind": "text",
+     "from": 13231,
+     "durationInFrames": 281,
+     "content": "あと{5千円}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t68",
+     "kind": "text",
+     "from": 13517,
+     "durationInFrames": 115,
+     "content": "{ぎりぎり}です",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t69",
+     "kind": "text",
+     "from": 13637,
+     "durationInFrames": 188,
+     "content": "一番{伝えたい数字}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t70",
+     "kind": "text",
+     "from": 13830,
+     "durationInFrames": 118,
+     "content": "{原典}計算式",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t71",
+     "kind": "text",
+     "from": 13954,
+     "durationInFrames": 259,
+     "content": "納めた期間の分",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t72",
+     "kind": "text",
+     "from": 14217,
+     "durationInFrames": 277,
+     "content": "免除された期間の分",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t73",
+     "kind": "text",
+     "from": 14500,
+     "durationInFrames": 150,
+     "content": "免除の方が{高い}？",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t74",
+     "kind": "text",
+     "from": 14655,
+     "durationInFrames": 122,
+     "content": "{高い}んです",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t75",
+     "kind": "text",
+     "from": 14782,
+     "durationInFrames": 248,
+     "content": "1か月あたりの単価",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t76",
+     "kind": "text",
+     "from": 15035,
+     "durationInFrames": 108,
+     "content": "{2倍以上}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t77",
+     "kind": "text",
+     "from": 15148,
+     "durationInFrames": 311,
+     "content": "年金では{半分}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t78",
+     "kind": "text",
+     "from": 15464,
+     "durationInFrames": 124,
+     "content": "{恥ずかしい}こと？",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t79",
+     "kind": "text",
+     "from": 15593,
+     "durationInFrames": 130,
+     "content": "一番{効く記録}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t80",
+     "kind": "text",
+     "from": 15728,
+     "durationInFrames": 275,
+     "content": "伊藤さんの給付金",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t81",
+     "kind": "text",
+     "from": 16009,
+     "durationInFrames": 179,
+     "content": "一年分の給付金",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t82",
+     "kind": "text",
+     "from": 16192,
+     "durationInFrames": 149,
+     "content": "4年が{1万4千円}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t83",
+     "kind": "text",
+     "from": 16346,
+     "durationInFrames": 176,
+     "content": "負い目が{働いた}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t84",
+     "kind": "text",
+     "from": 16527,
+     "durationInFrames": 196,
+     "content": "{返ってくるのか}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t85",
+     "kind": "text",
+     "from": 16728,
+     "durationInFrames": 174,
+     "content": "あなたの{免除}は",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t86",
+     "kind": "text",
+     "from": 16907,
+     "durationInFrames": 246,
+     "content": "{7万3千円}がこれ",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t87",
+     "kind": "text",
+     "from": 17158,
+     "durationInFrames": 129,
+     "content": "{手取り}で比べる",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t88",
+     "kind": "text",
+     "from": 17292,
+     "durationInFrames": 246,
+     "content": "給付金なしの手取り",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t89",
+     "kind": "text",
+     "from": 17543,
+     "durationInFrames": 185,
+     "content": "給付金ありの手取り",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t90",
+     "kind": "text",
+     "from": 17734,
+     "durationInFrames": 104,
+     "content": "紙一枚で{月6千円}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t91",
+     "kind": "text",
+     "from": 17842,
+     "durationInFrames": 421,
+     "content": "超えた人の受け皿",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t92",
+     "kind": "text",
+     "from": 18268,
+     "durationInFrames": 113,
+     "content": "全部{消える}？",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t93",
+     "kind": "text",
+     "from": 18387,
+     "durationInFrames": 255,
+     "content": "所得は{毎年変わる}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t94",
+     "kind": "text",
+     "from": 18647,
+     "durationInFrames": 270,
+     "content": "{申告}が要る",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t95",
+     "kind": "text",
+     "from": 18922,
+     "durationInFrames": 306,
+     "content": "{ゼロ}でも申告",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t96",
+     "kind": "text",
+     "from": 19232,
+     "durationInFrames": 257,
+     "content": "必ず{年金事務所}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t97",
+     "kind": "text",
+     "from": 19494,
+     "durationInFrames": 78,
+     "content": "今日の{研究ノート}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t98",
+     "kind": "text",
+     "from": 19578,
+     "durationInFrames": 262,
+     "content": "研究ノート ①",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t99",
+     "kind": "text",
+     "from": 19845,
+     "durationInFrames": 337,
+     "content": "研究ノート ②",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t100",
+     "kind": "text",
+     "from": 20186,
+     "durationInFrames": 319,
+     "content": "研究ノート ③",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t101",
+     "kind": "text",
+     "from": 20510,
+     "durationInFrames": 171,
+     "content": "{ねんきんネット}で",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t102",
+     "kind": "text",
+     "from": 20686,
+     "durationInFrames": 230,
+     "content": "研究ノート ④",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t103",
+     "kind": "text",
+     "from": 20921,
+     "durationInFrames": 184,
+     "content": "研究ノート ⑤",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t104",
+     "kind": "text",
+     "from": 21110,
+     "durationInFrames": 167,
+     "content": "まるばつ{3問}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t105",
+     "kind": "text",
+     "from": 21282,
+     "durationInFrames": 171,
+     "content": "Q1 毎月{15日}？",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t106",
+     "kind": "text",
+     "from": 21458,
+     "durationInFrames": 160,
+     "content": "{ばつ}偶数月",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t107",
+     "kind": "text",
+     "from": 21623,
+     "durationInFrames": 194,
+     "content": "Q2 免除は{不利}？",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t108",
+     "kind": "text",
+     "from": 21822,
+     "durationInFrames": 143,
+     "content": "{ばつ}有利です",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t109",
+     "kind": "text",
+     "from": 21970,
+     "durationInFrames": 204,
+     "content": "Q3 内訳{分かる}？",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t110",
+     "kind": "text",
+     "from": 22179,
+     "durationInFrames": 217,
+     "content": "{まる}捨てないで",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t111",
+     "kind": "text",
+     "from": 22401,
+     "durationInFrames": 430,
+     "content": "{令和8年9月}時点",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t112",
+     "kind": "text",
+     "from": 22836,
+     "durationInFrames": 279,
+     "content": "{チャンネル登録}を",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t113",
+     "kind": "text",
+     "from": 23120,
+     "durationInFrames": 155,
+     "content": "介護保険料は{下がる}？",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t114",
+     "kind": "text",
+     "from": 23279,
+     "durationInFrames": 184,
+     "content": "上越の{中村さん}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t115",
+     "kind": "text",
+     "from": 23468,
+     "durationInFrames": 171,
+     "content": "{一年でいくら}変わる",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t116",
+     "kind": "text",
+     "from": 23645,
+     "durationInFrames": 80,
+     "content": "また{次回}の研究で",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "voice",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "a0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 23726,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "年金の振込通知書。ここに、あなたが一年で引かれた三万三千円が書いてあります。",
+    "startMs": 0,
+    "endMs": 7125
+   },
+   {
+    "text": "六十五歳を過ぎると、介護保険料が年金から自動で引かれるからです。",
+    "startMs": 7725,
+    "endMs": 13400
+   },
+   {
+    "text": "国民年金の満額は、月七万六百八円。通帳に並ぶのは、その額ではありません。",
+    "startMs": 14000,
+    "endMs": 21659
+   },
+   {
+    "text": "一年で三万三千円。二か月に一度、五千五百円ずつ、静かに消えます。",
+    "startMs": 22259,
+    "endMs": 29427
+   },
+   {
+    "text": "ところが、この三万三千円は、今日の本題ではありません。",
+    "startMs": 30227,
+    "endMs": 35293
+   },
+   {
+    "text": "同じ一年に、七万三千円。引かれた額の倍以上を、取りそこねていました。そして、こちらには誰も気づきません。",
+    "startMs": 35893,
+    "endMs": 45589
+   },
+   {
+    "text": "引かれるお金は、通帳が減るから見えます。取りそこねたお金は、通帳で何も起きません。",
+    "startMs": 46189,
+    "endMs": 53336
+   },
+   {
+    "text": "減るお金は見えて、増えないお金は、見えない。",
+    "startMs": 53936,
+    "endMs": 57925
+   },
+   {
+    "text": "今日は、あなたの通知書を順番に読みます。いくら入り、いくら引かれ、いくら上乗せできるのか。",
+    "startMs": 58525,
+    "endMs": 66248
+   },
+   {
+    "text": "まず、事実から。",
+    "startMs": 66848,
+    "endMs": 68800
+   },
+   {
+    "text": "年金と老後のお金研究室です。制度を読むチャンネルではありません。あなたの数字を計算する研究室です。",
+    "startMs": 69400,
+    "endMs": 78040
+   },
+   {
+    "text": "その通知書、毎年六月ごろに届きます。封を切って、たいていは、引き出しの奥に入ります。",
+    "startMs": 78640,
+    "endMs": 86715
+   },
+   {
+    "text": "中まで読んだかたは、どれくらいいらっしゃるでしょうか。",
+    "startMs": 87315,
+    "endMs": 91165
+   },
+   {
+    "text": "では、今日は一緒に開きます。一つ目。いくら入るのか。",
+    "startMs": 91765,
+    "endMs": 96949
+   },
+   {
+    "text": "国民年金は、四十年、つまり四百八十か月、きっちり納めたときに満額になります。",
+    "startMs": 97549,
+    "endMs": 105443
+   },
+   {
+    "text": "その満額が、こちらです。日本年金機構のページ。赤で囲んだところを、ご覧ください。",
+    "startMs": 106043,
+    "endMs": 113925
+   },
+   {
+    "text": "令和八年四月分から、年八十四万七千三百円。月にすると、七万六百八円です。前の年度から、一・九パーセント上がりました。",
+    "startMs": 114525,
+    "endMs": 127165
+   },
+   {
+    "text": "昭和三十一年四月一日以前に生まれたかたは、年八十四万四千九百円です。",
+    "startMs": 127765,
+    "endMs": 135019
+   },
+   {
+    "text": "では、四百八十か月に足りないかたは、どうなるのか。その分だけ、減ります。",
+    "startMs": 135619,
+    "endMs": 142573
+   },
+   {
+    "text": "納めた月数を、四百八十で割る。それが、あなたの年金額です。",
+    "startMs": 143173,
+    "endMs": 149285
+   },
+   {
+    "text": "ですから、満額を受け取っているかたは、そう多くありません。",
+    "startMs": 149885,
+    "endMs": 154717
+   },
+   {
+    "text": "そしてもうひとつ。年金は、毎月は振り込まれません。",
+    "startMs": 155317,
+    "endMs": 159883
+   },
+   {
+    "text": "偶数月の十五日に、二か月分ずつ。年に六回です。",
+    "startMs": 160483,
+    "endMs": 165688
+   },
+   {
+    "text": "つまり、通帳に並ぶ数字は、二か月分です。",
+    "startMs": 166288,
+    "endMs": 170576
+   },
+   {
+    "text": "月額で考えているのに、通帳は二か月分。しかも、引かれたあとの額です。",
+    "startMs": 171176,
+    "endMs": 177736
+   },
+   {
+    "text": "では、その通帳を、一緒に見てみましょうか。",
+    "startMs": 178336,
+    "endMs": 182251
+   },
+   {
+    "text": "福岡市の伊藤さん、六十八歳。喫茶店を、ひとりで続けていらっしゃるかたです。",
+    "startMs": 182851,
+    "endMs": 189741
+   },
+   {
+    "text": "椅子が五つだけの、小さな店です。昼を過ぎると、常連さんが将棋を指しにきます。",
+    "startMs": 190341,
+    "endMs": 197360
+   },
+   {
+    "text": "伊藤さんの納めた記録は、納付済みが四百二十か月。全額免除が、四十八か月ありました。",
+    "startMs": 197960,
+    "endMs": 206301
+   },
+   {
+    "text": "免除の四十八か月。お店がうまくいかなかった、四年間です。",
+    "startMs": 206901,
+    "endMs": 212352
+   },
+   {
+    "text": "「あのころは、払えなかった。払えなかったことが、ずっと引っかかっていてね」",
+    "startMs": 212952,
+    "endMs": 218797
+   },
+   {
+    "text": "負い目、なんだそうです。この四年を、伊藤さんはいまも、そう思っていらっしゃる。",
+    "startMs": 219397,
+    "endMs": 226117
+   },
+   {
+    "text": "覚えておいてください。この四十八か月が、あとで効きます。",
+    "startMs": 226917,
+    "endMs": 231941
+   },
+   {
+    "text": "四百二十か月。四百八十には、届いていません。ですが、免除の月も、半分は数えます。",
+    "startMs": 232541,
+    "endMs": 241459
+   },
+   {
+    "text": "計算してみます。四百二十か月に、免除の四十八か月の半分、二十四か月を足して、四百四十四か月。",
+    "startMs": 242059,
+    "endMs": 252427
+   },
+   {
+    "text": "八十四万七千三百円に、四百四十四を掛けて、四百八十で割る。年、およそ七十八万三千円です。",
+    "startMs": 253027,
+    "endMs": 263555
+   },
+   {
+    "text": "月にすると、六万五千円ほど。二か月分なら、およそ十三万円ということになります。",
+    "startMs": 264155,
+    "endMs": 271579
+   },
+   {
+    "text": "では、二か月ごとに十三万円が入るのか。それが、入らないんです。",
+    "startMs": 272179,
+    "endMs": 278344
+   },
+   {
+    "text": "伊藤さんの年金振込通知書には、十二万四千五百円と書かれていました。",
+    "startMs": 278944,
+    "endMs": 285120
+   },
+   {
+    "text": "差は、五千五百円。内訳も、同じ紙に印刷されています。介護保険料が三千六百円。国民健康保険料が千九百円。",
+    "startMs": 285720,
+    "endMs": 297603
+   },
+   {
+    "text": "これが年に六回ですから、一年で、三万三千円。",
+    "startMs": 298503,
+    "endMs": 303612
+   },
+   {
+    "text": "三万三千円。旅行に一回、行ける額です。",
+    "startMs": 304212,
+    "endMs": 308713
+   },
+   {
+    "text": "ところが伊藤さんはこれを、ずっと「年金が少ない」と思っていらっしゃいました。引かれているとは、思っていなかったんです。",
+    "startMs": 309313,
+    "endMs": 318849
+   },
+   {
+    "text": "では、二つ目。なぜ、勝手に引かれるのか。",
+    "startMs": 319449,
+    "endMs": 323705
+   },
+   {
+    "text": "これは、伊藤さんが特別なのではありません。ルールで、そう決まっています。",
+    "startMs": 324305,
+    "endMs": 330311
+   },
+   {
+    "text": "日本年金機構の、年金Q&Aのページです。こちらも、赤で囲んだところを。",
+    "startMs": 330911,
+    "endMs": 338121
+   },
+   {
+    "text": "介護保険料は、六十五歳以上のかたのうち、年金の年間の受給額が十八万円以上のかたから、年金天引きになります。特別徴収、と呼びます。",
+    "startMs": 338721,
+    "endMs": 351777
+   },
+   {
+    "text": "十八万円以上。月にすれば、一万五千円です。あなたの年金も、まず当てはまります。",
+    "startMs": 352377,
+    "endMs": 360271
+   },
+   {
+    "text": "国民年金だけのかたでも、この紙は届きます。",
+    "startMs": 360871,
+    "endMs": 364849
+   },
+   {
+    "text": "国民健康保険料も同じです。六十五歳以上七十五歳未満で、年金が年十八万円以上あれば、天引きの対象になります。",
+    "startMs": 365449,
+    "endMs": 376319
+   },
+   {
+    "text": "ただし、ここに一行、面白い但し書きがあります。",
+    "startMs": 376919,
+    "endMs": 381207
+   },
+   {
+    "text": "介護保険料と国民健康保険料の合計が、その回に支払われる年金額の二分の一を超える場合は、国民健康保険料のほうは、天引きされません。",
+    "startMs": 381807,
+    "endMs": 393945
+   },
+   {
+    "text": "超えたら、引かれない。得をするのでしょうか。いいえ、逆です。",
+    "startMs": 394545,
+    "endMs": 400423
+   },
+   {
+    "text": "天引きされないぶん、納付書で、ご自分で払うことになります。",
+    "startMs": 401023,
+    "endMs": 406036
+   },
+   {
+    "text": "そして、ここでつまずくかたがいらっしゃいます。通帳から引かれていないから、払わなくていいものだと思ってしまう。",
+    "startMs": 406636,
+    "endMs": 414807
+   },
+   {
+    "text": "年金は、勝手に引いてくれる。国保は、待っていてくれない。同じ紙から届くのに、扱いが違うんです。",
+    "startMs": 415607,
+    "endMs": 424471
+   },
+   {
+    "text": "では、その介護保険料。いくらが普通なのか。",
+    "startMs": 425071,
+    "endMs": 429135
+   },
+   {
+    "text": "厚生労働省の資料です。第九期、令和六年度から令和八年度の、六十五歳以上の介護保険料。全国の加重平均で、月六千二百二十五円。",
+    "startMs": 429735,
+    "endMs": 443164
+   },
+   {
+    "text": "伊藤さんは、二か月で三千六百円でした。ずいぶん、安く見えます。なぜか。",
+    "startMs": 443764,
+    "endMs": 450911
+   },
+   {
+    "text": "住民税が非課税だからです。非課税のかたは、基準額より低い段階になります。",
+    "startMs": 451511,
+    "endMs": 458113
+   },
+   {
+    "text": "ただし、段階の刻みも、金額も、市区町村ごとに違います。全国平均は、あくまで目安です。ご自分の額は、お手元の通知書でお確かめください。",
+    "startMs": 458713,
+    "endMs": 472175
+   },
+   {
+    "text": "さて。ここまでが、減るお金の話でした。ここからが、本題です。",
+    "startMs": 472875,
+    "endMs": 479029
+   },
+   {
+    "text": "ここで、ひとつだけお願いです。今日の内容が分かりやすいと感じていただけたら、高評価と、",
+    "startMs": 479629,
+    "endMs": 486906
+   },
+   {
+    "text": "同じように年金が気になるご家族やご友人へのシェアで、この研究室を応援していただけると嬉しいです。",
+    "startMs": 486906,
+    "endMs": 495028
+   },
+   {
+    "text": "ご感想や、調べてほしいテーマがあれば、ぜひコメントでお寄せください。皆さまの声が、次の研究テーマになります。",
+    "startMs": 495028,
+    "endMs": 504166
+   },
+   {
+    "text": "それでは、続きを見ていきましょう。",
+    "startMs": 504166,
+    "endMs": 507043
+   },
+   {
+    "text": "三つ目。いくら上乗せできるのか。",
+    "startMs": 507643,
+    "endMs": 510608
+   },
+   {
+    "text": "年金生活者支援給付金、という制度があります。日本年金機構のページ、赤で囲んだところです。",
+    "startMs": 511208,
+    "endMs": 519933
+   },
+   {
+    "text": "条件は、三つ。六十五歳以上で老齢基礎年金を受けていること。世帯全員の市町村民税が非課税であること。",
+    "startMs": 520533,
+    "endMs": 530099
+   },
+   {
+    "text": "そして、前年の年金収入とその他の所得の合計が、八十万九千円以下であること。",
+    "startMs": 530099,
+    "endMs": 537323
+   },
+   {
+    "text": "昭和三十一年四月一日以前に生まれたかたは、八十万六千七百円以下です。",
+    "startMs": 537923,
+    "endMs": 544845
+   },
+   {
+    "text": "伊藤さんは、年七十八万三千円でした。入っています。",
+    "startMs": 545445,
+    "endMs": 550565
+   },
+   {
+    "text": "ただ、喫茶店の所得が二万円ありましたから、合計は八十万三千円ほど。基準の八十万九千円まで、あと五千円あまりです。",
+    "startMs": 551165,
+    "endMs": 562493
+   },
+   {
+    "text": "これ、ぎりぎりだと思われませんか。ぎりぎりなんです。",
+    "startMs": 563093,
+    "endMs": 567488
+   },
+   {
+    "text": "そして、この給付金の金額。ここに、当研究室が一番お伝えしたい数字があります。",
+    "startMs": 568088,
+    "endMs": 575544
+   },
+   {
+    "text": "同じページの、計算式です。二つに分かれています。",
+    "startMs": 576144,
+    "endMs": 580677
+   },
+   {
+    "text": "ひとつ目。保険料を納めた期間に基づく額。月額五千六百二十円に、納付済み月数を掛けて、四百八十で割る。",
+    "startMs": 581277,
+    "endMs": 591667
+   },
+   {
+    "text": "ふたつ目。保険料を免除された期間に基づく額。月額一万千七百六十八円に、免除月数を掛けて、四百八十で割る。",
+    "startMs": 592267,
+    "endMs": 603435
+   },
+   {
+    "text": "お待ちください。免除されていた月のほうが、単価が高いのではありませんか。",
+    "startMs": 604035,
+    "endMs": 609901
+   },
+   {
+    "text": "高いんです。ここが、今日いちばんお伝えしたいところでして。",
+    "startMs": 610501,
+    "endMs": 615184
+   },
+   {
+    "text": "一か月あたりで割ってみます。納めた月は、十一円七十銭ほど。免除された月は、二十四円五十銭ほど。",
+    "startMs": 615784,
+    "endMs": 625331
+   },
+   {
+    "text": "免除の月のほうが、二倍以上なんです。",
+    "startMs": 626331,
+    "endMs": 630021
+   },
+   {
+    "text": "理由は、はっきりしています。免除された期間は、年金では半分にしかなりません。その足りない分を、給付金のほうで補う。そういう設計だからです。",
+    "startMs": 631021,
+    "endMs": 643608
+   },
+   {
+    "text": "では、免除を受けていたことは、恥ずかしいことなのでしょうか。",
+    "startMs": 644208,
+    "endMs": 648997
+   },
+   {
+    "text": "恥ずかしいどころか、この給付金では、いちばん効く記録です。",
+    "startMs": 649597,
+    "endMs": 654621
+   },
+   {
+    "text": "伊藤さんで計算します。納付済み四百二十か月で、四千九百十八円。免除の四十八か月で、千百七十七円。",
+    "startMs": 655221,
+    "endMs": 666304
+   },
+   {
+    "text": "合わせて、月六千九十五円。一年で、七万三千百四十円です。",
+    "startMs": 666904,
+    "endMs": 673656
+   },
+   {
+    "text": "たった四年の免除が、そのうち一万四千円あまりを、運んできました。",
+    "startMs": 674556,
+    "endMs": 680359
+   },
+   {
+    "text": "伊藤さんが、ずっと負い目に思っていた四年間。その四年が、いちばん働いていたんです。",
+    "startMs": 680959,
+    "endMs": 687903
+   },
+   {
+    "text": "「払えなかった年が、いま返ってくるのか」",
+    "startMs": 688503,
+    "endMs": 691820
+   },
+   {
+    "text": "そうおっしゃったきり、しばらく黙っていらっしゃいました。",
+    "startMs": 692420,
+    "endMs": 696271
+   },
+   {
+    "text": "ここで、ご自分の記録を思い出してみてください。免除の期間は、ありませんでしたか。",
+    "startMs": 696871,
+    "endMs": 703740
+   },
+   {
+    "text": "冒頭の、七万三千円。これです。引かれる三万三千円に気を取られて、もらえる七万三千円を見ていなかった。",
+    "startMs": 704340,
+    "endMs": 714196
+   },
+   {
+    "text": "手取りで比べてみます。あなたの場合も、同じ引き算になります。",
+    "startMs": 714796,
+    "endMs": 719767
+   },
+   {
+    "text": "年金七十八万三千円から、天引き三万三千円を引くと、年およそ七十五万円。月六万二千円ほど。",
+    "startMs": 720367,
+    "endMs": 730244
+   },
+   {
+    "text": "そこに給付金が入ると、年およそ八十二万三千円。月六万八千円です。",
+    "startMs": 730844,
+    "endMs": 737873
+   },
+   {
+    "text": "紙を一枚出すか出さないかで、月六千円。",
+    "startMs": 738773,
+    "endMs": 742709
+   },
+   {
+    "text": "なお、基準を少し超えたかたにも、補足的老齢年金生活者支援給付金、という受け皿があります。",
+    "startMs": 743309,
+    "endMs": 752084
+   },
+   {
+    "text": "八十万九千円を超えて、九十万九千円以下まで。段階的に、少なくなりながら支給されます。",
+    "startMs": 752084,
+    "endMs": 760461
+   },
+   {
+    "text": "超えたら、ぜんぶ消えてしまうのでしょうか。消えません。",
+    "startMs": 761061,
+    "endMs": 765381
+   },
+   {
+    "text": "ですから、去年だめだったかたも、もう一度です。所得は、毎年変わりますから。",
+    "startMs": 765981,
+    "endMs": 772915
+   },
+   {
+    "text": "そしてもうひとつ、大事なことを。",
+    "startMs": 773515,
+    "endMs": 776235
+   },
+   {
+    "text": "非課税かどうかは、申告があってはじめて分かります。収入が少ないから申告はいらない、と何もしていないと、非課税の証明が立ちません。",
+    "startMs": 776835,
+    "endMs": 787480
+   },
+   {
+    "text": "非課税でないと判定されれば、給付金も、保険料の軽減も、止まります。所得がゼロのかたこそ、申告が要る。ここは、逆に見えるところです。",
+    "startMs": 788280,
+    "endMs": 800621
+   },
+   {
+    "text": "なお、判定の細かい取り扱いは、お一人おひとりの記録で変わります。ご自分の分は、必ず年金事務所でお確かめください。",
+    "startMs": 801221,
+    "endMs": 811536
+   },
+   {
+    "text": "それでは、今日の研究ノートです。",
+    "startMs": 812136,
+    "endMs": 815005
+   },
+   {
+    "text": "一。通帳の額は、年金額ではない。六十五歳以上で年金が年十八万円以上あれば、介護保険料は天引きされる。",
+    "startMs": 815605,
+    "endMs": 826133
+   },
+   {
+    "text": "二。国民健康保険料も、六十五歳から七十五歳未満は天引き対象。ただし介護保険料との合計が年金額の二分の一を超えると、自分で納める側にまわる。",
+    "startMs": 826733,
+    "endMs": 840376
+   },
+   {
+    "text": "三。令和八年度の満額は、年八十四万七千三百円。月七万六百八円。納めた月数を四百八十で割った分だけ、受け取れる。",
+    "startMs": 840976,
+    "endMs": 853872
+   },
+   {
+    "text": "三番は、ご自分の記録を見ないと分かりません。ねんきんネットで確かめてみてください。",
+    "startMs": 854472,
+    "endMs": 861192
+   },
+   {
+    "text": "四。年金生活者支援給付金は、納めた月より、免除された月のほうが単価が高い。二倍以上。",
+    "startMs": 861792,
+    "endMs": 870997
+   },
+   {
+    "text": "五。非課税の判定は、申告があってはじめて動く。所得がなくても、申告は要る。",
+    "startMs": 871597,
+    "endMs": 878872
+   },
+   {
+    "text": "では最後に、まるばつクイズを、三問。頭のなかで、答えてみてください。",
+    "startMs": 879472,
+    "endMs": 886043
+   },
+   {
+    "text": "一問目。年金は、毎月十五日に振り込まれる。まるか、ばつか。",
+    "startMs": 886643,
+    "endMs": 893064
+   },
+   {
+    "text": "ばつです。偶数月の十五日に、二か月分ずつ。年に六回です。",
+    "startMs": 893964,
+    "endMs": 900236
+   },
+   {
+    "text": "二問目。保険料を免除してもらった期間は、給付金では不利になる。まるか、ばつか。",
+    "startMs": 900836,
+    "endMs": 908228
+   },
+   {
+    "text": "ばつ。むしろ有利です。単価は、納めた月の二倍以上でした。",
+    "startMs": 909128,
+    "endMs": 914685
+   },
+   {
+    "text": "三問目。年金振込通知書を見れば、何がいくら引かれているか分かる。まるか、ばつか。",
+    "startMs": 915285,
+    "endMs": 923093
+   },
+   {
+    "text": "まるです。介護保険料も、国民健康保険料も、内訳が印刷されています。捨てないでください。",
+    "startMs": 923993,
+    "endMs": 932644
+   },
+   {
+    "text": "なお、今日の内容は、令和八年九月時点の情報です。保険料の段階や金額は、お住まいの市区町村によって変わります。",
+    "startMs": 933244,
+    "endMs": 943426
+   },
+   {
+    "text": "ご判断の前に、必ず年金事務所、またはお住まいの市区町村の窓口でご確認ください。",
+    "startMs": 943426,
+    "endMs": 950780
+   },
+   {
+    "text": "次の年金支給日の前にも、直前チェックをお届けします。見逃したくないかたは、チャンネル登録でお待ちください。",
+    "startMs": 951380,
+    "endMs": 960127
+   },
+   {
+    "text": "さて、次回です。",
+    "startMs": 960727,
+    "endMs": 962593
+   },
+   {
+    "text": "今日、引かれる側にまわった介護保険料。あれは、下げられるのでしょうか。",
+    "startMs": 963193,
+    "endMs": 969241
+   },
+   {
+    "text": "上越市の中村さん、七十一歳。非課税の、ぎりぎりの線にいらっしゃるかたです。",
+    "startMs": 969841,
+    "endMs": 976817
+   },
+   {
+    "text": "段階がひとつ動くと、一年でいくら変わるのか。そこを、計算してみます。",
+    "startMs": 977717,
+    "endMs": 984469
+   },
+   {
+    "text": "それでは、また次回の研究でお会いしましょう。",
+    "startMs": 985069,
+    "endMs": 988600
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F3EAD8"
+ },
+ "brand": {
+  "logo": "assets/brand_logo.png",
+  "mascot": null,
+  "mascotPoses": [
+   {
+    "atSec": 0.0,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 7.725,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 14.0,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 22.259,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 30.227,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 35.893,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 46.189,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 53.936,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 58.525,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 69.4,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 78.64,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 87.315,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 91.765,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 97.549,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 106.043,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 114.525,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 127.765,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 135.619,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 143.173,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 149.885,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 155.317,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 160.483,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 166.288,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 171.176,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 178.336,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 182.851,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 190.341,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 197.96,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 206.901,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 212.952,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 219.397,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 226.917,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 232.541,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 242.059,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 253.027,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 264.155,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 272.179,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 278.944,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 285.72,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 298.503,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 304.212,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 309.313,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 319.449,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 324.305,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 330.911,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 338.721,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 352.377,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 360.871,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 365.449,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 376.919,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 381.807,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 394.545,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 401.023,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 406.636,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 415.607,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 425.071,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 429.735,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 443.764,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 451.511,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 458.713,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 472.875,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 479.629,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 507.643,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 511.208,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 520.533,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 537.923,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 545.445,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 551.165,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 563.093,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 568.088,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 576.144,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 581.277,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 592.267,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 604.035,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 610.501,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 615.784,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 626.331,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 631.021,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 644.208,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 649.597,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 655.221,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 666.904,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 674.556,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 680.959,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 688.503,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 696.871,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 704.34,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 714.796,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 720.367,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 730.844,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 738.773,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 743.309,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 761.061,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 765.981,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 776.835,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 788.28,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 801.221,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 812.136,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 815.605,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 826.733,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 840.976,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 854.472,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 861.792,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 871.597,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 879.472,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 886.643,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 893.964,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 900.836,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 909.128,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 915.285,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 923.993,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 933.244,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 951.38,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 963.193,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 969.841,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 977.717,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 985.069,
+    "asset": "assets/owl_idle/f_%04d.png"
+   }
+  ],
+  "mascotVideo": "assets/owl_idle/f_%04d.png",
+  "mascotVideoFrames": 192,
+  "mascotH": 300,
+  "logoH": 110,
+  "subscribe": true,
+  "bottomOffset": 186,
+  "subscribeBottom": 200
+ }
+}

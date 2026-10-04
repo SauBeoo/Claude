@@ -1,0 +1,36 @@
+{
+  "speakers": {
+    "綿貫": "villain",
+    "私": "hero"
+  },
+  "lines": [
+    {"match": "離婚して契約社員に成り下がった女が、よくこの会に面を出せたな", "speaker": "綿貫"},
+    {"match": "パートのおばさんが、よくこんな豪華な会に来られたもんだ", "speaker": "綿貫"},
+    {"match": "特別監査役、神谷美月くん", "speaker": "蒲生"},
+    {"match": "お前か! お前がやったのか", "speaker": "綿貫"},
+    {"match": "合計、五千二百万円か", "speaker": "蒲生"},
+    {"match": "私が、その解任提案書を書いたからです", "speaker": "私"},
+    {"match": "謝罪は結構です", "speaker": "私"}
+  ],
+  "events": [
+    {"type": "sfx", "match": "彼の胸のバッジに、見覚えのないシールが", "name": "sub_drop", "offset": -0.1, "gain": -8},
+    {"type": "sfx", "match": "綿貫のスマートフォンが鳴った", "name": "phone_buzz", "offset": -0.2, "gain": -8},
+    {"type": "sfx", "match": "その声が――大広間の天井スピーカーから、そのまま流れ出た", "name": "sub_drop", "offset": -0.1, "gain": -6},
+    {"type": "sfx", "match": "会場の空気が、固まった", "name": "heartbeat", "offset": 0.0, "gain": -10},
+    {"type": "sfx", "match": "私が、その解任提案書を書いたからです", "name": "sub_drop", "offset": -0.1, "gain": -6},
+
+    {"type": "ambience", "from": "大広間に入ると、懐かしい顔がいくつも私を振り返った", "to": "誰も、理由を聞けなかった", "name": "sea_deck", "gain": -28},
+    {"type": "ambience", "from": "会場が二次会へと移る間、私は控室の窓から、汐見の海を見ていた", "to": "けれど、私の我慢も、今日で終わる", "name": "room_still", "gain": -30},
+    {"type": "ambience", "from": "二次会の会場は、ホテルの中庭に面したラウンジだった", "to": "ご感想やご要望はぜひコメントで", "name": "rain_window", "gain": -28},
+    {"type": "ambience", "from": "ホテルの一室が、急遽、会議室として使われることになった", "to": "自分の椅子だったんですね", "name": "office_hum", "gain": -28},
+    {"type": "ambience", "from": "朝、湯呑みに熱いお茶を注ぐとき、ふと父の古い万年筆を思い出す", "to": "窓の外には、あの日と同じ、汐見の海が広がっていた", "name": "room_still", "gain": -30},
+
+    {"type": "bgm_tense_cut", "from": "封筒の中身が、蒲生の手で開かれた", "cut": "合計、五千二百万円か", "resume": "蒲生が呟いた声に、会場は完全に静まり返った"},
+    {"type": "bgm_swell", "from": "綿貫は、その場に崩れるように、椅子に手をついた", "to": "会場から、小さなどよめきが起きた"},
+
+    {"type": "card", "match": "パートのおばさんが、よくこんな豪華な会に来られたもんだ", "text": "パートのおばさんが、よくこんな会に", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "特別監査役、神谷美月くん", "text": "特別監査役、神谷美月くん", "style": "hero", "hold": 1.4},
+    {"type": "card", "match": "合計、五千二百万円か", "text": "横領総額、五千二百万円", "style": "villain", "hold": 1.3},
+    {"type": "card", "match": "謝罪は結構です", "text": "謝罪は結構です。それだけです", "style": "hero", "hold": 1.5}
+  ]
+}

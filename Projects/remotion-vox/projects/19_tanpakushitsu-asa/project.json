@@ -1,0 +1,3734 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "19_tanpakushitsu-asa",
+  "channel": "shokutaku",
+  "templateRef": "shokutaku",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-09-01T16:16:22.537326+00:00",
+  "modifiedAt": "2026-09-01T16:16:22.537326+00:00"
+ },
+ "timeline": {
+  "durationInFrames": 34943
+ },
+ "sceneMarkers": [],
+ "tracks": [
+  {
+   "id": "trk-slides",
+   "name": "Slides",
+   "type": "video",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "slide-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 228,
+     "asset": "assets/slide_00.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-1",
+     "kind": "video",
+     "from": 214,
+     "durationInFrames": 330,
+     "asset": "assets/slide_01.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-2",
+     "kind": "video",
+     "from": 530,
+     "durationInFrames": 334,
+     "asset": "assets/slide_02.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-3",
+     "kind": "video",
+     "from": 850,
+     "durationInFrames": 306,
+     "asset": "assets/slide_03.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-4",
+     "kind": "video",
+     "from": 1142,
+     "durationInFrames": 264,
+     "asset": "assets/slide_04.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-5",
+     "kind": "video",
+     "from": 1392,
+     "durationInFrames": 322,
+     "asset": "assets/slide_05.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-6",
+     "kind": "video",
+     "from": 1700,
+     "durationInFrames": 309,
+     "asset": "assets/slide_06.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-7",
+     "kind": "video",
+     "from": 1995,
+     "durationInFrames": 414,
+     "asset": "assets/slide_07.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-8",
+     "kind": "video",
+     "from": 2395,
+     "durationInFrames": 313,
+     "asset": "assets/slide_08.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-9",
+     "kind": "video",
+     "from": 2694,
+     "durationInFrames": 281,
+     "asset": "assets/slide_09.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-10",
+     "kind": "video",
+     "from": 2961,
+     "durationInFrames": 344,
+     "asset": "assets/slide_10.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-11",
+     "kind": "video",
+     "from": 3290,
+     "durationInFrames": 262,
+     "asset": "assets/slide_11.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-12",
+     "kind": "video",
+     "from": 3539,
+     "durationInFrames": 342,
+     "asset": "assets/slide_12.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-13",
+     "kind": "video",
+     "from": 3867,
+     "durationInFrames": 341,
+     "asset": "assets/slide_13.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-14",
+     "kind": "video",
+     "from": 4194,
+     "durationInFrames": 342,
+     "asset": "assets/slide_14.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-15",
+     "kind": "video",
+     "from": 4522,
+     "durationInFrames": 324,
+     "asset": "assets/slide_15.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-16",
+     "kind": "video",
+     "from": 4832,
+     "durationInFrames": 336,
+     "asset": "assets/slide_16.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-17",
+     "kind": "video",
+     "from": 5154,
+     "durationInFrames": 374,
+     "asset": "assets/slide_17.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-18",
+     "kind": "video",
+     "from": 5515,
+     "durationInFrames": 467,
+     "asset": "assets/slide_18.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-19",
+     "kind": "video",
+     "from": 5967,
+     "durationInFrames": 394,
+     "asset": "assets/slide_19.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-20",
+     "kind": "video",
+     "from": 6347,
+     "durationInFrames": 238,
+     "asset": "assets/slide_20.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-21",
+     "kind": "video",
+     "from": 6571,
+     "durationInFrames": 331,
+     "asset": "assets/slide_21.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-22",
+     "kind": "video",
+     "from": 6888,
+     "durationInFrames": 450,
+     "asset": "assets/slide_22.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-23",
+     "kind": "video",
+     "from": 7324,
+     "durationInFrames": 486,
+     "asset": "assets/slide_23.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-24",
+     "kind": "video",
+     "from": 7796,
+     "durationInFrames": 263,
+     "asset": "assets/slide_24.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-25",
+     "kind": "video",
+     "from": 8045,
+     "durationInFrames": 431,
+     "asset": "assets/slide_25.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-26",
+     "kind": "video",
+     "from": 8462,
+     "durationInFrames": 390,
+     "asset": "assets/slide_26.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-27",
+     "kind": "video",
+     "from": 8838,
+     "durationInFrames": 222,
+     "asset": "assets/slide_27.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-28",
+     "kind": "video",
+     "from": 9046,
+     "durationInFrames": 374,
+     "asset": "assets/slide_28.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-29",
+     "kind": "video",
+     "from": 9406,
+     "durationInFrames": 224,
+     "asset": "assets/slide_29.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-30",
+     "kind": "video",
+     "from": 9616,
+     "durationInFrames": 173,
+     "asset": "assets/slide_30.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-31",
+     "kind": "video",
+     "from": 9775,
+     "durationInFrames": 354,
+     "asset": "assets/slide_31.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-32",
+     "kind": "video",
+     "from": 10115,
+     "durationInFrames": 478,
+     "asset": "assets/slide_32.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-33",
+     "kind": "video",
+     "from": 10579,
+     "durationInFrames": 382,
+     "asset": "assets/slide_33.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-34",
+     "kind": "video",
+     "from": 10947,
+     "durationInFrames": 467,
+     "asset": "assets/slide_34.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-35",
+     "kind": "video",
+     "from": 11400,
+     "durationInFrames": 255,
+     "asset": "assets/slide_35.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-36",
+     "kind": "video",
+     "from": 11642,
+     "durationInFrames": 424,
+     "asset": "assets/slide_36.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-37",
+     "kind": "video",
+     "from": 12052,
+     "durationInFrames": 392,
+     "asset": "assets/slide_37.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-38",
+     "kind": "video",
+     "from": 12429,
+     "durationInFrames": 381,
+     "asset": "assets/slide_38.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-39",
+     "kind": "video",
+     "from": 12796,
+     "durationInFrames": 240,
+     "asset": "assets/slide_39.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-40",
+     "kind": "video",
+     "from": 13022,
+     "durationInFrames": 320,
+     "asset": "assets/slide_40.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-41",
+     "kind": "video",
+     "from": 13329,
+     "durationInFrames": 201,
+     "asset": "assets/slide_41.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-42",
+     "kind": "video",
+     "from": 13516,
+     "durationInFrames": 372,
+     "asset": "assets/slide_42.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-43",
+     "kind": "video",
+     "from": 13873,
+     "durationInFrames": 266,
+     "asset": "assets/slide_43.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-44",
+     "kind": "video",
+     "from": 14125,
+     "durationInFrames": 276,
+     "asset": "assets/slide_44.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-45",
+     "kind": "video",
+     "from": 14388,
+     "durationInFrames": 285,
+     "asset": "assets/slide_45.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-46",
+     "kind": "video",
+     "from": 14658,
+     "durationInFrames": 283,
+     "asset": "assets/slide_46.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-47",
+     "kind": "video",
+     "from": 14928,
+     "durationInFrames": 362,
+     "asset": "assets/slide_47.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-48",
+     "kind": "video",
+     "from": 15276,
+     "durationInFrames": 312,
+     "asset": "assets/slide_48.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-49",
+     "kind": "video",
+     "from": 15574,
+     "durationInFrames": 232,
+     "asset": "assets/slide_49.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-50",
+     "kind": "video",
+     "from": 15792,
+     "durationInFrames": 290,
+     "asset": "assets/slide_50.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-51",
+     "kind": "video",
+     "from": 16068,
+     "durationInFrames": 239,
+     "asset": "assets/slide_51.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-52",
+     "kind": "video",
+     "from": 16293,
+     "durationInFrames": 291,
+     "asset": "assets/slide_52.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-53",
+     "kind": "video",
+     "from": 16570,
+     "durationInFrames": 319,
+     "asset": "assets/slide_53.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-54",
+     "kind": "video",
+     "from": 16876,
+     "durationInFrames": 342,
+     "asset": "assets/slide_54.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-55",
+     "kind": "video",
+     "from": 17204,
+     "durationInFrames": 328,
+     "asset": "assets/slide_55.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-56",
+     "kind": "video",
+     "from": 17518,
+     "durationInFrames": 379,
+     "asset": "assets/slide_56.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-57",
+     "kind": "video",
+     "from": 17882,
+     "durationInFrames": 384,
+     "asset": "assets/slide_57.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-58",
+     "kind": "video",
+     "from": 18252,
+     "durationInFrames": 294,
+     "asset": "assets/slide_58.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-59",
+     "kind": "video",
+     "from": 18533,
+     "durationInFrames": 289,
+     "asset": "assets/slide_59.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-60",
+     "kind": "video",
+     "from": 18808,
+     "durationInFrames": 376,
+     "asset": "assets/slide_60.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-61",
+     "kind": "video",
+     "from": 19170,
+     "durationInFrames": 263,
+     "asset": "assets/slide_61.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-62",
+     "kind": "video",
+     "from": 19420,
+     "durationInFrames": 300,
+     "asset": "assets/slide_62.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-63",
+     "kind": "video",
+     "from": 19705,
+     "durationInFrames": 272,
+     "asset": "assets/slide_63.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-64",
+     "kind": "video",
+     "from": 19963,
+     "durationInFrames": 394,
+     "asset": "assets/slide_64.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-65",
+     "kind": "video",
+     "from": 20343,
+     "durationInFrames": 463,
+     "asset": "assets/slide_65.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-66",
+     "kind": "video",
+     "from": 20793,
+     "durationInFrames": 296,
+     "asset": "assets/slide_66.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-67",
+     "kind": "video",
+     "from": 21075,
+     "durationInFrames": 368,
+     "asset": "assets/slide_67.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-68",
+     "kind": "video",
+     "from": 21429,
+     "durationInFrames": 257,
+     "asset": "assets/slide_68.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-69",
+     "kind": "video",
+     "from": 21672,
+     "durationInFrames": 455,
+     "asset": "assets/slide_69.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-70",
+     "kind": "video",
+     "from": 22113,
+     "durationInFrames": 256,
+     "asset": "assets/slide_70.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-71",
+     "kind": "video",
+     "from": 22355,
+     "durationInFrames": 325,
+     "asset": "assets/slide_71.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-72",
+     "kind": "video",
+     "from": 22666,
+     "durationInFrames": 261,
+     "asset": "assets/slide_72.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-73",
+     "kind": "video",
+     "from": 22913,
+     "durationInFrames": 246,
+     "asset": "assets/slide_73.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-74",
+     "kind": "video",
+     "from": 23144,
+     "durationInFrames": 202,
+     "asset": "assets/slide_74.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-75",
+     "kind": "video",
+     "from": 23332,
+     "durationInFrames": 324,
+     "asset": "assets/slide_75.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-76",
+     "kind": "video",
+     "from": 23642,
+     "durationInFrames": 388,
+     "asset": "assets/slide_76.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-77",
+     "kind": "video",
+     "from": 24015,
+     "durationInFrames": 448,
+     "asset": "assets/slide_77.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-78",
+     "kind": "video",
+     "from": 24450,
+     "durationInFrames": 295,
+     "asset": "assets/slide_78.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-79",
+     "kind": "video",
+     "from": 24731,
+     "durationInFrames": 348,
+     "asset": "assets/slide_79.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-80",
+     "kind": "video",
+     "from": 25065,
+     "durationInFrames": 251,
+     "asset": "assets/slide_80.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-81",
+     "kind": "video",
+     "from": 25301,
+     "durationInFrames": 188,
+     "asset": "assets/slide_81.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-82",
+     "kind": "video",
+     "from": 25475,
+     "durationInFrames": 458,
+     "asset": "assets/slide_82.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-83",
+     "kind": "video",
+     "from": 25919,
+     "durationInFrames": 226,
+     "asset": "assets/slide_83.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-84",
+     "kind": "video",
+     "from": 26131,
+     "durationInFrames": 295,
+     "asset": "assets/slide_84.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-85",
+     "kind": "video",
+     "from": 26412,
+     "durationInFrames": 356,
+     "asset": "assets/slide_85.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-86",
+     "kind": "video",
+     "from": 26754,
+     "durationInFrames": 232,
+     "asset": "assets/slide_86.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-87",
+     "kind": "video",
+     "from": 26972,
+     "durationInFrames": 280,
+     "asset": "assets/slide_87.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-88",
+     "kind": "video",
+     "from": 27238,
+     "durationInFrames": 317,
+     "asset": "assets/slide_88.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-89",
+     "kind": "video",
+     "from": 27541,
+     "durationInFrames": 418,
+     "asset": "assets/slide_89.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-90",
+     "kind": "video",
+     "from": 27945,
+     "durationInFrames": 311,
+     "asset": "assets/slide_90.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-91",
+     "kind": "video",
+     "from": 28243,
+     "durationInFrames": 334,
+     "asset": "assets/slide_91.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-92",
+     "kind": "video",
+     "from": 28562,
+     "durationInFrames": 224,
+     "asset": "assets/slide_92.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-93",
+     "kind": "video",
+     "from": 28772,
+     "durationInFrames": 216,
+     "asset": "assets/slide_93.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-94",
+     "kind": "video",
+     "from": 28975,
+     "durationInFrames": 341,
+     "asset": "assets/slide_94.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-95",
+     "kind": "video",
+     "from": 29301,
+     "durationInFrames": 204,
+     "asset": "assets/slide_95.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-96",
+     "kind": "video",
+     "from": 29492,
+     "durationInFrames": 392,
+     "asset": "assets/slide_96.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-97",
+     "kind": "video",
+     "from": 29870,
+     "durationInFrames": 272,
+     "asset": "assets/slide_97.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-98",
+     "kind": "video",
+     "from": 30129,
+     "durationInFrames": 280,
+     "asset": "assets/slide_98.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-99",
+     "kind": "video",
+     "from": 30395,
+     "durationInFrames": 557,
+     "asset": "assets/slide_99.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-100",
+     "kind": "video",
+     "from": 30938,
+     "durationInFrames": 311,
+     "asset": "assets/slide_100.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-101",
+     "kind": "video",
+     "from": 31235,
+     "durationInFrames": 288,
+     "asset": "assets/slide_101.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-102",
+     "kind": "video",
+     "from": 31510,
+     "durationInFrames": 292,
+     "asset": "assets/slide_102.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-103",
+     "kind": "video",
+     "from": 31787,
+     "durationInFrames": 259,
+     "asset": "assets/slide_103.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-104",
+     "kind": "video",
+     "from": 32033,
+     "durationInFrames": 274,
+     "asset": "assets/slide_104.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-105",
+     "kind": "video",
+     "from": 32293,
+     "durationInFrames": 201,
+     "asset": "assets/slide_105.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-106",
+     "kind": "video",
+     "from": 32480,
+     "durationInFrames": 203,
+     "asset": "assets/slide_106.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-107",
+     "kind": "video",
+     "from": 32669,
+     "durationInFrames": 234,
+     "asset": "assets/slide_107.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-108",
+     "kind": "video",
+     "from": 32890,
+     "durationInFrames": 477,
+     "asset": "assets/slide_108.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-109",
+     "kind": "video",
+     "from": 33352,
+     "durationInFrames": 516,
+     "asset": "assets/slide_109.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-110",
+     "kind": "video",
+     "from": 33854,
+     "durationInFrames": 259,
+     "asset": "assets/slide_110.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-111",
+     "kind": "video",
+     "from": 34099,
+     "durationInFrames": 260,
+     "asset": "assets/slide_111.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-112",
+     "kind": "video",
+     "from": 34345,
+     "durationInFrames": 322,
+     "asset": "assets/slide_112.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-113",
+     "kind": "video",
+     "from": 34652,
+     "durationInFrames": 290,
+     "asset": "assets/slide_113.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "Voice",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "voice-1",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 34943,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-overlay",
+   "name": "Overlay",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "wm",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 34943,
+     "content": "60代の食卓",
+     "preset": "tag",
+     "color": "#FFD24A",
+     "animation": "none",
+     "animationParams": {},
+     "layout": {
+      "x": 1586,
+      "y": 40,
+      "rotation": 0
+     },
+     "fontSize": 40
+    },
+    {
+     "id": "tx-4",
+     "kind": "text",
+     "from": 1154,
+     "durationInFrames": 150,
+     "content": "1年で5kg",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-4",
+     "kind": "sticker",
+     "from": 1187,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-14",
+     "kind": "text",
+     "from": 4206,
+     "durationInFrames": 150,
+     "content": "ゲートは1日3回",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-14",
+     "kind": "sticker",
+     "from": 4239,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-19",
+     "kind": "text",
+     "from": 5979,
+     "durationInFrames": 150,
+     "content": "夜だけで25%減",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-19",
+     "kind": "sticker",
+     "from": 6012,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-21",
+     "kind": "text",
+     "from": 6583,
+     "durationInFrames": 150,
+     "content": "同じ量でも1/4消える",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-26",
+     "kind": "text",
+     "from": 8474,
+     "durationInFrames": 150,
+     "content": "腎臓の方はご注意",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-26",
+     "kind": "sticker",
+     "from": 8507,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-29",
+     "kind": "text",
+     "from": 9418,
+     "durationInFrames": 150,
+     "content": "60g÷3=20g",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-29",
+     "kind": "sticker",
+     "from": 9451,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-34",
+     "kind": "text",
+     "from": 10959,
+     "durationInFrames": 150,
+     "content": "30秒でわかる",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-34",
+     "kind": "sticker",
+     "from": 10992,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-37",
+     "kind": "text",
+     "from": 12064,
+     "durationInFrames": 150,
+     "content": "隙間があれば注意",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-37",
+     "kind": "sticker",
+     "from": 12097,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-42",
+     "kind": "text",
+     "from": 13528,
+     "durationInFrames": 150,
+     "content": "20gに届かない",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-42",
+     "kind": "sticker",
+     "from": 13561,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-46",
+     "kind": "text",
+     "from": 14670,
+     "durationInFrames": 150,
+     "content": "+1品で約2倍",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-46",
+     "kind": "sticker",
+     "from": 14703,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-53",
+     "kind": "text",
+     "from": 16582,
+     "durationInFrames": 150,
+     "content": "「なんでだ」",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-53",
+     "kind": "sticker",
+     "from": 16615,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-60",
+     "kind": "text",
+     "from": 18820,
+     "durationInFrames": 150,
+     "content": "半分も届かない",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-60",
+     "kind": "sticker",
+     "from": 18853,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-64",
+     "kind": "text",
+     "from": 19975,
+     "durationInFrames": 150,
+     "content": "10時間トラックなし",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-64",
+     "kind": "sticker",
+     "from": 20008,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-71",
+     "kind": "text",
+     "from": 22367,
+     "durationInFrames": 150,
+     "content": "パン1枚で5g",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-79",
+     "kind": "text",
+     "from": 24743,
+     "durationInFrames": 150,
+     "content": "あと一品は百円",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-79",
+     "kind": "sticker",
+     "from": 24776,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-85",
+     "kind": "text",
+     "from": 26424,
+     "durationInFrames": 150,
+     "content": "答えは卵",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-85",
+     "kind": "sticker",
+     "from": 26457,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-98",
+     "kind": "text",
+     "from": 30141,
+     "durationInFrames": 150,
+     "content": "数字より力が戻った",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-101",
+     "kind": "text",
+     "from": 31247,
+     "durationInFrames": 150,
+     "content": "夜は1/4こぼれる",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-101",
+     "kind": "sticker",
+     "from": 31280,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-112",
+     "kind": "text",
+     "from": 34357,
+     "durationInFrames": 150,
+     "content": "卵を一つ",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-112",
+     "kind": "sticker",
+     "from": 34390,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "voicevox-mora",
+  "style": "karaoke",
+  "enabled": true,
+  "fontSize": 38,
+  "lines": [
+   {
+    "text": "朝ごはんは、パンとコーヒーだけ。",
+    "startMs": 0,
+    "endMs": 3328
+   },
+   {
+    "text": "そんな朝が、続いていませんか。",
+    "startMs": 3928,
+    "endMs": 7011
+   },
+   {
+    "text": "その朝、体に届くたんぱく質は、ごグラムほどです。",
+    "startMs": 7611,
+    "endMs": 12923
+   },
+   {
+    "text": "足りない分は、その日のうちに取り返せません。",
+    "startMs": 13523,
+    "endMs": 17544
+   },
+   {
+    "text": "体は、たんぱく質を、貯金できないからです。",
+    "startMs": 18144,
+    "endMs": 22624
+   },
+   {
+    "text": "夜にどれだけ食べても、朝の空っぽは、埋まりません。",
+    "startMs": 23224,
+    "endMs": 28205
+   },
+   {
+    "text": "それが、三百六十五回。",
+    "startMs": 28805,
+    "endMs": 31877
+   },
+   {
+    "text": "一年分を集めると、ごキロの袋、ひと袋を超えます。",
+    "startMs": 32477,
+    "endMs": 37939
+   },
+   {
+    "text": "階段を下りるとき、手すりを探すようになった。",
+    "startMs": 38539,
+    "endMs": 42837
+   },
+   {
+    "text": "思い当たること、ありませんか。",
+    "startMs": 43437,
+    "endMs": 46275
+   },
+   {
+    "text": "それを、年のせいだと、片づけていませんか。",
+    "startMs": 46875,
+    "endMs": 51333
+   },
+   {
+    "text": "今日は、量ではなく、配り方のお話です。",
+    "startMs": 51933,
+    "endMs": 56531
+   },
+   {
+    "text": "合計は足りていても、筋肉は減ります。",
+    "startMs": 57131,
+    "endMs": 60949
+   },
+   {
+    "text": "分かれ目は、三食のうちの、たった一食です。",
+    "startMs": 61549,
+    "endMs": 66381
+   },
+   {
+    "text": "そこに足す「あと一品」は、特別なものではありません。",
+    "startMs": 66981,
+    "endMs": 73541
+   },
+   {
+    "text": "皆さんの台所に、たぶん、もうあります。",
+    "startMs": 74141,
+    "endMs": 79699
+   },
+   {
+    "text": "その正体は、後半で、必ずお伝えします。",
+    "startMs": 80299,
+    "endMs": 85259
+   },
+   {
+    "text": "まず、夜の食卓から見ていきます。",
+    "startMs": 85859,
+    "endMs": 89667
+   },
+   {
+    "text": "昨日の夕飯を、思い出してみてください。",
+    "startMs": 90267,
+    "endMs": 93755
+   },
+   {
+    "text": "焼き魚か、お肉か、あるいはお豆腐。",
+    "startMs": 94355,
+    "endMs": 98557
+   },
+   {
+    "text": "夜は、しっかり召し上がっている方が、とても多いのです。",
+    "startMs": 99157,
+    "endMs": 104512
+   },
+   {
+    "text": "ここで、一つ、確かめたいことがあります。",
+    "startMs": 105112,
+    "endMs": 109549
+   },
+   {
+    "text": "夜にたくさん食べれば、朝の分の埋め合わせになる。",
+    "startMs": 110149,
+    "endMs": 114672
+   },
+   {
+    "text": "そう思っていらっしゃいませんか。",
+    "startMs": 115272,
+    "endMs": 117832
+   },
+   {
+    "text": "けれども、体は、そういうつくりではないのです。",
+    "startMs": 118432,
+    "endMs": 123136
+   },
+   {
+    "text": "筋肉は、毎日、少しずつ建て替えられています。",
+    "startMs": 123736,
+    "endMs": 128760
+   },
+   {
+    "text": "古い柱を外して、新しい柱を入れる。",
+    "startMs": 129360,
+    "endMs": 133488
+   },
+   {
+    "text": "その工事が、寝ている間も、休まず続いています。",
+    "startMs": 134088,
+    "endMs": 139667
+   },
+   {
+    "text": "そして、この工事現場のゲートは、一日に三回しか開きません。",
+    "startMs": 140267,
+    "endMs": 146624
+   },
+   {
+    "text": "朝、昼、晩。",
+    "startMs": 147224,
+    "endMs": 150595
+   },
+   {
+    "text": "食事のたびに、材料を積んだトラックが入ってくる。",
+    "startMs": 151195,
+    "endMs": 155739
+   },
+   {
+    "text": "朝のゲートが開いたとき、トラックが来ていなかったら。",
+    "startMs": 156339,
+    "endMs": 160936
+   },
+   {
+    "text": "その回の工事は、材料がないまま、休みになります。",
+    "startMs": 161536,
+    "endMs": 167061
+   },
+   {
+    "text": "そして夜、トラックが十台まとめて着いても。",
+    "startMs": 167661,
+    "endMs": 171683
+   },
+   {
+    "text": "置き場がないぶんは、そのまま運び出されてしまいます。",
+    "startMs": 172283,
+    "endMs": 176784
+   },
+   {
+    "text": "二千十四年に、アメリカの研究チームが発表した報告があります。",
+    "startMs": 177384,
+    "endMs": 183688
+   },
+   {
+    "text": "一日に取るたんぱく質の量を、まったく同じにして、比べたそうです。",
+    "startMs": 184288,
+    "endMs": 191083
+   },
+   {
+    "text": "片方は、三食に均等に。",
+    "startMs": 191683,
+    "endMs": 194765
+   },
+   {
+    "text": "もう片方は、夕食に偏らせて。",
+    "startMs": 195365,
+    "endMs": 198779
+   },
+   {
+    "text": "すると、夕食に偏らせたほうは、一日でつくられる筋肉の量が、",
+    "startMs": 199379,
+    "endMs": 205309
+   },
+   {
+    "text": "およそにじゅうごパーセント低かった。",
+    "startMs": 205309,
+    "endMs": 208989
+   },
+   {
+    "text": "そういう結果でした。",
+    "startMs": 209589,
+    "endMs": 211435
+   },
+   {
+    "text": "同じ量です。",
+    "startMs": 212035,
+    "endMs": 213368
+   },
+   {
+    "text": "同じ食材です。",
+    "startMs": 213968,
+    "endMs": 215643
+   },
+   {
+    "text": "違うのは、配り方だけ。",
+    "startMs": 216243,
+    "endMs": 218899
+   },
+   {
+    "text": "それだけで、四分の一が、消えていました。",
+    "startMs": 219499,
+    "endMs": 223979
+   },
+   {
+    "text": "ここで、いったん、ご挨拶をさせてください。",
+    "startMs": 224579,
+    "endMs": 229475
+   },
+   {
+    "text": "皆さん、こんにちは。",
+    "startMs": 230075,
+    "endMs": 232400
+   },
+   {
+    "text": "六十代からの食卓へ、ようこそ。",
+    "startMs": 233000,
+    "endMs": 236776
+   },
+   {
+    "text": "案内人の、みのりです。",
+    "startMs": 237376,
+    "endMs": 239915
+   },
+   {
+    "text": "その前に、一つだけ教えてください。",
+    "startMs": 240515,
+    "endMs": 244003
+   },
+   {
+    "text": "今日は、どちらの都道府県からご覧くださっていますか。",
+    "startMs": 244603,
+    "endMs": 249264
+   },
+   {
+    "text": "コメント欄に、お住まいの地域を書いていただけたら、嬉しいです。",
+    "startMs": 249864,
+    "endMs": 255848
+   },
+   {
+    "text": "全て、読ませていただいております。",
+    "startMs": 256448,
+    "endMs": 259744
+   },
+   {
+    "text": "まだのかたは、チャンネル登録もしていただけると、次の食卓でも、またお会いできます。",
+    "startMs": 260344,
+    "endMs": 268045
+   },
+   {
+    "text": "それから、先にお伝えしておきたいことがあります。",
+    "startMs": 268645,
+    "endMs": 272933
+   },
+   {
+    "text": "腎臓の治療を受けている方は、たんぱく質の量を、先生から制限されている場合があります。",
+    "startMs": 273533,
+    "endMs": 281939
+   },
+   {
+    "text": "今日のお話は、そういう方には、当てはまりません。",
+    "startMs": 282539,
+    "endMs": 287669
+   },
+   {
+    "text": "必ず、かかりつけの先生に、確かめてから召し上がってください。",
+    "startMs": 288269,
+    "endMs": 294467
+   },
+   {
+    "text": "さて、ここで、ご自分の目安を、一度だけ確かめておきましょう。",
+    "startMs": 295067,
+    "endMs": 301413
+   },
+   {
+    "text": "厚生労働省の「日本人の食事摂取基準」、二千二十五年版では、",
+    "startMs": 302013,
+    "endMs": 308902
+   },
+   {
+    "text": "六十五歳以上の推奨量が示されています。",
+    "startMs": 308902,
+    "endMs": 313416
+   },
+   {
+    "text": "男性で、ろくじゅうグラム。",
+    "startMs": 314016,
+    "endMs": 316736
+   },
+   {
+    "text": "女性で、ごじゅうグラムです。",
+    "startMs": 317336,
+    "endMs": 320408
+   },
+   {
+    "text": "では、ろくじゅうグラムを、三回で割ってみてください。",
+    "startMs": 321008,
+    "endMs": 325712
+   },
+   {
+    "text": "一回、にじゅうグラムです。",
+    "startMs": 326312,
+    "endMs": 329459
+   },
+   {
+    "text": "この「にじゅうグラム」を、今日は、覚えて帰っていただきたいのです。",
+    "startMs": 330059,
+    "endMs": 337045
+   },
+   {
+    "text": "そこに届かない食事は、ゲートを、少ししか開けられません。",
+    "startMs": 337645,
+    "endMs": 343096
+   },
+   {
+    "text": "では、ご自分の筋肉は、今どうなっているのか。",
+    "startMs": 343696,
+    "endMs": 348549
+   },
+   {
+    "text": "三十秒で確かめる方法があります。",
+    "startMs": 349149,
+    "endMs": 352499
+   },
+   {
+    "text": "東京大学の研究チームが考案した、「指輪っかテスト」というものです。",
+    "startMs": 353099,
+    "endMs": 359829
+   },
+   {
+    "text": "今、椅子に座ったままで、できます。",
+    "startMs": 360429,
+    "endMs": 364771
+   },
+   {
+    "text": "両手の親指と、人差し指で、輪をつくってください。",
+    "startMs": 365371,
+    "endMs": 370501
+   },
+   {
+    "text": "その輪で、ふくらはぎの、いちばん太いところを、そっと囲んでみてください。",
+    "startMs": 371101,
+    "endMs": 377981
+   },
+   {
+    "text": "どうでしょうか。",
+    "startMs": 378581,
+    "endMs": 379883
+   },
+   {
+    "text": "囲めずに、指が届かない方は、今のところ、安心してよいと言われています。",
+    "startMs": 380483,
+    "endMs": 387928
+   },
+   {
+    "text": "ちょうど囲める方は、少し気をつけたいところ。",
+    "startMs": 388528,
+    "endMs": 392432
+   },
+   {
+    "text": "囲んだうえに、隙間ができてしまった方は、筋肉が減っているおそれが高い、とされています。",
+    "startMs": 393032,
+    "endMs": 401587
+   },
+   {
+    "text": "隙間ができた方も、どうか、がっかりなさらないでください。",
+    "startMs": 402187,
+    "endMs": 408064
+   },
+   {
+    "text": "筋肉は、いくつからでも、つくり直せる材料でできています。",
+    "startMs": 408664,
+    "endMs": 414179
+   },
+   {
+    "text": "さて、次は、お昼の食卓です。",
+    "startMs": 414779,
+    "endMs": 418661
+   },
+   {
+    "text": "お一人のお昼ごはんを、思い浮かべてみてください。",
+    "startMs": 419261,
+    "endMs": 423315
+   },
+   {
+    "text": "そうめん。",
+    "startMs": 423915,
+    "endMs": 424992
+   },
+   {
+    "text": "うどん。",
+    "startMs": 425592,
+    "endMs": 426403
+   },
+   {
+    "text": "冷たいお蕎麦。",
+    "startMs": 427003,
+    "endMs": 428453
+   },
+   {
+    "text": "暑い日に、つるっと食べられて、洗い物も少ない。",
+    "startMs": 429053,
+    "endMs": 433949
+   },
+   {
+    "text": "私も、この夏、何度お世話になったか分かりません。",
+    "startMs": 434549,
+    "endMs": 439733
+   },
+   {
+    "text": "けれども、麺つゆだけで召し上がったお昼。",
+    "startMs": 440333,
+    "endMs": 444152
+   },
+   {
+    "text": "体に届くたんぱく質は、ごグラムから、きゅうグラムほどです。",
+    "startMs": 444752,
+    "endMs": 450384
+   },
+   {
+    "text": "にじゅうグラムには、遠く届きません。",
+    "startMs": 450984,
+    "endMs": 454227
+   },
+   {
+    "text": "つまり、三回開くはずのゲートのうち、二回が、ほとんど閉じたままになっている。",
+    "startMs": 454827,
+    "endMs": 462304
+   },
+   {
+    "text": "そういう日が、この夏、何日も続いていた方も、いらっしゃるのではないでしょうか。",
+    "startMs": 462904,
+    "endMs": 470712
+   },
+   {
+    "text": "ここは、直すのが、いちばん簡単な一食でもあります。",
+    "startMs": 471312,
+    "endMs": 476464
+   },
+   {
+    "text": "ちくわを、一本。",
+    "startMs": 477064,
+    "endMs": 479453
+   },
+   {
+    "text": "麺の上に、卵を一つ、落とす。",
+    "startMs": 480053,
+    "endMs": 483840
+   },
+   {
+    "text": "冷奴を、小鉢で一つ、添える。",
+    "startMs": 484440,
+    "endMs": 488483
+   },
+   {
+    "text": "それだけで、届く量は、倍近くになります。",
+    "startMs": 489083,
+    "endMs": 493488
+   },
+   {
+    "text": "麺を減らす必要は、ありません。",
+    "startMs": 494088,
+    "endMs": 497459
+   },
+   {
+    "text": "我慢するのではなく、隣に、一つ置く。",
+    "startMs": 498059,
+    "endMs": 502357
+   },
+   {
+    "text": "それだけの話です。",
+    "startMs": 502957,
+    "endMs": 504867
+   },
+   {
+    "text": "例えば、こんな方がいらっしゃるとします。",
+    "startMs": 505467,
+    "endMs": 509061
+   },
+   {
+    "text": "静岡県の、克己さん、七十二歳。",
+    "startMs": 509661,
+    "endMs": 514397
+   },
+   {
+    "text": "長いあいだ、郵便局にお勤めでした。",
+    "startMs": 514997,
+    "endMs": 518987
+   },
+   {
+    "text": "今も、朝いちばんに、庭の鉢植えに水をやるのが日課だそうです。",
+    "startMs": 519587,
+    "endMs": 526264
+   },
+   {
+    "text": "克己さんは、夜はしっかり召し上がる方でした。",
+    "startMs": 526864,
+    "endMs": 531344
+   },
+   {
+    "text": "お刺身も、お肉も、好きだった。",
+    "startMs": 531944,
+    "endMs": 535475
+   },
+   {
+    "text": "ところが、去年の健康診断で、筋肉の量が減っていると言われたそうです。",
+    "startMs": 536075,
+    "endMs": 542976
+   },
+   {
+    "text": "「毎晩あんなに食べてるのに、なんでだ」",
+    "startMs": 543576,
+    "endMs": 546947
+   },
+   {
+    "text": "そうおっしゃったきり、しばらく黙ってしまったと聞きました。",
+    "startMs": 547547,
+    "endMs": 552208
+   },
+   {
+    "text": "克己さんの朝は、三十年、コーヒーとトースト一枚。",
+    "startMs": 552808,
+    "endMs": 558269
+   },
+   {
+    "text": "お昼は、そうめんか、菓子パン。",
+    "startMs": 558869,
+    "endMs": 562389
+   },
+   {
+    "text": "一日の合計は、決して少なくありません。",
+    "startMs": 562989,
+    "endMs": 567235
+   },
+   {
+    "text": "けれども、ゲートは、夜に一度しか開いていませんでした。",
+    "startMs": 567835,
+    "endMs": 573328
+   },
+   {
+    "text": "ここまでのお話が、お役に立っているようでしたら、コメント欄に、数字の「に」",
+    "startMs": 573928,
+    "endMs": 581370
+   },
+   {
+    "text": "を書いていただけますか。",
+    "startMs": 581370,
+    "endMs": 583784
+   },
+   {
+    "text": "そして、今日の内容が良さそうだと思ってくださったら、高評価と、",
+    "startMs": 584384,
+    "endMs": 590260
+   },
+   {
+    "text": "離れて暮らすご家族やお友達にも、そっと分けてあげてください。",
+    "startMs": 590260,
+    "endMs": 595947
+   },
+   {
+    "text": "気づいたことやご感想があれば、どうぞコメントで教えてくださいね。",
+    "startMs": 596547,
+    "endMs": 602093
+   },
+   {
+    "text": "皆さんの声を励みに、もっと良いお話をお届けしていきます。",
+    "startMs": 602693,
+    "endMs": 608283
+   },
+   {
+    "text": "さて、ここからが、今日の本題です。",
+    "startMs": 608883,
+    "endMs": 612776
+   },
+   {
+    "text": "三食のうち、いちばん見落とされている一食。",
+    "startMs": 613376,
+    "endMs": 617621
+   },
+   {
+    "text": "それが、朝です。",
+    "startMs": 618221,
+    "endMs": 620483
+   },
+   {
+    "text": "日本人の朝ごはんで、たんぱく質がにじゅうグラムに届いている方。",
+    "startMs": 621083,
+    "endMs": 626800
+   },
+   {
+    "text": "その割合は、半分にも満たない、という調査結果が報告されています。",
+    "startMs": 627400,
+    "endMs": 634248
+   },
+   {
+    "text": "昼でも、夜でもなく、朝。",
+    "startMs": 634848,
+    "endMs": 638880
+   },
+   {
+    "text": "そこが、いちばん空いています。",
+    "startMs": 639480,
+    "endMs": 642456
+   },
+   {
+    "text": "なぜ、朝がそれほど大事なのでしょうか。",
+    "startMs": 643056,
+    "endMs": 647184
+   },
+   {
+    "text": "理由は、夜のあいだにあります。",
+    "startMs": 647784,
+    "endMs": 650941
+   },
+   {
+    "text": "眠っているあいだも、建て替えの工事は、止まりません。",
+    "startMs": 651541,
+    "endMs": 656715
+   },
+   {
+    "text": "けれども、夕食から朝食まで、十時間以上、トラックが来ない時間が続きます。",
+    "startMs": 657315,
+    "endMs": 665304
+   },
+   {
+    "text": "朝、目が覚めたとき、現場の材料置き場は、一日でいちばん空っぽになっています。",
+    "startMs": 665904,
+    "endMs": 674320
+   },
+   {
+    "text": "そこへ、コーヒーだけが届く。",
+    "startMs": 674920,
+    "endMs": 677981
+   },
+   {
+    "text": "工事は、また、お休みです。",
+    "startMs": 678581,
+    "endMs": 681952
+   },
+   {
+    "text": "これが、朝の正体です。",
+    "startMs": 682552,
+    "endMs": 685400
+   },
+   {
+    "text": "思い浮かべてみてください。",
+    "startMs": 686000,
+    "endMs": 687995
+   },
+   {
+    "text": "昔の朝ごはんを。",
+    "startMs": 688595,
+    "endMs": 690397
+   },
+   {
+    "text": "炊きたてのご飯の湯気。",
+    "startMs": 690997,
+    "endMs": 692960
+   },
+   {
+    "text": "焼き魚の匂いで、目が覚めた朝。",
+    "startMs": 693560,
+    "endMs": 697251
+   },
+   {
+    "text": "卵焼きと、お味噌汁と、納豆。",
+    "startMs": 697851,
+    "endMs": 702363
+   },
+   {
+    "text": "あの食卓は、実は、ゲートを大きく開ける食卓でした。",
+    "startMs": 702963,
+    "endMs": 708477
+   },
+   {
+    "text": "いつの間にか、それが、トーストとコーヒーに変わっていった。",
+    "startMs": 709077,
+    "endMs": 714176
+   },
+   {
+    "text": "年を取って、朝は食べられなくなった。",
+    "startMs": 714776,
+    "endMs": 718456
+   },
+   {
+    "text": "そうおっしゃる方も、多いですね。",
+    "startMs": 719056,
+    "endMs": 722277
+   },
+   {
+    "text": "白状しますと、私も、そうでした。",
+    "startMs": 722877,
+    "endMs": 726867
+   },
+   {
+    "text": "朝は、コーヒーだけ。",
+    "startMs": 727467,
+    "endMs": 729920
+   },
+   {
+    "text": "台所に立つのが面倒で、お昼まで、何も食べない日もありました。",
+    "startMs": 730520,
+    "endMs": 736963
+   },
+   {
+    "text": "朝の落とし穴は、三つあります。",
+    "startMs": 737563,
+    "endMs": 740805
+   },
+   {
+    "text": "一つ目。",
+    "startMs": 741405,
+    "endMs": 742419
+   },
+   {
+    "text": "パンとコーヒーだけの朝。",
+    "startMs": 743019,
+    "endMs": 745045
+   },
+   {
+    "text": "食パン一枚のたんぱく質は、ごグラムほど。",
+    "startMs": 745645,
+    "endMs": 749752
+   },
+   {
+    "text": "コーヒーには、ほとんど入っていません。",
+    "startMs": 750352,
+    "endMs": 753840
+   },
+   {
+    "text": "二つ目。",
+    "startMs": 754440,
+    "endMs": 755400
+   },
+   {
+    "text": "果物とヨーグルトだけの朝。",
+    "startMs": 756000,
+    "endMs": 758347
+   },
+   {
+    "text": "小さなカップのヨーグルト一つは、よんグラムほどです。",
+    "startMs": 758947,
+    "endMs": 763629
+   },
+   {
+    "text": "三つ目。",
+    "startMs": 764229,
+    "endMs": 765115
+   },
+   {
+    "text": "ご飯とお味噌汁だけの朝。",
+    "startMs": 765715,
+    "endMs": 768157
+   },
+   {
+    "text": "これは、惜しい朝です。",
+    "startMs": 768757,
+    "endMs": 771349
+   },
+   {
+    "text": "お味噌汁に、お豆腐かお揚げが入っていれば、少し届きます。",
+    "startMs": 771949,
+    "endMs": 777603
+   },
+   {
+    "text": "けれども、お漬物とご飯だけでは、ごグラムを超えません。",
+    "startMs": 778203,
+    "endMs": 783632
+   },
+   {
+    "text": "どれも、体に悪い朝ではありません。",
+    "startMs": 784232,
+    "endMs": 787923
+   },
+   {
+    "text": "ただ、ゲートを開けるには、少しだけ、足りない。",
+    "startMs": 788523,
+    "endMs": 793653
+   },
+   {
+    "text": "六十代を過ぎると、お肉は重たい、とおっしゃる方が増えます。",
+    "startMs": 794253,
+    "endMs": 800376
+   },
+   {
+    "text": "けれども、たんぱく質は、お肉だけのものではありません。",
+    "startMs": 800976,
+    "endMs": 806128
+   },
+   {
+    "text": "粉のプロテインを、買わないといけませんか。",
+    "startMs": 806728,
+    "endMs": 810451
+   },
+   {
+    "text": "いいえ、その必要はありません。",
+    "startMs": 811051,
+    "endMs": 814859
+   },
+   {
+    "text": "今日お伝えする「あと一品」は、どれも、百円もしないものばかりです。",
+    "startMs": 815459,
+    "endMs": 824227
+   },
+   {
+    "text": "飲み込む力が落ちてきた方や、食が細くなった方が、先生と相談のうえで粉を使うぶんには、",
+    "startMs": 824827,
+    "endMs": 833671
+   },
+   {
+    "text": "便利な道具です。",
+    "startMs": 833671,
+    "endMs": 835355
+   },
+   {
+    "text": "それから、材料の話をする前に、もう一つ、大切なことがあります。",
+    "startMs": 835955,
+    "endMs": 843240
+   },
+   {
+    "text": "たんぱく質を増やすからといって、ご飯を減らさないでください。",
+    "startMs": 843840,
+    "endMs": 849024
+   },
+   {
+    "text": "ご飯は、工事現場でいう、重機を動かす燃料です。",
+    "startMs": 849624,
+    "endMs": 855384
+   },
+   {
+    "text": "燃料が足りないと、せっかく運び込んだ材料が、燃料の代わりに燃やされてしまいます。",
+    "startMs": 855984,
+    "endMs": 863835
+   },
+   {
+    "text": "材料として使われずに、消えてしまう。",
+    "startMs": 864435,
+    "endMs": 868061
+   },
+   {
+    "text": "もったいない話ですよね。",
+    "startMs": 868661,
+    "endMs": 870891
+   },
+   {
+    "text": "そこで、お約束していた「あと一品」です。",
+    "startMs": 871491,
+    "endMs": 877336
+   },
+   {
+    "text": "答えは、卵です。",
+    "startMs": 877936,
+    "endMs": 880261
+   },
+   {
+    "text": "卵一個で、たんぱく質はろくグラムほど。",
+    "startMs": 880861,
+    "endMs": 884669
+   },
+   {
+    "text": "トーストの朝に一つ足すだけで、ごグラムが、じゅういちグラムになります。",
+    "startMs": 885269,
+    "endMs": 891659
+   },
+   {
+    "text": "二つなら、じゅうななグラム。",
+    "startMs": 892259,
+    "endMs": 894947
+   },
+   {
+    "text": "にじゅうグラムの背中が、見えてきます。",
+    "startMs": 895547,
+    "endMs": 898939
+   },
+   {
+    "text": "卵が続かない方は、納豆でも構いません。",
+    "startMs": 899539,
+    "endMs": 904211
+   },
+   {
+    "text": "一パックで、ななグラムほど。",
+    "startMs": 904811,
+    "endMs": 907797
+   },
+   {
+    "text": "牛乳をコップ一杯なら、ろくグラムほど。",
+    "startMs": 908397,
+    "endMs": 912141
+   },
+   {
+    "text": "冷蔵庫に、たぶん、もうありますね。",
+    "startMs": 912741,
+    "endMs": 917893
+   },
+   {
+    "text": "朝の食卓に、たんぱく質の一品を、必ず一つ載せる。",
+    "startMs": 918493,
+    "endMs": 924125
+   },
+   {
+    "text": "それだけです。",
+    "startMs": 924725,
+    "endMs": 926037
+   },
+   {
+    "text": "続けやすさは、それ自体が、立派な力です。",
+    "startMs": 926637,
+    "endMs": 931373
+   },
+   {
+    "text": "三日で終わる完璧な献立より、十年続く「あと一品」のほうが、体はよろこびます。",
+    "startMs": 931973,
+    "endMs": 941285
+   },
+   {
+    "text": "私も、朝、冷蔵庫から卵を一つ出すことにしました。",
+    "startMs": 941885,
+    "endMs": 948061
+   },
+   {
+    "text": "前の晩に、茹でて置いておくだけ。",
+    "startMs": 948661,
+    "endMs": 951947
+   },
+   {
+    "text": "朝ごはんのあと、台所に立つのが、前より億劫でなくなりました。",
+    "startMs": 952547,
+    "endMs": 958947
+   },
+   {
+    "text": "気のせいかもしれません。",
+    "startMs": 959547,
+    "endMs": 961499
+   },
+   {
+    "text": "例えば、こんな方がいらっしゃるとします。",
+    "startMs": 962099,
+    "endMs": 965693
+   },
+   {
+    "text": "新潟県の、あや子さん、六十八歳。",
+    "startMs": 966293,
+    "endMs": 970795
+   },
+   {
+    "text": "小学校の先生を、定年まで勤め上げた方です。",
+    "startMs": 971395,
+    "endMs": 976579
+   },
+   {
+    "text": "いまも、教え子からの年賀状を、全部とってあるそうです。",
+    "startMs": 977179,
+    "endMs": 982928
+   },
+   {
+    "text": "あや子さんの朝は、トーストとコーヒーが、三十年。",
+    "startMs": 983528,
+    "endMs": 988488
+   },
+   {
+    "text": "そこに、茹で卵を一つ、置くようにしました。",
+    "startMs": 989088,
+    "endMs": 993632
+   },
+   {
+    "text": "それだけです。",
+    "startMs": 994232,
+    "endMs": 995544
+   },
+   {
+    "text": "半年ほど経って、こうおっしゃったそうです。",
+    "startMs": 996144,
+    "endMs": 1000027
+   },
+   {
+    "text": "「孫を抱き上げるのが、こわくなくなったの」",
+    "startMs": 1000627,
+    "endMs": 1004157
+   },
+   {
+    "text": "数字の話は、一つもありませんでした。",
+    "startMs": 1004757,
+    "endMs": 1008565
+   },
+   {
+    "text": "ただ、腕に、力が戻ってきた。",
+    "startMs": 1009165,
+    "endMs": 1013037
+   },
+   {
+    "text": "それだけの、静かな半年でした。",
+    "startMs": 1013637,
+    "endMs": 1016912
+   },
+   {
+    "text": "今日のお話を、まとめます。",
+    "startMs": 1017512,
+    "endMs": 1020371
+   },
+   {
+    "text": "体は、たんぱく質を貯金できません。",
+    "startMs": 1020971,
+    "endMs": 1024597
+   },
+   {
+    "text": "ゲートは、朝、昼、晩の、三回だけ。",
+    "startMs": 1025197,
+    "endMs": 1031139
+   },
+   {
+    "text": "一回、にじゅうグラムが目安です。",
+    "startMs": 1031739,
+    "endMs": 1035483
+   },
+   {
+    "text": "夜にまとめても、四分の一は、こぼれていきます。",
+    "startMs": 1036083,
+    "endMs": 1041043
+   },
+   {
+    "text": "いちばん空いているのは、朝です。",
+    "startMs": 1041643,
+    "endMs": 1044747
+   },
+   {
+    "text": "今夜、卵を一つだけ、茹でておいてください。",
+    "startMs": 1045347,
+    "endMs": 1050189
+   },
+   {
+    "text": "それだけで、明日の朝は、変わります。",
+    "startMs": 1050789,
+    "endMs": 1054971
+   },
+   {
+    "text": "よろしければ、コメント欄で教えてください。",
+    "startMs": 1055571,
+    "endMs": 1059443
+   },
+   {
+    "text": "皆さんの朝ごはんに、明日から足すのは、卵ですか。",
+    "startMs": 1060043,
+    "endMs": 1065461
+   },
+   {
+    "text": "納豆ですか。",
+    "startMs": 1066061,
+    "endMs": 1067619
+   },
+   {
+    "text": "それとも、牛乳でしょうか。",
+    "startMs": 1068219,
+    "endMs": 1071259
+   },
+   {
+    "text": "いただいたお声を、次のお話に生かしてまいります。",
+    "startMs": 1071859,
+    "endMs": 1076296
+   },
+   {
+    "text": "それから、この動画を、もう一人のかたに届けていただけませんか。",
+    "startMs": 1076896,
+    "endMs": 1082539
+   },
+   {
+    "text": "朝はパンだけ、とおっしゃっていた、ご家族やご友人に。",
+    "startMs": 1083139,
+    "endMs": 1088845
+   },
+   {
+    "text": "一つの卵の話が、誰かの足腰を、そっと支えるかもしれません。",
+    "startMs": 1089445,
+    "endMs": 1096187
+   },
+   {
+    "text": "最後に、一つだけ、大切なお願いです。",
+    "startMs": 1096787,
+    "endMs": 1101299
+   },
+   {
+    "text": "この動画でお伝えした内容は、公表されている研究などをもとにした、",
+    "startMs": 1101899,
+    "endMs": 1108515
+   },
+   {
+    "text": "健康に関する一般的な情報です。",
+    "startMs": 1108515,
+    "endMs": 1111616
+   },
+   {
+    "text": "お一人おひとりに合わせた、医療のアドバイスではありません。",
+    "startMs": 1112216,
+    "endMs": 1117197
+   },
+   {
+    "text": "持病のある方や、お薬を飲んでいる方は、食事を変える前に、必ず、",
+    "startMs": 1117797,
+    "endMs": 1124611
+   },
+   {
+    "text": "かかりつけの先生にご相談ください。",
+    "startMs": 1124611,
+    "endMs": 1128347
+   },
+   {
+    "text": "とくに、腎臓の治療を受けている方は、たんぱく質の量に決まりがある場合があります。",
+    "startMs": 1128947,
+    "endMs": 1136499
+   },
+   {
+    "text": "今日のお話が、先生との会話のきっかけになれば、何より嬉しいです。",
+    "startMs": 1137099,
+    "endMs": 1144085
+   },
+   {
+    "text": "明日の朝、卵を一つ。",
+    "startMs": 1145285,
+    "endMs": 1148165
+   },
+   {
+    "text": "今夜の食卓が、皆さんの明日の元気に、つながりますように。",
+    "startMs": 1149165,
+    "endMs": 1154947
+   },
+   {
+    "text": "六十代からの食卓、みのりでした。",
+    "startMs": 1155547,
+    "endMs": 1159013
+   },
+   {
+    "text": "どうか、ご自分の体を、大切になさってくださいね。",
+    "startMs": 1159613,
+    "endMs": 1164755
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#2A3A58"
+ }
+}

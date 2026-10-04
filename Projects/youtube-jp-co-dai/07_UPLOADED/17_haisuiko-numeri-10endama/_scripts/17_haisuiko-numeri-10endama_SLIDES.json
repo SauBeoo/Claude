@@ -1,0 +1,1557 @@
+[
+ {
+  "match": "今夜、寝る前に、財布から",
+  "photo": true
+ },
+ {
+  "match": "台所で一番しつこいあの悩み",
+  "photo": true
+ },
+ {
+  "match": "朝、排水口のカゴを持ち上げる",
+  "photo": true
+ },
+ {
+  "match": "じつは、あのぬめり",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "正体",
+   "head": "ただの汚れではありません",
+   "pins": [
+    [
+     1420,
+     250,
+     "生きています"
+    ]
+   ],
+   "arrows": [
+    [
+     1380,
+     310,
+     1080,
+     470,
+     0.18
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Bubbles_forming_on_steel_surface_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "生き物が相手だからこそ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "bg": "photo",
+   "kicker": "銅がたどった道",
+   "title": "130年前に、答えは出ていた",
+   "marks": [
+    [
+     "1893",
+     "スイスの実験室"
+    ],
+    [
+     "2008",
+     "アメリカが認めた"
+    ],
+    [
+     "今日",
+     "あなたの台所"
+    ]
+   ],
+   "note": "見つかっていたのに、伝わらなかった",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n37.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "やり方は、あとで全部",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ10円玉でも",
+   "title": "知らずに入れると、失敗します",
+   "left": {
+    "label": "そのまま放り込む",
+    "mark": "x",
+    "verdict": "ほとんど変わらない"
+   },
+   "right": {
+    "label": "三つの条件を守る",
+    "mark": "o",
+    "verdict": "ぬめりが育たない"
+   }
+  }
+ },
+ {
+  "match": "失敗しない条件は三つ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "bg": "photo",
+   "kicker": "今日お渡しするもの",
+   "big": "3",
+   "unit": "つ",
+   "sub": "失敗しない条件",
+   "note": "順番に、手に入れてください",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n01.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "なぜ、これほど安くて",
+  "photo": true
+ },
+ {
+  "match": "第一章、ぬめりの正体",
+  "photo": true
+ },
+ {
+  "match": "正体は、バイオフィルム",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "ぬめりができるまで",
+   "title": "細菌が建てる、マンション",
+   "steps": [
+    {
+     "label": "細菌が取りつく",
+     "sub": "排水口の表面に"
+    },
+    {
+     "label": "ねばねばの膜",
+     "sub": "体のまわりに張る"
+    },
+    {
+     "label": "マンション完成",
+     "sub": "洗剤も届かない",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n35.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "外壁は水をはじき",
+  "photo": true
+ },
+ {
+  "match": "このマンション、じつは",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "同じ細菌でも",
+   "title": "膜の中に入られると、届かない",
+   "left": {
+    "label": "むき出しの細菌",
+    "mark": "o",
+    "verdict": "薬剤が効く"
+   },
+   "right": {
+    "label": "膜の中の細菌",
+    "mark": "x",
+    "verdict": "ずっと効きにくい"
+   },
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n05.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "だから、洗剤をさっとかけた",
+  "photo": true
+ },
+ {
+  "match": "だから、洗剤をさっとかけた",
+  "offset": 9.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "こすった直後から",
+   "big": "3",
+   "unit": "日",
+   "sub": "で、元通りになる",
+   "note": "残った土台から、また建ち上がる"
+  }
+ },
+ {
+  "match": "一週間の様子を",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "line",
+   "kicker": "日曜に掃除した一週間",
+   "title": "見えないところで、工事は進む",
+   "points": [
+    [
+     "日",
+     2
+    ],
+    [
+     "月",
+     4
+    ],
+    [
+     "水",
+     25
+    ],
+    [
+     "金",
+     60
+    ],
+    [
+     "日",
+     100
+    ]
+   ],
+   "last_label": "ぬるり",
+   "note": "水曜には、もう膜が張り始めている"
+  }
+ },
+ {
+  "match": "一週間の様子を",
+  "offset": 14.0,
+  "photo": true
+ },
+ {
+  "match": "思い当たる方も",
+  "photo": true
+ },
+ {
+  "match": "そして夏。気温が上がると",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "マンションが建つまで",
+   "title": "夏は、工事が三倍早い",
+   "bars": [
+    [
+     "冬",
+     7
+    ],
+    [
+     "真夏",
+     2.5
+    ]
+   ],
+   "hot": -1,
+   "note": "夏に急に匂い出すのは、そういうわけです"
+  }
+ },
+ {
+  "match": "そして夏。気温が上がると",
+  "offset": 9.5,
+  "photo": true
+ },
+ {
+  "match": "ここで少し、立ち止まって",
+  "photo": true
+ },
+ {
+  "match": "そう、建物の上の階だけ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "room",
+   "preset": "stack",
+   "kicker": "スポンジが届く範囲",
+   "head": "落としているのは、上の階だけ"
+  }
+ },
+ {
+  "match": "しかも、この工事は早い",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "こちらと、向こう",
+   "title": "真正面から戦うと、勝ち目は薄い",
+   "left": {
+    "label": "週に一度の掃除",
+    "mark": "x",
+    "verdict": "こちらの戦力"
+   },
+   "right": {
+    "label": "年中無休・24時間",
+    "mark": "o",
+    "verdict": "向こうの戦力"
+   },
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n06.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "白状しますと、私も",
+  "photo": true
+ },
+ {
+  "match": "古代の秘訣へようこそ",
+  "photo": true
+ },
+ {
+  "match": "今日の主役は",
+  "photo": true
+ },
+ {
+  "match": "今日の主役は",
+  "offset": 10.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "今日の主役",
+   "head": "誰の財布にも入っている",
+   "pins": [
+    [
+     1400,
+     240,
+     "10円玉"
+    ]
+   ],
+   "arrows": [
+    [
+     1360,
+     300,
+     1020,
+     470,
+     0.16
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Hand_taking_coins_from_wallet_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "さて、不死身に見えるこの相手",
+  "photo": true
+ },
+ {
+  "match": "第二章、1893年の実験室",
+  "photo": true
+ },
+ {
+  "match": "カール・ネーゲリという",
+  "photo": true
+ },
+ {
+  "match": "ある日、ネーゲリは",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "1893年・スイス",
+   "head": "銅の器の中では、生きられない",
+   "pins": [
+    [
+     560,
+     240,
+     "アオミドロ"
+    ],
+    [
+     1480,
+     250,
+     "銅の器"
+    ]
+   ],
+   "arrows": [
+    [
+     620,
+     300,
+     820,
+     460,
+     0.14
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n07.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "不思議なのは、その水を",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "水を調べても",
+   "big": "0",
+   "unit": "に近い",
+   "sub": "検出された銅の量",
+   "note": "それなのに、藻は生きられない"
+  }
+ },
+ {
+  "match": "実験を何度繰り返しても",
+  "photo": true
+ },
+ {
+  "match": "ネーゲリはこの現象に",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "名づけられた現象",
+   "title": "微量金属作用",
+   "steps": [
+    {
+     "label": "銅の器",
+     "sub": "水に触れる"
+    },
+    {
+     "label": "ごく微量のイオン",
+     "sub": "検出限界すれすれ"
+    },
+    {
+     "label": "小さな生き物には毒",
+     "sub": "藻が弱っていく",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n08.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "じつはこの力を",
+  "photo": true
+ },
+ {
+  "match": "古代エジプトでは",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "bg": "photo",
+   "kicker": "名前を知らずに使ってきた",
+   "title": "水まわりには、いつも銅がいた",
+   "marks": [
+    [
+     "古代エジプト",
+     "銅の器で水を運ぶ"
+    ],
+    [
+     "江戸",
+     "台所に銅の水がめ"
+    ],
+    [
+     "昭和初め",
+     "流しは銅張り"
+    ],
+    [
+     "1893",
+     "ようやく名前がついた"
+    ]
+   ],
+   "note": "理屈は後から来た",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Copper_water_jar_in_kitchen_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "古代エジプトでは",
+  "offset": 9.5,
+  "photo": true
+ },
+ {
+  "match": "冷蔵庫のない時代",
+  "photo": true
+ },
+ {
+  "match": "冷蔵庫のない時代",
+  "offset": 12.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "冷蔵庫のない時代",
+   "head": "水を腐らせないのは、命の仕事",
+   "pins": [
+    [
+     1400,
+     250,
+     "銅張りの流し"
+    ]
+   ],
+   "arrows": [
+    [
+     1360,
+     310,
+     1060,
+     470,
+     0.16
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Edo-period_Japanese_kitchen_morn…_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "屋根を見上げても",
+  "photo": true
+ },
+ {
+  "match": "屋根を見上げても",
+  "offset": 11.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "同じ「さび」でも",
+   "title": "緑青は、内側を守る鎧です",
+   "left": {
+    "label": "鉄のさび",
+    "mark": "x",
+    "verdict": "内側まで食い進む"
+   },
+   "right": {
+    "label": "緑青（銅のさび）",
+    "mark": "o",
+    "verdict": "百年、働き続ける"
+   },
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Copper_rain_gutter_on_roof_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "昔の人は、微量金属作用という",
+  "photo": true
+ },
+ {
+  "match": "私の祖母は、玄関の花瓶に",
+  "photo": true
+ },
+ {
+  "match": "私の祖母は、玄関の花瓶に",
+  "offset": 10.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "祖母の花瓶",
+   "head": "夏でも、水が濁らない",
+   "pins": [
+    [
+     1400,
+     250,
+     "沈めた10円玉"
+    ]
+   ],
+   "arrows": [
+    [
+     1360,
+     310,
+     1040,
+     470,
+     0.16
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Flower_vase_on_wooden_shelf_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "近所の金物屋のご主人に",
+  "photo": true
+ },
+ {
+  "match": "ご主人は棚の銅のざるを",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "金物屋のご主人",
+   "head": "銅はねえ、黙って働くんだよ",
+   "pins": [
+    [
+     1380,
+     250,
+     "宣伝もしないでね"
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Old_Japanese_hardware_shop_interior_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "第三章、なぜ銅は効くのか",
+  "photo": true
+ },
+ {
+  "match": "この銅イオンが、細菌にとっては",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "細菌の側から見ると",
+   "title": "歯車に、砂が入り込む",
+   "steps": [
+    {
+     "label": "銅の表面",
+     "sub": "水に触れる"
+    },
+    {
+     "label": "銅イオンが溶ける",
+     "sub": "目に見えない量"
+    },
+    {
+     "label": "膜に穴が開く",
+     "sub": "中の仕組みが壊れる",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n11.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "この銅イオンが、細菌にとっては",
+  "offset": 10.5,
+  "photo": true
+ },
+ {
+  "match": "人間や大きな生き物には",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ量の銅でも",
+   "title": "受け取る側で、意味が変わる",
+   "left": {
+    "label": "人間",
+    "mark": "o",
+    "verdict": "肝臓が処理してくれる"
+   },
+   "right": {
+    "label": "細菌",
+    "mark": "x",
+    "verdict": "門番も倉庫もない"
+   }
+  }
+ },
+ {
+  "match": "私たちの体には、肝臓という",
+  "photo": true
+ },
+ {
+  "match": "一般社団法人・日本銅センターの",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "一般社団法人 日本銅センター",
+   "asof": "銅の超抗菌性能Q&A Q30",
+   "quote": "常に2時間で1000分の1以下まで減らす働きがある",
+   "number": "1000分の1",
+   "note": "実験室の数字ではあります"
+  }
+ },
+ {
+  "match": "一般社団法人・日本銅センターの",
+  "offset": 9.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "銅の表面の上で",
+   "big": "1000",
+   "unit": "分の1",
+   "sub": "2時間で、ここまで減る",
+   "bars": [
+    [
+     "0分",
+     100
+    ],
+    [
+     "2時間",
+     0.1
+    ]
+   ],
+   "note": "1万匹なら、2時間後には10匹以下"
+  }
+ },
+ {
+  "match": "実験室の数字ではあります",
+  "photo": true
+ },
+ {
+  "match": "さらに、同じ資料には",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "日本銅センター",
+   "asof": "同資料 Q24",
+   "quote": "雑菌を減らして、バイオフィルムの形成を防ぐ",
+   "number": "Q24",
+   "note": "これが「育たせない」の中身"
+  }
+ },
+ {
+  "match": "思い出してください",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "銅の役どころ",
+   "title": "壊す道具ではなく、建てさせない道具",
+   "left": {
+    "label": "建物を壊す爆弾",
+    "mark": "x",
+    "verdict": "銅はこれではない"
+   },
+   "right": {
+    "label": "土地の管理人",
+    "mark": "o",
+    "verdict": "工事を始めさせない"
+   },
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n13.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "ちなみに、銀にも似た力が",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "環境の表面での抗菌性能",
+   "title": "台所の番人には、銅が現実的",
+   "bars": [
+    [
+     "銀",
+     70
+    ],
+    [
+     "銅",
+     100
+    ]
+   ],
+   "hot": -1,
+   "note": "しかも銀は、財布に入っていません"
+  }
+ },
+ {
+  "match": "ちなみに、銀にも似た力が",
+  "offset": 11.5,
+  "photo": true
+ },
+ {
+  "match": "この力は、国のお墨付きも",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "アメリカ環境保護庁（EPA）",
+   "asof": "2008年2月",
+   "quote": "細菌を減らし続ける効果のある材料として登録",
+   "number": "275種類",
+   "note": "固体の材料としては、史上初"
+  }
+ },
+ {
+  "match": "この力は、国のお墨付きも",
+  "offset": 9.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "EPAが登録した銅合金",
+   "big": "275",
+   "unit": "種類",
+   "sub": "固体材料としては史上初",
+   "note": "2008年2月のことです"
+  }
+ },
+ {
+  "match": "ステンレスでも、プラスチックでも",
+  "photo": true
+ },
+ {
+  "match": "この登録のあと、海外の病院では",
+  "photo": true
+ },
+ {
+  "match": "この登録のあと、海外の病院では",
+  "offset": 10.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "海外の病院で",
+   "head": "触れるたびに、黙って減らす",
+   "pins": [
+    [
+     1360,
+     250,
+     "休みのない消毒係"
+    ]
+   ],
+   "arrows": [
+    [
+     1320,
+     310,
+     1020,
+     460,
+     0.15
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n16.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "ここまでの話を、一度だけ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "ここまでの整理",
+   "title": "理屈は、これで全部です",
+   "steps": [
+    {
+     "label": "ぬめり",
+     "sub": "細菌が建てるマンション"
+    },
+    {
+     "label": "銅イオン",
+     "sub": "工事を始めさせない管理人"
+    },
+    {
+     "label": "裏付け",
+     "sub": "130年前の発見と日米の公的資料",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n42.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "ここまでの話を、一度だけ",
+  "offset": 11.5,
+  "photo": true
+ },
+ {
+  "match": "では、理屈を台所に",
+  "photo": true
+ },
+ {
+  "match": "10円玉を1枚、ぽんと",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "正直にお伝えします",
+   "head": "1枚では、まわりだけ",
+   "pins": [
+    [
+     1380,
+     250,
+     "守れません"
+    ]
+   ],
+   "arrows": [
+    [
+     1340,
+     310,
+     1000,
+     470,
+     0.16
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n01.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 15.0,
+  "photo": true
+ },
+ {
+  "match": "冒頭でお約束した",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "道具は10円玉5〜10枚だけ",
+   "title": "失敗しない三つの条件",
+   "steps": [
+    {
+     "label": "一度だけ大掃除",
+     "sub": "スタートを更地にする"
+    },
+    {
+     "label": "5〜10枚を広げる",
+     "sub": "重ねずに沈める"
+    },
+    {
+     "label": "油の膜を許さない",
+     "sub": "週に一度お湯で流す",
+     "hot": true
+    }
+   ]
+  }
+ },
+ {
+  "match": "条件その一",
+  "photo": true
+ },
+ {
+  "match": "先ほどお話しした通り",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "銅にできること",
+   "title": "更地からしか、始められません",
+   "left": {
+    "label": "建物の解体屋",
+    "mark": "x",
+    "verdict": "銅はこれではない"
+   },
+   "right": {
+    "label": "更地の管理人",
+    "mark": "o",
+    "verdict": "だから最初に掃除"
+   },
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n39.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "特別な薬剤はいりません",
+  "photo": true
+ },
+ {
+  "match": "特別な薬剤はいりません",
+  "offset": 9.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "条件その一",
+   "head": "この一度だけは、丁寧に",
+   "pins": [
+    [
+     1360,
+     250,
+     "更地の完成"
+    ]
+   ],
+   "arrows": [
+    [
+     1320,
+     310,
+     1000,
+     460,
+     0.15
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n39.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "条件その二",
+  "photo": true
+ },
+ {
+  "match": "置き場所が肝心です",
+  "photo": true
+ },
+ {
+  "match": "置き方のコツを",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "条件その二",
+   "head": "重ねず、広げて置く",
+   "pins": [
+    [
+     1340,
+     250,
+     "触れる面が増える"
+    ]
+   ],
+   "arrows": [
+    [
+     1300,
+     310,
+     980,
+     470,
+     0.16
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n20.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "つまり、枚数は表面積です",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "水に触れる銅の面積",
+   "title": "枚数は、そのまま表面積です",
+   "bars": [
+    [
+     "1枚",
+     10
+    ],
+    [
+     "5枚",
+     50
+    ],
+    [
+     "10枚",
+     100
+    ]
+   ],
+   "hot": -1,
+   "note": "1枚が気休めでも、10枚なら守備隊になります"
+  }
+ },
+ {
+  "match": "10円玉が茶色くくすんでいても",
+  "photo": true
+ },
+ {
+  "match": "ここで、なぜ10円玉なのか",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "dot",
+   "kicker": "10円硬貨の中身",
+   "total": 100,
+   "hit": 95,
+   "hit_label": "95％",
+   "unit_note": "1つの点＝1％",
+   "note": "財布の中で、いちばん銅が濃い顔ぶれ",
+   "source": "造幣局"
+  }
+ },
+ {
+  "match": "ここで、なぜ10円玉なのか",
+  "offset": 9.5,
+  "photo": true
+ },
+ {
+  "match": "では5円玉ではだめですか",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "銅の割合",
+   "title": "番人に選ぶなら、10円玉",
+   "bars": [
+    [
+     "5円玉（黄銅）",
+     60
+    ],
+    [
+     "10円玉",
+     95
+    ]
+   ],
+   "hot": -1,
+   "note": "5円玉も働きます。ただ、濃さが違います"
+  }
+ },
+ {
+  "match": "では5円玉ではだめですか",
+  "offset": 8.5,
+  "photo": true
+ },
+ {
+  "match": "何ヶ月使えますか",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "使い続けたときの違い",
+   "title": "銅は、使い減りしません",
+   "left": {
+    "label": "ぬめり取り薬剤",
+    "mark": "x",
+    "verdict": "使えばなくなる"
+   },
+   "right": {
+    "label": "10円玉",
+    "mark": "o",
+    "verdict": "10年でも同じ仕事"
+   }
+  }
+ },
+ {
+  "match": "条件その三",
+  "photo": true
+ },
+ {
+  "match": "揚げ物のあとの油や",
+  "photo": true
+ },
+ {
+  "match": "揚げ物のあとの油や",
+  "offset": 10.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "条件その三",
+   "head": "週に一度、お湯でひとなで",
+   "pins": [
+    [
+     1360,
+     250,
+     "油の膜を流す"
+    ]
+   ],
+   "arrows": [
+    [
+     1320,
+     310,
+     1000,
+     470,
+     0.15
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Hands_rinsing_coins_under_tap_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "念のため、もう一度",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "今日のまとめ・実践編",
+   "title": "この三つだけです",
+   "steps": [
+    {
+     "label": "最初に一度、丁寧に",
+     "sub": "更地にする"
+    },
+    {
+     "label": "5〜10枚、離して並べる",
+     "sub": "表面積を稼ぐ"
+    },
+    {
+     "label": "週に一度お湯で流す",
+     "sub": "油の膜を許さない",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n20.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "かかる費用を計算してみましょう",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "10円玉10枚",
+   "big": "100",
+   "unit": "円",
+   "sub": "しかも、使ったあとも100円のまま",
+   "note": "元手がまるごと返ってくる掃除道具"
+  }
+ },
+ {
+  "match": "かかる費用を計算してみましょう",
+  "offset": 10.5,
+  "photo": true
+ },
+ {
+  "match": "慣れてきたら、少しだけ格上げ",
+  "photo": true
+ },
+ {
+  "match": "慣れてきたら、少しだけ格上げ",
+  "offset": 12.5,
+  "photo": true
+ },
+ {
+  "match": "三角コーナーにも",
+  "photo": true
+ },
+ {
+  "match": "花瓶の場合は",
+  "photo": true
+ },
+ {
+  "match": "花瓶の場合は",
+  "offset": 11.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "花瓶に使うなら",
+   "title": "水の量で、枚数を変える",
+   "steps": [
+    {
+     "label": "小ぶりの一輪挿し",
+     "sub": "1〜2枚で十分"
+    },
+    {
+     "label": "大きな花瓶",
+     "sub": "3枚ほど"
+    },
+    {
+     "label": "水を替えるたび",
+     "sub": "10円玉もさっと洗う",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Flower_vase_on_wooden_shelf_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "一つだけ、注意があります",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "使ってよい場所・だめな場所",
+   "title": "水の生き物には、強すぎます",
+   "left": {
+    "label": "玄関の花瓶",
+    "mark": "o",
+    "verdict": "問題ありません"
+   },
+   "right": {
+    "label": "金魚鉢・水槽",
+    "mark": "x",
+    "verdict": "使わないでください"
+   },
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n26.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "一つだけ、注意があります",
+  "offset": 10.5,
+  "photo": true
+ },
+ {
+  "match": "私自身、3週間前から",
+  "photo": true
+ },
+ {
+  "match": "私自身、3週間前から",
+  "offset": 9.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "自宅の排水口で",
+   "big": "7",
+   "unit": "枚",
+   "sub": "沈めてみました",
+   "note": "3週間、日曜のゴム手袋は棚のまま"
+  }
+ },
+ {
+  "match": "正直に言えば、最初の数日は",
+  "photo": true
+ },
+ {
+  "match": "第五章、なぜ誰も",
+  "photo": true
+ },
+ {
+  "match": "意地悪な陰謀の話では",
+  "photo": true
+ },
+ {
+  "match": "ぬめり取りの薬剤は",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "line",
+   "kicker": "薬剤を毎月買うと",
+   "title": "毎月、確実に流れてくる川",
+   "points": [
+    [
+     "1月",
+     300
+    ],
+    [
+     "6月",
+     1800
+    ],
+    [
+     "12月",
+     3600
+    ]
+   ],
+   "last_label": "3600円",
+   "note": "売る側から見れば、川です"
+  }
+ },
+ {
+  "match": "ぬめり取りの薬剤は",
+  "offset": 9.5,
+  "photo": true
+ },
+ {
+  "match": "一方、銅はどうでしょう",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "売る側から見ると",
+   "title": "川か、一度きりの水たまりか",
+   "left": {
+    "label": "毎月なくなる薬剤",
+    "mark": "o",
+    "verdict": "毎月お金が流れる"
+   },
+   "right": {
+    "label": "10円玉・銅のカゴ",
+    "mark": "x",
+    "verdict": "一度きりで終わる"
+   },
+   "note": "良し悪しではなく、お金の流れの話です",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n29.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "どちらの商品にテレビ広告が",
+  "photo": true
+ },
+ {
+  "match": "テレビをつければ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "宣伝にかけられるお金",
+   "title": "桁から、違うというだけの話",
+   "bars": [
+    [
+     "毎月買う商品",
+     100
+    ],
+    [
+     "一度きりの金属",
+     3
+    ]
+   ],
+   "hot": 0,
+   "note": "薬剤が悪いわけではありません"
+  }
+ },
+ {
+  "match": "テレビをつければ",
+  "offset": 11.5,
+  "photo": true
+ },
+ {
+  "match": "テレビをつければ",
+  "offset": 22.0,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "棚の理由",
+   "head": "悪いのは、薬剤ではありません",
+   "pins": [
+    [
+     1280,
+     250,
+     "宣伝の量が違うだけ"
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n30.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "昭和の台所から銅の流しが",
+  "photo": true
+ },
+ {
+  "match": "昭和の台所から銅の流しが",
+  "offset": 9.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "bg": "photo",
+   "kicker": "銅が消えた道すじ",
+   "title": "作る側の都合で、消えました",
+   "marks": [
+    [
+     "江戸",
+     "銅の水がめ"
+    ],
+    [
+     "昭和初め",
+     "銅張りの流し"
+    ],
+    [
+     "昭和後期",
+     "ステンレスへ"
+    ],
+    [
+     "今",
+     "財布の中だけ"
+    ]
+   ],
+   "note": "役立たずだったからではありません",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n31.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "その一方で、屋根の銅だけは",
+  "photo": true
+ },
+ {
+  "match": "その一方で、屋根の銅だけは",
+  "offset": 10.5,
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "bg": "photo",
+   "kicker": "残ったものと、消えたもの",
+   "title": "一生ものからは、消えなかった",
+   "left": {
+    "label": "毎月買い替えるもの",
+    "mark": "x",
+    "verdict": "銅が消えた"
+   },
+   "right": {
+    "label": "百年もつ屋根",
+    "mark": "o",
+    "verdict": "銅が残った"
+   },
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Japanese_temple_roof_and_rain_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "金物屋のご主人の言葉を",
+  "photo": true
+ },
+ {
+  "match": "宣伝しない働き者は",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "今日の答え",
+   "head": "宣伝しない働き者は、忘れられる",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai_clean/Old_Japanese_hardware_shop_interior_202608090207.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "最初にお断りした通り",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "正直な線引き",
+   "title": "銅は、魔法ではありません",
+   "steps": [
+    {
+     "label": "排水管の奥",
+     "sub": "イオンは届きません"
+    },
+    {
+     "label": "月に一度の点検掃除",
+     "sub": "これからも必要です"
+    },
+    {
+     "label": "掃除と掃除のあいだの番人",
+     "sub": "それが銅の仕事",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/17_haisuiko-numeri-10endama/ai2_clean/n43.jpg",
+   "photo_style": "clean"
+  }
+ },
+ {
+  "match": "最初にお断りした通り",
+  "offset": 10.5,
+  "photo": true
+ },
+ {
+  "match": "それでも、考え方は",
+  "photo": true
+ },
+ {
+  "match": "あなたのお宅には",
+  "photo": true
+ },
+ {
+  "match": "祖母の花瓶の10円玉を",
+  "photo": true
+ },
+ {
+  "match": "祖母の花瓶の10円玉を",
+  "offset": 13.0,
+  "photo": true
+ },
+ {
+  "match": "次回は、夏の台所の",
+  "photo": true
+ },
+ {
+  "match": "古代の秘訣は、これからも",
+  "photo": true
+ }
+]

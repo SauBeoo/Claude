@@ -1,0 +1,1301 @@
+[
+ {
+  "match": "真冬の夜に、壁を這うカメムシを見",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_00.jpg"
+  }
+ },
+ {
+  "match": "あれは、外から入ってきたのではあ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "title": "侵入ではなく、越冬",
+   "sub": "去年の秋から、ずっと家の中にいた1匹",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/bug_on_white_wall_winter.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ですから、やることは今月です。網",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_02.jpg",
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "開ける",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "size": 64,
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "ところが、時期を過ぎてから隙間を",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_03.jpg",
+   "focus": [
+    0.59,
+    0.66,
+    0.13
+   ],
+   "inset_pos": "bl",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "3秒",
+     "at": [
+      0.74,
+      0.22
+     ],
+     "t": 8.4
+    }
+   ]
+  }
+ },
+ {
+  "match": "古代の秘訣へようこそ。今日もまた",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_04.jpg"
+  }
+ },
+ {
+  "match": "お住まいの地域では、春になると、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_05.jpg",
+   "focus": [
+    0.478,
+    0.497,
+    0.15
+   ],
+   "avatar": {
+    "name": "kataribe_wry",
+    "side": "right",
+    "t": 1.6,
+    "channel": "co-dai"
+   }
+  }
+ },
+ {
+  "match": "2匹、落ちてきました。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_06.jpg",
+   "focus": [
+    0.291,
+    0.609,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "2匹",
+     "at": [
+      0.29,
+      0.61
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "さて、その1匹には、名前がありま",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_07.jpg",
+   "focus": [
+    0.325,
+    0.536,
+    0.15
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "岡山県立図書館が、専門書をもとに",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "collage",
+   "kicker": "冬を越す場所が、種でちがう",
+   "title": "家を選ぶのは、3種のうち1種だけ",
+   "items": [
+    {
+     "label": "チャバネアオ",
+     "mark": "x"
+    },
+    {
+     "label": "ツヤアオ",
+     "mark": "x"
+    },
+    {
+     "label": "クサギ",
+     "mark": "o"
+    }
+   ],
+   "note": "チャバネアオは落葉の下、ツヤアオは常緑樹の葉、クサギカメムシだけが家屋の隙間",
+   "source": "岡山県立図書館 レファレンス協同データベース"
+  }
+ },
+ {
+  "match": "ツヤアオカメムシは、常緑樹の葉の",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_09.jpg",
+   "focus": [
+    0.725,
+    0.285,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "1種だけ",
+     "at": [
+      0.72,
+      0.28
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "あなたが真冬に壁で見たあの1匹に",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_10.jpg"
+  }
+ },
+ {
+  "match": "同じ記録に、もう一行あります。成",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "成虫で冬を越すとき",
+   "big": "1000",
+   "unit": "匹超",
+   "sub": "1か所に集まることもある",
+   "note": "屋根裏、壁の中、押し入れ、カーテンの裏",
+   "source": "岡山県立図書館 レファレンス協同データベース",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/dark_attic_beam.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "この虫にとって、家は隠れ場所では",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "collage",
+   "kicker": "家の中の越冬場所",
+   "title": "隠れ場所ではなく、寝室です",
+   "items": [
+    {
+     "label": "屋根裏",
+     "mark": "o"
+    },
+    {
+     "label": "壁の中",
+     "mark": "o"
+    },
+    {
+     "label": "押し入れ",
+     "mark": "o"
+    },
+    {
+     "label": "カーテンの裏",
+     "mark": "o"
+    }
+   ],
+   "note": "どれも、暖かくて、狭くて、暗い"
+  }
+ },
+ {
+  "match": "千葉県農林総合研究センターが5月",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "5月のわなにかかった数",
+   "title": "今年は、平年のちょうど2倍",
+   "bars": [
+    [
+     "今年",
+     9
+    ],
+    [
+     "平年",
+     4.5
+    ]
+   ],
+   "hot": 0,
+   "source": "千葉県農林総合研究センター 2026年5月27日",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/pear_orchard_trap.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "兵庫県も、平年を大幅に上回る、と",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_14.jpg",
+   "focus": [
+    0.372,
+    0.274,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "外の気温が15度を下回ると、この",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "1年の予定表",
+   "title": "入るのも、出るのも、決まっている",
+   "marks": [
+    [
+     "9月下旬",
+     "入る"
+    ],
+    [
+     "11月",
+     "入り終わる"
+    ],
+    [
+     "12〜3月",
+     "眠る"
+    ],
+    [
+     "春",
+     "出てくる"
+    ]
+   ],
+   "note": "外気が15度を下回ると、越冬場所を探しはじめる",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/autumn_house_wall_evening.jpeg",
+   "photo_style": "duotone:ink"
+  }
+ },
+ {
+  "match": "つまり、防げる期間は、だいたい6",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "隙間をふさぐ意味がある期間",
+   "big": "6",
+   "unit": "週間",
+   "sub": "9月の終わりから、11月まで",
+   "note": "早すぎても、遅すぎても、効きません",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/calendar_on_kitchen_wall.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "今日は8月の終わりです。あと3週",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_17.jpg"
+  }
+ },
+ {
+  "match": "では、なぜ、真冬に出てくるのでし",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_18.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 10.79
+    }
+   ]
+  }
+ },
+ {
+  "match": "部屋の温度が20度を超えると、こ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "起こしているのは春ではない",
+   "big": "20",
+   "unit": "度",
+   "sub": "室温がここを超えると、春が来たと勘違いする",
+   "note": "こたつ、ストーブ、暖房の入った部屋",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/kotatsu_warm_room.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "あの1匹は、侵入してきたのではあ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_20.jpg"
+  }
+ },
+ {
+  "match": "近所で30年、梨をやっているかた",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_21.jpg",
+   "focus": [
+    0.584,
+    0.184,
+    0.15
+   ],
+   "avatar": {
+    "name": "kataribe_talk",
+    "side": "right",
+    "t": 1.6,
+    "bubble_t": 10.34,
+    "bubble": "うちは屋根裏だからね。春になると、ぱらぱら落ちてくるよ",
+    "channel": "co-dai"
+   }
+  }
+ },
+ {
+  "match": "落ちてくる、という言い方でした。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_22.jpg"
+  }
+ },
+ {
+  "match": "隙間をふさぐのは、正しい対策です",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_23.jpg"
+  }
+ },
+ {
+  "match": "中で冬を越している数百の個体は、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_24.jpg",
+   "focus": [
+    0.672,
+    0.408,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "1匹ずつ",
+     "at": [
+      0.67,
+      0.41
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "同じ行いが、9月なら守りになり、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ行い、反対の結果",
+   "title": "ふさぐ時期で、意味が裏返る",
+   "left": {
+    "label": "9月にふさぐ",
+    "mark": "o",
+    "verdict": "入れない"
+   },
+   "right": {
+    "label": "12月にふさぐ",
+    "mark": "x",
+    "verdict": "出られない"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/hand_taping_window_gap.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "では、その6週間のうちに、どこを",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_26.jpg"
+  }
+ },
+ {
+  "match": "ここまでご覧いただき、ありがとう",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_27.jpg"
+  }
+ },
+ {
+  "match": "まず、多くのかたが最初に考えること",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_28.jpg",
+   "focus": [
+    0.556,
+    0.508,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "数字を並べます。よく使われている",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "通り道の大きさ",
+   "title": "網の目より、その横のほうが大きい",
+   "bars": [
+    [
+     "網の目",
+     1.15
+    ],
+    [
+     "最も細かい網",
+     0.67
+    ],
+    [
+     "横の隙間",
+     3
+    ]
+   ],
+   "hot": 2,
+   "note": "単位はミリ。網を細かくする勝負は、とうに終わっている",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/screen_mesh_macro.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "どれも、もう2ミリを大きく下回っ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_30.jpg"
+  }
+ },
+ {
+  "match": "網の目は1ミリを切っているのに、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_31.jpg"
+  }
+ },
+ {
+  "match": "日本サッシ協会が、はっきり書いて",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "一般社団法人 日本サッシ協会",
+   "asof": "網戸からの虫の侵入",
+   "quote": "軽快に開閉するため、枠やレールとの間にある程度のすきまを設けた構造",
+   "number": "3ミリ",
+   "note": "モヘアやパッキンを入れても、完全には防げない",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/sliding_window_frame_seam.jpeg",
+   "photo_style": "duotone:ink"
+  }
+ },
+ {
+  "match": "モヘアやパッキンを入れても、完全",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_33.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 5.95
+    }
+   ]
+  }
+ },
+ {
+  "match": "そして、その隙間の大きさは、家で",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_34.jpg"
+  }
+ },
+ {
+  "match": "網戸を半分だけ開けて止めると、網",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_35.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "重ならない",
+     "at": [
+      0.54,
+      0.46
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "網戸をいっぱいまで開けて寄せると",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_36.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "線が消える",
+     "at": [
+      0.54,
+      0.46
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "戸車の横に小さなねじが一つありま",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "0円でできる3つ",
+   "title": "今夜、窓の前でやること",
+   "steps": [
+    {
+     "label": "網戸を端まで寄せる",
+     "sub": "枠と枠を重ねる"
+    },
+    {
+     "label": "枠が重なる側を開ける",
+     "sub": "縦の線が消える"
+    },
+    {
+     "label": "戸車のねじを回す",
+     "sub": "斜めの三角をなくす",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/screen_door_roller_screw.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "数えると、たいてい3か所です。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_38.jpg",
+   "focus": [
+    0.6,
+    0.587,
+    0.15
+   ],
+   "inset_pos": "bl",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.22
+     ],
+     "t": 3.53
+    }
+   ]
+  }
+ },
+ {
+  "match": "二つ目は、エアコンの配管が壁を抜",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_39.jpg",
+   "focus": [
+    0.425,
+    0.369,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "エアコンの穴",
+     "at": [
+      0.42,
+      0.37
+     ],
+     "t": 1.3,
+     "size": 58
+    }
+   ]
+  }
+ },
+ {
+  "match": "そのパテは10年、15年で縮みま",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_40.jpg",
+   "focus": [
+    0.484,
+    0.525,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "15年",
+     "at": [
+      0.48,
+      0.53
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "この3か所は、隙間テープで足りま",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "collage",
+   "kicker": "窓を直しても残る入口",
+   "title": "数えると、たいてい3か所",
+   "items": [
+    {
+     "label": "給気口",
+     "mark": "x"
+    },
+    {
+     "label": "エアコンの穴",
+     "mark": "x"
+    },
+    {
+     "label": "玄関ドアの下",
+     "mark": "x"
+    }
+   ],
+   "note": "隙間テープなら数百円。一冬もちます"
+  }
+ },
+ {
+  "match": "家の網は1.15ミリ。畑の網は9",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "畑で使う網の目合い",
+   "big": "8",
+   "unit": "倍粗い",
+   "sub": "それでも、畑では足りている",
+   "note": "差は網ではありません。網の横にあるものです",
+   "source": "千葉県農林総合研究センター 2026年5月27日",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/orchard_net_wide_mesh.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "家のほうは、目が8倍細かいのに入",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_43.jpg"
+  }
+ },
+ {
+  "match": "白です。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_44.jpg"
+  }
+ },
+ {
+  "match": "寒さが苦手な虫ですから、日の当た",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_45.jpg",
+   "focus": [
+    0.528,
+    0.525,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "虫の休憩所",
+     "at": [
+      0.28,
+      0.5
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "ですから、やることは2つだけです",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "洗濯物でやること",
+   "title": "白は内側、そして日が傾く前",
+   "steps": [
+    {
+     "label": "白いものを内側に干す",
+     "sub": "色のあるものを外側に"
+    },
+    {
+     "label": "日が傾く前に取り込む",
+     "sub": "いちばん飛ぶ時間を避ける",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/white_sheet_on_line.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "じつは、これは新しい知恵ではあり",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_47.jpg",
+   "focus": [
+    0.272,
+    0.464,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "日暮れ前",
+     "at": [
+      0.27,
+      0.46
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "虫を避けるつもりのなかった習慣が",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_48.jpg"
+  }
+ },
+ {
+  "match": "潰さないでください。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_49.jpg"
+  }
+ },
+ {
+  "match": "この匂いには、役目が二つあります",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_50.jpg"
+  }
+ },
+ {
+  "match": "ところが、群れをつくる種類では、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_51.jpg",
+   "focus": [
+    0.378,
+    0.581,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "薄い匂い＝集合",
+     "at": [
+      0.38,
+      0.58
+     ],
+     "t": 1.3,
+     "size": 58
+    }
+   ]
+  }
+ },
+ {
+  "match": "つまり、よく言われる、潰すと仲間",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ匂い、逆の意味",
+   "title": "濃さで、役目が入れ替わる",
+   "left": {
+    "label": "濃い匂い",
+    "mark": "o",
+    "verdict": "警報 → 逃げる"
+   },
+   "right": {
+    "label": "薄い匂い",
+    "mark": "x",
+    "verdict": "集まる合図"
+   },
+   "note": "主成分はトランス2ヘキセナール。潰すと、薄まる途中を家の中に作る",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/stinkbug_leg_macro.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "潰すというのは、その薄まっていく",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_53.jpg"
+  }
+ },
+ {
+  "match": "紙を1枚、虫の下に差し入れて、口",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_54.jpg",
+   "focus": [
+    0.228,
+    0.816,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "落とす",
+     "at": [
+      0.76,
+      0.26
+     ],
+     "size": 64,
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "では、昔の家は、この6週間をどう",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_55.jpg",
+   "focus": [
+    0.531,
+    0.469,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "ところが、秋にこの虫が寝床にして",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_56.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "雨戸です。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_57.jpg",
+   "focus": [
+    0.553,
+    0.33,
+    0.15
+   ],
+   "inset_pos": "bl",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.22
+     ],
+     "t": 10.07
+    }
+   ]
+  }
+ },
+ {
+  "match": "この形は、今でも半分は使えます。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_58.jpg"
+  }
+ },
+ {
+  "match": "ところが、その1枚を失った家に、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_59.jpg"
+  }
+ },
+ {
+  "match": "効かないという話ではありません。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_60.jpg",
+   "focus": [
+    0.466,
+    0.709,
+    0.15
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "飛んでくる時期は、9月の終わりか",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_61.jpg"
+  }
+ },
+ {
+  "match": "つまり、ひと季節に2回か3回、買",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "単位は、か月",
+   "title": "効果が切れても、まだ飛んでいる",
+   "bars": [
+    [
+     "忌避剤",
+     2
+    ],
+    [
+     "飛ぶ時期",
+     3
+    ]
+   ],
+   "hot": 1,
+   "note": "表示は約1〜2か月。飛来は9月下旬から11月",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/repellent_spray_on_screen.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "一方で、網戸をいっぱいまで寄せる",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_63.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "一度で済む",
+     "at": [
+      0.54,
+      0.46
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "網戸をいっぱいに開けても、まだ隙",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_64.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "開ける側",
+     "at": [
+      0.54,
+      0.46
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "網戸のある側のガラス戸を開ければ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_65.jpg",
+   "focus": [
+    0.169,
+    0.402,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "線が残る",
+     "at": [
+      0.17,
+      0.4
+     ],
+     "t": 1.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "今夜、窓の前に立って、どちら側が",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "title": "開ける側を、見るだけ",
+   "sub": "網戸のある側のガラス戸を開ける。3秒、0円",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/24_kamemushi-3mm-sukima/ai_clean/window_at_night_from_inside.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "そして、もし今このあと時間があれ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_67.jpg"
+  }
+ },
+ {
+  "match": "もちろん、万能ではありません。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_68.jpg",
+   "focus": [
+    0.538,
+    0.508,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "それから、あの匂いの成分は、目に",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_69.jpg"
+  }
+ },
+ {
+  "match": "肌が赤くなるかたや、匂いで気分が",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_70.jpg"
+  }
+ },
+ {
+  "match": "今日の話で、いちばん申し上げたか",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_71.jpg"
+  }
+ },
+ {
+  "match": "昔の家は隙間だらけでした。それで",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_72.jpg",
+   "focus": [
+    0.559,
+    0.654,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "失った1枚の分を、私たちはいま、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_73.jpg",
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "入れる",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "size": 64,
+     "t": 6.05
+    }
+   ]
+  }
+ },
+ {
+  "match": "次の話も、今の家から消えてしまっ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_74.jpg"
+  }
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_75.jpg",
+   "focus": [
+    0.309,
+    0.508,
+    0.15
+   ]
+  }
+ }
+]

@@ -1,0 +1,43 @@
+{
+ "file": "YTSave_YouTube_Media_1-p4aqr-Naw_002_720p.mp4",
+ "stem": "YTSave_YouTube_Media_1-p4aqr-Naw_002_720p",
+ "views": 499000,
+ "label": "HIT-ka",
+ "dur": 1081.7,
+ "chars": 5868,
+ "cps": 5.42,
+ "entry_s": 239.0,
+ "entry_t": "まずバケツに約4リットルの塗る舞を入れます 塗る舞を使うこと",
+ "n_free45": 7,
+ "n_win": 9,
+ "gap_payoff_s": 248.0,
+ "n_flip": 8,
+ "first_flip_s": 11.0,
+ "n_open": 3,
+ "n_wave": 4,
+ "loop_close_pct": null,
+ "money_pct": null,
+ "cta_pct": 8,
+ "cuts": 134,
+ "cuts_per_min": 7.43,
+ "cuts_first60": 7,
+ "hold_max_s": 9.7,
+ "hold_median_s": 8.0,
+ "fails": [
+  "O1 vào bài ở ~239s (+1175 ký quá trần 30s)",
+  "O3 giây 0–45 có 1 câu GÁN NGUỒN/nhắc lại",
+  "O6 giây 0–45 có 7 câu KHÔNG TRẢ TIỀN (trần 1) → đây là cái vách làm @45s tụt còn 41–50%",
+  "O9 gap payoff dài nhất 4′08″ từ ~13′21″ (trần 2′30″) → đó là một cái hố",
+  "O11 KHÔNG thấy chỗ đóng LOOP LỚN (câu gọi lại lời hứa cold open: 「冒頭でお約束した…」) → lời hứa mở mà không đóng = mất đuôi bài",
+  "O12 cú lật đầu ở ~7′31″ (trần phút 6) → nửa đầu không có gì xảy ra",
+  "O14 CTA ở ~17′16″ đứng ngay sau một payoff, KHÔNG có câu MỞ loop trong 3 câu trước → đây là cú rớt −14,7đ của video 07"
+ ],
+ "warns": [
+  "O7 84 ký đầu (15s) chưa có STAKE cụ thể của người xem — cần con số/giá HOẶC cảnh giác quan/hậu quả (luật 2026-07-21, nới 2026-08-11: video 02 giữ 88,9% @15s bằng cảnh giác quan, 0 con số)",
+  "O10 60s đầu chưa tuyên bố 'mẹo mạnh nhất để CUỐI' → khán giả lấy được mẹo 1 rồi bỏ đi, sàn không lên nổi",
+  "O18 KHÔNG dò được chương 「vì sao bị mất」 (dòng tiền) sau 40% bài — thiếu chương, hoặc từ vựng ngoài MONEY_CH",
+  "O15 có 8 chỗ ≥4 câu LIỀN không trả tiền → nghi phạm, ĐỌC BẰNG MẮT: trang trí → CẮT · cơ chế → giữ. ⛔ cấm chèn số"
+ ],
+ "sheet": "E:\\Claude\\Projects\\youtube-jp-co-dai\\01_SOURCES\\_peer\\YTSave_YouTube_Media_1-p4aqr-Naw_002_720p_sheet.jpg",
+ "frames": 37
+}

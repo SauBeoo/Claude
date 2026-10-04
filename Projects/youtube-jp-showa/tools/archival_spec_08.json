@@ -1,0 +1,114 @@
+{
+ "_note": "Video 08 okane-joushiki — phim that CC0. Japan Today 1959 (gov.archives.arc.1692903) 11 doan trong vung CHUA DUNG (kiem FOOTAGE_USED.json 2026-09-03: con 1455s/2400s) + Big Picture Japan (US Army, gov.archives.arc.2569524) 1 doan. Sheet soi mat: 06_VIDEO/_footage_test/scrub_v08/*.jpg",
+ "_caveat": "Phim 1959 (va ~1955 B&W) cho bai ke 昭和45年 — chenh 11-15 nam, chap nhan co chu dich nhu video 01-07: clip la b-roll khong khi, giong doc khong noi 'day la canh nam 1970'. Uu tien canh khong lo moc thoi dai (mua, ruong, che, sumo, hoc sinh).",
+ "cuts": [
+  {
+   "id": "jt08_01_rain_umbrellas",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1837,
+   "dur": 6,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "30:37-30:43 tuong dong, mua, nguoi cam du - COLD OPEN 'ngoai cong' (entry 0 = clip that)"
+  },
+  {
+   "id": "jt08_02_kimono_women_walk",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 868,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "14:28-14:36 3 ba kimono di toi may quay - me ra pho (6点目 通い帳)"
+  },
+  {
+   "id": "jt08_03_park_bicycles",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 587,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "09:47-09:55 cong vien, xe dap, nguoi ngoi ghe duoi gian hoa - Chu nhat gia dinh (3点目 ボーナス)"
+  },
+  {
+   "id": "jt08_04_tea_pickers_wide",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1804,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "30:04-30:12 hai che, non rom - 田舎の祖母 (8点目 公衆電話)"
+  },
+  {
+   "id": "jt08_05_tea_picker_hat",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1813,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "30:13-30:21 ba hai che non to, can - 田舎"
+  },
+  {
+   "id": "jt08_06_rice_planting",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1702,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "28:22-28:30 cay lua - 田舎"
+  },
+  {
+   "id": "jt08_07_sumo_bout",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 2182,
+   "dur": 10,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "36:22-36:32 sumo + khan dai - 9点目 月賦 'テレビが来た' (thu nguoi xem tren TV)"
+  },
+  {
+   "id": "jt08_08_sumo_b",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 2196,
+   "dur": 10,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "36:36-36:46 sumo b - TV"
+  },
+  {
+   "id": "jt08_09_schoolgirls_crowd",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 2043,
+   "dur": 5,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "note": "34:03-34:08 nu sinh sailor + dam dong - ket 教科書代"
+  },
+  {
+   "id": "jt08_10_schoolboys_crowd",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 2056,
+   "dur": 6,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "34:16-34:22 nam sinh mu hoc sinh - ket"
+  },
+  {
+   "id": "jt08_11_seashore_crowd",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1844,
+   "dur": 6,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "30:44-30:50 dam dong bo bien mua - chuyen doan"
+  },
+  {
+   "id": "bp08_01_tram_street",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/big_picture_1974/big_picture_japan_512kb.mp4",
+   "ss": 230,
+   "dur": 8,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "03:50-03:58 pho Tokyo B&W: 都電 + xe dap + o to - 7点目 電車賃/タクシー (⚠ 320x240, ~1953-57, 1 cat duy nhat)"
+  }
+ ]
+}

@@ -1,0 +1,344 @@
+# -*- coding: utf-8 -*-
+"""
+channels.py — HỒ SƠ KÊNH cho renderer chung `video_render.py` (6 kênh JP dùng slide).
+
+VÌ SAO CÓ FILE NÀY (đọc trước khi sửa):
+Trước 2026-07-27, bản sắc mỗi kênh nằm ở 2 chỗ đều dở:
+  ① văn xuôi trong 6 file CLAUDE.md → mỗi lần render phải NHỚ và gõ tay đúng bộ cờ;
+  ② hard-code trong video_render.py → cả 6 kênh dùng CHUNG 1 palette navy+GOLD.
+Hệ quả đã xảy ra thật, và đều là "sai trong im lặng, exit 0":
+  · video 20 goya: `--img-dir` tương đối → mọi ảnh rơi về card trống suốt 15:40;
+  · video 19–21 health: thiếu `--watermark` → video ra không logo;
+  · video 22 health: cũng thiếu `--watermark` dù CLAUDE.md ghi BẮT BUỘC từ video 21;
+  · kaigo/akiya: dòng lệnh trong CLAUDE.md còn ghi `--speaker <chốt sau>` trong khi
+    mục Giọng TTS của chính file đó đã chốt id 29 / id 21 → tài liệu tự đá nhau.
+→ Một nguồn sự thật máy đọc được + preflight CHẶN trước khi đốt lượt render.
+
+CÁCH DÙNG:
+    python tools/video_render.py 04_SCRIPTS/22_x_TTS.md --channel health
+Cờ gõ tay LUÔN THẮNG hồ sơ (muốn thử khác thì cứ truyền cờ, không phải sửa file này).
+
+THÊM KÊNH MỚI = thêm 1 khối vào CHANNELS. Đổi bản sắc kênh = sửa Ở ĐÂY, không sửa
+lệnh trong .cmd nữa. Giá trị `None` nghĩa là CHƯA CHỐT — preflight sẽ chặn/cảnh báo,
+đừng điền bừa cho hết đỏ.
+
+Liên quan: `.claude/rules/handmade-layer.md` (lớp thủ công + `drawn`),
+`.claude/rules/render-background.md` (chạy nền), `upload_pack.py` CHANNELS (metadata
+upload — registry KHÁC, việc khác: cái đó lo lịch đăng/tag, cái này lo hình + giọng).
+"""
+from pathlib import Path
+
+PROJECTS = Path(r"E:\Claude\Projects")
+
+# ---------------------------------------------------------------- palette
+# Chỉ điền màu ĐÃ ĐƯỢC CHỐT trong tài liệu kênh. Kênh chưa chốt để None → dùng bộ
+# navy/GOLD gốc của renderer (nguyên trạng, không tự đổi bản sắc kênh hộ user).
+NAVY = {"bg_top": (42, 58, 88), "bg_bottom": (24, 34, 54), "accent": (255, 215, 0)}
+
+PALETTES = {
+    # health: "Màu nhận diện khóa cứng: navy đậm + 山吹色 (amber ấm) — mọi
+    # thumbnail/banner/card/diagram" (CLAUDE.md §DẤU ẤN RIÊNG). 山吹色 = #F8B500.
+    "health": {"bg_top": (38, 52, 80), "bg_bottom": (22, 31, 50),
+               "accent": (248, 181, 0)},
+}
+
+# ---------------------------------------------------------------- hồ sơ kênh
+CHANNELS = {
+    "health": {
+        "name": "みんなの健康ノート",
+        "project": "youtube-jp-health",
+        "scripts_dir": "04_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img_photo",
+        # Giọng: CLAUDE.md §DẤU ẤN "Giọng bất biến: 青山龍星"; base style しっとり
+        # (skill script-healthy GĐ5c). speed/intonation = mặc định renderer đang chạy.
+        "speaker": "青山龍星", "style": "しっとり", "speed": 0.9, "intonation": 1.15,
+        "sub_style": "pill",
+        # ---- bộ nâng cấp thẩm mỹ 2026-07-29 (chỉ health bật; kênh khác chưa duyệt demo
+        # thì KHÔNG thêm các khóa này — thiếu khóa = hành vi renderer cũ nguyên vẹn) ----
+        "sub_size": 22,          # pill 17 → 22 cho khán giả 50–70+ (cue tự cắt ngắn ≤2 dòng)
+        "sub_accent": "#D98A00", # tô SỐ + 「」— 山吹色 hạ tối để đọc được trên hộp trắng
+        "motion_ease": True,     # pan smoothstep + hướng seed, hết lặp chu kỳ 4
+        "transition": "dissolve",
+        "transition_dur": 0.4,   # dissolve 0.4s tại ranh giới slide (kế là clip → cắt thẳng)
+        "final_crf": 18,         # step B 20→18: bớt mất chất do encode 2 lần
+        "motion": True,          # ảnh tĩnh 100% + pan chậm (chốt 2026-07-23)
+        "watermark": "健康ノート",  # BẮT BUỘC từ video 21 (bible §8.5b)
+        "bgm": "06_VIDEO/bgm/Heartwarming.mp3",
+        "bgm_gain": -40.0,
+        # Bộ drawn KHÓA 2026-07-28 (duyệt 2 mẫu, chọn A): giấy kem ấm khớp brand
+        # navy+山吹色 + motif 「健康ノート」; khác nenkin (jp-pen+grid) để 2 kênh không lẫn.
+        "drawn": {"lang": "jp", "paper": "cream"},
+        "require": ("watermark", "rank", "images", "bgm"),
+        "note": ("Vòi phân phối đóng từ 2026-07-20, 0 view suốt 14 ngày (mổ lần 5: "
+                 "CHANNEL_DIAGNOSIS_2026-08-03.md). Bật lại 3 video/tuần T3·T5·CN từ 2026-08-03. "
+                 "Luồng đề tài: 1 MÓN quen × cách ăn (10_MON_MATRIX.md) — CẤM tạng/chỉ số làm chủ ngữ. "
+                 "Độ dài 28–32′. Ramp lên 6–7/tuần khi 1 video vượt ~1.000 view organic."),
+    },
+    "nagaiki": {
+        # ⭐ KÊNH MỚI 2026-08-01: 長生きごはんの知恵袋 — kênh brand thứ 2 thay health
+        # (health đóng vòi cấp kênh, mổ lần 4: CHANNEL_DIAGNOSIS_2026-08-01.md).
+        # Hồ sơ CLONE từ health (cùng dây chuyền sản xuất, health đóng băng nên không lẫn giọng);
+        # ⚠️ watermark/palette/drawn là tạm kế thừa — CHỐT LẠI cùng user khi duyệt demo video đầu.
+        "name": "長生きごはんの知恵袋",
+        "project": "youtube-jp-nagaiki",
+        "scripts_dir": "04_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img_photo",
+        "speaker": "青山龍星", "style": "しっとり", "speed": 0.9, "intonation": 1.15,
+        "sub_style": "pill",
+        "sub_size": 22,
+        "sub_accent": "#D98A00",
+        "motion_ease": True,
+        "transition": "dissolve",
+        "transition_dur": 0.4,
+        "final_crf": 18,
+        "motion": True,
+        "watermark": "ごはんの知恵袋",
+        "bgm": "06_VIDEO/bgm/Heartwarming.mp3",
+        "bgm_gain": -40.0,
+        "drawn": {"lang": "jp", "paper": "cream"},
+        "require": ("watermark", "rank", "images", "bgm"),
+        "note": "Kênh mới 2026-08-01, công thức 食べ合わせ §7 BENCHMARK_RIVALS. Chỉ đăng nội dung chưa từng public.",
+    },
+    "shokutaku": {
+        "name": "60代からの食卓",
+        "project": "youtube-jp-shokutaku",
+        "scripts_dir": "04_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img_photo",
+        # Đo từ video ĐÃ ĐĂNG 09_ryokucha (07_UPLOADED): 青山龍星 / speed 0.8 / しっとり.
+        # ⚠️ CLAUDE.md còn 1 dòng cũ ghi "Speaker CHƯA chốt" — dòng đó LẠC HẬU.
+        "speaker": "青山龍星", "style": "しっとり", "speed": 0.8, "intonation": 1.15,
+        "sub_style": "pill",     # chốt 2026-07-23 (video 09 cũ dùng glass)
+        "motion": True,
+        "watermark": None,       # ⏳ chưa chốt badge nhận diện trong video
+        "bgm": "06_VIDEO/bgm/Heartwarming.mp3",
+        "bgm_gain": -40.0,
+        "drawn": None,
+        # ⭐ GIỌNG RÕ CHO TAI GIÀ (user chốt 2026-07-31, duyệt bằng tai 2 bản A/B):
+        # VOICE_AF mặc định + bell +4 dB @3 kHz (dải PHỤ ÂM — chỗ presbycusis mất
+        # trước nhất). Đo trên demo video 05: cùng -14,6 LUFS / LRA 3,3 / đỉnh -1,5 dB
+        # như bản mặc định, nhưng nghe rõ chữ hơn. Dải xì 6–9 kHz chỉ +0,3 dB
+        # (-30,0 → -29,7) nên KHÔNG xé tiếng. Đã thử thêm highpass 80 Hz → mất 0,4 dB
+        # mà không được gì, bỏ.
+        # ⛔ Đừng nâng loudnorm quá -14: YouTube chuẩn hoá playback về ~-14 LUFS và
+        # chỉ vặn NHỎ, không nâng — đẩy to hơn chỉ bị vặn xuống, không lợi gì.
+        "voice_af": ("acompressor=threshold=-18dB:ratio=3:attack=15:release=250:makeup=2,"
+                     "equalizer=f=3000:width_type=o:width=1.4:g=4,"
+                     "loudnorm=I=-14:TP=-1.5:LRA=7"),
+        "require": ("images", "bgm"),
+    },
+    "co-dai": {
+        "name": "古代の秘訣",
+        "project": "youtube-jp-co-dai",
+        "scripts_dir": "03_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img",
+        # CLAUDE.md §Voice: CHỐT 2026-07-13 — 青山龍星 / ノーマル / 0.9 / 1.15.
+        "speaker": "青山龍星", "style": "ノーマル", "speed": 0.9, "intonation": 1.15,
+        # SỬA 2026-08-03 (user: "cho script trong video to lên, U45 sợ không đọc được"):
+        # outline/19 → pill/26. Đây là việc 6.2 của .claude/rules/audience-45plus.md
+        # (§3: mọi kênh JP phải nền phụ đề ĐỤC + cỡ ≥22; co-dai là kênh duy nhất còn
+        # outline). Demo duyệt mắt trước khi đổi: video 08 _chk/size_ab.jpg (4 biến thể
+        # trên frame nền TRẮNG khó đọc nhất) + _chk/long_ab.jpg (cue dài nhất, 26 vẫn
+        # vừa 2 dòng). Cỡ 26 → SUB_MAXLEN tự về 27 ký/cue, hợp tệp 45+ hơn.
+        "sub_style": "pill",
+        "sub_size": 26,
+        "motion": False,         # kênh dùng clip động làm xương, không cần pan ảnh
+        # ⭐ Dissolve 0.4s BẬT 2026-08-08 (đại tu vox 2 — user: "chuyển cảnh mượt hơn").
+        # Renderer đã biết dissolve TỚI CLIP (make_transition_frames trích frame 0 của
+        # mp4) nên ranh giới vào thẻ vox không còn cắt phần phật — đúng audience-45plus §2.3.
+        "transition": "dissolve",
+        "transition_dur": 0.4,
+        "watermark": None,
+        "bgm": "../youtube-jp-health/06_VIDEO/bgm/Heartwarming.mp3",
+        "bgm_gain": -40.0,
+        "drawn": None,
+        # ⭐ Bộ VOX KHÓA 2026-08-06 (tool dùng chung `Projects/_media_library/make_vox.py`,
+        # quy trình `.claude/skills/video-vox/SKILL.md`). palette "bright" đã chốt 2026-08-04:
+        # trắng ngà #F7F6F2 + vàng #FFD200 + đỏ #E03A3A, khớp khuôn thumbnail B1 — khám kênh
+        # 2026-07-30 đã KẾT ÁN nền tối moody, đừng quay lại. Font Noto Sans JP (OFL) vì
+        # YuGothB của Windows không đủ đậm cho chữ khổ Vox.
+        # `title_cap` 4 = trần thẻ chữ/video. Bệnh gốc: video 16 có 39 thẻ `title` trên 62
+        # thẻ vox = 39 khung giống nhau (PowerPoint + rủi ro inauthentic content).
+        # `safe_bottom` KHÔNG ghi ở đây — make_vox.py tự suy từ sub_style/sub_size trên,
+        # nên đổi phụ đề kênh là vùng an toàn tự theo (bẫy cũ: hardcode 780 rồi phụ đề
+        # pill/26 2 dòng ăn từ y=600 xuống, đè mất chữ `body` của kind=flow).
+        # ⭐ Knob art-direction (đại tu vox 2026-08-07, user: "video gen ra xấu quá"):
+        #   photo_treatment darken = ảnh nền ĐẬM lên + gradient đen dải chữ (thay scrim
+        #   trắng tẩy ảnh) · duotone ink = tông tư liệu cho compare ✗/title · grain 8 =
+        #   hạt giấy tĩnh trên nền phẳng · ghost/sticker/highlight = số ma + viền
+        #   die-cut cutout + highlighter vàng. Đổi knob nào .sig tự invalidate.
+        "vox": {"palette": "bright", "font": "noto-jp", "title_cap": 4,
+                "photo_treatment": "darken", "duotone": "ink", "grain": 8,
+                "ghost": True, "sticker": True, "highlight": True,
+                # user chốt 2026-08-09: "bỏ cái zoom đi" — camera tĩnh hẳn
+                # (settle + breath + parallax đều tắt theo; đạo cụ vẫn động)
+                "camera": None},
+        "require": ("images", "bgm"),
+    },
+    "nenkin": {
+        "name": "年金と老後のお金研究室",
+        "project": "youtube-jp-nenkin",
+        "scripts_dir": "03_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img",
+        # CLAUDE.md: VOICEVOX 雀松朱司 / ノーマル (style 52) / 0.9. intonation chưa
+        # ghi trong tài liệu → giữ mặc định renderer.
+        "speaker": "雀松朱司", "style": "ノーマル", "speed": 0.9, "intonation": 1.15,
+        "sub_style": "bar",   # sân khấu make_stage đã bake dải đen — xem nenkin/CLAUDE.md §VISUAL
+        "motion": False,
+        "watermark": None,
+        "bgm": "../youtube-jp-health/06_VIDEO/bgm/Wholesome.mp3",
+        "bgm_gain": -40.0,
+        # ⭐ BẢNG MÀU SÂN KHẤU (user chốt 2026-08-10, phương án D) — `make_stage.py --channel nenkin`
+        # đọc 3 khoá này. Mặc định của tool là card TRẮNG trên nền xám-xanh nhạt (đo từ 175 frame
+        # video 152K của `お金の保健室`); nenkin đổi sang **nền NAVY đậm + card KEM**.
+        # Lý do là số, không phải thẩm mỹ: 12 ảnh minh hoạ AI của video 10 đều **nền kem**, nên card
+        # trắng làm lộ rõ mép vuông của ảnh, card kem thì ảnh hoà vào bảng.
+        # ⚠️ Đây là LỆCH khỏi phép đo của お金の保健室 — đánh đổi đã biết, không phải bỏ sót.
+        # ⛔ Đừng sửa hằng số trong make_stage.py: tool đó dùng chung cho mọi kênh.
+        "stage_card": (255, 250, 238),
+        "stage_bg_top": (32, 50, 84),
+        "stage_bg_bot": (16, 26, 48),
+        # Bộ drawn ĐÃ KHÓA 2026-07-27 (duyệt 3 mẫu, chọn B) — rule handmade-layer §6.1
+        "drawn": {"lang": "jp-pen", "paper": "grid"},
+        "require": ("images", "bgm"),
+    },
+    "kaigo": {
+        "name": "親の介護とお金ノート",
+        "project": "youtube-jp-kaigo",
+        "scripts_dir": "03_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img",
+        # CLAUDE.md §Giọng TTS CHỐT 2026-07-26: No.7 / ノーマル (id 29) / 0.95 / 1.1.
+        # speed 0.95 → 0.90 (2026-07-30): trần `speed ≤0,90` của
+        # `.claude/rules/audience-45plus.md` §5.2 — tệp 45–65 nghe chậm hiểu rõ hơn.
+        "speaker": "No.7", "style": "ノーマル", "speed": 0.90, "intonation": 1.1,
+        "sub_style": "pill",
+        "motion": True,
+        "watermark": None,
+        "bgm": "../youtube-jp-health/06_VIDEO/bgm/Wholesome.mp3",
+        "bgm_gain": -40.0,
+        "drawn": None,
+        "require": ("images", "bgm"),
+    },
+    "akiya": {
+        "name": "実家とお金の整理ノート",
+        "project": "youtube-jp-akiya",
+        "scripts_dir": "03_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img",
+        # CLAUDE.md §Giọng TTS CHỐT 2026-07-26: 剣崎雌雄 / ノーマル (id 21) / 0.95 / 1.1.
+        # ⚠️ persona TUYỆT ĐỐI không xưng bác sĩ (tên giọng là 男性医師).
+        # speed 0.95 → 0.90 (2026-07-30): trần `speed ≤0,90` của
+        # `.claude/rules/audience-45plus.md` §5.2 — tệp 50–65 nghe chậm hiểu rõ hơn.
+        "speaker": "剣崎雌雄", "style": "ノーマル", "speed": 0.90, "intonation": 1.1,
+        "sub_style": "pill",
+        "motion": True,
+        "watermark": None,
+        "bgm": "../youtube-jp-health/06_VIDEO/bgm/Wholesome.mp3",
+        "bgm_gain": -40.0,
+        "drawn": None,
+        "require": ("images", "bgm"),
+    },
+    "showa": {
+        # ⭐ KÊNH MỚI 2026-08-02: 昭和くらし図鑑 (youtube-jp-showa) — ký ức 昭和 VẬT+CON SỐ,
+        # tệp 50–70. User CHỐT 2 GIỌNG 2026-08-02 sau 4 vòng demo (14 giọng):
+        # giọng CHÍNH trục A (ký ức/vật phẩm) = 東北イタコ — nữ kể chuyện, VOICEVOX id 109.
+        # Giọng trục B (vật giá/con số) = hồ sơ "showa-b" bên dưới. 1 video chỉ 1 giọng
+        # (memory feedback_video_no_motion_mot_giong) — chọn hồ sơ theo trục của video.
+        "name": "昭和くらし図鑑",
+        "project": "youtube-jp-showa",
+        "scripts_dir": "03_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img",
+        "engine": "voicevox",
+        "speaker": "東北イタコ", "style": "ノーマル", "speed": 0.90, "intonation": 1.15,
+        # ⚠️ NGOẠI LỆ 45+ §3 (user chốt 2026-08-07 khi duyệt bản render 01 v4): phụ đề
+        # OUTLINE trong suốt — "nền trắng đang che hình ảnh". Đè rule "nền phải đục".
+        "sub_style": "outline",
+        "sub_size": 22,          # chuẩn 45+ §3 áp thẳng từ ngày lập kênh
+        "motion": True,
+        "motion_ease": True,
+        "transition": "dissolve",
+        "transition_dur": 0.4,
+        "watermark": "くらし図鑑",
+        # ⚠️ BGM TẠM mượn health (license sạch) — chọn track orgel/acoustic hoài niệm riêng
+        # khi duyệt demo video #1, đừng để thành vĩnh viễn.
+        "bgm": "../youtube-jp-health/06_VIDEO/bgm/Wholesome.mp3",
+        "bgm_gain": -40.0,
+        # drawn kraft = giấy nâu retro hợp 昭和 — TẠM, khóa chính thức sau duyệt demo
+        # (handmade-layer §6.1: mỗi kênh khóa 1 font/giấy làm chữ ký).
+        "drawn": {"lang": "jp", "paper": "kraft"},
+        "require": ("images", "bgm"),
+        "note": "Video #1 = 給食. Cold open nostalgia trigger (KHÔNG loss-aversion) — CLAUDE.md project §1.2.",
+    },
+    "showa-b": {
+        # 昭和くらし図鑑 — giọng TRỤC B (あの頃の値段/con số): 阿井田茂 style Calm,
+        # AivisSpeech (port 10101, mở app trước khi render!). ⚠️ Cùng người nói với
+        # chouhen (ノーマル) — user chấp nhận 2026-08-02, style khác + kênh khác tệp.
+        "name": "昭和くらし図鑑 (trục B・値段)",
+        "project": "youtube-jp-showa",
+        "scripts_dir": "03_SCRIPTS",
+        "video_dir": "06_VIDEO",
+        "img_subdir": "slides_img",
+        "engine": "aivis",
+        "speaker": "阿井田 茂", "style": "Calm", "speed": 0.90, "intonation": 1.1,
+        "sub_style": "pill",
+        "sub_size": 22,
+        "motion": True,
+        "motion_ease": True,
+        "transition": "dissolve",
+        "transition_dur": 0.4,
+        "watermark": "くらし図鑑",
+        "bgm": "../youtube-jp-health/06_VIDEO/bgm/Wholesome.mp3",
+        "bgm_gain": -40.0,
+        "drawn": {"lang": "jp", "paper": "kraft"},
+        "require": ("images", "bgm"),
+    },
+}
+
+# Cờ CLI ↔ khóa hồ sơ. Chỉ những cờ này được hồ sơ điền hộ.
+# 6 khóa cuối = bộ nâng cấp thẩm mỹ 2026-07-29 (opt-in từng kênh, xem khối health).
+# slide_style (2026-07-30): "wa" (card navy, mặc định) | "shiro" (nền TRẮNG kiểu
+# ライフハック雑学 — telop trên + いらすとや giữa; đi cặp sub_style "telop").
+FLAG_KEYS = ("speaker", "style", "speed", "intonation", "sub_style", "motion",
+             "watermark", "bgm", "bgm_gain",
+             "sub_size", "sub_accent", "motion_ease", "transition", "transition_dur",
+             "final_crf", "slide_style", "voice_af",
+             # engine (2026-08-02, kênh showa-b cần AivisSpeech): hồ sơ không có khóa
+             # này → bỏ qua như cũ, mọi kênh hiện hữu giữ nguyên hành vi VOICEVOX.
+             "engine")
+
+
+def get(key):
+    if key not in CHANNELS:
+        raise SystemExit(f"[LỖI] không có kênh '{key}'. Có: {', '.join(CHANNELS)}")
+    return CHANNELS[key]
+
+
+def project_dir(key):
+    return PROJECTS / get(key)["project"]
+
+
+def palette(key):
+    return PALETTES.get(key) or NAVY
+
+
+def resolve_bgm(key):
+    """Đường dẫn BGM tuyệt đối (hồ sơ ghi tương đối theo gốc project)."""
+    p = get(key).get("bgm")
+    return (project_dir(key) / p).resolve() if p else None
+
+
+def img_dir(key, stem):
+    """Folder ảnh TUYỆT ĐỐI — tự suy, khỏi gõ tay (đây là gốc lỗi video 20 goya)."""
+    c = get(key)
+    return (project_dir(key) / c["video_dir"] / stem / c["img_subdir"]).resolve()
+
+
+def clips_dir(key, stem):
+    c = get(key)
+    return (project_dir(key) / c["video_dir"] / stem / "clips").resolve()

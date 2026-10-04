@@ -1,0 +1,1675 @@
+[
+ {
+  "idx": 0,
+  "t": 0.0,
+  "dur": 3.773,
+  "line": 1,
+  "text": "昭和三十九年の春。十五歳の母は、中学を出て三日後に、バスに乗りました。",
+  "code": "cc:bus_girl__04",
+  "layer": "photo",
+  "src": "real_22\\cc_bus_girl__04.jpg"
+ },
+ {
+  "idx": 1,
+  "t": 3.773,
+  "dur": 3.773,
+  "line": 1,
+  "text": "昭和三十九年の春。十五歳の母は、中学を出て三日後に、バスに乗りました。",
+  "code": "p71:472",
+  "layer": "photo",
+  "src": "real_22\\p71_472.jpg"
+ },
+ {
+  "idx": 2,
+  "t": 7.547,
+  "dur": 3.171,
+  "line": 2,
+  "text": "お客ではなく、車掌として、です。",
+  "code": "AI:conductor_young",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_01_conductor_young.png"
+ },
+ {
+  "idx": 3,
+  "t": 10.718,
+  "dur": 2.375,
+  "line": 3,
+  "text": "小銭で重いかばんを肩に、一日じゅう、立ちっぱなし。",
+  "code": "px:px_coins__11",
+  "layer": "photo",
+  "src": "real_22\\px_px_coins__11.jpg"
+ },
+ {
+  "idx": 4,
+  "t": 13.093,
+  "dur": 2.375,
+  "line": 3,
+  "text": "小銭で重いかばんを肩に、一日じゅう、立ちっぱなし。",
+  "code": "AI:bag_coins",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_02_bag_coins.png"
+ },
+ {
+  "idx": 5,
+  "t": 15.469,
+  "dur": 4.105,
+  "line": 4,
+  "text": "はじめての給料袋は、封も切らずに、父親に渡しました。下に、弟と妹が、四人いたんです。",
+  "code": "cc:kyuryo__01",
+  "layer": "photo",
+  "src": "real_22\\cc_kyuryo__01.jpg"
+ },
+ {
+  "idx": 6,
+  "t": 19.574,
+  "dur": 4.105,
+  "line": 4,
+  "text": "はじめての給料袋は、封も切らずに、父親に渡しました。下に、弟と妹が、四人いたんです。",
+  "code": "AI:envelope_father",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_03_envelope_father.mp4"
+ },
+ {
+  "idx": 7,
+  "t": 23.679,
+  "dur": 5.633,
+  "line": 5,
+  "text": "今でも、車掌のいないバスでドアが閉まると、母はつぶやきます。",
+  "code": "pxv:v_busdoor__10",
+  "layer": "video",
+  "src": "real_22\\pxv_v_busdoor__10.mp4"
+ },
+ {
+  "idx": 8,
+  "t": 29.312,
+  "dur": 2.259,
+  "line": 6,
+  "text": "「発車、オーライ」",
+  "code": "AI:haha77_bus",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_04_haha77_bus.mp4"
+ },
+ {
+  "idx": 9,
+  "t": 31.571,
+  "dur": 6.306,
+  "line": 7,
+  "text": "母の仕事は、そのあと三回、消えました。母は、一度も泣かなかった。",
+  "code": "p71:257",
+  "layer": "photo",
+  "src": "real_22\\p71_257.jpg"
+ },
+ {
+  "idx": 10,
+  "t": 37.877,
+  "dur": 9.1,
+  "line": 8,
+  "text": "その母が、一度だけ、声をあげて泣いた日。封を切らなかった、あの給料袋が、戻ってきた日です。",
+  "code": "AI:envelope_drawer",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_05_envelope_drawer.png"
+ },
+ {
+  "idx": 11,
+  "t": 46.977,
+  "dur": 2.95,
+  "line": 10,
+  "text": "こんばんは。昭和くらし図鑑です。",
+  "code": "film:n1",
+  "layer": "video",
+  "src": "real_22\\film_n1.mp4"
+ },
+ {
+  "idx": 12,
+  "t": 49.927,
+  "dur": 4.947,
+  "line": 11,
+  "text": "この家族は、何組もの家族を、ひとつにまとめた姿です。",
+  "code": "film:n2",
+  "layer": "video",
+  "src": "real_22\\film_n2.mp4"
+ },
+ {
+  "idx": 13,
+  "t": 54.874,
+  "dur": 4.703,
+  "line": 12,
+  "text": "町から消えた仕事と、その給料を、五つ。",
+  "code": "film:n3",
+  "layer": "video",
+  "src": "real_22\\film_n3.mp4",
+  "num": [
+   "町から消えた仕事と給料",
+   "5つ"
+  ]
+ },
+ {
+  "idx": 14,
+  "t": 59.577,
+  "dur": 4.723,
+  "line": 14,
+  "text": "一点目。バスには、十五歳の車掌さんがいた。",
+  "code": "cc:bus_bonnet__01",
+  "layer": "photo",
+  "src": "real_22\\cc_bus_bonnet__01.jpg",
+  "num": [
+   "一点目",
+   "バスには、十五歳の車掌さんがいた"
+  ]
+ },
+ {
+  "idx": 15,
+  "t": 64.3,
+  "dur": 3.879,
+  "line": 16,
+  "text": "朝の六時。営業所の前で、点呼を受けます。",
+  "code": "AI:depot_rollcall",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_06_depot_rollcall.png"
+ },
+ {
+  "idx": 16,
+  "t": 68.179,
+  "dur": 3.89,
+  "line": 17,
+  "text": "紺の制服に、小さな帽子。かばんの中には、つり銭の十円玉と五円玉が、じゃらじゃらと鳴る。",
+  "code": "cc:coin10__01",
+  "layer": "photo",
+  "src": "real_22\\cc_coin10__01.jpg"
+ },
+ {
+  "idx": 17,
+  "t": 72.07,
+  "dur": 3.89,
+  "line": 17,
+  "text": "紺の制服に、小さな帽子。かばんの中には、つり銭の十円玉と五円玉が、じゃらじゃらと鳴る。",
+  "code": "pxv:v_coins__00",
+  "layer": "video",
+  "src": "real_22\\pxv_v_coins__00.mp4"
+ },
+ {
+  "idx": 18,
+  "t": 75.96,
+  "dur": 3.147,
+  "line": 18,
+  "text": "切符にパチンとはさみを入れると、紙のくずが、指の先に、ぱらぱらと落ちる。",
+  "code": "cc:bus_ticket__05",
+  "layer": "photo",
+  "src": "real_22\\cc_bus_ticket__05.jpg"
+ },
+ {
+  "idx": 19,
+  "t": 79.107,
+  "dur": 3.147,
+  "line": 18,
+  "text": "切符にパチンとはさみを入れると、紙のくずが、指の先に、ぱらぱらと落ちる。",
+  "code": "cc:bus_ticket__04",
+  "layer": "photo",
+  "src": "real_22\\cc_bus_ticket__04.jpg"
+ },
+ {
+  "idx": 20,
+  "t": 82.254,
+  "dur": 5.772,
+  "line": 19,
+  "text": "バスが止まるたびに、後ろのドアから半分身を乗り出して、声を張り上げる。",
+  "code": "AI:conductor_lean",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_07_conductor_lean.mp4"
+ },
+ {
+  "idx": 21,
+  "t": 88.026,
+  "dur": 1.799,
+  "line": 20,
+  "text": "「発車、オーライ」",
+  "code": "p71:044",
+  "layer": "photo",
+  "src": "real_22\\p71_044.jpg"
+ },
+ {
+  "idx": 22,
+  "t": 89.825,
+  "dur": 4.213,
+  "line": 21,
+  "text": "冬は、窓のすき間から入る、かぜで、指先がひび割れました。それでも、手袋をしたら、小銭が数えられない。",
+  "code": "AI:fingers_cracked",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_08_fingers_cracked.png"
+ },
+ {
+  "idx": 23,
+  "t": 94.038,
+  "dur": 4.213,
+  "line": 21,
+  "text": "冬は、窓のすき間から入る、かぜで、指先がひび割れました。それでも、手袋をしたら、小銭が数えられない。",
+  "code": "pxv:v_snownight__00",
+  "layer": "video",
+  "src": "real_22\\pxv_v_snownight__00.mp4"
+ },
+ {
+  "idx": 24,
+  "t": 98.252,
+  "dur": 7.046,
+  "line": 22,
+  "text": "一日の終わり、売上を一円まで合わせて、合わなければ、自分の財布から足したそうです。",
+  "code": "AI:count_sales",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_09_count_sales.png"
+ },
+ {
+  "idx": 25,
+  "t": 105.298,
+  "dur": 2.904,
+  "line": 23,
+  "text": "では、給料は、いくらだったのか。",
+  "code": "px:px_busseat__05",
+  "layer": "photo",
+  "src": "real_22\\px_px_busseat__05.jpg"
+ },
+ {
+  "idx": 26,
+  "t": 108.202,
+  "dur": 10.648,
+  "line": 24,
+  "text": "昭和三十九年の国会で、都市の交通の労働組合の人が、こう話しています。十五歳の車掌の基本給は、たしか、九千円くらいだと。",
+  "code": "cc:coin10__00",
+  "layer": "photo",
+  "src": "real_22\\cc_coin10__00.jpg",
+  "num": [
+   "昭和39年の国会",
+   "15歳の車掌 基本給 「たしか 9,000円くらい」"
+  ]
+ },
+ {
+  "idx": 27,
+  "t": 118.85,
+  "dur": 14.839,
+  "line": 25,
+  "text": "昭和四十一年の国会で示された運輸省の調べでは、民間のバスの車掌さんは、平均十九点七歳。勤めて、平均二年二か月。給料は、月に、一万八千九百四十八円。",
+  "code": "gt:k1966",
+  "layer": "photo",
+  "src": "real_22\\gt_k1966.png",
+  "num": [
+   "民間のバスの車掌（運輸省の調べ）",
+   "平均19.7歳・月18,948円"
+  ]
+ },
+ {
+  "idx": 28,
+  "t": 133.689,
+  "dur": 7.839,
+  "line": 26,
+  "text": "お客さんを乗せると、百円につき、十一銭八厘の歩合がついた、という話も、国会に残っています。",
+  "code": "cc:bus_ticket__03",
+  "layer": "photo",
+  "src": "real_22\\cc_bus_ticket__03.jpg",
+  "num": [
+   "歩合",
+   "百円につき 11銭8厘"
+  ]
+ },
+ {
+  "idx": 29,
+  "t": 141.528,
+  "dur": 6.395,
+  "line": 27,
+  "text": "大阪市の交通局では、女性の乗務員は、三十三歳で定年でした。",
+  "code": "cc:bus_bonnet__02",
+  "layer": "photo",
+  "src": "real_22\\cc_bus_bonnet__02.jpg",
+  "num": [
+   "大阪市交通局",
+   "女性の乗務員 33歳で定年"
+  ]
+ },
+ {
+  "idx": 30,
+  "t": 147.923,
+  "dur": 4.866,
+  "line": 28,
+  "text": "十代の女の子の声で、町のバスは、走っていたんです。",
+  "code": "p71:175",
+  "layer": "photo",
+  "src": "real_22\\p71_175.jpg"
+ },
+ {
+  "idx": 31,
+  "t": 152.789,
+  "dur": 3.206,
+  "line": 29,
+  "text": "では、なぜ、車掌さんは消えたのか。",
+  "code": "px:px_busseat__01",
+  "layer": "photo",
+  "src": "real_22\\px_px_busseat__01.jpg"
+ },
+ {
+  "idx": 32,
+  "t": 155.995,
+  "dur": 14.154,
+  "line": 30,
+  "text": "実は、決まりの上では、バスには車掌が乗るのが原則でした。自動車事業等運輸規則という決まりの、第十五条です。車掌のいないバスは、陸運局長が指定した路線だけの、例外でした。",
+  "code": "gt:kisoku15",
+  "layer": "photo",
+  "src": "real_22\\gt_kisoku15.png",
+  "num": [
+   "自動車事業等運輸規則 第15条",
+   "バスには 車掌が乗るのが原則"
+  ]
+ },
+ {
+  "idx": 33,
+  "t": 170.149,
+  "dur": 8.477,
+  "line": 31,
+  "text": "ところが、昭和四十年、運輸省の局長が、国会で答えています。人手が足りない。車掌が、集まらない。",
+  "code": "p71:049",
+  "layer": "photo",
+  "src": "real_22\\p71_049.jpg"
+ },
+ {
+  "idx": 34,
+  "t": 178.626,
+  "dur": 9.394,
+  "line": 32,
+  "text": "女性の車掌の夜遅くの勤務が、労働基準法の上でできなくなったことも、きっかけのひとつだったと、国会で語られています。",
+  "code": "film:n4",
+  "layer": "video",
+  "src": "real_22\\film_n4.mp4"
+ },
+ {
+  "idx": 35,
+  "t": 188.02,
+  "dur": 9.371,
+  "line": 33,
+  "text": "昭和三十九年の暮れに、二千五百八十一両だった車掌のいないバスは、翌年の春には、三千七百五十二両。",
+  "code": "cc:oneman__04",
+  "layer": "photo",
+  "src": "real_22\\cc_oneman__04.jpg",
+  "num": [
+   "車掌のいないバス",
+   "昭和39年末 2,581両 → 昭和40年春 3,752両"
+  ]
+ },
+ {
+  "idx": 36,
+  "t": 197.391,
+  "dur": 4.054,
+  "line": 34,
+  "text": "例外のほうが、毎年、増えていきました。",
+  "code": "p71:153",
+  "layer": "photo",
+  "src": "real_22\\p71_153.jpg"
+ },
+ {
+  "idx": 37,
+  "t": 201.445,
+  "dur": 7.881,
+  "line": 35,
+  "text": "昭和四十三年、母の路線にも、車掌のいないバスが来ました。母は、十九歳でした。",
+  "code": "AI:conductor_last_day",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_10_conductor_last_day.png",
+  "num": [
+   "昭和43年",
+   "母、19歳"
+  ]
+ },
+ {
+  "idx": 38,
+  "t": 209.326,
+  "dur": 9.638,
+  "line": 36,
+  "text": "「次、止まります」。今では録音の声が言うあの言葉も、昔は、十五歳の女の子の声だったのかもしれません。",
+  "code": "px:px_stopbutton__01",
+  "layer": "photo",
+  "src": "real_22\\px_px_stopbutton__01.jpg"
+ },
+ {
+  "idx": 39,
+  "t": 218.964,
+  "dur": 3.911,
+  "line": 38,
+  "text": "二点目。踏切には、人がいた。",
+  "code": "pxv:v_crossing__00",
+  "layer": "video",
+  "src": "real_22\\pxv_v_crossing__00.mp4",
+  "num": [
+   "二点目",
+   "踏切には、人がいた"
+  ]
+ },
+ {
+  "idx": 40,
+  "t": 222.875,
+  "dur": 5.098,
+  "line": 40,
+  "text": "母の父、私の祖父は、国鉄の踏切警手でした。",
+  "code": "AI:sofu_keeper",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_11_sofu_keeper.png"
+ },
+ {
+  "idx": 41,
+  "t": 227.973,
+  "dur": 5.412,
+  "line": 41,
+  "text": "母が、十五で働きに出なければならなかった理由は、ここにあります。",
+  "code": "film:n10",
+  "layer": "video",
+  "src": "real_22\\film_n10.mp4"
+ },
+ {
+  "idx": 42,
+  "t": 233.385,
+  "dur": 4.151,
+  "line": 42,
+  "text": "線路わきの、たたみ一枚ほどの小屋。電話のベルが鳴ると、祖父は小屋を飛び出して、ハンドルを回します。",
+  "code": "cc:fumikiri_hut__04",
+  "layer": "photo",
+  "src": "real_22\\cc_fumikiri_hut__04.jpg"
+ },
+ {
+  "idx": 43,
+  "t": 237.536,
+  "dur": 4.151,
+  "line": 42,
+  "text": "線路わきの、たたみ一枚ほどの小屋。電話のベルが鳴ると、祖父は小屋を飛び出して、ハンドルを回します。",
+  "code": "AI:sofu_handle",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_12_sofu_handle.mp4"
+ },
+ {
+  "idx": 44,
+  "t": 241.688,
+  "dur": 6.061,
+  "line": 43,
+  "text": "ギリギリと音を立てて、しま模様の、さおが下りてくる。カンカンカン、と鐘が鳴る。",
+  "code": "pxv:v_crossbell__03",
+  "layer": "video",
+  "src": "real_22\\pxv_v_crossbell__03.mp4"
+ },
+ {
+  "idx": 45,
+  "t": 247.749,
+  "dur": 3.304,
+  "line": 44,
+  "text": "汽車が通りすぎると、煙と、油の焼ける匂いが、小屋の中まで流れこんできます。",
+  "code": "p71:058",
+  "layer": "photo",
+  "src": "real_22\\p71_058.jpg"
+ },
+ {
+  "idx": 46,
+  "t": 251.053,
+  "dur": 3.304,
+  "line": 44,
+  "text": "汽車が通りすぎると、煙と、油の焼ける匂いが、小屋の中まで流れこんできます。",
+  "code": "cc:steam_train__00",
+  "layer": "photo",
+  "src": "real_22\\cc_steam_train__00.jpg"
+ },
+ {
+  "idx": 47,
+  "t": 254.357,
+  "dur": 6.573,
+  "line": 45,
+  "text": "昭和三十四年の国会の記録では、国鉄の踏切警手は、およそ八千人。",
+  "code": "gt:k1959",
+  "layer": "photo",
+  "src": "real_22\\gt_k1959.png",
+  "num": [
+   "昭和34年",
+   "国鉄の踏切警手 およそ8,000人"
+  ]
+ },
+ {
+  "idx": 48,
+  "t": 260.93,
+  "dur": 9.476,
+  "line": 46,
+  "text": "給料とは別の手当は、一日、十円から五十円。それまでは、踏切警手は全員が一律に、同じ扱いでした。",
+  "code": "p71:396",
+  "layer": "photo",
+  "src": "real_22\\p71_396.jpg",
+  "num": [
+   "給料とは別の手当",
+   "1日 10円〜50円"
+  ]
+ },
+ {
+  "idx": 49,
+  "t": 270.406,
+  "dur": 7.594,
+  "line": 47,
+  "text": "一人で守る踏切が、たくさんありました。夜、四時間の仮眠をとる時だけ、代わりの人が来る。",
+  "code": "px:px_lantern__10",
+  "layer": "photo",
+  "src": "real_22\\px_px_lantern__10.jpg"
+ },
+ {
+  "idx": 50,
+  "t": 278.0,
+  "dur": 7.699,
+  "line": 48,
+  "text": "それ以外は、雪の夜も、正月の夜も、祖父は、小さな石炭ストーブの前で、汽車を待ちました。",
+  "code": "pxv:v_stovefire__05",
+  "layer": "video",
+  "src": "real_22\\pxv_v_stovefire__05.mp4"
+ },
+ {
+  "idx": 51,
+  "t": 285.699,
+  "dur": 3.427,
+  "line": 49,
+  "text": "母は、子どものころから、夕方になると、祖父の小屋までお弁当を届けていました。",
+  "code": "cc:bento_alu__04",
+  "layer": "photo",
+  "src": "real_22\\cc_bento_alu__04.jpg"
+ },
+ {
+  "idx": 52,
+  "t": 289.125,
+  "dur": 3.427,
+  "line": 49,
+  "text": "母は、子どものころから、夕方になると、祖父の小屋までお弁当を届けていました。",
+  "code": "AI:girl_bento_hut",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_13_girl_bento_hut.png"
+ },
+ {
+  "idx": 53,
+  "t": 292.552,
+  "dur": 8.984,
+  "line": 50,
+  "text": "小屋の机には、引き出しがひとつありました。鍵がかかっていて、母は、一度も、中を見たことがなかったそうです。",
+  "code": "px:px_drawer__02",
+  "layer": "photo",
+  "src": "real_22\\px_px_drawer__02.jpg"
+ },
+ {
+  "idx": 54,
+  "t": 301.536,
+  "dur": 3.67,
+  "line": 51,
+  "text": "では、なぜ、踏切から人が消えたのか。",
+  "code": "p71:136",
+  "layer": "photo",
+  "src": "real_22\\p71_136.jpg"
+ },
+ {
+  "idx": 55,
+  "t": 305.206,
+  "dur": 6.375,
+  "line": 52,
+  "text": "昭和三十五年度、国鉄と私鉄の踏切事故は、五千五百六十九件。",
+  "code": "film:n5",
+  "layer": "video",
+  "src": "real_22\\film_n5.mp4",
+  "num": [
+   "昭和35年度 踏切事故",
+   "5,569件"
+  ]
+ },
+ {
+  "idx": 56,
+  "t": 311.581,
+  "dur": 9.441,
+  "line": 53,
+  "text": "実は、踏切警手には、通る人を止める、法律の力がありませんでした。旗を出しても、聞かない人は、渡っていく。",
+  "code": "AI:flag_ignored",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_14_flag_ignored.png"
+ },
+ {
+  "idx": 57,
+  "t": 321.022,
+  "dur": 9.115,
+  "line": 54,
+  "text": "そこで昭和三十六年、踏切道改良促進法ができます。線路と道路を立体にする。さおを、電気で下ろす。",
+  "code": "film:n6",
+  "layer": "video",
+  "src": "real_22\\film_n6.mp4",
+  "num": [
+   "昭和36年",
+   "踏切道改良促進法"
+  ]
+ },
+ {
+  "idx": 58,
+  "t": 330.137,
+  "dur": 10.336,
+  "line": 55,
+  "text": "昭和四十一年、六千六百人になった踏切の人を、七年で、二千八百人減らす計画が、国会で説明されています。",
+  "code": "gt:k1966b",
+  "layer": "photo",
+  "src": "real_22\\gt_k1966b.png",
+  "num": [
+   "昭和41年 6,600人",
+   "7年で 2,800人減らす計画"
+  ]
+ },
+ {
+  "idx": 59,
+  "t": 340.473,
+  "dur": 7.254,
+  "line": 56,
+  "text": "昭和四十八年には、人のいる国鉄の踏切は、六百九十五か所になりました。",
+  "code": "cc:crossing_now__05",
+  "layer": "photo",
+  "src": "real_22\\cc_crossing_now__05.jpg",
+  "num": [
+   "昭和48年",
+   "人のいる国鉄の踏切 695か所"
+  ]
+ },
+ {
+  "idx": 60,
+  "t": 347.727,
+  "dur": 9.858,
+  "line": 57,
+  "text": "カンカンという音は、今も鳴っています。ただ、その横で、寒さに耐えて立っていた人だけが、いなくなったのかもしれません。",
+  "code": "px:px_crossing__09",
+  "layer": "photo",
+  "src": "real_22\\px_px_crossing__09.jpg"
+ },
+ {
+  "idx": 61,
+  "t": 357.585,
+  "dur": 5.327,
+  "line": 59,
+  "text": "三点目。炭鉱の給料は、町でいちばん高かった。",
+  "code": "cc:tategou__02",
+  "layer": "photo",
+  "src": "real_22\\cc_tategou__02.jpg",
+  "num": [
+   "三点目",
+   "炭鉱の給料は、町でいちばん高かった"
+  ]
+ },
+ {
+  "idx": 62,
+  "t": 362.912,
+  "dur": 3.566,
+  "line": 61,
+  "text": "父は、九州の炭鉱町で生まれました。",
+  "code": "cc:tanju__09",
+  "layer": "photo",
+  "src": "real_22\\cc_tanju__09.jpg"
+ },
+ {
+  "idx": 63,
+  "t": 366.478,
+  "dur": 5.981,
+  "line": 62,
+  "text": "朝、ヘルメットにランプをつけて、長屋の前を、男たちが黙って歩いていく。",
+  "code": "AI:miners_walk",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_15_miners_walk.mp4"
+ },
+ {
+  "idx": 64,
+  "t": 372.459,
+  "dur": 3.222,
+  "line": 63,
+  "text": "坑道に下りるかごが、ガタンと沈む。帰ってくると、顔も首も、まっ黒です。",
+  "code": "cc:tanko__07",
+  "layer": "photo",
+  "src": "real_22\\cc_tanko__07.jpg"
+ },
+ {
+  "idx": 65,
+  "t": 375.682,
+  "dur": 3.222,
+  "line": 63,
+  "text": "坑道に下りるかごが、ガタンと沈む。帰ってくると、顔も首も、まっ黒です。",
+  "code": "AI:miner_black_face",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_16_miner_black_face.png"
+ },
+ {
+  "idx": 66,
+  "t": 378.904,
+  "dur": 9.522,
+  "line": 64,
+  "text": "交代の時間になると、町じゅうに、ウーッと、長いサイレンが鳴る。その音で、子どもたちは、父親が上がってくる時間を知りました。",
+  "code": "cc:tanju__11",
+  "layer": "photo",
+  "src": "real_22\\cc_tanju__11.jpg"
+ },
+ {
+  "idx": 67,
+  "t": 388.426,
+  "dur": 6.573,
+  "line": 65,
+  "text": "父は、十五歳で炭鉱に入りました。最初は、地上で石炭をより分ける仕事です。",
+  "code": "AI:boy_sentan",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_17_boy_sentan.png"
+ },
+ {
+  "idx": 68,
+  "t": 394.999,
+  "dur": 8.093,
+  "line": 66,
+  "text": "実は、十八歳にならない者を坑内で働かせることは、原則として、労働基準法で禁じられていました。",
+  "code": "gt:roki63",
+  "layer": "photo",
+  "src": "real_22\\gt_roki63.png",
+  "num": [
+   "労働基準法",
+   "18歳にならない者を 坑内で働かせてはならない"
+  ]
+ },
+ {
+  "idx": 69,
+  "t": 403.092,
+  "dur": 5.367,
+  "line": 67,
+  "text": "父が、はじめて地下にもぐったのは、十八の春でした。",
+  "code": "px:px_helmet__07",
+  "layer": "photo",
+  "src": "real_22\\px_px_helmet__07.jpg"
+ },
+ {
+  "idx": 70,
+  "t": 408.459,
+  "dur": 12.296,
+  "line": 68,
+  "text": "国会で紹介された数字では、昭和二十五年、坑内で働く人の一日の賃金は、四百二十九円。男の人の工場の平均は、三百七十四円でした。",
+  "code": "cc:cap_lamp__10",
+  "layer": "photo",
+  "src": "real_22\\cc_cap_lamp__10.jpg",
+  "num": [
+   "昭和25年 1日の賃金",
+   "坑内 429円 ／ 工場の平均 374円"
+  ]
+ },
+ {
+  "idx": 71,
+  "t": 420.755,
+  "dur": 12.111,
+  "line": 69,
+  "text": "昭和四十四年の十一月には、坑内員の全国平均が、月に五万八千二百四十八円。地上で働く、こうがいいんは、四万二千七百五十四円です。",
+  "code": "px:px_helmet__10",
+  "layer": "photo",
+  "src": "real_22\\px_px_helmet__10.jpg",
+  "num": [
+   "昭和44年11月 月の平均",
+   "坑内員 58,248円 ／ 坑外員 42,754円"
+  ]
+ },
+ {
+  "idx": 72,
+  "t": 432.866,
+  "dur": 6.523,
+  "line": 70,
+  "text": "危ない地の底へ下りるほど、給料は高い。それが、炭鉱の当たり前でした。",
+  "code": "px:px_tunnel__03",
+  "layer": "photo",
+  "src": "real_22\\px_px_tunnel__03.jpg"
+ },
+ {
+  "idx": 73,
+  "t": 439.389,
+  "dur": 3.264,
+  "line": 71,
+  "text": "では、なぜ、炭鉱は消えていったのか。",
+  "code": "cc:tanko__11",
+  "layer": "photo",
+  "src": "real_22\\cc_tanko__11.jpg"
+ },
+ {
+  "idx": 74,
+  "t": 442.653,
+  "dur": 11.054,
+  "line": 72,
+  "text": "昭和三十年、石炭鉱業合理化臨時措置法ができます。石炭の産業を、合理化するための法律です。燃料は、石炭から、石油の時代へ。",
+  "code": "gt:sekitan",
+  "layer": "photo",
+  "src": "real_22\\gt_sekitan.png",
+  "num": [
+   "昭和30年",
+   "石炭鉱業合理化臨時措置法"
+  ]
+ },
+ {
+  "idx": 75,
+  "t": 453.707,
+  "dur": 9.754,
+  "line": 73,
+  "text": "昭和三十二年に二十九万八千人いた炭鉱の人は、十年後の昭和四十二年には、九万六千人。三分の一です。",
+  "code": "cc:tategou__01",
+  "layer": "photo",
+  "src": "real_22\\cc_tategou__01.jpg",
+  "num": [
+   "炭鉱で働く人",
+   "昭和32年 29万8千人 → 昭和42年 9万6千人"
+  ]
+ },
+ {
+  "idx": 76,
+  "t": 463.461,
+  "dur": 9.476,
+  "line": 74,
+  "text": "昭和三十四年から四十五年の暮れまでに、炭鉱をはなれた人は、十七万八千人と、政府が答えています。",
+  "code": "cc:botayama__08",
+  "layer": "photo",
+  "src": "real_22\\cc_botayama__08.jpg",
+  "num": [
+   "炭鉱をはなれた人",
+   "昭和34〜45年 17万8千人"
+  ]
+ },
+ {
+  "idx": 77,
+  "t": 472.937,
+  "dur": 4.634,
+  "line": 75,
+  "text": "父の炭鉱も、昭和四十二年の夏に、閉じました。",
+  "code": "cc:tanju__08",
+  "layer": "photo",
+  "src": "real_22\\cc_tanju__08.jpg"
+ },
+ {
+  "idx": 78,
+  "t": 477.571,
+  "dur": 3.019,
+  "line": 76,
+  "text": "父は、二十二歳。ボストンバッグひとつで、東京行きの夜行列車に乗りました。",
+  "code": "p71:229",
+  "layer": "photo",
+  "src": "real_22\\p71_229.jpg"
+ },
+ {
+  "idx": 79,
+  "t": 480.591,
+  "dur": 3.019,
+  "line": 76,
+  "text": "父は、二十二歳。ボストンバッグひとつで、東京行きの夜行列車に乗りました。",
+  "code": "pxv:v_nighttrain__02",
+  "layer": "video",
+  "src": "real_22\\pxv_v_nighttrain__02.mp4"
+ },
+ {
+  "idx": 80,
+  "t": 483.61,
+  "dur": 5.795,
+  "line": 77,
+  "text": "工事現場の仕事に通うのに、毎朝、同じ時刻の、同じバスに乗る。",
+  "code": "film:n7",
+  "layer": "video",
+  "src": "real_22\\film_n7.mp4"
+ },
+ {
+  "idx": 81,
+  "t": 489.405,
+  "dur": 4.646,
+  "line": 78,
+  "text": "その後ろのドアに立っていたのが、十八歳の、母でした。",
+  "code": "AI:father_bus_morning",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_18_father_bus_morning.png"
+ },
+ {
+  "idx": 82,
+  "t": 494.051,
+  "dur": 5.04,
+  "line": 79,
+  "text": "「この人、毎朝、ちょうどの小銭を、手のひらに用意して待ってるの」",
+  "code": "AI:coins_ready_palm",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_19_coins_ready_palm.png"
+ },
+ {
+  "idx": 83,
+  "t": 499.091,
+  "dur": 3.713,
+  "line": 80,
+  "text": "母は、それが、少しうれしかったそうです。",
+  "code": "AI:conductor_smile",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_20_conductor_smile.png"
+ },
+ {
+  "idx": 84,
+  "t": 502.804,
+  "dur": 7.047,
+  "line": 81,
+  "text": "町でいちばん高い給料は、町でいちばん先に、なくなる給料だったのかもしれません。",
+  "code": "p71:231",
+  "layer": "photo",
+  "src": "real_22\\p71_231.jpg"
+ },
+ {
+  "idx": 85,
+  "t": 509.851,
+  "dur": 8.077,
+  "line": 83,
+  "text": "ここで、ひとつだけお願いです。今日の内容が懐かしいと感じていただけたら、高評価と、同じ時代を過ごしたご家族やお友達へのシェアで、この図鑑を応援していただけると嬉しいです。あなたの町にいた、働く人の思い出も、ぜひコメントで聞かせてください。皆さまの思い出が、次のページになります。それでは、続きをめくっていきましょう。",
+  "code": "px:px_coal__06",
+  "layer": "photo",
+  "src": "real_22\\px_px_coal__06.jpg"
+ },
+ {
+  "idx": 86,
+  "t": 517.928,
+  "dur": 8.077,
+  "line": 83,
+  "text": "ここで、ひとつだけお願いです。今日の内容が懐かしいと感じていただけたら、高評価と、同じ時代を過ごしたご家族やお友達へのシェアで、この図鑑を応援していただけると嬉しいです。あなたの町にいた、働く人の思い出も、ぜひコメントで聞かせてください。皆さまの思い出が、次のページになります。それでは、続きをめくっていきましょう。",
+  "code": "p71:470",
+  "layer": "photo",
+  "src": "real_22\\p71_470.jpg"
+ },
+ {
+  "idx": 87,
+  "t": 526.004,
+  "dur": 8.077,
+  "line": 83,
+  "text": "ここで、ひとつだけお願いです。今日の内容が懐かしいと感じていただけたら、高評価と、同じ時代を過ごしたご家族やお友達へのシェアで、この図鑑を応援していただけると嬉しいです。あなたの町にいた、働く人の思い出も、ぜひコメントで聞かせてください。皆さまの思い出が、次のページになります。それでは、続きをめくっていきましょう。",
+  "code": "p71:152",
+  "layer": "photo",
+  "src": "real_22\\p71_152.jpg"
+ },
+ {
+  "idx": 88,
+  "t": 534.081,
+  "dur": 4.712,
+  "line": 85,
+  "text": "四点目。電話は、人の手で、つないでいた。",
+  "code": "cc:koukandai__01",
+  "layer": "photo",
+  "src": "real_22\\cc_koukandai__01.jpg",
+  "num": [
+   "四点目",
+   "電話は、人の手で、つないでいた"
+  ]
+ },
+ {
+  "idx": 89,
+  "t": 538.793,
+  "dur": 6.143,
+  "line": 87,
+  "text": "車掌をやめた母は、昭和四十四年から、電話局の交換台に座りました。",
+  "code": "AI:haha_switchboard",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_21_haha_switchboard.mp4",
+  "num": [
+   "昭和44年"
+  ]
+ },
+ {
+  "idx": 90,
+  "t": 544.936,
+  "dur": 3.845,
+  "line": 88,
+  "text": "頭に、受話器のついた、細いヘッドホンをかける。",
+  "code": "AI:headset_on",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_22_headset_on.png"
+ },
+ {
+  "idx": 91,
+  "t": 548.781,
+  "dur": 4.425,
+  "line": 89,
+  "text": "目の前の板には、小さな穴が、何百も並んでいます。",
+  "code": "px:px_phone__00",
+  "layer": "photo",
+  "src": "real_22\\px_px_phone__00.jpg"
+ },
+ {
+  "idx": 92,
+  "t": 553.206,
+  "dur": 3.884,
+  "line": 90,
+  "text": "ランプがひとつ、ぽっと灯る。母は、コードの先のプラグを抜いて、カチリと、その穴に差しこむ。",
+  "code": "pxv:v_plug__09",
+  "layer": "video",
+  "src": "real_22\\pxv_v_plug__09.mp4"
+ },
+ {
+  "idx": 93,
+  "t": 557.09,
+  "dur": 3.884,
+  "line": 90,
+  "text": "ランプがひとつ、ぽっと灯る。母は、コードの先のプラグを抜いて、カチリと、その穴に差しこむ。",
+  "code": "AI:plug_in",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_23_plug_in.mp4"
+ },
+ {
+  "idx": 94,
+  "t": 560.974,
+  "dur": 6.353,
+  "line": 91,
+  "text": "部屋じゅうに、何十人もの女の人の声が、低く、さざ波のように重なっている。",
+  "code": "AI:operators_row",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_24_operators_row.png"
+ },
+ {
+  "idx": 95,
+  "t": 567.327,
+  "dur": 4.738,
+  "line": 92,
+  "text": "夏は、ヘッドホンの当たる耳が、汗で、じっとりと湿ったそうです。",
+  "code": "cc:koukandai__11",
+  "layer": "photo",
+  "src": "real_22\\cc_koukandai__11.jpg"
+ },
+ {
+  "idx": 96,
+  "t": 572.065,
+  "dur": 7.235,
+  "line": 93,
+  "text": "遠くの町への電話には、まだ、交換手が手で線をつなぐものが、残っていた時代です。",
+  "code": "cc:koukandai__10",
+  "layer": "photo",
+  "src": "real_22\\cc_koukandai__10.jpg"
+ },
+ {
+  "idx": 97,
+  "t": 579.3,
+  "dur": 5.354,
+  "line": 94,
+  "text": "夜になると、東京の公衆電話から、田舎へかける電話が増えました。",
+  "code": "cc:koushuu__01",
+  "layer": "photo",
+  "src": "real_22\\cc_koushuu__01.jpg"
+ },
+ {
+  "idx": 98,
+  "t": 584.654,
+  "dur": 3.78,
+  "line": 95,
+  "text": "十円玉を何枚も積み上げて、出稼ぎの男の人が、ふるさとの母親に、ひとことだけ言う。",
+  "code": "cc:koushuu__07",
+  "layer": "photo",
+  "src": "real_22\\cc_koushuu__07.jpg"
+ },
+ {
+  "idx": 99,
+  "t": 588.434,
+  "dur": 3.78,
+  "line": 95,
+  "text": "十円玉を何枚も積み上げて、出稼ぎの男の人が、ふるさとの母親に、ひとことだけ言う。",
+  "code": "AI:dekasegi_phone",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_25_dekasegi_phone.png"
+ },
+ {
+  "idx": 100,
+  "t": 592.214,
+  "dur": 1.871,
+  "line": 96,
+  "text": "「元気でやっとるけん」",
+  "code": "px:px_payphone__09",
+  "layer": "photo",
+  "src": "real_22\\px_px_payphone__09.jpg"
+ },
+ {
+  "idx": 101,
+  "t": 594.085,
+  "dur": 6.371,
+  "line": 97,
+  "text": "その声が震えているのを、母は、何度も、線の向こうで聞いたそうです。",
+  "code": "AI:haha_listen",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_26_haha_listen.png"
+ },
+ {
+  "idx": 102,
+  "t": 600.456,
+  "dur": 2.939,
+  "line": 98,
+  "text": "給料は、高くはありませんでした。",
+  "code": "p71:088",
+  "layer": "photo",
+  "src": "real_22\\p71_088.jpg"
+ },
+ {
+  "idx": 103,
+  "t": 603.395,
+  "dur": 13.644,
+  "line": 99,
+  "text": "昭和四十六年の国会では、ある役所の交換手について、こう答えています。高校を出た交換手の最初の給料は、同じ高校を出た事務の人より、およそ八百円、低い。",
+  "code": "gt:k1971",
+  "layer": "photo",
+  "src": "real_22\\gt_k1971.png",
+  "num": [
+   "高校を出た交換手の最初の給料",
+   "事務の人より およそ800円 低い"
+  ]
+ },
+ {
+  "idx": 104,
+  "t": 617.039,
+  "dur": 9.065,
+  "line": 100,
+  "text": "その同じ年、電電公社の交換手は、いちばん多くて、五万五千三百人いたと、国会で述べられています。",
+  "code": "px:px_phone__01",
+  "layer": "photo",
+  "src": "real_22\\px_px_phone__01.jpg",
+  "num": [
+   "電電公社の交換手",
+   "昭和46年 いちばん多くて 55,300人"
+  ]
+ },
+ {
+  "idx": 105,
+  "t": 626.104,
+  "dur": 3.322,
+  "line": 101,
+  "text": "では、なぜ、交換手は消えたのか。",
+  "code": "cc:koushuu__02",
+  "layer": "photo",
+  "src": "real_22\\cc_koushuu__02.jpg"
+ },
+ {
+  "idx": 106,
+  "t": 629.426,
+  "dur": 14.386,
+  "line": 102,
+  "text": "電電公社は、五回にわたる五か年計画で、ふたつの目標をかかげました。申しこんでもつかない電話を、なくすこと。そして、日本中どこへでも、ダイヤルだけで、すぐにかかるようにすること。",
+  "code": "film:n8",
+  "layer": "video",
+  "src": "real_22\\film_n8.mp4"
+ },
+ {
+  "idx": 107,
+  "t": 643.812,
+  "dur": 7.513,
+  "line": 103,
+  "text": "昭和三十九年の七月からは、自動化でやめる交換手に、特別の給付金が出る仕組みもできました。",
+  "code": "gt:k1972",
+  "layer": "photo",
+  "src": "real_22\\gt_k1972.png",
+  "num": [
+   "昭和39年7月",
+   "自動化でやめる交換手に 特別の給付金"
+  ]
+ },
+ {
+  "idx": 108,
+  "t": 651.325,
+  "dur": 9.662,
+  "line": 104,
+  "text": "国会で、公社は約束しています。合理化を理由に、くびを切ることはしない。そのかわり、別の仕事へ、移ってもらう。",
+  "code": "AI:operators_reassigned",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_27_operators_reassigned.png"
+ },
+ {
+  "idx": 109,
+  "t": 660.987,
+  "dur": 10.846,
+  "line": 105,
+  "text": "昭和五十五年の春、公社の総裁は、国会で報告しました。全国の自動化は、昭和五十三年度までに、ほぼ、なしとげた、と。",
+  "code": "gt:k1980",
+  "layer": "photo",
+  "src": "real_22\\gt_k1980.png",
+  "num": [
+   "全国の自動化",
+   "昭和53年度までに ほぼ達成"
+  ]
+ },
+ {
+  "idx": 110,
+  "t": 671.833,
+  "dur": 6.476,
+  "line": 106,
+  "text": "母が最後に外したヘッドホンには、汗のしみが、わになって残っていたそうです。",
+  "code": "AI:headset_stain",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_28_headset_stain.png"
+ },
+ {
+  "idx": 111,
+  "t": 678.309,
+  "dur": 9.824,
+  "line": 107,
+  "text": "ふるさとへの、震える声をつないでいたのは、機械ではなく、名前も知らない、女の人の手だったのかもしれません。",
+  "code": "p71:477",
+  "layer": "photo",
+  "src": "real_22\\p71_477.jpg"
+ },
+ {
+  "idx": 112,
+  "t": 688.133,
+  "dur": 4.305,
+  "line": 109,
+  "text": "五点目。手紙は、タイピストが打っていた。",
+  "code": "cc:wabuntype__02",
+  "layer": "photo",
+  "src": "real_22\\cc_wabuntype__02.jpg",
+  "num": [
+   "五点目",
+   "手紙は、タイピストが打っていた"
+  ]
+ },
+ {
+  "idx": 113,
+  "t": 692.438,
+  "dur": 7.188,
+  "line": 111,
+  "text": "二人の子を育てながら、昭和五十四年、母は、今度は、事務所のタイピストになりました。",
+  "code": "AI:haha_typist",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_29_haha_typist.png",
+  "num": [
+   "昭和54年"
+  ]
+ },
+ {
+  "idx": 114,
+  "t": 699.626,
+  "dur": 4.616,
+  "line": 112,
+  "text": "目の前には、升目のように並んだ、たくさんの鉛の活字。字を探して、レバーを押すと、ガシャン、と一文字が紙に打たれる。",
+  "code": "cc:wabuntype__03",
+  "layer": "photo",
+  "src": "real_22\\cc_wabuntype__03.jpg"
+ },
+ {
+  "idx": 115,
+  "t": 704.242,
+  "dur": 4.616,
+  "line": 112,
+  "text": "目の前には、升目のように並んだ、たくさんの鉛の活字。字を探して、レバーを押すと、ガシャン、と一文字が紙に打たれる。",
+  "code": "pxv:v_typewriter__06",
+  "layer": "video",
+  "src": "real_22\\pxv_v_typewriter__06.mp4"
+ },
+ {
+  "idx": 116,
+  "t": 708.858,
+  "dur": 4.778,
+  "line": 113,
+  "text": "事務所の奥から、ガシャン、ガシャンと、一日じゅう、同じ音が響いていました。打ち間違えれば、その一枚は、最初から打ち直しです。",
+  "code": "px:px_type__01",
+  "layer": "photo",
+  "src": "real_22\\px_px_type__01.jpg"
+ },
+ {
+  "idx": 117,
+  "t": 713.636,
+  "dur": 4.778,
+  "line": 113,
+  "text": "事務所の奥から、ガシャン、ガシャンと、一日じゅう、同じ音が響いていました。打ち間違えれば、その一枚は、最初から打ち直しです。",
+  "code": "pxv:v_typewriter__01",
+  "layer": "video",
+  "src": "real_22\\pxv_v_typewriter__01.mp4"
+ },
+ {
+  "idx": 118,
+  "t": 718.414,
+  "dur": 5.621,
+  "line": 114,
+  "text": "一日に七千字から八千字を打つ、という話が、国会で出ています。",
+  "code": "cc:katsuji__07",
+  "layer": "photo",
+  "src": "real_22\\cc_katsuji__07.jpg",
+  "num": [
+   "1日に",
+   "7,000字〜8,000字"
+  ]
+ },
+ {
+  "idx": 119,
+  "t": 724.035,
+  "dur": 11.218,
+  "line": 115,
+  "text": "母の肩と腕は、いつも、鉄の板のように固かった。夜、子どもを寝かしつけながら、自分の腕をさすっていたのを、私は覚えています。",
+  "code": "AI:haha_rub_arm",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_30_haha_rub_arm.png"
+ },
+ {
+  "idx": 120,
+  "t": 735.253,
+  "dur": 12.749,
+  "line": 116,
+  "text": "昭和五十年度、労働省が、くびと肩と腕の病気、けいけんわん症候群と認めた人は、五百四十にん。いちばん多いのはキーパンチャー、その次が、タイピストでした。",
+  "code": "gt:k1976",
+  "layer": "photo",
+  "src": "real_22\\gt_k1976.png",
+  "num": [
+   "昭和50年度 頸肩腕症候群の認定",
+   "540人"
+  ]
+ },
+ {
+  "idx": 121,
+  "t": 748.002,
+  "dur": 16.914,
+  "line": 117,
+  "text": "給料は、賃金構造基本統計調査という、国の統計の数字を、昭和六十年に労働省が国会で示しています。和文タイピストの女性が、月に十五万八千五百円。英文タイピストは、十七万千三百円でした。",
+  "code": "gt:k1985",
+  "layer": "photo",
+  "src": "real_22\\gt_k1985.png",
+  "num": [
+   "和文タイピスト 女性",
+   "月 158,500円"
+  ]
+ },
+ {
+  "idx": 122,
+  "t": 764.916,
+  "dur": 3.008,
+  "line": 118,
+  "text": "では、なぜ、タイピストは消えたのか。",
+  "code": "cc:wabuntype__04",
+  "layer": "photo",
+  "src": "real_22\\cc_wabuntype__04.jpg"
+ },
+ {
+  "idx": 123,
+  "t": 767.924,
+  "dur": 11.043,
+  "line": 119,
+  "text": "昭和五十三年の九月、ある電機会社が、日本語のワードプロセッサーを発表します。事務机ほどの大きさで、値段は、六百三十万円。",
+  "code": "AI:wordpro_desk",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_31_wordpro_desk.png",
+  "num": [
+   "昭和53年9月",
+   "日本語ワードプロセッサー 630万円"
+  ]
+ },
+ {
+  "idx": 124,
+  "t": 778.967,
+  "dur": 5.713,
+  "line": 120,
+  "text": "昭和六十年のタイピストの給料で数えても、三年分を超える機械です。",
+  "code": "AI:wordpro_price",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_32_wordpro_price.png",
+  "num": [
+   "158,500円 × 12か月 × 3年",
+   "＝ 5,706,000円 ＜ 630万円"
+  ]
+ },
+ {
+  "idx": 125,
+  "t": 784.68,
+  "dur": 5.843,
+  "line": 121,
+  "text": "ところが、その機械は、毎年、小さく、安くなっていきました。",
+  "code": "px:px_typewriter__07",
+  "layer": "photo",
+  "src": "real_22\\px_px_typewriter__07.jpg"
+ },
+ {
+  "idx": 126,
+  "t": 790.523,
+  "dur": 9.343,
+  "line": 122,
+  "text": "母の事務所に、最初の一台が来たのは、昭和六十年代のはじめ。母は、三十代の半ばを過ぎていました。",
+  "code": "AI:haha_wordpro",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_33_haha_wordpro.png"
+ },
+ {
+  "idx": 127,
+  "t": 799.866,
+  "dur": 12.335,
+  "line": 123,
+  "text": "活字を探す指の速さは、そのまま、キーをたたく指の速さになった。母の仕事は消えても、母の指は、消えなかったのかもしれません。",
+  "code": "pxv:v_typewriter__07",
+  "layer": "video",
+  "src": "real_22\\pxv_v_typewriter__07.mp4"
+ },
+ {
+  "idx": 128,
+  "t": 812.201,
+  "dur": 3.624,
+  "line": 125,
+  "text": "では、あの給料袋の話に、戻ります。",
+  "code": "AI:envelope_drawer2",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_34_envelope_drawer2.png"
+ },
+ {
+  "idx": 129,
+  "t": 815.825,
+  "dur": 5.261,
+  "line": 126,
+  "text": "昭和四十七年の春。母の結婚式の、前の晩のことです。",
+  "code": "cc:hanayome__01",
+  "layer": "photo",
+  "src": "real_22\\cc_hanayome__01.jpg",
+  "num": [
+   "昭和47年 春"
+  ]
+ },
+ {
+  "idx": 130,
+  "t": 821.086,
+  "dur": 8.802,
+  "line": 127,
+  "text": "その日は、祖父の踏切に、電気で下りる、さおが、取りつけられた日でもありました。祖父の、最後の夜の勤めです。",
+  "code": "AI:electric_barrier",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_35_electric_barrier.png"
+ },
+ {
+  "idx": 131,
+  "t": 829.888,
+  "dur": 4.971,
+  "line": 128,
+  "text": "母は、いつものように、お弁当を届けに、小屋へ行きました。",
+  "code": "AI:haha_bento_night",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_36_haha_bento_night.png"
+ },
+ {
+  "idx": 132,
+  "t": 834.859,
+  "dur": 4.146,
+  "line": 129,
+  "text": "祖父は、黙って、机の引き出しの鍵を開けました。",
+  "code": "px:px_drawer__11",
+  "layer": "photo",
+  "src": "real_22\\px_px_drawer__11.jpg"
+ },
+ {
+  "idx": 133,
+  "t": 839.005,
+  "dur": 4.282,
+  "line": 130,
+  "text": "中から出てきたのは、茶色い、給料袋。",
+  "code": "AI:envelope_reveal",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_37_envelope_reveal.mp4"
+ },
+ {
+  "idx": 134,
+  "t": 843.287,
+  "dur": 8.709,
+  "line": 131,
+  "text": "封が、切られていませんでした。昭和三十九年、十五歳の母が、はじめてもらった、あの給料袋です。",
+  "code": "AI:envelope_sealed",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_38_envelope_sealed.png",
+  "num": [
+   "昭和39年",
+   "はじめての給料袋"
+  ]
+ },
+ {
+  "idx": 135,
+  "t": 851.996,
+  "dur": 5.92,
+  "line": 132,
+  "text": "「これだけは、どうしても、使えんかった。嫁入りに、持っていけ」",
+  "code": "AI:sofu_hand_over",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_39_sofu_hand_over.mp4"
+ },
+ {
+  "idx": 136,
+  "t": 857.916,
+  "dur": 7.676,
+  "line": 133,
+  "text": "八年間、祖父は、雪の夜も、正月の夜も、この袋と一緒に、踏切に立っていたんです。",
+  "code": "pxv:v_steam__06",
+  "layer": "video",
+  "src": "real_22\\pxv_v_steam__06.mp4"
+ },
+ {
+  "idx": 137,
+  "t": 865.592,
+  "dur": 16.743,
+  "line": 134,
+  "text": "その春、祖父は、運輸大臣から表彰を受けました。三十年以上、事故を一度も出さなかった踏切警手に、贈られるものです。国会の記録では、昭和五十五年度までに、およそ六百人が、この表彰を受けています。",
+  "code": "gt:k1981",
+  "layer": "photo",
+  "src": "real_22\\gt_k1981.png",
+  "num": [
+   "30年以上 無事故の踏切警手",
+   "運輸大臣表彰 およそ600人"
+  ]
+ },
+ {
+  "idx": 138,
+  "t": 882.335,
+  "dur": 4.959,
+  "line": 135,
+  "text": "小屋の窓の外で、さおが、カンカンと、ひとりでに下りていく。",
+  "code": "AI:barrier_auto_night",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_40_barrier_auto_night.png"
+ },
+ {
+  "idx": 139,
+  "t": 887.294,
+  "dur": 8.887,
+  "line": 136,
+  "text": "「お父さん、もう、夜、寝てていいんだよ」",
+  "code": "AI:haha_cry_hut",
+  "layer": "ai",
+  "src": "cells_in_ai\\ai_41_haha_cry_hut.mp4"
+ },
+ {
+  "idx": 140,
+  "t": 896.181,
+  "dur": 15.263,
+  "line": 138,
+  "text": "三回、仕事をなくしても泣かなかった母が、泣いたのは、その一度だけ。母が十五で稼いだお金は、八年かけて、父親の愛情になって、戻ってきたのかもしれません。",
+  "code": "cc:hanayome__02",
+  "layer": "photo",
+  "src": "real_22\\cc_hanayome__02.jpg"
+ },
+ {
+  "idx": 141,
+  "t": 911.444,
+  "dur": 5.348,
+  "line": 140,
+  "text": "あの日、バスの中で、母が「発車、オーライ」とつぶやいたあと、",
+  "code": "AI:haha77_bus2",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_42_haha77_bus2.png"
+ },
+ {
+  "idx": 142,
+  "t": 916.792,
+  "dur": 3.624,
+  "line": 141,
+  "text": "録音の声が、「次、止まります」と言いました。",
+  "code": "px:px_busseat__09",
+  "layer": "photo",
+  "src": "real_22\\px_px_busseat__09.jpg"
+ },
+ {
+  "idx": 143,
+  "t": 920.416,
+  "dur": 6.863,
+  "line": 142,
+  "text": "母は、ふっと笑って、かばんの中から、古い茶色の封筒を、少しだけのぞかせました。",
+  "code": "AI:envelope_bag",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_43_envelope_bag.png"
+ },
+ {
+  "idx": 144,
+  "t": 927.279,
+  "dur": 2.898,
+  "line": 143,
+  "text": "「これ、まだ、開けてないのよ」",
+  "code": "AI:haha77_smile",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_44_haha77_smile.png"
+ },
+ {
+  "idx": 145,
+  "t": 930.177,
+  "dur": 3.38,
+  "line": 145,
+  "text": "正直に言えば、今のほうが、ずっと楽です。",
+  "code": "p71:467",
+  "layer": "photo",
+  "src": "real_22\\p71_467.jpg"
+ },
+ {
+  "idx": 146,
+  "t": 933.557,
+  "dur": 9.669,
+  "line": 146,
+  "text": "十五で働きに出る子は、もういません。踏切は事故が減り、電話はどこへでもすぐかかり、文字は誰でも打てる。",
+  "code": "px:px_crossing__03",
+  "layer": "photo",
+  "src": "real_22\\px_px_crossing__03.jpg"
+ },
+ {
+  "idx": 147,
+  "t": 943.226,
+  "dur": 3.787,
+  "line": 147,
+  "text": "でも、あの時代の人たちは、強かった。",
+  "code": "p71:142",
+  "layer": "photo",
+  "src": "real_22\\p71_142.jpg"
+ },
+ {
+  "idx": 148,
+  "t": 947.013,
+  "dur": 14.15,
+  "line": 148,
+  "text": "家族のために、十五で立ちっぱなしの仕事に出て、その仕事が消えても、次の仕事に、自分の手を合わせていった。今の私たちの暮らしは、消えていった仕事の上に、立っています。",
+  "code": "p71:486",
+  "layer": "photo",
+  "src": "real_22\\p71_486.jpg"
+ },
+ {
+  "idx": 149,
+  "t": 961.163,
+  "dur": 6.352,
+  "line": 150,
+  "text": "あなたの最初の給料は、いくらでしたか。その給料袋を、誰に渡しましたか。",
+  "code": "AI:envelope_old_hands",
+  "layer": "aistill",
+  "src": "cells_in_ai\\ai_45_envelope_old_hands.png"
+ },
+ {
+  "idx": 150,
+  "t": 967.515,
+  "dur": 13.293,
+  "line": 151,
+  "text": "あなたの町にいた、バスの車掌さん、踏切の人、電話の交換手。もう会えない仕事の人のことでも、構いません。",
+  "code": "p71:359",
+  "layer": "photo",
+  "src": "real_22\\p71_359.jpg"
+ },
+ {
+  "idx": 151,
+  "t": 980.808,
+  "dur": 5.194,
+  "line": 154,
+  "text": "昭和くらし図鑑でした。",
+  "code": "film:n9",
+  "layer": "video",
+  "src": "real_22\\film_n9.mp4"
+ }
+]

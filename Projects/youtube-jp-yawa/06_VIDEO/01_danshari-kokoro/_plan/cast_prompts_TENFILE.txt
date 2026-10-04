@@ -1,0 +1,6 @@
+dong 1 -> cast_K_kazuko.png   (nguoi quen, khop thumbnail)
+dong 2 -> cast_Y_listener.png (nguoi nghe, KHONG lo mat)
+dong 3 -> cast_D_daughter.png (con gai 45)
+dong 4 -> cast_F_friend.png   (ban cu, muc 6)
+
+(2026-09-29) KHONG DUNG NUA — user: khong can dong nhat nhan vat.

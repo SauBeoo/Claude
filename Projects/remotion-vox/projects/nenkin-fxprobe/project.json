@@ -1,0 +1,159 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-fxprobe",
+  "channel": "nenkin",
+  "templateRef": null,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "",
+  "modifiedAt": ""
+ },
+ "timeline": {
+  "durationInFrames": 288
+ },
+ "sceneMarkers": [],
+ "tracks": [
+  {
+   "id": "trk-video",
+   "name": "f",
+   "type": "video",
+   "clips": [
+    {
+     "id": "v0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 96,
+     "asset": "assets/c22_dare.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     }
+    },
+    {
+     "id": "v1",
+     "kind": "video",
+     "from": 96,
+     "durationInFrames": 96,
+     "asset": "assets/c22_dare.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     }
+    },
+    {
+     "id": "v2",
+     "kind": "video",
+     "from": 192,
+     "durationInFrames": 96,
+     "asset": "assets/c22_dare.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     }
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "fx",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "x0",
+     "kind": "fx",
+     "from": 4,
+     "durationInFrames": 88,
+     "variant": "vignette",
+     "density": 1,
+     "color": "#D6202A",
+     "seed": 7,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1.0,
+     "fadeInFrames": 6,
+     "fadeOutFrames": 8,
+     "dir": "upright"
+    },
+    {
+     "id": "x1",
+     "kind": "fx",
+     "from": 100,
+     "durationInFrames": 88,
+     "variant": "rays",
+     "density": 22,
+     "color": "#E23A2E",
+     "seed": 8,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1.0,
+     "fadeInFrames": 6,
+     "fadeOutFrames": 8,
+     "dir": "upright"
+    },
+    {
+     "id": "x2",
+     "kind": "fx",
+     "from": 196,
+     "durationInFrames": 88,
+     "variant": "stampx",
+     "density": 1,
+     "color": "#E01A26",
+     "seed": 9,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1.0,
+     "fadeInFrames": 6,
+     "fadeOutFrames": 8,
+     "dir": "upright"
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "none",
+  "style": "outline",
+  "enabled": false,
+  "fontSize": 44,
+  "lines": [],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#101010"
+ },
+ "brand": null
+}

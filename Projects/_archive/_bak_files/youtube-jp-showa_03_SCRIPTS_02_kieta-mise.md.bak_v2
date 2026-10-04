@@ -1,0 +1,228 @@
+# 02 — 昭和の商店街から消えたもの30 (video #2, kênh 昭和くらし図鑑)
+
+> ⭐ **BẢN 2 — VIẾT LẠI 2026-08-10 vì retention.** Bản 1 liệt kê **10 CỬA HÀNG** và không có cơ chế giữ chân nào; user chốt đổi sang **liệt kê CHI TIẾT đã biến mất**. Chẩn đoán + kiến trúc mới: **§RETENTION** cuối file.
+> **Ngách:** 昭和 · trục A có chèn con số trục B · **khung 「消えた ◯◯」 + cơ chế ĐẾM ĐIỂM 30点**
+> **Độ dài:** 2.638 ký ≈ **11′00″** (hệ số đo thật của kênh: 3,98 ký/giây từ video 01 — 4.605 ký / 1.158 s)
+> **Giọng:** profile `showa` — VOICEVOX **東北イタコ / ノーマル / 0.90**
+> **Vì sao video này:** khuôn có proof cao nhất trong `05_NICHE_TREND_2026-08-10.md` — `あの頃の日本` (kênh **25 ngày tuổi / 3 video**) ăn **96.282 view** với 「消えた仕事10選」. Góc **「店」** chưa ai làm; đối thủ mới làm góc 「仕事」 ngày 2026-07-23.
+> **File TTS:** `02_kieta-mise_TTS.md` — sửa lời thì **sửa cả hai file cùng lượt** + quét lại `match` trong SLIDES.
+
+---
+
+## FACT SHEET — mọi số lên hình phải có nguồn + năm
+
+| # | Số dùng trong bài | Nguồn | Ghi chú |
+|---|---|---|---|
+| **F1** | Cơ sở làm đậu phụ: **昭和35年(1960) ~5万軒あまり → 令和4年(2022) 4.599軒** | 全国豆腐連合会「豆腐製造業事業所数の推移」 `zentoren.jp/economy/jigyoshosu.pdf`; số 2022 = 登録業者 厚労省 | Câu trong bài: 「十軒に一軒も、残っていません」 = 4.599 / 50.000 ≈ **9,2%** ✅ đúng |
+| **F2** | Tỉ lệ hộ có tủ lạnh điện: **昭和32年(1957) 2,8% → 昭和45年(1970) 89,1%** | 内閣府「消費動向調査」主要耐久消費財普及率 | Câu 「十三年で」 = 1957→1970 = **13 năm** ✅ |
+| **F3** | Số cửa hàng bán lẻ: **đỉnh 昭和57年(1982) 172万店 → 2014年 約102万店** | 経済産業省「商業統計」 | 「三十年あまりで七十万店」 = 1982→2014 = **32 năm**, chênh **70万** ✅ |
+| **F3b** | **~60 軒/ngày** | tính từ F3 | 700.000 ÷ (32 năm × 365,25 ≈ 11.688 ngày) = **59,9** ✅ ghi công thức, không làm tròn lên |
+| **F4** | 食糧管理法: **制定 昭和17年(1942) → 廃止 平成7年(1995)**, bán gạo lẻ phải **có giấy phép** | 日本法令索引 (国立国会図書館) · 農林水産省 | Câu 「平成七年」 ✅ |
+| **F5** | 大規模小売店舗法: **制定 1973-10-01 → 施行 昭和49年(1974)-03-01 → 廃止 2000-06-01** | e-Gov / 経産省 | Bài nói 「昭和四十九年に施行された」 ✅ (đã sửa từ 「できて」 cho đúng — 制定 là 1973) |
+
+🔴 **Không có số thì KHÔNG lên hình.** 貸本屋 · 荒物屋 · たばこ屋 · 牛乳配達 · 履物屋 trong bài **cố ý không kèm con số** vì chưa tra được thống kê đủ tin — chúng chạy bằng **chi tiết giác quan**, không bằng số. Đừng "làm tròn cho có".
+
+⚖️ **Chỗ đã làm mềm có chủ đích:** 「なぜ、これほど減ったのか。理由はひとつではありませんが、よく挙げられるのが…」 — mối quan hệ 大店法 → 商店街 giảm là **giải thích thường gặp, không phải nhân quả đã chứng minh**. Không được nói 「大店法のせいで消えた」.
+
+---
+
+## Cấu trúc
+
+| Mốc | Khối | Ghi chú |
+|---|---|---|
+| 0:00–0:12 | **Cold open = 「いつもの」** — một từ ai cũng nhận ra, rồi chỉ thẳng thứ đã mất: **người bán nhớ tên nhà bạn** | Không tả cảnh. Cú đâm là **quan hệ đã mất**, không phải cửa hàng |
+| 0:12–0:51 | Luật chơi **30点満点, đếm theo** + **open loop #1** (「四千軒以上残っているものが、ひとつだけ」) | **Vào 一軒目 ở giây 51** ✅ gate ≤60s |
+| 0:51–5:20 | 軒 1–5 = **điểm 1→15**: 豆腐屋 · 氷屋 · 米屋 · 荒物屋 · 貸本屋 | Số thật F1, F2, F4 rải đều, không dồn |
+| ~5:20–6:10 | **Payoff #1: 172万店** → 70万店 → 60軒/ngày → cơ chế 大店法 | Đỉnh 1: `[間1.2][速0.8]百七十二万店[後間1.0]` |
+| **51%** | **CTA giữa video** (`cta-midvideo` §2.10, thay 「今日の献立」→「今日のお店」) | Đặt **ngay sau** payoff, đúng lúc vừa nhận giá trị |
+| 6:10–10:00 | 軒 6–10 = **điểm 16→30**: 駄菓子屋 · 牛乳屋 · たばこ屋 · 電気屋 · 履物/傘 | **駄菓子屋 dời lên ngay sau CTA** — mục cảm xúc mạnh nhất dùng để kéo qua nửa sau, không để cuối |
+| 10:00–11:00 | **採点表 30点** → **Payoff #2: đáp án open loop #1 = 豆腐屋 4.599軒** → câu chốt 「『いつもの』で通じる相手が、いなくなった」 | Đỉnh 2 nối thẳng về câu đầu tiên của bài |
+
+### Ba nhịp đếm điểm (chống thoát)
+`ここまでで、十二点。` (~4′) · `ここまでで、二十一点。半分は超えましたか。` (~7′30) · `三十点満点です。何点でしたか。` (kết).
+Mỗi 「◯点目」 là một lần ghi điểm → người xem **đang đếm dở thì không thoát**. 30 mốc, đếm bằng máy: đủ 30.
+
+### Chất người — 5/6 mũi tiêm (ngưỡng ≥4/6)
+
+| Mũi | Ở đâu |
+|---|---|
+| ① người kể tự trào | 「私も一度、帰り道で角をぶつけて、少し崩して帰りました」 |
+| ② thoại + chi tiết đời sống vô dụng-về-thông-tin | 電気屋 `[抑揚1.25]`「これだな」 · 母が「崩れたところだけ、自分のお椀に」 · 駄菓子屋のおばあさんが「顔も上げずに答える」 |
+| ③ ký ức giác quan | のこぎりの音 · 米びつのざあっと · 紙とほこりのにおい · 木箱のカタン · 紙のふたが瓶に落ちる |
+| ⑤ đóng bằng cảm xúc | 「いちばん消えたのは、たぶん、お店ではありません」 → 「『いつもの』で通じる相手が、いなくなったことです」 |
+| ⑥ phá nhịp câu ≥3 lần | 「『いつもの』。」 · 「百七十二万店。」 · 「十三年です。」 · 「お豆腐屋さんです。」 |
+| ④ tự nếm/tự làm | ⛔ không dùng — bài không có thứ để "làm thử" |
+
+### Giọng — 26 tag, **0 tag sai vị trí**
+Hai đỉnh dùng cùng khuôn `[間1.2][速0.8]…[後間1.0]`: 「百七十二万店」 (giữa) và 「お豆腐屋さんです」 (cuối).
+Gate đã chạy → **0 dòng lỗi**. Chạy lại sau MỌI lần sửa lời.
+
+### Chất người — 5/6 mũi tiêm (ngưỡng ≥4/6, `humanize-script-voice` §1)
+
+| Mũi | Ở đâu |
+|---|---|
+| ① người kể xuất hiện bằng trải nghiệm (tự trào) | 「私も一度、帰り道で角をぶつけて、少し崩して帰ったことがあります」 |
+| ② nhân vật có thoại + chi tiết đời sống vô dụng-về-thông-tin | 電気屋 「これだな」 (`[抑揚1.25]`) · 母が「崩れたところだけ、自分のお椀に入れて」 |
+| ③ ký ức giác quan của đúng tệp | ラッパの音 · おがくずのにおい · 精米機の唸り · 紙とほこりのにおい · 木箱のカタン |
+| ⑤ đóng nhân vật/bài bằng cảm xúc | 「買い物というより、寄り道でした」 |
+| ⑥ phá nhịp câu ≥3 lần | 「百七十二万店。」 · 「十三年です。」 · 「あの音。」 · 「これだな」 |
+| ④ tự nếm/tự làm | ⛔ không dùng — bài này không có thứ để "làm thử" |
+
+### Giọng — 24 tag, **0 tag sai vị trí**
+Đỉnh bài `[間1.2][速0.8]百七十二万店[後間1.0]` (nghỉ → thả chữ → **im lặng**).
+Gate đã chạy: `python -c "...regex tag đầu dòng..."` → **0 dòng lỗi**. Chạy lại sau MỌI lần sửa lời.
+
+---
+
+## Đóng gói CTR
+
+> ⚠️ **Trends CHƯA đo cho video này** — Google Trends chặn 429 ngày 2026-08-10 (`05_NICHE_TREND_2026-08-10.md` §2). Trước khi đăng **phải đo lại** theo `youtube-upload-seo` §0.5 rồi chốt lại thứ tự keyword/hashtag. Bản dưới dựa trên **proof view** (đã đo) chứ không dựa Trends — ghi rõ để không tưởng là đã đo đủ.
+
+### Title CHỐT
+```
+【昭和】商店街から消えたもの30｜通い帳、御用聞き、紙のふた…あなたは何点覚えていますか？
+```
+≈43 ký full-width · `商店街` ở ký thứ **5** · khung 消えた + **lời hứa CHẤM ĐIỂM** (khớp đúng cơ chế trong bài) + liệt kê chi tiết cụ thể làm lưới long-tail.
+🔴 **Đổi từ 「消えた店10選」 → 「消えたもの30」**: title cũ hứa *cửa hàng*, bài mới đếm *chi tiết* — và「何点」 là thứ bắt người xem ở lại. Title phải hứa đúng cái bài giao.
+
+### 3 TITLE A/B — mỗi bản một giả thuyết
+
+| | title | ký | giả thuyết thử |
+|---|---|---|---|
+| **A1** ⭐ dùng trước | `【昭和】商店街から消えたもの30｜通い帳、御用聞き、紙のふた…あなたは何点覚えていますか？` | ~43 | khung MẤT MÁT + **lời hứa chấm điểm** — khuôn đo được 5.283 v/ngày, cộng cơ chế tương tác |
+| **A2** | `【昭和の暮らし】豆腐屋のラッパ、量り売り、月賦…商店街から消えた30のもの｜いくつ覚えていますか？` | ~48 | đổi **keyword dẫn** sang TÊN VẬT (「豆腐屋のラッパ」) thay vì tên đề tài |
+| **A3** | `【昭和】30年で70万店が消えました｜商店街からいなくなった30のもの　通い帳、御用聞き、紙のふた…` | ~48 | đổi **kiểu hook** sang CON SỐ (F3) — số có thật và nằm giữa bài |
+
+⚠️ A3 dùng `30年で70万店` = 1982→2014 (32 năm) làm tròn xuống — **không được viết 40年**.
+⚠️ Vận hành theo `ab-3title-3thumb` §1: đăng A1 → test 3 thumbnail ≥7 ngày (GIỮ NGUYÊN title) → chốt ảnh → mới xoay A2/A3 ≥7 ngày/bản.
+
+### Tên file upload
+`showa-shotengai-kieta-mono-30.mp4`
+
+### 3 dòng đầu 概要欄
+```
+昭和の商店街から消えてしまったものを、通い帳・御用聞き・量り売り・紙のふた・月賦まで、三十、並べていく映像図鑑です。
+覚えているものがあったら一点。三十点満点、あなたは何点でしょうか。数えながらご覧ください。
+そして三十のうち、いまも全国に四千軒以上残っているものが、ひとつだけあります。答えはいちばん最後に。
+```
+
+### Mô tả đầy đủ (dán dưới 3 dòng đầu)
+```
+【目次】
+00:00 「いつもの」で通じた時代
+00:51 一軒目　お豆腐屋さん（1〜3点目）ラッパ・鍋・おから
+02:00 二軒目　氷屋さん（4〜6点目）のこぎり・木の冷蔵庫・かき氷
+03:00 三軒目　お米屋さん（7〜9点目）御用聞き・米びつ・通い帳
+04:00 四軒目　荒物屋さん（10〜12点目）量り売り・ブリキのバケツ・蚊取り線香の缶
+04:40 五軒目　貸本屋さん（13〜15点目）
+05:20 いちばん多かった年、小売店は何軒だったか
+06:10 六軒目　駄菓子屋さん（16〜18点目）
+07:00 七軒目　牛乳屋さん（19〜21点目）木箱・紙のふた
+07:50 八軒目　たばこ屋さん（22〜24点目）小さな窓・赤い公衆電話
+08:40 九軒目　街の電気屋さん（25〜27点目）真空管・月賦
+09:30 十軒目　履物屋さんと傘の修理屋さん（28〜30点目）
+10:00 採点　あなたは何点でしたか
+10:30 四千軒以上残っているもの、その答え
+
+豆腐屋のラッパ、氷屋ののこぎりの音、米びつに注ぐ音、貸本屋の紙とほこりのにおい、玄関横の牛乳箱と紙のふた。昭和の町にあって、いまは見かけなくなったものを三十、当時の記録と一緒にめくっていきます。
+
+数字の出どころは、豆腐製造業の事業所数が全国豆腐連合会、電気冷蔵庫の普及率が内閣府「消費動向調査」、小売店の店舗数が経済産業省「商業統計」、食糧管理法と大規模小売店舗法が国立国会図書館の法令データです。
+
+あなたは何点でしたか。点数と、あなたの町にあったお店を、ぜひコメントで教えてください。皆さまの思い出が、次のページになります。
+
+―――――
+音声: VOICEVOX:東北イタコ
+音楽: (chốt khi render — BGM free thương mại, credit đúng license)
+映像・写真: AI生成映像（※本動画には合成映像が含まれます）／パブリックドメイン映像・Wikimedia Commons ほか — 個別クレジットは ATTRIBUTIONS.md のとおり
+―――――
+
+#昭和 #昭和レトロ #商店街 #懐かしい昭和 #昭和の暮らし
+```
+
+### タグ (~36, rổ nhận diện kênh đứng đầu)
+```
+昭和, 昭和レトロ, 懐かしい昭和, 昭和 懐かしい, 昭和の暮らし, 昭和くらし図鑑, 昭和30年代, 昭和40年代, 昭和50年代, レトロ, あの頃, 思い出, 商店街, 昭和の商店街, 消えたもの, 消えた商売, 昭和 消えたもの, 昭和クイズ, 通い帳, つけ払い, 御用聞き, 量り売り, 月賦, 豆腐屋, 豆腐屋 ラッパ, 氷屋, 木の冷蔵庫, 米屋, 食糧管理法, 貸本屋, 荒物屋, 牛乳配達, 牛乳箱 紙のふた, たばこ屋, 街の電気屋, 真空管, 履物屋, 傘の修理, 駄菓子屋
+```
+
+### Pinned comment
+```
+三十点満点、何点でしたか。よろしければ点数だけでも教えてください。ちなみに、いまも全国に四千軒以上残っているのはお豆腐屋さんです。昭和三十五年ごろは五万軒あまり、令和四年で四千五百九十九軒（全国豆腐連合会）。十軒に一軒も残っていない計算になります。あなたの町のお豆腐屋さん、まだありますか。
+```
+
+### 3 THUMBNAIL A/B — **bộ chữ CHUNG, biến thử là HÌNH**
+
+| Dòng | Chữ | Nhiệm vụ (gate 7, `audience-45plus` §1) |
+|---|---|---|
+| banner đỏ trên | `昭和の商店街` | ① VỀ CÁI GÌ |
+| **HERO** | `消えた30` | ② CHUYỆN GÌ — 4 ký (gate ≤6 ✓) |
+| dải đỏ dưới | `何点わかる？` | ③ **RỦ CHƠI** — khớp đúng cơ chế đếm điểm trong bài |
+
+| | biến thử (chỉ HÌNH) |
+|---|---|
+| **T1** baseline | Phố 商店街 hoàng hôn, xe đạp giao hàng — chữ trái, ảnh phải |
+| **T2** đổi 1 biến | **giữ nguyên bố cục + chữ**, chỉ đổi chủ thể ảnh sang **cận cảnh xe kéo đậu phụ + cái kèn** |
+| **T3** đổi layout | Ảnh **full-bleed** cửa cuốn đã đóng của một cửa hàng, chữ đặt trên scrim chéo trái |
+
+📄 **Prompt gen (bake chữ vào ảnh, luật `ab-3title-3thumb` §3.8):**
+`06_VIDEO/02_kieta-mise/thumb_prompts_FLOW.txt` (3 dòng, import thẳng) · `thumb_prompts_TENFILE.txt` (khớp tên file) · `thumb_prompts_PLATE.txt` (**3 plate KHÔNG chữ — đường lui** nếu kanji gen nát; ⛔ để RIÊNG, đừng bơm chung file FLOW).
+
+⚠️ Bẫy đã biết: kanji rậm (`商店街`・`軒`) hay nát nét → **soi từng ký tự trước khi giao**. Trần 4 dòng cho ảnh AI — bộ này 3 dòng ✅.
+⚠️ Chừa trống **góc dưới PHẢI** (chỗ YouTube đóng timestamp).
+⚠️ Gate 2 (dòng chính ≥1/3 khung): dự kiến rơi vào dải 23–31% như 7 ca trước (`audience-45plus` §6.10) — **đo lại sau khi có ảnh**, không tự hạ gate.
+
+### Compliance tự quét
+1. Title/thumbnail: không từ nhóm cấm ✅
+2. **Ảnh/cảnh AI realistic → BẮT BUỘC tick "altered/synthetic content"** khi upload (ngoại lệ đã ghi `CLAUDE.md` §2). `upload_pack.py` **chưa có cờ này → phải tick TAY.**
+3. Nhạc: BGM free thương mại −40 dB · ⛔ không phát 昭和歌謡 ✅
+4. Tên thương hiệu: bài **không** nêu tên hãng cụ thể ✅
+5. Số liệu: 5/5 con số có nguồn + năm (FACT SHEET) ✅
+6. Không tên người thật ✅
+7. Tình tiết trên title/thumbnail đều có trong video ✅ (**đủ 30 mốc điểm, đếm bằng máy**; con số 70万 ở ~5:20; 「何点」 có bảng chấm thật ở ~10:00)
+8. 採点表 (25点以上 = 昭和30年代生まれ…) nói rõ 「**勝手な目安ですが**」 — không phải claim ✅
+
+---
+
+## RETENTION — vì sao bản 1 hỏng và bản 2 sửa gì
+
+**Người xem đến vì gì:** muốn ký ức của mình **được điểm danh** — "tôi cũng nhớ cái đó". Không phải đến để học.
+**Người xem ở lại vì gì:** phải có **một việc đang làm dở**. Bản 1 không có việc gì cả.
+
+| # | Bệnh của BẢN 1 | Bản 2 chữa bằng |
+|---|---|---|
+| 1 | Cold open **tả cảnh** (「プァ〜〜、プゥ〜」 + mẹ cầm nồi). Tệ hơn: tiếng kèn qua TTS thì người xem nghe *giọng đọc chữ* 「プァ〜」, không nghe tiếng kèn → trigger mạnh nhất bị vô hiệu ở giây 3 | Mở bằng **một từ**: 「いつもの」 → chỉ thẳng thứ đã mất là **quan hệ** (người bán nhớ tên nhà bạn), không phải cửa hàng |
+| 2 | Open loop là **số thống kê khô** (「小売店は何軒」) — không phải chuyện của đời họ | Open loop #1 = 「四千軒以上残っているものが**ひとつだけ**」 → là câu đố về **thứ họ vừa nghe**, và trả ở **câu áp chót** |
+| 3 | **10 mục = 10 điểm thoát**, không sợi chỉ nào nối | **Đếm điểm 30点満点** — mỗi 「◯点目」 là một lần ghi điểm, đang đếm dở thì không thoát; 3 mốc gọi lại tổng điểm |
+| 4 | Title hứa 「どれがありましたか」 nhưng bài **không bao giờ bắt đếm** | Bài bắt đếm ngay giây 12, và **có bảng chấm thật** ở cuối |
+| 5 | **Nửa sau trống payoff** — số duy nhất bắn ở 5:40 rồi hết | **Hai đỉnh**: 172万店 (~52%) và đáp án 豆腐屋 4.599軒 (~10:30). 駄菓子屋 (mục cảm xúc mạnh nhất) **dời lên ngay sau CTA** để kéo qua nửa sau |
+| 6 | Đơn vị là **CỬA HÀNG**; thứ làm người ta bật ra 「あっ！」 là **CHI TIẾT** (通い帳・御用聞き・紙のふた・量り売り・真空管) đang bị chôn trong văn kể | Đơn vị đổi thành **30 chi tiết**, gom theo 10 cửa hàng — vừa giữ khung 「消えた」 vừa cho đếm được |
+
+**Cái thêm được mà bản 1 không có:** một **câu chốt có ý** — 「いちばん消えたのは、たぶん、お店ではありません。『いつもの』で通じる相手が、いなくなったことです」 — nối thẳng về từ đầu tiên của video. Bài đi từ liệt kê thành có luận điểm.
+
+⚠️ **Nói thẳng cái chưa chắc:** cơ chế đếm điểm là **suy ra từ khuôn đang thắng của ngách** (あるある/クイズ), **chưa phải phép đo của kênh mình**. Chỉ tiêu để biết nó có ăn không: **AVD** và **tỉ lệ comment có số điểm**. Nếu 3 video liên tiếp dùng cơ chế này mà AVD không hơn video 01 → bỏ, đừng giữ vì "nghe có lý".
+
+---
+
+## Ghi sổ GĐ
+
+- **2026-08-10 (a) — viết mới.** Video đầu tiên chạy khung 「消えた ◯◯」 chốt ở `02_CONTENT_STRATEGY.md` §0.
+- **2026-08-10 (b) — VIẾT LẠI BẢN 2 vì retention** (user: *"tao muốn giữ chân người xem… liệt kê những chi tiết đã biến mất"*). Đổi đơn vị 10 cửa hàng → **30 chi tiết**, thêm cơ chế **đếm điểm**, đổi cold open, dời 駄菓子屋 lên sau CTA, thêm đỉnh thứ hai ở cuối. **Title đổi theo** (「消えた店10選」→「消えたもの30」) vì title phải hứa đúng cái bài giao. Gate sau khi sửa: 2.638 ký ≈ 11′00″ · vào mục 1 **giây 51** ✅ · 26 tag · **0 tag sai vị trí** · CTA **51%** · **30/30 mốc điểm**.
+- **2026-08-10 (c) — lớp hình.** `02_kieta-mise_SLIDES.json` **đã dựng: 42 entry** (30 điểm mỗi cái một ảnh riêng + 12 ảnh khung) bằng `tools/build_scenes_02.py`. Prompt gen: `06_VIDEO/02_kieta-mise/scene_prompts_FLOW.txt` (42 dòng, import thẳng) + `scene_prompts_TENFILE.txt`. Gate: **15,8 s/hình · 3,80 đổi hình/phút · 30/30 điểm** ✅. ⚠️ Sửa lời → **chạy lại tool**, đừng sửa tay JSON.
+  - 🔴 Cùng lượt này vá **bug STYLE LOCK** (`04_VIDEOGEN_PROMPTS.md` §1): chuỗi "dán vào MỌI prompt, không đổi giữa các video" đang chứa `wooden school interior` — bối cảnh riêng của video 01. Đã tách **1A tầng bất biến** (phim/màu) + **1B preset bối cảnh** (`school` / `shotengai` / `home`). Video 01 đã render nên **giữ nguyên**, chỉ ghi lại bối cảnh của nó thành preset.
+  - Thumbnail **T2 đổi chủ thể**: xe đẩy đậu phụ (= một CỬA HÀNG) → **chai sữa + nắp giấy trong hộp gỗ** (= một CHI TIẾT), khớp hook mới mà vẫn đúng "đổi 1 biến hình". T1/T3 giữ nguyên.
+- **2026-08-10 (d) — ẢNH VỀ, ĐÃ DUYỆT MẮT.** User gen đủ **42/42**, map 1-1 với prompt, đã đặt vào `06_VIDEO/02_kieta-mise/slides_img/slide_00..41.jpg` (chuẩn hoá 1920×1080) bằng `tools/place_scenes_02.py`. Contact sheet: `_scene_sheet.jpg`.
+  - 🔴 **BUG CỦA PROMPT (tao):** `AVOID` của prompt cảnh **thiếu `no watermark`** (prompt thumbnail thì có) → **cả 42 ảnh dính dấu ✦ góc dưới phải**, vị trí xê dịch giữa các bản. Cứu bằng **crop `(0,45)-(1750,1029)` → scale 1920×1080** (zoom ~9,7%), KHÔNG inpaint (theo [[feedback_anh_ai_quet_sach_watermark]]). Đã verify sạch bằng `_wm_check.jpg`. ✅ Đã vá `build_scenes_02.py` để lần sau không tái diễn.
+  - **Duyệt mắt:** 41/42 đạt. Chữ Nhật gen **không nát** (「お楽しみくじ引き」「お菓子」「酒」「そば」 đúng nét) — tốt hơn dự đoán ở §3 THUMBNAIL. `24_kuji` ra **tay người lớn** thay vì tay trẻ con → né luôn filter trẻ em §2.7, giữ nguyên.
+- **2026-08-10 (e) — LỚP HÌNH XONG.** `slide_20` đã gen lại và đạt (kệ sách cao hai bên + tia sáng từ cửa sổ trên cao + bụi bay dày). **42/42 ảnh, tất cả 1920×1080, watermark sạch.**
+  - 🔴 **Nguyên nhân thật của `slide_20` lệch: PROMPT TỰ MÂU THUẪN, không phải model gen sai.** Cảnh ghi `no street and no sky visible` nhưng tool ghép preset `shotengai` = `narrow Showa shopping street … worn asphalt and concrete` → model chọn vế dài hơn, ra ngõ phố. Đã thêm preset **`shop_interior`** (+ `super`) vào `04_VIDEOGEN_PROMPTS.md` §1B và gán lại cho cảnh 20. Quét chống tái phát: `grep -n "no street" scene_prompts_FLOW.txt | grep -i "shopping street"` phải **rỗng**.
+  - 🔴 **Bài học quy trình (tao tự dính):** bước cắt watermark làm **rời** ngoài tool → chạy lại `place_scenes_02.py` là **ghi đè sạch cả 42 ảnh về bản dính ✦**, không một dòng cảnh báo. Đúng họ với bẫy `render-background.md` §2.5. ✅ Đã **gộp crop vào chính tool** + thêm `OVERRIDE` dict cho ảnh gen lại → chạy lại bao nhiêu lần cũng ra kết quả đúng.
+  - 🟡 Ghi nhận, không sửa: `slide_09` (かき氷) có siro dâu màu sẫm, thoáng qua ở cỡ nhỏ hơi giống máu. Có bát thủy tinh + đá bào trắng + bối cảnh phố đông → **không dính** `youtube-compliance` §3 (điều khoản nhắm "máu me làm tâm điểm không ngữ cảnh"). Muốn chắc thì gen lại với `bright fresh red strawberry syrup`.
+  - <s>⚠️ **`slide_20` LỆCH, phải gen lại:**</s> *(đã xử lý — giữ lại để tra)* câu là 「紙とほこりの、あのにおい」 (trong tiệm sách) nhưng ảnh ra **ngõ phố** có tia sáng + bụi, và có artifact viền đen mép trái. Prompt đã sửa (ép `interior` + `no street and no sky visible`), xuất riêng 1 dòng ở **`06_VIDEO/02_kieta-mise/scene_prompts_REGEN.txt`**. Gen xong đặt đè `slides_img/slide_20.jpg` (nhớ crop watermark như trên nếu vẫn dính).
+- **2026-08-10 (f) — RÀ TOÀN BỘ 42 ẢNH, LỚP HÌNH CHỐT.** Duyệt từng ảnh ở cỡ 480px + zoom các ca nghi ngờ, đối chiếu với đúng câu nó minh hoạ. **41/42 đạt ngay; 3 ảnh đã thay** (20 · 09 · 39). Nay **42/42 đạt**.
+  - `slide_09` かき氷: siro cũ **đỏ nâu sẫm như máu khô** — ở full-screen đọc đúng nhưng cỡ nhỏ/mobile thì gợn. Không dính compliance (có bát thuỷ tinh + đá bào trắng + phố đông = có ngữ cảnh rõ), thuần thẩm mỹ. Bản mới siro đỏ tươi + có thìa.
+  - `slide_39` 豆腐屋: biển cũ ghi **「藤原豆腐店」 = tiệm đậu phụ trong Initial D**, hiện rõ ở cả biển lẫn noren, và nằm đúng **câu payoff cuối bài** 「お豆腐屋さんです」 → khán giả Nhật nhận ra ngay, bẻ mạch cảm xúc. Bản mới **biển trơn không chữ**.
+  - ⚠️ **Hai lần tao suýt kết luận sai từ contact sheet nhỏ** (`08` tủ đá, `17` nhang muỗi, `24` くじ, `28` nắp giấy — đều tưởng hỏng, soi cỡ lớn thì đúng cả). → **Duyệt ảnh phải ở ≥480px, ca nghi ngờ phải zoom**; contact sheet 320px chỉ đủ để *chọn ca cần soi*, không đủ để *kết luận*.
+  - 🔴 **Bug preset TÁI PHÁT ngay sau khi vừa vá** (slide_39 lần đầu: mô tả `no noren, no lettering` + preset `shotengai` tả `noren curtains, hand-painted signage`). → Thêm preset **`shotengai_nosign`**, và **nâng lệnh grep thủ công thành GATE MÁY trong `build_scenes_02.py`**: quét cặp phủ định/khẳng định, thấy mâu thuẫn thì **exit 1, không ghi file**.
+    - Gate này tự nó sai 2 vòng, đã vá: ① cụm `no noren` tự chứa `noren` nên tự tố cáo mình → phải bóc mọi cụm `no … <từ>` trước khi tìm ② nó quét cả `Avoid` (vốn đã là phủ định: `readable text or signage`) → giới hạn vùng quét vào `[mô tả + preset + style lock]`. Đã tự kiểm bằng 2 mẫu giả: bắt đúng cái sai, không kêu oan cái đúng.
+- Việc còn mở trước khi render: ① **đo Trends** (đang bị 429) → chốt lại keyword/hashtag ② user gen **3 thumbnail** (`thumb_prompts_FLOW.txt`) ③ **chốt BGM** ④ Gmail/kênh.
+  ✅ Lớp hình **đã đủ** (42/42) → hết chặn ở phía `render-background.md` §1.5; giờ chỉ còn chờ thumbnail + BGM.
+- ⛔ **Chưa render** — luật `render-background.md` §1.5: đủ asset mới được render.

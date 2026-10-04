@@ -1,0 +1,728 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-22demo",
+  "channel": "nenkin",
+  "templateRef": null,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "",
+  "modifiedAt": ""
+ },
+ "timeline": {
+  "durationInFrames": 2304
+ },
+ "sceneMarkers": [
+  {
+   "id": "m0",
+   "atFrame": 0,
+   "label": "{同じ}36万円"
+  },
+  {
+   "id": "m1",
+   "atFrame": 192,
+   "label": "通帳では{同じ}"
+  },
+  {
+   "id": "m2",
+   "atFrame": 384,
+   "label": "片方は {返金}"
+  },
+  {
+   "id": "m3",
+   "atFrame": 576,
+   "label": "{死亡日}で決まる"
+  },
+  {
+   "id": "m4",
+   "atFrame": 768,
+   "label": "五年で {消える}"
+  },
+  {
+   "id": "m5",
+   "atFrame": 960,
+   "label": "{未支給}年金"
+  },
+  {
+   "id": "m6",
+   "atFrame": 1152,
+   "label": "請求できる{人}"
+  },
+  {
+   "id": "m7",
+   "atFrame": 1344,
+   "label": "期限は {五年}"
+  },
+  {
+   "id": "m8",
+   "atFrame": 1536,
+   "label": "まず{通帳}を"
+  },
+  {
+   "id": "m9",
+   "atFrame": 1728,
+   "label": "{年金事務所}へ"
+  },
+  {
+   "id": "m10",
+   "atFrame": 1920,
+   "label": "二つは{並ぶ}"
+  },
+  {
+   "id": "m11",
+   "atFrame": 2112,
+   "label": "取り戻せる"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-video",
+   "name": "footage",
+   "type": "video",
+   "clips": [
+    {
+     "id": "v0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 199,
+     "asset": "assets/c22_futatsu.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 0
+    },
+    {
+     "id": "v1",
+     "kind": "video",
+     "from": 192,
+     "durationInFrames": 199,
+     "asset": "assets/c22_kichou.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v2",
+     "kind": "video",
+     "from": 384,
+     "durationInFrames": 199,
+     "asset": "assets/c22_katahou.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v3",
+     "kind": "video",
+     "from": 576,
+     "durationInFrames": 199,
+     "asset": "assets/c22_shibou.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v4",
+     "kind": "video",
+     "from": 768,
+     "durationInFrames": 199,
+     "asset": "assets/c22_kigen.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v5",
+     "kind": "video",
+     "from": 960,
+     "durationInFrames": 199,
+     "asset": "assets/c22_mishikyu.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v6",
+     "kind": "video",
+     "from": 1152,
+     "durationInFrames": 199,
+     "asset": "assets/c22_dare.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v7",
+     "kind": "video",
+     "from": 1344,
+     "durationInFrames": 199,
+     "asset": "assets/c22_gonen.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v8",
+     "kind": "video",
+     "from": 1536,
+     "durationInFrames": 199,
+     "asset": "assets/c22_kakunin.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v9",
+     "kind": "video",
+     "from": 1728,
+     "durationInFrames": 199,
+     "asset": "assets/c22_madoguchi.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v10",
+     "kind": "video",
+     "from": 1920,
+     "durationInFrames": 199,
+     "asset": "assets/c22_futsuu.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v11",
+     "kind": "video",
+     "from": 2112,
+     "durationInFrames": 192,
+     "asset": "assets/c22_owari.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "tl"
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "hoa la canh",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "fx2_0",
+     "kind": "fx",
+     "from": 390,
+     "durationInFrames": 180,
+     "variant": "rays",
+     "density": 22,
+     "color": "#FFC83A",
+     "seed": 114,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx4_0",
+     "kind": "fx",
+     "from": 864,
+     "durationInFrames": 90,
+     "variant": "stampx",
+     "density": 1,
+     "color": "#1C2A4A",
+     "seed": 128,
+     "area": {
+      "x": 4,
+      "y": 18,
+      "w": 44,
+      "h": 60
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx8_0",
+     "kind": "fx",
+     "from": 1542,
+     "durationInFrames": 180,
+     "variant": "coins",
+     "density": 14,
+     "color": "#FFC83A",
+     "seed": 156,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx10_0",
+     "kind": "fx",
+     "from": 1926,
+     "durationInFrames": 180,
+     "variant": "sparkle",
+     "density": 12,
+     "color": "#FFC83A",
+     "seed": 170,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx11_0",
+     "kind": "fx",
+     "from": 2118,
+     "durationInFrames": 180,
+     "variant": "confetti",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 177,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    }
+   ]
+  },
+  {
+   "id": "trk-telop",
+   "name": "telop",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t0",
+     "kind": "text",
+     "from": 3,
+     "durationInFrames": 187,
+     "content": "{同じ}36万円",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "from": 195,
+     "durationInFrames": 187,
+     "content": "通帳では{同じ}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t2",
+     "kind": "text",
+     "from": 387,
+     "durationInFrames": 187,
+     "content": "片方は\n{返金}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t3",
+     "kind": "text",
+     "from": 579,
+     "durationInFrames": 187,
+     "content": "{死亡日}で決まる",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t4",
+     "kind": "text",
+     "from": 771,
+     "durationInFrames": 187,
+     "content": "五年で\n{消える}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t5",
+     "kind": "text",
+     "from": 963,
+     "durationInFrames": 187,
+     "content": "{未支給}年金",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t6",
+     "kind": "text",
+     "from": 1155,
+     "durationInFrames": 187,
+     "content": "請求できる{人}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t7",
+     "kind": "text",
+     "from": 1347,
+     "durationInFrames": 187,
+     "content": "期限は\n{五年}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t8",
+     "kind": "text",
+     "from": 1539,
+     "durationInFrames": 187,
+     "content": "まず{通帳}を",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t9",
+     "kind": "text",
+     "from": 1731,
+     "durationInFrames": 187,
+     "content": "{年金事務所}へ",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t10",
+     "kind": "text",
+     "from": 1923,
+     "durationInFrames": 187,
+     "content": "二つは{並ぶ}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t11",
+     "kind": "text",
+     "from": 2115,
+     "durationInFrames": 187,
+     "content": "取り戻せる",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "voice",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "a0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 2304,
+     "asset": "assets/voice.wav",
+     "volume": 1
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "お葬式が終わって、一か月ほど経ったころ。",
+    "startMs": 0,
+    "endMs": 3627
+   },
+   {
+    "text": "通帳を記帳したご家族が、手を止めました。",
+    "startMs": 4227,
+    "endMs": 7789
+   },
+   {
+    "text": "亡くなったはずのご主人の年金が、振り込まれていたんです。三十六万円。",
+    "startMs": 8389,
+    "endMs": 14491
+   },
+   {
+    "text": "そして、その二か月後。もう一度、三十六万円が振り込まれました。",
+    "startMs": 15491,
+    "endMs": 21549
+   },
+   {
+    "text": "同じ金額です。通帳の見た目も、まったく同じ。",
+    "startMs": 22149,
+    "endMs": 26565
+   },
+   {
+    "text": "ですが、片方は受け取っていいお金で、もう片方は、返さなければならないお金でした。",
+    "startMs": 27165,
+    "endMs": 34141
+   },
+   {
+    "text": "どこで、線が引かれているのでしょうか。",
+    "startMs": 34941,
+    "endMs": 37896
+   },
+   {
+    "text": "あなたのご両親、ご主人、奥さまが年金を受け取っていらっしゃるなら、この二つは、いつか必ず並びます。",
+    "startMs": 38496,
+    "endMs": 47083
+   },
+   {
+    "text": "そして、もうひとつ。受け取れるほうのお金は、黙っていても入ってくるのか。",
+    "startMs": 47683,
+    "endMs": 53731
+   },
+   {
+    "text": "ここが、いちばん取り逃されているところです。",
+    "startMs": 54331,
+    "endMs": 57797
+   },
+   {
+    "text": "まず、事実から。",
+    "startMs": 58397,
+    "endMs": 60349
+   },
+   {
+    "text": "年金と老後のお金研究室です。今日も、日本年金機構と国税庁の原典を画面で開きながら、確かめていきます。",
+    "startMs": 60949,
+    "endMs": 70912
+   },
+   {
+    "text": "はじめに、なぜお金が残るのか。仕組みから見ていきます。",
+    "startMs": 71512,
+    "endMs": 76077
+   },
+   {
+    "text": "年金は、後払いです。",
+    "startMs": 76677,
+    "endMs": 79120
+   },
+   {
+    "text": "こちらが、日本年金機構のページです。赤で囲んだところを、ご覧ください。",
+    "startMs": 79720,
+    "endMs": 86227
+   },
+   {
+    "text": "年金は、原則、年六回に分けて、偶数月の十五日に支払われます。各支払月には、原則、その前月までの二か月分の年金が支払われます。",
+    "startMs": 86827,
+    "endMs": 100267
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#101010"
+ },
+ "brand": {
+  "logo": "assets/brand_logo.png",
+  "mascot": null,
+  "mascotPoses": [
+   {
+    "atSec": 0.0,
+    "asset": "assets/ojii_13/f_%04d.png"
+   },
+   {
+    "atSec": 8.0,
+    "asset": "assets/ojii_13/f_%04d.png"
+   },
+   {
+    "atSec": 16.0,
+    "asset": "assets/ojii_15/f_%04d.png"
+   },
+   {
+    "atSec": 24.0,
+    "asset": "assets/ojii_13/f_%04d.png"
+   },
+   {
+    "atSec": 32.0,
+    "asset": "assets/ojii_14/f_%04d.png"
+   },
+   {
+    "atSec": 40.0,
+    "asset": "assets/ojii_15/f_%04d.png"
+   },
+   {
+    "atSec": 48.0,
+    "asset": "assets/ojii_13/f_%04d.png"
+   },
+   {
+    "atSec": 56.0,
+    "asset": "assets/ojii_14/f_%04d.png"
+   },
+   {
+    "atSec": 64.0,
+    "asset": "assets/ojii_13/f_%04d.png"
+   },
+   {
+    "atSec": 72.0,
+    "asset": "assets/ojii_14/f_%04d.png"
+   },
+   {
+    "atSec": 80.0,
+    "asset": "assets/ojii_13/f_%04d.png"
+   },
+   {
+    "atSec": 88.0,
+    "asset": "assets/ojii_15/f_%04d.png"
+   }
+  ],
+  "mascotVideo": "assets/ojii_13/f_%04d.png",
+  "mascotVideoFrames": 192,
+  "mascotH": 300,
+  "logoH": 110,
+  "subscribe": true,
+  "bottomOffset": 150
+ }
+}

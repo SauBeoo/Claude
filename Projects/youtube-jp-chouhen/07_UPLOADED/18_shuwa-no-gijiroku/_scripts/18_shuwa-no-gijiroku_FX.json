@@ -1,0 +1,288 @@
+{
+  "speakers": {
+    "千鶴": "hero",
+    "戸倉": "villain",
+    "大河原": "hero",
+    "宮田": "hero",
+    "黒沢": "hero",
+    "塩見": "hero"
+  },
+  "lines": [
+    {
+      "match": "あんた一人で全部やって",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "手話通訳はつけないから",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "怒鳴られて泣くなら",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "あちらの非常勤の職員が担当いたします",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "「配置は何名ですか」",
+      "speaker": "塩見"
+    },
+    {
+      "match": "「ゼロです」",
+      "speaker": "千鶴"
+    },
+    {
+      "match": "「窓口補助の、非常勤です」",
+      "speaker": "千鶴"
+    },
+    {
+      "match": "「存じ上げません」",
+      "speaker": "千鶴"
+    },
+    {
+      "match": "「あれは、嘘です」",
+      "speaker": "宮田"
+    },
+    {
+      "match": "まさか操作を間違えて全部消したのか",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "ここから先は、手だけで説明してみせなさい",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "「下手です。",
+      "speaker": "宮田"
+    },
+    {
+      "match": "窃盗と同じ行為です",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "同意した覚えは、一度もない",
+      "speaker": "大河原"
+    },
+    {
+      "match": "「議事録は、偽造されています」",
+      "speaker": "千鶴"
+    },
+    {
+      "match": "派遣事業に一度も関与していない",
+      "speaker": "塩見"
+    },
+    {
+      "match": "「監査を入れます。",
+      "speaker": "黒沢"
+    },
+    {
+      "match": "「通訳者は、二十分で交代する。",
+      "speaker": "大河原"
+    },
+    {
+      "match": "あなたの手は、二十六年前と",
+      "speaker": "大河原"
+    },
+    {
+      "match": "あんたには守る家族もいないだろう",
+      "speaker": "戸倉"
+    },
+    {
+      "match": "ご自分の体裁だけです",
+      "speaker": "千鶴"
+    },
+    {
+      "match": "聞こえなかったことにしてきた",
+      "speaker": "千鶴"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "福祉課長の戸倉は、綴じてもいない書類の山を",
+      "to": "満足そうに自分の席へ戻っていった",
+      "name": "office_hum",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "翌日、二月の朝から雪が降っていた",
+      "to": "戸倉がもみ手をするように駆け寄る",
+      "name": "blizzard",
+      "gain": -23
+    },
+    {
+      "type": "ambience",
+      "from": "マイクのスイッチを、切ったのだ",
+      "to": "なぜ切ったのかを話すには",
+      "name": "room_still",
+      "gain": -30
+    },
+    {
+      "type": "ambience",
+      "from": "私の父、誠三は、生まれつき耳が聞こえなかった",
+      "to": "それが、私の名前だった",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "三十歳の冬、父が脳梗塞で倒れた",
+      "to": "一晩に何十回も",
+      "name": "hospital_night",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "夜中に徘徊する母を、雪の県道まで探しに行った夜もある",
+      "to": "口だけは出す",
+      "name": "night_snowplow",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "古いアパートのこたつで",
+      "to": "「分からないままにしたのが、嫌でした」",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "話を、切ったマイクの前に戻す",
+      "to": "ここまで底の浅い人だとは、思わなかった",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "私はポケットから一本のUSBメモリを取り出し",
+      "to": "もう、これ以上の言葉は必要なかった",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "日曜の朝、私は実家の仏間に座り",
+      "to": "本当の意味で始まったのだ",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "sfx",
+      "match": "腰から折るように頭を下げたのだ",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "とん、とん、と二回。",
+      "name": "door_knock",
+      "offset": -0.05,
+      "gain": -12
+    },
+    {
+      "type": "sfx",
+      "match": "家の中から、とん、とんが消えた",
+      "name": "heartbeat",
+      "offset": 0.2,
+      "gain": -11
+    },
+    {
+      "type": "sfx",
+      "match": "日付が変わる頃、スマートフォンが震えた",
+      "name": "phone_buzz_urgent",
+      "offset": -0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "その夜、玄関のチャイムが鳴った",
+      "name": "door_knock",
+      "offset": -0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "正面のスクリーンは、真っ白だった",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -7
+    },
+    {
+      "type": "sfx",
+      "match": "声は一つも上がらない。",
+      "name": "heartbeat",
+      "offset": 0.1,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "真っ白だったスクリーンに、映像が映った",
+      "name": "heartbeat",
+      "offset": 0.2,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "「議事録は、偽造されています」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "ホールの後方の扉が、乱暴に開いた",
+      "name": "door_knock",
+      "offset": -0.1,
+      "gain": -7
+    },
+    {
+      "type": "sfx",
+      "match": "とん、とん。",
+      "name": "door_knock",
+      "offset": -0.05,
+      "gain": -12
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "私はポケットから一本のUSBメモリを取り出し",
+      "cut": "同意した覚えは、一度もない",
+      "resume": "「議事録は、偽造されています」"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "戸倉は膝で床を這い、私の足元にすがりついてきた",
+      "to": "額を床に擦りつけて震えていた"
+    },
+    {
+      "type": "card",
+      "match": "手話通訳はつけないから",
+      "text": "手話通訳はつけない",
+      "style": "villain",
+      "hold": 1.5
+    },
+    {
+      "type": "card",
+      "match": "ここから先は、手だけで説明してみせなさい",
+      "text": "手だけでやりなさい",
+      "style": "villain",
+      "hold": 1.5
+    },
+    {
+      "type": "card",
+      "match": "「議事録は、偽造されています」",
+      "text": "議事録は、偽造されています",
+      "style": "hero",
+      "hold": 1.6
+    },
+    {
+      "type": "card",
+      "match": "聞こえなかったことにしてきた",
+      "text": "二百人の言葉を、なかったことに",
+      "style": "hero",
+      "hold": 1.8
+    }
+  ]
+}

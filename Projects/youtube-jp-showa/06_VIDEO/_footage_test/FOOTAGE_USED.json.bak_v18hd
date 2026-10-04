@@ -1,0 +1,2730 @@
+{
+ "_note": "DUNG LAI 2026-09-21 tu archival_spec_*.json + stills_spec_*.json sau khi thu muc _footage_test bi xoa. Ban goc mat, day la ban tai lap — do chinh xac = do chinh xac cua cac spec con luu.",
+ "aliases": {
+  "japan_today.mp4": "gov.archives.arc.1692903",
+  "japan_today_1959.mp4": "gov.archives.arc.1692903",
+  "children1941_full.mp4": "Children1941",
+  "we_the_japanese_512kb.mp4": "gov.archives.li.111-cad-24-52",
+  "big_picture_japan_512kb.mp4": "gov.archives.arc.2569524",
+  "steel_1960.mp4": "gov.archives.arc.642010",
+  "you_in_japan_512kb.mp4": "you_in_japan",
+  "usaf11070_religious_1946.mp4": "USAF-11070",
+  "usaf11059_kyoto_home_1946.mp4": "USAF-11059",
+  "usaf11079_hiroshima_life_1946.mp4": "USAF-11079",
+  "usaf11050_agri_1946.mp4": "USAF-11050"
+ },
+ "used": [
+  {
+   "item": "Children1941",
+   "file": "children1941_full.mp4",
+   "ss": 214.5,
+   "end": 222.5,
+   "video": "03",
+   "id": "clip_00"
+  },
+  {
+   "item": "Children1941",
+   "file": "children1941_full.mp4",
+   "ss": 325.0,
+   "end": 333.0,
+   "video": "03",
+   "id": "clip_02"
+  },
+  {
+   "item": "Children1941",
+   "file": "children1941_full.mp4",
+   "ss": 335.0,
+   "end": 343.0,
+   "video": "03",
+   "id": "clip_03"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 108.0,
+   "end": 108.5,
+   "video": "08",
+   "id": "st08_22_temple_path_crowd",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 497.3,
+   "end": 506.3,
+   "video": "01",
+   "id": "arch_23_hatake"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 518.2,
+   "end": 527.2,
+   "video": "01",
+   "id": "arch_24_gakusei_mado"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 542.3,
+   "end": 542.8,
+   "video": "06",
+   "id": "st06_01_boy_train_window",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 546.9,
+   "end": 547.4,
+   "video": "06",
+   "id": "st06_02_boy_train_window_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 549.2,
+   "end": 558.2,
+   "video": "01",
+   "id": "arch_01_kids_train"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 558.5,
+   "end": 572.5,
+   "video": "05",
+   "id": "jt_04_kids_miyage"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 574.0,
+   "end": 586.0,
+   "video": "05",
+   "id": "jt_20_shoeshine_street"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 587.0,
+   "end": 595.0,
+   "video": "08",
+   "id": "jt08_03_park_bicycles"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 596.0,
+   "end": 606.0,
+   "video": "05",
+   "id": "jt_05_kids_train"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 607.0,
+   "end": 607.5,
+   "video": "08",
+   "id": "st08_06_park_family_pond",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 611.0,
+   "end": 611.5,
+   "video": "08",
+   "id": "st08_07_park_men_happi",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 743.0,
+   "end": 752.0,
+   "video": "01",
+   "id": "arch_10_gakusei_gunshu"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 788.0,
+   "end": 794.0,
+   "video": "06",
+   "id": "jt06_05_young_workers"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 815.8,
+   "end": 824.8,
+   "video": "01",
+   "id": "arch_00_shougakusei"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 826.0,
+   "end": 826.5,
+   "video": "08",
+   "id": "st08_05_kinkakuji_crowd",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 856.3,
+   "end": 865.3,
+   "video": "01",
+   "id": "arch_21_kodomo_koe"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 868.0,
+   "end": 876.0,
+   "video": "08",
+   "id": "jt08_02_kimono_women_walk"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 878.0,
+   "end": 878.5,
+   "video": "08",
+   "id": "st08_01_kimono_women_close",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 881.0,
+   "end": 881.5,
+   "video": "08",
+   "id": "st08_02_kimono_women_smile",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 884.8,
+   "end": 885.3,
+   "video": "06",
+   "id": "st06_03_sanrin_truck_street",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 889.2,
+   "end": 889.7,
+   "video": "06",
+   "id": "st06_04_sanrin_truck_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 893.5,
+   "end": 894.0,
+   "video": "06",
+   "id": "st06_05_shopfront_woman",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 897.8,
+   "end": 898.3,
+   "video": "06",
+   "id": "st06_06_shopfront_kids",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 900.0,
+   "end": 907.0,
+   "video": "02",
+   "id": "clip_07"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 910.0,
+   "end": 910.5,
+   "video": "06",
+   "id": "st06_07_family_street",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 913.0,
+   "end": 922.5,
+   "video": "02",
+   "id": "clip_08"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 913.0,
+   "end": 922.5,
+   "video": "02demo",
+   "id": "clip_00"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 913.1,
+   "end": 922.1,
+   "video": "01",
+   "id": "arch_19_utsuwa"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 923.3,
+   "end": 932.3,
+   "video": "01",
+   "id": "arch_15_shotengai_kanban"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 934.6,
+   "end": 943.6,
+   "video": "01",
+   "id": "arch_05_shotengai_sengo"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 937.0,
+   "end": 946.0,
+   "video": "02",
+   "id": "clip_25"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 948.1,
+   "end": 948.6,
+   "video": "06",
+   "id": "st06_08_street_signs_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 952.2,
+   "end": 952.7,
+   "video": "06",
+   "id": "st06_09_street_signs_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 956.4,
+   "end": 956.9,
+   "video": "06",
+   "id": "st06_10_street_signs_c",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 958.5,
+   "end": 967.5,
+   "video": "01",
+   "id": "arch_16_shokuhinten"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 961.0,
+   "end": 969.5,
+   "video": "02",
+   "id": "clip_34"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1006.3,
+   "end": 1015.3,
+   "video": "01",
+   "id": "arch_18_ekimae"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1079.7,
+   "end": 1088.7,
+   "video": "01",
+   "id": "arch_22_tokyo_gekijo"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1089.0,
+   "end": 1099.0,
+   "video": "06",
+   "id": "jt06_02_tokyo_skyline"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1099.0,
+   "end": 1108.0,
+   "video": "06",
+   "id": "jt06_03_ginza_district"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1108.8,
+   "end": 1117.8,
+   "video": "01",
+   "id": "arch_17_tokyo_biru"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1119.8,
+   "end": 1120.3,
+   "video": "06",
+   "id": "st06_11_tokyo_tram_red_sign",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1124.0,
+   "end": 1124.5,
+   "video": "06",
+   "id": "st06_12_tokyo_tram_wide",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1126.0,
+   "end": 1138.0,
+   "video": "06",
+   "id": "jt06_06_plaza_crossing"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1140.5,
+   "end": 1141.0,
+   "video": "06",
+   "id": "st06_13_crowd_walking",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1143.0,
+   "end": 1151.0,
+   "video": "06",
+   "id": "jt06_01_crowd_toward"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1153.0,
+   "end": 1153.5,
+   "video": "06",
+   "id": "st06_14_crowd_business",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1155.0,
+   "end": 1164.0,
+   "video": "06",
+   "id": "jt06_11_depaato_welcome"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1165.5,
+   "end": 1166.0,
+   "video": "06",
+   "id": "st06_15_department_store",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1167.0,
+   "end": 1175.0,
+   "video": "06",
+   "id": "jt06_04_office_street"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1177.5,
+   "end": 1178.0,
+   "video": "06",
+   "id": "st06_16_globe_building",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1182.5,
+   "end": 1183.0,
+   "video": "06",
+   "id": "st06_17_audience_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1185.0,
+   "end": 1194.0,
+   "video": "06",
+   "id": "jt06_10_ongakukai_crowd"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1197.0,
+   "end": 1197.5,
+   "video": "06",
+   "id": "st06_18_audience_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1200.0,
+   "end": 1212.0,
+   "video": "05",
+   "id": "jt_21_boy_greencap"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1214.5,
+   "end": 1215.0,
+   "video": "06",
+   "id": "st06_19_women_crowd",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1222.0,
+   "end": 1232.0,
+   "video": "05",
+   "id": "jt_19_kids_balloon_crowd"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1234.2,
+   "end": 1234.7,
+   "video": "06",
+   "id": "st06_20_crowd_trams_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1242.8,
+   "end": 1243.3,
+   "video": "06",
+   "id": "st06_21_crowd_trams_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1247.2,
+   "end": 1247.7,
+   "video": "06",
+   "id": "st06_22_young_men_crowd",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1251.5,
+   "end": 1252.0,
+   "video": "06",
+   "id": "st06_23_young_men_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1255.8,
+   "end": 1256.3,
+   "video": "06",
+   "id": "st06_24_man_hat_crowd",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1258.0,
+   "end": 1280.0,
+   "video": "05",
+   "id": "jt_12_nakamise"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1280.0,
+   "end": 1288.0,
+   "video": "06",
+   "id": "jt06_12_crowd_dense"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1288.8,
+   "end": 1297.8,
+   "video": "01",
+   "id": "arch_02_tenji_shoku"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1300.0,
+   "end": 1310.0,
+   "video": "05",
+   "id": "jt_02_alley_signs"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1310.0,
+   "end": 1317.0,
+   "video": "06",
+   "id": "jt06_09_shoten_street_day"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1317.0,
+   "end": 1325.0,
+   "video": "02",
+   "id": "clip_36"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1326.0,
+   "end": 1338.0,
+   "video": "05",
+   "id": "jt_03_shotengai_walk"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1338.0,
+   "end": 1348.0,
+   "video": "05",
+   "id": "jt_07_veg_cart"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1349.8,
+   "end": 1358.8,
+   "video": "01",
+   "id": "arch_07_haitatsu"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1352.0,
+   "end": 1361.0,
+   "video": "02",
+   "id": "clip_13"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1361.0,
+   "end": 1369.0,
+   "video": "06",
+   "id": "jt06_13_tearoom_men"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1371.0,
+   "end": 1371.5,
+   "video": "06",
+   "id": "st06_25_shirobasha_sign_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1379.0,
+   "end": 1379.5,
+   "video": "06",
+   "id": "st06_26_shirobasha_sign_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1381.0,
+   "end": 1393.0,
+   "video": "05",
+   "id": "jt_08_stall_lanterns_a"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1395.0,
+   "end": 1395.5,
+   "video": "06",
+   "id": "st06_27_nakamise_crowd",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1401.0,
+   "end": 1411.0,
+   "video": "05",
+   "id": "jt_09_stall_redfish"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1413.1,
+   "end": 1422.1,
+   "video": "01",
+   "id": "arch_08_nakamise2"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1425.0,
+   "end": 1439.0,
+   "video": "05",
+   "id": "jt_10_balloons_kusuri"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1441.0,
+   "end": 1441.5,
+   "video": "06",
+   "id": "st06_28_candy_stall",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1443.0,
+   "end": 1457.0,
+   "video": "05",
+   "id": "jt_11_stall_toys_kids"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1459.6,
+   "end": 1468.6,
+   "video": "01",
+   "id": "arch_03_nakamise"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1471.2,
+   "end": 1471.7,
+   "video": "06",
+   "id": "st06_29_stall_lanterns",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1476.5,
+   "end": 1477.0,
+   "video": "06",
+   "id": "st06_30_nakamise_walk",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1484.4,
+   "end": 1493.4,
+   "video": "01",
+   "id": "arch_09_mise_kazari"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1496.7,
+   "end": 1497.2,
+   "video": "06",
+   "id": "st06_31_woman_stall",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1500.0,
+   "end": 1510.0,
+   "video": "05",
+   "id": "jt_01_shop_barrels"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1516.0,
+   "end": 1532.0,
+   "video": "05",
+   "id": "jt_15_matsuri_street"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1534.2,
+   "end": 1534.7,
+   "video": "06",
+   "id": "st06_32_temple_crowd_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1543.2,
+   "end": 1543.7,
+   "video": "06",
+   "id": "st06_33_temple_crowd_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1550.0,
+   "end": 1560.0,
+   "video": "05",
+   "id": "jt_06_craftsman"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1560.0,
+   "end": 1576.0,
+   "video": "05",
+   "id": "jt_13_ladies_lanterns"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1576.0,
+   "end": 1583.0,
+   "video": "05",
+   "id": "jt_14_toy_vendor_table"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1597.6,
+   "end": 1606.6,
+   "video": "01",
+   "id": "arch_06_kodomo_gun"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1610.0,
+   "end": 1619.0,
+   "video": "01",
+   "id": "arch_13_yatai"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1611.0,
+   "end": 1617.5,
+   "video": "02",
+   "id": "clip_29"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1618.3,
+   "end": 1627.3,
+   "video": "01",
+   "id": "arch_04_arcade"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1629.5,
+   "end": 1630.0,
+   "video": "06",
+   "id": "st06_34_market_stalls_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1633.8,
+   "end": 1634.3,
+   "video": "06",
+   "id": "st06_35_market_stalls_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1636.0,
+   "end": 1649.0,
+   "video": "05",
+   "id": "jt_16_lion_dance"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1661.9,
+   "end": 1662.4,
+   "video": "06",
+   "id": "st06_36_ox_plough",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1664.5,
+   "end": 1672.5,
+   "video": "02",
+   "id": "clip_17"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1674.7,
+   "end": 1683.7,
+   "video": "01",
+   "id": "arch_14_taue"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1685.3,
+   "end": 1685.8,
+   "video": "06",
+   "id": "st06_37_rice_planting_still",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1687.0,
+   "end": 1699.0,
+   "video": "06",
+   "id": "jt06_07_taue"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1702.0,
+   "end": 1710.0,
+   "video": "08",
+   "id": "jt08_06_rice_planting"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1712.0,
+   "end": 1712.5,
+   "video": "08",
+   "id": "st08_18_rice_planter_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1725.0,
+   "end": 1725.5,
+   "video": "08",
+   "id": "st08_19_rice_field_wide",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1738.0,
+   "end": 1748.0,
+   "video": "06",
+   "id": "jt06_08_ine_drying"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1762.0,
+   "end": 1771.0,
+   "video": "06",
+   "id": "jt06_15_wara_stacks"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1777.0,
+   "end": 1789.0,
+   "video": "06",
+   "id": "jt06_14_chatsumi"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1798.0,
+   "end": 1798.5,
+   "video": "08",
+   "id": "st08_09_tea_field_two",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1804.0,
+   "end": 1812.0,
+   "video": "08",
+   "id": "jt08_04_tea_pickers_wide"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1813.0,
+   "end": 1821.0,
+   "video": "08",
+   "id": "jt08_05_tea_picker_hat"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1822.0,
+   "end": 1822.5,
+   "video": "08",
+   "id": "st08_08_tea_picker_hat_turn",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1837.0,
+   "end": 1843.0,
+   "video": "08",
+   "id": "jt08_01_rain_umbrellas"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1844.0,
+   "end": 1850.0,
+   "video": "08",
+   "id": "jt08_11_seashore_crowd"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1851.0,
+   "end": 1851.5,
+   "video": "08",
+   "id": "st08_10_seashore_crowd",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1882.2,
+   "end": 1891.2,
+   "video": "01",
+   "id": "arch_11_umi_ama"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 1899.9,
+   "end": 1908.9,
+   "video": "01",
+   "id": "arch_12_umi_oke"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1963.0,
+   "end": 1972.0,
+   "video": "06",
+   "id": "jt06_16_ekimae_plaza"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1974.0,
+   "end": 1974.5,
+   "video": "06",
+   "id": "st06_38_dept_store_bldg",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1978.0,
+   "end": 1978.5,
+   "video": "06",
+   "id": "st06_39_station_plaza_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1982.0,
+   "end": 1982.5,
+   "video": "06",
+   "id": "st06_40_station_plaza_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1984.0,
+   "end": 1996.0,
+   "video": "06",
+   "id": "jt06_17_street_walk"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1998.0,
+   "end": 1998.5,
+   "video": "06",
+   "id": "st06_41_street_dept",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2002.0,
+   "end": 2002.5,
+   "video": "06",
+   "id": "st06_42_families_crowd_a",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2006.0,
+   "end": 2006.5,
+   "video": "06",
+   "id": "st06_43_families_crowd_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2008.0,
+   "end": 2018.0,
+   "video": "05",
+   "id": "jt_22_street_kids"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2020.0,
+   "end": 2020.5,
+   "video": "06",
+   "id": "st06_44_street_bus",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 2034.1,
+   "end": 2043.1,
+   "video": "01",
+   "id": "arch_25_daibutsu_gakusei"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2043.0,
+   "end": 2048.0,
+   "video": "08",
+   "id": "jt08_09_schoolgirls_crowd"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2056.0,
+   "end": 2062.0,
+   "video": "08",
+   "id": "jt08_10_schoolboys_crowd"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2063.0,
+   "end": 2063.5,
+   "video": "08",
+   "id": "st08_15_daibutsu_students",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2084.0,
+   "end": 2095.0,
+   "video": "05",
+   "id": "jt_18_schoolkids"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2097.5,
+   "end": 2098.0,
+   "video": "06",
+   "id": "st06_45_boy_camera",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2100.0,
+   "end": 2109.0,
+   "video": "05",
+   "id": "jt_17_boy_camera"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today.mp4",
+   "ss": 2111.8,
+   "end": 2120.8,
+   "video": "01",
+   "id": "arch_20_gakusei_ooze"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2123.1,
+   "end": 2123.6,
+   "video": "06",
+   "id": "st06_46_schoolkids",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2136.0,
+   "end": 2146.0,
+   "video": "07",
+   "id": "jt07_01_sumo_bout"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2170.0,
+   "end": 2170.5,
+   "video": "08",
+   "id": "st08_13_sumo_ring_wide",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2182.0,
+   "end": 2192.0,
+   "video": "08",
+   "id": "jt08_07_sumo_bout"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2196.0,
+   "end": 2206.0,
+   "video": "08",
+   "id": "jt08_08_sumo_b"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2209.0,
+   "end": 2209.5,
+   "video": "08",
+   "id": "st08_12_sumo_audience",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2280.0,
+   "end": 2280.5,
+   "video": "08",
+   "id": "st08_16_stage_dancers",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 2295.0,
+   "end": 2295.5,
+   "video": "08",
+   "id": "st08_17_stage_dancers_b",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.2569524",
+   "file": "big_picture_japan_512kb.mp4",
+   "ss": 226.0,
+   "end": 226.5,
+   "video": "08bp",
+   "id": "bp08_st_02_skyline_river",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.2569524",
+   "file": "big_picture_japan_512kb.mp4",
+   "ss": 230.0,
+   "end": 238.0,
+   "video": "08",
+   "id": "bp08_01_tram_street"
+  },
+  {
+   "item": "gov.archives.arc.2569524",
+   "file": "big_picture_japan_512kb.mp4",
+   "ss": 239.0,
+   "end": 239.5,
+   "video": "08bp",
+   "id": "bp08_st_01_street_buses",
+   "kind": "still"
+  },
+  {
+   "item": "gov.archives.arc.642010",
+   "file": "steel_1960.mp4",
+   "ss": 1093.5,
+   "end": 1102.0,
+   "video": "11",
+   "id": "st11_01_koujou_workers"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 1013.8,
+   "end": 1019.0,
+   "video": "04",
+   "id": "clip_00"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 370.0,
+   "end": 375.2,
+   "video": "16_omiai-kekkon",
+   "id": "a16_000"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 313.0,
+   "end": 317.53,
+   "video": "16_omiai-kekkon",
+   "id": "a16_001"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 356.0,
+   "end": 360.08,
+   "video": "16_omiai-kekkon",
+   "id": "a16_002"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 398.0,
+   "end": 403.92,
+   "video": "16_omiai-kekkon",
+   "id": "a16_003"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 375.2,
+   "end": 380.09,
+   "video": "16_omiai-kekkon",
+   "id": "a16_004"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 317.53,
+   "end": 322.42,
+   "video": "16_omiai-kekkon",
+   "id": "a16_005"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 360.08,
+   "end": 363.85,
+   "video": "16_omiai-kekkon",
+   "id": "a16_006"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 403.92,
+   "end": 407.68,
+   "video": "16_omiai-kekkon",
+   "id": "a16_007"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 380.09,
+   "end": 385.32,
+   "video": "16_omiai-kekkon",
+   "id": "a16_008"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 322.42,
+   "end": 327.03,
+   "video": "16_omiai-kekkon",
+   "id": "a16_009"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 363.85,
+   "end": 368.05,
+   "video": "16_omiai-kekkon",
+   "id": "a16_010"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 385.32,
+   "end": 389.52,
+   "video": "16_omiai-kekkon",
+   "id": "a16_011"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 389.52,
+   "end": 394.95,
+   "video": "16_omiai-kekkon",
+   "id": "a16_012"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 488.0,
+   "end": 503.6,
+   "video": "16_omiai-kekkon",
+   "id": "a16_013"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 2.0,
+   "end": 8.14,
+   "video": "16_omiai-kekkon",
+   "id": "a16_014"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 8.14,
+   "end": 21.88,
+   "video": "16_omiai-kekkon",
+   "id": "a16_015"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 21.88,
+   "end": 30.39,
+   "video": "16_omiai-kekkon",
+   "id": "a16_016"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 30.39,
+   "end": 40.87,
+   "video": "16_omiai-kekkon",
+   "id": "a16_017"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 903.0,
+   "end": 917.26,
+   "video": "16_omiai-kekkon",
+   "id": "a16_034"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 917.26,
+   "end": 930.08,
+   "video": "16_omiai-kekkon",
+   "id": "a16_035"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 930.08,
+   "end": 941.32,
+   "video": "16_omiai-kekkon",
+   "id": "a16_036"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 255.0,
+   "end": 260.89,
+   "video": "16_omiai-kekkon",
+   "id": "a16_038"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 600.0,
+   "end": 614.69,
+   "video": "16_omiai-kekkon",
+   "id": "a16_039"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 260.89,
+   "end": 271.22,
+   "video": "16_omiai-kekkon",
+   "id": "a16_040"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 614.69,
+   "end": 625.1,
+   "video": "16_omiai-kekkon",
+   "id": "a16_041"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 967.0,
+   "end": 982.29,
+   "video": "16_omiai-kekkon",
+   "id": "a16_060"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 982.29,
+   "end": 987.46,
+   "video": "16_omiai-kekkon",
+   "id": "a16_061"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 987.46,
+   "end": 994.21,
+   "video": "16_omiai-kekkon",
+   "id": "a16_062"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 994.21,
+   "end": 1008.73,
+   "video": "16_omiai-kekkon",
+   "id": "a16_063"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1008.73,
+   "end": 1015.56,
+   "video": "16_omiai-kekkon",
+   "id": "a16_064"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1038.0,
+   "end": 1054.76,
+   "video": "16_omiai-kekkon",
+   "id": "a16_092"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 585.0,
+   "end": 600.79,
+   "video": "16_omiai-kekkon",
+   "id": "a16_137"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 713.0,
+   "end": 726.85,
+   "video": "16_omiai-kekkon",
+   "id": "a16_138"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 600.79,
+   "end": 611.27,
+   "video": "16_omiai-kekkon",
+   "id": "a16_139"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 726.85,
+   "end": 736.32,
+   "video": "16_omiai-kekkon",
+   "id": "a16_140"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 611.27,
+   "end": 622.95,
+   "video": "16_omiai-kekkon",
+   "id": "a16_141"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 736.32,
+   "end": 751.75,
+   "video": "16_omiai-kekkon",
+   "id": "a16_142"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 622.95,
+   "end": 639.49,
+   "video": "16_omiai-kekkon",
+   "id": "a16_143"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 751.75,
+   "end": 767.59,
+   "video": "16_omiai-kekkon",
+   "id": "a16_144"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 639.49,
+   "end": 646.61,
+   "video": "16_omiai-kekkon",
+   "id": "a16_145"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 575.0,
+   "end": 575.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_020",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 432.0,
+   "end": 432.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_037",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 60.0,
+   "end": 60.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_050",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 230.0,
+   "end": 230.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_051",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 200.0,
+   "end": 200.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_052",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 100.0,
+   "end": 100.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_147",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11070",
+   "file": "usaf11070_religious_1946.mp4",
+   "ss": 470.0,
+   "end": 470.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_148",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 878.0,
+   "end": 878.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_018",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 868.0,
+   "end": 868.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_019",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 300.0,
+   "end": 300.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_079",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 286.0,
+   "end": 286.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_080",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1118.0,
+   "end": 1118.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_106",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1140.0,
+   "end": 1140.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_107",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 64.0,
+   "end": 64.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_146",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11079",
+   "file": "usaf11079_hiroshima_life_1946.mp4",
+   "ss": 478.0,
+   "end": 478.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_078",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11079",
+   "file": "usaf11079_hiroshima_life_1946.mp4",
+   "ss": 428.0,
+   "end": 428.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_093",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11079",
+   "file": "usaf11079_hiroshima_life_1946.mp4",
+   "ss": 446.0,
+   "end": 446.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_094",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11079",
+   "file": "usaf11079_hiroshima_life_1946.mp4",
+   "ss": 464.0,
+   "end": 464.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_095",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11050",
+   "file": "usaf11050_agri_1946.mp4",
+   "ss": 350.0,
+   "end": 350.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_108",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11050",
+   "file": "usaf11050_agri_1946.mp4",
+   "ss": 72.0,
+   "end": 72.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_122",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11050",
+   "file": "usaf11050_agri_1946.mp4",
+   "ss": 96.0,
+   "end": 96.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_123",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11050",
+   "file": "usaf11050_agri_1946.mp4",
+   "ss": 404.0,
+   "end": 404.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_124",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11050",
+   "file": "usaf11050_agri_1946.mp4",
+   "ss": 472.0,
+   "end": 472.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_125",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11050",
+   "file": "usaf11050_agri_1946.mp4",
+   "ss": 492.0,
+   "end": 492.5,
+   "video": "16_omiai-kekkon",
+   "id": "st16_149",
+   "kind": "still"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 60.0,
+   "end": 71.08,
+   "video": "16_omiai-kekkon",
+   "id": "a16_109"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 90.0,
+   "end": 98.72,
+   "video": "16_omiai-kekkon",
+   "id": "a16_110"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 98.72,
+   "end": 112.74,
+   "video": "16_omiai-kekkon",
+   "id": "a16_111"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 112.74,
+   "end": 124.51,
+   "video": "16_omiai-kekkon",
+   "id": "a16_112"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1223.0,
+   "end": 1229.89,
+   "video": "16_omiai-kekkon",
+   "id": "a16_096"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1133.0,
+   "end": 1146.8,
+   "video": "16_omiai-kekkon",
+   "id": "a16_097"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1093.0,
+   "end": 1107.58,
+   "video": "16_omiai-kekkon",
+   "id": "a16_098"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1229.89,
+   "end": 1240.85,
+   "video": "16_omiai-kekkon",
+   "id": "a16_099"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1146.8,
+   "end": 1159.0,
+   "video": "16_omiai-kekkon",
+   "id": "a16_100"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 1231.5,
+   "end": 1237.11,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_00"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 692.0,
+   "end": 695.71,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_01"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 695.11,
+   "end": 698.83,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_02"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 289.0,
+   "end": 293.87,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_03"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 293.27,
+   "end": 298.13,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_04"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 648.0,
+   "end": 652.33,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_05"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 651.73,
+   "end": 656.06,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_06"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 655.46,
+   "end": 659.79,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_07"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 1235.0,
+   "end": 1238.75,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_08"
+  },
+  {
+   "item": "color_story_japan_1957_r1_sq.mp4",
+   "file": "color_story_japan_1957_r1_sq.mp4",
+   "ss": 425.0,
+   "end": 432.51,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_09"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 109.0,
+   "end": 116.89,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_10"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 341.0,
+   "end": 346.17,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_11"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 8.0,
+   "end": 11.54,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_12"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 66.0,
+   "end": 72.81,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_13"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 550.5,
+   "end": 560.91,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_16"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 1023.5,
+   "end": 1028.27,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_17"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 1061.5,
+   "end": 1074.45,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_18"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 650.5,
+   "end": 654.22,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_22"
+  },
+  {
+   "item": "color_story_japan_1957_r1_sq.mp4",
+   "file": "color_story_japan_1957_r1_sq.mp4",
+   "ss": 205.5,
+   "end": 214.45,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_23"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 578.5,
+   "end": 587.05,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_24"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 1034.5,
+   "end": 1043.06,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_25"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 662.5,
+   "end": 670.55,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_28"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 270.0,
+   "end": 279.16,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_29"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 491.0,
+   "end": 495.48,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_30"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 366.5,
+   "end": 370.92,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_31"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 767.5,
+   "end": 771.27,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_33"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 1213.5,
+   "end": 1217.56,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_39"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 1219.49,
+   "end": 1223.3,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_40"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 736.0,
+   "end": 740.55,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_41"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 286.5,
+   "end": 291.57,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_42"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 266.5,
+   "end": 272.1,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_45"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 451.0,
+   "end": 458.63,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_47"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 769.0,
+   "end": 773.62,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_48"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 2.5,
+   "end": 7.6,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_49"
+  },
+  {
+   "item": "usaf11068_industry_1946.mp4",
+   "file": "usaf11068_industry_1946.mp4",
+   "ss": 161.5,
+   "end": 171.62,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_50"
+  },
+  {
+   "item": "usaf11068_industry_1946.mp4",
+   "file": "usaf11068_industry_1946.mp4",
+   "ss": 231.0,
+   "end": 235.37,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_51"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 804.5,
+   "end": 815.58,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_52"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 188.5,
+   "end": 193.8,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_53"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 820.5,
+   "end": 826.27,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_54"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 658.0,
+   "end": 666.56,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_55"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 90.2,
+   "end": 94.43,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_61"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 1017.0,
+   "end": 1023.4,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_68"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 1244.0,
+   "end": 1248.12,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_70"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 887.0,
+   "end": 890.45,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_80"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 856.5,
+   "end": 864.11,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_81"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 518.5,
+   "end": 530.75,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_82"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 530.15,
+   "end": 542.41,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_83"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 423.2,
+   "end": 436.5,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_86"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 920.5,
+   "end": 928.68,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_90"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 1015.5,
+   "end": 1028.71,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_94"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 472.0,
+   "end": 478.12,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_100"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 413.0,
+   "end": 418.59,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_101"
+  },
+  {
+   "item": "you_in_japan",
+   "file": "you_in_japan_512kb.mp4",
+   "ss": 1260.5,
+   "end": 1265.48,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_108"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 404.5,
+   "end": 407.79,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_109"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 727.5,
+   "end": 734.62,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_110"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 592.5,
+   "end": 608.6,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_111"
+  },
+  {
+   "item": "gov.archives.li.111-cad-24-52",
+   "file": "we_the_japanese_512kb.mp4",
+   "ss": 742.5,
+   "end": 748.52,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_112"
+  },
+  {
+   "item": "color_story_japan_1957_r1_sq.mp4",
+   "file": "color_story_japan_1957_r1_sq.mp4",
+   "ss": 318.0,
+   "end": 322.66,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_120"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 150.5,
+   "end": 158.89,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_121"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 547.0,
+   "end": 553.65,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_125"
+  },
+  {
+   "item": "color_story_japan_1957_r2_sq.mp4",
+   "file": "color_story_japan_1957_r2_sq.mp4",
+   "ss": 498.5,
+   "end": 504.43,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_126"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 704.5,
+   "end": 710.3,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_127"
+  },
+  {
+   "item": "USAF-11059",
+   "file": "usaf11059_kyoto_home_1946.mp4",
+   "ss": 879.5,
+   "end": 888.15,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_129"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 180.5,
+   "end": 186.91,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_133"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 213.0,
+   "end": 217.66,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_135"
+  },
+  {
+   "item": "gov.archives.arc.1692903",
+   "file": "japan_today_1959.mp4",
+   "ss": 76.0,
+   "end": 78.87,
+   "video": "17_kaisha-ga-kureta",
+   "id": "clip_136"
+  },
+  {
+   "item": "npc14671_ruins_tokyo_1945.mp4",
+   "file": "npc14671_ruins_tokyo_1945.mp4",
+   "ss": 62.0,
+   "end": 65.89,
+   "video": "18_hataraku-okane",
+   "id": "clip_00"
+  },
+  {
+   "item": "npc14671_ruins_tokyo_1945.mp4",
+   "file": "npc14671_ruins_tokyo_1945.mp4",
+   "ss": 65.29,
+   "end": 69.17,
+   "video": "18_hataraku-okane",
+   "id": "clip_01"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 5.0,
+   "end": 8.55,
+   "video": "18_hataraku-okane",
+   "id": "clip_08"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 484.0,
+   "end": 491.95,
+   "video": "18_hataraku-okane",
+   "id": "clip_10"
+  },
+  {
+   "item": "npc14672_street_tokyo_1945.mp4",
+   "file": "npc14672_street_tokyo_1945.mp4",
+   "ss": 12.0,
+   "end": 19.84,
+   "video": "18_hataraku-okane",
+   "id": "clip_12"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 200.0,
+   "end": 212.54,
+   "video": "18_hataraku-okane",
+   "id": "clip_13"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 650.0,
+   "end": 656.39,
+   "video": "18_hataraku-okane",
+   "id": "clip_14"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 780.0,
+   "end": 788.07,
+   "video": "18_hataraku-okane",
+   "id": "clip_15"
+  },
+  {
+   "item": "univ_japan_today_1946.mp4",
+   "file": "univ_japan_today_1946.mp4",
+   "ss": 24.0,
+   "end": 29.33,
+   "video": "18_hataraku-okane",
+   "id": "clip_16"
+  },
+  {
+   "item": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "file": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "ss": 644.0,
+   "end": 653.32,
+   "video": "18_hataraku-okane",
+   "id": "clip_18"
+  },
+  {
+   "item": "univ_japan_today_1946.mp4",
+   "file": "univ_japan_today_1946.mp4",
+   "ss": 9.0,
+   "end": 13.67,
+   "video": "18_hataraku-okane",
+   "id": "clip_19"
+  },
+  {
+   "item": "univ_japan_today_1946.mp4",
+   "file": "univ_japan_today_1946.mp4",
+   "ss": 60.0,
+   "end": 65.81,
+   "video": "18_hataraku-okane",
+   "id": "clip_20"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 742.0,
+   "end": 755.73,
+   "video": "18_hataraku-okane",
+   "id": "clip_21"
+  },
+  {
+   "item": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "file": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "ss": 570.0,
+   "end": 581.51,
+   "video": "18_hataraku-okane",
+   "id": "clip_22"
+  },
+  {
+   "item": "npc14671_ruins_tokyo_1945.mp4",
+   "file": "npc14671_ruins_tokyo_1945.mp4",
+   "ss": 320.0,
+   "end": 329.72,
+   "video": "18_hataraku-okane",
+   "id": "clip_23"
+  },
+  {
+   "item": "npc14671_ruins_tokyo_1945.mp4",
+   "file": "npc14671_ruins_tokyo_1945.mp4",
+   "ss": 430.0,
+   "end": 442.42,
+   "video": "18_hataraku-okane",
+   "id": "clip_25"
+  },
+  {
+   "item": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "file": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "ss": 264.0,
+   "end": 271.81,
+   "video": "18_hataraku-okane",
+   "id": "clip_32"
+  },
+  {
+   "item": "univ_japan_today_1946.mp4",
+   "file": "univ_japan_today_1946.mp4",
+   "ss": 73.0,
+   "end": 80.42,
+   "video": "18_hataraku-okane",
+   "id": "clip_35"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 120.0,
+   "end": 131.56,
+   "video": "18_hataraku-okane",
+   "id": "clip_38"
+  },
+  {
+   "item": "usaf11068_industry_1946.mp4",
+   "file": "usaf11068_industry_1946.mp4",
+   "ss": 490.0,
+   "end": 494.85,
+   "video": "18_hataraku-okane",
+   "id": "clip_53"
+  },
+  {
+   "item": "usaf11068_industry_1946.mp4",
+   "file": "usaf11068_industry_1946.mp4",
+   "ss": 405.0,
+   "end": 418.12,
+   "video": "18_hataraku-okane",
+   "id": "clip_57"
+  },
+  {
+   "item": "usaf11068_industry_1946.mp4",
+   "file": "usaf11068_industry_1946.mp4",
+   "ss": 419.0,
+   "end": 425.27,
+   "video": "18_hataraku-okane",
+   "id": "clip_58"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 410.0,
+   "end": 418.74,
+   "video": "18_hataraku-okane",
+   "id": "clip_59"
+  },
+  {
+   "item": "npc14671_ruins_tokyo_1945.mp4",
+   "file": "npc14671_ruins_tokyo_1945.mp4",
+   "ss": 455.0,
+   "end": 461.98,
+   "video": "18_hataraku-okane",
+   "id": "clip_65"
+  },
+  {
+   "item": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "file": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "ss": 683.0,
+   "end": 689.56,
+   "video": "18_hataraku-okane",
+   "id": "clip_67"
+  },
+  {
+   "item": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "file": "usaf11018_way_of_life_tokyo_1945.mp4",
+   "ss": 1210.0,
+   "end": 1218.22,
+   "video": "18_hataraku-okane",
+   "id": "clip_68"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 1152.99,
+   "end": 1159.37,
+   "video": "18_hataraku-okane",
+   "id": "clip_71"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 73.0,
+   "end": 83.65,
+   "video": "18_hataraku-okane",
+   "id": "clip_72"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 245.0,
+   "end": 254.49,
+   "video": "18_hataraku-okane",
+   "id": "clip_73"
+  },
+  {
+   "item": "usaf11069_transport_1946.mp4",
+   "file": "usaf11069_transport_1946.mp4",
+   "ss": 554.0,
+   "end": 564.63,
+   "video": "18_hataraku-okane",
+   "id": "clip_74"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 460.0,
+   "end": 465.31,
+   "video": "18_hataraku-okane",
+   "id": "clip_75"
+  },
+  {
+   "item": "usaf11022_industrial_life_1946.mp4",
+   "file": "usaf11022_industrial_life_1946.mp4",
+   "ss": 306.0,
+   "end": 312.77,
+   "video": "18_hataraku-okane",
+   "id": "clip_87"
+  },
+  {
+   "item": "npc14672_street_tokyo_1945.mp4",
+   "file": "npc14672_street_tokyo_1945.mp4",
+   "ss": 45.0,
+   "end": 51.44,
+   "video": "18_hataraku-okane",
+   "id": "clip_88"
+  }
+ ]
+}

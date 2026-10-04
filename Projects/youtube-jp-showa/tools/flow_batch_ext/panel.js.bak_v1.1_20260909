@@ -1,0 +1,326 @@
+// Flow Prompt Batch — bơm prompt qua chrome.debugger (trusted input, không chiếm chuột thật).
+// Cơ chế verify 2026-08-07 (Flow trên labs.google) · SỬA 2026-09-09 cho Flow hiện tại.
+//
+// 🔴 HAI THỨ LÀM EXTENSION CHẾT (đo trên tab thật 2026-09-09, đừng "sửa lại cho gọn"):
+//  ⓘ ĐIỀU KIỆN NGOÀI CODE (đo 2026-09-09): project Flow phải bật **"Clear prompt on submit"**
+//     (⚙ của project). Phép đo "đã gửi" ở đây là *ô prompt không còn chứa đầu prompt*; tắt
+//     tuỳ chọn đó thì Flow GIỮ chữ lại sau khi gửi ⇒ mọi prompt bị chấm thất bại ⇒ gửi lại
+//     ⇒ gen trùng. Panel đã ghi cảnh báo này ở phần hướng dẫn.
+//  ① **Flow ĐỔI DOMAIN**: `labs.google/fx/tools/flow` → `flow.google.com/project/<id>`.
+//     `listTabs()` lọc theo "labs.google" ⇒ dropdown RỖNG, không chọn được tab nào ⇒ chết
+//     ngay bước 2. Nay nhận cả hai host (HOSTS) và cảnh báo nếu chưa vào trang /project/.
+//  ② **Editor đổi từ Lexical sang ProseMirror, và PLACEHOLDER NẰM TRONG Ô EDITABLE**:
+//     `<div contenteditable><p><span class="prosemirror-placeholder">What do you want to
+//     create?</span>…` ⇒ ô TRỐNG mà `innerText` vẫn trả **27 ký tự**. Mọi phép "ô trống chưa"
+//     theo NGƯỠNG SỐ KÝ (`<= 20`, `< 50`) vì thế sai vĩnh viễn:
+//       · gửi THÀNH CÔNG vẫn bị chấm là thất bại ⇒ 3 lần liền "fail" ⇒ dừng cả lô;
+//       · nhánh 3b thấy "chưa trống" ⇒ bấm nút Tạo lần nữa ⇒ **gen trùng, tốn credit**.
+//     ⇒ Nay không đo bằng NGƯỠNG nữa mà đo bằng **NỘI DUNG**: bỏ node placeholder ra khỏi
+//     bản sao rồi đọc text, và "đã gửi" = text không còn chứa đầu prompt.
+//     📌 Bài học cùng họ `feedback_do_pixel_cua_so_quet`: một phép đo trả về số HỢP LÝ mà đo
+//        sai thứ mình tưởng thì mọi nhánh ăn theo nó đều sai theo, và không báo lỗi.
+
+const $ = id => document.getElementById(id);
+const HOSTS = ["flow.google.com", "labs.google"];   // ① host mới + host cũ
+let running = false;
+
+function setStatus(msg) { $("status").textContent = msg; }
+
+async function listTabs() {
+  const tabs = await chrome.tabs.query({});
+  const sel = $("tabsel");
+  sel.innerHTML = "";
+  for (const t of tabs) {
+    if (!t.url || !HOSTS.some(h => t.url.includes(h))) continue;
+    const o = document.createElement("option");
+    o.value = t.id;
+    // đánh dấu tab CHƯA vào project — trang chủ Flow không có ô prompt
+    const inProject = t.url.includes("/project/") || t.url.includes("/tools/flow");
+    o.textContent = `[${t.id}] ${inProject ? "" : "⚠ chưa mở project — "}${(t.title || "").slice(0, 60)}`;
+    sel.appendChild(o);
+  }
+  if (!sel.options.length) {
+    const o = document.createElement("option");
+    o.textContent = "— không thấy tab Flow nào (flow.google.com), mở Flow rồi bấm quét lại —";
+    o.value = "";
+    sel.appendChild(o);
+  }
+}
+
+$("refresh").onclick = listTabs;
+listTabs();
+
+// khôi phục state đã lưu
+chrome.storage.local.get(["prompts", "idx", "delay"]).then(s => {
+  if (s.prompts) $("prompts").value = s.prompts;
+  if (s.idx) $("startidx").value = s.idx + 1;
+  if (s.delay) $("delay").value = s.delay;
+  if (s.idx) setStatus(`Lần trước dừng sau dòng ${s.idx}. Start sẽ chạy tiếp từ dòng ${s.idx + 1}.`);
+});
+
+$("loadfile").onchange = async e => {
+  const f = e.target.files[0];
+  if (f) $("prompts").value = await f.text();
+};
+
+$("reset").onclick = () => {
+  chrome.storage.local.remove(["idx"]);
+  $("startidx").value = 1;
+  setStatus("Đã reset tiến độ về dòng 1.");
+};
+
+$("pause").onclick = () => { running = false; setStatus("Đang dừng sau prompt hiện tại…"); };
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// theo dõi lý do bị detach (canceled_by_user = bấm Hủy trên dải vàng / replaced_with_devtools = mở F12)
+let lastDetachReason = "";
+chrome.debugger.onDetach.addListener((src, reason) => { lastDetachReason = reason; });
+
+function attach(tabId) {
+  return new Promise((res, rej) => chrome.debugger.attach({ tabId }, "1.3", () => {
+    const e = chrome.runtime.lastError;
+    if (e && !/Another debugger|already attached/i.test(e.message)) rej(new Error(e.message));
+    else res();
+  }));
+}
+
+function cdp(tabId, method, params) {
+  return new Promise((resolve, reject) => {
+    chrome.debugger.sendCommand({ tabId }, method, params || {}, res => {
+      if (chrome.runtime.lastError) reject(new Error(chrome.runtime.lastError.message));
+      else resolve(res);
+    });
+  });
+}
+
+async function evalIn(tabId, expression) {
+  const r = await cdp(tabId, "Runtime.evaluate", { expression, returnByValue: true });
+  if (r.exceptionDetails) throw new Error("JS lỗi trong tab Flow: " + (r.exceptionDetails.text || ""));
+  return r.result.value;
+}
+
+// ── ② ĐỌC TEXT THẬT CỦA EDITOR — bỏ placeholder + widget của ProseMirror ────────
+// Trả JSON {found, text, len, ph} để mọi nhánh dùng CÙNG một phép đo (đừng viết lại
+// biểu thức này ở chỗ khác: hai bản sao rồi sẽ lệch nhau).
+const JS_STATE = `(() => {
+  const ed = document.querySelector('div.ProseMirror[contenteditable="true"]')
+          || document.querySelector('div[contenteditable="true"]');
+  if (!ed) return JSON.stringify({found: false});
+  const ph = [...ed.querySelectorAll('.prosemirror-placeholder, [class*="placeholder"]')]
+               .map(n => (n.textContent || '').trim()).join(' ');
+  const c = ed.cloneNode(true);
+  c.querySelectorAll('.prosemirror-placeholder, [class*="placeholder"], .ProseMirror-widget, .ProseMirror-separator, br')
+   .forEach(n => n.remove());
+  const text = (c.textContent || '').replace(/\\u00a0/g, ' ').trim();
+  return JSON.stringify({found: true, text, len: text.length, ph});
+})()`;
+
+function state(tabId) { return evalIn(tabId, JS_STATE).then(s => JSON.parse(s)); }
+
+const norm = s => (s || "").replace(/\s+/g, " ").trim().toLowerCase();
+
+async function pressEnter(tabId) {
+  const base = { windowsVirtualKeyCode: 13, nativeVirtualKeyCode: 13, key: "Enter", code: "Enter" };
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyDown", text: "\r", unmodifiedText: "\r", ...base });
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyUp", ...base });
+}
+
+// Ctrl+A trusted — cách xoá nội dung cũ ĐÚNG với ProseMirror.
+// 🔴 `selectNodeContents` (bản cũ) chọn luôn node placeholder `contenteditable="false"`,
+//    ProseMirror coi đó là widget nên selection ra trạng thái lạ; Ctrl+A thì chính nó xử lý.
+async function selectAll(tabId) {
+  const base = { windowsVirtualKeyCode: 65, nativeVirtualKeyCode: 65, key: "a", code: "KeyA", modifiers: 2 };
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyDown", ...base });
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyUp", ...base });
+}
+
+// Backspace trusted — dùng để XOÁ sạch selection (kèm với selectAll)
+async function pressBackspace(tabId) {
+  const base = { windowsVirtualKeyCode: 8, nativeVirtualKeyCode: 8, key: "Backspace", code: "Backspace" };
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyDown", ...base });
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyUp", ...base });
+}
+
+// ── ③ NÚT GỬI — ưu tiên aria-label "Start generation" (bền hơn ligature) ────────
+// 🔴 ĐI TÌM thì KHÔNG được lọc `!b.disabled`: Flow **để nút mờ khi ô prompt TRỐNG**
+//    (đo 2026-09-09: ô trống ⇒ `disabled=true`; có chữ ⇒ `false`). Lọc disabled ngay lúc
+//    tìm thì nút "biến mất" ở mọi lần kiểm lúc ô trống ⇒ chẩn đoán báo 🔴 sai.
+//    Trạng thái disabled trả về RIÊNG, nơi gọi tự quyết.
+const JS_SUBMIT = `(() => {
+      const vis = [...document.querySelectorAll('button')].filter(b => b.offsetParent);
+      const go = vis.find(b => /start generation|tạo|generate/i.test(b.getAttribute('aria-label') || ''))
+              || vis.find(b => (b.textContent || '').includes('arrow_forward'));
+      if (!go) return null;
+      const r = go.getBoundingClientRect();
+      return JSON.stringify({x: r.x + r.width / 2, y: r.y + r.height / 2,
+                             label: go.getAttribute('aria-label') || (go.textContent || '').trim(),
+                             disabled: !!go.disabled});
+    })()`;
+
+async function clickSubmitButton(tabId) {
+  const box = await evalIn(tabId, JS_SUBMIT);
+  if (!box) return false;
+  const { x, y, disabled } = JSON.parse(box);
+  if (disabled) return false;   // ô prompt trống/chưa nhận chữ ⇒ bấm cũng vô ích
+  await cdp(tabId, "Input.dispatchMouseEvent", { type: "mousePressed", x, y, button: "left", clickCount: 1 });
+  await cdp(tabId, "Input.dispatchMouseEvent", { type: "mouseReleased", x, y, button: "left", clickCount: 1 });
+  return true;
+}
+
+async function sendPrompt(tabId, text) {
+  // 1) focus ô prompt
+  const st0 = await state(tabId);
+  if (!st0.found) {
+    throw new Error("Không thấy ô prompt trong tab này. Tab Flow phải đang MỞ MỘT PROJECT "
+                  + "(flow.google.com/project/…), không phải trang chủ.");
+  }
+  await evalIn(tabId, `(document.querySelector('div.ProseMirror[contenteditable="true"]')
+                     || document.querySelector('div[contenteditable="true"]')).focus()`);
+  await sleep(150);
+  // 2) Ctrl+A rồi insertText (trusted qua debugger) — insert thay thế selection
+  await selectAll(tabId);
+  await cdp(tabId, "Input.insertText", { text });
+  await sleep(600);
+  // 2b) verify text ĐÃ VÀO editor — so theo TỈ LỆ với prompt, không theo ngưỡng tuyệt đối
+  //     (ngưỡng 50 ký của bản cũ đánh trượt oan mọi prompt ngắn)
+  let st1 = await state(tabId);
+  // 2c) 🔴 CHỐNG NỐI CHUỖI: nếu prompt cũ KHÔNG bị thay (insertText không nuốt selection ở
+  //     một bản ProseMirror nào đó) thì text sẽ DÀI HƠN prompt ⇒ xoá cứng bằng Ctrl+A +
+  //     Backspace rồi gõ lại. Không có chốt này thì prompt N+1 dính đuôi prompt N và cả lô
+  //     ra ảnh sai mà không có dấu hiệu gì.
+  if (st1.len > text.length * 1.3) {
+    await selectAll(tabId);
+    await pressBackspace(tabId);
+    await sleep(200);
+    await cdp(tabId, "Input.insertText", { text });
+    await sleep(600);
+    st1 = await state(tabId);
+  }
+  if (st1.len < Math.min(24, text.length * 0.6)) {
+    throw new Error(`insertText không vào editor (đọc được ${st1.len}/${text.length} ký tự) — `
+                  + `tab đang bị debugger khác giữ (Claude-in-Chrome / F12)? Mở tab Flow MỚI rồi thử lại.`);
+  }
+  // 3) Enter submit
+  await pressEnter(tabId);
+  await sleep(900);
+  // 4) "đã gửi" = editor KHÔNG CÒN CHỨA đầu prompt (placeholder quay lại thì text = "")
+  const head = norm(text).slice(0, 24);
+  let st2 = await state(tabId);
+  if (norm(st2.text).includes(head)) {          // Enter không ăn → bấm nút Tạo
+    await clickSubmitButton(tabId);
+    await sleep(900);
+    st2 = await state(tabId);
+  }
+  return !norm(st2.text).includes(head);
+}
+
+// ── 🔍 CHẨN ĐOÁN — bấm 1 nút là biết Flow đổi gì (đừng đoán như lượt trước) ────
+$("diag").onclick = async () => {
+  const tabId = parseInt($("tabsel").value);
+  if (!tabId) { setStatus("Chọn tab Flow trước đã."); return; }
+  setStatus("Đang kiểm tra tab…");
+  try {
+    await attach(tabId);
+    const info = JSON.parse(await evalIn(tabId, `(() => {
+      const ed = document.querySelector('div.ProseMirror[contenteditable="true"]')
+              || document.querySelector('div[contenteditable="true"]');
+      const cfg = [...document.querySelectorAll('button')].filter(b => b.offsetParent)
+                    .find(b => /settings/i.test(b.getAttribute('aria-label') || ''));
+      return JSON.stringify({
+        url: location.origin + location.pathname,
+        editor: ed ? (ed.className || ed.tagName) : null,
+        setting: cfg ? (cfg.textContent || '').trim() : null,
+      });
+    })()`));
+    const sb = await evalIn(tabId, JS_SUBMIT);
+    const submit = sb ? JSON.parse(sb) : null;
+    const st = await state(tabId);
+    setStatus([
+      `Tab: ${info.url}`,
+      `Ô prompt: ${info.editor ? "✓ " + info.editor : "🔴 KHÔNG THẤY — đã mở project chưa?"}`,
+      `Nút gửi: ${submit ? "✓ " + submit.label
+                  + (submit.disabled ? "  (đang mờ vì ô prompt trống — BÌNH THƯỜNG)" : "  (đang sáng)")
+                : "🔴 KHÔNG THẤY"}`,
+      `Cấu hình đang chọn: ${info.setting || "?"}   ← muốn gen ẢNH thì phải là Image/Nano Banana`,
+      `Placeholder: ${st.ph ? JSON.stringify(st.ph) : "(không có)"}`,
+      `Nội dung ô hiện tại: ${st.len} ký tự${st.len ? " → " + JSON.stringify(st.text.slice(0, 60)) : " (trống)"}`,
+      "",
+      info.editor && submit ? "✅ Sẵn sàng — bấm START." : "🔴 Sửa mục 🔴 ở trên rồi kiểm lại.",
+    ].join("\n"));
+  } catch (e) {
+    setStatus("🔴 Không kiểm được: " + e.message);
+  } finally {
+    try { chrome.debugger.detach({ tabId }); } catch (e) {}
+  }
+};
+
+$("start").onclick = async () => {
+  if (running) return;
+  const tabId = parseInt($("tabsel").value);
+  if (!tabId) { setStatus("Chọn tab Flow trước đã."); return; }
+  const prompts = $("prompts").value.split("\n").map(s => s.trim()).filter(Boolean);
+  if (!prompts.length) { setStatus("Chưa có prompt nào."); return; }
+  const delay = Math.max(5, parseInt($("delay").value) || 18);
+  let i = Math.max(1, parseInt($("startidx").value) || 1) - 1;
+
+  chrome.storage.local.set({ prompts: $("prompts").value, delay });
+
+  // attach: "already attached" có thể là attach CŨ CỦA CHÍNH MÌNH (lần chạy trước gãy giữa
+  // đường) ⇒ thử ra lệnh một cái xem còn điều khiển được không, thay vì bỏ cuộc ngay.
+  try {
+    await attach(tabId);
+    await evalIn(tabId, "1");
+  } catch (e) {
+    setStatus(/Another debugger|already attached|not attached/i.test(String(e.message))
+      ? "🔴 Tab này đang bị công cụ khác debug (phiên Claude-in-Chrome, hoặc F12 đang mở).\n"
+        + "Đóng F12 / mở 1 TAB FLOW MỚI, bấm ↻ quét lại tab, chọn tab mới rồi Start."
+      : "Không attach được debugger: " + e.message);
+    return;
+  }
+
+  running = true;
+  $("bar").max = prompts.length;
+  let fails = 0;
+
+  while (running && i < prompts.length) {
+    setStatus(`Đang gửi prompt ${i + 1}/${prompts.length}…\n"${prompts[i].slice(0, 90)}…"`);
+    try {
+      let ok = await sendPrompt(tabId, prompts[i]);
+      if (!ok) {
+        setStatus(`⚠ Prompt ${i + 1} có vẻ chưa gửi được (ô prompt vẫn còn chữ). Thử lại 1 lần…`);
+        await sleep(3000);
+        ok = await sendPrompt(tabId, prompts[i]);
+      }
+      if (ok) { fails = 0; } else if (++fails >= 3) {
+        setStatus(`🔴 3 prompt liền không gửi được — dừng tại dòng ${i + 1}.\n`
+                + `Bấm 🔍 KIỂM TRA TAB để xem Flow đổi gì (hết credit? queue nghẽn? đổi giao diện?).`);
+        running = false; break;
+      }
+    } catch (e) {
+      if (/not attached/i.test(String(e.message))) {
+        setStatus(`⚠ Debugger bị đứt tại dòng ${i + 1} (lý do: ${lastDetachReason || "?"}). Tự nối lại sau 3s…\n`
+                + `(Đừng bấm "Hủy" trên dải vàng, đừng mở F12 trên tab Flow)`);
+        await sleep(3000);
+        try { await attach(tabId); continue; }  // retry cùng prompt, không tăng i
+        catch (e2) { setStatus(`🔴 Nối lại thất bại: ${e2.message} — dừng tại dòng ${i + 1}. Start để chạy tiếp.`); running = false; break; }
+      }
+      setStatus(`🔴 Lỗi tại dòng ${i + 1}: ${e.message} — dừng. Sửa xong Start chạy tiếp.`);
+      running = false; break;
+    }
+    chrome.storage.local.set({ idx: i + 1 });
+    $("bar").value = i + 1;
+    $("startidx").value = i + 2;
+    i++;
+    if (i < prompts.length) {
+      for (let s = 0; s < delay * 2 && running; s++) await sleep(500);
+    }
+  }
+
+  try { chrome.debugger.detach({ tabId }); } catch (e) {}
+  if (i >= prompts.length) {
+    setStatus(`✅ XONG ${prompts.length} prompt! Vào tab Flow kéo xuống chờ render nốt rồi tải về theo thứ tự.`);
+    $("bar").value = prompts.length;
+  }
+  running = false;
+};

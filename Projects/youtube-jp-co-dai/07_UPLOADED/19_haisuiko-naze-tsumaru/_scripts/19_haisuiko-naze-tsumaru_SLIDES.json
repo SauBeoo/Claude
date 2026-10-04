@@ -1,0 +1,907 @@
+[
+ {
+  "match": "台所の流しが、少し遅くなった気が",
+  "photo": true
+ },
+ {
+  "match": "けれど今夜、洗い物のあとに30秒",
+  "photo": true
+ },
+ {
+  "match": "熱湯では駄目です。60度を超える",
+  "photo": true
+ },
+ {
+  "match": "40度と、60度。この20度のあ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "台所の勝ち目",
+   "big": "20",
+   "unit": "度",
+   "sub": "40度から60度のあいだ",
+   "note": "ここを外すと、何をしても届きません",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/thermometer_40_to_60.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "それは、いちばん最後にお話ししま",
+  "photo": true
+ },
+ {
+  "match": "この番組では、こうした暮らしの知",
+  "photo": true
+ },
+ {
+  "match": "さて、ここからが今日の核心です。",
+  "photo": true
+ },
+ {
+  "match": "昨日の油。先月の油。三年前の油。",
+  "photo": true
+ },
+ {
+  "match": "流しから出ていく洗い物の水は、だ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ水の、二つの温度",
+   "title": "出ていく時と、届く時",
+   "left": {
+    "label": "流しから出る水",
+    "mark": "o",
+    "verdict": "40度前後"
+   },
+   "right": {
+    "label": "床下の管の中",
+    "mark": "x",
+    "verdict": "20度を下回る"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/warm_dishwater_surface.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり油は、流された瞬間から冷や",
+  "photo": true
+ },
+ {
+  "match": "東京都下水道局は、この現象をはっ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "東京都下水道局",
+   "asof": "油・断・快適！下水道",
+   "number": "冷えて固まる",
+   "quote": "台所から流れた油は下水道管内で冷えて固まり、つまりや悪臭の原因になります",
+   "note": "大雨で剥がれた塊は、オイルボールと呼ばれます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/oil_congealed_in_pipe.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "固まった油は、薄い膜になって管の",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "一日ずつ、一枚ずつ",
+   "head": "膜の上に、次の膜が重なる",
+   "pins": [
+    [
+     1300,
+     235,
+     "きのうの膜"
+    ],
+    [
+     1300,
+     350,
+     "きょうの膜"
+    ],
+    [
+     1300,
+     465,
+     "内径が細る"
+    ]
+   ],
+   "arrows": [
+    [
+     1260,
+     300,
+     980,
+     390,
+     0.18
+    ]
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/pipe_inner_wax_layers.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ここが、今日いちばん役に立つとこ",
+  "photo": true
+ },
+ {
+  "match": "肉の脂は、40度から50度で溶け",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "温度（度）",
+   "title": "隙間は、たしかにある",
+   "bars": [
+    [
+     "脂が溶ける",
+     50
+    ],
+    [
+     "配管の限界",
+     60
+    ]
+   ],
+   "hot": 0,
+   "note": "この20度のあいだだけ、手が届きます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/tallow_starting_to_melt.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "だから、50度のお湯を30秒。洗",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "今夜の一手",
+   "title": "洗い物の、すぐあとに",
+   "steps": [
+    {
+     "label": "50度のお湯",
+     "sub": "熱湯にしない"
+    },
+    {
+     "label": "30秒だけ流す",
+     "sub": "管が温まっているうちに"
+    },
+    {
+     "label": "それで終わり",
+     "sub": "道具は要りません",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/warm_water_running_into_drain.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "あなたが今夜取り戻せるのは、いち",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "line",
+   "kicker": "取り戻せる分",
+   "title": "一晩ごとに、一枚ずつ硬くなる",
+   "points": [
+    [
+     "今夜",
+     90
+    ],
+    [
+     "三日",
+     70
+    ],
+    [
+     "一月",
+     40
+    ],
+    [
+     "半年",
+     15
+    ],
+    [
+     "三年",
+     5
+    ]
+   ],
+   "last_label": "芯",
+   "note": "遅れるほど、戻せる分が減っていきます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/waxy_flakes_stacked.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "フライパンにうっすら残った油を、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "呼びかけは三つだけ",
+   "head": "ふき取る・吸い取る・使い切る",
+   "pins": [
+    [
+     1300,
+     235,
+     "紙でふき取る"
+    ],
+    [
+     1300,
+     350,
+     "新聞紙に吸わせる"
+    ],
+    [
+     1300,
+     465,
+     "漉して使う"
+    ]
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/newspaper_wiping_frying_pan.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "白状しますと、私は長いあいだ、こ",
+  "photo": true
+ },
+ {
+  "match": "変わったのは、流れの速さではあり",
+  "photo": true
+ },
+ {
+  "match": "私の母は、もっと徹底していました",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "油こし器のあった台所",
+   "title": "油は、捨てるものではなかった",
+   "marks": [
+    [
+     "昔",
+     "こし器で漉して缶へ"
+    ],
+    [
+     "次の日",
+     "もう一度、揚げ物に"
+    ],
+    [
+     "最後",
+     "炒め物に回す"
+    ]
+   ],
+   "note": "コンロの右奥、いつも同じ場所に",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/old_oil_strainer_can_on_stove.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "一度、それは古いから捨てたらどう",
+  "photo": true
+ },
+ {
+  "match": "さて、ここまでは良い話です。40",
+  "photo": true
+ },
+ {
+  "match": "小麦粉です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "kicker": "隙間が通用しない相手",
+   "title": "小麦粉",
+   "note": "薄まるのではなく、濃くなります",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/flour_dusted_bowl_rim.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "小麦粉は、水で薄まりません。逆で",
+  "photo": true
+ },
+ {
+  "match": "でんぷんは、水と一緒に60度以上",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "糊化",
+   "head": "60度を超えると、糊になる",
+   "pins": [
+    [
+     1300,
+     235,
+     "粒がふくらむ"
+    ],
+    [
+     1300,
+     350,
+     "分子が出る"
+    ],
+    [
+     1300,
+     465,
+     "網目になる"
+    ]
+   ],
+   "arrows": [
+    [
+     1260,
+     300,
+     960,
+     390,
+     0.18
+    ]
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/flour_and_water_paste.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "問題は、そのあとです。温度が下が",
+  "photo": true
+ },
+ {
+  "match": "残るのは、硬く、ぼそぼそした塊。",
+  "photo": true
+ },
+ {
+  "match": "冷やご飯が硬くなるのも、パンが翌",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "line",
+   "kicker": "老化の進みやすさ",
+   "title": "冷えるほど、速く硬くなる",
+   "points": [
+    [
+     "60度",
+     5
+    ],
+    [
+     "40度",
+     25
+    ],
+    [
+     "20度",
+     60
+    ],
+    [
+     "10度",
+     85
+    ],
+    [
+     "2〜4度",
+     100
+    ]
+   ],
+   "last_label": "最速",
+   "note": "ちょうど、冷蔵庫の中の温度です",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/cold_hardened_rice.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "そして、この老化がもっとも早く進",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "澱粉科学",
+   "asof": "第19巻第2号・1972年",
+   "number": "60度以上",
+   "quote": "でんぷん糊の老化は60度以上ではほとんど起こらず、温度の低下とともに速く進む",
+   "note": "つまり、固めないためには60度より上が要ります",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/old_journal_page_on_desk.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ここで、さきほどの隙間を思い出し",
+  "photo": true
+ },
+ {
+  "match": "けれど、配管が耐えられるのは、6",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "二つの60度",
+   "title": "隙間は、閉じています",
+   "left": {
+    "label": "でんぷんに必要",
+    "mark": "o",
+    "verdict": "60度より上"
+   },
+   "right": {
+    "label": "配管の限界",
+    "mark": "x",
+    "verdict": "60度まで"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/thermometer_at_60.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "だから、でんぷんだけは、入れる前",
+  "photo": true
+ },
+ {
+  "match": "糊は、あとから流れてくる油の粒や",
+  "photo": true
+ },
+ {
+  "match": "ご飯粒も、うどんの切れ端も同じ道",
+  "photo": true
+ },
+ {
+  "match": "ですから、対策も一つで足ります。",
+  "photo": true
+ },
+ {
+  "match": "流しの排水口に、ゴミ受けを置いて",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "入り口で止める道具",
+   "big": "100",
+   "unit": "円",
+   "sub": "流しのゴミ受け",
+   "note": "置くだけでは働きません。その日のうちに捨てる",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/mesh_sink_strainer_basket.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ここまで聞いて、こう思われた方が",
+  "photo": true
+ },
+ {
+  "match": "私も、まったく同じことを考えてい",
+  "photo": true
+ },
+ {
+  "match": "これが、いちばんやってはいけない",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "kicker": "いちばんやってはいけない",
+   "title": "熱湯",
+   "note": "詰まりを、手の届かない奥へ運びます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/steaming_kettle_over_sink.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "熱湯を追いかけさせると、固まりか",
+  "photo": true
+ },
+ {
+  "match": "けれど、お湯が熱いのは、最初の1",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "熱が届く範囲",
+   "big": "2",
+   "unit": "メートル",
+   "sub": "そこから先は、ただの水",
+   "note": "奥に運ばれた油は、届かない場所で固まります",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/pipe_running_into_dark.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり、やっているのは、油を取り",
+  "photo": true
+ },
+ {
+  "match": "流れが良くなったように感じるのは",
+  "photo": true
+ },
+ {
+  "match": "一度、流しの下の扉を開けて、管を",
+  "photo": true
+ },
+ {
+  "match": "配管メーカーの資料では、この排水",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "配管メーカー資料",
+   "asof": "硬質ポリ塩化ビニル管・排水用",
+   "number": "60度以下",
+   "quote": "排水用の硬質塩化ビニル管の使用温度は60度以下",
+   "note": "超え続けると、継ぎ目の力が落ちます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/grey_pvc_pipe_under_sink.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "食器洗い機のことを考えると、この",
+  "photo": true
+ },
+ {
+  "match": "食器洗い機の排水は、最高で70度",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "温度（度）",
+   "title": "70度には、別の管が要る",
+   "bars": [
+    [
+     "普通の管",
+     60
+    ],
+    [
+     "食洗機の排水",
+     70
+    ],
+    [
+     "耐熱用の管",
+     90
+    ]
+   ],
+   "hot": 1,
+   "note": "設計上、わざわざ管を替えています",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/dishwasher_drain_hose.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "70度の水を流すためだけに、わざ",
+  "photo": true
+ },
+ {
+  "match": "試しに、お湯を流したあとで、流し",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "10秒の自己診断",
+   "title": "熱は、届いていない",
+   "steps": [
+    {
+     "label": "お湯を流す",
+     "sub": "いつもどおりに"
+    },
+    {
+     "label": "扉を開けて管に触る",
+     "sub": "流しの下"
+    },
+    {
+     "label": "冷たければ届いていない",
+     "sub": "熱は途中で消えます",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/hand_touching_pipe_under_sink.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ところで、油にもでんぷんにも共通",
+  "photo": true
+ },
+ {
+  "match": "ところが、台所には、温度がまるで",
+  "photo": true
+ },
+ {
+  "match": "それでは、続きを見ていきましょう",
+  "photo": true
+ },
+ {
+  "match": "粒がとても細かいので、水と一緒に",
+  "photo": true
+ },
+ {
+  "match": "そして、ここが今日の話の中で、い",
+  "photo": true
+ },
+ {
+  "match": "かすには、溶ける温度がありません",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "温度が効かない相手",
+   "title": "50度でも、90度でも",
+   "left": {
+    "label": "冷やす",
+    "mark": "x",
+    "verdict": "固まらない"
+   },
+   "right": {
+    "label": "温める",
+    "mark": "x",
+    "verdict": "ゆるまない"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/wet_coffee_grounds_closeup.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり、40度から60度の隙間は",
+  "photo": true
+ },
+ {
+  "match": "そこに、毎朝、少しずつ積もってい",
+  "photo": true
+ },
+ {
+  "match": "管の底で起きているのは、それとよ",
+  "photo": true
+ },
+ {
+  "match": "管の内側に、油の膜がある。そこへ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "一つの塊、三つの材料",
+   "head": "油が接着面、でんぷんが糊、かすが中身",
+   "pins": [
+    [
+     1300,
+     235,
+     "油の膜"
+    ],
+    [
+     1300,
+     350,
+     "でんぷんの糊"
+    ],
+    [
+     1300,
+     465,
+     "かすが中身"
+    ]
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/three_layer_sludge_in_pipe.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "油が接着面になり、でんぷんが糊に",
+  "photo": true
+ },
+ {
+  "match": "対策も、もう決まっています。かす",
+  "photo": true
+ },
+ {
+  "match": "不思議なことに、コーヒーのかすに",
+  "photo": true
+ },
+ {
+  "match": "ただし、土に回すなら、必ず乾かし",
+  "photo": true
+ },
+ {
+  "match": "コーヒーのかすが役に立つのは、管",
+  "photo": true
+ },
+ {
+  "match": "さて、ここで、三つを並べてみまし",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "三つの性質",
+   "title": "性質は違うのに、答えは一つ",
+   "marks": [
+    [
+     "油",
+     "温度で戻せる"
+    ],
+    [
+     "でんぷん",
+     "戻せない"
+    ],
+    [
+     "かす",
+     "温度が関係ない"
+    ]
+   ],
+   "note": "三つとも、入り口を指しています",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/kitchen_sink_drain_opening.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "性質は三つとも違います。ところが",
+  "photo": true
+ },
+ {
+  "match": "昔の日本の台所には、排水口が詰ま",
+  "photo": true
+ },
+ {
+  "match": "流すものが、なかったからです。",
+  "photo": true
+ },
+ {
+  "match": "研ぎ汁には、細かなでんぷんと、米",
+  "photo": true
+ },
+ {
+  "match": "管を詰まらせる性質と、皿の油を落",
+  "photo": true
+ },
+ {
+  "match": "お茶の出しがらも、そうでした。乾",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "昔の行き先",
+   "title": "どれも、管の外へ",
+   "marks": [
+    [
+     "油",
+     "漉して缶へ"
+    ],
+    [
+     "研ぎ汁",
+     "庭の木の根元へ"
+    ],
+    [
+     "茶がら",
+     "たたきに撒いて土へ"
+    ]
+   ],
+   "note": "流しは、捨てる場所ではありませんでした",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/tea_leaves_dried_on_paper.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり、昔の台所では、油もでんぷ",
+  "photo": true
+ },
+ {
+  "match": "私たちは、知恵を失ったわけではあ",
+  "photo": true
+ },
+ {
+  "match": "管の中で起きていることは、その選",
+  "photo": true
+ },
+ {
+  "match": "流しの詰まりを解決すると言われて",
+  "photo": true
+ },
+ {
+  "match": "それらが悪いという話ではありませ",
+  "photo": true
+ },
+ {
+  "match": "繰り返し使うものは、繰り返し売れ",
+  "photo": true
+ },
+ {
+  "match": "一方、入れないという方法は、一度",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "なぜ広まらないのか",
+   "title": "売るものが、無い",
+   "left": {
+    "label": "月に一度使うもの",
+    "mark": "x",
+    "verdict": "毎月の収入になる"
+   },
+   "right": {
+    "label": "入れない",
+    "mark": "o",
+    "verdict": "一度覚えたら終わり"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/coin_and_newspaper.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり、誰も熱心に広めない理由は",
+  "photo": true
+ },
+ {
+  "match": "ただ、仕組みを知っておくと、棚の",
+  "photo": true
+ },
+ {
+  "match": "そのうえで、今夜からの順番をお伝",
+  "photo": true
+ },
+ {
+  "match": "三つ。洗い物のすぐあとに、50度",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "今夜からの順番",
+   "title": "三つだけ",
+   "steps": [
+    {
+     "label": "油を紙で拭く",
+     "sub": "洗い物の前に"
+    },
+    {
+     "label": "粉・麺・ご飯・かす",
+     "sub": "ゴミ受けへ"
+    },
+    {
+     "label": "50度を30秒",
+     "sub": "洗い物のすぐあと。熱湯は使わない",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/19_haisuiko-naze-tsumaru/ai_clean/newspaper_and_strainer_on_counter.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "正直に申し上げると、この方法は万",
+  "photo": true
+ },
+ {
+  "match": "60度という数字も目安です。管の",
+  "photo": true
+ },
+ {
+  "match": "液体は冷えると固まる。糊は冷える",
+  "photo": true
+ },
+ {
+  "match": "昔の人は、糊化という言葉も、老化",
+  "photo": true
+ },
+ {
+  "match": "言葉を知らないまま、正しく扱って",
+  "photo": true
+ },
+ {
+  "match": "もし、今夜の三つのうち、一つだけ",
+  "photo": true
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの",
+  "photo": true
+ }
+]

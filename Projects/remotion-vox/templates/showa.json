@@ -1,0 +1,41 @@
+{
+  "name": "showa",
+  "displayName": "昭和くらし図鑑",
+  "sourceHash": "6e09f0be2e50",
+  "theme": {
+    "palette": {
+      "bgTop": "#2A3A58",
+      "bgBottom": "#182236",
+      "accent": "#FFD700"
+    },
+    "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+    "canvasColor": "#2A3A58"
+  },
+  "captions": {
+    "style": "outline",
+    "fontSize": 44
+  },
+  "voice": {
+    "engine": "voicevox",
+    "speaker": "東北イタコ",
+    "style": "ノーマル",
+    "speed": 0.9,
+    "intonation": 1.15
+  },
+  "video": {
+    "transition": "dissolve",
+    "transitionDur": 0.4,
+    "bgmGain": -40.0,
+    "watermark": "くらし図鑑",
+    "finalCrf": 20
+  },
+  "entranceRotation": [
+    "rise",
+    "grow",
+    "flip",
+    "punch",
+    "wobble",
+    "peel",
+    "zoom-through"
+  ]
+}

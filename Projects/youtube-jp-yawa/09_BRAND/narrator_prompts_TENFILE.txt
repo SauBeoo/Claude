@@ -1,0 +1,25 @@
+dong 1 -> narrator_A_magenta.mp4  (nen magenta, cat nen -> nguoi noi o goc duoi-phai)  <- UU TIEN
+dong 2 -> narrator_B_room.mp4     (canh phong dem tu than, dat trong o bo goc, khong can cat nen)
+dong 3 -> narrator_C_behind.mp4   (du phong: nhin tu sau lung)
+
+== NGHIEM THU lo 1 (2026-09-29, zip "Thang 9 29 - 11_42") ==
+dong 1 A_magenta -> Woman_telling_story_from_book  : NHAN. Loi: mep tren van lo mieng+chop mui (guard NO FACE chi an mot phan) -> sua bang CAT y0=135. Nen ra #EF66B6 (khong phai FF00FF) van cat duoc.
+   CO Y NHAN: ngon tay luc nhac tay hoi nhoe + trang sach venh len 1 luc (~5s) - o co goc 400px khong doc ra.
+   San pham: narrator/narrator_A_cutout.webm (730x585, VP9 alpha, ping-pong 15,9s lap muot; noi dau-cuoi goc lech MAD 3,71 nen phai ping-pong). Tool: tools/cut_narrator.py
+dong 2 B_room    -> Woman_telling_story_with_book  : DU PHONG. Cung loi lo mieng -> neu dung thi cat y0>=100, x 300-1000 (sau dau ✦ o 0,906W).
+dong 3 C_behind  -> Woman_sitting_at_table          : DU PHONG. Dau quay nhe thay tai/ma mot chut, khong lo mat.
+Bai hoc prompt: "top edge cuts across her chin" -> model dat mep o MUI/MIENG. Lan sau xin "cut across the middle of her neck".
+
+== LO 2 (2026-09-29) - FULL NGUOI, giau mat (user: 'mat dau trong xau qua') -> narrator_prompts_FLOW_v2.txt ==
+dong 1 -> narrator2_A_back34.mp4     (3/4 sau lung, nen magenta)  <- UU TIEN, giau mat chac nhat
+dong 2 -> narrator2_B_bowed.mp4      (cui dau doc sach, nen magenta) - rui ro model van ve mat
+dong 3 -> narrator2_C_silhouette.mp4 (nguoc sang andon, khong cat nen, dat trong o bo goc)
+
+== NGHIEM THU lo 2 (2026-09-29, zip "Thang 9 29 - 12_00") ==
+dong 1 A_back34     -> Woman_telling_story_from_book (10s) : NHAN - DUNG CHINH THUC. Mat quay di, chi thay mep ma + nhan dien nghieng (dung nhu prompt xin).
+   San pham: narrator/narrator_B_full.webm (720x700, VP9 alpha, ping-pong 19,9s; noi dau-cuoi goc MAD 2,92). Lenh:
+   python ../tools/cut_narrator.py narrator_raw2/Woman_telling_story_from_book_20260929120536.mp4 narrator/narrator_B_full.webm --crop 420,20,1140,720 --key 200,86,244 --fade 0
+   Vien tim sau despill: 0 px. Dau ✦ o (1160,600) nam ngoai crop.
+dong 2 B_bowed      -> Storyteller_reading_open_book : LOAI. Mai che mat nhung lo mieng, mieng map may.
+dong 3 C_silhouette -> Person_telling_story_with_book: LOAI. Nguoc sang khong an - ve ro mat (mat nham, mieng mo).
+Bai hoc: giau mat chac nhat = NHIN TU SAU LUNG. "Toc che mat" va "nguoc sang" deu khong thang duoc thoi quen ve mat cua model.

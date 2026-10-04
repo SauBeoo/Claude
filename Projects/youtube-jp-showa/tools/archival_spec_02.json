@@ -1,0 +1,85 @@
+{
+ "_note": "Video 02 v2 — 8 canh phim that (Japan Today 1959 CC0). Da duyet mat first/mid/last frame.",
+ "cuts": [
+  {
+   "id": "clip_07",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 900.0,
+   "dur": 7.0,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 12,
+   "note": "machi_aruki — nguoi di bo, cau 'thoi gian di theo dong ho'"
+  },
+  {
+   "id": "clip_08",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 913.0,
+   "dur": 9.5,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 13,
+   "note": "tofu_asa_stall"
+  },
+  {
+   "id": "clip_13",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 1352.0,
+   "dur": 9.0,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 19,
+   "note": "yasai_haitatsu"
+  },
+  {
+   "id": "clip_17",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 1664.5,
+   "dur": 8.0,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 24,
+   "note": "taue_ushi"
+  },
+  {
+   "id": "clip_25",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 937.0,
+   "dur": 9.0,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 42,
+   "note": "peak_banner_st"
+  },
+  {
+   "id": "clip_29",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 1611.0,
+   "dur": 6.5,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 50,
+   "note": "dagashi_stall"
+  },
+  {
+   "id": "clip_34",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 961.0,
+   "dur": 8.5,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 57,
+   "note": "machiai_kutsumigaki"
+  },
+  {
+   "id": "clip_36",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 1317.0,
+   "dur": 8.0,
+   "ybias": 0.45,
+   "grade": 1.0,
+   "line": 59,
+   "note": "kutsu_soko_syuuri"
+  }
+ ]
+}

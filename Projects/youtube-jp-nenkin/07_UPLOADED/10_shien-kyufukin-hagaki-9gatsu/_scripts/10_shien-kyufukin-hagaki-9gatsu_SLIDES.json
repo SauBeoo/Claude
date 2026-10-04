@@ -1,0 +1,1429 @@
+[
+ {
+  "match": "来月、9月になると",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "来月、この封筒が届きます",
+   "img": "art_fuutou_midori.png",
+   "fly": "up",
+   "cap": "日本年金機構から届く、緑色の封筒",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "中に入っているのは、はがき",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "封筒の中身は、これだけです",
+   "value": "はがき1枚",
+   "tone": "amber",
+   "cap": "書いて出すだけの、簡単な用紙です",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "そのはがきを出した方は",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "出した方は、年金に上乗せ",
+   "value": "5620円",
+   "unit": "／月",
+   "tone": "green",
+   "cap": "令和8年度の、基準の金額です",
+   "left": "sensei_present",
+   "right": "kikite_surprised",
+   "bgimg": "bg_5620en.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "1年で、およそ6万7千円",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "はがき1枚で、1年にこの額が上乗せ",
+   "value": "6万7千円",
+   "tone": "green",
+   "left": "sensei_present",
+   "right": "kikite_surprised",
+   "bgimg": "fill_67man.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "ここで、ひとつ、お聞きします",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "封筒が届く方と、届かない方",
+   "panels": [
+    {
+     "icon": "postcard",
+     "cap": "封筒が\n届く方"
+    },
+    {
+     "icon": "warning",
+     "cap": "封筒が\n届かない方"
+    }
+   ],
+   "rows": [
+    "今日の主役は、右のほうです"
+   ],
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "届かない方の話です",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "今日、いちばんお伝えしたいこと",
+   "value": "届かない方",
+   "tone": "bad",
+   "cap": "条件に当てはまっているのに、来ない",
+   "left": "sensei_serious",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "そこを過ぎると、さかのぼって",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "見落としやすい、もうひとつの期限",
+   "value": "2万2千円",
+   "tone": "bad",
+   "cap": "過ぎると、戻ってこない分",
+   "note": "あとから取り返す方法はありません",
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "こんにちは、年金と老後の",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "今日も、原典を一緒に読みます",
+   "org": "年金と老後のお金研究室",
+   "doc": "制度の文言は、必ず\n日本年金機構のページで確かめます",
+   "note": "※出典は概要欄に記載しています",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "前回の最後に、9月に届く",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "9月に届く紙は、2通あります",
+   "pre": 1,
+   "steps": [
+    [
+     "calendar",
+     "今日の話：緑の封筒\n（期限が先に来ます）"
+    ],
+    [
+     "docs",
+     "次回の話：扶養親族等申告書\n（9月から11月）"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "来月、新潟市の渡辺さん",
+  "video": true,
+  "stage": {
+   "layout": "photo",
+   "title": "モニター・渡辺さん（新潟市）",
+   "img": "photo_watanabe.png",
+   "fly": "right",
+   "src": "real",
+   "cap": "66歳、おひとり暮らし。元・縫製工場のパート",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "渡辺さんの年金は、月7万2千円",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "渡辺さんの年金",
+   "value": "7万2千円",
+   "unit": "／月",
+   "cap": "1年にすると、86万4千円です",
+   "note": "※当研究室のモニター設定です",
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "bgimg": "bg_tsucho.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "去年まで、渡辺さんには",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "今年から、封筒が届く理由",
+   "ok": [
+    [
+     "wallet",
+     "去年の秋、工場のパートを辞めた"
+    ],
+    [
+     "chart_down",
+     "前年の収入が下がった"
+    ]
+   ],
+   "no": [
+    [
+     "calendar",
+     "去年は、対象ではなかった"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "bgimg": "fill_pato_yameta.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "「緑の封筒なんて",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "渡辺さん（66歳・新潟市）の言葉",
+   "value": "初めてです",
+   "tone": "amber",
+   "cap": "年金の紙は、毎年同じものしか来ませんでしたから",
+   "left": "sensei_explain",
+   "right": "kikite_talk"
+  }
+ },
+ {
+  "match": "この封筒の中身は",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "中身は、この1枚",
+   "img": "art_hagaki_naiyou.png",
+   "fly": "up",
+   "cap": "年金生活者支援給付金請求書（はがき型）",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "年金を受け取っている方のうち",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "この給付金は、どういうお金か",
+   "ok": [
+    [
+     "money_pouch",
+     "年金に上乗せして支払われる、国のお金"
+    ],
+    [
+     "clock",
+     "条件を満たすあいだは、ずっと続く"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "一時的な給付"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "では、この封筒は、誰に届く",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "封筒の宛先を決める、3文字",
+   "value": "新たに",
+   "tone": "amber",
+   "cap": "「新たに受け取ることができる方へ」",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "bgimg": "bg_arata_ni.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "こちらが、日本年金機構のページ",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：いつ、誰に送られるか",
+   "img": "art_genten_soufu.jpg",
+   "fly": "up",
+   "cap": "「毎年9月の第1営業日から順次送付しています」",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "すでに受け取っている方には",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "封筒が届く人・届かない人",
+   "ok": [
+    [
+     "postcard",
+     "今年から新たに対象になった方"
+    ]
+   ],
+   "no": [
+    [
+     "docs",
+     "すでに受け取っている方（手続きは最初の1回だけ）"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "bgimg": "fill_todoku_todokanai.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "暮らしのほうの変化で",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "去年と今年で、何が変わったのか",
+   "pre": 1,
+   "steps": [
+    [
+     "wallet",
+     "収入が下がった\n（パートを辞めた）"
+    ],
+    [
+     "couple",
+     "世帯の顔ぶれが変わった\n（お子さんが独立した）"
+    ]
+   ],
+   "note": "年金額は変わっていなくても、条件に入ることがあります",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "手続きは、本当に簡単です",
+  "video": true,
+  "stage": {
+   "layout": "flow",
+   "title": "手続きは、3つだけ",
+   "steps": [
+    [
+     "form",
+     "名前などを\n書く"
+    ],
+    [
+     "postcard",
+     "切手を\n貼る"
+    ],
+    [
+     "mailbox",
+     "ポストに\n入れる"
+    ]
+   ],
+   "left": "sensei_present",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "ここ、ひとつだけ、ご注意ください",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "ひとつだけ、ご注意",
+   "value": "切手",
+   "unit": "は自分で",
+   "tone": "amber",
+   "cap": "料金受取人払いでは、ありません",
+   "left": "sensei_caution",
+   "right": "kikite_surprised",
+   "bgimg": "bg_kitte.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "渡辺さんの家では、この封筒",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "見つけたのに、出せなかった理由",
+   "ok": [
+    [
+     "env",
+     "緑色だから、すぐ気づいた"
+    ]
+   ],
+   "no": [
+    [
+     "postcard",
+     "家に切手がなかった"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "bgimg": "fill_kitte_nashi.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "それで、玄関の棚に",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "玄関の棚に、置いたまま",
+   "img": "art_tana_hagaki.png",
+   "fly": "up",
+   "cap": "切手を買いに行くのが面倒で——よくあるお話です",
+   "left": "sensei_serious",
+   "right": "kikite_down"
+  }
+ },
+ {
+  "match": "その1枚が、年6万7千円です",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "その、はがき1枚の重さ",
+   "value": "6万7千円",
+   "tone": "green",
+   "cap": "棚に置いたままだと、1年でこの額です",
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "bgimg": "fill_67man.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "ここで、段が3つある",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "金額は、この段で決まります",
+   "value": "3つ",
+   "unit": "の段",
+   "tone": "amber",
+   "cap": "見るのは、前年の年金収入とその他の所得の合計",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "bgimg": "bg_3dan.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "見るのは、前年の年金収入と",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "1段目：合計が80万9千円まで",
+   "pre": 1,
+   "steps": [
+    [
+     "money_pouch",
+     "月5620円を基準に計算されます"
+    ]
+   ],
+   "note": "納めた期間に応じて算出されます",
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "bgimg": "fill_1dan_kijun.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "もうひとりのモニター",
+  "video": true,
+  "stage": {
+   "layout": "photo",
+   "title": "モニター・伊藤さん（福岡）",
+   "img": "ito_cafe.png",
+   "fly": "right",
+   "src": "real",
+   "cap": "国民年金だけで、月6万5千円。1年で78万円",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ただし、5620円ちょうど",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "5620円は、満額の方の金額です",
+   "ok": [
+    [
+     "calc",
+     "納めた期間が満額なら、5620円"
+    ],
+    [
+     "magnifier",
+     "伊藤さんは、おおよそ月5千円台"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "誰でも一律で5620円"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "合計が、80万9千円を超えて",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "2段目の名前",
+   "value": "補足的",
+   "tone": "amber",
+   "cap": "80万9千円を超えて、90万9千円までの段",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "bgimg": "bg_hosokuteki.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "渡辺さんの86万4千円は",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "2段目の計算（渡辺さんの場合）",
+   "pre": 1,
+   "steps": [
+    [
+     "calc",
+     "90万9千円から86万4千円を引くと\n4万5千円"
+    ],
+    [
+     "scale",
+     "4万5千円を10万で割ると\n0.45"
+    ],
+    [
+     "money_pouch",
+     "5620円に0.45をかけて\n月2529円"
+    ]
+   ],
+   "note": "1年にすると、およそ3万円",
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "合計が、90万9千円を超えた方",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "3段目：合計が90万9千円を超えると",
+   "value": "0円",
+   "tone": "bad",
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "bgimg": "fill_0en.png",
+   "bg_veil": 0.68
+  }
+ },
+ {
+  "match": "ここが、今日いちばん",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "境目の、すぐ下と、すぐ上",
+   "panels": [
+    {
+     "icon": "money_pouch",
+     "cap": "年86万4千円\n→ 年およそ3万円"
+    },
+    {
+     "icon": "warning",
+     "cap": "年96万円\n→ 0円"
+    }
+   ],
+   "rows": [
+    "年金が月8千円多いほうが、手取りでは近づいてしまう"
+   ],
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "その逆転を小さくするために",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "だから「補足的」という段がある",
+   "ok": [
+    [
+     "scale",
+     "所得の逆転を小さくするための仕組み"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "bgimg": "fill_hosokuteki.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "つまり、境目のすぐ上",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "いちばん取り逃しが多いのは、ここ",
+   "ok": [
+    [
+     "magnifier",
+     "2段目に入っていないか、必ず確かめる"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "「うちは少し多いから、たぶん対象外だろう」"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_think",
+   "bgimg": "fill_sakainome.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "保険料を免除してもらっていた期間がある方",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "免除の期間は、損になりません",
+   "ok": [
+    [
+     "hanko",
+     "免除の期間には、別の計算がつきます"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "免除期間は、0として扱われる"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_relieved",
+   "bgimg": "fill_menjo.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "中盤のお願い",
+   "pre": 1,
+   "steps": [
+    [
+     "chart_up",
+     "高評価"
+    ],
+    [
+     "couple",
+     "年金が気になるご家族・ご友人へシェア"
+    ],
+    [
+     "form",
+     "コメントが、次の研究テーマになります"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "さて。ここから、今日の本題です",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "封筒が届かないのに、対象の方",
+   "value": "4つ",
+   "unit": "の心当たり",
+   "tone": "amber",
+   "cap": "ここから、今日の本題です",
+   "left": "sensei_serious",
+   "right": "kikite_think",
+   "bgimg": "bg_4tsu.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "ところが、この4つとも",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "4つとも、共通していること",
+   "ok": [
+    [
+     "person",
+     "自分から動く必要がある"
+    ]
+   ],
+   "no": [
+    [
+     "clock",
+     "待っていれば、いつか届く"
+    ]
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "bgimg": "fill_jibun_kara.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "世帯の顔ぶれが変わって",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "心当たり 1つ目",
+   "cap": "世帯の顔ぶれが変わって、条件に入った方",
+   "left": "sensei_point",
+   "right": "kikite_listen",
+   "img": "art_shindai1_setai.png",
+   "fly": "up"
+  }
+ },
+ {
+  "match": "たとえば、働いているお子さんと",
+  "video": true,
+  "stage": {
+   "layout": "flow",
+   "title": "世帯が変わると、条件も変わる",
+   "steps": [
+    [
+     "couple",
+     "子と同居\n子に住民税あり"
+    ],
+    [
+     "house",
+     "子が独立\n家を出る"
+    ],
+    [
+     "money_pouch",
+     "世帯全員が\n非課税になる"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "もう一度、機構のページです",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：この場合は、自分で請求",
+   "img": "art_genten_setai.jpg",
+   "fly": "up",
+   "cap": "「世帯構成の変更や税額の更正などにより…ご自身で…手続きが必要」",
+   "left": "sensei_present",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "「ご自身で」と、はっきり",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "この場合、封筒は届きません",
+   "ok": [
+    [
+     "form",
+     "自分で認定請求の手続きをする"
+    ]
+   ],
+   "no": [
+    [
+     "postcard",
+     "機構から封筒が届く"
+    ]
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "bgimg": "fill_fuutou_konai.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "65歳になったばかりで",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "心当たり 2つ目",
+   "cap": "65歳になったばかりで、基礎年金を受け取り始めた方",
+   "left": "sensei_point",
+   "right": "kikite_listen",
+   "img": "art_shindai2_65sai.png",
+   "fly": "up"
+  }
+ },
+ {
+  "match": "年金を受け取る権利を得た日から",
+  "video": true,
+  "stage": {
+   "layout": "timeline",
+   "title": "この方だけ、別の期限があります",
+   "from": "受給権を得た日",
+   "to": "3か月",
+   "label": "3か月以内なら、さかのぼります",
+   "prog": 0.55,
+   "steps": [
+    [
+     "calendar",
+     "権利を\n得た日"
+    ],
+    [
+     "form",
+     "3か月以内に\n請求する"
+    ],
+    [
+     "money_pouch",
+     "その日まで\nさかのぼる"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "3か月を過ぎると",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "3か月を過ぎた場合",
+   "value": "翌月分",
+   "unit": "から",
+   "tone": "bad",
+   "cap": "さかのぼりは、なくなります",
+   "left": "sensei_caution",
+   "right": "kikite_worried",
+   "bgimg": "bg_yokugetsu.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "これがいちばん見落とされます",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "心当たり 3つ目",
+   "cap": "一度もらっていたのに、途中で止まった方",
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "img": "art_shindai3_tomatta.png",
+   "fly": "up"
+  }
+ },
+ {
+  "match": "さきほどの伊藤さんが",
+  "video": true,
+  "stage": {
+   "layout": "timeline",
+   "title": "伊藤さんの、3年間",
+   "from": "1年目",
+   "to": "3年目",
+   "label": "止まって、また条件に戻った",
+   "prog": 1.0,
+   "steps": [
+    [
+     "chart_up",
+     "売上が\nよかった年"
+    ],
+    [
+     "warning",
+     "翌年、条件から外れ\n給付金が止まる"
+    ],
+    [
+     "chart_down",
+     "その次の年\n条件に戻る"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "「一度もらっていたので",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "伊藤さんが気づかなかった期間",
+   "value": "2年ぶん",
+   "tone": "bad",
+   "cap": "「また自動で入ると思っていました」",
+   "left": "sensei_serious",
+   "right": "kikite_down",
+   "bgimg": "bg_2nen.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "自動では、戻らないんです",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "自動で復活するか",
+   "value": "しません",
+   "tone": "bad",
+   "cap": "条件に戻っても、自動では戻りません",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "機構のページには、こう書かれて",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "原典：毎年、手続きが必要ですか",
+   "org": "日本年金機構",
+   "doc": "年金生活者支援給付金を受け取るためには、\n毎年、手続きが必要ですか。",
+   "note": "「再び支給要件を満たした…場合は、あらためて請求の手続きが必要となります」",
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "一度でも止まった方は",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "一度止まった方が、やること",
+   "ok": [
+    [
+     "form",
+     "条件に戻ったら、もう一度、自分で請求する"
+    ]
+   ],
+   "no": [
+    [
+     "clock",
+     "待っていれば、自動で復活する"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_nod",
+   "bgimg": "fill_saiseikyu.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "心当たりはないけれど",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "心当たり 4つ目",
+   "cap": "心当たりはないが、条件には当てはまる気がする方",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "img": "art_shindai4_todokanai.png",
+   "fly": "up"
+  }
+ },
+ {
+  "match": "機構自身が、こう書いています",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "原典：届かない場合は、どうするか",
+   "org": "日本年金機構",
+   "doc": "請求書がお手元に届かない場合は、\n給付金専用ダイヤル、または\nお近くの年金事務所までご相談ください",
+   "note": "※届かないことは、あらかじめ想定されています",
+   "left": "sensei_present",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "だから、相談先まで",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "待たずに、聞く",
+   "ok": [
+    [
+     "phone",
+     "給付金専用ダイヤル"
+    ],
+    [
+     "cityhall",
+     "お近くの年金事務所"
+    ]
+   ],
+   "no": [
+    [
+     "clock",
+     "封筒が来るまで待つ"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_nod",
+   "bgimg": "fill_soudan.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "最後に、期限の話をします",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "期限は、ふたつあります",
+   "value": "2つ",
+   "unit": "の期限",
+   "tone": "amber",
+   "left": "sensei_serious",
+   "right": "kikite_think",
+   "bgimg": "fill_2kigen.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "ひとつ目は、はがきに印刷",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "期限は、ふたつあります",
+   "panels": [
+    {
+     "icon": "postcard",
+     "cap": "ひとつ目\nはがきに印刷された期限"
+    },
+    {
+     "icon": "calendar",
+     "cap": "ふたつ目\n年をまたいだ1月上旬"
+    }
+   ],
+   "rows": [
+    "ふつうは、ひとつ目しか知られていません"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "もう一度、機構のページをご覧",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：期限を過ぎたあとの扱い",
+   "img": "art_genten_kigen.jpg",
+   "fly": "up",
+   "cap": "「期限までにご提出いただけなかった場合も、手続きは可能です」",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "まず、ここで安心してください",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "印刷された期限を過ぎても",
+   "value": "可能です",
+   "tone": "green",
+   "cap": "終わりでは、ありません",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved",
+   "bgimg": "bg_kanou.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "いまページに出ている日付は",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "日付ではなく、仕組みを見てください",
+   "ok": [
+    [
+     "calendar",
+     "年をまたいだ1月上旬に、もうひとつの締切がある"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "ページの日付が、そのまま今年度の日付"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "そこまでに届けば",
+  "video": true,
+  "stage": {
+   "layout": "timeline",
+   "title": "締切の前と、あとで、こう変わります",
+   "from": "10月分",
+   "to": "1月上旬の締切",
+   "label": "間に合えば、10月分までさかのぼる",
+   "prog": 0.85,
+   "steps": [
+    [
+     "form",
+     "締切までに\n提出する"
+    ],
+    [
+     "money_pouch",
+     "10月分まで\nさかのぼる"
+    ],
+    [
+     "warning",
+     "過ぎると\n翌月分から"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "たとえば、1月の半ばに出した",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "1月の半ばに出した場合",
+   "rows": [
+    [
+     "締切に間に合った",
+     4,
+     "ok",
+     "10月分から"
+    ],
+    [
+     "間に合わなかった",
+     0,
+     "bad",
+     "2月分から"
+    ]
+   ],
+   "max": 4,
+   "label_w": 380,
+   "note": "差は、10月・11月・12月・1月の4か月分",
+   "left": "sensei_serious",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "1日の差で、2万2千円です",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "1日の差で、この4か月分は取り返せません",
+   "value": "2万2千円",
+   "tone": "bad",
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "bgimg": "fill_22man.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "今年度の日付は、お手元のはがき",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "今年度の日付は、どこを見るか",
+   "ok": [
+    [
+     "postcard",
+     "お手元のはがきに印刷されています"
+    ]
+   ],
+   "no": [
+    [
+     "magnifier",
+     "ページの日付をそのまま信じる"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_nod",
+   "bgimg": "fill_hagaki_hizuke.png",
+   "bg_veil": 0.5
+  }
+ },
+ {
+  "match": "なお、令和7年1月以降に",
+  "video": true,
+  "stage": {
+   "layout": "flow",
+   "title": "郵送のほかに、電子申請でも出せます",
+   "steps": [
+    [
+     "form",
+     "はがきが届いた方は\n電子申請もできます"
+    ],
+    [
+     "postcard",
+     "電子申請なら\n郵送は不要"
+    ],
+    [
+     "wallet",
+     "切手を買いに\n行かなくて済む"
+    ]
+   ],
+   "left": "sensei_present",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "「先日、切手を買いに",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "渡辺さんが歩いた時間",
+   "value": "20分",
+   "unit": "往復",
+   "tone": "amber",
+   "cap": "雨の日、傘をさして、はがき用の切手を1枚",
+   "left": "sensei_present",
+   "right": "kikite_nod",
+   "bgimg": "bg_20fun.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "その日のうちに、ポストに",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "その20分の、値段",
+   "value": "60万円",
+   "tone": "green",
+   "cap": "年に3万円が、20年続いたとして",
+   "left": "sensei_conclude",
+   "right": "kikite_surprised",
+   "bgimg": "bg_60man.png",
+   "bg_veil": 0.45
+  }
+ },
+ {
+  "match": "それでは、今日の研究ノートです",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "今日の研究ノート　一・二",
+   "pre": 1,
+   "steps": [
+    [
+     "calendar",
+     "一、9月の第1営業日から、順に届きます"
+    ],
+    [
+     "env",
+     "目印は緑色の封筒。中は、はがき1枚"
+    ],
+    [
+     "mailbox",
+     "二、書いて、切手を貼って、ポストへ\n電子申請でも出せます"
+    ]
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "三、金額は、月5620円が基準",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "今日の研究ノート　三・四",
+   "pre": 1,
+   "steps": [
+    [
+     "money_pouch",
+     "三、80万9千円まで＝月5620円が基準"
+    ],
+    [
+     "scale",
+     "90万9千円まで＝減った「補足的」／超えると0円"
+    ],
+    [
+     "calendar",
+     "四、期限はふたつ。あとの締切を過ぎると\n10月分にさかのぼれません"
+    ]
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "五、条件を満たし続けているあいだは",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "五、毎年の手続きは要るのか",
+   "ok": [
+    [
+     "clock",
+     "条件を満たすあいだは、翌年以降は原則不要"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "一度止まった方は、自動では戻らない（再請求が必要）"
+    ]
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "世帯が変わった、65歳になった",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "六、封筒が届かない方へ",
+   "ok": [
+    [
+     "couple",
+     "世帯の顔ぶれが変わった"
+    ],
+    [
+     "person",
+     "65歳になったばかり"
+    ],
+    [
+     "warning",
+     "一度、給付金が止まった"
+    ]
+   ],
+   "no": [
+    [
+     "clock",
+     "待っていれば届く"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "このノートを、スクリーンショット",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "このノートを、ご家族へ",
+   "ok": [
+    [
+     "phone",
+     "スクリーンショットして送ってあげてください"
+    ],
+    [
+     "person",
+     "とくに、年金が月7万円台で、おひとり暮らしの方に"
+    ]
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "なお、今日お伝えした内容は",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "この動画の情報について",
+   "org": "日本年金機構",
+   "doc": "本動画は令和8年8月時点で\n公表されている情報にもとづきます",
+   "note": "※金額・基準額は年度ごとに改定されます。提出期限はお手元のはがきが正です",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "それから、電話やメールで",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "この時期に必ず出る、便乗の電話",
+   "ok": [
+    [
+     "cityhall",
+     "いったん切って、書類に書かれた番号にかけ直す"
+    ]
+   ],
+   "no": [
+    [
+     "phone",
+     "電話やメールで口座番号を聞かれる"
+    ],
+    [
+     "wallet",
+     "手数料を求められる"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "さて、次回です",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "次回の研究",
+   "pre": 1,
+   "steps": [
+    [
+     "docs",
+     "9月から11月にかけて\n「扶養親族等申告書」が届きます"
+    ],
+    [
+     "calc",
+     "出すかどうかで、翌年\n年金から引かれる所得税が変わります"
+    ],
+    [
+     "warning",
+     "そして今年から\nこの紙が届かなくなる方がいます"
+    ]
+   ],
+   "left": "sensei_present",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "それでは、また次回の研究で",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "またお会いしましょう",
+   "org": "年金と老後のお金研究室",
+   "doc": "それでは、また次回の\n研究でお会いしましょう",
+   "note": "※ご感想・調べてほしいテーマは、コメントでお寄せください",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ }
+]

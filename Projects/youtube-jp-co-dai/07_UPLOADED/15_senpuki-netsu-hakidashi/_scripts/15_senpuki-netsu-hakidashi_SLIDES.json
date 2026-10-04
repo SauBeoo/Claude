@@ -1,0 +1,915 @@
+[
+ {
+  "match": "令和6年の夏、東京の23区だけで、暑さで亡くなった方が306人いました。",
+  "photo": true,
+  "q": "vintage electric fan wooden floor room",
+  "min_score": 0.85
+ },
+ {
+  "match": "そして、その大半が、エアコンを使っていませんでした。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "令和6年夏・東京23区",
+   "big": "306",
+   "unit": "人",
+   "sub": "暑さで亡くなった方",
+   "bars": [
+    [
+     "屋内",
+     291
+    ],
+    [
+     "屋外",
+     15
+    ]
+   ],
+   "note": "亡くなった方の95％は、家の中だった",
+   "source": "東京都監察医務院"
+  }
+ },
+ {
+  "match": "風が当たっているから大丈夫、という感覚。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ1台の扇風機",
+   "title": "向きだけで、仕事が変わる",
+   "left": {
+    "label": "体に向ける",
+    "mark": "x",
+    "verdict": "部屋の熱はそのまま"
+   },
+   "right": {
+    "label": "窓の外へ向ける",
+    "mark": "o",
+    "verdict": "熱が出ていく"
+   },
+   "note": "風が当たっているから大丈夫、が、いちばん危ない"
+  }
+ },
+ {
+  "match": "置き方を五つ、お話しします。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "今日の話",
+   "title": "0円でできる、五つの置き方",
+   "sub": "五つ目は、扇風機を止める話です"
+  }
+ },
+ {
+  "match": "そして扇風機を、そのうちの一つに、外へ向けて置いてください。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "room",
+   "preset": "exchange",
+   "kicker": "一つ目・窓は二つ",
+   "head": "冷やすのではなく、入れ替える"
+  }
+ },
+ {
+  "match": "せっかくの涼しい風を、外へ捨てるのか、と。",
+  "photo": true,
+  "q": "open window white curtain breeze japanese room"
+ },
+ {
+  "match": "羽根が回るだけです。",
+  "photo": true,
+  "q": "fan blade metal close up",
+  "min_score": 0.85
+ },
+ {
+  "match": "濡れた手を、振ってみてください。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "やってみてください",
+   "title": "濡れた手を、振ってみてください",
+   "sub": "乾くとき、手が冷たくなる。それが涼しさの正体です"
+  }
+ },
+ {
+  "match": "あなたの汗を、少し早く乾かしているだけなのです。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "扇風機がしていること",
+   "title": "乾かしているのは、部屋ではなく、あなた",
+   "sub": "汗が乾くあいだ、部屋の温度だけが上がっていく"
+  }
+ },
+ {
+  "match": "そして、これが怖いところなのですが、汗が乾いているあいだ、体は涼しいと感じます。",
+  "photo": true,
+  "q": "asian elderly man sitting fan hot room"
+ },
+ {
+  "match": "ここからが、大事なところです。",
+  "photo": true,
+  "q": "afternoon sunlight hot empty japanese room"
+ },
+ {
+  "match": "部屋の中に、熱がたまり続けているのです。",
+  "photo": true,
+  "q": "summer sun roof japanese house heat"
+ },
+ {
+  "match": "冷やすのではなく、入れ替える。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "扇風機の本当の仕事",
+   "title": "冷やすのではなく、入れ替える",
+   "sub": "羽根には、空気を冷やす部品が一つも入っていない"
+  }
+ },
+ {
+  "match": "一か所しか開いていない部屋は、口をふさいだ袋と同じです。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "窓が一つだけの部屋",
+   "title": "口をふさいだ袋と、同じです",
+   "sub": "扇風機がいくら押しても、押し返されて終わる"
+  }
+ },
+ {
+  "match": "ここが入口になります。",
+  "photo": true,
+  "q": "narrow gap open window ventilation"
+ },
+ {
+  "match": "ここで、一つだけ、いま試していただけますか。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "10秒でできる部屋の診断",
+   "title": "ティッシュを一枚、隙間に垂らす",
+   "sub": "吸い込まれるか、垂れたままか"
+  }
+ },
+ {
+  "match": "あなたの部屋が、空気の入れ替わる部屋なのか、熱がたまり続ける部屋なのか。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "ティッシュを垂らして",
+   "title": "10秒で、部屋を診断する",
+   "left": {
+    "label": "垂れたまま",
+    "mark": "x",
+    "verdict": "その部屋は、いま閉じている"
+   },
+   "right": {
+    "label": "吸い込まれる",
+    "mark": "o",
+    "verdict": "風の道は、もうできている"
+   },
+   "note": "襖が閉まっているか、出口が足りていないか"
+  }
+ },
+ {
+  "match": "だらんと垂れたままなら、その部屋は、いま閉じています。",
+  "photo": true,
+  "q": "still air closed room dim japanese"
+ },
+ {
+  "match": "白状しますと、私は長いあいだ、枕元に扇風機を向けて寝ていました。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "寝るときの向き",
+   "title": "枕元に向けて寝ると、乾くのは喉",
+   "sub": "朝、喉がからからで目が覚めるのは、暑さのせいではない"
+  }
+ },
+ {
+  "match": "向きを変えて、わかりました。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "いちばん大きい一手",
+   "title": "向きを、体からそらす",
+   "sub": "扇風機を、窓の外へ向ける"
+  }
+ },
+ {
+  "match": "夏の夕方になると、母が必ず、家の両端の窓を開けに立ちました。",
+  "photo": true,
+  "q": "japanese old house engawa veranda dusk"
+ },
+ {
+  "match": "古代の秘訣へようこそ。",
+  "photo": true,
+  "q": "old japanese house interior tatami shoji"
+ },
+ {
+  "match": "全国の数字も、お伝えしておきます。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "2023年5〜9月・全国",
+   "big": "91,467",
+   "unit": "人",
+   "sub": "熱中症で救急車で運ばれた方",
+   "bars": [
+    [
+     "65歳以上",
+     50173
+    ],
+    [
+     "それ以外",
+     41294
+    ]
+   ],
+   "note": "半分以上が、65歳以上の方だった",
+   "source": "総務省消防庁 令和5年版消防白書"
+  }
+ },
+ {
+  "match": "そのうち65歳以上の方が5万173人、全体の半分を超えています。",
+  "photo": true,
+  "q": "japanese elderly couple at home summer"
+ },
+ {
+  "match": "住まいの中でした。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "倒れた場所で、いちばん多いのは",
+   "big": "36,541",
+   "unit": "人",
+   "sub": "「住まいの中」で倒れた方",
+   "note": "炎天下の屋外より、閉じたままの部屋",
+   "source": "総務省消防庁 令和5年版消防白書"
+  }
+ },
+ {
+  "match": "あなたのお宅で、いちばん暑い部屋はどこですか。",
+  "photo": true,
+  "q": "japanese house second floor room sunlight hot"
+ },
+ {
+  "match": "もう一度、体を使っていただきます。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "もう一度、体を使って",
+   "title": "立ち上がって、手を頭より高く",
+   "sub": "上のほうが、はっきり熱いはずです"
+  }
+ },
+ {
+  "match": "冷えた空気は縮んで重くなり、下にたまる。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "room",
+   "preset": "mix",
+   "kicker": "二つ目・部屋に夏が二つ",
+   "head": "天井にたまった熱を、かき混ぜて落とす"
+  }
+ },
+ {
+  "match": "座って過ごしている方は、この上の層に気づきません。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ部屋の中で",
+   "title": "座っていると、気づけない",
+   "left": {
+    "label": "足元",
+    "mark": "o",
+    "verdict": "案外ひやりとしている"
+   },
+   "right": {
+    "label": "頭より上",
+    "mark": "x",
+    "verdict": "別の夏が浮かんでいる"
+   },
+   "note": "部屋の上半分が、どんどん熱くなっていく"
+  }
+ },
+ {
+  "match": "扇風機を床に置いて、首を、天井へ向ける。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "二つ目の置き方",
+   "title": "首を、天井へ向ける",
+   "sub": "部屋の平均は変わらない。座っている高さの温度が下がる"
+  }
+ },
+ {
+  "match": "これは、日本の古い家が、すでに使っていた仕掛けでもあります。",
+  "photo": true,
+  "q": "japanese old farmhouse high wooden ceiling"
+ },
+ {
+  "match": "囲炉裏や竈のある家では、煙と一緒に熱を屋根へ抜くために、屋根の上にもう一つ小さな屋根、越屋根を載せていました。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "昔の家の仕掛け",
+   "title": "越屋根 ― 熱を屋根から抜く、もう一つの屋根",
+   "sub": "天井が高いのは、見栄えのためだけではない"
+  }
+ },
+ {
+  "match": "私たちは、冷たい空気を作るために、お金を払っています。",
+  "photo": true,
+  "q": "air conditioner outdoor unit japan house"
+ },
+ {
+  "match": "ここで一つ、割り込ませてください。",
+  "photo": true,
+  "q": "electric fan back grille dusty old"
+ },
+ {
+  "match": "扇風機の後ろ、丸いカバーの網目を、指でなぞってみてください。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "三度目・手を使って",
+   "title": "網目の埃が、風を半分にしている",
+   "sub": "吸えないぶんだけ、送る風も細くなる"
+  }
+ },
+ {
+  "match": "網目が埃で詰まると、機械は空気を吸えません。",
+  "photo": true,
+  "q": "dust on fan guard macro grey"
+ },
+ {
+  "match": "あの感じの正体は、たいていこれです。",
+  "photo": true,
+  "q": "retro japanese electric fan old"
+ },
+ {
+  "match": "落とし方には、順番があります。",
+  "photo": true,
+  "q": "dry brush dusting cleaning"
+ },
+ {
+  "match": "昔の家で、すす払いを年の暮れの仕事にしていたのは、この順番を知っていたからです。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "年の暮れの仕事",
+   "title": "すす払い ― 乾いているうちに落とす",
+   "sub": "濡れた布で拭くと、埃が糊のようになって目に詰まる"
+  }
+ },
+ {
+  "match": "羽根とカバーは、外し方が機種で違います。",
+  "photo": true,
+  "q": "disassembled electric fan parts on table"
+ },
+ {
+  "match": "凍らせたペットボトルを、扇風機の前に置いてください。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "三つ目・やること",
+   "title": "2リットルを一本、風の当たる位置に",
+   "sub": "凍らせたペットボトルを、扇風機の前に置くだけ"
+  }
+ },
+ {
+  "match": "空気の中の水分が、冷たい面に触れて水に戻る。",
+  "photo": true,
+  "q": "condensation drops cold glass bottle"
+ },
+ {
+  "match": "さらに、ボトルのそばで冷えた空気は、重くなります。",
+  "photo": true,
+  "q": "cold mist over water surface"
+ },
+ {
+  "match": "じつは、凍らせたボトルを前に置いて、手のひらを風にさらしてみました。",
+  "photo": true,
+  "q": "hand in front of electric fan"
+ },
+ {
+  "match": "乾いた熱風から、水辺のそばの風に変わる。",
+  "photo": true,
+  "q": "river bank summer breeze japan"
+ },
+ {
+  "match": "まだ電気そのものが珍しかった時代です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "記録によれば",
+   "big": "1894",
+   "sub": "明治27年・国産第一号の扇風機",
+   "note": "仕組みは、いまと何ひとつ変わっていない"
+  }
+ },
+ {
+  "match": "氷冷房と呼ばれた仕掛けです。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "明治の冷房",
+   "title": "劇場には、氷の柱が据えられていた",
+   "sub": "その前で空気を送る。それが氷冷房"
+  }
+ },
+ {
+  "match": "氷屋のリヤカーが通ったあとの、濡れた土の匂いを、覚えています。",
+  "photo": true,
+  "q": "リヤカー",
+  "src": "commons",
+  "min_score": 0.9
+ },
+ {
+  "match": "あの時代の涼しさは、機械が作ったものではありませんでした。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "あの時代の涼しさ",
+   "title": "機械が作ったものではなかった",
+   "sub": "人の手が、配っていたものです"
+  }
+ },
+ {
+  "match": "長い時間を狙うなら、二本を交代で凍らせて、片方を使っているあいだに、もう片方を凍らせておく。",
+  "photo": true,
+  "q": "water bottles in freezer"
+ },
+ {
+  "match": "保冷剤では、少し勝手が違います。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "保冷剤では足りない",
+   "title": "狙っているのは、冷たさより「蒸発する水」",
+   "sub": "量が小さいと、風に乗る水分が足りない"
+  }
+ },
+ {
+  "match": "そして、受け皿にたまった水は、捨てないでください。",
+  "photo": true,
+  "q": "water droplets on metal tray"
+ },
+ {
+  "match": "母が窓を開けたあと、必ず柄杓で三和土を濡らしていたのは、そういうことだったのだと思います。",
+  "photo": true,
+  "q": "打ち水",
+  "src": "commons",
+  "min_score": 0.9
+ },
+ {
+  "match": "下に、お盆か古いタオルを敷いてください。",
+  "photo": true,
+  "q": "folded old cotton towel"
+ },
+ {
+  "match": "ここまでご覧いただき、ありがとうございます。",
+  "photo": true,
+  "q": "quiet japanese tatami room evening light"
+ },
+ {
+  "match": "また、ご感想や、次に掘り起こしてほしいテーマがあれば、コメントでお寄せください。",
+  "photo": true,
+  "q": "notebook and pen on wooden desk"
+ },
+ {
+  "match": "四つ目は、涼しさが止まる瞬間の話です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "四つ目",
+   "title": "涼しさが止まる瞬間",
+   "sub": "乾く汗がなくなれば、そこで涼しさは止まる"
+  }
+ },
+ {
+  "match": "ところが、涼しさの正体が汗の蒸発である以上、乾く汗がなくなれば、そこで涼しさは止まります。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "風の強さ",
+   "title": "強いほど涼しい、ではない",
+   "left": {
+    "label": "強で浴び続ける",
+    "mark": "x",
+    "verdict": "乾く汗がなくなれば止まる"
+   },
+   "right": {
+    "label": "弱のそよ風",
+    "mark": "o",
+    "verdict": "汗の蒸発を助けるだけで足りる"
+   },
+   "note": "風速が1秒に1メートル増えるごとに、体感は1度ほど下がる目安"
+  }
+ },
+ {
+  "match": "目安として、風の速さが1秒に1メートル増えるごとに、体の感じる温度は1度ほど下がると言われています。",
+  "photo": true,
+  "q": "curtain moving in breeze window"
+ },
+ {
+  "match": "そして、当て続けることには、もっと怖い落とし穴があります。",
+  "photo": true,
+  "q": "glass of water half empty table"
+ },
+ {
+  "match": "喉の渇きは、体が水を失いはじめてから、遅れてやってきます。",
+  "photo": true,
+  "q": "asian elderly man drinking water glass"
+ },
+ {
+  "match": "風が当たっているから大丈夫。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "いちばん危ない思い込み",
+   "title": "風が当たっているから大丈夫",
+   "left": {
+    "label": "風は当たっている",
+    "mark": "x",
+    "verdict": "汗も、水も、失っている"
+   },
+   "right": {
+    "label": "部屋の空気を入れ替える",
+    "mark": "o",
+    "verdict": "室温そのものが下がる"
+   },
+   "note": "渇きの合図は、遅れてやってくる"
+  }
+ },
+ {
+  "match": "電気代を惜しんで倒れるのは、いちばん高い買いものです。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "もう一度・冒頭の数字",
+   "big": "291",
+   "unit": "人",
+   "sub": "屋外ではなく、家の中で亡くなった方",
+   "note": "電気代を惜しんで倒れるのは、いちばん高い買いもの",
+   "source": "東京都監察医務院"
+  }
+ },
+ {
+  "match": "ゆっくり、休みながら、首のうしろと手首に、時々、風を送る。",
+  "photo": true,
+  "q": "うちわ",
+  "src": "commons",
+  "min_score": 0.85
+ },
+ {
+  "match": "眠っていると、暑さにも渇きにも気づけません。",
+  "photo": true,
+  "q": "japanese bedroom futon night dark"
+ },
+ {
+  "match": "風は、壁か天井に当ててください。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "寝るときの風",
+   "title": "壁か天井に当てて、跳ね返らせる",
+   "sub": "体は冷えすぎず、空気だけが動く"
+  }
+ },
+ {
+  "match": "眠りに入って二時間ほどで、体の温度は自然に下がります。",
+  "photo": true,
+  "q": "alarm clock on bedside table night"
+ },
+ {
+  "match": "数百円です。",
+  "photo": true,
+  "q": "electrical outlet plug timer"
+ },
+ {
+  "match": "私の知り合いに、七十を過ぎた大工さんがいます。",
+  "photo": true,
+  "q": "japanese carpenter working with wood"
+ },
+ {
+  "match": "そう言って、必ず窓のほうへ向けて回します。",
+  "photo": true,
+  "q": "electric fan window room summer"
+ },
+ {
+  "match": "一年のあいだ、一度も使わないからです。",
+  "photo": true,
+  "q": "air conditioner remote control in hand"
+ },
+ {
+  "match": "二階建てのお宅なら、階段が、そのまま煙突の役目をします。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "room",
+   "preset": "stack",
+   "kicker": "五つ目・扇風機を止める",
+   "head": "羽根も、電気も、いらない"
+  }
+ },
+ {
+  "match": "下から涼しい空気が入り、上から熱が抜けていく。",
+  "photo": true,
+  "q": "japanese house wooden staircase interior"
+ },
+ {
+  "match": "あれは風流な作りではなく、装置でした。",
+  "photo": true,
+  "q": "京町家",
+  "src": "commons",
+  "min_score": 0.85
+ },
+ {
+  "match": "それだけで、空気は勝手に出ていきます。",
+  "photo": true,
+  "q": "high window ventilation opening wall"
+ },
+ {
+  "match": "見分け方は、これも簡単です。",
+  "photo": true,
+  "q": "hand feeling air at open window night"
+ },
+ {
+  "match": "それまでは、窓を閉め、簾や雨戸で日そのものを止めておく。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "順番を間違えない",
+   "title": "日そのものを、簾や雨戸で止めておく",
+   "sub": "外がまだ熱い時間に窓を開けると、熱を招き入れる"
+  }
+ },
+ {
+  "match": "網戸は、必ず閉めてください。",
+  "photo": true,
+  "q": "window insect screen mesh close up"
+ },
+ {
+  "match": "さて、ここからが今日の核心です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "今日の核心",
+   "title": "なぜ、誰も教えてくれなかったのか",
+   "sub": "窓を二つ開ける、という助言からは、誰も利益を得られない"
+  }
+ },
+ {
+  "match": "売り場の見本も、箱に描かれた絵も、広告の写真も。",
+  "photo": true,
+  "q": "electric fan shop display japan"
+ },
+ {
+  "match": "あの絵を、私たちは何十年も見せられてきました。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "何十年も見せられてきた絵",
+   "title": "扇風機は、いつも人を向いている",
+   "left": {
+    "label": "広告・箱の絵",
+    "mark": "x",
+    "verdict": "必ず人のほうを向く"
+   },
+   "right": {
+    "label": "本当の使い方",
+    "mark": "o",
+    "verdict": "窓の外を向く"
+   },
+   "note": "誰に教わったわけでもなく、覚えてしまった"
+  }
+ },
+ {
+  "match": "そして、体に向けているかぎり、部屋の熱は減りません。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "体に向けているかぎり",
+   "title": "部屋の熱は、減りません",
+   "sub": "減らないから、次の夏、もっと強い機械が欲しくなる"
+  }
+ },
+ {
+  "match": "羽根とモーター。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "羽根とモーター",
+   "big": "130",
+   "unit": "年",
+   "sub": "中身は、ほとんど変わっていない",
+   "note": "売るものがない機械の話は、誰もしない"
+  }
+ },
+ {
+  "match": "風を遠くへまっすぐ飛ばす作りには、たしかに理はあります。",
+  "photo": true,
+  "q": "air circulator fan modern white"
+ },
+ {
+  "match": "数字も、置いておきます。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "1時間あたり",
+   "title": "同じ涼しさ、ちがう値段",
+   "left": {
+    "label": "扇風機を回す",
+    "mark": "o",
+    "verdict": "約1円"
+   },
+   "right": {
+    "label": "窓を二つ開ける",
+    "mark": "o",
+    "verdict": "0円"
+   },
+   "note": "30ワットから50ワット・電気料金は目安"
+  }
+ },
+ {
+  "match": "窓を二つ開けるほうは、0円。",
+  "photo": true,
+  "q": "two open windows japanese house cross breeze"
+ },
+ {
+  "match": "当たり前のことです。",
+  "photo": true,
+  "q": "home appliance store shelves japan"
+ },
+ {
+  "match": "今日の五つは、エアコンを我慢するための話ではありません。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "いちばん大事なこと",
+   "title": "我慢するための話ではありません",
+   "sub": "エアコンに、ちゃんと仕事をさせるための知恵です"
+  }
+ },
+ {
+  "match": "湿気の高い日も同じです。",
+  "photo": true,
+  "q": "humid rainy day window japan"
+ },
+ {
+  "match": "暑さへの警戒が出ている日、夜になっても気温が下がらない日は、迷わずエアコンをお使いください。",
+  "photo": true,
+  "q": "air conditioner indoor unit wall japanese room"
+ },
+ {
+  "match": "温度が上がりきってしまった部屋は、エアコンをつけても、なかなか下がりません。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "上がりきった部屋は",
+   "title": "エアコンをつけても、なかなか下がらない",
+   "sub": "だから、熱をためない"
+  }
+ },
+ {
+  "match": "つまりこれは、エアコンの代わりではなく、エアコンに、ちゃんと仕事をさせるための知恵です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じエアコン",
+   "title": "熱をためない部屋なら、短い時間で効く",
+   "left": {
+    "label": "熱がたまりきった部屋",
+    "mark": "x",
+    "verdict": "つけても下がらない"
+   },
+   "right": {
+    "label": "空気を入れ替えた部屋",
+    "mark": "o",
+    "verdict": "短い時間でよく効く"
+   },
+   "note": "これは、エアコンの代わりではありません"
+  }
+ },
+ {
+  "match": "条件で、効きかたは変わります。",
+  "photo": true,
+  "q": "japanese residential house exterior summer"
+ },
+ {
+  "match": "今日いちばんお伝えしたかったのは、方法ではありません。",
+  "photo": true,
+  "q": "quiet old japanese room wooden floor"
+ },
+ {
+  "match": "冷たい空気が作れないなら、熱の居場所をずらす。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "暮らしの知恵の芯",
+   "title": "涼しさは、買うものか、作るものか",
+   "left": {
+    "label": "涼しさを買う",
+    "mark": "x",
+    "verdict": "作れないものを買おうとする"
+   },
+   "right": {
+    "label": "涼しさを作る",
+    "mark": "o",
+    "verdict": "動かせるものを動かす"
+   },
+   "note": "冷たい空気が作れないなら、熱の居場所をずらす"
+  }
+ },
+ {
+  "match": "そして、もう一つ。",
+  "photo": true,
+  "q": "dusk light through japanese window"
+ },
+ {
+  "match": "家に熱をためないための、装置の操作だったのです。",
+  "photo": true,
+  "q": "hand opening old wooden window"
+ },
+ {
+  "match": "そして、もし離れて暮らすご両親がいらしたら、電話のついでに、一言だけ伝えてください。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "今夜、できること",
+   "title": "ご両親に、一言だけ伝えてください",
+   "sub": "扇風機は、体に向けるより、窓に向けたほうがいい"
+  }
+ },
+ {
+  "match": "それだけで、あの291人の中に入らずに済む夜が、一つ増えるかもしれません。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "今夜、あなたの家でも",
+   "big": "291",
+   "unit": "人",
+   "sub": "この中に入らずに済む夜を、一つ増やす",
+   "note": "今夜、窓を二つ。それだけで、一つ増える",
+   "source": "東京都監察医務院"
+  }
+ },
+ {
+  "match": "次の知恵は、皆さまの声の中から掘り起こします。",
+  "photo": true,
+  "q": "evening calm japanese tatami room lamp"
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの中に眠る宝を静かに掘り起こしていきます。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "古代の秘訣",
+   "title": "暮らしの中に眠る宝を、掘り起こす",
+   "sub": "それでは、次の知恵でまたお会いしましょう"
+  }
+ }
+]

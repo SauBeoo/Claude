@@ -1,0 +1,18 @@
+{
+ "_note": "Video 08 — still tu Big Picture Japan (US Army CC0, B&W ~1955)",
+ "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/big_picture_1974/big_picture_japan_512kb.mp4",
+ "stills": [
+  {
+   "id": "bp08_st_01_street_buses",
+   "t": 239,
+   "ybias": 0.5,
+   "note": "03:59 pho, xe buyt, o to"
+  },
+  {
+   "id": "bp08_st_02_skyline_river",
+   "t": 226,
+   "ybias": 0.5,
+   "note": "03:46 nha cao tang ben song"
+  }
+ ]
+}

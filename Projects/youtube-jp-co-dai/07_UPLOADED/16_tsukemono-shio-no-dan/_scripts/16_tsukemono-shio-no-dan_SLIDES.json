@@ -1,0 +1,1221 @@
+[
+ {
+  "match": "今夜、もし電気が",
+  "photo": true,
+  "q": "cucumber pickles in glass jar",
+  "min_score": 0.85
+ },
+ {
+  "match": "袋の裏に、日付が",
+  "photo": true,
+  "q": "expiration date printed on food package",
+  "min_score": 0.85
+ },
+ {
+  "match": "塩が入っているか",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "思い込み",
+   "title": "塩が入っているから日持ちする",
+   "sub": "――今日いちばん外していただきたいものです"
+  }
+ },
+ {
+  "match": "同じきゅうりを、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "同じきゅうり1本",
+   "big": "3",
+   "unit": "か月",
+   "sub": "塩の濃さを変えるだけで、日持ちはここまで動く",
+   "bars": [
+    [
+     "浅漬け",
+     3
+    ],
+    [
+     "塩蔵",
+     90
+    ]
+   ],
+   "note": "要るのは、ひと袋100円の塩だけ"
+  }
+ },
+ {
+  "match": "子供のころ、近く",
+  "photo": true,
+  "q": "roadside farm stand fresh vegetables",
+  "min_score": 0.85
+ },
+ {
+  "match": "「うちのは、石の",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "あの一言",
+   "title": "うちのは、石の重さで決まるんだよ"
+  }
+ },
+ {
+  "match": "塩の話をしている",
+  "photo": true,
+  "q": "river stones",
+  "min_score": 0.85
+ },
+ {
+  "match": "そして去年、その",
+  "photo": true,
+  "q": "empty shelves in closed store",
+  "min_score": 0.85
+ },
+ {
+  "match": "漬物の守りには、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "今日の話",
+   "title": "漬物の守りには、段が三つ",
+   "sub": "あなたが食べているのは、どの段なのか"
+  }
+ },
+ {
+  "match": "一つ目の段は、い",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "一つ目の段",
+   "title": "いま、あなたの冷蔵庫の中に"
+  }
+ },
+ {
+  "match": "台所へ行って、漬",
+  "photo": true,
+  "q": "hand holding food package in supermarket",
+  "min_score": 0.85
+ },
+ {
+  "match": "見えましたか。1",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "一つ目の段＝浅漬け",
+   "big": "1〜3",
+   "unit": "%",
+   "sub": "袋の裏の食塩相当量から分かる塩の濃さ",
+   "bars": [
+    [
+     "浅漬け",
+     3
+    ],
+    [
+     "発酵漬け",
+     10
+    ],
+    [
+     "塩蔵",
+     15
+    ]
+   ],
+   "note": "その数字は、何が守っているかを教えてくれる",
+   "source": "農林水産省"
+  }
+ },
+ {
+  "match": "これは、遊びでは",
+  "photo": true,
+  "q": "漬物",
+  "min_score": 0.85,
+  "src": "commons"
+ },
+ {
+  "match": "正直に申し上げま",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "塩の濃さ",
+   "title": "どこから菌が止まるのか",
+   "left": {
+    "label": "1〜3%",
+    "mark": "x",
+    "verdict": "腐敗菌は止まらない"
+   },
+   "right": {
+    "label": "15%を超える",
+    "mark": "o",
+    "verdict": "菌はもう暮らせない"
+   },
+   "note": "浅漬けの塩は、守ってはいない",
+   "source": "農林水産省"
+  }
+ },
+ {
+  "match": "冷蔵庫です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "では、何が",
+   "title": "冷蔵庫です"
+  }
+ },
+ {
+  "match": "一つ目の段を守っ",
+  "photo": true,
+  "q": "open refrigerator door in home kitchen",
+  "min_score": 0.85
+ },
+ {
+  "match": "ですから、浅漬け",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "浅漬けの正体",
+   "title": "保存食ではなく、料理",
+   "left": {
+    "label": "保存食だと思って扱う",
+    "mark": "x",
+    "verdict": "常温に出してしまう"
+   },
+   "right": {
+    "label": "料理だと思って扱う",
+    "mark": "o",
+    "verdict": "冷蔵庫から出さない"
+   },
+   "note": "冷蔵庫という道具の中でだけ成り立つ"
+  }
+ },
+ {
+  "match": "このことが分かる",
+  "photo": true,
+  "q": "冷蔵庫",
+  "min_score": 0.85,
+  "src": "commons"
+ },
+ {
+  "match": "今日から一つだけ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "今日から",
+   "title": "料理の棚に置いてください",
+   "sub": "保存食の棚ではありません"
+  }
+ },
+ {
+  "match": "冷蔵庫が家庭に入",
+  "photo": true,
+  "q": "old traditional japanese kitchen",
+  "min_score": 0.85
+ },
+ {
+  "match": "みんな倒れていた",
+  "photo": true,
+  "q": "wooden pickle barrel japan",
+  "min_score": 0.85
+ },
+ {
+  "match": "2012年の8月",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "2012年8月・札幌市など",
+   "big": "169",
+   "unit": "人",
+   "sub": "白菜の浅漬けを原因とする食中毒",
+   "bars": [
+    [
+     "患者",
+     169
+    ],
+    [
+     "亡くなった方",
+     8
+    ]
+   ],
+   "note": "原料白菜の殺菌工程に不備があったと指摘された",
+   "source": "国立感染症研究所"
+  }
+ },
+ {
+  "match": "そして、患者が多",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "発生場所",
+   "title": "患者の多くは、高齢者の施設"
+  }
+ },
+ {
+  "match": "その漬物は、見た",
+  "photo": true,
+  "q": "bowl of pickled cabbage",
+  "min_score": 0.85
+ },
+ {
+  "match": "つまり、鼻は、あ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "いちばん怖いところ",
+   "title": "鼻は、あてになりません",
+   "sub": "その漬物は、見た目も、匂いも、普通だった"
+  }
+ },
+ {
+  "match": "事故のあと、研究",
+  "photo": true,
+  "q": "washing cabbage in water",
+  "min_score": 0.85
+ },
+ {
+  "match": "それでも、1桁か",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "消毒液 1L=100mg・10分",
+   "big": "1〜2",
+   "unit": "桁",
+   "sub": "それだけしか菌は減らなかった",
+   "note": "洗って消す、という考え方では守りきれない",
+   "source": "農研機構"
+  }
+ },
+ {
+  "match": "さらに、市販の白",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "市販の白菜漬け・10度",
+   "big": "7",
+   "unit": "日",
+   "sub": "保存しても菌の数はほとんど減らない",
+   "note": "胃液に近い酸の中でも、1桁減るだけ",
+   "source": "農研機構"
+  }
+ },
+ {
+  "match": "守るというのは、",
+  "photo": true,
+  "q": "coarse salt crystals macro",
+  "min_score": 0.85
+ },
+ {
+  "match": "漬物は、消す技術",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "今日の一行",
+   "title": "消す技術ではなく、増やさせない技術"
+  }
+ },
+ {
+  "match": "ですから、誤解し",
+  "photo": true,
+  "q": "assortment of japanese pickles",
+  "min_score": 0.85
+ },
+ {
+  "match": "危ないのは、守り",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "危ないのは",
+   "title": "段をまちがえて扱うこと",
+   "left": {
+    "label": "薄い段を厚い段だと思う",
+    "mark": "x",
+    "verdict": "常温に出してしまう"
+   },
+   "right": {
+    "label": "段を知って扱う",
+    "mark": "o",
+    "verdict": "置き場所が変わる"
+   }
+  }
+ },
+ {
+  "match": "塩が入っているから常",
+  "photo": true,
+  "q": "bowl of food on kitchen table sunlight",
+  "min_score": 0.85
+ },
+ {
+  "match": "古代の秘訣へよう",
+  "photo": true,
+  "q": "traditional japanese house interior",
+  "min_score": 0.85
+ },
+ {
+  "match": "一つ、お聞かせく",
+  "photo": true,
+  "q": "homemade pickle jars in a row",
+  "min_score": 0.85
+ },
+ {
+  "match": "二つ目の段では、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "二つ目の段",
+   "title": "守りの主役が、塩ではなくなる"
+  }
+ },
+ {
+  "match": "塩の濃さを、5%",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "二つ目の段＝発酵漬け",
+   "big": "5〜10",
+   "unit": "%",
+   "sub": "ここで、器の中であることが起き始める"
+  }
+ },
+ {
+  "match": "酸っぱくなるので",
+  "photo": true,
+  "q": "fermenting vegetables in jar bubbles",
+  "min_score": 0.85
+ },
+ {
+  "match": "台所の塩の袋を持",
+  "photo": true,
+  "q": "teaspoon of salt in a palm",
+  "min_score": 0.85
+ },
+ {
+  "match": "きゅうり二本で、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "きゅうり2本＝およそ200g",
+   "big": "10",
+   "unit": "g",
+   "sub": "その5%にあたる塩の量",
+   "note": "昔の台所の塩は、私たちが思うより、はっきり多い"
+  }
+ },
+ {
+  "match": "ここで、多くの方",
+  "photo": true,
+  "q": "cucumber skin macro closeup",
+  "min_score": 0.85
+ },
+ {
+  "match": "もう、野菜に付い",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "誤解",
+   "title": "乳酸菌は、もう野菜に付いています"
+  }
+ },
+ {
+  "match": "農林水産省の資料",
+  "photo": true,
+  "q": "fresh garden vegetables in basket",
+  "min_score": 0.85
+ },
+ {
+  "match": "腐敗を起こす菌の",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "濃い塩の中で",
+   "title": "走れる菌が、一種類になる",
+   "left": {
+    "label": "腐敗を起こす菌",
+    "mark": "x",
+    "verdict": "塩に弱い"
+   },
+   "right": {
+    "label": "乳酸菌",
+    "mark": "o",
+    "verdict": "濃い塩でも働ける"
+   },
+   "note": "塩は、酸を作る菌を選ぶための入口だった"
+  }
+ },
+ {
+  "match": "そして乳酸菌は、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "漬け汁のピーエイチ",
+   "big": "4",
+   "sub": "ここまで下がると、腐敗を起こす菌は動けない",
+   "bars": [
+    [
+     "腐敗菌が元気",
+     7
+    ],
+    [
+     "漬け汁",
+     4
+    ]
+   ],
+   "note": "守りが、塩から酸へ引き継がれる"
+  }
+ },
+ {
+  "match": "さて、ここからが",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "ここからが核心",
+   "title": "乳酸菌は、空気が嫌いです"
+  }
+ },
+ {
+  "match": "乳酸菌には、一つ",
+  "photo": true,
+  "q": "glass jar with closed lid",
+  "min_score": 0.85
+ },
+ {
+  "match": "では、冷蔵庫もな",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "問い",
+   "title": "どうやって空気を追い出したのか",
+   "sub": "冷蔵庫も、密閉できる袋もない台所で"
+  }
+ },
+ {
+  "match": "石です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "答え",
+   "title": "石です"
+  }
+ },
+ {
+  "match": "漬物の樽に載って",
+  "photo": true,
+  "q": "wooden barrels in storehouse",
+  "min_score": 0.85,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "重石のしごと",
+   "arrows": [
+    [
+     700,
+     110,
+     700,
+     400,
+     0.18
+    ],
+    [
+     1220,
+     110,
+     1220,
+     400,
+     -0.18
+    ]
+   ],
+   "head": "石は、上から押さえる"
+  }
+ },
+ {
+  "match": "あれは、空気を抜",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "重石の正体",
+   "title": "潰す道具ではなく、空気を抜く道具"
+  }
+ },
+ {
+  "match": "上から押さえると",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ器の中",
+   "title": "水の上と、水の下",
+   "left": {
+    "label": "水の上に出た部分",
+    "mark": "x",
+    "verdict": "空気に触れて、先にだめになる"
+   },
+   "right": {
+    "label": "水の下に沈んだ部分",
+    "mark": "o",
+    "verdict": "乳酸菌の場所になる"
+   }
+  }
+ },
+ {
+  "match": "あのおばあさんは",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "あの一言の意味",
+   "title": "塩の量より、大事なほうを答えていた"
+  }
+ },
+ {
+  "match": "いま何か漬けてい",
+  "photo": true,
+  "q": "vegetables floating in brine jar",
+  "min_score": 0.85
+ },
+ {
+  "match": "出ている部分があ",
+  "photo": true,
+  "q": "pickle jar brine water surface",
+  "min_score": 0.85
+ },
+ {
+  "match": "白状しますと、私",
+  "photo": true,
+  "q": "sliced cucumber in bowl with salt",
+  "min_score": 0.85
+ },
+ {
+  "match": "三日です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "夏の台所に置いたまま",
+   "title": "三日です"
+  }
+ },
+ {
+  "match": "帰って蓋を開けた",
+  "photo": true,
+  "q": "cucumber in jar cloudy brine",
+  "min_score": 0.85
+ },
+ {
+  "match": "重さの目安もお伝",
+  "photo": true,
+  "q": "fermentation jar with glass weight",
+  "min_score": 0.85
+ },
+ {
+  "match": "ただし、この二つ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "二つ目の段の限界",
+   "title": "数週間。三か月には、届きません",
+   "sub": "濃くすれば届く。ところが――"
+  }
+ },
+ {
+  "match": "食べられなくなる",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "濃くすると",
+   "title": "食べられなくなるのです"
+  }
+ },
+ {
+  "match": "ここまでご覧いた",
+  "photo": true,
+  "q": "japanese pickles on wooden table",
+  "min_score": 0.85
+ },
+ {
+  "match": "三つ目の段まで上",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "三つ目の段",
+   "title": "台所から、道具が一つ消えます"
+  }
+ },
+ {
+  "match": "塩の濃さを、15",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "三つ目の段＝塩蔵",
+   "big": "15",
+   "unit": "%以上",
+   "sub": "腐敗を起こす菌は、もう暮らせない",
+   "bars": [
+    [
+     "浅漬け",
+     3
+    ],
+    [
+     "発酵漬け",
+     10
+    ],
+    [
+     "塩蔵",
+     15
+    ]
+   ],
+   "source": "農林水産省"
+  }
+ },
+ {
+  "match": "農林水産省の資料で",
+  "photo": true,
+  "q": "pile of coarse sea salt",
+  "min_score": 0.85
+ },
+ {
+  "match": "その、冷蔵庫です",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "消える道具",
+   "title": "冷蔵庫"
+  }
+ },
+ {
+  "match": "常温の、暗い場所",
+  "photo": true,
+  "q": "dark cool storage room with jars",
+  "min_score": 0.85
+ },
+ {
+  "match": "15%の塩の漬物",
+  "photo": true,
+  "q": "very salty preserved vegetables",
+  "min_score": 0.85
+ },
+ {
+  "match": "そうです。食べら",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "では、どうしたのか",
+   "title": "そうです。食べられません"
+  }
+ },
+ {
+  "match": "食べる前に、塩を",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "昔の答え",
+   "title": "食べる前に、塩を抜いていた"
+  }
+ },
+ {
+  "match": "水に浸けて、何度",
+  "photo": true,
+  "q": "vegetables soaking in bowl of water",
+  "min_score": 0.85
+ },
+ {
+  "match": "つまり、守るため",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "昔の台所",
+   "title": "守る濃さと、食べる濃さ",
+   "left": {
+    "label": "一つ目の段",
+    "mark": "x",
+    "verdict": "保存と食事がくっついている"
+   },
+   "right": {
+    "label": "三つ目の段",
+    "mark": "o",
+    "verdict": "二つを切り離してある"
+   },
+   "note": "そのすきまに、数か月が入る"
+  }
+ },
+ {
+  "match": "一つ目の段は、そ",
+  "photo": true,
+  "q": "two jars of pickles side by side",
+  "min_score": 0.85
+ },
+ {
+  "match": "農林水産省の資料によ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "記録",
+   "title": "縄文・天平の木簡・延喜式",
+   "sub": "千年以上、台所は三つの段を使い分けてきた"
+  }
+ },
+ {
+  "match": "千年以上、日本の",
+  "photo": true,
+  "q": "old japanese document scroll",
+  "min_score": 0.85
+ },
+ {
+  "match": "あのおばあさんが",
+  "photo": true,
+  "q": "empty supermarket shelves",
+  "min_score": 0.85
+ },
+ {
+  "match": "いま、三つの段は",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "三つの段の外",
+   "title": "塩を、一粒も使わない漬物"
+  }
+ },
+ {
+  "match": "長野県、木曽の、",
+  "photo": true,
+  "q": "mountain village valley japan",
+  "min_score": 0.85
+ },
+ {
+  "match": "赤かぶの葉と茎を",
+  "photo": true,
+  "q": "red turnip with leaves",
+  "min_score": 0.85
+ },
+ {
+  "match": "三つの段のうち、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "すんき",
+   "title": "塩の守りを、完全に捨てる",
+   "left": {
+    "label": "塩の守り",
+    "mark": "x",
+    "verdict": "使わない"
+   },
+   "right": {
+    "label": "酸の守り",
+    "mark": "o",
+    "verdict": "これだけで立つ"
+   },
+   "note": "だから、種が命になる"
+  }
+ },
+ {
+  "match": "言い換えれば、一",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "一年でも",
+   "title": "種を切らしたら、終わりです"
+  }
+ },
+ {
+  "match": "木曽は、海から遠",
+  "photo": true,
+  "q": "winter mountain village japan",
+  "min_score": 0.85
+ },
+ {
+  "match": "すんきは、道具で",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "すんきが教えること",
+   "title": "道具では持てない技術"
+  }
+ },
+ {
+  "match": "知恵とは、そうい",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "結び",
+   "title": "知恵とは、続けることでしか持てない"
+  }
+ },
+ {
+  "match": "塩の濃さが気にな",
+  "photo": true,
+  "q": "野沢菜",
+  "min_score": 0.85,
+  "src": "commons"
+ },
+ {
+  "match": "まず、温度です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "夏の落とし穴",
+   "big": "25",
+   "unit": "℃",
+   "sub": "これを超えると、発酵が速すぎることがある"
+  }
+ },
+ {
+  "match": "夏は、こう考えて",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "夏の置き場所",
+   "title": "一つ目は冷蔵庫、三つ目は冷暗所"
+  }
+ },
+ {
+  "match": "きゅうりが、一度",
+  "photo": true,
+  "q": "many cucumbers harvest in basket",
+  "min_score": 0.85
+ },
+ {
+  "match": "籠を、三つに分け",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "いちばん実用的な話",
+   "title": "籠を、三つに分けてください"
+  }
+ },
+ {
+  "match": "三日で食べきるぶ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "行き先で段を決める",
+   "big": "3",
+   "unit": "つ",
+   "sub": "食べる予定の日で分ける",
+   "bars": [
+    [
+     "3日",
+     3
+    ],
+    [
+     "2週間",
+     14
+    ],
+    [
+     "冬まで",
+     90
+    ]
+   ],
+   "note": "同じ籠のきゅうりを、行き先で三つに"
+  }
+ },
+ {
+  "match": "同じ籠のきゅうり",
+  "photo": true,
+  "q": "cucumbers in wooden crates",
+  "min_score": 0.85
+ },
+ {
+  "match": "漬けるものは新鮮",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "捨てる目安",
+   "title": "迷わず処分するもの",
+   "left": {
+    "label": "ぬめり・糸を引く・かび",
+    "mark": "x",
+    "verdict": "もったいないと思わない"
+   },
+   "right": {
+    "label": "新鮮・よく洗う",
+    "mark": "o",
+    "verdict": "そもそも持ち込まない"
+   }
+  }
+ },
+ {
+  "match": "もう一つ。自家製",
+  "photo": true,
+  "q": "clean kitchen utensils on counter",
+  "min_score": 0.85
+ },
+ {
+  "match": "2024年の6月",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "2024年6月1日",
+   "title": "手作りの漬物が、売り場から消えた"
+  }
+ },
+ {
+  "match": "2021年の6月",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "食品衛生法改正",
+   "big": "2024",
+   "unit": "年6月1日",
+   "sub": "許可のない製造と販売ができなくなった",
+   "note": "2021年6月改正／猶予の期限は2024年5月31日"
+  }
+ },
+ {
+  "match": "許可を取るには、",
+  "photo": true,
+  "q": "stainless steel food factory kitchen",
+  "min_score": 0.85
+ },
+ {
+  "match": "そして、自宅の台",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "そして",
+   "title": "自宅の台所では、作れません"
+  }
+ },
+ {
+  "match": "結果は、数字に出",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "2024年1月〜9月",
+   "big": "26",
+   "unit": "件",
+   "sub": "漬物に関わる企業が姿を消した",
+   "bars": [
+    [
+     "休業と廃業",
+     18
+    ],
+    [
+     "倒産",
+     8
+    ]
+   ],
+   "note": "個人の農家の廃業は、これよりずっと多いと見られている"
+  }
+ },
+ {
+  "match": "秋田のいぶりがっこ、",
+  "photo": true,
+  "q": "いぶりがっこ",
+  "min_score": 0.85,
+  "src": "commons"
+ },
+ {
+  "match": "これは、誰かが悪",
+  "photo": true,
+  "q": "law book on desk",
+  "min_score": 0.85
+ },
+ {
+  "match": "法律が変わったき",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "きっかけ",
+   "title": "8人の方が亡くなった事故",
+   "sub": "二度と起こさないための決まりです"
+  }
+ },
+ {
+  "match": "数字は、本に書け",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "失われたもの",
+   "title": "数字は残る。手加減は、残らない",
+   "sub": "手から手へしか、渡らないものでした"
+  }
+ },
+ {
+  "match": "制度が閉めたのは",
+  "photo": true,
+  "q": "closed shop shutter",
+  "min_score": 0.85
+ },
+ {
+  "match": "そして売り場に残",
+  "photo": true,
+  "q": "supermarket pickles shelf",
+  "min_score": 0.85
+ },
+ {
+  "match": "薄い塩で、日持ち",
+  "photo": true,
+  "q": "food label ingredients",
+  "min_score": 0.85
+ },
+ {
+  "match": "昔は、石と時間で",
+  "photo": true,
+  "q": "old stone weight on wood",
+  "min_score": 0.85
+ },
+ {
+  "match": "この許可が必要な",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "大事なこと",
+   "title": "許可が要るのは、売る場合です",
+   "sub": "ご家族のために漬けるぶんには、要りません"
+  }
+ },
+ {
+  "match": "千年続いた三つの",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "千年続いた三つの段",
+   "title": "あなたの台所に、残りました"
+  }
+ },
+ {
+  "match": "まず、正直な話を",
+  "photo": true,
+  "q": "modern japanese apartment kitchen",
+  "min_score": 0.85
+ },
+ {
+  "match": "家の温度で、結果",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "正直な話",
+   "title": "万能ではありません",
+   "left": {
+    "label": "今の住宅",
+    "mark": "x",
+    "verdict": "冬でも暖かい"
+   },
+   "right": {
+    "label": "昔の家",
+    "mark": "o",
+    "verdict": "廊下や納屋が冷えていた"
+   }
+  }
+ },
+ {
+  "match": "昔の台所には、今",
+  "photo": true,
+  "q": "two different food containers kitchen",
+  "min_score": 0.85
+ },
+ {
+  "match": "便利になったぶん",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "失ったもの",
+   "title": "時間を分ける目"
+  }
+ },
+ {
+  "match": "レジの横に、いつ",
+  "photo": true,
+  "q": "antique metal tin box",
+  "min_score": 0.85
+ },
+ {
+  "match": "去年、その棚は、",
+  "photo": true,
+  "q": "シャッター商店街",
+  "min_score": 0.85,
+  "src": "commons"
+ },
+ {
+  "match": "飴の缶だけが、レ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "去年",
+   "title": "飴の缶だけが、残っていました"
+  }
+ },
+ {
+  "match": "あの人の手が覚えていた濃さは",
+  "photo": true,
+  "q": "elderly asian hands holding vegetables",
+  "min_score": 0.85
+ },
+ {
+  "match": "今夜、きゅうりを",
+  "photo": true,
+  "q": "salted cucumber in bowl with plate on top",
+  "min_score": 0.85
+ },
+ {
+  "match": "それだけで、千年",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "num": "今夜から",
+   "title": "千年の技術の、入口に立てます"
+  }
+ },
+ {
+  "match": "あなたの土地に伝",
+  "photo": true,
+  "q": "japanese kitchen in the evening",
+  "min_score": 0.85
+ },
+ {
+  "match": "古代の秘訣は、こ",
+  "photo": true,
+  "q": "sunset over japanese countryside",
+  "min_score": 0.85
+ }
+]

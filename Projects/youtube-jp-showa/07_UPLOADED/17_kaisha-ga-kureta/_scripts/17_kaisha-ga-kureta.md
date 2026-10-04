@@ -1,0 +1,334 @@
+# 17 — 昭和の会社がくれたもの5選（賃上げ32.9%・家族手当・社宅・社内預金・退職金）
+
+Kịch bản đọc: `17_kaisha-ga-kureta_TTS.md` · Video: `06_VIDEO/17_kaisha-ga-kureta/` (chưa dựng)
+Trục **B** (阿井田茂 / Calm / 0.90, AivisSpeech :10101) · **4.364 ký → ước 14,8 phút** @ 4,93 ký/s
+🔴 Mốc thật chỉ chốt từ `timeline.json` SAU render (CLAUDE.md §Sản xuất — hệ số đọc đã sai 4 lần).
+
+---
+
+## 0. VÌ SAO ĐỀ TÀI NÀY — chọn bằng SỐ ĐO
+
+### 0.1 Số đo của CHÍNH kênh (YouTube Data API, 2026-09-21, view/ngày)
+
+| video | v/ngày | view | tuổi |
+|---|---:|---:|---:|
+| **14 職場の常識5選** | **1.263,6** | 5.064 | 4,0d |
+| 11 給料袋20選 | 171,8 | 1.712 | 10,0d |
+| 08 お金の常識12選 | 135,9 | 2.447 | 18,0d |
+| 15 母のお金の常識5選 | 93,7 | 188 | 2,0d |
+| 06 初任給の封筒 | 83,2 | 1.914 | 23,0d |
+| … 13 子育て / 12 夏の当たり前 | 1,0 / 1,5 | 6 / 12 | 6,0d / 8,0d |
+
+🔴 **Video 14（職場）đang là bản mạnh nhất lịch sử kênh** — 5.064 view/4 ngày, gấp **7,4×** video 11 và
+gấp ~1.000× hai bài đời-thường. Cụm **tiền × công ty** chiếm trọn top 5. Bài này đi tiếp đúng cụm đó.
+⚠️ 14 mới 4 ngày nên **có nhiễu recency** — nhưng view tuyệt đối (5.064) đã vượt mọi video khác của kênh,
+kể cả bài 32 ngày tuổi, nên kết luận không phụ thuộc vào phép chia.
+
+### 0.2 Cung của ngách — keyword đo bằng YouTube Data API, 30 ngày, JP long-form ≥8′ (2026-09-21)
+
+| keyword | n video | med v/ngày | max |
+|---|---:|---:|---:|
+| 昭和の職場 | 5 | 2.236 | 16.316 |
+| **昭和の常識** | 11 | **1.969** | 77.713 |
+| **昭和の会社** | **2** | **1.519** | **2.997** (41.605 view / 13,9d) |
+| 昭和の給料 | 7 | 136 | 15.091 |
+| 昭和のサラリーマン | 7 | 9 | 2.997 |
+| 昭和のボーナス · 社宅 · 福利厚生 · 退職金 · 終身雇用 · モーレツ社員 · 出世 | **0** | — | — |
+
+⚠️ **Đọc đúng: cung 0 KHÔNG phải bằng chứng có cầu** (cùng luật §0.3 của script 15). Cầu ở đây đến từ
+① video 14 của chính kênh ② rổ `昭和の会社` med 1.519 với 1 bản 41.605 view/14 ngày. Cung 0 chỉ có nghĩa:
+**nếu cầu có thật thì hiện không ai phục vụ nó.**
+⇒ Keyword dẫn của title là **`昭和の会社`** (đo được), **không** phải 福利厚生/社宅 (không đo được gì).
+
+### 0.3 HÀNG XÓM MỤC TIÊU (`youtube-suggested-growth.md` §1)
+
+| video | kênh | số | vì sao mình là "next watch" |
+|---|---|---|---|
+| **職場の常識5選** (video 14 của CHÍNH mình) | 昭和くらし図鑑 | 1.263 v/ngày | Bài 14 kết ở **55歳定年**. Bài này hỏi tiếp: *ngoài lương ra, công ty còn trả gì* — và **cái đó mất lúc nào** |
+| 昭和51年（1976年）：新人サラリーマンの飛び込み営業 | 父親が歩んだ昭和の記憶 | 41.605 view / 13,9d | Cùng tệp (nam 昭和会社員), nhưng họ kể **một ngày của một người**; mình làm **chế độ + mốc luật** — bổ sung chứ không cạnh tranh |
+| 【昭和30〜50年代】昭和の常識20選 | 昭和の音がする | 249.526 view / 21,9d | Khung 「今なら全部アウト」. Mục 2 của mình (**妻子の分が給料に乗っていた**) là một 「今ならアウト」 họ chưa chạm |
+
+### 0.4 ⚠️ CHỒNG LẤN với 06 · 11 · 14 · 15 — đã kiểm
+
+| | 06 | 11 | 14 | 15 | **17 (bài này)** |
+|---|---|---|---|---|---|
+| chủ thể | lương mua được gì | **cái phong bì** | **luật lệ nơi làm việc** | dòng tiền trong nhà | **cái công ty trả NGOÀI lương — và ai cắt nó** |
+| nhân vật | người mới đi làm | bố → mẹ | 伯父 76 tuổi | **mẹ** | **親戚** vào làm 1968, ở 37 năm |
+| trùng | 初任給 | 給料袋 | ① 給料は封筒の現金 (14 mục 2) | 口座振込 | ⛔ **không nhắc lại phong bì/現金手渡し** — bài này bắt đầu SAU khi lương đã vào tay |
+
+🔴 Điểm trùng duy nhất còn lại là **「給料」** như một từ. Năm bài khác nhau ở **chủ thể của mạch**:
+06 giá · 11 vật đựng · 14 quy tắc · 15 người quản · **17 phần không nằm trong lương**. Đây là **series**, không phải lặp.
+
+---
+
+## 1. FACT SHEET — ✅ VERIFY 2026-09-21, nguồn cấp 1
+
+| # | Con số / mốc | Nguồn | Trạng thái |
+|---|---|---|---|
+| 1 | 昭和49年(1974) 春闘賃上げ率 **32,9%** · 妥結額 **28.981円** — cao nhất từ khi thống kê bắt đầu (1956) | 厚労省「民間主要企業春季賃上げ要求・妥結状況」(bảng dài hạn qua JILPT `g0402.xlsx`) | ✅ tải bảng gốc, đọc trực tiếp |
+| 2 | 昭和45年 18,5% · 昭和48年 20,1% · 平成7年 **2,83%**（lần đầu dưới 3%）· 平成15年 **1,63%**（đáy）· 令和7年 **5,52%** | như trên | ✅ |
+| 3 | 1974 物価上昇 **24,5%** | 厚労省/JILPT (cùng bộ) | ✅ |
+| 4 | 電産型賃金体系 — **昭和21年12月22日「十二月協定」**; 本人給(年齢) **44,3%** · 家族給 **18,9%** · 能力給 **24,4%** | 法政大学大原社会問題研究所 · JILPT『日本労働研究雑誌』No.609 | ✅ (học thuật, không phải 官庁 — ghi rõ khi lên hình) |
+| 5 | 配偶者に家族手当を支給する企業: **平成27年 69,1% → 令和4年 55,1%** · 支給額 配偶者 **13.499円/月** · 収入制限あり **46,3%** | 人事院「職種別民間給与実態調査」→ 厚労省労働基準局『民間企業における「配偶者手当」について』(令和4年12月22日) | ✅ đọc PDF gốc |
+| 6 | 令和4年6月「新しい資本主義のグランドデザイン及び実行計画」(閣議決定) — 配偶者手当の「改廃・縮小に向けた議論」を期待 | cùng tài liệu trên | ✅ |
+| 7 | 社宅: 賃貸料相当額の **50%以上** を受け取れば差額は給与課税されない | 国税庁 タックスアンサー **No.2597** | ✅ |
+| 8 | 給与住宅: **平成5年 205万1千戸 = 5,0%** → **令和5年 130万2千戸 = 2,3%** | 総務省「住宅・土地統計調査」令和5年 基本集計 表5 | ✅ đọc PDF gốc |
+| 9 | 給与住宅の家賃 **37.993円/月** vs 民営借家(木造) **54.409円** (令和5年) | cùng tài liệu trên | ✅ |
+| 10 | **勤労者財産形成促進法 — 昭和46年6月1日 法律第92号** (施行 昭和47年1月) | 日本法令索引 / 厚労省法令データ | ✅ |
+| 11 | **賃金の支払の確保等に関する法律 — 昭和51年5月27日 法律第34号** (社内預金の保全措置) | 日本法令索引 / 衆議院 法律第三十四号 | ✅ |
+| 12 | 社内預金の下限利率 **年0,5%** (現行) | 厚労省 労働基準法Q&A | ✅ |
+| 13 | **中小企業退職金共済法 — 昭和34年5月9日 法律第160号** | 日本法令索引 / 厚労省法令データ | ✅ |
+| 14 | 退職給付制度がある企業: **令和5年 74,9%** ← 平成30年 **80,5%** | 厚労省「令和5年就労条件総合調査」第16表 | ✅ đọc PDF gốc |
+| 15 | 大学卒 定年退職者1人平均退職給付額: **1.896万円** ← 平成30年 **1.983万円** (勤続20年以上かつ45歳以上) | 同上 第22表 | ✅ đọc PDF gốc |
+
+### 🔢 PHÉP TÍNH ghi rõ để kiểm được
+- 「二十軒に一軒」= 5,0% → 1/20 ✔ · 「四十三軒に一軒」= 2,3% → 1/43,5 ✔
+- 「四社に一社にはもうない」= 100 − 74,9 = **25,1%** ✔
+- 「五年で約87万円減」= 1.983 − 1.896 = **87万円** ✔
+
+### ⛔ Ý ĐỊNH DÙNG NHƯNG **ĐÃ BỎ** vì không verify được trong lượt này
+- **Giá thuê 社宅 thời 昭和** (dạng 「月2千円」): không tìm được nguồn cấp 1 → **không lên hình, không lên title**.
+  Thay bằng cặp số verify được: 給与住宅 5,0%→2,3% + 家賃 37.993円.
+- **Lãi suất 社内預金 thời 昭和** (dạng 「年6%」): PDF 厚労省 là bản scan, không đọc được → chỉ nói **cơ chế**
+  (「銀行より高い利息がつくことが多かった」) + số hiện hành 0,5%.
+- **経団連 福利厚生費調査** (社員旅行・保養所): số dài hạn chỉ tới 2019 và không có dải 昭和 → **bỏ hẳn mục 社員旅行**
+  khỏi thân bài, chỉ để nó trong câu xin comment ở KẾT.
+
+---
+
+## 2. CẤU TRÚC — E7 cold open + 5 mục × 5 ô (`05_SCRIPT_FORMULA.md`)
+
+**COLD OPEN (E7, ~200 ký, vào mục 1 ở 51,9s ước):**
+① hành vi 「四月になると、給料が上がる。何もしなくても、上がる」 → ② 「上がるかどうかではなく、何パーセント上がるか」
+→ ③ **「これ、実話です」+ 証人**（昭和43年入社・同じ会社に37年）→ ④ 3 cú sốc dồn（32,9% / 会社が家を用意 / 結婚で手当）
+→ ⑤ dán nhãn **「これが、昭和の会社です」** → 挨拶 đặt SAU → PROMISE.
+
+| # | ① TUYÊN BỐ | ③ では、なぜ (cơ chế) | ④ MỐC CHẾT | ⑤ HẠ CÁNH (mềm) |
+|---|---|---|---|---|
+| **1** | 給料は、毎年、上がるものでした | 物価が毎年上がる + 人手不足 ⇒ 春闘が定着 | **昭49 32,9%/28.981円**（統計開始1956以来の最高）→ 平7 2,83% → **平15 1,63%** → 令7 5,52% | 「上がることを疑わなくてよかった…今より楽な一点だったのかもしれません」 |
+| **2** | 結婚すると、給料が増えました | **電産型賃金（昭21.12.22）**: 年齢44,3% + 家族18,9% ⇒ 生活給 | 配偶者への家族手当 **69,1%(平27) → 55,1%(令4)** · 13.499円 · 103万円の壁 · **令4.6 閣議決定** | 「家族を持ちなさいという、会社からの合図だったのかもしれません」 |
+| **3** | 住むところは、会社が用意しました | **国税庁 No.2597** — 賃貸料相当額の50%以上を取れば課税されない ⇒ 安く貸せる | 給与住宅 **5,0%(平5) → 2,3%(令5)**（20軒に1軒→43軒に1軒）· 家賃 37.993円 vs 民営木造 54.409円 | 「家賃の心配だけはしなくてよかったのかもしれません」 |
+| **4** | 貯金も、会社が預かっていました | 会社は設備資金がほしい／社員は高い利息がほしい。弱点＝倒産すると消える | **財形法 昭46.6.1 法92号** → **賃確法 昭51.5.27 法34号**（保全措置が義務）· 下限利率 **年0,5%** | 「自分のお金を会社に預ける。その感覚そのものが遠くなったのかもしれません」 |
+| **5** ⭐ | 最後にもう一度、まとまって返ってきました | 途中で辞めさせないための引き止め。**中退共法 昭34.5.9 法160号** で中小にも広がる | 退職給付制度 **80,5%(平30) → 74,9%(令5)**（4社に1社はもうない）· 大卒定年 **1.983万→1.896万円** | 「家も学費も老後も、その約束を前提に組み立てられていたのかもしれません」 |
+
+- **CTA giữa video** đặt ở ranh giới **sau mục 3 = 58,1% bài** (~8,6′) — câu canonical `cta-midvideo.md` §2.10,
+  đổi cụm 「学校の給食」→「あなたの会社にあったもの」. ⚠️ Luật nhắm ~50% nhưng **không có ranh giới cảnh nào gần 50% hơn**:
+  mục 2 kết ở 42,3%, mục 3 kết ở 58,1%. Chèn vào giữa mục là phá cảnh (luật cấm) ⇒ chọn 58,1%. Video 08 của kênh đặt 53%.
+- **Mốc % đo được của thân bài:** mục 1 @5,9% · mục 2 @25,8% · mục 3 @42,3% · CTA @58,1% · mục 4 @61,6% · mục 5 @75,7% · tổng luận @90,1%.
+- **KẾT = 認める→裏返す**: nhận (転勤を断れない・辞めれば全部失う・今のほうが自由) → lật (会社は暮らしまで抱えていた／その分はいま一人ひとりの手元に返ってきている、自由と一緒に責任も) → **xin 体験談** (寮の門限・社宅の団地・社員旅行・運動会・忘年会の余興).
+- ⛔ **KHÔNG recap** (3/3 bản thắng đều không có).
+
+---
+
+## 3. SỐ ĐO GATE (chạy 2026-09-21)
+
+```
+python tools/check_script_formula.py 03_SCRIPTS/17_kaisha-ga-kureta_TTS.md --truc B --rate 4.93
+→ KET QUA: SACH toan bo gate CHAN
+```
+
+| gate CHẶN | đo được | ngưỡng |
+|---|---|---|
+| động cơ chính | **LIST** (pháp/chế độ 15 · mốc năm 1/181) | ≥1 trong 2 |
+| số ký | **4.364 (14,8′)** | 4.289–5.324 |
+| mốc năm | **24 lần (1/181 ký)** | ≥8 và ≥1/500 |
+| đóng mềm かもしれません | **5** | ≥5 |
+| vào mục 1 | **51,9s** (ước) | ≤60s |
+
+| cảnh báo | đo được | ghi chú |
+|---|---|---|
+| ngũ quan | 5 (1/872) | ⚠️ dưới 1/250 — **cố ý**: bài chạy động cơ E-LIST (K1 thắng ở 1/2.888) |
+| なぜ nói thành lời | 7 | ✅ |
+| nay–xưa (今では) | 10 (1/436) | ✅ |
+| lời thuật lại | 6 · 証人 1 | ✅ |
+| sóng độ dài | 1,7× · mục dài nhất #5 ở **76%** bài | miễn (khuôn <8 mục); đỉnh đặt cuối, cùng chiều K1 |
+
+**Gate giọng (`humanize-script-voice.md` §2):** tag đứng dòng riêng **0** · tag giữa dòng **0** ·
+**32 cụm tag / 1 per 136 ký** (chuẩn kênh video 10/11: ~32 cụm ≈ 1/124).
+⚠️ Bản đầu có **85 cụm (1/51 ký)** = dày gấp 2,4× chuẩn → đã tỉa. *Mọi thứ đều nhấn thì không gì được nhấn.*
+Backup bản dày: `17_kaisha-ga-kureta_TTS.md.bak_tag110`.
+
+---
+
+## 4. ĐÓNG GÓI CTR
+
+### Title CHỐT
+
+```
+【昭和40〜50年代】今では信じられない 昭和の会社がくれたもの5選｜賃上げ32.9%・社宅・家族手当・退職金【昭和100年】
+```
+
+### 📊 BẢNG ĐO KEYWORD (YouTube Data API, 30 ngày, JP long-form ≥8′, 2026-09-21)
+
+| keyword | med v/ngày | n | dùng ở đâu |
+|---|---:|---:|---|
+| 昭和の職場 | 2.236 | 5 | ⛔ đã dùng cho video 14 — tránh tự cạnh tranh |
+| 昭和の常識 | 1.969 | 11 | → **A2** |
+| **昭和の会社** | **1.519** | 2 | → **A1 (keyword dẫn) + HERO thumbnail** |
+| 昭和の給料 | 136 | 7 | tag |
+| 昭和のサラリーマン | 9 | 7 | tag (cung bão hoà) |
+
+### 3 TITLE A/B — mỗi bản một giả thuyết (`ab-3title-3thumb.md` §2)
+
+| | title | ký | keyword dẫn | giả thuyết thử |
+|---|---|---:|---|---|
+| **A1** ⭐ dùng khi đăng | `【昭和40〜50年代】今では信じられない 昭和の会社がくれたもの5選｜賃上げ32.9%・社宅・家族手当・退職金【昭和100年】` | 62 | `昭和の会社` @20 | keyword đúng chủ đề + med cao nhất trong nhóm đo được của cụm 会社 |
+| **A2** | `【昭和40〜50年代】昭和の常識5選 会社がくれていたもの｜毎年上がる給料・社宅・家族手当・退職金【昭和100年】` | 55 | `昭和の常識` @12 | đổi keyword dẫn sang khung hook đang nóng nhất ngách (med 1.969, n=11) |
+| **A3** | `賃上げ32.9%の時代、会社は給料のほかに何をくれていたのか｜昭和40〜50年代の待遇5選【昭和100年】` | 52 | — | đổi kiểu hook: mất mát → **truy nguyên bằng con số** (đúng định vị 図鑑) |
+
+⛔ Không bản nào dùng `消えた` làm khung chủ đạo (CLAUDE.md §Luật 2 — hook tầng bét, 0/3 bản >100K dùng).
+
+### Tên file upload
+
+```
+showa-kaisha-ga-kureta-mono-5sen.mp4
+```
+
+### 3 dòng đầu 概要欄 (vùng hiển thị — cấm lời chào)
+
+```
+昭和の会社は、給料のほかに、家族手当も、社宅も、貯金の預かりも、退職金も出していました。
+昭和40年代から50年代に働いていた方、その親を見ていた世代へ。
+当時「当たり前」だった5つの待遇が、いつ、どの統計・どの法律で細っていったのかが分かります。
+```
+
+### 概要欄 — 本文（目次は render 後に `timeline.json` から確定）
+
+```
+昭和四十九年の春闘賃上げ率は32.9％。金額にして2万8981円。昭和31年に統計が始まってから、いまも破られていない最高の数字です。
+あの頃の会社は、給料だけを払っていたのではありませんでした。結婚すれば家族手当がつき、住む家は社宅か寮があり、貯金は会社が預かり、勤めあげれば退職金が出る。
+この動画では、昭和43年に入社して同じ会社に37年いた、ひとりの会社員の話をたどりながら、「給料のほかに会社が出していたもの」を5つ、いつ・どの統計と法律で細っていったのかを順番にひらいていきます。
+
+【目次】
+00:00 四月になると、給料が上がる
+00:42 はじめに
+00:57 ①給料は、毎年上がるものだった
+04:00 ②結婚すると、給料が増えた
+06:20 ③住むところは、会社が用意した
+08:39 ここで、ひとつだけお願い
+09:02 ④貯金も、会社が預かっていた
+11:06 ⑤最後にもう一度、まとまって返ってきた
+13:18 五つ、並べてみて
+
+一つ目 給料は、毎年上がるものだった（春闘32.9%／平成15年 1.63%）
+二つ目 結婚すると、給料が増えた（電産型賃金 昭和21年／家族手当 55.1%）
+三つ目 住むところは、会社が用意した（国税庁No.2597／給与住宅 5.0%→2.3%）
+四つ目 貯金も、会社が預かった（財形法 昭和46年／賃確法 昭和51年）
+五つ目 最後にもう一度、まとまって返ってきた（中退共法 昭和34年／退職給付 74.9%）
+
+数字と年号は、厚生労働省「民間主要企業春季賃上げ要求・妥結状況」「令和5年就労条件総合調査」、
+総務省「令和5年住宅・土地統計調査」、人事院「職種別民間給与実態調査」、国税庁タックスアンサーNo.2597、
+および各法律の公布年月日（勤労者財産形成促進法 昭和46年法律第92号／賃金の支払の確保等に関する法律 昭和51年法律第34号／
+中小企業退職金共済法 昭和34年法律第160号）に基づいています。
+
+寮の門限、社宅の団地、社員旅行、運動会、忘年会の余興。あなたの会社にあったものを、ぜひコメントで聞かせてください。
+
+※記録映像は、アメリカ国立公文書館（NARA）所蔵のパブリックドメイン映像を使用しています。
+　You in Japan（1957・米陸軍, Public Domain）／米陸軍航空軍 1946年撮影カラーフィルム（広島・京都, Public Domain Mark 1.0）
+※写真：wilford peloquin（1971年撮影・東京ほか, CC BY 2.0, Wikimedia Commons）
+　「Danchi at Yaenosato Higashi-Osaka」（Mr.ちゅらさん, CC BY 4.0, Wikimedia Commons）
+　「北口団地から西宮球場を望む」（1960年・所蔵 西宮市, CC BY 4.0, Wikimedia Commons）、
+　常盤平団地（1960年）・高崎市庁舎（1954年頃）・映画「めし」（1951年）スチール・日本住宅公団 調査集計表（昭和35年度）はパブリックドメイン（Wikimedia Commons）
+※現代の映像の一部は Pexels のフリー素材です。
+※一部の映像は生成AIで作成したものです。登場人物はすべて架空です。
+※音声：AivisSpeech（阿井田 茂）
+※制度・法律の内容は施行当時のものです。現在の取り扱いは厚生労働省など公的機関の情報をご確認ください。
+
+#昭和の会社 #昭和40年代 #昭和の常識
+```
+
+### タグ
+
+```
+昭和の会社, 昭和くらし図鑑, 昭和100年, 昭和40年代, 昭和50年代, 昭和の常識, 昭和の職場, 昭和の給料,
+春闘, 賃上げ, 家族手当, 扶養手当, 社宅, 独身寮, 社内預金, 財形貯蓄, 退職金, 中退共, 終身雇用, 年功序列,
+昭和レトロ, 高度経済成長, 昭和の暮らし, 懐かしい昭和, 昭和世代, 定年退職, 給料明細, 昭和のサラリーマン,
+昭和の会社員, 福利厚生, 生活給, 電産型賃金, 昭和の働き方, 昭和あるある, 60代, 70代
+```
+
+### ハッシュタグ（volume 順）
+
+```
+#昭和の会社 #昭和40年代 #昭和の常識
+```
+
+### Pinned comment
+
+```
+あなたの会社には、何がありましたか。
+社宅、独身寮、社員旅行、運動会、社内預金、そして退職金。
+「うちはこうだった」を、よかったらコメントで教えてください。
+※動画内の数字は、厚生労働省・総務省・人事院・国税庁の公開資料と、各法律の公布年月日に基づいています。
+```
+
+---
+
+## 5. THUMBNAIL — 3 bản (`03_THUMBNAIL_FORMULA.md` §1 + §1.5)
+
+**Chữ GIỐNG NHAU cả 3 bản** (biến thử là HÌNH):
+
+| khối | nội dung | ký |
+|---|---|---:|
+| chip góc trên-trái | `全5点` | 3 |
+| banner mốc năm | `昭和40年〜50年代` | 9 |
+| **HERO 1** (trắng, viền đen) | `給料のほかに` | 6 |
+| **HERO 2** (ĐỎ, TO NHẤT) | `昭和の会社` | 5 |
+
+Gate 7 (`audience-45plus` §1): ① về cái gì = `昭和の会社` (keyword med cao nhất rổ) · ② chuyện gì = `給料のほかに`
+· ③ mốc = `昭和40年〜50年代` + `全5点`. Che ảnh đi vẫn đọc ra chủ đề ✅.
+
+| | khuôn | hình |
+|---|---|---|
+| **T1** baseline | K-COLLAGE | 3 ô: dọc trái sepia (掲示板に貼られた要求額の紙＋人だかり) · phải-trên **MÀU RỰC** (給料明細の「家族手当」の行 — vật chính, có trong mục 2) · phải-dưới sepia (社宅の団地) |
+| **T2** đổi 1 biến | **K-PHOTO** | 1 ảnh full-bleed, **CÓ NGƯỜI**: 40代の男性社員が掲示板の前で数字を見上げる（= **đúng cảnh cold open**, thumbnail hứa gì cold open trả ngay) |
+| **T3** đổi layout | **K-PHOTO đổi CẢNH** | 定年の日、通路で花束を受け取る60代の男性（= mục 5, đỉnh cảm xúc） |
+
+⚠️ Ô MÀU của T1 phải là vật **có thật trong video** — 給料明細 xuất hiện ở mục 2 (`翌月の給料の明細を見ると、行が一つ増えている`).
+⚠️ Prompt bake chữ vào ảnh, **≤4 dòng**, TEXT block trong **15% đầu prompt**, chừa trống góc dưới-PHẢI, `no watermark`
+(`ab-3title-3thumb.md` §3.1). ✅ **Prompt đã viết xong 2026-09-21** — 4 file trong `06_VIDEO/17_kaisha-ga-kureta/`:
+`thumb_prompts_FLOW.txt` (3 dòng, bơm extension) · `_BLOCKS.md` (bản người đọc + lý do chọn hình) · `_TENFILE.txt` · `_PLATE.txt` (3 plate không chữ).
+Gate TEXT @ **7% / 5% / 5%** (trần 15%) ✅ · đúng 4 khối chữ JP/prompt ✅ · plate 0 chữ ✅.
+🔴 Prompt dài **2.605–2.701 ký** (vượt mốc ~1.700 của `ab-3title-3thumb.md`, nhưng sát mẫu video 08 của kênh đã chạy ~2.500 ký)
+⇒ **gen T1 trước, soi từng ký tự, đạt rồi mới bơm T2/T3** — đừng bơm cả lô.
+🔴 Ba hình 'đúng bài' nhất (掲示板の紙 · 給料明細 · 通帳) đều là **vật mặc định mang chữ** → đã bỏ hết, điểm màu của cả 3 bản chuyển sang **bó hoa ngày về hưu** (mục 5). Lý do đầy đủ: `_BLOCKS.md` §3.
+
+---
+
+## 6. ⚖️ QUÉT COMPLIANCE (`youtube-compliance.md`)
+
+| mục | kết quả |
+|---|---|
+| Từ nhạy ở title/thumbnail/3 dòng đầu | ✅ sạch — không có từ nhóm 殺/血/死/自殺/虐待 |
+| Tên công ty/người thật | ✅ không có. 電産（日本電気産業労働組合）là **tổ chức lịch sử trong tài liệu học thuật**, nêu trung tính, không phán xét |
+| Số liệu YMYL | ✅ 15/15 mục fact sheet verify nguồn cấp 1; 3 số không verify được đã **bỏ hẳn** (§1) |
+| Misleading metadata | ✅ mọi thứ trên title/thumbnail đều có trong video (32,9% mục 1 · 社宅 mục 3 · 家族手当 mục 2 · 退職金 mục 5) |
+| Disclosure | ⚠️ **TICK "altered/synthetic"** khi upload (lớp hình có clip AI) + dòng ※ trong 概要欄 |
+| Inauthentic | ✅ mạch khác hẳn 06/11/14/15 (§0.4) |
+| 外来語 trong 60s đầu (`audience-45plus` §5.2) | ✅ sạch — cold open không có từ ngoại lai; `パーセント` là đơn vị đã ngấm |
+
+---
+
+## 7. VIỆC CÒN LẠI TRƯỚC KHI RENDER
+
+1. **Render demo giọng 1–2 đoạn** (`humanize-script-voice.md` §3) — mở AivisSpeech :10101 trước, profile `showa-b`.
+2. Dựng SLIDES theo **REAL-FIRST v2** (CLAUDE.md §Visual): L1 phim thật ≥ entry 0 · hình thật (L1+L2) **≥60%** · trần ô L1/L2 16,0s · L3 AI 7,0s.
+   ⚠️ Bài này **nặng cảnh văn phòng/社宅** — kho phim PD (USAF-11050/11059/11070/11079) là **cảnh nhà + phố 1946**, gần như không có văn phòng ⇒ tỉ lệ AI sẽ cao như video 16 (~35%). Kiểm sàn 60% bằng gate máy, đừng ước bằng mắt.
+3. `check_cast_unique.py` trước `gen_prompts_17.py` — **dàn mặt phải khác video 13/14/15/16**, mỗi cast có mô tả KHUÔN MẶT (không chỉ quần áo).
+4. `check_expr_unique.py` — chữ ký cười phải khác các video trước (`camera-language.md` §6.8).
+5. Gen 3 thumbnail + soi từng ký tự kanji ở cỡ thật, xoá ✦ (mọi ảnh AI, không ngoại lệ).
+6. Render nền theo `render-background.md` (`.cmd` ASCII-only + CRLF + log + EXITCODE).
+7. Chốt 目次 từ `timeline.json` SAU render, rồi mới `upload_pack.py`.
+8. Đăng: slot **T3/T5/T7 18:00 JST**.
+
+---
+
+## 8. ⚠️ NÓI THẲNG CÁI CHƯA CHẮC
+
+- **Video 14 mới 4 ngày.** Kết luận "cụm công ty là mỏ vàng" dựa chủ yếu vào nó. Nếu 14 tụt về ~100 v/ngày sau 2 tuần
+  thì luận cứ §0.1 yếu đi — nhưng 11/08/06 (cùng cụm tiền) vẫn là top 3 còn lại, nên hướng không đổ.
+- **Cung 0 ở 社宅/退職金/福利厚生 có thể vì không ai tìm**, không phải vì chưa ai làm. Bài này lách rủi ro đó bằng cách
+  **đặt keyword dẫn ở `昭和の会社`** (đo được) và để mấy từ cung-0 xuống phần liệt kê của title/tag.
+- Bài chạy **E-LIST**, ngũ quan chỉ 1/872 — nếu retention 60s đầu tệ hơn video 14 thì đây là **nghi phạm số một**,
+  chữa bằng cách dày ngũ quan ở ô ② của mục 1 và 3 (chỗ rẻ nhất), không phải bằng đổi đề tài.
+- Mục 4 (社内預金) là mục **yếu nhất về chất liệu hình**: không có vật nào đẹp ngoài cái két và tờ giấy.
+  Nếu phải cắt cho vừa độ dài thì cắt mục này trước, không cắt mục 5.

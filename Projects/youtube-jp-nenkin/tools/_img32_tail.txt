@@ -1,0 +1,103 @@
+ABSTRACT = ("tally stroke", "checkbox", "hatched", "calendar", "clock", "pips", "dice", "keypad digits")
+
+
+def build_prompt(subj, doc):
+    if doc is None:
+        return STYLE + subj
+    return style_text(f"「{doc[0]}」", [f"「{x}」" for x in doc[1]]) + subj
+
+
+def main():
+    tl = json.loads((VD / "timeline.json").read_text(encoding="utf-8"))["lines"]
+    txt = [re.sub(r"^(?:\[[^\]]*\])+", "", ln["text"]).strip() for ln in tl]
+
+    def find(cue):
+        # dòng TRÙNG KHÍT cue thắng (dòng mở bài 「再来年の7月。」 cũng là chuỗi con của dòng 88)
+        ex = [i for i, t in enumerate(txt) if t == cue]
+        return ex or [i for i, t in enumerate(txt) if cue in t]
+
+    bad, starts = [], []
+    for e in S:
+        h = find(e[0])
+        if len(h) != 1:
+            bad.append((e[0], h))
+        else:
+            starts.append((h[0], e))
+    gz = []
+    for a, b, fn in GENTEN:
+        ha, hb = find(a), find(b)
+        if len(ha) != 1 or len(hb) != 1:
+            bad.append((a + " / " + b, ha + hb))
+        else:
+            gz.append((ha[0], hb[0], fn))
+    if bad:
+        print("🔴 GATE cue: khớp 0 hoặc >1 dòng —")
+        for c, h in bad:
+            print(f"     «{c}» -> {h}")
+        return 1
+    starts.sort(key=lambda x: x[0])
+    if starts[0][0] != 0:
+        print(f"🔴 GATE phủ: mục đầu bắt đầu ở dòng {starts[0][0]}, phải là 0")
+        return 1
+    print(f"✅ GATE cue: {len(S)} mục + {len(GENTEN)} dải 原典, mỗi cue đúng 1 dòng")
+
+    def entry_of(li):
+        for a, b, fn in gz:
+            if a <= li < b:
+                return "GENTEN", fn
+        cur = None
+        for s0, e in starts:
+            if s0 <= li:
+                cur = e
+        return "S", cur
+
+    shots = json.loads((VD / "plan32.json").read_text(encoding="utf-8"))["shots"]
+    flow, names, blocks, used, short, prev = [], [], [], {}, [], None
+    for k, sh in enumerate(shots):
+        li = sh["lines"][0] if sh["lines"] else prev
+        prev = li
+        gk = [entry_of(x) for x in sh["lines"] if entry_of(x)[0] == "GENTEN"]
+        kind, e = gk[0] if gk else entry_of(li)
+        if kind == "GENTEN":
+            names.append(f"o {k:03d} -> [原典ショット] {e}")
+            continue
+        vs = e[1] if isinstance(e[1], list) else [e[1]]
+        doc = e[2] if len(e) > 2 else None
+        n = used.get(e[0], 0)
+        used[e[0]] = n + 1
+        if n >= len(vs):
+            short.append((e[0], n + 1, len(vs)))
+            continue
+        p = build_prompt(vs[n], doc).replace("\n", " ")
+        flow.append(p)
+        names.append(f"dong {len(flow)} -> shot_{k:03d}.png   [dong timeline {li}]")
+        blocks.append((k, li, p))
+
+    (VD / "img32_FLOW.txt").write_text("\n".join(flow) + "\n", encoding="utf-8", newline="\n")
+    (VD / "img32_TENFILE.txt").write_text("\n".join(names) + "\n", encoding="utf-8", newline="\n")
+    md = [f"# img31 — {len(flow)} prompt ảnh ({len(shots) - len(flow) - len(short)} ô dùng 原典ショット)", ""]
+    for k, li, p in blocks:
+        md += [f"### shot_{k:03d}  (dòng timeline {li})", "", "```", p, "```", ""]
+    (VD / "img32_BLOCKS.md").write_text("\n".join(md), encoding="utf-8", newline="\n")
+
+    guard = [i for i, p in enumerate(flow)
+             if max(p.find("NO TEXT"), p.find("READABLE JAPANESE TEXT")) * 100 // len(p) > 15]
+    subs = [s for e in S for s in (e[1] if isinstance(e[1], list) else [e[1]])]
+    banned = [w for s in subs for w in ("blank", "empty", "text-free") if w in s.lower()]
+    abst = [w for s in subs for w in ABSTRACT if w in s.lower()]
+    labels = [x for e in S if len(e) > 2 for x in [e[2][0]] + e[2][1]]
+    long_lab = [x for x in labels if len(x) > 7 or re.search(r"[0-9０-９]", x)]
+    dup = len(flow) - len(set(flow))
+    unused = [e[0] for e in S if used.get(e[0], 0) == 0]
+    print(f"ô {len(shots)} · prompt {len(flow)} · dài TB {sum(map(len, flow)) // max(1, len(flow))} ký")
+    print(f"thiếu biến thể: {len(short)} {short[:8]}")
+    print(f"cue không ô nào dùng (bị ô khác nuốt): {len(unused)} {unused[:8]}")
+    print(f"prompt trùng nhau: {dup} (phải 0) · guard >15%: {len(guard)} · từ cấm: {len(banned)} · "
+          f"lịch/đồng hồ/xúc xắc: {len(abst)} {abst[:4]} · nhãn >7 ký hoặc có số: {long_lab}")
+    print(f"→ {VD}")
+
+    return 1 if (short or guard or banned or abst or dup or long_lab) else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

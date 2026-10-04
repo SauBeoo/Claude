@@ -1,0 +1,253 @@
+[
+  {
+    "match": "70歳まで待てば、年金は42パーセントも増えますよ",
+    "photo": true,
+    "diagram": "k_hook",
+    "video": true
+  },
+  {
+    "match": "受け取れたはずの42万円を、まるまる、取り逃してしまった",
+    "photo": true,
+    "diagram": "k_lost40"
+  },
+  {
+    "match": "得か損か。その分かれ目は",
+    "photo": true,
+    "q": "hourglass sand timer on dark wooden table moody light"
+  },
+  {
+    "match": "こんにちは、年金と老後のお金研究室です",
+    "photo": false,
+    "lines": [
+      "年金と老後のお金研究室"
+    ],
+    "accent": true
+  },
+  {
+    "match": "「あなたはどちらのタイプか」まで",
+    "photo": false,
+    "lines": [
+      "今日の研究",
+      "待つ? それとも 今すぐ?"
+    ]
+  },
+  {
+    "match": "まず、繰り下げ受給とは何か",
+    "photo": false,
+    "lines": [
+      "第1章",
+      "繰り下げ受給とは"
+    ]
+  },
+  {
+    "match": "受け取りを1か月遅らせるごとに",
+    "photo": true,
+    "diagram": "k_grow",
+    "video": true
+  },
+  {
+    "match": "1年待てば、8.4パーセント",
+    "photo": true,
+    "diagram": "k_rate",
+    "video": true
+  },
+  {
+    "match": "「繰り上げ」もあります",
+    "photo": true,
+    "diagram": "k_kuriage",
+    "video": true
+  },
+  {
+    "match": "「基礎年金」と「厚生年金」の、二階建て",
+    "photo": true,
+    "diagram": "k_twotier"
+  },
+  {
+    "match": "では、核心です",
+    "photo": false,
+    "lines": [
+      "第2章",
+      "損益分岐点を計算する"
+    ]
+  },
+  {
+    "match": "待っている間は、年金を、1円も受け取れない",
+    "photo": true,
+    "q": "empty leather wallet on wooden table dim light"
+  },
+  {
+    "match": "以前ご紹介した、東京都の高橋さん",
+    "photo": true,
+    "diagram": "cast_takahashi02",
+    "video": true
+  },
+  {
+    "match": "70歳まで待つと、高橋さんの年金は、月28万4000円",
+    "photo": true,
+    "diagram": "k_65vs70",
+    "video": true
+  },
+  {
+    "match": "受け取らなかった総額は、240万円かける5年で、1200万円",
+    "photo": true,
+    "diagram": "k_forgone",
+    "video": true
+  },
+  {
+    "match": "1200万円を、年100万円で割ると、およそ12年",
+    "photo": true,
+    "diagram": "k_calc",
+    "video": true
+  },
+  {
+    "match": "これが、「損益分岐点」。およそ82歳です",
+    "photo": true,
+    "diagram": "k_breakeven",
+    "video": true
+  },
+  {
+    "match": "90歳まで長生きすれば",
+    "photo": true,
+    "diagram": "k_longevity",
+    "video": true
+  },
+  {
+    "match": "「額面で82歳、手取りなら、およそ84歳」",
+    "photo": true,
+    "diagram": "k_netbreak",
+    "video": true
+  },
+  {
+    "match": "75歳まで目いっぱい待ったら",
+    "photo": true,
+    "diagram": "k_75wait",
+    "video": true
+  },
+  {
+    "match": "仙台の佐藤さんは、同じ計算をしたうえで",
+    "photo": true,
+    "diagram": "cast_sato02",
+    "video": true
+  },
+  {
+    "match": "ほかの蓄えや収入で暮らせる方」だけ",
+    "photo": true,
+    "diagram": "k_split"
+  },
+  {
+    "match": "ここで、ひとつだけお願いです",
+    "photo": true,
+    "q": "green tea cup on wooden table warm light"
+  },
+  {
+    "match": "さて、ここからが、今日いちばんお伝えしたい",
+    "photo": false,
+    "lines": [
+      "第3章",
+      "待つと損をしやすい 3つの落とし穴"
+    ]
+  },
+  {
+    "match": "落とし穴、その1。「加給年金」です",
+    "photo": true,
+    "diagram": "k_pitfall1",
+    "video": true
+  },
+  {
+    "match": "5歳年下の奥さまがいます",
+    "photo": true,
+    "q": "two gold wedding rings on wooden table warm light close up"
+  },
+  {
+    "match": "落とし穴、その2。「働きながら受け取る方」です",
+    "photo": true,
+    "diagram": "k_pitfall2",
+    "video": true
+  },
+  {
+    "match": "落とし穴、その3。「遺族年金」です",
+    "photo": true,
+    "diagram": "k_pitfall3",
+    "video": true
+  },
+  {
+    "match": "増えた年金が、思わぬ負担を",
+    "photo": true,
+    "diagram": "k_burden",
+    "video": true
+  },
+  {
+    "match": "では、こうした落とし穴を避けて",
+    "photo": false,
+    "lines": [
+      "第4章",
+      "かしこい待ち方"
+    ]
+  },
+  {
+    "match": "一つ目。「基礎年金だけを、繰り下げる」",
+    "photo": true,
+    "diagram": "k_smart1",
+    "video": true
+  },
+  {
+    "match": "たとえば、高橋さんの基礎年金が、月6万5000円",
+    "photo": true,
+    "diagram": "k_smart_calc",
+    "video": true
+  },
+  {
+    "match": "二つ目。「気が変わっても、やり直せる」",
+    "photo": true,
+    "diagram": "k_smart2",
+    "video": true
+  },
+  {
+    "match": "3つの質問で、セルフチェック",
+    "photo": false,
+    "lines": [
+      "セルフチェック",
+      "3つの質問"
+    ]
+  },
+  {
+    "match": "質問、その1。あなたに、65歳未満の",
+    "photo": true,
+    "diagram": "k_self1",
+    "video": true
+  },
+  {
+    "match": "質問、その2。今の暮らしに、待つあいだの生活費",
+    "photo": true,
+    "diagram": "k_self2",
+    "video": true
+  },
+  {
+    "match": "質問、その3。ご家族に長生き",
+    "photo": true,
+    "diagram": "k_self3",
+    "video": true
+  },
+  {
+    "match": "それでは、今日の研究ノートです",
+    "photo": true,
+    "diagram": "note02"
+  },
+  {
+    "match": "なお、今日お伝えしたのは、2026年7月時点",
+    "photo": false,
+    "lines": [
+      "2026年7月時点の情報です",
+      "受け取り方を決める前に 年金事務所で確認を"
+    ]
+  },
+  {
+    "match": "この研究室では、これからも",
+    "photo": false,
+    "lines": [
+      "年金と老後のお金研究室",
+      "また次回の研究で"
+    ],
+    "accent": true
+  }
+]

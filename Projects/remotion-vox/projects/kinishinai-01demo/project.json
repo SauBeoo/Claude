@@ -1,0 +1,215 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "kinishinai-01demo",
+  "channel": "kinishinai",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080
+ },
+ "timeline": {
+  "durationInFrames": 3450
+ },
+ "tracks": [
+  {
+   "id": "trk-base",
+   "name": "nen",
+   "type": "video",
+   "clips": [
+    {
+     "id": "base",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 3450,
+     "asset": "assets/base.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "volume": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-stat",
+   "name": "the so",
+   "type": "text",
+   "clips": [
+    {
+     "id": "stat0",
+     "kind": "text",
+     "from": 2852,
+     "durationInFrames": 513,
+     "content": "「ありがとう」のひとことで\n約3割|約6割\n次も手伝ってくれた人",
+     "preset": "kin-stat",
+     "animation": "none",
+     "layout": {},
+     "animationParams": {
+      "times": [
+       0.3,
+       4.17,
+       14.18,
+       4.17
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "trk-text",
+   "name": "chu",
+   "type": "text",
+   "clips": [
+    {
+     "id": "chip0",
+     "kind": "text",
+     "from": 717,
+     "durationInFrames": 2733,
+     "content": "その一\n「すみません」",
+     "preset": "kin-chip",
+     "animation": "none",
+     "layout": {}
+    },
+    {
+     "id": "callout0",
+     "kind": "text",
+     "from": 926,
+     "durationInFrames": 105,
+     "content": "見張り番の声：\n「迷惑をかけた」",
+     "preset": "kin-callout",
+     "animation": "none",
+     "layout": {
+      "x": 96,
+      "y": 130
+     },
+     "_pos": "tl 0.046"
+    },
+    {
+     "id": "callout1",
+     "kind": "text",
+     "from": 1135,
+     "durationInFrames": 117,
+     "content": "呉服売り場で\n三十四年",
+     "preset": "kin-callout",
+     "animation": "none",
+     "layout": {
+      "x": 1334,
+      "y": 130
+     },
+     "_pos": "tr 0.063"
+    },
+    {
+     "id": "callout2",
+     "kind": "text",
+     "from": 1320,
+     "durationInFrames": 135,
+     "content": "包装紙まで\nていねいに",
+     "preset": "kin-callout",
+     "animation": "none",
+     "layout": {
+      "x": 96,
+      "y": 130
+     },
+     "_pos": "tl 0.002"
+    },
+    {
+     "id": "callout3",
+     "kind": "text",
+     "from": 1731,
+     "durationInFrames": 135,
+     "content": "お客さまより\n先に頭を下げる",
+     "preset": "kin-callout",
+     "animation": "none",
+     "layout": {
+      "x": 96,
+      "y": 130
+     },
+     "_pos": "tl 0.011"
+    },
+    {
+     "id": "callout4",
+     "kind": "text",
+     "from": 2217,
+     "durationInFrames": 105,
+     "content": "相手の喜びは\n思うより大きい",
+     "preset": "kin-callout",
+     "animation": "none",
+     "layout": {
+      "x": 1270,
+      "y": 130
+     },
+     "_pos": "tr 0.068"
+    },
+    {
+     "id": "callout5",
+     "kind": "text",
+     "from": 2399,
+     "durationInFrames": 105,
+     "content": "見張り番は\n心配性",
+     "preset": "kin-callout",
+     "animation": "none",
+     "layout": {
+      "x": 1398,
+      "y": 130
+     },
+     "_pos": "tr 0.000"
+    },
+    {
+     "id": "callout6",
+     "kind": "text",
+     "from": 2738,
+     "durationInFrames": 105,
+     "content": "謝られると\n親切が止まる",
+     "preset": "kin-callout",
+     "animation": "none",
+     "layout": {
+      "x": 96,
+      "y": 330
+     },
+     "_pos": "ml 0.038"
+    },
+    {
+     "id": "source0",
+     "kind": "text",
+     "from": 2006,
+     "durationInFrames": 319,
+     "content": "出典：Kumar & Epley (2018) Psychological Science",
+     "preset": "kin-source",
+     "animation": "none",
+     "layout": {}
+    },
+    {
+     "id": "source1",
+     "kind": "text",
+     "from": 2861,
+     "durationInFrames": 498,
+     "content": "出典：Grant & Gino (2010) Journal of Personality and Social Psychology",
+     "preset": "kin-source",
+     "animation": "none",
+     "layout": {}
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "tieng",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "a0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3450,
+     "asset": "assets/audio.wav",
+     "volume": 1
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "enabled": false,
+  "lines": []
+ },
+ "theme": {
+  "fontFamily": "\"Yu Gothic\", \"YuGothic\", \"Meiryo\", sans-serif",
+  "canvasColor": "#000000"
+ }
+}

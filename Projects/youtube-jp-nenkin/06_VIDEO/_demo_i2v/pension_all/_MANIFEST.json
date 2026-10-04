@@ -1,0 +1,1245 @@
+[
+ {
+  "idx": 1,
+  "id": "e27fb2fb-470b-492d-bdf4-41c8eb538bb4",
+  "file": "sb_01_s01sh01.jpg",
+  "scene": "01",
+  "shot": "01",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "Sunlit Living Room",
+  "visual": "A wide shot of a Bright Living Room filled with morning sunlight. The camera captures the traditional Japanese aesthetic, featuring tatami mats covered by a patterned rug. Katsuo sits at a low wooden table in the center of the room, looking small against the bright, peaceful surroundings.",
+  "motion": "A slow, gentle zoom-in from a wide angle toward Katsuo to establish the mood of the scene.",
+  "assets": [
+   "Katsuo",
+   "Bright Living Room"
+  ],
+  "kb": 135,
+  "flowPrompt": null,
+  "asset": "Man sitting at table"
+ },
+ {
+  "idx": 2,
+  "id": "cc10bd1c-93b8-4699-a005-a334670d98d3",
+  "file": "sb_02_s01sh02.jpg",
+  "scene": "01",
+  "shot": "02",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "Katsuo's Realization",
+  "visual": "A medium close-up focusing on Katsuo. He is wearing a grey cardigan over a warm-red checked shirt. His expression is one of complete shock and disbelief as he stares intensely at something in his hands, his eyes wide and mouth slightly agape.",
+  "motion": "The camera remains static, holding on Katsuo's stunned facial expression to capture the emotional weight of the moment.",
+  "assets": [
+   "Katsuo",
+   "Bright Living Room"
+  ],
+  "kb": 132,
+  "flowPrompt": null,
+  "asset": "Man staring in shock"
+ },
+ {
+  "idx": 3,
+  "id": "8902d72e-956f-46eb-b018-3b1efb7a7749",
+  "file": "sb_03_s01sh03.jpg",
+  "scene": "01",
+  "shot": "03",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "The Bank Passbook",
+  "visual": "A close-up shot of Katsuo's weathered hands firmly gripping a Bank Passbook. The passbook is held open, though the specific numbers are blurred, emphasizing his tight, almost trembling grasp on the small book.",
+  "motion": "A shallow depth-of-field shot with a very slight handheld wobble to convey Katsuo's internal agitation.",
+  "assets": [
+   "Katsuo",
+   "Bank Passbook"
+  ],
+  "kb": 124,
+  "flowPrompt": null,
+  "asset": "Man holding bank passbook"
+ },
+ {
+  "idx": 4,
+  "id": "a36a76e2-2f55-4f21-ba71-24e9f2bc11c7",
+  "file": "sb_04_s02sh01.jpg",
+  "scene": "02",
+  "shot": "01",
+  "sceneTitle": "Int. Living Room - Close Up",
+  "title": "Katsuo Holding Passbook",
+  "visual": "A close-up shot focusing on Katsuo's weathered, elderly hands. He is holding the open Bank Passbook firmly. The background of the Living Room is softly blurred, keeping the focus entirely on the document and the texture of his skin.",
+  "motion": "The camera remains static, emphasizing the stillness and weight of the moment.",
+  "assets": [
+   "Katsuo",
+   "Living Room",
+   "Bank Passbook"
+  ],
+  "kb": 112,
+  "flowPrompt": null,
+  "asset": "Man holding bank passbook"
+ },
+ {
+  "idx": 5,
+  "id": "c0344c32-ea42-4ac1-b973-764eae2c83f3",
+  "file": "sb_05_s02sh02.jpg",
+  "scene": "02",
+  "shot": "02",
+  "sceneTitle": "Int. Living Room - Close Up",
+  "title": "Focusing on Figures",
+  "visual": "An extreme close-up on the pages of the Bank Passbook. Most of the Japanese characters and transaction lines are out of focus, creating a shallow depth of field. Katsuo's thumb is visible at the edge of the frame.",
+  "motion": "A very slow rack focus begins, starting from the blurred top of the page and moving toward the center.",
+  "assets": [
+   "Katsuo",
+   "Bank Passbook"
+  ],
+  "kb": 87,
+  "flowPrompt": null,
+  "asset": "Man viewing bank passbook deposit"
+ },
+ {
+  "idx": 6,
+  "id": "8920886f-ce8e-407e-8530-71c0ba479875",
+  "file": "sb_06_s02sh03.jpg",
+  "scene": "02",
+  "shot": "03",
+  "sceneTitle": "Int. Living Room - Close Up",
+  "title": "The Pension Deposit",
+  "visual": "The camera focus snaps onto a specific line in the Bank Passbook. The numbers '360,000' are clearly legible and sharp against the pale paper. The surrounding ink remains slightly soft, making the deposit amount the undeniable focal point.",
+  "motion": "The camera holds a tight, steady frame on the deposit figure for several seconds.",
+  "assets": [
+   "Bank Passbook"
+  ],
+  "kb": 121,
+  "flowPrompt": null,
+  "asset": "Reading bank passbook deposit am…"
+ },
+ {
+  "idx": 7,
+  "id": "4bbe44a8-a5a0-4617-9c54-936eabb925d7",
+  "file": "sb_07_s03sh01.jpg",
+  "scene": "03",
+  "shot": "01",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "Resting the Passbook",
+  "visual": "In the Bright Living Room, Katsuo's hands carefully place the Bank Passbook onto the low table. Beside him, Mitsue leans in, her patterned brown knit cardigan visible as she focuses on the open pages. The lighting is soft and natural, emphasizing the texture of the paper against the wooden surface.",
+  "motion": "A slow, tight zoom in on the Bank Passbook as it settles on the table, drawing focus to the transactions.",
+  "assets": [
+   "Katsuo",
+   "Mitsue",
+   "Bright Living Room",
+   "Bank Passbook"
+  ],
+  "kb": 569,
+  "flowPrompt": null,
+  "asset": "Man places bank passbook"
+ },
+ {
+  "idx": 8,
+  "id": "f07dfd36-3de7-44f1-a0c4-8696113c7f07",
+  "file": "sb_08_s03sh02.jpg",
+  "scene": "03",
+  "shot": "02",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "Concerned Observation",
+  "visual": "A medium shot of Katsuo and Mitsue sitting together. Mitsue reaches out with a finger, pointing directly at a specific entry in the Bank Passbook. Her face is etched with a mix of confusion and worry, while Katsuo looks on with a heavy, somber expression.",
+  "motion": "The camera remains static, capturing the intimate and worried body language between the couple.",
+  "assets": [
+   "Katsuo",
+   "Mitsue",
+   "Bright Living Room",
+   "Bank Passbook"
+  ],
+  "kb": 578,
+  "flowPrompt": null,
+  "asset": "Couple reviewing bank passbook"
+ },
+ {
+  "idx": 9,
+  "id": "13115f32-dd12-4d9f-b574-50771a597d27",
+  "file": "sb_09_s03sh03.jpg",
+  "scene": "03",
+  "shot": "03",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "Silent Disagreement",
+  "visual": "A close-up shot focused on Katsuo's face as he slowly shakes his head. Mitsue is partially visible in the foreground, still pointing at the book. Katsuo’s eyes are downcast, reflecting a sense of resignation or uncertainty about the financial situation.",
+  "motion": "A subtle pan from Mitsue’s pointing hand up to Katsuo’s face to capture his slow head shake.",
+  "assets": [
+   "Katsuo",
+   "Mitsue",
+   "Bright Living Room"
+  ],
+  "kb": 572,
+  "flowPrompt": null,
+  "asset": "Man shaking head at passbook"
+ },
+ {
+  "idx": 10,
+  "id": "4d2fd987-0b8f-45a7-b2e6-89aca8bbf772",
+  "file": "sb_10_s04sh01.jpg",
+  "scene": "04",
+  "shot": "01",
+  "sceneTitle": "Int. Kitchen - Day",
+  "title": "The Marked Calendar",
+  "visual": "In the Bright Living Room, Mitsue stands before a Wall Calendar hanging on the wall. The camera is positioned behind her shoulder, showing the calendar filled with various handwritten notes and circled dates. Mitsue reaches out and points her finger specifically at a marked date in the month of April.",
+  "motion": "A static medium-close shot focusing on Mitsue and the calendar, emphasizing her focus on the specific date.",
+  "assets": [
+   "Mitsue",
+   "Bright Living Room",
+   "Wall Calendar"
+  ],
+  "kb": 154,
+  "flowPrompt": null,
+  "asset": "Woman pointing at calendar"
+ },
+ {
+  "idx": 11,
+  "id": "ae3175ac-5a25-457e-89bd-16a79676dfb5",
+  "file": "sb_11_s04sh02.jpg",
+  "scene": "04",
+  "shot": "02",
+  "sceneTitle": "Int. Kitchen - Day",
+  "title": "Flipping Back Time",
+  "visual": "The camera moves in closer as Mitsue's hand grasps the bottom of the calendar page. She slowly lifts the April page to reveal the month of February beneath it. The paper crinkles slightly under her touch, showing the transition between the seasons on the wall.",
+  "motion": "A tight close-up on the calendar and Mitsue's hand, following the upward motion of the page flip.",
+  "assets": [
+   "Mitsue",
+   "Wall Calendar"
+  ],
+  "kb": 156,
+  "flowPrompt": null,
+  "asset": "Woman turning calendar page"
+ },
+ {
+  "idx": 12,
+  "id": "35117d3d-a11d-4985-b6df-9b7f11c4775f",
+  "file": "sb_12_s04sh03.jpg",
+  "scene": "04",
+  "shot": "03",
+  "sceneTitle": "Int. Kitchen - Day",
+  "title": "Tracing February Dates",
+  "visual": "Now looking at the February page, Mitsue slowly traces her index finger across a sequence of dates. Her expression is contemplative as she follows the passage of time. The bright morning light from the kitchen window illuminates the texture of the calendar paper and her weathered hand.",
+  "motion": "The camera remains in a steady close-up, slowly panning horizontally to follow the movement of Mitsue's finger across the row of dates.",
+  "assets": [
+   "Mitsue",
+   "Kitchen",
+   "Wall Calendar"
+  ],
+  "kb": 583,
+  "flowPrompt": null,
+  "asset": "Woman looking at wall calendar"
+ },
+ {
+  "idx": 13,
+  "id": "9343791f-7bb4-45e4-8f18-c9a65ebb4f12",
+  "file": "sb_13_s05sh01.jpg",
+  "scene": "05",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Dual Bank Entries",
+  "visual": "The frame is split vertically. On the left side, a Bank Passbook lies open on the Desk, clearly showing a transaction entry of 360,000. On the right side, an identical Bank Passbook is shown with the same 360,000 amount. A thin, glowing amber line separates the two sides of the screen.",
+  "motion": "The camera remains in a static, overhead close-up to emphasize the symmetry between the two documents.",
+  "assets": [
+   "Desk",
+   "Bank Passbook"
+  ],
+  "kb": 129,
+  "flowPrompt": null,
+  "asset": "Bank passbooks on desk"
+ },
+ {
+  "idx": 14,
+  "id": "f3b9bf2a-2c79-4a6c-862f-69a7c5696850",
+  "file": "sb_14_s05sh02.jpg",
+  "scene": "05",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Question Emerges",
+  "visual": "A translucent graphic of a large question mark fades in, centered directly over the amber dividing line. The Bank Passbook entries remain visible on either side, their identical 360,000 figures highlighted by the amber glow.",
+  "motion": "The camera slowly zooms in toward the center of the frame, bringing the question mark into sharper focus.",
+  "assets": [
+   "Desk",
+   "Bank Passbook"
+  ],
+  "kb": 127,
+  "flowPrompt": null,
+  "asset": "Bank passbook showing deposit am…"
+ },
+ {
+  "idx": 15,
+  "id": "5af00cde-9a1d-4f4c-bb5e-8665a1f9fa26",
+  "file": "sb_15_s05sh03.jpg",
+  "scene": "05",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Pulsing Uncertainty",
+  "visual": "The question mark begins to pulse with a soft white light against the amber line. The surrounding split-screen of the two Bank Passbooks on the Desk begins to slightly dim, making the pulsing symbol the primary focus of the composition.",
+  "motion": "A very slight, handheld-style vibration is added to the frame to create a sense of unease and curiosity.",
+  "assets": [
+   "Desk",
+   "Bank Passbook"
+  ],
+  "kb": 136,
+  "flowPrompt": null,
+  "asset": "Passbooks displaying duplicate b…"
+ },
+ {
+  "idx": 16,
+  "id": "fc5a008d-4f6b-4ed2-9181-78d6af31bf9e",
+  "file": "sb_16_s06sh01.jpg",
+  "scene": "06",
+  "shot": "01",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "Quiet Contemplation",
+  "visual": "Katsuo sits alone in the center of the quiet Tatami Room. Soft, diffused daylight filters through the shoji screens, casting long shadows across the straw mats. He holds a Calculator in his lap, though his hands are still and his gaze is distant. In the foreground, a Framed Photo is visible but remains softly out of focus.",
+  "motion": "The camera remains in a static, medium-wide shot to emphasize the stillness of the room and Katsuo's isolation.",
+  "assets": [
+   "Katsuo",
+   "Tatami Room",
+   "Calculator",
+   "Framed Photo"
+  ],
+  "kb": 606,
+  "flowPrompt": null,
+  "asset": "Man holding calculator in room"
+ },
+ {
+  "idx": 17,
+  "id": "7c2078d6-78cb-4786-8744-8c9118fc9ec1",
+  "file": "sb_17_s06sh02.jpg",
+  "scene": "06",
+  "shot": "02",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "A Weighty Thought",
+  "visual": "Close-up on Katsuo's face as he slowly turns his head toward the window. His expression is one of deep thought and quiet melancholy. The light from the window catches his eyes, highlighting his pensive mood while the rest of the room remains in soft shadow.",
+  "motion": "A slow, subtle zoom-in on Katsuo's face to capture the nuance of his emotional state.",
+  "assets": [
+   "Katsuo",
+   "Tatami Room"
+  ],
+  "kb": 637,
+  "flowPrompt": null,
+  "asset": "Man turning head toward window"
+ },
+ {
+  "idx": 18,
+  "id": "a02c3fb9-df98-4c9e-b70e-2f41bed1780c",
+  "file": "sb_18_s06sh03.jpg",
+  "scene": "06",
+  "shot": "03",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "The Empty Room",
+  "visual": "Katsuo is now a smaller figure in the large, serene Tatami Room as he continues to stare out the window. The composition emphasizes the geometry of the shoji screens and the vastness of the empty space around him. The Calculator remains forgotten in his hand.",
+  "motion": "A slow camera pull-back, moving away from Katsuo to reveal more of the empty room, making him appear increasingly solitary.",
+  "assets": [
+   "Katsuo",
+   "Tatami Room",
+   "Calculator"
+  ],
+  "kb": 656,
+  "flowPrompt": null,
+  "asset": "Man sitting in tatami room"
+ },
+ {
+  "idx": 19,
+  "id": "65c892a3-78ee-460c-b236-c7485c2a522e",
+  "file": "sb_19_s07sh01.jpg",
+  "scene": "07",
+  "shot": "01",
+  "sceneTitle": "Int. Pension Office - Day",
+  "title": "The Pension Office Desk",
+  "visual": "In a bright, modern Pension Office, a Pension Clerk in a crisp uniform sits behind a clean counter. She looks directly toward the camera with a professional and helpful expression. Behind her, in the soft-focus background, a Crowd of elderly people waits patiently in a row of chairs, creating a sense of a busy but orderly public space.",
+  "motion": "A static wide shot that establishes the environment of the office and the presence of the clerk.",
+  "assets": [
+   "Pension Clerk",
+   "Crowd",
+   "Pension Office"
+  ],
+  "kb": 123,
+  "flowPrompt": null,
+  "asset": "Pension clerk working in office"
+ },
+ {
+  "idx": 20,
+  "id": "9b5a00c8-91a8-49d7-96be-7a0afb336980",
+  "file": "sb_20_s07sh02.jpg",
+  "scene": "07",
+  "shot": "02",
+  "sceneTitle": "Int. Pension Office - Day",
+  "title": "Receiving the Pension Form",
+  "visual": "The Pension Clerk extends her hand, holding out a text-heavy Pension Form toward the camera. The document is filled with complex Japanese characters and official-looking boxes. The clerk's hand is steady, presenting the paperwork as if giving it directly to the viewer.",
+  "motion": "The camera pushes in slightly to a medium close-up, focusing on the Pension Form as it is handed over.",
+  "assets": [
+   "Pension Clerk",
+   "Pension Form"
+  ],
+  "kb": 642,
+  "flowPrompt": null,
+  "asset": "Clerk handing pension form"
+ },
+ {
+  "idx": 21,
+  "id": "0890b98e-3cba-46b8-8825-d56d97be8b1a",
+  "file": "sb_21_s07sh03.jpg",
+  "scene": "07",
+  "shot": "03",
+  "sceneTitle": "Int. Pension Office - Day",
+  "title": "Pointing Out the Details",
+  "visual": "An extreme close-up of the Pension Form as the Pension Clerk uses her index finger to point to a specific, important box on the page. The text around the box is dense and official. In the background, the Crowd of people remains a blur of muted colors, emphasizing the focus on the specific instruction.",
+  "motion": "The camera remains tight on the document, following the clerk's finger as it moves to highlight the specific area.",
+  "assets": [
+   "Pension Clerk",
+   "Pension Form",
+   "Crowd"
+  ],
+  "kb": 125,
+  "flowPrompt": null,
+  "asset": "Clerk pointing at pension form"
+ },
+ {
+  "idx": 22,
+  "id": "933842d4-33ce-4fac-80ba-50c727c87751",
+  "file": "sb_22_s08sh01.jpg",
+  "scene": "08",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Overhead",
+  "title": "The Pension Website",
+  "visual": "An overhead shot of a large Computer Monitor on a Desk. The screen displays the official Japan Pension Service website, filled with dense Japanese text and various menu options. A specific section of the website is highlighted with a soft, glowing amber border to draw the viewer's attention.",
+  "motion": "The camera starts with a static overhead view of the monitor, then slowly zooms in toward the highlighted section.",
+  "assets": [
+   "Computer Monitor",
+   "Desk"
+  ],
+  "kb": 153,
+  "flowPrompt": null,
+  "asset": "Computer monitor displaying Japa…"
+ },
+ {
+  "idx": 23,
+  "id": "57e7a6ad-fce8-44de-b4a7-44378ccdfac6",
+  "file": "sb_23_s08sh02.jpg",
+  "scene": "08",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Overhead",
+  "title": "Clicking the Link",
+  "visual": "A close-up of the Computer Monitor. A digital cursor moves steadily across the screen and hovers over a blue hyperlink that reads 'Payment Schedule'. The cursor transforms into a hand icon as it prepares to select the link.",
+  "motion": "The camera remains tight and static on the screen to emphasize the cursor's movement.",
+  "assets": [
+   "Computer Monitor",
+   "Desk"
+  ],
+  "kb": 143,
+  "flowPrompt": null,
+  "asset": "Cursor hovering over payment sch…"
+ },
+ {
+  "idx": 24,
+  "id": "cec5dcfb-af8d-4d90-a8d3-3197af57319f",
+  "file": "sb_24_s08sh03.jpg",
+  "scene": "08",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Overhead",
+  "title": "Payment Schedule Table",
+  "visual": "The Computer Monitor refreshes, revealing a new page. A clean, structured table titled 'Payment Schedule' appears, showing a list of dates and pension figures. The white light of the screen reflects slightly on the surface of the Desk.",
+  "motion": "The camera pulls back slightly to show more of the Desk surface, framing the monitor in the center of the shot.",
+  "assets": [
+   "Computer Monitor",
+   "Desk"
+  ],
+  "kb": 143,
+  "flowPrompt": null,
+  "asset": "Computer displaying payment sche…"
+ },
+ {
+  "idx": 25,
+  "id": "978384c9-98d2-4743-ad72-e29732936a16",
+  "file": "sb_25_s09sh01.jpg",
+  "scene": "09",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Pension Timeline",
+  "visual": "A clean graphic illustration of a yearly timeline is displayed across a Desk. The dates 4/15, 6/15, 8/15, 10/15, 12/15, and 2/15 are clearly marked in large, bold numbers. Stylized arrows indicate a flow of currency moving from the gaps between dates toward each specific payment milestone.",
+  "motion": "The camera starts with a wide shot of the entire timeline and then begins a slow, steady zoom toward the first half of the year.",
+  "assets": [
+   "Desk",
+   "Gold Coins"
+  ],
+  "kb": 593,
+  "flowPrompt": null,
+  "asset": "Graphic illustration of yearly t…"
+ },
+ {
+  "idx": 26,
+  "id": "a0fc03fa-9ca6-46be-bccb-43466a73429e",
+  "file": "sb_26_s09sh02.jpg",
+  "scene": "09",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The April Highlight",
+  "visual": "The camera focuses closely on the date 4/15, which begins to glow with a bright, pulsating light. The arrows pointing toward this date animate more vigorously, emphasizing the accumulation of funds for this specific period.",
+  "motion": "A tight zoom-in directly onto the glowing '4/15' text until it fills the center of the frame.",
+  "assets": [
+   "Desk",
+   "Gold Coins"
+  ],
+  "kb": 144,
+  "flowPrompt": null,
+  "asset": "Graphic timeline showing payment…"
+ },
+ {
+  "idx": 27,
+  "id": "fd433979-c567-4c61-aae3-66afc61effde",
+  "file": "sb_27_s09sh03.jpg",
+  "scene": "09",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Amber Months Focus",
+  "visual": "Beneath the glowing April date, the words 'February' and 'March' are highlighted in a warm, amber glow. These months are connected to the 4/15 payment by a prominent, shimmering gold arrow, making the relationship between the months and the payment date clear.",
+  "motion": "A slight tilt downward from the 4/15 date to settle on the amber-lit text for February and March.",
+  "assets": [
+   "Desk",
+   "Gold Coins"
+  ],
+  "kb": 598,
+  "flowPrompt": null,
+  "asset": "Timeline graphic on desk"
+ },
+ {
+  "idx": 28,
+  "id": "2489229f-96b8-4bda-b0e5-b8c069056e71",
+  "file": "sb_28_s12sh01.jpg",
+  "scene": "12",
+  "shot": "01",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "Explaining the Calculation",
+  "visual": "In the sunlit Living Room, Katsuo and Mitsue are seated across from each other at a low wooden table. Katsuo holds a Pen and points toward a Piece Of Paper laying on the table surface. The camera captures a medium shot of them, focusing on Katsuo's earnest expression as he guides Mitsue through the information.",
+  "motion": "The camera remains in a steady, static medium shot to establish the relationship and the shared activity between the two characters.",
+  "assets": [
+   "Katsuo",
+   "Mitsue",
+   "Living Room",
+   "Pen",
+   "Piece Of Paper"
+  ],
+  "kb": 158,
+  "flowPrompt": null,
+  "asset": "Man pointing at paper table"
+ },
+ {
+  "idx": 29,
+  "id": "5d0ee30d-2d62-470b-886f-c05516611149",
+  "file": "sb_29_s12sh02.jpg",
+  "scene": "12",
+  "shot": "02",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "The Math on Paper",
+  "visual": "An extreme close-up focuses on the Piece Of Paper on the table. Boldly written in ink are the numbers '180,000 x 2 = 360,000'. The tip of Katsuo's Pen is visible, resting just below the final sum, highlighting the importance of the calculation.",
+  "motion": "A slight, slow zoom-in on the handwritten numerals to increase the dramatic weight of the calculation.",
+  "assets": [
+   "Katsuo",
+   "Piece Of Paper",
+   "Pen",
+   "Living Room"
+  ],
+  "kb": 100,
+  "flowPrompt": null,
+  "asset": "Man calculating on paper"
+ },
+ {
+  "idx": 30,
+  "id": "91d65f2d-361d-4286-a382-d2359fc50393",
+  "file": "sb_30_s12sh03.jpg",
+  "scene": "12",
+  "shot": "03",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "Mitsue's Realization",
+  "visual": "A close-up shot focuses on Mitsue's face as she looks down at the paper and then back up at Katsuo. Her eyes widen slightly and her brow relaxes as a look of understanding and realization dawns on her. In the background, Katsuo remains partially in frame, watching her reaction.",
+  "motion": "The camera performs a subtle rack focus from the paper in the foreground to Mitsue's face as she begins to nod.",
+  "assets": [
+   "Mitsue",
+   "Katsuo",
+   "Living Room"
+  ],
+  "kb": 503,
+  "flowPrompt": null,
+  "asset": "Woman realizing something lookin…"
+ },
+ {
+  "idx": 31,
+  "id": "bcc3bfcb-30d7-423e-8160-7021ed4b034f",
+  "file": "sb_31_s13sh01.jpg",
+  "scene": "13",
+  "shot": "01",
+  "sceneTitle": "Int. Pension Office - Day",
+  "title": "Waiting Hall Atmosphere",
+  "visual": "A wide shot of the Waiting Hall shows dozens of elderly people from the Crowd sitting in rows of chairs, their forms blurred and out of focus. In the sharp foreground, a single empty chair stands prominently, caught in the warm glow of late afternoon sunlight streaming through a window. The atmosphere is quiet and heavy with the weight of time.",
+  "motion": "The camera remains static, emphasizing the stillness of the empty chair against the soft movement of the Crowd in the background.",
+  "assets": [
+   "Crowd",
+   "Waiting Hall"
+  ],
+  "kb": 599,
+  "flowPrompt": null,
+  "asset": "Empty wooden chair in waiting"
+ },
+ {
+  "idx": 32,
+  "id": "0fb3c366-34fd-4d73-9ca4-1dd855b3c68a",
+  "file": "sb_32_s13sh02.jpg",
+  "scene": "13",
+  "shot": "02",
+  "sceneTitle": "Int. Pension Office - Day",
+  "title": "The Passing Shadow",
+  "visual": "In a close-up on the floor near the empty chair, a long shadow of a person stretches across the linoleum as they walk past. The movement is captured in slow motion, making the elongation of the shadow appear fluid and ghostly. The bright afternoon light creates a high contrast between the dark silhouette and the illuminated floor.",
+  "motion": "The camera pans slowly to the right, following the tip of the shadow as it glides across the floorboards toward the chair.",
+  "assets": [
+   "Pension Office"
+  ],
+  "kb": 558,
+  "flowPrompt": null,
+  "asset": "Person walking past office chair"
+ },
+ {
+  "idx": 33,
+  "id": "4b6cc2bb-3651-4334-a143-5689b2168a12",
+  "file": "sb_33_s13sh03.jpg",
+  "scene": "13",
+  "shot": "03",
+  "sceneTitle": "Int. Pension Office - Day",
+  "title": "A Sense of Absence",
+  "visual": "The camera focuses back on the empty chair as the Pension Clerk passes by in the background, out of focus. The shadow has moved on, leaving the chair isolated once more in the pooling sunlight. Dust motes dance in the light beam, highlighting the vacancy of the seat.",
+  "motion": "A slow zoom-in on the empty seat of the chair, making the space feel more personal and poignant as the scene ends.",
+  "assets": [
+   "Pension Clerk",
+   "Waiting Hall"
+  ],
+  "kb": 617,
+  "flowPrompt": null,
+  "asset": "Woman walking past empty chair"
+ },
+ {
+  "idx": 34,
+  "id": "7bc69852-9bfd-4339-981c-6b7a4ccd63ae",
+  "file": "sb_34_s14sh01.jpg",
+  "scene": "14",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Essential Documents",
+  "visual": "A close-up shot focused on the surface of a wooden desk. A Pension Certificate, a My Number Card, and a Family Register are fanned out neatly. The official layout of the Japanese documents is visible, though the small text remains illegible under the soft overhead light.",
+  "motion": "A slow, static top-down shot that gradually tightens its focus on the center of the document pile.",
+  "assets": [
+   "Desk",
+   "Pension Certificate",
+   "My Number Card",
+   "Family Register"
+  ],
+  "kb": 614,
+  "flowPrompt": null,
+  "asset": "Official documents arranged on desk"
+ },
+ {
+  "idx": 35,
+  "id": "12f84a00-c8b1-478c-83a4-929a73240600",
+  "file": "sb_35_s14sh02.jpg",
+  "scene": "14",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Preparing to Read",
+  "visual": "A pair of reading glasses is slowly lowered into the frame. The lenses catch a glint of light as they are poised just above the fanned-out documents on the desk. The texture of the paper and the plastic of the My Number Card are sharp in the foreground.",
+  "motion": "The camera remains steady as the glasses enter the frame from the top, moving toward the center of the composition.",
+  "assets": [
+   "Desk",
+   "Pension Certificate",
+   "My Number Card",
+   "Family Register"
+  ],
+  "kb": 589,
+  "flowPrompt": null,
+  "asset": "Glasses lowering over official d…"
+ },
+ {
+  "idx": 36,
+  "id": "94c04356-e14f-42b8-ad81-ca9cb45dd8bc",
+  "file": "sb_36_s14sh03.jpg",
+  "scene": "14",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Final Placement",
+  "visual": "The reading glasses are placed gently on top of the Pension Certificate and Family Register. The documents are now partially obscured by the frames of the glasses. The lighting highlights the importance of these items gathered together on the desk.",
+  "motion": "The camera performs a very subtle zoom-in on the point where the glasses rest on the paperwork.",
+  "assets": [
+   "Desk",
+   "Pension Certificate",
+   "My Number Card",
+   "Family Register"
+  ],
+  "kb": 139,
+  "flowPrompt": null,
+  "asset": "Glasses on official documents"
+ },
+ {
+  "idx": 37,
+  "id": "657ebbff-6e96-4616-843a-8167b1b5f717",
+  "file": "sb_37_s15sh01.jpg",
+  "scene": "15",
+  "shot": "01",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "Mitsue's Contemplative Call",
+  "visual": "Mitsue stands in the Living Room, holding a Smartphone to her ear. She is positioned near a large window, looking out with a thoughtful and slightly somber expression. The soft daylight illuminates her face, highlighting her contemplative mood as she listens to the person on the other end of the line.",
+  "motion": "A slow, gentle zoom in on Mitsue’s face to capture her internal reflection.",
+  "assets": [
+   "Mitsue",
+   "Living Room",
+   "Smartphone"
+  ],
+  "kb": 135,
+  "flowPrompt": null,
+  "asset": "Woman holding smartphone in room"
+ },
+ {
+  "idx": 38,
+  "id": "65493083-3fe1-4023-8a77-0b983516f988",
+  "file": "sb_38_s15sh02.jpg",
+  "scene": "15",
+  "shot": "02",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "A Moment of Peace",
+  "visual": "Close-up on Mitsue as her expression softens into a slight, genuine smile. She nods slowly while continuing to listen to the phone call. Through the window behind her, the blurred greenery of the Garden provides a peaceful backdrop to her quiet realization.",
+  "motion": "The camera remains steady in a tight medium shot, focusing on the subtle change in Mitsue's facial expression.",
+  "assets": [
+   "Mitsue",
+   "Living Room",
+   "Smartphone"
+  ],
+  "kb": 120,
+  "flowPrompt": null,
+  "asset": "Woman smiling while on phone"
+ },
+ {
+  "idx": 39,
+  "id": "7e099b3a-9a9c-4e79-b49c-8cfc4500a4be",
+  "file": "sb_39_s15sh03.jpg",
+  "scene": "15",
+  "shot": "03",
+  "sceneTitle": "Int. Living Room - Day",
+  "title": "Bird on the Lantern",
+  "visual": "The camera shifts focus to the Garden outside the window. A small bird gracefully lands on a weathered stone lantern. The vibrant green foliage and the stillness of the garden create a sense of serenity that mirrors Mitsue's internal state.",
+  "motion": "A rack focus from the window pane to the bird on the stone lantern in the garden.",
+  "assets": [
+   "Garden",
+   "Living Room"
+  ],
+  "kb": 655,
+  "flowPrompt": null,
+  "asset": "Bird lands on stone lantern"
+ },
+ {
+  "idx": 40,
+  "id": "e5f3e409-e2e7-4745-aa32-a06362075137",
+  "file": "sb_40_s16sh01.jpg",
+  "scene": "16",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Positioning the Stamp",
+  "visual": "A close-up shot on the Desk focusing on the Bank Passbook held open by Katsuo. His hand enters the frame holding a Wooden Stamp, hovering it precisely over a specific line of text on the paper. The lighting is focused and warm, highlighting the texture of the document.",
+  "motion": "The camera remains in a steady, extreme close-up, following the slow and deliberate downward movement of the wooden stamp.",
+  "assets": [
+   "Katsuo",
+   "Desk",
+   "Bank Passbook",
+   "Wooden Stamp"
+  ],
+  "kb": 139,
+  "flowPrompt": null,
+  "asset": "Man stamping bank passbook"
+ },
+ {
+  "idx": 41,
+  "id": "734c3c92-ec56-4747-86d2-c3675fd444c9",
+  "file": "sb_41_s16sh02.jpg",
+  "scene": "16",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Red Ink Strike",
+  "visual": "An extreme close-up as the Wooden Stamp makes contact with the Bank Passbook. The bright red ink transfer is visible as the wood meets the paper. The hand is steady, applying firm pressure to ensure a clean mark.",
+  "motion": "The camera performs a very slight zoom-in on the point of contact to emphasize the importance of the act.",
+  "assets": [
+   "Katsuo",
+   "Desk",
+   "Bank Passbook",
+   "Wooden Stamp"
+  ],
+  "kb": 105,
+  "flowPrompt": null,
+  "asset": "Man stamping bank passbook"
+ },
+ {
+  "idx": 42,
+  "id": "83b4c089-9883-4d9c-9ea1-ffce49b2424e",
+  "file": "sb_42_s16sh03.jpg",
+  "scene": "16",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Finished Seal",
+  "visual": "The Wooden Stamp is lifted away from the Bank Passbook, revealing a perfect, circular red seal next to the text. The ink is fresh and vibrant against the white page. Katsuo's hand slowly moves out of the frame.",
+  "motion": "The camera tilts up slightly from the passbook, following the hand for a moment before settling on the completed seal.",
+  "assets": [
+   "Katsuo",
+   "Desk",
+   "Bank Passbook",
+   "Wooden Stamp"
+  ],
+  "kb": 573,
+  "flowPrompt": null,
+  "asset": "Man stamping bank passbook"
+ },
+ {
+  "idx": 43,
+  "id": "dd50f6a7-a082-461a-b2bb-5d319992d337",
+  "file": "sb_43_s17sh01.jpg",
+  "scene": "17",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Overhead",
+  "title": "Split Frame Forms",
+  "visual": "An overhead shot of the Desk shows a split-frame composition. On the left side, the Death Notice Form is clearly visible, while on the right side, the Claim For Unpaid Pension Form is laid out. Both documents are clean and positioned neatly against the wooden surface of the desk.",
+  "motion": "The camera remains in a static, top-down bird's-eye view to establish the comparison between the two documents.",
+  "assets": [
+   "Desk",
+   "Death Notice Form",
+   "Claim For Unpaid Pension Form"
+  ],
+  "kb": 641,
+  "flowPrompt": null,
+  "asset": "Documents on writing desk"
+ },
+ {
+  "idx": 44,
+  "id": "3332759c-218f-42bd-aab8-b416f88f0d8c",
+  "file": "sb_44_s17sh02.jpg",
+  "scene": "17",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Overhead",
+  "title": "The Connecting Arrow",
+  "visual": "Maintaining the split-frame view on the Desk, a graphic amber arrow animates into view. It starts from the Death Notice Form on the left and points directly toward the Claim For Unpaid Pension Form on the right, highlighting their procedural connection.",
+  "motion": "The camera stays fixed, allowing the graphic overlay of the arrow to be the primary movement in the frame.",
+  "assets": [
+   "Desk",
+   "Death Notice Form",
+   "Claim For Unpaid Pension Form"
+  ],
+  "kb": 560,
+  "flowPrompt": null,
+  "asset": "Forms on desk"
+ },
+ {
+  "idx": 45,
+  "id": "c4b9377a-c709-465e-8a63-362ba7c44d3d",
+  "file": "sb_45_s17sh03.jpg",
+  "scene": "17",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Overhead",
+  "title": "Claim Form Highlight",
+  "visual": "The right side of the split frame, featuring the Claim For Unpaid Pension Form, undergoes a visual transition. The background behind this specific form turns a soft, reassuring green color while the amber arrow remains in place, emphasizing the next step in the process.",
+  "motion": "The camera maintains its overhead position on the Desk, focusing on the color transition on the right side of the screen.",
+  "assets": [
+   "Desk",
+   "Death Notice Form",
+   "Claim For Unpaid Pension Form"
+  ],
+  "kb": 638,
+  "flowPrompt": null,
+  "asset": "Comparing death and pension forms"
+ },
+ {
+  "idx": 46,
+  "id": "6b7d280d-4d7f-4ba4-8bda-292d4fc5ebbc",
+  "file": "sb_46_s18sh01.jpg",
+  "scene": "18",
+  "shot": "01",
+  "sceneTitle": "Int. Pension Office - Close Up",
+  "title": "Sliding the Brochure",
+  "visual": "A close-up shot focused on the counter at the Pension Office. The Pension Clerk's hands enter the frame from the top, sliding a colorful Brochure across the smooth surface toward Mitsue. The large number '5' on the cover is clearly visible as it moves into the center of the frame.",
+  "motion": "The camera remains static in a high-angle close-up, focusing entirely on the movement of the document across the counter.",
+  "assets": [
+   "Pension Clerk",
+   "Pension Office",
+   "Brochure"
+  ],
+  "kb": 102,
+  "flowPrompt": null,
+  "asset": "Clerk sliding brochure on counter"
+ },
+ {
+  "idx": 47,
+  "id": "2f0818e1-6b23-4bd7-abbe-72df0462cb38",
+  "file": "sb_47_s18sh02.jpg",
+  "scene": "18",
+  "shot": "02",
+  "sceneTitle": "Int. Pension Office - Close Up",
+  "title": "Emphasizing the Deadline",
+  "visual": "The Brochure comes to a stop in the center of the frame. The Pension Clerk’s index finger is extended, pointing directly at the large number '5' which represents the five-year statute of limitations. Mitsue's hand is partially visible at the bottom edge of the frame, poised to receive the information.",
+  "motion": "A slight zoom-in tightens the shot on the clerk's finger and the printed number on the paper.",
+  "assets": [
+   "Pension Clerk",
+   "Mitsue",
+   "Brochure"
+  ],
+  "kb": 561,
+  "flowPrompt": null,
+  "asset": "Clerk pointing at brochure"
+ },
+ {
+  "idx": 48,
+  "id": "24a4db2c-a570-4fbc-8ada-500394c0e18c",
+  "file": "sb_48_s18sh03.jpg",
+  "scene": "18",
+  "shot": "03",
+  "sceneTitle": "Int. Pension Office - Close Up",
+  "title": "The Double Tap",
+  "visual": "An extreme close-up of the Brochure. The Pension Clerk’s finger taps the large number '5' twice in quick succession to emphasize its importance. The texture of the paper and the ink of the printed number are sharp and clear.",
+  "motion": "The camera is completely still, capturing the deliberate physical gesture of the clerk.",
+  "assets": [
+   "Pension Clerk",
+   "Brochure",
+   "Pension Office"
+  ],
+  "kb": 469,
+  "flowPrompt": null,
+  "asset": "Clerk tapping brochure number"
+ },
+ {
+  "idx": 49,
+  "id": "2614c9f3-18dc-4bf1-8985-2dac76ad3a2c",
+  "file": "sb_49_s19sh01.jpg",
+  "scene": "19",
+  "shot": "01",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "Katsuo Sorting Papers",
+  "visual": "In the quiet Tatami Room, Katsuo sits on the floor, surrounded by various documents. He is carefully organizing important papers, including a Pension Certificate and a Family Register, laying them out with focused attention. His movements are slow and deliberate, showing the weight of the task at hand.",
+  "motion": "A static medium shot focusing on Katsuo's hands and the documents spread before him.",
+  "assets": [
+   "Katsuo",
+   "Tatami Room",
+   "Pension Certificate",
+   "Family Register"
+  ],
+  "kb": 152,
+  "flowPrompt": null,
+  "asset": "Man organizing documents on floor"
+ },
+ {
+  "idx": 50,
+  "id": "df9a7827-3c95-4ed7-88a2-3d760d8145b2",
+  "file": "sb_50_s19sh02.jpg",
+  "scene": "19",
+  "shot": "02",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "Closing the Wooden Box",
+  "visual": "Katsuo gathers the final set of documents and places them neatly into a small Wooden Box. He reaches out and slowly lowers the lid, sealing the papers inside. His expression is one of somber completion as he finishes the task.",
+  "motion": "The camera slowly zooms in on the Wooden Box as the lid is closed.",
+  "assets": [
+   "Katsuo",
+   "Tatami Room",
+   "Wooden Box"
+  ],
+  "kb": 602,
+  "flowPrompt": null,
+  "asset": "Man closing wooden box"
+ },
+ {
+  "idx": 51,
+  "id": "8e098ce8-f885-4e65-8b79-6692128b075d",
+  "file": "sb_51_s19sh03.jpg",
+  "scene": "19",
+  "shot": "03",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "Storing the Box",
+  "visual": "Katsuo stands up with effort and carries the Wooden Box toward a cupboard in the Tatami Room. He slides the box onto a shelf and gently pushes it back into the shadows of the storage space. He pauses for a moment before closing the cupboard door.",
+  "motion": "The camera pans to follow Katsuo as he moves from the floor to the cupboard.",
+  "assets": [
+   "Katsuo",
+   "Tatami Room",
+   "Wooden Box"
+  ],
+  "kb": 556,
+  "flowPrompt": null,
+  "asset": "Man storing wooden box"
+ },
+ {
+  "idx": 52,
+  "id": "9822f4ec-9cac-45f2-881e-5e82d0136a66",
+  "file": "sb_52_s20sh01.jpg",
+  "scene": "20",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Accessing Nenkin Net",
+  "visual": "An extreme close-up of a hand holding a smartphone at a desk. The screen is illuminated, displaying the 'Nenkin Net' login portal with small text fields and a large, highlighted login button. The background shows the wooden texture of the desk surface in soft focus.",
+  "motion": "The camera remains in a static, fixed close-up position to emphasize the details on the phone screen.",
+  "assets": [
+   "Smartphone",
+   "Desk"
+  ],
+  "kb": 563,
+  "flowPrompt": null,
+  "asset": "Hand pressing login on smartphone"
+ },
+ {
+  "idx": 53,
+  "id": "763404ca-9a64-4be5-8da2-156b916ef9c1",
+  "file": "sb_53_s20sh02.jpg",
+  "scene": "20",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Decisive Tap",
+  "visual": "The camera stays tight on the smartphone screen as a thumb enters the frame. The thumb hovers momentarily over the login button, creating a slight shadow on the screen before firmly pressing down on the glass.",
+  "motion": "The camera performs a very subtle zoom-in toward the point of contact between the thumb and the button.",
+  "assets": [
+   "Smartphone",
+   "Desk"
+  ],
+  "kb": 542,
+  "flowPrompt": null,
+  "asset": "Thumb pressing smartphone login …"
+ },
+ {
+  "idx": 54,
+  "id": "c4e66fbd-3722-43ba-a0a1-a8412602a2dd",
+  "file": "sb_54_s20sh03.jpg",
+  "scene": "20",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Screen Glows",
+  "visual": "Immediately after the button is pressed, the smartphone screen transitions, filling with a bright, vibrant blue light as the next page begins to load. The blue glow reflects off the person's hand and the surrounding desk area.",
+  "motion": "The camera holds steady as the screen light intensifies, focusing on the visual feedback of the successful login.",
+  "assets": [
+   "Smartphone",
+   "Desk"
+  ],
+  "kb": 543,
+  "flowPrompt": null,
+  "asset": "Hand holding smartphone at desk"
+ },
+ {
+  "idx": 55,
+  "id": "f3127ffd-6ac7-41da-8944-1695ac060353",
+  "file": "sb_55_s21sh01.jpg",
+  "scene": "21",
+  "shot": "01",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "A Shared Relief",
+  "visual": "Katsuo and Mitsue stand side-by-side in the Bright Living Room. They are facing the camera with expressions of profound relief and newfound understanding. The room behind them is bathed in warm, natural light, highlighting its orderly and peaceful state.",
+  "motion": "The camera starts in a medium shot and very slowly pushes in on the couple's faces.",
+  "assets": [
+   "Katsuo",
+   "Mitsue",
+   "Bright Living Room"
+  ],
+  "kb": 595,
+  "flowPrompt": null,
+  "asset": "Two people standing together ind…"
+ },
+ {
+  "idx": 56,
+  "id": "41d16d92-d006-4a7a-beb8-c7a62e9b3398",
+  "file": "sb_56_s21sh02.jpg",
+  "scene": "21",
+  "shot": "02",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "Solidarity and Support",
+  "visual": "The camera moves to a closer profile shot as Katsuo and Mitsue turn their heads to look at one another. They share a knowing, supportive gaze, their solidarity evident in their posture. The sunlight catches the dust motes dancing in the air between them.",
+  "motion": "A subtle pan from Mitsue to Katsuo as they lock eyes.",
+  "assets": [
+   "Katsuo",
+   "Mitsue",
+   "Bright Living Room"
+  ],
+  "kb": 577,
+  "flowPrompt": null,
+  "asset": "Two people share supportive gaze"
+ },
+ {
+  "idx": 57,
+  "id": "27431e1b-3105-473e-b06f-732f3601afd3",
+  "file": "sb_57_s21sh03.jpg",
+  "scene": "21",
+  "shot": "03",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "Light and Order",
+  "visual": "A wide shot of the Bright Living Room shows Katsuo and Mitsue standing together near the window. The Wall Calendar and various documents are neatly organized on a nearby surface. Golden sunlight streams through the window, illuminating the entire space with a sense of hope.",
+  "motion": "A slow pull back, revealing more of the harmonious living space as the scene fades.",
+  "assets": [
+   "Katsuo",
+   "Mitsue",
+   "Bright Living Room",
+   "Wall Calendar"
+  ],
+  "kb": 643,
+  "flowPrompt": null,
+  "asset": "Two people standing in room"
+ },
+ {
+  "idx": 58,
+  "id": "18b50959-d445-42b0-b7cd-9e502c569731",
+  "file": "sb_58_s22sh01.jpg",
+  "scene": "22",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Still Envelope",
+  "visual": "A close-up shot focuses on a clean White Envelope resting on the surface of the Desk. The composition is stark and centered, emphasizing the blankness of the paper. Soft afternoon light spills across the wooden grain of the desk, highlighting the texture of the envelope's edges. There are no markings or addresses written on it yet, representing a fresh start or a final step.",
+  "motion": "The camera is completely locked off in a static close-up, allowing the viewer to absorb the quiet significance of the object.",
+  "assets": [
+   "White Envelope",
+   "Desk"
+  ],
+  "kb": 512,
+  "flowPrompt": null,
+  "asset": "White envelope resting on desk"
+ },
+ {
+  "idx": 59,
+  "id": "00771bba-0d90-4681-8e35-0916d033e88f",
+  "file": "sb_59_s22sh02.jpg",
+  "scene": "22",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Fading Light",
+  "visual": "The same close-up shot of the White Envelope on the Desk continues, but the lighting begins to shift. The bright, warm glow that previously illuminated the paper starts to dim as if a cloud is passing over or evening is approaching. Shadows slowly stretch across the desk, gradually swallowing the bright white of the envelope into a soft grey.",
+  "motion": "The camera remains static, maintaining its fixed gaze on the envelope as the lighting environment changes.",
+  "assets": [
+   "White Envelope",
+   "Desk"
+  ],
+  "kb": 553,
+  "flowPrompt": null,
+  "asset": "White envelope resting on desk"
+ },
+ {
+  "idx": 60,
+  "id": "ca679f15-92a5-411a-8240-02ccd956e90c",
+  "file": "sb_60_s22sh03.jpg",
+  "scene": "22",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "Fade to Black",
+  "visual": "The light continues to recede until the White Envelope is barely a ghost of a shape against the dark Desk. The screen slowly transitions through a deep vignette into a total black frame. The final visual impression is the rectangular silhouette of the envelope before it vanishes entirely.",
+  "motion": "A very slow, almost imperceptible zoom-in begins just before the final fade to black, drawing the viewer closer into the darkness.",
+  "assets": [
+   "White Envelope",
+   "Desk"
+  ],
+  "kb": 439,
+  "flowPrompt": null,
+  "asset": "White envelope on desk"
+ },
+ {
+  "idx": 61,
+  "id": "cb66ef0d-84ec-4b5b-9f44-bb179a6c5d9f",
+  "file": "sb_61_s10sh01.jpg",
+  "scene": "10",
+  "shot": "01",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "Organizing the Past",
+  "visual": "Mitsue sits calmly on the floor of the traditional Tatami Room, surrounded by several organized stacks of folders and white envelopes. Sunlight filters through the paper screens, casting a soft glow over her as she reviews a specific document in her hands. The atmosphere is quiet and orderly, emphasizing her meticulous nature.",
+  "motion": "A slow, wide establishing shot that remains steady to capture the tranquility of the scene.",
+  "assets": [
+   "Mitsue",
+   "Tatami Room",
+   "Folders",
+   "White Envelope",
+   "Document"
+  ],
+  "kb": 134,
+  "flowPrompt": null,
+  "asset": "Woman reviewing document on floor"
+ },
+ {
+  "idx": 62,
+  "id": "24e59763-2713-4015-bb7e-4d60e528f468",
+  "file": "sb_62_s10sh02.jpg",
+  "scene": "10",
+  "shot": "02",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "The Careful Hands",
+  "visual": "A close-up shot focuses on Mitsue's hands as she holds a document. She is in the process of carefully sliding the paper into a clear plastic sleeve. Every movement is deliberate and respectful, showing the importance of the task at hand.",
+  "motion": "The camera zooms in slowly to emphasize the precision of her manual task.",
+  "assets": [
+   "Mitsue",
+   "Document",
+   "Clear Plastic Sleeve"
+  ],
+  "kb": 141,
+  "flowPrompt": null,
+  "asset": "Woman inserting document into sl…"
+ },
+ {
+  "idx": 63,
+  "id": "67de56f1-124e-45ed-9d9e-69840c864e4a",
+  "file": "sb_63_s10sh03.jpg",
+  "scene": "10",
+  "shot": "03",
+  "sceneTitle": "Int. Tatami Room - Day",
+  "title": "Documentary Peace",
+  "visual": "A medium shot shows Mitsue from the side as she finishes placing the document inside the sleeve and rests it on top of a neat stack. She looks down at her work with a sense of quiet accomplishment. The composition is balanced and serene, typical of a documentary style.",
+  "motion": "A gentle pan from the folders on the floor up to Mitsue's focused expression.",
+  "assets": [
+   "Mitsue",
+   "Tatami Room",
+   "Folders",
+   "Clear Plastic Sleeve"
+  ],
+  "kb": 104,
+  "flowPrompt": null,
+  "asset": "Woman organizing documents in room"
+ },
+ {
+  "idx": 64,
+  "id": "59570033-d46c-48a6-b1b3-86b3429d59f4",
+  "file": "sb_64_s11sh01.jpg",
+  "scene": "11",
+  "shot": "01",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Imbalanced Scale",
+  "visual": "A close-up shot on the wooden Desk shows a wooden balance scale. The left tray is weighed down heavily by a stack of gold coins and a slip of paper that has 'February/March' written on it. The right tray remains completely empty, suspended high in the air, creating a stark visual imbalance.",
+  "motion": "The camera remains static in a tight close-up to establish the inequality between the two trays.",
+  "assets": [
+   "Desk",
+   "Wooden Balance Scale",
+   "Gold Coins",
+   "Slip Of Paper"
+  ],
+  "kb": 115,
+  "flowPrompt": null,
+  "asset": "Balance scale with gold coins"
+ },
+ {
+  "idx": 65,
+  "id": "9f791a8c-d44b-4322-a246-10637df6b152",
+  "file": "sb_65_s11sh02.jpg",
+  "scene": "11",
+  "shot": "02",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "The Missing Piece Falls",
+  "visual": "A second slip of paper, clearly labeled 'Unpaid Portion', flutters down from the top of the frame. It lands softly but firmly in the center of the empty right tray of the wooden balance scale. The scale begins to shift immediately upon impact.",
+  "motion": "The camera performs a very slow tilt upward to follow the paper's descent before settling back on the scale.",
+  "assets": [
+   "Wooden Balance Scale",
+   "Slip Of Paper"
+  ],
+  "kb": 136,
+  "flowPrompt": null,
+  "asset": "Paper landing on scale balance"
+ },
+ {
+  "idx": 66,
+  "id": "e35571a9-c3ff-4701-9f7c-04c86c5019d9",
+  "file": "sb_66_s11sh03.jpg",
+  "scene": "11",
+  "shot": "03",
+  "sceneTitle": "Int. Desk - Close Up",
+  "title": "A Perfect Balance",
+  "visual": "The wooden balance scale oscillates slightly before coming to a complete rest. Both trays are now perfectly level with each other, showing the gold coins and 'February/March' slip on the left equalized by the 'Unpaid Portion' slip on the right. The composition is now symmetrical and stable.",
+  "motion": "The camera slowly zooms out, revealing more of the desk surface to provide a sense of completion and finality.",
+  "assets": [
+   "Desk",
+   "Wooden Balance Scale",
+   "Gold Coins",
+   "Slip Of Paper"
+  ],
+  "kb": 132,
+  "flowPrompt": null,
+  "asset": "Balance scale with coins and"
+ }
+]

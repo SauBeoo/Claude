@@ -1,0 +1,89 @@
+{
+ "_note": "test",
+ "cuts": [
+  {
+   "id": "t70_0",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11070_religious_1946.mp4",
+   "ss": 374,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t70_1",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11070_religious_1946.mp4",
+   "ss": 320,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t70_2",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11070_religious_1946.mp4",
+   "ss": 500,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t59_0",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11059_kyoto_home_1946.mp4",
+   "ss": 600,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t59_1",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11059_kyoto_home_1946.mp4",
+   "ss": 150,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t59_2",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11059_kyoto_home_1946.mp4",
+   "ss": 20,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t79_0",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11079_hiroshima_life_1946.mp4",
+   "ss": 470,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t79_1",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11079_hiroshima_life_1946.mp4",
+   "ss": 410,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t79_2",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11079_hiroshima_life_1946.mp4",
+   "ss": 330,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t50_0",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11050_agri_1946.mp4",
+   "ss": 400,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t50_1",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11050_agri_1946.mp4",
+   "ss": 460,
+   "dur": 4,
+   "grade": 0
+  },
+  {
+   "id": "t50_2",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_pd/usaf11050_agri_1946.mp4",
+   "ss": 395,
+   "dur": 4,
+   "grade": 0
+  }
+ ]
+}

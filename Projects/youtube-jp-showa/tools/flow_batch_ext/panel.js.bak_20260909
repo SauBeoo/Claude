@@ -1,0 +1,195 @@
+// Flow Prompt Batch — bơm prompt qua chrome.debugger (trusted input, không chiếm chuột thật).
+// Cơ chế đã verify trên Flow 2026-08-07: focus editor + gõ thật + Enter = submit.
+
+const $ = id => document.getElementById(id);
+let running = false;
+let detachRequested = false;
+
+function setStatus(msg) { $("status").textContent = msg; }
+
+async function listTabs() {
+  const tabs = await chrome.tabs.query({});
+  const sel = $("tabsel");
+  sel.innerHTML = "";
+  for (const t of tabs) {
+    if (!t.url || !t.url.includes("labs.google")) continue;
+    const o = document.createElement("option");
+    o.value = t.id;
+    o.textContent = `[${t.id}] ${t.title.slice(0, 60)}`;
+    sel.appendChild(o);
+  }
+  if (!sel.options.length) {
+    const o = document.createElement("option");
+    o.textContent = "— không thấy tab labs.google nào, mở Flow rồi bấm quét lại —";
+    o.value = "";
+    sel.appendChild(o);
+  }
+}
+
+$("refresh").onclick = listTabs;
+listTabs();
+
+// khôi phục state đã lưu
+chrome.storage.local.get(["prompts", "idx", "delay"]).then(s => {
+  if (s.prompts) $("prompts").value = s.prompts;
+  if (s.idx) $("startidx").value = s.idx + 1;
+  if (s.delay) $("delay").value = s.delay;
+  if (s.idx) setStatus(`Lần trước dừng sau dòng ${s.idx}. Start sẽ chạy tiếp từ dòng ${s.idx + 1}.`);
+});
+
+$("loadfile").onchange = async e => {
+  const f = e.target.files[0];
+  if (f) $("prompts").value = await f.text();
+};
+
+$("reset").onclick = () => {
+  chrome.storage.local.remove(["idx"]);
+  $("startidx").value = 1;
+  setStatus("Đã reset tiến độ về dòng 1.");
+};
+
+$("pause").onclick = () => { running = false; setStatus("Đang dừng sau prompt hiện tại…"); };
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// theo dõi lý do bị detach (canceled_by_user = bấm Hủy trên dải vàng / replaced_with_devtools = mở F12)
+let lastDetachReason = "";
+chrome.debugger.onDetach.addListener((src, reason) => { lastDetachReason = reason; });
+
+function attach(tabId) {
+  return new Promise((res, rej) => chrome.debugger.attach({ tabId }, "1.3", () => {
+    const e = chrome.runtime.lastError;
+    if (e && !e.message.includes("Another debugger") && !e.message.includes("already attached")) rej(new Error(e.message));
+    else res();
+  }));
+}
+
+function cdp(tabId, method, params) {
+  return new Promise((resolve, reject) => {
+    chrome.debugger.sendCommand({ tabId }, method, params || {}, res => {
+      if (chrome.runtime.lastError) reject(new Error(chrome.runtime.lastError.message));
+      else resolve(res);
+    });
+  });
+}
+
+async function pressEnter(tabId) {
+  const base = { windowsVirtualKeyCode: 13, nativeVirtualKeyCode: 13, key: "Enter", code: "Enter" };
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyDown", text: "\r", unmodifiedText: "\r", ...base });
+  await cdp(tabId, "Input.dispatchKeyEvent", { type: "keyUp", ...base });
+}
+
+// fallback: bấm nút "Tạo" (arrow_forward) bằng chuột trusted qua debugger
+async function clickSubmitButton(tabId) {
+  const res = await cdp(tabId, "Runtime.evaluate", { expression: `(() => {
+      const btns = [...document.querySelectorAll("button")].filter(b => b.offsetParent);
+      const go = btns.find(b => (b.textContent||"").includes("arrow_forward"));
+      if (!go) return null;
+      const r = go.getBoundingClientRect();
+      return JSON.stringify({x: r.x + r.width/2, y: r.y + r.height/2});
+    })()`, returnByValue: true });
+  if (!res.result.value) return false;
+  const {x, y} = JSON.parse(res.result.value);
+  await cdp(tabId, "Input.dispatchMouseEvent", { type: "mousePressed", x, y, button: "left", clickCount: 1 });
+  await cdp(tabId, "Input.dispatchMouseEvent", { type: "mouseReleased", x, y, button: "left", clickCount: 1 });
+  return true;
+}
+
+async function sendPrompt(tabId, text) {
+  // 1) focus editor + select-all nội dung cũ (selection API — JS làm được)
+  const focusRes = await cdp(tabId, "Runtime.evaluate", { expression: `(() => {
+      const ed = document.querySelector('div[contenteditable="true"]');
+      if (!ed) return "NO_EDITOR";
+      ed.focus();
+      const sel = window.getSelection();
+      const r = document.createRange();
+      r.selectNodeContents(ed);
+      sel.removeAllRanges(); sel.addRange(r);
+      return "OK";
+    })()`, returnByValue: true });
+  if (focusRes.result.value !== "OK") throw new Error("Không tìm thấy ô prompt trong tab Flow — đúng tab chưa?");
+  await sleep(200);
+  // 2) insertText (trusted qua debugger) — thay thế selection = xóa nội dung cũ luôn
+  await cdp(tabId, "Input.insertText", { text });
+  await sleep(600);
+  // 2b) verify text DA VAO editor — không vào là insertText bị chặn, báo ngay
+  const got = await cdp(tabId, "Runtime.evaluate", { expression:
+    `document.querySelector('div[contenteditable="true"]')?.innerText.length ?? -1`, returnByValue: true });
+  if (got.result.value < 50) throw new Error("insertText không vào editor (len=" + got.result.value + ") — tab đang bị debugger khác giữ? Mở tab Flow MỚI rồi thử lại.");
+  // 3) Enter submit
+  await pressEnter(tabId);
+  await sleep(700);
+  // 3b) chưa trống → bấm nút Tạo bằng chuột trusted
+  const after = await cdp(tabId, "Runtime.evaluate", { expression:
+    `document.querySelector('div[contenteditable="true"]')?.innerText.trim().length ?? -1`, returnByValue: true });
+  if (after.result.value > 20) { await clickSubmitButton(tabId); await sleep(700); }
+  // 4) kiểm editor đã trống chưa (submit thành công thì Flow tự xóa ô)
+  const chk = await cdp(tabId, "Runtime.evaluate", { expression:
+    `document.querySelector('div[contenteditable="true"]')?.innerText.trim().length ?? -1`, returnByValue: true });
+  return chk.result.value <= 20; // trống hoặc chỉ còn placeholder
+}
+
+$("start").onclick = async () => {
+  if (running) return;
+  const tabId = parseInt($("tabsel").value);
+  if (!tabId) { setStatus("Chọn tab Flow trước đã."); return; }
+  const prompts = $("prompts").value.split("\n").map(s => s.trim()).filter(Boolean);
+  if (!prompts.length) { setStatus("Chưa có prompt nào."); return; }
+  const delay = Math.max(5, parseInt($("delay").value) || 18);
+  let i = Math.max(1, parseInt($("startidx").value) || 1) - 1;
+
+  chrome.storage.local.set({ prompts: $("prompts").value, delay });
+
+  try { await new Promise((res, rej) => chrome.debugger.attach({ tabId }, "1.3",
+        () => chrome.runtime.lastError ? rej(new Error(chrome.runtime.lastError.message)) : res())); }
+  catch (e) {
+    if (String(e).includes("Another debugger") || String(e).includes("already attached")) {
+      setStatus("🔴 Tab này đang bị extension khác debug (thường là phiên Claude test lúc trước).\nMở 1 TAB FLOW MỚI (cùng project cũng được), bấm ↻ quét lại tab, chọn tab mới rồi Start.");
+    } else {
+      setStatus("Không attach được debugger: " + e.message);
+    }
+    return;
+  }
+
+  running = true;
+  $("bar").max = prompts.length;
+  let fails = 0;
+
+  while (running && i < prompts.length) {
+    setStatus(`Đang gửi prompt ${i + 1}/${prompts.length}…\n"${prompts[i].slice(0, 90)}…"`);
+    try {
+      const ok = await sendPrompt(tabId, prompts[i]);
+      if (!ok) {
+        fails++;
+        setStatus(`⚠ Prompt ${i + 1} có vẻ KHÔNG gửi được (ô chưa trống). Thử lại 1 lần…`);
+        await sleep(3000);
+        const ok2 = await sendPrompt(tabId, prompts[i]);
+        if (!ok2 && fails >= 3) { setStatus(`🔴 3 prompt liền không gửi được — dừng tại dòng ${i + 1}. Kiểm tra tab Flow (hết credit? queue nghẽn?) rồi Start lại.`); running = false; break; }
+      } else { fails = 0; }
+    } catch (e) {
+      if (String(e.message).includes("not attached")) {
+        // cầu debugger đứt (bấm Hủy dải vàng / F12 / tab reload) → tự nối lại, thử lại prompt này
+        setStatus(`⚠ Debugger bị đứt tại dòng ${i + 1} (lý do: ${lastDetachReason || "?"}). Tự nối lại sau 3s…\n(Đừng bấm "Hủy" trên dải vàng, đừng mở F12 trên tab Flow)`);
+        await sleep(3000);
+        try { await attach(tabId); continue; }  // retry cùng prompt, không tăng i
+        catch (e2) { setStatus(`🔴 Nối lại thất bại: ${e2.message} — dừng tại dòng ${i + 1}. Start để chạy tiếp.`); running = false; break; }
+      }
+      setStatus(`🔴 Lỗi tại dòng ${i + 1}: ${e.message} — dừng. Sửa xong Start chạy tiếp.`);
+      running = false; break;
+    }
+    chrome.storage.local.set({ idx: i + 1 });
+    $("bar").value = i + 1;
+    $("startidx").value = i + 2;
+    i++;
+    if (i < prompts.length) {
+      for (let s = 0; s < delay * 2 && running; s++) await sleep(500);
+    }
+  }
+
+  try { chrome.debugger.detach({ tabId }); } catch (e) {}
+  if (i >= prompts.length) {
+    setStatus(`✅ XONG ${prompts.length} prompt! Vào tab Flow kéo xuống chờ ảnh render nốt rồi tải về theo thứ tự.`);
+    $("bar").value = prompts.length;
+  }
+  running = false;
+};

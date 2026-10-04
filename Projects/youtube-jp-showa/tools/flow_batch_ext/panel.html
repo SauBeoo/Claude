@@ -1,0 +1,145 @@
+<meta charset="utf-8">
+<title>Flow Batch v2.1</title>
+<style>
+  :root { color-scheme: dark; }
+  body { background:#14161a; color:#e6e8eb; font:13px/1.5 system-ui,"Segoe UI",sans-serif;
+         margin:0; padding:14px 16px 40px; }
+  h1 { font-size:15px; margin:0 0 10px; }
+  fieldset { border:1px solid #2a2e35; border-radius:6px; margin:0 0 10px; padding:8px 10px 10px; }
+  legend { color:#9aa2ad; font-size:11px; padding:0 5px; text-transform:uppercase; letter-spacing:.06em; }
+  label { display:block; margin:6px 0 2px; color:#b6bcc5; font-size:11px; }
+  input[type=text], input[type=number], select, textarea {
+    width:100%; box-sizing:border-box; background:#0e1013; color:#e6e8eb;
+    border:1px solid #2f343c; border-radius:4px; padding:5px 7px; font:12px/1.4 inherit; }
+  textarea { font-family:ui-monospace,Consolas,monospace; font-size:11px; min-height:110px; resize:vertical; }
+  .row { display:flex; gap:8px; }
+  .row > * { flex:1; }
+  button { background:#232830; color:#e6e8eb; border:1px solid #39404a; border-radius:5px;
+           padding:7px 11px; font:12px inherit; cursor:pointer; }
+  button:hover { background:#2c323c; }
+  button.go { background:#1f6f3f; border-color:#2c8d52; font-weight:600; }
+  button.go:hover { background:#26814a; }
+  button.warn { background:#5c2323; border-color:#7d3232; }
+
+  /* ── TAB CHUYỂN CHẾ ĐỘ ───────────────────────────────────────────────── */
+  .tabs { display:flex; margin:0 0 12px; border-bottom:1px solid #2a2e35; }
+  .tabs button { background:transparent; border:none; border-bottom:2px solid transparent;
+                 border-radius:0; padding:9px 16px 8px; color:#8b929c; font:13px inherit;
+                 text-align:left; flex:0 0 auto; }
+  .tabs button:hover { background:#1b1e23; color:#c8ced6; }
+  .tabs button[aria-selected="true"] { color:#e6e8eb; font-weight:600;
+                                       border-bottom-color:#4a9eff; background:#1b1e23; }
+  .tabs .sub { display:block; font-size:10.5px; font-weight:400; color:#6f7681; margin-top:1px; }
+  .tabs button[aria-selected="true"] .sub { color:#8f97a2; }
+
+  body[data-mode="v1"] .only-v2 { display:none !important; }
+  body[data-mode="v2"] .only-v1 { display:none !important; }
+
+  #bar { width:100%; height:7px; margin:10px 0 6px; }
+  pre#status { background:#0b0d10; border:1px solid #24282f; border-radius:5px; padding:9px 10px;
+               white-space:pre-wrap; word-break:break-word; min-height:74px; margin:0; font-size:11.5px; }
+  .hint { color:#7f8792; font-size:10.5px; margin:5px 0 0; }
+  .danger { color:#ff9a8b; }
+  code { background:#0b0d10; padding:1px 4px; border-radius:3px; font-size:11px; }
+</style>
+
+<h1>Flow Batch</h1>
+
+<div class="tabs" role="tablist">
+  <button id="tab-v1" role="tab" aria-selected="false">v1 · bơm CHỮ<span class="sub">gen ảnh / t2v hàng loạt</span></button>
+  <button id="tab-v2" role="tab" aria-selected="true">v2 · ẢNH → VIDEO<span class="sub">jobs.jsonl · mode Frames</span></button>
+</div>
+<input type="hidden" id="runmode" value="v2">
+
+<fieldset>
+  <legend>1 · Tab Flow</legend>
+  <div class="row">
+    <select id="tabsel"></select>
+    <button id="refresh" style="flex:0 0 auto">↻ quét</button>
+  </div>
+  <p class="hint danger">Tab phải đang MỞ MỘT PROJECT. Đừng mở F12 trên tab đó, đừng bấm Hủy trên dải vàng.
+    Extension chỉ thấy tab <b>cùng Chrome profile</b> với nó.</p>
+</fieldset>
+
+<fieldset>
+  <legend>2 · Việc cần làm</legend>
+  <label class="only-v1">Dán prompt — <b>mỗi dòng 1 prompt</b> (hoặc nạp file <code>.txt</code>)</label>
+  <label class="only-v2">Nạp <code>jobs.jsonl</code> — <b>mỗi dòng 1 job</b></label>
+  <input type="file" id="loadfile" accept=".jsonl,.txt,.json">
+  <textarea id="prompts"></textarea>
+  <p class="hint only-v2">Job JSON: <code>{"id":"sb_04","mode":"frames","asset":"Woman walking down hallway","prompt":"…"}</code><br>
+    <code>asset</code> = TÊN asset đã có trong project (bấm 📋 LIỆT KÊ ASSET để lấy tên đúng) ·
+    <code>"first":"E:/…/sb_04.jpg"</code> = upload từ đĩa (đường lui) · dòng không phải JSON = prompt chữ.</p>
+  <p class="hint">⚡ <b>Chạy ĐA LUỒNG:</b> mở <b>nhiều tab Flow</b> + <b>nhiều panel</b>, mỗi panel một
+    KHOẢNG dòng không chồng nhau (66 job / 3 luồng → <code>1–22</code> · <code>23–44</code> ·
+    <code>45–66</code>). Sổ đã-gửi dùng chung nên không bao giờ gen trùng giữa các luồng.
+    ⚠️ Credit cháy nhanh gấp số luồng.</p>
+  <p class="hint only-v1">Chế độ v1 <b>bỏ qua</b> ảnh / mode / hàng đợi — mọi dòng chạy như prompt chữ,
+    đúng luồng bản 1.1. Sổ đã-gửi đánh khoá theo <b>nội dung prompt</b>, nên nạp file khác không bị bỏ qua oan.</p>
+  <div class="row">
+    <div><label>Bắt đầu từ dòng</label><input type="number" id="startidx" value="1" min="1"></div>
+    <div><label>ĐẾN dòng (trống = hết)</label><input type="number" id="endidx" min="1" placeholder="hết"></div>
+    <div><label>Trần job/lượt</label><input type="number" id="maxjobs" value="5" min="1" max="9999"></div>
+    <div><label>Chờ giữa 2 job (giây)</label><input type="number" id="delay" value="20" min="5"></div>
+    <div class="only-v2"><label>Trần job đang chạy</label><input type="number" id="maxpend" value="2" min="1" max="6"></div>
+    <div class="only-v2"><label>pick mặc định khi TRÙNG TÊN</label><input type="number" id="defpick" min="1" placeholder="trống = DỪNG"></div>
+  </div>
+</fieldset>
+
+<fieldset class="only-v2">
+  <legend>2b · Thêm 1 job — không cần viết JSON</legend>
+  <label>Tên asset trong project (ảnh làm FRAME ĐẦU) — bấm 📋 LIỆT KÊ ASSET để lấy tên đúng</label>
+  <input type="text" id="qAsset" placeholder="Woman walking down hallway">
+  <label>Prompt video (mô tả CHUYỂN ĐỘNG, không tả lại ảnh)</label>
+  <textarea id="qPrompt" style="min-height:56px" placeholder="Kazuko walks away from the camera down the hallway, then the light shifts on the floor"></textarea>
+  <div class="row" style="margin-top:7px">
+    <button id="qAdd">➕ thêm vào danh sách</button>
+    <button id="qTail">＋ dán đuôi giữ-nguyên-ảnh</button>
+  </div>
+  <p class="hint">「＋ dán đuôi」 thêm sẵn câu khoá ảnh (<code>Keep the framing… camera stays locked off…</code>)
+     vào cuối prompt — đúng đuôi mà <code>story_extract.py</code> dùng.</p>
+</fieldset>
+
+<fieldset>
+  <legend>3 · Nhãn nút trên UI Flow (sửa nếu Flow đổi chữ — bấm 🔍 để xem nhãn thật)</legend>
+  <label>Nút gửi / Generate</label>
+  <input type="text" id="cfgSubmit" value="start generation|arrow_forward|generate|create|send|tạo">
+  <div class="only-v2">
+    <label>Nút thêm ảnh</label>
+    <input type="text" id="cfgAdd" value="add ingredients to the prompt box|start|upload media|add">
+    <label>Mode (nút ⚙ CHỐT SETTINGS tự bấm radio; ô này chỉ để đối chiếu)</label>
+    <input type="text" id="cfgMode" value="frames|video">
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>4 · Chạy</legend>
+  <label style="display:flex;align-items:center;gap:7px;margin:2px 0 8px">
+    <input type="checkbox" id="dryrun" checked style="width:auto">
+    <span><b>DRY-RUN</b> — làm hết mọi bước TRỪ cú bấm cuối (không tốn credit)</span>
+  </label>
+  <div class="row">
+    <button id="diag">🔍 DÒ UI</button>
+    <button id="setup" class="only-v2">⚙ CHỐT SETTINGS</button>
+    <button id="listassets" class="only-v2">📋 LIỆT KÊ ASSET</button>
+  </div>
+  <div class="row" style="margin-top:7px">
+    <button id="start" class="go">▶ START</button>
+    <button id="pause">⏸ dừng</button>
+  </div>
+  <div class="row" style="margin-top:7px">
+    <button id="reset">↺ tiến độ về dòng 1</button>
+    <button id="clearledger" class="warn">🗑 xoá sổ đã-gửi</button>
+  </div>
+  <progress id="bar" value="0" max="1"></progress>
+  <pre id="status">Bấm ↻ quét, chọn tab Flow, rồi 🔍 DÒ UI.</pre>
+  <p class="hint">Sổ đã-gửi ⇒ bấm START lại không gen trùng. <code>↺ tiến độ</code> KHÔNG xoá sổ;
+     chỉ <code>🗑</code> mới xoá.</p>
+</fieldset>
+
+<!-- 🔴 DÒNG DƯỚI LÀ SỐNG CÒN. Lượt viết lại panel.html 2026-09-09 làm MẤT nó ⇒ panel.js
+     không được nạp ⇒ KHÔNG nút nào có handler (quét chết, DÒ UI chết, START chết) — mà
+     giao diện vẫn hiện bình thường nên trông y như "tool không quét được tab".
+     Sửa panel.html thì kiểm dòng này TRƯỚC KHI nghi bất cứ thứ gì khác:
+       grep -c 'src="panel.js"' panel.html   →  phải ra 1 -->
+<script src="panel.js"></script>

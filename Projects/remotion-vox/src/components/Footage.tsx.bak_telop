@@ -1,0 +1,141 @@
+// Footage.tsx — full-bleed or boxed media: mp4 clip OR still image.
+// Stills can slow-pan (ease) — mirrors the pipeline's --motion behaviour.
+
+import React from 'react';
+import {
+  Img,
+  OffthreadVideo,
+  interpolate,
+  useCurrentFrame,
+  useVideoConfig,
+} from 'remotion';
+import type {z} from 'zod';
+import type {FootageClipSchema} from '../schema/project';
+import {isVideoAsset, resolveAsset} from '../lib/resolveAsset';
+
+type FootageClip = z.infer<typeof FootageClipSchema>;
+
+export const Footage: React.FC<{clip: FootageClip; projectName: string}> = ({
+  clip,
+  projectName,
+}) => {
+  const frame = useCurrentFrame();
+  const {width, height} = useVideoConfig();
+  const src = resolveAsset(projectName, clip.asset);
+
+  const fadeIn =
+    clip.fadeInFrames > 0
+      ? interpolate(frame, [0, clip.fadeInFrames], [0, 1], {
+          extrapolateRight: 'clamp',
+        })
+      : 1;
+
+  const f = clip.filter ?? {};
+  const cssFilter =
+    [
+      f.brightness != null && f.brightness !== 1 ? `brightness(${f.brightness})` : '',
+      f.contrast != null && f.contrast !== 1 ? `contrast(${f.contrast})` : '',
+      f.saturate != null && f.saturate !== 1 ? `saturate(${f.saturate})` : '',
+      f.grayscale ? `grayscale(${f.grayscale})` : '',
+      f.sepia ? `sepia(${f.sepia})` : '',
+      f.blur ? `blur(${f.blur}px)` : '',
+    ]
+      .filter(Boolean)
+      .join(' ') || undefined;
+
+  // linear-mask wipe reveal (mặt nạ tuyến tính)
+  let clipPath: string | undefined;
+  if (clip.wipeInFrames > 0 && frame < clip.wipeInFrames) {
+    const p = interpolate(frame, [0, clip.wipeInFrames], [100, 0], {
+      easing: (t) => 1 - Math.pow(1 - t, 3),
+    });
+    const insets = {
+      left: `inset(0 ${p}% 0 0)`,
+      right: `inset(0 0 0 ${p}%)`,
+      up: `inset(${p}% 0 0 0)`,
+      down: `inset(0 0 ${p}% 0)`,
+    } as const;
+    clipPath = insets[clip.wipeDir];
+  }
+
+  const boxed = clip.layout.x != null || clip.layout.w != null;
+  const box: React.CSSProperties = boxed
+    ? {
+        position: 'absolute',
+        left: clip.layout.x ?? 0,
+        top: clip.layout.y ?? 0,
+        width: clip.layout.w ?? width,
+        height: clip.layout.h,
+        opacity: (clip.layout.opacity ?? 1) * fadeIn,
+        transform: clip.layout.rotation
+          ? `rotate(${clip.layout.rotation}deg)`
+          : undefined,
+        overflow: 'hidden',
+        clipPath,
+      }
+    : {
+        position: 'absolute',
+        inset: 0,
+        opacity: (clip.layout.opacity ?? 1) * fadeIn,
+        overflow: 'hidden',
+        clipPath,
+      };
+
+  if (isVideoAsset(clip.asset)) {
+    return (
+      <div style={box}>
+        <OffthreadVideo
+          src={src}
+          startFrom={clip.trimStartFrames}
+          volume={clip.volume}
+          playbackRate={clip.speed}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: clip.fit,
+            filter: cssFilter,
+            transform: clip.mirror ? 'scaleX(-1)' : undefined,
+          }}
+        />
+      </div>
+    );
+  }
+
+  // still image; optional motion
+  let transform: string | undefined;
+  if (clip.motion === 'pan') {
+    // slow ease pan (zoom 1.0 -> 1.08 drifting)
+    const p = interpolate(frame, [0, clip.durationInFrames], [0, 1], {
+      extrapolateRight: 'clamp',
+      easing: (t) => 1 - Math.pow(1 - t, 2),
+    });
+    const zoom = 1.02 + 0.06 * p;
+    const dx = -12 * p;
+    transform = `scale(${zoom}) translateX(${dx}px)`;
+  } else if (clip.motion === 'zoom-punch') {
+    // speed-ramp hit: slam from 1.28 -> 1.0 in ~8 frames, then hold
+    const p = interpolate(frame, [0, 8], [0, 1], {
+      extrapolateRight: 'clamp',
+      easing: (t) => 1 - Math.pow(1 - t, 3),
+    });
+    transform = `scale(${1.28 - 0.28 * p})`;
+  }
+
+  return (
+    <div style={box}>
+      <Img
+        src={src}
+        style={{
+          width: '100%',
+          height: boxed ? clip.layout.h ?? undefined : '100%',
+          objectFit: clip.fit,
+          transform:
+            [transform, clip.mirror ? 'scaleX(-1)' : '']
+              .filter(Boolean)
+              .join(' ') || undefined,
+          filter: cssFilter,
+        }}
+      />
+    </div>
+  );
+};

@@ -1,0 +1,416 @@
+# -*- coding: utf-8 -*-
+r"""img28_prompts.py — sinh prompt ảnh cho 92 ô của video 28.
+
+KHUÔN: y nguyên v27 (user đã gật 2026-09-17) — vector phẳng clip-art công ích Nhật, nền kem
+#F6F1E4 một tông, đúng 3 màu + kem, không đổ bóng, guard CẤM CHỮ ở ~10% đầu prompt.
+
+⭐⭐ HAI STYLE (đảo chiều 2026-09-18 — user: *"prompt text phải có chữ đọc được,
+bỏ hẳn cái required text trắng trơn"*):
+  · STYLE          — ô KHÔNG có giấy tờ: cấm chữ tuyệt đối (giữ nguyên từ v27)
+  · style_text(..) — ô CÓ giấy tờ: **XIN chữ Nhật ĐỌC ĐƯỢC**, mỗi ảnh 1 cụm ≤7 ký
+  ⛔ Vẫn cấm SỐ/ngày/phần trăm ở MỌI ô — số do FONT của builder vẽ đè (YMYL).
+  Lớp 「chữ texture li ti không đọc nổi」 của v27 đã BỎ HẲN; bản cũ ở `.bak_texture`.
+
+🔴 BA LUẬT RIÊNG CỦA BÀI 28:
+  1. **KHÔNG ô nào được dùng lưới lịch** — cả hai STYLE đều cấm `calendar grid`, và bài này nói
+     rất nhiều về THÁNG (誕生月・10月・2年後). Mọi mốc thời gian tả bằng **dải ngang có mốc**
+     hoặc **tờ ghi chú dán tường**, không bao giờ bằng lịch.
+     ⚠️ Đây đúng ca `ai-video-regen.md` §3: *vật mời gọi thắng câu cấm* — lưới lịch thì model
+     sẽ điền số vào, bất kể câu cấm. Cách chắc là BỎ VẬT.
+  2. **Trục 封筒 phải nhận ra được xuyên bài** (ô 3 · 65 · 76 · 88): cùng một phong bì nâu nhạt
+     nằm ngang, cùng góc nhìn — nó là vật trục của kịch bản v2.
+  3. ⛔ **Cấm mọi chữ `blank` / `empty` / `text-free` trong mô tả** (`CLAUDE.md` §Prompt ảnh):
+     mấy từ đó kéo model về phía vẽ mảng trống. Tả **cái CÓ MẶT**.
+
+CHẠY:  python tools/img28_prompts.py            → 3 file trong 06_VIDEO/<stem>/
+       python tools/img28_prompts.py --lot 2    → chỉ in lô 2
+"""
+import io
+import json
+import sys
+from pathlib import Path
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+
+PROJ = Path(__file__).resolve().parents[1]
+STEM = "28_kouki-75sai-tanjyotsuki-hokenryo"
+VD = PROJ / "06_VIDEO" / STEM
+
+_BASE = ("Flat vector illustration in the style of Japanese public-information clip art. "
+         "Plain flat cream background #F6F1E4, single tone, no gradient, no vignette, "
+         "no drop shadows. Only three colors plus cream: navy #1F3864, warm red #C0392B, "
+         "muted teal #3E7C78. Even line weight, rounded shapes. "
+         "Faces appear ONLY on human characters. NEVER draw a face, eyes, mouth or "
+         "smile on any object — not on blocks, bars, coins, scales, boxes, counters, "
+         "telephones, switches, cards, envelopes, tables or sheets of paper. "
+         "Composition: subject centered and filling most of the frame, small even cream "
+         "margin on all four sides. 16:9. SUBJECT: ")
+
+STYLE = ("NO TEXT, NO LETTERS, NO NUMBERS, NO SIGNAGE, NO CALENDAR GRID, NO CLOCK FACE "
+         "anywhere in the image. " + _BASE)
+
+# ⭐⭐ ĐẢO CHIỀU 2026-09-18 (user: *"tao muốn prompt text phải có chữ đọc được.
+# Bỏ hẳn cái required text trắng trơn đi"*).
+# Lớp 「FINE ILLEGIBLE TEXT TEXTURE / far too small to read」 của v27 **ĐÃ BỎ HẲN**.
+# Bản cũ giữ ở `img28_prompts.py.bak_texture`.
+#
+# 🔴 RANH GIỚI CÒN GIỮ — **CHỮ thì gen, SỐ thì KHÔNG**:
+#   ✅ gen: TÊN GIẤY TỜ / NHÃN — danh từ ngắn, đọc được, sắc nét (「決定通知書」「保険証」…)
+#   ⛔ KHÔNG gen: **số tiền, ngày tháng, phần trăm**. Chúng do FONT của builder vẽ đè
+#      (memory `feedback_so_tren_hinh_phai_do_font_ve`: Veo/Flow sai dấu phẩy hoặc rụng
+#      một chữ số ~1/3 lần; 4 vòng prompt không chữa. Số sai trên kênh tiền = vi phạm YMYL).
+#   ⇒ Đây KHÔNG phải "cấm chữ" như bản cũ. Bản cũ cấm cả hai; bản này cấm đúng một loại.
+#
+# 📐 Ba trần lấy từ ca bake chữ ĐÃ ĐẠT của workspace (`ab-3title-3thumb.md` §3 mục 8):
+#   · **1 cụm chữ chính mỗi ảnh**, tối đa 2 — 5 dòng gần như chắc méo kanji
+#   · **≤7 ký full-width/cụm** — kanji rậm (険・齢・額・徴) là chỗ nát trước tiên
+#   · câu chốt chất lượng đặt CUỐI prompt, nguyên văn đã chạy được ở 4 kênh
+STYLE_TEXT_HEAD = (
+    "READABLE JAPANESE TEXT. NO NUMBERS, NO DATES, NO CALENDAR GRID, NO CLOCK FACE, NO LOGOS. ")
+STYLE_TEXT_TAIL = (
+    " All Japanese text must be PERFECTLY FORMED, CRISP AND LEGIBLE, correct stroke order, "
+    "printed in clean navy #1F3864 gothic lettering, large enough to read at a glance. "
+    "NO face, NO smiley, NO eyes or mouth drawn on any document, table, form or sheet of paper.")
+
+
+def style_text(title: str, lines) -> str:
+    """STYLE cho ô CÓ giấy tờ.
+
+    🔴 VÒNG 3 (2026-09-18) — user soi lô gen lại: dòng KHÔNG còn trống, nhưng model **BỊA CHỮ**
+    thay vì dùng chữ đã khai. Ca thật: tờ 「支援金」 hiện 「対象者：中小企業」「詳細：別紙参照」
+    — sai hẳn ngành (bài nói 子育て支援金 thu từ người cao tuổi, không phải trợ cấp doanh nghiệp).
+
+    NGUYÊN NHÂN: vòng 2 nhồi cả danh sách chữ vào MỘT CÂU CHẠY DÀI
+    (`…with these Japanese words, one per row: 「A」「B」「C」`). Đó đúng lỗi
+    `ab-3title-3thumb.md` §3.1 đã ghi: *mỗi dòng chữ phải nằm trên MỘT DÒNG RIÊNG dạng
+    `line 1, white: …`; nhồi vào câu chạy dài thì model bám tả cảnh và nuốt chữ.*
+    Tao có sẵn bài học đó và không áp.
+
+    VÁ:
+      1. Đánh số từng dòng `ROW 1: 「…」 / ROW 2: …` — cấu trúc thay cho câu văn.
+      2. `EXACTLY N rows, no more` — chặn hàng trống thừa (tờ 支援金 dư 2 hàng rỗng).
+      3. `Write these EXACT words and NO others` — chặn bịa.
+      4. Khối chữ đứng NGAY SAU câu mở, trước mọi mô tả cảnh (guard ≤15%).
+    """
+    rows = " / ".join(f"ROW {i+1}: 「{x}」" for i, x in enumerate(lines))
+    return (STYLE_TEXT_HEAD
+            + f'TITLE: 「{title}」. EXACTLY {len(lines)} rows, '
+              f'each filled with one printed word: {rows}. '
+              'Write these EXACT Japanese words and NO others — do not invent extra words, '
+              'do not add explanatory phrases, do not leave any row as an empty ruled line. '
+            + _BASE)
+
+
+# ── CHỮ NHẬT ĐỌC ĐƯỢC trên giấy tờ của từng ô (thay lớp texture cũ) ──────────
+# Luật: **1 cụm / ảnh · ≤7 ký full-width · danh từ · KHÔNG số**.
+# Chọn tên GIẤY TỜ hoặc CƠ QUAN — thứ người 65+ cầm trên tay và nhận ra ngay.
+# 「決定通知書」 lặp ở 6 ô là CỐ Ý: nó là vật trục của kịch bản v2 (tờ giấy tháng 7).
+TEXTS = {
+    # tờ 決定通知書 — vật trục của bài; các dòng là ĐÚNG 2 phần cấu thành phí + dòng cộng
+    3:  ("決定通知書", ["均等割", "所得割", "合計"]),
+    4:  ("決定通知書", ["均等割", "所得割", "合計"]),
+    56: ("決定通知書", ["均等割", "所得割", "合計"]),
+    59: ("決定通知書", ["均等割", "所得割", "合計"]),
+    76: ("決定通知書", ["均等割", "所得割", "合計"]),
+    77: ("決定通知書", ["十月", "十二月", "二月"]),          # 3 kỳ 本徴収
+    5:  ("通帳",     ["年金", "保険料", "差引"]),
+    11: ("保険証",   ["氏名", "住所"]),
+    12: ("請求書",   ["国民健康保険", "後期高齢者医療"]),
+    33: ("請求書",   ["後期高齢者医療", "納付のお願い"]),
+    # 🔴 hai shot 原典 — khai ĐÚNG nội dung thật, chặn bịa (lỗi C)
+    16: ("厚生労働省", ["後期高齢者医療制度", "保険料率について", "均等割", "所得割"]),
+    40: ("厚生労働省", ["均等割の軽減", "七割軽減", "更に軽減"]),
+    18: ("年金額",   ["年金額", "保険料", "手取り"]),
+    19: ("支援金",   ["子育て支援金", "均等割", "所得割"]),
+    84: ("支援金",   ["子育て支援金", "均等割", "所得割"]),
+    23: ("お知らせ", ["保険料の改定", "広域連合"]),
+    31: ("納付書",   ["後期高齢者医療", "口座振替"]),
+    42: ("都道府県別", ["新潟県", "埼玉県", "東京都"]),
+    61: ("都道府県別", ["埼玉県", "東京都", "青森県"]),
+    43: ("新潟県",   ["均等割", "所得割", "軽減"]),
+    79: ("二年後",   ["軽減が切れる月"]),
+    80: ("振込通知書", ["介護保険料", "後期高齢者医療"]),
+    82: ("研究ノート", ["誕生月から", "十月に変わる", "二年で切れる"]),
+    88: ("七月",     ["封筒をさがす"]),
+}
+
+
+# ô có vật IN ẤN ⇒ style_text()
+PRINT = {3, 4, 5, 11, 12, 16, 18, 19, 23, 31, 33, 40, 42, 43, 56, 59, 61,
+         76, 77, 79, 80, 82, 84, 88}
+
+# ── CHỦ THỂ TỪNG Ô — rút từ lời đọc của chính ô đó ───────────────────────────
+SUBJ = {
+    # ── c0 cold open: 誕生日 → 封筒 → ngày không được ghi ─────────────────────
+    0: "an elderly man sitting alone on a low chair, hands resting on his knees, a telephone "
+       "face-down on the table beside him, one small round marker on the wall behind him",
+    1: "one elderly figure standing in the middle, and on either side of him a simple rounded "
+       "block of different height, a thin navy arrow crossing from the left block to the right one",
+    2: "two open palms held together holding a small heap of coins, seen slightly from above, "
+       "a plain purse lying closed beside the hands",
+    3: "one large light-brown envelope lying flat and closed, seen from directly above, a single "
+       "printed notice sheet slid halfway out of it, an elderly hand resting at the envelope corner",
+    4: "an elderly woman holding one printed notice sheet up close with both hands, and a red "
+       "hand-drawn oval resting on the smooth lower band of the sheet, below the printed heading",
+    5: "an open bankbook lying on a table, an elderly man leaning over it with a puzzled "
+       "expression, one finger placed on a row inside the book",
+    6: "three plain rounded blocks side by side rising sharply from left to right, the tallest "
+       "one on the right about three times the first, a small red upward arrow beside the tallest",
+    7: "a calm researcher in a plain everyday jacket standing behind a desk, a notebook open on "
+       "the desk and a magnifying glass resting on it, one hand gesturing toward the notebook",
+
+    # ── c1 誕生日当日に何が起きているか ───────────────────────────────────────
+    8: "three separate groups of people standing apart on a flat cream floor: a single elderly "
+       "man, a small office group, and an elderly couple with a younger relative",
+    9: "a line of elderly people walking from left to right through a simple rounded gateway, "
+       "the gateway frame in navy, all of them past the halfway point",
+    10: "a public office counter with a low window and an unattended chair behind it, one elderly "
+        "man standing in front of the counter with both hands at his sides",
+    11: "two elderly hands holding up a small plastic insurance card at chest height, the card "
+        "surface carrying fine faint printed texture and a row of tiny marks along one edge",
+    12: "two printed billing slips lying on a table overlapping each other at a slight offset, "
+        "both showing a clear printed heading at the top, one corner of the upper slip lifted",
+    13: "a long horizontal navy band with two adjacent rounded cells marked on it, a teal figure "
+        "standing under the left cell and the same figure under the right cell",
+    14: "one large circle divided into two unequal parts, the left part navy and the right part "
+        "teal, a small elderly figure standing beside the circle looking at it",
+    15: "two rounded blocks stacked one on top of the other, the lower block wide and navy, the "
+        "upper block narrower and teal, an elderly hand pointing at the lower one",
+    16: "a printed government press-release page pinned flat on a board, showing a clear printed heading at "
+        "the top, and one bold red hand-drawn oval around a single row in the lower half",
+    17: "a purse held in two elderly hands with a thin red arrow leaving it and curving downward "
+        "to a small round tray below",
+    18: "an elderly man at a table with a printed statement in front of him, a pencil in his "
+        "right hand and a small note pad beside it, subtracting with the pencil tip on the sheet",
+
+    # ── c2 子ども・子育て支援金 ───────────────────────────────────────────────
+    19: "a printed table sheet on a desk with several ruled rows and a clear printed heading, and a red "
+        "hand-drawn oval around the second row from the bottom",
+    20: "a wide shallow teal basin in the centre; around it, elderly figures, working-age "
+        "figures and two small factory shapes, each with a short navy arrow pointing into the basin",
+    21: "three rounded step blocks rising left to right, the third one only half built with a "
+        "few loose bricks beside it and a small trowel resting on the second step",
+    22: "one plain rounded block standing alone with a large red question mark floating above it, "
+        "an elderly figure looking up at the mark",
+    23: "a researcher in a plain jacket and an elderly man facing each other across a desk, one "
+        "printed sheet on the desk between them, the researcher's palm open above the sheet",
+
+    # ── c3 10月に引かれる額が変わる ───────────────────────────────────────────
+    24: "a crowd of elderly people filling most of the frame, and one thin red arrow running "
+        "from a purse at the front of the crowd toward the right edge",
+    25: "a simple two-pan balance scale, the left pan holding two stacked coins and the right "
+        "pan holding one larger coin, the beam almost level",
+    26: "a long horizontal navy band with three small identical teal cells marked in its left "
+        "half, each cell the same size, and a light hand resting under the band",
+    27: "a long horizontal navy band with three cells marked in its right half, the first of the "
+        "three noticeably larger and outlined in red",
+    28: "one large rounded navy box on the left, a red arrow leaving it and splitting into three "
+        "thinner arrows that end in three small equal boxes on the right",
+    29: "an elderly woman with one hand raised to her cheek in a small moment of realisation, "
+        "and beside her a horizontal band with a single red marker on it",
+    30: "a large teal ring drawn on the floor with several elderly figures standing inside it, "
+        "and two elderly figures standing just outside the ring line",
+    31: "a printed payment slip and a bank transfer form lying side by side on a table, both "
+        "showing a clear printed heading, an elderly hand placing a coin purse beside them",
+    32: "an elderly woman looking relieved with both hands lightly clasped, and directly behind "
+        "her a much larger closed envelope standing upright on the floor",
+    33: "an open bankbook in the foreground with a clear printed heading, and behind it one oversized "
+        "closed envelope leaning against the wall, taller than the book",
+
+    # ── c4 計算タイム: 中村 → お願い → 小林 ──────────────────────────────────
+    34: "two elderly figures standing apart on a cream floor, the left one lit by a simple round "
+        "pool of light on the ground, the right one waiting in plain outline",
+    35: "an elderly man in a warm vest standing in front of a small low house with a gently "
+        "sloped roof, a thin band of snow along the roof edge",
+    36: "an elderly man beside a small portable stove, one hand held out toward it, and a "
+        "kerosene can standing on the floor next to the stove with its cap on",
+    37: "one wide rounded navy block standing alone on a cream floor, an elderly man standing "
+        "beside it reaching only to the top of the block",
+    38: "three rounded step blocks descending from left to right, each step shorter than the "
+        "one before, a small teal figure standing at the top step",
+    39: "the same three descending step blocks with the lowest step circled in bold red, and an "
+        "elderly man standing on that lowest step with his hands together",
+    40: "an official document page lying flat, showing a clear printed heading above a small table "
+        "of ruled boxes, one red hand-drawn oval around a short row near the middle",
+    41: "one open elderly palm held forward with a single small coin resting in the centre of it, "
+        "the rest of the palm plain",
+    42: "a tall printed table sheet held upright with many ruled rows under a clear printed heading, an elderly "
+        "woman tracing down the rows with one fingertip",
+    43: "the same tall printed table sheet with one single row boldly circled in red near the "
+        "middle, an elderly hand holding the sheet steady at the bottom corner",
+    44: "a consultation counter with a staff figure behind it and an elderly man seated in front, "
+        "both leaning slightly toward each other, a plain folder on the counter",
+    45: "an elderly man sitting close to a small lit stove in a warm teal glow, shoulders "
+        "relaxed, a cup of tea on the floor beside him",
+    46: "one large raised hand giving a thumbs up in navy, and beside it two smaller hands "
+        "passing a rounded card between them",
+    47: "three rounded speech bubbles of different sizes floating above a low desk, and an "
+        "elderly hand resting on the desk below them",
+    48: "one wide navy arrow pointing to the right across the frame, with a small teal figure "
+        "walking along the arrow",
+    49: "an elderly woman on the open balcony of a four-storey apartment block, watering a "
+        "climbing morning-glory vine on a trellis, the building face plain navy behind her",
+    50: "an elderly woman and a younger man in office clothes standing side by side, the man "
+        "holding a briefcase, a light purse held loosely in the woman's hand",
+    51: "an elderly woman seated with one hand lifted in a small apologetic gesture, a rounded "
+        "speech bubble beside her head",
+    52: "three rounded step blocks rising left to right, the first step flat on the ground and "
+        "outlined in teal, an elderly woman standing on that first flat step",
+    53: "the same three steps with the second step now half the height of the third, circled in "
+        "teal, the elderly woman standing on the second step",
+    54: "one wide rounded navy block standing on a cream floor with a plain teal band across "
+        "its middle, an elderly hand resting on its top edge",
+    55: "one rounded navy block split cleanly into two equal halves by a vertical red line, the "
+        "left half standing and the right half lying flat beside it",
+    56: "an elderly woman holding a printed notice sheet in both hands, her other hand on her "
+        "chest, shoulders lowered in relief, the sheet showing a clear printed heading",
+    57: "three rounded step blocks with the third and tallest step outlined in bold red, an "
+        "elderly woman looking up at the tallest step from the second one",
+    58: "a simple wall switch in the off position with a small red marker beside it, and a "
+        "telephone lying face-down on a shelf underneath",
+    59: "one printed notice sheet held up, a clear printed heading across its upper half, and a red "
+        "hand-drawn oval on the smooth band below the last row of print",
+    60: "an electricity bill slip and one rounded navy block standing side by side at the same "
+        "height, an elderly hand placing a coin on top of the block",
+    61: "a printed table sheet on a table with many ruled rows under a clear printed heading, an elderly woman "
+        "and an elderly man leaning over it together from opposite sides",
+    62: "one small teal block on the left and one much larger navy block on the right, a red "
+        "arrow curving from the small block up toward the larger one",
+    63: "three rounded blocks rising steeply left to right, the first flat to the ground, the "
+        "second low, the third about three times the second and outlined in bold red",
+    64: "three rounded cards standing in a row, the third card circled in bold red, an elderly "
+        "hand pointing at the third card",
+    65: "an elderly woman standing indoors holding one light-brown envelope, still closed, in "
+        "both hands, her face turned up toward a small note pinned on the wall above her",
+
+    # ── c5 よくある誤解 三つ ─────────────────────────────────────────────────
+    66: "three large red question marks standing in a row on a cream floor, one elderly figure "
+        "standing beside the first of them with arms folded",
+    67: "a simple long island shape divided into several plain regions of navy and teal, each "
+        "region a slightly different tone, no markings on them",
+    68: "two rounded columns of very different height standing far apart, the tall one on the "
+        "left and the short one on the right, a thin cream gap between them",
+    69: "two rounded columns side by side, the left one tall and navy and the right one short "
+        "and teal, an elderly figure standing between them at the height of the short one",
+    70: "two rounded columns of different height with a bold red bracket drawn in the gap "
+        "between their tops, measuring the distance",
+    71: "two identical elderly figures standing on two separate plain platforms of different "
+        "height, the platforms not touching",
+    72: "a stack of moving boxes with a large red diagonal line drawn across them, one elderly "
+        "man standing beside the stack with both palms turned up",
+    73: "one open umbrella held over an elderly woman's head, the canopy in teal, her other hand "
+        "holding a small purse",
+    74: "the same umbrella now folded and lowered in the elderly woman's hand, her shoulders "
+        "slightly raised, a thin red marker floating above the folded canopy",
+    75: "a closed circular arrow loop drawn on the floor, an elderly figure walking along it, "
+        "and one rounded block rising just outside the loop",
+
+    # ── c6 やること: 封筒を探す・二年を足す ──────────────────────────────────
+    76: "an open drawer seen from above with several printed papers inside, and two elderly "
+        "hands lifting one light-brown envelope out from among them",
+    77: "one printed notice sheet opened flat on a table, a clear printed heading across the top, and "
+        "three short rows in its lower half each circled in red",
+    78: "two small round markers on a long horizontal navy band, far apart, with a red arrow "
+        "running from the left marker to the right one",
+    79: "an elderly hand writing with a pencil on a small note pinned to a plain wall, a short "
+        "red mark already drawn on the note",
+    80: "two printed notice sheets laid side by side on a table, both showing a clear printed heading, an "
+        "elderly finger resting on each sheet at the same position",
+    81: "two public counters standing side by side, the left one circled in bold red with a "
+        "staff figure behind it, the right one crossed out with a red diagonal line",
+
+    # ── c7 研究ノート + シェア用ノート ───────────────────────────────────────
+    82: "an open notebook lying flat on a desk, the left page carrying a clear handwritten heading"
+        ", a pencil resting in the fold and a researcher's hand at the page corner",
+    83: "two rounded columns side by side, the right one slightly taller than the left, a small "
+        "red upward arrow beside the taller one",
+    84: "a printed table sheet with several ruled rows under a clear printed heading and one extra narrow row "
+        "added at the bottom, that bottom row circled in red",
+    85: "a long horizontal navy band with two markers on it, the second marker larger and "
+        "outlined in red, an elderly hand pointing at the second one",
+    86: "three rounded step blocks with a bold red arrow rising from the second step to the "
+        "third, an elderly woman standing on the second step looking up",
+    87: "one wide rounded speech bubble floating at chest height with a single plain line inside "
+        "it, an elderly woman standing beneath it with one hand raised",
+    88: "one light-brown envelope lying flat on a table beside a small note, an elderly hand "
+        "placing the note on top of the envelope, the note carrying one clear handwritten word",
+    89: "an elderly woman holding a mobile phone in both hands, and two younger figures standing "
+        "a little apart from her, a small rounded arrow leaving the phone toward them",
+    90: "one wide navy arrow pointing right along a horizontal band, with a large rounded button "
+        "shape at the arrow tip and a hand reaching toward the button",
+    91: "a public counter with a staff figure behind it, an elderly couple seated in front, and "
+        "a researcher in a plain jacket standing to one side with an open palm toward the counter",
+}
+
+
+def main() -> int:
+    plan = json.loads((VD / "plan28.json").read_text(encoding="utf-8"))
+    shots = plan["shots"]
+
+    lot = None
+    if "--lot" in sys.argv:
+        lot = int(sys.argv[sys.argv.index("--lot") + 1])
+    lots = {1: range(0, 24), 2: range(24, 48), 3: range(48, 70), 4: range(70, 92)}
+
+    miss = [s["k"] for s in shots if s["k"] not in SUBJ]
+    if miss:
+        print(f"🔴 THIẾU chủ thể cho ô: {miss}")
+        return 1
+
+    # gate: cam cac tu keo model ve phia ve mang trong (CLAUDE.md §Prompt anh)
+    banned = [(k, w) for k, v in SUBJ.items()
+              for w in ("blank", "empty", "text-free", "nothing")
+              if w in v.lower()]
+    if banned:
+        print(f"🔴 SUBJ chua tu bi cam (keo model ve mang trong): {banned}")
+        return 1
+
+
+    # gate LABEL: moi o PRINT phai co chu, <=7 ky full-width, khong chua so
+    nolab = [k for k in PRINT if k not in TEXTS]
+    if nolab:
+        print(f"🔴 o PRINT thieu LABEL: {nolab}")
+        return 1
+    toolong = [(k, x, len(x)) for k, (t, ls) in TEXTS.items()
+               for x in [t] + list(ls) if len(x) > 9]
+    if toolong:
+        print(f"🔴 LABEL qua 7 ky (kanji ram se nat): {toolong}")
+        return 1
+    hasnum = [(k, x) for k, (t, ls) in TEXTS.items()
+              for x in [t] + list(ls)
+              if any(c in x for c in "0123456789０１２３４５６７８９")]
+    if hasnum:
+        print(f"🔴 LABEL chua SO — so phai do font builder ve: {hasnum}")
+        return 1
+
+    flow, names, blocks = [], [], []
+    for s in shots:
+        k = s["k"]
+        if lot and k not in lots[lot]:
+            continue
+        if k in PRINT:
+            flow.append(style_text(*TEXTS[k]) + SUBJ[k] + "." + STYLE_TEXT_TAIL)
+        else:
+            flow.append(STYLE + SUBJ[k] + ".")
+        fn = f"img28_{k:03d}.png"
+        names.append(f"dòng {len(flow):>3} -> {fn}   (ô {k}, ch{s['chap']}, {s['t0']:.0f}s)")
+        blocks.append(f"## ô {k} · chương {s['chap']} · {s['t0']:.0f}s · "
+                      f"{'PRINT' if k in PRINT else 'no-text'}\n"
+                      f"lời: {s['text'][:70]}\n{SUBJ[k]}\n")
+
+    tag = f"_LOT{lot}" if lot else ""
+    (VD / f"img28_FLOW{tag}.txt").write_text("\n".join(flow) + "\n", encoding="utf-8")
+    (VD / f"img28_TENFILE{tag}.txt").write_text("\n".join(names) + "\n", encoding="utf-8")
+    (VD / f"img28_BLOCKS{tag}.md").write_text("\n".join(blocks), encoding="utf-8")
+
+    L = [len(x) for x in flow]
+    npr = sum(1 for s in shots if s["k"] in PRINT and (not lot or s["k"] in lots[lot]))
+    print(f"→ {len(flow)} prompt · {min(L)}–{max(L)} ký · {npr} ô CÓ CHỮ ĐỌC ĐƯỢC")
+    print(f"  {VD / f'img28_FLOW{tag}.txt'}")
+    print(f"  {VD / f'img28_TENFILE{tag}.txt'}")
+    print(f"  {VD / f'img28_BLOCKS{tag}.md'}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

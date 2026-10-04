@@ -1,0 +1,650 @@
+[
+ {
+  "match": "まだ、空も白んでいない時間。",
+  "video": true
+ },
+ {
+  "match": "街を走る、一台のトラック。荷",
+  "photo": true,
+  "offset": 1.69
+ },
+ {
+  "match": "街を走る、一台のトラック。荷",
+  "photo": true,
+  "offset": 7.75
+ },
+ {
+  "match": "一点目、新聞配達。このトラッ",
+  "photo": true,
+  "offset": 5.52
+ },
+ {
+  "match": "一点目、新聞配達。このトラッ",
+  "photo": true,
+  "offset": 11.58
+ },
+ {
+  "match": "今日は、昭和四十五年の、ある",
+  "photo": true,
+  "offset": 5.34
+ },
+ {
+  "match": "今日は、昭和四十五年の、ある",
+  "photo": true,
+  "offset": 11.41
+ },
+ {
+  "match": "今日は、昭和四十五年の、ある",
+  "photo": true,
+  "offset": 17.47
+ },
+ {
+  "match": "中でも、九点目は、日本中の子",
+  "photo": true,
+  "offset": 2.44
+ },
+ {
+  "match": "中でも、九点目は、日本中の子",
+  "photo": true,
+  "offset": 8.5
+ },
+ {
+  "match": "中でも、九点目は、日本中の子",
+  "photo": true,
+  "offset": 14.56
+ },
+ {
+  "match": "そして、もうひとつ。この朝の",
+  "photo": true,
+  "offset": 4.81
+ },
+ {
+  "match": "そして、もうひとつ。この朝の",
+  "photo": true,
+  "offset": 10.87
+ },
+ {
+  "match": "バイクのエンジン音が、遠くか",
+  "photo": true,
+  "offset": 5.88
+ },
+ {
+  "match": "バイクのエンジン音が、遠くか",
+  "photo": true,
+  "offset": 11.94
+ },
+ {
+  "match": "バイクのエンジン音が、遠くか",
+  "photo": true,
+  "offset": 18.01
+ },
+ {
+  "match": "私の家では、それが祖父の役目",
+  "photo": true,
+  "offset": 4.73
+ },
+ {
+  "match": "二点目、豆腐屋さんのラッパで",
+  "photo": true
+ },
+ {
+  "match": "朝の六時、決まった時間に、決",
+  "photo": true,
+  "offset": 0.1
+ },
+ {
+  "match": "朝の六時、決まった時間に、決",
+  "photo": true,
+  "offset": 6.23
+ },
+ {
+  "match": "朝の六時、決まった時間に、決",
+  "photo": true,
+  "offset": 12.35
+ },
+ {
+  "match": "朝の六時、決まった時間に、決",
+  "photo": true,
+  "offset": 18.48
+ },
+ {
+  "match": "鍋を持って、走って買いに行く",
+  "photo": true,
+  "offset": 3.77
+ },
+ {
+  "match": "鍋を持って、走って買いに行く",
+  "photo": true,
+  "offset": 9.89
+ },
+ {
+  "match": "私も一度、帰り道で角にぶつけ",
+  "photo": true,
+  "offset": 4.47
+ },
+ {
+  "match": "私も一度、帰り道で角にぶつけ",
+  "photo": true,
+  "offset": 10.6
+ },
+ {
+  "match": "私も一度、帰り道で角にぶつけ",
+  "photo": true,
+  "offset": 16.72
+ },
+ {
+  "match": "夕方にも同じ豆腐屋さんが来て",
+  "photo": true,
+  "offset": 4.77
+ },
+ {
+  "match": "夕方にも同じ豆腐屋さんが来て",
+  "photo": true,
+  "offset": 10.9
+ },
+ {
+  "match": "夕方にも同じ豆腐屋さんが来て",
+  "photo": true,
+  "offset": 17.02
+ },
+ {
+  "match": "この豆腐屋さん、昭和三十五年",
+  "photo": true,
+  "offset": 6.08
+ },
+ {
+  "match": "この豆腐屋さん、昭和三十五年",
+  "photo": true,
+  "offset": 12.2
+ },
+ {
+  "match": "三点目は、実は、まだ鳴ってい",
+  "photo": true
+ },
+ {
+  "match": "枕もとの、ぜんまい仕掛けの目",
+  "photo": true,
+  "offset": 0.43
+ },
+ {
+  "match": "枕もとの、ぜんまい仕掛けの目",
+  "photo": true,
+  "offset": 6.38
+ },
+ {
+  "match": "枕もとの、ぜんまい仕掛けの目",
+  "photo": true,
+  "offset": 12.34
+ },
+ {
+  "match": "枕もとの、ぜんまい仕掛けの目",
+  "photo": true,
+  "offset": 18.29
+ },
+ {
+  "match": "枕もとの、ぜんまい仕掛けの目",
+  "photo": true,
+  "offset": 24.25
+ },
+ {
+  "match": "台所からは、もう水の音がして",
+  "photo": true,
+  "offset": 2.58
+ },
+ {
+  "match": "四点目、玄関の脇の、木の牛乳",
+  "photo": true
+ },
+ {
+  "match": "朝、配達の人が、瓶を二本、入",
+  "photo": true,
+  "offset": 2.32
+ },
+ {
+  "match": "朝、配達の人が、瓶を二本、入",
+  "photo": true,
+  "offset": 8.65
+ },
+ {
+  "match": "朝、配達の人が、瓶を二本、入",
+  "photo": true,
+  "offset": 14.98
+ },
+ {
+  "match": "朝、配達の人が、瓶を二本、入",
+  "photo": true,
+  "offset": 21.31
+ },
+ {
+  "match": "この牛乳配達、これから六年後",
+  "photo": true,
+  "offset": 2.54
+ },
+ {
+  "match": "この牛乳配達、これから六年後",
+  "photo": true,
+  "offset": 8.87
+ },
+ {
+  "match": "この牛乳配達、これから六年後",
+  "photo": true,
+  "offset": 15.2
+ },
+ {
+  "match": "この牛乳配達、これから六年後",
+  "photo": true,
+  "offset": 21.54
+ },
+ {
+  "match": "五点目、台所から漂ってくる、",
+  "photo": true
+ },
+ {
+  "match": "五点目、台所から漂ってくる、",
+  "photo": true,
+  "offset": 5.77
+ },
+ {
+  "match": "このころ、電気釜は、もう珍し",
+  "photo": true,
+  "offset": 5.52
+ },
+ {
+  "match": "このころ、電気釜は、もう珍し",
+  "photo": true,
+  "offset": 11.3
+ },
+ {
+  "match": "このころ、電気釜は、もう珍し",
+  "photo": true,
+  "offset": 17.07
+ },
+ {
+  "match": "六点目、ちゃぶ台を囲んでの朝",
+  "photo": true
+ },
+ {
+  "match": "味噌汁と、焼いた干物と、卵か",
+  "photo": true,
+  "offset": 1.76
+ },
+ {
+  "match": "味噌汁と、焼いた干物と、卵か",
+  "photo": true,
+  "offset": 8.03
+ },
+ {
+  "match": "味噌汁と、焼いた干物と、卵か",
+  "photo": true,
+  "offset": 14.31
+ },
+ {
+  "match": "私は、卵かけご飯に、醤油をか",
+  "photo": true,
+  "offset": 6.03
+ },
+ {
+  "match": "七点目、居間の隅の、テレビ。",
+  "photo": true
+ },
+ {
+  "match": "数年前から、新しい豊かさの象",
+  "photo": true,
+  "offset": 2.49
+ },
+ {
+  "match": "数年前から、新しい豊かさの象",
+  "photo": true,
+  "offset": 8.5
+ },
+ {
+  "match": "数年前から、新しい豊かさの象",
+  "photo": true,
+  "offset": 14.51
+ },
+ {
+  "match": "もうひとつ、聞かせてください",
+  "photo": true,
+  "offset": 2.19
+ },
+ {
+  "match": "もうひとつ、聞かせてください",
+  "photo": true,
+  "offset": 8.2
+ },
+ {
+  "match": "もうひとつ、聞かせてください",
+  "photo": true,
+  "offset": 14.21
+ },
+ {
+  "match": "でも、こうしてテレビの前に集",
+  "photo": true,
+  "offset": 2.14
+ },
+ {
+  "match": "でも、こうしてテレビの前に集",
+  "photo": true,
+  "offset": 8.15
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 1.36
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 7.36
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 13.37
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 19.38
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 25.39
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "photo": true,
+  "offset": 31.4
+ },
+ {
+  "match": "八点目、物干し竿に、洗濯物を",
+  "photo": true
+ },
+ {
+  "match": "洗濯機は、もうこの家にもあり",
+  "photo": true,
+  "offset": 1.11
+ },
+ {
+  "match": "洗濯機は、もうこの家にもあり",
+  "photo": true,
+  "offset": 7.25
+ },
+ {
+  "match": "洗濯機は、もうこの家にもあり",
+  "photo": true,
+  "offset": 13.38
+ },
+ {
+  "match": "さっきの答えです。電気釜を持",
+  "photo": true,
+  "offset": 1.43
+ },
+ {
+  "match": "さっきの答えです。電気釜を持",
+  "photo": true,
+  "offset": 7.57
+ },
+ {
+  "match": "さっきの答えです。電気釜を持",
+  "photo": true,
+  "offset": 13.7
+ },
+ {
+  "match": "九点目、ランドセルを背負って",
+  "photo": true
+ },
+ {
+  "match": "当時のランドセルは、色が、黒",
+  "photo": true,
+  "offset": 0.25
+ },
+ {
+  "match": "当時のランドセルは、色が、黒",
+  "photo": true,
+  "offset": 6.28
+ },
+ {
+  "match": "当時のランドセルは、色が、黒",
+  "photo": true,
+  "offset": 12.3
+ },
+ {
+  "match": "近所の決まった場所に、同じ班",
+  "photo": true,
+  "offset": 1.76
+ },
+ {
+  "match": "近所の決まった場所に、同じ班",
+  "photo": true,
+  "offset": 7.78
+ },
+ {
+  "match": "近所の決まった場所に、同じ班",
+  "photo": true,
+  "offset": 13.81
+ },
+ {
+  "match": "私は、いちばん後ろを歩くのが",
+  "photo": true,
+  "offset": 5.02
+ },
+ {
+  "match": "十点目、駅に向かう、父の後ろ",
+  "photo": true
+ },
+ {
+  "match": "当時の通勤電車は、「殺人電車",
+  "photo": true,
+  "offset": 0.33
+ },
+ {
+  "match": "当時の通勤電車は、「殺人電車",
+  "photo": true,
+  "offset": 6.44
+ },
+ {
+  "match": "当時の通勤電車は、「殺人電車",
+  "photo": true,
+  "offset": 12.55
+ },
+ {
+  "match": "さっきの答えです。この年、カ",
+  "photo": true,
+  "offset": 2.34
+ },
+ {
+  "match": "さっきの答えです。この年、カ",
+  "photo": true,
+  "offset": 8.45
+ },
+ {
+  "match": "さっきの答えです。この年、カ",
+  "photo": true,
+  "offset": 14.56
+ },
+ {
+  "match": "さっきの答えです。この年、カ",
+  "photo": true,
+  "offset": 20.67
+ },
+ {
+  "match": "満員電車に揺られる父も、同じ",
+  "photo": true,
+  "offset": 0.67
+ },
+ {
+  "match": "十一点目、公園に集まっての、",
+  "photo": true
+ },
+ {
+  "match": "この八年前、昭和三十七年には",
+  "photo": true,
+  "offset": 1.22
+ },
+ {
+  "match": "この八年前、昭和三十七年には",
+  "photo": true,
+  "offset": 7.47
+ },
+ {
+  "match": "この八年前、昭和三十七年には",
+  "photo": true,
+  "offset": 13.71
+ },
+ {
+  "match": "この八年前、昭和三十七年には",
+  "photo": true,
+  "offset": 19.96
+ },
+ {
+  "match": "最後の一列だけ、いつも判子を",
+  "photo": true,
+  "offset": 1.6
+ },
+ {
+  "match": "最後の一列だけ、いつも判子を",
+  "photo": true,
+  "offset": 7.85
+ },
+ {
+  "match": "十一点まで来ました。そして、",
+  "photo": true,
+  "offset": 4.3
+ },
+ {
+  "match": "十二点目、家を出る前に、もう",
+  "photo": true
+ },
+ {
+  "match": "十二点目、家を出る前に、もう",
+  "photo": true,
+  "offset": 6.02
+ },
+ {
+  "match": "この朝、初めて、それを知りま",
+  "photo": true,
+  "offset": 5.0
+ },
+ {
+  "match": "この朝、初めて、それを知りま",
+  "photo": true,
+  "offset": 11.02
+ },
+ {
+  "match": "この朝、初めて、それを知りま",
+  "photo": true,
+  "offset": 17.04
+ },
+ {
+  "match": "この朝、初めて、それを知りま",
+  "photo": true,
+  "offset": 23.05
+ },
+ {
+  "match": "一日だけで、三十万人を超えた",
+  "photo": true,
+  "offset": 4.46
+ },
+ {
+  "match": "このころ、日本を五年近く支え",
+  "photo": true,
+  "offset": 4.45
+ },
+ {
+  "match": "このころ、日本を五年近く支え",
+  "photo": true,
+  "offset": 10.47
+ },
+ {
+  "match": "このころ、日本を五年近く支え",
+  "photo": true,
+  "offset": 16.49
+ },
+ {
+  "match": "これで、十二点。全部、出そろ",
+  "photo": true,
+  "offset": 1.92
+ },
+ {
+  "match": "十二点満点です。何点、思い出",
+  "photo": true,
+  "offset": 3.16
+ },
+ {
+  "match": "そして、最初のお約束です。牛",
+  "photo": true,
+  "offset": 4.16
+ },
+ {
+  "match": "そして、最初のお約束です。牛",
+  "photo": true,
+  "offset": 10.17
+ },
+ {
+  "match": "瓶が紙パックに変わり、そして",
+  "photo": true,
+  "offset": 5.9
+ },
+ {
+  "match": "瓶が紙パックに変わり、そして",
+  "photo": true,
+  "offset": 11.91
+ },
+ {
+  "match": "瓶が紙パックに変わり、そして",
+  "photo": true,
+  "offset": 17.93
+ },
+ {
+  "match": "瓶が紙パックに変わり、そして",
+  "photo": true,
+  "offset": 23.94
+ },
+ {
+  "match": "あの朝、ラッパを鳴らしていた",
+  "photo": true,
+  "offset": 4.85
+ },
+ {
+  "match": "あの朝、ラッパを鳴らしていた",
+  "photo": true,
+  "offset": 10.87
+ },
+ {
+  "match": "あの朝、ラッパを鳴らしていた",
+  "photo": true,
+  "offset": 16.89
+ },
+ {
+  "match": "特別な朝ではありませんでした",
+  "photo": true,
+  "offset": 0.06
+ },
+ {
+  "match": "特別な朝ではありませんでした",
+  "photo": true,
+  "offset": 6.07
+ },
+ {
+  "match": "特別な朝ではありませんでした",
+  "photo": true,
+  "offset": 12.09
+ },
+ {
+  "match": "あなたの家の朝は、何点でした",
+  "photo": true,
+  "offset": 2.54
+ },
+ {
+  "match": "あなたの家の朝は、何点でした",
+  "photo": true,
+  "offset": 8.55
+ },
+ {
+  "match": "この「昭和くらし図鑑」で、ま",
+  "photo": true,
+  "offset": 1.52
+ }
+]

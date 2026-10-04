@@ -1,0 +1,17 @@
+dong | ten file tra ve | loai | vai | ghep o dau
+ 1 | host_A01.mp4 | A khong noi | gat dau lang nghe | sau cau hoi nguoi xem 「心当たりはありませんか」 · khi loi dan loi nguoi khac
+ 2 | host_A02.mp4 | A khong noi | mim cuoi nhe nhom | sau cau go toi 「あなたのせいではありません」 · cuoi moi chuong
+ 3 | host_A03.mp4 | A khong noi | ngam nghi | truoc mot cau chot / reveal · ngat giua hai y
+ 4 | host_A04.mp4 | A khong noi | dong cam, lo lang | khi ke noi kho cua nguoi xem (dem mat ngu, xau ho)
+ 5 | host_A05.mp4 | A khong noi | bat cuoi tu trao (mieng ngam) | chuyen buon cuoi / tu thu cai sai cua minh
+ 6 | host_A06.mp4 | A khong noi | hoi tuong | truoc cau 「私は…」 ke chuyen cu · flashback
+ 7 | host_A07.mp4 | A khong noi | tay dat len nguc | khoanh khac xuc dong · cau ket bai
+ 8 | host_A08.mp4 | A khong noi | ngac nhien nhe | truoc so lieu bat ngo (「約2倍」…)
+ 9 | host_A09.mp4 | A khong noi | dung yen tho deu (nen) | lop nen duoi the chu / chuyen canh dai
+10 | host_B01.mp4 | B Veo noi | chao mo bai | giay 0-30 moi video · cau: 「こんにちは。他人の目を気にしない心理学へ、ようこそ。」
+11 | host_B02.mp4 | B Veo noi | moi nghe thong tha | sau cau hook, truoc chuong 1 · cau: 「今日も、ゆっくり、聞いていってくださいね。」
+12 | host_B03.mp4 | B Veo noi | chuyen y | dau moi chuong · cau: 「では、次に、参りましょう。」
+13 | host_B04.mp4 | B Veo noi | nhan manh | truoc cau chot quan trong nhat · cau: 「ここが、いちばん、大事なところです。」
+14 | host_B05.mp4 | B Veo noi | hoi nguoi xem | sau mot vi du doi thuong · cau: 「あなたにも、心当たりは、ありませんか。」
+15 | host_B06.mp4 | B Veo noi | cam on ket bai | cuoi moi video, truoc 登録 · cau: 「今日も、最後まで、聞いてくださって、ありがとうございました。」
+16 | host_B07.mp4 | B Veo noi | hen gap lai | giay cuoi cung · cau: 「それでは、また、お会いしましょう。」

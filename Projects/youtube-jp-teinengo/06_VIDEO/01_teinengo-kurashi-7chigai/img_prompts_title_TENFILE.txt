@@ -1,0 +1,11 @@
+# dong FLOW -> ten file luu vao 06_VIDEO/01_teinengo-kurashi-7chigai/img_title/ (anh mo dau moi muc, 0-7s duoi chu その◯; xoa ✦ ca lo)
+01 -> 00_title_sono1.png
+02 -> 00_title_sono2.png
+03 -> 00_title_sono3.png
+04 -> 00_title_sono4.png
+05 -> 00_title_sono5.png
+06 -> 00_title_sono6.png
+07 -> 00_title_sono7.png
+
+# NHAN LO (2026-10-02, zip "Thang 10 02 - 00_56"): 7/7 anh, cat ✦ o 0,905W + trim 16:9; soi 1:1 ca 4 goc ban cat: sach 7/7.
+# CO Y NHAN: sono4 chai sake mo o ke (nhan khong doc duoc) · sono5 gay sach mo · sono2 tam noren xanh tron

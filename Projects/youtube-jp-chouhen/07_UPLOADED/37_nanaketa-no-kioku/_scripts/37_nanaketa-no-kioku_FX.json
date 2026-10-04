@@ -1,0 +1,22 @@
+{
+  "speakers": {"玲奈": "villain", "芙美子": "hero"},
+  "lines": [
+    {"match": "貧乏くさい顔ね", "speaker": "玲奈"},
+    {"match": "もういい、計画通りに進めて", "speaker": "玲奈"},
+    {"match": "許しません", "speaker": "芙美子"},
+    {"match": "二十二年前の香典も、今朝の保証金も", "speaker": "芙美子"}
+  ],
+  "events": [
+    {"type": "ambience", "from": "口座番号はそのままでいい", "to": "私が降りるより先に、藤宮玲奈がバッグを抱えて", "name": "night_bus", "gain": -30},
+    {"type": "ambience", "from": "早朝のターミナルは、通勤客でざわめきはじめていた", "to": "けれど、あなたを地獄に突き落とすことにも", "name": "terminal_hall", "gain": -28},
+    {"type": "sfx", "match": "トンネルを抜けた瞬間、私のスマートフォンが震えた", "name": "phone_buzz", "offset": -0.2, "gain": -8},
+    {"type": "sfx", "match": "震える手で、夫に電話をかけた", "name": "phone_buzz_urgent", "offset": -0.2, "gain": -7},
+    {"type": "sfx", "match": "再生ボタンを押した", "name": "sub_drop", "offset": -0.1, "gain": -6},
+    {"type": "sfx", "match": "私は少し離れた場所で、足を止めた", "name": "heartbeat", "offset": 0.0, "gain": -10},
+    {"type": "sfx", "match": "神崎玲子さん、ですね", "name": "sub_drop", "offset": -0.15, "gain": -6},
+    {"type": "bgm_tense_cut", "from": "再生ボタンを押した", "cut": "藤宮玲奈の顔から、血の気が引いていくのが見えた", "resume": "前の座席の女性が、小さく声を上げた"},
+    {"type": "bgm_swell", "from": "彼女は震える指でスマートフォンを操作し、最後方へ逃げるように移動した", "to": "藤宮玲奈は、一人で動いているのではなかった"},
+    {"type": "card", "match": "貧乏くさい顔ね", "text": "貧乏くさい顔ね", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "許しません", "text": "許しません", "style": "hero", "hold": 1.4}
+  ]
+}

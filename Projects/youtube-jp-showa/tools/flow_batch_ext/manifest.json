@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Flow Prompt Batch",
+  "version": "3.4",
+  "description": "Bom hang loat vao Google Flow \u2014 tab v1 (CHU) / v2 (ANH->VIDEO), do UI, so chong gen trung, dry-run.",
+  "permissions": [
+    "debugger",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "action": {
+    "default_title": "M\u1edf b\u1ea3ng \u0111i\u1ec1u khi\u1ec3n Flow Batch"
+  }
+}

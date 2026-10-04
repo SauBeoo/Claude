@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YT Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>🎬 YT Dashboard</h1>
+  <nav>
+    <button class="tab active" data-tab="projects">📋 Dự án</button>
+    <button class="tab" data-tab="schedule">📅 Lịch đăng</button>
+    <button class="tab" data-tab="produce">🏭 Sản xuất</button>
+    <button class="tab" data-tab="analytics">Analytics</button>
+    <button class="tab" data-tab="profiles">🌐 Profiles</button>
+    <button class="tab" data-tab="pending">📝 Chuẩn bị đăng</button>
+    <button class="tab" data-tab="watermark">🧹 Watermark</button>
+    <button class="tab" data-tab="kho">🗄️ Kho</button>
+    <button id="refresh" title="Tải lại">⟳</button>
+  </nav>
+</header>
+
+<main id="tab-projects" class="tabpage active">
+  <div class="suggest" style="margin:0 0 14px">
+    Danh mục kênh sau <b>pivot ngách 2026-07-23</b> — cả kênh đang chạy lẫn kênh đang rebrand/lên kế hoạch (nguồn <code>projects.json</code>, độc lập với lịch/kho).<br>
+    <b>🟢 Hoạt động / 🟡 Đang rebrand / ⚪ Lên kế hoạch / ⏸ Tạm dừng</b> — bấm nhãn trạng thái để đổi (bán tự động).
+    Các chip <b>profile · token · script · video · đã đăng</b> = <b>dò tự động</b> từ hệ thống mỗi lần mở tab / bấm 🔄.
+    Checklist ⚙ = tự tick khi hệ thống phát hiện (vd có script #1); còn lại tự tick tay.
+  </div>
+  <div class="bar">
+    <button id="proj-rescan" title="Dò lại trạng thái thật: profile Chrome, token API, số script/video/đã đăng của từng repo">🔄 Dò lại trạng thái (tự động)</button>
+    <span class="dim" id="proj-summary" style="align-self:center"></span>
+  </div>
+  <div id="proj-list">Đang tải…</div>
+  <details id="proj-add-box" style="margin-top:16px">
+    <summary>➕ Thêm dự án mới vào bảng</summary>
+    <div class="channel" style="margin-top:12px">
+      <div class="bar">
+        <input id="pa-key" type="text" placeholder="key (vd: co-dai)" style="width:130px">
+        <input id="pa-name" type="text" placeholder="tên kênh mới" style="flex:1;min-width:180px">
+        <input id="pa-niche" type="text" placeholder="ngách (tiếng Việt)" style="flex:1;min-width:180px">
+        <select id="pa-market"><option>JP</option><option>KR</option><option>VN</option><option>EN</option></select>
+      </div>
+      <div class="bar">
+        <input id="pa-repo" type="text" placeholder="repo folder (vd: youtube-jp-xxx — có thể để trống)" style="flex:1;min-width:200px">
+        <input id="pa-profile" type="text" placeholder="Chrome profile_dir (vd: Profile 5)" style="width:180px">
+        <input id="pa-gmail" type="text" placeholder="gmail kênh" style="width:200px">
+        <select id="pa-status">
+          <option value="planning">⚪ Lên kế hoạch</option>
+          <option value="rebranding">🟡 Đang rebrand</option>
+          <option value="active">🟢 Hoạt động</option>
+          <option value="paused">⏸ Tạm dừng</option>
+        </select>
+        <button id="pa-add">➕ Thêm</button>
+      </div>
+      <div class="suggest">Chỉ ghi vào bảng quản lý — KHÔNG tự tạo repo/profile. Kênh mới có checklist chuẩn bị mặc định (trends → benchmark → identity → rebrand → script #1).</div>
+    </div>
+  </details>
+</main>
+
+<main id="tab-schedule" class="tabpage">
+  <div class="suggest" style="margin:0 0 14px">
+    Giờ hiện = <b>giờ VN, giờ bấm nút đăng</b> (đã trừ sẵn 2–3h trước peak — rule <code>upload-schedule.md</code>).
+    Slot lệch giờ ngủ → dùng hẹn giờ của Studio. Kênh đủ ~10–20 video → giờ theo Studio Analytics đè bảng này.<br>
+    <b>Đổi video vào slot:</b> chọn ở dropdown từng dòng (📌 = ghim tay) · <b>📦⏰</b> = gói lại với giờ hẹn đúng slot đó (chốt thật vào METADATA).
+    <b>Đổi lịch cố định hàng tuần</b> → sửa <code>upload-schedule.md</code> + <code>CHANNELS</code> trong upload_pack.py (1 chỗ, web tự theo).
+  </div>
+  <div class="bar">
+    <select id="slot-add-channel"></select>
+    <input id="slot-add-date" type="date">
+    <input id="slot-add-time" type="time" value="16:00">
+    <button id="slot-add-btn">➕ Thêm slot (giờ VN)</button>
+    <button id="schedule-ai-btn" title="AI đối chiếu lịch hiện tại với baseline nghiên cứu + giờ đăng thật ↔ view thật của kênh đang chọn → khuyên giữ hay đổi giờ vàng">🤖 AI nghiên cứu giờ vàng</button>
+    <span class="dim" style="align-self:center">slot lẻ 1 ngày — lịch cố định hàng tuần vẫn theo rule</span>
+  </div>
+  <div id="schedule">Đang tải…</div>
+  <pre id="schedule-ai" class="hidden"></pre>
+</main>
+
+<main id="tab-produce" class="tabpage">
+  <div class="channel">
+    <div class="ch-head"><b>🚀 Chạy job sản xuất</b>
+      <span class="dim">mỗi job = 1 Claude agent chạy nền trong repo kênh (tự đọc skill + CLAUDE.md)</span>
+      <span id="voice-status" class="dim" style="margin-left:auto"></span>
+    </div>
+    <div class="bar">
+      <select id="job-channel"></select>
+      <select id="job-type">
+        <option value="script">✍️ Viết SCRIPT mới (nhập đề tài)</option>
+        <option value="render">🎬 RENDER video (nhập slug)</option>
+        <option value="thumbnail">🖼️ THUMBNAIL (nhập slug)</option>
+      </select>
+      <input id="job-input" type="text" placeholder="Đề tài/premise cho script — hoặc slug video cho render/thumbnail" style="flex:1;min-width:320px">
+      <button id="job-run">🚀 Chạy</button>
+    </div>
+    <div class="suggest" id="job-hint">✍️ Script: mô tả đề tài càng rõ càng tốt (premise 1-2 câu). 🎬 Render: slug = tên folder video, vd <b>08_natto-kusuri-gokai</b>. Job chạy nền nhiều phút tới vài giờ — cứ đóng tab, quay lại xem log sau.</div>
+  </div>
+  <div class="channel">
+    <div class="ch-head"><b>🧠 Model AI</b>
+      <span class="dim">model cho từng tính năng AI —「mặc định」= theo settings claude của máy (hiện là opus 1M). Việc nhẹ chọn sonnet/haiku cho nhanh + đỡ tốn quota. Lưu ngay khi đổi.</span>
+    </div>
+    <div id="ai-models" class="bar" style="flex-wrap:wrap;gap:14px">Đang tải…</div>
+  </div>
+  <div class="channel">
+    <div class="ch-head"><b>Jobs</b><button id="jobs-refresh" style="margin-left:auto">⟳</button></div>
+    <div id="jobs-list" class="suggest">chưa có job nào trong phiên này</div>
+  </div>
+  <pre id="job-log" class="hidden"></pre>
+</main>
+
+<main id="tab-analytics" class="tabpage">
+  <div class="bar">
+    <select id="ana-channel"></select>
+    <button id="ana-load">📊 Số liệu KÊNH</button>
+    <button id="ana-ai">🤖 AI phân tích KÊNH</button>
+    <button id="ana-check">Đối chiếu kênh thật</button>
+    <button id="ana-sync" class="danger">Tự chuyển kho (sync)</button>
+  </div>
+  <div id="ana-fresh"></div>
+  <div id="ana-videos"></div>
+  <pre id="ana-out">Chọn kênh có token rồi bấm "📊 Phân tích KÊNH".</pre>
+</main>
+
+<main id="tab-profiles" class="tabpage">
+  <div class="suggest" style="margin:0 0 14px">
+    Mỗi kênh 1 <b>Chrome profile riêng</b> (cookie/login cô lập, không đăng nhầm kênh) — rule <code>channel-browser.md</code>, mapping <code>browser_profiles.json</code>.<br>
+    <b>Mở Studio</b> = mở Chrome đúng profile kênh đó. Cột <b>Gmail login</b> đọc thật từ Chrome — lệch với mapping thì hiện ⚠️.
+    Kênh mới → điền form dưới: bỏ trống ô profile = tạo profile MỚI <code>yt-&lt;key&gt;</code> (mở lần đầu rồi tự login Gmail kênh); điền tên profile sẵn có (vd <code>Profile 12</code>) = tận dụng.
+  </div>
+  <div class="channel">
+    <div class="ch-head"><b>🌐 Kênh ↔ Chrome profile</b><button id="prof-refresh" style="margin-left:auto">⟳</button></div>
+    <div id="prof-list">Đang tải…</div>
+  </div>
+  <div class="channel">
+    <div class="ch-head"><b>➕ Kênh mới → profile mới</b></div>
+    <div class="bar">
+      <input id="prof-key" type="text" placeholder="key (vd: nenkin)" style="width:140px">
+      <input id="prof-name" type="text" placeholder="tên kênh (vd: 年金と老後のお金研究室)" style="flex:1;min-width:220px">
+      <input id="prof-gmail" type="text" placeholder="gmail của kênh (điền sau cũng được)" style="width:240px">
+      <input id="prof-dir" type="text" placeholder="profile sẵn có? (bỏ trống = tạo mới)" style="width:220px">
+      <button id="prof-create">➕ Tạo profile + shortcut</button>
+    </div>
+  </div>
+</main>
+
+<main id="tab-pending" class="tabpage">
+  <div class="suggest" style="margin:0 0 14px">
+    Bài <b>chuẩn bị đăng</b> theo kênh — script <code>.md</code> đã viết nhưng <b>CHƯA chuyển kho</b> (chưa <code>07_UPLOADED/</code>).
+    Bấm <b>📄 Xem</b> để <b>duyệt ảnh nguồn TRƯỚC render</b> (ảnh sẽ ghép + câu tương ứng) và đọc <b>kịch bản</b>. Nút <b>📂</b> mở folder video để thay ảnh lệch.<br>
+    Chip: <b>🎬 render</b> = đã có folder video · <b>🎞️ TTS</b> = có bản đọc · <b>🖼️ N</b> = số slide theo spec.
+  </div>
+  <div id="pend-projtabs" class="proj-tabs">Đang tải…</div>
+  <div class="bar">
+    <input id="pend-search" type="text" placeholder="🔍 Tìm trong project đang chọn…" style="flex:1;min-width:220px">
+    <button id="pend-refresh">⟳ Tải lại</button>
+  </div>
+  <div id="pend-list"></div>
+</main>
+
+<main id="tab-watermark" class="tabpage">
+  <div class="suggest" style="margin:0 0 14px">
+    Xóa dấu ✦ trên <b>thumbnail AI</b> (rule <code>media-library.md §2.10 ⑤b</code>), không cắt khung vì chữ hero chạy sát mép. Tối đa <b>3 ảnh = T1 / T2 / T3</b> theo bộ A/B 3×3.<br>
+    <b>Máy vá bằng 3 tầng:</b> nền phẳng → dò blob + trung vị hàng · nền dính chữ/bóng đổ → <b>UNBLEND theo mẫu ✦ của generator</b> (đảo phép phủ — nét chữ, gradient giữ nguyên từng pixel) · còn vết sót/dấu lạ → 🖱 <b>BẤM THẲNG vào nó trên ảnh 「bản sạch」</b> = vá tròn nhỏ tại điểm bấm (bấm được nhiều lần).<br>
+    ⚠️ <b>Vá xong ≠ sạch</b> — nghiệm thu bằng crop <b>1:1</b> bên dưới (trước→sau + cả 4 góc) rồi mới 💾 Lưu.
+  </div>
+  <div class="channel">
+    <div class="ch-head"><b>🧹 Ảnh cần vá</b><span class="dim">mỗi ô 1 ảnh</span></div>
+    <div class="wm-slot"><b>T1</b><span class="dim">→ thumbnail.png</span><input type="file" id="wm-f-T1" accept="image/png,image/jpeg"></div>
+    <div class="wm-slot"><b>T2</b><span class="dim">→ thumbnail_T2.png</span><input type="file" id="wm-f-T2" accept="image/png,image/jpeg"></div>
+    <div class="wm-slot"><b>T3</b><span class="dim">→ thumbnail_T3.png</span><input type="file" id="wm-f-T3" accept="image/png,image/jpeg"></div>
+    <div class="bar" style="margin:12px 0 0">
+      <button id="wm-run">🧹 Xóa watermark</button>
+      <select id="wm-radius" title="cỡ vùng vá quanh điểm bấm tay">
+        <option value="1">cỡ vùng vá: chuẩn lô</option>
+        <option value="0.6">cỡ vùng vá: nhỏ ×0.6 (✦ nằm trong mảng màu hẹp)</option>
+        <option value="1.8">cỡ vùng vá: to ×1.8 (✦ có tia dài)</option>
+        <option value="2.6">cỡ vùng vá: rất to ×2.6</option>
+      </select>
+      <span class="dim" style="align-self:center">xử lý vài giây/ảnh</span>
+    </div>
+  </div>
+  <div id="wm-results"></div>
+  <div class="channel hidden" id="wm-save-box">
+    <div class="ch-head"><b>💾 Lưu bản sạch vào folder video</b>
+      <span class="dim">tên file: <code>thumbnail.png</code> (T1) · <code>thumbnail_T2.png</code> · <code>thumbnail_T3.png</code> — 1920×1080 · file cũ trùng tên dời vào <code>_thumb_old/</code> · PNG quá 2 MB tự xuất kèm .jpg q95</span></div>
+    <div class="bar">
+      <select id="wm-channel"></select>
+      <input id="wm-slug" type="text" placeholder="slug folder video (vd 15_daikon-ha)" style="flex:1;min-width:240px">
+      <button id="wm-save">💾 Lưu</button>
+    </div>
+    <div class="suggest">⚠️ Chỉ lưu sau khi đã SOI 1:1 từng crop ở trên. Lưu xong nếu đổi ý → xóa tay file trong folder video.</div>
+  </div>
+</main>
+
+<main id="tab-kho" class="tabpage">
+  <div class="suggest" style="margin:0 0 14px">
+    Video ĐÃ đăng + chuyển kho (<code>07_UPLOADED/</code>). Đã cắt mp4 — chỉ còn <b>metadata + subs + ảnh + script</b> (nguồn re-render).<br>
+    Bấm <b>📋 Xem/Copy</b> để mở panel: copy từng ô title · mô tả · tags + xem thumbnail — tiện tra cứu & <b>update lại trên YouTube</b>. <b>▶ Studio</b> = mở Studio đúng profile kênh để sửa video.
+  </div>
+  <div class="bar">
+    <input id="kho-search" type="text" placeholder="🔍 Tìm theo tiêu đề / slug…" style="flex:1;min-width:220px">
+    <select id="kho-ch"><option value="">Tất cả kênh</option></select>
+    <button id="kho-refresh">⟳ Tải lại</button>
+  </div>
+  <div id="kho-list">Đang tải…</div>
+</main>
+
+<!-- Panel upload: copy từng ô thay cho METADATA.txt -->
+<div id="panel" class="hidden">
+  <div id="panel-card">
+    <div id="panel-head">
+      <b id="panel-title">📋 Upload</b>
+      <span id="panel-sched"></span>
+      <button id="panel-close">✕</button>
+    </div>
+    <div id="panel-warn" class="hidden"></div>
+    <div id="panel-fields"></div>
+    <div id="panel-checklist"></div>
+    <div id="panel-actions">
+      <button data-open="pack">📂 Mở folder kéo thả</button>
+      <button data-open="studio">▶ Mở YouTube Studio</button>
+      <button id="panel-repack" title="Đóng gói lại từ script — giờ hẹn tính mới theo slot kế tiếp">📦 Gói lại (giờ mới)</button>
+      <button id="panel-ai-fix" class="hidden">🤖 AI bổ sung thiếu</button>
+      <button id="panel-done" class="danger">✓ ĐÃ ĐĂNG — chuyển kho</button>
+    </div>
+  </div>
+</div>
+
+<!-- Panel xem bài chuẩn bị đăng: kịch bản + slide -->
+<div id="ppanel" class="hidden">
+  <div id="ppanel-card">
+    <div id="ppanel-head">
+      <b id="ppanel-title">📝 Bài</b>
+      <button id="ppanel-close">✕</button>
+    </div>
+    <div id="ppanel-tabs" class="pp-tabs"></div>
+    <div id="ppanel-body">Đang tải…</div>
+  </div>
+</div>
+
+<div id="toast" class="hidden"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

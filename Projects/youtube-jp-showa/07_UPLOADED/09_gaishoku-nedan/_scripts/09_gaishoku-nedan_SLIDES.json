@@ -1,0 +1,793 @@
+[
+ {
+  "match": "「お母さんはいい",
+  "video": true,
+  "source": "clips/clip_00.mp4",
+  "offset": 0.0,
+  "dur": 7.1
+ },
+ {
+  "match": "うそでした。",
+  "video": true,
+  "source": "clips/clip_01.mp4",
+  "offset": 0.0,
+  "dur": 2.0
+ },
+ {
+  "match": "昭和四十五年。父",
+  "video": true,
+  "source": "clips/clip_02.mp4",
+  "offset": 0.0,
+  "dur": 5.1
+ },
+ {
+  "match": "昭和四十五年。父",
+  "video": true,
+  "source": "clips/clip_03.mp4",
+  "offset": 5.07,
+  "dur": 5.1
+ },
+ {
+  "match": "妹の前に、旗の立",
+  "video": true,
+  "source": "clips/clip_04.mp4",
+  "offset": 0.0,
+  "dur": 3.6
+ },
+ {
+  "match": "私の前に、大人と",
+  "video": true,
+  "source": "clips/clip_05.mp4",
+  "offset": 0.0,
+  "dur": 3.3
+ },
+ {
+  "match": "父の前に、ビール",
+  "video": true,
+  "source": "clips/clip_06.mp4",
+  "offset": 0.0,
+  "dur": 7.1
+ },
+ {
+  "match": "家を出る前、母が",
+  "video": true,
+  "source": "clips/clip_07.mp4",
+  "offset": 2.28,
+  "dur": 7.2
+ },
+ {
+  "match": "答えは、この十二",
+  "video": true,
+  "source": "clips/clip_08.mp4",
+  "offset": 0.1,
+  "dur": 7.1
+ },
+ {
+  "match": "昭和の外食十二品",
+  "video": true,
+  "source": "clips/clip_09.mp4",
+  "offset": 4.21,
+  "dur": 7.2
+ },
+ {
+  "match": "一点目、デパート",
+  "video": true,
+  "source": "clips/clip_10.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "エレベーターの扉",
+  "video": true,
+  "source": "clips/clip_11.mp4",
+  "offset": 4.98,
+  "dur": 8.0
+ },
+ {
+  "match": "その匂いは、階段",
+  "video": true,
+  "source": "clips/clip_12.mp4",
+  "offset": 1.44,
+  "dur": 8.0
+ },
+ {
+  "match": "扉を開けてくれる",
+  "video": true,
+  "source": "clips/clip_13.mp4",
+  "offset": 3.78,
+  "dur": 8.0
+ },
+ {
+  "match": "あの旗の立った皿",
+  "video": true,
+  "source": "clips/clip_14.mp4",
+  "offset": 3.89,
+  "dur": 8.0
+ },
+ {
+  "match": "ずっと前です。昭",
+  "video": true,
+  "source": "clips/clip_15.mp4",
+  "offset": 6.44,
+  "dur": 8.0
+ },
+ {
+  "match": "お値段は、三十銭",
+  "video": true,
+  "source": "clips/clip_16.mp4",
+  "offset": 0.26,
+  "dur": 8.0
+ },
+ {
+  "match": "子どもに、夢のあ",
+  "video": true,
+  "source": "clips/clip_17.mp4",
+  "offset": 1.38,
+  "dur": 8.0
+ },
+ {
+  "match": "四十年後、その旗",
+  "video": true,
+  "source": "clips/clip_18.mp4",
+  "offset": 4.33,
+  "dur": 8.0
+ },
+ {
+  "match": "そして、ケチャッ",
+  "video": true,
+  "source": "clips/clip_19.mp4",
+  "offset": 7.49,
+  "dur": 8.0
+ },
+ {
+  "match": "誰に教わったわけ",
+  "video": true,
+  "source": "clips/clip_20.mp4",
+  "offset": 4.55,
+  "dur": 8.0
+ },
+ {
+  "match": "二点目、かけそば",
+  "video": true,
+  "source": "clips/clip_21.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "大食堂でも、駅の",
+  "video": true,
+  "source": "clips/clip_22.mp4",
+  "offset": 7.3,
+  "dur": 8.0
+ },
+ {
+  "match": "昭和三十九年、東",
+  "video": true,
+  "source": "clips/clip_23.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "答えは、五十円。",
+  "video": true,
+  "source": "clips/clip_24.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "母が「私はそばで",
+  "video": true,
+  "source": "clips/clip_25.mp4",
+  "offset": 1.35,
+  "dur": 8.0
+ },
+ {
+  "match": "品書きの、いちば",
+  "video": true,
+  "source": "clips/clip_26.mp4",
+  "offset": 2.91,
+  "dur": 8.0
+ },
+ {
+  "match": "三点目、中華そば",
+  "video": true,
+  "source": "clips/clip_27.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "昭和四十二年で、",
+  "video": true,
+  "source": "clips/clip_28.mp4",
+  "offset": 6.56,
+  "dur": 8.0
+ },
+ {
+  "match": "けれど、この二十",
+  "video": true,
+  "source": "clips/clip_29.mp4",
+  "offset": 2.57,
+  "dur": 8.0
+ },
+ {
+  "match": "分厚い丼。なると",
+  "video": true,
+  "source": "clips/clip_30.mp4",
+  "offset": 1.22,
+  "dur": 8.0
+ },
+ {
+  "match": "丼から顔を上げる",
+  "video": true,
+  "source": "clips/clip_31.mp4",
+  "offset": 2.91,
+  "dur": 8.0
+ },
+ {
+  "match": "麺をすする音だけ",
+  "video": true,
+  "source": "clips/clip_32.mp4",
+  "offset": 2.57,
+  "dur": 8.0
+ },
+ {
+  "match": "四点目、出前。",
+  "video": true,
+  "source": "clips/clip_33.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "坂道でも、岡持ち",
+  "video": true,
+  "source": "clips/clip_34.mp4",
+  "offset": 2.15,
+  "dur": 8.0
+ },
+ {
+  "match": "食べ終わった丼は",
+  "video": true,
+  "source": "clips/clip_35.mp4",
+  "offset": 3.49,
+  "dur": 8.0
+ },
+ {
+  "match": "天どんが、昭和三",
+  "video": true,
+  "source": "clips/clip_36.mp4",
+  "offset": 4.22,
+  "dur": 8.0
+ },
+ {
+  "match": "出前の日は、母に",
+  "video": true,
+  "source": "clips/clip_37.mp4",
+  "offset": 1.1,
+  "dur": 8.0
+ },
+ {
+  "match": "五点目、喫茶店の",
+  "video": true,
+  "source": "clips/clip_38.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "答えは、百九十四",
+  "video": true,
+  "source": "clips/clip_39.mp4",
+  "offset": 0.0,
+  "dur": 7.4
+ },
+ {
+  "match": "分厚いソファー。",
+  "video": true,
+  "source": "clips/clip_40.mp4",
+  "offset": 3.08,
+  "dur": 7.3
+ },
+ {
+  "match": "一杯だけ頼んで、",
+  "video": true,
+  "source": "clips/clip_41.mp4",
+  "offset": 2.52,
+  "dur": 7.4
+ },
+ {
+  "match": "母は、喫茶店のコ",
+  "video": true,
+  "source": "clips/clip_42.mp4",
+  "offset": 3.16,
+  "dur": 7.3
+ },
+ {
+  "match": "いま思えば、あの",
+  "video": true,
+  "source": "clips/clip_43.mp4",
+  "offset": 1.38,
+  "dur": 7.3
+ },
+ {
+  "match": "六点目、父の、ビ",
+  "video": true,
+  "source": "clips/clip_44.mp4",
+  "offset": 0.0,
+  "dur": 5.8
+ },
+ {
+  "match": "昭和四十五年。瓶",
+  "video": true,
+  "source": "clips/clip_45.mp4",
+  "offset": 0.3,
+  "dur": 5.8
+ },
+ {
+  "match": "ところが、食堂で",
+  "video": true,
+  "source": "clips/clip_46.mp4",
+  "offset": 0.0,
+  "dur": 5.3
+ },
+ {
+  "match": "ところが、食堂で",
+  "video": true,
+  "source": "clips/clip_47.mp4",
+  "offset": 5.34,
+  "dur": 5.4
+ },
+ {
+  "match": "四十三円。かけそ",
+  "video": true,
+  "source": "clips/clip_48.mp4",
+  "offset": 0.34,
+  "dur": 5.3
+ },
+ {
+  "match": "母が頼まなかった",
+  "video": true,
+  "source": "clips/clip_49.mp4",
+  "offset": 0.0,
+  "dur": 6.2
+ },
+ {
+  "match": "母が頼まなかった",
+  "video": true,
+  "source": "clips/clip_50.mp4",
+  "offset": 6.17,
+  "dur": 6.2
+ },
+ {
+  "match": "そして、そのコッ",
+  "video": true,
+  "source": "clips/clip_51.mp4",
+  "offset": 1.18,
+  "dur": 6.1
+ },
+ {
+  "match": "そして、そのコッ",
+  "video": true,
+  "source": "clips/clip_52.mp4",
+  "offset": 7.34,
+  "dur": 6.2
+ },
+ {
+  "match": "父は、たぶん、気",
+  "video": true,
+  "source": "clips/clip_53.mp4",
+  "offset": 2.35,
+  "dur": 6.2
+ },
+ {
+  "match": "ここで、ひとつだ",
+  "video": true,
+  "source": "clips/clip_54.mp4",
+  "offset": 0.0,
+  "dur": 7.8
+ },
+ {
+  "match": "ここで、ひとつだ",
+  "video": true,
+  "source": "clips/clip_55.mp4",
+  "offset": 7.81,
+  "dur": 7.8
+ },
+ {
+  "match": "ここで、ひとつだ",
+  "video": true,
+  "source": "clips/clip_56.mp4",
+  "offset": 15.62,
+  "dur": 7.8
+ },
+ {
+  "match": "ここで、ひとつだ",
+  "video": true,
+  "source": "clips/clip_57.mp4",
+  "offset": 23.43,
+  "dur": 7.8
+ },
+ {
+  "match": "さて、ここからで",
+  "video": true,
+  "source": "clips/clip_58.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "さて、ここからで",
+  "video": true,
+  "source": "clips/clip_59.mp4",
+  "offset": 8.25,
+  "dur": 8.0
+ },
+ {
+  "match": "七点目、万博の、",
+  "video": true,
+  "source": "clips/clip_60.mp4",
+  "offset": 0.47,
+  "dur": 8.0
+ },
+ {
+  "match": "あの会場に、アメ",
+  "video": true,
+  "source": "clips/clip_61.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "鶏を、紙の箱に入",
+  "video": true,
+  "source": "clips/clip_62.mp4",
+  "offset": 1.56,
+  "dur": 8.0
+ },
+ {
+  "match": "日本人が、そんな",
+  "video": true,
+  "source": "clips/clip_63.mp4",
+  "offset": 5.75,
+  "dur": 8.0
+ },
+ {
+  "match": "二百八十万円です",
+  "video": true,
+  "source": "clips/clip_64.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "八点目、ケンタッ",
+  "video": true,
+  "source": "clips/clip_65.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "同じ年の、十一月",
+  "video": true,
+  "source": "clips/clip_66.mp4",
+  "offset": 5.19,
+  "dur": 8.0
+ },
+ {
+  "match": "万博が九月に終わ",
+  "video": true,
+  "source": "clips/clip_67.mp4",
+  "offset": 4.91,
+  "dur": 8.0
+ },
+ {
+  "match": "最初のお客さんた",
+  "video": true,
+  "source": "clips/clip_68.mp4",
+  "offset": 1.38,
+  "dur": 8.0
+ },
+ {
+  "match": "家族の分をまとめ",
+  "video": true,
+  "source": "clips/clip_69.mp4",
+  "offset": 0.69,
+  "dur": 8.0
+ },
+ {
+  "match": "九点目、ファミリ",
+  "video": true,
+  "source": "clips/clip_70.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "その四か月前。昭",
+  "video": true,
+  "source": "clips/clip_71.mp4",
+  "offset": 6.66,
+  "dur": 8.0
+ },
+ {
+  "match": "今では当たり前の",
+  "video": true,
+  "source": "clips/clip_72.mp4",
+  "offset": 2.97,
+  "dur": 8.0
+ },
+ {
+  "match": "よそ行きの服に着",
+  "video": true,
+  "source": "clips/clip_73.mp4",
+  "offset": 2.54,
+  "dur": 8.0
+ },
+ {
+  "match": "大食堂は、年に何",
+  "video": true,
+  "source": "clips/clip_74.mp4",
+  "offset": 6.56,
+  "dur": 8.0
+ },
+ {
+  "match": "母が、よそ行きを",
+  "video": true,
+  "source": "clips/clip_75.mp4",
+  "offset": 2.87,
+  "dur": 8.0
+ },
+ {
+  "match": "十点目、ハンバー",
+  "video": true,
+  "source": "clips/clip_76.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "日本で最初のマク",
+  "video": true,
+  "source": "clips/clip_77.mp4",
+  "offset": 1.95,
+  "dur": 8.0
+ },
+ {
+  "match": "そばと、中華そばの",
+  "video": true,
+  "source": "clips/clip_78.mp4",
+  "offset": 4.31,
+  "dur": 8.0
+ },
+ {
+  "match": "日本橋と、銀座。",
+  "video": true,
+  "source": "clips/clip_79.mp4",
+  "offset": 2.0,
+  "dur": 8.0
+ },
+ {
+  "match": "立ったまま食べる",
+  "video": true,
+  "source": "clips/clip_80.mp4",
+  "offset": 0.91,
+  "dur": 8.0
+ },
+ {
+  "match": "座る席は、ありま",
+  "video": true,
+  "source": "clips/clip_81.mp4",
+  "offset": 3.47,
+  "dur": 8.0
+ },
+ {
+  "match": "八十円なら、四人",
+  "video": true,
+  "source": "clips/clip_82.mp4",
+  "offset": 2.79,
+  "dur": 8.0
+ },
+ {
+  "match": "母のような人が、",
+  "video": true,
+  "source": "clips/clip_83.mp4",
+  "offset": 2.31,
+  "dur": 8.0
+ },
+ {
+  "match": "ここで、最後に一",
+  "video": true,
+  "source": "clips/clip_84.mp4",
+  "offset": 4.06,
+  "dur": 8.0
+ },
+ {
+  "match": "昭和三十三年です",
+  "video": true,
+  "source": "clips/clip_85.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "大阪の、布施。ビ",
+  "video": true,
+  "source": "clips/clip_86.mp4",
+  "offset": 4.77,
+  "dur": 8.0
+ },
+ {
+  "match": "お皿の色で、値段",
+  "video": true,
+  "source": "clips/clip_87.mp4",
+  "offset": 4.06,
+  "dur": 8.0
+ },
+ {
+  "match": "自分の手で、自分",
+  "video": true,
+  "source": "clips/clip_88.mp4",
+  "offset": 5.98,
+  "dur": 8.0
+ },
+ {
+  "match": "日本の外食を、い",
+  "video": true,
+  "source": "clips/clip_89.mp4",
+  "offset": 1.83,
+  "dur": 8.0
+ },
+ {
+  "match": "誰も、まだ、気づ",
+  "video": true,
+  "source": "clips/clip_90.mp4",
+  "offset": 0.51,
+  "dur": 8.0
+ },
+ {
+  "match": "十二点目、母の、",
+  "video": true,
+  "source": "clips/clip_91.mp4",
+  "offset": 0.0,
+  "dur": 5.5
+ },
+ {
+  "match": "妹のお子様ランチ",
+  "video": true,
+  "source": "clips/clip_92.mp4",
+  "offset": 2.91,
+  "dur": 5.6
+ },
+ {
+  "match": "そして、母の前は",
+  "video": true,
+  "source": "clips/clip_93.mp4",
+  "offset": 3.18,
+  "dur": 5.5
+ },
+ {
+  "match": "「かけそばを、一",
+  "video": true,
+  "source": "clips/clip_94.mp4",
+  "offset": 0.0,
+  "dur": 3.2
+ },
+ {
+  "match": "さっき、家で食べてきた、",
+  "video": true,
+  "source": "clips/clip_95.mp4",
+  "offset": 1.22,
+  "dur": 3.3
+ },
+ {
+  "match": "母は、それを、静",
+  "video": true,
+  "source": "clips/clip_96.mp4",
+  "offset": 0.0,
+  "dur": 6.5
+ },
+ {
+  "match": "母は、それを、静",
+  "video": true,
+  "source": "clips/clip_97.mp4",
+  "offset": 6.49,
+  "dur": 6.5
+ },
+ {
+  "match": "あの日の四人分を",
+  "video": true,
+  "source": "clips/clip_98.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "お子様ランチ、そ",
+  "video": true,
+  "source": "clips/clip_99.mp4",
+  "offset": 5.83,
+  "dur": 8.0
+ },
+ {
+  "match": "ひと月の稼ぎの、",
+  "video": true,
+  "source": "clips/clip_100.mp4",
+  "offset": 2.53,
+  "dur": 8.0
+ },
+ {
+  "match": "母がうそをついた",
+  "video": true,
+  "source": "clips/clip_101.mp4",
+  "offset": 0.24,
+  "dur": 8.0
+ },
+ {
+  "match": "四人分を頼んだら",
+  "video": true,
+  "source": "clips/clip_102.mp4",
+  "offset": 5.05,
+  "dur": 8.0
+ },
+ {
+  "match": "電卓もありません",
+  "video": true,
+  "source": "clips/clip_103.mp4",
+  "offset": 2.77,
+  "dur": 8.0
+ },
+ {
+  "match": "だから母は、いち",
+  "video": true,
+  "source": "clips/clip_104.mp4",
+  "offset": 7.58,
+  "dur": 8.0
+ },
+ {
+  "match": "我慢したのではな",
+  "video": true,
+  "source": "clips/clip_105.mp4",
+  "offset": 1.64,
+  "dur": 8.0
+ },
+ {
+  "match": "今、私たちは、手",
+  "video": true,
+  "source": "clips/clip_106.mp4",
+  "offset": 3.82,
+  "dur": 8.0
+ },
+ {
+  "match": "足りるかどうか、迷",
+  "video": true,
+  "source": "clips/clip_107.mp4",
+  "offset": 3.15,
+  "dur": 8.0
+ },
+ {
+  "match": "母が、自分の分を",
+  "video": true,
+  "source": "clips/clip_108.mp4",
+  "offset": 4.11,
+  "dur": 8.0
+ },
+ {
+  "match": "私が働きはじめて",
+  "video": true,
+  "source": "clips/clip_109.mp4",
+  "offset": 5.27,
+  "dur": 5.9
+ },
+ {
+  "match": "それから、真ん中",
+  "video": true,
+  "source": "clips/clip_110.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "あのとき母が何を",
+  "video": true,
+  "source": "clips/clip_111.mp4",
+  "offset": 3.72,
+  "dur": 8.0
+ },
+ {
+  "match": "そして、あなたの",
+  "video": true,
+  "source": "clips/clip_112.mp4",
+  "offset": 5.41,
+  "dur": 8.0
+ }
+]

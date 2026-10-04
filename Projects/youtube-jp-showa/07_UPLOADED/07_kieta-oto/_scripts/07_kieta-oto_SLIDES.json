@@ -1,0 +1,650 @@
+[
+ {
+  "match": "カチ、カチ、カチ。",
+  "photo": true,
+  "source": "real_photos/cc_kamishibai_box.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "木と木が触れ合う、乾いた音。",
+  "offset": 3.1,
+  "photo": true,
+  "source": "real_photos/cc_hyoshigi.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "木と木が触れ合う、乾いた音。",
+  "offset": 8.45,
+  "photo": true,
+  "source": "slides_img/slide_02.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "あなたにも、覚えがありません",
+  "photo": true,
+  "source": "slides_img/slide_03.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "あなたにも、覚えがありません",
+  "offset": 7.85,
+  "photo": true,
+  "source": "slides_img/slide_04.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "今日は、ある一日を、目ではな",
+  "offset": 4.64,
+  "photo": true,
+  "source": "slides_img/slide_05.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "今日は、ある一日を、目ではな",
+  "offset": 12.49,
+  "photo": true,
+  "source": "slides_img/slide_06.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "けれど、正直に言うと、私が本",
+  "offset": 2.51,
+  "photo": true,
+  "source": "slides_img/slide_07.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "けれど、正直に言うと、私が本",
+  "offset": 10.36,
+  "photo": true,
+  "source": "slides_img/slide_08.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "けれど、正直に言うと、私が本",
+  "offset": 18.2,
+  "photo": true,
+  "source": "slides_img/slide_09.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "けれど、正直に言うと、私が本",
+  "offset": 26.05,
+  "photo": true,
+  "source": "slides_img/slide_10.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "紙芝居屋さんの自転車が、ベル",
+  "photo": true,
+  "source": "real_photos/px_newspaper_stack.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "紙芝居屋さんの自転車が、ベル",
+  "offset": 8.03,
+  "photo": true,
+  "source": "slides_img/slide_12.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "紙芝居屋さんの自転車が、ベル",
+  "offset": 16.07,
+  "photo": true,
+  "source": "slides_img/slide_13.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "「え〜、ちり紙交換にまいりま",
+  "offset": 4.02,
+  "photo": true,
+  "source": "slides_img/slide_14.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "「え〜、ちり紙交換にまいりま",
+  "offset": 12.05,
+  "photo": true,
+  "source": "slides_img/slide_15.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母は、縛っておいた新聞の束を",
+  "offset": 0.75,
+  "photo": true,
+  "source": "slides_img/slide_16.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母は、縛っておいた新聞の束を",
+  "offset": 8.79,
+  "photo": true,
+  "source": "slides_img/slide_17.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母は、縛っておいた新聞の束を",
+  "offset": 16.82,
+  "photo": true,
+  "source": "slides_img/slide_18.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "トラックが角を曲がって消える",
+  "photo": true,
+  "source": "slides_img/slide_19.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "トラックが角を曲がって消える",
+  "offset": 9.74,
+  "photo": true,
+  "source": "slides_img/slide_20.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "「さおや〜、たけざお〜」。独",
+  "offset": 5.93,
+  "photo": true,
+  "source": "slides_img/slide_21.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "隣のおばさんは、いつも、窓か",
+  "offset": 0.1,
+  "photo": true,
+  "source": "slides_img/slide_22.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "隣のおばさんは、いつも、窓か",
+  "offset": 9.84,
+  "photo": true,
+  "source": "slides_img/slide_23.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "昼が近づくと、空き地のほうか",
+  "photo": true,
+  "source": "slides_img/slide_24.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "昼が近づくと、空き地のほうか",
+  "offset": 9.88,
+  "photo": true,
+  "source": "slides_img/slide_25.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "おじさんが、黒い鉄の筒を、炭",
+  "offset": 4.69,
+  "photo": true,
+  "source": "slides_img/slide_26.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "おじさんが、黒い鉄の筒を、炭",
+  "offset": 14.56,
+  "photo": true,
+  "source": "slides_img/slide_27.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "白い湯気と、甘い匂いが、あた",
+  "offset": 4.1,
+  "photo": true,
+  "source": "slides_img/slide_28.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "白い湯気と、甘い匂いが、あた",
+  "offset": 13.98,
+  "photo": true,
+  "source": "slides_img/slide_29.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "湯気の匂いを背に、家に帰る道",
+  "photo": true,
+  "source": "real_photos/px_ice_block.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "五点目、氷屋さんの、鋸の音。",
+  "offset": 2.01,
+  "photo": true,
+  "source": "real_photos/px_ice_shards.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "大きな氷の塊を、店先で、ぎこ",
+  "offset": 9.29,
+  "photo": true,
+  "source": "slides_img/slide_32.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "拾って口に入れると、木の匂い",
+  "offset": 3.77,
+  "photo": true,
+  "source": "slides_img/slide_33.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "氷を舐めながら向かう先は、た",
+  "photo": true,
+  "source": "real_photos/cc_washboard.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "ぎゅ、ぎゅ、と、板の溝に布を",
+  "offset": 0.7,
+  "photo": true,
+  "source": "slides_img/slide_35.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "ぎゅ、ぎゅ、と、板の溝に布を",
+  "offset": 11.2,
+  "photo": true,
+  "source": "slides_img/slide_36.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "誰がどこで何を買ったとか、隣",
+  "offset": 3.11,
+  "photo": true,
+  "source": "real_photos/cc_well_pump.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "誰がどこで何を買ったとか、隣",
+  "offset": 13.61,
+  "photo": true,
+  "source": "slides_img/slide_38.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "その日、井戸端の話し声を、い",
+  "photo": true,
+  "source": "slides_img/slide_39.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "七点目、チンドン屋さんの、ジ",
+  "offset": 3.24,
+  "photo": true,
+  "source": "slides_img/slide_40.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "鉦と太鼓と、クラリネットのよ",
+  "offset": 10.99,
+  "photo": true,
+  "source": "slides_img/slide_41.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "近所の子どもたちが、行列の後",
+  "offset": 0.92,
+  "photo": true,
+  "source": "slides_img/slide_42.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "あの賑やかな音が近づいてくる",
+  "offset": 2.65,
+  "photo": true,
+  "source": "slides_img/slide_43.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "あの賑やかな音が近づいてくる",
+  "offset": 14.67,
+  "photo": true,
+  "source": "slides_img/slide_44.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 3.6,
+  "photo": true,
+  "source": "slides_img/slide_45.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 15.62,
+  "photo": true,
+  "source": "slides_img/slide_46.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "offset": 27.65,
+  "photo": true,
+  "source": "slides_img/slide_47.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "チンドン屋さんの行列が遠ざか",
+  "photo": true,
+  "source": "real_photos/px_cicada.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "チンドン屋さんの行列が遠ざか",
+  "offset": 8.33,
+  "photo": true,
+  "source": "real_photos/cc_furin.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "途切れることなく降ってくる、",
+  "offset": 4.35,
+  "photo": true,
+  "source": "slides_img/slide_50.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "途切れることなく降ってくる、",
+  "offset": 12.68,
+  "photo": true,
+  "source": "slides_img/slide_51.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "昼寝から覚めた私は、しばらく",
+  "offset": 5.94,
+  "photo": true,
+  "source": "slides_img/slide_52.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "昼寝から覚めた私は、しばらく",
+  "offset": 14.27,
+  "photo": true,
+  "source": "slides_img/slide_53.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "西日が、少しずつ、赤みを帯び",
+  "photo": true,
+  "source": "slides_img/slide_54.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "西日が、少しずつ、赤みを帯び",
+  "offset": 10.54,
+  "photo": true,
+  "source": "slides_img/slide_55.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "「いーしや、きいも」。焼き芋",
+  "offset": 4.02,
+  "photo": true,
+  "source": "slides_img/slide_56.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母が、小銭を握らせてくれて、",
+  "offset": 3.26,
+  "photo": true,
+  "source": "slides_img/slide_57.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母が、小銭を握らせてくれて、",
+  "offset": 13.81,
+  "photo": true,
+  "source": "real_photos/px_dusk_sky.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "半分こにして、あとの半分は、",
+  "offset": 4.27,
+  "photo": true,
+  "source": "slides_img/slide_59.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "半分こにして、あとの半分は、",
+  "offset": 14.81,
+  "photo": true,
+  "source": "slides_img/slide_60.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "芋を抱えて帰る道、空の色は、",
+  "photo": true,
+  "source": "real_photos/px_dusk_sky.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "十点目、夕方を知らせる、チャ",
+  "offset": 3.2,
+  "photo": true,
+  "source": "slides_img/slide_62.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "どこかのスピーカーから、静か",
+  "offset": 11.17,
+  "photo": true,
+  "source": "slides_img/slide_63.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "「もう、帰る時間だよ」。誰に",
+  "offset": 9.6,
+  "photo": true,
+  "source": "slides_img/slide_64.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "帰り着いた家の門の前で、聞き",
+  "photo": true,
+  "source": "slides_img/slide_65.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "十一点目、郵便屋さんの、自転",
+  "offset": 2.81,
+  "photo": true,
+  "source": "real_photos/cc_mail_bicycle.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "チリン、チリン、と、二回。そ",
+  "offset": 8.89,
+  "photo": true,
+  "source": "slides_img/slide_67.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "チリン、チリン、と、二回。そ",
+  "offset": 19.73,
+  "photo": true,
+  "source": "slides_img/slide_68.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "玄関先で、母とおばさんの立ち",
+  "offset": 10.49,
+  "photo": true,
+  "source": "slides_img/slide_69.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "タオルを持って、風呂の支度を",
+  "photo": true,
+  "source": "real_photos/cc_shoe_locker.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "ガラガラと、木の引き戸を開け",
+  "offset": 0.88,
+  "photo": true,
+  "source": "slides_img/slide_71.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "ガラガラと、木の引き戸を開け",
+  "offset": 11.05,
+  "photo": true,
+  "source": "slides_img/slide_72.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "ガラガラと、木の引き戸を開け",
+  "offset": 21.22,
+  "photo": true,
+  "source": "slides_img/slide_73.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "濡れた髪のまま、夜道を歩いて",
+  "photo": true,
+  "source": "real_photos/cc_locomotive_running.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "濡れた髪のまま、夜道を歩いて",
+  "offset": 9.54,
+  "photo": true,
+  "source": "real_photos/px_alley_kyoto_a.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "ボオーッ、という、尾を引く低",
+  "offset": 4.77,
+  "photo": true,
+  "source": "slides_img/slide_76.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "ボオーッ、という、尾を引く低",
+  "offset": 14.31,
+  "photo": true,
+  "source": "slides_img/slide_77.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "家に着いて、夕食の支度を手伝",
+  "video": true,
+  "source": "footage_raw/jt07_01_sumo_bout.mp4",
+  "dur": 10
+ },
+ {
+  "match": "家に着いて、夕食の支度を手伝",
+  "offset": 10.0,
+  "photo": true,
+  "source": "slides_img/slide_79.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "相撲の実況でしょうか。おじさ",
+  "offset": 4.24,
+  "photo": true,
+  "source": "slides_img/slide_80.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "相撲の実況でしょうか。おじさ",
+  "offset": 14.04,
+  "photo": true,
+  "source": "slides_img/slide_81.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "十四点まで、来ました。あなた",
+  "offset": 6.52,
+  "photo": true,
+  "source": "slides_img/slide_82.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "夕食を終え、私が、布団に入ろ",
+  "photo": true,
+  "source": "real_photos/cc_hyoshigi.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "カチ、カチ。今日、二度目の、",
+  "offset": 1.32,
+  "photo": true,
+  "source": "slides_img/slide_84.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "「火の用心、マッチ一本、火事",
+  "offset": 9.42,
+  "photo": true,
+  "source": "slides_img/slide_85.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "と、ちょうど、そのとき。",
+  "offset": 2.7,
+  "photo": true,
+  "source": "real_photos/px_alley_kyoto_b.jpg",
+  "kind": "pexels"
+ },
+ {
+  "match": "母が、ずっと待っていたのは、",
+  "offset": 6.53,
+  "photo": true,
+  "source": "slides_img/slide_87.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母が、ずっと待っていたのは、",
+  "offset": 19.65,
+  "photo": true,
+  "source": "slides_img/slide_88.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母が本当に待っていたのは、下",
+  "offset": 5.4,
+  "photo": true,
+  "source": "slides_img/slide_89.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "母が本当に待っていたのは、下",
+  "offset": 18.52,
+  "photo": true,
+  "source": "slides_img/slide_90.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "紙芝居の拍子木に始まって、父",
+  "photo": true,
+  "source": "real_photos/cc_kamishibai_box.jpg",
+  "kind": "commons"
+ },
+ {
+  "match": "紙芝居の拍子木に始まって、父",
+  "offset": 12.93,
+  "photo": true,
+  "source": "slides_img/slide_92.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "今、あなたの町に、この十五の",
+  "offset": 7.03,
+  "photo": true,
+  "source": "slides_img/slide_93.jpg",
+  "kind": "ai"
+ },
+ {
+  "match": "あの頃の音は、もう、ほとんど",
+  "offset": 11.42,
+  "photo": true,
+  "source": "real_photos/cc_hyoshigi.jpg",
+  "kind": "commons"
+ }
+]

@@ -1,0 +1,89 @@
+════ [showa] 昭和の記憶装置  (UCD4uKCu-8GS8DUiI4xWy4gQ)
+  sub=70,900 · tổng video=88 · view=18,586,710
+  mẫu 50 video mới nhất (2023-06-09 → 2026-06-16, 1102 ngày) · shorts<8′: 7
+  NHỊP: 0.32 video/tuần
+  NGÀY (tất cả): T2=5 T3=13 T4=10 T5=8 T6=11 T7=2 CN=1
+  NGÀY (long≥8′): T2=5 T3=11 T4=7 T5=7 T6=10 T7=2 CN=1
+  GIỜ: [(19, 23), (18, 22), (17, 2), (8, 1), (10, 1)]
+  median view theo NGÀY (long): {'T2': (58420, 5), 'T3': (135621, 11), 'T4': (59079, 7), 'T5': (178761, 7), 'T6': (172939, 10), 'T7': (259431, 2)}
+  3 video mới nhất: 06-16 Tue 18:45 143,122v | 04-15 Wed 18:45 40,463v | 12-03 Wed 18:30 15,721v
+
+════ [showa] 伊東彩のほんのり昭和回顧  (UC6dLNfG3yovI7QMJaW9p1Iw)
+  sub=142,000 · tổng video=218 · view=11,761,697
+  mẫu 50 video mới nhất (2026-03-21 → 2026-08-13, 145 ngày) · shorts<8′: 0
+  NHỊP: 2.41 video/tuần
+  NGÀY (tất cả): T2=1 T3=19 T4=0 T5=11 T6=0 T7=19 CN=0
+  NGÀY (long≥8′): T2=1 T3=19 T4=0 T5=11 T6=0 T7=19 CN=0
+  GIỜ: [(19, 50)]
+  median view theo NGÀY (long): {'T3': (21479, 19), 'T5': (12710, 11), 'T7': (23928, 19)}
+  3 video mới nhất: 08-13 Thu 19:00 5,375v | 08-10 Mon 19:00 13,502v | 08-08 Sat 19:00 3,344v
+
+════ [showa] ゆっくり昭和ボンバイエイ  (UCQjPO5yhbxZSHHO8uJIg99w)
+  sub=144,000 · tổng video=1038 · view=81,515,761
+  mẫu 50 video mới nhất (2026-04-29 → 2026-08-14, 107 ngày) · shorts<8′: 0
+  NHỊP: 3.27 video/tuần
+  NGÀY (tất cả): T2=8 T3=7 T4=5 T5=9 T6=7 T7=9 CN=5
+  NGÀY (long≥8′): T2=8 T3=7 T4=5 T5=9 T6=7 T7=9 CN=5
+  GIỜ: [(11, 48), (16, 1), (12, 1)]
+  median view theo NGÀY (long): {'T2': (3213, 8), 'T3': (5544, 7), 'T4': (2242, 5), 'T5': (4180, 9), 'T6': (4889, 7), 'T7': (3014, 9), 'CN': (6901, 5)}
+  3 video mới nhất: 08-14 Fri 11:59 2,041v | 08-12 Wed 11:59 2,056v | 08-10 Mon 11:59 3,202v
+
+════ [showa] ヤチノちゃんねる  (UCOmkrHvQZjKrdtoLUNpQOug)
+  sub=60,400 · tổng video=482 · view=23,672,275
+  mẫu 50 video mới nhất (2026-03-17 → 2026-08-11, 146 ngày) · shorts<8′: 34
+  NHỊP: 2.40 video/tuần
+  NGÀY (tất cả): T2=5 T3=9 T4=4 T5=5 T6=6 T7=7 CN=14
+  NGÀY (long≥8′): T2=1 T3=1 T4=0 T5=0 T6=2 T7=4 CN=8
+  GIỜ: [(7, 10), (8, 7), (19, 6), (15, 5), (16, 4)]
+  median view theo NGÀY (long): {'T6': (45904, 2), 'T7': (112579, 4), 'CN': (10493, 8)}
+  3 video mới nhất: 08-11 Tue 11:39 4,208v | 07-19 Sun 08:02 10,642v | 07-04 Sat 16:32 219,447v
+
+════ [showa] 昭和の女  (UCHPx88x26Y7kWORxsedcoBA)
+  sub=55,900 · tổng video=499 · view=87,338,086
+  mẫu 50 video mới nhất (2026-07-06 → 2026-08-14, 39 ngày) · shorts<8′: 50
+  NHỊP: 8.97 video/tuần
+  NGÀY (tất cả): T2=7 T3=6 T4=7 T5=7 T6=6 T7=7 CN=10
+  NGÀY (long≥8′): T2=0 T3=0 T4=0 T5=0 T6=0 T7=0 CN=0
+  GIỜ: [(18, 37), (19, 4), (8, 3), (6, 1), (7, 1)]
+  median view theo NGÀY (long): {}
+  3 video mới nhất: 08-14 Fri 18:30 2,588v | 08-13 Thu 18:30 32,328v | 08-12 Wed 18:31 10,502v
+
+════ [showa] なつかし昭和チャンネル  (UCywL_E-G5OZAgCQfSxdsZtQ)
+  sub=39,200 · tổng video=46 · view=6,366,983
+  mẫu 47 video mới nhất (2025-09-04 → 2026-08-07, 336 ngày) · shorts<8′: 1
+  NHỊP: 0.98 video/tuần
+  NGÀY (tất cả): T2=7 T3=3 T4=6 T5=10 T6=5 T7=9 CN=7
+  NGÀY (long≥8′): T2=7 T3=3 T4=6 T5=9 T6=5 T7=9 CN=7
+  GIỜ: [(16, 39), (19, 4), (18, 2), (20, 1), (5, 1)]
+  median view theo NGÀY (long): {'T2': (49758, 7), 'T3': (62633, 3), 'T4': (144761, 6), 'T5': (148622, 9), 'T6': (42208, 5), 'T7': (55654, 9), 'CN': (77465, 7)}
+  3 video mới nhất: 08-07 Fri 16:00 12,482v | 08-02 Sun 16:00 4,605v | 07-16 Thu 16:00 42,490v
+
+════ [showa] THEヤバイ昭和  (UCbAxEFkII-jkNGut2XWq5CQ)
+  sub=24,600 · tổng video=47 · view=7,261,697
+  mẫu 47 video mới nhất (2023-08-04 → 2025-06-29, 695 ngày) · shorts<8′: 0
+  NHỊP: 0.47 video/tuần
+  NGÀY (tất cả): T2=4 T3=3 T4=7 T5=2 T6=2 T7=22 CN=7
+  NGÀY (long≥8′): T2=4 T3=3 T4=7 T5=2 T6=2 T7=22 CN=7
+  GIỜ: [(19, 43), (20, 3), (18, 1)]
+  median view theo NGÀY (long): {'T2': (64436, 4), 'T3': (32890, 3), 'T4': (161863, 7), 'T5': (40633, 2), 'T6': (294331, 2), 'T7': (49384, 22), 'CN': (9153, 7)}
+  3 video mới nhất: 06-29 Sun 19:30 5,805v | 09-21 Sat 19:30 36,043v | 07-22 Mon 19:00 5,564v
+
+════ [showa] 存在しない街の記憶  (UCYZa9C1bXs-mKIMAim9VOmQ)
+  sub=93,100 · tổng video=53 · view=7,441,023
+  mẫu 50 video mới nhất (2026-05-18 → 2026-08-12, 86 ngày) · shorts<8′: 43
+  NHỊP: 4.07 video/tuần
+  NGÀY (tất cả): T2=6 T3=8 T4=9 T5=4 T6=6 T7=10 CN=7
+  NGÀY (long≥8′): T2=0 T3=3 T4=0 T5=0 T6=2 T7=0 CN=2
+  GIỜ: [(18, 21), (17, 19), (10, 3), (11, 2), (12, 2)]
+  median view theo NGÀY (long): {'T3': (43448, 3), 'T6': (312141, 2), 'CN': (98347, 2)}
+  3 video mới nhất: 08-12 Wed 18:33 52,332v | 08-08 Sat 11:39 71,849v | 08-01 Sat 18:04 267,110v
+
+════ [showa] 昭和・平成 残響誌チャンネル  (UCvhkvwhIsDx7ZSMD4eGdduA)
+  sub=10,700 · tổng video=83 · view=1,835,055
+  mẫu 50 video mới nhất (2026-02-13 → 2026-05-30, 106 ngày) · shorts<8′: 0
+  NHỊP: 3.30 video/tuần
+  NGÀY (tất cả): T2=10 T3=7 T4=7 T5=7 T6=8 T7=7 CN=4
+  NGÀY (long≥8′): T2=10 T3=7 T4=7 T5=7 T6=8 T7=7 CN=4
+  GIỜ: [(20, 27), (19, 16), (21, 3), (18, 3), (22, 1)]
+  median view theo NGÀY (long): {'T2': (783, 10), 'T3': (737, 7), 'T4': (981, 7), 'T5': (704, 7), 'T6': (630, 8), 'T7': (880, 7), 'CN': (867, 4)}
+  3 video mới nhất: 05-30 Sat 20:12 5,674v | 05-27 Wed 22:47 557v | 05-25 Mon 20:00 706v

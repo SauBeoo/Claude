@@ -1,0 +1,18 @@
+{
+ "16": {
+  "chichi": "m40_eyesonly",
+  "joushi": "m50_half",
+  "haha": "w40_hands",
+  "nakoudo": "w50_eyes",
+  "douryou": "wy_nose",
+  "musume": "wy_loud"
+ },
+ "17": {
+  "douryou": "m40_snort",
+  "honnin": "m40_look",
+  "honnin_tei": "m50_brow",
+  "ima": "m50_chin",
+  "kachou": "m50_breath",
+  "tsuma": "w40_turn"
+ }
+}

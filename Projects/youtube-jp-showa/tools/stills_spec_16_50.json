@@ -1,0 +1,47 @@
+{
+ "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11050_agri_1946.mp4",
+ "stills": [
+  {
+   "id": "st16_108",
+   "t": 350,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "canh dong"
+  },
+  {
+   "id": "st16_122",
+   "t": 72,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phu nu cuoc dat tren ruong bac thang"
+  },
+  {
+   "id": "st16_123",
+   "t": 96,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phu nu ganh thung"
+  },
+  {
+   "id": "st16_124",
+   "t": 404,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "田植え — nguoi cui cay"
+  },
+  {
+   "id": "st16_125",
+   "t": 472,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "田植え can"
+  },
+  {
+   "id": "st16_149",
+   "t": 492,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "duong que, nguoi di xa dan"
+  }
+ ]
+}

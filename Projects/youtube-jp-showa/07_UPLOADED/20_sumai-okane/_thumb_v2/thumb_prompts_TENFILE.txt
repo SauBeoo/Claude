@@ -1,0 +1,5 @@
+# dong i cua thumb_prompts_FLOW.txt -> ten file trong _thumb_v2/
+01	thumb_T1_rokujo_color.png	baseline K-PHOTO mau sang (六畳一間 + thau 銭湯)
+02	thumb_T2_rokujo_sepia.png	T1 doi tong -> sepia
+03	thumb_T3_danchi_face.png	layout mat to + dam dong 団地
+# PLATE (khong chu) o thumb_prompts_PLATE.txt — duong lui, KHONG tron vao FLOW

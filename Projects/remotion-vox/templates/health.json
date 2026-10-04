@@ -1,0 +1,41 @@
+{
+  "name": "health",
+  "displayName": "みんなの健康ノート",
+  "sourceHash": "6e09f0be2e50",
+  "theme": {
+    "palette": {
+      "bgTop": "#263450",
+      "bgBottom": "#161F32",
+      "accent": "#F8B500"
+    },
+    "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+    "canvasColor": "#263450"
+  },
+  "captions": {
+    "style": "outline",
+    "fontSize": 44
+  },
+  "voice": {
+    "engine": "voicevox",
+    "speaker": "青山龍星",
+    "style": "しっとり",
+    "speed": 0.9,
+    "intonation": 1.15
+  },
+  "video": {
+    "transition": "dissolve",
+    "transitionDur": 0.4,
+    "bgmGain": -40.0,
+    "watermark": "健康ノート",
+    "finalCrf": 18
+  },
+  "entranceRotation": [
+    "rise",
+    "grow",
+    "flip",
+    "punch",
+    "wobble",
+    "peel",
+    "zoom-through"
+  ]
+}

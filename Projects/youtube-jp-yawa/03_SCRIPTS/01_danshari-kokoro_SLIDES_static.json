@@ -1,0 +1,2005 @@
+[
+ {
+  "match": "「お母さん、",
+  "_shot": 0,
+  "_t": 0.0,
+  "photo": true,
+  "static": true,
+  "_dur": 4.39
+ },
+ {
+  "match": "いつか、あな",
+  "_shot": 1,
+  "_t": 4.39,
+  "photo": true,
+  "static": true,
+  "_dur": 8.0
+ },
+ {
+  "match": "仕事を休んで",
+  "_shot": 2,
+  "_t": 12.39,
+  "photo": true,
+  "static": true,
+  "_dur": 7.61
+ },
+ {
+  "match": "その中には、",
+  "_shot": 3,
+  "_t": 20.0,
+  "photo": true,
+  "static": true,
+  "_dur": 7.76,
+  "real": {
+   "src": "pexels",
+   "id": 11348561,
+   "url": "https://www.pexels.com/photo/a-brown-paper-bag-over-wood-11348561/"
+  }
+ },
+ {
+  "match": "でも、子ども",
+  "_shot": 4,
+  "_t": 27.76,
+  "photo": true,
+  "static": true,
+  "_dur": 7.01,
+  "real": {
+   "src": "pexels",
+   "id": 7141072,
+   "url": "https://www.pexels.com/photo/garbage-bags-on-grass-7141072/"
+  }
+ },
+ {
+  "match": "想像するだけ",
+  "_shot": 5,
+  "_t": 34.77,
+  "photo": true,
+  "static": true,
+  "_dur": 4.97
+ },
+ {
+  "match": "それなのに、",
+  "_shot": 6,
+  "_t": 39.74,
+  "photo": true,
+  "static": true,
+  "_dur": 6.2,
+  "real": {
+   "src": "pexels",
+   "id": 31729703,
+   "url": "https://www.pexels.com/photo/traditional-japanese-shoji-door-interior-31729703/"
+  }
+ },
+ {
+  "match": "でもね、それ",
+  "_shot": 7,
+  "_t": 45.94,
+  "_dur": 5.0,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 30067844,
+   "url": "https://www.pexels.com/video/cozy-winter-evening-with-tea-and-candlelight-30067844/"
+  }
+ },
+ {
+  "match": "物を大事にし",
+  "_shot": 8,
+  "_t": 50.94,
+  "photo": true,
+  "static": true,
+  "_dur": 4.5,
+  "real": {
+   "src": "pexels",
+   "id": 34891787,
+   "url": "https://www.pexels.com/photo/barista-folding-coffee-bags-at-artisan-coffee-shop-34891787/"
+  }
+ },
+ {
+  "match": "捨てられない",
+  "_shot": 9,
+  "_t": 55.44,
+  "photo": true,
+  "static": true,
+  "_dur": 7.01
+ },
+ {
+  "match": "一つずつほど",
+  "_shot": 10,
+  "_t": 62.45,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "一つずつほどけば、押し入れも、心も、軽くなります。"
+   ],
+   "times": [
+    0.0
+   ]
+  },
+  "_dur": 5.85
+ },
+ {
+  "match": "七つ目は、ほ",
+  "_shot": 11,
+  "_t": 68.3,
+  "photo": true,
+  "static": true,
+  "_dur": 5.73,
+  "real": {
+   "src": "pexels",
+   "id": 11105148,
+   "url": "https://www.pexels.com/photo/photo-of-a-dilapidated-drawer-11105148/"
+  }
+ },
+ {
+  "match": "そして最後に",
+  "_shot": 12,
+  "_t": 74.03,
+  "photo": true,
+  "static": true,
+  "_dur": 6.72
+ },
+ {
+  "match": "もし、子ども",
+  "_shot": 13,
+  "_t": 80.75,
+  "photo": true,
+  "static": true,
+  "_dur": 6.8,
+  "real": {
+   "src": "pexels",
+   "id": 10931287,
+   "url": "https://www.pexels.com/photo/letters-and-a-brown-envelope-on-a-wooden-bench-10931287/"
+  }
+ },
+ {
+  "match": "さあ、温かい",
+  "_shot": 14,
+  "_t": 87.55,
+  "_dur": 7.39,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 8507717,
+   "url": "https://www.pexels.com/video/a-person-pouring-tea-in-the-cup-8507717/"
+  }
+ },
+ {
+  "match": "その一",
+  "_shot": 15,
+  "_t": 94.94,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その一",
+    "「いつか使うかも」という迷いを、手放す。"
+   ]
+  },
+  "_dur": 5.98
+ },
+ {
+  "match": "押し入れの上",
+  "_shot": 16,
+  "_t": 100.92,
+  "photo": true,
+  "static": true,
+  "_dur": 4.89
+ },
+ {
+  "match": "百貨店の袋、",
+  "_shot": 17,
+  "_t": 105.81,
+  "photo": true,
+  "static": true,
+  "_dur": 5.94,
+  "real": {
+   "src": "pexels",
+   "id": 1666067,
+   "url": "https://www.pexels.com/photo/two-paper-tote-bags-1666067/"
+  }
+ },
+ {
+  "match": "捨てようとす",
+  "_shot": 18,
+  "_t": 111.75,
+  "photo": true,
+  "static": true,
+  "_dur": 4.73,
+  "real": {
+   "src": "pexels",
+   "id": 6969947,
+   "url": "https://www.pexels.com/photo/person-holding-brown-paper-bag-6969947/"
+  }
+ },
+ {
+  "match": "捨てたあとで",
+  "_shot": 19,
+  "_t": 116.48,
+  "photo": true,
+  "static": true,
+  "_dur": 4.43,
+  "real": {
+   "src": "pexels",
+   "id": 220685,
+   "url": "https://www.pexels.com/photo/pile-of-black-shoe-box-next-to-wall-220685/"
+  }
+ },
+ {
+  "match": "私の知人の、",
+  "_shot": 20,
+  "_t": 120.91,
+  "photo": true,
+  "static": true,
+  "_dur": 8.83
+ },
+ {
+  "match": "百十七枚あり",
+  "_shot": 21,
+  "_t": 129.74,
+  "photo": true,
+  "static": true,
+  "_dur": 6.1
+ },
+ {
+  "match": "そう言って、",
+  "_shot": 22,
+  "_t": 135.84,
+  "photo": true,
+  "static": true,
+  "_dur": 3.57
+ },
+ {
+  "match": "取っておいて",
+  "_shot": 23,
+  "_t": 139.41,
+  "photo": true,
+  "static": true,
+  "_dur": 7.13
+ },
+ {
+  "match": "紙一枚、紐一",
+  "_shot": 24,
+  "_t": 146.54,
+  "photo": true,
+  "static": true,
+  "_dur": 7.13
+ },
+ {
+  "match": "それは、だら",
+  "_shot": 25,
+  "_t": 153.67,
+  "photo": true,
+  "static": true,
+  "_dur": 5.77,
+  "real": {
+   "src": "pexels",
+   "id": 6738096,
+   "url": "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-a-book-6738096/"
+  }
+ },
+ {
+  "match": "けれど、今の",
+  "_shot": 26,
+  "_t": 159.44,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "けれど、今の暮らしでは、その「いつか」は、たいてい、来ません。"
+   ],
+   "times": [
+    0.0
+   ]
+  },
+  "_dur": 8.12
+ },
+ {
+  "match": "そして、「い",
+  "_shot": 27,
+  "_t": 167.56,
+  "photo": true,
+  "static": true,
+  "_dur": 8.78,
+  "real": {
+   "src": "pexels",
+   "id": 11286081,
+   "url": "https://www.pexels.com/photo/cardboard-box-and-brown-paper-bag-on-wooden-table-11286081/"
+  }
+ },
+ {
+  "match": "実はこの知人",
+  "_shot": 28,
+  "_t": 176.34,
+  "photo": true,
+  "static": true,
+  "_dur": 8.07
+ },
+ {
+  "match": "風水では、押",
+  "_shot": 29,
+  "_t": 184.41,
+  "photo": true,
+  "static": true,
+  "_dur": 11.67
+ },
+ {
+  "match": "信じるかどう",
+  "_shot": 30,
+  "_t": 196.08,
+  "photo": true,
+  "static": true,
+  "_dur": 3.57,
+  "real": {
+   "src": "pexels",
+   "id": 32416085,
+   "url": "https://www.pexels.com/photo/tranquil-view-from-traditional-japanese-room-32416085/"
+  }
+ },
+ {
+  "match": "でも、窓を開",
+  "_shot": 31,
+  "_t": 199.65,
+  "_dur": 8.24,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 2966956,
+   "url": "https://www.pexels.com/video/time-lapse-footage-of-the-clouds-in-the-sky-a-glass-window-2966956/"
+  }
+ },
+ {
+  "match": "おすすめした",
+  "_shot": 32,
+  "_t": 207.89,
+  "photo": true,
+  "static": true,
+  "_dur": 6.65,
+  "real": {
+   "src": "pexels",
+   "id": 5482134,
+   "url": "https://www.pexels.com/photo/brown-cardboard-boxes-beside-green-plant-5482134/"
+  }
+ },
+ {
+  "match": "箱を一つ用意",
+  "_shot": 33,
+  "_t": 214.54,
+  "photo": true,
+  "static": true,
+  "_dur": 8.42,
+  "real": {
+   "src": "pexels",
+   "id": 4498152,
+   "url": "https://www.pexels.com/photo/cardboard-box-on-dark-wooden-table-near-tape-and-scissors-4498152/"
+  }
+ },
+ {
+  "match": "今日は、紙袋",
+  "_shot": 34,
+  "_t": 222.96,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "今日は、紙袋だけ。",
+    "明日は、空き箱だけ。",
+    "一日一種類なら、疲れる前に、終わります。"
+   ],
+   "times": [
+    0.0,
+    2.44,
+    4.93
+   ]
+  },
+  "_dur": 9.7
+ },
+ {
+  "match": "探し物の時間",
+  "_shot": 35,
+  "_t": 232.66,
+  "photo": true,
+  "static": true,
+  "_dur": 7.68
+ },
+ {
+  "match": "あなたの押し入れに",
+  "_shot": 36,
+  "_t": 240.34,
+  "photo": true,
+  "static": true,
+  "_dur": 7.28,
+  "real": {
+   "src": "pexels",
+   "id": 6000701,
+   "url": "https://www.pexels.com/photo/close-up-of-glass-bottles-standing-on-a-wooden-shelf-6000701/"
+  }
+ },
+ {
+  "match": "その二",
+  "_shot": 37,
+  "_t": 247.62,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その二",
+    "「もったいない」という迷いを、手放す。"
+   ]
+  },
+  "_dur": 5.49
+ },
+ {
+  "match": "食器棚のいち",
+  "_shot": 38,
+  "_t": 253.11,
+  "photo": true,
+  "static": true,
+  "_dur": 5.95,
+  "real": {
+   "src": "pexels",
+   "id": 7303858,
+   "url": "https://www.pexels.com/photo/person-getting-a-wooden-bowl-7303858/"
+  }
+ },
+ {
+  "match": "結婚式の引き",
+  "_shot": 39,
+  "_t": 259.06,
+  "photo": true,
+  "static": true,
+  "_dur": 6.77,
+  "real": {
+   "src": "pexels",
+   "id": 7596850,
+   "url": "https://www.pexels.com/photo/tea-testing-setting-7596850/"
+  }
+ },
+ {
+  "match": "「いいものは",
+  "_shot": 40,
+  "_t": 265.83,
+  "photo": true,
+  "static": true,
+  "_dur": 7.5,
+  "real": {
+   "src": "pexels",
+   "id": 32384749,
+   "url": "https://www.pexels.com/photo/elegant-tea-set-with-floral-decor-and-cookies-32384749/"
+  }
+ },
+ {
+  "match": "そして毎朝使",
+  "_shot": 41,
+  "_t": 273.33,
+  "photo": true,
+  "static": true,
+  "_dur": 7.38
+ },
+ {
+  "match": "いい物を使え",
+  "_shot": 42,
+  "_t": 280.71,
+  "photo": true,
+  "static": true,
+  "_dur": 4.57,
+  "real": {
+   "src": "pexels",
+   "id": 11069932,
+   "url": "https://www.pexels.com/photo/woman-hands-holding-cup-11069932/"
+  }
+ },
+ {
+  "match": "使わずにいれ",
+  "_shot": 43,
+  "_t": 285.28,
+  "photo": true,
+  "static": true,
+  "_dur": 5.04,
+  "real": {
+   "src": "pexels",
+   "id": 17260160,
+   "url": "https://www.pexels.com/photo/close-up-of-cardboard-boxes-lying-on-orange-background-17260160/"
+  }
+ },
+ {
+  "match": "物を粗末にし",
+  "_shot": 44,
+  "_t": 290.32,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "物を粗末にしない心は、とても大切なものです。",
+    "けれど、しまい込んだまま使わないことは、大事にしていることとは、少し違います。"
+   ],
+   "times": [
+    0.0,
+    4.8
+   ]
+  },
+  "_dur": 12.68
+ },
+ {
+  "match": "昔から、欠け",
+  "_shot": 46,
+  "_t": 303.0,
+  "photo": true,
+  "static": true,
+  "_dur": 6.4,
+  "real": {
+   "src": "pexels",
+   "id": 39539385,
+   "url": "https://www.pexels.com/photo/artistic-still-life-of-pomegranates-and-broken-pot-39539385/"
+  }
+ },
+ {
+  "match": "風水でも、欠",
+  "_shot": 47,
+  "_t": 309.4,
+  "photo": true,
+  "static": true,
+  "_dur": 8.95,
+  "real": {
+   "src": "pexels",
+   "id": 6685535,
+   "url": "https://www.pexels.com/photo/close-up-of-pieces-of-a-broken-vase-lying-on-white-surface-6685535/"
+  }
+ },
+ {
+  "match": "毎日いちばん",
+  "_shot": 48,
+  "_t": 318.35,
+  "photo": true,
+  "static": true,
+  "_dur": 5.24,
+  "real": {
+   "src": "pexels",
+   "id": 31114349,
+   "url": "https://www.pexels.com/photo/elderly-hands-holding-red-coffee-cup-outdoors-31114349/"
+  }
+ },
+ {
+  "match": "それは、少し",
+  "_shot": 49,
+  "_t": 323.59,
+  "photo": true,
+  "static": true,
+  "_dur": 4.16,
+  "real": {
+   "src": "pexels",
+   "id": 29518061,
+   "url": "https://www.pexels.com/photo/cozy-moment-with-tea-on-a-rainy-day-29518061/"
+  }
+ },
+ {
+  "match": "今日から、い",
+  "_shot": 50,
+  "_t": 327.75,
+  "photo": true,
+  "static": true,
+  "_dur": 5.35,
+  "real": {
+   "src": "pexels",
+   "id": 7674987,
+   "url": "https://www.pexels.com/photo/person-holding-white-ceramic-cups-7674987/"
+  }
+ },
+ {
+  "match": "急須から注ぐ",
+  "_shot": 51,
+  "_t": 333.1,
+  "_dur": 3.52,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 8519390,
+   "url": "https://www.pexels.com/video/a-person-pouring-hot-water-in-a-cup-8519390/"
+  }
+ },
+ {
+  "match": "両手で包んだ",
+  "_shot": 52,
+  "_t": 336.62,
+  "_dur": 6.23,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 855988,
+   "url": "https://www.pexels.com/video/hot-drink-855988/"
+  }
+ },
+ {
+  "match": "いい器でお茶",
+  "_shot": 53,
+  "_t": 342.85,
+  "photo": true,
+  "static": true,
+  "_dur": 8.92,
+  "real": {
+   "src": "pexels",
+   "id": 35869750,
+   "url": "https://www.pexels.com/photo/elderly-woman-enjoying-tea-indoors-in-vietnam-35869750/"
+  }
+ },
+ {
+  "match": "いちばんいい物",
+  "_shot": 54,
+  "_t": 351.77,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "いちばんいい物は、いちばんよく会う人のために。",
+    "つまり、毎日の、あなた自身のために使っていいんです。"
+   ],
+   "times": [
+    0.0,
+    4.38
+   ]
+  },
+  "_dur": 10.57
+ },
+ {
+  "match": "その三",
+  "_shot": 56,
+  "_t": 362.34,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その三",
+    "「失礼かしら」という迷いを、手放す。"
+   ]
+  },
+  "_dur": 5.75
+ },
+ {
+  "match": "年賀状の束を",
+  "_shot": 57,
+  "_t": 368.09,
+  "photo": true,
+  "static": true,
+  "_dur": 4.63,
+  "ai_redo": "2026-10-01"
+ },
+ {
+  "match": "顔が思い浮か",
+  "_shot": 58,
+  "_t": 372.72,
+  "photo": true,
+  "static": true,
+  "_dur": 6.29
+ },
+ {
+  "match": "断りきれずに",
+  "_shot": 59,
+  "_t": 379.01,
+  "photo": true,
+  "static": true,
+  "_dur": 7.69,
+  "real": {
+   "src": "pexels",
+   "id": 19912420,
+   "url": "https://www.pexels.com/photo/elderly-woman-with-a-cane-walking-down-the-street-19912420/"
+  }
+ },
+ {
+  "match": "やめたいのに",
+  "_shot": 60,
+  "_t": 386.7,
+  "photo": true,
+  "static": true,
+  "_dur": 5.94
+ },
+ {
+  "match": "ひとりぼっち",
+  "_shot": 61,
+  "_t": 392.64,
+  "photo": true,
+  "static": true,
+  "_dur": 3.86,
+  "real": {
+   "src": "pexels",
+   "id": 28861003,
+   "url": "https://www.pexels.com/photo/elderly-woman-relaxing-in-peaceful-park-setting-28861003/"
+  }
+ },
+ {
+  "match": "その怖さが、",
+  "_shot": 62,
+  "_t": 396.5,
+  "photo": true,
+  "static": true,
+  "_dur": 4.46,
+  "real": {
+   "src": "pexels",
+   "id": 33911281,
+   "url": "https://www.pexels.com/photo/monochrome-pen-on-lined-notebook-page-33911281/"
+  }
+ },
+ {
+  "match": "七百年前、兼",
+  "_shot": 63,
+  "_t": 400.96,
+  "photo": true,
+  "static": true,
+  "_dur": 9.49,
+  "real": {
+   "src": "pexels",
+   "id": 5788534,
+   "url": "https://www.pexels.com/photo/natural-hair-calligraphy-brushes-5788534/"
+  }
+ },
+ {
+  "match": "「しやせまし",
+  "_shot": 64,
+  "_t": 410.45,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "quote",
+   "lines": [
+    "爲やせまし、／爲ずやあらましと思ふことは、／おほやう爲ぬはよきなり。",
+    "— 兼好法師『徒然草』第九十八段"
+   ]
+  },
+  "_dur": 8.6
+ },
+ {
+  "match": "しようか、よ",
+  "_shot": 65,
+  "_t": 419.05,
+  "photo": true,
+  "static": true,
+  "_dur": 6.47,
+  "real": {
+   "src": "pexels",
+   "id": 5966103,
+   "url": "https://www.pexels.com/photo/black-decorative-plates-on-chinese-signs-5966103/"
+  }
+ },
+ {
+  "match": "迷うというこ",
+  "_shot": 66,
+  "_t": 425.52,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "迷うということは、心の中では、もう答えが出ているということなんです。"
+   ],
+   "times": [
+    0.0
+   ]
+  },
+  "_dur": 6.8
+ },
+ {
+  "match": "来年も、本当",
+  "_shot": 67,
+  "_t": 432.32,
+  "photo": true,
+  "static": true,
+  "_dur": 6.03
+ },
+ {
+  "match": "残りのかたに",
+  "_shot": 68,
+  "_t": 438.35,
+  "photo": true,
+  "static": true,
+  "_dur": 7.94,
+  "real": {
+   "src": "pexels",
+   "id": 5705984,
+   "url": "https://www.pexels.com/photo/white-paper-beside-a-small-box-with-red-ribbon-5705984/"
+  }
+ },
+ {
+  "match": "あの知人は、",
+  "_shot": 69,
+  "_t": 446.29,
+  "photo": true,
+  "static": true,
+  "_dur": 8.09
+ },
+ {
+  "match": "「減らしたら",
+  "_shot": 70,
+  "_t": 454.38,
+  "photo": true,
+  "static": true,
+  "_dur": 6.39
+ },
+ {
+  "match": "義理のお付き",
+  "_shot": 71,
+  "_t": 460.77,
+  "photo": true,
+  "static": true,
+  "_dur": 8.21
+ },
+ {
+  "match": "ひとりぼっちにな",
+  "_shot": 72,
+  "_t": 468.98,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "ひとりぼっちになるのではありません。",
+    "大事な人と、もっと近くなるんです。"
+   ],
+   "times": [
+    0.0,
+    2.81
+   ]
+  },
+  "_dur": 6.96
+ },
+ {
+  "match": "その四",
+  "_shot": 73,
+  "_t": 475.94,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その四",
+    "「ちゃんとしなきゃ」という迷いを、手放す。"
+   ]
+  },
+  "_dur": 5.7
+ },
+ {
+  "match": "タオルにも、",
+  "_shot": 74,
+  "_t": 481.64,
+  "photo": true,
+  "static": true,
+  "_dur": 8.7,
+  "real": {
+   "src": "pexels",
+   "id": 28576619,
+   "url": "https://www.pexels.com/photo/freshly-ironed-clothes-on-board-with-steam-iron-28576619/"
+  }
+ },
+ {
+  "match": "一日でも手を",
+  "_shot": 75,
+  "_t": 490.34,
+  "photo": true,
+  "static": true,
+  "_dur": 6.73,
+  "real": {
+   "src": "pexels",
+   "id": 48889,
+   "url": "https://www.pexels.com/photo/brown-wooden-floor-48889/"
+  }
+ },
+ {
+  "match": "長く働いてき",
+  "_shot": 76,
+  "_t": 497.07,
+  "photo": true,
+  "static": true,
+  "_dur": 7.79
+ },
+ {
+  "match": "それは、誰か",
+  "_shot": 77,
+  "_t": 504.86,
+  "photo": true,
+  "static": true,
+  "_dur": 7.74,
+  "real": {
+   "src": "pexels",
+   "id": 29806627,
+   "url": "https://www.pexels.com/photo/close-up-of-frayed-rope-on-green-background-29806627/"
+  }
+ },
+ {
+  "match": "けれど、六十",
+  "_shot": 78,
+  "_t": 512.6,
+  "photo": true,
+  "static": true,
+  "_dur": 8.19
+ },
+ {
+  "match": "そして、完璧",
+  "_shot": 79,
+  "_t": 520.79,
+  "photo": true,
+  "static": true,
+  "_dur": 9.11,
+  "real": {
+   "src": "pexels",
+   "id": 6069529,
+   "url": "https://www.pexels.com/photo/hands-picking-bags-and-apparels-6069529/"
+  }
+ },
+ {
+  "match": "紙袋を数えた",
+  "_shot": 80,
+  "_t": 529.9,
+  "photo": true,
+  "static": true,
+  "_dur": 8.54
+ },
+ {
+  "match": "一円でも数字",
+  "_shot": 81,
+  "_t": 538.44,
+  "photo": true,
+  "static": true,
+  "_dur": 5.19,
+  "real": {
+   "src": "pexels",
+   "id": 5833837,
+   "url": "https://www.pexels.com/photo/white-analog-clocks-on-gray-frame-5833837/"
+  }
+ },
+ {
+  "match": "ある晴れた午",
+  "_shot": 82,
+  "_t": 543.63,
+  "photo": true,
+  "static": true,
+  "_dur": 6.94
+ },
+ {
+  "match": "「……このま",
+  "_shot": 83,
+  "_t": 550.57,
+  "_dur": 2.47,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 32537382,
+   "url": "https://www.pexels.com/video/urban-balcony-with-laundry-hanging-outdoors-32537382/"
+  }
+ },
+ {
+  "match": "そう口に出し",
+  "_shot": 84,
+  "_t": 553.04,
+  "photo": true,
+  "static": true,
+  "_dur": 5.81
+ },
+ {
+  "match": "片付けは、完",
+  "_shot": 85,
+  "_t": 558.85,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "片付けは、完璧でなくていいんです。",
+    "引き出し一つで、十分です。"
+   ],
+   "times": [
+    0.0,
+    3.55
+   ]
+  },
+  "_dur": 6.63
+ },
+ {
+  "match": "今日は、タオ",
+  "_shot": 86,
+  "_t": 565.48,
+  "photo": true,
+  "static": true,
+  "_dur": 6.2,
+  "real": {
+   "src": "pexels",
+   "id": 8774511,
+   "url": "https://www.pexels.com/photo/white-towels-inside-metal-basket-8774511/"
+  }
+ },
+ {
+  "match": "その時間に、",
+  "_shot": 87,
+  "_t": 571.68,
+  "photo": true,
+  "static": true,
+  "_dur": 8.45,
+  "real": {
+   "src": "pexels",
+   "id": 38454525,
+   "url": "https://www.pexels.com/photo/woman-relaxing-outdoors-with-sunlit-tea-38454525/"
+  }
+ },
+ {
+  "match": "今日、あなた",
+  "_shot": 88,
+  "_t": 580.13,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "今日、あなたが、できなかったことがあっても、それで、いいんです。"
+   ],
+   "times": [
+    0.0
+   ]
+  },
+  "_dur": 7.25
+ },
+ {
+  "match": "その五",
+  "_shot": 89,
+  "_t": 587.38,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その五",
+    "「子どもが心配」という迷いを、手放す。"
+   ]
+  },
+  "_dur": 5.86
+ },
+ {
+  "match": "ちゃんと食べ",
+  "_shot": 90,
+  "_t": 593.24,
+  "photo": true,
+  "static": true,
+  "_dur": 6.8
+ },
+ {
+  "match": "子どもがいく",
+  "_shot": 91,
+  "_t": 600.04,
+  "photo": true,
+  "static": true,
+  "_dur": 5.35,
+  "real": {
+   "src": "pexels",
+   "id": 30799266,
+   "url": "https://www.pexels.com/photo/hand-touching-black-and-white-family-photographs-30799266/"
+  }
+ },
+ {
+  "match": "心配をやめた",
+  "_shot": 92,
+  "_t": 605.39,
+  "photo": true,
+  "static": true,
+  "_dur": 8.77
+ },
+ {
+  "match": "そう感じるの",
+  "_shot": 93,
+  "_t": 614.16,
+  "photo": true,
+  "static": true,
+  "_dur": 6.79
+ },
+ {
+  "match": "子育てが終わ",
+  "_shot": 94,
+  "_t": 620.95,
+  "photo": true,
+  "static": true,
+  "_dur": 7.64,
+  "real": {
+   "src": "pexels",
+   "id": 17495866,
+   "url": "https://www.pexels.com/photo/orange-kids-bedroom-17495866/"
+  }
+ },
+ {
+  "match": "心配している",
+  "_shot": 95,
+  "_t": 628.59,
+  "photo": true,
+  "static": true,
+  "_dur": 4.46
+ },
+ {
+  "match": "けれど、毎晩",
+  "_shot": 96,
+  "_t": 633.05,
+  "photo": true,
+  "static": true,
+  "_dur": 6.45,
+  "real": {
+   "src": "pexels",
+   "id": 3367850,
+   "url": "https://www.pexels.com/photo/photo-of-woman-using-mobile-phone-3367850/"
+  }
+ },
+ {
+  "match": "「お母さん、私",
+  "_shot": 97,
+  "_t": 639.5,
+  "photo": true,
+  "static": true,
+  "_dur": 6.77,
+  "real": {
+   "src": "pexels",
+   "id": 3933380,
+   "url": "https://www.pexels.com/photo/photo-of-woman-wearing-white-shirt-3933380/"
+  }
+ },
+ {
+  "match": "でも、ときど",
+  "_shot": 98,
+  "_t": 646.27,
+  "photo": true,
+  "static": true,
+  "_dur": 7.8,
+  "real": {
+   "src": "pexels",
+   "id": 6850544,
+   "url": "https://www.pexels.com/photo/various-white-textile-in-studio-6850544/"
+  }
+ },
+ {
+  "match": "紙袋のあの知",
+  "_shot": 99,
+  "_t": 654.07,
+  "photo": true,
+  "static": true,
+  "_dur": 8.55,
+  "real": {
+   "src": "pexels",
+   "id": 5388914,
+   "url": "https://www.pexels.com/photo/silver-alarm-clock-beside-an-iphone-5388914/"
+  }
+ },
+ {
+  "match": "かわりに、豆",
+  "_shot": 100,
+  "_t": 662.62,
+  "photo": true,
+  "static": true,
+  "_dur": 3.94,
+  "real": {
+   "src": "pexels",
+   "id": 29527482,
+   "url": "https://www.pexels.com/photo/manual-coffee-grinder-with-coffee-beans-close-up-29527482/"
+  }
+ },
+ {
+  "match": "ごり、ごり、",
+  "_shot": 101,
+  "_t": 666.56,
+  "_dur": 6.8,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 27938910,
+   "url": "https://www.pexels.com/video/manual-coffee-grinding-by-hand-27938910/"
+  }
+ },
+ {
+  "match": "八時を少し回",
+  "_shot": 102,
+  "_t": 673.36,
+  "photo": true,
+  "static": true,
+  "_dur": 4.2,
+  "real": {
+   "src": "pexels",
+   "id": 28248427,
+   "url": "https://www.pexels.com/photo/vintage-british-telecom-telephone-cream-28248427/"
+  }
+ },
+ {
+  "match": "「お母さん、今",
+  "_shot": 103,
+  "_t": 677.56,
+  "photo": true,
+  "static": true,
+  "_dur": 5.42
+ },
+ {
+  "match": "娘さんの声は",
+  "_shot": 104,
+  "_t": 682.98,
+  "photo": true,
+  "static": true,
+  "_dur": 6.57
+ },
+ {
+  "match": "手放しても、",
+  "_shot": 105,
+  "_t": 689.55,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "手放しても、つながりは切れません。",
+    "むしろ、相手が、手を伸ばせる場所ができるんです。"
+   ],
+   "times": [
+    0.0,
+    3.49
+   ]
+  },
+  "_dur": 8.29
+ },
+ {
+  "match": "あなたが毎日",
+  "_shot": 107,
+  "_t": 697.84,
+  "photo": true,
+  "static": true,
+  "_dur": 8.17,
+  "real": {
+   "src": "pexels",
+   "id": 12304114,
+   "url": "https://www.pexels.com/photo/vases-with-flowers-on-table-12304114/"
+  }
+ },
+ {
+  "match": "その六",
+  "_shot": 108,
+  "_t": 706.01,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その六",
+    "「私だけ取り残される」という迷いを、手放す。"
+   ]
+  },
+  "_dur": 6.53
+ },
+ {
+  "match": "久しぶりに会",
+  "_shot": 109,
+  "_t": 712.54,
+  "photo": true,
+  "static": true,
+  "_dur": 5.57,
+  "real": {
+   "src": "pexels",
+   "id": 36765282,
+   "url": "https://www.pexels.com/photo/women-enjoying-coffee-and-taking-photos-indoors-36765282/"
+  }
+ },
+ {
+  "match": "建て替えたば",
+  "_shot": 110,
+  "_t": 718.11,
+  "photo": true,
+  "static": true,
+  "_dur": 3.87
+ },
+ {
+  "match": "にこにこと相",
+  "_shot": 111,
+  "_t": 721.98,
+  "photo": true,
+  "static": true,
+  "_dur": 7.74
+ },
+ {
+  "match": "みんな、ちゃ",
+  "_shot": 112,
+  "_t": 729.72,
+  "photo": true,
+  "static": true,
+  "_dur": 6.2,
+  "real": {
+   "src": "pexels",
+   "id": 14131888,
+   "url": "https://www.pexels.com/photo/elderly-person-on-pedestrian-crossing-in-city-14131888/"
+  }
+ },
+ {
+  "match": "私だけ、取り",
+  "_shot": 113,
+  "_t": 735.92,
+  "photo": true,
+  "static": true,
+  "_dur": 6.28
+ },
+ {
+  "match": "比べてしまう",
+  "_shot": 114,
+  "_t": 742.2,
+  "photo": true,
+  "static": true,
+  "_dur": 4.8
+ },
+ {
+  "match": "成績、就職、",
+  "_shot": 115,
+  "_t": 747.0,
+  "photo": true,
+  "static": true,
+  "_dur": 5.47
+ },
+ {
+  "match": "いつも、誰か",
+  "_shot": 116,
+  "_t": 752.47,
+  "photo": true,
+  "static": true,
+  "_dur": 8.33,
+  "real": {
+   "src": "pexels",
+   "id": 7141239,
+   "url": "https://www.pexels.com/photo/potted-lush-primroses-growing-in-greenhouse-7141239/"
+  }
+ },
+ {
+  "match": "でもね、人の",
+  "_shot": 117,
+  "_t": 760.8,
+  "photo": true,
+  "static": true,
+  "_dur": 7.07,
+  "real": {
+   "src": "pexels",
+   "id": 6910289,
+   "url": "https://www.pexels.com/photo/white-flowers-on-the-garden-6910289/"
+  }
+ },
+ {
+  "match": "中に入れば、",
+  "_shot": 118,
+  "_t": 767.87,
+  "photo": true,
+  "static": true,
+  "_dur": 5.02,
+  "real": {
+   "src": "pexels",
+   "id": 29192615,
+   "url": "https://www.pexels.com/photo/person-clearing-weeds-with-a-shovel-outdoors-29192615/"
+  }
+ },
+ {
+  "match": "海外旅行の話",
+  "_shot": 119,
+  "_t": 772.89,
+  "photo": true,
+  "static": true,
+  "_dur": 10.11,
+  "ai_redo": "2026-10-01"
+ },
+ {
+  "match": "比べる相手は",
+  "_shot": 120,
+  "_t": 783.0,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "比べる相手は、ほかの誰かではなく、昨日のあなたで十分です。"
+   ],
+   "times": [
+    0.0
+   ]
+  },
+  "_dur": 6.26
+ },
+ {
+  "match": "昨日より、押",
+  "_shot": 121,
+  "_t": 789.26,
+  "photo": true,
+  "static": true,
+  "_dur": 4.17,
+  "real": {
+   "src": "pexels",
+   "id": 7195738,
+   "url": "https://www.pexels.com/photo/white-empty-shelves-in-wardrobe-7195738/"
+  }
+ },
+ {
+  "match": "昨日より、一",
+  "_shot": 122,
+  "_t": 793.43,
+  "photo": true,
+  "static": true,
+  "_dur": 4.87,
+  "real": {
+   "src": "pexels",
+   "id": 1592927,
+   "url": "https://www.pexels.com/photo/close-up-photo-of-teacup-and-saucer-1592927/"
+  }
+ },
+ {
+  "match": "そう数えられ",
+  "_shot": 123,
+  "_t": 798.3,
+  "photo": true,
+  "static": true,
+  "_dur": 8.77,
+  "real": {
+   "src": "pexels",
+   "id": 34954455,
+   "url": "https://www.pexels.com/photo/silhouette-of-three-generations-outdoors-34954455/"
+  }
+ },
+ {
+  "match": "その七",
+  "_shot": 124,
+  "_t": 807.07,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その七",
+    "「捨てたら、思い出まで消えてしまう」という迷いを、手放す。"
+   ]
+  },
+  "_dur": 7.7
+ },
+ {
+  "match": "ほとんどの人が、最後までほどけないの",
+  "_shot": 125,
+  "_t": 814.77,
+  "photo": true,
+  "static": true,
+  "_dur": 7.67,
+  "real": {
+   "src": "pexels",
+   "id": 11585383,
+   "url": "https://www.pexels.com/photo/jackets-on-hangers-11585383/"
+  }
+ },
+ {
+  "match": "子どもが小さ",
+  "_shot": 126,
+  "_t": 822.44,
+  "photo": true,
+  "static": true,
+  "_dur": 2.71,
+  "real": {
+   "src": "pexels",
+   "id": 5094001,
+   "url": "https://www.pexels.com/photo/crop-kid-with-wax-crayons-and-paper-5094001/"
+  }
+ },
+ {
+  "match": "開けると、樟",
+  "_shot": 127,
+  "_t": 825.15,
+  "photo": true,
+  "static": true,
+  "_dur": 5.92,
+  "real": {
+   "src": "pexels",
+   "id": 38371820,
+   "url": "https://www.pexels.com/photo/hand-opening-rustic-wooden-drawer-in-pacitan-38371820/"
+  }
+ },
+ {
+  "match": "これを手放し",
+  "_shot": 128,
+  "_t": 831.07,
+  "photo": true,
+  "static": true,
+  "_dur": 5.36,
+  "real": {
+   "src": "pexels",
+   "id": 5709914,
+   "url": "https://www.pexels.com/photo/a-woman-in-knit-sweater-hugging-self-5709914/"
+  }
+ },
+ {
+  "match": "そう感じるのは、当",
+  "_shot": 129,
+  "_t": 836.43,
+  "photo": true,
+  "static": true,
+  "_dur": 3.58,
+  "real": {
+   "src": "pexels",
+   "id": 36363112,
+   "url": "https://www.pexels.com/photo/cozy-living-room-with-sofa-and-lamp-36363112/"
+  }
+ },
+ {
+  "match": "けれど、勢い",
+  "_shot": 130,
+  "_t": 840.01,
+  "photo": true,
+  "static": true,
+  "_dur": 7.98,
+  "ai_redo": "2026-10-01"
+ },
+ {
+  "match": "知人の友人は",
+  "_shot": 131,
+  "_t": 847.99,
+  "photo": true,
+  "static": true,
+  "_dur": 8.53
+ },
+ {
+  "match": "片付いた部屋",
+  "_shot": 132,
+  "_t": 856.52,
+  "photo": true,
+  "static": true,
+  "_dur": 6.18,
+  "real": {
+   "src": "pexels",
+   "id": 3284980,
+   "url": "https://www.pexels.com/photo/brown-wooden-parquet-tiled-empty-room-3284980/"
+  }
+ },
+ {
+  "match": "手放すという",
+  "_shot": 133,
+  "_t": 862.7,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "手放すというのは、全部捨てることではありません。",
+    "これからも一緒にいたい物を、自分で選ぶことなんです。"
+   ],
+   "times": [
+    0.0,
+    4.37
+   ]
+  },
+  "_dur": 9.32
+ },
+ {
+  "match": "鴨長明は、「",
+  "_shot": 135,
+  "_t": 872.02,
+  "photo": true,
+  "static": true,
+  "_dur": 6.69
+ },
+ {
+  "match": "「ゆく川のな",
+  "_shot": 136,
+  "_t": 878.71,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "quote",
+   "lines": [
+    "行く川のながれは絶えずして、／しかも本の水にあらず。",
+    "— 鴨長明『方丈記』"
+   ]
+  },
+  "_dur": 7.22
+ },
+ {
+  "match": "川の水は、同",
+  "_shot": 137,
+  "_t": 885.93,
+  "_dur": 6.15,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 28963293,
+   "url": "https://www.pexels.com/video/serene-mountain-stream-with-pine-forest-28963293/"
+  }
+ },
+ {
+  "match": "人も、住まい",
+  "_shot": 138,
+  "_t": 892.08,
+  "photo": true,
+  "static": true,
+  "_dur": 3.59,
+  "real": {
+   "src": "pexels",
+   "id": 31257041,
+   "url": "https://www.pexels.com/photo/idyllic-japanese-bridge-in-autumn-scenery-31257041/"
+  }
+ },
+ {
+  "match": "風水でも、思",
+  "_shot": 139,
+  "_t": 895.67,
+  "photo": true,
+  "static": true,
+  "_dur": 12.71,
+  "real": {
+   "src": "pexels",
+   "id": 20801045,
+   "url": "https://www.pexels.com/photo/drawing-in-frame-and-plants-in-vases-on-table-20801045/"
+  }
+ },
+ {
+  "match": "洋服なら、一",
+  "_shot": 140,
+  "_t": 908.38,
+  "photo": true,
+  "static": true,
+  "_dur": 5.22
+ },
+ {
+  "match": "子どもの絵な",
+  "_shot": 141,
+  "_t": 913.6,
+  "photo": true,
+  "static": true,
+  "_dur": 5.81,
+  "real": {
+   "src": "pexels",
+   "id": 5789769,
+   "url": "https://www.pexels.com/photo/white-wooden-shelf-with-kids-artworks-5789769/"
+  }
+ },
+ {
+  "match": "しまい込んで",
+  "_shot": 142,
+  "_t": 919.41,
+  "photo": true,
+  "static": true,
+  "_dur": 6.43,
+  "real": {
+   "src": "pexels",
+   "id": 9832699,
+   "url": "https://www.pexels.com/photo/mother-looking-at-baby-stroller-in-living-room-9832699/"
+  }
+ },
+ {
+  "match": "全部を手放さ",
+  "_shot": 143,
+  "_t": 925.84,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "全部を手放さなくていい。",
+    "これからも一緒にいたい物を、あなたが、選べばいいんです。"
+   ],
+   "times": [
+    0.0,
+    2.38
+   ]
+  },
+  "_dur": 8.49
+ },
+ {
+  "match": "最後に、お約",
+  "_shot": 144,
+  "_t": 934.33,
+  "photo": true,
+  "static": true,
+  "_dur": 5.57,
+  "real": {
+   "src": "pexels",
+   "id": 35601510,
+   "url": "https://www.pexels.com/photo/cozy-interior-with-lamp-and-urban-view-35601510/"
+  }
+ },
+ {
+  "match": "百十七枚の紙",
+  "_shot": 145,
+  "_t": 939.9,
+  "photo": true,
+  "static": true,
+  "_dur": 5.44
+ },
+ {
+  "match": "ご主人を見送",
+  "_shot": 146,
+  "_t": 945.34,
+  "photo": true,
+  "static": true,
+  "_dur": 9.68
+ },
+ {
+  "match": "二時間半かかって",
+  "_shot": 147,
+  "_t": 955.02,
+  "photo": true,
+  "static": true,
+  "_dur": 9.32,
+  "ai_redo": "2026-10-01"
+ },
+ {
+  "match": "そして、その",
+  "_shot": 148,
+  "_t": 964.34,
+  "photo": true,
+  "static": true,
+  "_dur": 8.55,
+  "real": {
+   "src": "pexels",
+   "id": 8061477,
+   "url": "https://www.pexels.com/photo/overhead-shot-of-a-fountain-pen-on-a-sealed-envelope-8061477/"
+  }
+ },
+ {
+  "match": "彼女は、それ",
+  "_shot": 149,
+  "_t": 972.89,
+  "photo": true,
+  "static": true,
+  "_dur": 4.84,
+  "real": {
+   "src": "pexels",
+   "id": 27500610,
+   "url": "https://www.pexels.com/photo/templos-en-japon-27500610/"
+  }
+ },
+ {
+  "match": "開けたのは、",
+  "_shot": 150,
+  "_t": 977.73,
+  "photo": true,
+  "static": true,
+  "_dur": 6.73,
+  "real": {
+   "src": "pexels",
+   "id": 4792671,
+   "url": "https://www.pexels.com/photo/envelope-and-pen-placed-on-table-near-tying-twine-4792671/"
+  }
+ },
+ {
+  "match": "「この万年筆",
+  "_shot": 151,
+  "_t": 984.46,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "letter",
+   "lines": [
+    "和子へ",
+    "この万年筆は、孫が高校生になったら、渡してやってくれ。"
+   ]
+  },
+  "_dur": 6.13
+ },
+ {
+  "match": "紙袋の中に入",
+  "_shot": 152,
+  "_t": 990.59,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "letter",
+   "lines": [
+    "和子へ",
+    "この万年筆は、孫が高校生になったら、渡してやってくれ。",
+    "紙袋の中に入れておけば、お前は絶対に捨てないだろうから、ここにしまっておく"
+   ]
+  },
+  "_dur": 7.52
+ },
+ {
+  "match": "彼女は、声を",
+  "_shot": 153,
+  "_t": 998.11,
+  "photo": true,
+  "static": true,
+  "_dur": 8.24
+ },
+ {
+  "match": "「お前は、何",
+  "_shot": 154,
+  "_t": 1006.35,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "letter",
+   "lines": [
+    "お前は、何も持っていなくても、十分に、いい女房だった。四十年、ありがとう"
+   ]
+  },
+  "_dur": 11.52
+ },
+ {
+  "match": "「徒然草」に",
+  "_shot": 155,
+  "_t": 1017.87,
+  "photo": true,
+  "static": true,
+  "_dur": 5.02,
+  "ai_redo": "2026-10-01"
+ },
+ {
+  "match": "「なきに、こ",
+  "_shot": 156,
+  "_t": 1022.89,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "quote",
+   "lines": [
+    "遁世者は、／なきに事かけぬやうを／はからひて過ぐる、／最上のやうにてあるなり。",
+    "— 兼好法師『徒然草』第九十八段"
+   ]
+  },
+  "_dur": 9.19
+ },
+ {
+  "match": "物がなくても",
+  "_shot": 157,
+  "_t": 1032.08,
+  "photo": true,
+  "static": true,
+  "_dur": 5.59,
+  "real": {
+   "src": "pexels",
+   "id": 33097432,
+   "url": "https://www.pexels.com/photo/serene-japanese-tea-room-with-bonsai-tree-33097432/"
+  }
+ },
+ {
+  "match": "それが、いち",
+  "_shot": 158,
+  "_t": 1037.67,
+  "photo": true,
+  "static": true,
+  "_dur": 4.77,
+  "real": {
+   "src": "pexels",
+   "id": 8748527,
+   "url": "https://www.pexels.com/photo/woman-wearing-traditional-geisha-kimono-at-tea-ceremony-8748527/"
+  }
+ },
+ {
+  "match": "七百年前の一",
+  "_shot": 159,
+  "_t": 1042.44,
+  "photo": true,
+  "static": true,
+  "_dur": 7.64,
+  "real": {
+   "src": "pexels",
+   "id": 39643240,
+   "url": "https://www.pexels.com/photo/vintage-flat-lay-with-cup-of-coffee-and-open-book-39643240/"
+  }
+ },
+ {
+  "match": "彼女は今、百",
+  "_shot": 160,
+  "_t": 1050.08,
+  "photo": true,
+  "static": true,
+  "_dur": 9.12
+ },
+ {
+  "match": "そして、こう",
+  "_shot": 161,
+  "_t": 1059.2,
+  "photo": true,
+  "static": true,
+  "_dur": 2.7
+ },
+ {
+  "match": "「子どもたち",
+  "_shot": 162,
+  "_t": 1061.9,
+  "photo": true,
+  "static": true,
+  "_dur": 7.54
+ },
+ {
+  "match": "「これで、あ",
+  "_shot": 163,
+  "_t": 1069.44,
+  "photo": true,
+  "static": true,
+  "_dur": 7.41,
+  "real": {
+   "src": "pexels",
+   "id": 6980736,
+   "url": "https://www.pexels.com/photo/modern-closet-on-parquet-in-house-room-6980736/"
+  }
+ },
+ {
+  "match": "捨てられなか",
+  "_shot": 164,
+  "_t": 1076.85,
+  "_dur": 6.95,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 5835693,
+   "url": "https://www.pexels.com/video/view-by-the-window-5835693/"
+  }
+ },
+ {
+  "match": "その迷いを一",
+  "_shot": 165,
+  "_t": 1083.8,
+  "photo": true,
+  "static": true,
+  "_dur": 13.09
+ },
+ {
+  "match": "何もない場所",
+  "_shot": 166,
+  "_t": 1096.89,
+  "video": true,
+  "reveal": {
+   "lines": [
+    "何もない場所は、足りない場所ではありません。",
+    "これから出会う、大切な何かのために、あけておく場所なんです。"
+   ],
+   "times": [
+    0.0,
+    4.03
+   ]
+  },
+  "_dur": 10.13
+ },
+ {
+  "match": "あなたが、い",
+  "_shot": 168,
+  "_t": 1107.02,
+  "photo": true,
+  "static": true,
+  "_dur": 5.35
+ },
+ {
+  "match": "「いつか使うかも」で",
+  "_shot": 169,
+  "_t": 1112.37,
+  "photo": true,
+  "static": true,
+  "_dur": 8.6
+ },
+ {
+  "match": "よろしければ",
+  "_shot": 170,
+  "_t": 1120.97,
+  "photo": true,
+  "static": true,
+  "_dur": 5.0,
+  "real": {
+   "src": "pexels",
+   "id": 1592926,
+   "url": "https://www.pexels.com/photo/selective-focus-photography-of-white-and-multicolored-floral-ceramic-teacup-on-saucer-filled-with-coffee-1592926/"
+  }
+ },
+ {
+  "match": "あなたの一言",
+  "_shot": 171,
+  "_t": 1125.97,
+  "photo": true,
+  "static": true,
+  "_dur": 6.93,
+  "real": {
+   "src": "pexels",
+   "id": 19345558,
+   "url": "https://www.pexels.com/photo/people-sitting-on-a-bench-19345558/"
+  }
+ },
+ {
+  "match": "このチャンネ",
+  "_shot": 172,
+  "_t": 1132.9,
+  "_dur": 7.39,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 35222114,
+   "url": "https://www.pexels.com/video/twilight-city-street-with-modern-architecture-35222114/"
+  }
+ },
+ {
+  "match": "よろしければ、チ",
+  "_shot": 173,
+  "_t": 1140.29,
+  "photo": true,
+  "static": true,
+  "_dur": 6.54,
+  "real": {
+   "src": "pexels",
+   "id": 15830695,
+   "url": "https://www.pexels.com/photo/tea-in-porcelain-cup-with-retro-radio-15830695/"
+  }
+ },
+ {
+  "match": "今夜のあなた",
+  "_shot": 174,
+  "_t": 1146.83,
+  "_dur": 6.27,
+  "video": true,
+  "real": {
+   "src": "pexels-video",
+   "id": 36492194,
+   "url": "https://www.pexels.com/video/crescent-moon-in-night-sky-36492194/"
+  }
+ }
+]

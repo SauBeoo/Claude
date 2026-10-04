@@ -1,0 +1,397 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "18-demo",
+  "channel": "shokutaku",
+  "templateRef": "shokutaku",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-08-21T07:45:24.797459+00:00",
+  "modifiedAt": "2026-08-21T07:45:24.797459+00:00"
+ },
+ "timeline": {
+  "durationInFrames": 900
+ },
+ "sceneMarkers": [],
+ "tracks": [
+  {
+   "id": "trk-slides",
+   "name": "Slides",
+   "type": "video",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "slide-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 413,
+     "asset": "assets/slide_00.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-1",
+     "kind": "video",
+     "from": 399,
+     "durationInFrames": 259,
+     "asset": "assets/slide_01.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-2",
+     "kind": "video",
+     "from": 643,
+     "durationInFrames": 257,
+     "asset": "assets/slide_02.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "Voice",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "voice-1",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 900,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-overlay",
+   "name": "Overlay",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "tx-1man",
+     "kind": "text",
+     "from": 653,
+     "durationInFrames": 150,
+     "content": "1万回の坂道",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "layout": {
+      "x": 300,
+      "y": 760,
+      "rotation": -2
+     },
+     "fontSize": 60
+    },
+    {
+     "id": "st-shock",
+     "kind": "sticker",
+     "from": 693,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 420,
+      "y": 130,
+      "w": 190,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "voicevox-mora",
+  "style": "karaoke",
+  "enabled": true,
+  "fontSize": 48,
+  "lines": [
+   {
+    "text": "朝、りんごを一つ。",
+    "startMs": 0,
+    "endMs": 2368
+   },
+   {
+    "text": "そのまま、パクリ。",
+    "startMs": 2968,
+    "endMs": 5101
+   },
+   {
+    "text": "そのひと口の糖分は、スプーン五杯分ほどと言われています。",
+    "startMs": 5701,
+    "endMs": 11131
+   },
+   {
+    "text": "一日一個。",
+    "startMs": 11731,
+    "endMs": 13160
+   },
+   {
+    "text": "それを、三十年続けたとします。",
+    "startMs": 13760,
+    "endMs": 17269
+   },
+   {
+    "text": "その口は、一万回を超えます。",
+    "startMs": 17869,
+    "endMs": 21315
+   },
+   {
+    "text": "一万回の、坂道です。",
+    "startMs": 21915,
+    "endMs": 24816
+   },
+   {
+    "text": "急な坂か、なだらかな坂か。",
+    "startMs": 25416,
+    "endMs": 28477
+   },
+   {
+    "text": "それを決めているのは、りんごの「守り」があるかどうか、です。",
+    "startMs": 29077,
+    "endMs": 35979
+   }
+  ],
+  "words": [
+   {
+    "text": "朝、",
+    "startMs": 0,
+    "endMs": 628,
+    "lineIndex": 0
+   },
+   {
+    "text": "りんごを",
+    "startMs": 1125,
+    "endMs": 1779,
+    "lineIndex": 0
+   },
+   {
+    "text": "一つ。",
+    "startMs": 1779,
+    "endMs": 2368,
+    "lineIndex": 0
+   },
+   {
+    "text": "そのま",
+    "startMs": 2968,
+    "endMs": 3401,
+    "lineIndex": 1
+   },
+   {
+    "text": "ま、パ",
+    "startMs": 3401,
+    "endMs": 3890,
+    "lineIndex": 1
+   },
+   {
+    "text": "クリ。",
+    "startMs": 4581,
+    "endMs": 5101,
+    "lineIndex": 1
+   },
+   {
+    "text": "その",
+    "startMs": 5701,
+    "endMs": 6124,
+    "lineIndex": 2
+   },
+   {
+    "text": "ひと口の糖",
+    "startMs": 6124,
+    "endMs": 6780,
+    "lineIndex": 2
+   },
+   {
+    "text": "分は、スプ",
+    "startMs": 6780,
+    "endMs": 7704,
+    "lineIndex": 2
+   },
+   {
+    "text": "ーン五杯",
+    "startMs": 8121,
+    "endMs": 8755,
+    "lineIndex": 2
+   },
+   {
+    "text": "分ほどと言",
+    "startMs": 8755,
+    "endMs": 10032,
+    "lineIndex": 2
+   },
+   {
+    "text": "われてい",
+    "startMs": 10032,
+    "endMs": 10576,
+    "lineIndex": 2
+   },
+   {
+    "text": "ます。",
+    "startMs": 10576,
+    "endMs": 11131,
+    "lineIndex": 2
+   },
+   {
+    "text": "一日一",
+    "startMs": 11731,
+    "endMs": 12612,
+    "lineIndex": 3
+   },
+   {
+    "text": "個。",
+    "startMs": 12612,
+    "endMs": 13160,
+    "lineIndex": 3
+   },
+   {
+    "text": "それを",
+    "startMs": 13760,
+    "endMs": 14417,
+    "lineIndex": 4
+   },
+   {
+    "text": "、三十年続",
+    "startMs": 14933,
+    "endMs": 15878,
+    "lineIndex": 4
+   },
+   {
+    "text": "けたとし",
+    "startMs": 15878,
+    "endMs": 16655,
+    "lineIndex": 4
+   },
+   {
+    "text": "ます。",
+    "startMs": 16655,
+    "endMs": 17269,
+    "lineIndex": 4
+   },
+   {
+    "text": "その",
+    "startMs": 17869,
+    "endMs": 18279,
+    "lineIndex": 5
+   },
+   {
+    "text": "口は、",
+    "startMs": 18279,
+    "endMs": 18997,
+    "lineIndex": 5
+   },
+   {
+    "text": "一万回を超",
+    "startMs": 19463,
+    "endMs": 20514,
+    "lineIndex": 5
+   },
+   {
+    "text": "えます。",
+    "startMs": 20514,
+    "endMs": 21315,
+    "lineIndex": 5
+   },
+   {
+    "text": "一万回の、",
+    "startMs": 21915,
+    "endMs": 23181,
+    "lineIndex": 6
+   },
+   {
+    "text": "坂道です。",
+    "startMs": 23627,
+    "endMs": 24816,
+    "lineIndex": 6
+   },
+   {
+    "text": "急な坂",
+    "startMs": 25416,
+    "endMs": 25978,
+    "lineIndex": 7
+   },
+   {
+    "text": "か、な",
+    "startMs": 25978,
+    "endMs": 26608,
+    "lineIndex": 7
+   },
+   {
+    "text": "だらかな",
+    "startMs": 27113,
+    "endMs": 27849,
+    "lineIndex": 7
+   },
+   {
+    "text": "坂か。",
+    "startMs": 27849,
+    "endMs": 28477,
+    "lineIndex": 7
+   },
+   {
+    "text": "それを",
+    "startMs": 29077,
+    "endMs": 29588,
+    "lineIndex": 8
+   },
+   {
+    "text": "決めて",
+    "startMs": 29588,
+    "endMs": 30080,
+    "lineIndex": 8
+   }
+  ]
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#2A3A58"
+ }
+}

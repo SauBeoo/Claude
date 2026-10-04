@@ -1,0 +1,7 @@
+# Thu tu DONG trong `_NEW4_prompts_FLOW.txt`  <->  ten file phai luu
+# Gen xong bo anh THO (chua sua gi) vao:  _media_library/stage_icons/_raw/
+# roi chay:  python _media_library/ingest_stage_icons.py
+1   money_fly.png    tờ tiền CÓ CÁNH đang bay — ẩn dụ 'tiền tự bay đi'; dùng ở beat 引かれる/損する/取り逃す
+2   burst.png        bong bóng NỔ RỖNG (không chữ) — dán cạnh hero để nhấn; cần chữ thì dùng node `chip` của zu
+3   sparkle.png      tia lấp lánh ✨ — dán cạnh con số/kết quả tốt; beat 戻ってくる/還付
+4   arrow_red.png    mũi tên ĐỎ cong vẽ tay — beat 増える/上がる (đối lập với chart_down)

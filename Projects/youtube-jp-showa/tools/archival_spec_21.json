@@ -1,0 +1,69 @@
+{
+ "_note": "Video 21 (2026-09-28). 'Color Story of Japan' 1957, US Navy, NARA 428-npc-521, federal work = public domain. Chua tung dung (FOOTAGE_USED.json). Tet 1956/57 — dung nam 100円銀貨 ra doi (昭和32).",
+ "_caveat": "Loi doc KHONG noi 'day la canh nam 19xx'. Chi dung lam boi canh thoi dai.",
+ "cuts": [
+  {
+   "id": "film_f1",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\color_story_japan_1957_r2_sq.mp4",
+   "ss": 145.5,
+   "dur": 4.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "be mac kimono ngoi, me ngoi xom canh (5s ⇒ cat 4s, catalog 145-149)"
+  },
+  {
+   "id": "film_f2",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\color_story_japan_1957_r2_sq.mp4",
+   "ss": 470.5,
+   "dur": 8.0,
+   "ybias": 0.45,
+   "grade": 0,
+   "note": "be gai kimono ngay Tet di cung me"
+  },
+  {
+   "id": "film_f3",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\color_story_japan_1957_r2_sq.mp4",
+   "ss": 8.0,
+   "dur": 9.0,
+   "ybias": 0.45,
+   "grade": 0,
+   "note": "pho Nakamise dong nguoi ngay Tet (bo flare ~5)"
+  },
+  {
+   "id": "film_f4",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\color_story_japan_1957_r2_sq.mp4",
+   "ss": 121.0,
+   "dur": 9.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "cac be gai kimono chon va tra tien mua bup be o quay"
+  },
+  {
+   "id": "film_f5",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\color_story_japan_1957_r2_sq.mp4",
+   "ss": 421.0,
+   "dur": 9.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "miko trao bua, nguoi tra tien"
+  },
+  {
+   "id": "film_f6",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\color_story_japan_1957_r1_sq.mp4",
+   "ss": 206.0,
+   "dur": 9.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "pho cua hang go thap, nguoi di bo"
+  },
+  {
+   "id": "film_f7",
+   "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\color_story_japan_1957_r2_sq.mp4",
+   "ss": 236.0,
+   "dur": 8.0,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "be gai kimono mau ruc o quay bua, be trai ao khoac (catalog R2 235-249)"
+  }
+ ]
+}

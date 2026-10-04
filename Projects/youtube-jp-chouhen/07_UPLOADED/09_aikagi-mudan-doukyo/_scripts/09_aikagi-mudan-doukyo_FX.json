@@ -1,0 +1,41 @@
+{
+  "speakers": {
+    "芳江": "villain",
+    "千夏": "hero",
+    "正一": "other",
+    "悠介": "other",
+    "拓也": "other",
+    "麻衣": "other"
+  },
+  "lines": [
+    {"match": "嫁のお菓子ごっこの部屋は、仏間にするわ", "speaker": "芳江"},
+    {"match": "若い人の趣味の商売は、いつまで続くか", "speaker": "芳江"},
+    {"match": "私は、今朝まで何も知りませんでした", "speaker": "千夏"},
+    {"match": "それをあなたに軽く扱われることのほうが", "speaker": "千夏"},
+    {"match": "家族なんだから、いちいち全員に同じ言い方を", "speaker": "芳江"},
+    {"match": "私は普通の嫁である前に", "speaker": "千夏"},
+    {"match": "俺が、母さんのやり方を認めないと決めたんだ", "speaker": "悠介"},
+    {"match": "その言葉は、もう使うな", "speaker": "正一"},
+    {"match": "冷たいお嫁さんね", "speaker": "芳江"}
+  ],
+  "events": [
+    {"type": "sfx", "match": "十月三日", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "店主さんの笑顔が、そのまま固まった", "name": "heartbeat", "offset": -0.1, "gain": -9},
+    {"type": "sfx", "match": "二階で、何かが倒れる音がした", "name": "door_knock", "offset": -0.15, "gain": -8},
+    {"type": "sfx", "match": "そこに書かれていたのは、私の名前でも義母の名前でもなかった", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "控えの欄に書かれていたのは、私の名前ではなかった", "name": "sub_drop", "offset": -0.2, "gain": -5},
+    {"type": "sfx", "match": "練習用紙だった", "name": "sub_drop", "offset": -0.25, "gain": -5},
+    {"type": "sfx", "match": "義母は反射的に、鞄を背中の側へ回した", "name": "heartbeat", "offset": -0.1, "gain": -9},
+    {"type": "sfx", "match": "義母が家の門の前に立っていた", "name": "phone_buzz", "offset": -0.2, "gain": -9},
+
+    {"type": "bgm_tense_cut", "from": "私は頁の隅の日付を見た", "cut": "十月三日", "resume": "一か月前に、この家の中身は決められていた"},
+    {"type": "bgm_tense_cut", "from": "私の名前が、縦に何度も並んでいた", "cut": "練習用紙だった", "resume": "義母は思いつきで名前を書いたのではない"},
+    {"type": "bgm_swell", "from": "そして義母は、ついにこう言った", "to": "義母は自分の口で、相手ごとに説明を変えた"},
+    {"type": "bgm_swell", "from": "義父は答えず、その場で工務店に電話をかけた", "to": "四十年黙っていた義父だった"},
+
+    {"type": "card", "match": "嫁のお菓子ごっこの部屋は、仏間にするわ", "text": "「お菓子ごっこの部屋は、仏間にするわ」", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "家族なんだから、いちいち全員に同じ言い方を", "text": "「みんなに同じ言い方をしなくてもいいでしょう」", "style": "villain", "hold": 1.4},
+    {"type": "card", "match": "私は普通の嫁である前に", "text": "「私は普通の嫁である前に、この土地の名義人です」", "style": "hero", "hold": 1.6},
+    {"type": "card", "match": "その言葉は、もう使うな", "text": "「その言葉は、もう使うな」", "style": "hero", "hold": 1.4}
+  ]
+}

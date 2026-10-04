@@ -1,0 +1,135 @@
+# 18 — 昭和の働く人とお金の当たり前5選（金の卵・ニコヨン・出稼ぎ・労災・男女の賃金）
+
+Kịch bản đọc: `18_hataraku-okane_TTS.md` · Video: `06_VIDEO/18_hataraku-okane/` (chưa dựng)
+Trục **B** (阿井田茂 / Calm / 0.90, AivisSpeech :10101) · **4.371 ký → ước 14,8 phút** @ 4,93 ký/s
+🔴 Mốc thật chỉ chốt từ `timeline.json` SAU render (CLAUDE.md §Sản xuất — hệ số đọc đã sai 4 lần).
+⭐ **Video ĐẦU TIÊN chạy REAL-FIRST v3** (Style A ảnh AI tĩnh + trần **10 clip AI**, CLAUDE.md §Visual).
+
+---
+
+## 0. VÌ SAO ĐỀ TÀI NÀY
+
+User chốt 2026-09-23: *"xoay quanh tiền bạc và công nhân"*. Cụm **tiền × công việc** là cụm mạnh nhất lịch sử kênh
+(video 14 職場 1.263 v/ngày · 11 · 08 · 15 · 06 chiếm trọn top 5 — số đo 2026-09-21 ở `17_kaisha-ga-kureta.md` §0.1).
+
+### 0.1 ⚠️ CHỒNG LẤN với 06 · 11 · 14 · 15 · 17 — đã kiểm từng mục
+
+| | 06 | 11 | 14 | 15 | 17 | **18 (bài này)** |
+|---|---|---|---|---|---|---|
+| người | người mới vào làm | bố → mẹ | nhân viên văn phòng | mẹ | nhân viên công ty lớn | ⭐ **người lao động chân tay**: xí nghiệp nhỏ · công trường · nông dân đi làm xa · nữ công nhân dệt |
+| tiền | tiêu một tháng lương | cái phong bì | quy tắc chỗ làm | dòng tiền trong nhà | phần ngoài lương | **ai được trả bao nhiêu, và vì sao** |
+| trùng | 集団就職 + 仕送り (1 câu) | — | 給料は現金 | 口座振込 | 社内預金 | ⛔ bài này KHÔNG nhắc phong bì/thưởng/nhà công ty. 仕送り chỉ 1 câu ở mục 1 |
+
+### 0.2 HÀNG XÓM MỤC TIÊU (`youtube-suggested-growth.md` §1)
+
+| video | kênh | vì sao mình là "next watch" |
+|---|---|---|
+| **職場の常識5選** (video 14) | 昭和くらし図鑑 (mình) | 14 là **văn phòng**; bài này là **công xưởng/công trường** — cùng khu phố 「昭和の職場」, nửa còn lại chưa ai kể |
+| **会社がくれたもの5選** (video 17) | 昭和くらし図鑑 (mình) | 17 là **công ty lớn nuôi người**; bài này là **người không có công ty nào nuôi** (日雇い · 出稼ぎ) — mặt trái của cùng thời đại |
+| 【昭和30〜50年代】昭和の常識20選 | 昭和の音がする (249.526 view / 21,9d khi đo 09-21) | Khung 「今なら全部アウト」. Mục 4 (けがは仕事のうち) và 5 (給料は半分) là hai 「今ならアウト」 có **số của 厚労省** đi kèm |
+⚠️ Cần đo lại view của hàng xóm thứ 3 trước khi đóng gói (số trên đã >2 ngày).
+
+---
+
+## 1. FACT SHEET — ✅ VERIFY 2026-09-23 (đọc bảng/PDF gốc, không đọc tóm tắt)
+
+| # | Con số / mốc | Nguồn | Trạng thái |
+|---|---|---|---|
+| 1 | 高等学校等進学率 **昭和25年度 42,5% · 昭和40年度 70,7% · 昭和49年度 90,8%** («昭和49年度に90%を超えた») | 文部科学省「学校基本調査」, trích trong tài liệu 文科省 `1299178_01.pdf` | ✅ đọc PDF gốc |
+| 2 | 学校教育法 **昭和22年** (義務教育 = 小6+中3 = 9 năm) | 学校教育法 昭和22年3月31日 法律第26号 | ✅ (kiến thức pháp luật công khai) |
+| 3 | 「金の卵」 = cách gọi 中卒 thời đó | từ điển / Wikipedia | 🟡 chỉ dùng như **cách gọi**, KHÔNG gắn năm |
+| 4 | Lương công nhật ~**240円** = 100円札×2 + 10円札×4 ⇒ 「ニコヨン」 | コトバンク (日本国語大辞典: 「失業対策事業に就労して職業安定所からもらう日給が240円だった」) · NDL レファレンス協同DB (現代用語の基礎知識1959: 「受取二百四十二円」) | ✅ — vì nguồn lệch 240/242 nên lời đọc là **「二百四十円ほど」** |
+| 5 | 緊急失業対策法 **昭和24年** 法律第89号 | 日本法令索引 / NDL ref | ✅ |
+| 6 | Lương công nhật xây dựng ngoài trời, bình quân toàn quốc **昭和32年 433円** | 『値段史年表』 dẫn 労働大臣官房統計情報部 — qua NDL レファレンス協同DB | ✅ (nguồn cấp 2 dẫn số cấp 1 — lời đọc ghi 「当時の労働省の調べ」) |
+| 7 | 緊急失業対策法を廃止する法律 **平成7年3月31日 法律第54号** ⇒ 失業対策事業 kết thúc | 衆議院 法律第五十四号（平七・三・三一） | ✅ |
+| 8 | 出稼労働者 toàn quốc **昭和47年度 548.800人** · 青森 **75.800** · 秋田 **73.000** · 岩手 **45.500** · **平成30年度 4.200人** (chỉ số 0,8) · định nghĩa 「1ヶ月以上1年未満居住地を離れて就労、終了後帰る者」 · sau 昭和48 オイルショック giảm mạnh | 岩手県「岩手県における出稼ぎの実態 令和4年度」表3 (資料出典: 厚生労働省職業安定局調べ, làm tròn 100 người) | ✅ đọc PDF gốc |
+| 9 | 米の生産調整 bắt đầu **giữa thập niên 昭和40** | 岩手県 tài liệu trên nhắc 「当時の米の生産調整等厳しい農業事情」 | 🟡 lời đọc chỉ nói **「昭和四十年代の半ばから」**, không nêu năm cụ thể |
+| 10 | Tử vong do tai nạn lao động: **昭和40年 6.046 · 昭和41年 6.303 · 昭和47年 5.631 · 昭和49年 4.330 · 昭和50年 3.725 · 令和7年 700** | 厚労省「労働災害発生状況」 — bảng dài hạn JILPT `g0801.xlsx` | ✅ tải bảng gốc |
+| 11 | 労働安全衛生法 **昭和47年6月8日 法律第57号** | 日本法令索引 · 衆議院 法律第五十七号 | ✅ |
+| 12 | Lương theo giới **昭和39年: 男 28,4千円 · 女 15,2千円 · 女/男 = 53,5** · 平均勤続 **男 7,2年 · 女 3,8年** · 昭和51年 58,8 · **昭和60年 59,6** · 令和6年 75,8 · **令和7年 76,6** (所定内給与) | 厚労省「賃金構造基本統計調査」 — bảng dài hạn JILPT `g0406.xlsx` | ✅ tải bảng gốc. ⚠️ ≤1975 gồm cả 国・公営, từ 1976 chỉ 民営 ⇒ lời đọc có câu 「統計の取り方は途中で変わっていますが」 |
+| 13 | 労働基準法 **昭和22年4月7日 法律第49号**, **第4条 男女同一賃金の原則** | 日本法令索引 | ✅ |
+| 14 | 男女雇用機会均等法 **昭和60年6月1日 法律第45号** | 日本法令索引 | ✅ |
+
+### 🔢 PHÉP TÍNH ghi rõ để kiểm được
+- 「一日に、およそ十六人」 = 6.046 ÷ 365 = **16,6** ✔
+- 「九分の一近く」 = 6.046 ÷ 700 = **8,6** ⇒ 1/8,6 ≈ gần 1/9 ✔ (không nói "đúng 1/9")
+- 「百分の一を下回りました」 = 4.200 ÷ 548.800 = **0,77%** ✔
+- 「二十三ポイント」 = 76,6 − 53,5 = **23,1** ✔
+- 「ほぼ半分」 = 53,5 ✔ · 「十人に九人を超えました」 = 90,8% ✔
+
+### ⛔ Ý ĐỊNH DÙNG NHƯNG **ĐÃ BỎ**
+- 🔴 **「昭和29年4月5日、青森発の最初の就職列車」** — kênh nào cũng kể, nhưng bài nghiên cứu của 山口覚 (人文地理学会 2003, 「青森発，戦後最初の就職列車」) gọi đúng câu chuyện này là **chuyện đã bị 「神話」化** ⇒ **không nêu ngày, không nêu "chuyến đầu tiên"**. Mục 1 dùng số 進学率 của 文科省 làm mốc thay thế.
+- **「金の卵」 thành 流行語 năm 昭和39** — chỉ có Wikipedia ⇒ dùng cách gọi, bỏ năm.
+- **中卒の求人倍率 3倍超** — chỉ có Wikipedia, 労働省 bản dài hạn không tải được ⇒ bỏ.
+- **Đỉnh tử vong 昭和36年 6.712人** (hay được trích) — bảng JILPT chỉ bắt đầu từ 昭和40 ⇒ dùng **昭和41年 6.303** (số lớn nhất của bảng đã đọc được), không nói "cao nhất lịch sử".
+- **Lương khởi điểm 中卒** — không tìm được bảng cấp 1 trong lượt này ⇒ mục 1 không có số tiền.
+
+---
+
+## 2. CẤU TRÚC — E7 cold open + 5 mục × 5 ô (`05_SCRIPT_FORMULA.md`)
+
+**COLD OPEN (E7, ~210 ký, vào mục 1 ở 42,8s ước):** ① hành vi 「十五の春…その夜に、列車に乗る」 → ② hệ quả có hình (工場 · 柳行李) → ③ **「これ、実話です」+ 証人** (七十代の知人) → ④ 3 cú sốc dồn = **tên 3 mục sau** (出稼ぎ · 給料半分 · けがは仕事のうち) → ⑤ dán nhãn **「これが、昭和の、働く人のお金です」** → 挨拶 đặt SAU → PROMISE (「当時の統計と、法律の年号でたどります」).
+
+| # | ① TUYÊN BỐ | ② THỰC CẢNH (hiện tại + ngũ quan) | ③ では、なぜ | ④ MỐC CHẾT | ⑤ HẠ CÁNH (mềm) |
+|---|---|---|---|---|---|
+| **1** | 中学を出たら、働きに出るもの | 柳行李・名札・発車ベル・石炭の煙とみかんの匂い · thoại 「体にだけは」 · 知人 vào 鉄工所 | 送り出す側に余裕なし × 都会の人手不足 ⇒ 金の卵 · **学校教育法 昭22** | 進学率 **42,5%(昭25) → 70,7%(昭40) → 90,8%(昭49)** | 「弟や妹が高校に行けた家も…かもしれません」 |
+| **2** | 日当は、その日のうちに現金で | 職安の行列 · 荷台の冷たい風 · ザクッ · 手のひらで押さえる · **百円札2+十円札4** | 戦後の失業 ⇒ **緊急失業対策法 昭24** · 失対事業 · 雨の日は日当なし | 昭32 **433円** → **平7 廃止法** | 「その重さで、今日一日を確かめていた…かもしれません」 |
+| **3** | 冬になると、父親は出稼ぎに | ボストンバッグ · 夜行で上野 · 飯場 · 石油ストーブの匂い · 雪下ろしは母 · 紙袋 | 冬の東北に仕事なし × 東京は作っても足りない × 生産調整 | **昭47年度 548.800人** (青森75.800) → オイルショック → **平30 4.200人** | 「玄関の戸が開く音だったのかもしれません」 |
+| — | **CTA giữa video** @ **55,4%** (sau mục 3, ranh giới cảnh gần 50% nhất: mục 2 kết ở 38,1%) — câu canonical `cta-midvideo.md` §2.10, đổi cụm → 「あなたの家の、働きに出た人の思い出も」 | | | | |
+| **4** | けがをするのは、仕事のうち | 旋盤のキーン · 焦げた油 · ガーゼ · thoại 「これが、一人前の証拠だ」 · 覆いを外して使う | 早く・安く・たくさん ⇒ 安全は後回し · **昭40 6.046人 = 1日16人** | **労働安全衛生法 昭47** → 昭50 3.725 → **令7 700** | 「笑うしかなかった人たちがいたから、今の決まりがあるのかもしれません」 |
+| **5** ⭐ | 女の人の給料は、男の人のほぼ半分 | 寮のベル · 三角巾 · プツンと糸 · 綿ぼこりが光の中に · 薄い封筒 · thoại 「同じだけ、働いてるのにね」 | **E3 khe luật–thực tế:** 労基法第4条 cấm từ **昭22** mà không ai hỏi ⇒ luật chỉ cấm lý do 「女性だから」; 勤続 **7,2 vs 3,8 năm** | 昭39 **53,5** (2万8,400 vs 1万5,200円) → **均等法 昭60** 59,6 → **令7 76,6** | 「この数字は、少しずつ動いてきたのかもしれません」 |
+
+- **Mốc % đo được (ước theo ký):** mục 1 @4,8% · mục 2 @21,6% · mục 3 @38,1% · CTA @55,4% · mục 4 @59,0% · mục 5 @73,3% · tổng luận @93,0%.
+- **KẾT = 認める→裏返す:** nhận (「なくなってよかったものばかりです」) → lật (「でも、あの時代を働いた人たちは、強かった」 + 3 việc họ làm được bằng tiền mình kiếm) → câu đỉnh `[間1.2][速0.8][後間1.0]` 「いちばん遠くまで届いたお金だった」 → xin **体験談** (集団就職の列車 · 出稼ぎの冬 · 工場の寮 · 日雇いの現場 · お土産).
+- ⛔ **KHÔNG recap** (3/3 bản thắng đều không có).
+- 🎭 **証人 xuyên bài:** 知人 (70代) xuất hiện ở cold open · mục 1 (vào 鉄工所) · mục 4 (先輩 mất ngón tay) · mục 5 (chị gái làm 紡績). Một người, ba chỗ ⇒ bài có mạch chứ không phải 5 mục rời.
+
+---
+
+## 3. SỐ ĐO GATE (chạy 2026-09-23)
+
+```
+python tools/check_script_formula.py 03_SCRIPTS/18_hataraku-okane_TTS.md --truc B --rate 4.93
+→ KET QUA: SACH toan bo gate CHAN
+```
+
+| gate CHẶN | đo được | ngưỡng |
+|---|---|---|
+| động cơ chính | **LIST** (pháp/chế độ 20 · mốc năm 1/150) | ≥1 trong 2 |
+| số ký | **4.371 (14,8′)** | 4.289–5.324 |
+| mốc năm | **28 lần (1/150 ký)** | ≥8 và ≥1/500 |
+| đóng mềm かもしれません | **6** | ≥5 |
+| vào mục 1 | **42,8s** (ước) | ≤60s (nhắm 40–50) |
+
+| cảnh báo | đo được | ghi chú |
+|---|---|---|
+| ngũ quan | 10 (1/437) | ⚠️ dưới 1/250 — **cố ý**: động cơ E-LIST (K1 thắng ở 1/2.888), nhưng vẫn dày gấp 2–3× video 11 |
+| なぜ nói thành lời | 5 (một câu / mục, ở giữa mục) | ✅ |
+| nay–xưa (今では) | 11 (1/382) | ✅ |
+| lời thuật lại / thoại | 10 · 証人 6 | ✅ |
+| sóng độ dài | 1,9× · mục dài nhất #5 ở **73%** bài | miễn (<8 mục); đỉnh đặt cuối |
+
+**Gate giọng (`humanize-script-voice.md` §2):** tag đứng dòng riêng **0** · tag giữa dòng **0** · **34 cụm tag** (chuẩn kênh ~32).
+⚠️ Ký/giây là **ƯỚC** (4,93 đo ở video 09). Bài dài 4.371 ký, chỉ cao hơn sàn 82 ký ⇒ nếu render ra <14,5′ thì thêm nhịp ở **mục 2** (mục ngắn nhất, 626 ký), đừng kéo `speed`.
+
+**Mũi tiêm chất người (≥4/6):** ① 証人 知人 ✅ · ② thoại + chi tiết vô dụng-về-thông-tin (紙袋を先に見る · ポケットを押さえる) ✅ · ③ ký ức giác quan tệp 50–70 (石炭の煙とみかん · 石油ストーブ · 綿ぼこり) ✅ · ④ qua nhân vật (知人 gửi nửa lương về) ✅ · ⑤ đóng nhân vật bằng cảm xúc (「それが、口ぐせだったそうです」) ✅ · ⑥ phá nhịp (「正月にも、帰れない年があります。」· 「まだ、同じではありません。」) ✅ → **6/6**.
+
+---
+
+## 4. ĐÓNG GÓI CTR — ⏳ CHƯA LÀM
+
+Theo `youtube-upload-seo.md` §0.5: phải **đo keyword trước** (rổ ứng viên: 昭和の仕事 · 昭和の働き方 · 出稼ぎ · 集団就職 · 金の卵 · 昭和の給料 · 昭和の常識 · 昭和の職場), rồi mới chốt 3 title A/B + 3 thumbnail + 概要欄. ⛔ Không chốt title bằng cảm giác.
+Ghi nháp (CHƯA đo, chỉ để hình dung): `【昭和30〜40年代】今では信じられない 働く人とお金の当たり前5選｜出稼ぎ・ニコヨン・金の卵【昭和100年】`
+
+⚖️ **Quét compliance trước khi viết title/thumbnail:** thân bài có 「亡くなった」 (số liệu tử vong) — hợp lệ trong body; **cấm đưa lên title/thumbnail** (nhóm 死 của `youtube-compliance.md` §3). Mục 4 lên thumbnail thì dùng 「けがは仕事のうち」, không dùng số người chết.
+
+## 5. VIỆC CÒN LẠI TRƯỚC KHI RENDER
+1. User duyệt lời → render **demo giọng 1–2 đoạn** (mục 2 cảnh ニコヨン + câu đỉnh KẾT) trước khi render cả bài.
+2. Render voice → `timeline.json` → chốt mốc thật, chạy lại gate 「vào mục ≤60s」.
+3. `visual_plan.json` (phim PD ở giây 0 + 10 clip AI) → `tools/build_slides_v3.py 18_hataraku-okane` → `_SOURCING.md` → prompt STILL/MOTION.
+4. Đóng gói CTR (§4).
+
+## 6. ⚠️ NÓI THẲNG CÁI CHƯA CHẮC
+- Mục 4: câu 「機械の覆いは、外したまま使っていたそうです」 và 「指に包帯を巻いたまま…珍しい姿ではありませんでした」 là **lời kể của nhân chứng + mô tả không khí**, không có số đo. Đã viết bằng giọng 「そうです」/mô tả, không nâng thành số liệu.
+- Mục 5: câu giải thích 「だから、給料の上がらない仕事に置かれる」 là **cách giải thích phổ biến** (chênh 勤続年数 là số thật từ cùng bảng), không phải kết luận của một nghiên cứu cụ thể.
+- 証人 「七十代の知人」 là **nhân vật dẫn chuyện hư cấu** theo khuôn K1 (`05_SCRIPT_FORMULA.md` §2) — mọi chi tiết đời thường của nhân vật này đều **không kèm số liệu**. Cần disclaimer trong 概要欄 như các video trước.

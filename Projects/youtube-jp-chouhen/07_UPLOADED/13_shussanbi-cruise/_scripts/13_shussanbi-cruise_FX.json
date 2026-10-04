@@ -1,0 +1,211 @@
+{
+  "speakers": {
+    "真希": "hero",
+    "多恵子": "hero",
+    "沢渡": "hero",
+    "克也": "villain",
+    "富美子": "villain",
+    "茂樹": "villain"
+  },
+  "lines": [
+    {
+      "match": "母親なんだから、一人で産めるだろ」",
+      "speaker": "克也"
+    },
+    {
+      "match": "「たかがお産で、そんなに騒がないでちょうだい。",
+      "speaker": "富美子"
+    },
+    {
+      "match": "「……わかりました。",
+      "speaker": "真希"
+    },
+    {
+      "match": "あの子を、今日付けで外してちょうだい。",
+      "speaker": "多恵子"
+    },
+    {
+      "match": "「それがねぇ、女の子だったの。",
+      "speaker": "富美子"
+    },
+    {
+      "match": "いずれ俺が、あの法人を継ぐってことだろ。",
+      "speaker": "克也"
+    },
+    {
+      "match": "「後継者は、もう決まっています」",
+      "speaker": "多恵子"
+    },
+    {
+      "match": "「その生活を壊したのは、どなたですか」",
+      "speaker": "真希"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "一月の大雪の朝だった。",
+      "to": "母はそれだけ言って、何の説明もせずに切った。",
+      "name": "blizzard",
+      "gain": -23
+    },
+    {
+      "type": "ambience",
+      "from": "十二月の初め、義実家の仏間に、親戚が十四人集まっていた。",
+      "to": "上げられなかったのだと思う。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "娘は、その日の昼過ぎに生まれた。",
+      "to": "それから、慌てて壁の方へ寄って、頭を下げた。",
+      "name": "hospital_night",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "引っ越し先は、母の家だった。",
+      "to": "昔から、そうだ。",
+      "name": "night_snowplow",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "船が横浜に着いた朝のことは、後から芦田先生の報告書で知った。",
+      "to": "貸したのは、芳江さんだった。",
+      "name": "sea_deck",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "家に帰ると、台所から粕汁の匂いがする。",
+      "to": "窓の外は、雪だ。",
+      "name": "night_snowplow",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "克也と出会ったのは、私が勤めていた小児科クリニックの受付だった。",
+      "to": "彼は、私の方を一度も見ずに、携帯の画面を指で送っていた。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "手術の日程が決まった翌日、家の共用タブレットに、",
+      "to": "私は、克也が親戚に配ったあの名刺を、一枚だけ、財布の内側にしまった。",
+      "name": "office_hum",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "船に最初の紙が届いたのは、その二日後だった。",
+      "to": "私は、その録音を消さずに残した。",
+      "name": "sea_deck",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "紙が二枚目になったのは、名刺のせいだった。",
+      "to": "そこは、混ぜないでちょうだい」",
+      "name": "office_hum",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "インターホンが鳴ったのは、出産から十日が過ぎた午後だった。",
+      "to": "母が抱いた娘は、いつのまにか泣き止んで、母の肩の上で寝息を立てていた。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "sfx",
+      "match": "「なあ、そんなことで船まで呼び出すなよ。",
+      "name": "sub_drop",
+      "offset": 0.0,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "あの子を、今日付けで外してちょうだい。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "仏間が、静かになった。",
+      "name": "heartbeat",
+      "offset": 0.0,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "「真希理事。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "着信は、四十件を超えていた。",
+      "name": "phone_buzz_urgent",
+      "offset": -0.2,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "インターホンが鳴ったのは、出産から十日が過ぎた午後だった。",
+      "name": "door_knock",
+      "offset": -0.3,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "「そして、この席には、娘も座っていました」",
+      "name": "heartbeat",
+      "offset": 0.3,
+      "gain": -9
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "「一つだけ、事実をお伝えします。",
+      "cut": "「事業部長という役職は、あの会社に、一度も存在したことがありません」",
+      "resume": "義母が、名刺と息子を交互に見た。"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "「おい、克也、どうするんだお前",
+      "to": "そして、こたつの横で膝をつき、床に頭をつけた。"
+    },
+    {
+      "type": "card",
+      "match": "母親なんだから、一人で産めるだろ」",
+      "text": "母親なんだから、一人で産めるだろ",
+      "style": "villain",
+      "hold": 1.2
+    },
+    {
+      "type": "card",
+      "match": "いずれ俺が、あの法人を継ぐってことだろ。",
+      "text": "いずれ俺が、あの法人を継ぐ",
+      "style": "villain",
+      "hold": 1.2
+    },
+    {
+      "type": "card",
+      "match": "「事業部長という役職は、あの会社に、一度も存在したことがありません」",
+      "text": "事業部長という役職は、存在しません",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "「その生活を壊したのは、どなたですか」",
+      "text": "その生活を壊したのは、どなたですか",
+      "style": "hero",
+      "hold": 1.4
+    }
+  ]
+}

@@ -1,0 +1,669 @@
+[
+ {
+  "match": "ナスの実が小さくなって、皮がごわ",
+  "photo": true
+ },
+ {
+  "match": "逃すと、秋に採れるナスは、1本も",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "鋏を入れられる残り",
+   "big": "10",
+   "unit": "日",
+   "sub": "7月下旬から8月上旬まで",
+   "note": "この幅を外すと、秋には間に合いません",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/wall_calendar_late_july.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "花が落ちているのではありません。",
+  "photo": true
+ },
+ {
+  "match": "実がついたまま、切ってください。",
+  "photo": true
+ },
+ {
+  "match": "古代の秘訣へようこそ。今日もまた",
+  "photo": true
+ },
+ {
+  "match": "お住まいの地域では、夏のナスはい",
+  "photo": true
+ },
+ {
+  "match": "花が10個落ちても実が1つもつか",
+  "photo": true
+ },
+ {
+  "match": "麦わら帽子の下から、軍手の甲で汗",
+  "photo": true
+ },
+ {
+  "match": "朝いちばんの畑で、もったいなくな",
+  "photo": true
+ },
+ {
+  "match": "丸坊主になった株を見て、私は内心",
+  "photo": true
+ },
+ {
+  "match": "私の畑には、棒すら立っていません",
+  "photo": true
+ },
+ {
+  "match": "読む。切る。渡す。そして、掘る。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "順番でしか効きません",
+   "head": "読む・切る・渡す、そして",
+   "pins": [
+    [
+     1300,
+     235,
+     "読む"
+    ],
+    [
+     1300,
+     350,
+     "切る"
+    ],
+    [
+     1300,
+     465,
+     "渡す"
+    ]
+   ],
+   "arrows": [
+    [
+     1260,
+     300,
+     980,
+     390,
+     0.18
+    ]
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/three_tools_on_soil.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ナスは、6月から一度も休まずに実",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "6月から一度も休まず",
+   "big": "70",
+   "unit": "日",
+   "sub": "人間なら2か月ぶっ通し",
+   "note": "疲れです。寿命ではありません",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/worn_eggplant_stem_base.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "7月の終わりごろになると、体力が",
+  "photo": true
+ },
+ {
+  "match": "けれど、この三つはどれも、見る人",
+  "photo": true
+ },
+ {
+  "match": "元気な株では、この棒が、黄色い束",
+  "photo": true
+ },
+ {
+  "match": "ところが弱ってくると、棒のほうが",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "花の真ん中を見る",
+   "title": "棒が長いか、短いか",
+   "left": {
+    "label": "長花柱花",
+    "mark": "o",
+    "verdict": "まだ実になる"
+   },
+   "right": {
+    "label": "短花柱花",
+    "mark": "x",
+    "verdict": "もう実にならない"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/eggplant_flower_face_on.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "めしべが短いと、花粉が届く先が足",
+  "photo": true
+ },
+ {
+  "match": "葉は濃い緑のままで、花だけ短いな",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "葉の色で原因が分かれる",
+   "title": "同じ短い花でも",
+   "left": {
+    "label": "株ごと薄い黄緑",
+    "mark": "x",
+    "verdict": "肥料が足りない"
+   },
+   "right": {
+    "label": "葉は濃い緑",
+    "mark": "x",
+    "verdict": "暑さのほう"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/eggplant_leaf_two_tones.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "もう一か所、見ておくと確かです。",
+  "photo": true
+ },
+ {
+  "match": "ところが、サインを読めるようにな",
+  "photo": true
+ },
+ {
+  "match": "二つ目。切る。",
+  "photo": true
+ },
+ {
+  "match": "太い枝を3本ほど残して、あとは落",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "切る量",
+   "title": "拍子抜けするほど乱暴に",
+   "steps": [
+    {
+     "label": "主枝を半分まで",
+     "sub": "3分の2でも構いません"
+    },
+    {
+     "label": "太い枝を3本残す",
+     "sub": "あとは落とす"
+    },
+    {
+     "label": "古い葉も全部",
+     "sub": "終わるとほとんど棒",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/pruning_shears_on_thick_stem.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "そして、ここがいちばん抵抗のある",
+  "photo": true
+ },
+ {
+  "match": "つまり実は、ごほうびではありませ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "title": "重り",
+   "sub": "実は、ごほうびではありません。いま株を縛っているものです",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/single_dull_eggplant_hanging.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "どこで切るか、だけ気をつけてくだ",
+  "photo": true
+ },
+ {
+  "match": "太い枝は、切り口を少しだけ斜めに",
+  "photo": true
+ },
+ {
+  "match": "時期は、7月の下旬から8月の上旬",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "この幅しかない",
+   "title": "遅れると涼しくなります",
+   "marks": [
+    [
+     "7月末",
+     "いちばん良い"
+    ],
+    [
+     "8月頭",
+     "まだ間に合う"
+    ],
+    [
+     "8月末",
+     "もう遅い"
+    ]
+   ],
+   "note": "新しい枝が育つ前に、秋が来ます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/bamboo_stake_with_date_tag.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ところが、切ったあとに何も渡さな",
+  "photo": true
+ },
+ {
+  "match": "ここまでご覧いただき、ありがとう",
+  "photo": true
+ },
+ {
+  "match": "三つ目。渡す。",
+  "photo": true
+ },
+ {
+  "match": "ですから、葉を茂らせるほうに効く",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "渡す肥料を間違えない",
+   "title": "いま作る仕事が違います",
+   "left": {
+    "label": "実を太らせる肥料",
+    "mark": "x",
+    "verdict": "遠回りになる"
+   },
+   "right": {
+    "label": "葉を茂らせる肥料",
+    "mark": "o",
+    "verdict": "いま要るのはこちら"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/fertilizer_granules_in_palm.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ところが、ここで多くの人がつまず",
+  "photo": true
+ },
+ {
+  "match": "土に、指を第一関節まで挿してみて",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "水のやり方",
+   "title": "土に指を挿してから",
+   "steps": [
+    {
+     "label": "第一関節まで挿す",
+     "sub": "株元から少し離して"
+    },
+    {
+     "label": "湿っていたらやらない",
+     "sub": "根が息をできません"
+    },
+    {
+     "label": "白く乾いたらたっぷり",
+     "sub": "それだけです",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/finger_pressed_into_dry_soil.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "それから、地面です。葉がごっそり",
+  "photo": true
+ },
+ {
+  "match": "刈った草でも、古い新聞紙でも構い",
+  "photo": true
+ },
+ {
+  "match": "追肥と、水と、日よけ。ここまでは",
+  "photo": true
+ },
+ {
+  "match": "同じ日に、同じ肥料をまいたのに、",
+  "photo": true
+ },
+ {
+  "match": "渡したものが、届いていなかったの",
+  "photo": true
+ },
+ {
+  "match": "ナスは6月から実をつけ続けていま",
+  "photo": true
+ },
+ {
+  "match": "つまり、肥料は土の中にちゃんとあ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "届かない理由",
+   "head": "土にはある。吸う側が古い",
+   "pins": [
+    [
+     1300,
+     235,
+     "肥料は土の中"
+    ],
+    [
+     1300,
+     350,
+     "根が硬くなる"
+    ],
+    [
+     1300,
+     465,
+     "だから届かない"
+    ]
+   ],
+   "arrows": [
+    [
+     1260,
+     300,
+     980,
+     390,
+     0.18
+    ]
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/old_thick_eggplant_root.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "枝を切ったその日に、続けてやって",
+  "photo": true
+ },
+ {
+  "match": "株元から30センチほど離したとこ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "スコップを差す位置",
+   "big": "30",
+   "unit": "センチ",
+   "sub": "株元から離して、ぐるりと何か所か",
+   "note": "近すぎると、支えの根まで切れて倒れます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/spade_blade_in_soil_beside_plant.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "根を、切ります。",
+  "photo": true
+ },
+ {
+  "match": "切られた根は、その切り口から枝分",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "切ったあとに起きること",
+   "big": "2",
+   "unit": "週間",
+   "sub": "髪の毛ほどの白い根が何十本も",
+   "note": "この白い根が、いちばんよく吸います",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/fine_white_roots_in_soil.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "古い根を切ることが、新しい根を作",
+  "photo": true
+ },
+ {
+  "match": "それから、一周をひと息に切り落と",
+  "photo": true
+ },
+ {
+  "match": "やらないほうがいい日も、覚えてお",
+  "photo": true
+ },
+ {
+  "match": "次に、台風の来る前。出たばかりの",
+  "photo": true
+ },
+ {
+  "match": "枝を切るのは、上の仕事を減らすた",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "上と下は別の仕事",
+   "title": "片方だけでは効きません",
+   "left": {
+    "label": "枝を切る",
+    "mark": "o",
+    "verdict": "上の仕事を減らす"
+   },
+   "right": {
+    "label": "根を切る",
+    "mark": "o",
+    "verdict": "下を作り直す"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/shears_and_spade_side_by_side.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "切り口から新しい根が出るまで、半",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "切った日からのカレンダー",
+   "title": "40日先に印をつける",
+   "marks": [
+    [
+     "半月",
+     "白い根が出る"
+    ],
+    [
+     "40日",
+     "花と実"
+    ],
+    [
+     "10月",
+     "採り終わり"
+    ]
+   ],
+   "note": "8月の頭に切れば、9月半ばから採れます",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/calendar_with_red_circle.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "今日の日付から40日先に、カレン",
+  "photo": true
+ },
+ {
+  "match": "切ってから半月ほど、株の上では、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "title": "棒",
+   "sub": "切って半月、上では何も起きません。それが順調な証拠です",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/bare_cut_eggplant_stump.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "そこで不安になって、抜いてしまう",
+  "photo": true
+ },
+ {
+  "match": "それから、この四つは、ナスだけの",
+  "photo": true
+ },
+ {
+  "match": "ところで、これほど効く手が、なぜ",
+  "photo": true
+ },
+ {
+  "match": "株を切り戻して、もう一度使いまし",
+  "photo": true
+ },
+ {
+  "match": "苗は、また買ってもらえます。肥料",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "なぜ売り場に無いのか",
+   "title": "売れる話と、売れない話",
+   "left": {
+    "label": "苗と肥料",
+    "mark": "x",
+    "verdict": "また買ってもらえる"
+   },
+   "right": {
+    "label": "鋏とスコップ",
+    "mark": "o",
+    "verdict": "家にあるもの"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/garden_shears_and_spade_leaning.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "誰かが隠したわけではありません。",
+  "photo": true
+ },
+ {
+  "match": "上だけ切って動かなかった株は、い",
+  "photo": true
+ },
+ {
+  "match": "日本で出版された農書としていちば",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "農業全書",
+   "asof": "元禄10年・1697年",
+   "number": "40年",
+   "quote": "宮崎安貞が全国を回り、年寄りの百姓から聞き取って11巻にまとめた",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/old_japanese_book_on_wood.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "本を書くのに40年かかったのでは",
+  "photo": true
+ },
+ {
+  "match": "最後に、一つだけお伝えしておきた",
+  "photo": true
+ },
+ {
+  "match": "この言葉の古い実例は、寛永15年",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "毛吹草",
+   "asof": "寛永15年・1638年",
+   "number": "400年",
+   "quote": "「秋茄子は嫁に食わすな」の古い実例が、この本に載っている",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/old_proverb_book_page.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "一つは、憎らしい嫁に、あんなうま",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "秋茄子は嫁に食わすな",
+   "title": "同じ一言が、逆に読めます",
+   "left": {
+    "label": "憎らしい嫁に",
+    "mark": "x",
+    "verdict": "いじわる"
+   },
+   "right": {
+    "label": "体を冷やすから",
+    "mark": "o",
+    "verdict": "気づかい"
+   },
+   "note": "逆の読み方は、1783年ごろの安斎随筆にあります",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/20_sentei-koshin-akinasu/ai_clean/autumn_eggplants_in_basket.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "同じ一言が、憎しみにも、思いやり",
+  "photo": true
+ },
+ {
+  "match": "たった一つの食べ物をめぐって、4",
+  "photo": true
+ },
+ {
+  "match": "そして、秋のナスは、放っておいて",
+  "photo": true
+ },
+ {
+  "match": "ことわざのほうは、みんなが覚えて",
+  "photo": true
+ },
+ {
+  "match": "それでも、抜いてしまえば、その株",
+  "photo": true
+ },
+ {
+  "match": "今日の四つは、道具もお金も要りま",
+  "photo": true
+ },
+ {
+  "match": "あのとき私は、意味が分かりません",
+  "photo": true
+ },
+ {
+  "match": "よろしければ、教えてください。あ",
+  "photo": true
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの",
+  "photo": true
+ }
+]

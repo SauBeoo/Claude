@@ -1,0 +1,80 @@
+{
+  "speakers": {
+    "佳乃": "hero",
+    "志津代": "villain",
+    "真由": "villain",
+    "隆之": "villain"
+  },
+  "lines": [
+    { "match": "この部屋ね、来月から真由の新居にするから", "speaker": "志津代" },
+    { "match": "もう業者さんも呼んであるの", "speaker": "志津代" },
+    { "match": "あ、もう関係ないかｗ", "speaker": "真由" },
+    { "match": "押し入れの、祖母の位牌は、どちらに", "speaker": "佳乃" },
+    { "match": "先週の粗大ごみの日に出したわよ", "speaker": "志津代" },
+    { "match": "うちの嫁はねえ、八年、パートしかしてないの", "speaker": "志津代" },
+    { "match": "お義姉さんの部屋、なんか、線香くさかったから", "speaker": "真由" },
+    { "match": "母さんの言う通りにしてやってくれ", "speaker": "隆之" },
+    { "match": "先日は、二階の給湯器の件", "speaker": "佳乃" },
+    { "match": "その人は、うちの嫁ですよ", "speaker": "志津代" },
+    { "match": "秋の町内清掃、今年は、私も出ます", "speaker": "佳乃" },
+    { "match": "うちの嫁は、そっちのゴミ袋ね", "speaker": "志津代" },
+    { "match": "藤棚荘のことは、私が窓口ですから", "speaker": "志津代" },
+    { "match": "大家さん。", "speaker": "佳乃" },
+    { "match": "私は、隆之の母親よ", "speaker": "志津代" },
+    { "match": "息子さんの家ではありません", "speaker": "佳乃" },
+    { "match": "一千九百六十八万円です", "speaker": "佳乃" },
+    { "match": "お母さんが言ったのよ", "speaker": "真由" },
+    { "match": "これは、預かってただけよ", "speaker": "志津代" },
+    { "match": "これは、何の家賃ですか", "speaker": "佳乃" },
+    { "match": "なんで八年も黙ってたんだよ", "speaker": "隆之" },
+    { "match": "祖母の位牌を、返してください", "speaker": "佳乃" },
+    { "match": "返せないものを捨てた人が", "speaker": "佳乃" },
+    { "match": "連絡は、これきりにしてください", "speaker": "佳乃" }
+  ],
+  "events": [
+    { "type": "ambience", "from": "義母の還暦祝いの座敷だった", "to": "私が「出て行きます」と言った、その一言の意味", "name": "room_still", "gain": -27 },
+    { "type": "sfx", "match": "この部屋ね、来月から真由の新居にするから", "name": "sub_drop", "offset": 0.0, "gain": -6 },
+    { "type": "sfx", "match": "先週の粗大ごみの日に出したわよ", "name": "sub_drop", "offset": 0.1, "gain": -7 },
+    { "type": "sfx", "match": "その合鍵は、八年前、私が鍵屋に作らせたものだったから", "name": "sub_drop", "offset": -0.1, "gain": -6 },
+    { "type": "sfx", "match": "祖母は、この日が来ることを、八年前から知っていた", "name": "heartbeat", "offset": 0.0, "gain": -9 },
+    { "type": "card", "match": "言われた通りに、おし", "text": "言われた通りに、おし", "style": "hero", "hold": 1.6 },
+
+    { "type": "ambience", "from": "座敷の話は、それで終わらなかった", "to": "玄関の戸が閉まる音が、やけに長く残った", "name": "room_still", "gain": -27 },
+    { "type": "sfx", "match": "その時、玄関のチャイムが鳴った", "name": "door_knock", "offset": 0.2, "gain": -8 },
+    { "type": "sfx", "match": "そして、腰を九十度に折った", "name": "sub_drop", "offset": 0.15, "gain": -5 },
+    { "type": "sfx", "match": "座敷が、静まり返った", "name": "heartbeat", "offset": 0.0, "gain": -9 },
+    { "type": "card", "match": "あ、もう関係ないかｗ", "text": "あ、もう関係ないかｗ", "style": "villain", "hold": 1.4 },
+    { "type": "card", "match": "先週の粗大ごみの日に出したわよ", "text": "粗大ごみの日に出したわよ", "style": "villain", "hold": 1.5 },
+
+    { "type": "ambience", "from": "その夜、階段を上がってくる足音がした", "to": "公証役場の金庫と、司法書士の事務所と、そして、私の手元に", "name": "room_still", "gain": -29 },
+    { "type": "card", "match": "あんた、何か聞いてない", "text": "あんた、何か聞いてない？", "style": "villain", "hold": 1.4 },
+    { "type": "sfx", "match": "もう、三通あった", "name": "sub_drop", "offset": 0.0, "gain": -6 },
+
+    { "type": "ambience", "from": "祖母の佐野タキが死んだのは", "to": "そんなことまで書いてある帳面だった", "name": "room_still", "gain": -28 },
+    { "type": "ambience", "from": "祖母は、入院の三日前に、司法書士の高梨先生を呼んだ", "to": "「佳乃は、この階段の氷を、三度、割ってくれた」", "name": "hospital_night", "gain": -25 },
+    { "type": "ambience", "from": "大雪の朝、入居者が転ばないように、私が階段の氷を割ったことが、三回", "to": "たった、それだけを。", "name": "blizzard", "gain": -24 },
+
+    { "type": "ambience", "from": "みなも住宅管理の事務所は、駅前の雑居ビルの三階にある", "to": "「秋の町内清掃、今年は、私も出ます」", "name": "office_hum", "gain": -26 },
+    { "type": "sfx", "match": "私の夫の口座から、毎月、振り込まれていた", "name": "sub_drop", "offset": -0.1, "gain": -6 },
+
+    { "type": "ambience", "from": "その足で、高梨先生の事務所に寄った", "to": "そして今日、決めた", "name": "office_hum", "gain": -26 },
+
+    { "type": "bgm_tense_cut", "from": "藤棚荘のことは、私が窓口ですから", "cut": "風が、藤棚の枯れた蔓を鳴らした", "resume": "本年より、外階段の改修と、防犯灯の増設を行います" },
+    { "type": "sfx", "match": "藤棚荘の所有者は、こちらの、柏木佳乃さんでございます", "name": "sub_drop", "offset": 0.2, "gain": -5 },
+    { "type": "sfx", "match": "三十人が、こちらを見た", "name": "heartbeat", "offset": 0.0, "gain": -9 },
+
+    { "type": "ambience", "from": "その日の昼、志津代さんは、駅前の雑居ビルに現れた", "to": "八年間、彼女が「うちの嫁」と呼んでいた相手は、八年間、彼女の大家だった", "name": "office_hum", "gain": -27 },
+    { "type": "card", "match": "一千九百六十八万円です", "text": "八年分、一千九百六十八万円", "style": "hero", "hold": 1.6 },
+    { "type": "bgm_swell", "from": "真由の悲鳴が、階下から聞こえたのは、その日の午後だった", "to": "通帳は、出てこなかった" },
+
+    { "type": "sfx", "match": "その時、玄関のチャイムが鳴った。", "name": "door_knock", "offset": 0.2, "gain": -8, "after": 1000.0 },
+    { "type": "ambience", "from": "その夜、隆之が、二〇二号室に帰ってきた", "to": "翌日には、町内の全員が知っていた", "name": "room_still", "gain": -27 },
+
+    { "type": "bgm_swell", "from": "志津代さんが、玄関先で膝をついたのは、その週の土曜日だった", "to": "私は、玄関の戸を閉めた" },
+    { "type": "card", "match": "祖母の位牌を、返してください", "text": "祖母の位牌を、返してください", "style": "hero", "hold": 1.8 },
+    { "type": "card", "match": "返せないものを捨てた人が", "text": "返せないものを捨てた人が", "style": "hero", "hold": 1.6 },
+    { "type": "sfx", "match": "沈黙が、落ちた", "name": "heartbeat", "offset": 0.0, "gain": -9 },
+
+    { "type": "ambience", "from": "五月になると、踊り場の藤が咲く", "to": "祖母が四十年、書いてきたものと、同じ形で", "name": "room_still", "gain": -29 }
+  ]
+}

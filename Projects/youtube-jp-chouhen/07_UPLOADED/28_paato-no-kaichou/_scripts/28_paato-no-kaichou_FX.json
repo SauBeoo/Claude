@@ -1,0 +1,192 @@
+{
+  "_comment": "FX radio-drama video 28 — 資格の欄 (bản v2, khớp _TTS.md sau khi viết lại 2026-08-18). Mọi match đã verify bằng máy = đúng 1 dòng.",
+  "speakers": {
+    "hero": "三崎澄江",
+    "villain": "黒岩剛"
+  },
+  "sfx": [
+    {
+      "name": "sub_drop",
+      "at": "二本の線を引いた。",
+      "gain": -11
+    },
+    {
+      "name": "door_knock",
+      "at": "店の引き戸が開いて、スーツの男が入ってきた。",
+      "gain": -14
+    },
+    {
+      "name": "sub_drop",
+      "at": "九十度だった。",
+      "gain": -12
+    },
+    {
+      "name": "heartbeat",
+      "at": "残り二十四日で、いま、全部が消えるところだった。",
+      "gain": -15
+    },
+    {
+      "name": "sub_drop",
+      "at": "高辻篤子。",
+      "gain": -11
+    },
+    {
+      "name": "heartbeat",
+      "at": "「呼んでください」",
+      "gain": -16
+    },
+    {
+      "name": "sub_drop",
+      "at": "再生ボタンを押した。",
+      "gain": -10
+    },
+    {
+      "name": "sub_drop",
+      "at": "「解雇通知だ」",
+      "gain": -9
+    },
+    {
+      "name": "heartbeat",
+      "at": "九十日に、二日、足りなかった。",
+      "gain": -14
+    },
+    {
+      "name": "sub_drop",
+      "at": "「一級建築士、三崎澄江。",
+      "gain": -9
+    },
+    {
+      "name": "slap",
+      "at": "最初に聞こえたのは、グラスが倒れる音だった。",
+      "gain": -13
+    }
+  ],
+  "ambience": [
+    {
+      "type": "ambience",
+      "from": "三崎ハウジング東支店。",
+      "to": "それだけのことだった。",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "三月の懇親会は、駅前の居酒屋だった。",
+      "to": "この夜から、あの人は私を「おばさん」と呼ばなくなった。",
+      "name": "room_still",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "翌週の木曜日、私はその住所まで自転車を漕いだ。",
+      "to": "写真は、あとで撮る人がいる。",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "九十日目は、雨だった。",
+      "to": "私は、返事ができなかった。",
+      "name": "rain_window",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "創業五十周年の記念式典は、駅前のホテルの大広間で行われた。",
+      "to": "二十年、口をきかなかった父の、最後の一行だった。",
+      "name": "office_hum",
+      "gain": -23
+    },
+    {
+      "type": "ambience",
+      "from": "一年が過ぎた。",
+      "to": "本当の意味で始まったのだった。",
+      "name": "room_still",
+      "gain": -27
+    }
+  ],
+  "bgm": [
+    {
+      "type": "bgm_tense_cut",
+      "from": "私はエプロンのポケットから、小さな機械を取り出した。",
+      "cut": "「早坂。金庫から三万、抜いとけ。",
+      "resume": "早坂みどりさんが、椅子から立ち上がった。",
+      "_why": "SÓNG 4 — bày chứng cứ → nhạc tắt đúng lúc giọng phản diện phát ra → vào lại khi 早坂 quỳ"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "「氏名と血縁を明かさず、現場で九十日勤めること」",
+      "to": "背中がテーブルにぶつかり、皿が滑って落ちた。",
+      "_why": "SÓNG 6 — phe ác sụp công khai tại 式典"
+    }
+  ],
+  "cards": [
+    {
+      "style": "villain",
+      "at": "「いや。今ここで消せ」",
+      "text": "「今ここで消せ」"
+    },
+    {
+      "style": "hero",
+      "at": "「警察を呼んでください。防犯カメラも、一緒に見ましょう」",
+      "text": "「一緒に見ましょう」"
+    },
+    {
+      "style": "villain",
+      "at": "「解雇通知だ」",
+      "text": "あと二日、足りない"
+    },
+    {
+      "style": "hero",
+      "at": "本日付をもって、当社の代表取締役会長に就任いたします」",
+      "text": "会長は、私でした"
+    },
+    {
+      "style": "hero",
+      "at": "それが、あなたが会社から受け取った、最後の決裁です」",
+      "text": "「最後の決裁です」"
+    }
+  ],
+  "lines": [
+    {
+      "at": "「この履歴書、冗談で書いたのか」",
+      "speaker": "villain"
+    },
+    {
+      "at": "「六十過ぎてパートしてるってことは、金には困ってんだろ。分割でいいよ、月々二万」",
+      "speaker": "villain"
+    },
+    {
+      "at": "「あの床材、届いたときから濡れていました」",
+      "speaker": "hero"
+    },
+    {
+      "at": "「注げよ。それくらいしか、できることないだろ」",
+      "speaker": "villain"
+    },
+    {
+      "at": "「三崎先生。こちらでしたか」",
+      "speaker": "hero"
+    },
+    {
+      "at": "「人違いです」",
+      "speaker": "hero"
+    },
+    {
+      "at": "「怖い人はね、たいてい、自分がいちばん怖がってるのよ」",
+      "speaker": "hero"
+    },
+    {
+      "at": "「三崎さん。その録音、消してくれ。頼む。家のローンがあるんだ」",
+      "speaker": "villain"
+    },
+    {
+      "at": "「解雇の予告手当は、いつ振り込まれますか」",
+      "speaker": "hero"
+    },
+    {
+      "at": "「告訴は、取り下げません。",
+      "speaker": "hero"
+    }
+  ]
+}

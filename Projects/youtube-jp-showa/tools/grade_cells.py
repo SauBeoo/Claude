@@ -1,0 +1,108 @@
+# -*- coding: utf-8 -*-
+"""grade_cells.py — MOT TONG MAU cho ca bai (khuon v08 ③), ap o tang CLIP truoc khi render.
+
+User 2026-09-24: "muon nguoi xem dam minh vao video hoi tuong". Video 17/18 tron 4 kieu hinh
+(anh den trang 1971 · anh mau am xanh · phim mau 1946 · AI tong vang) -> moi 6s mat phai lam quen lai.
+Moi clips/clip_NN.mp4:
+  ① can trang rieng (gray-world tren vung trung tinh, gain kep 0,85–1,18, tron 60%) — chua anh am xanh
+  ② tong chung: bot mau con ~55% + nghieng nau am + toi goc nhe + hat phim
+Ap o CLIP (khong o mp4 cuoi) de phu de + watermark van trang sach.
+Luon doc ban goc trong clips_ungraded/ (chep 1 lan) -> chay lai bao nhieu lan cung khong chong mau.
+  python tools/grade_cells.py <stem> [--jobs 2] [--only 1,5] [--sat 0.55]
+"""
+import argparse, shutil, subprocess, sys
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+import numpy as np
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+ap = argparse.ArgumentParser()
+ap.add_argument("stem"); ap.add_argument("--jobs", type=int, default=2)
+ap.add_argument("--only", default=None); ap.add_argument("--sat", type=float, default=0.70)
+ap.add_argument("--open-sec", type=float, default=60.0, help="o bat dau truoc moc nay = MO DAU: giu mau ruc")
+ap.add_argument("--open-sat", type=float, default=1.0)
+ap.add_argument("--mark-only", action="store_true", help="bootstrap: ghi mtime hien tai la da grade, khong grade lai")
+ap.add_argument("--sharpen", default="", help="o phim can lam net (khu nhieu + unsharp), vd 15,16,17")
+a = ap.parse_args()
+SHARP = {"clip_%02d.mp4" % int(x) for x in a.sharpen.split(",") if x.strip()}
+VD = Path(r"E:\Claude\Projects\youtube-jp-showa\06_VIDEO") / a.stem
+CL, BK = VD / "clips", VD / "clips_ungraded"
+BK.mkdir(exist_ok=True)
+import json as _json
+try:
+    _plan = {r["idx"]: r for r in _json.loads((CL / "_PLAN.json").read_text(encoding="utf-8"))}
+except Exception:
+    _plan = {}
+def is_open(name):
+    r = _plan.get(int(name[5:-4]))
+    return bool(r) and r["t"] < a.open_sec
+files = sorted(f for f in CL.glob("clip_*.mp4") if ".tmp" not in f.name)   # 09-29: bo file tam do lan chay bi kill de lai
+if a.only:
+    want = {"clip_%02d.mp4" % int(x) for x in a.only.split(",")}
+    files = [f for f in files if f.name in want]
+
+
+def probe(p):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(p)],
+                       capture_output=True, text=True)
+    return float(r.stdout.strip() or 0)
+
+
+def wb_gains(src, dur):
+    px = []
+    for fr in (0.25, 0.5, 0.75):
+        r = subprocess.run(["ffmpeg", "-v", "error", "-ss", "%.2f" % (dur * fr), "-i", str(src), "-frames:v", "1",
+                            "-vf", "scale=160:90", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True)
+        if r.stdout:
+            px.append(np.frombuffer(r.stdout, np.uint8).reshape(-1, 3).astype(float))
+    x = np.concatenate(px)
+    lum = x.mean(1); sat = x.max(1) - x.min(1)
+    m = (lum > 40) & (lum < 220) & (sat < 60)          # vung trung tinh: bo den/chay/mau ruc
+    if m.sum() < 300:
+        m = (lum > 40) & (lum < 220)
+    mean = x[m].mean(0)
+    g = mean.mean() / np.maximum(mean, 1)
+    g = np.clip(g, 0.85, 1.18)
+    return 1 + 0.6 * (g - 1)
+
+
+def grade(f):
+    src = BK / f.name
+    cur = f.stat().st_mtime
+    # 🔴 2026-09-29 (v21): ban sao cu KHONG duoc lam moi => o dung lai sau lan grade dau bi THAY BANG O CU, EXIT 0.
+    # So mtime clip hien tai voi mtime ta GHI lai luc grade: khac nhau = make_cells vua dung lai -> chep lam ban goc moi.
+    if not src.exists() or (f.name in REC and abs(REC[f.name] - cur) > 1e-3):
+        shutil.copy(f, src)
+    dur = probe(src)
+    r, g, b = wb_gains(src, dur)
+    pre = "hqdn3d=3:3:4:4,unsharp=7:7:1.2:7:7:0," if f.name in SHARP else ""
+    vf = (pre + "colorchannelmixer=rr=%.3f:gg=%.3f:bb=%.3f," % (r, g, b) +
+          ("eq=saturation=%.2f:contrast=1.06," % a.open_sat +       # MO DAU: mau ruc, chi am nhe
+           "colorbalance=rs=0.03:bs=-0.03:rm=0.02:bm=-0.03,vignette=PI/6,noise=alls=4:allf=t"
+           if is_open(f.name) else
+           "eq=saturation=%.2f:contrast=1.04," % a.sat +
+           "colorchannelmixer=rr=0.97:rg=0.06:gr=0.04:gg=0.95:bb=0.86:bg=0.03,"
+           "colorbalance=rs=0.05:bs=-0.05:rm=0.04:bm=-0.05,vignette=PI/5,noise=alls=6:allf=t"))
+    tmp = f.with_suffix(".tmp.mp4")
+    p = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-vf", vf, "-an", "-c:v", "libx264", "-crf", "18",
+                        "-preset", "veryfast", "-pix_fmt", "yuv420p", str(tmp)], capture_output=True, text=True)
+    if p.returncode or not tmp.exists():
+        return f.name, "LOI " + p.stderr[-200:]
+    tmp.replace(f)
+    REC[f.name] = f.stat().st_mtime
+    return f.name, "ok wb %.2f/%.2f/%.2f" % (r, g, b)
+
+
+import json as _json
+RECP = BK / "_graded.json"
+REC = _json.loads(RECP.read_text(encoding="utf-8")) if RECP.exists() else {}
+if "--mark-only" in sys.argv:          # ghi nhan trang thai HIEN TAI la da grade (bootstrap), khong grade lai
+    REC.update({f.name: f.stat().st_mtime for f in files if (BK / f.name).exists()})
+    RECP.write_text(_json.dumps(REC, indent=0), encoding="utf-8"); print("mark", len(REC)); sys.exit(0)
+with ThreadPoolExecutor(a.jobs) as ex:
+    res = list(ex.map(grade, files))
+RECP.write_text(_json.dumps(REC, indent=0), encoding="utf-8")
+bad = [x for x in res if not x[1].startswith("ok")]
+for n, s in res:
+    print(" ", n, s)
+print("KET QUA:", "SACH %d clip" % len(res) if not bad else "LOI %d" % len(bad))
+sys.exit(1 if bad else 0)

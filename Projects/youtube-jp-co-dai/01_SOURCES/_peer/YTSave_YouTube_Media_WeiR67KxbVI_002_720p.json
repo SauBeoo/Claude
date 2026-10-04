@@ -1,0 +1,41 @@
+{
+ "file": "YTSave_YouTube_Media_WeiR67KxbVI_002_720p.mp4",
+ "stem": "YTSave_YouTube_Media_WeiR67KxbVI_002_720p",
+ "views": 219782,
+ "label": "HIT-chichu",
+ "dur": 1682.3,
+ "chars": 9423,
+ "cps": 5.6,
+ "entry_s": 1647.0,
+ "entry_t": "今回の話が少しでも参考になったら、家作りや小エネルギーに関心",
+ "n_free45": 2,
+ "n_win": 7,
+ "gap_payoff_s": 30.0,
+ "n_flip": 31,
+ "first_flip_s": 18.0,
+ "n_open": 3,
+ "n_wave": 7,
+ "loop_close_pct": null,
+ "money_pct": null,
+ "cta_pct": 99,
+ "cuts": 209,
+ "cuts_per_min": 7.45,
+ "cuts_first60": 7,
+ "hold_max_s": 10.3,
+ "hold_median_s": 8.0,
+ "fails": [
+  "O1 vào bài ở ~1647s (+9095 ký quá trần 30s)",
+  "O6 giây 0–45 có 2 câu KHÔNG TRẢ TIỀN (trần 1) → đây là cái vách làm @45s tụt còn 41–50%",
+  "O11 KHÔNG thấy chỗ đóng LOOP LỚN (câu gọi lại lời hứa cold open: 「冒頭でお約束した…」) → lời hứa mở mà không đóng = mất đuôi bài",
+  "O12 KHÔNG có CÚ LẬT nào — bài đang LIỆT KÊ, không leo thang. Mỗi sóng phải bẻ một niềm tin người xem đang làm",
+  "O13 chỉ 3 câu MỞ loop / cần ≥6 (bài 28′ ≈ 7 sóng) → có sóng đóng gọn, không dẫn sang sóng kế"
+ ],
+ "warns": [
+  "O10 60s đầu chưa tuyên bố 'mẹo mạnh nhất để CUỐI' → khán giả lấy được mẹo 1 rồi bỏ đi, sàn không lên nổi",
+  "O18 KHÔNG dò được chương 「vì sao bị mất」 (dòng tiền) sau 40% bài — thiếu chương, hoặc từ vựng ngoài MONEY_CH",
+  "O14 KHÔNG thấy câu CTA (「高評価」) — CTA giữa video là bắt buộc (`cta-midvideo.md` §2.4)",
+  "O15 có 28 chỗ ≥4 câu LIỀN không trả tiền → nghi phạm, ĐỌC BẰNG MẮT: trang trí → CẮT · cơ chế → giữ. ⛔ cấm chèn số"
+ ],
+ "sheet": "E:\\Claude\\Projects\\youtube-jp-co-dai\\01_SOURCES\\_peer\\YTSave_YouTube_Media_WeiR67KxbVI_002_720p_sheet.jpg",
+ "frames": 57
+}

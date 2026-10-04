@@ -1,0 +1,50 @@
+{
+ "16": {
+  "musume": "a young woman of about twenty-three with a long narrow face, a small pointed chin, thin straight eyebrows set low over quiet deep-set eyes and pale skin, her hair set in a short neat wave, wearing a plain white round-collared blouse under a soft pale cardigan and a dark knee-length skirt",
+  "musume_kimono": "the same young woman of about twenty-three with a long narrow face, a small pointed chin, thin straight eyebrows set low over quiet deep-set eyes and pale skin, her hair pinned up, wearing a formal patterned kimono with a wide stiff sash, sitting very straight",
+  "haha": "a woman in her forties with a broad square face, high flat cheekbones, thick straight eyebrows and narrow eyes with deep smile lines at the corners, a short blunt nose, her greying hair pulled back into a low knot, wearing a plain grey wrap-around apron over a long-sleeved blouse with the sleeves held back by a cord",
+  "chichi": "a man in his forties with a lean angular face, hollow cheeks and a heavy jaw, bushy eyebrows and a high forehead with a receding hairline, wearing an open-necked shirt with the collar worn outside a dark knitted vest and loose dark trousers",
+  "nakoudo_f": "a woman in her fifties with a round full face, soft heavy jowls, thin high-arched eyebrows over small narrow eyes and a flat wide nose, her hair pinned back tight, wearing a subdued formal kimono with a dark haori jacket over it",
+  "nakoudo_m": "a man in his fifties with a wide heavy face, a thick neck and a broad flat nose, bushy eyebrows and deep lines running from the nose to the corners of the mouth, his hair oiled flat, wearing a dark double-breasted suit with wide lapels and a plain tie",
+  "muko": "a young man of about twenty-six with a soft round face, full cheeks and a weak chin, low thick eyebrows over wide-set eyes and a small mouth, his hair cut short and combed to one side, wearing a dark suit that sits slightly loose on him and a plain tie",
+  "joushi": "a man in his fifties with a long bony face, a heavy jaw and hollow temples, sparse eyebrows over heavy eyelids and grey stubble on the chin, wearing a white shirt with the sleeves rolled and a loosened tie, reading glasses pushed up on his forehead",
+  "douryou": "a young woman of about twenty-five with a small heart-shaped face, a pointed chin, high round eyebrows over large round eyes and freckles across the nose, her hair tied back with a plain band, wearing a plain blouse and a dark pinafore work apron over it",
+  "ima": "a woman in her seventies with a small thin face, deep vertical lines round the mouth, sparse grey eyebrows over heavy-lidded eyes and thin white hair combed back, wearing a plain knitted cardigan over a soft collared blouse"
+ },
+ "13": {
+  "haha": "a woman in a plain unmarked pale blue cotton apron over a plain short-sleeved summer dress, with a white cotton towel tucked into the waist",
+  "chichi": "a man in a plain white cotton undershirt and loose grey trousers",
+  "sensei": "a man in a plain white short-sleeved shirt and dark trousers",
+  "hakui": "a person in a plain white coat and a plain white cloth cap",
+  "seito": "a small figure in a plain white gym shirt and navy shorts",
+  "seito2": "a second small figure in a plain white gym shirt and navy shorts",
+  "seito2_hadaka": "a second small figure bare to the waist in plain navy shorts, his plain white gym shirt off and folded",
+  "ko": "a small figure in a plain white cotton undershirt and navy shorts, barefoot",
+  "ko2": "a second small figure in a plain sleeveless white undershirt and pale grey shorts, barefoot",
+  "akachan": "a very small figure wrapped in a plain white cotton cloth",
+  "tonari": "a woman in a plain grey summer kimono and a plain white apron",
+  "ima": "a woman in plain modern summer clothes, a plain pale short-sleeved blouse and plain dark cotton trousers",
+  "imachichi": "a man in a plain modern short-sleeved shirt and plain dark trousers"
+ },
+ "14": {
+  "oji": "a young man in a plain white short-sleeved dress shirt and dark trousers",
+  "kachou": "a man in his fifties in a plain white dress shirt and a dark tie, sleeves buttoned at the wrist",
+  "senpai": "a man in his early fifties in a plain grey work jacket over a white shirt",
+  "jimu": "a young woman in a plain white blouse and a dark skirt with a plain dark apron over it",
+  "unten": "a man in a plain grey work jacket",
+  "ima": "a woman in plain modern office clothes, a plain pale blouse and dark trousers"
+ },
+ "15": {
+  "haha": "a woman in her forties in a white long-sleeved cook's smock tied in a bow at the back, worn over a plain blouse and a dark knee-length skirt, her hair cut short in a soft perm",
+  "chichi": "a man in his forties in a white short-sleeved dress shirt with a plain narrow tie pulled loose, dark wide-legged trousers and a leather belt, his short hair combed flat",
+  "ima": "a man in his seventies in a plain knitted cardigan over a checked shirt"
+ },
+ "18": {
+  "haha": "the mother: a slim Japanese woman with a narrow oval face, high flat cheekbones, thin arched eyebrows, a small straight nose, a small mole under her left eye, dark hair pulled back into a low plain bun",
+  "chichi": "the father: a lean Japanese man with a long bony face, deep-set narrow eyes under heavy brows, a crooked nose that was once broken, a wide thin-lipped mouth, close-cropped hair",
+  "ani": "the elder son: a thin Japanese boy of fifteen with a round face, thick straight eyebrows, slightly protruding ears, a short buzz cut",
+  "ane": "the daughter: a Japanese girl of fifteen with a soft round face, dimpled cheeks, single-lidded eyes, a small chin, black hair in two short braids",
+  "sue": "the youngest son as a child: a small Japanese boy with big ears, a wide forehead, a gap in his front teeth, a straight bowl haircut",
+  "sue_old": "the youngest son today: a Japanese man in his late sixties with a wide forehead, big ears, thinning grey hair combed back, heavy-framed reading glasses"
+ }
+}

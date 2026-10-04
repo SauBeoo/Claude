@@ -1,0 +1,509 @@
+[
+ {
+  "match": "毎日のように食べている、キャベツ",
+  "photo": true,
+  "q": "green cabbage head fresh market"
+ },
+ {
+  "match": "その隣に何を置くかで",
+  "photo": true,
+  "q": "cutting cabbage cutting board"
+ },
+ {
+  "match": "夕食のあと、胃が重くて",
+  "photo": true,
+  "q": "used dinner plates on table after meal evening"
+ },
+ {
+  "match": "朝、目は覚めているのに",
+  "photo": true,
+  "q": "bright kitchen morning sunlight window"
+ },
+ {
+  "match": "原因は、キャベツではありません",
+  "photo": true,
+  "q": "green cabbage cutting board knife"
+ },
+ {
+  "match": "今日は、キャベツと組ませたい相手を、三つ",
+  "photo": true,
+  "q": "green cabbage cut half"
+ },
+ {
+  "match": "もったいない相手の二つ目は",
+  "photo": true,
+  "q": "electric fan japanese tatami room summer"
+ },
+ {
+  "match": "夕食のお椀の中の、あの白い相棒です",
+  "photo": true,
+  "q": "silken tofu block white plate",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "キャベツと豆腐の、お味噌汁",
+  "photo": true,
+  "q": "miso soup tofu bowl steam",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "年齢を重ねると、胃酸の出が",
+  "photo": true,
+  "q": "empty rice bowl and chopsticks after meal table",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "キャベツのビタミンユーが",
+  "photo": true,
+  "q": "cabbage leaf green texture",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "そして豆腐は、大豆のたんぱく質が",
+  "photo": true,
+  "q": "cold tofu dish japanese",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "この二人が並ぶと",
+  "photo": true,
+  "q": "chopped cabbage bowl shredded",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "山形にお住まいの、早瀬富美子さん",
+  "photo": true,
+  "q": "clothing boutique storefront vintage",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "レジの横に置いていた古いラジオ",
+  "photo": true,
+  "q": "retro radio on wooden shelf indoor",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "パンにハムをはさむだけの夜",
+  "photo": true,
+  "q": "simple sandwich ham plate",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "一人分のお味噌汁って",
+  "photo": true,
+  "q": "single bowl of miso soup on empty table",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "お母さん、顔色、疲れてるよ",
+  "photo": true,
+  "q": "young hand holding elderly hand close up",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "そこで始めたのが、毎晩の",
+  "photo": true,
+  "q": "senior woman cooking soup",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "キャベツを小さめに切って",
+  "photo": true,
+  "q": "hands chopping cabbage into small pieces knife",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "二週間ほどで",
+  "photo": true,
+  "q": "warm evening home lamp",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "豆腐は、木綿より、やわらかい絹ごしを",
+  "photo": true,
+  "q": "fresh tofu block white water",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "胃が軽いまま眠りにつけると",
+  "photo": true,
+  "q": "senior woman awake night bed",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "たくさん詰め込むことより",
+  "photo": true,
+  "q": "notebook writing tea kitchen table",
+  "rank": "相性がいい １"
+ },
+ {
+  "match": "皆さん、こんにちは",
+  "photo": true,
+  "q": "japanese woman in apron cooking in kitchen"
+ },
+ {
+  "match": "皆さんと同じように、毎日、台所に立っている",
+  "photo": true,
+  "q": "notebook pen lamp wooden desk warm"
+ },
+ {
+  "match": "今日は、どちらの都道府県から",
+  "photo": true,
+  "q": "senior woman smartphone home sofa"
+ },
+ {
+  "match": "あの淡い葉に、ビタミンシーが",
+  "photo": true,
+  "q": "cabbage leaves macro close up green texture"
+ },
+ {
+  "match": "一玉、百数十円",
+  "photo": true,
+  "q": "green cabbage heads at vegetable market"
+ },
+ {
+  "match": "キャベツは、いわば、名脇役の役者です",
+  "photo": true,
+  "q": "theater stage spotlight"
+ },
+ {
+  "match": "さて、二人目は、朝の相棒です",
+  "photo": true,
+  "q": "breakfast table morning light bread",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "卵です",
+  "photo": true,
+  "q": "fresh eggs basket brown",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "眠っているあいだも、体は",
+  "photo": true,
+  "q": "morning sunrise window",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "そしてキャベツの繊維が、座布団の役を",
+  "photo": true,
+  "q": "boiled eggs breakfast protein",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "朝の血糖が急な坂を",
+  "photo": true,
+  "q": "green rolling hills gentle slope morning",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "キャベツをひとつかみ、小さく切って",
+  "photo": true,
+  "q": "fried egg frying pan closeup",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "味は、お醤油をひとたらしで",
+  "photo": true,
+  "q": "healthy meals variety table dishes",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "変えてから、午前中の買い物が楽になって",
+  "photo": true,
+  "q": "asian senior woman walking with shopping bag street",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "卵は一日一個まで",
+  "photo": true,
+  "q": "eggs carton dozen kitchen",
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "厚生労働省も、にせんじゅうごねん",
+  "photo": false,
+  "lines": [
+   "厚生労働省",
+   "「日本人の食事摂取基準」",
+   "2015年版で",
+   "コレステロールの",
+   "上限の目安を撤廃"
+  ],
+  "rank": "相性がいい ２"
+ },
+ {
+  "match": "コメント欄に、数字の「に」を",
+  "photo": true,
+  "q": "elderly hands typing laptop home"
+ },
+ {
+  "match": "台所の戸棚で、静かに出番を待っています",
+  "photo": true,
+  "q": "kitchen pantry cupboard shelf home",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "さばの水煮缶です",
+  "photo": true,
+  "q": "canned mackerel fish open can",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "小さな炎症がくすぶり",
+  "photo": true,
+  "q": "embers glowing fire dark",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "イーピーエーや、ディーエイチエー",
+  "photo": true,
+  "q": "mackerel fish fresh blue market",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "缶詰の、いちばんの取り柄は",
+  "photo": true,
+  "q": "canned food cans on kitchen pantry shelf",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "選ぶなら、食塩不使用の水煮を",
+  "photo": false,
+  "lines": [
+   "さば缶の選び方",
+   "食塩不使用の水煮が一番",
+   "ふつうの水煮なら",
+   "汁を少し残す"
+  ],
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "キャベツを手でちぎって、お皿に広げて",
+  "photo": true,
+  "q": "shredded cabbage on white plate",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "その上に、さばの水煮をのせて",
+  "photo": true,
+  "q": "japanese breakfast grilled fish set",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "キャベツは、火の通し方ひとつで",
+  "photo": true,
+  "q": "steam cooking pot kitchen",
+  "rank": "相性がいい ３"
+ },
+ {
+  "match": "ここまで聞いてくださって",
+  "photo": true,
+  "q": "teapot pouring green tea cup"
+ },
+ {
+  "match": "一つ目は、お酒です",
+  "photo": true,
+  "q": "sake bottle cup japanese drink",
+  "rank": "気をつけたい １"
+ },
+ {
+  "match": "居酒屋で、お通しに",
+  "photo": true,
+  "q": "beer glass bar table japanese",
+  "rank": "気をつけたい １"
+ },
+ {
+  "match": "キャベツが守れるのは、胃までです",
+  "photo": false,
+  "lines": [
+   "キャベツが守れるのは",
+   "胃まで",
+   "お酒の後始末は",
+   "肝臓の仕事"
+  ],
+  "rank": "気をつけたい １"
+ },
+ {
+  "match": "肝臓はアルコールを分解して",
+  "photo": true,
+  "q": "liver anatomy human model",
+  "rank": "気をつけたい １"
+ },
+ {
+  "match": "キャベツは、上等な雨合羽のようなものです",
+  "photo": true,
+  "q": "rain raincoat umbrella street",
+  "rank": "気をつけたい １"
+ },
+ {
+  "match": "三本の方は、二本に",
+  "photo": true,
+  "q": "sake tokkuri cup japanese table",
+  "rank": "気をつけたい １"
+ },
+ {
+  "match": "千切りキャベツを、山のように添えて",
+  "photo": true,
+  "q": "shredded green cabbage fresh",
+  "rank": "気をつけたい １"
+ },
+ {
+  "match": "たっぷりのお湯で長く茹でると",
+  "photo": true,
+  "q": "boiling pot vegetables water stove",
+  "rank": "火の通し方 １"
+ },
+ {
+  "match": "五分茹でると、およそ四割が",
+  "photo": false,
+  "lines": [
+   "ゆでる 五分",
+   "ビタミンCが約4割",
+   "蒸す 五分",
+   "失われるのは約1割",
+   "（日本食品標準成分表）"
+  ],
+  "rank": "火の通し方 １"
+ },
+ {
+  "match": "白状しますと、私、その茹で汁を",
+  "photo": true,
+  "q": "water running into stainless kitchen sink",
+  "rank": "火の通し方 １"
+ },
+ {
+  "match": "一つ目のコツは、蒸すことです",
+  "photo": true,
+  "q": "steamed vegetables basket home",
+  "rank": "火の通し方 １"
+ },
+ {
+  "match": "お皿にキャベツをのせて、ふんわり覆いをして",
+  "photo": true,
+  "q": "microwave oven kitchen counter home",
+  "rank": "火の通し方 １"
+ },
+ {
+  "match": "甘いのです",
+  "photo": true,
+  "q": "steamed cabbage plate simple",
+  "rank": "火の通し方 １"
+ },
+ {
+  "match": "二つ目のコツは、少しの油で",
+  "photo": true,
+  "q": "stir fried cabbage pan",
+  "rank": "火の通し方 ２"
+ },
+ {
+  "match": "蒸すのは、ビタミンシーと胃をいたわる日の顔",
+  "photo": false,
+  "lines": [
+   "蒸す",
+   "ビタミンCと胃にやさしい日",
+   "少しの油で炒める",
+   "カロテンを迎えにいく日"
+  ],
+  "rank": "火の通し方 ２"
+ },
+ {
+  "match": "こんどはコメント欄に、数字の「さん」を",
+  "photo": true,
+  "q": "hands holding smartphone typing message close up"
+ },
+ {
+  "match": "キャベツと、冷たすぎる果物です",
+  "photo": true,
+  "q": "sliced chilled melon and peach on plate",
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "そこへ、生のキャベツのサラダを添えて",
+  "photo": true,
+  "q": "green cabbage coleslaw salad white plate simple",
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "温度です",
+  "photo": true,
+  "q": "ice cold water glass condensation",
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "冷たいものが入ってくると、胃は",
+  "photo": false,
+  "lines": [
+   "冷たいものが入ると",
+   "胃はいったん",
+   "動きをゆるめる",
+   "→ 食べ物が長く居座る"
+  ],
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "そして夜、横になったときに胃へ",
+  "photo": true,
+  "q": "senior bedroom night lamp restless sleep",
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "早瀬さんのお友達にも、夏はサラダと果物だけ",
+  "photo": true,
+  "q": "watermelon slices plate summer",
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "果物は、冷蔵庫から出して",
+  "photo": true,
+  "q": "ripe peaches bowl table",
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "そして食卓に、温かいお味噌汁を、一杯",
+  "photo": true,
+  "q": "hot miso soup bowl with steam close up",
+  "rank": "気をつけたい ２"
+ },
+ {
+  "match": "早瀬さんは今、こんなリズムだそうです",
+  "photo": true,
+  "q": "recipe book open kitchen vegetables"
+ },
+ {
+  "match": "お母さん、顔色、良くなったね",
+  "photo": true,
+  "q": "japanese house entrance genkan shoes"
+ },
+ {
+  "match": "それでは、今日の食べ合わせ帖を",
+  "photo": false,
+  "lines": [
+   "夜は 豆腐",
+   "朝は 卵",
+   "週に何度か さば缶",
+   "お酒のお守りにしない",
+   "冷たすぎる果物と重ねない"
+  ]
+ },
+ {
+  "match": "今夜のお椀に、キャベツと豆腐を",
+  "photo": true,
+  "q": "tofu and wakame miso soup japanese bowl"
+ },
+ {
+  "match": "そして、この動画を、離れて暮らすご家族に",
+  "photo": true,
+  "q": "dinner table set for family japanese home"
+ },
+ {
+  "match": "どうか、これまでの食べ方を、責めないでください",
+  "photo": true,
+  "q": "asian senior woman calm gentle smile"
+ },
+ {
+  "match": "今夜の食卓が、皆さんの明日の元気に",
+  "photo": true,
+  "q": "japanese dining room table evening warm light"
+ }
+]

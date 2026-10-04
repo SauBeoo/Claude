@@ -1,0 +1,268 @@
+# -*- coding: utf-8 -*-
+"""
+_scenes23.py — BẢNG SCENE của video 23 (年金請求書が届かない / 時効5年).
+
+Copy khuôn từ `_scenes22.py` (video 22). Đây là **nguồn sự thật duy nhất** cho cả ba thứ:
+số clip phải gen · lớp hình của builder · prompt. Sửa nội dung video thì sửa ở đây.
+
+CÁCH ĐỌC MỘT DÒNG:
+    (dòng_timeline_bắt_đầu, kind, telop, nội_dung)
+  · `dòng_timeline_bắt_đầu` — chỉ số dòng trong `timeline.json`. Scene kết thúc ở dòng
+    bắt đầu của scene KẾ TIẾP.
+    🔴 Neo theo CHỈ SỐ DÒNG thì vỡ IM LẶNG nếu `_TTS.md` bị sửa. `plan23` có gate
+       `len(timeline) == 124` chặn trước — đừng bỏ.
+       (`feedback_builder_neo_dong_kiem_timeline_truoc`)
+  · `kind`:
+      art     — footage Veo toàn khung. Cần ceil(giây/8,7) clip.
+      stat    — thẻ số liệu `papercut-stat`, KHÔNG footage. `nội_dung` = list dòng "nhãn|số".
+      formula — thẻ `papercut-formula`, KHÔNG footage. `nội_dung` = list dòng công thức.
+      genten  — ảnh chụp THẬT trang 年金機構/厚労省, KHÔNG footage, `motion: none`.
+      gfx     — khối THUẦN ĐỒ HOẠ, Remotion vẽ 100% bằng font. KHÔNG gen bằng Veo.
+
+⭐ ĐỒ HOẠ: `gfx` hay `art` (clip 3D của Veo)? — PHÉP THỬ LÀ **NGHĨA NẰM Ở ĐÂU**
+  · Nghĩa do **CHỮ** tải (mốc thời gian có tên, bốn lý do, ba con đường, checklist, lịch có
+    số) ⇒ **gfx**. Veo không viết nổi tiếng Nhật, nó trả về hộp màu + chữ giả; font thì luôn
+    sắc và luôn ĐÚNG nội dung.
+  · Nghĩa do **HÌNH + CHUYỂN ĐỘNG** tải (đồng hồ cát chảy, cổng chặn dòng, kim đồng hồ đo
+    nằm im, khối lún xuống từng cái) ⇒ **art khuôn META/GAUGE**, Veo dựng **illustration 3D**.
+    Không có chữ nào trong khung ⇒ không chạm vùng Veo hỏng.
+  🔴 Bản đầu của bảng này đẩy CẢ 13 khối đồ hoạ về `gfx` ⇒ **0 cảnh 3D**, mất đúng lớp mà
+     mẫu ngách dùng để kể phần trừu tượng (user bắt 2026-09-12: *"có những cảnh 3d nhé"*).
+     Mẫu TRỘN HAI STYLE — photoreal cho người, 3D cho khối siêu thực — và đó chính là cách
+     nó giữ được luật ⛔BỎ ANIME mà vẫn kể được ẩn dụ.
+  · `telop` — chữ to đè lên. `{...}` = cụm nhấn màu. ⚠️ Trần 11 ký/dòng, xuống dòng bằng \n.
+
+⚖️ YMYL: mọi con số ở `stat`/`formula` đều lấy TỪ CHÍNH LỜI ĐỌC. Phép chia
+   156万 ÷ 48 ≒ 3万2千 là tính lại từ hai số đã có trong script, không phải số bịa.
+"""
+
+A, S, G, X, F = "art", "stat", "genten", "gfx", "formula"
+
+# ⭐ CHÍNH SÁCH SỐ THEO TỪNG SCENE (bài học 12 của lượt t2v video 22).
+# Video 22 nhét MỘT cặp số vào 22/62 khe kể cả scene không nói về tiền ⇒ model coi số là
+# hoa văn rồi bóp méo (36,0000 · 1800000 · 180,00円). Lần này khai TỪ ĐẦU:
+#   "PAIR"  — scene so hai lần/hai vế → hai dòng GIỐNG HỆT nhau
+#   "ONE:x" — scene nói đúng một số → đúng một dòng, CẤM bản sao thứ hai
+#   (không khai) — scene không nói về tiền → giấy/màn hình vẫn kín chữ nhỏ, KHÔNG số to
+# 🔴 Chỉ dùng số CÓ THẬT trong bài: 1,560,000 (百五十六万円) · 32,000 (三万二千円).
+# 🔴 KHOÁ LÀ **CHỈ SỐ SCENE** (vị trí trong SCENES), KHÔNG phải số dòng timeline — hai cái
+#    chỉ trùng nhau ở đầu bảng rồi lệch dần. Và chỉ được khai cho scene `art` khuôn
+#    **SCREEN/HOLD** (khuôn duy nhất có mặt phẳng để in số); khai cho PERSON/gfx/formula thì
+#    mệnh đề số rơi vào hư không — gate `plan23` GATE 6 chặn cứng, đừng bỏ.
+# ⚠️ 三万二千円 CỐ Ý không có ở đây: nó chỉ xuất hiện trên thẻ `papercut-formula` do Remotion
+#    vẽ bằng font ⇒ luôn sắc và luôn đúng. Veo không cần vẽ con số đó ở đâu cả.
+# ⛔ RỖNG TỪ 2026-09-12 — đường COLLAGE cấm mọi chữ/số trong khung (GUARD ở `beats23.py`),
+#    nên không còn mặt phẳng nào để in số lên. Số chốt do `papercut-stat`/telop của Remotion
+#    vẽ bằng font ⇒ luôn sắc, luôn đúng — chính là khuôn `feedback_so_tren_hinh_phai_do_font_ve`.
+#    Giữ dict rỗng (không xoá tên) vì `flow23_full`/`check_flow23` của đường photoreal cũ còn import.
+NUM = {}
+
+SCENES = [
+    # ── COLD OPEN 0-90s: あなた@0s · stake@0s · lộ trình@0:54 ───────────────
+    (0,   A, "請求しないと{0円}",   "VIZ: a bank passbook cut from cream card lying open, every printed entry line torn away so the column is bare, and beside it a taped paper arrow pointing into an empty cut-out box where the money should be"),
+    (1,   A, "窓口で{言われた}",     "CROWD: a public service counter built from flat paper panels, a clerk cut-out sliding a plain document across it toward a seated elderly visitor, a row of waiting cut-out figures behind"),
+    (2,   A, "四年で{156万円}",      "VIZ: on the left four torn calendar sheets stacked in a leaning pile, on the right a tall banded stack of paper banknotes of almost the same height, and bare newsprint between them with nothing joining the two"),
+    (3,   A, "あと{二か月}だった",   "VIZ: a long paper strip carrying a row of identical small cut-out coins running across the frame, and a pair of scissors cut from steel-grey card poised open over the strip two coins from its end"),
+    (4,   A, "聞いた{覚えがない}",   "an elderly man sits at the table with both forearms resting on it and turns his face toward the camera"),
+    (5,   A, "紙を出して{動く}",     "META: a paper envelope slides into a slot in a flat machine built from layered card, and behind the slot a row of cut-out paper gears begins to turn"),
+    (6,   X, "今日は{三つ}",         "INFOG: three rounded blocks stacked vertically, each carrying one simple line icon, the blocks fading in one after another from top to bottom"),
+    (7,   X, "まず{事実}から",       "INFOG: a horizontal timeline with five evenly spaced round milestones that light up one after another from left to right"),
+    (8,   A, "{研究室}です",         "DESK: a paper desk seen flat-on, covered with cut-out research tools — a magnifier, a folded ruler, a stack of plain documents and a small lamp, all in torn card"),
+    (9,   A, "{はがき}一枚で",       "META: a channel of cut-out coins flows steadily from left to right, a single small postcard drops into a slot above it, and a plain paper gate swings down across the channel and stops the flow dead"),
+
+    # ── ①いつ、誰に届くのか ─────────────────────────────────────────────────
+    (10,  A, "{年金請求書}",         "HOLD: a large official envelope cut from cream card held up square-on to the camera, its address window a bare rectangle, tape across both corners"),
+    (11,  G, "{原典}で確かめる",     "nenkin_soufu"),
+    (12,  S, "いつ届くのか",         ["届く時期|三か月前から",
+                                      "あて先|ご本人あて",
+                                      "*送り主|日本年金機構"]),
+    (13,  A, "中身は{印刷済み}",     "VIZ: an opened paper form lying flat with five ruled boxes, each box already filled by a solid bar of charcoal ink, a strip of tape across the head of the sheet"),
+    (14,  A, "記録は{向こうに}",     "VIZ: a tall filing cabinet cut from grey card standing open on one side, its drawer pulled out and packed edge to edge with identical blank paper record cards"),
+    (15,  A, "記録と{振込は別}",     "SPLIT: two paper boxes side by side — the left one crammed with blank record cards, the right one completely empty — and the bare newsprint gap between them crossed by nothing at all"),
+    (16,  A, "出さないと{0円}",      "HOLD: an elderly man holds a plain printed form flat in one hand and points at it with the other"),
+    (17,  A, "届けば{大丈夫}？",     "an elderly woman leans forward slightly over the table, her face turned toward the camera"),
+    (18,  A, "届かない人が{いる}",   "CROWD: the public lobby of a Japanese post office, several elderly customers queuing at the counter, two clerks working behind it"),
+
+    # ── ②あなたの数字 + 時効 (PAYOFF:数字 ~25%) ────────────────────────────
+    (19,  A, "{あなたの数字}",       "DESK: an elderly woman sits at the table with a pocket calculator in front of her, one hand resting beside it"),
+    (20,  S, "権利の時効",           ["権利が生まれて|五年",
+                                      "国民年金法|第百二条",
+                                      "*厚生年金保険法|第九十二条"]),
+    (21,  A, "全部{消える}？",       "VIZ: two heavy law volumes cut from dark card standing open side by side, a torn ribbon bookmark hanging from each"),
+    (22,  A, "消えかたは{静か}",     "META: two tall hourglasses stand side by side on a plain surface, sand running slowly in both, the left one a little further through than the right"),
+    (23,  A, "ひと月{ずつ}",         "META: twelve small solid blocks stand in a neat row on a plain surface, and one block at the left end slowly sinks away below the surface while the other eleven stay perfectly still"),
+    (24,  A, "四年分{156万円}",      "VIZ: forty-eight tiny identical paper coins laid out in four neat rows of twelve on bare newsprint"),
+    (25,  F, "ひと月あたり",         ["百五十六万円 ÷ 四十八か月 ≒ 三万二千円"]),
+    (26,  A, "近づく{期限}",         "VIZ: a row of twelve small coin stacks of equal height standing on a table, with a plain desk calendar propped up behind them"),
+    (27,  A, "遅れるたび{減る}",     "VIZ: a row of cut-out coins riding a paper conveyor strip, the leading coin tipping over the edge into a torn dark gap"),
+    (28,  A, "あなたなら{いくら}",   "DESK: an elderly man sits at the table with a pocket calculator and an open notebook in front of him, looking down at them"),
+
+    # ── ③届かない四つの理由 ─────────────────────────────────────────────────
+    (29,  X, "届かない{四つ}",       "INFOG: one rounded block at the top splitting into four smaller blocks below it, each small block carrying a different simple line icon, the four appearing one after another"),
+    (30,  A, "①{十年}足りない",      "VIZ: one envelope at the top of the frame and four torn paper paths running down from it, three ending in bare cut-out boxes and the fourth crossed over with a strip of tape"),
+    (31,  A, "届くのは{お知らせ}",   "HOLD: an elderly woman holds a single plain postcard up in one hand, the card turned square-on to the camera"),
+    (32,  A, "あきらめる{しかない}？", "an elderly man cut-out with his shoulder strips dropped and his head lowered a few degrees"),
+    (33,  A, "そこが{逆}です",       "an elderly woman lifts one open palm toward the camera, her expression bright"),
+    (34,  S, "はがきに書いてあること", ["ひとつ|加入期間の確認",
+                                      "*ふたつ|任意加入のご案内"]),
+    (35,  A, "{六十歳}を過ぎても",   "CROWD: the reception counter of a ward office, two uniformed clerks standing behind it, an elderly couple standing in front of them"),
+    (36,  A, "間に合う{んですね}",   "an elderly man raises his chin and lets out a long breath, facing the camera"),
+    (37,  A, "申し出た{ときだけ}",   "HOLD: an elderly woman holds a plain application form flat in both hands, the sheet square-on to the camera"),
+    (38,  G, "{厚労省}はこう書く",   "mhlw_10nen"),
+    (39,  A, "{二十五年}で諦めた",   "VIZ: a long paper bar running across the frame with a clean scissor cut a third of the way along it, the severed longer piece lying discarded beside it"),
+    (40,  S, "はがきは二回届く",     ["一回目|六十歳の三か月前",
+                                      "二回目|六十五歳の三か月前",
+                                      "*脇に置くと|二回とも逃す"]),
+    (41,  A, "機会は{二回}",         "VIZ: two plain postcards lying flat side by side on a table, a small desk calendar standing upright behind each of them"),
+    (42,  A, "薄い紙を{後回し}",     "an elderly woman lowers her chin and looks down at the table top"),
+    (43,  A, "厚みで{判断しない}",   "SPLIT: an elderly man sits at a bright counter with one thick envelope and one thin postcard lying flat in front of him, looking down at them"),
+    (44,  A, "②記録が{共済}",        "VIZ: two different paper letterheads pinned side by side, each a plain block of a different colour, a taped arrow running from the second one out toward the frame edge"),
+    (45,  A, "差出人が{ちがう}",     "CROWD: the mail sorting area of a Japanese post office, three staff members working at a long counter stacked with trays of envelopes"),
+    (46,  A, "③{住所}がちがう",      "VIZ: an envelope bouncing off the door of a paper house and flying back, while a second house of a different cut-out shape stands further along with an empty step"),
+    (47,  A, "引っ越しの{届出}",     "CROWD: the resident registration counter of a ward office, a female clerk talking with an elderly man, other visitors seated on chairs behind"),
+    (48,  A, "転送が{あれば}？",     "an elderly man turns his head toward the camera, his brows pulling together"),
+    (49,  S, "郵便の転送",           ["転送の期限|一年",
+                                      "切れていれば|そこで止まる",
+                                      "*年金の住所変更|それとは別"]),
+    (50,  A, "④{海外}にお住まい",    "CROWD: the departure lobby of a Japanese airport, travellers with suitcases crossing the frame, a large information board on the wall"),
+    (51,  A, "当てはまるものは",     "DESK: an elderly woman sits at the table with four plain envelopes laid out in a row in front of her, looking down at them"),
+
+    # ── ④届かなかったら ────────────────────────────────────────────────────
+    (52,  A, "{三つ目}です",         "DESK: an elderly man sits at the table with a teacup beside him, looking toward the camera"),
+    (53,  A, "{再送付}できません",   "HOLD: an elderly woman holds a plain printed form up in one hand and holds her other palm out flat toward the camera"),
+    (54,  G, "機構は{こう書く}",     "nenkin_saisoufu"),
+    (55,  A, "どうすれば{いい}？",   "an elderly man lifts both open palms a little way from the table, facing the camera"),
+    (56,  X, "道は{三つ}",           "INFOG: one rounded block on the left with three thin arrows running from it to three separate blocks on the right, each block carrying a different simple line icon"),
+    (57,  A, "①{様式第百一号}",      "SCREEN: a large monitor stands square-on on a desk, an elderly man sits in front of it with his chin lifted, studying the screen"),
+    (58,  A, "②{電話}をかける",      "an elderly woman holds a desk telephone handset to her ear, her other hand resting on the table"),
+    (59,  A, "③{年金事務所}へ",      "CROWD: the waiting hall of a Japanese social insurance office, many elderly people seated in rows of chairs, the reception counter behind them"),
+    (60,  S, "三つの道",             ["①|様式をダウンロード",
+                                      "②|ねんきんダイヤルに電話",
+                                      "*③|年金事務所で受け取る"]),
+
+    # ── CTA ~49% ───────────────────────────────────────────────────────────
+    (61,  A, "{応援}おねがいします", "an elderly couple sit side by side at a low table and both nod once toward the camera"),
+
+    # ── ⑤佐藤さん + 特別支給 ───────────────────────────────────────────────
+    (62,  A, "冒頭の{かた}",         "DESK: an elderly woman sits at the table with an open notebook in front of her, looking down at it"),
+    (63,  A, "仙台の{佐藤さん}",     "an elderly woman sits at a low table with a teacup beside her, looking calmly toward the camera"),
+    (64,  A, "知らないまま{四年}",   "VIZ: four plain desk calendars standing upright in a row on a table, each one a little more worn than the last"),
+    (65,  A, "時効まで{二か月}",     "SCREEN: a monitor stands square-on on a desk, an elderly woman sits in front of it with both hands on the desk, looking at the screen"),
+    (66,  A, "「頭が{いっぱい}で」", "an elderly woman lowers her eyelids for a moment, her shoulders settling as she breathes out"),
+    (67,  A, "制度は{待たない}",     "CROWD: the large hall of an administrative centre, many elderly people queuing at the counters, a large clock high on the wall"),
+    (68,  A, "二か月{遅れたら}",     "SPLIT: an elderly man leans back at a bright counter, one hand rising to chest height, frozen in surprise"),
+    (69,  A, "一部は{消えていた}",   "VIZ: a tall stack of banded ten-thousand-yen notes on a table with a small separate pile of the same notes set apart from it"),
+    (70,  A, "どうして{起きる}？",   "an elderly man tilts his head and turns his face toward the camera"),
+    (71,  A, "特別支給の{特徴}",     "SCREEN: a large monitor stands square-on on a table, an elderly man sits beside it with his body turned toward the screen"),
+    (72,  G, "機構は{こう書く}",     "nenkin_tokubetsu"),
+    (73,  A, "待っても{増えない}",   "GAUGE: a large semicircular gauge dial standing on a plain floor, its needle resting flat in the middle of the arc and staying there, no people in frame"),
+    (74,  A, "{65歳}からは増える",   "SCREEN: a wide monitor stands square-on on a desk, a young female clerk stands beside it and points at the upper right of the screen"),
+    (75,  A, "前の年金は{ちがう}",   "SPLIT: on the left a rising stair of paper blocks, on the right a perfectly flat row of identical blocks with a pair of scissors closing on its far end"),
+    (76,  A, "同じなのに{逆}",       "an elderly woman widens her eyes and lets her mouth fall open, facing the camera"),
+    (77,  S, "混同しやすいところ",   ["六十五歳から|待てば増える",
+                                      "六十五歳より前|待っても増えない",
+                                      "*進むのは|時効だけ"]),
+    (78,  A, "やむを得ない{事情}",   "CROWD: a consultation room in a public office, three desks in a row, at each desk a clerk talking with an elderly visitor"),
+    (79,  A, "記録の{訂正}なら",     "SCREEN: a monitor stands square-on on a low cabinet, an elderly man sits beside it leaning slightly forward toward the screen"),
+    (80,  A, "諦める前に{相談}",     "CROWD: a procedure briefing in a community hall, many elderly people seated in rows, a staff member standing at the front explaining"),
+
+    # ── ⑥65歳のはがき (PAYOFF:答え ~71%) ───────────────────────────────────
+    (81,  A, "あの{一枚}のはがき",   "HOLD: an elderly woman holds a single plain postcard up beside her face, the card turned square-on to the camera"),
+    (82,  A, "{誕生月}のはじめ",     "VIZ: a plain desk calendar standing upright on a table with a single small marker clipped to one of its early days"),
+    (83,  X, "期限は{末日}",         "INFOG: a flat month calendar grid, the last cell of the grid marked with an accent ring, the other cells staying plain"),
+    (84,  A, "出し忘れると？",       "an elderly man raises both hands to the sides of his head, facing the camera"),
+    (85,  G, "機構は{こう書く}",     "nenkin_horyu"),
+    (86,  A, "{一時保留}される",     "META: a wide flat channel with a small block sliding along it, a plain gate swinging down across the channel and holding the block still"),
+    (87,  A, "年金が{止まる}",       "SCREEN: a large monitor stands square-on on a table, an elderly woman sits in front of it with one hand covering her mouth"),
+    (88,  S, "封書とのちがい",       ["封書|新しくもらう手続き",
+                                      "はがき|いまのお金が止まる",
+                                      "*重さが|まるでちがう"]),
+    (89,  A, "{例外}がひとつ",       "SCREEN: a monitor stands square-on on a desk, an elderly man sits in front of it with one arm on the desk, looking at the screen"),
+    (90,  A, "片方だけなら{印}",     "HOLD: an elderly woman holds a plain postcard flat in one hand and points at one corner of it with the other"),
+
+    # ── ⑦出すときの実務 ────────────────────────────────────────────────────
+    (91,  A, "実際に{出すとき}",     "DESK: an elderly man sits at the table with a stack of paperwork and a teacup in front of him, one hand resting on the table"),
+    (92,  X, "{前日}以降から",       "INFOG: a horizontal timeline with two adjacent round milestones, the left one marked with an accent ring and the right one plain, a thin arrow running between them"),
+    (93,  A, "前の日{から}？",       "an elderly woman tilts her head, her brows drawing together, facing the camera"),
+    (94,  A, "前日に{年をとる}",     "CROWD: the reception counter of a social insurance office, three uniformed clerks standing behind it, several elderly visitors queuing in front"),
+    (95,  G, "機構は{こう書く}",     "nenkin_zenjitsu"),
+    (96,  S, "持っていくもの",       ["①|戸籍謄本か住民票",
+                                      "②|ご本人名義の通帳",
+                                      "*通帳は|コピーでも可"]),
+    (97,  S, "書類の条件",           ["発行|権利発生日より後",
+                                      "有効|提出日から六か月以内",
+                                      "*古いと|取り直しになる"]),
+    (98,  A, "出した{あと}は",       "DESK: an elderly woman sits at the table with a sealed envelope lying flat in front of her, both hands resting beside it"),
+    (99,  A, "すぐには{来ない}",     "an elderly man lets his shoulders drop and lowers his head forward, facing the camera"),
+    (100, A, "まず{年金証書}",       "HOLD: an elderly man holds a single plain certificate sheet up in both hands, the sheet square-on to the camera"),
+    (101, A, "どのくらい{かかる}？", "an elderly woman rests one palm on the table top and turns her face toward the camera"),
+    (102, S, "振込までの時間",       ["年金証書・決定通知書|一〜二か月",
+                                      "そこから振込まで|一〜二か月",
+                                      "*合わせて|二〜四か月"]),
+    (104, G, "{偶数月}の十五日",     "nenkin_shiharai"),
+    (105, A, "生活費の{空白}",       "DESK: an elderly couple sit side by side at the table with an open household account book in front of them, both looking down at it"),
+
+    # ── 研究ノート + 三つの確認 ────────────────────────────────────────────
+    (106, A, "今日の{研究ノート}",   "DESK: an elderly man sits at the table with an open notebook and a teacup in front of him, looking down at the page"),
+    (107, S, "研究ノート{前半}",     ["一|三か月前から本人あてに届く",
+                                      "*二|届かない理由は四つ"]),
+    (109, S, "研究ノート{後半}",     ["三|再送付はできない",
+                                      "四|時効はひと月ずつ来る",
+                                      "*五|はがきを忘れると年金が止まる"]),
+    (112, A, "控えて{おきます}",     "an elderly woman nods slowly once, her chin dipping toward her chest"),
+    (113, X, "三つだけ{確かめる}",   "INFOG: three check blocks stacked vertically, each with one simple line icon and an empty square at the start of the line, the blocks appearing one after another"),
+    (114, S, "確かめる三つ",         ["ひとつ|受給開始年齢は何歳か",
+                                      "ふたつ|年金の住所変更は出したか",
+                                      "*みっつ|六十〜六十五歳の家族はいるか"]),
+    (117, X, "{令和八年九月}時点",   "INFOG: three groups of round icons arranged in a horizontal row, each group in a different pastel colour, joined by thin connector lines"),
+    (118, A, "{チャンネル登録}",     "an elderly couple sit side by side and both turn to face the camera"),
+    (119, A, "さて{次回}です",       "DESK: an elderly man sits at the table and leans slightly toward the camera"),
+    (120, A, "福岡の{伊藤さん}",     "CROWD: a small Japanese coffee shop seen from inside, an elderly master standing behind the counter, a few customers at the tables"),
+    (121, A, "取り逃しは{いくつ}",   "VIZ: five small wooden blocks of descending height standing in a row on a table, the tallest on the left, each block wide and flat-bottomed"),
+    (122, A, "一年分を{計算}",       "DESK: an elderly man sits at the table with a pocket calculator and a stack of receipts in front of him, one hand resting beside them"),
+    (123, A, "また{次回}",           "an elderly couple sit side by side and both bow their heads slightly"),
+]
+
+
+# ── ẢNH 原典 ────────────────────────────────────────────────────────────────
+# 🔴 CHƯA CHỤP = CHƯA CÓ NGUỒN. Ở video 22 tao đã BỊA 3 URL và cả ba đều 404; chỉ lộ khi
+#    chụp màn hình thật. ⇒ Ô `url` để None nghĩa là **chưa verify**; bước 6.7 của pipeline
+#    (`chrome-headless-shell` → đọc bằng mắt → chốt toạ độ) phải chạy TRƯỚC khi dựng thẻ.
+#    `plan23` chỉ gác "khoá có tồn tại", KHÔNG gác nội dung — đừng tưởng gate xanh là đã có ảnh.
+#
+# (khoá): (URL, câu cần khoanh, file ảnh đã chụp, vùng y trong ảnh gốc)
+GENTEN = {
+    # ✅ ĐÃ VERIFY + ĐÃ CHỤP ở video 22 — dùng lại cho khối 偶数月の十五日
+    "nenkin_shiharai": (
+        "https://www.nenkin.go.jp/section/faq/jukyu/uketori/uketori/shiharaiduki/20140421-01.html",
+        "年金は偶数月の15日に前2か月分が支払われる", "raw_shiharai.png", (820, 1170)),
+
+    # ⏳ CHƯA CHỤP — 5 thẻ dưới đây phải qua bước 6.7 trước khi dựng
+    "nenkin_soufu":     (None, "受給開始年齢に到達する3か月前に本人あてに送付", None, None),
+    "mhlw_10nen":       (None, "平成29年8月1日から資格期間25年が10年に短縮", None, None),
+    "nenkin_saisoufu":  (None, "年金請求書は再送付できない", None, None),
+    "nenkin_tokubetsu": (None, "特別支給の老齢厚生年金に繰下げ制度はない・速やかに請求", None, None),
+    "nenkin_horyu":     (None, "はがきの提出がないと年金の支払いが一時保留される", None, None),
+    "nenkin_zenjitsu":  (None, "請求できるのは誕生日の前日以降", None, None),
+}
+
+
+# ── NỘI DUNG MÀN HÌNH — REMOTION VẼ, VEO KHÔNG GEN ─────────────────────────
+# Veo quay cái màn hình RỖNG (chính diện, đứng yên); Remotion dán nội dung thật vào hình
+# chữ nhật đó bằng font ⇒ chữ Nhật luôn sắc và luôn ĐÚNG. Bảng này là hợp đồng giữa hai
+# tầng: sửa nội dung màn hình thì sửa ở đây, KHÔNG sửa vào mô tả scene.
+SCREEN_FILL = {
+    2:   "một dòng giao dịch duy nhất được tô sáng giữa bảng dày đặc",
+    13:  "mẫu đơn đã in sẵn họ tên / ngày sinh / số cơ bản, các ô đã điền",
+    24:  "bảng bốn năm, mỗi năm một dòng, dòng tổng ở đáy sáng lên",
+    30:  "thanh tiến độ kỳ đóng, vạch mốc 10年 nằm phía trước đầu thanh",
+    44:  "bảng lịch sử gia nhập, dòng cuối cùng đổi màu khác các dòng trên",
+    46:  "màn hình đăng ký địa chỉ, ô địa chỉ cũ và mới xếp trên dưới",
+    57:  "trang tải biểu mẫu, một dòng trong danh sách sáng lên",
+    65:  "lịch hai tháng liền nhau, hai ô ngày cuối cùng được khoanh",
+    71:  "bảng hai cột: cột trái có dấu tích, cột phải bỏ trống",
+    74:  "biểu đồ thanh ngang: thanh trên dài dần, thanh dưới đứng yên",
+    79:  "màn hình tra cứu bản ghi, một hàng được tô sáng",
+    87:  "màn hình trạng thái chi trả, một dòng chuyển sang ô trống",
+    89:  "danh mục hai điều kiện, cả hai ô đều được tích",
+}

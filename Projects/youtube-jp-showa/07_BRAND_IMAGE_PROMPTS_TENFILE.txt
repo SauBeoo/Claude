@@ -1,0 +1,22 @@
+# Thứ tự dòng trong 07_BRAND_IMAGE_PROMPTS_FLOW.txt  ↔  tên file ảnh cần lưu
+# (07_BRAND_IMAGE_PROMPTS_PLATE.txt = bản KHÔNG chữ, chỉ dùng khi kanji gen ra nát nét)
+
+dòng 1  ->  avatar_A_terebi.png     (AVATAR ph/a A — TV gỗ, chữ 昭和 trên màn hình, nền đỏ chu sa)
+dòng 2  ->  avatar_B_denwa.png      (AVATAR ph/a B — điện thoại quay số đen, ruy-băng kem, nền vàng mù tạt)
+dòng 3  ->  avatar_C_zukan.png      (AVATAR ph/a C — sách 図鑑 đỏ thẫm + khay giấu sau, nền xanh teal)
+dòng 4  ->  brand_banner_2048.png   (BANNER 2048x1152; vùng an toàn giữa 1235x338)
+
+# Lưu vào: E:\Claude\Projects\youtube-jp-showa\09_BRAND\
+
+## 🔴 AVATAR: BẮT BUỘC CROP VUÔNG SAU KHI GEN
+# Tool luôn xuất 1376x768 (16:9) — `--ar` bị bỏ qua (media-library.md §2.10 ①).
+# Prompt đã bắt dồn bố cục vào ô vuông GIỮA khung, nên cắt giữa là đủ:
+#     crop 768x768 tại x=304, y=0  ->  resize 800x800
+#     ffmpeg -i <in>.png -vf "crop=768:768:304:0,scale=800:800" <out>_800.png
+# 🎁 Watermark ✦ nằm góc dưới-PHẢI của khung 16:9 -> rơi RA NGOÀI vùng cắt, avatar sạch sẵn.
+#    ⚠️ Vẫn phải soi 1:1 cả 4 góc bản đã cắt (media-library.md §2.10 ⑤b) — đừng tin suy luận này.
+
+## Nghiệm thu avatar (làm trước khi upload)
+# 1. Thu nhỏ về 48px VÀ 98px: còn nhận ra VẬT + đọc được 2 chữ 昭和 không?
+# 2. Che thử hình TRÒN (YouTube cắt tròn): 4 góc bị xén có mất gì quan trọng không?
+# 3. Soi từng nét kanji 昭 và 和 ở 1:1 — sai một nét là loại, gen lại.

@@ -1,0 +1,63 @@
+_TAIL = re.compile(r"[、。]")
+
+
+def _auto(text: str):
+    """Rút chữ từ chính lời đọc: mệnh đề CUỐI của câu đầu, chẻ ≤9 ký, ≤2 dòng (như telop29)."""
+    s = re.sub(r"^(?:\[[^\]]*\])+", "", text).strip().split("。")[0]
+    parts = [p for p in _TAIL.split(s) if p]
+    body = parts[-1] if parts else s
+    if len(body) < 6 and len(parts) > 1:
+        body = parts[-2] + body
+    body = body[:18]
+    if len(body) <= 9:
+        return [body]
+    cut = 9
+    for i in range(9, max(4, len(body) - 4), -1):
+        if body[i - 1] in "はがをにでとのも":
+            cut = i
+            break
+    return [body[:cut], body[cut:18]]
+
+
+def _build():
+    shots = json.loads((VD / "plan32.json").read_text(encoding="utf-8"))["shots"]
+    hit = {cue: [k for k, s in enumerate(shots) if cue in s["text"]] for cue, _ in CUES}
+    out, taken = {}, set()
+    for cue, tel in CUES:
+        for k in hit[cue]:
+            if k not in taken:
+                out[k] = tel
+                taken.add(k)
+                break
+    for k, s in enumerate(shots):
+        out.setdefault(k, dict(big=_auto(s["text"]), color=NAVY))
+    return out, hit, shots
+
+
+TELOP, _HIT, _SHOTS = _build()
+
+
+def _w(s):
+    return sum(1.0 if ord(ch) > 0x2000 else 0.55 for ch in s)
+
+
+if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    miss = [c for c, ks in _HIT.items() if not ks]
+    multi = [(c, ks) for c, ks in _HIT.items() if len(ks) > 1]
+    cued = {kk for c, _t in CUES for kk in _HIT[c][:1]}
+    nocue = [k for k, s in enumerate(_SHOTS) if re.search(r"[0-9]", s["text"]) and k not in cued]
+    longb = [(k, b) for k, t in TELOP.items() for b in t["big"] if _w(b) > 9.0]
+    longs = [(k, b) for k, t in TELOP.items() for b in t.get("sub", []) if _w(b) > 14.0]
+    many = [k for k, t in TELOP.items() if len(t.get("sub", [])) > 3 or len(t["big"]) > 2]
+    arab = sum(1 for t in TELOP.values() if re.search(r"[0-9]", "".join(t["big"] + t.get("sub", []))))
+    print(f"ô: {len(TELOP)}/{len(_SHOTS)} · cue {len(CUES)} · tự sinh {len(_SHOTS) - len(cued)}")
+    print(f"🔴 cue KHÔNG khớp ô nào: {len(miss)} {miss[:6]}")
+    print(f"⚠️ cue khớp NHIỀU ô: {len(multi)} {multi[:4]}")
+    print(f"🔴 ô CÓ SỐ mà không có cue: {len(nocue)} {nocue[:12]}")
+    print(f"🔴 dòng >9 ký: {len(longb)} {longb[:6]}")
+    print(f"🔴 thẻ phụ >14 ký: {len(longs)} {longs[:6]}")
+    print(f"🔴 >2 dòng chính / >3 thẻ: {len(many)}")
+    print(f"ô có chữ số Ả-rập: {arab}/{len(TELOP)} · ô có thẻ phụ: "
+          f"{sum(1 for t in TELOP.values() if t.get('sub'))}/{len(TELOP)}")
+    sys.exit(1 if (miss or nocue or longb or longs or many or len(TELOP) != len(_SHOTS)) else 0)

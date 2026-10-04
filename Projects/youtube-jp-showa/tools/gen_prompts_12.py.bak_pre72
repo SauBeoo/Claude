@@ -1,0 +1,436 @@
+# -*- coding: utf-8 -*-
+"""Video 12 — 昭和の夏の当たり前5つ (165 shot). Cong thuc duy nhat v2.
+
+⛔ KHONG chep hang so. STYLE / MOTION / AVOID / FRAMING / EXTRAS deu lay tu videogen_lib.
+   File nay chi khai P (boi canh) · C (cast) · CROWD (muc nguoi nen) · S (165 canh).
+
+Tre em: user chot 2026-09-11 di duong (b) — viet tu nhien, Flow chan dau thi va do
+(`04_VIDEOGEN_PROMPTS.md` §7 thang 3 nac). Van KHONG dung danh tu bi gate cam
+(child/kid/boy/girl/pupil): ta bang "a small figure in ..." dung khuon CAST BIBLE §6.
+"""
+import sys
+sys.path.insert(0, r"E:\Claude\Projects\youtube-jp-showa\tools")
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+from videogen_lib import build, gate, write_outputs, autochain, linkage, act_report
+
+# =====================================================================================
+# P — BOI CANH (mot chuoi cho moi preset, dung lai o moi shot cua preset do)
+# =====================================================================================
+P = {
+ "zashiki":   "a tatami room in a wooden Showa house at night, a white mosquito net hung from the "
+              "lintel over the bedding, the paper sliding doors pushed fully open to the dark garden",
+ "zashiki_asa":"a tatami room in a wooden Showa house on a summer morning, the paper sliding "
+              "doors pushed fully open to a bright sunlit garden, the bedding already folded and "
+              "stacked against the wall, morning sun falling across the matting in long bars",
+ "engawa":    "the open wooden veranda of a Showa house in summer, the glass doors slid fully back, "
+              "tatami matting behind and a small garden in front",
+ # --- 6 canh SO SANH THOI NAY, neo vao dung cau 今/いま cua loi ke.
+ #     Ten bat dau "ima_" => build() tu doi sang STYLE_MODERN + AVOID_MODERN.
+ "ima_machi":  "a present-day Japanese residential street, asphalt road and concrete block walls, every window of the houses shut behind glass, air conditioner units mounted on the outside walls with their fans turning, parked cars and a street tree",
+ "ima_heya":   "a present-day Japanese living room in summer, an aluminium sash window closed on the heat outside, a wall-mounted air conditioner running above the curtain rail, a low table and a sofa on a plain floor",
+ "ima_daidokoro":"a present-day Japanese kitchen, a tall two-door refrigerator with a steel front, a worktop with an electric kettle and a glass jug, downlights in the ceiling",
+ "ima_michi":  "a present-day Japanese residential street in summer, black asphalt from kerb to kerb, a concrete drain grating at the edge, block walls and a street tree, heat shimmer standing over the road",
+ # Canh BAN DEM phai co boi canh RIENG: `engawa` chi noi "in summer", khong noi gio nao,
+ #   nen model luon cho ban ngay — do la loi da giet clip_00 (loi ke noi DEM, hinh ra NANG).
+ "engawa_yoru":"the open wooden veranda of a Showa house at night in summer, the glass doors slid fully back on a garden that is dark except where the light from the room reaches it, warm lamplight from a single bulb inside falling across the tatami and out onto the boards, moths turning in that light, the sky beyond the eaves deep blue",
+ "ido":       "a hand-drawn well in the back yard of a Showa house, a wooden bucket on a rope over "
+              "the kerb, wet flagstones and a tin basin standing beside it",
+ "daidokoro": "the kitchen of a Showa house in summer, a wooden ice chest against the wall, a stone "
+              "sink under a small window, a kettle and a glass jug on the shelf",
+ "michi_natsu":"an unpaved residential lane in Showa Japan in summer, packed dirt and loose gravel, "
+              "low wooden fences and open windows along both sides",
+ "koriya":    "an unpaved residential lane in Showa Japan at midday in summer, a two-wheeled wooden "
+              "handcart standing in it with a straw-wrapped block of ice on the bed",
+ "undoujou":  "the bare dirt sports ground of a Showa primary school in high summer, white lime "
+              "lines marked across it, a wire fence and a low wooden school building beyond",
+ # 🔴 2026-09-11: ban cu chi ghi "a long concrete trough at the edge of the ground" — KHONG co
+ #    DO CAO, KHONG co CONG NANG => model doc ra be RUA CHAN dat duoi dat va cho nguoi BUOC VAO.
+ #    水飲み場 that la bon cao ngang hong, voi chia LEN, cui xuong uong. Phai noi ca ba thu:
+ #    cao bao nhieu · voi chia huong nao · va cam dich danh viec buoc vao (§5 "cam DICH DANH").
+ "mizunomi":  "a Showa school drinking fountain standing at the edge of the sports ground, a long shallow concrete basin raised up on a solid concrete pedestal so that its rim comes up to adult waist height, the sides of the pedestal dropping straight down to the earth like a low wall, a row of short iron taps standing upright along the top of the rim and pointing up into the air, a bare dirt path running parallel to the pedestal two or three paces out from it with flat open earth in between, the ground beside the pedestal flat all the way with no step, no kerb and no concrete drain slab anywhere along the path, a line of trees behind",
+ "genkansaki":"the dirt ground in front of the entrance of a Showa house in the late afternoon, a "
+              "wooden pail of water beside the stone step, low fences running down the lane",
+ # 🔴 2026-09-11: ban cu khang dinh tam yoshizu DA DUNG SAN ("leaning against the eaves"),
+ #    trong khi E9/G5 la canh MANG TOI DUNG LEN => model ve HAI tam. Preset khong duoc
+ #    chot VI TRI cua vat ma ACT se thay doi — de tung ACT tu noi.
+ "nokishita": "under the deep eaves of a Showa house in the afternoon, a tall reed screen and a "
+              "hanging bamboo blind at the post, tatami visible inside",
+ "niwa_yoru": "the small garden of a Showa house after dark, a tin wash tub set out on the packed "
+              "earth, a wooden bench by the hedge and one paper lantern burning at the eaves",
+ "machi_yoru":"an unpaved residential lane in Showa Japan after dark in summer, low wooden fences, "
+              "open lit doorways and wooden benches out in front of the houses",
+}
+
+# =====================================================================================
+# C — CAST (quan ao + vat, khong mat khong tuoi; moi vat cam/deo: mau + chat lieu + plain unmarked)
+# =====================================================================================
+C = {
+ "haha":   "a woman in a plain unmarked pale blue cotton apron over a plain short-sleeved summer "
+           "dress, with a white cotton towel tucked into the waist",
+ "ima":    "a woman in plain modern summer clothes, a plain pale short-sleeved blouse and plain dark cotton trousers",
+ # ban POV: ta DUNG PHAN minh tu nhin thay duoc, khong ta quan ao nhin tu ngoai
+ "ko_pov_hand":"their own forearms and the backs of their own hands",
+ "ko_pov_walk":"only one of their own hands, nothing else of themselves",
+ "seito_pov_hand":"their own forearms and the backs of their own hands",
+ "haha_pov_hand":"their own forearms and hands, the short sleeves of a summer dress at the edge",
+ "tonari_pov_hand":"only their own hand and forearm holding the round paper fan",
+ "tonari_pov_bike":"both of their own hands on the handlebar grips, nothing else of themselves",
+ "tonari_pov_walk":"only one of their own hands holding a round paper fan, nothing else of themselves",
+ "haha_pov_walk":"only their own hands where the work needs them, nothing else of themselves",
+ "seito_pov_walk":"only one of their own hands, nothing else of themselves",
+ "kori_pov_walk":"both of their own hands gripping the cart shafts, nothing else of themselves",
+ "haha_pov":"their own lap and the pale blue apron across the bottom of the frame",
+ "ko_pov": "their own bare arms and the white cotton undershirt on their own chest, their navy shorts and bare knees",
+ "seito_pov":"their own bare arms and the white gym shirt on their own chest, their navy shorts and bare knees",
+ "ko":     "a small figure in a plain white cotton undershirt and navy shorts, barefoot",
+ "ko2":    "a second small figure in a plain sleeveless white undershirt and pale grey shorts, barefoot",
+ "chichi": "a man in a plain white cotton undershirt and loose grey trousers, holding a plain "
+           "unmarked round paper fan",
+ "kori":   "a man in a plain indigo cotton coat with a white towel tied round his head and plain "
+           "unmarked black rubber boots",
+ "tonari": "a woman in a plain grey summer kimono and a plain white apron, carrying a plain "
+           "unmarked round paper fan",
+ "sensei": "a man in a plain white short-sleeved shirt and dark trousers, with a plain unmarked "
+           "brass whistle on a cord at his neck",
+ "seito":  "a small figure in a plain white gym shirt, navy shorts and a plain unmarked white cotton cap",
+ "rojin":  "an older man in a plain loose grey summer robe, with a plain unmarked wooden fan resting "
+           "on the bench beside him",
+}
+
+# =====================================================================================
+# CROWD — muc nguoi nen theo PRESET (§3.5). Loi ke goi thang la DONG o dau thi full o do.
+# =====================================================================================
+CROWD = {
+ "zashiki":   "few",                       # ca nha trong mot cai man, nhung khung chat
+ "engawa":    "full",     # user 2026-09-12: muon canh dong vui hon
+ "zashiki_asa": ("solo", "thao man buoi sang — canh mot nguoi don dep"),
+ "ima_machi":   ("solo", "pho thoi nay — cua so dong kin, vang nguoi la DUNG y"),
+ "ima_heya":    ("solo", "trong nha thoi nay"),
+ "ima_daidokoro":("solo", "bep thoi nay"),
+ "ima_michi":   ("solo", "duong nhua thoi nay"),
+ "engawa_yoru":"few",
+ "ido":       ("solo", "gieng sau nha — canh rieng cua me va mot dua tre"),
+ "daidokoro": ("solo", "bep nha — mot nguoi lam viec"),
+ "michi_natsu":"full",                     # 「道の両側が、いっせいに」
+ "koriya":    "full",                      # 「子どもが何人も、うしろについて歩きました」
+ "undoujou":  "full",                      # 「学校の運動場」 gio the duc
+ "mizunomi":  "full",                      # 「列になって通り過ぎます」
+ "genkansaki":"full",                      # 「打ち水は、一軒でやるものではありませんでした」
+ "nokishita": ("solo", "duoi mai hien nha minh — canh co che, khong phai canh dong"),
+ "niwa_yoru": "full",                      # 「庭にたらいを出して」「その横で」
+ "machi_yoru":"full",                      # 「どの家からも、人が出てきます」
+}
+
+S = []
+
+# =====================================================================================
+# HOOK 00-08 — E7: hanh vi -> he qua -> chung nhan -> 3 cu soc -> dan nhan
+# =====================================================================================
+S += [
+('H0', 'HOOK', 'A_TONARI walks slowly along the lane from left to right past one lit doorway after another, every window and every entrance standing wide open on the rooms inside, then stops at a gate and looks in through it at a room open to the night, then goes on down the lane while the paper lanterns sway above the benches and fans move in every doorway', 'machi_yoru', 'wide', 'Q', None, None),
+
+('H1', 'HOOK', 'A_KO: above them the sagging roof of the white mosquito net fills the whole view, then one of their own arms rises up into the frame until the fingers almost touch the netting, then that arm lowers back down across their own chest at the bottom of the frame while the net sways gently in the draught', 'zashiki', 'pov', 'Q', None, 'A_KO lying on the bedding with one arm across the sheet, the net still swaying'),
+('H2', 'HOOK', 'A_HAHA kneels at the near corner of the net and tucks the hem down under the bedding, then draws the flat of her palm along the seam where it meets the floor, then sits back on her heels while the hem lifts and settles in the draught', 'zashiki', 'medium', 'Q', None, None),
+
+('H3', 'HOOK', 'A_HAHA carries a round paper fan out into the garden where the rest of the family are already sitting in the dark, then sets it down on the bench beside an older man, then straightens and looks back at the lit room standing wide open behind them while the lantern sways and moths turn in its light', 'niwa_yoru', 'wide', 'Q', None, None),
+
+('H4', 'HOOK', 'A_TONARI walks slowly from left to right along the lane past one open window after another, then stops at a gate and fans herself with loose flicks of the wrist, the round fan tilting to a different angle each time, then goes on down the lane while the washing on a bamboo pole sways above her', 'michi_natsu', 'wide', 'Q', None, None),
+
+('H5', 'HOOK', 'A_CHICHI, already sitting on the edge of the veranda boards with both feet on the stone step below, fans himself toward his own face with short light flicks of the wrist, the round fan staying rigid and tilting to a different angle each time while the hem of his undershirt lifts in the moving air, then lets the flicks slow to almost nothing and rests that forearm on his knee with the fan hanging from his fingers, then raises it and fans once more absently without looking at it while a breeze crosses the garden and moves the leaves', 'engawa', 'wide', 'Q', None, 'A_CHICHI sitting on the edge of the veranda with the open fan resting on one knee'),
+('H6', 'HOOK', 'A_CHICHI works the round fan steadily with one hand, then reaches across with the other for the glass standing on the boards and drinks from it, then sets the glass back down beside him with the fan still going while condensation runs down the side of the glass onto the wood and the leaves in the garden move behind him', 'engawa', 'medium', 'Q', None, 'A_CHICHI sitting on the veranda edge, fan in one hand, glass on the boards beside him'),
+('H7', 'HOOK', 'A_KO sits down beside him on the boards, then swings both legs out over the edge above the garden, then leans back on both hands while the wind chime at the eaves turns and catches the light', 'engawa', 'wide', 'Q', None, 'A_KO sitting on the veranda edge beside A_CHICHI with both legs hanging over'),
+('H8', 'HOOK', 'A_CHICHI holds the round fan out sideways to A_KO until it is taken, then folds his arms and settles back against the veranda post, then looks away down the garden while the shadow of the eaves creeps across the boards', 'engawa', 'medium', 'Q', None, None),
+]
+
+# =====================================================================================
+# M1 09-38 — 窓は、あけて寝るもの (30 shot)
+# =====================================================================================
+S += [
+('A1', 'M1', 'A_TONARI walks away from the camera down the middle of the lane between the open windows, then slows and looks up at a second-floor window standing wide open, then goes on and grows smaller toward the far end while a bamboo blind flaps against a wall', 'michi_natsu', 'behind', 'Q', None, 'A_TONARI far down the lane, stopped below the open window'),
+('A2', 'M1', 'A_IMA walks slowly along the pavement from left to right past a row of houses with every window shut behind glass, then stops and looks up at an air conditioner unit running on a wall above her, then walks on out of frame while its fan keeps turning and the leaves of a street tree move', 'ima_machi', 'medium', 'Q', None, None),
+
+('A3', 'M1', 'A_HAHA takes hold of the glass door by its wooden stile and runs it fully back along the track from left to right, then pushes the second door back behind the first, then steps away onto the tatami while the whole veranda fills with moving air and the curtain hem lifts', 'engawa', 'medium', 'Q', None, None),
+
+('A4', 'M1', 'A_HAHA: both of their own hands come up into the top of the frame with the cord between them and the lintel rail above, then the cord passes twice round the rail and is drawn tight, then the hands lower again out of the frame while the white net falls open below and sways', 'zashiki', 'pov_hand', 'Q', None, None),
+('A5', 'M1', 'A_HAHA presses the tucked hem flat with the side of her hand, then looks up and says something short over her shoulder, then goes back to pushing the hem down along the floor while the net sways above her', 'zashiki', 'medium', 'Q', None, 'A_HAHA kneeling at the hem, A_KO watching from the bedding'),
+('A6', 'M1', 'A_KO: the white roof of the net hangs above with the edge of the bedding at the bottom of the frame, then the view lowers as they lie down and two more small figures come into it on one side, then it settles level with them while the net sways in the draught', 'zashiki', 'pov', 'Q', None, None),
+('A7', 'M1', 'A_KO at the outside edge of the row slaps once at his own shoulder, then rubs the place with the flat of his hand, then turns his head away toward the net wall while its shadow ripples across the sheet', 'zashiki', 'medium', 'Q', None, 'A_KO lying at the outer edge of the row with one hand on his shoulder'),
+('A8', 'M1', 'A_KO2 lifts the near hem of the net just high enough to clear the bedding while the rest of it stays hanging from its corners, then ducks under the raised hem and crawls forward onto the bedding on hands and knees, then reaches back and tucks the loose hem down under the edge of the bedding with a few flat pats while the whole net shivers and settles', 'zashiki', 'medium', 'Q', None, 'A_KO2 inside the net on his knees, the hem fallen shut behind him'),
+('A9', 'M1', 'A_KO2 holds the hem wide open with both arms instead, then ducks through the big gap, then drops the hem and looks back at it while a moth circles in under the sagging roof of the net', 'zashiki', 'ots', 'Q', None, 'A_KO2 kneeling just inside the net, the hem still swinging'),
+('A10', 'M1', 'A_KO2 sits back on his heels inside the net and waves one hand slowly above his head, then follows something across the netting with his eyes, then gives up and lies down flat on the bedding while the net sways over him', 'zashiki', 'medium', 'Q', None, 'A_KO2 lying on his back on the bedding, arms out'),
+('A11', 'M1', 'A_HAHA runs the flat of her hand along the tucked hem until she finds the loose place, then draws the slack cloth out and works it back under the bedding so the hem pulls straight, then presses along the whole length of it with her palm while dust drifts through the lamplight above her', 'zashiki', 'ots', 'Q', None, 'A_HAHA kneeling at the mended hem, both palms flat on it'),
+('A12', 'M1', 'A_KO: the white netting hangs close above the view with the edge of the pillow at the bottom of the frame, then one of their own hands comes up across the frame and swipes twice at the air beside their ear, then that hand drops back out of the view while the net wall shivers overhead and its shadow ripples', 'zashiki', 'pov', 'Q', None, 'A_KO lying with his head turned and one hand raised beside his cheek'),
+('A13', 'M1', 'A_HAHA sets the small ceramic holder down on the tatami just outside the net, then bends over it and lights the coil so a thread of smoke starts up, then straightens and watches the smoke drift sideways under the eaves', 'zashiki', 'ots', 'Q', None, 'A_HAHA kneeling beside the lit coil, smoke rising past her'),
+('A14', 'M1', 'A_KO: their own chest fills the bottom of the view with a round paper fan held above it in their own hand, then the fan moves twice and slows, then it tips over sideways onto the sheet beside them while the net sways above the view and the smoke of the coil drifts across it', 'zashiki', 'pov', 'Q', None, None),
+
+('A15', 'M1', 'A_CHICHI stands in the middle of the open veranda and looks the length of it, then walks from the far end toward the camera between the open doors, then stops at the corner post while the draught pulls the curtain out sideways', 'engawa', 'wide', 'Q', None, 'A_CHICHI standing at the corner post of the veranda'),
+('A16', 'M1', 'A_CHICHI lays his palm flat against the paper of the sliding door, then runs the door half shut along its track so the moving air dies against his face, then leaves it there and turns to look along the darkened half of the veranda while the whole line of doors rattles and the curtain drops slack', 'engawa', 'medium', 'Q', None, 'A_CHICHI standing with one hand on the open door, the curtain still moving'),
+('A17', 'M1', 'A_CHICHI steps out to the edge of the boards and holds the round fan out flat into the draught, then lets the moving air push it back against his hand, then lowers it and looks along the line of open doors while the leaves in the garden turn over', 'engawa', 'wide', 'Q', None, 'A_CHICHI at the veranda edge, fan lowered at his side'),
+('A18', 'M1', 'A_CHICHI pulls the glass door shut along its track from left to right, then stands still inside the closed veranda working the fan faster, then pushes the door back open while the air moves again and the curtain hem lifts', 'engawa', 'medium', 'Q', None, None),
+
+('A19', 'M1', 'A_HAHA sets a straight incense stick upright in the ceramic holder, then lifts the spiral coil up beside it to compare the two, then lowers the coil into the holder while the smoke from the stick bends away in the draught', 'zashiki', 'ots', 'Q', None, 'A_HAHA kneeling with the coil settled in the holder and the stick beside it'),
+('A20', 'M1', 'A_HAHA turns the burning coil a little in its holder with the side of one hand, then draws back from the heat and sits up on her heels, then rests both hands on her knees and watches the smoke climb while it drifts sideways under the lintel', 'zashiki', 'ots', 'Q', None, 'A_HAHA sitting back on her heels, both hands on her knees'),
+('A21', 'M1', 'A_HAHA carries the holder low in both hands across the tatami toward the open doors, then sets it down just inside the threshold, then straightens up while the smoke runs out along the floor and the curtain hem stirs', 'zashiki', 'medium', 'Q', None, None),
+
+('A22', 'M1', 'A_TONARI: the lane stretches ahead between the open windows with one of their own hands holding a closed paper fan at the bottom corner of the frame, then the view swings slowly to the right toward two women talking at a gate and that same hand lifts into the frame and waves once to them, then it settles back on the way ahead while dust lifts off the dry ground', 'michi_natsu', 'pov_walk', 'Q', None, None),
+('A23', 'M1', 'A_TONARI: a row of shuttered windows stands across the lane ahead, then one of their own hands comes up into the frame holding a round paper fan and the tip of it moves from one shut window along to the next, then that hand lowers the fan out of the frame again while the washing overhead sways', 'michi_natsu', 'pov_hand', 'Q', None, None),
+('A24', 'M1', 'A_TONARI: the handlebar of a bicycle and their own two hands on its grips lie across the bottom of the frame with the lane opening out ahead between one open window after another, then the view rolls on down the lane and swings slowly to one side to take in a bamboo blind flapping in a doorway, then it settles back on the way ahead while the loose gravel passes under the front wheel below', 'michi_natsu', 'pov_bike', 'Q', None, None),
+('A25', 'M1', 'A_TONARI stops at the gate at the far end and rests one hand on the top of it, then looks back along the fence line, then lets go of the gate while the leaves of a garden tree move above her', 'michi_natsu', 'medium', 'Q', None, 'the lane empty, the gate she passed still swinging'),
+('A26', 'M1', 'A_KO walks into frame from the left and stops in the middle of the lane, then looks up at the one closed window, then walks on to the right and out of frame while the dust he lifts drifts back down', 'michi_natsu', 'wide', 'Q', None, None),
+
+('A27', 'M1', 'A_IMA slides the aluminium window shut along its track from right to left, then takes the remote off the low table and presses one button on it, then lowers her hand while the louvres of the air conditioner swing open above her and the curtain hem lifts in the cold draught', 'ima_heya', 'medium', 'Q', None, 'A_IMA standing by the shut window, the remote lowered in one hand'),
+('A28', 'M1', 'A_IMA sits down on the sofa facing the shut window, then folds her arms and looks at the sealed glass, then settles back into the cushions while the louvres of the air conditioner swing slowly above her and the curtain hangs completely still', 'ima_heya', 'wide', 'Q', None, None),
+
+('A29', 'M1', 'A_KO sits at the open veranda edge and looks up at the wind chime under the eaves, then reaches up and cups the whole glass bell in one hand so the chime stops dead, then opens the hand and lets it go while the chime swings on again and catches the light', 'engawa', 'medium', 'Q', None, 'A_KO sitting at the veranda edge, the chime swinging above him'),
+('A30', 'M1', 'A_KO tips his head back to listen to something far off beyond the fence, then turns toward the neighbouring house, then lowers his head and looks down at the boards while the chime keeps swinging above him', 'engawa', 'wide', 'Q', None, None),
+]
+
+# =====================================================================================
+# M2 39-65 — スイカは、井戸で冷やすもの (27 shot)
+# =====================================================================================
+S += [
+('B1', 'M2', 'A_HAHA reaches up and unhooks the cord from the lintel rail above her, then gathers the falling net into both arms against her chest, then folds it down onto itself on the tatami while dust lifts through the morning light', 'zashiki_asa', 'ots', 'Q', None, None),
+
+('B2', 'M2', 'A_HAHA: the kitchen doorway opens onto the back yard with the well standing on the wet flagstones ahead, then the view goes on across the yard toward it and swings slowly to the left to take in the washing hung along the fence, then it settles back on the well while the leaves above it move', 'ido', 'pov_walk', 'Q', None, None),
+('B3', 'M2', 'A_HAHA leans over the kerb and looks down the shaft, then straightens and lays her palm flat on the cold stone rim, then takes hold of the rope with both hands while drips fall from it onto the flagstones', 'ido', 'medium', 'Q', None, None),
+
+('B4', 'M2', 'A_IMA pulls the refrigerator door open so the light inside falls out across the kitchen, then slides a wrapped half of watermelon onto the middle shelf, then pushes the door shut while the condensation on the wrapping catches the light', 'ima_daidokoro', 'medium', 'Q', None, 'A_IMA standing at the closed refrigerator door, both hands at her sides'),
+('B5', 'M2', 'A_IMA opens the refrigerator again and lifts the chilled half out in both hands, then holds it at chest height and turns it once, then sets it down on the worktop while cold mist drifts off it and the light shifts across the steel door', 'ima_daidokoro', 'ots', 'Q', None, None),
+
+('B6', 'M2', 'A_HAHA: their own two hands grip the wet rope at the mouth of the well with the dark water far below, then the rope pays down through those hands one over the other and the bucket drops away into the shadow, then the rope goes slack in their grip while water drips off it onto the stone', 'ido', 'pov_hand', 'Q', None, None),
+('B7', 'M2', 'A_HAHA settles the melon into the string bag against her hip, then lowers the bag over the kerb into the shaft, then pays the rope out until the bag goes under and the surface closes while ripples spread out to the wall', 'ido', 'medium', 'Q', None, 'A_HAHA standing at the kerb, the rope knotted off on the post'),
+('B8', 'M2', 'A_HAHA hauls the dripping bag back up over the kerb in both hands, then holds it steady at chest height while the water spills off it, then turns the bag slowly so the beaded skin catches the light', 'ido', 'medium', 'Q', None, None),
+
+('B9', 'M2', 'A_HAHA: one of their own hands steadies a melon on the spread newspaper below with a knife in the other, then the blade goes down into it and the melon splits open along the cut, then both hands lift the two halves apart while the wind chime turns above and catches the light', 'engawa', 'pov_hand', 'Q', None, None),
+('B10', 'M2', 'A_HAHA kneels at the veranda edge with a thick wedge of watermelon already in one hand over a sheet of newspaper spread flat on the boards with its newsprint far too blurred to read, and tips a little salt over it from a small white dish until a scatter of white grains shows across the red flesh, then turns at the waist and holds the same wedge out sideways to A_KO who takes it with both hands, then draws her hand back onto her knee while the leaves in the garden move behind them', 'engawa', 'medium', 'Q', None, None),
+
+('B11', 'M2', 'A_HAHA kneels beside the tin basin at the well kerb and sinks both hands into the water up to the wrists, the surface rocking and slopping over one edge onto the flagstones, then lifts one dripping hand out and presses the wet palm flat against the side of her neck so the water spills down under the collar and darkens the shoulder of her dress, then leans forward onto both forearms on the well rim while drips keep falling off the rope beside her', 'ido', 'medium', 'Q', None, None),
+
+('B12', 'M2', 'A_HAHA stands in front of the closed ice chest with both hands at her sides, then lifts the lid and holds it open on the empty inside so the daylight falls right into the bare compartment, then lets the lid down onto her own fingers and eases them out from under it while the steam from the kettle bends across the window', 'daidokoro', 'wide', 'Q', None, 'A_HAHA standing at the shut ice chest, hands at her sides'),
+('B13', 'M2', 'A_HAHA opens the lower door of the chest and looks into it, then pushes the glass jug further back inside, then closes the door while the light through the window creeps along the floorboards', 'daidokoro', 'medium', 'Q', None, 'A_HAHA kneeling at the closed lower door of the chest'),
+('B14', 'M2', 'A_HAHA lifts the glass jug of barley tea out and holds it up against the window light, then turns it once, then sets it back on the shelf while condensation beads down the outside', 'daidokoro', 'medium', 'Q', None, 'the jug back on the shelf, A_HAHA standing beside it'),
+('B15', 'M2', 'A_HAHA lays her palm flat inside the empty upper compartment, then pulls the hand back and rubs the fingers together, then wipes them on the towel at her waist while steam drifts past her from the kettle', 'daidokoro', 'ots', 'Q', None, None),
+
+('B16', 'M2', 'A_KORI draws the saw across the straw-wrapped block on the cart bed in long even strokes, the cut opening deeper into the ice with each pass and a ridge of white dust building along the blade, then leans his weight onto the saw as it goes through the last of the block and the cut piece drops free onto the straw, then sets the saw down across the cart bed and sweeps the loose dust off the edge with the side of his hand while it drifts down the side of the block', 'koriya', 'medium', 'Q', None, 'A_KORI standing at the cart with the saw resting in the half-made cut'),
+('B17', 'M2', 'A_KORI folds a sheet of newspaper round the cut piece of ice on the cart bed, the newsprint creased and far too blurred to read, then draws the ends in tight underneath until the parcel pulls together into one solid block, then lifts the wrapped parcel against his chest and turns with it while sawdust drifts off the straw behind him', 'koriya', 'medium', 'Q', None, 'A_KORI holding the wrapped piece against his chest at the cart'),
+('B18', 'M2', 'A_KORI: the shafts of the handcart are gripped in both of their own hands low at the bottom of the frame with the lane opening out ahead, then the view moves on down the lane with the load pulling back against those hands, then it swings slowly to one side to take in the small figures strung out behind while dust drifts up around the wheels', 'koriya', 'pov_walk', 'Q', None, None),
+('B19', 'M2', 'A_KORI leans the shafts of the handcart back against the cart body, then turns on the spot to the cart bed and breaks a palm-sized piece of ice off the open cut with the flat of his hand, then holds it out level on his open palm until a small figure takes it out of his hand and the melt runs down the heel of his hand while ice dust drifts off the straw', 'koriya', 'medium', 'Q', None, 'A_KORI standing at the cart with his palm open and empty'),
+('B20', 'M2', 'A_KO: their own open palm fills the middle of the view with a chip of ice sitting on it, then their own fingers close over the ice and open again, then the melt spills off the heel of the hand and drips into the dust below while ice dust drifts off the straw on the cart beyond', 'koriya', 'pov_hand', 'Q', None, 'A_KO standing by the cart with his wet palm still open'),
+('B21', 'M2', 'A_KO puts the last of the ice into his mouth, then wipes the wet palm down the front of his undershirt leaving a dark streak on the cotton, then turns and walks away from the camera after the cart while the dust he lifts drifts back down', 'koriya', 'wide', 'Q', None, None),
+
+('B22', 'M2', 'A_HAHA settles a wrapped block of ice into the upper compartment of the chest, then presses it down into the corner with both palms until it seats flat, then steps back while a low mist of cold air rolls out over the rim and falls down the front of the chest and the steam from the kettle bends away', 'daidokoro', 'medium', 'Q', None, 'A_HAHA standing at the open chest, the ice settled in the top'),
+('B23', 'M2', 'A_HAHA crouches at the open wooden ice chest with a single covered dish held in both hands, then slides the dish into the lower compartment and pushes it back until it sits square against the inside wall of the chest, then swings the heavy door over and presses it shut with the flat of one hand while a low mist of cold air escapes at the last gap and meltwater from the ice above runs down into the drip tray under the chest', 'daidokoro', 'medium', 'Q', None, 'A_HAHA crouching at the shut ice chest with one palm still flat on the door'),
+('B24', 'M2', 'A_HAHA slides the drip tray out from under the chest and holds it level in both hands, then tips the water off into the stone sink, then pushes the empty tray back under while the last drops fall from the rim', 'daidokoro', 'medium', 'Q', None, None),
+
+('B25', 'M2', 'A_HAHA lowers the bucket into the shaft and brings it back up brimming, then sinks one whole hand into it up to the wrist so the water slops over the rim onto the flagstones, then lifts the hand out and presses the wet palm against the back of her neck while the ripples go on circling round the inside of the bucket', 'ido', 'medium', 'Q', None, None),
+
+('B26', 'M2', 'A_KO: a thick wedge of watermelon is held in both of their own hands with their own knees and bare feet hanging over the veranda edge below it, and on both sides of the view the rest of the family are eating wedges cut from the same melon, two small figures in white undershirts with their legs over the edge and an older woman further along the boards, then the wedge comes up toward the view and is bitten once, then it lowers again into their own lap while a seed is spat out over the edge nearby and the wind chime swings above', 'engawa', 'pov', 'Q', None, 'A_KO sitting on the veranda edge with the half-eaten slice in both hands'),
+('B27', 'M2', 'A_KO spits a seed out over the edge into the garden, then follows it down with his eyes as the leaves below move where it lands, then sits back with the emptied rind resting across his knees while the shadow of the eaves creeps along the boards beside him', 'engawa', 'wide', 'Q', None, None),
+]
+
+# =====================================================================================
+# M3 66-92 — 暑さは、我慢するもの (27 shot)
+# =====================================================================================
+S += [
+('C1', 'M3', 'A_KO: the garden gate stands open ahead with the lane dropping away down the slope beyond it, then the view goes on down the lane and swings slowly to the left to take in the fences and the open windows along that side, then it settles back on the way ahead while one of their own hands swings into the bottom corner and dust hangs in the light', 'michi_natsu', 'pov_walk', 'Q', None, None),
+
+('C2', 'M3', 'A_SENSEI walks a line-marker along the bare ground from left to right leaving a white lime line behind him, then stops at the corner and turns the marker, then starts a new line at right angles while the lime dust drifts sideways in the heat', 'undoujou', 'wide', 'Q', None, 'A_SENSEI standing at the corner of the marked lines with the marker'),
+('C3', 'M3', 'A_SENSEI stands at the edge of the marked ground with the whistle at his chest, then lifts the whistle to his mouth and blows so the line of small figures beyond him breaks into movement, then walks along the front of the line from left to right while heat shimmer moves across the white marks behind him and dust drifts past', 'undoujou', 'medium', 'Q', None, 'A_SENSEI standing with his arm lowered, facing the lines'),
+('C4', 'M3', 'A_SEITO stands in a line of small figures on the white mark, then shifts his weight onto one foot and lets the other heel scuff a pale streak through the lime, then looks down at the mark he has made while the sun beats on the bare ground and dust drifts past', 'undoujou', 'wide', 'Q', None, 'A_SEITO standing on the line among the others'),
+('C5', 'M3', 'A_SEITO pushes the cap back off his forehead, then wipes along his hairline with the back of his wrist, then pulls the cap down harder than it sat before while the shadow of it swings across his face and the grass at the edge stirs', 'undoujou', 'medium', 'Q', None, 'A_SEITO standing with the cap pulled down again'),
+('C6', 'M3', 'A_SENSEI walks along in front of the line of small figures from right to left, then stops at the end of the line and points away toward the far end of the ground, then walks on out of frame to the left while lime dust lifts off the line under his feet', 'undoujou', 'wide', 'Q', None, None),
+
+('C7', 'M3', 'A_SEITO walks past the row of taps without slowing, then turns his head toward the running water as he passes, then walks on out of frame while a thin stream keeps falling into the trough and splashing, water dripping from the lip of the trough', 'mizunomi', 'wide', 'Q', None, None),
+
+('C8', 'M3', 'A_SENSEI tips a paper twist over the open palm of A_SEITO until a small white heap gathers in the hollow of the hand, then creases the paper shut and puts it away in his shirt pocket, then steps back and looks along the line while the grass at the edge of the ground stirs in the hot wind', 'undoujou', 'medium', 'Q', None, 'A_SEITO standing with the salt in his open palm'),
+('C9', 'M3', 'A_SEITO: a small white heap of salt sits in their own open palm held out in front of their own chest, then the palm lifts toward the view and out of sight above it, then it comes back down empty and wipes itself on their own shorts while dust drifts across the bare ground beyond', 'undoujou', 'pov_hand', 'Q', None, 'A_SEITO standing with his hand at his side, face turned away'),
+('C10', 'M3', 'A_SEITO takes the cap off and turns it over in both hands, then presses the wet band of it against his forehead, then puts it back on while the dust drifts across the ground and his shadow shortens under him', 'undoujou', 'medium', 'Q', None, 'A_SEITO standing on the line with the cap back on'),
+
+('C11', 'M3', 'A_SENSEI crouches in the shade of a single tree at the edge of the ground with a wet folded towel already in one hand, then lays the towel flat across the forehead of a small figure lying in the shade beside him, then rests both forearms on his knees and looks back out at the sunlit lines while the leaves above them move and the light shifts on the ground', 'undoujou', 'pan', 'Q', None, 'A_SENSEI crouching in the shade beside the lying figure'),
+
+('C12', 'M3', 'A_SEITO walks past the raised trough at the front of the line without slowing, then turns his head toward the upward-pointing taps as he draws level with them and keeps walking, then carries on and passes out of frame to the right while water keeps running into the trough and the leaves behind move', 'mizunomi', 'wide', 'Q', None, 'the line of small figures still filing past behind him'),
+('C13', 'M3', 'A_SEITO walks along the bare dirt path two or three paces out from the basin, keeping to the flat earth the whole way and never setting a foot on the stonework, and only turns his head for a moment as he draws level with the last tap, then faces forward again with both hands still at his sides and keeps walking along that same path from left to right at the same pace, never slowing and never reaching toward the water, then passes out of frame while the ones behind him close the gap and the water splashes on into the raised basin, water dripping from the lip of the trough', 'mizunomi', 'medium', 'Q', None, None),
+
+('C14', 'M3', 'A_SENSEI stands in the sun with both hands behind his back and looks along the lines, then rocks back on his heels once, then walks away from the camera toward the school building while the heat shimmer closes behind him, dust drifting across the bare ground', 'undoujou', 'wide', 'Q', None, 'A_SENSEI halfway to the school building, seen from the ground'),
+('C15', 'M3', 'A_SEITO stands alone on the white line with his arms at his sides, then turns his head away toward the taps at the far edge and keeps it there, then reaches up and pulls the wet cap down harder over his eyes while dust drifts across the line in front of him', 'undoujou', 'medium', 'Q', None, 'A_SEITO standing on the line facing forward'),
+('C16', 'M3', 'A_SEITO holds both arms out level in front of him, then lets them sink slowly until they hang loose at his sides, then rolls the shoulders forward once and lets his head drop while the sun burns on the bare ground and his shadow shifts under him', 'undoujou', 'medium', 'Q', None, 'A_SEITO standing with both arms locked at his sides'),
+('C17', 'M3', 'A_SENSEI walks back along the line from left to right, then stops in front of A_SEITO and folds his arms, then moves on down the line while lime dust lifts behind him', 'undoujou', 'wide', 'Q', None, 'A_SENSEI further down the line, arms folded'),
+('C18', 'M3', 'A_SEITO drops his chin toward his chest, then lets a bead of sweat run off his jaw and fall onto the white lime at his feet, then wipes his forehead along his own upper arm while the grass at the far edge stirs', 'undoujou', 'medium', 'Q', None, 'A_SEITO standing square on the line, chin up'),
+('C19', 'M3', 'A_SENSEI raises one arm high above his head and holds it there while the line of small figures behind him settles, then swings the arm down and forward in one continuous sweep so the whole line comes past him from left to right, then walks away from the camera toward the far corner as the dust they lift rises and drifts across the ground', 'undoujou', 'wide', 'Q', None, 'A_SENSEI at the far corner, the lines moving behind him'),
+('C20', 'M3', 'A_SEITO runs with the others away from the camera toward the far end of the ground, then slows to a heavy walk as the fence comes up, then drops both hands onto his knees and stays bent over there while dust hangs in the air behind the group', 'undoujou', 'medium', 'Q', None, None),
+
+('C21', 'M3', 'A_SENSEI turns the nearest tap on above the trough until the water is running hard, then puts his own hand into the falling stream so it splits and sprays across the concrete, then shakes the hand off and leaves the tap running while the water spreads along the trough and drips from the lip', 'mizunomi', 'medium', 'Q', None, 'A_SENSEI standing at the shut tap, one wet hand at his side'),
+('C22', 'M3', 'A_SENSEI lays his wet palm on the concrete rim of the trough, then looks along the empty row of taps, then wipes the hand down his trousers while water still drips into the trough and the leaves behind move', 'mizunomi', 'medium', 'Q', None, 'A_SENSEI standing at the trough, the row of taps empty'),
+('C23', 'M3', 'A_SENSEI walks the length of the trough from left to right past every tap, then stops at the far end, then turns and looks back along the row while a thin stream keeps falling and splashing behind him, water dripping from the lip of the trough', 'mizunomi', 'wide', 'Q', None, 'A_SENSEI at the far end of the trough, looking back'),
+('C24', 'M3', 'A_SENSEI turns the last tap fully open so the water pours hard into the trough, then steps back from it, then stands with both hands at his sides while the water keeps pouring and the splash spreads across the concrete, water dripping from the lip of the trough', 'mizunomi', 'medium', 'Q', None, 'the tap left running hard, A_SENSEI standing back from it'),
+('C25', 'M3', 'A_SEITO comes back to the trough alone and puts both hands into the falling water, then holds them there, then lifts the water to his mouth while it spills off his wrists and darkens the concrete', 'mizunomi', 'medium', 'Q', None, None),
+
+('C26', 'M3', 'A_SEITO: the empty ground stretches ahead with the white lines fading into the dirt, then the view goes on toward the wire fence at the far side and swings slowly round once to take in the whole bare field, then it settles back on the fence while dust drifts across the ground', 'undoujou', 'pov_walk', 'Q', None, None),
+('C27', 'M3', 'A_SEITO stops at the wire fence with his back to the camera, then hooks one hand through the wire, then lets go and stands looking out while the grass along the fence line stirs in the hot wind', 'undoujou', 'medium', 'Q', None, None),
+]
+
+# =====================================================================================
+# CTA 93-98 — CTA giua video (cta-midvideo.md §2.10, ban 夏)
+# =====================================================================================
+S += [
+('D1', 'CTA', 'A_HAHA carries a tray of glasses out onto the veranda boards and sets it down, then straightens up and looks along the veranda, then kneels beside the tray while the wind chime turns above her and catches the light', 'engawa', 'medium', 'Q', None, 'A_HAHA kneeling on the veranda beside the tray of glasses'),
+('D2', 'CTA', 'A_HAHA: both of their own hands hold the glass jug out over two glasses standing on the veranda boards, then the tea pours into the first glass and fills the second beside it, then the hands set the jug down between them while the leaves in the garden move', 'engawa', 'pov_hand', 'Q', None, None),
+('D3', 'CTA', 'A_HAHA holds a full glass out sideways until A_KO takes it from her, then lifts the second glass off the tray and carries it further along the boards, then sets it down beside A_CHICHI and draws her hand back while the leaves in the garden move behind them', 'engawa', 'medium', 'Q', None, 'A_HAHA kneeling with one glass left on the tray'),
+('D4', 'CTA', 'A_KO sits down on the veranda edge with both hands round the glass, then drinks once and lowers it, then rests it on his knee while the wind chime swings above him', 'engawa', 'medium', 'Q', None, 'A_KO sitting on the veranda edge with the glass on his knee'),
+('D5', 'CTA', 'A_CHICHI sits down beside them at the veranda edge and starts fanning himself with loose flicks of the wrist, the round fan tilting to a different angle each time, then angles the fan over without breaking the rhythm so the moving air goes toward A_KO instead and lifts the loose hair there, then lets the flicks die away and rests the fan flat on his knee while the hem of the curtain behind them lifts', 'engawa', 'wide', 'Q', None, 'A_CHICHI and A_KO sitting side by side at the veranda edge'),
+('D6', 'CTA', 'A_CHICHI lays the round fan down flat on the boards in the gap between himself and A_KO sitting beside him, then leans back on both hands and stretches his legs out over the edge above the garden, then lets his head tip back toward the eaves while the shadow of the eaves creeps along the boards beside them', 'engawa', 'medium', 'Q', None, None),
+]
+
+# =====================================================================================
+# M4 99-123 — 打ち水とすだれで、夏は越せた (25 shot)
+# =====================================================================================
+S += [
+('E1', 'M4', 'A_KO: the lane runs uphill ahead between the wooden fences with their own cap swinging in one hand at the very bottom corner, then the view climbs up the lane and swings slowly to the right to take in a gate and the washing hung above it, then it settles back on the way ahead while the long evening shadows of the fences stretch across the dirt', 'michi_natsu', 'pov_walk', 'Q', None, None),
+
+('E2', 'M4', 'A_HAHA carries the wooden pail out through the entrance and sets it down beside the stone step, then straightens and looks up the lane, then wipes her hands on the towel at her waist while the surface of the water in the pail goes on rocking, dust drifting off the dry lane', 'genkansaki', 'medium', 'Q', None, 'the full pail standing beside the step, A_HAHA facing up the lane'),
+('E3', 'M4', 'A_HAHA stands in front of the entrance with both hands at her sides, then looks down at the dry dirt in front of the step, then crouches to the pail while a hot breeze lifts dust off the lane', 'genkansaki', 'wide', 'Q', None, 'A_HAHA crouched beside the full pail'),
+('E4', 'M4', 'A_HAHA: their own two hands carry the wooden pail up into the frame with the dry dirt of the entrance below, then the hands swing the pail out and the water leaves it in one long arc across the ground, then they draw the empty pail back in while the wet patch darkens and steam drifts off the hot ground', 'genkansaki', 'pov_hand', 'Q', None, None),
+('E5', 'M4', 'A_HAHA stands over the wet ground holding the pail loosely at her side, then lifts her chin toward the lane as the first coolness comes up off the dirt and the hem of her dress stirs with it, then sets the pail down beside her while a faint haze rises off the wet ground', 'genkansaki', 'wide', 'Q', None, 'A_HAHA standing over the wet ground, pail set down at her feet'),
+('E6', 'M4', 'A_TONARI comes out through the gate opposite with her own pail in both hands, then carries it to the middle of the lane and swings it up to hip height, then holds it there and calls something across while the dust of the lane drifts between them', 'genkansaki', 'medium', 'Q', None, 'A_TONARI standing in front of her own gate with the pail raised'),
+('E7', 'M4', 'A_TONARI swings her pail out across the dirt from right to left, then steps forward and swings it again further along, then lowers it while the dark wet patches spread toward each other down both sides of the lane', 'genkansaki', 'medium', 'Q', None, 'both sides of the lane darkening, A_TONARI with the emptied pail'),
+('E8', 'M4', 'A_HAHA calls something across the lane with the empty pail hanging from one hand, then lifts the other hand briefly, then turns back toward her own step while the haze rises off the wet dirt the whole length of the lane, dust drifting off the dry lane', 'genkansaki', 'wide', 'Q', None, None),
+
+('E9', 'M4', 'A_CHICHI edges the tall reed screen along under the eaves from left to right, walking it on one bottom corner and then the other, then tips it upright against the eaves beam and holds it there until it settles onto its own weight, then steps back as a band of striped shade drops across the tatami inside while the bamboo blind sways against the post', 'nokishita', 'medium', 'Q', None, 'A_CHICHI standing back from the reed screen, now leaning against the eaves'),
+('E10', 'M4', 'A_CHICHI lays his palm flat on the boards under the eaves, then pulls it back and turns it over, then presses it down again further along while the hanging bamboo blind knocks against the post in the breeze', 'nokishita', 'ots', 'Q', None, 'A_CHICHI crouched under the eaves with one palm on the boards'),
+('E11', 'M4', "A_CHICHI shifts the foot of the reed screen a hand's width further out from the wall, then stands back to look along it, then nudges the top of it straight while its shadow swings across the tatami inside", 'nokishita', 'medium', 'Q', None, 'A_CHICHI standing beside the straightened screen'),
+('E12', 'M4', 'A_KO: bands of light and shade from the reed screen lie across the tatami with their own crossed knees at the bottom of the frame, then one of their own arms comes down into a dark band and rests there, then the bands creep slowly along the matting over it while the blind sways at the eaves', 'nokishita', 'pov', 'Q', None, None),
+('E13', 'M4', 'A_KO: the hanging bamboo blind fills the view close in front with their own knees on the tatami at the bottom of the frame, then one of their own hands pushes a handful of its slats aside to open a gap onto the bright garden, then that hand lets go and the slats fall back while the whole blind sways and rattles', 'nokishita', 'pov', 'Q', None, None),
+
+('E14', 'M4', 'A_HAHA crouches and lays her palm flat on the wet dirt in front of the step, then lifts the hand and holds it up at chest height, then lowers it to the dry dirt beside the wet patch while haze rises between them', 'genkansaki', 'medium', 'Q', None, 'A_HAHA crouched with one palm on the dry dirt'),
+('E15', 'M4', 'A_HAHA tips the last of the pail out in a thin line along the edge of the wet patch, then watches it soak in and disappear, then sets the empty pail down while the darkened line narrows and dries at the ends, dust drifting off the dry lane', 'genkansaki', 'medium', 'Q', None, 'A_HAHA standing over the drying line, empty pail beside her'),
+('E16', 'M4', 'A_HAHA crouches at the edge of the wet patch and drags two fingers through the dark earth leaving a line in it, then works the loose earth flat again with the side of her hand, then brushes her palms off against each other over the ground while the dust she raises drifts away down the lane', 'genkansaki', 'wide', 'Q', None, None),
+
+('E17', 'M4', 'A_TONARI walks along the middle of the lane from left to right over a hard-packed strip where no water has soaked in, then stops and looks down at it, then walks on while a thin skin of dust lifts behind her heels', 'michi_natsu', 'wide', 'Q', None, 'A_TONARI further along the lane, past the hard strip'),
+('E18', 'M4', 'A_IMA tips a basin of water out across the asphalt from left to right, then steps back as the water spreads in a thin sheet toward the kerb, then watches the last of it vanish down the drain grating while the wet patch shrinks and the leaves of a street tree move', 'ima_michi', 'medium', 'Q', None, None),
+('E19', 'M4', 'A_TONARI fans herself with loose flicks of the wrist standing in the open lane, then lets the flicks slow until the round fan comes to rest flat against her chest, then tips her head back toward the sky above the roofs while the washing on the poles sways once and hangs almost still again', 'michi_natsu', 'medium', 'Q', None, 'A_TONARI standing with the closed fan against her palm'),
+('E20', 'M4', 'A_TONARI: a round paper fan is held up in one of their own hands against the glare at the top of the frame with the lane running on ahead below it, then the view goes on down the lane past a shut window and swings slowly to the left toward a gate, then it settles back on the way ahead while dust lifts off the dry ground', 'michi_natsu', 'pov_walk', 'Q', None, None),
+('E21', 'M4', 'A_KO walks into frame from the left and crouches down in the middle of it, then puts one palm flat on the dry dirt and leaves it there, then lifts the hand and shakes the dust off his fingers while more dust drifts along the lane behind him', 'michi_natsu', 'medium', 'Q', None, 'A_KO standing in the middle of the lane, one hand raised'),
+('E22', 'M4', 'A_KO turns on the spot in the middle of the lane and looks along the roofs, then tips his head back to the sky, then lowers it and walks on out of frame to the right while dust lifts behind him', 'michi_natsu', 'wide', 'Q', None, None),
+
+('E23', 'M4', 'A_CHICHI sits down on the tatami inside the eaves in the striped shade, then folds his arms across his chest, then leans back against the post while the stripes of shade creep across him and the blind sways', 'nokishita', 'wide', 'Q', None, 'A_CHICHI sitting against the post inside the striped shade'),
+('E24', 'M4', 'A_CHICHI lifts the round fan off his knee and works it with slow flicks of the wrist, then lets it come to rest against his chest, then looks out through the reed screen at the bright lane while its striped shadow moves slowly across the matting', 'nokishita', 'medium', 'Q', None, 'A_CHICHI sitting against the post with the fan resting on his knee'),
+('E25', 'M4', 'A_CHICHI raises the round fan and works it in slow loose flicks, then lets his arm sink until the fan lies flat across his lap, then looks out past the reed screen at the empty bright lane while the bamboo blind sways against the post', 'nokishita', 'wide', 'Q', None, None),
+]
+
+# =====================================================================================
+# M5 124-146 — 夏の夜は、外にいるもの (23 shot)
+# =====================================================================================
+S += [
+('F1', 'M5', 'A_HAHA: the wet ground of the entrance gives way to the dark garden as the corner of the house comes round, then the view goes on toward the paper lantern burning at the eaves and swings slowly to one side to take in the hedge, then it settles back on the lantern while the lantern sways and its light moves across the leaves', 'niwa_yoru', 'pov_walk', 'Q', None, None),
+
+('F2', 'M5', 'A_TONARI carries a wooden bench out through her gate into the lane and sets it down against the fence, then straightens and looks up the lane, then sits down on it while lantern light moves across the fences on both sides', 'machi_yoru', 'wide', 'Q', None, 'A_TONARI sitting on the bench against her fence'),
+('F3', 'M5', 'A_TONARI works the round fan slowly in front of her on the bench, then turns her head as another gate opens further down the lane, then raises the fan above her head in greeting while more lit doorways open along the lane, the lantern above the bench swaying and moths circling it', 'machi_yoru', 'medium', 'Q', None, None),
+
+('F4', 'M5', 'A_HAHA tips the last of the pail into the tin wash tub in the garden, then kneels down beside it and puts one hand into the water, then sits back on her heels while the surface goes on rocking and the lantern light shifts across it, smoke from the coil drifting low across the garden', 'niwa_yoru', 'medium', 'Q', None, 'A_HAHA kneeling beside the full wash tub'),
+('F5', 'M5', 'A_HAHA pours water from a dipper over the shoulders of a small figure standing in the tub so it spills down its back and off its heels into the water, then draws the dipper along the shoulders to the other side and empties the last of it there, then lowers the dipper into the tub and leaves it floating while steam and lantern light move together over the rocking surface', 'niwa_yoru', 'medium', 'Q', None, 'A_HAHA kneeling at the tub with the dipper in one hand'),
+('F6', 'M5', 'A_HAHA: one of their own hands sets a small ceramic holder down on the stones at the edge of the tub, then the other hand brings a lit match to the coil until a thread of smoke starts up, then both hands draw back while the smoke drifts low across the ground', 'niwa_yoru', 'pov_hand', 'Q', None, None),
+('F7', 'M5', 'A_TONARI leans over the hedge from the lane side and calls across it with one arm raised, then holds the arm out over the hedge, then lowers it while the hedge leaves move and the lantern swings behind her', 'niwa_yoru', 'wide', 'Q', None, 'A_TONARI leaning over the hedge with her arm lowered'),
+('F8', 'M5', 'A_HAHA holds a round paper fan up over the hedge until A_TONARI takes it, then draws her empty hand back down to her side, then turns to the tub while the smoke from the coil drifts between them', 'niwa_yoru', 'medium', 'Q', None, None),
+
+('F9', 'M5', 'A_ROJIN sits down on the wooden bench in front of his gate and sets the board out beside him, then lays the pieces on it one at a time, then sits back while the lantern above him swings and the light moves over the board', 'machi_yoru', 'wide', 'Q', None, 'A_ROJIN sitting on the bench with the board laid out beside him'),
+('F10', 'M5', 'A_ROJIN leans in over the board and slides one piece the width of two squares with the flat of two fingers, then draws his hand back and folds his arms across his chest, then looks off toward the hedge where a small figure crouches with a sparkler and its light flickers over them both', 'machi_yoru', 'medium', 'Q', None, 'A_ROJIN sitting back from the board with his arms folded'),
+('F11', 'M5', "A_KO: a sparkler is held out at arm's length in their own hand with their own folded knees at the bottom of the view, then the ball of light on its tip swells and throws sparks out across the dark, then the light shrinks and drops away while the smoke drifts sideways and the lantern sways at the eaves", 'machi_yoru', 'pov_hand', 'Q', None, 'A_KO crouched at the hedge with the burnt-out sparkler in one hand'),
+('F12', 'M5', 'A_KO: the burnt-out sparkler hangs in their own hand at the very bottom corner with the lit doorways running away down the lane into the dark ahead, then the view swings slowly to one side to take in a family sitting out together on a bench and that same hand lifts and waves once to them, then it settles back on the lane ahead while the lanterns sway overhead', 'machi_yoru', 'pov_walk', 'Q', None, None),
+
+('F13', 'M5', 'A_HAHA lifts a small figure out of the tub and wraps a towel round its shoulders, then rubs the towel down along both arms until the wet hair stands up in spikes, then steps back while the water in the tub goes on rocking and the lantern light runs across it', 'niwa_yoru', 'medium', 'Q', None, None),
+
+('F14', 'M5', 'A_CHICHI stands inside the shut tatami room with both hands at his sides, then raises the round fan and works it harder and harder without the air in the room moving at all, then lets the arm drop and looks toward the closed doors while the still air holds the smoke exactly where it is', 'zashiki', 'wide', 'Q', None, None),
+
+('F15', 'M5', 'A_TONARI sits on her bench and fans herself, then leans out to look along the lane at the other benches, then settles back while people move in and out of every lit doorway and fans move all down the row, the lantern swaying above the bench', 'machi_yoru', 'wide', 'Q', None, 'A_TONARI settled back on her bench, fan moving'),
+
+('F18', 'M5', 'A_CHICHI carries a low wooden stand into the tatami room and sets it against the far wall, then squares it with both hands, then steps back from it while the curtain at the closed window hangs without moving', 'engawa_yoru', 'medium', 'Q', None, 'A_CHICHI standing back from the stand against the wall'),
+('F19', 'M5', 'A_CHICHI kneels at the stand and turns the dial on the set standing on it until the screen comes alight and throws its glow up over his chest, then sits back on his heels out of the light, then reaches up and draws the aerial out to its full length while the glow shifts across the matting and the curtain hem lifts in the draught', 'engawa_yoru', 'medium', 'Q', None, 'A_CHICHI kneeling in front of the lit set'),
+('F20', 'M5', 'A_KO: the lit screen of the set stands in the middle of the view with their own folded knees at the bottom of the frame, then the light off it shifts across their own lap, then the view settles on the screen while the light moves across the matting around them', 'engawa_yoru', 'pov', 'Q', None, None),
+('F21', 'M5', 'A_HAHA kneels down on the tatami beside A_KO facing the set, then rests both hands on her knees, then leans slightly toward the screen while its light moves over them both and the curtain hangs still', 'engawa_yoru', 'medium', 'Q', None, 'A_HAHA and A_KO kneeling side by side in front of the set'),
+('F22', 'M5', 'A_CHICHI slides the glass door shut along its track from left to right behind them, then turns back to the lit screen, then sits down on the tatami with the others while the curtain at the shut door hangs completely still', 'engawa_yoru', 'medium', 'Q', None, 'the three of them sitting in a row in front of the set, the door shut'),
+('F23', 'M5', 'A_CHICHI reaches over and turns the set off so the glow drops out of the room and only the shape of the shut glass door is left, then sits back in the dark with both hands on his knees, then turns his head toward the shut door while the still air holds and nothing crosses the room but the faint light of the lane outside the glass', 'engawa_yoru', 'wide', 'Q', None, None),
+
+('F24', 'M5', 'A_TONARI gets up off the bench in the empty lane with the round fan hanging from one hand, then looks along the row of benches where the last of them are being carried in, then lifts her own bench under one arm and carries it back in through her gate while the last lantern swings behind her', 'machi_yoru', 'wide', 'Q', None, 'A_TONARI at her gate with the bench under one arm'),
+('F25', 'M5', 'A_TONARI stops in her gateway with the bench under one arm, then looks back down the dark lane at the closed doors, then goes in and pulls the gate to behind her while the lantern above it swings and steadies', 'machi_yoru', 'medium', 'Q', None, None),
+]
+
+# =====================================================================================
+# END 147-164 — 認める -> 裏返す (18 shot)
+# =====================================================================================
+S += [
+('G1', 'END', 'A_ROJIN sits alone on the bench in the empty lane, then folds the board shut on his knees, then rests both hands on it while the lantern above him swings and the light moves over the closed doors', 'machi_yoru', 'wide', 'Q', None, None),
+
+('G2', 'END', 'A_HAHA pushes the glass door open along its track from right to left, then stands in the opening looking out at the garden, then steps out onto the veranda boards while the curtain behind her lifts in the draught', 'engawa', 'medium', 'Q', None, None),
+
+('G3', 'END', 'A_SENSEI turns every tap along the trough fully open one after another from left to right, then steps back from the running water, then stands with both hands at his sides while the water runs hard and splashes the length of the concrete, water dripping from the lip of the trough', 'mizunomi', 'wide', 'Q', None, None),
+
+('G4', 'END', 'A_HAHA lifts the pail in both hands and swings the water out across the dirt from left to right, then brings the pail back against her hip, then stands looking at the dark wet arc while the haze rises off it', 'genkansaki', 'medium', 'Q', None, None),
+
+('G5', 'END', 'A_CHICHI stands the reed screen up against the eaves beam and lets go of it, then draws one palm down the reeds to settle them flat against each other, then steps back from it and looks along the whole screen while the striped shadow swings across the tatami inside', 'nokishita', 'medium', 'Q', None, None),
+
+('G6', 'END', 'A_HAHA pays the rope out over the well kerb until the bag goes under the water, then knots it off on the post, then wipes both palms on the towel at her waist while drips trail back down the rope onto the flagstones', 'ido', 'medium', 'Q', None, None),
+
+('G7', 'END', 'A_TONARI carries her bench back out through the gate into the lane and sets it against the fence, then sits down on it and starts working the round fan in slow flicks, then settles back against the fence while benches come out in front of one lit doorway after another down the row and the lantern above her sways', 'machi_yoru', 'wide', 'Q', None, 'A_TONARI sitting on her bench, fan moving, benches out all down the lane'),
+('G8', 'END', 'A_TONARI turns on the bench to look the length of the lane, then lifts the fan toward a neighbour further down, then settles back while fans move on every bench and the lantern light swings across the fences', 'machi_yoru', 'medium', 'Q', None, None),
+
+('G9', 'END', 'A_KO sits alone on the empty veranda edge in the daylight, then swings both legs over the edge above the garden, then leans back on both hands while the wind chime turns above him and catches the light', 'engawa', 'wide', 'Q', None, 'A_KO sitting alone on the veranda edge, legs hanging over'),
+('G10', 'END', 'A_KO: the wind chime turns under the eaves at the top of the view with their own chest and folded knees across the bottom of the frame, then one of their own hands reaches up into the frame and steadies its paper tail between two fingers, then that hand lowers again while the chime swings on and catches the light', 'engawa', 'pov', 'Q', None, 'A_KO sitting with his hand lowered, the chime still swinging'),
+('G11', 'END', 'A_KO: the empty veranda boards stretch away ahead with the open doors giving onto the tatami room beyond, then the view rises and goes on in through the doorway into the bare room, then it settles in the middle of the matting while the curtain at the open door lifts behind', 'engawa', 'pov_walk', 'Q', None, None),
+
+('G12', 'END', 'A_HAHA reaches up and unhooks the cord of the mosquito net from the lintel rail so the whole net comes loose and slides down in one sheet, leaving the rail above completely empty, then gathers that same net into both arms against her chest until the matting underneath is clear and the room opens up wide and bright around her, then kneels and folds the bundle down onto itself into a flat square while dust drifts through the morning light from the open doors', 'zashiki_asa', 'medium', 'Q', None, None),
+
+('G13', 'END', 'A_HAHA: both of their own hands hold a folded sheet of newspaper above the veranda boards, then the sheet opens out and is laid flat along them, then the hands smooth it down from the middle outward while one corner of it flaps in the breeze', 'engawa', 'pov_hand', 'Q', None, None),
+('G14', 'END', 'A_HAHA sets two glasses down side by side on the spread newspaper, its newsprint far too blurred to read, then squares them against each other until the rims almost touch, then rests both hands on her knees while condensation beads down the sides of the glasses', 'engawa', 'ots', 'Q', None, 'two full glasses standing on the newspaper, A_HAHA kneeling beside them'),
+('G15', 'END', 'A_HAHA looks along the empty veranda from where she kneels, then reaches out and turns one glass a half turn so its wet ring smears a dark circle across the blurred newsprint, then rests both hands on her knees and looks at the mark while the wind chime swings above the empty boards', 'engawa', 'wide', 'Q', None, 'A_HAHA kneeling alone on the veranda, both hands on her knees'),
+('G16', 'END', 'A_HAHA stands up from the boards, then walks slowly away from the camera along the veranda past the open doors, then stops at the far corner post while the curtain lifts along the whole length behind her', 'engawa', 'medium', 'Q', None, 'A_HAHA standing at the far corner post of the veranda'),
+('G17', 'END', 'A_HAHA stands at the corner post with one hand on it, then turns her head to look back down the empty veranda and holds it there, then lets the hand slide down the post and hang at her side while the chime swings and the leaves move', 'engawa', 'wide', 'Q', None, 'A_HAHA standing at the corner post, facing the garden'),
+('G18', 'END', 'A_HAHA: the corner post of the veranda stands at the edge of the frame with the garden dropping away below it, then the view steps down off the boards onto the earth and goes on down the garden, then it swings slowly back once toward the empty open doors while the wind chime swings on under the eaves', 'engawa', 'pov_walk', 'Q', None, None),
+]
+
+# =====================================================================================
+# DUNG + GATE + XUAT
+# =====================================================================================
+OUTDIR = r"E:\Claude\Projects\youtube-jp-showa\06_VIDEO\12_natsu-atarimae"
+
+# `cut` = cho CAT HAN chuoi (doi canh / doi thoi diem trong truyen), khong phai de tranh viet 'out'.
+CUT = {
+ "H3",          # cold open: tu phong ngu nhay sang gieng — cu soc thu 2, co y cat
+ "B2",          # M2 mo bang nhip DEN NOI: di tu bep ra gieng (§8.6c luat 1)
+ "C1",          # M3 mo bang nhip DEN NOI: xuong doc toi truong
+ "E1",          # M4 mo bang nhip DEN NOI: tu truong ve nha
+ "F1",          # M5 mo bang nhip DEN NOI: tu cua truoc vong ra vuon
+ # 2026-09-12: moi canh POV deu CAT khoi chuoi — POV la mot cu may khac han,
+ # noi no vao canh goc 3 lien truoc la vo nghia (va gate se doi "out").
+ "H1",
+ "A12",
+ "A14",
+ "A22",
+ "B6",
+ "B20",
+ "B26",
+ "C1",
+ "C9",
+ "E1",
+ "E4",
+ "E13",
+ "F11",
+ "F12",
+ "G10",
+}
+S = autochain(S, cut=CUT)
+
+rows = build(S, P, C, crowd=CROWD)
+n_red, n_warn = gate(rows, S, P, C,
+                     interior={"zashiki", "daidokoro"},
+                     strict=True, crowd=CROWD)
+act_report(S, C)
+safe, risky, pct = linkage(S)
+print("\nNOI AN TOAN: %d/%d moi noi cung boi canh co it nhat mot canh CHAT (%.0f%%)"
+      % (safe, risky, pct))
+
+if n_red == 0:
+    write_outputs(rows, OUTDIR)
+    print("\nXUAT -> %s\\videogen_FLOW.txt | _TENFILE.txt | _BLOCKS.md" % OUTDIR)
+else:
+    print("\n[CHAN] %d loi do — KHONG xuat file. Sua roi chay lai." % n_red)
+sys.exit(1 if n_red else 0)

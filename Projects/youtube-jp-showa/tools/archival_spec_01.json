@@ -1,0 +1,290 @@
+{
+  "_note": "Phim tu lieu chen vao video 01_kyushoku ban v2. CHI dung nguon da verify license.",
+  "_sources": {
+    "japan_today.mp4": {
+      "item": "gov.archives.arc.1692903",
+      "title": "Japan Today",
+      "holder": "U.S. National Archives / National Security Council (CIA)",
+      "year": "1959",
+      "license": "CC0 1.0 Public Domain Dedication",
+      "url": "https://archive.org/details/gov.archives.arc.1692903",
+      "verified": "2026-08-17 licenseurl tu archive.org metadata API"
+    },
+    "japan_1960.mp4": {
+      "item": "gov.archives.arc.1719752",
+      "title": "Japan",
+      "holder": "U.S. National Archives / National Security Council (CIA)",
+      "year": "1960",
+      "license": "CC0 1.0 Public Domain Dedication",
+      "url": "https://archive.org/details/gov.archives.arc.1719752",
+      "verified": "2026-08-17 licenseurl tu archive.org metadata API",
+      "dung_lam_gi": "CHI LAY TIENG: doan tre em Nhat hat @1472-1512s (thuyet minh tieng Anh dut o ~1470s). HINH khong dung vi phim DEN TRANG."
+    }
+  },
+  "_rejected": {
+    "205399_Koshell_Collection_Japan": "Prelinger home movie — KHONG co licenseurl; FAQ Prelinger: 'DO NOT ASSUME that all Prelinger Archives films are in the public domain'.",
+    "24174-japan-shrine-home-movies-mos-vwr": "CC BY-NC-ND 4.0 — NC cam thuong mai, ND cam cat."
+  },
+  "cuts": [
+    {
+      "id": "arch_00_shougakusei",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 815.8,
+      "dur": 9.0,
+      "ybias": 0.36,
+      "grade": 1.0,
+      "line": 0,
+      "note": "tre tieu hoc di thanh hang, co co doan — ENTRY 0 (gan noi dung, khong doi khop chu)"
+    },
+    {
+      "id": "arch_01_kids_train",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 549.2,
+      "dur": 9.0,
+      "ybias": 0.4,
+      "grade": 1.0,
+      "line": 3,
+      "note": "tre vay tay qua cua so tau — 'あなたが、小学生だった頃の'"
+    },
+    {
+      "id": "arch_02_tenji_shoku",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1288.8,
+      "dur": 9.0,
+      "ybias": 0.5,
+      "grade": 1.0,
+      "line": 12,
+      "note": "tu kinh bay do an — 'さて、一品目は、その揚げパンから'"
+    },
+    {
+      "id": "arch_03_nakamise",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1459.6,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 27,
+      "note": "pho hang quan den long — '廊下の向こうから、あの匂いが流れてくる時間'"
+    },
+    {
+      "id": "arch_04_arcade",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1618.3,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 31,
+      "note": "pho co mai, bang ron chi chit — '二品目は、毎日の主役、コッペパン'"
+    },
+    {
+      "id": "arch_05_shotengai_sengo",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 934.6,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 34,
+      "note": "pho buon ban dong nguoi — '戦後、海の向こうから届いた小麦粉で'"
+    },
+    {
+      "id": "arch_06_kodomo_gun",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1597.6,
+      "dur": 9.0,
+      "ybias": 0.36,
+      "grade": 1.0,
+      "line": 46,
+      "note": "nhom tre chum lai nhin may quay — 'そのパンを配ってくれたのは、誰だったか'"
+    },
+    {
+      "id": "arch_07_haitatsu",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1349.8,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 64,
+      "note": "pho co xe tai cho hang — 'やがて教室には、瓶の牛乳がやってきました'"
+    },
+    {
+      "id": "arch_08_nakamise2",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1413.1,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 76,
+      "note": "pho hang qua dong nguoi — '地域によっては、牛乳は瓶ではなく、あの三角形'"
+    },
+    {
+      "id": "arch_09_mise_kazari",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1484.4,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 87,
+      "note": "cua hang treo bong bay/do choi — '昭和42年、名古屋の会社から生まれました'"
+    },
+    {
+      "id": "arch_10_gakusei_gunshu",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 743.0,
+      "dur": 9.0,
+      "ybias": 0.34,
+      "grade": 1.0,
+      "line": 97,
+      "note": "dam hoc sinh dong phuc — 'ここで少し、教室の景色を思い出してみましょう'"
+    },
+    {
+      "id": "arch_11_umi_ama",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1882.2,
+      "dur": 9.0,
+      "ybias": 0.5,
+      "grade": 1.0,
+      "line": 105,
+      "note": "thung go noi tren bien, nguoi lan — '鯨の竜田揚げです'"
+    },
+    {
+      "id": "arch_12_umi_oke",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1899.9,
+      "dur": 9.0,
+      "ybias": 0.5,
+      "grade": 1.0,
+      "line": 114,
+      "note": "mat bien va thung go — '昭和35年、鯨のお肉は、1キロ、およそ134円'"
+    },
+    {
+      "id": "arch_13_yatai",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1610.0,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 125,
+      "note": "quay hang bay do nho — '七品目は、袋に入った、あのソフト麺'"
+    },
+    {
+      "id": "arch_14_taue",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1674.7,
+      "dur": 9.0,
+      "ybias": 0.5,
+      "grade": 1.0,
+      "line": 132,
+      "note": "nguoi cay lua duoi ruong nuoc — 'ご飯の給食が正式に始まったのは、昭和51年'"
+    },
+    {
+      "id": "arch_15_shotengai_kanban",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 923.3,
+      "dur": 9.0,
+      "ybias": 0.48,
+      "grade": 1.0,
+      "line": 140,
+      "note": "pho co bien hieu — '東京、府中市の記録に、残っています'"
+    },
+    {
+      "id": "arch_16_shokuhinten",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 958.5,
+      "dur": 9.0,
+      "ybias": 0.5,
+      "grade": 1.0,
+      "line": 148,
+      "note": "cua hang thuc pham bay hang — '牛肉のロースは、100グラム、202円'"
+    },
+    {
+      "id": "arch_17_tokyo_biru",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1108.8,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 150,
+      "note": "nha cao tang Tokyo — 'そして、翌年の大卒の初任給が、月に、およそ3万600円'"
+    },
+    {
+      "id": "arch_18_ekimae",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1006.3,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 156,
+      "note": "pho den neon truoc ga — 'もともとは、駅の売店で生まれた'"
+    },
+    {
+      "id": "arch_19_utsuwa",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 913.1,
+      "dur": 9.0,
+      "ybias": 0.5,
+      "grade": 1.0,
+      "line": 166,
+      "note": "cua hang bay bat dia gom — '先割れスプーン、あの一本で、すべてを食べました'"
+    },
+    {
+      "id": "arch_20_gakusei_ooze",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 2111.8,
+      "dur": 9.0,
+      "ybias": 0.34,
+      "grade": 1.0,
+      "line": 179,
+      "note": "dam hoc sinh dong phuc doi mu — '給食でいちばん盛り上がった、おかわり'"
+    },
+    {
+      "id": "arch_21_kodomo_koe",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 856.3,
+      "dur": 9.0,
+      "ybias": 0.34,
+      "grade": 1.0,
+      "line": 184,
+      "note": "dam hoc sinh chen nhau — '「最後のひとつ、じゃんけんな」'"
+    },
+    {
+      "id": "arch_22_tokyo_gekijo",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 1079.7,
+      "dur": 9.0,
+      "ybias": 0.45,
+      "grade": 1.0,
+      "line": 203,
+      "note": "nha hat/pho Tokyo — 'そして、時代は流れて、昭和50年'"
+    },
+    {
+      "id": "arch_23_hatake",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 497.3,
+      "dur": 9.0,
+      "ybias": 0.5,
+      "grade": 1.0,
+      "line": 207,
+      "note": "ruong bac thang / nuong che — '日本中の食卓が、豊かになっていく途中の、数字でした'"
+    },
+    {
+      "id": "arch_24_gakusei_mado",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 518.2,
+      "dur": 9.0,
+      "ybias": 0.4,
+      "grade": 1.0,
+      "line": 209,
+      "note": "hoc sinh nu cuoi ben cua so tau — '昼休みの校庭へ、みんな駆け出していきました'"
+    },
+    {
+      "id": "arch_25_daibutsu_gakusei",
+      "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+      "ss": 2034.1,
+      "dur": 9.0,
+      "ybias": 0.42,
+      "grade": 1.0,
+      "line": 212,
+      "note": "doan hoc sinh truoc tuong Phat lon — '間違いなく、昭和の給食の卒業生です'"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+# -*- coding: utf-8 -*-
+"""Video 17 — 昭和の会社がくれたもの5選 (163 clip). Cong thuc duy nhat v2.
+
+⛔ KHONG chep hang so. STYLE / MOTION / AVOID / FRAMING / EXTRAS deu lay tu videogen_lib.
+
+KHAC VIDEO 16:
+ 1. ⭐ **Doi mat: A_HONNIN** — nam ~40, nguoi LAM CONG. Bai nay khong co "nguoi bi quyet dinh"
+    nhu 16; no la mot nguoi nhan tung thu mot tu cong ty roi mat dan tung thu. POV = mat cua
+    chinh nguoi do. Ba lop tuoi cua CUNG mot nguoi: A_HONNIN (40) -> A_HONNIN_TEINEN (60,
+    le ve huu) -> A_IMA (78, thoi NAY) — chep Y NGUYEN cau khuon mat, chi doi toc/nep nhan/do.
+ 2. ⭐ **HIEN VAT XUYEN BAI: to giay dan tren bang thong bao.** Cold open no duoc dan len,
+    M1 dam dong doc no, M4 no bao tin ha lai suat, KET no chi con la mot to giay cu trong hop.
+ 3. ⭐ **Boi canh moi so voi 16: `keijiban` (bang thong bao hanh lang) · `shataku_soto` /
+    `shataku_rouka` (khu tap the cong ty) · `ryou_rouka` (ky tuc doc than) · `soumu` (quay
+    tong vu + ket sat) · `soubetsu_hana` (le ve huu, bo hoa).**
+
+🔴 NAM RUI RO — biet truoc, khong phat hien lai:
+ a. ⛔ **CAM can canh doc duoc chu/so tren to giay dan bang, tren bang luong, tren so tiet kiem.**
+    Vua la bia hien vat vua dinh `feedback_so_tren_hinh_phai_do_font_ve` (Veo sai so ~1/3 lan).
+    Moi to giay deu quay GOC NGHIENG, bi tay che, hoac chi thay mat sau. So lieu de Remotion ve.
+ b. ⛔ **CAM lich treo tuong, nhiet ke, thuoc do, bang bieu co truc** (`ai-video-regen.md` §3:
+    vat mang san mot thang so thi model dien so len, bat ke cau cam). Bai nay noi ve % va nam
+    nen rat de bi keo ve phia ve mot cuon lich — tuyet doi khong.
+ c. POV la loai shot t2v hong nhieu nhat (`hands only` an 14/21 clip o video 10) => moi shot
+    POV deu phai co THAN: pov / pov_sit / pov_stand.
+ d. ⛔ **Van phong Showa KHONG co may tinh, khong man hinh.** Chi co may tinh co, dien thoai
+    quay so, ban thep, tu ho so. Model rat hay dan mot cai man hinh vao.
+ e. **Bo hoa la diem mau duy nhat cua M5** — giu no ruc, moi thu con lai giu tong xam/nau.
+"""
+import sys
+sys.path.insert(0, r"E:\Claude\Projects\youtube-jp-showa\tools")
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+from videogen_lib import build, gate, autochain, write_outputs, act_report, linkage
+
+PROF = None          # ho so mac dinh cua kenh (Showa mau, tai lieu quan sat)
+CROWD = {
+    "keijiban":      "full",   # dam dong truoc bang thong bao — chinh la hinh cua M1
+    "office":        "full",
+    "office_rouka":  "few",
+    "keiri":         "few",
+    "soumu":         "few",
+    "soubetsu_hana": "full",
+    "shataku_soto":  "few",
+    "shataku_rouka": "few",
+    "ryou_rouka":    "few",
+    "michi_asa":     "few",
+}
+
+# =====================================================================================
+# P — BOI CANH
+# =====================================================================================
+P = {
+ "keijiban":      'the end wall of a Showa office corridor where a large cork notice board hangs, a few loose sheets of paper pinned to it with drawing pins, a worn linoleum floor and painted plaster walls, a metal window frame at the far end letting flat daylight down the corridor',
+ "office":        'the open floor of a Showa company office in the daytime, grey steel desks pushed together face to face in long rows, a mechanical calculator and a black rotary dial telephone on the rows, stacked paper trays and a glass ashtray, tall metal cabinets along the wall and wide windows with venetian blinds, no screens of any kind',
+ "office_rouka":  'the corridor of a Showa office building, a worn linoleum floor and painted plaster walls, frosted glass doors along one side, a metal window frame at the far end letting flat daylight down the length of it',
+ "keiri":         'the pay window of a Showa company, a wooden counter with a low grille over it, a heavy ledger open on the counter, a rubber stamp pad and a cloth bag set to one side, steel desks and shelves of bound files behind the staff side',
+ "soumu":         'the general affairs corner of a Showa office, a tall grey steel safe with a heavy dial standing against the wall, a wooden counter in front of it, a long ledger and a stamp pad on the counter, filing cabinets and a single bare pendant lamp above',
+ "soubetsu_hana": 'a cleared corridor on a Showa office floor in the late afternoon, the desks pushed back at one end, colleagues standing in two loose rows along the walls, the venetian blinds half down at the windows behind them',
+ "shataku_soto":  'the yard of a Showa company housing block in the late afternoon, a four storey concrete building with open walkways, washing hung out along every balcony, bicycles leaning in a row below, a concrete play area with a single steel climbing frame',
+ "shataku_rouka": 'the open outdoor walkway of a Showa company housing block, concrete underfoot and a painted steel railing along the open side, identical steel doors in a row with a small frosted window beside each, buckets and folded laundry poles against the wall',
+ "ryou_rouka":    'the corridor of a Showa company dormitory at night, a worn wooden floor, identical thin doors along one side, a single shaded bulb hanging at each end, a low shoe rack and a shared telephone on a small table against the wall',
+ "chanoma":       'the living room of a Showa house in the evening, a low round wooden dinner table in the middle of the tatami with flat floor cushions round it, a fluorescent ceiling light with a long pull cord, a wooden tea cabinet with sliding glass doors, sliding paper screens along one side',
+ "daidokoro":     'the kitchen of a Showa house at night, a tiled worktop and a deep concrete sink, a two-ring gas burner with a blackened kettle on it, open shelves of enamel bowls and tin canisters, a wooden rice bin standing in the corner, one bare bulb over the worktop',
+ "genkansaki":    'the doorway of a Showa house seen from just inside, a sunken concrete entrance floor with lace-up shoes set out on it, a wooden shoe cabinet against the wall, a frosted glass sliding door half open onto the lane',
+ "michi_asa":     'a narrow Showa residential lane early in the morning, wooden fences and low gates on both sides, a telegraph pole, a round red postbox at the corner, men in work jackets walking the same way towards the main road',
+ "ima_ie":        'a present-day Japanese living room, a low sofa and a plain table, a flat window with a plain curtain, everyday daylight, nothing on the table but one flat lidded box and a single old sheet of paper',
+}
+
+# =====================================================================================
+# C — DAN DIEN
+#  ⭐ MOI CAST = KHUON MAT (khong doi ca video) + DO MAC (doi theo boi canh).
+#  🔴 Moi khuon mat duoi day phai KHAC moi cast cua video 13/14/15/16 (so tools/CAST_REGISTRY.json).
+#     Kiem bang: python tools/check_cast_unique.py 17
+#  ⭐ A_HONNIN / A_HONNIN_TEINEN / A_IMA la CUNG MOT NGUOI o ba tuoi — cau khuon mat chep y
+#     nguyen, chi them toc bac + nep nhan. Dung sua le mot ban.
+# =====================================================================================
+C = {
+ "A_HONNIN":        'a man of about forty with a wide square face and a low flat forehead, a straight hairline across it, short thick eyebrows set far apart, single-lidded eyes that slant up very slightly at the outer corners, a broad flat nose and a small dark mole under the left eye, his hair parted low on one side, wearing a plain white short-sleeved dress shirt with the collar open and dark trousers',
+ "A_HONNIN_TEINEN": 'a man of about sixty with a wide square face and a low flat forehead, a straight hairline across it, short thick eyebrows set far apart, single-lidded eyes that slant up very slightly at the outer corners, a broad flat nose and a small dark mole under the left eye, his hair now iron grey and thinner at the temples with deep lines across the forehead, wearing a plain dark grey suit and a plain tie',
+ "A_IMA":           'a man of about seventy-eight with a wide square face and a low flat forehead, a straight hairline across it, short thick eyebrows set far apart, single-lidded eyes that slant up very slightly at the outer corners, a broad flat nose and a small dark mole under the left eye, his hair now white and sparse, the cheeks fallen in and brown age spots on the temples, wearing a plain beige cardigan over a plain shirt',
+ "A_TSUMA":         'a woman of about thirty-five with a long oval face and a high rounded forehead, thin curved eyebrows set high, wide double-lidded eyes slightly sunken, low cheekbones and a small round chin with a dimple in the right cheek, her hair tied back low at the neck, wearing a plain blouse with a plain apron over it',
+ "A_KACHOU":        'a man of about fifty-five with a short blunt rectangular face and a heavy square jaw, the hairline receded deeply at both temples, thick grey eyebrows over heavy hooded eyelids, a large nose with a pronounced bridge and a thin trimmed moustache, wearing a plain white dress shirt with a dark tie and sleeve garters',
+ "A_DOURYOU":       'a young man of about twenty-eight with a long narrow face and prominent cheekbones, a pointed chin, straight dark eyebrows low over large double-lidded eyes and a narrow straight nose, his thick hair parted in the middle, wearing a plain pale short-sleeved shirt with a thin dark tie pulled loose',
+}
+
+S = []
+
+# =====================================================================================
+# HOOK 000-012 (13 clip / 48,3s = 3,7s moi canh)
+#   nhip: to giay duoc dan len -> dam dong keo den -> chung nhan (nguoi ke, thoi NAY)
+#         -> ba cu soc (bang thong bao / khu tap the / bang luong day them mot dong)
+#         -> dan nhan 「これが、昭和の会社です」
+#   ⭐ Phan bo: 4 wide · 3 medium · 2 ots/behind · 2 pov · 1 low · 1 high.
+# =====================================================================================
+S += [
+('H0','HOOK',"A_DOURYOU reaches up and presses a drawing pin into the top corner of a sheet of paper on the notice board, then he smooths the sheet flat with the side of his hand, then he steps back one pace to look at it, while the loose corner of the sheet lifts and settles in the draught from the window",'keijiban','medium','Q',None,'the sheet is pinned up and A_DOURYOU is standing a pace back from the board'),
+('H1','HOOK',"A_DOURYOU turns away from the notice board and walks off down the corridor out of frame, while two other men come the other way and stop in front of the board behind him",'keijiban','wide','Q',None,None),
+('H2','HOOK',"Men in white shirts come along the corridor from both ends and gather in front of the notice board, then the ones at the front lean in towards the sheet, then the ones behind rise onto their toes to see over the shoulders in front of them",'keijiban','wide','Q',None,'a crowd of men is packed in front of the board, the front row leaning in'),
+('H3','HOOK',"the viewer stands at the back of the crowd in the corridor and cannot see the board past the shoulders in front, then the viewer leans slowly to one side to find a gap between two heads, then settles back again",'keijiban','pov_stand','Q',None,None),
+('H4','HOOK',"A_IMA lifts a single old sheet of paper out of a flat lidded box on the table with both hands, then he turns it over once, then he lays it down flat and rests his palm on it, while the curtain moves at the window behind him",'ima_ie','medium','Q',None,'A_IMA has the old sheet laid flat on the table with his palm resting on it'),
+('H5','HOOK',"A_IMA looks down at the sheet on the table and his eyes narrow into two slits while the cheeks push up and the mouth barely opens at all, then his head tilts a little towards it, then he lets his breath out and his shoulders drop",'ima_ie','medium','Q',None,None),
+('H6','HOOK',"the crowd in front of the notice board suddenly presses forward all at once, then one man near the front turns his head and says something to the man beside him, then the whole group shifts a pace closer to the board",'keijiban','high','Q',None,'the crowd has pressed right up to the board'),
+('H7','HOOK',"A_TSUMA hangs a wet shirt over the railing of the open walkway and pegs it down, then she straightens up and looks along the row of identical steel doors, while washing hung out along the balconies below moves in the wind",'shataku_rouka','wide','Q',None,None),
+('H8','HOOK',"A_KACHOU sets a long ledger down on the pay counter and opens it flat with both hands, then he turns it round to face the other way, then he rests one finger on the open page without looking down at it",'keiri','ots','Q',None,'the ledger lies open on the counter facing outwards'),
+('H9','HOOK',"A_HONNIN stands at the pay counter and takes a thick paper envelope from the other side with both hands, then he presses it flat against his chest, then he turns and walks away down the corridor",'keiri','medium','Q',None,None),
+('H10','HOOK',"the viewer sits at a low table in the living room while A_TSUMA sets a small tin down on the tatami beside the rice bin, then she lifts the lid off, then she puts it back on and pushes the tin behind the bin with the flat of her hand",'chanoma','pov_sit','Q',None,None),
+('H11','HOOK',"men in work jackets walk along the narrow lane in the early morning all in the same direction, then one of them turns in at a gate, then the rest go on towards the main road and out of frame",'michi_asa','wide','Q',None,None),
+('H12','HOOK',"A_HONNIN stands alone in front of the empty notice board in the corridor with his hands at his sides, then he looks up at the single sheet on it, then he lowers his head and stays still",'keijiban','low','Q',None,None),
+]
+
+# =====================================================================================
+# MUC 1 — 給料は、毎年上がるものだった (013-046, 34 clip)
+#   nhip: khong khi thang hai -> to giay yeu cau -> dai bieu cong doan di tu sang
+#         -> sang tra loi, dam dong -> muc in roneo, mui muc -> nam nao thap thi im lang
+#         -> なぜ: vat gia len + thieu nguoi -> so lieu 1970/1973/1974 -> 1995/2003/2025
+#         -> ha canh mem
+# =====================================================================================
+S += [
+('M1a','M1',"A_HONNIN walks along the office floor between the rows of steel desks carrying a folded work jacket over one arm, then he stops beside his own desk, then he hangs the jacket over the back of the chair, while the men already seated go on working at the rows behind him",'office','wide','Q',None,'A_HONNIN is standing by his desk with the jacket over the chair'),
+('M1b','M1',"A_HONNIN pulls out his chair and sits down at the steel desk, then he draws a stack of paper towards himself, then he squares the stack with both hands",'office','medium','Q',None,None),
+('M1c','M1',"two men stand close together at the end of the row of desks talking with their heads bent towards each other, then one of them glances towards the corridor door, then they move apart and go back to their own desks",'office','wide','Q',None,None),
+('M1d','M1',"A_DOURYOU pins a second sheet up beside the first on the notice board, then he runs his thumb down the edge to flatten it, then he steps back, while the draught lifts both loose corners together",'keijiban','medium','Q',None,'two sheets are pinned side by side on the board'),
+('M1e','M1',"the viewer stands close in front of the notice board looking up at the sheets, then the viewer leans in a little, then straightens up again, while the paper corner moves in the draught",'keijiban','pov_stand','Q',None,None),
+('M1f','M1',"three men in suits walk together down the office corridor in the early morning carrying flat cloth folders under their arms, then they pass the frosted glass doors, then they go out through the door at the far end out of frame",'office_rouka','wide','Q',None,None),
+('M1g','M1',"A_KACHOU stands at the window of the office with the venetian blind pulled aside one slat with his finger, then he lets the slat fall back, then he turns round towards the room",'office','medium','Q',None,None),
+('M1h','M1',"the office floor at night with only one lamp on over a single desk, then A_DOURYOU walks through the dark rows carrying a teacup, then he sets it down on the lit desk and stands there",'office','wide','Q',None,None),
+('M1i','M1',"three men in suits come back in through the door at the end of the corridor late at night, then they walk towards the camera without speaking, then they pass out of frame on both sides",'office_rouka','wide','Q',None,None),
+('M1j','M1',"men crowd in front of the notice board in the morning, then the two at the front lean in with their hands behind their backs, then the men behind them press closer together",'keijiban','wide','Q',None,'the crowd is packed tight in front of the board'),
+('M1k','M1',"the viewer stands in the crowd and looks over the shoulder of the man in front at the sheet on the board, then the shoulder moves aside a little, then another head comes in from the right and blocks the view again",'keijiban','pov_stand','Q',None,None),
+('M1l','M1',"A_HONNIN stands at the front of the crowd with his face close to the board, then his eyebrows go up before the rest of him catches on, then his mouth opens a little and he turns his head towards the man beside him",'keijiban','medium','Q',None,None),
+('M1m','M1',"a man at the front of the crowd says something short over his shoulder, then the men behind him lean in all together, then the whole crowd shifts forward one pace",'keijiban','ots','Q',None,None),
+('M1n','M1',"A_DOURYOU rubs the side of his thumb against his fingertips and looks down at them, then he wipes his hand on the side of his trousers, then he looks back up at the board",'keijiban','medium','Q',None,None),
+('M1o','M1',"the viewer stands in front of the board and looks at the sheet from an angle so the page is seen edge on and the marks on it are not readable, then the viewer leans slowly to the other side",'keijiban','pov_stand','Q',None,None),
+('M1p','M1',"the men in front of the notice board stand completely still without speaking, then one of them turns and walks away down the corridor, then the others break apart and follow him in ones and twos",'keijiban','wide','Q',None,None),
+('M1q','M1',"A_HONNIN walks back along the corridor away from the board with his hands in his pockets, then he slows down, then he stops and stands facing the window at the end",'office_rouka','behind','Q',None,None),
+('M1r','M1',"A_HONNIN sits at the low table in the living room in the evening while A_TSUMA kneels down opposite him and pours tea, then he says something short to her, then she stops pouring and looks up at him",'chanoma','medium','Q',None,'the two of them are sitting at the low table with the teapot between them'),
+('M1s','M1',"A_TSUMA sets the teapot down and presses her lips together to hold something in, then it escapes through her nose anyway, then she looks down at the table to hide it",'chanoma','medium','Q',None,None),
+('M1t','M1',"a woman in an apron counts coins out of a purse onto the counter of a greengrocer while the shopkeeper waits, then she puts one coin back into the purse, then she takes a smaller bundle of vegetables instead",'shataku_soto','wide','Q',None,None),
+('M1u','M1',"A_TSUMA lifts the lid off the rice bin in the kitchen and looks inside, then she scoops one measure out, then she levels the measure off with her finger and tips it into the pot",'daidokoro','medium','Q',None,None),
+('M1v','M1',"a long line of men in work jackets files in through a factory gate in the morning while more come up behind them, then the ones at the front spread out across the yard, then the line keeps coming",'michi_asa','wide','Q',None,None),
+('M1w','M1',"A_KACHOU stands in the office holding a sheet of paper at arm's length and looks at the room over the top of it, then he lowers it, then he sets it face down on the desk in front of him",'office','medium','Q',None,None),
+('M1x','M1',"men crowd in front of the notice board again in a different season with their jackets on, then the front row leans in, then two men at the back turn to each other and nod",'keijiban','wide','Q',None,None),
+('M1y','M1',"A_HONNIN sits at his desk and works the handle of a mechanical calculator with one hand while steadying it with the other, then he stops, then he winds it back and starts again",'office','medium','Q',None,None),
+('M1z','M1',"A_DOURYOU leans across the gap between two desks to say something to A_HONNIN, then A_HONNIN looks up from his work, then both of them look towards the corridor door at the same time",'office','wide','Q',None,None),
+('M1A','M1',"the viewer sits at a steel desk in the office with both hands resting on the edge of it, then the viewer turns slowly to look along the row of desks, then back down at the desk",'office','pov_sit','Q',None,None),
+('M1B','M1',"A_HONNIN stands in front of the notice board with his arms folded, then he unfolds them and lets them hang, then he turns his head slowly from one side of the board to the other",'keijiban','low','Q',None,None),
+('M1C','M1',"men walk away from the notice board down the corridor in a loose group with their heads down, then one of them stops and looks back at the board, then he goes on after the others",'office_rouka','wide','Q',None,None),
+('M1D','M1',"A_KACHOU stands at the office window with the blinds half open looking out at the street below, then he lets his breath all the way out and his shoulders drop an inch, then he keeps looking at the same spot",'office','medium','Q',None,None),
+('M1E','M1',"A_HONNIN walks home along the narrow lane in the evening with his jacket over one shoulder, then he stops at a gate, then he pushes it open and goes through out of frame",'michi_asa','wide','Q',None,None),
+('M1F','M1',"A_TSUMA slides the glass door open at the entrance of the house as A_HONNIN steps up out of the sunken floor, then she takes the jacket from him, then both of them go back into the house out of frame",'genkansaki','medium','Q',None,None),
+('M1G','M1',"the viewer stands in the office corridor looking at the empty notice board with nothing pinned on it, then the viewer walks slowly towards it, then stops in front of it",'keijiban','pov_walk','Q',None,None),
+('M1H','M1',"A_IMA sits in the present-day living room with the old sheet of paper flat on the table in front of him, then he puts one finger on it, then he slides it a little further away and looks at it from there",'ima_ie','medium','Q',None,None),
+]

@@ -1,0 +1,21 @@
+{
+  "speakers": {"나": "hero", "백서아": "villain"},
+  "lines": [
+    {"match": "천사 노릇 할 수 있는 그 짧은 시간, 실컷 즐겨 둬", "speaker": "나"},
+    {"match": "닥쳐", "speaker": "백서아", "after": 4600},
+    {"match": "근데 그 예쁨을 무기로 남을 짓밟으면", "speaker": "나"},
+    {"match": "다신 전화하지 마", "speaker": "나"}
+  ],
+  "events": [
+    {"type": "sfx", "match": "폰이 부르르 울렸다", "name": "phone_buzz", "offset": -0.1, "gain": -9},
+    {"type": "sfx", "match": "내 철제 사물함 문이 빨간 스프레이로", "name": "sub_drop", "offset": -0.2, "gain": -7},
+    {"type": "card", "match": "곧 지옥문이 열리고 널 맞이할 테니까", "text": "곧 지옥문이 열리고, 널 맞이할 테니까", "style": "hero", "hold": 0.8},
+    {"type": "bgm_tense_cut", "from": "그 미소를 크게 클로즈업한 컷은", "cut": "온몸이 벼락 맞은 듯 굳었다", "resume": "무서운 정적이 몇 초 이어지다"},
+    {"type": "sfx", "match": "온몸이 벼락 맞은 듯 굳었다", "name": "sub_drop", "offset": -0.15, "gain": -5},
+    {"type": "sfx", "match": "온몸이 벼락 맞은 듯 굳었다", "name": "heartbeat", "offset": 0.5, "gain": -8},
+    {"type": "card", "match": "가식 쩐다, 소름 끼쳐", "text": "\"가식 쩐다, 소름 끼쳐\"", "style": "villain", "hold": 1.0},
+    {"type": "bgm_swell", "from": "발이 얼어붙어 새하얗게 질렸다", "to": "드문드문 시작된 박수가 순식간에", "gain_db": -26},
+    {"type": "sfx", "match": "보정하는데 폰이 울렸다", "name": "phone_buzz", "offset": -0.1, "gain": -9},
+    {"type": "card", "match": "다신 전화하지 마", "text": "\"다신, 전화하지 마\"", "style": "hero", "hold": 1.0}
+  ]
+}

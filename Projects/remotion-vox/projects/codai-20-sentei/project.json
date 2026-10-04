@@ -1,0 +1,2073 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "codai-20-sentei",
+    "channel": "co-dai",
+    "templateRef": "co-dai",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "createdAt": "2026-08-16T16:26:52.831365+00:00",
+    "modifiedAt": "2026-08-16T16:31:33.662Z"
+  },
+  "timeline": {
+    "durationInFrames": 34215
+  },
+  "sceneMarkers": [],
+  "tracks": [
+    {
+      "id": "trk-slides",
+      "name": "Slides",
+      "type": "video",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "slide-0",
+          "from": 0,
+          "durationInFrames": 263,
+          "kind": "video",
+          "asset": "assets/slide_00.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 0,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-1",
+          "from": 251,
+          "durationInFrames": 682,
+          "kind": "video",
+          "asset": "assets/clip_01.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-2",
+          "from": 921,
+          "durationInFrames": 439,
+          "kind": "video",
+          "asset": "assets/slide_02.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-3",
+          "from": 1348,
+          "durationInFrames": 613,
+          "kind": "video",
+          "asset": "assets/slide_03.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-4",
+          "from": 1949,
+          "durationInFrames": 499,
+          "kind": "video",
+          "asset": "assets/slide_04.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-5",
+          "from": 2436,
+          "durationInFrames": 435,
+          "kind": "video",
+          "asset": "assets/slide_05.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-6",
+          "from": 2859,
+          "durationInFrames": 362,
+          "kind": "video",
+          "asset": "assets/slide_06.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-7",
+          "from": 3208,
+          "durationInFrames": 383,
+          "kind": "video",
+          "asset": "assets/slide_07.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-8",
+          "from": 3580,
+          "durationInFrames": 395,
+          "kind": "video",
+          "asset": "assets/slide_08.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-9",
+          "from": 3963,
+          "durationInFrames": 521,
+          "kind": "video",
+          "asset": "assets/slide_09.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-10",
+          "from": 4472,
+          "durationInFrames": 543,
+          "kind": "video",
+          "asset": "assets/slide_10.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-11",
+          "from": 5003,
+          "durationInFrames": 531,
+          "kind": "video",
+          "asset": "assets/clip_11.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-12",
+          "from": 5521,
+          "durationInFrames": 394,
+          "kind": "video",
+          "asset": "assets/clip_12.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-13",
+          "from": 5904,
+          "durationInFrames": 384,
+          "kind": "video",
+          "asset": "assets/slide_13.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-14",
+          "from": 6276,
+          "durationInFrames": 862,
+          "kind": "video",
+          "asset": "assets/slide_14.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-15",
+          "from": 7126,
+          "durationInFrames": 242,
+          "kind": "video",
+          "asset": "assets/slide_15.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-16",
+          "from": 7356,
+          "durationInFrames": 353,
+          "kind": "video",
+          "asset": "assets/clip_16.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-17",
+          "from": 7698,
+          "durationInFrames": 552,
+          "kind": "video",
+          "asset": "assets/slide_17.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-18",
+          "from": 8238,
+          "durationInFrames": 573,
+          "kind": "video",
+          "asset": "assets/clip_18.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-19",
+          "from": 8799,
+          "durationInFrames": 616,
+          "kind": "video",
+          "asset": "assets/slide_19.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-20",
+          "from": 9402,
+          "durationInFrames": 320,
+          "kind": "video",
+          "asset": "assets/slide_20.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-21",
+          "from": 9710,
+          "durationInFrames": 366,
+          "kind": "video",
+          "asset": "assets/slide_21.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-22",
+          "from": 10064,
+          "durationInFrames": 407,
+          "kind": "video",
+          "asset": "assets/clip_22.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-23",
+          "from": 10459,
+          "durationInFrames": 735,
+          "kind": "video",
+          "asset": "assets/slide_23.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-24",
+          "from": 11182,
+          "durationInFrames": 467,
+          "kind": "video",
+          "asset": "assets/clip_24.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-25",
+          "from": 11637,
+          "durationInFrames": 375,
+          "kind": "video",
+          "asset": "assets/slide_25.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-26",
+          "from": 12000,
+          "durationInFrames": 642,
+          "kind": "video",
+          "asset": "assets/slide_26.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-27",
+          "from": 12631,
+          "durationInFrames": 509,
+          "kind": "video",
+          "asset": "assets/clip_27.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-28",
+          "from": 13128,
+          "durationInFrames": 321,
+          "kind": "video",
+          "asset": "assets/slide_28.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-29",
+          "from": 13437,
+          "durationInFrames": 812,
+          "kind": "video",
+          "asset": "assets/slide_29.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-30",
+          "from": 14237,
+          "durationInFrames": 698,
+          "kind": "video",
+          "asset": "assets/slide_30.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-31",
+          "from": 14923,
+          "durationInFrames": 470,
+          "kind": "video",
+          "asset": "assets/clip_31.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-32",
+          "from": 15381,
+          "durationInFrames": 382,
+          "kind": "video",
+          "asset": "assets/slide_32.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-33",
+          "from": 15751,
+          "durationInFrames": 419,
+          "kind": "video",
+          "asset": "assets/clip_33.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-34",
+          "from": 16158,
+          "durationInFrames": 351,
+          "kind": "video",
+          "asset": "assets/slide_34.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-35",
+          "from": 16497,
+          "durationInFrames": 482,
+          "kind": "video",
+          "asset": "assets/slide_35.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-36",
+          "from": 16967,
+          "durationInFrames": 347,
+          "kind": "video",
+          "asset": "assets/slide_36.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-37",
+          "from": 17302,
+          "durationInFrames": 525,
+          "kind": "video",
+          "asset": "assets/slide_37.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-38",
+          "from": 17815,
+          "durationInFrames": 448,
+          "kind": "video",
+          "asset": "assets/slide_38.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-39",
+          "from": 18251,
+          "durationInFrames": 432,
+          "kind": "video",
+          "asset": "assets/slide_39.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-40",
+          "from": 18671,
+          "durationInFrames": 451,
+          "kind": "video",
+          "asset": "assets/clip_40.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-41",
+          "from": 19109,
+          "durationInFrames": 416,
+          "kind": "video",
+          "asset": "assets/slide_41.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-42",
+          "from": 19513,
+          "durationInFrames": 360,
+          "kind": "video",
+          "asset": "assets/clip_42.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-43",
+          "from": 19861,
+          "durationInFrames": 449,
+          "kind": "video",
+          "asset": "assets/slide_43.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-44",
+          "from": 20298,
+          "durationInFrames": 428,
+          "kind": "video",
+          "asset": "assets/clip_44.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-45",
+          "from": 20714,
+          "durationInFrames": 626,
+          "kind": "video",
+          "asset": "assets/slide_45.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-46",
+          "from": 21328,
+          "durationInFrames": 375,
+          "kind": "video",
+          "asset": "assets/slide_46.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-47",
+          "from": 21691,
+          "durationInFrames": 374,
+          "kind": "video",
+          "asset": "assets/slide_47.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-48",
+          "from": 22054,
+          "durationInFrames": 549,
+          "kind": "video",
+          "asset": "assets/slide_48.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-49",
+          "from": 22591,
+          "durationInFrames": 519,
+          "kind": "video",
+          "asset": "assets/clip_49.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-50",
+          "from": 23098,
+          "durationInFrames": 623,
+          "kind": "video",
+          "asset": "assets/clip_50.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-51",
+          "from": 23708,
+          "durationInFrames": 497,
+          "kind": "video",
+          "asset": "assets/slide_51.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-52",
+          "from": 24193,
+          "durationInFrames": 391,
+          "kind": "video",
+          "asset": "assets/clip_52.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-53",
+          "from": 24572,
+          "durationInFrames": 552,
+          "kind": "video",
+          "asset": "assets/slide_53.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-54",
+          "from": 25112,
+          "durationInFrames": 408,
+          "kind": "video",
+          "asset": "assets/slide_54.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-55",
+          "from": 25508,
+          "durationInFrames": 474,
+          "kind": "video",
+          "asset": "assets/slide_55.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-56",
+          "from": 25971,
+          "durationInFrames": 317,
+          "kind": "video",
+          "asset": "assets/slide_56.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-57",
+          "from": 26276,
+          "durationInFrames": 403,
+          "kind": "video",
+          "asset": "assets/clip_57.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-58",
+          "from": 26668,
+          "durationInFrames": 726,
+          "kind": "video",
+          "asset": "assets/slide_58.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-59",
+          "from": 27382,
+          "durationInFrames": 364,
+          "kind": "video",
+          "asset": "assets/slide_59.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-60",
+          "from": 27734,
+          "durationInFrames": 689,
+          "kind": "video",
+          "asset": "assets/clip_60.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-61",
+          "from": 28411,
+          "durationInFrames": 553,
+          "kind": "video",
+          "asset": "assets/slide_61.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-62",
+          "from": 28951,
+          "durationInFrames": 316,
+          "kind": "video",
+          "asset": "assets/slide_62.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-63",
+          "from": 29255,
+          "durationInFrames": 542,
+          "kind": "video",
+          "asset": "assets/clip_63.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-64",
+          "from": 29785,
+          "durationInFrames": 714,
+          "kind": "video",
+          "asset": "assets/clip_64.mp4",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "none",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-65",
+          "from": 30487,
+          "durationInFrames": 439,
+          "kind": "video",
+          "asset": "assets/slide_65.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-66",
+          "from": 30914,
+          "durationInFrames": 371,
+          "kind": "video",
+          "asset": "assets/slide_66.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-67",
+          "from": 31273,
+          "durationInFrames": 377,
+          "kind": "video",
+          "asset": "assets/slide_67.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-68",
+          "from": 31638,
+          "durationInFrames": 693,
+          "kind": "video",
+          "asset": "assets/slide_68.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-69",
+          "from": 32319,
+          "durationInFrames": 243,
+          "kind": "video",
+          "asset": "assets/slide_69.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-70",
+          "from": 32549,
+          "durationInFrames": 411,
+          "kind": "video",
+          "asset": "assets/slide_70.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-71",
+          "from": 32949,
+          "durationInFrames": 349,
+          "kind": "video",
+          "asset": "assets/slide_71.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-72",
+          "from": 33286,
+          "durationInFrames": 638,
+          "kind": "video",
+          "asset": "assets/slide_72.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "slide-73",
+          "from": 33912,
+          "durationInFrames": 303,
+          "kind": "video",
+          "asset": "assets/slide_73.jpg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 12,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        }
+      ]
+    },
+    {
+      "id": "trk-voice",
+      "name": "Voice",
+      "type": "audio",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "voice-1",
+          "from": 0,
+          "durationInFrames": 34215,
+          "kind": "audio",
+          "asset": "assets/voice.wav",
+          "volume": 1,
+          "trimStartFrames": 0
+        }
+      ]
+    }
+  ],
+  "captions": {
+    "source": "srt-interpolated",
+    "style": "outline",
+    "enabled": true,
+    "fontSize": 52,
+    "lines": [
+      {
+        "text": "ナスの実が小さくなって、皮がごわごわしていませんか。",
+        "startMs": 0,
+        "endMs": 4341
+      },
+      {
+        "text": "その株に鋏を入れられるのは、あと10日ほどです。",
+        "startMs": 4341,
+        "endMs": 8256
+      },
+      {
+        "text": "逃すと、秋に採れるナスは、1本もありません。",
+        "startMs": 8756,
+        "endMs": 12905
+      },
+      {
+        "text": "今日、花を1つ、正面からのぞいてみてください。",
+        "startMs": 13505,
+        "endMs": 18135
+      },
+      {
+        "text": "真ん中から突き出ている細い棒が、まわりの黄色い粒より短ければ、その株は、もう実を作れないと言っています。あなたの畑では、どちらが長いでしょうか。",
+        "startMs": 18135,
+        "endMs": 30391
+      },
+      {
+        "text": "花が落ちているのではありません。花のほうが、先に諦めているのです。",
+        "startMs": 31091,
+        "endMs": 37245
+      },
+      {
+        "text": "見分けがつけば、今週やることが決まります。枝を、半分の長さまで切り戻してください。",
+        "startMs": 38045,
+        "endMs": 45331
+      },
+      {
+        "text": "実がついたまま、切ってください。丸坊主になります。それでも、半月ほどで新しい芽が動きはじめます。",
+        "startMs": 45331,
+        "endMs": 54611
+      },
+      {
+        "text": "ただし、切るだけでは戻りません。いちばん効く一手は、地面の下にあります。それは、最後に置いておきます。",
+        "startMs": 55111,
+        "endMs": 64465
+      },
+      {
+        "text": "古代の秘訣へようこそ。今日もまた、時代に置き去りにされた知恵を一つ、掘り起こしていきます。",
+        "startMs": 65365,
+        "endMs": 72949
+      },
+      {
+        "text": "この番組では、暮らしの中に埋もれた知恵をお届けしています。よろしければ、チャンネル登録をしておいてください。",
+        "startMs": 72949,
+        "endMs": 81589
+      },
+      {
+        "text": "お住まいの地域では、夏のナスはいつごろまで採れていましたか。よければ、あとでコメントで教えてください。",
+        "startMs": 81589,
+        "endMs": 89579
+      },
+      {
+        "text": "白状しますと、私は昔、これを知らずに1株抜きました。",
+        "startMs": 90179,
+        "endMs": 95693
+      },
+      {
+        "text": "花が10個落ちても実が1つもつかないので、もう寿命だと決めつけたのです。",
+        "startMs": 95693,
+        "endMs": 101048
+      },
+      {
+        "text": "同じ日に、同じ苗屋で買った株を、隣の畝の方が切り戻していました。",
+        "startMs": 101648,
+        "endMs": 107344
+      },
+      {
+        "text": "麦わら帽子の下から、軍手の甲で汗を拭きながら、次々と鋏を入れていきます。実がついたままの枝を、ためらいもせずに落としていくのです。",
+        "startMs": 107344,
+        "endMs": 119227
+      },
+      {
+        "text": "朝いちばんの畑で、もったいなくないんですか、と聞いてみました。その方は手を止めずに、こう言いました。",
+        "startMs": 119727,
+        "endMs": 128047
+      },
+      {
+        "text": "いま切らんと、秋に困るとよ。",
+        "startMs": 128747,
+        "endMs": 131605
+      },
+      {
+        "text": "丸坊主になった株を見て、私は内心、ずいぶん思いきったことをするな、と思っていました。",
+        "startMs": 132505,
+        "endMs": 140399
+      },
+      {
+        "text": "9月の終わりに、その方の畑をのぞきました。つやのある紫の実が、20個ばかり下がっていました。",
+        "startMs": 140999,
+        "endMs": 148956
+      },
+      {
+        "text": "私の畑には、棒すら立っていませんでした。抜いてしまっていたからです。",
+        "startMs": 149456,
+        "endMs": 155376
+      },
+      {
+        "text": "あの方が握っていた10日と、私が逃した10日は、同じ10日でした。",
+        "startMs": 156176,
+        "endMs": 161851
+      },
+      {
+        "text": "違ったのは、あの一週間に鋏を入れたかどうかだけです。",
+        "startMs": 161851,
+        "endMs": 166555
+      },
+      {
+        "text": "読む。切る。渡す。そして、掘る。",
+        "startMs": 167155,
+        "endMs": 171613
+      },
+      {
+        "text": "四つとも、前の一つが済んでいないと意味がありません。今日は、この順に、カレンダーを進めながらお話しします。",
+        "startMs": 171613,
+        "endMs": 181107
+      },
+      {
+        "text": "一つ目。読む。",
+        "startMs": 181907,
+        "endMs": 183848
+      },
+      {
+        "text": "ナスは、6月から一度も休まずに実をつけ続けています。今日で、もう70日を超えています。",
+        "startMs": 184448,
+        "endMs": 192331
+      },
+      {
+        "text": "人間なら、2か月ぶっ通しで働いている状態です。",
+        "startMs": 192331,
+        "endMs": 196693
+      },
+      {
+        "text": "7月の終わりごろになると、体力が目に見えて落ちます。実が小さい。皮がごわごわ硬い。手に取ると、つやが消えて、指がすべりません。",
+        "startMs": 197193,
+        "endMs": 208991
+      },
+      {
+        "text": "けれど、この三つはどれも、見る人によって判断が変わります。もっとはっきりした目印が、ナスにはあります。",
+        "startMs": 209591,
+        "endMs": 218871
+      },
+      {
+        "text": "花です。",
+        "startMs": 219471,
+        "endMs": 220420
+      },
+      {
+        "text": "ナスの花を正面からのぞいてみてください。真ん中に黄色い粒の束があります。あれが、おしべです。その束の中心から、細い棒が1本、突き出ています。これが、めしべです。",
+        "startMs": 221020,
+        "endMs": 237436
+      },
+      {
+        "text": "元気な株では、この棒が、黄色い束よりはっきり長く出ています。長花柱花と呼びます。",
+        "startMs": 237936,
+        "endMs": 245605
+      },
+      {
+        "text": "ところが弱ってくると、棒のほうが短くなります。黄色い束に埋もれて、外から見えなくなることもあります。これが、短花柱花です。",
+        "startMs": 245605,
+        "endMs": 256987
+      },
+      {
+        "text": "めしべが短いと、花粉が届く先が足りません。だから受粉できず、実にならずに落ちます。",
+        "startMs": 256987,
+        "endMs": 264976
+      },
+      {
+        "text": "では、なぜ短くなるのか。葉の色をあわせて見てください。",
+        "startMs": 265576,
+        "endMs": 270365
+      },
+      {
+        "text": "株全体が薄い黄緑に抜けているなら、肥料が足りていません。",
+        "startMs": 270365,
+        "endMs": 274984
+      },
+      {
+        "text": "葉は濃い緑のままで、花だけ短いなら、原因は暑さのほうです。この時期に多いのは、こちらです。",
+        "startMs": 274984,
+        "endMs": 283613
+      },
+      {
+        "text": "つまり短花柱花は、故障のサインではありません。栄養失調のサインです。だから、まだ戻せます。",
+        "startMs": 284213,
+        "endMs": 293088
+      },
+      {
+        "text": "もう一か所、見ておくと確かです。枝の先っぽ、いちばん新しく伸びている部分を、指でつまんでみてください。",
+        "startMs": 293688,
+        "endMs": 303491
+      },
+      {
+        "text": "元気な株は、そこが太くて、葉も大きい。疲れた株は、先へいくほど細くなって、葉が小指の先ほどしかありません。",
+        "startMs": 303491,
+        "endMs": 313208
+      },
+      {
+        "text": "ところが、サインを読めるようになっても、それだけでは戻りません。",
+        "startMs": 313808,
+        "endMs": 318747
+      },
+      {
+        "text": "ここから先が、多くの人が怖くて手を出せないところです。",
+        "startMs": 318747,
+        "endMs": 323259
+      },
+      {
+        "text": "二つ目。切る。",
+        "startMs": 324059,
+        "endMs": 325851
+      },
+      {
+        "text": "やり方は、拍子抜けするほど乱暴です。主枝を、半分から3分の2の長さまで、思いきって切り戻してください。",
+        "startMs": 326451,
+        "endMs": 335869
+      },
+      {
+        "text": "太い枝を3本ほど残して、あとは落とします。古い葉、枯れた葉、虫に食われた葉も、全部落としてください。",
+        "startMs": 335869,
+        "endMs": 345544
+      },
+      {
+        "text": "終わると、ほとんど棒です。",
+        "startMs": 346144,
+        "endMs": 348437
+      },
+      {
+        "text": "そして、ここがいちばん抵抗のあるところですが、実がついていても、切ります。",
+        "startMs": 349037,
+        "endMs": 355213
+      },
+      {
+        "text": "なぜ、実ごと落とすのでしょうか。",
+        "startMs": 355813,
+        "endMs": 358629
+      },
+      {
+        "text": "実を1つ育てるのに、株はかなりの力を使います。実がついているかぎり、ナスはその実に養分を送り続けます。新しい枝を出すぶんが、残りません。",
+        "startMs": 359229,
+        "endMs": 372627
+      },
+      {
+        "text": "つまり実は、ごほうびではありません。いま株を縛っている重りです。",
+        "startMs": 373127,
+        "endMs": 378481
+      },
+      {
+        "text": "落としてしまえば、ナスは実を作る仕事から解放されます。行き場をなくした養分は、新しい芽のほうへ回ります。",
+        "startMs": 378481,
+        "endMs": 387708
+      },
+      {
+        "text": "どこで切るか、だけ気をつけてください。枝の途中に、小さな葉や芽が残る位置で止めます。葉が1枚も残らない切り方をすると、そこから芽が出てきません。",
+        "startMs": 388308,
+        "endMs": 400404
+      },
+      {
+        "text": "太い枝は、切り口を少しだけ斜めにしてください。まっすぐ切ると、雨のあと切り口に水が溜まって、そこから傷みます。",
+        "startMs": 400404,
+        "endMs": 410463
+      },
+      {
+        "text": "小さい実は、もったいないので採って食べてください。皮が硬ければ、焼いてから皮をむくと、まだ十分おいしく食べられます。",
+        "startMs": 410463,
+        "endMs": 420820
+      },
+      {
+        "text": "時期は、7月の下旬から8月の上旬です。遅れると、新しい枝が育つ前に涼しくなってしまいます。",
+        "startMs": 421420,
+        "endMs": 430785
+      },
+      {
+        "text": "冒頭で、あと10日ほど、と申し上げたのは、この一週間か二週間のことです。",
+        "startMs": 430785,
+        "endMs": 437399
+      },
+      {
+        "text": "ところが、切ったあとに何も渡さないと、株は芽を出せません。空っぽの体で、いきなり走れと言われているようなものです。",
+        "startMs": 437999,
+        "endMs": 447705
+      },
+      {
+        "text": "ここまでご覧いただき、ありがとうございます。この知恵に価値を感じていただけたなら、高評価と、同じように知りたい誰かへのシェアで、古代の秘訣を支えていただけると嬉しく思います。また、ご感想や、次に掘り起こしてほしいテーマがあれば、コメントでお寄せください。皆さまの声が、この番組をより深いものにしていきます。",
+        "startMs": 448305,
+        "endMs": 474172
+      },
+      {
+        "text": "三つ目。渡す。",
+        "startMs": 474972,
+        "endMs": 476817
+      },
+      {
+        "text": "切ったら、その日のうちに追肥をします。株元から少し離して、ぐるりと一周まいてください。",
+        "startMs": 477417,
+        "endMs": 484916
+      },
+      {
+        "text": "ここで、実を太らせるときと同じつもりで肥料を選ぶと、遠回りになります。いま株がやろうとしているのは、実を作る仕事ではありません。枝と葉を作る仕事です。",
+        "startMs": 484916,
+        "endMs": 497833
+      },
+      {
+        "text": "ですから、葉を茂らせるほうに効く肥料を、いつもより多めに置いてください。",
+        "startMs": 497833,
+        "endMs": 503423
+      },
+      {
+        "text": "そして、水です。切ったあとの株は、葉がごっそり減っています。葉が減ると、そこから逃げる水も減ります。",
+        "startMs": 504023,
+        "endMs": 513100
+      },
+      {
+        "text": "ところが、ここで多くの人がつまずきます。土がなかなか乾かないので、いつもの調子で水をやってしまうのです。土が乾ききらないと、根は息ができません。",
+        "startMs": 513100,
+        "endMs": 525441
+      },
+      {
+        "text": "土に、指を第一関節まで挿してみてください。中がまだ湿っていたら、その日はやらない。表面が白っぽく乾いてから、たっぷり。それだけです。",
+        "startMs": 525441,
+        "endMs": 538401
+      },
+      {
+        "text": "それから、地面です。葉がごっそり減ったぶん、土に日が直接当たるようになります。真夏の地面は、思っているよりずっと熱くなります。",
+        "startMs": 539001,
+        "endMs": 550308
+      },
+      {
+        "text": "刈った草でも、古い新聞紙でも構いません。株元に敷いて、地面が焼かれないようにしてください。せっかく新しい根を出そうとしている場所が、いちばん先に傷むのは、そこです。",
+        "startMs": 550308,
+        "endMs": 565359
+      },
+      {
+        "text": "追肥と、水と、日よけ。ここまでは、たいていの本にも書いてあります。",
+        "startMs": 565959,
+        "endMs": 572231
+      },
+      {
+        "text": "ところが、これだけやって、芽が出ない株があります。",
+        "startMs": 572931,
+        "endMs": 577133
+      },
+      {
+        "text": "同じ日に、同じ肥料をまいたのに、片方だけ動かない。私も一度、そうなりました。",
+        "startMs": 577133,
+        "endMs": 584632
+      },
+      {
+        "text": "肥料が悪いのか、量が足りないのかと考えて、1週間後にもう一度まきました。それでも、動きませんでした。",
+        "startMs": 584632,
+        "endMs": 593539
+      },
+      {
+        "text": "渡したものが、届いていなかったのです。",
+        "startMs": 594239,
+        "endMs": 597727
+      },
+      {
+        "text": "四つ目。掘る。いよいよ、地面の下の話です。",
+        "startMs": 598727,
+        "endMs": 603612
+      },
+      {
+        "text": "物置から、スコップを一本、持ってきてください。",
+        "startMs": 603612,
+        "endMs": 608167
+      },
+      {
+        "text": "ナスは6月から実をつけ続けています。もう70日以上、根のほうも休まず働いてきました。",
+        "startMs": 608767,
+        "endMs": 616735
+      },
+      {
+        "text": "古くなった根は、太く硬くなって、水も肥料も、あまり吸わなくなります。",
+        "startMs": 616735,
+        "endMs": 622761
+      },
+      {
+        "text": "つまり、肥料は土の中にちゃんとあります。ところが、吸う側のほうが古びている。だから、届きません。",
+        "startMs": 622761,
+        "endMs": 631807
+      },
+      {
+        "text": "ここで、昔の人がやったことが、少し乱暴です。",
+        "startMs": 632407,
+        "endMs": 636780
+      },
+      {
+        "text": "枝を切ったその日に、続けてやってしまってかまいません。できれば、雨の降る前の日を選んでください。切り口が乾く前に水をもらえると、新しい根の出が早くなります。",
+        "startMs": 637380,
+        "endMs": 650831
+      },
+      {
+        "text": "株元から30センチほど離したところに、スコップを垂直に、ぐさりと差し込んでください。ぐるりと、何か所か。それだけです。",
+        "startMs": 650831,
+        "endMs": 661828
+      },
+      {
+        "text": "根を、切ります。",
+        "startMs": 662428,
+        "endMs": 664252
+      },
+      {
+        "text": "じつは、弱っている株の根を、わざと切ります。普通に考えれば、とどめを刺しているようにしか見えません。",
+        "startMs": 664852,
+        "endMs": 673673
+      },
+      {
+        "text": "ところが、逆のことが起こります。",
+        "startMs": 674273,
+        "endMs": 677004
+      },
+      {
+        "text": "切られた根は、その切り口から枝分かれします。2週間もすると、髪の毛ほどの細さの、白い根が何十本も伸びてきます。この白い根が、いちばんよく吸います。",
+        "startMs": 677004,
+        "endMs": 690167
+      },
+      {
+        "text": "古い根を切ることが、新しい根を作る合図になるのです。",
+        "startMs": 690867,
+        "endMs": 695624
+      },
+      {
+        "text": "なぜ30センチなのか。株のすぐ足元には、体を支えている太い根があります。そこまで切ると、本当に倒れます。30センチというのは、切っても支えが残る距離です。",
+        "startMs": 696524,
+        "endMs": 711340
+      },
+      {
+        "text": "それから、一周をひと息に切り落とさないでください。何か所か、間を空けて差し込みます。全部を一度に切ると、株が水を上げられなくなります。",
+        "startMs": 711340,
+        "endMs": 722849
+      },
+      {
+        "text": "やらないほうがいい日も、覚えておいてください。",
+        "startMs": 723449,
+        "endMs": 726756
+      },
+      {
+        "text": "昼間のいちばん暑い時間は避けます。切り口から水が抜けます。朝の早いうちか、夕方にしてください。",
+        "startMs": 726756,
+        "endMs": 735524
+      },
+      {
+        "text": "次に、台風の来る前。出たばかりの芽は、まだ折れやすいままです。",
+        "startMs": 735524,
+        "endMs": 741359
+      },
+      {
+        "text": "そして、葉に斑点が出ていたり、水をやってもしおれたまま戻らない株。それは疲れではなく、病気のことがあります。切っても戻りません。",
+        "startMs": 741359,
+        "endMs": 752836
+      },
+      {
+        "text": "枝を切るのは、上の仕事を減らすため。根を切るのは、下を作り直すため。片方だけでは、効きません。",
+        "startMs": 753436,
+        "endMs": 762663
+      },
+      {
+        "text": "スコップを入れたら、そのあとに水をたっぷり。",
+        "startMs": 763163,
+        "endMs": 766619
+      },
+      {
+        "text": "ここから先は、カレンダーの話です。",
+        "startMs": 767219,
+        "endMs": 770323
+      },
+      {
+        "text": "切り口から新しい根が出るまで、半月から3週間。そこから枝が伸びて、花がつき、実になるまで、全部で30日から40日。",
+        "startMs": 770323,
+        "endMs": 782184
+      },
+      {
+        "text": "8月の頭に切った株が、9月の半ばから採れはじめます。そして、10月いっぱいまで続きます。",
+        "startMs": 782684,
+        "endMs": 790673
+      },
+      {
+        "text": "今日の日付から40日先に、カレンダーへ印をつけておいてください。",
+        "startMs": 790673,
+        "endMs": 796209
+      },
+      {
+        "text": "あの10日を握った人が、40日後に受け取るものが、これです。",
+        "startMs": 796209,
+        "endMs": 801521
+      },
+      {
+        "text": "ここで、いちばん多い失敗をお伝えしておきます。",
+        "startMs": 802321,
+        "endMs": 806236
+      },
+      {
+        "text": "切ってから半月ほど、株の上では、ほとんど何も起きません。葉もない。芽も見えない。朝いちばんに見に行くたびに、棒が立っているだけです。",
+        "startMs": 806836,
+        "endMs": 818857
+      },
+      {
+        "text": "そこで不安になって、抜いてしまう方がいます。私が昔やったのが、まさにこれでした。",
+        "startMs": 819457,
+        "endMs": 826551
+      },
+      {
+        "text": "動いていないように見えるあいだ、株は地面の下で、根のほうを作っています。上に何も起きていないことが、むしろ順調な証拠です。",
+        "startMs": 826551,
+        "endMs": 836865
+      },
+      {
+        "text": "それから、この四つは、ナスだけの話ではありません。ピーマンも、ししとうも、同じように夏に疲れます。同じ手が、そのまま使えます。",
+        "startMs": 837465,
+        "endMs": 849881
+      },
+      {
+        "text": "ところで、これほど効く手が、なぜ、どこにも売られていないのでしょうか。",
+        "startMs": 850681,
+        "endMs": 856601
+      },
+      {
+        "text": "ホームセンターの売り場を思い浮かべてみてください。夏の終わりに並ぶのは、秋植えの苗と、肥料の袋です。",
+        "startMs": 857201,
+        "endMs": 866097
+      },
+      {
+        "text": "株を切り戻して、もう一度使いましょう、という商品はありません。当たり前です。それは、何も売れない話だからです。",
+        "startMs": 866097,
+        "endMs": 876273
+      },
+      {
+        "text": "苗は、また買ってもらえます。肥料も、まけばなくなります。ところが、更新剪定に要るのは、家にある鋏と、家にあるスコップだけです。",
+        "startMs": 876273,
+        "endMs": 888721
+      },
+      {
+        "text": "誰かが隠したわけではありません。売り場に置けるものだけが残って、置けない手のほうは、畑から静かに消えました。",
+        "startMs": 889321,
+        "endMs": 898463
+      },
+      {
+        "text": "冒頭で、いちばん効く一手は地面の下にある、と申し上げました。あれが、これでした。売り物にならないから、誰も教えてくれなかっただけです。",
+        "startMs": 899363,
+        "endMs": 912227
+      },
+      {
+        "text": "上だけ切って動かなかった株は、いちど足元にスコップを入れてみてください。",
+        "startMs": 913127,
+        "endMs": 918865
+      },
+      {
+        "text": "では、その手は、どこを通って伝わってきたのでしょうか。",
+        "startMs": 919665,
+        "endMs": 924263
+      },
+      {
+        "text": "日本で出版された農書としていちばん古いのは、元禄10年、1697年の農業全書です。宮崎安貞という人が、全国を回って年寄りの百姓から40年かけて聞き取り、11巻にまとめました。菜の巻もあって、ナスも載っています。",
+        "startMs": 924863,
+        "endMs": 946825
+      },
+      {
+        "text": "本を書くのに40年かかったのではありません。聞き取るのに40年かかったのです。",
+        "startMs": 947425,
+        "endMs": 953740
+      },
+      {
+        "text": "畑の手というのは、そういう速さでしか集まりません。売り場ではなく、あの麦わら帽子の下から、隣の畝へ。それだけの速さです。",
+        "startMs": 953740,
+        "endMs": 964844
+      },
+      {
+        "text": "最後に、一つだけお伝えしておきたいことがあります。",
+        "startMs": 965444,
+        "endMs": 969455
+      },
+      {
+        "text": "秋茄子は嫁に食わすな。一度は聞かれたことがあるのではないでしょうか。",
+        "startMs": 970055,
+        "endMs": 975580
+      },
+      {
+        "text": "この言葉の古い実例は、寛永15年、1638年に序が書かれた毛吹草という本に出てきます。江戸時代の、かなり早い時期です。",
+        "startMs": 975580,
+        "endMs": 987239
+      },
+      {
+        "text": "面白いのは、意味のほうが、真っ二つに割れていることです。",
+        "startMs": 987839,
+        "endMs": 992639
+      },
+      {
+        "text": "一つは、憎らしい嫁に、あんなうまいものを食べさせるのはもったいない、という読み方。いじわるです。",
+        "startMs": 993239,
+        "endMs": 1001900
+      },
+      {
+        "text": "もう一つは、1783年ごろの安斎随筆にある説で、秋のナスは体を冷やすから、大事な嫁に食べさせるな、という読み方。こちらは、気づかいです。",
+        "startMs": 1002400,
+        "endMs": 1015936
+      },
+      {
+        "text": "同じ一言が、憎しみにも、思いやりにも読める。400年たっても、決着していません。",
+        "startMs": 1016636,
+        "endMs": 1024913
+      },
+      {
+        "text": "けれど、私が面白いと思うのは、そこではないのです。",
+        "startMs": 1025813,
+        "endMs": 1030869
+      },
+      {
+        "text": "たった一つの食べ物をめぐって、400年ものあいだ、これだけ言い分が残っている。それは、秋のナスが、それほど特別だったということです。",
+        "startMs": 1030869,
+        "endMs": 1042229
+      },
+      {
+        "text": "そして、秋のナスは、放っておいて採れるものではありません。真夏に、まだ実がついている株に鋏を入れた人の畑にだけ、生ります。",
+        "startMs": 1042829,
+        "endMs": 1054392
+      },
+      {
+        "text": "ことわざのほうは、みんなが覚えていました。手のほうは、忘れられました。",
+        "startMs": 1054992,
+        "endMs": 1060816
+      },
+      {
+        "text": "残るのは、いつも軽いほうです。",
+        "startMs": 1060816,
+        "endMs": 1063472
+      },
+      {
+        "text": "正直に申し上げます。更新剪定をしても、必ず戻るわけではありません。時期が遅すぎたり、株が本当に寿命だったりすれば、そのままのこともあります。",
+        "startMs": 1064372,
+        "endMs": 1077684
+      },
+      {
+        "text": "それでも、抜いてしまえば、その株の可能性は0です。切れば、まだ残ります。",
+        "startMs": 1077684,
+        "endMs": 1084777
+      },
+      {
+        "text": "今日の四つは、道具もお金も要りません。要るのは、まだ実がついている枝に鋏を入れる、あの一瞬だけです。",
+        "startMs": 1085377,
+        "endMs": 1094871
+      },
+      {
+        "text": "いま切らんと、秋に困るとよ。",
+        "startMs": 1095371,
+        "endMs": 1098091
+      },
+      {
+        "text": "あのとき私は、意味が分かりませんでした。いまなら分かります。あれは、剪定の話ではありませんでした。10日の話でした。",
+        "startMs": 1098691,
+        "endMs": 1109037
+      },
+      {
+        "text": "よろしければ、教えてください。あなたの畑やプランターのナスは、いま、めしべとおしべ、どちらが長かったでしょうか。",
+        "startMs": 1109937,
+        "endMs": 1119921
+      },
+      {
+        "text": "次の知恵には、もう少し重いものが隠れています。捨てるはずだったものを、昔の畑がどう肥やしに変えていたかという話です。",
+        "startMs": 1120421,
+        "endMs": 1130192
+      },
+      {
+        "text": "古代の秘訣は、これからも暮らしの中に眠る宝を静かに掘り起こしていきます。それでは、次の知恵でまたお会いしましょう。",
+        "startMs": 1130792,
+        "endMs": 1140499
+      }
+    ],
+    "words": []
+  },
+  "theme": {
+    "palette": {
+      "bgTop": "#2A3A58",
+      "bgBottom": "#182236",
+      "accent": "#FFD700"
+    },
+    "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+    "canvasColor": "#2A3A58"
+  }
+}

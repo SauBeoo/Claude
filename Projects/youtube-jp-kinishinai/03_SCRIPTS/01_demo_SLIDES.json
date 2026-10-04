@@ -1,0 +1,232 @@
+[
+ {
+  "match": "「すみません",
+  "_shot": 0,
+  "photo": true,
+  "static": true,
+  "_t": 0.0,
+  "_dur": 9.52
+ },
+ {
+  "match": "スーパーのレ",
+  "_shot": 1,
+  "photo": true,
+  "static": true,
+  "_t": 9.52,
+  "_dur": 10.8
+ },
+ {
+  "match": "「あんなこと",
+  "_shot": 2,
+  "photo": true,
+  "static": true,
+  "_t": 20.32,
+  "_dur": 7.32
+ },
+ {
+  "match": "私は、ずっと",
+  "_shot": 3,
+  "photo": true,
+  "static": true,
+  "_t": 27.64,
+  "_dur": 11.3
+ },
+ {
+  "match": "心理学の実験",
+  "_shot": 4,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "stat",
+   "lines": [
+    "「見られている」と感じる量は",
+    "実際の 約2倍",
+    "心理学の実験より"
+   ]
+  },
+  "_t": 38.93,
+  "_dur": 10.87
+ },
+ {
+  "match": "それでも気に",
+  "_shot": 5,
+  "photo": true,
+  "static": true,
+  "_t": 49.8,
+  "_dur": 12.61
+ },
+ {
+  "match": "職場で、嫁ぎ",
+  "_shot": 6,
+  "photo": true,
+  "static": true,
+  "_t": 62.41,
+  "_dur": 9.22
+ },
+ {
+  "match": "今日は、見張",
+  "_shot": 7,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "seven",
+   "open": 0,
+   "lines": [
+    "見張り番がささやく",
+    "七つの口ぐせ"
+   ]
+  },
+  "_t": 71.62,
+  "_dur": 13.53
+ },
+ {
+  "match": "なぜ、気をつ",
+  "_shot": 8,
+  "photo": true,
+  "static": true,
+  "_t": 85.16,
+  "_dur": 10.43
+ },
+ {
+  "match": "そして最後に",
+  "_shot": 9,
+  "photo": true,
+  "static": true,
+  "_t": 95.59,
+  "_dur": 10.48
+ },
+ {
+  "match": "家事をしなが",
+  "_shot": 10,
+  "photo": true,
+  "static": true,
+  "_t": 106.07,
+  "_dur": 11.38
+ },
+ {
+  "match": "その一。「す",
+  "_shot": 11,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "chapter",
+   "lines": [
+    "その一",
+    "「すみません」"
+   ]
+  },
+  "_t": 117.45,
+  "_dur": 6.44
+ },
+ {
+  "match": "うれしいはず",
+  "_shot": 12,
+  "photo": true,
+  "static": true,
+  "_t": 123.88,
+  "_dur": 10.8
+ },
+ {
+  "match": "私が立ってい",
+  "_shot": 13,
+  "photo": true,
+  "static": true,
+  "_t": 134.68,
+  "_dur": 7.34
+ },
+ {
+  "match": "いまでも、い",
+  "_shot": 14,
+  "photo": true,
+  "static": true,
+  "_t": 142.02,
+  "_dur": 13.28
+ },
+ {
+  "match": "売り場では、",
+  "_shot": 15,
+  "photo": true,
+  "static": true,
+  "_t": 155.3,
+  "_dur": 11.28
+ },
+ {
+  "match": "アメリカの研",
+  "_shot": 16,
+  "photo": true,
+  "static": true,
+  "_t": 166.58,
+  "_dur": 11.13
+ },
+ {
+  "match": "見張り番は、い",
+  "_shot": 17,
+  "photo": true,
+  "static": true,
+  "_t": 177.71,
+  "_dur": 6.06
+ },
+ {
+  "match": "このままだと",
+  "_shot": 18,
+  "photo": true,
+  "static": true,
+  "_t": 183.76,
+  "_dur": 11.31
+ },
+ {
+  "match": "アメリカの、",
+  "_shot": 19,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "stat",
+   "lines": [
+    "「ありがとう」のひとことで",
+    "約3割 → 約6割",
+    "次も手伝ってくれた人"
+   ]
+  },
+  "_t": 195.07,
+  "_dur": 17.1
+ },
+ {
+  "match": "「ありがとう」は",
+  "_shot": 20,
+  "photo": true,
+  "static": true,
+  "card": {
+   "type": "swap",
+   "lines": [
+    "すみません",
+    "ありがとう"
+   ]
+  },
+  "_t": 212.17,
+  "_dur": 11.42
+ },
+ {
+  "match": "去年の春、私",
+  "_shot": 21,
+  "photo": true,
+  "static": true,
+  "_t": 223.59,
+  "_dur": 9.81
+ },
+ {
+  "match": "その子が、照",
+  "_shot": 22,
+  "photo": true,
+  "static": true,
+  "_t": 233.41,
+  "_dur": 10.1
+ },
+ {
+  "match": "謝る相手は、",
+  "_shot": 23,
+  "photo": true,
+  "static": true,
+  "_t": 243.51,
+  "_dur": 12.18
+ }
+]

@@ -1,0 +1,33 @@
+{
+ "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11079_hiroshima_life_1946.mp4",
+ "stills": [
+  {
+   "id": "st16_078",
+   "t": 478,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phu nu lam banh trong tiem"
+  },
+  {
+   "id": "st16_093",
+   "t": 428,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "phu nu can hang"
+  },
+  {
+   "id": "st16_094",
+   "t": 446,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "nguoi ganh hang"
+  },
+  {
+   "id": "st16_095",
+   "t": 464,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "me be con o quay hang"
+  }
+ ]
+}

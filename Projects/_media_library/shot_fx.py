@@ -1,0 +1,212 @@
+# -*- coding: utf-8 -*-
+r"""shot_fx.py — LỚP FX + AVATAR cho make_shot.py (chốt 2026-08-18).
+
+user: "thỉnh thoảng hiện ảnh avatar lên nữa và có thêm 1 vài hiệu ứng tuỳ vào từng câu nói"
+      + chọn **avatar ảnh AI thật** + **FX dày (mỗi 30–40 giây một cái)**.
+
+NGUYÊN TẮC GIỮ NGUYÊN TỪ make_stage/make_vox: mọi thứ **hiện dần rồi ĐỨNG IM**.
+Không có gì trôi, không zoom, không pan — luật `feedback_video_no_motion_mot_giong`.
+
+FX dùng CHÍNH bộ prop PNG user đã gen (`props/*.png` + INDEX.json), qua make_vox:
+  cross  → prop_mark("x")   : câu phủ định 〜ではありません / 逆効果 / 効きません
+  stamp  → prop_stamp       : câu có con số chốt (50度 / 90秒 / 9時間)
+  tag    → prop_label       : câu chỉ dẫn 〜してください
+
+AVATAR là cutout rembg từ `avatars/<channel>/`. Thiếu ảnh → bỏ qua im lặng (không làm
+chết clip), vì cast gen sau nhưng SLIDES đã khai trước.
+"""
+import math
+from pathlib import Path
+
+from PIL import Image, ImageDraw, ImageFont
+
+AVA_DIR = Path(__file__).resolve().parent / "avatars"
+INK = (24, 26, 32)
+_CUT = {}
+_FONT = None
+
+
+def _font(size):
+    global _FONT
+    if _FONT is None:
+        for c in (r"C:\Windows\Fonts\NotoSansJP-Bold.otf",
+                  r"C:\Windows\Fonts\meiryob.ttc",
+                  r"C:\Windows\Fonts\YuGothB.ttc"):
+            if Path(c).exists():
+                _FONT = c
+                break
+    return ImageFont.truetype(_FONT, size) if _FONT else ImageFont.load_default()
+
+
+def ease(x):
+    x = max(0.0, min(1.0, x))
+    return 1 - (1 - x) ** 3
+
+
+def avatar_cut(MV, name, channel="co-dai"):
+    """PNG đã tách nền (rembg, cache theo mtime). None nếu chưa gen ảnh."""
+    key = (channel, name)
+    if key in _CUT:
+        return _CUT[key]
+    src = None
+    for ext in (".png", ".jpg", ".jpeg"):
+        p = AVA_DIR / channel / f"{name}{ext}"
+        if p.exists():
+            src = p
+            break
+    if src is None or MV is None:
+        _CUT[key] = None
+        return None
+    try:
+        cut = MV.cutout_of(src, AVA_DIR / channel / "_cut")
+        # 🔴 2026-08-18: cutout GIU NGUYEN khung anh goc (1250x768) va nguoi chi chiem
+        #    ~1/3 be ngang => resize theo `h` lam ca khung teo lai, nguoi ra bang con
+        #    tem. Phai CROP theo vien alpha truoc (video 17 shokutaku bat duoc).
+        if cut is not None:
+            bb = cut.split()[3].getbbox()
+            if bb:
+                cut = cut.crop(bb)
+        _CUT[key] = cut
+    except Exception as e:                                   # noqa: BLE001
+        print(f"  [avatar loi] {name}: {e}")
+        _CUT[key] = None
+    return _CUT[key]
+
+
+def draw_avatar(im, spec, t, MV, W, H, sub_top):
+    """Nhân vật trượt lên 26px + hiện dần ở MỘT mép, chân dừng trên vùng phụ đề."""
+    av = spec.get("avatar")
+    if not isinstance(av, dict):
+        return
+    cut = avatar_cut(MV, av.get("name", ""), av.get("channel", "co-dai"))
+    # ⭐ 2026-08-18: BONG BONG KHONG KEM NGUOI. Khi anh NEN da la chinh nhan vat do
+    #    (rat hay gap o kenh dung anh AI), dan them cutout nua = HAI nguoi giong het
+    #    nhau trong mot khung — bat duoc o video 17 shokutaku, 5/6 canh bi loi nay.
+    #    Bay gio spec chi can {"bubble": ...} + "figure": False.
+    if cut is None or av.get("figure") is False:
+        if av.get("bubble") and MV is not None and MV.props_ready("bubble_left", "bubble_right"):
+            _bubble_only(im, av, t, MV, W, H)
+        return
+    t0 = float(av.get("t", 0.9))
+    p = ease((t - t0) / 0.8)
+    if p <= 0:
+        return
+    hh = int(H * float(av.get("h", 0.74)))
+    w2 = max(8, int(cut.width * hh / cut.height))
+    fig = cut.resize((w2, hh), Image.LANCZOS)
+    side = av.get("side", "right")
+    x = W - w2 - 40 if side == "right" else 40
+    # 🔴 CHAN CHAM DAY KHUNG. Ban dau ket chan o `sub_top` (=678) nen nguoi lo lung
+    #    giua khung — soi frame that moi thay. Phu de nam giua-duoi, avatar nam mep,
+    #    hai thu khong dam nhau.
+    y = int(H - hh + 26 * (1 - p))
+    if p < 1:
+        fig.putalpha(fig.split()[3].point(lambda v: int(v * p)))
+    im.alpha_composite(fig, (x, max(0, y)))
+
+    txt = av.get("bubble")
+    if not txt or MV is None or not MV.props_ready("bubble_left", "bubble_right"):
+        return
+    # 🔴 NGUOI vao som, BONG BONG vang dung luc cau thoai doc len — hai nhip khac nhau.
+    #    Ban dau buoc chung mot `t`: cau thoai o giay 12,5 cua khung => man hinh dung im
+    #    12 giay roi nguoi moi vao, chi kip 3 giay cuoi (soi demo that moi thay).
+    pb = ease((t - float(av.get("bubble_t", t0 + 0.5))) / 0.6)
+    if pb <= 0:
+        return
+    bub = MV.load_prop("bubble_right" if side == "right" else "bubble_left")
+    bw = int(W * 0.44)
+    bh = max(8, int(bub.height * bw / bub.width))
+    bub = bub.resize((bw, bh), Image.LANCZOS)
+    if pb < 1:
+        bub.putalpha(bub.split()[3].point(lambda v: int(v * pb)))
+    # bong bong nam HAN phia doi dien, chua 24px khe — de khong che mat/than nhan vat
+    bx = max(24, x - bw - 24) if side == "right" else min(W - bw - 24, x + w2 + 24)
+    by = max(24, int(H * 0.10))
+    im.alpha_composite(bub, (bx, by))
+    if pb > 0.55:
+        _bubble_text(im, txt, bx, by, bw, bh)
+
+
+def _bubble_text(im, text, bx, by, bw, bh):
+    size = 46 if len(text) <= 16 else 38
+    f = _font(size)
+    d = ImageDraw.Draw(im)
+    line, lines = "", []
+    for ch in text:
+        if d.textlength(line + ch, font=f) > bw * 0.72:
+            lines.append(line)
+            line = ch
+        else:
+            line += ch
+    lines.append(line)
+    ty = by + bh * 0.34 - len(lines) * size * 0.6
+    for ln in lines:
+        tw = d.textlength(ln, font=f)
+        d.text((bx + (bw - tw) / 2, ty), ln, font=f, fill=INK)
+        ty += size * 1.20
+
+
+
+def _bubble_only(im, av, t, MV, W, H):
+    """Bong bong gan vao NGUOI CO SAN trong anh nen — khong dan cutout."""
+    pb = ease((t - float(av.get("bubble_t", 1.4))) / 0.6)
+    if pb <= 0:
+        return
+    side = av.get("side", "right")
+    bub = MV.load_prop("bubble_right" if side == "right" else "bubble_left")
+    bw = int(W * 0.44)
+    bh = max(8, int(bub.height * bw / bub.width))
+    bub = bub.resize((bw, bh), Image.LANCZOS)
+    if pb < 1:
+        bub.putalpha(bub.split()[3].point(lambda v: int(v * pb)))
+    bx = W - bw - 40 if side == "right" else 40
+    by = max(24, int(H * 0.10))
+    im.alpha_composite(bub, (bx, by))
+    if pb > 0.55:
+        _bubble_text(im, av["bubble"], bx, by, bw, bh)
+
+
+def draw_fx(im, spec, t, MV, have_props, W, H, sub_top):
+    """FX theo câu — mỗi cái vào ở giây riêng rồi đứng im."""
+    if MV is None or not have_props:
+        return
+    for k, fx in enumerate(spec.get("fx") or []):
+        t0 = float(fx.get("t", 1.6 + 0.55 * k))
+        p = ease((t - t0) / 0.7)
+        if p <= 0:
+            continue
+        ax, ay = fx.get("at", [0.5, 0.42])
+        cx = ax * W
+        cy = min(ay * H, sub_top - 70)
+        kind = fx.get("kind", "cross")
+        try:
+            if kind == "cross":
+                MV.prop_mark(im, "x", cx, cy, int(fx.get("size", 220)), p)
+            elif kind == "stamp":
+                MV.prop_stamp(im, cx, cy, fx.get("text", ""), p)
+            elif kind == "smudge":
+                if MV.props_ready("smudge_ink"):
+                    sm = MV.load_prop("smudge_ink")
+                    w2 = int(W * 0.34 * (0.6 + 0.4 * p))
+                    h2 = max(6, int(sm.height * w2 / sm.width))
+                    sm = sm.resize((w2, h2), Image.LANCZOS)
+                    sm.putalpha(sm.split()[3].point(lambda v: int(v * 0.85 * p)))
+                    im.alpha_composite(sm, (int(cx - w2 / 2), int(cy - h2 / 2)))
+            elif kind == "tag":
+                MV.prop_label(im, cx, cy, fx.get("text", ""), p,
+                              size=int(fx.get("size", 46)))
+        except Exception as e:                               # noqa: BLE001
+            print(f"  [FX loi] {kind}: {e}")
+
+
+def settle_extra(spec):
+    """Build-on phải kéo dài tới khi FX/avatar cuối cùng đậu xong."""
+    late = 0.0
+    av = spec.get("avatar")
+    if isinstance(av, dict):
+        late = max(late, float(av.get("t", 0.9)) + 1.0)
+        if av.get("bubble"):
+            late = max(late, float(av.get("bubble_t", 1.4)) + 1.2)
+    for k, fx in enumerate(spec.get("fx") or []):
+        late = max(late, float(fx.get("t", 1.6 + 0.55 * k)) + 0.9)
+    return late

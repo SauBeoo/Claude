@@ -1,0 +1,1420 @@
+[
+ {
+  "match": "風呂の電気を消して戸を閉めた、あ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_00.jpg",
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "閉める",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "size": 64,
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "壁はまだ濡れていました。そこから",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "電気を消してから",
+   "big": "9",
+   "unit": "時間",
+   "sub": "壁が濡れたまま越す夜",
+   "note": "カビは生えたのではなく、乾かなかっただけ",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/wet_bathroom_wall_night.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "指先が濡れたら、その壁は、朝まで",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_02.jpg",
+   "focus": [
+    0.606,
+    0.19,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.24,
+      0.26
+     ],
+     "t": 4.42
+    }
+   ]
+  }
+ },
+ {
+  "match": "手を入れられる時刻は、この9時間",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "順番でしか効かない",
+   "title": "一晩に、手は四回",
+   "marks": [
+    [
+     "22時",
+     "1分"
+    ],
+    [
+     "23時",
+     "フタ"
+    ],
+    [
+     "2時",
+     "天井"
+    ],
+    [
+     "朝",
+     "熱"
+    ]
+   ],
+   "note": "前でしくじると、あとは効きません",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/bathroom_wall_clock_night.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "いちばん効くのは、夜10時の、た",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_04.jpg",
+   "focus": [
+    0.375,
+    0.352,
+    0.15
+   ],
+   "inset_pos": "br",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "1分",
+     "at": [
+      0.26,
+      0.22
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "古代の秘訣へようこそ。今日もまた",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_05.jpg",
+   "focus": [
+    0.55,
+    0.223,
+    0.15
+   ],
+   "avatar": {
+    "name": "kataribe_wry",
+    "side": "right",
+    "t": 1.6,
+    "channel": "co-dai"
+   }
+  }
+ },
+ {
+  "match": "洗面台の下に、カビ取り剤の詰め替",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_06.jpg"
+  }
+ },
+ {
+  "match": "実家の母は、お客さんが来る前の日",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_07.jpg",
+   "focus": [
+    0.184,
+    0.33,
+    0.15
+   ],
+   "avatar": {
+    "name": "haha_talk",
+    "side": "right",
+    "t": 1.6,
+    "bubble_t": 12.51,
+    "bubble": "お客さんの来る家は、風呂場でわかるのよ",
+    "channel": "co-dai"
+   }
+  }
+ },
+ {
+  "match": "母は、それだけ言って、また台所へ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_08.jpg"
+  }
+ },
+ {
+  "match": "お宅の浴室で、いちばんしつこく戻",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_09.jpg"
+  }
+ },
+ {
+  "match": "では、夜の10時に戻ります。あな",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_10.jpg",
+   "focus": [
+    0.356,
+    0.212,
+    0.15
+   ],
+   "inset_pos": "br",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "35度",
+     "at": [
+      0.26,
+      0.22
+     ],
+     "t": 6.42
+    }
+   ]
+  }
+ },
+ {
+  "match": "窓を閉めた押し入れではありません",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_11.jpg",
+   "focus": [
+    0.538,
+    0.218,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "ここで、多くのご家庭が最初の一手",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_12.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 6.72
+    }
+   ]
+  }
+ },
+ {
+  "match": "理由を、先に一つだけ申し上げます",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_13.jpg",
+   "focus": [
+    0.509,
+    0.419,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "それを知らずに聞くと、これから申",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_14.jpg",
+   "focus": [
+    0.681,
+    0.492,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "今は、時計を進めてください。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_15.jpg"
+  }
+ },
+ {
+  "match": "換気扇は、空気を送り込む機械では",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "kicker": "窓を開けると",
+   "head": "入口と出口が近いと、近道になる",
+   "pins": [
+    [
+     1560,
+     235,
+     "窓＝入口"
+    ],
+    [
+     1180,
+     610,
+     "床は乾かない"
+    ]
+   ],
+   "arrows": [
+    [
+     1500,
+     320,
+     1180,
+     545,
+     0.2
+    ]
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/bathroom_extractor_fan.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "このとき、入口の窓が、出口の換気",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_17.jpg",
+   "focus": [
+    0.556,
+    0.235,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "換気の分野では、これをショートサ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_18.jpg",
+   "focus": [
+    0.816,
+    0.693,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "それなのに、床の隅も、壁の下半分",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_19.jpg",
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "閉める",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "size": 64,
+     "t": 8.06
+    }
+   ]
+  }
+ },
+ {
+  "match": "そして、浴室のドアも閉めてくださ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_20.jpg",
+   "focus": [
+    0.422,
+    0.363,
+    0.15
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "ガラリのないドアなら、5センチほ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_21.jpg"
+  }
+ },
+ {
+  "match": "ところが、ここまでやっても乾かな",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_22.jpg"
+  }
+ },
+ {
+  "match": "ところが、40度の湯を200リッ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_23.jpg",
+   "focus": [
+    0.478,
+    0.207,
+    0.15
+   ],
+   "inset_pos": "br",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "40度",
+     "at": [
+      0.26,
+      0.22
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "ここで申し上げたいのは、残り湯を",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_24.jpg",
+   "focus": [
+    0.628,
+    0.821,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "フタを、すきまなく閉めてください",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "11時の一手",
+   "title": "スイッチではなく、フタ",
+   "left": {
+    "label": "フタが半分",
+    "mark": "x",
+    "verdict": "一晩じゅう湯気"
+   },
+   "right": {
+    "label": "すきまなく",
+    "mark": "o",
+    "verdict": "湯気が止まる"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/bathtub_lid_half_open.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "11時の一手は、スイッチではあり",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_26.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "ところが、それでも真夜中に、湿気",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_27.jpg",
+   "focus": [
+    0.553,
+    0.173,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "真夜中の2時。家の中で、いちばん",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_28.jpg",
+   "focus": [
+    0.525,
+    0.296,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "昼のあいだに舞い上がった胞子は、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_29.jpg"
+  }
+ },
+ {
+  "match": "落ちた先が天井です。そして天井は",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "room",
+   "preset": "mix",
+   "kicker": "真夜中の2時",
+   "head": "天井で水滴が育ち、真下へ落ちてくる",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/bathroom_ceiling_from_below.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "育った水滴は、真下に落ちます。壁",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_31.jpg",
+   "focus": [
+    0.428,
+    0.453,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.76,
+      0.26
+     ],
+     "t": 7.25
+    }
+   ]
+  }
+ },
+ {
+  "match": "つまり天井は、浴室のいちばん高い",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_32.jpg",
+   "focus": [
+    0.191,
+    0.38,
+    0.15
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "掃除の腕の問題ではありません。順",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_33.jpg",
+   "focus": [
+    0.603,
+    0.212,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "乾いたタオルをワイパーの先に巻い",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_34.jpg",
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "なでる",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "size": 64,
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "ここで、ひとつだけ、してはいけな",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_35.jpg",
+   "focus": [
+    0.694,
+    0.425,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "天井は、拭く場所です。吹く場所で",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_36.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "週に一度、底を持ち上げて水を切っ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_37.jpg"
+  }
+ },
+ {
+  "match": "それでも消えない黒い点が、たった",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_38.jpg",
+   "focus": [
+    0.544,
+    0.531,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.24,
+      0.26
+     ],
+     "t": 9.61
+    }
+   ]
+  }
+ },
+ {
+  "match": "ここまでご覧いただき、ありがとう",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_39.jpg",
+   "focus": [
+    0.662,
+    0.648,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "カビ取り剤で真っ白にしたのに、1",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "10日でまた同じ形",
+   "title": "白い、は、死んだ、ではない",
+   "left": {
+    "label": "色素だけ抜けた",
+    "mark": "x",
+    "verdict": "菌糸は生きている"
+   },
+   "right": {
+    "label": "熱が奥まで届く",
+    "mark": "o",
+    "verdict": "そこで初めて死ぬ"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/black_mould_on_rubber_packing.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "黒カビの黒は、メラニンに近い色素",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_41.jpg",
+   "focus": [
+    0.172,
+    0.402,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "つまり、白くなったかどうかは、生",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_42.jpg",
+   "focus": [
+    0.728,
+    0.346,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "ゴムパッキンやコーキングは、やわ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_43.jpg"
+  }
+ },
+ {
+  "match": "根が張る、と言いますが、張ってい",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_44.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "2分",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 6.43
+    }
+   ]
+  }
+ },
+ {
+  "match": "胞子から目に見える大きさに育つま",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_45.jpg",
+   "focus": [
+    0.816,
+    0.173,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.24,
+      0.26
+     ],
+     "t": 15.17
+    }
+   ]
+  }
+ },
+ {
+  "match": "文部科学省がまとめたカビ対策の資",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "文部科学省 カビ対策マニュアル",
+   "asof": "カビ相談センター 高鳥浩介氏／2016年6月15日 NHK",
+   "quote": "よく育つのは25〜28度。50度で細胞はこわれはじめる",
+   "number": "90秒",
+   "note": "ゴムの奥まで熱が通るのを待つ時間",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/official_document_on_desk.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "そして50度を超えたあたりから、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_47.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "15日",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 4.82
+    }
+   ]
+  }
+ },
+ {
+  "match": "表面のカビは、50度のお湯を5秒",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "薬ではなく",
+   "big": "50",
+   "unit": "度",
+   "sub": "表面は5秒、ゴムの奥は90秒",
+   "note": "樹脂の内側まで熱が通るのを待つ時間",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/shower_head_hot_water.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "やり方は、これだけです。給湯器の",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_49.jpg",
+   "focus": [
+    0.231,
+    0.335,
+    0.15
+   ],
+   "inset_pos": "br",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "50度",
+     "at": [
+      0.26,
+      0.22
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "黒い点の上から下へ、同じ場所に、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_50.jpg",
+   "focus": [
+    0.656,
+    0.408,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "お使いの給湯器が50度まで上げら",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_51.jpg",
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "沈める",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "size": 64,
+     "t": 5.02
+    }
+   ]
+  }
+ },
+ {
+  "match": "50度を指したら、その湯を、少し",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_52.jpg",
+   "focus": [
+    0.684,
+    0.408,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "浴室に誰もいない状態で行ってくだ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_53.jpg",
+   "focus": [
+    0.581,
+    0.218,
+    0.15
+   ],
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "戻す",
+     "at": [
+      0.24,
+      0.26
+     ],
+     "size": 64,
+     "t": 2.89
+    }
+   ]
+  }
+ },
+ {
+  "match": "ここで、正直に申し上げておきます",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_54.jpg"
+  }
+ },
+ {
+  "match": "死んでいるのに、黒いまま。それが",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_55.jpg"
+  }
+ },
+ {
+  "match": "先に、50度で始末してください。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "順番を逆にしない",
+   "title": "熱が先、色は翌日",
+   "steps": [
+    {
+     "label": "50度を90秒あてる",
+     "sub": "同じ場所に、ゆっくり"
+    },
+    {
+     "label": "給湯器を40度に戻す",
+     "sub": "次に入る人のため"
+    },
+    {
+     "label": "翌日に漂白剤で色を抜く",
+     "sub": "逆にすると生き残る",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/bathroom_thermometer_in_basin.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "洗面台の下にたまっていた私の3本",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_57.jpg",
+   "focus": [
+    0.65,
+    0.609,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "理由は、効き目の差ではありません",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_58.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "では、乾いた壁は、写真になるでし",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_59.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 8.3
+    }
+   ]
+  }
+ },
+ {
+  "match": "一年じゅう並んでいられるのは、一",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_60.jpg"
+  }
+ },
+ {
+  "match": "どこかの会社を責める話ではありま",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_61.jpg",
+   "focus": [
+    0.416,
+    0.201,
+    0.15
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "そして、乾いた壁は、誰にも売れま",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_62.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "1分",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 13.5
+    }
+   ]
+  }
+ },
+ {
+  "match": "天井の水滴も、パッキンの中の菌糸",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_63.jpg"
+  }
+ },
+ {
+  "match": "まず、冷たいシャワーを、壁に一周",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "夜10時の1分",
+   "title": "9時間を20分に変える",
+   "steps": [
+    {
+     "label": "冷たい水を壁に一周",
+     "sub": "壁の温度を下げる"
+    },
+    {
+     "label": "皮脂と石けんかすを流す",
+     "sub": "カビの食べ物"
+    },
+    {
+     "label": "ワイパーで上から下へ一度",
+     "sub": "水の膜をはがす",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/squeegee_on_bathroom_wall.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "なぜ、わざわざ冷たい水をかけるの",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_65.jpg",
+   "focus": [
+    0.784,
+    0.257,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "もう一つは、皮脂と石けんのかすを",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_66.jpg",
+   "focus": [
+    0.828,
+    0.508,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "カビが必要としているのは、部屋の",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_67.jpg",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "乾燥に強い一部のカビでも、0.6",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "素材が濡れている時間",
+   "big": "0.65",
+   "unit": "",
+   "sub": "水分活性、これを下回ると伸びられない",
+   "note": "湿度の話ではありません",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/water_droplet_on_tile.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "壁が朝まで濡れているか、20分で",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "wipe",
+   "photo": "slides_img/slide_69.jpg",
+   "photo2": "slides_img/wipe_wall_dry.jpg"
+  }
+ },
+ {
+  "match": "ここで、母の話に帰ります。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_70.jpg"
+  }
+ },
+ {
+  "match": "ところが、そのヒノキチオールは、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_71.jpg",
+   "focus": [
+    0.172,
+    0.318,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "つまり、昔の風呂桶が保ったのは、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_72.jpg",
+   "focus": [
+    0.2,
+    0.184,
+    0.15
+   ],
+   "inset_pos": "br",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.26,
+      0.22
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "すのこという道具も、同じ考えでで",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "title": "乾かす技術",
+   "sub": "道具の中ではなく、暮らしの段取りの中にありました",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/21_furo-no-kabi-modoru/ai_clean/wooden_sunoko_slats.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "銭湯の天井が、あんなに高いのも同",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_74.jpg"
+  }
+ },
+ {
+  "match": "あれは掃除ではありません。建物の",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_75.jpg",
+   "focus": [
+    0.606,
+    0.43,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "乾かすという技術は、道具の中には",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_76.jpg",
+   "focus": [
+    0.503,
+    0.425,
+    0.15
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "違いました。あれは、9時間を、9",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_77.jpg",
+   "fx": [
+    {
+     "kind": "stamp",
+     "text": "9時間",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "t": 1.2
+    }
+   ]
+  }
+ },
+ {
+  "match": "正直に申し上げれば、これで一生カ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_78.jpg",
+   "focus": [
+    0.431,
+    0.682,
+    0.15
+   ]
+  }
+ },
+ {
+  "match": "ゴムパッキンそのものが欠けていた",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_79.jpg"
+  }
+ },
+ {
+  "match": "体調に不安のある方や、塩素のにお",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_80.jpg",
+   "focus": [
+    0.716,
+    0.43,
+    0.15
+   ],
+   "inset_pos": "bl",
+   "fx": [
+    {
+     "kind": "cross",
+     "at": [
+      0.74,
+      0.22
+     ],
+     "t": 7.58
+    }
+   ]
+  }
+ },
+ {
+  "match": "問題は、洗剤が弱かったことではな",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_81.jpg",
+   "fx": [
+    {
+     "kind": "tag",
+     "text": "なでる",
+     "at": [
+      0.74,
+      0.26
+     ],
+     "size": 64,
+     "t": 16.4
+    }
+   ]
+  }
+ },
+ {
+  "match": "そして10日後、あの黒い点が出た",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "wipe",
+   "photo": "slides_img/slide_82.jpg",
+   "photo2": "slides_img/wipe_packing_after10.jpg"
+  }
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "focus",
+   "photo": "slides_img/slide_83.jpg",
+   "focus": [
+    0.656,
+    0.196,
+    0.15
+   ]
+  }
+ }
+]

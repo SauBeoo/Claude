@@ -1,0 +1,1048 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-22i2v",
+  "channel": "nenkin",
+  "templateRef": null,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "",
+  "modifiedAt": ""
+ },
+ "timeline": {
+  "durationInFrames": 3266
+ },
+ "sceneMarkers": [
+  {
+   "id": "m0",
+   "atFrame": 0,
+   "label": "{葬儀}のあと"
+  },
+  {
+   "id": "m1",
+   "atFrame": 101,
+   "label": "通帳で{手が止まる}"
+  },
+  {
+   "id": "m2",
+   "atFrame": 201,
+   "label": "{36万円}が入った"
+  },
+  {
+   "id": "m3",
+   "atFrame": 372,
+   "label": "二か月後{もう一度}"
+  },
+  {
+   "id": "m4",
+   "atFrame": 532,
+   "label": "見た目は{同じ}"
+  },
+  {
+   "id": "m5",
+   "atFrame": 652,
+   "label": "片方は{返金}"
+  },
+  {
+   "id": "m6",
+   "atFrame": 839,
+   "label": "線は{どこ}に"
+  },
+  {
+   "id": "m7",
+   "atFrame": 924,
+   "label": "いつか必ず{並ぶ}"
+  },
+  {
+   "id": "m8",
+   "atFrame": 1144,
+   "label": "黙っていて{入る}？"
+  },
+  {
+   "id": "m9",
+   "atFrame": 1304,
+   "label": "ここが{取り逃し}"
+  },
+  {
+   "id": "m10",
+   "atFrame": 1402,
+   "label": "まず{事実}から"
+  },
+  {
+   "id": "m11",
+   "atFrame": 1716,
+   "label": "なぜお金が{残る}"
+  },
+  {
+   "id": "m12",
+   "atFrame": 1840,
+   "label": "年金は{後払い}"
+  },
+  {
+   "id": "m13",
+   "atFrame": 1913,
+   "label": "{原典}で確かめる"
+  },
+  {
+   "id": "m14",
+   "atFrame": 2421,
+   "label": "四月の振込は"
+  },
+  {
+   "id": "m15",
+   "atFrame": 2553,
+   "label": "いまの口座は{二か月前}"
+  },
+  {
+   "id": "m16",
+   "atFrame": 2742,
+   "label": "必ず{残る}分がある"
+  },
+  {
+   "id": "m17",
+   "atFrame": 2923,
+   "label": "これが{未支給年金}"
+  },
+  {
+   "id": "m18",
+   "atFrame": 3003,
+   "label": "相続財産では{ない}"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-video",
+   "name": "footage i2v",
+   "type": "video",
+   "clips": [
+    {
+     "id": "v0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 201,
+     "asset": "assets/sb_03.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9536,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     }
+    },
+    {
+     "id": "v2",
+     "kind": "video",
+     "from": 201,
+     "durationInFrames": 177,
+     "asset": "assets/sb_06.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v3",
+     "kind": "video",
+     "from": 372,
+     "durationInFrames": 167,
+     "asset": "assets/sb_13.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v4",
+     "kind": "video",
+     "from": 532,
+     "durationInFrames": 127,
+     "asset": "assets/sb_05.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v5",
+     "kind": "video",
+     "from": 652,
+     "durationInFrames": 187,
+     "asset": "assets/sb_08.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v6",
+     "kind": "video",
+     "from": 839,
+     "durationInFrames": 92,
+     "asset": "assets/sb_14.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v7",
+     "kind": "video",
+     "from": 924,
+     "durationInFrames": 220,
+     "asset": "assets/sb_09.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.8708,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v8",
+     "kind": "video",
+     "from": 1144,
+     "durationInFrames": 167,
+     "asset": "assets/sb_37.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v11",
+     "kind": "video",
+     "from": 1716,
+     "durationInFrames": 197,
+     "asset": "assets/sb_19.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9747,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v15",
+     "kind": "video",
+     "from": 2553,
+     "durationInFrames": 190,
+     "asset": "assets/sb_25.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v16",
+     "kind": "video",
+     "from": 2742,
+     "durationInFrames": 188,
+     "asset": "assets/sb_10.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v17",
+     "kind": "video",
+     "from": 2923,
+     "durationInFrames": 87,
+     "asset": "assets/sb_20.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    }
+   ]
+  },
+  {
+   "id": "trk-genten",
+   "name": "genten",
+   "type": "video",
+   "clips": [
+    {
+     "id": "g13_0",
+     "kind": "video",
+     "from": 1913,
+     "durationInFrames": 74,
+     "asset": "assets/genten_shiharai.png",
+     "fit": "cover",
+     "motion": "pan",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g13_1",
+     "kind": "video",
+     "from": 1987,
+     "durationInFrames": 144,
+     "asset": "assets/genten_shiharai_all.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g13_2",
+     "kind": "video",
+     "from": 2131,
+     "durationInFrames": 144,
+     "asset": "assets/genten_shiharai_col.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g13_3",
+     "kind": "video",
+     "from": 2275,
+     "durationInFrames": 146,
+     "asset": "assets/genten_shiharai_row.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "hoa la canh",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "fx2",
+     "kind": "fx",
+     "from": 207,
+     "durationInFrames": 158,
+     "variant": "coins",
+     "density": 18,
+     "color": "#FFC83A",
+     "seed": 114,
+     "area": {
+      "x": 66,
+      "y": 6,
+      "w": 30,
+      "h": 40
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx6",
+     "kind": "fx",
+     "from": 845,
+     "durationInFrames": 73,
+     "variant": "vignette",
+     "density": 10,
+     "color": "#FFC83A",
+     "seed": 142,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx10",
+     "kind": "fx",
+     "from": 1408,
+     "durationInFrames": 303,
+     "variant": "sparkle",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 170,
+     "area": {
+      "x": 2,
+      "y": 8,
+      "w": 32,
+      "h": 84
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx15",
+     "kind": "fx",
+     "from": 2559,
+     "durationInFrames": 178,
+     "variant": "rays",
+     "density": 14,
+     "color": "#FFC83A",
+     "seed": 205,
+     "area": {
+      "x": 64,
+      "y": 34,
+      "w": 32,
+      "h": 52
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx17",
+     "kind": "fx",
+     "from": 2929,
+     "durationInFrames": 68,
+     "variant": "glow",
+     "density": 22,
+     "color": "#FFC83A",
+     "seed": 219,
+     "area": {
+      "x": 68,
+      "y": 14,
+      "w": 26,
+      "h": 62
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx18",
+     "kind": "fx",
+     "from": 3009,
+     "durationInFrames": 250,
+     "variant": "stampx",
+     "density": 1,
+     "color": "#1C2A4A",
+     "seed": 226,
+     "area": {
+      "x": 6,
+      "y": 26,
+      "w": 24,
+      "h": 30
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    }
+   ]
+  },
+  {
+   "id": "trk-stat",
+   "name": "khoi chu font",
+   "type": "text",
+   "clips": [
+    {
+     "id": "b9",
+     "kind": "text",
+     "from": 1312,
+     "durationInFrames": 86,
+     "content": "受け取っていい|お金\n返さなければ|ならないお金\n*見分けが|つかない",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 606,
+      "y": 378,
+      "w": 1100
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b10",
+     "kind": "text",
+     "from": 1410,
+     "durationInFrames": 303,
+     "content": "日本年金機構|原典\n国税庁|原典\n*画面で|確かめます",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 606,
+      "y": 378,
+      "w": 1100
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b14",
+     "kind": "text",
+     "from": 2429,
+     "durationInFrames": 120,
+     "content": "四月に入るお金|二月分と三月分\nつまり|二か月前の分\n*年金は|後払い",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 606,
+      "y": 378,
+      "w": 1100
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b18",
+     "kind": "text",
+     "from": 3011,
+     "durationInFrames": 250,
+     "content": "相続財産|ではない\n*ご家族の|固有の権利",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 606,
+      "y": 424,
+      "w": 1100
+     },
+     "fontSize": 84
+    }
+   ]
+  },
+  {
+   "id": "trk-telop",
+   "name": "telop",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t0",
+     "kind": "text",
+     "from": 3,
+     "durationInFrames": 96,
+     "content": "{葬儀}のあと",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "from": 104,
+     "durationInFrames": 95,
+     "content": "通帳で{手が止まる}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t2",
+     "kind": "text",
+     "from": 204,
+     "durationInFrames": 165,
+     "content": "{36万円}が入った",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t3",
+     "kind": "text",
+     "from": 375,
+     "durationInFrames": 155,
+     "content": "二か月後{もう一度}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t4",
+     "kind": "text",
+     "from": 535,
+     "durationInFrames": 115,
+     "content": "見た目は{同じ}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t5",
+     "kind": "text",
+     "from": 655,
+     "durationInFrames": 182,
+     "content": "片方は{返金}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t6",
+     "kind": "text",
+     "from": 842,
+     "durationInFrames": 80,
+     "content": "線は{どこ}に",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t7",
+     "kind": "text",
+     "from": 927,
+     "durationInFrames": 215,
+     "content": "いつか必ず{並ぶ}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t8",
+     "kind": "text",
+     "from": 1147,
+     "durationInFrames": 155,
+     "content": "黙っていて{入る}？",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t9",
+     "kind": "text",
+     "from": 1307,
+     "durationInFrames": 93,
+     "content": "ここが{取り逃し}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t10",
+     "kind": "text",
+     "from": 1405,
+     "durationInFrames": 310,
+     "content": "まず{事実}から",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t11",
+     "kind": "text",
+     "from": 1719,
+     "durationInFrames": 119,
+     "content": "なぜお金が{残る}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t12",
+     "kind": "text",
+     "from": 1843,
+     "durationInFrames": 68,
+     "content": "年金は{後払い}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t13",
+     "kind": "text",
+     "from": 1916,
+     "durationInFrames": 503,
+     "content": "{原典}で確かめる",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t14",
+     "kind": "text",
+     "from": 2424,
+     "durationInFrames": 127,
+     "content": "四月の振込は",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t15",
+     "kind": "text",
+     "from": 2556,
+     "durationInFrames": 185,
+     "content": "いまの口座は{二か月前}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t16",
+     "kind": "text",
+     "from": 2745,
+     "durationInFrames": 176,
+     "content": "必ず{残る}分がある",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t17",
+     "kind": "text",
+     "from": 2926,
+     "durationInFrames": 75,
+     "content": "これが{未支給年金}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t18",
+     "kind": "text",
+     "from": 3006,
+     "durationInFrames": 257,
+     "content": "相続財産では{ない}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "voice",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "a0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3266,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "お葬式が終わって、一か月ほど経ったころ。",
+    "startMs": 0,
+    "endMs": 3627
+   },
+   {
+    "text": "通帳を記帳したご家族が、手を止めました。",
+    "startMs": 4227,
+    "endMs": 7789
+   },
+   {
+    "text": "亡くなったはずのご主人の年金が、振り込まれていたんです。三十六万円。",
+    "startMs": 8389,
+    "endMs": 14491
+   },
+   {
+    "text": "そして、その二か月後。もう一度、三十六万円が振り込まれました。",
+    "startMs": 15491,
+    "endMs": 21549
+   },
+   {
+    "text": "同じ金額です。通帳の見た目も、まったく同じ。",
+    "startMs": 22149,
+    "endMs": 26565
+   },
+   {
+    "text": "ですが、片方は受け取っていいお金で、もう片方は、返さなければならないお金でした。",
+    "startMs": 27165,
+    "endMs": 34141
+   },
+   {
+    "text": "どこで、線が引かれているのでしょうか。",
+    "startMs": 34941,
+    "endMs": 37896
+   },
+   {
+    "text": "あなたのご両親、ご主人、奥さまが年金を受け取っていらっしゃるなら、この二つは、いつか必ず並びます。",
+    "startMs": 38496,
+    "endMs": 47083
+   },
+   {
+    "text": "そして、もうひとつ。受け取れるほうのお金は、黙っていても入ってくるのか。",
+    "startMs": 47683,
+    "endMs": 53731
+   },
+   {
+    "text": "ここが、いちばん取り逃されているところです。",
+    "startMs": 54331,
+    "endMs": 57797
+   },
+   {
+    "text": "まず、事実から。",
+    "startMs": 58397,
+    "endMs": 60349
+   },
+   {
+    "text": "年金と老後のお金研究室です。今日も、日本年金機構と国税庁の原典を画面で開きながら、確かめていきます。",
+    "startMs": 60949,
+    "endMs": 70912
+   },
+   {
+    "text": "はじめに、なぜお金が残るのか。仕組みから見ていきます。",
+    "startMs": 71512,
+    "endMs": 76077
+   },
+   {
+    "text": "年金は、後払いです。",
+    "startMs": 76677,
+    "endMs": 79120
+   },
+   {
+    "text": "こちらが、日本年金機構のページです。赤で囲んだところを、ご覧ください。",
+    "startMs": 79720,
+    "endMs": 86227
+   },
+   {
+    "text": "年金は、原則、年六回に分けて、偶数月の十五日に支払われます。各支払月には、原則、その前月までの二か月分の年金が支払われます。",
+    "startMs": 86827,
+    "endMs": 100267
+   },
+   {
+    "text": "たとえば、四月に振り込まれるのは、二月分と三月分。",
+    "startMs": 100867,
+    "endMs": 105763
+   },
+   {
+    "text": "つまり、いま口座に入っているお金は、二か月前と、三か月前に生きていた分なんです。",
+    "startMs": 106363,
+    "endMs": 113669
+   },
+   {
+    "text": "ですから、亡くなった時点では、必ず、まだ振り込まれていない月の分が残っています。",
+    "startMs": 114269,
+    "endMs": 121192
+   },
+   {
+    "text": "これを、未支給年金といいます。",
+    "startMs": 121792,
+    "endMs": 124544
+   },
+   {
+    "text": "そして、この未支給年金は、亡くなったかたの相続財産ではありません。ご家族が、ご自身の権利として請求するお金です。",
+    "startMs": 125144,
+    "endMs": 135480
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F3EAD8"
+ },
+ "brand": {
+  "logo": "assets/brand_logo.png",
+  "mascot": null,
+  "mascotPoses": [
+   {
+    "atSec": 0.0,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 4.227,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 8.389,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 15.491,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 22.149,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 27.165,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 34.941,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 38.496,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 47.683,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 54.331,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 58.397,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 71.512,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 76.677,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 79.72,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 100.867,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 106.363,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 114.269,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 121.792,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 125.144,
+    "asset": "assets/owl_idle/f_%04d.png"
+   }
+  ],
+  "mascotVideo": "assets/owl_idle/f_%04d.png",
+  "mascotVideoFrames": 192,
+  "mascotH": 300,
+  "logoH": 110,
+  "subscribe": true,
+  "bottomOffset": 186,
+  "subscribeBottom": 200
+ }
+}

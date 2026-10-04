@@ -1,0 +1,3 @@
+uploaded: 2026-07-19 16:01 (đánh dấu bằng upload_pack --done)
+publishAt: 2026-07-19 (Chủ Nhật) 18:00 JST = 16:00 giờ VN
+note: marker khôi phục 2026-07-20 sau sự cố prune (video xác nhận public trên kênh qua API — 1h7'3", đăng 19/07)

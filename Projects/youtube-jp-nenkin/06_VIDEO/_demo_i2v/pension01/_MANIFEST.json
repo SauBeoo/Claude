@@ -1,0 +1,56 @@
+[
+ {
+  "idx": 1,
+  "id": "e27fb2fb-470b-492d-bdf4-41c8eb538bb4",
+  "file": "sb_01_s01sh01.jpg",
+  "scene": "01",
+  "shot": "01",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "Sunlit Living Room",
+  "visual": "A wide shot of a Bright Living Room filled with morning sunlight. The camera captures the traditional Japanese aesthetic, featuring tatami mats covered by a patterned rug. Katsuo sits at a low wooden table in the center of the room, looking small against the bright, peaceful surroundings.",
+  "motion": "A slow, gentle zoom-in from a wide angle toward Katsuo to establish the mood of the scene.",
+  "assets": [
+   "Katsuo",
+   "Bright Living Room"
+  ],
+  "kb": 135,
+  "flowPrompt": null,
+  "asset": "Man sitting at table"
+ },
+ {
+  "idx": 2,
+  "id": "cc10bd1c-93b8-4699-a005-a334670d98d3",
+  "file": "sb_02_s01sh02.jpg",
+  "scene": "01",
+  "shot": "02",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "Katsuo's Realization",
+  "visual": "A medium close-up focusing on Katsuo. He is wearing a grey cardigan over a warm-red checked shirt. His expression is one of complete shock and disbelief as he stares intensely at something in his hands, his eyes wide and mouth slightly agape.",
+  "motion": "The camera remains static, holding on Katsuo's stunned facial expression to capture the emotional weight of the moment.",
+  "assets": [
+   "Katsuo",
+   "Bright Living Room"
+  ],
+  "kb": 132,
+  "flowPrompt": null,
+  "asset": "Man staring in shock"
+ },
+ {
+  "idx": 3,
+  "id": "8902d72e-956f-46eb-b018-3b1efb7a7749",
+  "file": "sb_03_s01sh03.jpg",
+  "scene": "01",
+  "shot": "03",
+  "sceneTitle": "Int. Bright Living Room - Day",
+  "title": "The Bank Passbook",
+  "visual": "A close-up shot of Katsuo's weathered hands firmly gripping a Bank Passbook. The passbook is held open, though the specific numbers are blurred, emphasizing his tight, almost trembling grasp on the small book.",
+  "motion": "A shallow depth-of-field shot with a very slight handheld wobble to convey Katsuo's internal agitation.",
+  "assets": [
+   "Katsuo",
+   "Bank Passbook"
+  ],
+  "kb": 124,
+  "flowPrompt": null,
+  "asset": "Man holding bank passbook"
+ }
+]

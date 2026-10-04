@@ -1,0 +1,941 @@
+[
+ {
+  "match": "ある夏、都内だけで、暑さがきっか",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_00.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "そのうち97人は、屋内で亡くなっ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "屋内で亡くなった97人",
+   "title": "夜のほうが、多かった",
+   "bars": [
+    [
+     "夜間",
+     39
+    ],
+    [
+     "日中",
+     33
+    ]
+   ],
+   "hot": 0,
+   "source": "東京都監察医務院／東京新聞",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/night_dark_room_no_ac.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "今すぐ、水道の蛇口をひねって、手",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_02.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "古代の秘訣へようこそ。今日もまた",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_03.jpg"
+  }
+ },
+ {
+  "match": "麦茶のボトルは、朝入れたばかりで",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_04.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "便利な道具は、増えたはずなのに。",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_05.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "じつは、冷蔵庫は「冷やす道具」で",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_06.jpg"
+  }
+ },
+ {
+  "match": "エアコンも、同じです。部屋にいな",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_07.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "答えは、あの甕の肌そのものにあり",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_08.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "素焼きの壁には、目に見えないほど",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "素焼きの甕の仕組み",
+   "title": "小さな穴が、涼しさの正体",
+   "steps": [
+    {
+     "label": "小さな穴が無数に空いている",
+     "sub": "素焼き＝うわぐすりなし"
+    },
+    {
+     "label": "水が少しずつにじみ出る",
+     "sub": "甕の外側の表面へ"
+    },
+    {
+     "label": "外側で蒸発、熱を奪う",
+     "sub": "気化熱で内側が冷える",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/unglazed_clay_wall_pores_macro.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "ところが、にじみ出た水は、そこで",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_10.jpg"
+  }
+ },
+ {
+  "match": "甕の外側で熱が奪われれば、甕の内",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_11.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "食品メーカーが行った実験では、こ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "kicker": "食品メーカーの実験",
+   "big": "2〜6",
+   "unit": "度",
+   "sub": "周囲の温度より水温が下がった",
+   "note": "電気を一切使わずに",
+   "source": "ニチレイ「エコ冷蔵庫」実験",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/thermometer_in_clay_pot_water.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "大きさの違う、素焼きの植木鉢を二",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "kicker": "自宅でできる実験",
+   "title": "今日から確かめられます",
+   "steps": [
+    {
+     "label": "素焼きの植木鉢を二つ用意",
+     "sub": "大きさ違いのもの"
+    },
+    {
+     "label": "小さいほうにボトルや果物",
+     "sub": "冷やしたい物を入れる"
+    },
+    {
+     "label": "鉢のあいだに濡れた砂か布",
+     "sub": "風通しのいい日陰へ",
+     "hot": true
+    }
+   ],
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/two_terracotta_flowerpots_diy.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "外側の鉢の表面に、上から水をかけ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_14.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "正直、最初は半信半疑でした。植木",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_15.jpg"
+  }
+ },
+ {
+  "match": "けれど30分後、鉢に触れた指先が",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "wipe",
+   "photo": "slides_img/slide_16.jpg",
+   "photo2": "slides_img/wipe_pot_condensation.jpg"
+  }
+ },
+ {
+  "match": "大切なのは、風です。空気が動かな",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_17.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "植木鉢は、ホームセンターで、大き",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_18.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "失敗しても、痛手は大きくありませ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_19.jpg"
+  }
+ },
+ {
+  "match": "逆に、じめじめと湿度の高い日は、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_20.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "乾いた土地ほど、水はよく蒸発する",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_21.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "ところが、素焼きの壺を二重にして",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "ナイジェリアの教師・2001年",
+   "title": "壺一つで、村が変わった",
+   "left": {
+    "label": "収穫から3日",
+    "mark": "x",
+    "verdict": "なすが傷む"
+   },
+   "right": {
+    "label": "二重の壺＋湿った砂",
+    "mark": "o",
+    "verdict": "なすが27日もつ"
+   },
+   "source": "Mohammed Bah Abba／Rolex Award 2001",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/nigerian_pot_in_pot_eggplants.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "壺一つ。電気代0円。それだけで、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_23.jpg"
+  }
+ },
+ {
+  "match": "キャンプや停電のときにも、この仕",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_24.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "表面につやのある、美しい壺ほど、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "見た目と涼しさ",
+   "title": "美しい壺ほど、冷えない",
+   "left": {
+    "label": "素焼き（つやなし）",
+    "mark": "o",
+    "verdict": "穴が空いて冷える"
+   },
+   "right": {
+    "label": "施釉（つやあり）",
+    "mark": "x",
+    "verdict": "穴がふさがり冷えない"
+   },
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/glazed_vs_unglazed_pottery_pair.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "見た目の美しさと、涼しさは、両立",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_26.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "どちらも、うわぐすりを掛けない、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_27.jpg"
+  }
+ },
+ {
+  "match": "江戸時代、旅人や行商人も、素焼き",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_28.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "祖母が生きていたころ、私は子ども",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_29.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "口に含むと、井戸水よりも、もっと",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_30.jpg"
+  }
+ },
+ {
+  "match": "あのときの私は、ただの水入れだと",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_31.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "ただの水入れ。そう思っていた自分",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_32.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "水がめの水を、コップに注いでいる",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_33.jpg"
+  }
+ },
+ {
+  "match": "縁側や庭先に置かれていた、行水盥",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_34.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "神聖な儀式の言葉が、いつのまにか",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_35.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "部屋の空気を冷ましてから体に当て",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_36.jpg"
+  }
+ },
+ {
+  "match": "※すだれや打ち水で空気を冷ます話",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_37.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "風が吹けば、その瞬間、涼しさがは",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_38.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "特に、高齢の方の体では、急な温度",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_39.jpg"
+  }
+ },
+ {
+  "match": "国の資料でも、首すじや、わきの下",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "kicker": "出典",
+   "org": "環境省 熱中症環境保健マニュアル",
+   "asof": "最新版",
+   "quote": "首すじ・わきの下・太もものつけ根など、太い血管が皮膚の近くを通る場所を集中して冷やす",
+   "number": "3か所",
+   "note": "濡れタオル＋送風で水分を蒸発させる応急処置",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/wet_towel_neck_cooling_firstaid.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "濡れタオルを体に当て、扇風機やう",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_41.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "遠い昔の知恵と、今日の応急処置が",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_42.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "銭湯に毎日通うより、庭先のたらい",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_43.jpg"
+  }
+ },
+ {
+  "match": "近所には、麦わら帽子をかぶったお",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_44.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "たらい一杯のぬるま湯だけで、家族",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "wipe",
+   "photo": "slides_img/slide_45.jpg",
+   "photo2": "slides_img/wipe_evening_calm.jpg"
+  }
+ },
+ {
+  "match": "ここまでご覧いただき、ありがとう",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_46.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "また、ご感想や、次に掘り起こして",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_47.jpg"
+  }
+ },
+ {
+  "match": "ところが、ここでもう一つ、奇妙な",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_48.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "同じ「水をためて涼む道具」なのに",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_49.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "では、なぜ、あの便利な道具たちは",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_50.jpg"
+  }
+ },
+ {
+  "match": "1957年、電気冷蔵庫を持つ家庭",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "kicker": "電気冷蔵庫の普及率",
+   "title": "わずか13年で、当たり前に",
+   "marks": [
+    [
+     "1957年",
+     "3軒／100軒"
+    ],
+    [
+     "1970年",
+     "89軒／100軒"
+    ]
+   ],
+   "note": "「三種の神器」と呼ばれた時代",
+   "source": "内閣府男女共同参画局",
+   "bg": "photo",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/25_mizugame-suyaki-tarai/ai_clean/1950s_japanese_kitchen_new_fridge.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "たった13年のあいだに、冷蔵庫は",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_52.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "神棚に祀る宝物になぞらえるほど、",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_53.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "同じころ、水道も各家庭に届くよう",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_54.jpg"
+  }
+ },
+ {
+  "match": "便利さが増えるほど、甕は台所の隅",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_55.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "喉が渇く前に、いつでも冷たい水が",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_56.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "保冷剤や、家庭用の冷房まわりの市",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_57.jpg"
+  }
+ },
+ {
+  "match": "しかも、ここ数年、電気代そのもの",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_58.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "じつは今も、信楽など焼き物の産地",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_59.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "もちろん、甕もたらいも、冷蔵庫や",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_60.jpg"
+  }
+ },
+ {
+  "match": "さきほど、最後に置いておいた、あ",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_61.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ },
+ {
+  "match": "水がめは、電気の代わりに、蒸発と",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_62.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "暑さの厳しい日だけ、庭先でたらい",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "soft",
+   "photo": "slides_img/slide_63.jpg"
+  }
+ },
+ {
+  "match": "電気の涼しさが止まったときのため",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_64.jpg",
+   "focus": [
+    0.66,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "bl"
+  }
+ },
+ {
+  "match": "お住まいのご実家には、こうした甕",
+  "photo": false,
+  "video": true,
+  "shot": {
+   "mode": "inset",
+   "photo": "slides_img/slide_65.jpg",
+   "focus": [
+    0.34,
+    0.5,
+    0.16
+   ],
+   "inset_pos": "br"
+  }
+ }
+]

@@ -1,0 +1,54 @@
+{
+ "src": "E:\\Claude\\Projects\\youtube-jp-showa\\06_VIDEO\\_footage_pd\\usaf11070_religious_1946.mp4",
+ "stills": [
+  {
+   "id": "st16_020",
+   "t": 575,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "CHAN DUNG nguoi mac kimono le — dung cho 「写真館の白い幕」"
+  },
+  {
+   "id": "st16_037",
+   "t": 432,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "五重塔 — chuyen doan"
+  },
+  {
+   "id": "st16_050",
+   "t": 60,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "doan nghi le truoc chinh dien"
+  },
+  {
+   "id": "st16_051",
+   "t": 230,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "cau da trong khuon vien den"
+  },
+  {
+   "id": "st16_052",
+   "t": 200,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "doan nghi le di qua cau da — trang trong"
+  },
+  {
+   "id": "st16_147",
+   "t": 100,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "san den, doan nghi le xa"
+  },
+  {
+   "id": "st16_148",
+   "t": 470,
+   "ybias": 0.5,
+   "grade": 0,
+   "note": "den, mai ngoi"
+  }
+ ]
+}

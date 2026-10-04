@@ -1,0 +1,16 @@
+{
+ "_note": "Video 04 - phim that. 1 clip: xe tai 'PRESS \u65b0\u805e\u8f38\u9001' (van chuyen bao) tu 'We the Japanese People' (1952, USIA, gov.archives.li.111-cad-24-52, CC0/Public Domain). Camera bam theo xe chay tren pho mo sang, chu 'PRESS \u65b0\u805e\u8f38\u9001' hien ro luc dau roi xe chay xa dan, nguoi di duong + xe dap qua duong. Dung cho COLD OPEN (user chot 2026-08-25: video dau tien phai la video that).",
+ "_CANH_BAO": "id PHAI la vi tri THAT trong mang SLIDES.json sau khi merge voi SCENES (video_render.py doc clip_{i:02d}.mp4 theo VI TRI MANG). Video nay dat o VI TRI 0 (dau tien) - chay build_scenes_04.py truoc de xac nhan.",
+ "cuts": [
+  {
+   "id": "clip_00",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/we_the_japanese/we_the_japanese_512kb.mp4",
+   "ss": 1013.8,
+   "dur": 5.2,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "line": 0,
+   "note": "Camera tren xe di kem bam theo xe tai PRESS: chu ro net luc dau (1013.8-1015.5s), roi xe chay xa dan tren pho mo suong, nguoi di bo + xe dap qua duong (den 1019.0s). Vi tri mang SLIDES = 0 (cold open)."
+  }
+ ]
+}

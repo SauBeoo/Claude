@@ -1,0 +1,37 @@
+{
+  "name": "remotion-vox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vox-style paper-collage videos built with Remotion (skill: vox-collage-video)",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render",
+    "server": "node server/index.mjs",
+    "editor": "vite --config apps/editor/vite.config.mts",
+    "render:project": "remotion render VoxProject",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.512",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/media-utils": "4.0.512",
+    "@remotion/player": "4.0.512",
+    "@remotion/timeline-utils": "4.0.512",
+    "@remotion/transitions": "4.0.512",
+    "express": "5.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0",
+    "zod": "4.4.3",
+    "zundo": "2.3.0",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react-swc": "3.7.2",
+    "typescript": "7.0.2",
+    "vite": "5.4.20"
+  }
+}

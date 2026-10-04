@@ -1,0 +1,9356 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-24",
+  "channel": "nenkin",
+  "templateRef": "nenkin",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-08-29T00:00:00.000Z",
+  "modifiedAt": "2026-08-29T00:00:00.000Z"
+ },
+ "timeline": {
+  "durationInFrames": 23014
+ },
+ "sceneMarkers": [
+  {
+   "id": "sc-0",
+   "atFrame": 0,
+   "label": "緑の封筒"
+  },
+  {
+   "id": "sc-1",
+   "atFrame": 333,
+   "label": "切手一枚のあいだ"
+  },
+  {
+   "id": "sc-2",
+   "atFrame": 632,
+   "label": "対象は"
+  },
+  {
+   "id": "sc-3",
+   "atFrame": 1135,
+   "label": "三つのこと"
+  },
+  {
+   "id": "sc-4",
+   "atFrame": 1450,
+   "label": "もうひとつ"
+  },
+  {
+   "id": "sc-5",
+   "atFrame": 1822,
+   "label": "研究室です"
+  },
+  {
+   "id": "sc-6",
+   "atFrame": 2286,
+   "label": "誰に届くのか"
+  },
+  {
+   "id": "sc-7",
+   "atFrame": 2503,
+   "label": "原典・年金機構①"
+  },
+  {
+   "id": "sc-8",
+   "atFrame": 3014,
+   "label": "はがき型請求書"
+  },
+  {
+   "id": "sc-9",
+   "atFrame": 3247,
+   "label": "新たに対象"
+  },
+  {
+   "id": "sc-10",
+   "atFrame": 3786,
+   "label": "条件は三つ"
+  },
+  {
+   "id": "sc-11",
+   "atFrame": 4520,
+   "label": "世帯の全員"
+  },
+  {
+   "id": "sc-12",
+   "atFrame": 5300,
+   "label": "去年の数字"
+  },
+  {
+   "id": "sc-13",
+   "atFrame": 5891,
+   "label": "あなたの金額"
+  },
+  {
+   "id": "sc-14",
+   "atFrame": 6103,
+   "label": "原典・年金機構②"
+  },
+  {
+   "id": "sc-15",
+   "atFrame": 6644,
+   "label": "六万七千円が基準"
+  },
+  {
+   "id": "sc-16",
+   "atFrame": 7112,
+   "label": "渡辺さん"
+  },
+  {
+   "id": "sc-17",
+   "atFrame": 7412,
+   "label": "はがきを読む"
+  },
+  {
+   "id": "sc-18",
+   "atFrame": 8146,
+   "label": "審査結果の通知"
+  },
+  {
+   "id": "sc-19",
+   "atFrame": 8571,
+   "label": "三つの段"
+  },
+  {
+   "id": "sc-20",
+   "atFrame": 9176,
+   "label": "渡辺さんの年金"
+  },
+  {
+   "id": "sc-21",
+   "atFrame": 9598,
+   "label": "割ってみます"
+  },
+  {
+   "id": "sc-22",
+   "atFrame": 10271,
+   "label": "この線の細さ"
+  },
+  {
+   "id": "sc-23",
+   "atFrame": 11009,
+   "label": "免除の期間"
+  },
+  {
+   "id": "sc-24",
+   "atFrame": 11714,
+   "label": "別枠の給付金"
+  },
+  {
+   "id": "sc-25",
+   "atFrame": 12165,
+   "label": "いちばん割のいい葉書"
+  },
+  {
+   "id": "sc-26",
+   "atFrame": 12514,
+   "label": "灯油代のぶん"
+  },
+  {
+   "id": "sc-27",
+   "atFrame": 12912,
+   "label": "お願いです"
+  },
+  {
+   "id": "sc-28",
+   "atFrame": 13752,
+   "label": "対象なのに来ない"
+  },
+  {
+   "id": "sc-29",
+   "atFrame": 13996,
+   "label": "三か月以内"
+  },
+  {
+   "id": "sc-30",
+   "atFrame": 14570,
+   "label": "世帯構成の変更"
+  },
+  {
+   "id": "sc-31",
+   "atFrame": 15353,
+   "label": "機構ではなく、あなた"
+  },
+  {
+   "id": "sc-32",
+   "atFrame": 15701,
+   "label": "冒頭の答え"
+  },
+  {
+   "id": "sc-33",
+   "atFrame": 15892,
+   "label": "中村さん"
+  },
+  {
+   "id": "sc-34",
+   "atFrame": 16640,
+   "label": "来ませんでした"
+  },
+  {
+   "id": "sc-35",
+   "atFrame": 17029,
+   "label": "再開のボタンは、あなたの側に"
+  },
+  {
+   "id": "sc-36",
+   "atFrame": 17225,
+   "label": "相談先"
+  },
+  {
+   "id": "sc-37",
+   "atFrame": 17783,
+   "label": "消えないペンで丸"
+  },
+  {
+   "id": "sc-38",
+   "atFrame": 18375,
+   "label": "提出期限"
+  },
+  {
+   "id": "sc-39",
+   "atFrame": 19132,
+   "label": "翌月分から"
+  },
+  {
+   "id": "sc-40",
+   "atFrame": 19397,
+   "label": "ATMの操作"
+  },
+  {
+   "id": "sc-41",
+   "atFrame": 19896,
+   "label": "研究ノート"
+  },
+  {
+   "id": "sc-42",
+   "atFrame": 20868,
+   "label": "セルフチェック"
+  },
+  {
+   "id": "sc-43",
+   "atFrame": 21454,
+   "label": "次の支給日の前にも"
+  },
+  {
+   "id": "sc-44",
+   "atFrame": 22192,
+   "label": "次回予告"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-bg",
+   "name": "nền giấy",
+   "type": "background",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "bg-0",
+     "kind": "background",
+     "from": 0,
+     "durationInFrames": 333,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#B44A4A",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-1",
+     "kind": "background",
+     "from": 333,
+     "durationInFrames": 299,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C87A72",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-2",
+     "kind": "background",
+     "from": 632,
+     "durationInFrames": 503,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-3",
+     "kind": "background",
+     "from": 1135,
+     "durationInFrames": 315,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-4",
+     "kind": "background",
+     "from": 1450,
+     "durationInFrames": 372,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#C87A72"
+     ]
+    },
+    {
+     "id": "bg-5",
+     "kind": "background",
+     "from": 1822,
+     "durationInFrames": 464,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-6",
+     "kind": "background",
+     "from": 2286,
+     "durationInFrames": 217,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-7",
+     "kind": "background",
+     "from": 2503,
+     "durationInFrames": 511,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#8FA9C0"
+     ]
+    },
+    {
+     "id": "bg-8",
+     "kind": "background",
+     "from": 3014,
+     "durationInFrames": 233,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-9",
+     "kind": "background",
+     "from": 3247,
+     "durationInFrames": 539,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-10",
+     "kind": "background",
+     "from": 3786,
+     "durationInFrames": 734,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-11",
+     "kind": "background",
+     "from": 4520,
+     "durationInFrames": 780,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C87A72",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-12",
+     "kind": "background",
+     "from": 5300,
+     "durationInFrames": 591,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-13",
+     "kind": "background",
+     "from": 5891,
+     "durationInFrames": 212,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-14",
+     "kind": "background",
+     "from": 6103,
+     "durationInFrames": 541,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-15",
+     "kind": "background",
+     "from": 6644,
+     "durationInFrames": 468,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C87A72",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-16",
+     "kind": "background",
+     "from": 7112,
+     "durationInFrames": 300,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-17",
+     "kind": "background",
+     "from": 7412,
+     "durationInFrames": 734,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-18",
+     "kind": "background",
+     "from": 8146,
+     "durationInFrames": 425,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-19",
+     "kind": "background",
+     "from": 8571,
+     "durationInFrames": 605,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-20",
+     "kind": "background",
+     "from": 9176,
+     "durationInFrames": 422,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-21",
+     "kind": "background",
+     "from": 9598,
+     "durationInFrames": 673,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-22",
+     "kind": "background",
+     "from": 10271,
+     "durationInFrames": 738,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#B44A4A",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-23",
+     "kind": "background",
+     "from": 11009,
+     "durationInFrames": 705,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-24",
+     "kind": "background",
+     "from": 11714,
+     "durationInFrames": 451,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-25",
+     "kind": "background",
+     "from": 12165,
+     "durationInFrames": 349,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-26",
+     "kind": "background",
+     "from": 12514,
+     "durationInFrames": 398,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-27",
+     "kind": "background",
+     "from": 12912,
+     "durationInFrames": 840,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-28",
+     "kind": "background",
+     "from": 13752,
+     "durationInFrames": 244,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#8FA9C0"
+     ]
+    },
+    {
+     "id": "bg-29",
+     "kind": "background",
+     "from": 13996,
+     "durationInFrames": 574,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C87A72",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-30",
+     "kind": "background",
+     "from": 14570,
+     "durationInFrames": 783,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-31",
+     "kind": "background",
+     "from": 15353,
+     "durationInFrames": 348,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-32",
+     "kind": "background",
+     "from": 15701,
+     "durationInFrames": 191,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#8FA9C0"
+     ]
+    },
+    {
+     "id": "bg-33",
+     "kind": "background",
+     "from": 15892,
+     "durationInFrames": 748,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-34",
+     "kind": "background",
+     "from": 16640,
+     "durationInFrames": 389,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#B44A4A",
+      "#C87A72"
+     ]
+    },
+    {
+     "id": "bg-35",
+     "kind": "background",
+     "from": 17029,
+     "durationInFrames": 196,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#C87A72"
+     ]
+    },
+    {
+     "id": "bg-36",
+     "kind": "background",
+     "from": 17225,
+     "durationInFrames": 558,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-37",
+     "kind": "background",
+     "from": 17783,
+     "durationInFrames": 592,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-38",
+     "kind": "background",
+     "from": 18375,
+     "durationInFrames": 757,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-39",
+     "kind": "background",
+     "from": 19132,
+     "durationInFrames": 265,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C87A72",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-40",
+     "kind": "background",
+     "from": 19397,
+     "durationInFrames": 499,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#C87A72"
+     ]
+    },
+    {
+     "id": "bg-41",
+     "kind": "background",
+     "from": 19896,
+     "durationInFrames": 972,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-42",
+     "kind": "background",
+     "from": 20868,
+     "durationInFrames": 586,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#9FB6C8",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-43",
+     "kind": "background",
+     "from": 21454,
+     "durationInFrames": 738,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-44",
+     "kind": "background",
+     "from": 22192,
+     "durationInFrames": 822,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#C8B88A"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "trk-hero",
+   "name": "hero ảnh",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "h1-0",
+     "kind": "sticker",
+     "from": 170,
+     "durationInFrames": 163,
+     "asset": "assets/card_24_futou_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-2",
+     "kind": "sticker",
+     "from": 638,
+     "durationInFrames": 497,
+     "asset": "assets/card_24_taisho.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-4",
+     "kind": "sticker",
+     "from": 1456,
+     "durationInFrames": 366,
+     "asset": "assets/card_24_tomaru.png",
+     "layout": {
+      "x": 398,
+      "y": 140,
+      "w": 1123,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-5",
+     "kind": "sticker",
+     "from": 1828,
+     "durationInFrames": 458,
+     "asset": "assets/card_24_kenkyu.png",
+     "layout": {
+      "x": 396,
+      "y": 140,
+      "w": 1127,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-6",
+     "kind": "sticker",
+     "from": 2290,
+     "durationInFrames": 104,
+     "asset": "assets/card_24_yubinbako.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-6",
+     "kind": "sticker",
+     "from": 2398,
+     "durationInFrames": 105,
+     "asset": "assets/card_24_yubinbako_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-7",
+     "kind": "sticker",
+     "from": 2507,
+     "durationInFrames": 251,
+     "asset": "assets/card_genten24_01.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-7",
+     "kind": "sticker",
+     "from": 2762,
+     "durationInFrames": 252,
+     "asset": "assets/card_genten24_01_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-8",
+     "kind": "sticker",
+     "from": 3020,
+     "durationInFrames": 227,
+     "asset": "assets/card_24_naka.png",
+     "layout": {
+      "x": 397,
+      "y": 140,
+      "w": 1125,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-9",
+     "kind": "sticker",
+     "from": 3253,
+     "durationInFrames": 533,
+     "asset": "assets/card_24_aratani.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-11",
+     "kind": "sticker",
+     "from": 4524,
+     "durationInFrames": 386,
+     "asset": "assets/card_24_setai.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-11",
+     "kind": "sticker",
+     "from": 4914,
+     "durationInFrames": 386,
+     "asset": "assets/card_24_setai_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-12",
+     "kind": "sticker",
+     "from": 5306,
+     "durationInFrames": 585,
+     "asset": "assets/card_24_kyonen.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-13",
+     "kind": "sticker",
+     "from": 5897,
+     "durationInFrames": 206,
+     "asset": "assets/card_24_keisan.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-14",
+     "kind": "sticker",
+     "from": 6107,
+     "durationInFrames": 266,
+     "asset": "assets/card_genten24_02.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-14",
+     "kind": "sticker",
+     "from": 6377,
+     "durationInFrames": 267,
+     "asset": "assets/card_genten24_02_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-16",
+     "kind": "sticker",
+     "from": 7116,
+     "durationInFrames": 146,
+     "asset": "assets/card_24_watanabe.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-16",
+     "kind": "sticker",
+     "from": 7266,
+     "durationInFrames": 146,
+     "asset": "assets/card_24_watanabe_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-17",
+     "kind": "sticker",
+     "from": 7416,
+     "durationInFrames": 363,
+     "asset": "assets/card_24_watanabe_hagaki.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-17",
+     "kind": "sticker",
+     "from": 7783,
+     "durationInFrames": 363,
+     "asset": "assets/card_24_watanabe_hagaki_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-18",
+     "kind": "sticker",
+     "from": 8152,
+     "durationInFrames": 419,
+     "asset": "assets/card_24_tsuchi.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-20",
+     "kind": "sticker",
+     "from": 9182,
+     "durationInFrames": 416,
+     "asset": "assets/card_24_watanabe_kingaku.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-22",
+     "kind": "sticker",
+     "from": 10277,
+     "durationInFrames": 732,
+     "asset": "assets/card_24_zero.png",
+     "layout": {
+      "x": 397,
+      "y": 140,
+      "w": 1126,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-23",
+     "kind": "sticker",
+     "from": 11015,
+     "durationInFrames": 699,
+     "asset": "assets/card_24_menjo.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-24",
+     "kind": "sticker",
+     "from": 11720,
+     "durationInFrames": 445,
+     "asset": "assets/card_24_shougai.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-25",
+     "kind": "sticker",
+     "from": 12169,
+     "durationInFrames": 170,
+     "asset": "assets/card_24_kitte.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-25",
+     "kind": "sticker",
+     "from": 12343,
+     "durationInFrames": 171,
+     "asset": "assets/card_24_kitte_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-26",
+     "kind": "sticker",
+     "from": 12520,
+     "durationInFrames": 392,
+     "asset": "assets/card_24_touyu.png",
+     "layout": {
+      "x": 395,
+      "y": 140,
+      "w": 1129,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-27",
+     "kind": "sticker",
+     "from": 12918,
+     "durationInFrames": 834,
+     "asset": "assets/card_24_cta.png",
+     "layout": {
+      "x": 396,
+      "y": 140,
+      "w": 1127,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-28",
+     "kind": "sticker",
+     "from": 13758,
+     "durationInFrames": 238,
+     "asset": "assets/card_24_konai.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-29",
+     "kind": "sticker",
+     "from": 14002,
+     "durationInFrames": 568,
+     "asset": "assets/card_24_3kagetsu.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-30",
+     "kind": "sticker",
+     "from": 14576,
+     "durationInFrames": 777,
+     "asset": "assets/card_24_henkou.png",
+     "layout": {
+      "x": 396,
+      "y": 140,
+      "w": 1127,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-32",
+     "kind": "sticker",
+     "from": 15707,
+     "durationInFrames": 185,
+     "asset": "assets/card_24_tomaru_2.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-33",
+     "kind": "sticker",
+     "from": 15896,
+     "durationInFrames": 370,
+     "asset": "assets/card_24_nakamura.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-33",
+     "kind": "sticker",
+     "from": 16270,
+     "durationInFrames": 370,
+     "asset": "assets/card_24_nakamura_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-34",
+     "kind": "sticker",
+     "from": 16838,
+     "durationInFrames": 191,
+     "asset": "assets/card_genten24_03.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-35",
+     "kind": "sticker",
+     "from": 17035,
+     "durationInFrames": 190,
+     "asset": "assets/card_24_saikai.png",
+     "layout": {
+      "x": 395,
+      "y": 140,
+      "w": 1129,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-36",
+     "kind": "sticker",
+     "from": 17231,
+     "durationInFrames": 552,
+     "asset": "assets/card_24_soudan.png",
+     "layout": {
+      "x": 397,
+      "y": 140,
+      "w": 1126,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-37",
+     "kind": "sticker",
+     "from": 17787,
+     "durationInFrames": 292,
+     "asset": "assets/card_24_calendar_maru.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-37",
+     "kind": "sticker",
+     "from": 18083,
+     "durationInFrames": 292,
+     "asset": "assets/card_24_kigen.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-38",
+     "kind": "sticker",
+     "from": 18381,
+     "durationInFrames": 751,
+     "asset": "assets/card_24_ichigatsu.png",
+     "layout": {
+      "x": 396,
+      "y": 140,
+      "w": 1127,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-40",
+     "kind": "sticker",
+     "from": 19403,
+     "durationInFrames": 493,
+     "asset": "assets/card_24_sagi.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-43",
+     "kind": "sticker",
+     "from": 21460,
+     "durationInFrames": 732,
+     "asset": "assets/card_24_cta2.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h0-44",
+     "kind": "sticker",
+     "from": 22196,
+     "durationInFrames": 407,
+     "asset": "assets/card_24_yokoku.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h1-44",
+     "kind": "sticker",
+     "from": 22607,
+     "durationInFrames": 407,
+     "asset": "assets/card_24_yokoku_b.png",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    }
+   ]
+  },
+  {
+   "id": "trk-peak",
+   "name": "đỉnh bài (zoom-punch)",
+   "type": "video",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "pk-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 333,
+     "asset": "assets/card_24_futou.png",
+     "trimStartFrames": 0,
+     "fit": "contain",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "opacity": 1
+     },
+     "motion": "zoom-punch",
+     "speed": 1,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    },
+    {
+     "id": "pk-34",
+     "kind": "video",
+     "from": 16640,
+     "durationInFrames": 389,
+     "asset": "assets/card_24_tomatta.png",
+     "trimStartFrames": 0,
+     "fit": "contain",
+     "layout": {
+      "x": 394,
+      "y": 140,
+      "w": 1132,
+      "opacity": 1
+     },
+     "motion": "zoom-punch",
+     "speed": 1,
+     "mirror": false,
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left",
+     "filter": {}
+    }
+   ]
+  },
+  {
+   "id": "trk-sup1",
+   "name": "phụ 1",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "s0-0",
+     "kind": "sticker",
+     "from": 60,
+     "durationInFrames": 150,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-1",
+     "kind": "sticker",
+     "from": 393,
+     "durationInFrames": 150,
+     "asset": "assets/el_stamp.png",
+     "layout": {
+      "x": 1181,
+      "y": 250,
+      "w": 261,
+      "rotation": -7,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-2",
+     "kind": "sticker",
+     "from": 692,
+     "durationInFrames": 150,
+     "asset": "assets/el_signpost.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-3",
+     "kind": "sticker",
+     "from": 1195,
+     "durationInFrames": 150,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 1162,
+      "y": 250,
+      "w": 280,
+      "rotation": -7,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-4",
+     "kind": "sticker",
+     "from": 1510,
+     "durationInFrames": 150,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-5",
+     "kind": "sticker",
+     "from": 1882,
+     "durationInFrames": 150,
+     "asset": "assets/el_newspaper.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-6",
+     "kind": "sticker",
+     "from": 2346,
+     "durationInFrames": 150,
+     "asset": "assets/el_green_envelope.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-7",
+     "kind": "sticker",
+     "from": 2563,
+     "durationInFrames": 150,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-8",
+     "kind": "sticker",
+     "from": 3074,
+     "durationInFrames": 150,
+     "asset": "assets/el_hagaki.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-9",
+     "kind": "sticker",
+     "from": 3307,
+     "durationInFrames": 150,
+     "asset": "assets/el_newspaper.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-11",
+     "kind": "sticker",
+     "from": 4580,
+     "durationInFrames": 150,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-11",
+     "kind": "sticker",
+     "from": 5075,
+     "durationInFrames": 150,
+     "asset": "assets/el_speaker_robot.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-12",
+     "kind": "sticker",
+     "from": 5360,
+     "durationInFrames": 150,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-12",
+     "kind": "sticker",
+     "from": 5855,
+     "durationInFrames": 36,
+     "asset": "assets/el_senior_phone.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-13",
+     "kind": "sticker",
+     "from": 5951,
+     "durationInFrames": 150,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-14",
+     "kind": "sticker",
+     "from": 6163,
+     "durationInFrames": 150,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-15",
+     "kind": "sticker",
+     "from": 6704,
+     "durationInFrames": 150,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 1186,
+      "y": 250,
+      "w": 256,
+      "rotation": -7,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-16",
+     "kind": "sticker",
+     "from": 7172,
+     "durationInFrames": 150,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-17",
+     "kind": "sticker",
+     "from": 7472,
+     "durationInFrames": 150,
+     "asset": "assets/el_hagaki.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-17",
+     "kind": "sticker",
+     "from": 7967,
+     "durationInFrames": 150,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-18",
+     "kind": "sticker",
+     "from": 8206,
+     "durationInFrames": 150,
+     "asset": "assets/el_newspaper.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-20",
+     "kind": "sticker",
+     "from": 9236,
+     "durationInFrames": 150,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-22",
+     "kind": "sticker",
+     "from": 10331,
+     "durationInFrames": 150,
+     "asset": "assets/el_zero_stamp.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-22",
+     "kind": "sticker",
+     "from": 10826,
+     "durationInFrames": 150,
+     "asset": "assets/el_chart_down.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-23",
+     "kind": "sticker",
+     "from": 11069,
+     "durationInFrames": 150,
+     "asset": "assets/el_percent_badge.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-23",
+     "kind": "sticker",
+     "from": 11564,
+     "durationInFrames": 150,
+     "asset": "assets/el_house_bills.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-24",
+     "kind": "sticker",
+     "from": 11774,
+     "durationInFrames": 150,
+     "asset": "assets/el_signpost.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-25",
+     "kind": "sticker",
+     "from": 12225,
+     "durationInFrames": 150,
+     "asset": "assets/el_stamp.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-26",
+     "kind": "sticker",
+     "from": 12574,
+     "durationInFrames": 150,
+     "asset": "assets/el_house_bills.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-27",
+     "kind": "sticker",
+     "from": 12972,
+     "durationInFrames": 150,
+     "asset": "assets/el_smartphone.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-27",
+     "kind": "sticker",
+     "from": 13467,
+     "durationInFrames": 150,
+     "asset": "assets/el_green_envelope.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-28",
+     "kind": "sticker",
+     "from": 13812,
+     "durationInFrames": 150,
+     "asset": "assets/el_signpost.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-29",
+     "kind": "sticker",
+     "from": 14056,
+     "durationInFrames": 150,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-29",
+     "kind": "sticker",
+     "from": 14551,
+     "durationInFrames": 19,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-30",
+     "kind": "sticker",
+     "from": 14630,
+     "durationInFrames": 150,
+     "asset": "assets/el_signpost.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-30",
+     "kind": "sticker",
+     "from": 15125,
+     "durationInFrames": 150,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-31",
+     "kind": "sticker",
+     "from": 15413,
+     "durationInFrames": 150,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 1162,
+      "y": 250,
+      "w": 280,
+      "rotation": -7,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-32",
+     "kind": "sticker",
+     "from": 15761,
+     "durationInFrames": 131,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-33",
+     "kind": "sticker",
+     "from": 15952,
+     "durationInFrames": 150,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-33",
+     "kind": "sticker",
+     "from": 16447,
+     "durationInFrames": 150,
+     "asset": "assets/el_passbook.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-34",
+     "kind": "sticker",
+     "from": 16700,
+     "durationInFrames": 150,
+     "asset": "assets/el_house_bills.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-35",
+     "kind": "sticker",
+     "from": 17089,
+     "durationInFrames": 136,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-36",
+     "kind": "sticker",
+     "from": 17285,
+     "durationInFrames": 150,
+     "asset": "assets/el_smartphone.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-36",
+     "kind": "sticker",
+     "from": 17780,
+     "durationInFrames": 3,
+     "asset": "assets/el_two_men_desk.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-37",
+     "kind": "sticker",
+     "from": 17843,
+     "durationInFrames": 150,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-37",
+     "kind": "sticker",
+     "from": 18338,
+     "durationInFrames": 37,
+     "asset": "assets/el_burst_red.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-38",
+     "kind": "sticker",
+     "from": 18435,
+     "durationInFrames": 150,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-38",
+     "kind": "sticker",
+     "from": 18930,
+     "durationInFrames": 150,
+     "asset": "assets/el_stamp.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-40",
+     "kind": "sticker",
+     "from": 19457,
+     "durationInFrames": 150,
+     "asset": "assets/el_smartphone.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-43",
+     "kind": "sticker",
+     "from": 21514,
+     "durationInFrames": 150,
+     "asset": "assets/el_teacup.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-43",
+     "kind": "sticker",
+     "from": 22009,
+     "durationInFrames": 150,
+     "asset": "assets/el_newspaper.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s0-44",
+     "kind": "sticker",
+     "from": 22252,
+     "durationInFrames": 150,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s3-44",
+     "kind": "sticker",
+     "from": 22747,
+     "durationInFrames": 150,
+     "asset": "assets/el_chart_down.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 7.2
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-sup2",
+   "name": "phụ 2",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "s1-0",
+     "kind": "sticker",
+     "from": 225,
+     "durationInFrames": 108,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-2",
+     "kind": "sticker",
+     "from": 857,
+     "durationInFrames": 150,
+     "asset": "assets/el_percent_badge.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-4",
+     "kind": "sticker",
+     "from": 1675,
+     "durationInFrames": 147,
+     "asset": "assets/el_signpost.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-5",
+     "kind": "sticker",
+     "from": 2047,
+     "durationInFrames": 150,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-7",
+     "kind": "sticker",
+     "from": 2728,
+     "durationInFrames": 150,
+     "asset": "assets/el_chart_up.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-8",
+     "kind": "sticker",
+     "from": 3239,
+     "durationInFrames": 8,
+     "asset": "assets/el_kyuryo_meisai.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-9",
+     "kind": "sticker",
+     "from": 3472,
+     "durationInFrames": 150,
+     "asset": "assets/el_passbook.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-11",
+     "kind": "sticker",
+     "from": 4745,
+     "durationInFrames": 150,
+     "asset": "assets/el_house_bills.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-11",
+     "kind": "sticker",
+     "from": 5240,
+     "durationInFrames": 60,
+     "asset": "assets/el_teacup.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-12",
+     "kind": "sticker",
+     "from": 5525,
+     "durationInFrames": 150,
+     "asset": "assets/el_two_men_desk.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-14",
+     "kind": "sticker",
+     "from": 6328,
+     "durationInFrames": 150,
+     "asset": "assets/el_burst_red.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-16",
+     "kind": "sticker",
+     "from": 7337,
+     "durationInFrames": 75,
+     "asset": "assets/el_hagaki.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-17",
+     "kind": "sticker",
+     "from": 7637,
+     "durationInFrames": 150,
+     "asset": "assets/el_stamp.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-17",
+     "kind": "sticker",
+     "from": 8132,
+     "durationInFrames": 14,
+     "asset": "assets/el_percent_badge.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-18",
+     "kind": "sticker",
+     "from": 8371,
+     "durationInFrames": 150,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-20",
+     "kind": "sticker",
+     "from": 9401,
+     "durationInFrames": 150,
+     "asset": "assets/el_newspaper.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-22",
+     "kind": "sticker",
+     "from": 10496,
+     "durationInFrames": 150,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-22",
+     "kind": "sticker",
+     "from": 10991,
+     "durationInFrames": 18,
+     "asset": "assets/el_kyuryo_meisai.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-23",
+     "kind": "sticker",
+     "from": 11234,
+     "durationInFrames": 150,
+     "asset": "assets/el_passbook.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-24",
+     "kind": "sticker",
+     "from": 11939,
+     "durationInFrames": 150,
+     "asset": "assets/el_mynumber_card.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-25",
+     "kind": "sticker",
+     "from": 12390,
+     "durationInFrames": 124,
+     "asset": "assets/el_teacup.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-26",
+     "kind": "sticker",
+     "from": 12739,
+     "durationInFrames": 150,
+     "asset": "assets/el_two_men_desk.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-27",
+     "kind": "sticker",
+     "from": 13137,
+     "durationInFrames": 150,
+     "asset": "assets/el_senior_phone.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-27",
+     "kind": "sticker",
+     "from": 13632,
+     "durationInFrames": 120,
+     "asset": "assets/el_hagaki.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-28",
+     "kind": "sticker",
+     "from": 13977,
+     "durationInFrames": 19,
+     "asset": "assets/el_stamp.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-29",
+     "kind": "sticker",
+     "from": 14221,
+     "durationInFrames": 150,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-30",
+     "kind": "sticker",
+     "from": 14795,
+     "durationInFrames": 150,
+     "asset": "assets/el_newspaper.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-30",
+     "kind": "sticker",
+     "from": 15290,
+     "durationInFrames": 63,
+     "asset": "assets/el_chart_up.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-33",
+     "kind": "sticker",
+     "from": 16117,
+     "durationInFrames": 150,
+     "asset": "assets/el_chart_down.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-33",
+     "kind": "sticker",
+     "from": 16612,
+     "durationInFrames": 28,
+     "asset": "assets/el_smartphone.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-34",
+     "kind": "sticker",
+     "from": 16865,
+     "durationInFrames": 150,
+     "asset": "assets/el_mynumber_card.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-36",
+     "kind": "sticker",
+     "from": 17450,
+     "durationInFrames": 150,
+     "asset": "assets/el_speaker_robot.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-37",
+     "kind": "sticker",
+     "from": 18008,
+     "durationInFrames": 150,
+     "asset": "assets/el_zero_stamp.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-38",
+     "kind": "sticker",
+     "from": 18600,
+     "durationInFrames": 150,
+     "asset": "assets/el_green_envelope.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-38",
+     "kind": "sticker",
+     "from": 19095,
+     "durationInFrames": 37,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-40",
+     "kind": "sticker",
+     "from": 19622,
+     "durationInFrames": 150,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-43",
+     "kind": "sticker",
+     "from": 21679,
+     "durationInFrames": 150,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-43",
+     "kind": "sticker",
+     "from": 22174,
+     "durationInFrames": 18,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-44",
+     "kind": "sticker",
+     "from": 22417,
+     "durationInFrames": 150,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 25,
+      "y": 185,
+      "w": 330,
+      "rotation": 6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 3.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s4-44",
+     "kind": "sticker",
+     "from": 22912,
+     "durationInFrames": 102,
+     "asset": "assets/el_kyuryo_meisai.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 9.2
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-sup3",
+   "name": "phụ 3",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "s2-2",
+     "kind": "sticker",
+     "from": 1022,
+     "durationInFrames": 113,
+     "asset": "assets/el_hand_stop.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-5",
+     "kind": "sticker",
+     "from": 2212,
+     "durationInFrames": 74,
+     "asset": "assets/el_magnifying_glass.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-7",
+     "kind": "sticker",
+     "from": 2893,
+     "durationInFrames": 121,
+     "asset": "assets/el_chart_down.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-9",
+     "kind": "sticker",
+     "from": 3637,
+     "durationInFrames": 149,
+     "asset": "assets/el_smartphone.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-11",
+     "kind": "sticker",
+     "from": 4910,
+     "durationInFrames": 150,
+     "asset": "assets/el_mynumber_card.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-12",
+     "kind": "sticker",
+     "from": 5690,
+     "durationInFrames": 150,
+     "asset": "assets/el_zero_stamp.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-14",
+     "kind": "sticker",
+     "from": 6493,
+     "durationInFrames": 150,
+     "asset": "assets/el_green_envelope.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-17",
+     "kind": "sticker",
+     "from": 7802,
+     "durationInFrames": 150,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-18",
+     "kind": "sticker",
+     "from": 8536,
+     "durationInFrames": 35,
+     "asset": "assets/el_signpost.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-20",
+     "kind": "sticker",
+     "from": 9566,
+     "durationInFrames": 32,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-22",
+     "kind": "sticker",
+     "from": 10661,
+     "durationInFrames": 150,
+     "asset": "assets/el_chart_up.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-23",
+     "kind": "sticker",
+     "from": 11399,
+     "durationInFrames": 150,
+     "asset": "assets/el_smartphone.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-24",
+     "kind": "sticker",
+     "from": 12104,
+     "durationInFrames": 61,
+     "asset": "assets/el_speaker_robot.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-26",
+     "kind": "sticker",
+     "from": 12904,
+     "durationInFrames": 8,
+     "asset": "assets/el_zero_stamp.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-27",
+     "kind": "sticker",
+     "from": 13302,
+     "durationInFrames": 150,
+     "asset": "assets/el_burst_red.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-29",
+     "kind": "sticker",
+     "from": 14386,
+     "durationInFrames": 150,
+     "asset": "assets/el_percent_badge.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-30",
+     "kind": "sticker",
+     "from": 14960,
+     "durationInFrames": 150,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-33",
+     "kind": "sticker",
+     "from": 16282,
+     "durationInFrames": 150,
+     "asset": "assets/el_kyuryo_meisai.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-36",
+     "kind": "sticker",
+     "from": 17615,
+     "durationInFrames": 150,
+     "asset": "assets/el_teacup.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-37",
+     "kind": "sticker",
+     "from": 18173,
+     "durationInFrames": 150,
+     "asset": "assets/el_senior_phone.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-38",
+     "kind": "sticker",
+     "from": 18765,
+     "durationInFrames": 150,
+     "asset": "assets/el_hagaki.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-40",
+     "kind": "sticker",
+     "from": 19787,
+     "durationInFrames": 109,
+     "asset": "assets/el_percent_badge.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-43",
+     "kind": "sticker",
+     "from": 21844,
+     "durationInFrames": 150,
+     "asset": "assets/el_signpost.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s2-44",
+     "kind": "sticker",
+     "from": 22582,
+     "durationInFrames": 150,
+     "asset": "assets/el_chart_up.png",
+     "layout": {
+      "x": 1555,
+      "y": 110,
+      "w": 330,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "params": {}
+     },
+     "idle": {
+      "amp": 5,
+      "phase": 5.2
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-cast-l",
+   "name": "cast trái",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "cl-0",
+     "kind": "sticker",
+     "from": 0,
+     "durationInFrames": 333,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-1",
+     "kind": "sticker",
+     "from": 333,
+     "durationInFrames": 299,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-2",
+     "kind": "sticker",
+     "from": 632,
+     "durationInFrames": 503,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-3",
+     "kind": "sticker",
+     "from": 1135,
+     "durationInFrames": 315,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-4",
+     "kind": "sticker",
+     "from": 1450,
+     "durationInFrames": 372,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 387,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-5",
+     "kind": "sticker",
+     "from": 1822,
+     "durationInFrames": 464,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-6",
+     "kind": "sticker",
+     "from": 2286,
+     "durationInFrames": 217,
+     "asset": "assets/sensei_serious.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 313,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-7",
+     "kind": "sticker",
+     "from": 2503,
+     "durationInFrames": 511,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-8",
+     "kind": "sticker",
+     "from": 3014,
+     "durationInFrames": 233,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-9",
+     "kind": "sticker",
+     "from": 3247,
+     "durationInFrames": 539,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-10",
+     "kind": "sticker",
+     "from": 3786,
+     "durationInFrames": 734,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-11",
+     "kind": "sticker",
+     "from": 4520,
+     "durationInFrames": 780,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 387,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-12",
+     "kind": "sticker",
+     "from": 5300,
+     "durationInFrames": 591,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-13",
+     "kind": "sticker",
+     "from": 5891,
+     "durationInFrames": 212,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-14",
+     "kind": "sticker",
+     "from": 6103,
+     "durationInFrames": 541,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-15",
+     "kind": "sticker",
+     "from": 6644,
+     "durationInFrames": 468,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-16",
+     "kind": "sticker",
+     "from": 7112,
+     "durationInFrames": 300,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-17",
+     "kind": "sticker",
+     "from": 7412,
+     "durationInFrames": 734,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-18",
+     "kind": "sticker",
+     "from": 8146,
+     "durationInFrames": 425,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-19",
+     "kind": "sticker",
+     "from": 8571,
+     "durationInFrames": 605,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-20",
+     "kind": "sticker",
+     "from": 9176,
+     "durationInFrames": 422,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-21",
+     "kind": "sticker",
+     "from": 9598,
+     "durationInFrames": 673,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-22",
+     "kind": "sticker",
+     "from": 10271,
+     "durationInFrames": 738,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 387,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-23",
+     "kind": "sticker",
+     "from": 11009,
+     "durationInFrames": 705,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-24",
+     "kind": "sticker",
+     "from": 11714,
+     "durationInFrames": 451,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-25",
+     "kind": "sticker",
+     "from": 12165,
+     "durationInFrames": 349,
+     "asset": "assets/sensei_reassure.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 377,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-26",
+     "kind": "sticker",
+     "from": 12514,
+     "durationInFrames": 398,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-27",
+     "kind": "sticker",
+     "from": 12912,
+     "durationInFrames": 840,
+     "asset": "assets/sensei_reassure.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 377,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-28",
+     "kind": "sticker",
+     "from": 13752,
+     "durationInFrames": 244,
+     "asset": "assets/sensei_serious.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 313,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-29",
+     "kind": "sticker",
+     "from": 13996,
+     "durationInFrames": 574,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 387,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-30",
+     "kind": "sticker",
+     "from": 14570,
+     "durationInFrames": 783,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-31",
+     "kind": "sticker",
+     "from": 15353,
+     "durationInFrames": 348,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-32",
+     "kind": "sticker",
+     "from": 15701,
+     "durationInFrames": 191,
+     "asset": "assets/sensei_serious.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 313,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-33",
+     "kind": "sticker",
+     "from": 15892,
+     "durationInFrames": 748,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-34",
+     "kind": "sticker",
+     "from": 16640,
+     "durationInFrames": 389,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 387,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-35",
+     "kind": "sticker",
+     "from": 17029,
+     "durationInFrames": 196,
+     "asset": "assets/sensei_serious.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 313,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-36",
+     "kind": "sticker",
+     "from": 17225,
+     "durationInFrames": 558,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-37",
+     "kind": "sticker",
+     "from": 17783,
+     "durationInFrames": 592,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-38",
+     "kind": "sticker",
+     "from": 18375,
+     "durationInFrames": 757,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-39",
+     "kind": "sticker",
+     "from": 19132,
+     "durationInFrames": 265,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 387,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-40",
+     "kind": "sticker",
+     "from": 19397,
+     "durationInFrames": 499,
+     "asset": "assets/sensei_serious.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 313,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-41",
+     "kind": "sticker",
+     "from": 19896,
+     "durationInFrames": 972,
+     "asset": "assets/sensei_present.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 430,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-42",
+     "kind": "sticker",
+     "from": 20868,
+     "durationInFrames": 586,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 408,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-43",
+     "kind": "sticker",
+     "from": 21454,
+     "durationInFrames": 738,
+     "asset": "assets/sensei_reassure.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 377,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-44",
+     "kind": "sticker",
+     "from": 22192,
+     "durationInFrames": 822,
+     "asset": "assets/sensei_reassure.png",
+     "layout": {
+      "x": 4,
+      "y": 552,
+      "w": 377,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-cast-r",
+   "name": "cast phải",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "cr-0",
+     "kind": "sticker",
+     "from": 0,
+     "durationInFrames": 333,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-1",
+     "kind": "sticker",
+     "from": 333,
+     "durationInFrames": 299,
+     "asset": "assets/kikite_surprised.png",
+     "layout": {
+      "x": 1514,
+      "y": 552,
+      "w": 402,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-2",
+     "kind": "sticker",
+     "from": 632,
+     "durationInFrames": 503,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-3",
+     "kind": "sticker",
+     "from": 1135,
+     "durationInFrames": 315,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-4",
+     "kind": "sticker",
+     "from": 1450,
+     "durationInFrames": 372,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1576,
+      "y": 552,
+      "w": 340,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-5",
+     "kind": "sticker",
+     "from": 1822,
+     "durationInFrames": 464,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-6",
+     "kind": "sticker",
+     "from": 2286,
+     "durationInFrames": 217,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-7",
+     "kind": "sticker",
+     "from": 2503,
+     "durationInFrames": 511,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-8",
+     "kind": "sticker",
+     "from": 3014,
+     "durationInFrames": 233,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-9",
+     "kind": "sticker",
+     "from": 3247,
+     "durationInFrames": 539,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-10",
+     "kind": "sticker",
+     "from": 3786,
+     "durationInFrames": 734,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-11",
+     "kind": "sticker",
+     "from": 4520,
+     "durationInFrames": 780,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1576,
+      "y": 552,
+      "w": 340,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-12",
+     "kind": "sticker",
+     "from": 5300,
+     "durationInFrames": 591,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-13",
+     "kind": "sticker",
+     "from": 5891,
+     "durationInFrames": 212,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-14",
+     "kind": "sticker",
+     "from": 6103,
+     "durationInFrames": 541,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-15",
+     "kind": "sticker",
+     "from": 6644,
+     "durationInFrames": 468,
+     "asset": "assets/kikite_surprised.png",
+     "layout": {
+      "x": 1514,
+      "y": 552,
+      "w": 402,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-16",
+     "kind": "sticker",
+     "from": 7112,
+     "durationInFrames": 300,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-17",
+     "kind": "sticker",
+     "from": 7412,
+     "durationInFrames": 734,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-18",
+     "kind": "sticker",
+     "from": 8146,
+     "durationInFrames": 425,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-19",
+     "kind": "sticker",
+     "from": 8571,
+     "durationInFrames": 605,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-20",
+     "kind": "sticker",
+     "from": 9176,
+     "durationInFrames": 422,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-21",
+     "kind": "sticker",
+     "from": 9598,
+     "durationInFrames": 673,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-22",
+     "kind": "sticker",
+     "from": 10271,
+     "durationInFrames": 738,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1576,
+      "y": 552,
+      "w": 340,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-23",
+     "kind": "sticker",
+     "from": 11009,
+     "durationInFrames": 705,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-24",
+     "kind": "sticker",
+     "from": 11714,
+     "durationInFrames": 451,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-25",
+     "kind": "sticker",
+     "from": 12165,
+     "durationInFrames": 349,
+     "asset": "assets/kikite_relieved.png",
+     "layout": {
+      "x": 1579,
+      "y": 552,
+      "w": 337,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-26",
+     "kind": "sticker",
+     "from": 12514,
+     "durationInFrames": 398,
+     "asset": "assets/kikite_relieved.png",
+     "layout": {
+      "x": 1579,
+      "y": 552,
+      "w": 337,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-27",
+     "kind": "sticker",
+     "from": 12912,
+     "durationInFrames": 840,
+     "asset": "assets/kikite_relieved.png",
+     "layout": {
+      "x": 1579,
+      "y": 552,
+      "w": 337,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-28",
+     "kind": "sticker",
+     "from": 13752,
+     "durationInFrames": 244,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-29",
+     "kind": "sticker",
+     "from": 13996,
+     "durationInFrames": 574,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1576,
+      "y": 552,
+      "w": 340,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-30",
+     "kind": "sticker",
+     "from": 14570,
+     "durationInFrames": 783,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-31",
+     "kind": "sticker",
+     "from": 15353,
+     "durationInFrames": 348,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-32",
+     "kind": "sticker",
+     "from": 15701,
+     "durationInFrames": 191,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-33",
+     "kind": "sticker",
+     "from": 15892,
+     "durationInFrames": 748,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-34",
+     "kind": "sticker",
+     "from": 16640,
+     "durationInFrames": 389,
+     "asset": "assets/kikite_surprised.png",
+     "layout": {
+      "x": 1514,
+      "y": 552,
+      "w": 402,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-35",
+     "kind": "sticker",
+     "from": 17029,
+     "durationInFrames": 196,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-36",
+     "kind": "sticker",
+     "from": 17225,
+     "durationInFrames": 558,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-37",
+     "kind": "sticker",
+     "from": 17783,
+     "durationInFrames": 592,
+     "asset": "assets/kikite_relieved.png",
+     "layout": {
+      "x": 1579,
+      "y": 552,
+      "w": 337,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-38",
+     "kind": "sticker",
+     "from": 18375,
+     "durationInFrames": 757,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-39",
+     "kind": "sticker",
+     "from": 19132,
+     "durationInFrames": 265,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1576,
+      "y": 552,
+      "w": 340,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-40",
+     "kind": "sticker",
+     "from": 19397,
+     "durationInFrames": 499,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1576,
+      "y": 552,
+      "w": 340,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-41",
+     "kind": "sticker",
+     "from": 19896,
+     "durationInFrames": 972,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1538,
+      "y": 552,
+      "w": 378,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-42",
+     "kind": "sticker",
+     "from": 20868,
+     "durationInFrames": 586,
+     "asset": "assets/kikite_think.png",
+     "layout": {
+      "x": 1555,
+      "y": 552,
+      "w": 361,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-43",
+     "kind": "sticker",
+     "from": 21454,
+     "durationInFrames": 738,
+     "asset": "assets/kikite_relieved.png",
+     "layout": {
+      "x": 1579,
+      "y": 552,
+      "w": 337,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-44",
+     "kind": "sticker",
+     "from": 22192,
+     "durationInFrames": 822,
+     "asset": "assets/kikite_relieved.png",
+     "layout": {
+      "x": 1579,
+      "y": 552,
+      "w": 337,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-stat",
+   "name": "bảng số liệu",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "st-1",
+     "kind": "text",
+     "from": 362,
+     "durationInFrames": 266,
+     "content": "#2E6B4F|出せば|もらえる\n#A82026|出さなければ|0円\n*あいだにあるのは|切手一枚",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "st-3",
+     "kind": "text",
+     "from": 1166,
+     "durationInFrames": 280,
+     "content": "①誰に|届くのか\n②いくら|なのか\n*③来ない時|どう動くか",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "st-10",
+     "kind": "text",
+     "from": 3846,
+     "durationInFrames": 670,
+     "content": "①年齢|65歳以上・老齢基礎年金を受給\n②世帯|全員が住民税非課税\n*③前年の所得|基準額以下",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-15",
+     "kind": "text",
+     "from": 6690,
+     "durationInFrames": 418,
+     "content": "基準額|月5,620円\n40年納付なら|そのまま\n*年にすると|およそ6万7千円",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-19",
+     "kind": "text",
+     "from": 8631,
+     "durationInFrames": 541,
+     "content": "#2E6B4F|80万9千円以下|満額・年およそ6万7千円\n80万9千円〜90万9千円|補足的・率で減る\n#A82026|*90万9千円超|0円",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 52
+    },
+    {
+     "id": "st-31",
+     "kind": "text",
+     "from": 15387,
+     "durationInFrames": 310,
+     "content": "#A82026|機構は|待つだけ\n#2E6B4F|*動くのは|あなたの側",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 60
+    },
+    {
+     "id": "st-39",
+     "kind": "text",
+     "from": 19158,
+     "durationInFrames": 235,
+     "content": "期限内に届けば|10月分から遡り\n*期限を過ぎたら|請求した月の翌月分から",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 50
+    },
+    {
+     "id": "st-41",
+     "kind": "text",
+     "from": 19956,
+     "durationInFrames": 908,
+     "content": "一｜緑の封筒は9月の第1営業日から順次届く\n二｜基準は月額5,620円、渡辺さんは月2,529円だった\n三｜世帯の変化で対象になった方は、自分から手続きする\n*四｜一度止まったら、再開も自分から",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 42
+    },
+    {
+     "id": "st-42",
+     "kind": "text",
+     "from": 20926,
+     "durationInFrames": 524,
+     "content": "①世帯は全員|住民税非課税ですか\n②前年の所得は|90万9千円以下ですか\n*③9月の郵便受けを|もう確かめましたか",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 300,
+      "w": 976
+     },
+     "fontSize": 54
+    }
+   ]
+  },
+  {
+   "id": "trk-formula",
+   "name": "công thức",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "fm-21",
+     "kind": "text",
+     "from": 9658,
+     "durationInFrames": 607,
+     "content": "4万5千円 ÷ 10万円 ≒ 0.45",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 474,
+      "y": 430,
+      "w": 976
+     },
+     "fontSize": 80
+    }
+   ]
+  },
+  {
+   "id": "trk-tag",
+   "name": "tag",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "tag-0",
+     "kind": "text",
+     "from": 4,
+     "durationInFrames": 329,
+     "content": "緑の封筒",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-1",
+     "kind": "text",
+     "from": 337,
+     "durationInFrames": 295,
+     "content": "切手一枚のあいだ",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-2",
+     "kind": "text",
+     "from": 636,
+     "durationInFrames": 499,
+     "content": "対象は",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-3",
+     "kind": "text",
+     "from": 1139,
+     "durationInFrames": 311,
+     "content": "三つのこと",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-4",
+     "kind": "text",
+     "from": 1454,
+     "durationInFrames": 368,
+     "content": "もうひとつ",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-5",
+     "kind": "text",
+     "from": 1826,
+     "durationInFrames": 460,
+     "content": "研究室です",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-6",
+     "kind": "text",
+     "from": 2290,
+     "durationInFrames": 213,
+     "content": "誰に届くのか",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-7",
+     "kind": "text",
+     "from": 2507,
+     "durationInFrames": 507,
+     "content": "原典・年金機構①",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-8",
+     "kind": "text",
+     "from": 3018,
+     "durationInFrames": 229,
+     "content": "はがき型請求書",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-9",
+     "kind": "text",
+     "from": 3251,
+     "durationInFrames": 535,
+     "content": "新たに対象",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-10",
+     "kind": "text",
+     "from": 3790,
+     "durationInFrames": 730,
+     "content": "条件は三つ",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-11",
+     "kind": "text",
+     "from": 4524,
+     "durationInFrames": 776,
+     "content": "世帯の全員",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-12",
+     "kind": "text",
+     "from": 5304,
+     "durationInFrames": 587,
+     "content": "去年の数字",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-13",
+     "kind": "text",
+     "from": 5895,
+     "durationInFrames": 208,
+     "content": "あなたの金額",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-14",
+     "kind": "text",
+     "from": 6107,
+     "durationInFrames": 537,
+     "content": "原典・年金機構②",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-15",
+     "kind": "text",
+     "from": 6648,
+     "durationInFrames": 464,
+     "content": "六万七千円が基準",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-16",
+     "kind": "text",
+     "from": 7116,
+     "durationInFrames": 296,
+     "content": "渡辺さん",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-17",
+     "kind": "text",
+     "from": 7416,
+     "durationInFrames": 730,
+     "content": "はがきを読む",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-18",
+     "kind": "text",
+     "from": 8150,
+     "durationInFrames": 421,
+     "content": "審査結果の通知",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-19",
+     "kind": "text",
+     "from": 8575,
+     "durationInFrames": 601,
+     "content": "三つの段",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-20",
+     "kind": "text",
+     "from": 9180,
+     "durationInFrames": 418,
+     "content": "渡辺さんの年金",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-21",
+     "kind": "text",
+     "from": 9602,
+     "durationInFrames": 669,
+     "content": "割ってみます",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-22",
+     "kind": "text",
+     "from": 10275,
+     "durationInFrames": 734,
+     "content": "この線の細さ",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-23",
+     "kind": "text",
+     "from": 11013,
+     "durationInFrames": 701,
+     "content": "免除の期間",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-24",
+     "kind": "text",
+     "from": 11718,
+     "durationInFrames": 447,
+     "content": "別枠の給付金",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-25",
+     "kind": "text",
+     "from": 12169,
+     "durationInFrames": 345,
+     "content": "いちばん割のいい葉書",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-26",
+     "kind": "text",
+     "from": 12518,
+     "durationInFrames": 394,
+     "content": "灯油代のぶん",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-27",
+     "kind": "text",
+     "from": 12916,
+     "durationInFrames": 836,
+     "content": "お願いです",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-28",
+     "kind": "text",
+     "from": 13756,
+     "durationInFrames": 240,
+     "content": "対象なのに来ない",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-29",
+     "kind": "text",
+     "from": 14000,
+     "durationInFrames": 570,
+     "content": "三か月以内",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-30",
+     "kind": "text",
+     "from": 14574,
+     "durationInFrames": 779,
+     "content": "世帯構成の変更",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-31",
+     "kind": "text",
+     "from": 15357,
+     "durationInFrames": 344,
+     "content": "機構ではなく、あなた",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-32",
+     "kind": "text",
+     "from": 15705,
+     "durationInFrames": 187,
+     "content": "冒頭の答え",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-33",
+     "kind": "text",
+     "from": 15896,
+     "durationInFrames": 744,
+     "content": "中村さん",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-34",
+     "kind": "text",
+     "from": 16644,
+     "durationInFrames": 385,
+     "content": "来ませんでした",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-35",
+     "kind": "text",
+     "from": 17033,
+     "durationInFrames": 192,
+     "content": "再開のボタンは、あなたの側に",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-36",
+     "kind": "text",
+     "from": 17229,
+     "durationInFrames": 554,
+     "content": "相談先",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-37",
+     "kind": "text",
+     "from": 17787,
+     "durationInFrames": 588,
+     "content": "消えないペンで丸",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-38",
+     "kind": "text",
+     "from": 18379,
+     "durationInFrames": 753,
+     "content": "提出期限",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-39",
+     "kind": "text",
+     "from": 19136,
+     "durationInFrames": 261,
+     "content": "翌月分から",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-40",
+     "kind": "text",
+     "from": 19401,
+     "durationInFrames": 495,
+     "content": "ATMの操作",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-41",
+     "kind": "text",
+     "from": 19900,
+     "durationInFrames": 968,
+     "content": "研究ノート",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-42",
+     "kind": "text",
+     "from": 20872,
+     "durationInFrames": 582,
+     "content": "セルフチェック",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-43",
+     "kind": "text",
+     "from": 21458,
+     "durationInFrames": 734,
+     "content": "次の支給日の前にも",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    },
+    {
+     "id": "tag-44",
+     "kind": "text",
+     "from": 22196,
+     "durationInFrames": 818,
+     "content": "次回予告",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": 64
+    }
+   ]
+  },
+  {
+   "id": "trk-punch",
+   "name": "punch",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "p-9",
+     "kind": "text",
+     "from": 3255,
+     "durationInFrames": 513,
+     "content": "対象は、去年ではなく、今年のあなたかもしれません",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 478
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "p-13",
+     "kind": "text",
+     "from": 5308,
+     "durationInFrames": 565,
+     "content": "お子さんの独立が、条件を変えます",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 478
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "p-24",
+     "kind": "text",
+     "from": 10111,
+     "durationInFrames": 142,
+     "content": "月2,529円、年およそ3万円",
+     "preset": "papercut-banner",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 478
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "p-26",
+     "kind": "text",
+     "from": 10721,
+     "durationInFrames": 270,
+     "content": "この線の細さが、この制度の顔です",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 478
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "p-37",
+     "kind": "text",
+     "from": 15709,
+     "durationInFrames": 165,
+     "content": "止まったまま、戻らなかった給付金",
+     "preset": "papercut-banner",
+     "color": "#A82026",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 478
+     },
+     "fontSize": 62
+    },
+    {
+     "id": "p-48",
+     "kind": "text",
+     "from": 19850,
+     "durationInFrames": 60,
+     "content": "切ってください",
+     "preset": "papercut-banner",
+     "color": "#A82026",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 478
+     },
+     "fontSize": 62
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "giọng",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "v",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 23014,
+     "asset": "assets/voice.mp3",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-sfx",
+   "name": "SFX đỉnh bài",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "sfx-0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 90,
+     "asset": "sfx/paper.wav",
+     "volume": 0.3,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "sfx-34",
+     "kind": "audio",
+     "from": 16640,
+     "durationInFrames": 90,
+     "asset": "sfx/drop.wav",
+     "volume": 0.3,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-bgm",
+   "name": "BGM −40dB",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "bgm-0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 10914,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "bgm-1",
+     "kind": "audio",
+     "from": 10914,
+     "durationInFrames": 10914,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "bgm-2",
+     "kind": "audio",
+     "from": 21828,
+     "durationInFrames": 1186,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "あなたの家に、九月、緑の封筒が届きます。中を見ないまま置いておくと、年およそ六万七千円が、静かに消えます。",
+    "startMs": 0,
+    "endMs": 10485
+   },
+   {
+    "text": "出せば、もらえる。出さなければ、ゼロ円。六万七千円とゼロ円の境目にあるのは、切手一枚だけです。",
+    "startMs": 11085,
+    "endMs": 20472
+   },
+   {
+    "text": "対象は、六十五歳以上で、老齢基礎年金を受け取っているかた。うちは関係ない、と思っている方ほど、",
+    "startMs": 21072,
+    "endMs": 29612
+   },
+   {
+    "text": "危ない。去年まで本当に対象外だった方を、ある年とつぜん対象に変える仕組みだからです。",
+    "startMs": 29612,
+    "endMs": 37243
+   },
+   {
+    "text": "今日は、三つのことを順番に確かめます。誰に届くのか。いくらなのか。そして、封筒が来ないとき、どう動くか。",
+    "startMs": 37843,
+    "endMs": 47741
+   },
+   {
+    "text": "もうひとつ。この給付金が、ある年ぴたりと止まり、二度と戻らなかった方がいます。条件は満たしていたのに、です。答えは後半にあります。",
+    "startMs": 48341,
+    "endMs": 60128
+   },
+   {
+    "text": "こんにちは、年金と老後のお金研究室です。制度を読むだけの番組ではなく、あなたの数字を計算する研究室として、今日も原典を一緒に開いていきます。まず、事実から。",
+    "startMs": 60728,
+    "endMs": 75587
+   },
+   {
+    "text": "第一章。この封筒は、誰の郵便受けに入って、誰の家を素通りするのか。",
+    "startMs": 76187,
+    "endMs": 82843
+   },
+   {
+    "text": "こちらが、日本年金機構のページです。赤で囲んだところ、ご覧ください。年金生活者支援給付金請求書、",
+    "startMs": 83443,
+    "endMs": 93052
+   },
+   {
+    "text": "はがき型を、毎年九月の第一営業日から順次送付しています、とあります。",
+    "startMs": 93052,
+    "endMs": 99859
+   },
+   {
+    "text": "届くのは、緑の封筒。中に、はがき型の請求書が一枚、入っています。",
+    "startMs": 100459,
+    "endMs": 107637
+   },
+   {
+    "text": "送られる相手は、基礎年金を受け取っている方のうち、新たに、この給付金を受け取れるようになった方です。",
+    "startMs": 108237,
+    "endMs": 116744
+   },
+   {
+    "text": "すでに去年から受け取っている方には、原則、届きません。続けて受け取るだけなら、手続きが要らないからです。",
+    "startMs": 116744,
+    "endMs": 125592
+   },
+   {
+    "text": "では、なぜ、去年まで対象外だった人が、急に対象になるのか。",
+    "startMs": 126192,
+    "endMs": 132165
+   },
+   {
+    "text": "条件は、三つです。六十五歳以上で、老齢基礎年金を受け取っていること。世帯の全員が、市町村民税非課税であること。",
+    "startMs": 132765,
+    "endMs": 143463
+   },
+   {
+    "text": "そして、前年の年金収入とその他の所得の合計が、基準額以下であること。",
+    "startMs": 143463,
+    "endMs": 150077
+   },
+   {
+    "text": "ここで、つまずきやすいのが、二つ目の条件です。世帯の、全員。あなた自身の収入がどれだけ少なくても、",
+    "startMs": 150677,
+    "endMs": 159626
+   },
+   {
+    "text": "同じ世帯に、住民税を納めている方がひとりいれば、対象から外れます。だから、同居のお子さんが独立して、",
+    "startMs": 159626,
+    "endMs": 168758
+   },
+   {
+    "text": "世帯があなたたちだけになった年に、急に条件がそろう。そういう入り方をするのです。",
+    "startMs": 168758,
+    "endMs": 176064
+   },
+   {
+    "text": "三つとも、去年のあなたの数字で決まります。だから、去年と今年で、答えが変わるんです。お子さんの独立。",
+    "startMs": 176664,
+    "endMs": 186029
+   },
+   {
+    "text": "働き方の変化。税金の計算のやり直し。暮らしがひとつ動くと、この給付金の対象に、静かに入ることがあります。",
+    "startMs": 186029,
+    "endMs": 195768
+   },
+   {
+    "text": "第二章。いよいよ、あなたの金額です。ここからは、計算タイムです。",
+    "startMs": 196368,
+    "endMs": 202843
+   },
+   {
+    "text": "基準の数字も、原典で見てください。赤で囲んだところです。令和八年度の、老齢年金生活者支援給付金。",
+    "startMs": 203443,
+    "endMs": 213177
+   },
+   {
+    "text": "月額五千六百二十円を基準に、保険料を納めた期間に応じて計算する、とあります。",
+    "startMs": 213177,
+    "endMs": 220883
+   },
+   {
+    "text": "国民年金を四十年、納めた方なら、そのまま月五千六百二十円。一年で、六万七千四百四十円。冒頭の、年およそ六万七千円は、この数字です。",
+    "startMs": 221483,
+    "endMs": 236480
+   },
+   {
+    "text": "ここで、モニターの渡辺さんに出てもらいます。新潟市の、六十六歳。年金は、月七万二千円です。",
+    "startMs": 237080,
+    "endMs": 246456
+   },
+   {
+    "text": "九月、渡辺さんの手元にも、緑の封筒が届きました。はがきを、一緒に読みます。書く欄は、驚くほど少ない。",
+    "startMs": 247056,
+    "endMs": 256686
+   },
+   {
+    "text": "お名前など、いくつかの欄だけです。切手を貼って、ポストに入れる。それで手続きは終わりです。窓口に並ぶ必要はありません。いまは、電子申請でも出せます。",
+    "startMs": 256686,
+    "endMs": 270939
+   },
+   {
+    "text": "出したあとは、審査結果の通知が届きます。支給対象なら、その通知書の中に、あなたの支給金額が書いてあります。これから一緒にやる計算の、答え合わせです。",
+    "startMs": 271539,
+    "endMs": 285085
+   },
+   {
+    "text": "ただし、全員が満額ではありません。前年の年金収入とその他の所得で、三つの段に分かれます。",
+    "startMs": 285685,
+    "endMs": 294005
+   },
+   {
+    "text": "一段目。合計が年八十万九千円以下のかた。満額の側です。月五千六百二十円、年およそ六万七千円。",
+    "startMs": 294605,
+    "endMs": 305283
+   },
+   {
+    "text": "二段目。八十万九千円を超えて、九十万九千円まで。渡辺さんが、ここでした。月七万二千円の年金は、年にすると八十六万四千円。",
+    "startMs": 305883,
+    "endMs": 319323
+   },
+   {
+    "text": "計算してみます。九十万九千円から、渡辺さんの八十六万四千円を引くと、四万五千円。これを十万円で割って、〇・四五。この率を、五千六百二十円に掛けます。",
+    "startMs": 319923,
+    "endMs": 335965
+   },
+   {
+    "text": "月二千五百二十九円。年で、およそ三万円です。",
+    "startMs": 336765,
+    "endMs": 341768
+   },
+   {
+    "text": "三段目。九十万九千円を超えた方。ここからは、ゼロ円です。たとえば年金が月八万円なら、年九十六万円。線を越えているので、一円も出ません。",
+    "startMs": 342368,
+    "endMs": 356491
+   },
+   {
+    "text": "月七万二千円の渡辺さんは年三万円。月八万円ならゼロ円。この線の細さが、この制度の顔です。",
+    "startMs": 357091,
+    "endMs": 366381
+   },
+   {
+    "text": "そして、ここまで聞いて、自分は免除の期間があるから少ないだろう、と諦めかけた方。逆です。",
+    "startMs": 366981,
+    "endMs": 375039
+   },
+   {
+    "text": "保険料の免除を受けていた期間は、月額一万千七百六十八円を基準にした、別の計算で足されます。",
+    "startMs": 375039,
+    "endMs": 383279
+   },
+   {
+    "text": "免除の種類と期間で額は変わりますが、引かれる側ではなく、足される側です。",
+    "startMs": 383279,
+    "endMs": 389872
+   },
+   {
+    "text": "なお、障害年金や遺族年金を受け取っている方にも、別枠の給付金があります。たとえば障害等級一級なら、月七千二十五円。今日の話の、となりにある制度です。",
+    "startMs": 390472,
+    "endMs": 404915
+   },
+   {
+    "text": "渡辺さんは、引き出しの奥から古い切手を探し出して、こう言いました。",
+    "startMs": 405515,
+    "endMs": 411115
+   },
+   {
+    "text": "「はがき一枚で年三万円なら、人生でいちばん割のいい葉書だねえ」",
+    "startMs": 411115,
+    "endMs": 416544
+   },
+   {
+    "text": "年およそ三万円。渡辺さんの家では、冬のあいだの灯油代が、ちょうどこのくらいだそうです。はがき一枚と、ひと冬の暖房。それが釣り合う話です。",
+    "startMs": 417144,
+    "endMs": 429795
+   },
+   {
+    "text": "ここで、ひとつだけお願いです。今日の内容が分かりやすいと感じていただけたら、高評価と、",
+    "startMs": 430395,
+    "endMs": 437671
+   },
+   {
+    "text": "同じように年金が気になるご家族やご友人へのシェアで、この研究室を応援していただけると嬉しいです。",
+    "startMs": 437671,
+    "endMs": 445794
+   },
+   {
+    "text": "ご感想や、調べてほしいテーマがあれば、ぜひコメントでお寄せください。皆さまの声が、次の研究テーマになります。それでは、続きを見ていきましょう。",
+    "startMs": 445794,
+    "endMs": 457808
+   },
+   {
+    "text": "第三章。対象のはずなのに、封筒が来ない場合です。今日、いちばん大事なところです。",
+    "startMs": 458408,
+    "endMs": 465949
+   },
+   {
+    "text": "まず、今年六十五歳になったばかりのかた。受給権を得てから三か月以内に手続きをすると、さかのぼって支給されます。",
+    "startMs": 466549,
+    "endMs": 476347
+   },
+   {
+    "text": "三か月を過ぎると、手続きした月の翌月分から。つまり、待つほど、受け取れたはずの月が消えていきます。",
+    "startMs": 476347,
+    "endMs": 485077
+   },
+   {
+    "text": "つぎに、世帯の構成が変わった方や、税額が直された方。たとえば、同居していたお子さんが独立した場合です。",
+    "startMs": 485677,
+    "endMs": 495237
+   },
+   {
+    "text": "原典には、こうあります。赤で囲んだところです。世帯構成の変更や税額の更正などにより、支給要件に当てはまるようになった場合は、",
+    "startMs": 495237,
+    "endMs": 506860
+   },
+   {
+    "text": "ご自身で認定請求の手続きが必要になります、と。",
+    "startMs": 506860,
+    "endMs": 511171
+   },
+   {
+    "text": "つまり、機構のはがきを待っていても、来ないことがある。あなたの世帯の変化を、いちばん早く知っているのは、機構ではなく、あなただからです。",
+    "startMs": 511771,
+    "endMs": 522768
+   },
+   {
+    "text": "そして、冒頭の答えです。止まったまま、戻らなかった給付金。",
+    "startMs": 523368,
+    "endMs": 529128
+   },
+   {
+    "text": "モニターの中村さん、上越市の、七十一歳。非課税の線の、ぎりぎりで暮らしている方です。ある年、",
+    "startMs": 529728,
+    "endMs": 538502
+   },
+   {
+    "text": "収入がわずかに線を越えて、給付金が止まりました。翌年、数字はまた線の下に戻った。ここで中村さんは、",
+    "startMs": 538502,
+    "endMs": 547847
+   },
+   {
+    "text": "待ったんです。前は向こうから来たんだから、また来るだろう、と。",
+    "startMs": 547847,
+    "endMs": 553760
+   },
+   {
+    "text": "来ませんでした。",
+    "startMs": 554660,
+    "endMs": 555983
+   },
+   {
+    "text": "原典の文はこうです。再び支給要件を満たしたことにより支給を受けようとする場合は、あらためて請求の手続きが必要となります。",
+    "startMs": 556883,
+    "endMs": 567037
+   },
+   {
+    "text": "一度止まったら、再開のボタンは、機構ではなく、あなたの側にあります。",
+    "startMs": 567637,
+    "endMs": 573568
+   },
+   {
+    "text": "不安なときの相談先も、機構自身が書いています。請求書がお手元に届かない場合は、給付金専用ダイヤルか、",
+    "startMs": 574168,
+    "endMs": 583540
+   },
+   {
+    "text": "お近くの年金事務所までご相談ください、と。電話一本で、あなたが対象かどうか、確かめられます。",
+    "startMs": 583540,
+    "endMs": 592163
+   },
+   {
+    "text": "中村さんの家計簿は、鉛筆書きです。消して、書き直せるから、だそうです。その中村さんがいま、",
+    "startMs": 592763,
+    "endMs": 600831
+   },
+   {
+    "text": "カレンダーの九月の欄に、消えないペンで丸をひとつ書いています。今年は、待たないそうです。",
+    "startMs": 600831,
+    "endMs": 608720
+   },
+   {
+    "text": "最後に、期限の話です。",
+    "startMs": 609320,
+    "endMs": 611891
+   },
+   {
+    "text": "はがきには、提出期限が印刷されています。ですが、その日を過ぎても、手続きはできます。昨年度の例では、",
+    "startMs": 612491,
+    "endMs": 621415
+   },
+   {
+    "text": "年明けの一月五日までに機構へ届けば、十月分までさかのぼって支払われました。今年の締め切りの日付は、",
+    "startMs": 621415,
+    "endMs": 630160
+   },
+   {
+    "text": "これから更新されます。あなたのはがきに印刷されている期限が、あなたの答えです。",
+    "startMs": 630160,
+    "endMs": 637120
+   },
+   {
+    "text": "そこも過ぎると、請求した月の翌月分から。さかのぼりの分が、ひと月ずつ、消えていきます。",
+    "startMs": 637720,
+    "endMs": 645965
+   },
+   {
+    "text": "ひとつだけ、注意を。年金機構が、給付金のために、ATMの操作をお願いすることはありません。電話でその話が出たら、それは給付金ではなく、別の何かです。",
+    "startMs": 646565,
+    "endMs": 660901
+   },
+   {
+    "text": "切ってください。",
+    "startMs": 661401,
+    "endMs": 662596
+   },
+   {
+    "text": "それでは、今日の研究ノートです。",
+    "startMs": 663196,
+    "endMs": 666065
+   },
+   {
+    "text": "緑の封筒は、毎年九月の第一営業日から、新たに対象になった方へ順次届く。",
+    "startMs": 666665,
+    "endMs": 673908
+   },
+   {
+    "text": "金額は、月額五千六百二十円が基準。納めた期間と、前年の収入で変わり、渡辺さんは月二千五百二十九円だった。",
+    "startMs": 674508,
+    "endMs": 685761
+   },
+   {
+    "text": "世帯の変化で対象になった方と、一度止まって条件に戻った方は、はがきを待たず、自分から手続きする。",
+    "startMs": 686361,
+    "endMs": 695012
+   },
+   {
+    "text": "最後に、セルフチェックを三問。ひとつ。あなたの世帯は、全員が住民税非課税ですか。ふたつ。",
+    "startMs": 695612,
+    "endMs": 704381
+   },
+   {
+    "text": "前年の年金収入とその他の所得は、九十万九千円以下ですか。みっつ。九月の郵便受けを、もう確かめましたか。",
+    "startMs": 704381,
+    "endMs": 714545
+   },
+   {
+    "text": "三つとも思い当たった方は、緑の封筒が来るのを、ただ待たないでください。今日の動画が、その一本の電話のきっかけになれば、当研究室の計算は成功です。",
+    "startMs": 715145,
+    "endMs": 728127
+   },
+   {
+    "text": "次の年金支給日、十月十五日の前にも、直前チェックをお届けします。見逃したくない方は、チャンネル登録でお待ちください。",
+    "startMs": 728727,
+    "endMs": 739127
+   },
+   {
+    "text": "次回は、遺族年金は、夫の年金の四分の三ではありません、を計算します。",
+    "startMs": 739727,
+    "endMs": 746767
+   },
+   {
+    "text": "本日の内容は、令和八年九月時点の情報です。金額や基準額は年度で変わります。あなたの場合の正確な数字は、",
+    "startMs": 747367,
+    "endMs": 757193
+   },
+   {
+    "text": "給付金専用ダイヤルか、お近くの年金事務所でご確認ください。",
+    "startMs": 757193,
+    "endMs": 762780
+   },
+   {
+    "text": "それでは、また次回の研究でお会いしましょう。",
+    "startMs": 763380,
+    "endMs": 767124
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F2EDE4"
+ }
+}

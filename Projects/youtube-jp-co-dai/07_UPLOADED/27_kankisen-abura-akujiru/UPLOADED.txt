@@ -1,0 +1,2 @@
+uploaded: 2026-09-02 19:50 (đánh dấu bằng upload_pack --done)
+publishAt: 2026-09-04 (Thứ Sáu) 13:00 JST = 11:00 giờ VN

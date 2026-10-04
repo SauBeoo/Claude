@@ -1,0 +1,544 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "test-collage",
+    "channel": null,
+    "templateRef": null,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "createdAt": "2026-08-15T16:11:03.581966+00:00",
+    "modifiedAt": "2026-08-15T16:11:03.581966+00:00"
+  },
+  "timeline": {
+    "durationInFrames": 496
+  },
+  "sceneMarkers": [
+    {
+      "id": "scene-1",
+      "atFrame": 0,
+      "label": "オクラを"
+    },
+    {
+      "id": "scene-2",
+      "atFrame": 111,
+      "label": "冷たい水"
+    },
+    {
+      "id": "scene-3",
+      "atFrame": 203,
+      "label": "——長年"
+    },
+    {
+      "id": "scene-4",
+      "atFrame": 302,
+      "label": "じつはそ"
+    },
+    {
+      "id": "scene-5",
+      "atFrame": 400,
+      "label": "お湯と流"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "trk-bg",
+      "name": "Background",
+      "type": "background",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "bg-1",
+          "kind": "background",
+          "from": 0,
+          "durationInFrames": 111,
+          "paper": null,
+          "tint": "#F2EDE4",
+          "tintOpacity": 0.55,
+          "grid": true,
+          "dots": true,
+          "splash": [
+            "#7CB518",
+            "#4EC3E0"
+          ]
+        },
+        {
+          "id": "bg-2",
+          "kind": "background",
+          "from": 111,
+          "durationInFrames": 92,
+          "paper": null,
+          "tint": "#F2EDE4",
+          "tintOpacity": 0.55,
+          "grid": true,
+          "dots": true,
+          "splash": [
+            "#4EC3E0",
+            "#FFE01B"
+          ]
+        },
+        {
+          "id": "bg-3",
+          "kind": "background",
+          "from": 203,
+          "durationInFrames": 99,
+          "paper": null,
+          "tint": "#F2EDE4",
+          "tintOpacity": 0.55,
+          "grid": true,
+          "dots": true,
+          "splash": [
+            "#FF8C42",
+            "#B8B8D1"
+          ]
+        },
+        {
+          "id": "bg-4",
+          "kind": "background",
+          "from": 302,
+          "durationInFrames": 98,
+          "paper": null,
+          "tint": "#F2EDE4",
+          "tintOpacity": 0.55,
+          "grid": true,
+          "dots": true,
+          "splash": [
+            "#2EC46F",
+            "#FFE01B"
+          ]
+        },
+        {
+          "id": "bg-5",
+          "kind": "background",
+          "from": 400,
+          "durationInFrames": 96,
+          "paper": null,
+          "tint": "#F2EDE4",
+          "tintOpacity": 0.55,
+          "grid": true,
+          "dots": true,
+          "splash": [
+            "#FF5E5B",
+            "#4EC3E0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trk-hero",
+      "name": "Hero",
+      "type": "sticker",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": []
+    },
+    {
+      "id": "trk-sup1",
+      "name": "Support 1",
+      "type": "sticker",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": []
+    },
+    {
+      "id": "trk-sup2",
+      "name": "Support 2",
+      "type": "sticker",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": []
+    },
+    {
+      "id": "trk-tag",
+      "name": "Tag",
+      "type": "text",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "tag-1",
+          "kind": "text",
+          "from": 4,
+          "durationInFrames": 107,
+          "content": "オクラを",
+          "preset": "tag",
+          "color": "#FFE01B",
+          "animation": "pop",
+          "animationParams": {
+            "damping": 11,
+            "stiffness": 180,
+            "restDeg": -2
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "tag-2",
+          "kind": "text",
+          "from": 115,
+          "durationInFrames": 88,
+          "content": "冷たい水",
+          "preset": "tag",
+          "color": "#4EC3E0",
+          "animation": "pop-swing",
+          "animationParams": {
+            "damping": 11,
+            "stiffness": 180,
+            "restDeg": -2
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "tag-3",
+          "kind": "text",
+          "from": 207,
+          "durationInFrames": 95,
+          "content": "——長年",
+          "preset": "tag",
+          "color": "#FF8C42",
+          "animation": "pop",
+          "animationParams": {
+            "damping": 11,
+            "stiffness": 180,
+            "restDeg": -2
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "tag-4",
+          "kind": "text",
+          "from": 306,
+          "durationInFrames": 94,
+          "content": "じつはそ",
+          "preset": "tag",
+          "color": "#2EC46F",
+          "animation": "pop",
+          "animationParams": {
+            "damping": 11,
+            "stiffness": 180,
+            "restDeg": -2
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "tag-5",
+          "kind": "text",
+          "from": 404,
+          "durationInFrames": 92,
+          "content": "お湯と流",
+          "preset": "tag",
+          "color": "#FF5E5B",
+          "animation": "pop",
+          "animationParams": {
+            "damping": 11,
+            "stiffness": 180,
+            "restDeg": -2
+          },
+          "layout": {},
+          "fontSize": null
+        }
+      ]
+    },
+    {
+      "id": "trk-punch",
+      "name": "Punch",
+      "type": "text",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "punch-1",
+          "kind": "text",
+          "from": 50,
+          "durationInFrames": 61,
+          "content": "オクラを",
+          "preset": "punch",
+          "color": "#FFE01B",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": -1.5
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "punch-2",
+          "kind": "text",
+          "from": 152,
+          "durationInFrames": 51,
+          "content": "それから刻む",
+          "preset": "punch",
+          "color": "#FFE01B",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": -1.5
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "punch-3",
+          "kind": "text",
+          "from": 248,
+          "durationInFrames": 54,
+          "content": "——長年",
+          "preset": "punch",
+          "color": "#FFE01B",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": -1.5
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "punch-4",
+          "kind": "text",
+          "from": 346,
+          "durationInFrames": 54,
+          "content": "じつはそれ",
+          "preset": "punch",
+          "color": "#FFE01B",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": -1.5
+          },
+          "layout": {},
+          "fontSize": null
+        },
+        {
+          "id": "punch-5",
+          "kind": "text",
+          "from": 443,
+          "durationInFrames": 53,
+          "content": "お湯と流しに",
+          "preset": "punch",
+          "color": "#FFE01B",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": -1.5
+          },
+          "layout": {},
+          "fontSize": null
+        }
+      ]
+    },
+    {
+      "id": "trk-voice",
+      "name": "Voice",
+      "type": "audio",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "voice-1",
+          "kind": "audio",
+          "from": 0,
+          "durationInFrames": 496,
+          "asset": "assets/audio.mp3",
+          "volume": 1,
+          "trimStartFrames": 0
+        }
+      ]
+    },
+    {
+      "id": "trk-sfx",
+      "name": "SFX",
+      "type": "audio",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "sfx-1-whoosh-0",
+          "kind": "audio",
+          "from": 0,
+          "durationInFrames": 60,
+          "asset": "sfx/whoosh.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-1-pop-6",
+          "kind": "audio",
+          "from": 6,
+          "durationInFrames": 60,
+          "asset": "sfx/pop.wav",
+          "volume": 0.4,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-1-click-50",
+          "kind": "audio",
+          "from": 50,
+          "durationInFrames": 60,
+          "asset": "sfx/click.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-2-whoosh-0",
+          "kind": "audio",
+          "from": 111,
+          "durationInFrames": 60,
+          "asset": "sfx/whoosh.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-2-pop-6",
+          "kind": "audio",
+          "from": 117,
+          "durationInFrames": 60,
+          "asset": "sfx/pop.wav",
+          "volume": 0.4,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-2-click-41",
+          "kind": "audio",
+          "from": 152,
+          "durationInFrames": 60,
+          "asset": "sfx/click.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-3-thud-0",
+          "kind": "audio",
+          "from": 203,
+          "durationInFrames": 60,
+          "asset": "sfx/thud.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-3-pop-6",
+          "kind": "audio",
+          "from": 209,
+          "durationInFrames": 60,
+          "asset": "sfx/pop.wav",
+          "volume": 0.4,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-3-click-45",
+          "kind": "audio",
+          "from": 248,
+          "durationInFrames": 60,
+          "asset": "sfx/click.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-4-boing-0",
+          "kind": "audio",
+          "from": 302,
+          "durationInFrames": 60,
+          "asset": "sfx/boing.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-4-pop-6",
+          "kind": "audio",
+          "from": 308,
+          "durationInFrames": 60,
+          "asset": "sfx/pop.wav",
+          "volume": 0.4,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-4-click-44",
+          "kind": "audio",
+          "from": 346,
+          "durationInFrames": 60,
+          "asset": "sfx/click.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-5-paper-0",
+          "kind": "audio",
+          "from": 400,
+          "durationInFrames": 60,
+          "asset": "sfx/paper.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-5-pop-6",
+          "kind": "audio",
+          "from": 406,
+          "durationInFrames": 60,
+          "asset": "sfx/pop.wav",
+          "volume": 0.4,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx-5-click-43",
+          "kind": "audio",
+          "from": 443,
+          "durationInFrames": 53,
+          "asset": "sfx/click.wav",
+          "volume": 0.45,
+          "trimStartFrames": 0
+        }
+      ]
+    }
+  ],
+  "captions": {
+    "source": "srt-interpolated",
+    "style": "outline",
+    "enabled": false,
+    "fontSize": 44,
+    "lines": [
+      {
+        "text": "オクラを、鍋のお湯でくたくたにゆでて、",
+        "startMs": 0,
+        "endMs": 3691
+      },
+      {
+        "text": "冷たい水にさらして、それから刻む。",
+        "startMs": 3691,
+        "endMs": 6752
+      },
+      {
+        "text": "——長年、そうしてこられた方。",
+        "startMs": 6752,
+        "endMs": 10061
+      },
+      {
+        "text": "じつはそれ、オクラのいちばんの宝物を、",
+        "startMs": 10061,
+        "endMs": 13336
+      },
+      {
+        "text": "お湯と流しに、捨てているかもしれません。",
+        "startMs": 13336,
+        "endMs": 16547
+      }
+    ],
+    "words": []
+  },
+  "theme": {
+    "palette": {
+      "bgTop": "#2A3A58",
+      "bgBottom": "#182236",
+      "accent": "#FFD700"
+    },
+    "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+    "canvasColor": "#F2EDE4"
+  }
+}

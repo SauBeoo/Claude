@@ -1,0 +1,420 @@
+# 04_VIDEOGEN_PROMPTS — CÔNG THỨC DUY NHẤT cho clip AI text-to-video (kênh 昭和くらし図鑑)
+
+> **v2 — chốt 2026-09-06** sau khi soi 121/121 clip của video 10 (通学路). Bản v1 (2026-08-10) lưu ở
+> `_archive/04_VIDEOGEN_PROMPTS_v1_2026-08-10.md`. **Bản thi hành = `tools/videogen_lib.py`** — hằng số
+> nguyên văn + gate. `gen_prompts.py` của mọi video **chỉ khai báo cảnh**, không chép hằng số.
+> user: *"kiểm tra và hoàn thiện để những video sau prompt chuẩn chỉ, không lỗi nữa… video phải có hồn chứ
+> không đơ đơ… một công thức duy nhất."*
+
+## 0. Ba mục tiêu, và bằng chứng vì sao từng luật tồn tại
+
+**Có hồn · không lỗi · đồng nhất.** Mỗi luật dưới đây có một con số phía sau — đừng nới luật nào mà không
+có con số mới đè lên.
+
+| cơ chế hỏng | bằng chứng video 10 | luật v2 |
+|---|---|---|
+| **khung phim + chữ FUJI** | **120/120** clip | STYLE bỏ `shot on 8mm home movie film` (model đọc thành *cho thấy dải phim*) → giữ **chất** phim: `the color, grain and softness of 1970s 8mm film` + `the image fills the entire frame edge to edge`; NEGATIVE cấm **đích danh** `film strip border, sprocket holes, film edge markings` |
+| **tay/chân cụt lơ lửng** | **14/21** clip `hands only`; 07·07b·08·E7·E15 `feet only` | ⛔ **cấm mọi framing không có THÂN người**. Cận vật → `over the shoulder, torso and hands in frame`. Gate máy |
+| **vật biến hình** | vải vàng→cặp da · que→đĩa · biển đổi chữ | **một vật · một hành động · một clip**; vật tả **nguyên văn** từ CAST + `the same X throughout` |
+| **đảo chiều / quay mặt lại** | **H1 — clip mở đầu** đi tới-lui rồi quay mặt vào camera | động từ di chuyển **phải kèm hướng tương đối camera** (`away from the camera, seen from behind, growing smaller` / `toward the camera` / `left to right`) + `never turns around`; NEGATIVE `reversing motion, walking backwards, turning to face the camera`. Gate máy |
+| **chữ Latin trên vật** | `RANDSERU` trên cặp · `GEISHA` trên hộp | vật trong CAST ghi `plain unmarked`; NEGATIVE `any letters, words, numbers or logos on any object, bag, sign or box` (v1 chỉ ghi `readable text` — quá chung, không chặn) |
+| **mất chủ thể giữa clip** | 12 (người biến mất sau 1s) | MOTION `the subject remains in frame for the whole shot` (tự bỏ khi cảnh cố ý cho người ra khỏi khung) |
+| **cast không đồng nhất** | cặp đỏ/nâu/đen · cờ đỏ thay vàng · 04 ra người lớn | CAST bible nguyên văn (màu + chất liệu + `plain unmarked`); trẻ tả bằng **quần áo học sinh** (`plain yellow cotton cap, white short-sleeved shirt, navy shorts`) thay `small figures` mơ hồ |
+| **người gập/biến dạng** | 30b (nghiêng ra cửa sổ) | gate cấm `leans out of / bends double / contort / hangs from` |
+| **đơ** | 04 · H8 · 22c đứng im | bắt buộc **≥1 chuyển động phụ** (breeze · sway · dust · shadow · weight shift · sleeve/hem) + **3 nhịp** = đúng 2 lần `, then` + cử chỉ vụng/thừa. Gate máy (strict) |
+| `A_XXX's` | 3 prompt | gate |
+
+🔴 **Mâu thuẫn đã gỡ:** v1 §2.7 khuyên *"cảnh tay-cận + vật an toàn nhất"* cho filter trẻ em — đúng loại khung
+gây lỗi nặng nhất. **Bỏ.** Đường lui mới ở §7.
+
+⚠️ **Cái gate KHÔNG đo được:** vật lý vẫn có thể sai (tay xuyên vật, bước hụt). Nên nghiệm thu bằng mắt (§8) là
+bắt buộc, không phải tuỳ chọn — 24 clip lỗi của video 10 đều **qua** contact sheet 1 frame và chỉ lộ trên sheet 4 frame.
+
+## 1. KHUÔN PROMPT — 6 khối, thứ tự cố định, máy ghép
+
+```
+[ACT: chủ thể + hành động 3 nhịp] , [FRAMING] , [BỐI CẢNH preset] , [STYLE LOCK] , [MOTION RULES] . [NEGATIVE]
+```
+
+Người viết **chỉ viết khối ACT** + chọn 1 preset + chọn 1 khoá FRAMING. Thư viện ghép 5 khối còn lại
+(`videogen_lib.build`). Thứ tự này cố định vì model bám phần **đầu** prompt: hành động và khung phải đứng trước bối cảnh.
+
+### 1.1 Viết ACT — 6 luật, mỗi luật một gate
+
+1. **Chủ thể = token cast** (`A_ME`, `A_HAHA`…), không paraphrase. ⛔ Không dùng sở hữu cách `A_ME's` → viết `the jacket of A_ME`.
+2. **3 nhịp mở → triển → kết** = đúng **hai** `, then`. Nhịp kết phải là *cử chỉ vụng hoặc thừa* (rocks back on its heels · pats it twice · shifts weight · looks at it) — đây là chỗ "có hồn" nằm.
+3. **Di chuyển thì phải có hướng camera:** `walks away from the camera, seen from behind, growing smaller` · `toward the camera, growing larger` · `left to right` · `out of frame to the left`. Không có hướng = model tự do tiến-lùi (H1).
+4. **≥1 chuyển động phụ** trong ACT: `a breeze moves the hedge` · `dust drifts off the lines` · `the sleeve catches the light` · `shifts weight onto one foot` · `the curtain moves` · `water ripples`.
+5. **Một vật cầm tay, giữ nguyên:** `the same satchel throughout`. Không đổi vật giữa clip, không hai vật cùng đổi tay.
+6. **Tư thế đơn giản:** đứng · ngồi xổm · cúi · với tay · bước. ⛔ `leans out of a window` · `bends double` · `spins` · xoay người về camera.
+
+Mẫu đạt (H1 v2, clip mở đầu):
+```
+A_ME walks away from the camera down the middle of the empty unpaved lane, seen from behind, growing smaller
+between the low fences with the satchel swinging at each step, then a breeze lifts a little dust along the ruts
+behind it, then the figure reaches the far bend and keeps walking without turning around
+```
+
+## 2. STYLE LOCK v2 — nguyên văn (không sửa trong `gen_prompts.py`)
+
+```
+1970s Japan (Showa era, around 1970), the color, grain and softness of 1970s 8mm film, faded warm Fujicolor palette,
+soft natural light, slight vignette, nostalgic documentary photography, muted greens and ochres,
+natural imperfect framing, the image fills the entire frame edge to edge, 16:9
+```
+Đổi so v1: bỏ `shot on 8mm home movie film` (→ dải phim), bỏ `gentle film grain` (gộp vào câu chất phim), thêm `fills the entire frame`.
+
+## 3. FRAMING — danh sách ĐÓNG, mọi khuôn đều có thân người
+
+| khoá | chuỗi nguyên văn | dùng khi |
+|---|---|---|
+| `wide` | static wide shot at chest height, the whole figure in frame | đi lại, đường, nhóm |
+| `medium` | static medium shot at chest height, torso and hands in frame, face out of frame | **thay cho mọi "hands only"** |
+| `ots` | over the shoulder, torso and hands in frame, face out of frame | thao tác vật nhỏ (ghim, buộc, xếp) |
+| `behind` | seen from behind at chest height, the whole figure in frame | nhân vật đi ra xa |
+| `low` | static low angle at knee height, legs and body in frame | **thay cho mọi "feet only"** (bước qua vũng, ván cống, vạch trắng) |
+| `high` | static high angle looking down, the figure and the ground in frame | vẽ trên đất, chơi めんこ |
+| `pan` / `tilt` | slow pan / slow tilt, figure in frame | cột điện, tháp canh |
+| `still` | static wide shot, no people | **chỉ** cảnh trong whitelist không-người |
+
+⛔ Cấm: `hands only` · `feet only` · `hand and X` · `close-up` · `macro` · bất kỳ chuỗi nhắc tay/chân mà không nhắc thân.
+Gate: `bad_framing()` — regex tay/chân **và không có** torso/figure/body ⇒ 🔴.
+
+## 4. MOTION RULES v2 — nguyên văn
+
+```
+slow deliberate natural human motion, continuous single take, no cuts, the subject remains in frame for the whole shot, no reversing
+```
+Cảnh có `out of frame` / `out of sight` / `disappears` trong ACT ⇒ thư viện tự dùng bản không có `remains in frame`.
+
+## 5. NEGATIVE v2 — nguyên văn (4 nhóm mới in đậm)
+
+```
+Avoid: film strip border, sprocket holes, film edge markings, any frame or border around the image,
+modern objects, smartphones, LED lights, plastic bottles, air conditioner, modern clothing, sneakers with logos,
+any letters, words, numbers or logos on any object, bag, sign or box, brand logos, western faces, anime style,
+oversaturated colors, HDR look, clean digital sharpness, close-up faces, fast cuts, camera shake,
+reversing motion, walking backwards, turning to face the camera,
+disembodied hands, floating limbs, extra fingers, morphing objects, objects changing shape or color
+```
+Bài học v1: negative **chung** (`brand logos`, `readable text`) không chặn được thứ model coi là *thành phần của
+phong cách* (chữ FUJI trên dải phim, chữ trên cặp). Phải cấm **đích danh vật + vị trí**.
+
+## 5.5 ⭐ VẬT PHẢI **DÍNH VÀO NGƯỜI** — vật RỜI trên mặt đất thì model NHÂN BẢN (chốt 2026-09-06)
+
+**Ca gốc: cảnh `C3` của video 10, gen lại BA vòng, sai theo hướng TỆ DẦN.**
+
+| vòng | câu đếm trong prompt | kết quả đếm bằng mắt |
+|---|---|---|
+| 1 (prompt v1) | `satchels left on the ground` (số nhiều, không đếm) | **3 cặp** / 2 đứa |
+| 3 | `exactly two … one satchel each and no other bag in the shot` | **4 cặp** (2 đeo + 2 nhặt) |
+| 4 | `nothing worn on either back, both backs completely empty` | **6 cặp** (2 đeo + 2 cầm + **2 vẫn nằm dưới đất**) |
+
+🔴 **Cơ chế:** vật được "nhấc lên" **không biến mất khỏi mặt đất** — model **NHÂN BẢN** vật rời chứ
+không **DỜI CHỖ** nó. Càng siết câu đếm càng tệ, vì câu đếm chỉ nói *có bao nhiêu*, không nói
+*vật nào là vật nào*.
+
+⭐ **Đối chứng trong chính video 10:** mọi clip chỉ có vật **ĐEO trên người** (H1 mở bài · 13:14 ·
+`24b` · `E15`) đều **đúng số tuyệt đối**. Vật gắn vào thân thì model coi là phần của người.
+
+**Luật thi hành:**
+1. **Vật phải ĐEO hoặc CẦM** — `strapped on its back`, `held in one hand`. Cấm cảnh mở ra với vật
+   nằm dưới đất rồi người cúi xuống nhặt.
+2. Muốn nói "không có vật rời" thì **viết câu phủ định**: `no bag or object anywhere on the ground`
+   (gate hiểu phủ định, không báo oan).
+3. Cần đúng một vật rời (cống, hộp thư, biển) thì **KHÔNG cho ai chạm vào nó** trong clip.
+4. **Gate máy** (`videogen_lib.py`): `GROUND_OBJ` × `PICK_UP` → 🔴 **CHẶN**; chỉ `GROUND_OBJ` → ⚠️.
+   `GROUND_NEG` miễn câu phủ định. Kiểm chứng: vòng 3 + 4 → 🔴 · vòng 1 → ⚠️ · vòng 5 + H1 → ✅.
+5. ⚠️ Quét 121 prompt của video 10: **6 cảnh** có vật rời (`08b` `20b` `24b` `25d` `Y2` `E15`) nhưng
+   **không cảnh nào có động tác nhặt** ⇒ chỉ ⚠️, và soi mắt `24b`/`E15` xác nhận **không nhân bản**.
+   Tức ranh giới thật là **HÀNH ĐỘNG NHẶT**, không phải sự hiện diện của vật rời.
+
+## 6. CAST BIBLE — quy tắc viết
+
+- Tả bằng **quần áo + vật**, không mặt, không tuổi (filter §7). Mỗi vật cầm/đeo: **màu + chất liệu + `plain unmarked`**.
+- Học sinh: `a small figure in a plain yellow cotton cap, white short-sleeved shirt and navy shorts, with a plain unmarked brown leather satchel on its back`.
+  ⛔ Không dùng `small figures` trần — model đoán tuổi/ăn mặc tuỳ ý (04 ra người lớn thường phục).
+- Người lớn: nghề + 1 chi tiết (`a woman in her fifties wearing a plain pale green sash over a plain dark coat and white cotton gloves`).
+- Cần người lạ cho một cảnh (gọi điện, xem bảng tin) → **thêm cast riêng** (`denwa`), đừng mượn cast chính.
+- Gate cảnh báo khi vật cầm/đeo thiếu `plain unmarked`.
+
+## 7. FILTER TRẺ EM (Veo/Flow) — đường lui MỚI
+
+Từ cấm: `child/children/kid/boy/girl/elementary/pupil` (gate 🔴). Cảnh vẫn bị chặn thì theo thang:
+1. Giữ hành động, **đổi framing sang `behind`** (thấy lưng + mũ vàng + cặp, không mặt) — không phải cận tay.
+2. Chuyển vai cho **người lớn trong cast** (bà giao thông, mẹ, ông chủ tiệm) làm cùng hành động.
+3. Bỏ người, vật tự chuyển động từ ngoài khung — **chỉ khi cảnh nằm trong whitelist không-người có lý do**.
+⛔ Không spam regenerate; chặn ở nấc 3 = từ khác trong prompt, báo lại.
+
+## 8. GATE — máy trước, mắt sau, cả hai bắt buộc
+
+**Máy (`videogen_lib.gate`, chặn cứng ở `strict=True`):** framing không thân · framing ngoài danh sách · di
+chuyển thiếu hướng · nhìn/quay về camera · tư thế cấm · 0 hoặc 1 `then` · thiếu chuyển động phụ · `A_XXX's` · từ
+trẻ em · không người (trừ whitelist có lý do) · interior lẫn street · STYLE/MOTION/AVOID không nguyên văn · còn
+`shot on … film`. `strict=False` chỉ để **vá video đã gen** (3 nhịp · chuyển động phụ · hướng → ⚠️).
+Selftest: `python tools/videogen_lib.py --selftest` nạp S của video 10 v1 → phải bắt ≥21 framing + H1.
+
+**Mắt (`tools/review_clips.py <clips_dir> --edges`), sau khi clip về, TRƯỚC crop/stretch/render:**
+- `review_N.jpg` — mỗi hàng 1 clip × 4 frame (0,8 · 3,0 · 5,2 · 7,4s). Tìm: tay/chân lơ lửng · vật đổi hình giữa hàng ·
+  người biến mất · quay mặt · khoảng cách nhảy gần-xa-gần · chữ trên vật.
+- `edges_N.jpg` — dải mép trái + trên. Tìm: vạch đen đều · lỗ răng · chữ vàng.
+- ⛔ Contact sheet 1 frame giữa khung **không được dùng làm nghiệm thu** — nó cho qua 24/24 clip lỗi.
+
+🔴 **ĐO ĐƯỢC 2026-09-06 (lô 22 clip v2): STYLE v2 + NEGATIVE đích danh VẪN KHÔNG CHẶN ĐƯỢC VIỀN PHIM** —
+22/22 clip mới vẫn có dải đen + chữ `FUJI`, dù prompt đã bỏ `shot on … film`, thêm `the image fills the entire
+frame edge to edge` và cấm đích danh `film strip border, sprocket holes, film edge markings`.
+⇒ **Bước crop là BẮT BUỘC trong chuỗi sản xuất, không phải phương án dự phòng.** Model gắn dải phim vào
+*khái niệm* "1970s 8mm film" ở tầng sâu hơn chữ nghĩa; muốn hết hẳn thì phải bỏ mọi tham chiếu phim khỏi
+STYLE (đánh đổi: mất tông nhận diện của 9 video đã đăng — user đã chọn giữ tông).
+
+**Lưới an toàn viền (BẮT BUỘC, không phải tuỳ chọn):** `crop_border.py` với sàn `[110, 130, 80, 80]`px —
+hằng số chốt **bằng mắt** sau 4 vòng ở video 10; ba phép đo tự động (độ sáng · bão hoà · std) đều hỏng ở một
+loại cảnh khác nhau vì viền chứa đủ ba đặc trưng của ảnh thật (sáng · có màu · biến thiên). Chi tiết: bản v1 lưu trữ.
+
+**Chuỗi sản xuất:** `gen_prompts.py` (gate máy) → user gen → `review_clips.py` (gate mắt) → gen lại clip lỗi →
+`crop_border.py` (nếu cần) → `reindex_clips.py` → `stretch_clips.py` (khe từ `timeline.json` thật) → render `--reuse`.
+
+## 8.5 ⭐⭐ NHÂN VẬT ĐỒNG NHẤT + HÀNH ĐỘNG NỐI LIỀN (user chốt 2026-09-06, áp từ video 11)
+
+> user: *"Tao muốn kịch bản phải đồng nhất nhân vật, video phải nhất quán. Hành động của prompt
+> trước phải được nối liền với hành động của prompt sau."*
+
+### 8.5a 🔴 GIỚI HẠN THẬT — đọc trước khi hứa
+
+**t2v gen TỪNG clip TỪ ĐẦU, không có character-lock.** Cùng một câu chữ vẫn ra hai khuôn mặt khác
+nhau; hai clip liền nhau vẫn là hai lần vẽ độc lập, **pixel ở chỗ cắt không bao giờ khớp**. Nên
+"đồng nhất" ở đây là đồng nhất **những thứ model giữ được**, và "nối liền" là nối liền **LOGIC HÀNH
+ĐỘNG** để mắt đọc thành liên tục — không phải nối liền khung hình.
+
+| giữ được | KHÔNG giữ được |
+|---|---|
+| màu mũ · màu áo · màu + chất liệu vật đeo | khuôn mặt · dáng mặt · tuổi cụ thể |
+| hướng di chuyển · bối cảnh · giờ trong ngày | vị trí chính xác của chủ thể trong khung |
+| tư thế/trạng thái mô tả bằng chữ | ánh sáng khớp từng pixel ở chỗ cắt |
+
+⭐ **Bằng chứng từ video 10:** clip **GIẤU MẶT** (H1 mở bài · 13:14 · C3 vòng 5) đồng nhất tuyệt
+đối; clip **THẤY MẶT** thì mỗi lần một người. ⇒ Đây là đòn bẩy mạnh nhất đang có.
+
+### 8.5b LUẬT NHÂN VẬT (cast lock)
+
+1. **Trần 3 nhân vật có tên cho cả video**, **≤2 người trong một cảnh**. Mỗi người thêm là một trục
+   sai lệch nữa. (gate ⚠️)
+2. **Nhân vật xuất hiện ≥2 clip thì PHẢI giấu mặt** — framing `behind` / `ots` / `high`, hoặc trong
+   act có `seen from behind` · `looking down` · `head bowed`. (gate ⚠️ chỉ đích danh clip nào hở mặt)
+3. Mô tả cast **khoá đúng 3 thứ ổn định**: **màu mũ + màu áo + màu/chất liệu vật đeo**. ⛔ Không tả
+   mặt, không tả tuổi, không tả kiểu tóc — model tự chế và mỗi lần một khác.
+4. Descriptor viết **một lần trong `C`**, mọi cảnh dùng token `A_XXX`. ⛔ Cấm paraphrase (gate đã có).
+
+### 8.5c LUẬT NỐI LIỀN (chain)
+
+Khai báo cảnh theo **CHUỖI 2–4 clip** cùng khối, cùng bối cảnh, cùng nhân vật. `S` nhận thêm 2 trường:
+
+```python
+# (sid, blk, act, preset, framing, tier, chain, out)
+("A1", "MICHI", "A_ME walks away from the camera …", "michi_asa", "behind", "Q",
+ "ch1", "A_ME is standing still at the corner with the satchel still on its back"),
+("A2", "MICHI", "the figure shifts its weight …",    "michi_asa", "behind", "Q",
+ "ch1", "A_ME has stepped off the kerb"),
+("A3", "MICHI", "A_ME crosses the lane away …",      "michi_asa", "behind", "Q", "ch1", None),
+```
+
+- **`chain`** = id chuỗi · **`out`** = trạng thái KẾT của cảnh (vị trí + tư thế + vật), **≤110 ký**.
+- `build()` tự mở cảnh sau bằng: `continuing in the same place a moment later, <out cảnh trước>, and …`
+- ⭐ Trong mệnh đề nối, cast token bung thành **`the same figure` / `the same woman`**, KHÔNG bung lại
+  cả mô tả dài — chữ **"the same"** mới là thứ nói với model rằng đây là cùng một người, còn bung mô
+  tả dài chỉ khiến nó vẽ lại từ đầu (và prompt phình: đo được 1.963 → 1.748 ký).
+- Cảnh **cuối chuỗi** để `out=None`.
+
+**5 gate máy của chuỗi** (`videogen_lib.gate`):
+
+| | luật | mức |
+|---|---|---|
+| C1 | các cảnh của một chuỗi phải **liền nhau trong `S`** (để file FLOW gen đúng thứ tự) | 🔴 |
+| C2 | cùng chuỗi = **cùng preset bối cảnh** — đổi preset giữa chuỗi là đổi cảnh, hết nối liền | 🔴 |
+| C3 | cảnh không phải cuối chuỗi **bắt buộc có `out`** | 🔴 |
+| C4 | **cấm lật ngược hướng**: đang `away from the camera` mà cảnh sau `toward the camera` | 🔴 |
+| C5 | framing không nhảy quá 2 bậc trong chuỗi | ⚠️ |
+
+**Đã kiểm chứng ngược** (chuỗi hỏng cố ý): bắt đúng 🔴 C2 + 🔴 C4, kèm ⚠️ framing nhảy xa và ⚠️ hở mặt.
+
+### 8.5d Ba việc ở tầng KỊCH BẢN, không phải tầng prompt
+
+1. **Mỗi khối script = một chuỗi**, đừng rải nhân vật khắp bài. Nhân vật xuyên bài (kiểu 緑のおばさん
+   của video 10) chỉ nên tái xuất hiện ở **2–3 mốc có ý nghĩa**, mỗi mốc là một chuỗi giấu mặt.
+2. **Gap ≤ 8,0s mỗi clip** (§2.0b của `audience-45plus`, và lý do kỹ thuật ở log video 10 mục (h)):
+   clip không phải kéo ⇒ hết judder ⇒ chuỗi mới thật sự mượt.
+3. **Thứ tự trong `S` = thứ tự gen** — chuỗi phải nằm liền khối, vì `videogen_FLOW.txt` bơm theo dòng.
+
+## 8.6 ⭐⭐ NỐI LIỀN LÀ **MẶC ĐỊNH** — và gốc rễ nằm ở KỊCH BẢN (user chốt 2026-09-06)
+
+> user: *"Tao thấy mỗi video như là 1 cảnh riêng biệt ấy, nó không nối liền với hành động của
+> video trước."* (mỗi "video" = mỗi clip 8 giây Flow xuất ra)
+
+### 8.6a Số đo trên video 10 — vấn đề to cỡ nào
+
+| | |
+|---|---|
+| cặp cảnh đứng liền nhau, **cùng khối + cùng bối cảnh** | **57 / 120** |
+| trong đó đã nối liền | **0** |
+| **độ liền mạch** | **0%** |
+| cảnh rời bị gate bắt | **65** |
+| khối mở bằng cảnh **đứng sẵn** (không ai đi tới) | **6** (SHUGO · HINGE · Q1 · KAERI1 · KAERI2 · YUGATA) |
+
+⇒ Không phải "vài chỗ đứt". Là **mọi chỗ**, vì §8.5c làm `chain` thành **tuỳ chọn** nên mặc định
+vẫn là rời. **Đảo mặc định.**
+
+### 8.6b Máy gom chỗ, người viết nối
+
+```python
+from videogen_lib import autochain, linkage
+S = autochain(S, cut={"HG1", "E1"})     # cut = chỗ CỐ Ý cắt hẳn (đổi cảnh/đổi thời điểm)
+```
+`autochain()` tự gom mọi cảnh **liền nhau cùng (khối, preset)** thành chuỗi — trên video 10 nó gom
+được **32 chuỗi / 89 trong 121 cảnh** trong một lệnh.
+⛔ Nhưng **`out` thì máy không bịa hộ** — đó là việc sáng tác. Gate C3 đòi bằng được: thiếu `out` = 🔴.
+
+**Thước đo mới, in ở mọi lượt gate:**
+```
+do LIEN MACH        : 41/57 cap da noi (72%)  [muc tieu >=70%]
+```
+
+### 8.6c 🔴 GỐC RỄ Ở KỊCH BẢN, không ở prompt
+
+Kịch bản video 10 là **danh mục 30 mục** (「二十一点目」「二十二点目」…). Mỗi 点 là một chủ đề
+riêng ⇒ lớp hình **tất yếu** thành 30 vignette rời. Prompt có nối đến mấy mà lời kể nhảy cóc từ
+mục này sang mục kia thì mắt vẫn thấy đứt.
+
+Video 10 **đã có xương sống đúng** (*"một con đường, 7:40 sáng → 5 giờ chiều"*) — nhưng kịch bản
+**không bao giờ đi bộ giữa hai điểm**, nó chỉ liệt kê. Ba luật cho video 11:
+
+1. **Mỗi khối mở bằng nhịp ĐẾN NƠI.** Nhân vật **đi tới** chỗ đó từ chỗ trước, rồi mới vào nội
+   dung điểm mới. ⛔ Cấm mở khối bằng cảnh đứng sẵn tại chỗ. (gate **C7** ⚠️)
+2. **Lời kể cũng phải đi bộ.** Chuyển đoạn dùng câu nối theo KHÔNG GIAN + THỜI GIAN
+   (「そこから、少し歩くと」「その角を曲がると」「橋を渡ったところに」), ⛔ không nhảy thẳng sang
+   「二十二点目」. Con số thứ tự vẫn giữ (kênh THÔNG TIN được đếm — `humanize-script-voice.md` §1.2
+   chỉ cấm chouhen), nhưng **trước con số phải có một bước chân**.
+3. **`out` của cảnh cuối khối = `in` của cảnh đầu khối sau.** Đây là chỗ nối hai khối; viết ra
+   thành chữ trong script (mục Cấu trúc), không để trong đầu.
+
+### 8.6d Bảy gate của chuỗi
+
+| | luật | mức |
+|---|---|---|
+| C1 | cảnh cùng chuỗi phải **liền nhau trong `S`** | 🔴 |
+| C2 | cùng chuỗi = **cùng preset** | 🔴 |
+| C3 | cảnh không phải cuối chuỗi **bắt buộc có `out`** | 🔴 |
+| C4 | **cấm lật ngược hướng** (đang đi xa ↔ đi về phía camera) | 🔴 |
+| C5 | framing không nhảy quá 2 bậc trong chuỗi | ⚠️ |
+| **C6** | **cảnh RỜI**: đứng cạnh nhau, cùng khối + cùng bối cảnh mà không nối | 🔴 strict / ⚠️ vá |
+| **C7** | **khối mở bằng cảnh đứng sẵn** thay vì nhịp đến nơi | ⚠️ |
+
+### 8.6e 🔒 KHOÁ CÚ MÁY — đòn bẩy mạnh nhất còn lại khi KHÔNG có Extend
+
+Flow **có** `Extend` (gen tiếp từ giây cuối clip trước = liền ở mức pixel) và `Ingredients to Video`
+(khoá khuôn mặt bằng ảnh tham chiếu). ⛔ **Nhưng cả hai phải bấm tay trong UI Flow**, mà kênh này gen
+bằng **tool ngoài** (user chốt 2026-09-06) ⇒ **không dùng được**. Đường còn lại là text, và đây là
+cách vắt kiệt nó:
+
+1. **`CHAIN_LOCK` tự chèn vào mọi cảnh không phải đầu chuỗi** (thư viện làm, không phải gõ tay):
+   > *the camera has not moved since the previous shot, the same lens height and the same distance to
+   > the subject, the light comes from the same direction and the shadows fall the same way*
+
+   Ba thứ mắt bắt ngay ở chỗ cắt: **góc máy · hướng nắng · cỡ chủ thể trong khung**. Không nói ra thì
+   model tự chọn lại cả ba ở mỗi lần gen.
+2. **Trong một chuỗi, framing phải GIỐNG HỆT** (siết từ "không nhảy quá 2 bậc"). Đổi framing = đổi cú
+   máy = mất cảm giác liên tục. Muốn đổi cú máy thì **cắt chuỗi** (`cut={...}`), đừng đổi giữa chuỗi.
+3. Ánh sáng đã tự khoá nhờ **C2 (cùng preset)** — preset chứa cả mô tả giờ/ánh sáng.
+
+### 8.6g ⭐⭐ CAST PLATE — 1 ẢNH THAM CHIẾU khoá nhân vật (user chốt 2026-09-06)
+
+Tool ngoài user đang dùng nhận **text + 1 ảnh**, và ảnh đó là **ảnh THAM CHIẾU** (không phải start
+frame). Vậy phân vai rạch ròi:
+
+| | khoá bằng gì |
+|---|---|
+| **đồng nhất NHÂN VẬT** | ✅ **ảnh tham chiếu** (cast plate) |
+| **nối liền HÀNH ĐỘNG** | `chain` + `out` + `CHAIN_LOCK` (text) — ảnh **không** làm được |
+
+**Vì chỉ 1 ảnh/lần gen ⇒ mỗi clip khoá được ĐÚNG MỘT nhân vật.** Đây là lý do kỹ thuật cho trần
+**≤2 người/cảnh · ≤3 nhân vật/video** ở §8.5b — không phải luật cho đẹp.
+
+**Thi hành:**
+```python
+PLATES = {"ME": "cast/me.png", "MIDORI": "cast/midori.png"}   # thu tu = uu tien khi canh co 2 nguoi
+write_plate_prompts(C, PLATES, ".")        # -> cast_plates_FLOW.txt (1 prompt/dong) + TENFILE
+rows = build(S, P, C, plates=PLATES)       # nhan vat co plate: KHONG ta lai quan ao nua
+IMG  = plate_map(S, PLATES)                # {sid: duong dan anh} — clip nao kem anh nao
+```
+
+🔴 **Nhân vật đã có ảnh thì KHÔNG tả lại quần áo/màu trong prompt nữa** — `expand_with_plate()` tự
+đổi thành `the figure matching the reference image exactly`. Đưa **cả ảnh lẫn mô tả dài** là cho model
+**hai nguồn có thể mâu thuẫn**, nó sẽ trộn hai thứ lại. **Ảnh cho hình dạng, chữ cho hành động.**
+Nhân vật *không* có plate thì vẫn bung mô tả đầy đủ như cũ.
+
+**Ảnh plate phải là ảnh DỄ HỌC** (`plate_prompt()` đã bake sẵn): đứng yên · **toàn thân** · **3/4 hơi
+chếch về camera** · **nền trơn xám sáng, không đạo cụ, không bối cảnh** · **sáng đều không đổ bóng
+gắt** · nét · **cùng STYLE 1970s** với clip.
+⛔ Không tả mặt/tuổi/tóc trong prompt plate — **chính tấm ảnh** quyết định những thứ đó. Đó là điểm
+của cả cách làm: chuyển việc giữ khuôn mặt **từ CHỮ sang ẢNH**.
+
+⚖️ **Cái mất:** thêm một bước gen ảnh trước mỗi video (3 ảnh), và phải đính đúng ảnh cho đúng clip
+lúc gen. Đổi lại là thứ mẹo "giấu mặt" không bao giờ mua được: **nhân vật quay mặt vào ống kính mà
+vẫn là một người**.
+
+### 8.6f ⚠️ Cái vẫn KHÔNG có, đừng hứa
+
+Nối liền ở đây là **liên tục về LOGIC**, không phải liên tục về khung hình: hai clip vẫn là hai lần
+vẽ độc lập, chỗ cắt vẫn nhảy ánh sáng/vị trí. Muốn liền **thật** ở mức pixel thì phải cho clip sau
+mọc từ **frame cuối** của clip trước (last-frame → image-to-video).
+📌 **ĐÃ TRA VÀ ĐÃ CHỐT (2026-09-06):** Flow **có** `Extend` (gen tiếp từ **giây cuối** clip trước),
+`Ingredients to Video` (lưu nhân vật rồi gọi lại theo tên — cách đáng tin nhất để giữ **cùng khuôn
+mặt**) và `Frames to Video`. **Cả ba đều phải thao tác trong UI Flow**, mà kênh này gen bằng **tool
+ngoài** ⇒ ⛔ **không dùng được**, đừng đề xuất lại.
+⚠️ Hai điều kiện chưa xác nhận (nguồn bên thứ ba, Google không công bố): Extend có thể chỉ chạy ở
+model **Lite**; Ingredients có thể chỉ cho gói **Ultra**. Nếu bao giờ đổi sang gen thẳng trong Flow
+thì kiểm hai cái đó trước.
+⇒ Trần hiện tại: **liền về LOGIC + khoá cú máy bằng chữ** (§8.6e), không liền được ở mức pixel.
+
+## 9. MẪU `gen_prompts.py` cho video mới (chép nguyên khung này)
+
+```python
+import sys; sys.path.insert(0, r"E:\Claude\Projects\youtube-jp-showa\tools")
+from videogen_lib import build, gate, write_outputs, autochain, linkage
+P = {"michi": "an unpaved residential lane in Showa Japan, packed dirt and loose gravel, low wooden fences on both sides", ...}
+C = {"me": "a small figure in a plain yellow cotton cap, white short-sleeved shirt and navy shorts, with a plain unmarked brown leather satchel on its back", ...}
+# (id, khoi, ACT 3 nhip + huong + chuyen dong phu, preset, FRAMING KEY, tier Q/F, chain, out)
+# chain/out CO THE BO (6-tuple nhu cu) — nhung tu video 11 moi khoi NEN la mot chuoi (§8.5c).
+S = [
+ # ⭐ tu video 11: goi autochain(S) NGAY SAU khi khai bao — noi lien la MAC DINH (§8.6)
+ ("H1", "HOOK", "A_ME walks away from the camera down the middle of the lane, seen from behind, growing smaller ..., then ..., then ...",
+  "michi", "behind", "Q", "ch_hook", "A_ME is standing still at the far corner, seen from behind"),
+ ("H2", "HOOK", "the figure ... , then ... , then ...",
+  "michi", "behind", "Q", "ch_hook", None),      # canh CUOI chuoi: out=None
+]
+WL = {"K2": "ly do canh khong nguoi"}          # whitelist phai co LY DO
+S = autochain(S, cut={"HG1"})                    # may gom chuoi; 'out' van la viec NGUOI VIET
+rows = build(S, P, C)
+n_red, _ = gate(rows, S, P, C, whitelist_no_human=WL, interior={"genkan_uchi"}, strict=True)
+write_outputs(rows, ".")                         # videogen_FLOW.txt · TENFILE.txt · BLOCKS.md
+sys.exit(1 if n_red else 0)
+```
+
+## 10. Ghi sổ
+
+- **2026-09-06 — v2, ca gốc video 10.** Soi 121/121 clip (sheet 4-frame + sheet mép): **17 lỗi nặng · 15 nhẹ · 89 sạch
+  · 120 khung phim**. 15/17 lỗi nặng là framing không thân. Gen lại **22 clip** theo v2 (`06_VIDEO/10_tsugakuro/REGEN_v2_FLOW.txt`);
+  9 clip v1 đạt-mắt-nhưng-framing-cấm chỉ đổi prompt, không gen lại (01·05·13b·18·23·23c·23d·26·E13).
+  **Chỉ tiêu:** ≤2/22 lỗi sau gen lại; không đạt → sửa công thức trước khi áp video 11.
+- ✅ **2026-09-06 — KẾT QUẢ PHÉP THỬ: ĐẠT, 2/22 lỗi** (v1 nhóm này: **22/22 lỗi**). 20/22 sạch hoàn toàn.
+  - **Hết sạch loại lỗi nặng nhất**: 0 cánh tay/chân lơ lửng, 0 vật biến hình, 0 quay mặt vào camera.
+    `H1` (clip mở đầu) đi ra xa một mạch, không đảo chiều — đúng thứ user bắt. `25d` giờ có cả người ngồi
+    ôm đầu gối (v1: chỉ bàn tay trên tường). `E15`/`E7` có chân **và** thân trên vạch trắng.
+  - **2 lỗi còn lại:** `30b` người xuất hiện giữa clip rồi **biến mất ở frame cuối** (dù prompt có
+    `remains in frame` — gate không đo được cái này, chỉ mắt thấy) · `06` **lệch nội dung** (prompt là
+    thẻ tên → model cho ra cờ vàng; không dị dạng, chấp nhận được).
+  - ⇒ **Ba luật hiệu quả nhất, xếp theo sức nặng:** ① framing có THÂN người (chữa 15/17 lỗi nặng)
+    ② hướng tương đối camera (chữa H1) ③ vật `plain unmarked` + `the same X throughout` (chữa vật biến hình).
+  - ⚠️ **Luật `remains in frame` là luật YẾU NHẤT** — `30b` vẫn mất chủ thể. Cảnh "người trong khung cửa
+    sổ/khung hẹp" là ca khó riêng; lần sau tả **người TRƯỚC, khung SAU** (`A_HAHA stands at the open window…`
+    thay vì `the window slides open and A_HAHA stands inside it`).
+- Prompt v2 dài **1.200–1.700 ký** (v1: 800–1.040) do cast nguyên văn + negative đích danh. Chưa thấy Flow từ chối; nếu có thì rút ở P (bối cảnh), không rút ở NEGATIVE.

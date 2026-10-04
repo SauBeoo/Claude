@@ -1,0 +1,480 @@
+# -*- coding: utf-8 -*-
+"""check_pace.py — đo 4 mốc GIỮ CHÂN của một `_TTS.md`, bằng SỐ.
+
+VÌ SAO CÓ TOOL NÀY (2026-08-12):
+Skill `script-nenkin` GĐ2 đã ghi *"Case + số của nhân vật phải vào TRƯỚC PHÚT 2"* từ lâu, mà
+script 12 vẫn để nhân vật vào ở **2:39** và **không ai bắt được** — vì mốc đó chưa bao giờ được
+ĐO, chỉ được ước bằng mắt khi đọc dàn ý. Đúng bài học "luật kiểm bằng mắt thì sẽ trôi".
+Cộng thêm phản hồi khán giả về video 10 (2026-08-12): *"mào đầu dài gần 1 phút rưỡi"* +
+*"đoạn giải thích 3 cấp độ thu nhập có khá nhiều con số"* → hai thứ đó cũng phải đo được.
+
+BỔ SUNG 3 GATE 2026-08-20 (mổ retention video 12 — lần đầu kênh được browse phát ~1.4K view):
+Đường retention đo qua API: giữ 94,5% ở giây 20 → **64,4% ở giây 30 → 46,2% ở giây 50** (vách
+−48 điểm), trong khi thân bài relPerf leo 0,35→0,79 = khỏe. Vách rơi đúng đoạn ngụ ngôn ngôi-thứ-ba
+("hai ngôi nhà"), あなた không xuất hiện cả phút đầu, số 5万2千円 đến 0:27 (SAU vách). Đối chứng:
+video 09 mở 「いま、あなたのお宅に…」+ hạn 45日 ở giây 21 → relPerf@30s = 0,42, GẤP ĐÔI video 12.
+Video 12 pass sạch 5 gate cũ mà vẫn chết ⇒ gate cũ đo MỐC vào bài, chưa đo STAKE cá nhân hoá.
+Hồ sơ: `08_ANALYTICS_LOG.md` block 2026-08-20. Ba gate mới:
+  ⑥ STAKE (số 円 hoặc hạn ◯日) phải bắn ≤20s — TRƯỚC vách 20–30s
+  ⑦ あなた phải xuất hiện ≤10s (お宅 KHÔNG tính — video 12 dùng お宅 cho ngôi thứ ba)
+  ⑧ tên モニター đứng TRƯỚC あなた trong 30s đầu = mở bài ngôi-thứ-ba → 🔴
+
+BỔ SUNG 3 GATE 2026-08-31 (luật cold open v3, `CHANNEL_DIAGNOSIS_2026-08-29.md` §1.2/§3.2 — user duyệt kế hoạch 08-31):
+Đo 5 video: 4 video đưa モニター vào 58–85s mất 13–22 điểm retention trong 60→120s; video 09
+(không モニター, đọc lộ trình + 「まず、事実から」) phẳng 0,37→0,37. ⇒
+  ⑨ G9 — ĐẢO gate cũ "nhân vật ≤2:00": モニター KHÔNG được xuất hiện trong 0–120s
+     (vào ~phút 2,5–3, lần đầu 1 dòng). Cast vẫn BẮT BUỘC có — không có cũng 🔴.
+  ⑩ G10 — ≤2 tag `[間]/[後間]/[速]` trong 75s đầu (đối thủ dày chữ, mình thưa; 3 tag đều
+     nhau = TTS nghỉ đều = giọng biên bản, `humanize-script-voice.md` §1.2).
+  ⑪ G11 — câu LỘ TRÌNH phải có trong 75s đầu (khuôn v18: 「三つの金額を、順番に計算します」).
+⚠️ G6/G7/G8 giữ chạy nhưng KHÔNG được coi là thuốc retention (v15 PASS 8/8 mà relPerf@60s
+tệ nhất kênh) — mốc đọc thật là AVD ≥3:50 · awr@120s ≥0,40.
+
+HỆ SỐ: 5,72 ký/giây đọc thuần + 0,45s/dòng + 1,0s/đoạn (nenkin `CLAUDE.md` §ĐỘ DÀI, đo thật).
+
+CHẠY:
+  python tools/check_pace.py 11_taishokukin-shinkokusho-junban-408man
+  python tools/check_pace.py 11_... 12_... --compare      # so nhiều bài cạnh nhau
+"""
+import argparse
+import re
+import sys
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+PROJ = Path(__file__).resolve().parents[1]
+# 🔴 VÁ 2026-09-21: tuple này là bản sao TAY của bảng cast trong CLAUDE.md và đã trôi —
+# 小林 lập ở v28 mà không được thêm, nên v28 chỉ qua G9 nhờ 中村 đứng sau phút 2.
+# Thêm cast mới thì PHẢI thêm cả ở đây, nếu không G9 báo "0:00 = không thấy nhân vật nào".
+CAST = ("田中", "佐藤", "鈴木", "高橋", "山田", "伊藤", "松本", "渡辺", "中村",
+        "小林", "原田", "小川", "加藤")
+
+# ── NGƯỠNG (đúc từ 3 bài + phản hồi khán giả về video 10) ──────────────────────
+T_COLDOPEN = 75.0    # hết cold open (câu persona). v10 bị góp ý ở 1:19 → siết về ≤1:15
+T_CAST_MIN = 120.0   # ⑨ G9 (ĐẢO 2026-08-31): nhân vật đầu tiên phải SAU mốc này.
+                     # Gate cũ "≤120s" (skill GĐ2) đã bị số đo 08-29 bác: モニター vào 58–85s
+                     # mất 13–22 điểm retention 60→120s. Luật mới: vào ~phút 2,5–3.
+T_TAGS75 = 2         # ⑩ G10: trần tag [間]/[後間]/[速] trong 75s đầu
+RE_ROADMAP = re.compile(r"順番|[一二三四五六七八九\d０-９]つ[のを]")  # ⑪ G11: câu lộ trình
+T_NUM30 = 8          # số con SỐ trong 30 giây đầu; nhiều hơn = hook thành bảng tính
+N_DENSE = 20         # trần con SỐ trong một cửa sổ 45s. CÓ bằng chứng: v10 = 24 → khán giả
+                     # góp ý "hơi phức tạp". Đây là mục CHẶN.
+T_DENSE_EARLY = 180  # ⚠️ CHỈ CẢNH BÁO, KHÔNG CHẶN — "khối số không nên nằm trong 3 phút đầu"
+                     # là GIẢ THUYẾT tao tự đặt, KHÔNG có bằng chứng. Bằng chứng duy nhất đang
+                     # có là v10 dày 24 con số ở phút 6:00 (tức muộn) mà VẪN bị góp ý ⇒ cái hại
+                     # đo được là MẬT ĐỘ, không phải vị trí. Và kéo nhân vật vào sớm (điều khán
+                     # giả YÊU CẦU) thì tự nhiên đẩy khối giải thích vào phút 1–3 — hai mục sẽ
+                     # đánh nhau. Giữ dòng cảnh báo để còn thấy, nhưng đừng để nó chặn việc.
+CTA_LO, CTA_HI = 42, 58   # CTA phải quanh 50% (`cta-midvideo.md`)
+WIN = 45.0
+
+# ── 3 gate 2026-08-20 (mổ retention video 12 — xem docstring) ──────────────────
+T_STAKE = 22.0       # số STAKE (tiền ◯円 / hạn ◯日) đầu tiên — phải TRƯỚC vách 20–30s.
+                     # 22 chứ không phải 20: video 09 (bản khỏe chuẩn, srt thật 45日 @ 0:18)
+                     # bị hệ số synthetic tính ra 0:20,x — trần phải nhận bản chuẩn.
+T_ANATA = 10.0       # あなた phải có mặt trong 10s đầu (khuôn video 09)
+T_THIRD = 30.0       # モニター đứng trước あなた trong cửa sổ này = mở ngôi-thứ-ba → 🔴
+# STAKE = con số chạm túi tiền/hạn chót của NGƯỜI XEM. Bắt cả số kanji (video 09: 四十五日).
+# 月/年/歳 KHÔNG tính — "来月10月" là mốc lịch, không phải stake (video 12 có nó ở 0s mà vẫn sập).
+# Lookbehind chặn NGÀY THÁNG: 「10月15日」 là mốc lịch, không phải hạn chót. Phải chặn cả chữ số
+# đứng trước để match không được bắt đầu GIỮA số (「10月15日」 mà match từ 「5日」 là lọt oan).
+RE_STAKE = re.compile(r"(?<![月\d一二三四五六七八九十百千])"
+                      r"(?:\d|[一二三四五六七八九十百千])[\d一二三四五六七八九十百千万,，]* *(?:円|日)")
+
+
+# 🔴 GATE ĐANG MÙ (bắt 2026-09-06). Hai mục "số trong 30s đầu" và "cửa sổ 45s dày số nhất"
+# đếm bằng `re.findall(r"\d+", l)` — tức CHỈ chữ số ASCII. Nhưng script của kênh này viết
+# số bằng KANJI (「二百五万円」「五・一〇五パーセント」) vì TTS phải đọc ra tiếng.
+# Đo trên v21: ASCII bắt **50**, đếm-theo-đơn-vị bắt **85**. Nghĩa là hai gate đó đã báo
+# "đạt" suốt nhiều video mà chưa từng thật sự đo cái chúng nói là đang đo.
+# ⇒ Đếm CỤM SỐ + ĐƠN VỊ: đó mới là "con số người nghe phải giữ trong đầu".
+RE_NUM = re.compile(r"(?:[0-9０-９]+(?:[,，][0-9０-９]+)*|[一二三四五六七八九十百千万億〇]{1,})"
+                    r"\s*(?:円|万|パーセント|％|割|年|歳|日|月|人|件|回|倍|分)")
+
+
+def n_num(line):
+    return len(RE_NUM.findall(line))
+
+
+def timeline(path):
+    t, out = 0.0, []
+    for raw in Path(path).read_text(encoding="utf-8").splitlines():
+        # 🔴 Dòng comment KHÔNG phải lời đọc. `tts_render.parse_script` bỏ chúng, nên gate
+        # cũng phải bỏ — nếu không, marker `<!-- PAYOFF:数字 -->` (G14) bị tính vào thời
+        # lượng và mọi mốc giây sau nó lệch. Cùng bẫy đã dính ở co-dai 16/26 (marker bị TTS
+        # đọc thành lời vì thiếu đúng một nhánh lọc).
+        if raw.lstrip().startswith("<!--") or raw.lstrip().startswith("#"):
+            out.append((t, "", 0, "cmt", raw.strip()))
+            continue
+        spk = "s2" if re.match(r"^(\[[^\]]*\])*\[聞\]", raw) else "s1"
+        line = re.sub(r"^(\[[^\]]*\])+", "", raw).strip()
+        if not line:
+            t += 1.0
+            continue
+        ntag = len(re.findall(r"\[(?:間|後間|速)", raw))
+        out.append((t, line, ntag, spk, raw.strip()))
+        t += len(line) / 5.72 + 0.45
+    return out, t
+
+
+def mmss(x):
+    return f"{int(x // 60)}:{int(x % 60):02d}"
+
+
+def measure(stem):
+    p = PROJ / "03_SCRIPTS" / f"{stem}_TTS.md"
+    if not p.exists():
+        raise SystemExit(f"[LỖI] không thấy {p}")
+    tl0, total = timeline(p)
+    raws = [(r[0], r[4]) for r in tl0 if r[3] == "cmt"]
+    tl = [r for r in tl0 if r[3] != "cmt"]
+    first = lambda pred: next((t for t, l, n, k, raw in tl if pred(l)), None)
+    bins = {}
+    for t, l, n, k, raw in tl:
+        bins[int(t // WIN)] = bins.get(int(t // WIN), 0) + n_num(l)
+    dk, dn = max(bins.items(), key=lambda kv: kv[1])
+    cta = first(lambda l: "ここで、ひとつだけお願い" in l)
+    # cold open kết ở câu persona. v19 (08-31) bỏ 「こんにちは」, persona là 「…研究室です。制度を…」
+    # → detector phải bắt cả hai, không thì báo 0:00 giả (đã dính ở v19).
+    return dict(total=total,
+                coldopen=first(lambda l: "こんにちは" in l or "研究室です" in l),
+                cast=first(lambda l: any(c in l for c in CAST)),
+                num30=sum(n_num(l) for t, l, n, k, raw in tl if t < 30),
+                dense_n=dn, dense_at=dk * WIN,
+                stake=first(lambda l: RE_STAKE.search(l)),
+                anata=first(lambda l: "あなた" in l),
+                tags75=sum(n for t, l, n, k, raw in tl if t < T_COLDOPEN),
+                roadmap=first(lambda l: RE_ROADMAP.search(l)),
+                cta=cta, cta_pct=(cta / total * 100) if cta else None,
+                v3=gates_v3(tl, total, raws),
+                g18=gate_g18(stem))
+
+
+# ⭐ G12–G16 (2026-09-06) — khuôn 2 VAI hỏi–đáp + hai payoff + CTA đăng ký.
+# ⚠️ Đọc kèm docstring của G6–G11: **KHÔNG mục nào ở đây là thuốc retention.** Vách
+# 19→29s có ở mọi video bất kể lời mở, và nghi phạm đã đo được là khán giả sai sở thích
+# (RELATED dẫn 19/24 video ngoài ngách), không phải chữ. Mốc đọc thật vẫn là
+# AVD ≥3:50 · awr@120s ≥0,40 · tỉ lệ RELATED cùng ngách.
+S2_LO, S2_HI = 0.12, 0.25     # tỉ lệ dòng 聞き手 (B1)
+S2_LEN = 40                   # mỗi dòng 聞き手 ≤40 ký — dài hơn là giảng bài đội lốt hỏi
+S1_ASK_LO = 0.025             # ⭐ chế độ MỘT GIỌNG: sàn tỉ lệ câu tự hỏi (xem khối G12)
+TWO_VOICE_OK = False          # ⭐ bật bằng cờ `--2voice`; mặc định kênh = MỘT giọng
+T_DRY = 45.0                  # trần khối giải thích chay (B3)
+PAYOFF_NUM_MAX = 0.35         # "số của bạn" xong trước 35%
+PAYOFF_ANS_LO, PAYOFF_ANS_HI = 0.65, 0.85
+RE_ASK = re.compile(r"(?:か。|か？|でしょうか|ですか)")
+RE_TURN = re.compile(r"(?:ですが|ところが|違います|逆|しかし)")
+RE_YOU = re.compile(r"(?:あなた|ご自身|お宅|うち)")
+RE_ACT = re.compile(r"(?:てください|てみてください)")
+# katakana ≥3 ký = 外来語 (audience-45plus §5.2). Whitelist = từ đã ngấm vào đời sống.
+G17_MID = 6                   # dữ kiện phải có trong cửa sổ ký 50–150 (≈ giây 10–30)
+W17_KY = 50                   # 1 cửa sổ = 50 ký đọc ≈ 10 giây (148 ký/30s, đo thật 10 video)
+# Đếm MỌI lần một con số xuất hiện — xem lý lẽ ở khối G17. Lỏng hơn RE_NUM có chủ ý.
+RE_FACT = re.compile(r"[0-9０-９]|[一二三四五六七八九十百千万億][万千百十円歳年月日割パ％%]"
+                     r"|[一二三四五六七八九]十|パーセント|割")
+RE_KATA = re.compile(r"[ァ-ヶー]{3,}")
+KATA_OK = {"テレビ", "パーセント", "ラジオ", "エアコン", "ページ", "カード", "ポイント"}
+
+
+def gates_v3(tl, total, raws):
+    """G12–G16. `tl` = list (t, line, ntag, spk, raw) đã bỏ dòng comment."""
+    out = []
+    sp = [r for r in tl if r[3] == "s2"]
+    n = len(tl)
+    ratio = len(sp) / n if n else 0
+
+    # ⭐ G12 — MODE-AWARE (2026-09-14, user chốt kênh quay về MỘT giọng).
+    # Bản cũ đòi cứng ≥12% dòng [聞] ⇒ mọi script 1 giọng đều 🔴, kể cả 20 script đã lên sóng
+    # của chính kênh này. Đó là gate đo **HÌNH THỨC THI HÀNH của bản mẫu 2 vai**, không đo cơ chế
+    # — đúng bệnh đã ghi ở `humanize-script-voice.md` §1.2 và `audience-45plus.md` §2.0i
+    # ("thấy mình định viết 'gate này đỏ nhưng bỏ qua được' thì đó là lúc sửa GATE").
+    #
+    # CƠ CHẾ mà G12 thật sự muốn giữ: **bài không được giảng một mạch**. Ở bản 2 vai, người
+    # hỏi là cách thi hành; ở bản 1 giọng, cách thi hành là **câu TỰ HỎI** (自問自答).
+    # 🔴 Và cơ chế đó vốn ĐÃ có gate đo trực tiếp, không phụ thuộc số vai: **G13 (khối chay >45s)**.
+    # Nên ở chế độ 1 giọng, gánh nặng pass/fail dồn về G13; G12s chỉ giữ một SÀN chống thoái lui.
+    #
+    # SÀN 2,5% lấy từ ĐO THẬT 20 script 1 giọng đã lên sóng của kênh (2026-09-14):
+    #   %câu tự hỏi  min 1,3 · bách phân 10 ≈ 2,7 · trung vị 6,8 · max 14,2
+    # ⇒ 2,5% cho qua 19/20 bản cũ (chỉ v04 = 1,3% rớt) và vẫn bắt được độc thoại thật.
+    # ⚠️ Đây là SÀN CHỐNG THOÁI LUI, **KHÔNG phải ngưỡng retention đã chứng minh** — chưa có số
+    # nào nối mật độ câu hỏi với awr. Đừng trích nó như bằng chứng.
+    if not sp:
+        ask_n = sum(1 for _t, l, _n, _k, _r in tl if RE_ASK.search(l))
+        r = ask_n / n if n else 0
+        out.append(("G12s MỘT GIỌNG — câu tự hỏi", f"{r*100:.1f}% ({ask_n}/{n})", r >= S1_ASK_LO,
+                    f"≥{S1_ASK_LO*100:.1f}% (sàn chống thoái lui; kênh: trung vị 6,8 · max 14,2)"))
+        out.append(("G12s cơ chế 'không giảng một mạch'", "đo bằng G13", True,
+                    "ở bản 1 giọng, gánh nặng nằm ở G13 khối chay >45s"))
+    else:
+        # ⭐⭐ MỘT GIỌNG LÀ MẶC ĐỊNH CỦA KÊNH (user chốt 2026-09-16).
+        # Bản 2 giọng **chưa từng được đo lần nào**: sổ 09-10 ghi "v21 2 giọng — AVP 23,6%,
+        # cao nhất bảng", nhưng video ăn 23,6% là **v20 `jhRgcIiqd_w`, có 0 dòng `[聞]`**;
+        # v21 thật (`T69O1_ejplE`) lên sóng 09-10 nên hôm đó chưa có dữ liệu. Số đầu tiên của
+        # khuôn 2 giọng là 19,9% @ 134 view — quá ít để nói gì (AVP còn tụt theo view).
+        # ⇒ Muốn dùng 2 giọng thì phải là **A/B có chủ ý**, khai bằng `--2voice`, không phải
+        #   để nó trôi vào vì người viết thấy hay.
+        out.append(("G12 khuôn 2 GIỌNG", f"{len(sp)} dòng 聞き手", TWO_VOICE_OK,
+                    "kênh mặc định MỘT giọng — 2 giọng phải khai `--2voice` (A/B có chủ ý)"))
+        ok = S2_LO <= ratio <= S2_HI
+        out.append(("G12 tỉ lệ 聞き手", f"{ratio*100:.0f}% ({len(sp)}/{n})", ok,
+                    f"{S2_LO*100:.0f}–{S2_HI*100:.0f}%"))
+        lng = [(t, l) for t, l, _, k, _ in sp if len(l) > S2_LEN]
+        out.append(("G12 dòng 聞き手 ≤40 ký", f"{len(lng)} dòng dài", not lng,
+                    "0 — dài hơn là giảng bài đội lốt hỏi"))
+        e75 = [t for t, l, _, k, _ in sp if t < 75]
+        out.append(("G12 聞き手 trong 75s đầu", f"{len(e75)} dòng",
+                    len(e75) == 1, "đúng 1 (nghi vấn, ~20–30s)"))
+
+    # G13 — khối giải thích CHAY >45s
+    # ⛔ MIỄN ĐOẠN KẾT. Từ dòng disclaimer 「…時点の情報です」 trở đi là
+    # disclaimer + CTA đăng ký + 次回予告 + câu chữ ký — độc thoại **về bản chất**,
+    # không có chỗ nào cắm được câu hỏi của 聞き手 mà không phá nhịp đóng bài.
+    # Mọi video của kênh sẽ rớt ở đúng khối đó ⇒ đo nó là đo sai thứ mình muốn đo.
+    # Không hạ ngưỡng 45s (thân bài vẫn phải đạt) — chỉ thu hẹp PHẠM VI.
+    t_end = next((t for t, l, _, k, _ in tl if "時点の情報です" in l), None)
+    body = [r for r in tl if t_end is None or r[0] < t_end]
+    dry, run, t0 = [], 0.0, None
+    for t, l, _, k, _ in body:
+        alive = (k == "s2" or RE_ASK.search(l) or RE_TURN.search(l) or RE_ACT.search(l)
+                 or (RE_YOU.search(l) and RE_NUM.search(l)))
+        if alive:
+            if run > T_DRY:
+                dry.append((t0, run))
+            run, t0 = 0.0, None
+        else:
+            if t0 is None:
+                t0 = t
+            run = t - t0
+    if run > T_DRY:
+        dry.append((t0, run))
+    out.append(("G13 khối chay >45s", f"{len(dry)}" + (
+        "  (" + " · ".join(f"{mmss(a)}={b:.0f}s" for a, b in dry[:4]) + ")" if dry else ""),
+        not dry, "0 khối"))
+
+    # G14 — hai payoff, biên kịch phải TỰ KHAI bằng marker
+    def marker(tag):
+        for t, raw in raws:
+            if tag in raw:
+                return t
+        return None
+    pn, pa = marker("PAYOFF:数字"), marker("PAYOFF:答え")
+    out.append(("G14 payoff 「số của bạn」", f"{pn/total*100:.0f}%" if pn else "KHÔNG KHAI",
+                pn is not None and pn / total <= PAYOFF_NUM_MAX,
+                f"≤{PAYOFF_NUM_MAX*100:.0f}%  (marker <!-- PAYOFF:数字 -->)"))
+    out.append(("G14 payoff 「đáp án」", f"{pa/total*100:.0f}%" if pa else "KHÔNG KHAI",
+                pa is not None and PAYOFF_ANS_LO <= pa / total <= PAYOFF_ANS_HI,
+                f"{PAYOFF_ANS_LO*100:.0f}–{PAYOFF_ANS_HI*100:.0f}%  (marker <!-- PAYOFF:答え -->)"))
+
+    # G15 — CTA đăng ký CÓ LÝ DO
+    sub = next((t for t, l, _, k, _ in tl
+                if "チャンネル登録" in l and "直前チェック" in l), None)
+    out.append(("G15 CTA đăng ký", f"{sub/total*100:.0f}%" if sub else "KHÔNG CÓ",
+                sub is not None and sub / total >= 0.85,
+                "≥85% · phải có CẢ 「チャンネル登録」 và 「直前チェック」"))
+    pos = sum(1 for t, l, _, k, _ in tl if "あなたの数字を計算する" in l)
+    out.append(("G15 câu định vị", str(pos), pos == 1, "đúng 1 lần"))
+
+    # G16 — 外来語 trong 60s đầu
+    kt = []
+    for t, l, _, k, _ in tl:
+        if t >= 60:
+            break
+        kt += [w for w in RE_KATA.findall(l) if w not in KATA_OK]
+    out.append(("G16 外来語 trong 60s", ("·".join(kt[:5]) if kt else "0"), not kt,
+                "0 (whitelist: " + "・".join(sorted(KATA_OK)[:3]) + "…)"))
+
+    # ⭐ G17 (2026-09-10) — MẬT ĐỘ DỮ KIỆN Ở CỬA SỔ THỨ HAI VÀ THỨ BA (ký 50–150 ≈ giây 10–30).
+    # Đo 9 video có curve (`06_VIDEO/_diag/curves_2026-09-10.json`): tương quan giữa số lần
+    # một CON SỐ xuất hiện trong cửa sổ ký 50–150 và awr@30s = **+0,83**; với 0–50 ký thì
+    # **−0,70** (dồn hết vào 10 giây đầu ⇒ retention @30s TỆ hơn).
+    #   ≥6 dữ kiện (v14=10 · v16=8) → awr@30 **0,70** — hai bản cao nhất kênh
+    #   <6  (v12=4 · v15=1 · v17=2 · v18=1 · v19=5 · v21=1 · v24=4) → awr@30 **0,57**
+    # 🔴 Ý NGHĨA: bốn lượt "tối ưu cold open" trước (v15 あなた@0:03 · v18 v3 · v24 hook nỗi sợ)
+    # đều DỒN LỰC VÀO GIÂY 0–10 — và chính việc dồn đó làm CẠN cửa sổ 10–30s, đúng chỗ vách rơi.
+    # v18 dồn 3 dữ kiện vào 0–50 ký, còn 1 ở 50–150 → drop 10→30s **−51**, tệ nhất kênh.
+    # Cùng họ bài học "giảm lặp sticker ≠ giảm số lượng" (`audience-45plus.md` §2.0): tối ưu
+    # một chỉ số thì phải hỏi chỉ số nào là biến ĐÁNH ĐỔI của nó.
+    #
+    # ⚠️ BA GIỚI HẠN, đọc trước khi tin:
+    # 1. n=9, nhóm PASS chỉ n=2 ⇒ tách sạch (0,70 vs 0,57) nhưng mong manh. Đo lại sau 5 video.
+    # 2. KHÔNG phải nhân quả — bài chỉ có một con số thì tự nhiên dồn vào đầu (confound).
+    # 3. Biến TRỘI vẫn là CHẤT LƯỢNG TRAFFIC, không phải chữ: cùng một video, browse cho
+    #    AVP 14–16% còn RELATED cho 23–40%. Gate này chữa phần script, không chữa phân phối.
+    #
+    # 🔧 NEO THEO KÝ TỰ, KHÔNG THEO GIÂY — có lý do đo được: `timeline()` ước tổng thời lượng
+    # sai chỉ ±2–5%, nhưng ở CỬA SỔ 30s ĐẦU nó sai **13,5%** (v24: ước 189 ký, thật 149) vì
+    # tag `[間]` chỉ được ĐẾM mà không được CỘNG thời gian, và tag dồn hết vào cold open.
+    # Cộng tag vào chỉ hạ sai số về 9,0% — vẫn quá lớn khi vách rơi ở giây 19–29. Ký tự thì
+    # đếm chính xác 100%, và 30 giây = **148 ký** (trung vị 10 video có srt thật, dải 131–163).
+    # ⇒ Đổi `timeline()` thì KHÔNG cần sửa gate này. Nhưng mọi gate mốc-giây khác (G6 stake
+    # ≤20s · G7 あなた ≤10s · G11 lộ trình ≤75s) VẪN đang chịu sai số đó — việc còn mở.
+    #
+    # 🔴 REGEX PHẢI LỎNG. Cùng dữ liệu, đếm bằng `RE_NUM` (cụm số+đơn vị đầy đủ) chỉ cho
+    # tương quan **+0,47**; đếm MỌI LẦN một con số xuất hiện (kể cả 「五・一〇五」「昭和三十七年」
+    # 「三つ」) cho **+0,83**. Nguồn (srt thật vs script ước) gần như không đổi kết quả
+    # (+0,85 vs +0,83) ⇒ biến quyết định là CÁCH ĐẾM, không phải nguồn. Đó là lý do gate này
+    # dùng `RE_FACT` riêng chứ không dùng lại `RE_NUM` của G-cũ.
+    # 🔴 Gán theo vị trí của CHÍNH con số, không theo vị trí đầu dòng: một dòng 41 ký gần
+    # bằng cả cửa sổ 50 ký, nên gán cả dòng vào bin của đầu dòng thì lệch tới một cửa sổ
+    # (đã dính khi thử bản cold open v2 của video 22 — báo "50-100 rỗng" trong khi 月十八万円
+    # nằm đúng ở đó). Cùng bẫy với việc dồn cả cue srt vào bin theo thời điểm cue bắt đầu.
+    pos, w = 0, {}
+    for _t, l_, _n, _k, _r in tl:
+        if pos >= W17_KY * 4:
+            break
+        for m_ in RE_FACT.finditer(l_):
+            b = (pos + m_.start()) // W17_KY
+            if b < 4:
+                w[b] = w.get(b, 0) + 1
+        pos += len(l_)
+    mid = w.get(1, 0) + w.get(2, 0)
+    out.append(("G17 dữ kiện ký 50–150", f"{mid}  (0-50:{w.get(0,0)} · 50-100:{w.get(1,0)} · "
+                f"100-150:{w.get(2,0)} · 150-200:{w.get(3,0)})", mid >= G17_MID,
+                f"≥{G17_MID} — nhóm đạt đo được awr@30 0,70 vs 0,57"))
+    zero = [k for k in range(4) if w.get(k, 0) == 0]
+    out.append(("G17 cửa sổ 50 ký rỗng", ("·".join(f"{k*W17_KY}-{(k+1)*W17_KY}" for k in zero)
+                if zero else "0"), not zero, "0 — mỗi ~10 giây phải chở ≥1 con số"))
+    return out
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ⭐⭐ G18 — CỔNG ĐỐI TƯỢNG (T1 của T-GATE), cài 2026-09-15
+#
+# VÌ SAO: 17 gate phía trên đều soi CHỮ. Không cái nào hỏi *"bài này nói cho AI nghe?"*
+# Video 19 rơi qua đúng lỗ đó: đề tài 高年齢雇用継続給付 chỉ áp cho người **60–64 tuổi và
+# CÒN ĐI LÀM**, trong khi **74,9% khán giả kênh là 65+** ⇒ AVP **11,5%, bét kênh** — mà
+# mọi gate script đều xanh, vì chữ không sai gì cả. Đề tài sai NGƯỜI.
+# ⚖️ Chỉ T1 cài được thành máy: カバー率 và 就業 là dữ kiện có cấu trúc. T2 của T-GATE
+#    (*"có tờ giấy tự đến / trạng thái tự đổi nếu không làm gì không?"*) là PHÁN ĐOÁN —
+#    máy không quyết được, để người, luật ghi ở `02_CONTENT_PLAN.md` §T-GATE.
+#
+# ⚠️ CHƯA ĐƯỢC KIỂM CHỨNG: gate này dựng từ MỘT ca hỏng (v19) + bảng chênh 300× của rổ
+#    swipe. Chưa video nào đi qua nó. 3–4 video pass mà AVP vẫn ~15% ⇒ kết luận đúng là
+#    "đề tài cũng không phải đòn bẩy", không phải "siết gate chặt hơn".
+#
+# Nhân khẩu đo 2026-08-29 (Studio): 65+ **74,9%** · 55–64 **22,6%** · 45–54 2,5%.
+AUD_CEIL = {"65+": 74.9, "60-64": 22.6, "55-64": 22.6, "全年齢": 100.0}
+G18_MIN = 70.0                # sàn カバー率
+RE_TAISHO = re.compile(r"^###\s*対象者\s*$", re.M)
+
+
+def read_taisho(stem):
+    """Đọc khối `### 対象者` từ `03_SCRIPTS/<stem>.md` (bản gói, KHÔNG phải `_TTS.md`)."""
+    p = PROJ / "03_SCRIPTS" / f"{stem}.md"
+    if not p.exists():
+        return None
+    s = p.read_text(encoding="utf-8")
+    m = RE_TAISHO.search(s)
+    if not m:
+        return None
+    blk, d = s[m.end():m.end() + 400], {}
+    for line in blk.splitlines():
+        line = line.strip().lstrip("-・ ")
+        if not line:
+            continue
+        if line.startswith("#"):
+            break
+        if ":" in line or "：" in line:
+            k, _, v = line.replace("：", ":").partition(":")
+            d[k.strip()] = v.strip()
+    return d or None
+
+
+def gate_g18(stem):
+    """[(tên, giá trị, đạt, chuẩn)] — cùng hợp đồng với các gate khác."""
+    d = read_taisho(stem)
+    if d is None:
+        return [("G18 khối 対象者", "KHÔNG CÓ", False,
+                 "bắt buộc trong <stem>.md — 年齢 / 就業 / 推定カバー率")]
+    age, work = d.get("年齢", ""), d.get("就業", "")
+    raw = d.get("推定カバー率", "").replace("%", "").replace("％", "").strip()
+    try:
+        cov = float(raw)
+    except ValueError:
+        cov = -1.0
+    ceil = AUD_CEIL.get(age)
+    out = [("G18 カバー率", f"{cov:.1f}%" if cov >= 0 else f"«{raw}»",
+            cov >= G18_MIN, f"≥{G18_MIN:.0f}% — v19 rớt ở đây (60–64 ⇒ ~10%)"),
+           ("G18 就業", work or "KHÔNG KHAI", work in ("不問", "退職前後") and bool(work),
+            "不問 / 退職前後 — 「在職必須」 là loại thẳng")]
+    # 🔴 chống KHAI KHỐNG: không thể vừa ghi 年齢 60-64 vừa khai カバー率 95%.
+    if ceil is None:
+        out.append(("G18 年齢", f"«{age}»", False,
+                    " / ".join(AUD_CEIL)))
+    else:
+        out.append((f"G18 trần theo 年齢 {age}", f"{cov:.1f} ≤ {ceil}",
+                    cov <= ceil + 0.05, f"≤{ceil}% (nhân khẩu Studio 08-29)"))
+    return out
+
+
+def _third(m):
+    """Mở bài ngôi-thứ-ba: tên モニター vào trước あなた trong T_THIRD giây đầu (bệnh video 12/13/14)."""
+    return (m["cast"] is not None and m["cast"] < T_THIRD
+            and (m["anata"] is None or m["cast"] < m["anata"]))
+
+
+def report(stem, m):
+    print(f"\n=== {stem} — tổng {mmss(m['total'])} ===")
+    rows = [
+        ("hết cold open", mmss(m["coldopen"] or 0), m["coldopen"] is not None and m["coldopen"] <= T_COLDOPEN,
+         f"≤{mmss(T_COLDOPEN)}"),
+        ("G9 nhân vật đầu tiên", mmss(m["cast"] or 0), m["cast"] is not None and m["cast"] >= T_CAST_MIN,
+         f"≥{mmss(T_CAST_MIN)} — SAU phút 2 (đảo 08-31, diagnosis 08-29)"),
+        ("số con SỐ trong 30s đầu", str(m["num30"]), m["num30"] <= T_NUM30, f"≤{T_NUM30}"),
+        ("cửa sổ 45s dày SỐ nhất", f"{m['dense_n']} @ {mmss(m['dense_at'])}",
+         m["dense_n"] <= N_DENSE, f"≤{N_DENSE} con số"),
+        ("CTA giữa video", f"{m['cta_pct']:.0f}%" if m["cta_pct"] else "KHÔNG CÓ",
+         m["cta_pct"] is not None and CTA_LO <= m["cta_pct"] <= CTA_HI, f"{CTA_LO}–{CTA_HI}%"),
+        ("STAKE (円/日) đầu tiên", mmss(m["stake"]) if m["stake"] is not None else "KHÔNG CÓ",
+         m["stake"] is not None and m["stake"] <= T_STAKE, f"≤{mmss(T_STAKE)} (trước vách 20–30s)"),
+        ("あなた xuất hiện", mmss(m["anata"]) if m["anata"] is not None else "KHÔNG CÓ",
+         m["anata"] is not None and m["anata"] <= T_ANATA, f"≤{mmss(T_ANATA)} (khuôn video 09)"),
+        ("mở bài ngôi-thứ-ba", "モニター trước あなた" if _third(m) else "OK",
+         not _third(m), f"モニター không đứng trước あなた trong {T_THIRD:.0f}s đầu"),
+        ("G10 tag 間/速 trong 75s", str(m["tags75"]), m["tags75"] <= T_TAGS75, f"≤{T_TAGS75} tag"),
+        ("G11 câu lộ trình", mmss(m["roadmap"]) if m["roadmap"] is not None else "KHÔNG CÓ",
+         m["roadmap"] is not None and m["roadmap"] <= T_COLDOPEN, f"≤{mmss(T_COLDOPEN)} (khuôn v18)"),
+    ]
+    rows = m.get("g18", []) + rows       # G18 in ĐẦU: đề tài sai người thì mọi mục dưới vô nghĩa
+    rows += m.get("v3", [])
+    bad = 0
+    for name, val, ok, want in rows:
+        if not ok:
+            bad += 1
+        print(f"  {'✅' if ok else '🔴'} {name:26s} {val:>14s}   (chuẩn {want})")
+    if m["dense_at"] < T_DENSE_EARLY:
+        print(f"  ⚠️  khối số dày nhất nằm ở {mmss(m['dense_at'])} (trong 3 phút đầu) — "
+              f"giả thuyết CHƯA có bằng chứng, không chặn")
+    return bad
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("stems", nargs="+")
+    ap.add_argument("--compare", action="store_true")
+    ap.add_argument("--2voice", dest="two_voice", action="store_true",
+                    help="khai CO CHU DINH rang script nay dung khuon 2 giong (A/B)")
+    a = ap.parse_args()
+    global TWO_VOICE_OK
+    TWO_VOICE_OK = a.two_voice
+    ms = {s: measure(s) for s in a.stems}
+    bad = sum(report(s, m) for s, m in ms.items())
+    if a.compare and len(ms) > 1:
+        print("\n=== SO SÁNH ===")
+        keys = [("hết cold open", lambda m: mmss(m["coldopen"] or 0)),
+                ("nhân vật đầu", lambda m: mmss(m["cast"] or 0)),
+                ("SỐ trong 30s", lambda m: str(m["num30"])),
+                ("cửa sổ dày nhất", lambda m: f"{m['dense_n']} @ {mmss(m['dense_at'])}"),
+                ("CTA %", lambda m: f"{m['cta_pct']:.0f}%" if m["cta_pct"] else "-")]
+        w = max(len(s) for s in ms) + 2
+        print("  " + " " * 18 + "".join(s[:w].rjust(w) for s in ms))
+        for label, fn in keys:
+            print(f"  {label:18s}" + "".join(fn(m).rjust(w) for m in ms.values()))
+    print(f"\n{'🔴 ' + str(bad) + ' mục RỚT' if bad else '✅ đạt hết'}")
+    sys.exit(1 if bad else 0)
+
+
+if __name__ == "__main__":
+    main()

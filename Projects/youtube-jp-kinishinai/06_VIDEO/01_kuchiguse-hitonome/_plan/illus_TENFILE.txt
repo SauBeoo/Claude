@@ -1,0 +1,82 @@
+dong | slide | kem reference nhan vat | canh
+  1 | slide_00.png | VIEWER | the Viewer character bows again and again at a post-office counter, ap
+  2 | slide_01.png | VIEWER | Night. the Viewer character lies awake in her futon, eyes open, replay
+  3 | slide_02.png | VIEWER | the Viewer character sits up in the futon, one hand pressed to her che
+  4 | slide_03.png | YOUNG KIEKO | the Young Kieko character bows deeply behind the kimono counter as cus
+  5 | slide_05.png | - | A single andon lantern glows alone in a dark tatami room — the watchma
+  6 | slide_06.png | YOUNG KIEKO | the Young Kieko character bows to seniors at work; beside it, a young 
+  7 | slide_08.png | KIEKO, AYUMI | the Kieko character and the Ayumi character sit at the same low table,
+  8 | slide_09.png | - | New Year's Day: the family around the kotatsu; an apron hangs by the k
+  9 | slide_10.png | KIEKO | the Kieko character folds laundry in a sunny room, a small radio on th
+ 10 | slide_12.png | KIEKO | A young man hands a dropped glove back to the Kieko character; she bow
+ 11 | slide_13.png | YOUNG KIEKO | the Young Kieko character at her kimono counter, 1990s colour.
+ 12 | slide_14.png | KIEKO | the Kieko character's hands smooth used gift-wrap and fold it along th
+ 13 | slide_15.png | YOUNG KIEKO | the Young Kieko character bows to a customer before the customer can s
+ 14 | slide_16.png | - | A hand writes a thank-you letter with a fountain pen on plain paper.
+ 15 | slide_17.png | - | The andon casts a shadow on the shoji far bigger than itself — the wat
+ 16 | slide_18.png | KIEKO | A man holds a door open, uneasy, while the Kieko character keeps bowin
+ 17 | slide_21.png | DAISUKE, KIEKO | Spring. the Daisuke character stands to give his seat; the Kieko chara
+ 18 | slide_22.png | KIEKO | An anpan bun in a small paper bag, held in the Kieko character's hands
+ 19 | slide_23.png | - | A crowded crossing seen from behind — many anonymous eyes.
+ 20 | slide_25.png | KIEKO | the Kieko character in a new coat walks the arcade, glancing nervously
+ 21 | slide_26.png | - | New eyeglasses beside a hand mirror on a small table.
+ 22 | slide_27.png | - | A university corridor between classes.
+ 23 | slide_28.png | - | A student in a T-shirt with a big cartoon face walks into a classroom;
+ 24 | slide_30.png | KIEKO | the Kieko character in plain grey walks the same grey street past brig
+ 25 | slide_32.png | KIEKO | Early summer. the Kieko character in a floral blouse walks lightly; no
+ 26 | slide_33.png | KIEKO | the Kieko character puts on her shoes at the door, handbag ready, smil
+ 27 | slide_34.png | - | Neighbours chat politely by the rubbish point — the faces you meet eve
+ 28 | slide_36.png | - | Residents raise hands together; one raises hers last, slowly.
+ 29 | slide_37.png | - | 1970s: young housewives in aprons chatting in a danchi courtyard.
+ 30 | slide_40.png | - | One person raises a hand for the other option; others begin to follow.
+ 31 | slide_41.png | - | Residents sit with arms folded, eyes lowered — disagreeing in silence.
+ 32 | slide_42.png | KIEKO | the Kieko character at a gathering, smiling and nodding along, the smi
+ 33 | slide_44.png | KIEKO | Summer-festival meeting: the Kieko character keeps her hands in her la
+ 34 | slide_45.png | NORIKO, KIEKO | At the door, the Noriko character leans in and whispers to the Kieko c
+ 35 | slide_46.png | SACHIKO, KIEKO | the Kieko character and the Sachiko character laugh over coffee.
+ 36 | slide_48.png | KIEKO | Dusk. the Kieko character walks home alone, replaying the conversation
+ 37 | slide_49.png | - | The andon beside a blank notebook and a red pencil — marking every pag
+ 38 | slide_50.png | - | Two strangers chat on a park bench for the first time.
+ 39 | slide_52.png | SACHIKO | the Sachiko character on her own train home, smiling to herself.
+ 40 | slide_53.png | KIEKO | the Kieko character declines an invitation on the phone, then looks at
+ 41 | slide_55.png | KIEKO | Early autumn. the Kieko character laughs on the phone by the window, r
+ 42 | slide_56.png | SACHIKO, KIEKO | the Kieko character and the Sachiko character walk an autumn path, pla
+ 43 | slide_57.png | KIEKO | Dusk. the Kieko character alone at the window, hand on her chest — som
+ 44 | slide_59.png | KIEKO | the Kieko character's hands clasped tightly in her lap (held from shot
+ 45 | slide_60.png | KIEKO | the Kieko character's hands clasped tightly in her lap.
+ 46 | slide_61.png | - | On a bench, one woman quietly confides; the other listens warmly.
+ 47 | slide_62.png | - | The listener's warm, open face.
+ 48 | slide_65.png | - | A polite tea gathering: everyone smiling, every pair of eyes turned sl
+ 49 | slide_67.png | KIEKO | October night. the Kieko character under a lamp, phone to her ear: 「最近
+ 50 | slide_68.png | MICHIKO | the Michiko character on the phone in her kitchen, wiping tears while 
+ 51 | slide_70.png | KIEKO | The andon turned toward a dressing mirror; the Kieko character looks a
+ 52 | slide_72.png | KIEKO | the Kieko character holds a blank hula-class flyer outside the centre,
+ 53 | slide_73.png | - | 1960s: a teenage girl in formal seiza before strict elders.
+ 54 | slide_74.png | - | An older couple walks an autumn park at their own pace.
+ 55 | slide_76.png | - | A row of closed boxes on a shelf; one lid slightly open, light inside.
+ 56 | slide_78.png | KIEKO | December. the Kieko character on the platform with a small suitcase, e
+ 57 | slide_79.png | KIEKO | the Kieko character walks alone up a quiet village path — a year of le
+ 58 | slide_80.png | - | An apron hangs on a hook by the dim kitchen doorway.
+ 59 | slide_82.png | KIEKO | the Kieko character alone in the kitchen with a cup, the lantern glowi
+ 60 | slide_83.png | TAKESHI, KIEKO | Dinner: the Takeshi character and his father argue; the Kieko characte
+ 61 | slide_84.png | - | At the same table, the mother keeps her head down, hands clasped, endu
+ 62 | slide_85.png | - | An empty study room: two chairs facing across a small table.
+ 63 | slide_86.png | - | A woman keeps a carefully blank face while talking; the other leans ba
+ 64 | slide_87.png | AYUMI | the Ayumi character at the kotatsu glances uneasily toward her mother 
+ 65 | slide_90.png | KIEKO | the Kieko character on the phone saying no politely, her shoulders dro
+ 66 | slide_91.png | NORIKO, KIEKO | the Kieko character and the Noriko character laugh freely at the kitch
+ 67 | slide_92.png | TAKESHI, AYUMI | New Year's Day: a shimekazari on the door; the Ayumi character's and t
+ 68 | slide_93.png | KIEKO | The family around the kotatsu; the Kieko character in an apron at the 
+ 69 | slide_94.png | KIEKO | the Kieko character's hands ladle ozoni into lacquer bowls, steam risi
+ 70 | slide_95.png | - | New Year photos across the decades — in every one, the mother stands a
+ 71 | slide_96.png | KIEKO | the Kieko character turns toward the sink — and stops halfway.
+ 72 | slide_97.png | - | The andon glows softly in the room; the watchman's voice.
+ 73 | slide_99.png | KIEKO | the Kieko character unties her apron and slips under the kotatsu besid
+ 74 | slide_100.png | REN | the Ren character stares up, wide-eyed: 「おばあちゃんって、座れるんだ」
+ 75 | slide_101.png | - | The whole family bursts into laughter around the kotatsu.
+ 76 | slide_103.png | KIEKO | the Kieko character at the kotatsu, looking at her family in quiet rea
+ 77 | slide_105.png | KIEKO, AYUMI | Mikan peels and an old album on the kotatsu; the Kieko character and t
+ 78 | slide_106.png | - | Dawn. The andon's light turned low, pale morning through the shoji — t
+ 79 | slide_108.png | KIEKO | The whole family around the kotatsu — the Kieko character sitting in t
+ 80 | slide_110.png | - | A cup of green tea by a sunny window, the curtain moving.
+ 81 | slide_111.png | KIEKO | Morning. the Kieko character walks lightly along a sunny path, shoulde

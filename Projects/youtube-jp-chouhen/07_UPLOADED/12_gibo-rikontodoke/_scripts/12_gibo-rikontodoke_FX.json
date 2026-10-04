@@ -1,0 +1,28 @@
+{
+  "speakers": {"里美": "hero", "敏江": "villain", "隆之": "villain", "りこ": "villain", "宗一郎": "hero"},
+  "lines": [
+    {"match": "ほら、離婚届。あんたの席は", "speaker": "敏江"},
+    {"match": "お昼までに、市役所に出してきなさい", "speaker": "敏江"},
+    {"match": "ありがとうございます、お義母さん", "speaker": "里美"},
+    {"match": "この、役立たず", "speaker": "敏江"},
+    {"match": "やった。これで私は、あの家から解放される", "speaker": "里美"},
+    {"match": "商売は人だ。人を裏切る男に、金は預けられん", "speaker": "宗一郎"},
+    {"match": "私の体を、嘘の道具に使ったのよ", "speaker": "里美"},
+    {"match": "この疫病神一家", "speaker": "りこ"}
+  ],
+  "events": [
+    {"type": "sfx", "match": "ほら、離婚届。あんたの席は", "name": "sub_drop", "offset": 0.0, "gain": -6},
+    {"type": "sfx", "match": "宛名は、夫だった。", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "ポケットの中で、スマートフォンが短く震えた", "name": "phone_buzz", "offset": -0.2, "gain": -8},
+    {"type": "sfx", "match": "鞄の中で、スマートフォンが震えた", "name": "phone_buzz", "offset": -0.2, "gain": -8},
+    {"type": "sfx", "match": "翌朝、夫から怒りの電話が入った", "name": "phone_buzz_urgent", "offset": -0.2, "gain": -8},
+    {"type": "sfx", "match": "夜の九時、実家の玄関先で", "name": "door_knock", "offset": -0.3, "gain": -8},
+    {"type": "bgm_swell", "from": "支店には激震が走った", "to": "処分を待つ身となった"},
+    {"type": "bgm_tense_cut", "from": "追い詰められた二人は、SNSで反撃に出た", "cut": "写真付きで暴露したのだ", "resume": "一夜にして嘘泣きに変わった"},
+    {"type": "sfx", "match": "離婚届の証人になるということは", "name": "heartbeat", "offset": 0.0, "gain": -9},
+    {"type": "card", "match": "お昼までに、市役所に出してきなさい", "text": "お昼までに、市役所に出してきなさい", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "商売は人だ。人を裏切る男に、金は預けられん", "text": "人を裏切る男に、金は預けられん", "style": "hero", "hold": 1.2},
+    {"type": "card", "match": "私の体を、嘘の道具に使ったのよ", "text": "私の体を、嘘の道具に使ったのよ", "style": "hero", "hold": 1.2},
+    {"type": "card", "match": "全て弁護士を通してちょうだい", "text": "全て弁護士を通してちょうだい", "style": "hero", "hold": 1.4}
+  ]
+}

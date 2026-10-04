@@ -1,0 +1,407 @@
+{
+  "speakers": {
+    "美緒": "hero",
+    "源蔵": "hero",
+    "ひなた": "hero",
+    "富貴子": "villain",
+    "奈々恵": "villain",
+    "笠原": "hero",
+    "柿沼": "hero",
+    "宮下": "hero",
+    "兼人": "hero",
+    "泰輔": "hero",
+    "雨宮": "hero",
+    "隼人": "other"
+  },
+  "lines": [
+    {
+      "match": "「一ヶ月以内に、あの家を出ていってちょうだい」",
+      "speaker": "富貴子"
+    },
+    {
+      "match": "「鷹取の嫁が、揚げ物の匂いをさせて歩くのよ」",
+      "speaker": "富貴子"
+    },
+    {
+      "match": "「これが、鷹取の嫁の手よ」",
+      "speaker": "富貴子"
+    },
+    {
+      "match": "「この字を書いたのは、いつですか」",
+      "speaker": "美緒"
+    },
+    {
+      "match": "「うちの子じゃないから、ただでご飯を食べてる、って」",
+      "speaker": "ひなた"
+    },
+    {
+      "match": "「今日から、鷹取の名前は、給食費には使いません」",
+      "speaker": "美緒"
+    },
+    {
+      "match": "「……毎月、十万、もらってたから」",
+      "speaker": "奈々恵"
+    },
+    {
+      "match": "「私は、使い道がないんです」",
+      "speaker": "源蔵"
+    },
+    {
+      "match": "「ただし、宛名は、あなたです、富貴子さん」",
+      "speaker": "源蔵"
+    },
+    {
+      "match": "「この人は、私が誰かを知らずに、そうしてくれた」",
+      "speaker": "源蔵"
+    },
+    {
+      "match": "「四年間、一円も合わなかったことがない人です」",
+      "speaker": "源蔵"
+    },
+    {
+      "match": "「……告訴は、しません」",
+      "speaker": "美緒"
+    },
+    {
+      "match": "「商店街に陳情を出す方が、商店街の品物を、そう呼ぶんですか」",
+      "speaker": "笠原"
+    },
+    {
+      "match": "「ご本人に、一度もお会いできなかったからです」",
+      "speaker": "柿沼"
+    },
+    {
+      "match": "「一度も、入所しておりません」",
+      "speaker": "宮下"
+    },
+    {
+      "match": "「私は三年、これを知っていて黙っていた」",
+      "speaker": "兼人"
+    },
+    {
+      "match": "「妻は、会長のお金で、会長に嘘の手紙を書いていたんです」",
+      "speaker": "泰輔"
+    },
+    {
+      "match": "「三千万円は、どこから出てくるんですか」",
+      "speaker": "美緒"
+    },
+    {
+      "match": "「ですが、この六枚は、私のものではありません」",
+      "speaker": "美緒"
+    },
+    {
+      "match": "「出さなかったら、俺が書いたことになる」",
+      "speaker": "隼人"
+    },
+    {
+      "match": "「見ていて、助けない、ということでした」",
+      "speaker": "源蔵"
+    },
+    {
+      "match": "「なぜ、止めなかったんですか」",
+      "speaker": "美緒"
+    },
+    {
+      "match": "「これは、いい長靴です」",
+      "speaker": "源蔵"
+    },
+    {
+      "match": "「あの人が死んだら、私に、何が残るの」",
+      "speaker": "富貴子"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "中秋の名月の夜、鷹取の本家。",
+      "to": "それを「みっともない」と言われた夜の月は、よく晴れていた。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "まる屋の裏口の鍵を開けると、もう電気がついていた。",
+      "to": "声が、少し掠れていた。",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "店の自動ドアが開いて、白い日傘が入ってきた。",
+      "to": "けれど、その日から、日誌を書く手が、少し長くなった。",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "家に帰ると、隼人が台所に座っていた。",
+      "to": "なのに、あの通知書には、直筆の字があった。",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "翌朝、私は本家の玄関に立った。",
+      "to": "読んでから、そこへ戻したのだ。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "鷹取本家の広間に、臨時の親族会議が開かれた。",
+      "to": "畳に、涙が落ちる音だけがした。",
+      "name": "room_still",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "私は、今もまる屋にいる。",
+      "to": "「知っています。業者が、また変わりましたね」",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "sfx",
+      "match": "三年、筆も持てないはずの人の字だ。",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "店の電話が鳴った。",
+      "name": "phone_buzz",
+      "offset": -0.3,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "その時、洗い場から、皿を置く音がした。",
+      "name": "door_knock",
+      "offset": 0.1,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "手取り、七十八万円。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "十月に入って、ひなたの担任の先生から、電話があった。",
+      "name": "phone_buzz",
+      "offset": -0.3,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "和光苑は、二年前に閉鎖していた。",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "その時、廊下の障子が、静かに開いた。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "畳の上で、誰も、動かなかった。",
+      "name": "heartbeat",
+      "offset": 0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "「ただし、宛名は、あなたです、富貴子さん」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "私は、風呂敷を膝の前に置いた。",
+      "cut": "その時、廊下の障子が、静かに開いた。",
+      "resume": "「会長。お待ちしておりました」"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "富貴子さんの膝が、畳から崩れた。",
+      "to": "「その方が、都合がよかったからです」"
+    },
+    {
+      "type": "card",
+      "match": "「鷹取の嫁が、揚げ物の匂いをさせて歩くのよ」",
+      "text": "揚げ物の匂いをさせて",
+      "style": "villain",
+      "hold": 1.2
+    },
+    {
+      "type": "card",
+      "match": "「この字を書いたのは、いつですか」",
+      "text": "この字を書いたのは、いつですか",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "「うちの子じゃないから、ただでご飯を食べてる、って」",
+      "text": "ただでご飯を食べてる、って",
+      "style": "villain",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "「ただし、宛名は、あなたです、富貴子さん」",
+      "text": "宛名は、あなたです",
+      "style": "hero",
+      "hold": 1.6
+    },
+    {
+      "type": "card",
+      "match": "「四年間、一円も合わなかったことがない人です」",
+      "text": "四年間、一円も合わなかった人です",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "ambience",
+      "from": "理事会は、次の水曜だった。",
+      "to": "富貴子さんの名前がなくなった。",
+      "name": "office_hum",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "待ち合わせたのは、駅前の喫茶店だった。",
+      "to": "その時はまだ、本当に、知らなかったのだ。",
+      "name": "office_hum",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "その夜、家の電話が鳴った。",
+      "to": "「明日、俺も広間に出る」",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "仏間の押し入れを開けたとき、菓子箱が落ちた。",
+      "to": "風呂敷の中身は、これで、七つになった。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "sfx",
+      "match": "信用金庫から、隼人あてに封書が届いた。",
+      "name": "door_knock",
+      "offset": -0.2,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "本人以外による払戻しを、停止する。",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "タカトリ ゲンゾウ。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "鷹取隼人。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "その夜、家の電話が鳴った。",
+      "name": "phone_buzz_urgent",
+      "offset": -0.3,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "たかとり ひなた。",
+      "name": "heartbeat",
+      "offset": 0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "広間が、動かなくなった。",
+      "name": "heartbeat",
+      "offset": 0.0,
+      "gain": -8
+    },
+    {
+      "type": "card",
+      "match": "「私は三年、これを知っていて黙っていた」",
+      "text": "まず、私を処分してください",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "「三千万円は、どこから出てくるんですか」",
+      "text": "どこから出てくるんですか",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "おじいちゃん、あいたいです。",
+      "text": "おじいちゃん、あいたいです",
+      "style": "hero",
+      "hold": 1.6
+    },
+    {
+      "type": "card",
+      "match": "「ですが、この六枚は、私のものではありません」",
+      "text": "この六枚は、私のものではありません",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "sfx",
+      "match": "「……知っていました」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "ごみバケツに、逆さに落とした。",
+      "name": "slap",
+      "offset": -0.1,
+      "gain": -9
+    },
+    {
+      "type": "card",
+      "match": "「見ていて、助けない、ということでした」",
+      "text": "見ていて、助けない",
+      "style": "hero",
+      "hold": 1.6
+    },
+    {
+      "type": "card",
+      "match": "「これは、いい長靴です」",
+      "text": "これは、いい長靴です",
+      "style": "hero",
+      "hold": 1.4
+    }
+  ]
+}

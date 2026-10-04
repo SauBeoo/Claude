@@ -1,0 +1,661 @@
+# -*- coding: utf-8 -*-
+"""
+beats23.py — cầu nối: bảng scene của video 23  →  `beats.json` của **vox-director**.
+
+⭐ ĐƯỜNG DỰNG LỚP HÌNH TỪ VIDEO 23: **Vox paper-collage (newsprint-editorial)**, không còn
+   footage AI người thật (user chốt 2026-09-12, trỏ thẳng `E:\\vox-director`).
+
+KIẾN TRÚC — chép đúng ghi chú user đã đặt trong `out/nenkin-19/beats.json` ngày 2026-09-02:
+   *"Chỉ dùng stage KEYFRAME + CLIPS. Voice/music/assemble của vox-director KHÔNG dùng:
+     giọng đã có (VOICEVOX 雀松朱司 + tag nhấn nhá), phụ đề/CTA/watermark do Remotion lo."*
+
+  ┌ nenkin (giữ nguyên) ─────────────────────────────────────────────────────────┐
+  │ _TTS.md → make_timeline_exact → timeline.json → _scenes23.py → plan23.py      │
+  │ thẻ stat/formula/genten/gfx · telop · phụ đề · 3 overlay · CTA · render chunk │
+  └──────────────────────────────────────────────────────────────────────────────┘
+                 │ 92 clip `art`                       ▲ clips/clip_<key>.mp4
+                 ▼                                     │
+  ┌ vox-director (CHỈ 2 stage) ──────────────────────────────────────────────────┐
+  │ beats.json → print_prompts.py (poster collage) → print_motion.py (i2v)        │
+  └──────────────────────────────────────────────────────────────────────────────┘
+
+🔴 KHÔNG dùng Atlas Cloud: `keyframes.py`/`clips.py` là đường TRẢ TIỀN, đã chốt bỏ 2026-09-02
+   (`project_i2v_api_bo_2026_09_02` · `feedback_youtube_khong_dau_tu_them`). Hai script
+   `print_*.py` là **free-tier helper** của chính vox-director — cùng một hàm compose, chỉ
+   khác là dump prompt ra file để gen tay qua extension.
+
+🔴 BỎ HẲN `NUM` (chính sách số in lên đạo cụ): guard của collage bắt **mọi mặt giấy để TRỐNG,
+   không một chữ/số nào trong khung**. Số chốt do `papercut-stat`/telop của Remotion vẽ bằng
+   font ⇒ luôn sắc, luôn đúng. Đây chính là khuôn `feedback_so_tren_hinh_phai_do_font_ve`
+   nói tới, và collage làm nó thành ràng buộc CỨNG thay vì một lời dặn.
+
+CHẠY:
+    python tools/beats23.py                 # ghi beats.json
+    cd E:/vox-director && python scripts/print_prompts.py out/nenkin-23
+    cd E:/vox-director && python scripts/print_motion.py  out/nenkin-23
+"""
+import io
+import json
+import os
+import re
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.path.insert(0, r"E:\Claude\Projects\youtube-jp-nenkin\tools")
+import flow23_full                      # noqa: E402  (classify + kho mô tả)
+from plan23 import build                # noqa: E402
+
+OUT = r"E:\vox-director\out\nenkin-23"
+
+# ── GUARD dán vào cuối MỌI scene — bản đã dùng ở nenkin-19, giữ nguyên từng chữ ──
+# ① người Nhật cao tuổi (không thì style mid-century trôi về Americana)
+# ② mọi mặt giấy TRỐNG, không một chữ nào (Veo/nano-banana viết kanji là nát)
+# ③ chừa dải phải 1/10 khung — chỗ Remotion dán mascot + logo (vùng cấm x1690–1910)
+GUARD = (" Any person shown is JAPANESE and elderly (60s-70s), in modest everyday Japanese "
+         "clothing — not Western, not American, not 1950s retro fashion, no Americana styling. "
+         "NUMERALS ARE WANTED: where the scene names a figure, cut it as BIG bold Arabic "
+         "numerals from coloured card with visible scissor edges, pasted flat onto the page — "
+         "they are a core part of this collage language, not decoration. But NO WORDS in any "
+         "language and NO Japanese lettering anywhere: no kanji, no kana, no headline, no "
+         "caption, no signage, no logo, no watermark; every document, sign and label surface "
+         "stays blank apart from those cut-out numerals. Leave a narrow empty strip of flat "
+         "paper along the right edge, about one tenth of the width")
+
+# ── khuôn của mình → cỡ cảnh + cú máy của vox-director ──────────────────────────
+# ⚠️ `camera_move` phải nằm trong `clips.CAMERA_VOCAB`; và nhóm "bold" (orbit/dolly_zoom/roll/
+#    whip) CHỈ dùng với constraints="loose" — kênh này chạy "strict" nên không đụng tới.
+SHOT_SIZE = {"HOLD": "CLOSE", "SCREEN": "MEDIUM", "CROWD": "WIDE", "VIZ": "WIDE",
+             "DESK": "MEDIUM", "PERSON": "CLOSE", "SPLIT": "MEDIUM", "PANEL": "CLOSE",
+             "META": "WIDE", "GAUGE": "WIDE", "INFOG": "WIDE"}
+# Xoay cú máy trong từng khuôn để 92 clip không cùng một chuyển động.
+# 🔴 22/92 khung máy TĨNH + giấy động = vẫn thiếu sức. Giữ `static` cho đúng chỗ mà ĐỨNG YÊN
+#    là nghĩa (mặt đồng hồ đo), còn lại cho khung thở. ⚠️ Vẫn bám `audience-45plus` §2 mục 6:
+#    pan/zoom phải CHẬM + ease — vox vocab đã ghi "very slow smooth", không phải Ken Burns giật.
+CAM = {"HOLD": ["push_in", "parallax"], "SCREEN": ["push_in", "pan"],
+       "CROWD": ["parallax", "pan"], "VIZ": ["push_in", "pull_out", "pan"],
+       "DESK": ["push_in", "parallax"], "PERSON": ["push_in", "parallax"],
+       "SPLIT": ["pan", "push_in"], "PANEL": ["push_in", "pull_out"],
+       "META": ["parallax", "pull_out"], "GAUGE": ["static", "push_in"],
+       "INFOG": ["parallax", "static"]}
+
+# ── BỐ CỤC THEO TỪNG SHOT ───────────────────────────────────────────────────────
+# 🔴 Scene được cấp 2–3 clip mà mô tả y nguyên thì ra 2–3 POSTER GIỐNG HỆT (đo được 16/92 ở
+#    bản đầu) — vừa đốt lượt gen, vừa cho hai hình giống nhau đứng cạnh nhau trên timeline.
+#    Đường photoreal không dính vì nó xoay FRAMING/SETTINGS/REACTION theo idx; collage bỏ hết
+#    mấy khối đó nên mất luôn cơ chế phân biệt. ⇒ mỗi shot phải là một CÁCH DỰNG khác của
+#    cùng một beat, đúng cách user làm ở nenkin-19 (1a WIDE kho hàng · 1b CLOSE cut-in).
+SHOT_FRAME = [
+    # 🔴 Showcase KHÔNG có khung toàn cảnh "người bé trong phòng": nó cắt SÁT hành động
+    #    (chỉ thấy hai cẳng chân, chiếm gần trọn khung). Khung rộng + biên độ nhỏ = ảnh chết.
+    (" Composed as a TIGHT ACTION CROP: the moving part fills most of the frame, the figure"
+     " cut-out cropped hard by the frame edges.", "CLOSE"),
+    # 🔴 Bản đầu viết "the HANDS and the object fill the frame, the FIGURE'S FACE only partly
+    #    in frame" ⇒ dán vào cảnh không có tay/không có mặt là tự bịa thêm bộ phận (11/92).
+    (" Composed as a CLOSE cut-in: the nearest cut-outs fill the frame and the layers behind"
+     " them fall away, the rest cropped hard by the frame edges.", "CLOSE"),
+    (" Composed as a MEDIUM three-quarter view from the side, the figure cut-out turned"
+     " slightly away and layered over a bold flat colour block.", "MEDIUM"),
+    (" Composed from a LOW ANGLE at table height: the objects loom large as foreground paper"
+     " cut-outs and the figure cut-out sits behind them.", "MEDIUM"),
+    (" Composed as a TIGHT DETAIL cut-in: the object alone fills the frame as one big paper"
+     " cut-out, no figure in shot.", "CLOSE"),
+]
+# 🔴🔴 DÃY THỨ HAI CHO CẢNH KHÔNG CÓ NGƯỜI. Dãy trên nhắc "the figure cut-out" ở 3/5 biến
+#    thể ⇒ dán vào cảnh vật-thuần (đồng hồ đo "no people in frame", hai hộp hồ sơ, dải xu)
+#    là khối chung TỰ THÊM NGƯỜI vào cảnh cố ý không có người — đo được 8/92.
+#    Đây là lần thứ NĂM của cùng một bệnh trong dự án này (guard chữ · câu one-action ·
+#    NOTE kê chuyển động · bối cảnh không bàn · giờ là bố cục nhắc người).
+#    ⇒ Mỗi lần thêm một câu vào khối chung: hỏi "câu này có chọi mô tả của cảnh nào không?"
+SHOT_FRAME_OBJ = [
+    (" Composed as a TIGHT ACTION CROP: the moving objects fill most of the frame, the rest"
+     " cropped hard by the frame edges.", "CLOSE"),
+    (" Composed as a CLOSE cut-in: one part of the arrangement fills the frame as large paper"
+     " cut-outs, the rest running off the edges.", "CLOSE"),
+    (" Composed as a MEDIUM three-quarter view from the side, the objects layered over a bold"
+     " flat colour block.", "MEDIUM"),
+    (" Composed from a LOW ANGLE close to the surface, the nearest objects looming large in the"
+     " foreground.", "MEDIUM"),
+    (" Composed as a TIGHT DETAIL cut-in: a single object fills the frame as one big paper"
+     " cut-out.", "CLOSE"),
+]
+_PPL = re.compile(r"(elderly|clerk|visitor|person|staff|master|customer|figure|hand)", re.I)
+
+# 🔴 Dãy này phải DÀI HƠN số shot nhiều nhất của một scene, nếu không nó quay vòng và shot
+#    thứ N+1 trùng hệt shot 1 — đã dính: scene 62 có 4 shot, dãy 3 biến thể ⇒ a và d giống nhau.
+
+# ── ĐỘNG CỦA GIẤY — thứ vox-director gọi là `element_motion` ────────────────────
+# 🔴 Đây là lớp NỘI DUNG, không phải lớp hình thức: nó tả TỪNG MẢNH GIẤY nhúc nhích thế nào.
+#    Bài học `flow23_full` vừa rút (NOTE kê chuyển động thì chọi mô tả cảnh) áp y nguyên ở
+#    đây — nên chuyển động phải suy từ CHÍNH hành động của scene, không lấy từ kho chung.
+#    Kho dưới chỉ là lớp NỀN thứ hai (giấy/ánh sáng/halftone), luôn cộng thêm, không thay thế.
+# 🔴 LỚP NỀN phải ĐỘNG THẬT, không phải "nhích một milimét". Bản đầu viết toàn
+#    "settles a millimetre" · "breathe softly" · "a hair" ⇒ đúng nghĩa `calm`, và đó là thứ
+#    user gọi là vô tri. Showcase: bóng bay ngang khung, vạt áo tung, chân đá.
+# 🔴 Lớp thứ BA. Đo showcase: bóng bay + chân đá + vạt áo tung + halftone đập = 3–4 chuyển
+#    động CÙNG LÚC. Lô của tao chỉ 1,88 mệnh đề/shot ⇒ khung thiếu việc để mắt bám.
+# 🔴 KHO PHẢI LỚN HƠN LÔ, nếu không lặp là chuyện hiển nhiên chứ không phải rủi ro:
+#    6 loại cho 92 clip ⇒ mỗi cái **15–16 lần** (user: *"hiệu ứng lặp lại nhiều quá"*).
+#    24 accent × 16 nền = 384 cặp ⇒ mỗi cặp gần như không lặp trong 92 clip.
+#    ⚠️ Và lấy theo BƯỚC NGUYÊN TỐ CÙNG NHAU (7/5) chứ không `i % n` — modulo thẳng làm chu
+#    kỳ trùng với thứ tự scene nên mắt bắt ra quy luật ngay (bài học `x % N` ở CLAUDE.md §②).
+ACCENT = [
+    "a red paper triangle flicks in at one corner and sticks",
+    "a torn newsprint scrap sails right across the lens and out of frame",
+    "a yellow paper disc rolls in from the edge and stops dead",
+    "a strip of washi tape slaps down across one corner",
+    "a torn paper edge peels up and flaps once before lying flat",
+    "a cut-out zigzag snaps into place along the lower edge",
+    "a paper arrow swings in from the side and points hard into the frame",
+    "a cluster of halftone dots swells up from the background and fades back",
+    "a black paper star burst pops behind the subject and shrinks away",
+    "a folded paper corner unfolds itself flat with a snap",
+    "two thin paper rules slide in from opposite edges and cross",
+    "a cut-out circle drops from the top and bounces once on the surface",
+    "a torn strip of newspaper column slides up the left edge and stops",
+    "a small paper cross-hatch patch flips over and lands the other way up",
+    "a scalloped paper edge sweeps across the bottom of the frame",
+    "a stack of thin paper slips riffles open like a fan and closes",
+    "a paper dotted line stitches itself across the frame and stops",
+    "a torn hole opens in the background sheet, showing a flat colour beneath",
+    "a cut-out bracket shape clamps in from the left edge",
+    "a paper ribbon curls down from the top corner and swings",
+    "a row of punched paper holes marches in along one edge",
+    "a crumpled paper ball bounces through the lower frame and out",
+    "a pale paper shadow slides out from under the subject and settles",
+    "a hand-torn paper frame snaps around the subject for a beat and lets go",
+]
+PAPER_BED = [
+    "torn paper scraps scatter across the background and the halftone dots pulse hard",
+    "the whole stack of newsprint layers slides sideways and snaps into place",
+    "a paper accent triangle flies in from the edge and slaps down flat",
+    "the flat colour block behind swings across like a turning page",
+    "loose cut-out shapes tumble down through the frame and settle in a heap",
+    "the background sheet peels back at one corner and flattens again",
+    "columns of old newsprint slide past behind the subject",
+    "the halftone grain crawls hard across the whole frame",
+    "a second paper layer drops in behind and shunts everything forward",
+    "the backing sheet rocks once as if knocked, and everything on it jolts",
+    "paper offcuts sweep in from both edges and meet in the middle",
+    "the flat colour field splits along a torn seam and closes again",
+    "a wash of print misregistration shivers through the whole image",
+    "the layers fan apart a finger's width and slap back together",
+    "a broad paper band wipes across the background from left to right",
+    "the whole collage shunts a step to one side and settles",
+]
+
+# Chủ ngữ của mảnh giấy chính, suy từ khuôn — để câu mô tả đọc ra "mảnh giấy", không phải người thật.
+# Mỗi khuôn một DÃY biến thể, xoay theo chỉ số — bản một-câu-một-khuôn chỉ cho 46/92 câu
+# khác nhau, tức gần nửa số clip động y hệt nhau.
+KIND_MOVE = {
+    "META":   ["one paper shape swings down hard across the others and slams shut",
+               "the pieces burst apart from the centre and fly to the frame edges",
+               "a cut-out shape shoots in from off-screen and lands dead centre"],
+    "GAUGE":  ["the needle stays pinned flat while the whole dial rocks once and settles",
+               "the dial swings in from the side and locks, the needle refusing to move"],
+    "INFOG":  ["the blocks drop in one after another and bounce on landing",
+               "the connector arrows shoot out between the blocks and snap taut"],
+    "CROWD":  ["the crowd of paper figures surges forward a step together, the front cut-out "
+               "swinging round to face the camera",
+               "figures slide in from both edges and fill the frame, the nearest one turning",
+               "the queue shuffles forward and the front figure's arm swings up"],
+    "VIZ":    ["the stacked pieces shoot up one after another like a bar chart building fast",
+               "the arrangement scatters apart then snaps back into line",
+               "one piece flies right across the frame and knocks into the far stack"],
+    "HOLD":   ["the held sheet swings up into frame and slaps flat toward the camera",
+               "the paper sheet flips over on its hinge and lands face-on",
+               "the hand cut-out thrusts the sheet forward until it fills the frame"],
+    "SCREEN": ["the screen panel flies in from the side and locks square to camera",
+               "rows of cut-out strips slide up the screen face one after another",
+               "the panel swings open like a door and the figure's head snaps toward it"],
+    "DESK":   ["the objects on the table scatter outward and settle in new places",
+               "a stack of paper documents topples sideways across the desk",
+               "the desk layer whips past as the figure leans in hard"],
+}
+
+
+def _subject_move(kind: str, body: str, i: int) -> str:
+    b = body.lower()
+    if kind in KIND_MOVE:
+        v = KIND_MOVE[kind]
+        return v[i % len(v)]
+    # 🔴 CẢNH KHÔNG CÓ NGƯỜI thì chuyển động cũng không được nhắc người. Nhánh dưới bám cue
+    #    cơ thể (mắt/vai/cằm/tay) và rơi về mặc định "the figure cut-out leans…" — dán vào
+    #    cảnh hai hộp hồ sơ / hai bậc thang giấy là **tự thêm người vào khung** (đo 3/92).
+    #    Cùng bệnh với SHOT_FRAME ở trên: khối chung viết cho khuôn CÓ NGƯỜI, dán cho cả lô.
+    if not _PPL.search(body) or "no people in frame" in body:
+        OBJ = ["the two groups of cut-outs step apart a few millimetres and hold, the bare gap "
+               "between them widening a hair",
+               "one cut-out slides a centimetre along its paper track and stops against the next",
+               "the pieces settle onto the backing sheet one after another, each with a small "
+               "paper bounce",
+               "the nearest cut-out lifts a paper-thickness off the sheet and lowers again"]
+        return OBJ[i % len(OBJ)]
+
+    # PERSON / SPLIT / PANEL — bám đúng hành động đã viết trong scene
+    # 🔴 Kho phản ứng cũng phải PUNCHY. Bản đầu toàn "a few degrees and settles" — đúng
+    #    nghĩa `calm`, và nó kéo 30% lô về lại vi-động dù biên độ đã đổi sang punchy.
+    for cue, mv in (
+        ("eyes", "the eye cut-outs snap wide open and the brow strip flies up"),
+        ("mouth", "the mouth cut-out drops open and the head rocks back"),
+        ("shoulders", "the shoulder cut-outs slump hard and the head strip swings forward"),
+        ("chin", "the chin cut-out jerks up and the whole figure straightens with a snap"),
+        ("palm", "the palm cut-out swings up fast and stops dead in front of the face"),
+        ("hands", "both hand cut-outs fly up to the sides of the head and freeze"),
+        ("head", "the head cut-out whips round toward the camera and stops hard"),
+        ("nods", "the head cut-out snaps down once and springs back"),
+        ("bow", "the whole figure hinges forward into a deep bow and holds"),
+    ):
+        if cue in b:
+            return mv
+    return "the figure cut-out swings in from the frame edge and lands square to camera"
+
+
+# ── CHUYỂN ĐỘNG VIẾT TAY THEO TỪNG CẢNH ─────────────────────────────────────
+# 🔴 Kho chung xoay theo KHUÔN nên nó MÙ với cảnh viết tay: cảnh "bà + sổ + số 0" nhận phải
+#    câu "các mảnh xếp chồng bắn lên như biểu đồ cột". Cùng bệnh khối-chung-chọi-mô-tả, lần
+#    thứ bảy. ⇒ Cảnh nào viết tay thì chuyển động cũng phải viết tay, bám đúng vật trong khung.
+MOTION = {
+0:  'the passbook swings up into frame and slaps open toward the camera, and the huge red 0 drops in from the top edge and lands flat with a jolt',
+1:  'the document skates across the counter and stops dead under her hand, and the four torn calendar sheets fan out one after another beneath the big 4',
+5:  'the envelope is shoved into the slot and vanishes, and the row of paper gears spins up hard behind it',
+8:  'the documents scatter out across the desk and the three bars of the chart shoot up behind him one after another',
+10: 'the envelope thrusts forward until it fills the frame, and the three calendar sheets snap down into a row under the big 3',
+15: 'his pointing arm swings hard toward the empty box while the record cards in the left box fan up and spill over its rim',
+32: 'his shoulder cut-outs slump hard, and behind him the single bar shoots up, stops short of the dashed line and drops back',
+65: 'the calendar strip whips across the frame, the last two squares snap into their red rings and the big 2 slams down above them',
+73: 'the whole dial rocks once and settles while the needle stays pinned dead flat, and the taped string snaps taut across the dial face',
+75: 'the left bars climb fast step by step while the right row stays dead flat, and the card scissors snap shut on the end of the flat row',
+}
+
+
+# ⭐ chuyển động viết tay cho 78 cảnh còn lại (vòng 3)
+try:
+    from _collage_full23 import MOTION_V3
+    MOTION.update(MOTION_V3)
+except ImportError:
+    pass
+
+
+def element_motion(kind: str, body: str, i: int) -> str:
+    return (f"{_subject_move(kind, body, i)}; {PAPER_BED[(i * 5) % len(PAPER_BED)]}; "
+            f"{ACCENT[(i * 7) % len(ACCENT)]}")
+
+
+# ── CẢM XÚC + NỀN MÀU theo CHƯƠNG (beat nào thuộc chương nào) ───────────────────
+# Mốc = chỉ số scene mở chương, lấy từ chính bố cục `_scenes23.py`.
+CHAPTERS = [
+    (0,   "aged cream newsprint",     "quiet, close to home, faintly uneasy"),
+    (10,  "aged cream newsprint",     "matter-of-fact, documentary calm"),
+    # 🔴 `bg` rơi thẳng vào khuôn của vox-director: "on a bold flat {bg} paper background".
+    #    Viết "deep red on cream" ⇒ ra câu vô nghĩa "a bold flat deep red on cream paper
+    #    background" (8/92 prompt). Ô này chỉ nhận MỘT cụm màu — đừng nhét quan hệ vào.
+    (19,  "deep red",                 "a quiet clock ticking, money slipping away"),
+    (29,  "mustard yellow",           "sorting things out, methodical"),
+    (52,  "aged cream newsprint",     "a door closing, then three ways out"),
+    (62,  "deep red",                 "personal, regretful, close"),
+    (81,  "charcoal grey",            "a hard stop, the most serious beat"),
+    (91,  "mustard yellow",           "practical, hands-on, reassuring"),
+    (106, "aged cream newsprint",     "summing up, warm and steady"),
+]
+
+
+def chapter_of(i: int):
+    bg, feel = CHAPTERS[0][1], CHAPTERS[0][2]
+    for start, b, f in CHAPTERS:
+        if i >= start:
+            bg, feel = b, f
+    return bg, feel
+
+
+def main():
+    # 🔴 Nuốt stdout để khỏi in lại bảng 118 scene — NHƯNG phải trả lại VÀ in ra khi gate đỏ,
+    #    nếu không `plan23` gọi sys.exit(1) mà thông báo nằm trong buffer ⇒ tool chết IM LẶNG,
+    #    exit 1 không một dòng chữ. Đã dính đúng thế 2026-09-12.
+    real = sys.stdout
+    buf = io.TextIOWrapper(io.BytesIO(), encoding="utf-8", errors="replace")
+    sys.stdout = buf
+    try:
+        rows = build()
+    except SystemExit:
+        sys.stdout = real
+        buf.seek(0)
+        print(buf.read())
+        raise
+    finally:
+        sys.stdout = real
+
+    # 🔴 CHIA ĐỀU TRONG KHỐI, KHÔNG THEO SCENE. Bài học 14 của video 22: neo từng khe vào
+    #    scene chủ thì scene 12,5s được 1 clip ⇒ speed 0,64 = slow-motion nhìn ra ngay.
+    #    Builder Remotion chia theo khối, nên `dur` ghi vào beats.json phải cùng đơn vị —
+    #    nếu không user gen theo một con số mà bản dựng dùng con số khác.
+    win = {}
+    cur = []
+    for r in rows + [dict(kind="_end", i=-1, dur=0.0, nshot=0)]:
+        if r["kind"] == "art":
+            cur.append(r)
+        else:
+            if cur:
+                d = sum(x["dur"] for x in cur)
+                n = sum(x["nshot"] for x in cur)
+                for x in cur:
+                    win[x["i"]] = d / n
+            cur = []
+
+    beats, nshot = [], 0
+    for r in rows:
+        if r["kind"] != "art" or r["nshot"] == 0:
+            continue
+        kind = flow23_full.classify(r["body"])
+        body = r["body"].split(":", 1)[1].strip() if kind != "PERSON" else r["body"]
+        bg, feel = chapter_of(r["i"])
+        # telop là chữ của Remotion, KHÔNG vào ảnh — nó chỉ làm nhãn cho beat
+        plain = r["telop"].replace("{", "").replace("}", "").replace("\n", " ")
+        shots = []
+        for k in range(r["nshot"]):
+            dur = round(win[r["i"]], 1)
+            shots.append({
+                "id": chr(ord("a") + k),
+                "dur": dur,
+                # 🔴 title=False ở MỌI shot: headline do telop Remotion vẽ. Bật True là xin
+                #    generator viết chữ Nhật lên poster — vùng nó hỏng nặng nhất.
+                "title": False,
+                "shot_size": (SHOT_SIZE.get(kind, "MEDIUM") if r["nshot"] == 1
+                              else _FR(body)[k % 5][1]),
+                "camera_move": _cam_for(kind, _close(body, r["nshot"], k), nshot),
+                # scene 1 clip giữ nguyên cỡ theo khuôn; scene nhiều clip thì MỖI shot một
+                # cách dựng khác, nếu không hai poster ra giống hệt nhau.
+                "scene": (_enrich(body, kind, r["i"], nshot, _close(body, r["nshot"], k))
+                          + ("" if r["nshot"] == 1 else _FR(body)[k % 5][0])
+                          + GUARD),
+                "element_motion": (MOTION[r["i"]] + "; "
+                                   + ACCENT[(nshot * 7) % len(ACCENT)]
+                                   if r["i"] in MOTION
+                                   else element_motion(kind, r["body"], nshot)),
+            })
+            nshot += 1
+        beats.append({"id": r["i"], "title_cn": plain, "title_en": f"SCENE {r['i']} · {kind}",
+                      "bg": bg, "feel": feel, "shots": shots})
+
+    doc = {
+        "project": "nenkin-23",
+        "topic": "年金請求書が届かない — 請求しなければ一円も振り込まれない / 時効は五年",
+        "language": "ja",
+        "aspect": "16:9",
+        "style": "collage",
+        "theme": "newsprint-editorial",
+        "collage_style": (
+            "Vintage newsprint editorial paper collage in the style of a mid-century JAPANESE "
+            "front-page news feature: bold cut-out photographs and illustrations laid over an "
+            "aged broadsheet newspaper page, heavy halftone print dots, aged newsprint texture "
+            "with slight ink misregistration, tactile editorial calm — reads like a newspaper "
+            # 🔴 CHỈ giữ viền trắng die-cut (đo được trên từng cut-out của showcase). Câu "nền giữ
+        # THƯA, chỉ vài mảnh accent" là tao SUY, và nó chọi thẳng khối mechanics của
+        # vox-director ngay dưới ("scattered geometric paper accents…") — 92/92 prompt.
+        "feature spread brought to life, not an advertisement. Every cut-out carries a thick "
+            "white die-cut sticker border around its edge."),
+        # 🔴 "max" (nấc cuối) — user: *"sinh động hơn tí nữa"*. Trước đó đã đi calm → punchy. Đo `assets/showcase-football.mp4`: MAD trung vị **5,15**,
+        # **46,6% frame động mạnh**, bóng bay ngang nửa khung trong 3 giây. Hai showcase của
+        # vox-director đều để trống khoá này ⇒ nhận mặc định **punchy**; còn theme
+        # `newsprint-editorial` lại ép `calm` ⇒ để trống là dính calm. Phải khai tường minh.
+        "motion_style": "max",
+        "constraints": "strict",
+        "note": ("Chi dung stage KEYFRAME + CLIPS (print_prompts.py / print_motion.py, duong "
+                 "FREE). Voice/music/assemble cua vox-director KHONG dung: giong da co "
+                 "(VOICEVOX 雀松朱司 + tag nhan nha), telop/phu de/CTA/watermark/the stat-genten "
+                 "do Remotion cua nenkin lo. Nguon su that van la tools/_scenes23.py."),
+        "beats": beats,
+    }
+    os.makedirs(OUT, exist_ok=True)
+    with io.open(os.path.join(OUT, "beats.json"), "w", encoding="utf-8") as f:
+        json.dump(doc, f, ensure_ascii=False, indent=2)
+
+    import collections
+    kc = collections.Counter(b["title_en"].split("· ")[1] for b in beats)
+    cam = collections.Counter(s["camera_move"] for b in beats for s in b["shots"])
+    print(f"⭐ {len(beats)} beat · {nshot} shot -> {OUT}\\beats.json")
+    print(f"   khuôn: {dict(kc)}")
+    print(f"   cú máy: {dict(cam)}")
+    print(f"   dur/shot: {min(s['dur'] for b in beats for s in b['shots']):.1f}"
+          f"–{max(s['dur'] for b in beats for s in b['shots']):.1f}s")
+
+    # ── chạy 2 dumper của vox-director rồi ĐỔ PROMPT VỀ FOLDER VIDEO ───────────
+    # 🔴 Vì sao nối liền một lệnh thay vì bảo user chạy 3 bước: `beats.json` phải nằm trong
+    #    `out/<project>/` thì script của vox-director mới đọc được, nhưng chỗ user LÀM VIỆC
+    #    là `06_VIDEO/<slug>/`. Tách ba bước thì sớm muộn hai nơi lệch nhau, và không ai
+    #    biết bản nào mới (đúng bệnh "tài liệu chỏi code" đã ghi ở CLAUDE.md §②).
+    sync(doc)
+
+
+VD = (r"E:\Claude\Projects\youtube-jp-nenkin\06_VIDEO"
+      r"\23_nenkin-seikyusho-todokanai")
+VOX = r"E:\vox-director"
+
+
+# ── ② DÀN PHỤ TRONG KHUNG ───────────────────────────────────────────────────
+# 🔴 Đo lô trước: **0,9 người/khung, chỉ 2/92 khung có ≥2 người**, và 78/92 là đúng một
+#    "elderly man/woman" (user: *"nhân vật trong 1 khung hình cũng không đa dạng"*).
+#    Mẫu showcase thì khung nào cũng có lớp người phía sau. ⇒ thêm 1 dàn phụ cho mọi
+#    khung ĐÃ CÓ người; khung ẩn dụ vật thuần (META/GAUGE) thì KHÔNG — ở đó vắng người
+#    chính là nghĩa.
+# 🔴 GẮN CỜ XA/GẦN TƯỜNG MINH, đừng dò bằng cụm từ. Bản đầu dùng regex `_FAR` và nó hụt
+#    "stands further back" · "at the far side" · "lines the back of the frame" ⇒ vẫn dán
+#    người-đứng-xa vào khung cắt sát. Đúng bài học đã ghi ở khoá `_tbl`: **cụm-hoá một phép
+#    thử vốn là "cái này ở xa hay gần" thì lần nào cũng thiếu một biến thể.**
+#    (text, ở_XA) — ở_XA = chỉ dùng được khi khung KHÔNG cắt sát.
+EXTRAS = [
+    ("a second elderly woman with a grey bun cut from photographic paper waits a step behind", False),
+    ("an elderly man in a flat cap cut from photographic paper stands further back, half turned away", True),
+    ("a middle-aged daughter in a plain cardigan cut from photographic paper leans in from the edge", False),
+    ("a young female clerk in a navy vest cut from photographic paper stands at the far side", True),
+    ("two more elderly cut-out figures queue in the background, softly out of focus", True),
+    ("a postman cut from photographic paper crosses the far background with a satchel", True),
+    ("an elderly couple cut from photographic paper sit small in the deep background", True),
+    ("a grandchild cut from photographic paper stands at knee height beside the main figure", False),
+    ("a row of four seated elderly cut-outs lines the back of the frame", True),
+    ("an office worker in shirtsleeves cut from photographic paper passes behind, mid-stride", True),
+    ("a neighbour in an apron cut from photographic paper stands just inside the frame edge", False),
+    ("an elderly man's hand and shoulder cut-out enter from the near edge of the frame", False),
+]
+# ── ③ LỚP BIỂU ĐỒ + CON SỐ ─────────────────────────────────────────────────
+# Biểu đồ KHÔNG cần số nên dán được ở mọi cảnh; CON SỐ thì ⚖️ chỉ lấy từ `_truenum23.json`
+# (số trích từ CHÍNH lời đọc của cảnh đó) — không có số thật thì không dán số.
+CHARTS = [
+    "a small paper bar chart of three bars pinned flat on the background",
+    "a paper pie wheel cut from two colours of card leaning against the wall behind",
+    "a row of paper tally marks torn into the background sheet",
+    "a stepped paper line graph taped across the back wall",
+    "a paper thermometer strip standing at the side of the frame",
+    "a column of paper coins stacked as a height chart at the frame edge",
+    "a paper flow arrow bent through two right angles across the background",
+    "a grid of blank paper squares pinned behind like a wall calendar",
+]
+_HAS_CHART = re.compile(r"(bar chart|gauge|calendar|stair|balance|timeline|grid|conveyor|"
+                        r"channel|hourglass|tally|line graph|pie wheel|thermometer)", re.I)
+try:
+    _TRUENUM = json.load(io.open(os.path.join(os.path.dirname(__file__),
+                                              "_truenum23.json"), encoding="utf-8"))
+except Exception:
+    _TRUENUM = {}
+
+
+# 🔴 CẢNH MÀ SỰ VẮNG MẶT LÀ NGHĨA — cấm cả dàn phụ lẫn biểu đồ.
+#    Dính ở beat 104 「生活費の空白」: lời viết *"một hình người nhỏ đứng MỘT MÌNH trong
+#    khoảng trống"* rồi lớp làm-giàu nhét thêm ba người và một mũi tên vào đúng chỗ trống đó.
+#    Cô độc + khoảng trống chính là thứ cảnh ấy bán. Đây là lần thứ TÁM của bệnh
+#    khối-chung-chọi-mô-tả — cứ thêm một lớp tự động là phải hỏi "lớp này huỷ nghĩa của
+#    cảnh nào không?".
+_SOLO = re.compile(r"(standing alone|alone in|no people in frame|only one|by himself|"
+                   r"by herself|a single figure|empty|bare stretch|deserted)", re.I)
+
+
+def _enrich(body: str, kind: str, scene: int, i: int, close: bool = False) -> str:
+    """Thêm dàn phụ · biểu đồ · con số THẬT vào mô tả cảnh."""
+    out = body.rstrip(". ")
+    solo = bool(_SOLO.search(body))
+    # dàn phụ: chỉ cho khung đã có người, không phải ẩn dụ vật thuần, và KHÔNG phải cảnh cô độc
+    if kind not in ("META", "GAUGE", "INFOG") and _PPL.search(body)             and "no people in frame" not in body and not solo:
+        out += ", and " + _extra_for(close, i)
+    # biểu đồ: cảnh nào chưa có quan hệ trực quan thì thêm — trừ cảnh sống bằng khoảng trống
+    if not _HAS_CHART.search(body) and not solo:
+        out += ", with " + CHARTS[(i * 5) % len(CHARTS)]
+    # con số: CHỈ số có thật trong lời đọc của chính cảnh đó
+    if "numeral" not in body:
+        ns = _TRUENUM.get(str(scene)) or []
+        if ns:
+            v = f"{ns[-1]:,}"
+            out += f", and a big numeral {v} cut from coloured card pasted flat on the background"
+    return out + "."
+
+
+# 🔴 KHUNG QUYẾT ĐỊNH TRƯỚC — máy quay và dàn phụ phải CHỌN THEO NÓ, không rút độc lập.
+#    Rút độc lập sinh hai cặp vô lý, đo được trên lô: ③ crop SÁT mà máy "pull-out revealing
+#    the FULL scene" (7/92) · ④ crop SÁT mà dàn phụ đứng ở "far background" (2/92).
+#    Cùng họ với bẫy "quyết định sớm bằng dữ liệu chưa đủ" đã dính ở khoá `_tbl`.
+
+def _close(body: str, nshot_scene: int, k: int) -> bool:
+    """Shot này có phải khung CẮT SÁT không — suy từ chính biến thể bố cục sẽ dùng."""
+    if nshot_scene == 1:
+        return False
+    return _FR(body)[k % 5][1] == "CLOSE"
+
+
+def _cam_for(kind: str, close: bool, i: int):
+    pool = CAM.get(kind, ["static"])
+    if close:                      # crop sát thì KHÔNG lùi máy để lộ toàn cảnh
+        pool = [c for c in pool if c != "pull_out"] or ["push_in"]
+    return pool[i % len(pool)]
+
+
+def _extra_for(close: bool, i: int) -> str:
+    pool = [t for t, far in EXTRAS if not (close and far)]
+    return pool[(i * 3) % len(pool)]
+
+
+def _FR(body: str):
+    """Chọn dãy bố cục theo CẢNH CÓ NGƯỜI hay KHÔNG — xem ghi chú ở SHOT_FRAME_OBJ."""
+    return SHOT_FRAME if _PPL.search(body) and "no people in frame" not in body         else SHOT_FRAME_OBJ
+
+
+def merge_prompt(beat, shot) -> str:
+    """Gộp prompt POSTER + prompt CHUYỂN ĐỘNG thành MỘT prompt t2v (user chốt 2026-09-12).
+
+    ⚖️ ĐÁNH ĐỔI, ghi thẳng để sau không "phát hiện lại": README của vox-director nói nguyên
+       tắc số 1 của nó là *"The look is born in the image step — if the poster isn't a rich
+       collage, nothing downstream saves it"*. Đi một bước t2v là **mất cửa duyệt poster
+       trước khi animate**: hỏng chất giấy thì chỉ biết sau khi clip đã ra. Đổi lại: 92 lượt
+       gen thay vì 92 ảnh + 92 i2v, và không phải upload ảnh làm start-frame.
+       ⇒ Bù bằng LOT1: gen 10 clip phủ đủ khuôn, soi chất giấy, rồi mới chạy 82 cái còn lại.
+
+    🔴 BA CÂU PHẢI BỎ khi gộp — chúng đều GIẢ ĐỊNH CÓ ẢNH ĐẦU VÀO, giữ lại là prompt tự nói
+       về một tấm ảnh không tồn tại (đúng bệnh "khối chung chọi mô tả" đã dính 4 lần):
+         · "Animate this still into …"            → đổi thành lời khai đây là shot ĐỘNG
+         · "Animate the motion only; don't re-render the picture."  → bỏ
+         · AESTHETIC + COLOR của khối motion      → bỏ, khối collage đã tả giàu hơn hẳn
+    """
+    kf = shot["keyframe_prompt"].strip()
+    tail = " Aspect ratio 16:9."
+    if kf.endswith(tail):
+        kf = kf[: -len(tail)]
+
+    cam = elem = feel = guard = ""
+    for ln in shot["motion_prompt"].split("\n"):
+        ln = ln.strip()
+        if ln.startswith("CAMERA"):
+            cam = ln
+        elif ln.startswith("ELEMENT MOTION"):
+            elem = ln
+        elif ln.startswith("FEEL:"):
+            feel = ln
+        elif ln.startswith("CONSTRAINTS:"):
+            guard = ln.replace(" Animate the motion only; don't re-render the picture.", "")
+    out = ("A mixed-media paper-collage MOTION GRAPHIC — a MOVING SHOT, not a still image; "
+           "everything in frame is printed, hand-cut paper, never photoreal live action. "
+           f"{kf} {cam} {elem} {feel} {guard} Aspect ratio 16:9.")
+    # 🔴 Hai cụm SÓT LẠI của đường hai-bước, quét ra 92/92: cả hai đều trỏ tới một tấm ảnh
+    #    không tồn tại trong t2v. Dịch sang ngôn ngữ VIDEO, đừng để prompt tự nói về poster.
+    # 🔴 "Keep the layout stable" là guard của `constraints: strict`, viết cho explainer
+    #    NHIỀU CHỮ. Ở biên độ `max` (*"elements burst, scatter and fly boldly"*) nó chọi thẳng
+    #    — bảo bung toé rồi lại bảo giữ nguyên bố cục. Bỏ ĐÚNG câu đó, GIỮ ba guard còn lại
+    #    (phẳng 2D · không xoay 3D · giấy cứng không morph/melt) vì chúng bảo vệ chất giấy.
+    return (out.replace("Keep the layout stable. ", "")
+               .replace("anywhere in the image", "anywhere in the frame")
+               .replace("camera parallel to the poster",
+                        "the camera parallel to the flat paper surface"))
+
+
+def sync(doc):
+    """Chạy print_prompts + print_motion, rồi copy prompt + sinh TENFILE/LOT vào folder video."""
+    import shutil
+    import subprocess
+    for tool in ("print_prompts.py", "print_motion.py"):
+        r = subprocess.run([sys.executable, os.path.join("scripts", tool), "out/nenkin-23"],
+                           cwd=VOX, capture_output=True, text=True)
+        if r.returncode:
+            print(f"🔴 {tool} lỗi:\n{r.stdout}\n{r.stderr}")
+            sys.exit(1)
+
+    doc = json.load(io.open(os.path.join(OUT, "beats.json"), encoding="utf-8"))
+    shots = [(b, s, f"{b['id']}{s['id']}") for b in doc["beats"] for s in b["shots"]]
+
+    os.makedirs(VD, exist_ok=True)
+    shutil.copyfile(os.path.join(OUT, "beats.json"), os.path.join(VD, "vox23_beats.json"))
+
+    # ── GỘP THÀNH MỘT PROMPT t2v DUY NHẤT (user chốt 2026-09-12) ──────────────
+    merged = [merge_prompt(b, s) for b, s, _k in shots]
+    io.open(os.path.join(VD, "vox23_FLOW.txt"), "w", encoding="utf-8").write(
+        "\n".join(p.replace("\n", " ") for p in merged) + "\n")
+
+    # 🔴 TENFILE — vox-director KHÔNG sinh cái này, mà thiếu nó là hỏng đúng chỗ đã dính ở
+    #    lô i2v video 22: *"Tên clip Flow KHÔNG mang shot-id, nó là caption sinh từ prompt"*
+    #    ⇒ không có sổ dòng↔tên file thì lúc ingest phải map lại bằng mắt cả lô.
+    io.open(os.path.join(VD, "vox23_TENFILE.txt"), "w", encoding="utf-8").write("\n".join(
+        f"dong {i+1:>3} -> clips/clip_{k}.mp4   [beat {b['id']:>3} · "
+        f"{b['title_en'].split('· ')[1]:<6} · {s['shot_size']:<6} · {s['camera_move']:<9} · "
+        f"{s['dur']:>4.1f}s]  {b['title_cn']}"
+        for i, (b, s, k) in enumerate(shots)) + "\n")
+
+    md = ["# vox23 — prompt LỚP HÌNH video 23 (paper-collage, MỘT prompt/clip)", "",
+          f"**{len(shots)} clip** · theme `newsprint-editorial` · 16:9 · t2v một bước "
+          "(poster + chuyển động gộp chung, không có khâu ảnh trung gian).", "",
+          "Bơm `vox23_FLOW.txt` vào extension theo đúng thứ tự; lưu ra tên ở "
+          "`vox23_TENFILE.txt`. Loại ngay clip nào ra chất phim thật, có chữ, hoặc xoay 3D.",
+          ""]
+    for i, ((b, s, k), p) in enumerate(zip(shots, merged), 1):
+        md += [f"### {i}. `clips/clip_{k}.mp4` — {b['title_cn']}  "
+               f"({b['title_en'].split('· ')[1]} · {s['shot_size']} · {s['camera_move']} · "
+               f"{s['dur']:.1f}s)", "", "```", p, "```", ""]
+    io.open(os.path.join(VD, "vox23_PROMPTS.md"), "w", encoding="utf-8").write("\n".join(md))
+
+    # ── LOT1: gen THỬ trước, phủ đủ mọi khuôn ────────────────────────────────
+    # Lô 16 clip của video 21 hỏng CẢ LÔ vì lỗi cấp khuôn; ở collage rủi ro còn cao hơn vì
+    # nếu poster không ra chất giấy thì KHÔNG khâu nào phía sau cứu được (README vox-director).
+    # 🔴 LÔ DUYỆT PHẢI GHIM CỨNG, KHÔNG ĐƯỢC TỰ CHỌN LẠI MỖI LẦN CHẠY.
+    #    Bản đầu chọn "scene đầu tiên của mỗi khuôn" ⇒ sửa nội dung làm khuôn đổi ⇒ LÔ ĐỔI
+    #    THÀNH PHẦN theo. Vá 5 vòng vẫn không hội tụ: vá xong lô lại chọn cảnh chưa vá.
+    #    Lô mà user đang duyệt thì phải đứng yên, nếu không "duyệt OK" chẳng nói về cái gì cả.
+    LOT1_SCENES = [0, 1, 5, 8, 10, 15, 32, 65, 73, 75]
+    lot, seen = [], {}
+    for i, (b, s, k) in enumerate(shots):
+        kd = b["title_en"].split("· ")[1]
+        if b["id"] in LOT1_SCENES and b["id"] not in [x[1]["id"] for x in lot]:
+            seen[kd] = 1
+            lot.append((i, b, s, k))
+    io.open(os.path.join(VD, "vox23_LOT1.txt"), "w", encoding="utf-8").write(
+        "\n".join(merged[i].replace("\n", " ") for i, _b, _s, _k in lot) + "\n")
+    io.open(os.path.join(VD, "vox23_LOT1_TENFILE.txt"), "w", encoding="utf-8").write("\n".join(
+        f"dong {j+1:>2} -> clips/clip_{k}.mp4   [beat {b['id']} · "
+        f"{b['title_en'].split('· ')[1]} · {s['shot_size']} · {s['dur']:.1f}s]  {b['title_cn']}"
+        for j, (_i, b, s, k) in enumerate(lot)) + "\n")
+
+    L = [len(p) for p in merged]
+    print(f"\n📁 ĐÃ ĐỔ VỀ {VD}")
+    print(f"   vox23_FLOW.txt        {len(merged):>3} prompt — MỘT prompt/clip (poster + "
+          f"chuyển động gộp chung), {min(L)}–{max(L)} ký")
+    print(f"   vox23_TENFILE.txt         sổ dòng ↔ clips/clip_<key>.mp4")
+    print(f"   vox23_LOT1.txt            {len(lot)} shot GEN THỬ TRƯỚC (đủ "
+          f"{len(seen)} khuôn: {' '.join(seen)})")
+    print(f"   vox23_PROMPTS.md · vox23_beats.json")
+
+
+if __name__ == "__main__":
+    main()

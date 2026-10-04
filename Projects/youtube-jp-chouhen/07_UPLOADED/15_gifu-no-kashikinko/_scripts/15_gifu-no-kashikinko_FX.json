@@ -1,0 +1,37 @@
+{
+  "speakers": {"富代": "villain", "隆史": "villain", "慶子": "hero", "重田": "other", "野村": "other", "落合": "other"},
+  "lines": [
+    {"match": "「その番号はね、昨日で終わりにしたの」", "speaker": "富代"},
+    {"match": "「荷物なら後で送ってやる。", "speaker": "隆史"},
+    {"match": "「専業主婦のくせに、探偵の真似事か」", "speaker": "隆史"},
+    {"match": "「荷物なら、後で送ります」", "speaker": "慶子"},
+    {"match": "「確かめたことが、一度でもありますか」", "speaker": "慶子"},
+    {"match": "「わしは監事だがね。", "speaker": "重田"},
+    {"match": "「数字は、嘘をつきません」", "speaker": "慶子"},
+    {"match": "佐々木慶子の物です」", "speaker": "慶子"}
+  ],
+  "events": [
+    {"type": "ambience", "from": "集合玄関の通話口から", "to": "その中にあった", "name": "rain_window", "gain": -24},
+    {"type": "ambience", "from": "翌朝、私はもう一度マンションへ向かった", "to": "こちらも手順で応えるまでだった", "name": "rain_window", "gain": -25},
+    {"type": "ambience", "from": "母が眠る病室の簡易寝台の上で", "to": "雨ざらしで終わったのだ", "name": "hospital_night", "gain": -25},
+    {"type": "ambience", "from": "落合先生は、白い手袋を外してから", "to": "だから義父は、紙と声を遺したのだ", "name": "room_still", "gain": -27},
+    {"type": "ambience", "from": "七月の第一土曜、集会室に十八戸の住人が集まった", "to": "父親が、息子の字を選んで残した意味を", "name": "office_hum", "gain": -24},
+    {"type": "ambience", "from": "解任の決議は、賛成十五、反対二、白票一で可決された", "to": "扇子は、いつの間にか止まっていた", "name": "office_hum", "gain": -25},
+    {"type": "ambience", "from": "それから十日ほどした、夜のことだ", "to": "知らない他人のものだった", "name": "rain_window", "gain": -26},
+
+    {"type": "sfx", "match": "赤い文字が、同じ形で点滅した", "name": "sub_drop", "offset": -0.2, "gain": -7},
+    {"type": "sfx", "match": "バス停までの道で、スマートフォンが震えた", "name": "phone_buzz", "offset": -0.2, "gain": -8},
+    {"type": "sfx", "match": "所有者の欄に、私の名前があった", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "その夜から、鬼のような着信が始まった", "name": "phone_buzz_urgent", "offset": 0.2, "gain": -8},
+    {"type": "sfx", "match": "テープが終わるまで、誰も動かなかった", "name": "heartbeat", "offset": 0.4, "gain": -9},
+    {"type": "sfx", "match": "懲戒解雇の知らせと", "name": "sub_drop", "offset": -0.2, "gain": -7},
+
+    {"type": "bgm_tense_cut", "from": "その時、後ろの席で、落合先生が静かに立った", "cut": "釦を押すと、カチ、と小さな音がした", "resume": "「数字は、嘘をつきません」"},
+    {"type": "bgm_swell", "from": "総会の話は、その週のうちに商店街を一回りした", "to": "私は笑う気にもなれなかった"},
+
+    {"type": "card", "match": "「その番号はね、昨日で終わりにしたの」", "text": "その番号は昨日で終わりにしたの", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "水道も電気も止めてやる。", "text": "水道も電気も止めてやる", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "「数字は、嘘をつきません」", "text": "数字は、嘘をつきません", "style": "hero", "hold": 1.4},
+    {"type": "card", "match": "佐々木慶子の物です」", "text": "はい。佐々木慶子の物です", "style": "hero", "hold": 1.4}
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "speakers": {
+    "典子": "hero",
+    "美穂": "hero",
+    "庄一郎": "hero",
+    "神谷": "hero",
+    "菊枝": "villain",
+    "邦彦": "villain",
+    "理恵": "villain"
+  },
+  "lines": [
+    {
+      "match": "あなたは、他人なんだから",
+      "speaker": "菊枝"
+    },
+    {
+      "match": "判だけ押して、帰ってくれる？",
+      "speaker": "菊枝"
+    },
+    {
+      "match": "印鑑はね、こっちで用意しておいたから",
+      "speaker": "理恵"
+    },
+    {
+      "match": "美穂は、一度も来ておりませんが",
+      "speaker": "典子"
+    },
+    {
+      "match": "孫の判なんて、誰が押しても同じでしょう",
+      "speaker": "菊枝"
+    },
+    {
+      "match": "本家の墓に入れたわよ",
+      "speaker": "菊枝"
+    },
+    {
+      "match": "私は、他人です",
+      "speaker": "典子"
+    },
+    {
+      "match": "死んだ人間の嫁に、権利はないだろう",
+      "speaker": "邦彦"
+    },
+    {
+      "match": "これ、はんこ代",
+      "speaker": "理恵"
+    },
+    {
+      "match": "ゴミでしょう、あんなもの",
+      "speaker": "菊枝"
+    },
+    {
+      "match": "これは、あんたの、ぶんだ",
+      "speaker": "庄一郎"
+    },
+    {
+      "match": "ですが、他人にだけ認められている請求が、一つあります",
+      "speaker": "神谷"
+    },
+    {
+      "match": "明日から、他人に戻りますので",
+      "speaker": "典子"
+    },
+    {
+      "match": "私、行く",
+      "speaker": "美穂"
+    },
+    {
+      "match": "この書面は、無効です",
+      "speaker": "神谷"
+    },
+    {
+      "match": "他人は、私のほうです",
+      "speaker": "典子"
+    },
+    {
+      "match": "押してません",
+      "speaker": "美穂"
+    },
+    {
+      "match": "他人の名前で判を押して、書類を作ることを、私文書偽造といいます",
+      "speaker": "神谷"
+    },
+    {
+      "match": "他人だからです",
+      "speaker": "神谷"
+    },
+    {
+      "match": "九年、誰が払ってたんだ、これ",
+      "speaker": "邦彦"
+    },
+    {
+      "match": "私、証言します",
+      "speaker": "理恵"
+    },
+    {
+      "match": "取り下げません",
+      "speaker": "典子"
+    },
+    {
+      "match": "私も、他人だったのよ",
+      "speaker": "菊枝"
+    },
+    {
+      "match": "九年も置いてあげたけどね",
+      "speaker": "菊枝"
+    },
+    {
+      "match": "二十年、六人の従業員を食わせてきたんだ",
+      "speaker": "邦彦"
+    },
+    {
+      "match": "取り壊しの実測だ",
+      "speaker": "邦彦"
+    },
+    {
+      "match": "戸沢先生に、お電話なさいますか",
+      "speaker": "典子"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "菩提寺の広間だった",
+      "to": "石段の下から、川の音がしていた",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "sfx",
+      "match": "あなたは、他人なんだから",
+      "name": "sub_drop",
+      "offset": 0.0,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "印鑑はね、こっちで用意しておいたから",
+      "name": "sub_drop",
+      "offset": 0.1,
+      "gain": -7
+    },
+    {
+      "type": "card",
+      "match": "孫の判なんて、誰が押しても同じでしょう",
+      "text": "孫の判なんて、誰が押しても同じ",
+      "style": "villain",
+      "hold": 1.4
+    },
+    {
+      "type": "sfx",
+      "match": "そして、深く、頭を下げた",
+      "name": "sub_drop",
+      "offset": 0.15,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "今日の塔婆料も",
+      "name": "sub_drop",
+      "offset": 0.1,
+      "gain": -6
+    },
+    {
+      "type": "ambience",
+      "from": "最初の三か月、義父は私に触られるのを嫌がった",
+      "to": "それが、私の九年だった",
+      "name": "hospital_night",
+      "gain": -25
+    },
+    {
+      "type": "sfx",
+      "match": "三つ数えたところで、義父が、また息をした",
+      "name": "heartbeat",
+      "offset": -0.3,
+      "gain": -8
+    },
+    {
+      "type": "card",
+      "match": "これは、あんたの、ぶんだ",
+      "text": "これは、あんたの、ぶんだ",
+      "style": "hero",
+      "hold": 1.6
+    },
+    {
+      "type": "ambience",
+      "from": "神谷先生は、四十代の女性の弁護士だった",
+      "to": "先生の手が、初めて止まった",
+      "name": "office_hum",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "四月の半ば、理恵さんが離れに来た",
+      "to": "理恵さんは、折り詰めを置いて、帰った",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "五月三日、実家の座敷に、親戚が九人集まった",
+      "to": "たった一度も、頭を下げずに",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "神谷先生が、蓋を開けた",
+      "cut": "特別寄与料として、一千六百万円を請求します",
+      "resume": "他人だからです"
+    },
+    {
+      "type": "sfx",
+      "match": "他人だからです",
+      "name": "sub_drop",
+      "offset": 0.0,
+      "gain": -5
+    },
+    {
+      "type": "card",
+      "match": "他人だからです",
+      "text": "他人だからです",
+      "style": "hero",
+      "hold": 1.8
+    },
+    {
+      "type": "sfx",
+      "match": "典子さん、九年、ありがとう",
+      "name": "heartbeat",
+      "offset": 0.0,
+      "gain": -9
+    },
+    {
+      "type": "card",
+      "match": "典子さん、九年、ありがとう",
+      "text": "典子さん、九年、ありがとう",
+      "style": "hero",
+      "hold": 2.0
+    },
+    {
+      "type": "sfx",
+      "match": "その日の午後、邦彦さんの携帯が鳴り続けたそうだ",
+      "name": "phone_buzz_urgent",
+      "offset": 0.2,
+      "gain": -8
+    },
+    {
+      "type": "bgm_swell",
+      "from": "その日の午後、邦彦さんの携帯が鳴り続けたそうだ",
+      "to": "あの朱色の丸が、二十年を、消したのだ"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "match": "去年、受け取る権利があったお金を",
+    "photo": true
+  },
+  {
+    "match": "気づかないまま、5年、10年と",
+    "photo": true,
+    "q": "worried elderly japanese person looking at documents and bank passbook at home"
+  },
+  {
+    "match": "こんにちは、年金と老後のお金研究室です",
+    "photo": false,
+    "lines": [
+      "年金と老後のお金研究室"
+    ],
+    "accent": true
+  },
+  {
+    "match": "今日は、この見落とされがちな給付金を",
+    "photo": false,
+    "lines": [
+      "今日の研究",
+      "申請しないと消える給付金"
+    ]
+  },
+  {
+    "match": "まず、この給付金が、どういうものか",
+    "photo": false,
+    "lines": [
+      "第1章",
+      "給付金とは"
+    ]
+  },
+  {
+    "match": "収入が一定より少ない方に、年金へ上乗せ",
+    "photo": true,
+    "q": "smiling senior asian woman holding cash money relieved at home"
+  },
+  {
+    "match": "2019年、消費税が10パーセントに上がった",
+    "photo": true,
+    "q": "japanese shopping receipt consumption tax coins on table"
+  },
+  {
+    "match": "金額は、老齢の場合、満額で、月におよそ5,620円",
+    "photo": true,
+    "diagram": "g_amount"
+  },
+  {
+    "match": "種類は、大きく三つ",
+    "photo": true,
+    "diagram": "g_types"
+  },
+  {
+    "match": "条件は、三つの関門で、確かめられます",
+    "photo": true,
+    "diagram": "g_gates"
+  },
+  {
+    "match": "ここで、モニターの、伊藤さんに登場",
+    "photo": true,
+    "cast": "ito_cafe",
+    "label": "伊藤さん(68)・福岡"
+  },
+  {
+    "match": "関門その1。「65歳以上で",
+    "photo": true,
+    "diagram": "g_gate1"
+  },
+  {
+    "match": "関門その2。「世帯全員が",
+    "photo": true,
+    "diagram": "g_gate2"
+  },
+  {
+    "match": "働いているお子さんと同居していて",
+    "photo": true,
+    "q": "japanese three generation family living together at home"
+  },
+  {
+    "match": "関門その3。「前年の年金収入と",
+    "photo": true,
+    "diagram": "g_gate3"
+  },
+  {
+    "match": "まず、年におよそ81万円までなら",
+    "photo": true,
+    "diagram": "g_income"
+  },
+  {
+    "match": "以前ご紹介した、仙台の佐藤さん",
+    "photo": true,
+    "cast": "sato_cry",
+    "label": "佐藤さん(66)・仙台"
+  },
+  {
+    "match": "ここで、さきほどの「補足的な給付金」を",
+    "photo": true,
+    "diagram": "g_hosoku"
+  },
+  {
+    "match": "そのうえ、この収入の基準は、毎年度",
+    "photo": false,
+    "lines": [
+      "収入の基準は",
+      "毎年度 見直される"
+    ]
+  },
+  {
+    "match": "ここで、ひとつだけお願いです",
+    "photo": false,
+    "lines": [
+      "応援ありがとうございます"
+    ],
+    "accent": true
+  },
+  {
+    "match": "さて、ここからが、今日、いちばん大事",
+    "photo": false,
+    "lines": [
+      "第3章",
+      "申請しないと出ない"
+    ]
+  },
+  {
+    "match": "条件を満たしていても、それだけでは、1円も",
+    "photo": true,
+    "diagram": "g_noapply"
+  },
+  {
+    "match": "新しく対象になった方には、日本年金機構から、専用の「はがき」",
+    "photo": true,
+    "q": "japanese official government postcard letter on wooden table"
+  },
+  {
+    "match": "郵便物の山に、埋もれさせていた",
+    "photo": true,
+    "q": "stack of unopened envelopes and letters piled on a desk"
+  },
+  {
+    "match": "給付金は、原則として、手続きをした月の",
+    "photo": true,
+    "diagram": "g_delay"
+  },
+  {
+    "match": "無事に手続きが済むと、給付金は、年金と同じ口座に",
+    "photo": true,
+    "cast": "prop_tsucho",
+    "label": "年金と同じ口座に振込"
+  },
+  {
+    "match": "「給付金」という言葉は、残念ながら、詐欺にも",
+    "photo": false,
+    "lines": [
+      "第4章",
+      "詐欺に注意"
+    ]
+  },
+  {
+    "match": "「給付金の手続きのために、ATMへ行ってください」",
+    "photo": true,
+    "diagram": "g_sagi"
+  },
+  {
+    "match": "「市役所の者ですが、年金の給付金の、還付があります」",
+    "photo": true,
+    "q": "elderly japanese person worried phone call scam at home"
+  },
+  {
+    "match": "合言葉は、「切って、調べて、かけ直す」",
+    "photo": true,
+    "diagram": "g_aikotoba"
+  },
+  {
+    "match": "もし、あなたのご両親や、ご近所に",
+    "photo": true,
+    "q": "elderly japanese parent and adult child talking warmly at home"
+  },
+  {
+    "match": "それでは、今日の研究ノートです",
+    "photo": true,
+    "diagram": "note04"
+  },
+  {
+    "match": "それでは、また次回の研究で、お会いしましょう",
+    "photo": false,
+    "lines": [
+      "また次回の研究で",
+      "お会いしましょう"
+    ],
+    "accent": true
+  }
+]

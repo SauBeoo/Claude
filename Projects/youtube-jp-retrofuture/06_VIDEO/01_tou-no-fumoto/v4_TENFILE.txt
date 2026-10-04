@@ -1,0 +1,38 @@
+# TAP 01 v4 REALISM — 34 canh. Dong i cua STILL/MOTION/T2V = canh i.
+# STILL -> Image (Nano Banana 2) -> chon anh -> Animate -> MOTION. T2V = duong lui.
+# Chon anh: THAP o nua tren (canh ngoai)? nguoi o NHIP 1? khong chu bia?
+#
+01	ep01_01_yoake_i2v.mp4	locked	dawn	THAP	still 1709 · motion 1776
+02	ep01_02_hoshimono_i2v.mp4	drift	dawn	THAP	still 1571 · motion 1776
+03	ep01_03_pan_i2v.mp4	locked	dawn	-	still 1266 · motion 1843
+04	ep01_04_shutter_i2v.mp4	locked	dawn	-	still 1203 · motion 1794
+05	ep01_05_kiri_i2v.mp4	drift	dawn	THAP	still 1574 · motion 1857
+06	ep01_06_tsuugaku_i2v.mp4	drift	day	THAP	still 1885 · motion 1982
+07	ep01_07_basutei_i2v.mp4	locked	day	-	still 1297 · motion 2005
+08	ep01_08_tabako_i2v.mp4	locked	day	THAP	still 1996 · motion 2062
+09	ep01_09_mizumaki_i2v.mp4	locked	day	-	still 1289 · motion 2034
+10	ep01_10_ichiba_i2v.mp4	drift	day	THAP	still 1935 · motion 1949
+11	ep01_11_yaoya_i2v.mp4	locked	day	-	still 1352 · motion 2016
+12	ep01_12_hanbaiki_i2v.mp4	locked	day	-	still 1350 · motion 2005
+13	ep01_13_mahiru_i2v.mp4	drift	day	THAP	still 1733 · motion 1952
+14	ep01_14_shokudou_i2v.mp4	locked	interior	-	still 1372 · motion 1948
+15	ep01_15_hirune_i2v.mp4	locked	day	-	still 1319 · motion 2025
+16	ep01_16_kouri_i2v.mp4	locked	day	-	still 1316 · motion 1971
+17	ep01_17_denki_i2v.mp4	locked	day	-	still 1392 · motion 2020
+18	ep01_18_rojiura_i2v.mp4	drift	day	-	still 1294 · motion 1967
+19	ep01_19_arcade_i2v.mp4	drift	interior	-	still 1356 · motion 1874
+20	ep01_20_shagekou_i2v.mp4	locked	day	THAP	still 1874 · motion 2005
+21	ep01_21_sentou_i2v.mp4	drift	dusk	-	still 1184 · motion 1764
+22	ep01_22_kouen_i2v.mp4	locked	dusk	THAP	still 1608 · motion 1769
+23	ep01_23_monohoshi_i2v.mp4	locked	dusk	-	still 1013 · motion 1747
+24	ep01_24_kage_gyaku_i2v.mp4	drift	dusk	THAP	still 1602 · motion 1820
+25	ep01_25_hi_wo_ireru_i2v.mp4	locked	dusk	-	still 1047 · motion 1811
+26	ep01_26_kaerimichi_i2v.mp4	drift	dusk	THAP	still 1639 · motion 1734
+27	ep01_27_yuushoku_i2v.mp4	locked	night	-	still 1086 · motion 1808
+28	ep01_28_terebi_i2v.mp4	locked	night	-	still 1076 · motion 1765
+29	ep01_29_yatai_i2v.mp4	locked	night	-	still 1132 · motion 1795
+30	ep01_30_arai_i2v.mp4	locked	night	-	still 1052 · motion 1786
+31	ep01_31_yomichi_i2v.mp4	drift	night	THAP	still 1720 · motion 1697
+32	ep01_32_hotaru_i2v.mp4	locked	night	-	still 1038 · motion 1763
+33	ep01_33_machi_yoru_i2v.mp4	drift	night	THAP	still 1641 · motion 1756
+34	ep01_34_saigo_no_mado_i2v.mp4	locked	night	THAP	still 1645 · motion 1784

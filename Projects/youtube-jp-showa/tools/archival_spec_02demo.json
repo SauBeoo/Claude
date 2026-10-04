@@ -1,0 +1,8 @@
+{
+ "_note": "Demo asa6 video 02. Nguon CC0 da verify (FOOTAGE_GO_NO_GO.md).",
+ "cuts": [
+  {"id": "clip_00", "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today/japan_today.mp4",
+   "ss": 913.0, "dur": 9.5, "ybias": 0.45, "grade": 1.0, "line": 0,
+   "note": "sap hang thung go + khach qua lai, shot lien 913-923s"}
+ ]
+}

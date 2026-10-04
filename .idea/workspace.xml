@@ -5,17 +5,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf15df30-d1f0-4ed4-a4f0-77d34d5fa055" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.claude/skills/script-healthy/SKILL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/youtube-jp-chouhen/03_SCRIPTS/new_script.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondBrain/30_Resources/video-editing/The YouTube Growth Lie No One Talks About.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/script-healthy/SKILL.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/04_OUTREACH.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/04_OUTREACH.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/glowup-studio/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/00_CHIEN_LUOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/00_CHIEN_LUOC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/01_ROADMAP_90_NGAY.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/01_ROADMAP_90_NGAY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/04_CONTENT_IDEAS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/04_CONTENT_IDEAS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/youtube-kham-pha.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-kham-pha/youtube-kham-pha.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/10_Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/10_Projects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/CLAUDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/CONTENT-IDEAS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/ROADMAP-90DAYS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/ai-luoi/ai-luoi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/00_CHIEN_LUOC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/01_FIVERR_GIGS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/02_UPWORK_PROFILE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/03_PROPOSAL_TEMPLATES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/04_PORTFOLIO_IDEAS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/1-web-scraper.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/LOOM_SCRIPT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/products.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/1-web-scraper/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/2-sheets-automation/2-sheets-automation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/2-sheets-automation/Code.gs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/2-sheets-automation/LOOM_SCRIPT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/3-api-integration/daily_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/freelance-kit/portfolio/3-api-integration/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/00_BRAND.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/01_SAN_PHAM_GIA.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/02_N8N_AUTOMATION.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/03_CONTENT_SOCIAL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/04_OUTREACH.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/05_ROADMAP_90D.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/06_KY_NANG_BAN_HANG/01-chao-truc-tiep.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/06_KY_NANG_BAN_HANG/02-nhan-zalo-khach-la.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/06_KY_NANG_BAN_HANG/03-xu-ly-tu-choi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/06_KY_NANG_BAN_HANG/04-follow-up.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/06_KY_NANG_BAN_HANG/05-bao-gia-chot-coc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/06_KY_NANG_BAN_HANG/06_KY_NANG_BAN_HANG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/07_PHEU_KHACH.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/CLAUDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/content/kich-ban-clip-01-khai-truong.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/glowup-studio.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/portfolio/demo-spa-01/demo-spa-01.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/portfolio/demo-spa-01/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/glowup-studio/templates/templates.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/lead-tool/lead-tool.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/CLAUDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/experiments/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/notebooks/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/outputs/figures/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/research-llm-education-2026.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/src/analysis/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/research-llm-education-2026/src/prompts/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/CLAUDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/backend/app/models/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/backend/app/routes/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/backend/app/services/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/backend/tests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/docs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/frontend/src/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/student-grade-app/student-grade-app.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/01_KEYWORD_RESEARCH_NHAT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/02_CONTENT_IDEAS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/04_SCRIPTS/01_yude-tamago.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/04_SCRIPTS/02_blueberry.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/04_SCRIPTS/03_jinzo-ranking.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/05_KEY_MATRIX.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-jp-health/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-health/youtube-jp-health.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/youtube-jp-health/youtube-jp-health.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-sukatto/01_KEYWORD_RESEARCH.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-sukatto/02_CONTENT_IDEAS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-sukatto/CLAUDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-jp-sukatto/youtube-jp-sukatto.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/00_CHIEN_LUOC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/01_ROADMAP_90_NGAY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/02_SETUP_KENH.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/03_QUY_TRINH_FACELESS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/04_CONTENT_IDEAS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/05_MAIL_KENH_TRUST_2026.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/CLAUDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/research/doi-thu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/youtube-kham-pha/youtube-kham-pha.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/youtube-jp-sukatto/youtube-jp-sukatto.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondBrain/10_Projects/youtube-kham-pha/youtube-kham-pha.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/10_Projects/youtube-kham-pha/youtube-kham-pha.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondBrain/99_Meta/CHANGELOG.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,34 +120,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Claude/.claude/skills/script-healthy",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Console",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Claude/Projects/youtube-jp-showa/03_SCRIPTS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Claude\.claude\skills\script-healthy" />
-      <recent name="E:\Claude\.claude\skills" />
-      <recent name="E:\Claude\SecondBrain\00_Inbox\paper-chua-doc" />
-      <recent name="E:\Claude\.claude\commands" />
-      <recent name="E:\Claude\.obsidian" />
+      <recent name="E:\Claude\Projects\youtube-jp-showa\03_SCRIPTS" />
+      <recent name="E:\Claude\Projects\youtube-jp-nenkin\03_SCRIPTS" />
+      <recent name="E:\Claude\SecondBrain\30_Resources\video-editing" />
+      <recent name="E:\Claude\Projects\youtube-jp-chouhen\03_SCRIPTS" />
+      <recent name="E:\Claude\Projects\youtube-jp-chouhen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Claude\.claude\skills" />
@@ -115,7 +188,82 @@
       <workItem from="1782393842281" duration="7606000" />
       <workItem from="1782538488907" duration="581000" />
       <workItem from="1782574162101" duration="1861000" />
-      <workItem from="1782721854112" duration="15871000" />
+      <workItem from="1782721854112" duration="15993000" />
+      <workItem from="1782917478005" duration="1175000" />
+      <workItem from="1782977083156" duration="5752000" />
+      <workItem from="1783149472581" duration="7269000" />
+      <workItem from="1783397186353" duration="14526000" />
+      <workItem from="1783575946984" duration="10853000" />
+      <workItem from="1783748246182" duration="10490000" />
+      <workItem from="1783827592567" duration="1545000" />
+      <workItem from="1783867045291" duration="3001000" />
+      <workItem from="1783918849340" duration="5474000" />
+      <workItem from="1784269331796" duration="16138000" />
+      <workItem from="1784529694348" duration="6356000" />
+      <workItem from="1784610338430" duration="13880000" />
+      <workItem from="1784777879705" duration="3176000" />
+      <workItem from="1784892562664" duration="5176000" />
+      <workItem from="1784968290392" duration="3367000" />
+      <workItem from="1785049953019" duration="12028000" />
+      <workItem from="1785160012141" duration="4303000" />
+      <workItem from="1785244328710" duration="1226000" />
+      <workItem from="1785255491485" duration="2607000" />
+      <workItem from="1785386260207" duration="1872000" />
+      <workItem from="1785489519070" duration="1880000" />
+      <workItem from="1785569717842" duration="7455000" />
+      <workItem from="1785690193387" duration="3190000" />
+      <workItem from="1785763837963" duration="4945000" />
+      <workItem from="1785826544528" duration="13913000" />
+      <workItem from="1785916884954" duration="11097000" />
+      <workItem from="1786065748044" duration="11681000" />
+      <workItem from="1786193128759" duration="5239000" />
+      <workItem from="1786441456824" duration="3038000" />
+      <workItem from="1786613375964" duration="8879000" />
+      <workItem from="1786716956159" duration="3886000" />
+      <workItem from="1786968505964" duration="1290000" />
+      <workItem from="1787040312850" duration="3149000" />
+      <workItem from="1787112230228" duration="1889000" />
+      <workItem from="1787201999304" duration="5087000" />
+      <workItem from="1787310050024" duration="9162000" />
+      <workItem from="1787561980910" duration="4099000" />
+      <workItem from="1787652927937" duration="4257000" />
+      <workItem from="1787817036233" duration="2432000" />
+      <workItem from="1787834914373" duration="20000" />
+      <workItem from="1787997219680" duration="4309000" />
+      <workItem from="1788096031074" duration="1760000" />
+      <workItem from="1788341571443" duration="10971000" />
+      <workItem from="1788405679081" duration="4557000" />
+      <workItem from="1788433347912" duration="6492000" />
+      <workItem from="1788491658972" duration="7131000" />
+      <workItem from="1788584522092" duration="14805000" />
+      <workItem from="1788778353976" duration="4310000" />
+      <workItem from="1788794817094" duration="2403000" />
+      <workItem from="1788799680711" duration="1933000" />
+      <workItem from="1788837269088" duration="1463000" />
+      <workItem from="1788927512063" duration="7621000" />
+      <workItem from="1789100382436" duration="10110000" />
+      <workItem from="1789187513022" duration="986000" />
+      <workItem from="1789188733828" duration="20423000" />
+      <workItem from="1789283223970" duration="1719000" />
+      <workItem from="1789320024217" duration="451000" />
+      <workItem from="1789381045068" duration="13790000" />
+      <workItem from="1789443448682" duration="7420000" />
+      <workItem from="1789488669328" duration="315000" />
+      <workItem from="1789559816661" duration="12932000" />
+      <workItem from="1789629902772" duration="9057000" />
+      <workItem from="1789691986224" duration="6496000" />
+      <workItem from="1789965737382" duration="25294000" />
+      <workItem from="1790053730753" duration="8539000" />
+      <workItem from="1790238701490" duration="2445000" />
+      <workItem from="1790327252020" duration="2926000" />
+      <workItem from="1790427427179" duration="1158000" />
+      <workItem from="1790491198933" duration="9290000" />
+      <workItem from="1790583318038" duration="3014000" />
+      <workItem from="1790652786374" duration="9836000" />
+      <workItem from="1790742688238" duration="7645000" />
+      <workItem from="1790827700484" duration="11918000" />
+      <workItem from="1790923377154" duration="2229000" />
+      <workItem from="1790998863470" duration="2922000" />
     </task>
     <servers />
   </component>

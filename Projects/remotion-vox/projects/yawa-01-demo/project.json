@@ -1,0 +1,481 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "yawa-01-demo",
+  "channel": "yawa",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080
+ },
+ "timeline": {
+  "durationInFrames": 3728
+ },
+ "tracks": [
+  {
+   "id": "trk-foot",
+   "name": "footage",
+   "type": "video",
+   "clips": [
+    {
+     "id": "s70bg",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 209,
+     "asset": "assets/bg_70.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 0,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s72",
+     "kind": "video",
+     "from": 368,
+     "durationInFrames": 273,
+     "asset": "assets/clip_72.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s73",
+     "kind": "video",
+     "from": 629,
+     "durationInFrames": 214,
+     "asset": "assets/clip_73.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s74",
+     "kind": "video",
+     "from": 831,
+     "durationInFrames": 245,
+     "asset": "assets/clip_74.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s75",
+     "kind": "video",
+     "from": 1064,
+     "durationInFrames": 245,
+     "asset": "assets/clip_75.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s76",
+     "kind": "video",
+     "from": 1297,
+     "durationInFrames": 257,
+     "asset": "assets/clip_76.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s77",
+     "kind": "video",
+     "from": 1542,
+     "durationInFrames": 286,
+     "asset": "assets/clip_77.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s78",
+     "kind": "video",
+     "from": 1816,
+     "durationInFrames": 268,
+     "asset": "assets/clip_78.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s79",
+     "kind": "video",
+     "from": 2072,
+     "durationInFrames": 167,
+     "asset": "assets/clip_79.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s80",
+     "kind": "video",
+     "from": 2227,
+     "durationInFrames": 221,
+     "asset": "assets/clip_80.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s81",
+     "kind": "video",
+     "from": 2436,
+     "durationInFrames": 86,
+     "asset": "assets/clip_81.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s82",
+     "kind": "video",
+     "from": 2510,
+     "durationInFrames": 186,
+     "asset": "assets/clip_82.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s83bg",
+     "kind": "video",
+     "from": 2684,
+     "durationInFrames": 211,
+     "asset": "assets/bg_83.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s84",
+     "kind": "video",
+     "from": 2883,
+     "durationInFrames": 198,
+     "asset": "assets/clip_84.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s85",
+     "kind": "video",
+     "from": 3069,
+     "durationInFrames": 265,
+     "asset": "assets/clip_85.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s86bg",
+     "kind": "video",
+     "from": 3322,
+     "durationInFrames": 230,
+     "asset": "assets/bg_86.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "fx",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "dust",
+     "kind": "fx",
+     "variant": "dust",
+     "from": 0,
+     "durationInFrames": 3728,
+     "density": 22,
+     "color": "#FFE7B0",
+     "seed": 7,
+     "fadeInFrames": 20,
+     "fadeOutFrames": 20
+    },
+    {
+     "id": "vig",
+     "kind": "fx",
+     "variant": "vignette-soft",
+     "from": 0,
+     "durationInFrames": 3728,
+     "color": "#0E0C14",
+     "opacity": 0.55,
+     "fadeInFrames": 0,
+     "fadeOutFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-text",
+   "name": "text",
+   "type": "text",
+   "clips": [
+    {
+     "id": "s70",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 215,
+     "preset": "yawa-reveal",
+     "content": "ひとりぼっちになるのではありません。\n大事な人と、もっと近くなるんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       2.81
+      ]
+     }
+    },
+    {
+     "id": "s71",
+     "kind": "text",
+     "from": 209,
+     "durationInFrames": 177,
+     "preset": "yawa-chapter",
+     "content": "その四\n「ちゃんとしなきゃ」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF"
+    },
+    {
+     "id": "s83",
+     "kind": "text",
+     "from": 2696,
+     "durationInFrames": 205,
+     "preset": "yawa-reveal",
+     "content": "片付けは、完璧でなくていいんです。\n引き出し一つで、十分です。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       3.55
+      ]
+     }
+    },
+    {
+     "id": "s86",
+     "kind": "text",
+     "from": 3334,
+     "durationInFrames": 224,
+     "preset": "yawa-reveal",
+     "content": "今日、あなたが、できなかったことがあっても、それで、いいんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0
+      ]
+     }
+    },
+    {
+     "id": "s87",
+     "kind": "text",
+     "from": 3552,
+     "durationInFrames": 182,
+     "preset": "yawa-chapter",
+     "content": "その五\n「子どもが心配」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF"
+    },
+    {
+     "id": "chip0",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 209,
+     "preset": "yawa-chip",
+     "content": "その三 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip1",
+     "kind": "text",
+     "from": 380,
+     "durationInFrames": 3172,
+     "preset": "yawa-chip",
+     "content": "その四 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "kw0",
+     "kind": "text",
+     "from": 2456,
+     "durationInFrames": 240,
+     "preset": "yawa-keyword",
+     "content": "このままで、いいじゃない",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "kw1",
+     "kind": "text",
+     "from": 3257,
+     "durationInFrames": 77,
+     "preset": "yawa-keyword",
+     "content": "家は、職場ではありません",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    }
+   ]
+  },
+  {
+   "id": "trk-grain",
+   "name": "grain",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "grain",
+     "kind": "fx",
+     "variant": "grain",
+     "from": 0,
+     "durationInFrames": 3728,
+     "opacity": 0.1,
+     "seed": 3,
+     "fadeInFrames": 0,
+     "fadeOutFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "audio",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "voice",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3728,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 14069
+    },
+    {
+     "id": "bgm",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3728,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 50,
+  "lines": [
+   {
+    "text": "タオルにも、ハンカチにも、アイロンをかける。",
+    "startMs": 12667,
+    "endMs": 16800
+   },
+   {
+    "text": "来客がなくても、毎日、床を磨く。",
+    "startMs": 16800,
+    "endMs": 21367
+   },
+   {
+    "text": "一日でも手を抜くと、だらしないと思われるような気がして、落ち着かない。",
+    "startMs": 21367,
+    "endMs": 28100
+   },
+   {
+    "text": "長く働いてきた人ほど、この「ちゃんと」が、体に染みついています。",
+    "startMs": 28100,
+    "endMs": 35867
+   },
+   {
+    "text": "それは、誰かに迷惑をかけないように、ずっと、気を張って生きてきた証です。",
+    "startMs": 35867,
+    "endMs": 43633
+   },
+   {
+    "text": "けれど、六十を過ぎた体に、その張りつめた糸は、少しずつ、こたえてきます。",
+    "startMs": 43633,
+    "endMs": 51800
+   },
+   {
+    "text": "そして、完璧にできないと分かっているから、片付けそのものに、手がつけられなくなってしまうんです。",
+    "startMs": 51800,
+    "endMs": 60933
+   },
+   {
+    "text": "紙袋を数えたあの知人は、信用金庫の窓口で、三十年働いてきた人でした。",
+    "startMs": 60933,
+    "endMs": 69467
+   },
+   {
+    "text": "一円でも数字が合わなければ、誰も帰れない職場です。",
+    "startMs": 69467,
+    "endMs": 74633
+   },
+   {
+    "text": "ある晴れた午後、取り込んだタオルに顔をうずめると、お日さまの匂いがしました。",
+    "startMs": 74633,
+    "endMs": 81600
+   },
+   {
+    "text": "「……このままで、いいじゃない」",
+    "startMs": 81600,
+    "endMs": 84067
+   },
+   {
+    "text": "そう口に出したら、急に、肩が軽くなったと言っていました。",
+    "startMs": 84067,
+    "endMs": 89867
+   },
+   {
+    "text": "今日は、タオルのアイロンを、一回だけ、やめてみてください。",
+    "startMs": 96500,
+    "endMs": 102700
+   },
+   {
+    "text": "その時間に、夕方のお茶を一杯、飲んでみてください。",
+    "startMs": 102700,
+    "endMs": 108300
+   },
+   {
+    "text": "家は、職場ではありません。",
+    "startMs": 108300,
+    "endMs": 111133
+   }
+  ]
+ },
+ "theme": {
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", sans-serif"
+ },
+ "brand": null
+}

@@ -1,0 +1,849 @@
+[
+ {
+  "match": "学校までは、歩い",
+  "video": true,
+  "source": "clips/clip_00.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "毎日、四十五分。",
+  "video": true,
+  "source": "clips/clip_01.mp4",
+  "offset": 0.0,
+  "dur": 6.7
+ },
+ {
+  "match": "毎日、四十五分。",
+  "video": true,
+  "source": "clips/clip_02.mp4",
+  "offset": 6.68,
+  "dur": 6.6
+ },
+ {
+  "match": "朝の、七時四十分",
+  "video": true,
+  "source": "clips/clip_03.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "朝の、七時四十分",
+  "video": true,
+  "source": "clips/clip_04.mp4",
+  "offset": 8.89,
+  "dur": 8.0
+ },
+ {
+  "match": "昭和の通学路から",
+  "video": true,
+  "source": "clips/clip_05.mp4",
+  "offset": 5.17,
+  "dur": 8.0
+ },
+ {
+  "match": "昭和の通学路から",
+  "video": true,
+  "source": "clips/clip_06.mp4",
+  "offset": 14.06,
+  "dur": 8.0
+ },
+ {
+  "match": "二点目、ランドセ",
+  "video": true,
+  "source": "clips/clip_07.mp4",
+  "offset": 7.91,
+  "dur": 8.0
+ },
+ {
+  "match": "三点目、胸につけ",
+  "video": true,
+  "source": "clips/clip_08.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "三点目、胸につけ",
+  "video": true,
+  "source": "clips/clip_09.mp4",
+  "offset": 7.97,
+  "dur": 7.9
+ },
+ {
+  "match": "三点目、胸につけ",
+  "video": true,
+  "source": "clips/clip_10.mp4",
+  "offset": 15.93,
+  "dur": 8.0
+ },
+ {
+  "match": "それと、もうひと",
+  "video": true,
+  "source": "clips/clip_11.mp4",
+  "offset": 7.94,
+  "dur": 7.9
+ },
+ {
+  "match": "それと、もうひと",
+  "video": true,
+  "source": "clips/clip_12.mp4",
+  "offset": 15.91,
+  "dur": 8.0
+ },
+ {
+  "match": "並べる順番は、道",
+  "video": true,
+  "source": "clips/clip_13.mp4",
+  "offset": 2.63,
+  "dur": 8.0
+ },
+ {
+  "match": "朝の、七時五十分",
+  "video": true,
+  "source": "clips/clip_14.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "四点目、集団登校",
+  "video": true,
+  "source": "clips/clip_15.mp4",
+  "offset": 0.0,
+  "dur": 7.9
+ },
+ {
+  "match": "四点目、集団登校",
+  "video": true,
+  "source": "clips/clip_16.mp4",
+  "offset": 7.85,
+  "dur": 7.8
+ },
+ {
+  "match": "五点目、班長が持",
+  "video": true,
+  "source": "clips/clip_17.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "五点目、班長が持",
+  "video": true,
+  "source": "clips/clip_18.mp4",
+  "offset": 8.72,
+  "dur": 8.0
+ },
+ {
+  "match": "五点目、班長が持",
+  "video": true,
+  "source": "clips/clip_19.mp4",
+  "offset": 17.43,
+  "dur": 8.0
+ },
+ {
+  "match": "六点目、名札。名",
+  "video": true,
+  "source": "clips/clip_20.mp4",
+  "offset": 6.87,
+  "dur": 8.0
+ },
+ {
+  "match": "いまなら、まず、",
+  "video": true,
+  "source": "clips/clip_21.mp4",
+  "offset": 1.38,
+  "dur": 8.0
+ },
+ {
+  "match": "朝の、八時。旗が",
+  "video": true,
+  "source": "clips/clip_22.mp4",
+  "offset": 0.0,
+  "dur": 6.1
+ },
+ {
+  "match": "七点目、舗装され",
+  "video": true,
+  "source": "clips/clip_23.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "七点目、舗装され",
+  "video": true,
+  "source": "clips/clip_24.mp4",
+  "offset": 9.06,
+  "dur": 8.0
+ },
+ {
+  "match": "八点目、ドブ板。",
+  "video": true,
+  "source": "clips/clip_25.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "八点目、ドブ板。",
+  "video": true,
+  "source": "clips/clip_26.mp4",
+  "offset": 8.5,
+  "dur": 8.0
+ },
+ {
+  "match": "九点目、緑のおば",
+  "video": true,
+  "source": "clips/clip_27.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "九点目、緑のおば",
+  "video": true,
+  "source": "clips/clip_28.mp4",
+  "offset": 8.46,
+  "dur": 8.0
+ },
+ {
+  "match": "うちの角に立って",
+  "video": true,
+  "source": "clips/clip_29.mp4",
+  "offset": 0.48,
+  "dur": 8.0
+ },
+ {
+  "match": "うちの角に立って",
+  "video": true,
+  "source": "clips/clip_30.mp4",
+  "offset": 8.95,
+  "dur": 8.0
+ },
+ {
+  "match": "それだけのことな",
+  "video": true,
+  "source": "clips/clip_31.mp4",
+  "offset": 2.02,
+  "dur": 8.0
+ },
+ {
+  "match": "十点目、その、手",
+  "video": true,
+  "source": "clips/clip_32.mp4",
+  "offset": 1.25,
+  "dur": 8.0
+ },
+ {
+  "match": "十一点目、電柱に",
+  "video": true,
+  "source": "clips/clip_33.mp4",
+  "offset": 0.0,
+  "dur": 7.6
+ },
+ {
+  "match": "十一点目、電柱に",
+  "video": true,
+  "source": "clips/clip_34.mp4",
+  "offset": 7.58,
+  "dur": 7.6
+ },
+ {
+  "match": "十一点目、電柱に",
+  "video": true,
+  "source": "clips/clip_35.mp4",
+  "offset": 15.16,
+  "dur": 7.5
+ },
+ {
+  "match": "十二点目、火の見",
+  "video": true,
+  "source": "clips/clip_36.mp4",
+  "offset": 0.0,
+  "dur": 7.1
+ },
+ {
+  "match": "十二点目、火の見",
+  "video": true,
+  "source": "clips/clip_37.mp4",
+  "offset": 7.1,
+  "dur": 7.1
+ },
+ {
+  "match": "十二点目、火の見",
+  "video": true,
+  "source": "clips/clip_38.mp4",
+  "offset": 14.2,
+  "dur": 7.1
+ },
+ {
+  "match": "十二点目、火の見",
+  "video": true,
+  "source": "clips/clip_39.mp4",
+  "offset": 21.3,
+  "dur": 7.7
+ },
+ {
+  "match": "十三点目、丸い形",
+  "video": true,
+  "source": "clips/clip_40.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "十三点目、丸い形",
+  "video": true,
+  "source": "clips/clip_41.mp4",
+  "offset": 8.58,
+  "dur": 8.0
+ },
+ {
+  "match": "十四点目、店の軒",
+  "video": true,
+  "source": "clips/clip_42.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "十四点目、店の軒",
+  "video": true,
+  "source": "clips/clip_43.mp4",
+  "offset": 8.11,
+  "dur": 8.0
+ },
+ {
+  "match": "十四点目、店の軒",
+  "video": true,
+  "source": "clips/clip_44.mp4",
+  "offset": 16.21,
+  "dur": 8.0
+ },
+ {
+  "match": "その公衆電話が、",
+  "video": true,
+  "source": "clips/clip_45.mp4",
+  "offset": 6.9,
+  "dur": 8.0
+ },
+ {
+  "match": "十五点目、空き地",
+  "video": true,
+  "source": "clips/clip_46.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "十六点目、その空",
+  "video": true,
+  "source": "clips/clip_47.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "十六点目、その空",
+  "video": true,
+  "source": "clips/clip_48.mp4",
+  "offset": 8.17,
+  "dur": 8.0
+ },
+ {
+  "match": "十七点目、つなが",
+  "video": true,
+  "source": "clips/clip_49.mp4",
+  "offset": 0.0,
+  "dur": 7.9
+ },
+ {
+  "match": "十七点目、つなが",
+  "video": true,
+  "source": "clips/clip_50.mp4",
+  "offset": 7.93,
+  "dur": 7.9
+ },
+ {
+  "match": "十七点目、つなが",
+  "video": true,
+  "source": "clips/clip_51.mp4",
+  "offset": 15.86,
+  "dur": 8.0
+ },
+ {
+  "match": "さきほどの答えで",
+  "video": true,
+  "source": "clips/clip_52.mp4",
+  "offset": 6.76,
+  "dur": 8.0
+ },
+ {
+  "match": "朝の、八時十五分",
+  "video": true,
+  "source": "clips/clip_53.mp4",
+  "offset": 0.0,
+  "dur": 6.9
+ },
+ {
+  "match": "朝の、八時十五分",
+  "video": true,
+  "source": "clips/clip_54.mp4",
+  "offset": 6.96,
+  "dur": 7.0
+ },
+ {
+  "match": "十八点目、門のわ",
+  "video": true,
+  "source": "clips/clip_55.mp4",
+  "offset": 0.0,
+  "dur": 7.9
+ },
+ {
+  "match": "十八点目、門のわ",
+  "video": true,
+  "source": "clips/clip_56.mp4",
+  "offset": 7.88,
+  "dur": 7.9
+ },
+ {
+  "match": "十九点目、二宮金",
+  "video": true,
+  "source": "clips/clip_57.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "二十点目、焼却炉",
+  "video": true,
+  "source": "clips/clip_58.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "さて、ここからが",
+  "video": true,
+  "source": "clips/clip_59.mp4",
+  "offset": 0.0,
+  "dur": 6.7
+ },
+ {
+  "match": "さて、ここからが",
+  "video": true,
+  "source": "clips/clip_60.mp4",
+  "offset": 6.7,
+  "dur": 7.3
+ },
+ {
+  "match": "午後の、三時。",
+  "video": true,
+  "source": "clips/clip_61.mp4",
+  "offset": 0.0,
+  "dur": 2.5
+ },
+ {
+  "match": "二十一点目、校門",
+  "video": true,
+  "source": "clips/clip_62.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "二十一点目、校門",
+  "video": true,
+  "source": "clips/clip_63.mp4",
+  "offset": 8.39,
+  "dur": 8.0
+ },
+ {
+  "match": "いま思えば、あれ",
+  "video": true,
+  "source": "clips/clip_64.mp4",
+  "offset": 7.52,
+  "dur": 8.0
+ },
+ {
+  "match": "ここまでで、二十",
+  "video": true,
+  "source": "clips/clip_65.mp4",
+  "offset": 3.27,
+  "dur": 8.0
+ },
+ {
+  "match": "ここで、ひとつだ",
+  "video": true,
+  "source": "clips/clip_66.mp4",
+  "offset": 5.44,
+  "dur": 8.0
+ },
+ {
+  "match": "ここで、ひとつだ",
+  "video": true,
+  "source": "clips/clip_67.mp4",
+  "offset": 13.84,
+  "dur": 8.0
+ },
+ {
+  "match": "ここで、ひとつだ",
+  "video": true,
+  "source": "clips/clip_68.mp4",
+  "offset": 22.23,
+  "dur": 8.0
+ },
+ {
+  "match": "二十二点目、駄菓",
+  "video": true,
+  "source": "clips/clip_69.mp4",
+  "offset": 0.0,
+  "dur": 7.0
+ },
+ {
+  "match": "二十二点目、駄菓",
+  "video": true,
+  "source": "clips/clip_70.mp4",
+  "offset": 7.07,
+  "dur": 7.1
+ },
+ {
+  "match": "二十二点目、駄菓",
+  "video": true,
+  "source": "clips/clip_71.mp4",
+  "offset": 14.13,
+  "dur": 7.1
+ },
+ {
+  "match": "二十三点目、空き",
+  "video": true,
+  "source": "clips/clip_72.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "二十三点目、空き",
+  "video": true,
+  "source": "clips/clip_73.mp4",
+  "offset": 9.28,
+  "dur": 8.0
+ },
+ {
+  "match": "二十四点目、道に",
+  "video": true,
+  "source": "clips/clip_74.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "二十四点目、道に",
+  "video": true,
+  "source": "clips/clip_75.mp4",
+  "offset": 9.02,
+  "dur": 8.0
+ },
+ {
+  "match": "二十五点目、ブロ",
+  "video": true,
+  "source": "clips/clip_76.mp4",
+  "offset": 0.0,
+  "dur": 4.9
+ },
+ {
+  "match": "白状しますと、私は、",
+  "video": true,
+  "source": "clips/clip_77.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "白状しますと、私は、",
+  "video": true,
+  "source": "clips/clip_78.mp4",
+  "offset": 8.19,
+  "dur": 8.0
+ },
+ {
+  "match": "白状しますと、私は、",
+  "video": true,
+  "source": "clips/clip_79.mp4",
+  "offset": 16.38,
+  "dur": 8.0
+ },
+ {
+  "match": "午後の、四時半。",
+  "video": true,
+  "source": "clips/clip_80.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "二十六点目、手押",
+  "video": true,
+  "source": "clips/clip_81.mp4",
+  "offset": 7.24,
+  "dur": 8.0
+ },
+ {
+  "match": "二十七点目、防火",
+  "video": true,
+  "source": "clips/clip_82.mp4",
+  "offset": 0.0,
+  "dur": 6.9
+ },
+ {
+  "match": "二十七点目、防火",
+  "video": true,
+  "source": "clips/clip_83.mp4",
+  "offset": 6.93,
+  "dur": 6.9
+ },
+ {
+  "match": "二十八点目、蓋の",
+  "video": true,
+  "source": "clips/clip_84.mp4",
+  "offset": 0.0,
+  "dur": 7.8
+ },
+ {
+  "match": "二十八点目、蓋の",
+  "video": true,
+  "source": "clips/clip_85.mp4",
+  "offset": 7.74,
+  "dur": 8.0
+ },
+ {
+  "match": "その帰り道が、ど",
+  "video": true,
+  "source": "clips/clip_86.mp4",
+  "offset": 0.0,
+  "dur": 7.5
+ },
+ {
+  "match": "昭和四十五年。日",
+  "video": true,
+  "source": "clips/clip_87.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "昭和四十五年。日",
+  "video": true,
+  "source": "clips/clip_88.mp4",
+  "offset": 8.8,
+  "dur": 8.0
+ },
+ {
+  "match": "いまも破られてい",
+  "video": true,
+  "source": "clips/clip_89.mp4",
+  "offset": 2.93,
+  "dur": 8.0
+ },
+ {
+  "match": "ちなみに、去年、",
+  "video": true,
+  "source": "clips/clip_90.mp4",
+  "offset": 0.66,
+  "dur": 8.0
+ },
+ {
+  "match": "ちなみに、去年、",
+  "video": true,
+  "source": "clips/clip_91.mp4",
+  "offset": 9.45,
+  "dur": 8.0
+ },
+ {
+  "match": "ただ、そのとき、",
+  "video": true,
+  "source": "clips/clip_92.mp4",
+  "offset": 0.62,
+  "dur": 8.0
+ },
+ {
+  "match": "ガードレールが立",
+  "video": true,
+  "source": "clips/clip_93.mp4",
+  "offset": 0.0,
+  "dur": 5.8
+ },
+ {
+  "match": "ガードレールが立",
+  "video": true,
+  "source": "clips/clip_94.mp4",
+  "offset": 5.85,
+  "dur": 5.9
+ },
+ {
+  "match": "二十一点目の、あ",
+  "video": true,
+  "source": "clips/clip_95.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "夕方の、五時。",
+  "video": true,
+  "source": "clips/clip_96.mp4",
+  "offset": 0.0,
+  "dur": 2.6
+ },
+ {
+  "match": "二十九点目、夕焼",
+  "video": true,
+  "source": "clips/clip_97.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "二十九点目、夕焼",
+  "video": true,
+  "source": "clips/clip_98.mp4",
+  "offset": 8.28,
+  "dur": 8.0
+ },
+ {
+  "match": "三十点目、家の窓",
+  "video": true,
+  "source": "clips/clip_99.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "三十点目、家の窓",
+  "video": true,
+  "source": "clips/clip_100.mp4",
+  "offset": 8.1,
+  "dur": 8.0
+ },
+ {
+  "match": "窓が開いて、「ご",
+  "video": true,
+  "source": "clips/clip_101.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "窓が開いて、「ご",
+  "video": true,
+  "source": "clips/clip_102.mp4",
+  "offset": 7.95,
+  "dur": 7.9
+ },
+ {
+  "match": "十点でも、じゅう",
+  "video": true,
+  "source": "clips/clip_103.mp4",
+  "offset": 2.35,
+  "dur": 8.0
+ },
+ {
+  "match": "最後に、答えです",
+  "video": true,
+  "source": "clips/clip_104.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "信号機です。",
+  "video": true,
+  "source": "clips/clip_105.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "平成のはじめに、",
+  "video": true,
+  "source": "clips/clip_106.mp4",
+  "offset": 6.23,
+  "dur": 8.0
+ },
+ {
+  "match": "三十のうち、二十九が",
+  "video": true,
+  "source": "clips/clip_107.mp4",
+  "offset": 2.04,
+  "dur": 8.0
+ },
+ {
+  "match": "三十のうち、二十九が",
+  "video": true,
+  "source": "clips/clip_108.mp4",
+  "offset": 10.92,
+  "dur": 8.0
+ },
+ {
+  "match": "いまの小学生は、",
+  "video": true,
+  "source": "clips/clip_109.mp4",
+  "offset": 0.74,
+  "dur": 8.0
+ },
+ {
+  "match": "いまの小学生は、",
+  "video": true,
+  "source": "clips/clip_110.mp4",
+  "offset": 9.62,
+  "dur": 8.0
+ },
+ {
+  "match": "ただ、ひとつだけ",
+  "video": true,
+  "source": "clips/clip_111.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "ただ、ひとつだけ",
+  "video": true,
+  "source": "clips/clip_112.mp4",
+  "offset": 7.97,
+  "dur": 7.9
+ },
+ {
+  "match": "信号は、正確です",
+  "video": true,
+  "source": "clips/clip_113.mp4",
+  "offset": 5.02,
+  "dur": 8.0
+ },
+ {
+  "match": "ただ、信号は、「",
+  "video": true,
+  "source": "clips/clip_114.mp4",
+  "offset": 0.83,
+  "dur": 8.0
+ },
+ {
+  "match": "行きは、十五分。",
+  "video": true,
+  "source": "clips/clip_115.mp4",
+  "offset": 0.61,
+  "dur": 7.9
+ },
+ {
+  "match": "その四十五分のあ",
+  "video": true,
+  "source": "clips/clip_116.mp4",
+  "offset": 3.11,
+  "dur": 8.0
+ },
+ {
+  "match": "白状しますと、私はい",
+  "video": true,
+  "source": "clips/clip_117.mp4",
+  "offset": 0.0,
+  "dur": 8.0
+ },
+ {
+  "match": "白状しますと、私はい",
+  "video": true,
+  "source": "clips/clip_118.mp4",
+  "offset": 8.19,
+  "dur": 8.0
+ },
+ {
+  "match": "白状しますと、私はい",
+  "video": true,
+  "source": "clips/clip_119.mp4",
+  "offset": 16.37,
+  "dur": 8.0
+ },
+ {
+  "match": "道草を、くうとい",
+  "video": true,
+  "source": "clips/clip_120.mp4",
+  "offset": 0.0,
+  "dur": 4.9
+ }
+]

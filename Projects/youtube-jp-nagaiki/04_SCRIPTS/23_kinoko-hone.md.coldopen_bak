@@ -1,0 +1,457 @@
+# Script #23 — きのこ × 骨｜日に当てるだけで変わる「受け取り係」の話
+
+> **Làn ③ Organ/pillar deep-dive (骨)** giao với làn ② (きのこ = mùa thu) — `09_CONTENT_CALENDAR.md` Batch 2 #6.
+> Ngách: シニア健康 JP · Format: **「五つのもったいない」(khung 間違い/tiếc của)** — khác #22 (deep-dive trung tính "cách làm đúng") và khác #21 (ranking đếm ngược) · Độ dài: **~16 phút** (~4.900 ký)
+> Trục: **骨 (brand-core 自分の足で歩く)** + mùa thu きのこ
+> Chế độ B (viết mới từ chủ đề). Viết 2026-07-26.
+> **Lời hứa bắt buộc phải khớp:** cuối video 22 đã hẹn 「次回は、秋の香りが立ちはじめる、きのこのお話です。干すと変わる、あの成分と、骨との、意外な関係について」 → trục video phải là **干す/日に当てる → ビタミンD → 骨**, không được lệch.
+> ⚕️ **YMYL 3 lớp:** ① 野生きのこ誤食 (mỗi mùa thu ở Nhật đều có ca ngộ độc thật) ② ビタミンD サプリ quá liều (tan trong dầu → tích lũy) ③ きのこ có カリウム → người 腎臓病 hạn chế.
+> Nhân vật: **タカコさん (長野, 69, nữ)** — chưa dùng: 08 ハルオ 76 · 13 ヤスコ 68 · 21 ヨシエ 76 石川 · 22 キミエ 74 茨城.
+
+---
+
+## GIAI ĐOẠN 1 — Công thức áp dụng
+
+| Yếu tố | Áp dụng cho #23 |
+|---|---|
+| Khung | **「五つのもったいない」** — món quá quen (きのこ ai cũng ăn) → khung "điều bạn đang làm đang vứt đi công dụng" giật hơn khung "5 mẹo hay" (CLAUDE.md: khung 間違い cho món quen) |
+| Hook | Câu 1 = chỉ mặt hành vi (`袋から出して、すぐお使いですか`) → stake: thành phần quan trọng nhất cho xương đang **ngủ yên** |
+| Gỡ friction | `道具も、買い替えも、いりません。台所のザルと、窓辺の日なた。それだけです` |
+| Neo longevity | `百歳を過ぎても自分の足で歩いておられる方の足元を支えているのは、筋肉だけではありません。その下の、骨です` — **ở ký 98, tức 0:19** |
+| Chữ ký mở | `この、みんなの健康ノートで、今日は…` sau hook |
+| Case study | タカコさん 5 nhịp — 骨密度「少し下がっています」dù ăn nấm mỗi ngày; câu bác sĩ 「食べていないのではなく、受け取れていないのかもしれませんね」= mở thẳng vào ẩn dụ |
+| Ẩn dụ trung tâm | **骨＝鉄筋コンクリート**: カルシウム=コンクリート · たんぱく質=鉄筋 · **ビタミンD=現場で材料を受け取る係**. Nấm không mang vật liệu tới — nấm **tăng người nhận hàng** |
+| Cảm xúc chủ đạo | Tiếc của (đang làm mà mất công dụng) → an tâm (chỉ cần rổ + nắng, không mua gì) |
+| Cú lật cuối | **「今日いちばん大事なのは、きのこの話ではありません」** — cả bài dạy tăng ビタミンD từ nấm, cuối lật: nấm **gần như không có canxi**, không có "bạn diễn" thì 4 điều trước thành vô nghĩa. An toàn, chắc, làm được ngay, và đảo ngược chính bài |
+| CTA | Câu canonical health `.claude/rules/cta-midvideo.md` §2.3, ngay sau re-hook |
+| Ending | teaser đích danh **flagship #2 「長寿の血管の食卓ランキング」** (khôi phục nhịp xen kẽ flagship ↔ deep-dive) → sub theo sứ mệnh → chữ ký đóng |
+
+**⚠️ Chống déjà vu với #21:** #21 (足腰 ranking) mục #4 đã nói カルシウム×ビタミンD「ふたつでひと組」+ 日光. Ở đây **KHÔNG giả vờ mới**: đổi hẳn ống kính (đứng từ phía きのこ/vitamin D, không từ phía canxi), ẩn dụ khác hẳn (鉄筋コンクリート vs 通帳 của #21), và trọng tâm là **thao tác bếp với nấm** (洗わない/冷凍/日に当てる/油/戻し汁) — thứ #21 không có một chữ. Cú lật cuối nói thẳng đó là "bạn diễn" chứ không trình bày như phát hiện mới.
+
+---
+
+## GIAI ĐOẠN 2 — Dàn ý
+
+**⭐ ẨN DỤ TRUNG TÂM (xuyên cả 5 khối):**
+> **骨＝鉄筋コンクリートの家。コンクリート＝カルシウム、鉄筋＝たんぱく質、そして ビタミンD＝現場で材料を受け取る係。材料が届いても、受け取る人がいなければ、荷物は門の前を通り過ぎる。**
+
+Quy chiếu từng khối: ① 洗う＝受け取り係を水に流す · ② 冷凍＝香りと成分を閉じ込める · ③ 日に当てる＝受け取り係を増やす条件 · ④ 油＝受け取り係を体に取り込む乗り物 · ⑤ トラック(カルシウム)が来なければ家は建たない.
+
+**Đo THẬT trên bản viết** (307 ký/phút — hiệu chuẩn từ video 21):
+
+| Khối | Vào | Ký | Ghi chú |
+|---|---|---|---|
+| HOOK | 0:00 | 327 | **stake = 「骨は、折れるまで、何も言いません」** (nỗi sợ thật, không phải "thành phần ngủ yên") → chỉ mặt hành vi 袋から出してすぐ → **neo longevity 0:18** → gỡ friction → tên kênh → hứa 5 điều + **tease cú lật** |
+| CASE タカコさん | 1:03 | 228 | ăn nấm mỗi ngày mà 骨密度 xuống → câu 「受け取れていない」 mở vào ẩn dụ |
+| ★カギ 鉄筋コンクリート **+ trả đáp án sớm** | 1:48 | 502 | ẩn dụ trung tâm → **nói thẳng kết luận ở 2:54**「使う前にザルで三十分から一時間、日に当てる」 → giữ lý do/cách làm làm open-loop cho ③ → giải thích luôn vì sao 2 khối bếp đứng trước |
+| ① もったいない 洗う | 3:26 | 680 | 旨み/香り/歯ざわり mất · 石づき落とす + lau khô · 傘の裏 đừng làm ướt · biến thể (bẩn thật thì lau ẩm · まいたけ/しめじ xé tay · lỡ rửa thì áp chảo lửa to) · ⭐ **câu nói thật: ビタミンD tan trong dầu, KHÔNG trôi theo nước → mất ở đây là hương/vị, "骨の話とは別の損"** |
+| ② もったいない 冷蔵放置 | 5:39 | 382 | 迷ったら冷凍 · 凍ったまま鍋へ · 細胞が壊れて旨みが出やすい (hedge) · きのこミックス (đã nén) |
+| ★RE-HOOK 折り返し | 6:53 | 144 | gọi tên 2 điều đã qua → "từ đây là chuyện của XƯƠNG" + hứa điều rẻ nhất/dễ nhất |
+| ③ ⭐payoff lý do + cách làm | 7:21 | 756 | nắng → ビタミンD · 傘の裏を上, ザル, 30分〜1時間, cắt mỏng thì hơn · **qua kính cửa sổ gần như vô ích · ngày mây phơi lâu hơn · phơi xong cất lạnh** · 干し椎茸 = bản làm sẵn · 戻し汁 đừng bỏ · ngâm nước lạnh qua đêm |
+| ★CTA canonical | **9:29** | 141 | **52%** — trong khối ③, SAU khi cách phơi nắng đã dạy xong, trước phần 干し椎茸. KHÔNG đứng trước reveal (`cta-midvideo.md` §1.3) |
+| ④ もったいない 油なし + cảnh báo nấm rừng | 10:22 | 483 | 脂溶性 → 炒める/nhỏ dầu vào canh · dầu 1 thìa nhỏ · ホイル焼き · chỉ hâm vi sóng thì nhũn · **野生きのこ tuyệt đối không ăn** (giữ ở đây vì là chuyện đáng sợ, có tính giữ chân) |
+| ⑤ CÚ LẬT bạn diễn canxi | 11:57 | **1.109** | ⬅ khối LỚN NHẤT · きのこ không có canxi · 相手役 + định lượng (牛乳コップ1杯/冷奴半丁/しらす大さじ1) · **nhánh cho người không uống được sữa** · callback #21「食べるだけでは半分」· callback タカコ · chặn kỳ vọng "đổi số ngay" · **2 cảnh báo kiểu pháp lý (サプリ/カリウム) dời xuống ĐÂY, sau cao trào** · công thức 5 dòng |
+| まとめ | 15:34 | 333 | recap 5 điều + neo 干して保存する昔の知恵 + neo longevity lần 2 |
+| Ending 3 phần | 16:39 | 184 | teaser 血管ランキング (flagship #2) → 登録+ベル → chữ ký đóng |
+
+**Tổng 5.324 ký ≈ 17:20** (video 20 = 15:40 · 21 = 15:30 · 22 = 17:14 → cùng dải với #22).
+
+> ### 🔧 VÒNG 2 — vá retention (2026-07-26, sau khi tự chấm 7/10)
+>
+> | # | Lỗ | Xử lý |
+> |---|---|---|
+> | 1 | 🔴 **LỖI CHÍNH XÁC (YMYL):** bảng cơ chế ghi 「① 洗う = rửa mất người nhận hàng」 — **sai**, ビタミンD tan trong dầu nên rửa KHÔNG làm mất D. Lời thoại tuy viết đúng ("水に溶ける成分") nhưng đặt ngay sau khối ẩn dụ về D → người xem chắc chắn tự nối "rửa = mất D" | ✅ sửa bảng cơ chế + **thêm câu nói thật trong lời thoại**:「ビタミンDは油に溶ける仲間で、水には溶けません。洗ってもD自体は流れません。ここで失うのは、香りと旨みと歯ざわり。骨の話とは、別の損です」 → vừa hết hiểu lầm, vừa tăng uy tín (kênh chịu nói "cái này không phải vậy") |
+> | 2 | 🔴 **Câu 1 không có mất mát:**「袋から出して、すぐお使いですか」= câu hỏi thao tác; câu 2「成分を眠らせたまま」= trừu tượng, người 70 tuổi không sợ | ✅ đổi sang **đòn sợ im lặng**:「骨は、折れるまで、何も言いません。」→「痛みもないまま進んで、転んだときに、はじめて分かります。」(đòn KHÁC #22 để không lặp khuôn) |
+> | 3 | 🔴 **Title bán A, 3 phút rưỡi đầu nói B:** title/thumbnail hứa 「日に当てるだけ」 mà payoff ở 6:39; trước đó là rửa nấm + cấp đông (không liên quan xương) | ✅ **trả đáp án ở 2:54** ngay trong khối カギ ("使う前に三十分〜一時間、日に当てる。それだけです"), giữ lý do + cách làm + xử lý ngày mưa làm open-loop cho ③; **và nói rõ vì sao 2 khối bếp đứng trước** ("先に片づけてしまいましょう") → hết cảm giác lạc đề |
+> | 4 | 🟡 **Phanh ngay trước cao trào:** 3 cảnh báo (野生きのこ + サプリ + カリウム) ở 9:34–11:44 | ✅ giữ 野生きのこ ở ④ (nó là chuyện đáng sợ → giữ chân, không phải phanh), **dời サプリ + カリウム xuống sau cú lật** |
+> | 5 | 🟡 Thiếu nhánh cho người **không uống được sữa** (rất phổ biến ở senior JP) — mất một mảng khán giả ngay khối quan trọng nhất | ✅ thêm:「牛乳でおなかがゆるくなる方は無理をなさらないで。豆腐でも厚揚げでも、しらすでも小松菜でも、役目は同じです」 |
+> | 6 | 🟡 Sau khi vá thì lên 17:39 — dài | ✅ nén 2 chỗ giá trị thấp nhất (きのこミックス, đoạn callback #21) → **17:20**, cùng dải với #22 |
+>
+> 🔧 **Vòng 1 (cùng ngày):** bản viết đầu chỉ **4.060 ký ≈ 13:13** — mỏng gần 2 phút so chuẩn kênh vì các khối ngắn hơn dàn ý. Bù **935 ký bằng nội dung thật** (không chữ đệm), đúng cách skill dặn "đào sâu: cơ chế → cách làm → biến thể → chi tiết đời thường": biến thể xử lý nấm bẩn/xé tay/cứu khi đã rửa · きのこミックス cấp đông · **bẫy phơi qua kính cửa sổ** · định lượng dầu + ホイル焼き · định lượng "bạn diễn" canxi · callback #21.
+
+**Bảng transition (không 2 phẳng liên tiếp):**
+
+| Chuyển | Cầu nối |
+|---|---|
+| HOOK→CASE | ✓ 「まず、ひとりの方の話から」 |
+| CASE→カギ | ✓ câu bác sĩ 「受け取れていない」→「その意味が、今日のカギです」 |
+| カギ→① | ✓ 「そこが、今日いちばん、もったいないところです」 |
+| ①→② | ✓ đổi nhịp: 「二つ目。買ってきた袋のまま、冷蔵庫に入れておくこと」 |
+| ②→折り返し | ✓ mốc trạm + đổi chủ đề sang 骨 |
+| 折り返し→③ | ✓ đóng open-loop đã gieo ở カギ (điều kiện để "người nhận hàng" tăng) |
+| ③→④ | ✓ 「四つ目。油を使わずに食べてしまうこと」 |
+| ④→⑤ | ✓ 「ここを抜かすと、ここまでの四つが、ぜんぶ無駄になります」 (đe dọa mất trắng = kéo qua disclaimer) |
+| ⑤→まとめ | ✓ công thức 5 dòng để nhớ |
+
+---
+
+## GIAI ĐOẠN 4 — Bảng kiểm chứng claim
+
+| # | Claim | Mức | Xử lý trong lời thoại |
+|---|---|---|---|
+| 1 | Nấm chứa tiền chất, gặp tia cực tím (nắng) chuyển thành ビタミンD | ✅ vững | Nói tự tin, **KHÔNG đọc tên ergosterol**, chỉ 「日の光に当たると、ビタミンDに変わる材料」 |
+| 2 | Phơi nấm tươi ra nắng làm ビタミンD tăng | ✅ vững | Tự tin — **KHÔNG con số, KHÔNG %** |
+| 3 | 干し椎茸 (phơi nắng) nhiều ビタミンD | ✅ vững | Tự tin |
+| 4 | ビタミンD giúp hấp thu カルシウム | ✅ vững | Tự tin (là chân của ẩn dụ) |
+| 5 | Xương được phá và tạo lại liên tục, thay đổi tính bằng năm | ✅ vững | Tự tin + dùng để **chặn kỳ vọng "đổi số ngay"** |
+| 6 | Rửa nấm làm mất chất tan trong nước + xào bị nhũn | ✅ khoa học bếp | Tự tin mức vừa |
+| 7 | Cấp đông làm vỡ tế bào → dễ tiết umami | ⚠️ phổ biến, cơ chế hợp lý, chưa đủ mạnh | 「〜と言われています」 |
+| 8 | Nước ngâm nấm khô có umami + chất tan | ✅ | Tự tin |
+| 9 | ビタミンD tan trong dầu → ăn cùng dầu hấp thu tốt hơn | ✅ vững | Tự tin |
+| 10 | ビタミンD dạng viên quá liều gây hại (tích lũy) | ✅ vững | **Dứt khoát**: không tự tăng liều, hỏi bác sĩ |
+| 11 | Nấm hoang hái ở núi/vườn → nguy hiểm chết người | ✅ (mỗi thu Nhật đều có ca) | **Dứt khoát**: 「食べないでください」, không làm mềm |
+| 12 | Nấm có カリウム | ✅ | Nhắc người hạn chế kali theo chỉ định |
+| 13 | 長野 là vùng trồng nấm | ✅ factual | Chỉ như bối cảnh nhân vật — **KHÔNG** nói "nên dân ở đó sống thọ" (cấm claim nhân quả) |
+| 🚫 | Không tên viện/大学/学会, không %, không tên thương hiệu | — | Toàn bài sạch |
+
+**⚠️ Ba cảnh báo nói DỨT KHOÁT — đặt gọn trong khối ④:** ① 野生きのこ tuyệt đối không ăn ② ビタミンD サプリ không tự tăng liều (tan trong dầu → tích lũy trong người) ③ カリウム制限 theo chỉ định. Kèm 1 câu khung 「まだお元気な方の台所の工夫、お薬や治療の代わりにはなりません」.
+
+**出典 để ở 概要欄, KHÔNG đọc trong lời thoại.** Gợi ý nguồn thật user tự chèn: 厚生労働省「日本人の食事摂取基準」(ビタミンD・カルシウム) · 林野庁/自治体 毒キノコ注意喚起. [CẦN USER XÁC NHẬN LINK TRƯỚC KHI DÁN]
+
+---
+
+## GIAI ĐOẠN 5 — Retention audit
+
+**Bảng cơ chế — không khối nào trùng trong phạm vi 2 bậc:**
+
+| Khối | Cơ chế cốt lõi | Nối về ẩn dụ |
+|---|---|---|
+| ① | **旨み・香り・食感 tan theo nước** (thao tác rửa) — ⚠️ **KHÔNG phải mất vitamin D** (D tan trong dầu). Sửa 2026-07-26: bảng cũ ghi "rửa mất người nhận hàng" = **sai khoa học**; lời thoại giờ nói thẳng điều này để không ai hiểu lầm | "损 khác, không phải chuyện xương" — nói thật để giữ uy tín |
+| ② | **保存と細胞** (đông lạnh) | giữ hàng trong kho đúng cách |
+| ③ | **日光で成分が変わる** (nắng) | điều kiện để tăng người nhận hàng |
+| ④ | **脂溶性＝吸収の乗り物** (dầu) | có người nhận rồi còn phải đưa được vào trong |
+| ⑤ | **材料そのものがない** (nấm không có canxi) | không có xe tải thì nhà không dựng được |
+
+| Gate | Kết quả |
+|---|---|
+| Câu 1 = stake | ✅ **「骨は、折れるまで、何も言いません。」** — nỗi sợ thật, 17 ký, bẻ nhịp. (Sửa vòng 2: bản đầu là câu hỏi thao tác 「袋から出してすぐお使いですか」 = không có mất mát) |
+| Echo lời hứa trong ~70 ký đầu | ✅ **ký 45–93** (`その骨のために、いちばん大事な成分。きのこを、袋から出してすぐ使うと、ほとんど受け取れていません`) |
+| **Lời hứa của TITLE (日に当てる) được trả sớm** | ✅ **2:54** — nói thẳng đáp án ngay trong khối カギ, giữ lý do/cách làm cho ③ (bản đầu bắt chờ tới 6:39 = lỗi nặng: title bán A, 3 phút rưỡi đầu nói B) |
+| Không lặp khuôn hook của #22 | ✅ #22 = nghịch lý "ăn mãi mà không đỡ" · #23 = **đòn sợ im lặng** 「折れるまで何も言いません」 — hai đòn khác nhau |
+| Câu gỡ friction | ✅ 「道具も、買い替えも、いりません」 |
+| **Neo longevity trong 30s đầu** | ✅ **0:18** (ký 94) |
+| Payoff đầu tiên ≤2'30 | ✅ **1:48** (khối カギ, ẩn dụ 受け取り係) + đáp án hành động ở 2:54 |
+| 9 transition đều có cầu nối | ✅ không 2 phẳng liên tiếp |
+| Re-hook + gọi tên khối đã qua | ✅ 6:53 |
+| CTA canonical, KHÔNG đứng trước reveal đã hứa | ✅ **9:29 = 52%**, trong khối ③ sau khi cách phơi nắng đã dạy xong (anchor sinh TTS: `そして、この手間を、はじめから済ませてくれているものが`) |
+| Disclaimer không làm phanh trước cao trào | ✅ vòng 2: giữ 野生きのこ ở ④ (chuyện đáng sợ = giữ chân), **dời サプリ + カリウム xuống SAU cú lật** |
+| Bao phủ người không dùng được món chính | ✅ nhánh 「牛乳でおなかがゆるくなる方」→ đậu phụ/しらす/小松菜 (senior JP rất nhiều người không uống sữa) |
+| Cú lật bẻ nhịp | ✅ 「五つ目。」→「今日いちばん大事なのは、じつは、きのこの話では、ありません。」→「きのこだけを、いくら食べても、骨は強くなりません。」 |
+| Đường năng lượng tăng về cuối | ✅ ⑤ ≈ 850 ký = khối lớn nhất |
+| Disclaimer gộp 1 chỗ + có cầu nối kéo qua | ✅ 3 cảnh báo trong ④, ngay sau là 「ここを抜かすと、四つが無駄になります」 |
+| Open-loop | ✅ **3**: tease cú lật (hook) · 「袋の中ではほとんど増えません」(カギ→③) · case タカコ chờ giải ở ⑤ |
+| Chặn kỳ vọng sai | ✅ 「数字がすぐ変わるものではありません。骨は何年もかけて作りかえられます」 — thật thà, tránh over-promise YMYL |
+
+---
+
+=== KỊCH BẢN HOÀN CHỈNH ===
+
+骨は、折れるまで、何も言いません。
+
+痛みもないまま進んで、転んだときに、はじめて分かります。
+
+その骨のために、いちばん大事な成分。きのこを、袋から出してすぐ使うと、ほとんど受け取れていません。
+
+百歳を過ぎても、自分の足で歩いておられる方。あの足元を支えているのは、筋肉だけではありません。その下の、骨です。
+
+道具も、買い替えも、いりません。台所にあるザルと、窓辺の日なた。それだけです。
+
+同じきのこでも、日に当てたものと、袋のまま使ったもので、体に入るものが変わります。
+
+この、みんなの健康ノートで、今日は、きのこのお話です。もったいない使い方を、五つ。
+
+そして、最後の五つ目は、きのこの話では、ありません。きのこだけを、いくら食べても、骨は強くならない。その話です。
+
+まず、ひとりの方の話から。
+
+きのこの産地、長野にお住まいの、タカコさん、六十九歳。きのこは、味噌汁にも、炒め物にも、毎日のように入れていたそうです。
+
+ところが、健診の紙に、骨のところだけ、こう書かれていました。「少し下がっています」。
+
+痛みは、ありません。転んだことも、ありません。それなのに、数字だけが、静かに下がっていた。
+
+そのときタカコさんは、こう言われたそうです。「食べていないのではなく、受け取れていないのかもしれませんね」。
+
+その意味が、今日のカギです。
+
+皆さんの骨を、鉄筋コンクリートの家だと思ってみてください。
+
+固まっているコンクリートが、カルシウム。その中に通っている鉄筋が、たんぱく質です。
+
+では、その材料を、現場で受け取る係は、誰か。
+
+ビタミンDです。
+
+材料がトラックで届いても、受け取る人がいなければ、荷物は、門の前を通り過ぎていきます。カルシウムを一生けんめい摂っても、受け取り係が足りなければ、体の中を、素通りしてしまうんですね。
+
+きのこは、この受け取り係を、増やしてくれる食べ物です。一年を通して手に入って、いちばん値段の知れた食べ物でもあります。
+
+ただし、です。その受け取り係は、きのこの中で、ある条件がそろったときに、はじめて増えます。買ってきた袋の中では、ほとんど増えません。
+
+そこが、今日いちばん、もったいないところです。
+
+先に、答えだけ申し上げておきます。使う前に、ザルに広げて、三十分から一時間、日に当てる。それだけです。
+
+なぜ、それで変わるのか。どう当てればいいのか。雨の続く週は、どうするのか。三つ目で、順番にお話しします。
+
+ただ、その前に。多くの方が、毎日のように、香りと旨みを捨てているところが、二つあります。ここを先に、片づけてしまいましょう。
+
+まず、ひとつ目。洗ってしまうこと。
+
+きのこは、土から生えてくるものですから、洗いたくなりますよね。けれど、いまお店に並んでいるものは、ほとんどが、清潔なところで育てられています。じゃぶじゃぶ洗う必要は、ありません。
+
+洗うと、どうなるか。旨みも、水に溶ける成分も、一緒に流れていきます。そして、水を吸ったぶんだけ、炒めたときに、べちゃっとなります。香りも、立たなくなります。
+
+ここで、ひとつ、正直に申し上げておきます。さきほどのビタミンDは、油に溶ける仲間で、水には溶けません。ですから、洗ったからといって、ビタミンDそのものが流れ出るわけでは、ありません。
+
+ここで失うのは、香りと、旨みと、歯ざわりです。骨の話とは、別の損です。それでも、もったいないことに、変わりはありませんね。
+
+やることは、二つだけです。石づき、つまり軸の硬い先を、切り落とす。汚れが気になるところは、乾いた布か、キッチンペーパーで、そっと拭く。
+
+とくに、しいたけの、傘の裏。あのひらひらしたところは、水を吸いやすいところです。ここは、濡らさないでおいてください。
+
+これだけで、同じきのこが、同じ油で、香りよく仕上がります。
+
+それでも、土や木くずが見えることが、ありますよね。そのときは、濡らした布で、その部分だけを拭いて、すぐに乾いた布で押さえる。全体を水につけないこと。それだけ、守ってください。
+
+まいたけや、しめじは、手で割くだけで十分です。包丁も、要りません。
+
+もし、うっかり洗ってしまった日は、ざるでよく水気を切って、先に、強火で焼き付けてください。水を飛ばしてから味をつけると、べちゃっとしません。
+
+二つ目。買ってきた袋のまま、冷蔵庫に入れておくこと。
+
+きのこは、日が経つと、香りが抜けていきます。今日は使いきれない、と分かっているなら、その日のうちに、冷凍してしまったほうが、得なんです。
+
+石づきを落として、食べやすい大きさに分けて、袋に入れて、冷凍庫へ。洗わずに、そのままで大丈夫です。
+
+そして、使うときは、解凍しないでください。凍ったまま、鍋やフライパンへ。
+
+冷凍すると、細胞が壊れて、旨みが出やすくなると言われています。ですから、味噌汁に、凍ったまま二つ三つ落とすだけで、だしが、一段深くなります。
+
+冷蔵庫で三日、四日と迷っているあいだに、香りは抜けていきます。迷ったら、冷凍。これだけ、覚えておいてください。
+
+おすすめは、何種類かまとめて冷凍しておくことです。しいたけ、しめじ、えのき。切って、ひとつの袋に。これで、味噌汁にも炒め物にも使える「きのこミックス」ができます。
+
+目安は、一か月ほど。袋の中に霜がたくさんついてきたら、早めに使ってくださいね。
+
+さて、ここまでは、香りと旨みの話でした。洗わない。迷ったら冷凍する。
+
+ここからが、骨の話です。
+
+さきほど、受け取り係は「ある条件がそろったときに増える」と申し上げましたね。その条件を、これからお話しします。
+
+じつは、これが、今日の五つのうちで、いちばん簡単で、いちばんお金のかからないものです。
+
+きのこには、日の光に当たると、ビタミンDに変わる材料が、もともと含まれています。
+
+つまり、日に当てるだけで、中身が変わるんです。
+
+やり方は、こうです。
+
+きのこを、洗わずに、石づきを落とす。しいたけなら、傘の裏を上に向けて、ザルに広げる。えのきやしめじなら、ほぐして広げる。
+
+そのまま、日なたに、三十分から一時間。ベランダでも、よく日の当たる窓辺でも、かまいません。
+
+薄く切ってから広げると、日の当たる面が増えます。少し手間ですが、そのぶん、変わります。
+
+いまの時期の、強い日差しなら、三十分でじゅうぶんです。冬の弱い日なら、長めに。神経質にならなくて、大丈夫です。「使う前に、少し日に当てる」。それだけの習慣です。
+
+ひとつだけ、注意があります。窓ガラス越しの日なたは、思ったほど効きません。ガラスは、この変化に必要な光を、通しにくいんです。ですから、できれば、窓を開けた縁側か、ベランダで。
+
+曇りの日は、少し長めに。それでも、まったく当てないよりは、ずっといいです。
+
+そして、干したあとは、冷蔵庫か、冷凍庫へ。天気のいい日に、多めに作って保存しておくと、雨の続く週も、困りません。
+
+そして、この手間を、はじめから済ませてくれているものが、乾物の棚にあります。
+
+干し椎茸です。
+
+日に干したものは、ビタミンDを多く含みます。日に当てるのが面倒な日があっても、干し椎茸をひと袋、常備しておけば、それで足ります。どんこでも、こうしんでも、種類にこだわる必要は、ありません。
+
+それから、戻し汁。これを、流しに捨てていませんか。旨みと、水に溶けた成分が、そこに出ています。味噌汁に、煮物に、そのまま使ってください。
+
+戻すときは、水で、冷蔵庫に入れて、ゆっくり。急いで、ぬるま湯で戻すと、旨みが立ちません。前の晩に、器に水と椎茸を入れて、冷蔵庫に置いておく。朝には、できています。
+
+四つ目。油を使わずに食べてしまうこと。
+
+ビタミンDは、油に溶ける仲間です。ですから、ゆでただけ、汁だけで終わらせると、せっかくの受け取り係を、取り込みきれません。
+
+ごま油でも、オリーブ油でも、なんでもかまいません。きのこを、油で炒める。あるいは、味噌汁に、ほんの少し、油をたらす。それだけで、体に入りやすくなります。
+
+油は、たっぷりでなくて、かまいません。小さじ一杯で、十分です。
+
+いちばん簡単なのは、ホイル焼きです。きのこに、油をひとまわし、しょうゆを少し。アルミホイルで包んで、トースターへ。洗い物も、ほとんど出ません。
+
+逆に、電子レンジだけで温めると、水が出て、水っぽくなりがちです。同じきのこでも、仕上がりが、まるで違います。
+
+それから、これは、どうしても申し上げておきたいことです。
+
+山や庭で見つけたきのこは、食べないでください。毎年、秋になると、これで具合を悪くされる方がいます。「見分けがつく」という自信が、いちばん危ないところなんです。お店で買ったものを、召し上がってください。
+
+そのうえで、最後のひとつです。ここを抜かすと、ここまでの四つが、ぜんぶ無駄になります。
+
+五つ目。
+
+今日いちばん大事なのは、じつは、きのこの話では、ありません。
+
+きのこだけを、いくら食べても、骨は強くなりません。
+
+なぜか。もう、お分かりだと思います。
+
+きのこが増やしてくれるのは、受け取り係です。運ばれてくる材料そのもの、つまりカルシウムは、きのこには、ほとんど入っていないんですね。
+
+受け取り係だけが、門の前にずらりと並んでいても、トラックが来なければ、家は、建ちません。
+
+ですから、こうしてください。きのこを食べる日は、同じ食卓に、カルシウムの相手役を、一つ。
+
+牛乳でも、ヨーグルトでも。冷奴でも、厚揚げでも。しらすや桜えびを、ひとつまみでも。小松菜のおひたしでも、かまいません。
+
+目安を申し上げると、牛乳ならコップに一杯。冷奴なら、半丁。しらすなら、大さじに一杯。それくらいで、十分です。一度にたくさん、ではなく、毎日の食卓に、一つ。
+
+牛乳を飲むと、おなかがゆるくなる方も、いらっしゃいますね。無理をなさらないでください。豆腐でも、厚揚げでも、しらすでも、小松菜でも、役目は同じです。「牛乳でなければいけない」ということは、ありません。
+
+きのこの炒め物に、冷奴を添える。きのこの味噌汁に、豆腐を入れる。それだけで、受け取り係と、材料が、同じ日にそろいます。
+
+それから、以前、足腰のお話でも申し上げましたが、骨は、使われることでも作りかえられていきます。食べて、そして、歩く。「食べるだけでは半分」ということも、覚えておいてください。
+
+冒頭の、タカコさんです。
+
+毎日、きのこは召し上がっていました。けれど、思い返してみると、牛乳も、豆腐も、小魚も、ほとんど食卓に上がっていなかったそうです。
+
+変えたのは、二つ。使う前に、ザルで少し日に当てるようになったこと。そして、きのこの器のとなりに、豆腐か牛乳を、必ず一つ置くようにしたこと。
+
+正直に申し上げます。数字が、すぐに変わるものでは、ありません。骨は、何年もかけて、作りかえられていきます。
+
+けれど、「受け取れていない」という状態からは、その日のうちに、抜け出せます。
+
+ここで、大事なお願いを、二つだけ。
+
+ビタミンDは、サプリメントで、自己判断に増やすものでは、ありません。油に溶ける仲間は、体に溜まります。飲んでいる方、勧められた方は、量を、必ず主治医の先生に確かめてください。
+
+それから、腎臓の病気で、カリウムを制限されている方。きのこにも、カリウムがあります。量は、指示の範囲でお願いします。
+
+今日のお話は、まだお元気な方の、台所の工夫です。お薬や、治療の代わりには、なりません。
+
+覚えていただきたいのは、この形です。
+
+洗わない。迷ったら、冷凍。使う前に、少し日に当てる。油と一緒に。そして、となりに、カルシウムを一つ。
+
+今日のお話を、まとめます。
+
+ひとつ目。洗わない。石づきを落として、拭くだけ。
+
+二つ目。迷ったら、冷凍。凍ったまま、鍋へ。
+
+三つ目。使う前に、ザルで、三十分から一時間、日に当てる。面倒な日は、干し椎茸で。戻し汁も、使う。
+
+四つ目。油と一緒に。ゆでただけで終わらせない。
+
+そして五つ目。となりに、カルシウムの相手役を、一つ。
+
+きのこは、昔から、秋の山の恵みでした。日に干して、保存して、冬に食べる。あの知恵は、栄養の名前など知らないまま、いちばん理にかなったやり方を、選んでいたことになります。
+
+百歳まで自分の足で歩いておられる方の食卓に、特別なものは、ありません。あるのは、こういう、小さな決めごとの積み重ねなんですね。
+
+今晩、あなたの食卓でも、まずは、きのこのとなりに、豆腐を一つ。
+
+最後まで、聞いてくださって、ありがとうございました。
+
+次回は、長寿の血管の食卓、ランキングでお届けします。体のすみずみまで、栄養と酸素を運んでいる、あの通り道のための五つです。
+
+毎週、長寿の食卓を、ご一緒に。よろしければ、チャンネル登録と、通知のベルを、押しておいてくださいね。
+
+今日の一口が、十年後のあなたをつくります。また、この、みんなの健康ノートで、お会いしましょう。
+
+=== HẾT KỊCH BẢN ===
+
+---
+
+## GIAI ĐOẠN 6 — Đóng gói CTR
+
+### Tên file upload (slug từ khóa chính — romaji, chữ thường, gạch ngang)
+```
+kinoko-hi-ni-ateru-hone-vitamin-d.mp4
+```
+
+### Title CHỐT
+```
+きのこは日に当ててから｜骨のための"あの成分"が変わります
+```
+28 ký (trần 40) · `きのこ` vị trí 1 · lọt trọn vùng hiển thị mobile (~28 ký full-width) · không chứa từ nhạy.
+
+### 3 Title candidates
+1. **【CHỐT — keyword + hành động lạ】** `きのこは日に当ててから｜骨のための"あの成分"が変わります`
+2. **【loss-aversion】** `そのきのこ、洗って使うと損｜骨に効く成分を流しています`
+3. **【persona / longevity】** `長寿の食卓のきのこ｜百歳まで自分の足で歩く人の使い方、五つ`
+
+> ⚠️ **Chưa đo trend** (`youtube-upload-seo.md` §0.5 — bắt buộc trước khi upload). Rổ cần đo Google Trends **YouTube-30d geo=JP**: `きのこ` / `干し椎茸` / `ビタミンD` / `骨密度` / `骨粗しょう症 予防`, có anchor bridging. きのこ là món mùa thu → đo lại sát ngày đăng (T9–10 là đỉnh).
+
+### Thumbnail v1 — khuôn **TEXTWALL** (tường chữ + 2 ảnh inset)
+
+**Vì sao textwall:** #22 dùng **H1 (món macro lệch bên)** → tập này phải đổi khuôn. Textwall là khuôn nhận diện mặc định của kênh (bible §8.2), lần cuối dùng ở 19/20 nên cách đủ xa; và nội dung ở đây là **thao tác** (phơi nắng) chứ không phải một món hero đẹp — chữ phải gánh thông tin, ảnh chỉ minh họa.
+
+| Dòng | Chữ | Màu | Vai |
+|---|---|---|---|
+| 1 | `きのこ` | vàng | CHỦ ĐỀ |
+| 2 | `袋のまま使うと` | trắng | HÀNH VI |
+| 3 | `もったいない!` | đỏ, to nhất | HẬU QUẢ |
+| 4 | `日に当てるだけ` | trắng | ĐÁP ÁN GIẤU (hé cách, không nói vì sao) |
+
+```
+python tools\make_thumb.py <anh_nen_bat_ky.jpg> 06_VIDEO\23_kinoko-hone\23_thumb_textwall.png ^
+  --textwall --line1 "きのこ" --color1 yellow --line2 "袋のまま使うと" --color2 white ^
+  --line3 "もったいない!" --color3 red --line4 "日に当てるだけ" --color4 white ^
+  --inset1 <anh_kinoko_phoi_nang.jpg> --inset2 <anh_kinoko_xao.jpg>
+```
+Query ảnh (Pexels/Commons — cần **nắng rõ**): `shiitake mushrooms drying in sunlight basket` · `sliced mushrooms bamboo colander sun` · `sauteed mushrooms pan` · Commons tiếng Nhật: `干し椎茸 天日干し` · `きのこ 炒め`.
+
+**3 cửa duyệt (chạy sau khi dựng):** ① che chữ → phải nhận ra "nấm + nắng" ② đặt cạnh `22_thumb_h1` + `21_thumb_v2a` → cùng hệ nhận diện, bố cục khác ③ 120px → `もったいない!` đỏ phải đọc được, nấm còn nhận ra.
+
+**Compliance thumbnail:** không 血/死/骨折 · `もったいない!` là hệ quả không-血 · không mặt người · không nhãn thương hiệu · claim khớp nội dung (video thật sự dạy phơi nắng).
+
+### 3 dòng đầu 概要欄 (KHÔNG lời chào, keyword 1 lần)
+```
+きのこを、袋から出してすぐ使っていませんか。じつは、骨のためにいちばん大事な成分は、日に当てたときに増えます。同じきのこでも、体に入るものが変わります。
+洗い方、保存、日に当てる時間、油との合わせ方——きのこの「もったいない使い方」を五つ、順番にお話しします。道具も買い替えも要りません。
+五つ目は、きのこの話ではありません。きのこだけをいくら食べても骨は強くならない、その理由と、となりに置くたった一品です。
+```
+
+### Mô tả đầy đủ
+```
+骨は、鉄筋コンクリートの家に似ています。コンクリートがカルシウム、鉄筋がたんぱく質。そして、その材料を現場で受け取る係が、ビタミンDです。材料がいくら届いても、受け取る人がいなければ、荷物は門の前を通り過ぎてしまいます。きのこは、その「受け取り係」を増やしてくれる、秋のいちばん身近な食べ物です。ただし、買ってきた袋の中では、ほとんど増えません。この動画では、洗い方、冷凍、日に当てる時間、油との合わせ方、そして最後に「となりに置く一品」まで、五つに分けてお話しします。
+
+【目次】
+※ render 完了後、subs.srt から実測値に差し替えること
+0:00 骨は、折れるまで何も言いません
+1:03 タカコさん(69)のケース——毎日食べていたのに
+1:48 今日のカギ「骨＝鉄筋コンクリート、ビタミンD＝受け取り係」
+2:54 結論だけ先に｜使う前に三十分、日に当てる
+3:26 もったいない① 洗ってしまう（Dは水に流れません）
+5:39 もったいない② 袋のまま冷蔵庫へ
+6:53 折り返し｜ここからが、骨の話
+7:21 もったいない③ 日に当てない／干し椎茸と戻し汁
+10:22 もったいない④ 油を使わない／山のきのこは食べない
+11:57 もったいない⑤ きのこだけでは、骨は強くならない
+15:34 まとめ｜長寿の食卓のきのこ
+
+※本動画は健康な方向けの食事と暮らしの工夫の紹介であり、治療や投薬の代わりではありません。山や庭で採れたきのこは絶対に食べないでください。ビタミンDのサプリメントを自己判断で増やすことは避け、量は主治医にご確認ください。腎臓の病気でカリウムを制限されている方、食事療法を受けている方は、必ず主治医の指示を優先してください。
+
+音声: VOICEVOX 青山龍星
+
+#きのこ #干し椎茸 #ビタミンD #骨活 #長寿の食卓
+```
+
+### タグ / Tags (~24)
+```
+きのこ,きのこ 食べ方,しいたけ,干し椎茸,干し椎茸 戻し方,きのこ 冷凍,きのこ 洗わない,ビタミンD,ビタミンD 食べ物,骨密度,骨粗しょう症 予防,骨活,カルシウム 吸収,カルシウム 食品,秋の食材,旬の野菜 秋,きのこ 栄養,えのき,しめじ,シニア 健康,60代 健康,70代 食事,長寿の食卓,健康ノート
+```
+
+### Pinned comment
+```
+きのこは、洗う派でしたか。それとも、拭く派でしたか。うちは長いあいだ、洗う派でした。よろしければ、コメントで教えてください。
+```
+
+### Ghi chú sản xuất (bước sau)
+1. `23_kinoko-hone_SLIDES_photo.json` — 45–52 entry, mọi entry có `rank` = `その1`…`その5` theo 5 khối もったいない (カギ/まとめ dùng card chữ).
+2. `fetch_photos.py` → `06_VIDEO/23_kinoko-hone/slides_img_photo/` (check kho chung trước) → contact sheet duyệt mắt TRƯỚC render.
+3. Render: `--sub-style pill --motion --watermark 健康ノート --bgm ... --bgm-gain -40`, chạy NỀN theo `.claude/rules/render-background.md`. Folder video đặt **đúng stem file TTS** = `23_kinoko-hone`.

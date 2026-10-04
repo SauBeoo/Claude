@@ -1,0 +1,7 @@
+dong 1 -> kataribe_talk.png
+dong 2 -> kataribe_point.png
+dong 3 -> kataribe_wry.png
+dong 4 -> haha_talk.png
+dong 5 -> haha_back.png
+dong 6 -> bubble_left.png
+dong 7 -> bubble_right.png

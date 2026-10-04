@@ -1,0 +1,202 @@
+# -*- coding: utf-8 -*-
+"""make_cells_22.py — dung clips/clip_NN.mp4 cho video 22 tu clips/_PLAN.json (build_slides_22.py).
+
+  photo    anh THAT (real_22/)            -> [ve chu so bang FONT neu co 'num'] -> still_kb.py (zoom/truot cham)
+  aistill  anh AI da lam sach (cells_in_ai) -> still_kb.py
+  video    clip QUAY THAT (Pexels/Commons)  -> cat khe, keo cham <=1,2x neu ngan, 16:9, 1920x1080, 24fps
+  ai       clip AI da lam sach (cells_in_ai)-> nhu tren
+Resume: bo qua khi clip moi hon ca nguon lan _PLAN.json. Thieu nguon -> clips/_MISSING_ART.json (chan render).
+Ra clips_ungraded/ KHONG o day — grade_cells.py tu chep ban goc khi chay.
+    python tools/make_cells_22.py [--jobs 2] [--only 3,7]
+"""
+import sys, json, subprocess, argparse
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+from PIL import Image, ImageDraw, ImageFont
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+ap = argparse.ArgumentParser()
+ap.add_argument("--jobs", type=int, default=2)
+ap.add_argument("--only", default=None)
+ap.add_argument("--mark-sig", action="store_true", help="bootstrap chu ky cho o da co, khong dung lai")
+a = ap.parse_args()
+
+ROOT = Path(r"E:\Claude\Projects\youtube-jp-showa")
+VD = ROOT / "06_VIDEO" / "22_kieta-shigoto"
+CL, TMP = VD / "clips", VD / "_cells_tmp"
+KB = Path(r"E:\Claude\Projects\_media_library\still_kb.py")
+FONT = r"C:\Windows\Fonts\YuGothB.ttc"
+FPS, MARGIN, MAX_STRETCH = 24, 0.5, 1.2
+MODES = ["zin", "pl", "zout", "pr", "tu", "zin", "td", "pl", "zout", "pr"]
+plan = json.loads((CL / "_PLAN.json").read_text(encoding="utf-8"))
+only = {int(x) for x in a.only.split(",")} if a.only else None
+TMP.mkdir(exist_ok=True)
+
+
+def probe(p):
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                        "stream=width,height:format=duration", "-of", "json", str(p)], capture_output=True, text=True)
+    j = json.loads(r.stdout or "{}"); st = (j.get("streams") or [{}])[0]
+    return float(j.get("format", {}).get("duration", 0) or 0), st.get("width", 0), st.get("height", 0)
+
+
+# 🔴 2026-09-29: resume theo CHU KY TUNG O (khong theo mtime _PLAN.json) — sua 1 o thi chi dung lai o do,
+#    khong dung lai ca 136 o moi lan build_slides ghi lai PLAN (render-background.md §2.5).
+SIGP = CL / "_SIG.json"
+SIG = json.loads(SIGP.read_text(encoding="utf-8")) if SIGP.exists() else {}
+
+
+def sig(r, src, extra=""):
+    return json.dumps([r["code"], round(r["dur"], 3), r.get("num"), src.name, round(src.stat().st_mtime, 2), extra],
+                      ensure_ascii=False)
+
+
+def fresh(dst, src, r, extra=""):
+    return (dst.exists() and SIG.get(str(r["idx"])) == sig(r, src, extra)
+            and dst.stat().st_mtime >= src.stat().st_mtime)
+
+
+def draw_num(src, dst, rows):
+    """chu so bang FONT: 袋文字 (vien den day + trang), goc TREN-TRAI, dong 1 nho, dong 2+ TO; tu co theo be rong."""
+    im = Image.open(src).convert("RGB")
+    W, H = im.size
+    # cover-crop 16:9 truoc de biet dung vung se hien (still_kb crop giua)
+    if W / H > 16 / 9:
+        nw = int(H * 16 / 9); im = im.crop(((W - nw) // 2, 0, (W - nw) // 2 + nw, H))
+    else:
+        nh = int(W * 9 / 16); im = im.crop((0, (H - nh) // 2, W, (H - nh) // 2 + nh))
+    if im.width < 1920:
+        im = im.resize((1920, 1080), Image.LANCZOS)
+    s = im.width / 1920                             # moi so do tinh theo khung 1920
+    d = ImageDraw.Draw(im)
+    maxw = im.width * 0.78                          # zoom 7% cua still_kb an mep -> chua le
+    x, y = int(110 * s), int(95 * s)
+    # lop nen toi nhe sau khoi chu de doc duoc tren anh sang
+    sizes = []
+    for k, t in enumerate(rows):
+        size = int((70 if k == 0 and len(rows) > 1 else 104) * s)
+        while True:
+            f = ImageFont.truetype(FONT, size)
+            if d.textlength(t, font=f) <= maxw or size < 40 * s:
+                break
+            size -= 4
+        sizes.append((t, f, size))
+    tot_h = sum(int(sz * 1.28) for _, _, sz in sizes)
+    box_w = max(d.textlength(t, font=f) for t, f, _ in sizes)
+    ov = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    ImageDraw.Draw(ov).rounded_rectangle((x - 40 * s, y - 30 * s, x + box_w + 40 * s, y + tot_h + 20 * s),
+                                         radius=int(24 * s), fill=(0, 0, 0, 110))
+    im = Image.alpha_composite(im.convert("RGBA"), ov).convert("RGB")
+    d = ImageDraw.Draw(im)
+    for k, (t, f, sz) in enumerate(sizes):
+        col = (255, 226, 120) if (k > 0 or len(rows) == 1) else (255, 255, 255)
+        d.text((x, y), t, font=f, fill=col, stroke_width=max(4, int(sz * 0.09)), stroke_fill=(15, 15, 15))
+        y += int(sz * 1.28)
+    im.save(dst, quality=95)
+    return dst
+
+
+def num_layer(rows, dst):
+    """lop chu RGBA 1920x1080 cho o VIDEO co 'num' — cung kieu draw_num (ve tren nen trong suot)."""
+    im = Image.new("RGBA", (1920, 1080), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    x, y = 110, 95; sizes = []
+    for k, t in enumerate(rows):
+        size = 70 if k == 0 and len(rows) > 1 else 104
+        while True:
+            f = ImageFont.truetype(FONT, size)
+            if d.textlength(t, font=f) <= 1920 * 0.78 or size < 40: break
+            size -= 4
+        sizes.append((t, f, size))
+    tot_h = sum(int(sz * 1.28) for _, _, sz in sizes); box_w = max(d.textlength(t, font=f) for t, f, _ in sizes)
+    d.rounded_rectangle((x - 40, y - 30, x + box_w + 40, y + tot_h + 20), radius=24, fill=(0, 0, 0, 110))
+    for k, (t, f, sz) in enumerate(sizes):
+        col = (255, 226, 120, 255) if (k > 0 or len(rows) == 1) else (255, 255, 255, 255)
+        d.text((x, y), t, font=f, fill=col, stroke_width=max(4, int(sz * 0.09)), stroke_fill=(15, 15, 15, 255))
+        y += int(sz * 1.28)
+    im.save(dst); return dst
+
+
+def do_still(r, src, k):
+    i = r["idx"]; dst = CL / ("clip_%02d.mp4" % i)
+    if fresh(dst, src, r, MODES[k % len(MODES)]): return i, "skip"
+    img = src
+    if r.get("num"):
+        img = draw_num(src, TMP / ("num_%02d.jpg" % i), r["num"])
+    p = subprocess.run([sys.executable, str(KB), str(img), str(dst), "--dur", "%.2f" % (r["dur"] + MARGIN),
+                        "--mode", MODES[k % len(MODES)], "--amount", "0.06", "--fps", str(FPS), "--crf", "18"],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if p.returncode or not dst.exists():
+        return i, "LOI still_kb: " + (p.stderr or p.stdout)[-300:]
+    SIG[str(i)] = sig(r, src, MODES[k % len(MODES)])
+    return i, "ok still %s%s" % (MODES[k % len(MODES)], " +NUM" if r.get("num") else "")
+
+
+def do_video(r, src):
+    i = r["idx"]; dst = CL / ("clip_%02d.mp4" % i)
+    if fresh(dst, src, r): return i, "skip"
+    need = r["dur"] + MARGIN
+    d, w, h = probe(src)
+    if not d: return i, "LOI khong doc duoc " + src.name
+    fac = max(1.0, need / d)
+    ss = max(0.0, (d * fac - need) / 2 / fac) if fac == 1.0 and d > need + 1 else 0.0   # lay khuc GIUA clip
+    vf = ("setpts=%.4f*PTS," % fac if fac > 1.001 else "") + \
+         "crop='min(iw,ih*16/9)':'min(ih,iw*9/16)':'(iw-min(iw,ih*16/9))/2':'(ih-min(ih,iw*9/16))/2'," \
+         "scale=1920:1080:flags=lanczos,setsar=1,fps=%d" % FPS
+    inp = ["-ss", "%.2f" % ss, "-i", str(src)]
+    if r.get("num"):                                   # o so lieu tren CLIP: de lop chu font len
+        ov = num_layer(r["num"], TMP / ("numv_%02d.png" % i))
+        inp += ["-i", str(ov)]
+        filt = ["-filter_complex", "[0:v]%s[b];[b][1:v]overlay=0:0[v]" % vf, "-map", "[v]"]
+    else:
+        filt = ["-vf", vf]
+    p = subprocess.run(["ffmpeg", "-y", "-v", "error"] + inp + ["-t", "%.2f" % need] + filt + ["-an", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-pix_fmt", "yuv420p",
+                        str(dst)], capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if p.returncode: return i, "LOI ffmpeg: " + p.stderr[-300:]
+    SIG[str(i)] = sig(r, src)
+    return i, "ok video%s x%.2f%s" % (" +NUM" if r.get("num") else "", fac, "  ⚠️ keo cham qua %.1fx" % MAX_STRETCH if fac > MAX_STRETCH + 1e-3 else "")
+
+
+jobs, missing, k = [], [], 0
+for r in plan:
+    src = VD / r["src"] if r.get("src") else None
+    if r["layer"] in ("photo", "aistill"):
+        k += 1
+    if only is not None and r["idx"] not in only:
+        continue
+    if src is None or not src.exists():
+        missing.append({"file": r.get("src") or r["code"], "layer": r["layer"], "note": r["text"][:30]}); continue
+    jobs.append((r, src, k))
+
+print("o can dung: %d | thieu nguon: %d" % (len(jobs), len(missing)))
+if "--mark-sig" in sys.argv:          # bootstrap: ghi chu ky cho o DA CO (dung tu PLAN hien tai), khong dung lai
+    for r, s_, kk in jobs:
+        if (CL / ("clip_%02d.mp4" % r["idx"])).exists():
+            SIG[str(r["idx"])] = sig(r, s_, MODES[kk % len(MODES)] if r["layer"] in ("photo", "aistill") else "")
+    SIGP.write_text(json.dumps(SIG, ensure_ascii=False, indent=0), encoding="utf-8"); print("mark-sig", len(SIG)); sys.exit(0)
+log = []
+with ThreadPoolExecutor(max_workers=max(1, a.jobs)) as ex:
+    futs = [ex.submit(do_still, r, s, kk) if r["layer"] in ("photo", "aistill") else ex.submit(do_video, r, s)
+            for r, s, kk in jobs]
+    for f in futs:
+        i, st = f.result(); log.append((i, st))
+        print("  clip_%02d  %s" % (i, st[:110]), flush=True)
+
+SIGP.write_text(json.dumps(SIG, ensure_ascii=False, indent=0), encoding="utf-8")
+bad = [(i, st) for i, st in log if st.startswith("LOI")]
+for r in plan:
+    if only is not None and r["idx"] not in only: continue
+    p = CL / ("clip_%02d.mp4" % r["idx"])
+    if not p.exists(): continue
+    d, w, h = probe(p)
+    if d < r["dur"] + 0.4: bad.append((r["idx"], "NGAN %.2f < o %.2f+0.4" % (d, r["dur"])))
+    if (w, h) != (1920, 1080): bad.append((r["idx"], "kich thuoc %sx%s" % (w, h)))
+MF = CL / "_MISSING_ART.json"
+if missing:
+    MF.write_text(json.dumps(missing, ensure_ascii=False, indent=1), encoding="utf-8")
+    print("🔴 THIEU %d nguon — CHUA DUOC RENDER" % len(missing))
+elif only is None and MF.exists():
+    MF.unlink()
+for b in bad: print("🔴", b)
+print("GATE O: %s" % ("SACH" if not bad and not missing else "DO"))
+sys.exit(1 if bad or missing else 0)

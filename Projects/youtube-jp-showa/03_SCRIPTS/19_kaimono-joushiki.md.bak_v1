@@ -1,0 +1,110 @@
+# 19 — 昭和の買い物の当たり前5選（質屋・月賦・定価・閉店・物品税）
+
+Kịch bản đọc: `19_kaimono-joushiki_TTS.md` · Video: `06_VIDEO/19_kaimono-joushiki/` (chưa dựng)
+Trục **B** (阿井田茂 / Calm / 0.90, AivisSpeech :10101, profile `showa-b`) · **4.533 ký → ước 15,3 phút** @ 4,93 ký/s
+🔴 Mốc thật chỉ chốt từ `timeline.json` SAU render (CLAUDE.md §Sản xuất — hệ số đọc đã sai 4 lần).
+⭐ Video đầu tiên chạy **khuôn v08** (CLAUDE.md §Visual: ảnh THẬT cận đúng vật được đọc, ~6–7s/hình, AI chỉ lấp).
+
+---
+
+## 0. VÌ SAO ĐỀ TÀI NÀY
+
+User chọn 2026-09-25 (trong 3 phương án). Số đo kênh (bench_channels, 2026-09-25, v/ngày):
+職場の常識 **793** · お金の常識 227 · 母のお金 193 · 給料袋 153 — cụm **tiền × 常識** thắng; bài đời thường (子育て 1 · 夏 2) chết.
+
+### 0.1 CHỒNG LẤN — đã kiểm
+| bài cũ | trùng? | xử lý |
+|---|---|---|
+| 02 商店街 (通い帳・御用聞き) | cùng商店街 | bài này KHÔNG nhắc 通い帳/御用聞き; mục 4 nói về **giờ đóng cửa + luật** |
+| 08 お金の常識 | tiền chung | bài này chỉ về **khâu MUA** |
+| 15 母のお金 (つけ払い) | cùng "mẹ + tiền" | ⛔ bỏ câu "mẹ trả tiền mặt, không ghi sổ" (mâu thuẫn 15) → thay bằng 福引き補助券 |
+
+### 0.2 HÀNG XÓM MỤC TIÊU (`youtube-suggested-growth.md` §1)
+| video | kênh | vì sao mình là "next watch" |
+|---|---|---|
+| 職場の常識5選 (video 14, 793 v/ngày) | 昭和くらし図鑑 | 14 là **kiếm** tiền, bài này là **tiêu** tiền — nửa còn lại của cùng khu phố 「昭和のお金」 |
+| お金の常識12選 (video 08) | 昭和くらし図鑑 | 08 nhắc giá; bài này trả lời **vì sao giá tròn và không có thuế** |
+| 【昭和30〜50年代】昭和の常識20選 | 昭和の音がする | khung 「今では信じられない」; ⚠️ đo lại view trước khi đóng gói |
+
+---
+
+## 1. FACT SHEET — ✅ VERIFY 2026-09-25 (agent đọc văn bản gốc)
+
+| # | Con số / mốc | Nguồn | Trạng thái |
+|---|---|---|---|
+| 1 | 消費税法 **昭和63年12月30日 法律第108号** · 第29条 税率 **百分の三** · áp dụng **平成元年4月1日** (luật ghi 「昭和六十四年四月一日」 vì soạn trước đổi niên hiệu) | 衆議院 制定法律 houritsu/11319881230108 | ✅ gốc |
+| 2 | 物品税法 bị bãi bỏ bởi 消費税法 附則第20条, cùng ngày áp dụng 消費税 | như trên | ✅ gốc |
+| 3 | 物品税 loại 2/3 (TV, tủ lạnh, xe, mỹ phẩm…) **nhà sản xuất nộp khi xuất khỏi 製造場** ⇒ ẩn trong giá | 物品税法 昭和37年 法律第48号 第3条・第11条 | ✅ gốc |
+| 4 | TV màn hình lớn **20%**, nhỏ 15% (luật sửa **昭和56年** 法律第14号) | 衆議院 houritsu/09419810331014 | ✅ gốc |
+| 5 | カラーテレビ **百分の十** trong luật 昭和37年 | 物品税法 S37 (附則 — ⚠️ nằm ở điều khoản chuyển tiếp) | ✅ gốc — lời đọc 「はじめ、十パーセント」 |
+| 6 | Món ăn hằng ngày: luật đánh theo **danh sách dương tính** (第2条), gạo/rau không có trong 別表 | 物品税法 S37 | ✅ suy ra từ cấu trúc — lời đọc 「多くは…載っていませんでした」, ⛔ không nói "mọi đồ ăn miễn thuế" (清涼飲料 có bị đánh) |
+| 7 | 昭和 kết thúc **昭和64年1月7日** (元号を改める政令 昭和64年政令第1号, thi hành ngày hôm sau) | 日本法令索引 NDL | ✅ |
+| 8 | Số 1円 đúc: **昭和63 1.269.042 nghìn** · **平成元 2.366.970 nghìn** (1,87× ⇒ lời đọc 「ほぼ、倍」) | 造幣局「年銘別貨幣製造枚数」 nenmeibetsuR2.pdf | ✅ gốc. ⚠️ Năm cao nhất là 平成2 (2.768.953) ⇒ ⛔ không nói "nhiều nhất" |
+| 9 | 質屋営業法 **昭和25年5月8日 法律第158号** (許可 = 公安委員会) | e-Gov 325AC0000000158 | ✅ gốc |
+| 10 | 質屋 **昭和33年 21.539** (đỉnh) · lý do giảm: thu nhập tăng + サラ金 · **令和7年末 2.387** | 警察白書 昭和56 · 警察庁 R7古物質屋概況 | ✅ gốc — 21.539÷2.387 = **9,0** ⇒ 「九分の一ほど」 |
+| 11 | 割賦販売法 **昭和36年7月1日 法律第159号** — công khai điều kiện, giao 書面 | shugiin houritsu/03819610701159 | ✅ gốc (luật không dùng chữ 月賦) |
+| 12 | カラーテレビ普及率 **昭和45年 26,3% → 昭和50年 90,3%** (全世帯) | 内閣府 消費動向調査 0403fukyuritsu.xls | ✅ gốc |
+| 13 | 再販: 独禁法改正 **昭和28年9月1日 法律第259号** (第24条の2) · **9 品目** chỉ định 昭和28–34 (化粧品・染毛料・歯磨・石けん・雑酒・キャラメル・医薬品・カメラ・ワイシャツ) · giảm từ **昭和41年** · hết chỉ định **平成9年4月1日** | 公取委 年次報告 H3, H12 | ✅ gốc |
+| 14 | 大店法 **昭和48年10月1日 法律第109号** · thi hành **昭和49年** (⚠️ ngày cụ thể chưa verify ⇒ chỉ nói năm) · ngưỡng 閉店 **午後6時**, 休業 **年44日** → 7時 (平成2) → 8時 + 24日 (平成6) · bãi bỏ **平成12年6月1日** (大店立地法 H10 法律第91号) | shugiin houritsu/07119731001109 · NDL レファレンス716 · e-Gov | ✅ (ngưỡng qua tài liệu NDL, 省令 gốc không đọc được) |
+| 15 | セブン-イレブン bắt đầu 24h **昭和50年6月, 虎丸店 郡山市** | SEJ 沿革 chính thức | ✅ — ⛔ không nói "đầu tiên ở Nhật" |
+
+### ⛔ Ý ĐỊNH DÙNG NHƯNG ĐÃ BỎ
+- **Thuế xe 普通 23%** — chỉ nguồn thứ cấp; luật ghi 30%, chưa tìm được 租特 ⇒ bỏ số xe.
+- **Thuế suất 1988 của 冷蔵庫/化粧品/宝石** — không tìm được ⇒ chỉ nêu tên, không nêu %.
+- **"TV mẹ mua 昭和44 bị đánh 20%"** — SAI thời điểm (20% là từ 昭和56, và chỉ TV >69cm) ⇒ đáp án là **「テレビ」 nói chung** + câu trung thực 「昭和37年の法律では、はじめ十パーセント」.
+- **Tỉ lệ TV bán bằng 月賦** — không có nguồn chính thức ⇒ không có số.
+- **1円 "nhiều nhất năm 平成元"** — sai (平成2 cao hơn).
+
+---
+
+## 2. CẤU TRÚC — MỘT CÁI VÍ, MỘT BUỔI SÁNG, MỘT CÂU HỎI
+
+**Sợi chỉ:** がま口 của mẹ. Mỗi mục mở bằng **một thứ lấy ra từ ví** (質札 → sổ 月賦 → thẻ tiệm mỹ phẩm → phiếu 福引き → dốc hết tiền xu) ⇒ luôn có "món tiếp theo".
+**Open loop (hỏi, không đếm):** 「昭和の買い物に税金はなかったのか → 実はあった、ある品物には今の消費税の倍」 → 「答えは、毎晩、母の茶の間にありました」. Trả ở **83,7%**.
+**Phép thử tráo khối:** mục 5 (物品税 ẩn trong giá) giải thích vì sao giá mục 3 "một giá" và vì sao sổ 月賦 mục 2 "không ghi thuế" ⇒ đáp án cần mục 2 ⇒ tráo là lộ.
+**Câu hỏi còn treo ở phút 10:** có (đáp án + chuyện 3 yên chưa trả).
+**Trung thực:** 「この母は、何人もの母親をひとりにまとめた姿。数字は、当時の法律と統計です」 — không dùng 「これ、実話です」.
+⛔ Mở bài KHÁC video 18 (18 = đêm tang lễ + hộp bánh; 19 = sáng 平成元年4月1日 ở tiệm rau, có thoại).
+
+| # | vật từ ví | ① TUYÊN BỐ | ③ では、なぜ | ④ MỐC | ⑤ HẠ CÁNH (mềm) |
+|---|---|---|---|---|---|
+| HOOK 0–60s | — | 大根 100円 → 「今日から、百三円」 → không có 1円 → Q | | | |
+| **1** (6,5%) | 質札 | お金が足りない月は、質屋に行くもの | ngân hàng không cho bà nội trợ vay vài nghìn | 質屋営業法 **昭25** · **昭33 21.539** → **令7 2.387** | 足どりは…軽かったのかもしれません |
+| **2** (20,3%) | sổ 月賦 | テレビは、月賦で買うもの | giá nhiều tháng lương × nhà bên đã có × tiệm phải bán trả góp | 割賦販売法 **昭36** · 普及率 **26,3 → 90,3** (昭45→50) | 自分の力で手に入れていく品物だったのかもしれません |
+| **3** (36,4%) | thẻ tiệm mỹ phẩm | 化粧品と薬は、どこで買っても同じ値段 | **E3**: luật cho phép giữ giá — 独禁法改正 **昭28** | 9 品目 → giảm **昭41** → hết **平9** | ゆっくりできる場所だったのかもしれません |
+| CTA @ **49,6%** | | | | | |
+| **4** (53,1%) | phiếu 福引き | お店は、夕方には閉まるもの | nhà làm tiệm + **大店法 昭48** | 6時/44日 → 7時 **平2** → 8時 **平6** · 24h **昭50** · bãi bỏ **平12** | お隣と行き来する理由も…閉まっていったのかもしれません |
+| **5** ⭐ (68,5%) | dốc hết xu | 値札の数字を払えば、それで終わり | **thuế có nhưng không thấy** — 物品税 nộp ở xưởng | 昭和終 **昭64.1.7** → 消費税 **平元.4.1** 3% · 1円 **12,7億 → 23,7億** | 昭和の買い物は…終わったのかもしれません |
+| **KẾT** (83,7%) | — | đáp án: **テレビ** (20% từ 昭56 = gấp đôi 10%) · sổ 月賦 cũng chứa thuế không thấy · 「三円は、次でいいから」 · mẹ luôn giữ 3 đồng 1円 | | | câu đỉnh `[間1.2][速0.8][後間1.0]` → 認める→裏返す (「昭和の買い物には、顔がありました」) → xin 体験談 |
+
+⛔ Không recap · không đếm điểm.
+
+---
+
+## 3. SỐ ĐO GATE (2026-09-25)
+
+| gate CHẶN | số đo | ngưỡng |
+|---|---|---|
+| động cơ | **LIST** (pháp/chế độ 16) | ≥1 trong 2 |
+| số ký | **4.533 (15,3′)** | 4.289–5.324 |
+| mốc năm | **23 (1/197)** | ≥8 và ≥1/500 |
+| đóng mềm | **6** | ≥5 |
+| vào mục 1 | **59,8s** ⚠️ sát trần | ≤60s |
+| tag đứng riêng / giữa dòng | **0 / 0** | 0 |
+| cụm tag | **36** | ~32 |
+| markdown lọt (`**` `__` `#`) | **0** | 0 |
+
+⚠️ **Vào mục 1 = 59,8s là ƯỚC.** Render voice ra >60s thì cắt câu 「百円玉を一枚。昭和のあいだ、それで済んだ買い物です」, **không** cắt câu hỏi.
+Cảnh báo (không chặn): ngũ quan 1/503 (cố ý, E-LIST) · 証人 0 (cố ý — câu "gộp nhiều bà mẹ").
+
+## 4. COMPLIANCE — quét trước khi giao (`youtube-compliance.md`)
+- Title/thumbnail: chưa viết. Thân bài: không có từ nhóm §3.
+- Tên thương hiệu: **セブン-イレブン** (fact công khai, trung tính — CLAUDE.md luật 5 cho phép). Không có tên tiệm/maker khác.
+- YMYL: mọi số có nguồn cấp 1 ở §1. Không có quy đổi 「今の価値で」 (không cần).
+- Ảnh AI (nếu lấp) → tick altered/synthetic. Nhạc Kevin MacLeod → dòng credit CC BY.
+
+## 5. VIỆC CÒN LẠI
+1. ⏳ **Đo Trends gprop=youtube 30 ngày** (rổ gợi ý: 昭和の買い物 · 消費税 導入 · 物品税 · 月賦 · 質屋 · 昭和の常識) → rồi mới viết gói CTR (Title CHỐT + 3 title A/B + 3 thumbnail + 概要欄 + タグ).
+2. Render **demo giọng** 1–2 đoạn (hook + KẾT) bằng `showa-b` (mở AivisSpeech trước) → nghe.
+3. Lập danh sách ảnh THẬT theo khuôn v08: 質札・質屋のれん・月賦手帳・カラーテレビ 1970・化粧品ショーケース・商店街 シャッター・がま口・一円玉・大根. Kho 1971 peloquin (CC BY) cho cảnh phố.
+4. Render → `timeline.json` chốt mốc thật → `06_HOOK_SCORECARD.md` ≥8/10.

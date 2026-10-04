@@ -1,0 +1,2364 @@
+[
+ {
+  "match": "いま、あなたのお宅に、一通の簡易",
+  "video": true,
+  "stage": {
+   "title": "いま、届こうとしている一通",
+   "img": "art_fuutou_todoku.png",
+   "fly": "up",
+   "cap": "簡易書留で、一通の封筒が届きます",
+   "layout": "art",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "差出人は、日本年金機構。",
+  "video": true,
+  "stage": {
+   "title": "この紙のルールは、ひとつだけ",
+   "value": "45日",
+   "unit": "以内",
+   "tone": "amber",
+   "cap": "受け取ってから、この日数",
+   "layout": "big",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "受け取ってから、四十五日。",
+  "video": true,
+  "stage": {
+   "title": "何も出さないと、どうなるか",
+   "ok": [
+    [
+     "form",
+     "「同意した」ものとして手続きが進む"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_serious",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "黙っていること自体が、返事になり",
+  "video": true,
+  "stage": {
+   "title": "こわい話では、ありません",
+   "ok": [
+    [
+     "checklist",
+     "登録したい方は、何もしなくていい"
+    ],
+    [
+     "clock",
+     "むしろ、楽な仕組みです"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "ただ、「自分で決めたかったのに、",
+  "video": true,
+  "stage": {
+   "title": "いちばん、もったいない形",
+   "value": "気づいたら",
+   "tone": "bad",
+   "cap": "自分で決めたかったのに、過ぎていた",
+   "note": "※だから今日、中身を先に見ておきます",
+   "layout": "big",
+   "left": "sensei_caution",
+   "right": "josei_worried"
+  }
+ },
+ {
+  "match": "今日は、この一通について、三つだ",
+  "video": true,
+  "stage": {
+   "title": "今日、はっきりさせる三つ",
+   "root": "この一通\nについて",
+   "branches": [
+    {
+     "label": "四十五日",
+     "cap": "過ぎると、何がどうなるのか",
+     "tone": "amber"
+    },
+    {
+     "label": "残高",
+     "cap": "そこまで見られるのか",
+     "tone": "bad"
+    },
+    {
+     "label": "そもそも",
+     "cap": "自分に届くのか",
+     "tone": "grey"
+    }
+   ],
+   "layout": "tree",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ひとつ、四十五日を過ぎると、具体",
+  "video": true,
+  "stage": {
+   "title": "はっきりさせる ②",
+   "pre": 1,
+   "steps": [
+    [
+     "calendar",
+     "四十五日を過ぎると、何がどうなるのか"
+    ],
+    [
+     "lock",
+     "口座の残高まで、見られるようになるのか"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "みっつ、そもそも自分に届くのか。",
+  "video": true,
+  "stage": {
+   "title": "はっきりさせる ③",
+   "pre": 2,
+   "steps": [
+    [
+     "calendar",
+     "四十五日を過ぎると、何がどうなるのか"
+    ],
+    [
+     "lock",
+     "口座の残高まで、見られるようになるのか"
+    ],
+    [
+     "person",
+     "そもそも自分に届くのか（届かない方は五つ）"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "年金と老後のお金研究室です。今日",
+  "video": true,
+  "stage": {
+   "title": "今日も、原典を一緒に読みます",
+   "org": "年金と老後のお金研究室",
+   "doc": "制度の文言は、必ず\n公式ページの画面で確かめます",
+   "note": "※日本年金機構／デジタル庁の公表資料",
+   "layout": "source",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "では、第一章。その封筒は、いった",
+  "video": true,
+  "stage": {
+   "title": "第一章　その封筒は、何なのか",
+   "value": "一通",
+   "tone": "ink",
+   "cap": "日本年金機構から、順次、送られます",
+   "layout": "big",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "普通郵便ではありません。簡易書留",
+  "video": true,
+  "stage": {
+   "title": "普通郵便では、ありません",
+   "img": "art_kanikakitome.png",
+   "fly": "left",
+   "pins": [
+    [
+     "サインか印鑑",
+     0.24,
+     0.14
+    ]
+   ],
+   "cap": "簡易書留 ＝ 手渡しで受け取る郵便です",
+   "layout": "art",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "送られる時期は、令和八年の八月ご",
+  "video": true,
+  "stage": {
+   "title": "半年かけて、順に届きます",
+   "from": "令和8年8月頃",
+   "to": "令和9年2月頃",
+   "label": "順次発送",
+   "prog": 0.62,
+   "steps": [
+    [
+     "calendar",
+     "八月から\n発送開始"
+    ],
+    [
+     "clock",
+     "半年かけて\n少しずつ"
+    ],
+    [
+     "person",
+     "生年月日の\n順番で"
+    ]
+   ],
+   "layout": "timeline",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ここ、大事なところなんですが——",
+  "video": true,
+  "stage": {
+   "title": "「ご近所にはもう届いたのに」",
+   "ok": [
+    [
+     "house",
+     "ご近所にはもう届いた"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "うちには、まだ来ない"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_reassure",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "中身は、「年金振込口座の公金受取",
+  "video": true,
+  "stage": {
+   "title": "中身の、正式な名前",
+   "img": "art_ikou_kakuninsho.png",
+   "fly": "up",
+   "cap": "「年金振込口座の公金受取口座登録に関する意向確認書」",
+   "layout": "art",
+   "left": "sensei_hold",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "長いですね。私も、最初に読んだと",
+  "video": true,
+  "stage": {
+   "title": "長い名前ですが、聞いていることは一つ",
+   "ok": [
+    [
+     "docs",
+     "名前は、たしかに長い"
+    ]
+   ],
+   "no": [
+    [
+     "magnifier",
+     "私も、三回読み直しました"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "josei_think"
+  }
+ },
+ {
+  "match": "かみくだくと、こうです。",
+  "video": true,
+  "stage": {
+   "title": "かみくだくと、こうです",
+   "value": "一点だけ",
+   "tone": "amber",
+   "cap": "いま年金が振り込まれている口座を\n国からのお金の受取口座にしてよいか",
+   "layout": "big",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "ここで、当研究室のモニターさん、",
+  "video": true,
+  "stage": {
+   "title": "モニター・伊藤さん（福岡）",
+   "img": "photo_ito_cafe.jpg",
+   "fly": "right",
+   "src": "real",
+   "cap": "喫茶店をひとりで切り盛りされています",
+   "layout": "photo",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "伊藤さんは六十八歳。喫茶店をひと",
+  "video": true,
+  "stage": {
+   "title": "伊藤さんの、いま",
+   "steps": [
+    [
+     "person",
+     "六十八歳・ひとり暮らし"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "自営業でしたから、年金は国民年金",
+  "video": true,
+  "stage": {
+   "title": "伊藤さんの、いま",
+   "pre": 1,
+   "steps": [
+    [
+     "person",
+     "六十八歳・ひとり暮らし"
+    ],
+    [
+     "house",
+     "喫茶店を切り盛り／定休日は水曜"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "その伊藤さんが、こう言っていまし",
+  "video": true,
+  "stage": {
+   "title": "伊藤さんの一言",
+   "value": "受け取れん",
+   "tone": "bad",
+   "cap": "「留守にしてる時間が長いからね」",
+   "layout": "big",
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "——不在票が、冷蔵庫に貼ったまま",
+  "video": true,
+  "stage": {
+   "title": "不在票が、冷蔵庫に貼ったまま",
+   "img": "art_fuzaihyou.png",
+   "fly": "up",
+   "pins": [
+    [
+     "三日",
+     0.78,
+     0.16
+    ]
+   ],
+   "cap": "心当たり、ありませんか",
+   "layout": "art",
+   "left": "sensei_caution",
+   "right": "josei_worried"
+  }
+ },
+ {
+  "match": "ここで、簡易書留そのものについて",
+  "video": true,
+  "stage": {
+   "title": "簡易書留は、郵便受けに入りません",
+   "ok": [
+    [
+     "mailbox",
+     "手渡しで受け取る"
+    ]
+   ],
+   "no": [
+    [
+     "env",
+     "郵便受けには入らない"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "あれを見つけたら、後回しにしない",
+  "video": true,
+  "stage": {
+   "title": "留守なら、これだけが残ります",
+   "img": "art_fuzaihyou_close.png",
+   "fly": "left",
+   "cap": "細長い、不在のお知らせ",
+   "layout": "art",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "再配達は、電話でも、インターネッ",
+  "video": true,
+  "stage": {
+   "title": "再配達を頼む、三つの入口",
+   "steps": [
+    [
+     "phone",
+     "電話で\n頼む"
+    ],
+    [
+     "form",
+     "インターネット\nで頼む"
+    ],
+    [
+     "cashcard",
+     "郵便局の\nアプリから"
+    ]
+   ],
+   "layout": "flow",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "「操作が苦手で」という方は、不在",
+  "video": true,
+  "stage": {
+   "title": "操作が苦手、という方へ",
+   "ok": [
+    [
+     "phone",
+     "不在のお知らせに書かれた番号へ、電話で大丈夫"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_reassure",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "そういうときは、ご家族に、代わり",
+  "video": true,
+  "stage": {
+   "title": "それも億劫だ、という日",
+   "ok": [
+    [
+     "phone",
+     "不在のお知らせの番号に、電話でよい"
+    ]
+   ],
+   "no": [
+    [
+     "clock",
+     "今日はやりたくない、という日もあります"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_reassure",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "大切なのは、封筒を、ご自分の手元",
+  "video": true,
+  "stage": {
+   "title": "この章で、大事なのは一つ",
+   "value": "手元に",
+   "tone": "ok",
+   "cap": "封筒を、ご自分の手元に持ってくること",
+   "note": "※読むのは、そのあとでゆっくりで大丈夫です",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "日本年金機構のページには、こう書",
+  "video": true,
+  "stage": {
+   "title": "出どころは、日本年金機構です",
+   "org": "日本年金機構",
+   "doc": "「年金振込口座の公金受取口座登録に関する\n意向確認書の送付」",
+   "note": "※赤で囲んだところを読み上げます",
+   "layout": "source",
+   "left": "sensei_point",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "こちらが、その画面です。赤で囲ん",
+  "video": true,
+  "stage": {
+   "title": "原典の、この一文です",
+   "img": "art_genten_45nichi.png",
+   "fly": "up",
+   "pins": [
+    [
+     "同意されたものとして取り扱います",
+     0.5,
+     0.82
+    ]
+   ],
+   "cap": "日本年金機構　特設ページより",
+   "layout": "art",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "私の言葉ではありません。制度をつ",
+  "video": true,
+  "stage": {
+   "title": "私の言葉では、ありません",
+   "ok": [
+    [
+     "cityhall",
+     "制度をつくった側が、そう明記しています"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "ひとつ。登録してもいい、という方",
+  "video": true,
+  "stage": {
+   "title": "① 登録してよい、という方",
+   "ok": [
+    [
+     "env",
+     "封筒を開けて、読む"
+    ],
+    [
+     "house",
+     "そのまま置いておく"
+    ]
+   ],
+   "no": [
+    [
+     "form",
+     "返送するものは、ありません"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "ふたつ。断りたい方だけ、動く必要",
+  "video": true,
+  "stage": {
+   "title": "② 断りたい、という方",
+   "value": "4つ",
+   "unit": "の手順",
+   "tone": "amber",
+   "cap": "動くのは、この方だけです",
+   "layout": "big",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "まず、同封されている「公金受取口",
+  "video": true,
+  "stage": {
+   "title": "断る方が、やること",
+   "steps": [
+    [
+     "form",
+     "① 不同意申出書を、切り離す"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "そして、裏面の差出人欄に、ご自分",
+  "video": true,
+  "stage": {
+   "title": "断る方が、やること",
+   "pre": 2,
+   "steps": [
+    [
+     "form",
+     "① 不同意申出書を、切り離す"
+    ],
+    [
+     "lock",
+     "② 目隠しシールを貼る"
+    ],
+    [
+     "hanko",
+     "③ 裏面の差出人欄に、住所とお名前"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "——「四十五日」と覚えなくても大",
+  "video": true,
+  "stage": {
+   "title": "じつは、数えなくていいんです",
+   "value": "数えない",
+   "tone": "ok",
+   "cap": "返送期限の目安は、書類に印刷されています",
+   "layout": "big",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "ここ、ご家族に伝えるときにも、い",
+  "video": true,
+  "stage": {
+   "title": "書類の、ここを見るだけ",
+   "img": "art_kigen_insatsu.png",
+   "fly": "left",
+   "pins": [
+    [
+     "返送期限の目安",
+     0.5,
+     0.2
+    ]
+   ],
+   "cap": "数えなくていい。書いてある日付を見ればいい",
+   "layout": "art",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "ところで、この「目隠しシール」。",
+  "video": true,
+  "stage": {
+   "title": "ところで、この目隠しシール",
+   "value": "なぜ？",
+   "tone": "amber",
+   "cap": "わざわざ同封されている理由があります",
+   "layout": "big",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "返送するのは、口座に関わる書類で",
+  "video": true,
+  "stage": {
+   "title": "返すのは、口座に関わる書類です",
+   "panels": [
+    {
+     "icon": "lock",
+     "cap": "貼って出す＝\n中身が読めない"
+    },
+    {
+     "icon": "postcard",
+     "cap": "貼らずに出す＝\nはがきのように読める"
+    }
+   ],
+   "rows": [
+    "だから、貼って隠してから出す"
+   ],
+   "layout": "compare",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "だから、貼って隠してから出す。そ",
+  "video": true,
+  "stage": {
+   "title": "逆に言えば",
+   "ok": [
+    [
+     "lock",
+     "シールを貼って返送する"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "貼らずに出すのは、避けたい形です"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_caution",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "それから、よくいただく質問を先回",
+  "video": true,
+  "stage": {
+   "title": "「封筒ごと、どこかにやってしまった」",
+   "img": "photo_sagashimono.jpg",
+   "fly": "up",
+   "src": "real",
+   "cap": "……ありますよね",
+   "layout": "photo",
+   "left": "sensei_reassure",
+   "right": "josei_worried"
+  }
+ },
+ {
+  "match": "……ありますよね。私も、大事な紙",
+  "video": true,
+  "stage": {
+   "title": "私も、同じことをします",
+   "ok": [
+    [
+     "house",
+     "大事な紙ほど、大事な場所にしまう"
+    ]
+   ],
+   "no": [
+    [
+     "magnifier",
+     "そして、その場所を忘れる"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_reassure",
+   "right": "josei_relieved"
+  }
+ },
+ {
+  "match": "そういうときは、先ほどの専用フリ",
+  "video": true,
+  "stage": {
+   "title": "なくしたときの、行き先",
+   "value": "0120-74-0011",
+   "tone": "ink",
+   "cap": "専用フリーダイヤル（後半でもう一度お伝えします）",
+   "layout": "big",
+   "left": "sensei_point",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "自分で判断がつかないまま、なんと",
+  "video": true,
+  "stage": {
+   "title": "いちばん避けたい形",
+   "no": [
+    [
+     "warning",
+     "判断がつかないまま、なんとなく放っておく"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "さて、山田さんご夫妻の話です。大",
+  "video": true,
+  "stage": {
+   "title": "山田さんご夫妻（大阪）",
+   "img": "photo_yamada_fufu.jpg",
+   "fly": "right",
+   "src": "real",
+   "cap": "六十七歳と六十五歳。この封筒を前に、意見が分かれました",
+   "layout": "photo",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ご主人は、「役所にまとめて握られ",
+  "video": true,
+  "stage": {
+   "title": "ご夫妻で、意見が分かれました",
+   "panels": [
+    {
+     "icon": "person",
+     "cap": "ご主人＝\nなんとなく気持ちが悪い"
+    },
+    {
+     "icon": "couple",
+     "cap": "奥さま＝\n書き写すのは、もう嫌"
+    }
+   ],
+   "rows": [
+    "どちらも、分かる話です"
+   ],
+   "layout": "compare",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "……どちらも、分かる話です。",
+  "video": true,
+  "stage": {
+   "title": "どちらも、分かる話です",
+   "ok": [
+    [
+     "scale",
+     "正解がどちらか、ではなく"
+    ]
+   ],
+   "no": [
+    [
+     "checklist",
+     "ご自分で選んだかどうか"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "当研究室が、材料をそろえる。決め",
+  "video": true,
+  "stage": {
+   "title": "当研究室の立場",
+   "value": "材料をそろえる",
+   "tone": "ink",
+   "cap": "決めるのは、ご本人です",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "さあ、ここが今日のいちばん大事な",
+  "video": true,
+  "stage": {
+   "title": "第三章　いちばんの不安",
+   "value": "残高",
+   "unit": "は？",
+   "tone": "bad",
+   "cap": "ここが今日の、いちばん大事なところ",
+   "layout": "big",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "不安になりますよね。私も、最初に",
+  "video": true,
+  "stage": {
+   "title": "必ず出てくる、この一言",
+   "img": "art_uwasa_zandaka.png",
+   "fly": "up",
+   "cap": "「いくら貯めているか、見られるんじゃないか」",
+   "layout": "art",
+   "left": "sensei_caution",
+   "right": "josei_worried"
+  }
+ },
+ {
+  "match": "登録されるのは、振り込みに必要な",
+  "video": true,
+  "stage": {
+   "title": "登録されるのは、この五つ",
+   "steps": [
+    [
+     "bank",
+     "金融機関の名前"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "金融機関の名前。支店名。預貯金の",
+  "video": true,
+  "stage": {
+   "title": "登録されるのは、この五つ",
+   "pre": 3,
+   "steps": [
+    [
+     "bank",
+     "金融機関の名前"
+    ],
+    [
+     "house",
+     "支店名"
+    ],
+    [
+     "passbook",
+     "預貯金の種別"
+    ],
+    [
+     "cashcard",
+     "口座番号"
+    ],
+    [
+     "person",
+     "口座名義人のお名前"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "それでも、残高は、この中に入って",
+  "video": true,
+  "stage": {
+   "title": "入っているもの／入っていないもの",
+   "rows": [
+    [
+     "登録される情報",
+     5,
+     "ok",
+     "5つ"
+    ],
+    [
+     "残高・取引履歴",
+     0,
+     "bad",
+     "0"
+    ]
+   ],
+   "max": 5,
+   "label_w": 320,
+   "note": "※日本年金機構 特設ページの記載より",
+   "layout": "bars",
+   "left": "sensei_present",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "そして、デジタル庁のよくある質問",
+  "video": true,
+  "stage": {
+   "title": "デジタル庁は、もっとはっきり書いています",
+   "org": "デジタル庁",
+   "doc": "よくある質問\n「行政機関等経由登録の特例制度」",
+   "note": "※赤で囲んだところを読み上げます",
+   "layout": "source",
+   "left": "sensei_point",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "こちらの画面です。赤で囲んだとこ",
+  "video": true,
+  "stage": {
+   "title": "原典の、この一文です",
+   "img": "art_genten_zandaka.png",
+   "fly": "up",
+   "pins": [
+    [
+     "デメリットはございません",
+     0.5,
+     0.84
+    ]
+   ],
+   "cap": "デジタル庁　よくある質問 Q4 より",
+   "layout": "art",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "——「ございません」。言い切って",
+  "video": true,
+  "stage": {
+   "title": "住所を伝えても、家の中は見えない",
+   "panels": [
+    {
+     "icon": "mailbox",
+     "cap": "住所を伝える＝\nどこへ届くかが分かる"
+    },
+    {
+     "icon": "lock",
+     "cap": "家の中の様子は\n見えない"
+    }
+   ],
+   "rows": [
+    "冷蔵庫に何が入っているかまでは、分かりません"
+   ],
+   "layout": "compare",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "少し、たとえで考えてみましょうか",
+  "video": true,
+  "stage": {
+   "title": "口座も、同じです",
+   "panels": [
+    {
+     "icon": "bank",
+     "cap": "口座の情報＝\nどこへ振り込むかが分かる"
+    },
+    {
+     "icon": "money_pouch",
+     "cap": "中にいくらあるかは\nまったく別の話"
+    }
+   ],
+   "rows": [
+    "口座情報 ＝ 振り込み先が分かるだけ",
+    "残高・取引履歴 ＝ まったく別の話"
+   ],
+   "layout": "compare",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "口座の情報は、「どこへ振り込めば",
+  "video": true,
+  "stage": {
+   "title": "この言い方、覚えて帰ってください",
+   "value": "別の話",
+   "tone": "ok",
+   "cap": "ご家族やご近所に、そのまま伝えてさしあげて",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "この言い方、ぜひ覚えて帰ってくだ",
+  "video": true,
+  "stage": {
+   "title": "うわさで不安になったときは",
+   "ok": [
+    [
+     "magnifier",
+     "出どころのある情報で、確かめる"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "うわさのまま、抱えこまない"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "先ほどの山田さんご夫妻、その後ど",
+  "video": true,
+  "stage": {
+   "title": "山田さんご夫妻、その後",
+   "img": "photo_yamada_go.jpg",
+   "fly": "right",
+   "src": "real",
+   "cap": "ご主人は申出書を返送、奥さまはそのまま",
+   "layout": "photo",
+   "left": "sensei_present",
+   "right": "josei_talk"
+  }
+ },
+ {
+  "match": "ご夫婦で、別々。",
+  "video": true,
+  "stage": {
+   "title": "同じ家に住んでいても",
+   "ok": [
+    [
+     "couple",
+     "お金との付き合い方は、ひとりひとり違います"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "同じ家に住んでいても、お金との付",
+  "video": true,
+  "stage": {
+   "title": "奥さまの一言",
+   "value": "別々でええ",
+   "tone": "amber",
+   "cap": "「四十年、献立でもめてきたんやから」",
+   "layout": "big",
+   "left": "sensei_reassure",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "……そのとおりだと思います。",
+  "video": true,
+  "stage": {
+   "title": "どこにも書かれていない決まり",
+   "no": [
+    [
+     "couple",
+     "夫婦だから、家族だから、同じにしなければいけない"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "では、逆側も見ておきましょう。登",
+  "video": true,
+  "stage": {
+   "title": "第四章　では、逆側も見ておきましょう",
+   "value": "何が変わる？",
+   "tone": "ink",
+   "cap": "デジタル庁の案内には、こうあります",
+   "layout": "big",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "年金や、高額療養費、所得税の還付",
+  "video": true,
+  "stage": {
+   "title": "受け取りやすくなるもの",
+   "value": "160",
+   "unit": "種類以上",
+   "tone": "ok",
+   "cap": "年金・高額療養費・所得税の還付金など",
+   "layout": "big",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "百六十種類以上。正直、私も数えた",
+  "video": true,
+  "stage": {
+   "title": "たとえば、こういうお金です",
+   "ok": [
+    [
+     "money_pouch",
+     "年金"
+    ],
+    [
+     "hospital",
+     "高額療養費 など"
+    ],
+    [
+     "form",
+     "所得税の還付金"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "ただ、暮らしの実感でいうと、こう",
+  "video": true,
+  "stage": {
+   "title": "暮らしの実感でいうと",
+   "value": "あの作業",
+   "tone": "amber",
+   "cap": "申請のたびに、していませんでしたか",
+   "layout": "big",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "通帳を出してくる。引き出しから印",
+  "video": true,
+  "stage": {
+   "title": "これまでの、申請のたび",
+   "img": "art_tsuuchou_hanko.png",
+   "fly": "left",
+   "cap": "通帳を出す。引き出しから印鑑を探す",
+   "layout": "art",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "そして、細い枠の中に、口座番号を",
+  "video": true,
+  "stage": {
+   "title": "細い枠に、桁の多い数字",
+   "img": "photo_kakiutsushi.jpg",
+   "fly": "up",
+   "src": "real",
+   "cap": "桁を一つ間違えて、書き直す",
+   "layout": "photo",
+   "left": "sensei_caution",
+   "right": "josei_worried"
+  }
+ },
+ {
+  "match": "もう一つ。受け取りが早くなる、と",
+  "video": true,
+  "stage": {
+   "title": "もう一つ、こう言われています",
+   "ok": [
+    [
+     "clock",
+     "受け取りが早くなる、とされています"
+    ]
+   ],
+   "no": [
+    [
+     "calc",
+     "役所側の確認の手間が減るぶん"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "ただし、ここは正直に申し上げます",
+  "video": true,
+  "stage": {
+   "title": "ここは、正直に申し上げます",
+   "no": [
+    [
+     "calendar",
+     "「何日早くなる」は、制度として約束されていない"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_serious",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "給付金の種類によっても、自治体に",
+  "video": true,
+  "stage": {
+   "title": "早さは、条件で変わります",
+   "rows": [
+    [
+     "給付金の種類で",
+     3,
+     "grey",
+     "変わる"
+    ],
+    [
+     "自治体で",
+     3,
+     "grey",
+     "変わる"
+    ],
+    [
+     "当研究室の言い方",
+     5,
+     "amber",
+     "早くなる場合が多い"
+    ]
+   ],
+   "max": 5,
+   "label_w": 340,
+   "note": "※そこは、盛らずにお伝えします",
+   "layout": "bars",
+   "left": "sensei_serious",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "では、当研究室の仕事をします。決",
+  "video": true,
+  "stage": {
+   "title": "では、当研究室の仕事をします",
+   "value": "材料",
+   "unit": "をそろえる",
+   "tone": "ink",
+   "cap": "決めるのは、ご本人です",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ひとつ。給付金や還付金の申請を、",
+  "video": true,
+  "stage": {
+   "title": "① 申請を、これからもしそうな方",
+   "ok": [
+    [
+     "form",
+     "給付金や還付金の申請を、何度かしそうな方"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ふたつ。手が思うように動かなくな",
+  "video": true,
+  "stage": {
+   "title": "① どんな場面で出てくるか",
+   "pre": 1,
+   "ok": [
+    [
+     "form",
+     "給付金や還付金の申請を、何度かしそうな方"
+    ],
+    [
+     "hospital",
+     "高額療養費＝入院や手術が重なった年"
+    ],
+    [
+     "calc",
+     "所得税の還付金＝確定申告をされる方は毎年"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "みっつ。ご家族が手続きを手伝って",
+  "video": true,
+  "stage": {
+   "title": "細い枠に、桁の多い数字を書く",
+   "img": "photo_te_kaku.jpg",
+   "fly": "up",
+   "src": "real",
+   "cap": "あれは、年々つらくなります",
+   "layout": "photo",
+   "left": "sensei_caution",
+   "right": "josei_worried"
+  }
+ },
+ {
+  "match": "口座情報を、そのつど家族に見せな",
+  "video": true,
+  "stage": {
+   "title": "③ こういう面もあります",
+   "pre": 1,
+   "ok": [
+    [
+     "couple",
+     "ご家族が、手続きを手伝っている方"
+    ],
+    [
+     "lock",
+     "口座情報を、そのつど家族に見せなくてよくなる"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "ひとつ。給付金の申請を、ここ何年",
+  "video": true,
+  "stage": {
+   "title": "① 申請を、ここ何年もしていない方",
+   "no": [
+    [
+     "clock",
+     "登録しても、使う場面がすぐには来ません"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ふたつ。「情報は、必要になったと",
+  "video": true,
+  "stage": {
+   "title": "② 「必要なときに、自分で出したい」方",
+   "no": [
+    [
+     "lock",
+     "情報は、必要になったときに自分で出したい"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "josei_think"
+  }
+ },
+ {
+  "match": "これは、損得の話ではなく、考え方",
+  "video": true,
+  "stage": {
+   "title": "これは、考え方の話です",
+   "pre": 1,
+   "no": [
+    [
+     "lock",
+     "情報は、必要になったときに自分で出したい"
+    ],
+    [
+     "scale",
+     "損得ではなく、どちらが正しいという話でもない"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "みっつ。年金の振込口座を、近いう",
+  "video": true,
+  "stage": {
+   "title": "③ 近いうちに口座を変えるかもしれない方",
+   "no": [
+    [
+     "passbook",
+     "先に口座を整理してから考える、という順番でよい"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "——ご覧のとおり、「絶対にこうす",
+  "video": true,
+  "stage": {
+   "title": "ご覧のとおり",
+   "value": "どちらでもよい",
+   "tone": "ink",
+   "cap": "「絶対にこうすべき」という話ではありません",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "そのうえで、ご自分の暮らしに合う",
+  "video": true,
+  "stage": {
+   "title": "つまり、この紙は",
+   "value": "それだけの紙",
+   "tone": "ok",
+   "cap": "ご自分に合うほうを選ぶ。それだけです",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "ここで、ひとつだけお願いです。今",
+  "video": true,
+  "stage": {
+   "title": "ここで、ひとつだけお願いです",
+   "ok": [
+    [
+     "checklist",
+     "高評価"
+    ],
+    [
+     "couple",
+     "ご家族・ご友人へのシェア"
+    ],
+    [
+     "form",
+     "コメントで、調べてほしいテーマを"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "さて、そもそも自分は対象なのか。",
+  "video": true,
+  "stage": {
+   "title": "第五章　そもそも、自分は対象なのか",
+   "value": "条件は1つ",
+   "tone": "ink",
+   "cap": "ここを、はっきりさせましょう",
+   "layout": "big",
+   "left": "sensei_present",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "令和八年四月十五日の時点で、六十",
+  "video": true,
+  "stage": {
+   "title": "そして、もう一つ",
+   "pre": 1,
+   "ok": [
+    [
+     "calendar",
+     "昭和三十六年四月十六日以前に、お生まれの方"
+    ],
+    [
+     "money_pouch",
+     "年金を受給されている方"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "生年月日でいうと、昭和三十六年、",
+  "video": true,
+  "stage": {
+   "title": "原典の、この行です",
+   "img": "art_genten_taisho.png",
+   "fly": "up",
+   "pins": [
+    [
+     "昭和36年4月16日以前",
+     0.5,
+     0.8
+    ]
+   ],
+   "cap": "日本年金機構　特設ページより",
+   "layout": "art",
+   "left": "sensei_point",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "いま、頭の中で、ご自分の生年月日",
+  "video": true,
+  "stage": {
+   "title": "いま、頭の中で比べてみてください",
+   "value": "ご自分の\n生年月日",
+   "tone": "ink",
+   "cap": "……いかがでしょうか",
+   "layout": "big",
+   "left": "sensei_hold",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "もし、西暦で覚えている、という方",
+  "video": true,
+  "stage": {
+   "title": "西暦で覚えている方へ",
+   "value": "1961年",
+   "tone": "amber",
+   "cap": "昭和三十六年 ＝ 西暦千九百六十一年",
+   "layout": "big",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "つまり、千九百六十一年の四月十六",
+  "video": true,
+  "stage": {
+   "title": "つまり、この日まで",
+   "ok": [
+    [
+     "calendar",
+     "千九百六十一年四月十六日までにお生まれの方"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "四月生まれの方は、十六日が境目に",
+  "video": true,
+  "stage": {
+   "title": "四月生まれの方は、ここが境目",
+   "ok": [
+    [
+     "calendar",
+     "四月十六日まで ＝ 対象"
+    ]
+   ],
+   "no": [
+    [
+     "calendar",
+     "四月十七日から ＝ 対象外"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_caution",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "ご自分の年金手帳や、ねんきん定期",
+  "video": true,
+  "stage": {
+   "title": "生年月日は、ここに必ず書かれています",
+   "img": "art_nenkin_techo.png",
+   "fly": "left",
+   "cap": "年金手帳／ねんきん定期便",
+   "layout": "art",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "なぜなら——対象の方には、向こう",
+  "video": true,
+  "stage": {
+   "title": "なぜなら",
+   "value": "向こうから",
+   "unit": "届きます",
+   "tone": "ok",
+   "cap": "こちらから申し込む必要は、ありません",
+   "layout": "big",
+   "left": "sensei_reassure",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "今日の話は、「届いたときに、慌て",
+  "video": true,
+  "stage": {
+   "title": "今日の話の、役目",
+   "value": "慌てないため",
+   "tone": "ink",
+   "cap": "届いたときに、慌てないための準備です",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "ただし。ここからが、意外と知られ",
+  "video": true,
+  "stage": {
+   "title": "ここからが、意外と知られていません",
+   "value": "5つ",
+   "tone": "bad",
+   "cap": "条件に当てはまっていても、届かない方がいます",
+   "layout": "big",
+   "left": "sensei_caution",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "ひとつめ。すでに公金受取口座を登",
+  "video": true,
+  "stage": {
+   "title": "届かない方 ①",
+   "no": [
+    [
+     "checklist",
+     "すでに公金受取口座を登録している方"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ふたつめ。令和八年四月に、年金が",
+  "video": true,
+  "stage": {
+   "title": "届かない方 ②",
+   "pre": 1,
+   "no": [
+    [
+     "checklist",
+     "すでに公金受取口座を登録している方"
+    ],
+    [
+     "money_pouch",
+     "令和八年四月に、年金が支払われなかった方"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "よっつめ。共済組合などから支給さ",
+  "video": true,
+  "stage": {
+   "title": "届かない方は、五つ＋「など」",
+   "pre": 3,
+   "root": "条件に\n当てはまる",
+   "branches": [
+    {
+     "label": "すでに登録済み",
+     "cap": "確認の必要がない",
+     "tone": "grey"
+    },
+    {
+     "label": "4月に不支給",
+     "cap": "全額停止・振込不能",
+     "tone": "grey"
+    },
+    {
+     "label": "国外にお住まい",
+     "cap": "送付の対象外",
+     "tone": "grey"
+    },
+    {
+     "label": "共済のみ",
+     "cap": "共済組合等の年金だけ",
+     "tone": "grey"
+    }
+   ],
+   "layout": "tree",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "この五つのどれかに当てはまる方は",
+  "video": true,
+  "stage": {
+   "title": "この五つに当てはまる方は",
+   "value": "届きません",
+   "tone": "bad",
+   "cap": "待っていても、届きません",
+   "layout": "big",
+   "left": "sensei_serious",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "ここで、東京の高橋さんの話です。",
+  "video": true,
+  "stage": {
+   "title": "モニター・高橋さん（東京）",
+   "img": "photo_takahashi.jpg",
+   "fly": "right",
+   "src": "real",
+   "cap": "六十五歳。この春、定年で退かれました",
+   "layout": "photo",
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "ご近所で「うちにはもう来たよ」と",
+  "video": true,
+  "stage": {
+   "title": "ご近所の一言で、そわそわ",
+   "ok": [
+    [
+     "couple",
+     "「うちにはもう来たよ」"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "「私のところだけ、抜けているんじゃないか」"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "josei_worried"
+  }
+ },
+ {
+  "match": "——そうではありません。",
+  "video": true,
+  "stage": {
+   "title": "そうでは、ありません",
+   "value": "順番です",
+   "tone": "ok",
+   "cap": "半年かけて、生年月日の順に届きます",
+   "layout": "big",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "それでも気になる、という方は、待",
+  "video": true,
+  "stage": {
+   "title": "それでも気になる方へ",
+   "value": "0120-74-0011",
+   "tone": "ink",
+   "cap": "専用フリーダイヤル",
+   "layout": "big",
+   "left": "sensei_point",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "つながりにくいときは、050-3",
+  "video": true,
+  "stage": {
+   "title": "つながりにくいときは",
+   "pre": 0,
+   "ok": [
+    [
+     "phone",
+     "050-3524-7372"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "それから、令和八年八月四日から、",
+  "video": true,
+  "stage": {
+   "title": "こんな入口も、あります",
+   "pre": 1,
+   "ok": [
+    [
+     "phone",
+     "050-3524-7372"
+    ],
+    [
+     "form",
+     "令和八年八月四日から、チャットボットも開設"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_explain",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "高橋さん、電話を切ったあと、こう",
+  "video": true,
+  "stage": {
+   "title": "高橋さん、電話を切ったあと",
+   "img": "photo_ocha.jpg",
+   "fly": "up",
+   "src": "real",
+   "cap": "「順番だと分かったら、お茶がおいしくなったよ」",
+   "layout": "photo",
+   "left": "sensei_reassure",
+   "right": "josei_relieved"
+  }
+ },
+ {
+  "match": "ここは、真面目にお伝えします。",
+  "video": true,
+  "stage": {
+   "title": "そういうものだと思います",
+   "value": "分からないこと",
+   "tone": "amber",
+   "cap": "それが、いちばん重いんです",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "日本年金機構のページには、はっき",
+  "video": true,
+  "stage": {
+   "title": "日本年金機構は、はっきり書いています",
+   "org": "日本年金機構",
+   "doc": "「電話、SMS、メールで口座番号等の\n提供を求めることはありません」",
+   "note": "※特設ページ　注意喚起より",
+   "layout": "source",
+   "left": "sensei_point",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "日本年金機構、厚生労働省、そして",
+  "video": true,
+  "stage": {
+   "title": "この電話は、制度の側ではありません",
+   "img": "art_sagi_denwa.png",
+   "fly": "left",
+   "pins": [
+    [
+     "口座番号を教えて",
+     0.5,
+     0.18
+    ]
+   ],
+   "cap": "機構・厚労省・デジタル庁は、こう聞きません",
+   "layout": "art",
+   "left": "sensei_caution",
+   "right": "kikite_worried"
+  }
+ },
+ {
+  "match": "電話で口座番号を聞かれたら、それ",
+  "video": true,
+  "stage": {
+   "title": "原則 ①",
+   "steps": [
+    [
+     "phone",
+     "電話で口座番号を聞かれたら ＝ 制度の側ではない"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "この二つを持っていると、細かい手",
+  "video": true,
+  "stage": {
+   "title": "なぜ、原則なのか",
+   "value": "手口は変わる",
+   "tone": "grey",
+   "cap": "毎年、形を変えます。原則は変わりません",
+   "layout": "big",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "「意向確認書の期限が、あと三日で",
+  "video": true,
+  "stage": {
+   "title": "たとえば、こういう言い方",
+   "steps": [
+    [
+     "clock",
+     "「期限が、あと三日で切れます」＝急がせる"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_caution",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "「確認のため、口座番号の下四桁だ",
+  "video": true,
+  "stage": {
+   "title": "たとえば、こういう言い方",
+   "pre": 2,
+   "steps": [
+    [
+     "clock",
+     "「期限が、あと三日で切れます」＝急がせる"
+    ],
+    [
+     "person",
+     "「代わりに手続きをします」＝親切そうにする"
+    ],
+    [
+     "cashcard",
+     "「下四桁だけ」＝少しだけ、と小さく見せる"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_caution",
+   "right": "kikite_surprised"
+  }
+ },
+ {
+  "match": "——三つとも、入口が違うだけで、",
+  "video": true,
+  "stage": {
+   "title": "三つとも、入口が違うだけ",
+   "value": "欲しいものは同じ",
+   "tone": "bad",
+   "cap": "そして三つとも、二つの原則に引っかかります",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "だから、覚えるのは手口ではなく、",
+  "video": true,
+  "stage": {
+   "title": "だから",
+   "value": "手口ではなく原則",
+   "tone": "amber",
+   "cap": "制度の側は、電話で口座を聞かない。お金も求めない",
+   "layout": "big",
+   "left": "sensei_serious",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "もうひとつ、実務的なコツを。",
+  "video": true,
+  "stage": {
+   "title": "もうひとつ、実務的なコツ",
+   "value": "答えない",
+   "tone": "bad",
+   "cap": "かかってきた電話に、そのまま答えないでください",
+   "layout": "big",
+   "left": "sensei_explain",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "いったん切って、お手元の書類に書",
+  "video": true,
+  "stage": {
+   "title": "いったん切って、かけ直す",
+   "steps": [
+    [
+     "phone",
+     "いったん、電話を切る"
+    ],
+    [
+     "docs",
+     "お手元の書類の番号を見る"
+    ],
+    [
+     "phone",
+     "ご自分から、かけ直す"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_point",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "この「かけ直す」というやり方は、",
+  "video": true,
+  "stage": {
+   "title": "このやり方は、年金に限りません",
+   "ok": [
+    [
+     "couple",
+     "ご家族にも、ぜひ伝えてください"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "最後に、三問だけ。頭の整理に、ご",
+  "video": true,
+  "stage": {
+   "title": "第七章　最後に、三問だけ",
+   "value": "○×",
+   "unit": "クイズ",
+   "tone": "ink",
+   "cap": "頭の整理に、ご一緒にどうぞ",
+   "layout": "big",
+   "left": "sensei_present",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "答えは、×。登録されるのは、いま",
+  "video": true,
+  "stage": {
+   "title": "第一問の答え",
+   "no": [
+    [
+     "passbook",
+     "振込先が、別の口座に変わる"
+    ]
+   ],
+   "ok": [
+    [
+     "bank",
+     "いまの口座の“情報”が登録されるだけ"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "答えは、×。不同意申出書は、公金",
+  "video": true,
+  "stage": {
+   "title": "第二問の答え",
+   "no": [
+    [
+     "money_pouch",
+     "断ると、年金が止まる"
+    ]
+   ],
+   "ok": [
+    [
+     "form",
+     "公金受取口座の登録についての意思表示です"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "答えは、×。公金受取口座は、マイ",
+  "video": true,
+  "stage": {
+   "title": "第三問の答え",
+   "no": [
+    [
+     "lock",
+     "一度決めたら、変えられない"
+    ]
+   ],
+   "ok": [
+    [
+     "form",
+     "マイナポータルから、登録も削除もできます"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "つまり、この紙は「年金を左右する",
+  "video": true,
+  "stage": {
+   "title": "つまり、この紙は",
+   "value": "口座の情報",
+   "unit": "の紙",
+   "tone": "ink",
+   "cap": "「年金を左右する紙」ではありません",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "そう思って開けると、ずいぶん、肩",
+  "video": true,
+  "stage": {
+   "title": "そう思って開けると",
+   "ok": [
+    [
+     "person",
+     "ずいぶん、肩の力が抜けると思います"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved"
+  }
+ },
+ {
+  "match": "一、届くのは簡易書留。差出人は、",
+  "video": true,
+  "stage": {
+   "title": "今日の研究ノート",
+   "steps": [
+    [
+     "env",
+     "一、簡易書留・日本年金機構・八月頃から順次"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "二、四十五日、何もしなければ「同",
+  "video": true,
+  "stage": {
+   "title": "今日の研究ノート",
+   "pre": 1,
+   "steps": [
+    [
+     "env",
+     "一、簡易書留・日本年金機構・八月頃から順次"
+    ],
+    [
+     "calendar",
+     "二、四十五日、何もしなければ「同意」"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "三、断る方は、不同意申出書を切り",
+  "video": true,
+  "stage": {
+   "title": "今日の研究ノート",
+   "pre": 2,
+   "steps": [
+    [
+     "env",
+     "一、簡易書留・日本年金機構・八月頃から順次"
+    ],
+    [
+     "calendar",
+     "二、四十五日、何もしなければ「同意」"
+    ],
+    [
+     "form",
+     "三、断る方は 切り離す→シール→差出人→返送"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "四、登録される口座の情報は、金融",
+  "video": true,
+  "stage": {
+   "title": "今日の研究ノート",
+   "pre": 3,
+   "steps": [
+    [
+     "env",
+     "一、簡易書留・日本年金機構・八月頃から順次"
+    ],
+    [
+     "calendar",
+     "二、四十五日、何もしなければ「同意」"
+    ],
+    [
+     "form",
+     "三、断る方は 切り離す→シール→差出人→返送"
+    ],
+    [
+     "bank",
+     "四、口座の情報＋氏名・個人番号等・残高は入らない"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_explain",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "五、電話やメールで口座番号を聞か",
+  "video": true,
+  "stage": {
+   "title": "今日の研究ノート",
+   "pre": 4,
+   "steps": [
+    [
+     "env",
+     "一、簡易書留・日本年金機構・八月頃から順次"
+    ],
+    [
+     "calendar",
+     "二、四十五日、何もしなければ「同意」"
+    ],
+    [
+     "form",
+     "三、断る方は 切り離す→シール→差出人→返送"
+    ],
+    [
+     "bank",
+     "四、口座の情報＋氏名・個人番号等・残高は入らない"
+    ],
+    [
+     "phone",
+     "五、電話で口座を聞かれたら、制度の側ではない"
+    ]
+   ],
+   "layout": "steps",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "このノートを、スクリーンショット",
+  "video": true,
+  "stage": {
+   "title": "このノートを",
+   "value": "送ってあげて",
+   "tone": "ok",
+   "cap": "スクリーンショットして、ご家族に",
+   "layout": "big",
+   "left": "sensei_point",
+   "right": "josei_nod"
+  }
+ },
+ {
+  "match": "ご自分が対象かどうか、迷われたと",
+  "video": true,
+  "stage": {
+   "title": "迷われたときは",
+   "ok": [
+    [
+     "phone",
+     "専用フリーダイヤル 0120-74-0011"
+    ],
+    [
+     "cityhall",
+     "または、最寄りの年金事務所へ"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "九月になると、また一通、年金機構",
+  "video": true,
+  "stage": {
+   "title": "この紙にも、続きがあります",
+   "ok": [
+    [
+     "form",
+     "九月に、扶養親族等申告書が届きます"
+    ]
+   ],
+   "no": [
+    [
+     "warning",
+     "今年から、届かなくなる方がいます"
+    ]
+   ],
+   "layout": "check",
+   "left": "sensei_caution",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "その話を、次回の研究でお届けしま",
+  "video": true,
+  "stage": {
+   "title": "その話は",
+   "value": "次回",
+   "tone": "ink",
+   "cap": "また次回の研究で、お会いしましょう",
+   "layout": "big",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ }
+]

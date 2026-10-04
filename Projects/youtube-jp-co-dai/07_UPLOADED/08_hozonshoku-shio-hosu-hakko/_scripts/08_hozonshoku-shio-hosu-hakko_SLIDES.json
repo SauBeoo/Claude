@@ -1,0 +1,438 @@
+[
+ {
+  "match": "冷蔵庫に入れておけば、大丈夫",
+  "photo": true,
+  "q": "coarse sea salt close up macro"
+ },
+ {
+  "match": "そう思っていませんか",
+  "photo": true,
+  "q": "closed refrigerator door in home kitchen"
+ },
+ {
+  "match": "4人の家族が1年で捨てる",
+  "photo": false,
+  "lines": [
+   "1年で6万円分",
+   "捨てている"
+  ],
+  "accent": true
+ },
+ {
+  "match": "冷蔵庫の奥から、ぬるりとした",
+  "photo": true,
+  "q": "garbage bag with food scraps"
+ },
+ {
+  "match": "冷蔵庫は、菌を止める機械では",
+  "photo": true,
+  "q": "bacteria culture petri dish laboratory"
+ },
+ {
+  "match": "塩と、太陽と、そして、菌そのものです",
+  "photo": false,
+  "lines": [
+   "塩・太陽・菌",
+   "三つの武器"
+  ],
+  "accent": true
+ },
+ {
+  "match": "菌で食べ物を守る",
+  "photo": true,
+  "q": "japanese pickled vegetables tsukemono plate"
+ },
+ {
+  "match": "一つ目の武器は、塩です",
+  "photo": true,
+  "q": "sea salt in wooden spoon scoop"
+ },
+ {
+  "match": "きゅうりでも、キャベツでも構いません",
+  "photo": true,
+  "q": "fresh cucumber cabbage cutting board"
+ },
+ {
+  "match": "刻んで、軽く塩をふり",
+  "photo": true,
+  "q": "cucumber slices in bowl with salt"
+ },
+ {
+  "match": "ざるの下に、思っていたよりずっと多くの水が",
+  "photo": true,
+  "q": "water droplets under colander bowl"
+ },
+ {
+  "match": "栄養でも、温度でもありません",
+  "photo": true,
+  "q": "water drop macro clear"
+ },
+ {
+  "match": "水です。",
+  "photo": false,
+  "lines": [
+   "答えは",
+   "水"
+  ],
+  "accent": true
+ },
+ {
+  "match": "多くの細菌は、この値が0.9",
+  "photo": false,
+  "lines": [
+   "水分活性 0.9以下",
+   "細菌は増えない"
+  ],
+  "accent": true
+ },
+ {
+  "match": "しぶといカビでも、0.8を切ると",
+  "photo": true,
+  "q": "moldy bread green mold"
+ },
+ {
+  "match": "外側の塩の濃さが高いと",
+  "photo": true,
+  "q": "salt dissolving in glass of water"
+ },
+ {
+  "match": "塩の濃さが、およそ10%を超える",
+  "photo": true,
+  "q": "salted salmon fillet"
+ },
+ {
+  "match": "だから、塩鮭も、梅干しも",
+  "photo": true,
+  "q": "pickled plums and coarse salt in bowl"
+ },
+ {
+  "match": "ジャムは、糖の濃さをおよそ55%",
+  "photo": true,
+  "q": "homemade jam glass jars"
+ },
+ {
+  "match": "ひとつだけ、お断りしておきます",
+  "photo": true,
+  "q": "ice pack cooler bento box"
+ },
+ {
+  "match": "古代の秘訣へようこそ",
+  "photo": true,
+  "q": "traditional japanese old farmhouse kitchen"
+ },
+ {
+  "match": "あなたのお宅に、代々受け継がれている",
+  "photo": true,
+  "q": "漬物樽",
+  "src": "commons"
+ },
+ {
+  "match": "日本の地面の下には、岩塩の層が",
+  "photo": true,
+  "q": "rock salt mine crystal wall"
+ },
+ {
+  "match": "海水を汲み上げ、砂に何度もかけて",
+  "photo": true,
+  "q": "seawater ocean waves shoreline"
+ },
+ {
+  "match": "揚浜式塩田と呼ばれる方法です",
+  "photo": true,
+  "q": "塩田",
+  "src": "commons"
+ },
+ {
+  "match": "薪を燃やし、汗をかき",
+  "photo": true,
+  "q": "firewood burning under iron cauldron"
+ },
+ {
+  "match": "塩の道と呼ばれる街道が",
+  "photo": true,
+  "q": "old stone mountain trail japan forest"
+ },
+ {
+  "match": "二つ目の武器は、太陽です",
+  "photo": true,
+  "q": "bright sun clear blue summer sky"
+ },
+ {
+  "match": "夏の縁側に、ざるが並んでいた家を",
+  "photo": true,
+  "q": "縁側",
+  "src": "commons"
+ },
+ {
+  "match": "ざるを持ち上げるときの、あの軽さ",
+  "photo": true,
+  "q": "empty woven bamboo basket tray"
+ },
+ {
+  "match": "大根を細く切って、ざるに広げ",
+  "photo": true,
+  "q": "切り干し大根",
+  "src": "commons"
+ },
+ {
+  "match": "魚を開いて、塩をあて、日に当てる",
+  "photo": true,
+  "q": "dried fish on drying rack in sun"
+ },
+ {
+  "match": "ここに、今日から使える目安が",
+  "photo": true,
+  "q": "sliced vegetables drying in sunlight basket"
+ },
+ {
+  "match": "食べ物の中には、自分自身をゆっくり分解する",
+  "photo": true,
+  "q": "dried daikon radish strips close up"
+ },
+ {
+  "match": "切り干し大根の甘み、干し椎茸の",
+  "photo": true,
+  "q": "干し椎茸",
+  "src": "commons"
+ },
+ {
+  "match": "カビを、味方につけたのです",
+  "photo": false,
+  "lines": [
+   "カビを",
+   "味方にする"
+  ],
+  "accent": true
+ },
+ {
+  "match": "かつお節を思い出してみてください",
+  "photo": true,
+  "q": "鰹節",
+  "src": "commons"
+ },
+ {
+  "match": "何度も繰り返すうちに、木のように硬い",
+  "photo": true,
+  "q": "dried bonito block hard"
+ },
+ {
+  "match": "削り器で削ったことのある方なら",
+  "photo": true,
+  "q": "鰹節削り器",
+  "src": "commons"
+ },
+ {
+  "match": "三つ目の武器は、菌そのもの",
+  "photo": true,
+  "q": "fermented vegetables in glass jars"
+ },
+ {
+  "match": "じつは、起きていることは、よく似ています",
+  "photo": true,
+  "q": "two glass jars fermenting vegetables"
+ },
+ {
+  "match": "境目は、菌の側ではなく",
+  "photo": false,
+  "lines": [
+   "境目は",
+   "こちら側にある"
+  ],
+  "accent": true
+ },
+ {
+  "match": "私の祖母は、朝、顔を洗うより先に",
+  "photo": true,
+  "q": "elderly asian woman hands wrinkled"
+ },
+ {
+  "match": "祖母が毎朝かき回していた、あのぬか床",
+  "photo": true,
+  "q": "rice bran in a wooden container"
+ },
+ {
+  "match": "米ぬかの中では、乳酸菌が糖を食べて",
+  "photo": true,
+  "q": "rice bran texture close up"
+ },
+ {
+  "match": "酸に強い乳酸菌は平気ですが",
+  "photo": true,
+  "q": "sour pickled vegetables jar brine"
+ },
+ {
+  "match": "味噌と醤油では、さらに二段構えに",
+  "photo": true,
+  "q": "miso paste in wooden bowl"
+ },
+ {
+  "match": "まず麹菌が、米や大豆を分解して",
+  "photo": true,
+  "q": "米麹",
+  "src": "commons"
+ },
+ {
+  "match": "この麹菌は、2006年に",
+  "photo": true,
+  "q": "醤油 醸造 樽",
+  "src": "commons"
+ },
+ {
+  "match": "寿司の起源をたどると",
+  "photo": true,
+  "q": "nigiri sushi on plate"
+ },
+ {
+  "match": "なれずしと呼ばれるもので",
+  "photo": true,
+  "q": "鮒寿司",
+  "src": "commons"
+ },
+ {
+  "match": "三つの武器が、たった一粒に",
+  "photo": true,
+  "q": "梅干し",
+  "src": "commons"
+ },
+ {
+  "match": "梅は、重さの1割から2割ほどの塩に",
+  "photo": true,
+  "q": "梅干し 漬け込み",
+  "src": "commons"
+ },
+ {
+  "match": "塩に漬けた梅を、夏の盛りに",
+  "photo": true,
+  "q": "plums drying in the sun on a tray"
+ },
+ {
+  "match": "干す朝、壺の蓋を開けたときの",
+  "photo": true,
+  "q": "japanese ceramic pot with wooden lid"
+ },
+ {
+  "match": "梅には、もともとクエン酸が",
+  "photo": true,
+  "q": "umeboshi on white rice bowl"
+ },
+ {
+  "match": "古い家の納屋に、何十年も前の",
+  "photo": true,
+  "q": "old ceramic storage jars shed"
+ },
+ {
+  "match": "夏の握り飯には、決まりごとが",
+  "photo": true,
+  "q": "rice ball with nori seaweed on plate"
+ },
+ {
+  "match": "竹の皮や、経木と呼ばれる",
+  "photo": true,
+  "q": "dried bamboo culm sheath"
+ },
+ {
+  "match": "竹の皮をほどくときの、かさり",
+  "photo": true,
+  "q": "bamboo leaf wrapped food parcel"
+ },
+ {
+  "match": "しっかり冷ましてから包む",
+  "photo": true,
+  "q": "steaming hot cooked rice bowl"
+ },
+ {
+  "match": "自家製の瓶詰め、油漬け",
+  "photo": true,
+  "q": "homemade preserved vegetables oil jar"
+ },
+ {
+  "match": "氷室です。",
+  "photo": true,
+  "q": "氷室",
+  "src": "commons"
+ },
+ {
+  "match": "冬のあいだに切り出した氷や雪を",
+  "photo": true,
+  "q": "blocks of ice snow winter"
+ },
+ {
+  "match": "そこへ、空気をたくさん含んだ藁や籾殻を",
+  "photo": true,
+  "q": "rice straw bundles stacked"
+ },
+ {
+  "match": "江戸の時代には、加賀の藩が",
+  "photo": true,
+  "q": "金沢城",
+  "src": "commons"
+ },
+ {
+  "match": "地面の下を流れる水は、真夏でも",
+  "photo": true,
+  "q": "old stone water well"
+ },
+ {
+  "match": "桶を吊るして、すいかや麦茶を",
+  "photo": true,
+  "q": "watermelon cooling in water"
+ },
+ {
+  "match": "これほど確かな技術が、なぜ今",
+  "photo": true,
+  "q": "empty modern kitchen counter clean"
+ },
+ {
+  "match": "一方で、冷やして守るやり方は",
+  "photo": true,
+  "q": "electricity meter dial"
+ },
+ {
+  "match": "そして、遠くから運ばれてくる食べ物は",
+  "photo": true,
+  "q": "supermarket refrigerated shelves"
+ },
+ {
+  "match": "手間はかかるが、お金のかからない技術は",
+  "photo": false,
+  "lines": [
+   "宣伝されない技術は",
+   "静かに忘れられる"
+  ],
+  "accent": true
+ },
+ {
+  "match": "祖母をまねて、ぬか床を一度だけ",
+  "photo": true,
+  "q": "dusty empty jar on shelf"
+ },
+ {
+  "match": "祖母のぬか床は、もうありません",
+  "photo": true,
+  "q": "old empty kitchen wooden shelf"
+ },
+ {
+  "match": "菌が生きられない場所を、こちらから作る",
+  "photo": false,
+  "lines": [
+   "菌が生きられない場所を",
+   "こちらから作る"
+  ],
+  "accent": true
+ },
+ {
+  "match": "ひとつまみの塩、ざる一枚",
+  "photo": true,
+  "q": "pinch of salt in fingers"
+ },
+ {
+  "match": "次は、台所の道具の話をします",
+  "photo": true,
+  "q": "japanese kitchen knife whetstone sharpening"
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの中に",
+  "photo": true,
+  "q": "old japanese wooden storehouse kura"
+ }
+]

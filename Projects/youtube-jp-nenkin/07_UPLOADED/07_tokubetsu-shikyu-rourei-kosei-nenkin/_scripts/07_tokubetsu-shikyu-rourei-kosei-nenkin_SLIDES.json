@@ -1,0 +1,1316 @@
+[
+ {
+  "photo": true,
+  "q": "plain white blank envelope on a wooden table",
+  "match": "あなたが受け取れるはずの"
+ },
+ {
+  "photo": true,
+  "cast": "sato_smile",
+  "match": "仙台の佐藤さん、66歳。"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "佐藤さんが受け取った額",
+   "lines": [
+    "156万円",
+    "5年ぶん、一括で"
+   ]
+  },
+  "match": "そのとき一度に振り込まれ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "この年金がある方",
+   "rows": [
+    [
+     "女性",
+     "いま60〜68歳"
+    ],
+    [
+     "男性",
+     "いま65歳以上"
+    ],
+    [
+     "厚生年金",
+     "1年以上"
+    ]
+   ]
+  },
+  "match": "この年金があるのは、いま"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "5年の時効",
+   "lines": [
+    "権利が発生",
+    "5年経過",
+    "受け取れない"
+   ]
+  },
+  "match": "そして権利が生まれた日か"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "年金の時効",
+   "quote": "5年を経過したときは、時効によって消滅します",
+   "source": "日本年金機構「年金の時効」"
+  },
+  "match": "日本年金機構のページの言"
+ },
+ {
+  "photo": true,
+  "cast": "sato_cry",
+  "match": "もし消えていたとしても、"
+ },
+ {
+  "photo": true,
+  "cast": "prop_tsucho",
+  "match": "通帳には、ちゃんと入金が"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "match": "当研究室です。"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "今日の持ち帰り",
+   "lines": [
+    "あなたの期限は",
+    "令和何年の何月？"
+   ]
+  },
+  "match": "あなたの期限が、何年の何"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "特別支給の老齢厚生年金",
+   "lines": [
+    "65歳より前に",
+    "始まっている年金"
+   ]
+  },
+  "match": "「特別支給の老齢厚生年金」です。"
+ },
+ {
+  "photo": true,
+  "q": "old paper wall calendar hanging close up",
+  "match": "60歳を65歳に引き上げ"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "match": "制度の説明は、これで終わ"
+ },
+ {
+  "photo": true,
+  "q": "rows of filing cabinets with paper documents",
+  "match": "日本年金機構は、あなたの"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "申請主義",
+   "lines": [
+    "国は知っている",
+    "でも、出すまで払わない"
+   ],
+   "mark": "cross"
+  },
+  "match": "分かっているのに、あなた"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "対象になる3つの条件",
+   "lines": [
+    "生年月日が線の内側",
+    "厚生年金に1年以上",
+    "資格期間が10年"
+   ]
+  },
+  "match": "条件は三つです。"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "生年月日の線",
+   "rows": [
+    [
+     "女性",
+     "昭和41年4月1日以前"
+    ],
+    [
+     "男性",
+     "昭和36年4月1日以前"
+    ]
+   ]
+  },
+  "match": "男性は、昭和36年4月1"
+ },
+ {
+  "photo": true,
+  "cast": "seniors_work_group",
+  "match": "ここ、聞き逃さないでくだ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "よくある誤解",
+   "lines": [
+    "20年でも10年でもない",
+    "1年以上で対象"
+   ],
+   "mark": "cross"
+  },
+  "match": "若いころに会社勤めを2年"
+ },
+ {
+  "photo": true,
+  "q": "hands folding laundry on a bed",
+  "match": "この10年には、国民年金"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "この方は対象",
+   "rows": [
+    [
+     "厚生年金",
+     "合計8年"
+    ],
+    [
+     "資格期間",
+     "10年超",
+     "ok"
+    ]
+   ]
+  },
+  "match": "資格期間も、専業主婦の1"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin_happy",
+  "match": "何歳から始まるのか、とい"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "女性・受け取り開始年齢",
+   "rows": [
+    [
+     "昭和34年生まれ",
+     "61歳から"
+    ],
+    [
+     "昭和36年生まれ",
+     "62歳から"
+    ],
+    [
+     "昭和38年生まれ",
+     "63歳から"
+    ],
+    [
+     "昭和40年生まれ",
+     "64歳から"
+    ]
+   ],
+   "anim": true,
+   "dur": 22.0,
+   "cps": 3.3
+  },
+  "match": "昭和34年生まれなら、6"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "あいだの年は分かれる",
+   "rows": [
+    [
+     "4月1日まで",
+     "上の年齢"
+    ],
+    [
+     "4月2日から",
+     "下の年齢"
+    ]
+   ]
+  },
+  "match": "あいだの年、つまり昭和3"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "昭和41年4月2日以後",
+   "lines": [
+    "この年金は",
+    "ありません"
+   ],
+   "mark": "cross"
+  },
+  "match": "そして、昭和41年4月2"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "男性は5年前にずれる",
+   "rows": [
+    [
+     "いま65歳以上",
+     "対象"
+    ],
+    [
+     "それより下",
+     "なし",
+     "bad"
+    ]
+   ]
+  },
+  "match": "ですから、いま65歳以上"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "受給開始年齢の表",
+   "quote": "生年月日に応じて受け取り始める年齢が1歳ずつ引き上げられます",
+   "source": "厚生労働省「いっしょに検証！公的年金 50〜60代の皆さんへ」"
+  },
+  "match": "こちらが、厚生労働省のペ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "佐藤さんの場合",
+   "rows": [
+    [
+     "生まれ",
+     "昭和34年11月"
+    ],
+    [
+     "開始年齢",
+     "61歳",
+     "ok"
+    ],
+    [
+     "権利発生",
+     "令和2年11月"
+    ]
+   ]
+  },
+  "match": "佐藤さんは、昭和34年1"
+ },
+ {
+  "photo": true,
+  "cast": "sato_cry",
+  "match": "「年金って、65歳からも"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "match": "では、お約束したものを出"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "期限の出し方",
+   "lines": [
+    "開始年齢の誕生日",
+    "＋5年",
+    "あなたの期限"
+   ],
+   "anim": true,
+   "dur": 11.6,
+   "cps": 2.0
+  },
+  "match": "始まる年齢のお誕生日に、5年を足す。それ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "佐藤さんの時効カレンダー",
+   "rows": [
+    [
+     "61歳の誕生日",
+     "令和2年11月"
+    ],
+    [
+     "5年後＝時効",
+     "令和7年11月"
+    ],
+    [
+     "窓口に行った",
+     "令和7年9月",
+     "ok"
+    ]
+   ],
+   "circle": 1,
+   "anim": true,
+   "dur": 14.6,
+   "cps": 3.5
+  },
+  "match": "61歳のお誕生日が、令和"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "残っていたのは",
+   "lines": [
+    "2か月"
+   ]
+  },
+  "match": "残っていたのは、2か月で"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "昭和36年生まれの方",
+   "rows": [
+    [
+     "開始",
+     "62歳＝令和5年"
+    ],
+    [
+     "時効",
+     "令和10年",
+     "warn"
+    ],
+    [
+     "残り",
+     "およそ2年",
+     "warn"
+    ]
+   ],
+   "circle": 2
+  },
+  "match": "昭和36年生まれの方なら"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "いま、やってみてください",
+   "lines": [
+    "何歳から始まるか",
+    "その誕生日は何年か",
+    "＋5年＝期限の月"
+   ]
+  },
+  "match": "いま、ご自身の年を当ては"
+ },
+ {
+  "photo": true,
+  "q": "calendar page with a date circled in red pen",
+  "match": "計算して、「あら、もう過"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin_happy",
+  "match": "昭和41年4月2日以後にお生まれ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "取り逃しの最多は",
+   "lines": [
+    "対象なのに",
+    "対象外だと思った方"
+   ]
+  },
+  "match": "取り逃しがいちばん多いの"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "4つの思い込み（後半で潰します）",
+   "lines": [
+    "年金は65歳から",
+    "置けば増える",
+    "期間が短いから",
+    "請求書が届かない"
+   ],
+   "mark": "cross"
+  },
+  "match": "思い込みには型があって、"
+ },
+ {
+  "photo": true,
+  "q": "two asian senior women sisters talking at home",
+  "match": "お姉さま、妹さん、奥様、"
+ },
+ {
+  "photo": true,
+  "q": "smartphone lying on a wooden table next to a teacup",
+  "match": "動画を止めなくていいので"
+ },
+ {
+  "photo": true,
+  "q": "close up of printed numbers on a paper statement",
+  "match": "佐藤さんの、ねんきん定期"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "佐藤さんの計算",
+   "rows": [
+    [
+     "報酬比例部分",
+     "月2万7千円"
+    ],
+    [
+     "さかのぼり",
+     "58か月"
+    ],
+    [
+     "合計",
+     "156万円",
+     "ok"
+    ]
+   ],
+   "circle": 2,
+   "anim": true,
+   "dur": 21.3,
+   "cps": 2.6
+  },
+  "match": "権利が発生した令和2年1"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "ご注意",
+   "lines": [
+    "これは当研究室の試算",
+    "額は一人ひとり違います"
+   ]
+  },
+  "match": "はっきり申し上げておきま"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "よくある勘違い",
+   "lines": [
+    "5年待ったから",
+    "増えたのではない"
+   ],
+   "mark": "cross"
+  },
+  "match": "さて、この156万円につ"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "特別支給の手続き",
+   "quote": "特別支給の老齢厚生年金には「繰下げ制度」はありません。受給権発生日以降に速やかに請求してください",
+   "source": "日本年金機構「特別支給の老齢厚生年金を受給するときの手続き」"
+  },
+  "match": "こちらが、日本年金機構の"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "待つと何が起きるか",
+   "rows": [
+    [
+     "増える分",
+     "0円",
+     "bad"
+    ],
+    [
+     "5年を過ぎた分",
+     "消える",
+     "bad"
+    ]
+   ]
+  },
+  "match": "速やかに、と書かれていま"
+ },
+ {
+  "photo": true,
+  "cast": "yamada_happy",
+  "match": "もう一人、まだ間に合う方"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "山田さんの奥様",
+   "rows": [
+    [
+     "厚生年金",
+     "12年＝144か月"
+    ],
+    [
+     "開始",
+     "62歳"
+    ],
+    [
+     "権利発生",
+     "令和5年8月"
+    ]
+   ]
+  },
+  "match": "厚生年金に12年、144"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "奥様の時効カレンダー",
+   "rows": [
+    [
+     "権利発生",
+     "令和5年8月"
+    ],
+    [
+     "時効",
+     "令和10年8月",
+     "warn"
+    ],
+    [
+     "残り",
+     "2年",
+     "warn"
+    ]
+   ],
+   "circle": 2,
+   "anim": true,
+   "dur": 17.0,
+   "cps": 2.6
+  },
+  "match": "奥様は、まだ請求されてい"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "覚えて帰ってください",
+   "lines": [
+    "期限内なら",
+    "さかのぼれる"
+   ]
+  },
+  "match": "この2年のあいだに請求す"
+ },
+ {
+  "photo": true,
+  "q": "calculator notebook and pen on wooden table",
+  "match": "かりに報酬比例部分が月に"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "奥様の試算",
+   "rows": [
+    [
+     "月",
+     "1万4千円"
+    ],
+    [
+     "36か月",
+     "×"
+    ],
+    [
+     "合計",
+     "およそ50万円",
+     "ok"
+    ]
+   ],
+   "circle": 2,
+   "anim": true,
+   "dur": 20.1,
+   "cps": 2.0
+  },
+  "match": "1万4千円かける36か月"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "match": "では、逆の計算もしておき"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "令和10年8月を過ぎたら",
+   "rows": [
+    [
+     "62歳〜65歳の3年分",
+     "およそ50万円",
+     "bad"
+    ],
+    [
+     "気づく機会",
+     "なし",
+     "bad"
+    ]
+   ]
+  },
+  "match": "62歳から65歳までの3"
+ },
+ {
+  "photo": true,
+  "cast": "prop_tsucho",
+  "match": "65歳からの本来の年金は"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "2つの損",
+   "rows": [
+    [
+     "株・詐欺",
+     "分かる損"
+    ],
+    [
+     "この年金",
+     "分からない損",
+     "bad"
+    ]
+   ]
+  },
+  "match": "世の中には、失ったことが"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "分からない損は",
+   "lines": [
+    "悔しがることすら",
+    "できません"
+   ]
+  },
+  "match": "分からない損は、悔しがる"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "match": "この年金がテレビで大きく"
+ },
+ {
+  "photo": true,
+  "cast": "quiz_batsu",
+  "match": "「特別支給の老齢厚生年金は、請求"
+ },
+ {
+  "photo": true,
+  "cast": "quiz_batsu",
+  "match": "「受け取らずに置いておけ"
+ },
+ {
+  "photo": true,
+  "cast": "quiz_maru",
+  "match": "「厚生年金に入っていたの"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin_happy",
+  "match": "ここで、ひとつだけお願い"
+ },
+ {
+  "photo": true,
+  "q": "two teacups on a low table in a japanese room",
+  "match": "皆さまの声が、次の研究テ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "ここまでに出たもの",
+   "lines": [
+    "対象",
+    "期限",
+    "金額"
+   ]
+  },
+  "match": "ここまでで、対象と、期限"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin_happy",
+  "match": "これだけの金額が、なぜ、"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "思い込み ①",
+   "lines": [
+    "年金は65歳から"
+   ],
+   "mark": "cross"
+  },
+  "match": "ご自身に、あるいはご家族"
+ },
+ {
+  "photo": true,
+  "q": "stack of mail envelopes in a drawer",
+  "match": "でも、対象の方には、受け"
+ },
+ {
+  "photo": true,
+  "cast": "sato_cry",
+  "match": "佐藤さんに聞いてみると、"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "思い込み ②",
+   "lines": [
+    "置いておけば増える"
+   ],
+   "mark": "cross"
+  },
+  "match": "それきり5年近く、引き出"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "繰下げが使えるか",
+   "rows": [
+    [
+     "65歳からの年金",
+     "使える",
+     "ok"
+    ],
+    [
+     "この年金",
+     "使えない",
+     "bad"
+    ]
+   ]
+  },
+  "match": "さきほど原典で確かめたと"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "当研究室の見方",
+   "lines": [
+    "制度より",
+    "伝え方の問題"
+   ]
+  },
+  "match": "当研究室は、制度そのもの"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "よく流れる数字",
+   "rows": [
+    [
+     "ひと月",
+     "0.7％"
+    ],
+    [
+     "70歳まで",
+     "42％"
+    ]
+   ]
+  },
+  "match": "ひと月で0.7パーセント"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "結果",
+   "lines": [
+    "熱心な方ほど",
+    "損をする"
+   ],
+   "mark": "cross"
+  },
+  "match": "熱心な方ほど、損をする。"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "思い込み ③",
+   "lines": [
+    "加入期間が短いから"
+   ],
+   "mark": "cross"
+  },
+  "match": "「私は加入期間が短いから"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "小さい額でしょうか",
+   "rows": [
+    [
+     "月2万円",
+     "×5年"
+    ],
+    [
+     "合計",
+     "120万円",
+     "warn"
+    ]
+   ],
+   "circle": 1,
+   "anim": true,
+   "dur": 9.6,
+   "cps": 2.4
+  },
+  "match": "でも、月に2万円でも、5"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "思い込み ④",
+   "lines": [
+    "請求書が届いていない"
+   ],
+   "mark": "cross"
+  },
+  "match": "放っておいて消える額とし"
+ },
+ {
+  "photo": true,
+  "q": "cardboard moving boxes stacked in an empty room",
+  "match": "ですが、届かないことも、"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "判断するのは",
+   "lines": [
+    "封筒ではなく",
+    "生年月日と加入期間"
+   ]
+  },
+  "match": "届いていないことは、対象"
+ },
+ {
+  "photo": true,
+  "cast": "takahashi_think",
+  "match": "高橋さんの奥様は、昭和4"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "高橋さんの奥様",
+   "rows": [
+    [
+     "生まれ",
+     "昭和41年6月"
+    ],
+    [
+     "線から",
+     "2か月あと"
+    ],
+    [
+     "この年金",
+     "なし",
+     "bad"
+    ]
+   ]
+  },
+  "match": "冷たい線に見えるかもしれ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "代わりに確認",
+   "lines": [
+    "加給年金",
+    "（前回の研究）"
+   ]
+  },
+  "match": "代わりに高橋さんご夫妻に"
+ },
+ {
+  "photo": true,
+  "q": "empty office desk with computer and paperwork",
+  "match": "働きながら受け取る場合、"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "順番が逆です",
+   "lines": [
+    "止まるかもしれないから",
+    "請求しない"
+   ],
+   "mark": "cross"
+  },
+  "match": "止まるかもしれないから請"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "在職で止まる場合",
+   "rows": [
+    [
+     "止まるのは",
+     "給料が多い月だけ"
+    ],
+    [
+     "請求は",
+     "先に済ませる",
+     "ok"
+    ]
+   ]
+  },
+  "match": "それに、止まるのはお給料"
+ },
+ {
+  "photo": true,
+  "q": "japanese pension office reception counter",
+  "match": "ですので、何が要るのかを"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "持っていくもの",
+   "lines": [
+    "年金請求書",
+    "通帳かキャッシュカード",
+    "戸籍謄本か住民票"
+   ]
+  },
+  "match": "それから、金融機関の通帳"
+ },
+ {
+  "photo": true,
+  "q": "fountain pen resting on blank white paper",
+  "match": "配偶者の方や18歳未満の"
+ },
+ {
+  "photo": true,
+  "cast": "sato_laugh",
+  "match": "佐藤さんは、こうおっしゃ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "かかった時間",
+   "rows": [
+    [
+     "窓口",
+     "30分"
+    ],
+    [
+     "受け取った額",
+     "156万円",
+     "ok"
+    ]
+   ],
+   "circle": 0,
+   "anim": true,
+   "dur": 24.5,
+   "cps": 2.3
+  },
+  "match": "30分です。"
+ },
+ {
+  "photo": true,
+  "q": "postcard in japanese mailbox close up",
+  "match": "この年金を受け取っている"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "似ているのに逆",
+   "rows": [
+    [
+     "65歳より前の封筒",
+     "すぐ出す",
+     "ok"
+    ],
+    [
+     "65歳のときの封筒",
+     "少し考えて"
+    ]
+   ]
+  },
+  "match": "同じことが、二度起きるわ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "今日からの3ステップ",
+   "lines": [
+    "表に当てはめて期限を出す",
+    "引き出しと郵便物を見る",
+    "電話を一本かける"
+   ]
+  },
+  "match": "やることは、三つです。ひ"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "flow",
+   "title": "ステップ①",
+   "lines": [
+    "開始年齢の誕生日",
+    "＋5年",
+    "紙に書く"
+   ],
+   "anim": true,
+   "dur": 19.5,
+   "cps": 2.0
+  },
+  "match": "そして、始まる年齢のお誕"
+ },
+ {
+  "photo": true,
+  "q": "japanese house mailbox with letters inside",
+  "match": "引き出しと、郵便物入れを"
+ },
+ {
+  "photo": true,
+  "q": "old landline telephone on a side table",
+  "match": "ねんきんダイヤル、または"
+ },
+ {
+  "photo": true,
+  "genten": {
+   "label": "年金の時効",
+   "quote": "やむを得ない事情により時効完成前に請求できなかった場合は、書面による申立てにより、基本権を時効消滅させない取扱いをしています",
+   "source": "日本年金機構「年金の時効」"
+  },
+  "match": "日本年金機構のページには"
+ },
+ {
+  "photo": true,
+  "q": "empty hospital bed in bright room",
+  "match": "ですが、ご自身が「ただの"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "窓口で言う言葉",
+   "lines": [
+    "事情を",
+    "申し立てられますか"
+   ]
+  },
+  "match": "窓口で言う言葉は、これで"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "checklist",
+   "title": "セルフチェック 3問",
+   "lines": [
+    "生年月日は線の内側か",
+    "厚生年金1年以上か",
+    "期限の月が言えるか"
+   ]
+  },
+  "match": "では、三つの質問です。"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "三問目",
+   "lines": [
+    "あなたの期限は",
+    "令和何年の何月？"
+   ]
+  },
+  "match": "いま、あなたの期限の月が"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "今日の研究ノート",
+   "lines": [
+    "65歳より前に始まる年金がある",
+    "女性S41.4.1／男性S36.4.1以前",
+    "待っても増えない（繰下げなし）",
+    "5年で時効・期限内はさかのぼれる",
+    "期限＝開始年齢の誕生日＋5年"
+   ]
+  },
+  "match": "それでは、今日の研究ノー"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "いつつ",
+   "lines": [
+    "期限＝",
+    "開始年齢の誕生日＋5年"
+   ]
+  },
+  "match": "あなたの期限は、始まる年"
+ },
+ {
+  "photo": true,
+  "cast": "kenkyuin",
+  "match": "そして最後に、さきほど預"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "table",
+   "title": "申請主義の理屈",
+   "rows": [
+    [
+     "ふつうの年金",
+     "受け取る時期を選べる"
+    ],
+    [
+     "この年金",
+     "選べない（繰下げなし）",
+     "bad"
+    ]
+   ]
+  },
+  "match": "だから国が勝手に払い始め"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "当研究室の意見",
+   "lines": [
+    "年金は、知っている人に",
+    "だけ優しくできています"
+   ]
+  },
+  "match": "年金は、知っている人にだ"
+ },
+ {
+  "photo": true,
+  "q": "empty bed with white sheets in morning sunlight",
+  "match": "制度を変える力は、当研究"
+ },
+ {
+  "photo": true,
+  "cast": "sato_laugh",
+  "match": "156万円が振り込まれた"
+ },
+ {
+  "drawn": {
+   "paper": "grid",
+   "lang": "jp-pen",
+   "layout": "card",
+   "title": "このノートを",
+   "lines": [
+    "ご家族に",
+    "送ってあげてください"
+   ]
+  },
+  "match": "このノートは、スクリーン"
+ }
+]

@@ -1,0 +1,14 @@
+video_id: Edfjmu-gRjg
+url: https://youtu.be/Edfjmu-gRjg
+uploaded: 2026-07-30 (user tự đăng tay trong Studio)
+publishAt: đã public 2026-07-30
+channel: 古代の秘訣
+
+# Thumbnail: đã thay bản SÁNG (bright 1.50 / sat 1.15 / dim 0.06) qua thumbnails.set, 2026-07-30.
+#
+# ⚠️ BẢN TRÙNG: _4RttFsrYtw (private, hẹn 2026-07-31 11:00 JST) — Claude upload THỪA ngày
+# 2026-07-30: đọc "đẩy thumbnail lên kênh" thành "upload video", và vì file UPLOADED.txt này
+# chưa tồn tại nên pipeline_status báo video "GÓI SẴN" (chưa đăng) trong khi kênh ĐÃ có bản public.
+# User chốt tự xử bản trùng trong Studio.
+# Đã vá tool: upload_api.py quét uploads playlist tìm video cùng tiêu đề → CHẶN upload
+# (vượt bằng --allow-duplicate). Bài học ghi ở .claude/rules/upload-schedule.md §1.5.

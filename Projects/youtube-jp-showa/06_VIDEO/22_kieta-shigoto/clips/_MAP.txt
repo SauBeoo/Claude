@@ -1,0 +1,152 @@
+clip_00    0.00   3.77s  photo   cc:bus_girl__04              
+clip_01    3.77   3.77s  photo   p71:472                      
+clip_02    7.55   3.17s  aistill AI:conductor_young           
+clip_03   10.72   2.38s  photo   px:px_coins__11              
+clip_04   13.09   2.38s  aistill AI:bag_coins                 
+clip_05   15.47   4.11s  photo   cc:kyuryo__01                
+clip_06   19.57   4.11s  ai      AI:envelope_father           
+clip_07   23.68   5.63s  video   pxv:v_busdoor__10            
+clip_08   29.31   2.26s  ai      AI:haha77_bus                
+clip_09   31.57   6.31s  photo   p71:257                      
+clip_10   37.88   9.10s  aistill AI:envelope_drawer           
+clip_11   46.98   2.95s  video   film:n1                      
+clip_12   49.93   4.95s  video   film:n2                      
+clip_13   54.87   4.70s  video   film:n3                      町から消えた仕事と給料 / 5つ
+clip_14   59.58   4.72s  photo   cc:bus_bonnet__01            一点目 / バスには、十五歳の車掌さんがいた
+clip_15   64.30   3.88s  aistill AI:depot_rollcall            
+clip_16   68.18   3.89s  photo   cc:coin10__01                
+clip_17   72.07   3.89s  video   pxv:v_coins__00              
+clip_18   75.96   3.15s  photo   cc:bus_ticket__05            
+clip_19   79.11   3.15s  photo   cc:bus_ticket__04            
+clip_20   82.25   5.77s  ai      AI:conductor_lean            
+clip_21   88.03   1.80s  photo   p71:044                      
+clip_22   89.83   4.21s  aistill AI:fingers_cracked           
+clip_23   94.04   4.21s  video   pxv:v_snownight__00          
+clip_24   98.25   7.05s  aistill AI:count_sales               
+clip_25  105.30   2.90s  photo   px:px_busseat__05            
+clip_26  108.20  10.65s  photo   cc:coin10__00                昭和39年の国会 / 15歳の車掌 基本給 「たしか 9,000円くらい」
+clip_27  118.85  14.84s  photo   gt:k1966                     民間のバスの車掌（運輸省の調べ） / 平均19.7歳・月18,948円
+clip_28  133.69   7.84s  photo   cc:bus_ticket__03            歩合 / 百円につき 11銭8厘
+clip_29  141.53   6.39s  photo   cc:bus_bonnet__02            大阪市交通局 / 女性の乗務員 33歳で定年
+clip_30  147.92   4.87s  photo   p71:175                      
+clip_31  152.79   3.21s  photo   px:px_busseat__01            
+clip_32  156.00  14.15s  photo   gt:kisoku15                  自動車事業等運輸規則 第15条 / バスには 車掌が乗るのが原則
+clip_33  170.15   8.48s  photo   p71:049                      
+clip_34  178.63   9.39s  video   film:n4                      
+clip_35  188.02   9.37s  photo   cc:oneman__04                車掌のいないバス / 昭和39年末 2,581両 → 昭和40年春 3,752両
+clip_36  197.39   4.05s  photo   p71:153                      
+clip_37  201.44   7.88s  aistill AI:conductor_last_day        昭和43年 / 母、19歳
+clip_38  209.33   9.64s  photo   px:px_stopbutton__01         
+clip_39  218.96   3.91s  video   pxv:v_crossing__00           二点目 / 踏切には、人がいた
+clip_40  222.88   5.10s  aistill AI:sofu_keeper               
+clip_41  227.97   5.41s  video   film:n10                     
+clip_42  233.38   4.15s  photo   cc:fumikiri_hut__04          
+clip_43  237.54   4.15s  ai      AI:sofu_handle               
+clip_44  241.69   6.06s  video   pxv:v_crossbell__03          
+clip_45  247.75   3.30s  photo   p71:058                      
+clip_46  251.05   3.30s  photo   cc:steam_train__00           
+clip_47  254.36   6.57s  photo   gt:k1959                     昭和34年 / 国鉄の踏切警手 およそ8,000人
+clip_48  260.93   9.48s  photo   p71:396                      給料とは別の手当 / 1日 10円〜50円
+clip_49  270.41   7.59s  photo   px:px_lantern__10            
+clip_50  278.00   7.70s  video   pxv:v_stovefire__05          
+clip_51  285.70   3.43s  photo   cc:bento_alu__04             
+clip_52  289.12   3.43s  aistill AI:girl_bento_hut            
+clip_53  292.55   8.98s  photo   px:px_drawer__02             
+clip_54  301.54   3.67s  photo   p71:136                      
+clip_55  305.21   6.38s  video   film:n5                      昭和35年度 踏切事故 / 5,569件
+clip_56  311.58   9.44s  aistill AI:flag_ignored              
+clip_57  321.02   9.12s  video   film:n6                      昭和36年 / 踏切道改良促進法
+clip_58  330.14  10.34s  photo   gt:k1966b                    昭和41年 6,600人 / 7年で 2,800人減らす計画
+clip_59  340.47   7.25s  photo   cc:crossing_now__05          昭和48年 / 人のいる国鉄の踏切 695か所
+clip_60  347.73   9.86s  photo   px:px_crossing__09           
+clip_61  357.58   5.33s  photo   cc:tategou__02               三点目 / 炭鉱の給料は、町でいちばん高かった
+clip_62  362.91   3.57s  photo   cc:tanju__09                 
+clip_63  366.48   5.98s  ai      AI:miners_walk               
+clip_64  372.46   3.22s  photo   cc:tanko__07                 
+clip_65  375.68   3.22s  aistill AI:miner_black_face          
+clip_66  378.90   9.52s  photo   cc:tanju__11                 
+clip_67  388.43   6.57s  aistill AI:boy_sentan                
+clip_68  395.00   8.09s  photo   gt:roki63                    労働基準法 / 18歳にならない者を 坑内で働かせてはならない
+clip_69  403.09   5.37s  photo   px:px_helmet__07             
+clip_70  408.46  12.30s  photo   cc:cap_lamp__10              昭和25年 1日の賃金 / 坑内 429円 ／ 工場の平均 374円
+clip_71  420.75  12.11s  photo   px:px_helmet__10             昭和44年11月 月の平均 / 坑内員 58,248円 ／ 坑外員 42,754円
+clip_72  432.87   6.52s  photo   px:px_tunnel__03             
+clip_73  439.39   3.26s  photo   cc:tanko__11                 
+clip_74  442.65  11.05s  photo   gt:sekitan                   昭和30年 / 石炭鉱業合理化臨時措置法
+clip_75  453.71   9.75s  photo   cc:tategou__01               炭鉱で働く人 / 昭和32年 29万8千人 → 昭和42年 9万6千人
+clip_76  463.46   9.48s  photo   cc:botayama__08              炭鉱をはなれた人 / 昭和34〜45年 17万8千人
+clip_77  472.94   4.63s  photo   cc:tanju__08                 
+clip_78  477.57   3.02s  photo   p71:229                      
+clip_79  480.59   3.02s  video   pxv:v_nighttrain__02         
+clip_80  483.61   5.79s  video   film:n7                      
+clip_81  489.40   4.65s  aistill AI:father_bus_morning        
+clip_82  494.05   5.04s  aistill AI:coins_ready_palm          
+clip_83  499.09   3.71s  aistill AI:conductor_smile           
+clip_84  502.80   7.05s  photo   p71:231                      
+clip_85  509.85   8.08s  photo   px:px_coal__06               
+clip_86  517.93   8.08s  photo   p71:470                      
+clip_87  526.00   8.08s  photo   p71:152                      
+clip_88  534.08   4.71s  photo   cc:koukandai__01             四点目 / 電話は、人の手で、つないでいた
+clip_89  538.79   6.14s  ai      AI:haha_switchboard          昭和44年
+clip_90  544.94   3.85s  aistill AI:headset_on                
+clip_91  548.78   4.42s  photo   px:px_phone__00              
+clip_92  553.21   3.88s  video   pxv:v_plug__09               
+clip_93  557.09   3.88s  ai      AI:plug_in                   
+clip_94  560.97   6.35s  aistill AI:operators_row             
+clip_95  567.33   4.74s  photo   cc:koukandai__11             
+clip_96  572.07   7.24s  photo   cc:koukandai__10             
+clip_97  579.30   5.35s  photo   cc:koushuu__01               
+clip_98  584.65   3.78s  photo   cc:koushuu__07               
+clip_99  588.43   3.78s  aistill AI:dekasegi_phone            
+clip_100  592.21   1.87s  photo   px:px_payphone__09           
+clip_101  594.09   6.37s  aistill AI:haha_listen               
+clip_102  600.46   2.94s  photo   p71:088                      
+clip_103  603.39  13.64s  photo   gt:k1971                     高校を出た交換手の最初の給料 / 事務の人より およそ800円 低い
+clip_104  617.04   9.06s  photo   px:px_phone__01              電電公社の交換手 / 昭和46年 いちばん多くて 55,300人
+clip_105  626.10   3.32s  photo   cc:koushuu__02               
+clip_106  629.43  14.39s  video   film:n8                      
+clip_107  643.81   7.51s  photo   gt:k1972                     昭和39年7月 / 自動化でやめる交換手に 特別の給付金
+clip_108  651.33   9.66s  aistill AI:operators_reassigned      
+clip_109  660.99  10.85s  photo   gt:k1980                     全国の自動化 / 昭和53年度までに ほぼ達成
+clip_110  671.83   6.48s  aistill AI:headset_stain             
+clip_111  678.31   9.82s  photo   p71:477                      
+clip_112  688.13   4.30s  photo   cc:wabuntype__02             五点目 / 手紙は、タイピストが打っていた
+clip_113  692.44   7.19s  aistill AI:haha_typist               昭和54年
+clip_114  699.63   4.62s  photo   cc:wabuntype__03             
+clip_115  704.24   4.62s  video   pxv:v_typewriter__06         
+clip_116  708.86   4.78s  photo   px:px_type__01               
+clip_117  713.64   4.78s  video   pxv:v_typewriter__01         
+clip_118  718.41   5.62s  photo   cc:katsuji__07               1日に / 7,000字〜8,000字
+clip_119  724.03  11.22s  aistill AI:haha_rub_arm              
+clip_120  735.25  12.75s  photo   gt:k1976                     昭和50年度 頸肩腕症候群の認定 / 540人
+clip_121  748.00  16.91s  photo   gt:k1985                     和文タイピスト 女性 / 月 158,500円
+clip_122  764.92   3.01s  photo   cc:wabuntype__04             
+clip_123  767.92  11.04s  aistill AI:wordpro_desk              昭和53年9月 / 日本語ワードプロセッサー 630万円
+clip_124  778.97   5.71s  aistill AI:wordpro_price             158,500円 × 12か月 × 3年 / ＝ 5,706,000円 ＜ 630万円
+clip_125  784.68   5.84s  photo   px:px_typewriter__07         
+clip_126  790.52   9.34s  aistill AI:haha_wordpro              
+clip_127  799.87  12.34s  video   pxv:v_typewriter__07         
+clip_128  812.20   3.62s  aistill AI:envelope_drawer2          
+clip_129  815.83   5.26s  photo   cc:hanayome__01              昭和47年 春
+clip_130  821.09   8.80s  aistill AI:electric_barrier          
+clip_131  829.89   4.97s  aistill AI:haha_bento_night          
+clip_132  834.86   4.15s  photo   px:px_drawer__11             
+clip_133  839.00   4.28s  ai      AI:envelope_reveal           
+clip_134  843.29   8.71s  aistill AI:envelope_sealed           昭和39年 / はじめての給料袋
+clip_135  852.00   5.92s  ai      AI:sofu_hand_over            
+clip_136  857.92   7.68s  video   pxv:v_steam__06              
+clip_137  865.59  16.74s  photo   gt:k1981                     30年以上 無事故の踏切警手 / 運輸大臣表彰 およそ600人
+clip_138  882.34   4.96s  aistill AI:barrier_auto_night        
+clip_139  887.29   8.89s  ai      AI:haha_cry_hut              
+clip_140  896.18  15.26s  photo   cc:hanayome__02              
+clip_141  911.44   5.35s  aistill AI:haha77_bus2               
+clip_142  916.79   3.62s  photo   px:px_busseat__09            
+clip_143  920.42   6.86s  aistill AI:envelope_bag              
+clip_144  927.28   2.90s  aistill AI:haha77_smile              
+clip_145  930.18   3.38s  photo   p71:467                      
+clip_146  933.56   9.67s  photo   px:px_crossing__03           
+clip_147  943.23   3.79s  photo   p71:142                      
+clip_148  947.01  14.15s  photo   p71:486                      
+clip_149  961.16   6.35s  aistill AI:envelope_old_hands        
+clip_150  967.51  13.29s  photo   p71:359                      
+clip_151  980.81   5.19s  video   film:n9                      

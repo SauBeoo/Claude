@@ -1,0 +1,5 @@
+FLOW dong 1 -> thumb_T1_heya.png   (baseline: phong khach chieu thu + dien thoai den)
+FLOW dong 2 -> thumb_T2_higata.png (doi 1 bien HINH: nen bai trieu hoang hon - giu nguyen chu + nhan vat)
+FLOW dong 3 -> thumb_T3_bus.png    (doi LAYOUT: truoc/sau + mui ten do, chu tren-duoi)
+PLATE dong 1-3 = ban khong chu du phong, ve chu bang font sau.
+File trung gian dat ten NGOAI pattern thumb_T* (vd _raw_T1_01.png).

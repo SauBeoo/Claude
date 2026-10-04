@@ -1,0 +1,203 @@
+{
+ "_note": "Video 05 駄菓子屋 — phim that 'Japan Today' (1959, NSC/CIA, gov.archives.arc.1692903, CC0). Phim mau, cam. Soi contact sheet 2s (06_VIDEO/_footage_test/japan_today_scrub_fine/) ngay 2026-08-26. id o day la TEN MO TA de duyet; sau khi duyet se map vao vi tri SLIDES trong build_scenes_05.py.",
+ "cuts": [
+  {
+   "id": "jt_01_shop_barrels",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1500,
+   "dur": 10,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "25:00-25:10 quay 浅草みやげ long den/bong bay roi pan sang lu huong khoi — cold open (THAY 913 da dung 3 lan)"
+  },
+  {
+   "id": "jt_02_alley_signs",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1300,
+   "dur": 10,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "21:40-21:50 pho bang hieu Bar, xe co, nguoi di (THAY 923 da dung)"
+  },
+  {
+   "id": "jt_03_shotengai_walk",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1326,
+   "dur": 12,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "22:06-22:18 pho dong hoc sinh nu, xe dap, bang hieu (THAY 933 da dung)"
+  },
+  {
+   "id": "jt_04_kids_miyage",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 558.5,
+   "dur": 14,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "09:18-09:32 dam tre truoc tiem みやげ (dich 1.5s tranh arch_01)"
+  },
+  {
+   "id": "jt_05_kids_train",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 596,
+   "dur": 10,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "09:56-10:06 bo con cau ca ben ao cong vien, xe dap — ending nostalgia (THAY 545 da dung)"
+  },
+  {
+   "id": "jt_06_craftsman",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1550,
+   "dur": 10,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "25:50-26:00 lung ao kimono dam dong truoc quay den (THAY 1315 da dung)"
+  },
+  {
+   "id": "jt_07_veg_cart",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1338,
+   "dur": 10,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "22:18-22:28 pho xe hoi co, xe dap, bang hieu (THAY 1349 da dung)"
+  },
+  {
+   "id": "jt_08_stall_lanterns_a",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1381,
+   "dur": 12,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "23:01-23:13 quay le hoi long den, do choi treo. item5 (thay gachagacha AI) / cold open"
+  },
+  {
+   "id": "jt_09_stall_redfish",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1401,
+   "dur": 10,
+   "ybias": 0.3,
+   "grade": 1.0,
+   "note": "23:21-23:31 ca do do choi treo, bong bay xanh, hang do choi can canh. item5/item7"
+  },
+  {
+   "id": "jt_10_balloons_kusuri",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1425,
+   "dur": 14,
+   "ybias": 0.3,
+   "grade": 1.0,
+   "note": "23:45-23:59 chum bong bay nhieu mau tren dau, bang クスリ. item7 yoyo"
+  },
+  {
+   "id": "jt_11_stall_toys_kids",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1443,
+   "dur": 14,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "24:03-24:17 quay do choi chong chong, tre em xem hang. item4/item5"
+  },
+  {
+   "id": "jt_12_nakamise",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1258,
+   "dur": 22,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "20:58-21:20 dam dong Ginza, xe tai do, tram xe dien (THAY 1459 da dung)"
+  },
+  {
+   "id": "jt_13_ladies_lanterns",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1560,
+   "dur": 16,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "26:00-26:16 cac ba kimono dam dong truoc quay den (THAY 1483 da dung)"
+  },
+  {
+   "id": "jt_14_toy_vendor_table",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1576,
+   "dur": 7,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "26:16-26:23 hoa dao + quan go, nguoi qua (THAY 1610 da dung)"
+  },
+  {
+   "id": "jt_15_matsuri_street",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1516,
+   "dur": 16,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "25:16-25:32 lu huong khoi, hoc sinh + nguoi vay quanh (THAY 1618 da dung)"
+  },
+  {
+   "id": "jt_16_lion_dance",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1636,
+   "dur": 13,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "27:16-27:29 mua lan tren duong. item6 (tro choi ngoai troi)"
+  },
+  {
+   "id": "jt_17_boy_camera",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 2100,
+   "dur": 9,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "35:00-35:09 be trai ngoi cam may anh roi cuoi. item9 'type nuki shokunin'"
+  },
+  {
+   "id": "jt_18_schoolkids",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 2084,
+   "dur": 11,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "34:44-34:55 hoc sinh deo may anh, be deo cap (THAY 2112 da dung)"
+  },
+  {
+   "id": "jt_19_kids_balloon_crowd",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1222,
+   "dur": 10,
+   "ybias": 0.5,
+   "grade": 1.0,
+   "note": "20:22-20:32 (da soi lai G_balloon) be gai cam bong bay do trong dam dong xem こども音楽会. item7"
+  },
+  {
+   "id": "jt_21_boy_greencap",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 1200,
+   "dur": 12,
+   "ybias": 0.3,
+   "grade": 1.0,
+   "note": "20:00-20:12 be trai mu xanh ben me kimono, dam dong. item2 'chi so tay run' / bridge"
+  },
+  {
+   "id": "jt_20_shoeshine_street",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 574,
+   "dur": 12,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "09:34-09:46 cong vien hoa tu dang, xe dap, nguoi dao (THAY 957 da dung)"
+  },
+  {
+   "id": "jt_22_street_kids",
+   "src": "E:/Claude/Projects/youtube-jp-showa/06_VIDEO/_footage_test/japan_today_1959.mp4",
+   "ss": 2008,
+   "dur": 10,
+   "ybias": 0.4,
+   "grade": 1.0,
+   "note": "33:28-33:38 tre em + me ben duong pho, tui xach — THAY px_spinning_top (Pexels hien dai)"
+  }
+ ]
+}

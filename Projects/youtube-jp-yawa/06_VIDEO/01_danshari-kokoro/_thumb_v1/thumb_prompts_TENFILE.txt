@@ -1,0 +1,5 @@
+dong 1 -> thumb_T1_sora.png    (baseline = khuon kenh thang: troi xanh + 1 nguoi cuoi + 2 dong chu tren/duoi)
+dong 2 -> thumb_T2_tatami.png  (DOI 1 BIEN HINH: nen phong tatami co oshiire nua trong; chu + bo cuc giu nguyen)
+dong 3 -> thumb_T3_kao.png     (DOI LAYOUT: chu don nua trai, mat to nua phai)
+Chu GIONG NHAU ca 3 ban: 「物より先に手放す」 / 「心の断捨離7選」 (gate 7: 断捨離 = keyword top 2).
+File trung gian dat ten NGOAI pattern thumb_T* (vd _wm_fixed_T1.png).

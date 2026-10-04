@@ -1,0 +1,241 @@
+# -*- coding: utf-8 -*-
+"""
+_scenes25.py — BẢNG SCENE của video 25 (年金の天引きと手取り / 国民年金だけの一年).
+
+Copy khuôn từ `_scenes23.py`. **Nguồn sự thật duy nhất** cho cả ba thứ: số clip phải gen ·
+lớp hình của builder · prompt. Sửa nội dung video thì sửa ở đây.
+
+CÁCH ĐỌC MỘT DÒNG:
+    (dòng_timeline_bắt_đầu, kind, telop, nội_dung)
+  · `dòng_timeline_bắt_đầu` — chỉ số dòng trong `timeline.json`. Scene kết ở dòng bắt đầu
+    của scene KẾ TIẾP.
+    🔴 Neo theo CHỈ SỐ DÒNG thì vỡ IM LẶNG nếu `_TTS.md` bị sửa. `plan25` có gate
+       `len(timeline) == 121` chặn trước — đừng bỏ.
+       (`feedback_builder_neo_dong_kiem_timeline_truoc`)
+  · `kind`:
+      art     — hình collage toàn khung. Cần ceil(giây/8,7) clip.
+      stat    — thẻ số liệu `papercut-stat`, KHÔNG footage. `nội_dung` = list "nhãn|số".
+      formula — thẻ `papercut-formula`, KHÔNG footage. `nội_dung` = list dòng công thức.
+      genten  — ảnh chụp THẬT trang 年金機構/厚労省, KHÔNG footage, `motion: none`.
+      gfx     — khối THUẦN ĐỒ HOẠ, Remotion vẽ 100% bằng font. KHÔNG gen bằng AI.
+  · `telop` — chữ to đè lên. `{...}` = cụm nhấn màu. ⚠️ Trần 11 ký/dòng.
+
+⭐ `gfx` hay `art`? — NGHĨA NẰM Ở ĐÂU:
+  · Nghĩa do **CHỮ** tải (lộ trình 3 mục, danh sách, checklist) ⇒ **gfx** (font luôn đúng).
+  · Nghĩa do **HÌNH + CHUYỂN ĐỘNG** tải (đồng hồ cát, cổng chặn dòng tiền, khối lún) ⇒
+    **art khuôn META/GAUGE** — không chữ nào trong khung ⇒ không chạm vùng AI hỏng.
+
+⚖️ **YMYL — mọi con số ở `stat`/`formula` lấy TỪ CHÍNH LỜI ĐỌC.** Hai phép chia dưới đây là
+   tính lại từ số đã có trong script, không phải số mới:
+     · 5.500 × 6 = 33.000   (差5,500円 và 年6回 đều đọc ra trong bài)
+     · 4.918 + 1.177 = 6.095 (cả ba số đều đọc ra trong bài)
+   Số phụ thuộc 自治体 (3.600 / 1.900) luôn đi kèm câu hedge trong LỜI ĐỌC — xem FACT SHEET §③.
+
+🎨 STYLE: vox paper-collage `newsprint-editorial` (CLAUDE.md §② — luật từ video 23).
+   BA GUARD dán vào mọi scene `art`: ① người Nhật cao tuổi ② **mọi mặt giấy TRỐNG, không một
+   chữ/số nào** ③ chừa dải phải ~1/10 khung cho mascot + logo.
+   🔴 Guard ② là lý do `NUM` RỖNG: không còn mặt phẳng nào để in số, nên số chốt do
+   `papercut-stat`/`formula`/telop vẽ bằng FONT (`feedback_so_tren_hinh_phai_do_font_ve`).
+"""
+
+A, S, G, X, F = "art", "stat", "genten", "gfx", "formula"
+
+# ⛔ RỖNG có chủ ý — xem GUARD ② ở docstring. Giữ tên vì plan25 import.
+NUM = {}
+
+# (url, mô tả vùng cần khoanh, tên file raw, (y0, y1) thô)
+# 🔴 LUẬT: chụp TRƯỚC → đọc bằng MẮT → RỒI mới chốt y. Ở video 22 đã bịa 3 URL và cả ba 404.
+#    Bốn URL dưới đây ĐÃ MỞ VÀ ĐỌC trong phiên 2026-09-14 (FACT SHEET §1/6/8/9-11).
+#    ✅ ĐÃ CHỤP + ĐỌC BẰNG MẮT 2026-09-14 → `06_VIDEO/25_.../genten_raw/`; y-range là mốc
+#    ĐÃ SNAP vào khe trắng giữa hai dòng chữ. Thẻ: `tools/make_genten_25.py` (11 thẻ).
+GENTEN = {
+    # 「847,300円（※）×（保険料納付月数…）÷（40年（加入可能年数）×12月）」
+    # ⭐ MỘT trang chở cả hai thứ bài cần: số 満額 VÀ công thức ÷480 ⇒ dùng 2 lần, khoanh 2 chỗ.
+    "nenkin_mangaku": (
+        "https://www.nenkin.go.jp/service/jukyu/seido/roureinenkin/jukyu-yoken/20150401-02.html",
+        "令和8年度の満額 847,300円（昭31.4.1以前は844,900円）", "raw_mangaku.png", (1165, 1590)),
+
+    # 「65歳以上の方のうち…年間の受給額が18万円以上の方」 — 更新日 2025-09-01
+    "nenkin_tenbiki": (
+        "https://www.nenkin.go.jp/section/faq/jukyu/seido/kyotsu/tenbiki/20140421-03.html",
+        "特別徴収の条件：65歳以上＋年金の年間受給額18万円以上", "raw_tenbiki.png", (680, 978)),
+
+    # 第9期（令和6〜8年度）第1号保険料 全国加重平均 月6,225円（第8期 6,014円）
+    # ⚠️ Con số nằm trong PDF 001253798.pdf, KHÔNG ở trang HTML ⇒ chụp thẳng PDF.
+    "mhlw_kaigo": (
+        "https://www.mhlw.go.jp/content/12303500/001253798.pdf",
+        "第9期の第1号保険料 全国加重平均 月6,225円", "raw_kaigo.png", (865, 1310)),
+
+    # 三つの支給要件 + 所得基準額 809,000円 — 更新日 2026-04-01
+    "shienkyufu_youken": (
+        "https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/rourei.html",
+        "支給要件3つ＋所得基準額 809,000円以下", "raw_shien.png", (515, 831)),
+
+    # CÙNG trang trên, khoanh KHỐI CÔNG THỨC: 5,620円×納付済÷480 ＋ 11,768円×免除÷480
+    "shienkyufu_keisan": (
+        "https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/rourei.html",
+        "給付額の計算式 二つの単価 5,620円 と 11,768円", "raw_shien.png", (1078, 1252)),
+}
+
+SCENES = [
+    # ══ COLD OPEN 0–1:13 · あなた@0:02 · STAKE@0:00 · lộ trình@1:00 ═════════════
+    (0,   A, "一年で{3万3千円}",   "HOLD: an elderly Japanese woman cut from a bold vintage printed illustration holds a large pension notice slip square-on to the camera, its ruled boxes left completely bare, and beside it a huge numeral 33,000 cut from deep red card is pasted flat on the newsprint"),
+    (1,   A, "{65歳}から天引き",   "META: an elderly man cut from a bold vintage printed illustration watches a channel of cut-out paper coins flowing left to right, a narrow side-channel siphoning coins away below, a numeral 65 cut from charcoal card above the split"),
+    (2,   A, "満額は{7万608円}",   "VIZ: an elderly woman cut from a bold vintage printed illustration stands at the right, and filling the left two thirds a huge numeral 70,608 cut from mustard card is pasted flat with a torn calendar sheet beneath it"),
+    (3,   A, "2か月で{5,500円}",   "VIZ: six identical paper coins laid in a row with a small wedge torn out of each one, an elderly man cut from a bold vintage printed illustration leaning over the row, a numeral 5,500 cut from red card above the first coin"),
+    (4,   A, "本題は{別}にある",   "an elderly man cut from a bold vintage printed illustration turning his head sharply to one side, an empty torn-paper thought bubble taped beside his head"),
+    (5,   A, "{7万3千円}の方",     "SPLIT: an elderly woman cut from a bold vintage printed illustration between two paper stacks, the left stack small and the right stack more than twice as tall, numerals 33,000 and 73,000 cut from card above them"),
+    (6,   A, "減る方は{見える}",   "SPLIT: an open paper passbook on the left with one entry torn away, and on the right an identical passbook with nothing removed at all, an elderly man cut-out looking between them"),
+    (7,   X, "見えない{お金}",     "INFOG: two rounded blocks side by side, the left one with a downward line icon and the right one completely empty, the right block staying blank as the left fills in"),
+    (8,   X, "今日は{三つ}",       "INFOG: three rounded blocks stacked vertically, each carrying one simple line icon, fading in one after another from top to bottom"),
+
+    # ══ PERSONA + 紙 1:13–1:45 ══════════════════════════════════════════════════
+    (10,  A, "{研究室}です",       "DESK: an elderly Japanese researcher cut from a bold vintage printed illustration sits behind a paper desk seen flat-on, a magnifier and a folded ruler and a stack of plain documents cut from card in front of him, a small paper bar chart of three rising bars pinned on the flat wall behind"),
+    (11,  A, "{6月}に届く紙",      "HOLD: an elderly woman cut from a bold vintage printed illustration holds a cream envelope square-on to the camera, and beside her a paper drawer stands pulled open with a second identical envelope lying flat at the bottom of it"),
+    (12,  A, "中まで{読んだ}？",   "an elderly man cut from a bold vintage printed illustration with his brow strip pulled together, a folded paper slip held loosely in one paper hand, a question-mark-shaped paper accent behind him"),
+    (13,  X, "一つ目{いくら入る}", "INFOG: one rounded block on the left with a thin arrow running to a taller block on the right, the right block carrying a simple upward line icon"),
+
+    # ══ ① いくら入るのか 1:45–3:11 ═══════════════════════════════════════════════
+    (14,  A, "{480か月}で満額",    "VIZ: a grid of forty-eight small paper squares in four rows of twelve pasted flat, every square filled solid, an elderly man cut from a bold vintage printed illustration standing at the edge of the grid"),
+    (15,  G, "{原典}で確かめる",   "nenkin_mangaku"),
+    (16,  S, "令和8年度の満額",    ["年額|84万7,300円",
+                                    "月額|7万608円",
+                                    "*前年度から|1.9％の引き上げ"]),
+    (17,  A, "{生年月日}で違う",   "SPLIT: two plain paper cards pinned side by side on the newsprint, the left one slightly taller than the right, an elderly woman cut from a bold vintage printed illustration between them with one paper hand raised"),
+    (18,  A, "足りない分{減る}",   "VIZ: a horizontal bar of stacked paper squares running toward a dashed masking-tape line, the bar stopping well short of it, several squares missing from the middle, an elderly man cut-out watching"),
+    (19,  F, "あなたの年金額",     ["八十四万七千三百円 × 納めた月数 ÷ 四百八十"]),
+    (20,  A, "満額の人は{少ない}", "CROWD: a street of flat paper houses seen head-on with elderly cut-out figures on the doorsteps, a tall solid paper bar standing in front of only one house and short bars in front of all the others"),
+    (21,  A, "毎月は{来ません}",   "META: twelve small paper calendar sheets pinned in a row, only six of them carrying a cut-out coin, an elderly woman cut from a bold vintage printed illustration looking along the row"),
+    (22,  S, "振り込みの形",       ["支給日|偶数月の15日",
+                                    "一回分|2か月分ずつ",
+                                    "*一年で|6回"]),
+    (23,  A, "通帳は{2か月分}",    "HOLD: an elderly man cut from a bold vintage printed illustration holds an open paper passbook square-on to the camera, its entry column showing six evenly spaced blank ruled rows"),
+    (24,  A, "引かれた{あとの額}", "VIZ: a solid paper bar with a clean scissor cut near its end, the severed short piece lying beside it, an elderly woman cut-out looking at the gap"),
+    (25,  A, "通帳を{開きます}",   "DESK: an elderly researcher cut from a bold vintage printed illustration at a paper desk opening a passbook flat with both paper hands, a magnifier lying beside it"),
+
+    # ══ ② 伊藤さん + 通知書 3:11–5:40 (PAYOFF:数字 ~31%) ═════════════════════════
+    (26,  A, "福岡の{伊藤さん}",   "an elderly Japanese man cut from a bold vintage printed illustration, thick white die-cut border stands behind a small paper counter with a cut-out coffee siphon and two cups on it, a numeral 68 cut from charcoal card pinned on the flat wall behind him"),
+    (27,  A, "椅子{五つ}の店",     "CROWD: the inside of a tiny paper coffee shop seen head-on, five paper stools in a row along a counter, two elderly cut-out figures leaning over a paper board game between them"),
+    (28,  S, "伊藤さんの記録",     ["納付済み|420か月",
+                                    "*全額免除|48か月"]),
+    (29,  A, "{4年}払えなかった",  "VIZ: four torn calendar sheets stacked at an angle with an overturned paper cup beside them, an elderly man cut from a bold vintage printed illustration behind, a numeral 4 cut from mustard card above the stack"),
+    (30,  A, "{払えなかった}",     "an elderly man cut from a bold vintage printed illustration seated with his shoulder strips dropped, a large empty torn-paper speech bubble taped beside his head"),
+    (31,  A, "{負い目}だった",     "an elderly man cut from a bold vintage printed illustration with his head lowered, a small dark paper weight shape resting on his shoulder strip"),
+    (32,  A, "あとで{効きます}",   "META: a row of cut-out paper gears with one gear at the end still standing apart from the others, a taped arrow curving from it toward the row, a numeral 48 cut from charcoal card beside it"),
+    (33,  A, "免除も{半分}数える", "VIZ: a row of paper squares where some squares are solid and others are torn exactly in half, an elderly woman cut from a bold vintage printed illustration laying a half square into the row"),
+    (34,  F, "納めた月の数え方",   ["四百二十か月 ＋ 二十四か月 ＝ 四百四十四か月"]),
+    (35,  F, "伊藤さんの年金額",   ["八十四万七千三百円 × 四百四十四 ÷ 四百八十 ≒ 七十八万三千円"]),
+    (36,  A, "2か月で{13万円}",    "VIZ: an elderly man cut from a bold vintage printed illustration beside a tall stack of identical paper coins, a numeral 130,000 cut from mustard card pasted beside the stack"),
+    (37,  A, "それが{入らない}",   "SPLIT: two paper coin stacks side by side, the right one clearly shorter than the left, a torn paper gap between them, an elderly woman cut-out looking at the shorter stack"),
+    (38,  A, "実際は{12万4,500}", "HOLD: an elderly man cut from a bold vintage printed illustration holds a pension notice slip square-on, its ruled boxes bare, a numeral 124,500 cut from charcoal card pasted flat beside the slip"),
+    (39,  S, "差の5,500円",        ["介護保険料|3,600円",
+                                    "国民健康保険料|1,900円",
+                                    "*一回の差|5,500円"]),
+    (40,  F, "一年分にすると",     ["五千五百円 × 六回 ＝ 三万三千円"]),
+    (41,  A, "{旅行}に一回",       "VIZ: a paper suitcase and a folded paper map laid flat on the newsprint with a numeral 33,000 cut from red card above them, an elderly couple cut from a bold vintage printed illustration standing small beside"),
+    (42,  A, "{年金が少ない}と",   "an elderly man cut from a bold vintage printed illustration with his chin lowered, an open paper passbook held low in one hand, a small downward paper arrow taped beside him"),
+
+    # ══ ③ なぜ引かれるのか 5:40–8:18 ════════════════════════════════════════════
+    (43,  X, "二つ目{なぜ引く}",   "INFOG: one rounded block at the top splitting into two smaller blocks below it, each small block carrying a different simple line icon"),
+    (44,  A, "{ルール}です",       "VIZ: an elderly woman cut from a bold vintage printed illustration beside a heavy law volume cut from dark card lying open, both its pages left completely bare"),
+    (45,  G, "{原典}年金Q&A",      "nenkin_tenbiki"),
+    (46,  S, "特別徴収の条件",     ["対象|65歳以上のかた",
+                                    "*年金が|年18万円以上"]),
+    (47,  A, "月{1万5千円}以上",   "VIZ: a horizontal paper bar chart of many short bars all rising above one dashed masking-tape line, a numeral 15,000 cut from charcoal card on the tape line, an elderly man cut-out at the side"),
+    (48,  A, "だけでも{届く}",     "CROWD: a street of flat paper houses seen head-on with an envelope landing on every single doorstep and elderly cut-out figures standing at the doors"),
+    (49,  A, "国保も{同じ}",       "SPLIT: two identical paper envelopes pinned side by side on flat colour blocks, an elderly woman cut from a bold vintage printed illustration between them, numerals 65 and 75 cut from card above them"),
+    (50,  A, "一行の{但し書き}",   "HOLD: an elderly man cut from a bold vintage printed illustration holds a plain paper sheet square-on with one narrow strip of torn red paper taped across its lower third, the sheet otherwise bare"),
+    (51,  S, "天引きされない時",   ["介護＋国保が|年金の2分の1超",
+                                    "*その時|国保は自分で納める"]),
+    (52,  A, "得を{する}？",       "an elderly woman cut from a bold vintage printed illustration with one paper hand raised and her head tilted, a question-mark-shaped paper accent behind her"),
+    (53,  A, "納付書で{自分で}",   "HOLD: an elderly man cut from a bold vintage printed illustration holds a blank payment slip out flat toward the camera, a taped arrow curving from his hand to a paper counter behind him"),
+    (54,  A, "{払わなくていい}？", "an elderly man cut from a bold vintage printed illustration seated with both paper palms lifted, an open passbook lying flat on the paper table in front of him"),
+    (55,  A, "国保は{待たない}",   "META: two paper channels running side by side, the upper one with coins flowing through a gate that opens by itself, the lower one blocked by a closed gate with coins piling up behind it, an elderly cut-out watching"),
+    (56,  X, "いくらが{普通}？",   "INFOG: a horizontal axis with a single tall marker standing at its centre and shorter markers on either side, the centre marker appearing last"),
+    (57,  G, "{原典}厚生労働省",   "mhlw_kaigo"),
+    (58,  S, "介護保険料の目安",   ["対象期間|第9期 令和6〜8年度",
+                                    "*全国の加重平均|月6,225円"]),
+    (59,  A, "{非課税}は低い段階", "VIZ: a flight of paper steps rising from left to right with a cut-out coin resting on each step, the coins growing larger as the steps rise, an elderly woman cut-out standing on the lowest step"),
+    (60,  A, "{市区町村}で違う",   "CROWD: a wide flat paper map divided into many plain colour patches of different tones, a small paper flag standing on several of them, an elderly man cut-out at the edge"),
+    (61,  A, "ここからが{本題}",   "DESK: an elderly researcher cut from a bold vintage printed illustration at a paper desk turning a bare page over with both paper hands, a teacup cut-out beside him"),
+
+    # ══ CTA ~49% ═══════════════════════════════════════════════════════════════
+    (62,  A, "{応援}おねがいします", "an elderly couple cut from a bold vintage printed illustration seated side by side, both dipping their head strips toward the camera, paper accent shapes fanning out behind them"),
+
+    # ══ ④ いくら上乗せできるのか 8:48–13:16 (PAYOFF:答え ~68%) ═══════════════════
+    (63,  X, "三つ目{上乗せ}",     "INFOG: one rounded block with a thin arrow running upward to a second block stacked above it, the upper block carrying a simple plus icon"),
+    (64,  G, "{原典}給付金",       "shienkyufu_youken"),
+    (65,  S, "三つの条件",         ["①|65歳以上・老齢基礎年金",
+                                    "②|世帯全員が住民税非課税",
+                                    "*③|前年の収入 80万9千円以下"]),
+    (66,  A, "{生年月日}で違う",   "SPLIT: two plain paper cards pinned side by side, one very slightly taller than the other, a taped arrow running between them, an elderly woman cut-out behind"),
+    (67,  A, "伊藤さんは{78万3千}", "VIZ: a solid paper bar standing just below a dashed masking-tape line, an elderly man cut from a bold vintage printed illustration beside it, a numeral 783,000 cut from mustard card on the bar"),
+    (68,  A, "あと{5千円}",        "VIZ: a very narrow torn paper gap between the top of a solid bar and a dashed tape line, shown large in the foreground, a numeral 5,000 cut from red card in the gap"),
+    (69,  A, "{ぎりぎり}です",     "an elderly man cut from a bold vintage printed illustration leaning close with his eye strip narrowed, two paper fingers held a hair's width apart in front of him"),
+    (70,  A, "一番{伝えたい数字}", "DESK: an elderly researcher cut from a bold vintage printed illustration at a paper desk laying one paper card face-up in the centre of the desk, the card completely bare, a magnifier beside it"),
+    (71,  G, "{原典}計算式",       "shienkyufu_keisan"),
+    (72,  F, "納めた期間の分",     ["五千六百二十円 × 納付済み月数 ÷ 四百八十"]),
+    (73,  F, "免除された期間の分", ["一万千七百六十八円 × 免除月数 ÷ 四百八十"]),
+    (74,  A, "免除の方が{高い}？", "an elderly woman cut from a bold vintage printed illustration with her head drawn back and both paper palms half raised, a question-mark-shaped paper accent behind her"),
+    (75,  A, "{高い}んです",       "VIZ: two solid paper bars standing side by side, the right one more than twice the height of the left, an elderly man cut from a bold vintage printed illustration between them with one paper hand on the taller bar"),
+    (76,  S, "1か月あたりの単価",  ["納めた月|11円70銭",
+                                    "*免除の月|24円50銭"]),
+    (77,  A, "{2倍以上}",          "VIZ: one short paper bar and one bar more than twice as tall pasted large and flat on the newsprint, a numeral 2 cut from deep red card between them with a small multiplication accent"),
+    (78,  A, "年金では{半分}",     "SPLIT: a paper square torn cleanly in half on the left and a full square on the right, a taped arrow running from the torn half toward a cut-out coin below it, an elderly cut-out watching"),
+    (79,  A, "{恥ずかしい}こと？", "an elderly man cut from a bold vintage printed illustration with his head turned away and his shoulder strips drawn in, a small folded paper shape held low in one hand"),
+    (80,  A, "一番{効く記録}",     "VIZ: a stack of plain record cards with one card pulled out and standing proud of the rest, a torn paper starburst pasted behind it, an elderly woman cut-out beside the stack"),
+    (81,  F, "伊藤さんの給付金",   ["四千九百十八円 ＋ 千百七十七円 ＝ 六千九十五円"]),
+    (82,  S, "一年分の給付金",     ["月額|6,095円",
+                                    "*一年で|7万3,140円"]),
+    (83,  A, "4年が{1万4千円}",    "VIZ: four small paper squares grouped tightly on the left with a taped arrow running to a cut-out coin stack on the right, a numeral 14,000 cut from mustard card above the stack"),
+    (84,  A, "負い目が{働いた}",   "an elderly man cut from a bold vintage printed illustration looking up with his brow strip lifted, the small dark paper weight from earlier now lying on the table in front of him instead of his shoulder"),
+    (85,  A, "{返ってくるのか}",   "an elderly man cut from a bold vintage printed illustration seated very still, a large empty torn-paper speech bubble taped beside his head and a second smaller empty bubble behind it"),
+    (87,  A, "あなたの{免除}は",   "DESK: an elderly woman cut from a bold vintage printed illustration at a paper desk with an open blank record book and a magnifier, one paper finger resting on a bare row"),
+    (88,  A, "{7万3千円}がこれ",   "VIZ: two paper stacks shown large, the right one more than twice the left, both pasted flat on the newsprint with numerals 33,000 and 73,000 cut from card above them"),
+    (89,  A, "{手取り}で比べる",   "DESK: an elderly researcher cut from a bold vintage printed illustration at a paper desk with a grey card calculator and two blank paper cards laid side by side in front of him"),
+    (90,  S, "給付金なしの手取り", ["年金|78万3千円",
+                                    "天引き|−3万3千円",
+                                    "*手取り|年75万円・月6万2千円"]),
+    (91,  S, "給付金ありの手取り", ["手取り|75万円",
+                                    "給付金|＋7万3千円",
+                                    "*合計|年82万3千円・月6万8千円"]),
+    (92,  A, "紙一枚で{月6千円}",  "HOLD: an elderly man cut from a bold vintage printed illustration holds a single blank sheet of paper square-on to the camera, a cut-out coin stack standing beside his shoulder, a numeral 6,000 cut from mustard card above the sheet"),
+    (93,  S, "超えた人の受け皿",   ["補足的給付金|80万9千円を超えて",
+                                    "*上限|90万9千円以下"]),
+    (94,  A, "全部{消える}？",     "VIZ: a flight of paper steps descending from left to right with a cut-out coin on each step growing smaller, the lowest step still carrying a coin rather than being empty, an elderly cut-out watching"),
+    (95,  A, "所得は{毎年変わる}", "META: twelve paper calendar sheets pinned in a row with a solid paper bar of a different height standing on each, an elderly woman cut from a bold vintage printed illustration looking along the row"),
+    (97,  A, "{申告}が要る",       "HOLD: an elderly man cut from a bold vintage printed illustration holds a blank declaration form out flat toward the camera, its ruled boxes bare, a taped arrow curving from the form toward a paper counter behind him"),
+    (98,  A, "{ゼロ}でも申告",     "SPLIT: an empty paper box on the left and a stamped paper certificate shape on the right, the bridge of paper between them intact and carrying a taped arrow, a numeral 0 cut from charcoal card in the empty box"),
+    (99,  A, "必ず{年金事務所}",   "CROWD: a pension office counter built from flat paper panels with a queue of elderly cut-out figures, rows of paper chairs behind them and a clerk cut-out at the window"),
+
+    # ══ 研究ノート 13:54–15:04 ═════════════════════════════════════════════════
+    (100, X, "今日の{研究ノート}", "INFOG: five rounded blocks stacked vertically, each carrying a different simple line icon, appearing one after another from top to bottom"),
+    (101, S, "研究ノート ①",       ["通帳の額は|年金額ではない",
+                                    "*65歳以上＋年18万円以上|介護保険料は天引き"]),
+    (102, S, "研究ノート ②",       ["国民健康保険料も|65歳〜75歳未満は対象",
+                                    "*介護＋国保が2分の1超|自分で納める側へ"]),
+    (103, S, "研究ノート ③",       ["令和8年度の満額|年84万7,300円",
+                                    "*納めた月数を|480で割った分だけ"]),
+    (104, A, "{ねんきんネット}で", "DESK: an elderly woman cut from a bold vintage printed illustration at a paper desk in front of a flat paper screen rectangle left completely bare, one paper finger raised toward it"),
+    (105, S, "研究ノート ④",       ["納めた月|5,620円の単価",
+                                    "*免除された月|11,768円の単価"]),
+    (106, S, "研究ノート ⑤",       ["非課税の判定は|申告があってはじめて動く",
+                                    "*所得がなくても|申告は要る"]),
+
+    # ══ まるばつクイズ 15:04–16:24 ═════════════════════════════════════════════
+    (107, X, "まるばつ{3問}",      "INFOG: three rounded blocks in a horizontal row, each carrying a different simple line icon, appearing one after another from left to right"),
+    (108, A, "Q1 毎月{15日}？",    "VIZ: twelve paper calendar sheets pinned in a row, every sheet carrying a small torn ring mark, an elderly man cut-out looking along the row"),
+    (109, A, "{ばつ}偶数月",       "VIZ: twelve paper calendar sheets in a row with only six carrying a cut-out coin, a large paper cross shape cut from charcoal card pasted over the first sheet"),
+    (110, A, "Q2 免除は{不利}？",  "an elderly woman cut from a bold vintage printed illustration with her head tilted and one paper hand near her chin, a question-mark-shaped paper accent behind her"),
+    (111, A, "{ばつ}有利です",     "VIZ: two solid paper bars side by side, the right one more than twice the height of the left, a large paper cross shape cut from charcoal card pasted over the shorter bar"),
+    (112, A, "Q3 内訳{分かる}？",  "HOLD: an elderly man cut from a bold vintage printed illustration holds a pension notice slip square-on with three bare ruled rows and a magnifier held over it"),
+    (113, A, "{まる}捨てないで",   "HOLD: an elderly woman cut from a bold vintage printed illustration holds a notice slip close to her chest with both paper hands, a paper waste basket standing behind her with nothing in it, a large paper ring shape cut from mustard card pasted beside the slip"),
+
+    # ══ 締め + 次回予告 16:24–end ═══════════════════════════════════════════════
+    (114, A, "{令和8年9月}時点",   "DESK: an elderly researcher cut from a bold vintage printed illustration at a paper desk closing a plain document folder with both paper hands, a torn calendar sheet pinned on the flat wall behind"),
+    (115, A, "{チャンネル登録}を", "an elderly couple cut from a bold vintage printed illustration seated side by side looking toward the camera, a paper bell shape and a torn paper starburst taped behind their shoulders"),
+    (117, A, "介護保険料は{下がる}？", "META: a flight of paper steps with a cut-out coin on each, one taped arrow curving downward from a higher step to a lower one, an elderly man cut-out watching"),
+    (118, A, "上越の{中村さん}",   "an elderly Japanese woman cut from a bold vintage printed illustration, thick white die-cut border seated square-on with a teacup cut-out beside her, a numeral 71 cut from charcoal card pinned on the flat wall behind"),
+    (119, A, "{一年でいくら}変わる", "VIZ: two solid paper bars of slightly different heights standing side by side with a torn paper gap marked between their tops, an elderly cut-out beside them"),
+    (120, A, "また{次回}の研究で", "DESK: an elderly researcher cut from a bold vintage printed illustration at a paper desk with both paper hands resting flat, a teacup and a closed folder beside him, a small paper bar chart pinned behind"),
+]

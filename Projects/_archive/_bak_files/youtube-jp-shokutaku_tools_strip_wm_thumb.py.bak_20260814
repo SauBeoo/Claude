@@ -1,0 +1,99 @@
+# -*- coding: utf-8 -*-
+r"""Go dau ✦ tren THUMBNAIL da bake chu (khong cat khung duoc vi chu chay ra sat mep).
+
+    python tools\strip_wm_thumb.py <file-or-folder> [-o outdir]
+
+Vi sao khong dung strip_wm_crop.py: tool do CAT mep phai. Voi thumbnail thi chu hero
+chay toi ~0.97W nen cat la mat chu. O day phai VA.
+
+Cach va (da thu 3 cach, chi cach nay chay):
+  1. copy khoi texture ben canh   -> HONG: sao nam tren vung TUONG toi hon, nguon lay
+                                      lech tong -> ra vet.
+  2. tach lop alpha toan vung     -> chi go ~70%, con vet sao mo.
+  3. DUNG LAI NEN THEO TRUNG VI TUNG HANG  -> sach. Tuong/ban la gradient MIN theo chieu
+     doc nen trung vi cua chinh hang do khop gan nhu tuyet doi; loai pixel thuoc NET CHU
+     khoi mat na de khong pha glyph; cong nhieu +-1.2 de khong "phang nhu nhua".
+
+⚠️ DINH VI ✦ BANG MAY KHONG DUNG DUOC O DAY (da thu 4 lan): net chu dam ap dao moi phep
+   do (template match tra 289 cum rac; residual-max tra toan mep chu). Vi tri lay tu
+   DO BANG MAT tren nhieu mau, ghi thanh hang so duoi day theo TUNG LO kich thuoc.
+"""
+import argparse
+import io
+import sys
+from pathlib import Path
+
+import numpy as np
+from PIL import Image, ImageFilter
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+
+# (x/W, y/H) do bang MAT — theo tung lo kich thuoc cua generator
+SPOTS = {
+    (1376, 768): [(0.928, 0.878)],
+    (2752, 1536): [(0.958, 0.926), (0.930, 0.890)],
+}
+R = {1376: 30, 2752: 60}          # ban kinh vung xu ly theo be ngang
+
+
+def is_glyph(px):
+    r, g, b = px[..., 0], px[..., 1], px[..., 2]
+    return ((r < 140) & (g < 120)) | ((r > 195) & (g > 145) & (b < 130))
+
+
+def clean_one(a, cx, cy, r, rng):
+    y0, y1, x0, x1 = cy - r, cy + r, cx - r, cx + r
+    W0, W1 = max(0, cx - r - 40), min(a.shape[1], cx + r + 40)
+    box = a[y0:y1, x0:x1]
+    glyph = is_glyph(box)
+    fill = np.zeros_like(box)
+    star = np.zeros(box.shape[:2], bool)
+    for i in range(box.shape[0]):
+        row = a[y0 + i, W0:W1]
+        gl = is_glyph(row)
+        clean = row[~gl] if (~gl).sum() > 20 else row
+        med = np.median(clean, axis=0)
+        fill[i, :] = med
+        star[i] = (box[i].mean(axis=1) - med.mean() > 6) & (~glyph[i])
+    if star.sum() == 0:
+        return 0
+    m = np.asarray(Image.fromarray((star * 255).astype(np.uint8))
+                   .filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(2)),
+                   dtype=float) / 255
+    m = m[..., None] * (~glyph)[..., None]
+    a[y0:y1, x0:x1] = box * (1 - m) + fill * m
+    a[y0:y1, x0:x1] += rng.normal(0, 1.2, box.shape) * (m > 0.2)
+    return int(star.sum())
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("target")
+    ap.add_argument("-o", "--outdir", default=None)
+    a_ = ap.parse_args()
+    t = Path(a_.target)
+    files = sorted([p for p in t.iterdir() if p.suffix.lower() in (".jpg", ".jpeg", ".png")]) \
+        if t.is_dir() else [t]
+    out = Path(a_.outdir) if a_.outdir else (t if t.is_dir() else t.parent) / "_wm_clean"
+    out.mkdir(parents=True, exist_ok=True)
+    rng = np.random.default_rng(7)
+
+    for f in files:
+        im = Image.open(f).convert("RGB")
+        W, H = im.size
+        spots = SPOTS.get((W, H))
+        if spots is None:
+            print(f"  {f.name}: BO QUA — chua co moc ✦ cho lo {W}x{H}, phai DO BANG MAT truoc")
+            continue
+        a = np.asarray(im).astype(float)
+        r = R.get(W, max(20, W // 46))
+        hits = [clean_one(a, int(W * fx), int(H * fy), r, rng) for fx, fy in spots]
+        o = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8)).resize((1920, 1080), Image.LANCZOS)
+        p = out / (f.stem + ".jpg")
+        o.save(p, quality=95)
+        print(f"  {f.name} ({W}x{H}) -> {p.name}  pixel ✦ da va: {hits}")
+    print(f"\n⚠️ Exit code KHONG chung minh ✦ da sach — soi mat goc duoi-phai tung anh.")
+
+
+if __name__ == "__main__":
+    main()

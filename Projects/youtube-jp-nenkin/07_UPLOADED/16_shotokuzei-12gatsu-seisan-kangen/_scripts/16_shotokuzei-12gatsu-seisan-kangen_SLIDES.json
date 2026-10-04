@@ -1,0 +1,2751 @@
+[
+ {
+  "match": "あなたの年金から引かれている税金",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "12月だけ、《数字が動く》",
+   "img": "art_tsucho_12gatsu.png",
+   "fly": "up",
+   "cap": "手続きをした覚えは、ない。それなのに",
+   "left": "sensei_serious",
+   "right": "kikite_listen",
+   "props_top": [
+    {
+     "icon": "calendar",
+     "at": [
+      0.085,
+      0.22
+     ],
+     "s": 140,
+     "rot": -10,
+     "t0": 2.97
+    },
+    {
+     "icon": "yen_coins",
+     "at": [
+      0.075,
+      0.5
+     ],
+     "s": 132,
+     "t0": 4.02
+    },
+    {
+     "icon": "chart_up",
+     "at": [
+      0.925,
+      0.3
+     ],
+     "s": 136,
+     "t0": 6.74
+    }
+   ],
+   "pins": [
+    {
+     "kind": "badge",
+     "t": "12月\nだけ",
+     "at": [
+      0.16,
+      0.14
+     ],
+     "tone": "red",
+     "r": 0.115,
+     "size": 52,
+     "beat": 2.97
+    },
+    {
+     "kind": "stamp",
+     "t": "多くなる方向に",
+     "at": [
+      0.7,
+      0.13
+     ],
+     "rot": -9,
+     "size": 54,
+     "beat": 6.74
+    }
+   ],
+   "beats": [
+    1.6,
+    9.12
+   ]
+  }
+ },
+ {
+  "match": "国の資料に、実例が載っています",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：日本年金機構『令和8年度税制改正による主な改正事項』",
+   "img": "genten_02_kikou_rei.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝ 6,000円 → 4,600円の実例",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "props_top": [
+    {
+     "icon": "warning",
+     "at": [
+      0.925,
+      0.24
+     ],
+     "s": 118,
+     "t0": 10.52
+    }
+   ],
+   "pins": [
+    {
+     "kind": "stamp",
+     "t": "実例です",
+     "at": [
+      0.72,
+      0.1
+     ],
+     "rot": -7,
+     "size": 46,
+     "beat": 3.95
+    }
+   ],
+   "beats": [
+    1.6,
+    12.01
+   ]
+  }
+ },
+ {
+  "match": "これを見て、たいていのかたは",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "たいていのかたが、こう思います",
+   "panels": [
+    {
+     "label": "振込先の\n《間違い》？",
+     "img": "art_machigai_gimon.png"
+    },
+    {
+     "label": "還付金\n《詐欺》？",
+     "img": "art_sagi_denwa.png",
+     "tone": "red"
+    }
+   ],
+   "cap": "通帳を、二度見してしまいます",
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "props_top": [
+    {
+     "icon": "magnifier",
+     "at": [
+      0.075,
+      0.24
+     ],
+     "s": 124,
+     "t0": 5.35
+    },
+    {
+     "icon": "phone",
+     "at": [
+      0.925,
+      0.24
+     ],
+     "s": 120,
+     "rot": 8,
+     "t0": 10.52
+    }
+   ],
+   "beats": [
+    1.6,
+    8.07,
+    8.87
+   ]
+  }
+ },
+ {
+  "match": "どちらでもありません",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "間違いでも、詐欺でもありません",
+   "bgimg": "bg_denwa_shinpai.png",
+   "no": [
+    [
+     "bank",
+     "振込先の間違いでは、ない"
+    ],
+    [
+     "phone",
+     "還付金詐欺でも、ない"
+    ]
+   ],
+   "ok": [
+    [
+     "receipt",
+     "所得税が引かれている方の"
+    ],
+    [
+     "couple_senior",
+     "ほぼ全員に起きること"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_surprised",
+   "pins_card": [
+    {
+     "kind": "badge",
+     "t": "ほぼ\n全員",
+     "at": [
+      0.84,
+      0.16
+     ],
+     "tone": "blue",
+     "r": 0.115,
+     "size": 50,
+     "beat": 6.74
+    }
+   ],
+   "beats": [
+    2.37,
+    3.17,
+    3.97,
+    4.77
+   ]
+  }
+ },
+ {
+  "match": "原因は、今年の税制改正",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "本当の理由は",
+   "value": "もう少し、意地悪",
+   "unit": "",
+   "pop": true,
+   "bgimg": "bg_shorui_tsumi.png",
+   "props": [
+    {
+     "icon": "docs",
+     "at": [
+      0.09,
+      0.62
+     ],
+     "s": 150,
+     "rot": -8
+    },
+    {
+     "icon": "hanko",
+     "at": [
+      0.1,
+      0.86
+     ],
+     "s": 120,
+     "rot": 12,
+     "t0": 0.5
+    },
+    {
+     "icon": "cityhall",
+     "at": [
+      0.91,
+      0.64
+     ],
+     "s": 160,
+     "t0": 0.7
+    },
+    {
+     "icon": "warning",
+     "at": [
+      0.9,
+      0.88
+     ],
+     "s": 110,
+     "t0": 0.9
+    }
+   ],
+   "cap": "税制改正——《それだけ》では、ありません",
+   "left": "sensei_serious",
+   "right": "kikite_think",
+   "pins_card": [
+    {
+     "kind": "stamp",
+     "t": "もう少し、意地悪",
+     "at": [
+      0.74,
+      0.12
+     ],
+     "rot": -8,
+     "size": 48,
+     "beat": 7.09
+    }
+   ],
+   "beats": [
+    1.6,
+    5.0
+   ]
+  }
+ },
+ {
+  "match": "おそらく、あなたの家のどこかに",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "答えの《半分》を知っている紙",
+   "img": "art_nemuru_kami.png",
+   "fly": "up",
+   "cap": "あなたの家の、どこかに眠っています",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "props_top": [
+    {
+     "icon": "envelope_open",
+     "at": [
+      0.075,
+      0.26
+     ],
+     "s": 128,
+     "rot": -8,
+     "t0": 6.12
+    }
+   ],
+   "pins": [
+    {
+     "kind": "badge",
+     "t": "答えの\n半分",
+     "at": [
+      0.84,
+      0.17
+     ],
+     "tone": "amber",
+     "r": 0.115,
+     "size": 46,
+     "beat": 3.85
+    }
+   ],
+   "beats": [
+    1.6,
+    9.32
+   ]
+  }
+ },
+ {
+  "match": "前回の研究で、こんな約束をしました",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "前回の約束",
+   "value": "増えるかたが、います",
+   "unit": "",
+   "bgimg": "bg_tsucho_calendar.png",
+   "props": [
+    {
+     "icon": "calendar",
+     "at": [
+      0.09,
+      0.62
+     ],
+     "s": 150,
+     "rot": -7,
+     "t0": 0.35
+    },
+    {
+     "icon": "passbook",
+     "at": [
+      0.1,
+      0.87
+     ],
+     "s": 130,
+     "t0": 0.51
+    },
+    {
+     "icon": "clock",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 140,
+     "t0": 0.67
+    }
+   ],
+   "cap": "今日は、その《答え合わせ》です",
+   "left": "sensei_present",
+   "right": "kikite_nod",
+   "props_top": [
+    {
+     "icon": "chart_up",
+     "at": [
+      0.925,
+      0.28
+     ],
+     "s": 134,
+     "t0": 6.74
+    }
+   ],
+   "beats": [
+    1.6,
+    12.01
+   ]
+  }
+ },
+ {
+  "match": "年金から所得税が引かれているかたなら",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "「ほぼ全員」とは、どなたか",
+   "fit": true,
+   "panels": [
+    {
+     "label": "引かれて《いる》方",
+     "img": "art_p7_hikareteru.png"
+    },
+    {
+     "label": "引かれて《いない》方",
+     "img": "art_p7_taisyougai.png",
+     "tone": "paper"
+    }
+   ],
+   "cap": "ご自身も、その中に入ります",
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "pins_card": [
+    {
+     "kind": "badge",
+     "t": "あなたも\n対象",
+     "at": [
+      0.88,
+      0.2
+     ],
+     "tone": "blue",
+     "r": 0.105,
+     "size": 44,
+     "beat": 3.32
+    }
+   ],
+   "beats": [
+    1.6,
+    6.57,
+    7.37
+   ]
+  }
+ },
+ {
+  "match": "灯油ストーブの匂いがする居間で",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "12月・高橋さんの居間",
+   "img": "art_ima_stove.png",
+   "fly": "up",
+   "cap": "年賀状の宛名を、書き終えたところ",
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    7.27
+   ]
+  }
+ },
+ {
+  "match": "「ねえ、これ——振込先",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "奥さまの、ひとこと",
+   "panels": [
+    {
+     "label": "「振込先、間違え\nられたんじゃない？」",
+     "img": "art_okusama_tsucho.png",
+     "tone": "paper"
+    }
+   ],
+   "cap": "たしかに、先月より《多い》",
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    4.82
+   ]
+  }
+ },
+ {
+  "match": "振り込め詐欺の還付金、という言葉が",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "心当たりは、ひとつだけ",
+   "nodes": [
+    {
+     "id": "sagi",
+     "kind": "circle",
+     "at": [
+      0.1176,
+      0.218
+     ],
+     "icon": "warning",
+     "label": "詐欺かも",
+     "s": 1.106
+    },
+    {
+     "id": "fuu",
+     "kind": "panel",
+     "at": [
+      0.7275,
+      0.218
+     ],
+     "icon": "env",
+     "label": "茶色い封筒",
+     "s": 1.106
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.7254,
+      0.6228
+     ],
+     "label": "「あの紙に、何か\n書いてあった気がする」",
+     "tail": "up",
+     "lw": 470,
+     "s": 1.106
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "7月に届いた、扶養親族等申告書です",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "sagi",
+     "to": "fuu",
+     "style": "arrow",
+     "tone": "ink"
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    6.04,
+    15.16,
+    15.96
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "高橋さんの勘は、半分だけ",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "勘は、半分だけ当たっていました",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.1609,
+      0.226
+     ],
+     "label": "あの紙？",
+     "lw": 300,
+     "s": 1.227
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7623,
+      0.226
+     ],
+     "label": "国の制度",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.227
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6573,
+      0.5667
+     ],
+     "label": "答えは、もっと\n大きな場所に",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.227
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "紙の話は、あとでもう一度戻ってきます",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "sub": null,
+   "beats": [
+    1.6,
+    4.3,
+    5.1,
+    5.9
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "高橋さんの年金は、月およそ20万円",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "高橋さんは、線の外側",
+   "nodes": [
+    {
+     "id": "in",
+     "kind": "label",
+     "at": [
+      0.14621052631578946,
+      0.2345
+     ],
+     "label": "内側\n引かれない",
+     "lw": 300,
+     "dim": false,
+     "s": 0.86
+    },
+    {
+     "id": "sen",
+     "kind": "label",
+     "at": [
+      0.5184210526315789,
+      0.2345
+     ],
+     "label": "214万円",
+     "lw": 400,
+     "hero": true,
+     "under": true,
+     "s": 0.86
+    },
+    {
+     "id": "out",
+     "kind": "label",
+     "at": [
+      0.8906315789473683,
+      0.2345
+     ],
+     "label": "高橋さん\n240万円",
+     "lw": 300,
+     "dim": false,
+     "s": 0.86
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.58,
+      0.5494
+     ],
+     "label": "以前の研究で\n確かめた線です",
+     "tail": "up",
+     "lw": 470,
+     "s": 0.86
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "今日の話の、当事者です",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "sub": null,
+   "beats": [
+    1.6,
+    6.57,
+    7.37,
+    16.28,
+    17.08
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "今日は、4つのことを、順番に確かめます",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "今日、確かめる4つのこと",
+   "bgimg": "bg_note_yubi.png",
+   "props": [
+    {
+     "icon": "checklist",
+     "at": [
+      0.09,
+      0.64
+     ],
+     "s": 155,
+     "rot": -6,
+     "t0": 0.35
+    },
+    {
+     "icon": "magnifier",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 140,
+     "t0": 0.51
+    }
+   ],
+   "steps": [
+    [
+     "calendar",
+     "12月だけ動く、その仕組み"
+    ],
+    [
+     "yen_coins",
+     "では、いくら戻るのか"
+    ],
+    [
+     "shield_dash",
+     "何も起きないのは、どんなかた"
+    ],
+    [
+     "passbook_open",
+     "答えが印刷されている場所"
+    ]
+   ],
+   "left": "sensei_present",
+   "right": "kikite_listen"
+  }
+ },
+ {
+  "match": "発端は、今年の税制改正です",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "発端は、今年の税制改正",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.1805,
+      0.228
+     ],
+     "label": "これまでの\n基礎控除",
+     "lw": 300,
+     "s": 1.143
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7782,
+      0.228
+     ],
+     "label": "引き上げ",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.143
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6633,
+      0.5628
+     ],
+     "label": "年金の税金の線が\n動きました",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.143
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "どこが動いたのか、順番に見ていきます",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "sub": null,
+   "beats": [
+    2.9,
+    6.67,
+    12.19,
+    12.99
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "65歳以上のかたなら",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "所得税が引かれない線",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.16,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "65歳以上",
+     "hero": "214万円",
+     "foot": "未満なら0円",
+     "under": true
+    },
+    {
+     "id": "R",
+     "kind": "group",
+     "at": [
+      0.84,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "65歳未満",
+     "hero": "164万円",
+     "foot": "未満なら0円",
+     "under": true
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.97
+     ],
+     "w": 950,
+     "label": "去年までは、205万円と155万円でした",
+     "fix": true
+    }
+   ],
+   "edges": [],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    13.24,
+    18.23
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "高橋さんは、240万円ですから",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "高橋さんの席は",
+   "value": "外側のまま",
+   "unit": "",
+   "props": [
+    {
+     "icon": "scale",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 160,
+     "t0": 0.35
+    },
+    {
+     "icon": "form",
+     "at": [
+      0.1,
+      0.88
+     ],
+     "s": 125,
+     "rot": 10,
+     "t0": 0.51
+    },
+    {
+     "icon": "person",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 135,
+     "t0": 0.67
+    }
+   ],
+   "cap": "240万円は、新しい線の《外側》",
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    6.39
+   ]
+  }
+ },
+ {
+  "match": "ですが、ここに、もうひとつ",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "もうひとつ、動いた数字",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.1805,
+      0.228
+     ],
+     "label": "去年までの\n控除額",
+     "lw": 300,
+     "s": 1.143
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7782,
+      0.228
+     ],
+     "label": "少し大きく",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.143
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6633,
+      0.5628
+     ],
+     "label": "控除が大きいほど\n税金は少ない",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.143
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "線の外側のかたにも、恩恵があります",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "sub": null,
+   "beats": [
+    1.6,
+    9.99,
+    17.43,
+    22.43
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "問題は、ここからです",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "新しい控除額、いつから？",
+   "value": "途中から",
+   "unit": "",
+   "props": [
+    {
+     "icon": "calendar",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 150,
+     "rot": -8,
+     "t0": 0.35
+    },
+    {
+     "icon": "hourglass",
+     "at": [
+      0.1,
+      0.88
+     ],
+     "s": 120,
+     "t0": 0.51
+    },
+    {
+     "icon": "clock",
+     "at": [
+      0.91,
+      0.65
+     ],
+     "s": 145,
+     "t0": 0.67
+    }
+   ],
+   "cap": "1年の《途中》からしか、反映されません",
+   "left": "sensei_serious",
+   "right": "kikite_think",
+   "beats": [
+    2.37,
+    3.17
+   ]
+  }
+ },
+ {
+  "match": "国の資料は、こう説明しています",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：日本年金機構『令和8年度税制改正による主な改正事項』",
+   "img": "genten_01_kikou_seisan.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝ 11月まで改正前・12月に精算",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    26.4
+   ]
+  }
+ },
+ {
+  "match": "「令和8年12月の年金支払い時に",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "1年の、ふたつの区間",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.16,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "4月〜11月",
+     "icon": "calendar",
+     "iconsize": 110,
+     "foot": "改正前の控除額"
+    },
+    {
+     "id": "R",
+     "kind": "group",
+     "at": [
+      0.84,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "amber",
+     "head": "12月",
+     "hero": "精算",
+     "foot": "1年分を計算し直す",
+     "under": true
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.97
+     ],
+     "w": 950,
+     "label": "多めに引かれていた分は、12月に戻ります",
+     "fix": true
+    }
+   ],
+   "edges": [
+    {
+     "from": "L",
+     "to": "R",
+     "style": "arrow",
+     "tone": "amber",
+     "w": 18
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    11.64,
+    17.86
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "では、いくら戻るのか。いちばん気になる",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "では、ご自身は",
+   "value": "いくら戻る？",
+   "unit": "",
+   "props": [
+    {
+     "icon": "magnifier",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 150,
+     "t0": 0.35
+    },
+    {
+     "icon": "calc",
+     "at": [
+      0.1,
+      0.88
+     ],
+     "s": 125,
+     "rot": 7,
+     "t0": 0.51
+    },
+    {
+     "icon": "passbook",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 140,
+     "t0": 0.67
+    }
+   ],
+   "cap": "次に、機構の《一例》で確かめます",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    2.4
+   ]
+  }
+ },
+ {
+  "match": "冒頭の例に、戻りましょう",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "機構の示す、一例",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.2054,
+      0.2305
+     ],
+     "label": "改正前\n月6,000円",
+     "lw": 300,
+     "s": 1.034
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7988,
+      0.2305
+     ],
+     "label": "月4,600円",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.034
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6626,
+      0.5576
+     ],
+     "label": "その差、\n1,400円",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.034
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "2月から10月まで、5回分ありました",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "sub": null,
+   "beats": [
+    2.72,
+    6.32,
+    7.12,
+    10.62
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "これが、2月から10月まで",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "多めに引かれていた合計",
+   "value": "7,000",
+   "unit": "円",
+   "pop": true,
+   "bgimg": "bg_kozeni_tsumi.png",
+   "props": [
+    {
+     "icon": "yen_coins",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 165,
+     "rot": -6
+    },
+    {
+     "icon": "calc",
+     "at": [
+      0.1,
+      0.87
+     ],
+     "s": 130,
+     "t0": 0.5
+    },
+    {
+     "icon": "money_pouch",
+     "at": [
+      0.91,
+      0.65
+     ],
+     "s": 170,
+     "t0": 0.7
+    },
+    {
+     "icon": "nenkin_techo",
+     "at": [
+      0.9,
+      0.88
+     ],
+     "s": 120,
+     "rot": 10,
+     "t0": 0.9
+    }
+   ],
+   "cap": "1,400円 × 5回分",
+   "left": "sensei_explain",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    5.69
+   ]
+  }
+ },
+ {
+  "match": "12月には、まず、いつもどおり",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "12月の振込みで、起きること",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.2054,
+      0.2305
+     ],
+     "label": "12月分の税金\n4,600円",
+     "lw": 300,
+     "s": 1.034
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7988,
+      0.2305
+     ],
+     "label": "＋2,400円",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.034
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6626,
+      0.5576
+     ],
+     "label": "払いすぎた7,000円\nとの差額です",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.034
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "まとめて、振込みに上乗せで戻ります",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_nod",
+   "sub": null,
+   "beats": [
+    1.6,
+    9.99,
+    17.78,
+    18.58
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "ただ、これは機構が示した",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "この2,400円は、あくまで《一例》",
+   "bgimg": "bg_dentaku_hitori.png",
+   "props": [
+    {
+     "icon": "calc",
+     "at": [
+      0.09,
+      0.64
+     ],
+     "s": 145,
+     "rot": -6,
+     "t0": 0.35
+    },
+    {
+     "icon": "receipt",
+     "at": [
+      0.91,
+      0.63
+     ],
+     "s": 130,
+     "t0": 0.51
+    },
+    {
+     "icon": "scale",
+     "at": [
+      0.9,
+      0.88
+     ],
+     "s": 125,
+     "t0": 0.67
+    }
+   ],
+   "no": [
+    [
+     "magnifier",
+     "ご自身の金額とは、限りません"
+    ]
+   ],
+   "ok": [
+    [
+     "scale",
+     "年金額と扶養の状況で、変わります"
+    ],
+    [
+     "yen_coins",
+     "大きいことも、小さいことも あります"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    2.4,
+    3.2
+   ]
+  }
+ },
+ {
+  "match": "高橋さんも、電卓を取り出して",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "ところが、指が止まります",
+   "img": "art_takahashi_dentaku.png",
+   "fly": "up",
+   "cap": "この式だけでは、決まらない",
+   "left": "sensei_serious",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    7.09
+   ]
+  }
+ },
+ {
+  "match": "実際に何円戻るのかは",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "この式だけでは、決まりません",
+   "bgimg": "bg_dentaku_techou.png",
+   "no": [
+    [
+     "scale",
+     "年金の額で、控除額が違う"
+    ],
+    [
+     "couple",
+     "扶養家族の有無でも、違う"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    5.52
+   ]
+  }
+ },
+ {
+  "match": "さっきの、茶色い封筒",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "茶色い封筒、ふたたび",
+   "img": "art_chairo_fuutou.png",
+   "fly": "up",
+   "cap": "扶養親族等申告書が、もう一度関わります",
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    2.4
+   ]
+  }
+ },
+ {
+  "match": "配偶者がいて、その所得が少ないと",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "申告書が、効いてくるところ",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.1433,
+      0.2222
+     ],
+     "label": "基礎的\n控除額",
+     "lw": 300,
+     "s": 1.393
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7308,
+      0.2222
+     ],
+     "label": "＋配偶者の分",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.393
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6369,
+      0.5746
+     ],
+     "label": "所得の少ない配偶者が\nいる場合の上乗せ",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.393
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "高橋さんは、提出済みでした",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "sub": null,
+   "beats": [
+    1.6,
+    7.27,
+    8.07,
+    8.87
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "つまり、同じ240万円の年金でも",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "同じ240万円でも",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.16,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "amber",
+     "head": "申告書を\n出したかた",
+     "hero": "上乗せあり",
+     "under": true
+    },
+    {
+     "id": "R",
+     "kind": "group",
+     "at": [
+      0.84,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "出していない\nかた",
+     "hero": "上乗せなし"
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.97
+     ],
+     "w": 950,
+     "label": "戻る額は、人によって変わります",
+     "fix": true
+    }
+   ],
+   "edges": [],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    12.61,
+    17.08
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "この場で、正確な金額を計算することは",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "この動画で、できること",
+   "bgimg": "bg_kenkyu_desk.png",
+   "no": [
+    [
+     "calc",
+     "全パターンの計算は、できません"
+    ]
+   ],
+   "ok": [
+    [
+     "magnifier",
+     "方法は、ひとつだけあります"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    19.36
+   ]
+  }
+ },
+ {
+  "match": "答えは、すでに、高橋さんの手元にある紙に",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "答えのありか",
+   "value": "印刷済み",
+   "unit": "",
+   "props": [
+    {
+     "icon": "envelope_open",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 160,
+     "rot": -7,
+     "t0": 0.35
+    },
+    {
+     "icon": "docs",
+     "at": [
+      0.1,
+      0.88
+     ],
+     "s": 125,
+     "t0": 0.51
+    },
+    {
+     "icon": "magnifier",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 140,
+     "t0": 0.67
+    }
+   ],
+   "cap": "手元の《紙》に、もう書かれています",
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    2.4
+   ]
+  }
+ },
+ {
+  "match": "隣の田中さんは、少し、事情が違います",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "隣の、田中さん",
+   "panels": [
+    {
+     "label": "田中さん\n年金 月16万円",
+     "img": "art_tanaka_shigoto.png"
+    }
+   ],
+   "cap": "まだ週5日、勤めに出ています",
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    3.77
+   ]
+  }
+ },
+ {
+  "match": "192万円は、新しい線の214万円はもちろん",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "田中さんは、線の内側",
+   "nodes": [
+    {
+     "id": "in",
+     "kind": "label",
+     "at": [
+      0.1631578947368421,
+      0.2313
+     ],
+     "label": "田中さん\n192万円",
+     "lw": 300,
+     "dim": false
+    },
+    {
+     "id": "sen",
+     "kind": "label",
+     "at": [
+      0.5910526315789474,
+      0.2313
+     ],
+     "label": "214万円",
+     "lw": 400,
+     "hero": true,
+     "under": true
+    },
+    {
+     "id": "out",
+     "kind": "label",
+     "at": [
+      0.9463157894736842,
+      0.2313
+     ],
+     "label": "外側",
+     "lw": 300,
+     "dim": true
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.58,
+      0.556
+     ],
+     "label": "0円は0円のまま\n12月も変化なし",
+     "tail": "up",
+     "lw": 470
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "今年も去年も、引かれていません",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "sub": null,
+   "beats": [
+    1.6,
+    7.62,
+    14.54,
+    15.34,
+    16.14
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "ただし、田中さんには、パートのお給料が",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "ふたつの、別々の仕組み",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.16,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "年金",
+     "icon": "passbook",
+     "iconsize": 110,
+     "foot": "12月に精算"
+    },
+    {
+     "id": "R",
+     "kind": "group",
+     "at": [
+      0.84,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "お給料",
+     "icon": "wallet",
+     "iconsize": 110,
+     "foot": "年末調整"
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.97
+     ],
+     "w": 950,
+     "label": "別々に動いています。混ぜないように",
+     "fix": true
+    }
+   ],
+   "edges": [
+    {
+     "from": "L",
+     "to": "R",
+     "style": "dot",
+     "tone": "ink"
+    }
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    11.91,
+    23.9
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "この研究室について",
+   "org": "年金と老後のお金研究室",
+   "doc": "高評価・シェア・コメントが\n次の研究テーマになります",
+   "note": "※ご感想や、調べてほしいテーマをお寄せください",
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "ご感想や、調べてほしいテーマがあれば",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "ご感想・リクエスト",
+   "value": "コメント欄へ",
+   "unit": "",
+   "props": [
+    {
+     "icon": "phone",
+     "at": [
+      0.09,
+      0.64
+     ],
+     "s": 140,
+     "t0": 0.35
+    },
+    {
+     "icon": "mailbox",
+     "at": [
+      0.91,
+      0.64
+     ],
+     "s": 140,
+     "t0": 0.51
+    },
+    {
+     "icon": "checklist",
+     "at": [
+      0.9,
+      0.88
+     ],
+     "s": 120,
+     "rot": 8,
+     "t0": 0.67
+    }
+   ],
+   "cap": "皆さまの声が、次の研究テーマになります",
+   "left": "sensei_present",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    10.34
+   ]
+  }
+ },
+ {
+  "match": "先ほどの、答えが書かれている紙",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "答えの紙 ＝ 年金振込通知書",
+   "img": "art_furikomi_tsuchisho.png",
+   "fly": "up",
+   "cap": "以前の研究でも登場した、あの紙です",
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    10.69
+   ]
+  }
+ },
+ {
+  "match": "その中の、「所得税」と書かれた",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "答えは、たった一行",
+   "value": "所得税",
+   "unit": "の欄",
+   "pop": true,
+   "bgimg": "bg_tsuchisho_gyou.png",
+   "props": [
+    {
+     "icon": "passbook_open",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 170,
+     "rot": -5,
+     "t0": 0.35
+    },
+    {
+     "icon": "form",
+     "at": [
+      0.1,
+      0.88
+     ],
+     "s": 125,
+     "rot": 9,
+     "t0": 0.51
+    },
+    {
+     "icon": "magnifier",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 140,
+     "t0": 0.67
+    }
+   ],
+   "cap": "12月分の数字が、答え《そのもの》です",
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    12.79
+   ]
+  }
+ },
+ {
+  "match": "高橋さんは、その足で、6月に届いていた",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "引き出しの、いつもの場所",
+   "img": "art_hikidashi_sagasu.png",
+   "fly": "up",
+   "cap": "封筒の隅が、少しめくれています",
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    13.84
+   ]
+  }
+ },
+ {
+  "match": "10月分の「所得税」の欄と",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "ふたつの欄を、並べて見比べる",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.16,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "10月分",
+     "icon": "docs",
+     "iconsize": 110,
+     "foot": "所得税の欄"
+    },
+    {
+     "id": "R",
+     "kind": "group",
+     "at": [
+      0.84,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "amber",
+     "head": "12月分",
+     "hero": "少ない",
+     "foot": "所得税の欄",
+     "under": true
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.97
+     ],
+     "w": 950,
+     "label": "差は、数千円のオーダーでした",
+     "fix": true
+    }
+   ],
+   "edges": [
+    {
+     "from": "L",
+     "to": "R",
+     "style": "arrow",
+     "tone": "amber",
+     "w": 18
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    13.24,
+    21.13
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "「本当に、戻ってくるんだな」",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "高橋さんの、つぶやき",
+   "panels": [
+    {
+     "label": "「本当に、\n戻ってくるんだな」",
+     "img": "art_takahashi_tsubuyaki.png",
+     "tone": "paper"
+    }
+   ],
+   "cap": "通帳より先に、紙が教えてくれました",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved",
+   "beats": [
+    2.9,
+    7.89
+   ]
+  }
+ },
+ {
+  "match": "ここで、よくある誤解を",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "誤解①：別便で届く？",
+   "fit": true,
+   "panels": [
+    {
+     "label": "12月分に《上乗せ》",
+     "img": "art_p43_uwanose.png"
+    },
+    {
+     "label": "別便・現金は《無い》",
+     "img": "art_p43_genkin.png",
+     "tone": "red"
+    }
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_think",
+   "pins_card": [
+    {
+     "kind": "stamp",
+     "t": "上乗せ、だけ",
+     "at": [
+      0.52,
+      0.93
+     ],
+     "rot": -6,
+     "size": 50,
+     "beat": 15.06
+    }
+   ],
+   "beats": [
+    1.6,
+    21.11
+   ]
+  }
+ },
+ {
+  "match": "ふたつ。「来年も、12月だけ多くなる」",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "誤解②：来年も12月だけ多い？",
+   "props": [
+    {
+     "icon": "calendar",
+     "at": [
+      0.09,
+      0.64
+     ],
+     "s": 150,
+     "rot": -7,
+     "t0": 0.35
+    },
+    {
+     "icon": "warning",
+     "at": [
+      0.91,
+      0.63
+     ],
+     "s": 130,
+     "t0": 0.51
+    },
+    {
+     "icon": "chart_down",
+     "at": [
+      0.9,
+      0.88
+     ],
+     "s": 125,
+     "t0": 0.67
+    }
+   ],
+   "no": [
+    [
+     "clock",
+     "来年は、月ごとの差はありません"
+    ]
+   ],
+   "ok": [
+    [
+     "calendar",
+     "最初から新しい控除額で計算"
+    ]
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    19.61
+   ]
+  }
+ },
+ {
+  "match": "もうひとつ、覚えておいてください",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "年金そのものは",
+   "value": "±0",
+   "unit": "円",
+   "props": [
+    {
+     "icon": "passbook",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 150,
+     "rot": -6,
+     "t0": 0.35
+    },
+    {
+     "icon": "yen_coins",
+     "at": [
+      0.1,
+      0.88
+     ],
+     "s": 130,
+     "t0": 0.51
+    },
+    {
+     "icon": "shield_check",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 135,
+     "t0": 0.67
+    }
+   ],
+   "cap": "動くのは、天引きされる《税金》の側だけ",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved",
+   "beats": [
+    1.6,
+    12.61
+   ]
+  }
+ },
+ {
+  "match": "さて、ここまでの話を",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "ここまでの話を、あなたに",
+   "value": "3問",
+   "unit": "",
+   "props": [
+    {
+     "icon": "checklist",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 155,
+     "rot": -6,
+     "t0": 0.35
+    },
+    {
+     "icon": "person",
+     "at": [
+      0.91,
+      0.65
+     ],
+     "s": 140,
+     "t0": 0.51
+    },
+    {
+     "icon": "magnifier",
+     "at": [
+      0.9,
+      0.88
+     ],
+     "s": 115,
+     "t0": 0.67
+    }
+   ],
+   "cap": "○か×か、答えてみてください",
+   "left": "sensei_present",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    5.35
+   ]
+  }
+ },
+ {
+  "match": "ひとつめ。65歳以上で",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "①あなたの年金は、線の上か下か",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.16,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "amber",
+     "head": "○ 線の上",
+     "foot": "今日の話の対象"
+    },
+    {
+     "id": "R",
+     "kind": "group",
+     "at": [
+      0.84,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "fix": true,
+     "tone": "ink",
+     "head": "× 線の下",
+     "foot": "12月も変化なし"
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.97
+     ],
+     "w": 950,
+     "label": "65歳以上214万円・65歳未満164万円",
+     "fix": true
+    }
+   ],
+   "edges": [],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    9.02,
+    15.76
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "ふたつめ。今年の年金額は",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "②年金額は、去年と同じくらい？",
+   "bgimg": "bg_tsuchisho_te.png",
+   "ok": [
+    [
+     "yen_coins",
+     "同じなら、数千円のオーダーが目安"
+    ]
+   ],
+   "no": [
+    [
+     "chart_up",
+     "途中で変わった方は、別の見え方"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    6.39
+   ]
+  }
+ },
+ {
+  "match": "大きな金額を待っていたかたには",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "金額は、大きくありません",
+   "value": "数千円",
+   "unit": "の目安",
+   "pop": true,
+   "bgimg": "bg_saifu_kozeni.png",
+   "props": [
+    {
+     "icon": "wallet_open",
+     "at": [
+      0.09,
+      0.63
+     ],
+     "s": 165,
+     "rot": -5,
+     "t0": 0.35
+    },
+    {
+     "icon": "yen_coins",
+     "at": [
+      0.1,
+      0.88
+     ],
+     "s": 130,
+     "t0": 0.51
+    },
+    {
+     "icon": "receipt",
+     "at": [
+      0.91,
+      0.66
+     ],
+     "s": 130,
+     "t0": 0.67
+    }
+   ],
+   "cap": "ただ、放っておいても《損はしない》お金です",
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    6.39
+   ]
+  }
+ },
+ {
+  "match": "みっつめ。手元の年金振込通知書",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "③通知書で、答え合わせ",
+   "nodes": [
+    {
+     "id": "doc",
+     "kind": "panel",
+     "at": [
+      0.2026,
+      0.218
+     ],
+     "icon": "docs",
+     "label": "通知書",
+     "s": 1.106
+    },
+    {
+     "id": "tsu",
+     "kind": "circle",
+     "at": [
+      0.7375,
+      0.218
+     ],
+     "icon": "passbook",
+     "label": "通帳",
+     "s": 1.106
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.7254,
+      0.6228
+     ],
+     "label": "10月分と12月分を\n並べて見比べる",
+     "tail": "up",
+     "lw": 470,
+     "s": 1.106
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "それが、あなたの答え合わせです",
+     "w": 950
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    7.79,
+    17.61,
+    18.41
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "高橋さんは、通知書をしまいながら",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "「税金って、増える話しか来ないと思ってたよ」",
+   "img": "art_takahashi_warau.png",
+   "fly": "up",
+   "cap": "通知書をしまいながら、少し笑って",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved",
+   "beats": [
+    1.6,
+    5.17
+   ]
+  }
+ },
+ {
+  "match": "奥さまが、「増えなくても",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "奥さまの、返し",
+   "panels": [
+    {
+     "label": "「減るなら、それで\nいいじゃない」",
+     "img": "art_fusai_ima.png",
+     "tone": "paper"
+    }
+   ],
+   "cap": "二人で笑っていたそうです",
+   "left": "sensei_reassure",
+   "right": "kikite_relieved",
+   "beats": [
+    1.6,
+    18.83
+   ]
+  }
+ },
+ {
+  "match": "それでは、今日の研究ノートです",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "研究ノート（前半）",
+   "bgimg": "bg_note_pen.png",
+   "ok": [
+    [
+     "scale",
+     "65歳以上は214万円が線"
+    ],
+    [
+     "hourglass",
+     "65歳未満は164万円が線"
+    ],
+    [
+     "receipt",
+     "外側の方も、税金は少し軽く"
+    ]
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    12.79,
+    13.59
+   ]
+  }
+ },
+ {
+  "match": "みっつ。新しい控除額が反映されるのは",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "研究ノート（後半）",
+   "bgimg": "bg_note_pen.png",
+   "ok": [
+    [
+     "calendar",
+     "反映は、12月分から"
+    ],
+    [
+     "passbook_open",
+     "答えは通知書の所得税の欄に"
+    ],
+    [
+     "shield_check",
+     "手続きは不要。全員、自動"
+    ]
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    16.28,
+    20.76
+   ]
+  }
+ },
+ {
+  "match": "今日のお願いは、ひとつだけです",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "今日のお願いは、ひとつだけ",
+   "fit": true,
+   "panels": [
+    {
+     "label": "①《記帳》する",
+     "img": "art_p55_kicho.png"
+    },
+    {
+     "label": "②《所得税》の欄",
+     "img": "art_p55_ran.png"
+    },
+    {
+     "label": "③《見比べる》",
+     "img": "art_p55_kurabe.png",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_present",
+   "right": "kikite_nod",
+   "pins_card": [
+    {
+     "kind": "num",
+     "t": "5分",
+     "at": [
+      0.87,
+      0.24
+     ],
+     "size": 104,
+     "w": 0.2,
+     "burst": true,
+     "beat": 11.39
+    }
+   ],
+   "beats": [
+    1.6,
+    11.39,
+    13.76
+   ]
+  }
+ },
+ {
+  "match": "さて、次回です",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "次回：年金機構をかたる詐欺",
+   "nodes": [
+    {
+     "id": "chip",
+     "kind": "chip",
+     "at": [
+      0.02,
+      0.02
+     ],
+     "label": "次回予告",
+     "spark": true,
+     "fix": true
+    },
+    {
+     "id": "n0",
+     "kind": "circle",
+     "at": [
+      0.10736842105263159,
+      0.44
+     ],
+     "icon": "warning",
+     "label": "詐欺が急増",
+     "fix": true
+    },
+    {
+     "id": "n1",
+     "kind": "circle",
+     "at": [
+      0.5184210526315789,
+      0.44
+     ],
+     "icon": "phone",
+     "label": "偽物の電話",
+     "fix": true
+    },
+    {
+     "id": "n2",
+     "kind": "circle",
+     "at": [
+      0.9294736842105263,
+      0.44
+     ],
+     "icon": "magnifier",
+     "label": "見分け方",
+     "fix": true,
+     "tone": "amber"
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "本物の通知との違いを、確かめます",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "n0",
+     "to": "n1",
+     "style": "arrow",
+     "tone": "ink",
+     "w": 16
+    },
+    {
+     "from": "n1",
+     "to": "n2",
+     "style": "arrow",
+     "tone": "ink",
+     "w": 16
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.85,
+    7.37,
+    8.17,
+    8.97,
+    9.77
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "なお、この動画は2026年8月時点の情報です",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "ご確認のお願い",
+   "org": "年金と老後のお金研究室",
+   "doc": "正確な金額は、\n人によって変わります",
+   "note": "※実際の通知書と、税務署・年金事務所でご確認ください",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ }
+]

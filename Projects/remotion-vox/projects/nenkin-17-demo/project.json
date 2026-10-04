@@ -1,0 +1,1377 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-17-demo",
+  "channel": "nenkin",
+  "templateRef": "nenkin",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-08-26T00:00:00.000Z",
+  "modifiedAt": "2026-08-26T00:00:00.000Z"
+ },
+ "timeline": {
+  "durationInFrames": 3240
+ },
+ "sceneMarkers": [
+  {
+   "id": "sc-1",
+   "atFrame": 0,
+   "label": "電話"
+  },
+  {
+   "id": "sc-2",
+   "atFrame": 317,
+   "label": "機械の声"
+  },
+  {
+   "id": "sc-3",
+   "atFrame": 762,
+   "label": "支給停止"
+  },
+  {
+   "id": "sc-4",
+   "atFrame": 1049,
+   "label": "あなたの話"
+  },
+  {
+   "id": "sc-5",
+   "atFrame": 1382,
+   "label": "令和7年"
+  },
+  {
+   "id": "sc-6",
+   "atFrame": 2028,
+   "label": "令和8年"
+  },
+  {
+   "id": "sc-7",
+   "atFrame": 2652,
+   "label": "読み方"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-bg",
+   "name": "nền giấy",
+   "type": "background",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "bg-1",
+     "kind": "background",
+     "from": 0,
+     "durationInFrames": 317,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C8B88A",
+      "#9FB6C8"
+     ]
+    },
+    {
+     "id": "bg-2",
+     "kind": "background",
+     "from": 317,
+     "durationInFrames": 445,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#C87A72",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-3",
+     "kind": "background",
+     "from": 762,
+     "durationInFrames": 287,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#B44A4A",
+      "#8A93A8"
+     ]
+    },
+    {
+     "id": "bg-4",
+     "kind": "background",
+     "from": 1049,
+     "durationInFrames": 333,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-5",
+     "kind": "background",
+     "from": 1382,
+     "durationInFrames": 646,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8A93A8",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-6",
+     "kind": "background",
+     "from": 2028,
+     "durationInFrames": 624,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#B44A4A",
+      "#C8B88A"
+     ]
+    },
+    {
+     "id": "bg-7",
+     "kind": "background",
+     "from": 2652,
+     "durationInFrames": 588,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55,
+     "grid": true,
+     "dots": true,
+     "splash": [
+      "#8FA9C0",
+      "#9FB6C8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "trk-hero",
+   "name": "hero ảnh",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "h-1",
+     "kind": "sticker",
+     "from": 8,
+     "durationInFrames": 309,
+     "asset": "assets/card_denwa.png",
+     "layout": {
+      "x": 545,
+      "y": 150,
+      "w": 830,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "grow",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-2",
+     "kind": "sticker",
+     "from": 330,
+     "durationInFrames": 432,
+     "asset": "assets/card_kikai.png",
+     "layout": {
+      "x": 545,
+      "y": 150,
+      "w": 830,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-3",
+     "kind": "sticker",
+     "from": 770,
+     "durationInFrames": 279,
+     "asset": "assets/card_te.png",
+     "layout": {
+      "x": 545,
+      "y": 150,
+      "w": 830,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "zoom-through",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 6,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "h-4",
+     "kind": "sticker",
+     "from": 1055,
+     "durationInFrames": 327,
+     "asset": "assets/card_madoguchi.png",
+     "layout": {
+      "x": 545,
+      "y": 150,
+      "w": 830,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "flip",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 5,
+      "phase": 0.0
+     },
+     "shadow": "lg"
+    }
+   ]
+  },
+  {
+   "id": "trk-sup1",
+   "name": "phụ 1",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "s1-1",
+     "kind": "sticker",
+     "from": 96,
+     "durationInFrames": 221,
+     "asset": "assets/el_calendar.png",
+     "layout": {
+      "x": 1234,
+      "y": 590,
+      "w": 150,
+      "rotation": -7,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 1.2
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-2",
+     "kind": "sticker",
+     "from": 392,
+     "durationInFrames": 370,
+     "asset": "assets/el_burst_red.png",
+     "layout": {
+      "x": 1234,
+      "y": 590,
+      "w": 150,
+      "rotation": -9,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "punch",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 0.8
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-3",
+     "kind": "sticker",
+     "from": 826,
+     "durationInFrames": 223,
+     "asset": "assets/el_mynumber_card.png",
+     "layout": {
+      "x": 1234,
+      "y": 590,
+      "w": 150,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 2.0
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-4",
+     "kind": "sticker",
+     "from": 1120,
+     "durationInFrames": 262,
+     "asset": "assets/el_nenkin_techo.png",
+     "layout": {
+      "x": 1234,
+      "y": 590,
+      "w": 150,
+      "rotation": 5,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 1.6
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-5",
+     "kind": "sticker",
+     "from": 1420,
+     "durationInFrames": 600,
+     "asset": "assets/el_police_badge.png",
+     "layout": {
+      "x": 1234,
+      "y": 590,
+      "w": 150,
+      "rotation": -6,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 1.0
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-6",
+     "kind": "sticker",
+     "from": 2060,
+     "durationInFrames": 580,
+     "asset": "assets/el_coin_stack.png",
+     "layout": {
+      "x": 1234,
+      "y": 590,
+      "w": 150,
+      "rotation": 7,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "punch",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 2.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "s1-7",
+     "kind": "sticker",
+     "from": 2690,
+     "durationInFrames": 550,
+     "asset": "assets/el_chart_up.png",
+     "layout": {
+      "x": 1234,
+      "y": 590,
+      "w": 150,
+      "rotation": -5,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 3.8
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-sup2",
+   "name": "phụ 2",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "s2-2",
+     "kind": "sticker",
+     "from": 440,
+     "durationInFrames": 322,
+     "asset": "assets/el_smartphone.png",
+     "layout": {
+      "x": 1066,
+      "y": 596,
+      "w": 150,
+      "rotation": 7,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "pop",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 4,
+      "phase": 3.4
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-cast-l",
+   "name": "cast trái",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "cl-1",
+     "kind": "sticker",
+     "from": 0,
+     "durationInFrames": 317,
+     "asset": "assets/sensei_serious.png",
+     "layout": {
+      "x": 4,
+      "y": 432,
+      "w": 388,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-2",
+     "kind": "sticker",
+     "from": 317,
+     "durationInFrames": 445,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 432,
+      "w": 480,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-3",
+     "kind": "sticker",
+     "from": 762,
+     "durationInFrames": 287,
+     "asset": "assets/sensei_caution.png",
+     "layout": {
+      "x": 4,
+      "y": 432,
+      "w": 480,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-4",
+     "kind": "sticker",
+     "from": 1049,
+     "durationInFrames": 333,
+     "asset": "assets/sensei_point.png",
+     "layout": {
+      "x": 4,
+      "y": 432,
+      "w": 506,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-5",
+     "kind": "sticker",
+     "from": 1382,
+     "durationInFrames": 646,
+     "asset": "assets/sensei_reassure.png",
+     "layout": {
+      "x": 4,
+      "y": 432,
+      "w": 467,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-6",
+     "kind": "sticker",
+     "from": 2028,
+     "durationInFrames": 624,
+     "asset": "assets/sensei_serious.png",
+     "layout": {
+      "x": 4,
+      "y": 432,
+      "w": 388,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cl-7",
+     "kind": "sticker",
+     "from": 2652,
+     "durationInFrames": 588,
+     "asset": "assets/sensei_conclude.png",
+     "layout": {
+      "x": 4,
+      "y": 432,
+      "w": 390,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 0.4
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-cast-r",
+   "name": "cast phải",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "cr-1",
+     "kind": "sticker",
+     "from": 0,
+     "durationInFrames": 317,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1448,
+      "y": 432,
+      "w": 468,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "rise",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-2",
+     "kind": "sticker",
+     "from": 317,
+     "durationInFrames": 445,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1494,
+      "y": 432,
+      "w": 422,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-3",
+     "kind": "sticker",
+     "from": 762,
+     "durationInFrames": 287,
+     "asset": "assets/kikite_surprised.png",
+     "layout": {
+      "x": 1418,
+      "y": 432,
+      "w": 498,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-4",
+     "kind": "sticker",
+     "from": 1049,
+     "durationInFrames": 333,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1494,
+      "y": 432,
+      "w": 422,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-5",
+     "kind": "sticker",
+     "from": 1382,
+     "durationInFrames": 646,
+     "asset": "assets/kikite_listen.png",
+     "layout": {
+      "x": 1448,
+      "y": 432,
+      "w": 468,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-6",
+     "kind": "sticker",
+     "from": 2028,
+     "durationInFrames": 624,
+     "asset": "assets/kikite_worried.png",
+     "layout": {
+      "x": 1494,
+      "y": 432,
+      "w": 422,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    },
+    {
+     "id": "cr-7",
+     "kind": "sticker",
+     "from": 2652,
+     "durationInFrames": 588,
+     "asset": "assets/kikite_nod.png",
+     "layout": {
+      "x": 1476,
+      "y": 432,
+      "w": 440,
+      "rotation": 0,
+      "opacity": 1
+     },
+     "entrance": {
+      "variant": "none",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": null,
+     "idle": {
+      "amp": 3,
+      "phase": 2.7
+     },
+     "shadow": "sm"
+    }
+   ]
+  },
+  {
+   "id": "trk-tag",
+   "name": "tag",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "tag-1",
+     "kind": "text",
+     "from": 4,
+     "durationInFrames": 313,
+     "content": "電話",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": null
+    },
+    {
+     "id": "tag-2",
+     "kind": "text",
+     "from": 321,
+     "durationInFrames": 441,
+     "content": "機械の声",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": null
+    },
+    {
+     "id": "tag-3",
+     "kind": "text",
+     "from": 766,
+     "durationInFrames": 283,
+     "content": "支給停止",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": null
+    },
+    {
+     "id": "tag-4",
+     "kind": "text",
+     "from": 1053,
+     "durationInFrames": 329,
+     "content": "あなたの話",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": null
+    },
+    {
+     "id": "tag-5",
+     "kind": "text",
+     "from": 1386,
+     "durationInFrames": 642,
+     "content": "令和7年",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": null
+    },
+    {
+     "id": "tag-6",
+     "kind": "text",
+     "from": 2032,
+     "durationInFrames": 620,
+     "content": "令和8年",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": null
+    },
+    {
+     "id": "tag-7",
+     "kind": "text",
+     "from": 2656,
+     "durationInFrames": 584,
+     "content": "読み方",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 74,
+      "y": 58
+     },
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-punch",
+   "name": "punch",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "p-1",
+     "kind": "text",
+     "from": 120,
+     "durationInFrames": 190,
+     "content": "机の上で、震えた",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 554
+     },
+     "fontSize": null
+    },
+    {
+     "id": "p-2",
+     "kind": "text",
+     "from": 480,
+     "durationInFrames": 270,
+     "content": "「支給が停止されます」",
+     "preset": "papercut-banner",
+     "color": "#A82026",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 554
+     },
+     "fontSize": null
+    },
+    {
+     "id": "p-3",
+     "kind": "text",
+     "from": 766,
+     "durationInFrames": 190,
+     "content": "支給停止。",
+     "preset": "papercut-banner",
+     "color": "#A82026",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 554
+     },
+     "fontSize": null
+    },
+    {
+     "id": "p-4",
+     "kind": "text",
+     "from": 1060,
+     "durationInFrames": 260,
+     "content": "これは、あなたの話",
+     "preset": "papercut-banner",
+     "color": "#1C2A4A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 554
+     },
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-stat",
+   "name": "bảng số liệu",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "st-1",
+     "kind": "text",
+     "from": 1580,
+     "durationInFrames": 440,
+     "content": "特殊詐欺 ぜんたい|3,257億円\n*うち 還付金をかたる詐欺|2,087件",
+     "preset": "papercut-stat",
+     "color": "#FFE01B",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 550,
+      "y": 300,
+      "w": 810
+     },
+     "fontSize": null
+    },
+    {
+     "id": "st-2",
+     "kind": "text",
+     "from": 2140,
+     "durationInFrames": 300,
+     "content": "令和7年 1年間|3,257億円\n*令和8年 上半期だけで|1,816億円",
+     "preset": "papercut-stat",
+     "color": "#FFE01B",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 550,
+      "y": 250,
+      "w": 810
+     },
+     "fontSize": null
+    },
+    {
+     "id": "st-3",
+     "kind": "text",
+     "from": 2700,
+     "durationInFrames": 420,
+     "content": "*特殊詐欺 ぜんたいの数字|◯\n年金機構をかたる分だけ|✕",
+     "preset": "papercut-stat",
+     "color": "#FFE01B",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 550,
+      "y": 300,
+      "w": 810
+     },
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-formula",
+   "name": "công thức",
+   "type": "text",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "fm-1",
+     "kind": "text",
+     "from": 2460,
+     "durationInFrames": 180,
+     "content": "1,816億円 ÷ 182日 ≒ 10億円",
+     "preset": "papercut-formula",
+     "color": "#FFE01B",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 550,
+      "y": 360,
+      "w": 830
+     },
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "giọng",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "v-1",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3240,
+     "asset": "assets/voice.mp3",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "その電話は、机の上のスマートフォンを、震わせました。",
+    "startMs": 0,
+    "endMs": 5133
+   },
+   {
+    "text": "出ますか。",
+    "startMs": 5133,
+    "endMs": 6333
+   },
+   {
+    "text": "それとも、出ませんか。",
+    "startMs": 6333,
+    "endMs": 8900
+   },
+   {
+    "text": "——出た、とします。",
+    "startMs": 8900,
+    "endMs": 10567
+   },
+   {
+    "text": "機械の声が、言います。",
+    "startMs": 10567,
+    "endMs": 12867
+   },
+   {
+    "text": "「こちらは、日本年金機構です。",
+    "startMs": 12867,
+    "endMs": 15933
+   },
+   {
+    "text": "書類の提出が確認できないため、来月から、",
+    "startMs": 15933,
+    "endMs": 20067
+   },
+   {
+    "text": "年金の支給が停止されます。",
+    "startMs": 20067,
+    "endMs": 22733
+   },
+   {
+    "text": "至急、1を押してください」",
+    "startMs": 22733,
+    "endMs": 25400
+   },
+   {
+    "text": "支給停止。",
+    "startMs": 25400,
+    "endMs": 27200
+   },
+   {
+    "text": "その四文字が、頭の中で膨らんでいく間に、指は、",
+    "startMs": 27200,
+    "endMs": 31767
+   },
+   {
+    "text": "もう1のボタンに向かっています。",
+    "startMs": 31767,
+    "endMs": 34967
+   },
+   {
+    "text": "これは、あなたの話かもしれません。",
+    "startMs": 34967,
+    "endMs": 38467
+   },
+   {
+    "text": "実際にこの電話を受けたのは、鈴木さん、65歳。",
+    "startMs": 38467,
+    "endMs": 43233
+   },
+   {
+    "text": "今年、会社を退職したばかりの、平日の昼下がりでした。",
+    "startMs": 43233,
+    "endMs": 46000
+   },
+   {
+    "text": "最後に、数字を、確かめておきます。",
+    "startMs": 46067,
+    "endMs": 50167
+   },
+   {
+    "text": "警察庁の統計です。",
+    "startMs": 50167,
+    "endMs": 52200
+   },
+   {
+    "text": "令和7年、1年間の特殊詐欺の被害総額は、全国で、",
+    "startMs": 52200,
+    "endMs": 57567
+   },
+   {
+    "text": "およそ3,257億円。",
+    "startMs": 57567,
+    "endMs": 60000
+   },
+   {
+    "text": "このうち、還付金をかたる詐欺だけで、",
+    "startMs": 60000,
+    "endMs": 64033
+   },
+   {
+    "text": "2,087件が確認されています。",
+    "startMs": 64033,
+    "endMs": 67600
+   },
+   {
+    "text": "そして、今年——令和8年の上半期、",
+    "startMs": 67600,
+    "endMs": 71167
+   },
+   {
+    "text": "1月から6月までの被害額は、およそ1,816億円。",
+    "startMs": 71167,
+    "endMs": 76433
+   },
+   {
+    "text": "前の年の同じ時期と比べて、5割以上、増えています。",
+    "startMs": 76433,
+    "endMs": 81700
+   },
+   {
+    "text": "1日あたり、およそ10億円の被害が、",
+    "startMs": 81700,
+    "endMs": 85467
+   },
+   {
+    "text": "いまも出続けている計算です。",
+    "startMs": 85467,
+    "endMs": 88400
+   },
+   {
+    "text": "これは、あらゆる手口を合わせた、",
+    "startMs": 88400,
+    "endMs": 91300
+   },
+   {
+    "text": "特殊詐欺全体の数字です。",
+    "startMs": 91300,
+    "endMs": 93467
+   },
+   {
+    "text": "年金機構をかたる手口だけの数字ではありません。",
+    "startMs": 93467,
+    "endMs": 97633
+   },
+   {
+    "text": "ただ、その中に、鈴木さんが受けたような電話が、",
+    "startMs": 97633,
+    "endMs": 101800
+   },
+   {
+    "text": "確かに含まれています。",
+    "startMs": 101800,
+    "endMs": 103767
+   },
+   {
+    "text": "数字が小さくなる気配は、いまのところ、ありません。",
+    "startMs": 103767,
+    "endMs": 108000
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F2EDE4"
+ }
+}

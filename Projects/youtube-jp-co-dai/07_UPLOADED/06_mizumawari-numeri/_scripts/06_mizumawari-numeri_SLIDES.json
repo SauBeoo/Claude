@@ -1,0 +1,728 @@
+[
+ {
+  "match": "排水口のぬめりと、つんとくる嫌な臭い。",
+  "video": true,
+  "qv": "kitchen sink drain close up dirty"
+ },
+ {
+  "match": "ひどくなって業者に頼めば、たった一度で1万円から3万円かかることもあります。",
+  "photo": true,
+  "q": "plumber repairing pipes under kitchen sink",
+  "min_score": 0.9
+ },
+ {
+  "match": "ところが、その汚れ、台所にある数十円のものだけで、断てるとしたら、どうでしょうか。",
+  "photo": true,
+  "q": "unlabeled bottle and white powder on a clean kitchen counter",
+  "min_score": 0.9
+ },
+ {
+  "match": "しかも、多くの方が今も手に取るのは、強力と書かれた塩素系のパイプクリーナー。",
+  "photo": true,
+  "q": "plastic cleaning spray bottles on shelf",
+  "min_score": 0.9
+ },
+ {
+  "match": "ひと月に数百円、一年では数千円。",
+  "photo": true,
+  "q": "japanese yen coins and banknotes on table",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "塩素系クリーナー",
+   "head": "一年で数千円",
+   "body": [
+    "それでも、数日で戻ってくる"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "じつは、洗剤を足すほど、元気になって戻ってきているのかもしれません。",
+  "video": true,
+  "qv": "soap suds water going down the drain"
+ },
+ {
+  "match": "今日お話しするのは、台所にある重曹と酢、そして一杯のお湯だけで、数十円もかけずに、ぬめりと臭いを断つ方法です。",
+  "photo": false,
+  "lines": [
+   "重曹・酢・お湯",
+   "数十円で じゅうぶん"
+  ],
+  "accent": true
+ },
+ {
+  "match": "昔の日本の台所には、排水口専用の洗剤なんて、一本もありませんでした。",
+  "photo": true,
+  "q": "old traditional japanese kitchen wooden interior",
+  "min_score": 0.9
+ },
+ {
+  "match": "かまどのそばの、冷たい土間の流し。",
+  "photo": true,
+  "q": "traditional japanese farmhouse hearth kamado fire",
+  "min_score": 0.9
+ },
+ {
+  "match": "その答えは、動画の終わりでお話しする、「売られなくなった知恵」の章に、そっと隠されています。",
+  "photo": true,
+  "q": "old wooden shelf with clay jars dim light",
+  "min_score": 0.9
+ },
+ {
+  "match": "古代の秘訣へようこそ。",
+  "photo": false,
+  "lines": [
+   "古代の秘訣"
+  ],
+  "accent": true
+ },
+ {
+  "match": "あなたのお住まいの台所やお風呂の排水口、あの嫌な臭いやぬめりに、どれほど悩まされているでしょうか。",
+  "video": true,
+  "qv": "bathroom sink drain water running"
+ },
+ {
+  "match": "まず、敵の正体を知るところから始めましょう。",
+  "photo": false,
+  "lines": [
+   "敵の正体を",
+   "知るところから"
+  ],
+  "accent": false
+ },
+ {
+  "match": "指で触れると、ぬるりとする、あの膜。",
+  "photo": true,
+  "q": "clogged sink drain with grime closeup",
+  "min_score": 0.9
+ },
+ {
+  "match": "それらを栄養にして、無数の細菌が増え、たがいに手をつなぐように、うすい膜を作り上げたもの。",
+  "photo": true,
+  "q": "bacteria colony under microscope green",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "油・皮脂・石けんのかす",
+   "head": "バイオフィルム",
+   "body": [
+    "菌が手をつないで作る、うすい膜"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "言い換えれば、生き物がこしらえた、小さな要塞のようなものです。",
+  "photo": true,
+  "q": "old stone fortress wall texture",
+  "min_score": 0.9
+ },
+ {
+  "match": "市販の洗剤をさっと流したとき、消えるのは膜の表面だけ。",
+  "photo": true,
+  "q": "cleaning foam on white surface close up",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "市販の洗剤",
+   "head": "消えるのは表面だけ",
+   "body": [
+    "土台の菌は、奥で生き残る"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "だから、数日でまた元通りになる。",
+  "photo": true,
+  "q": "stainless steel sink drain closeup water",
+  "min_score": 0.9
+ },
+ {
+  "match": "昔の人が知っていたのは、この土台ごと、はがし取る方法でした。",
+  "photo": true,
+  "q": "bamboo brush and wooden bucket old japan",
+  "min_score": 0.9
+ },
+ {
+  "match": "じつは、昔ながらの掃除の知恵は、たった三つの原理に行き着きます。",
+  "photo": false,
+  "lines": [
+   "昔の掃除は",
+   "三つの原理だけ"
+  ],
+  "accent": true
+ },
+ {
+  "match": "油のぬめりを落とす、アルカリ。",
+  "photo": true,
+  "q": "white baking soda powder in a wooden spoon",
+  "min_score": 0.9
+ },
+ {
+  "match": "固くこびりついた水垢を溶かす、酸。",
+  "photo": true,
+  "q": "citric acid powder and vinegar bottle",
+  "min_score": 0.9
+ },
+ {
+  "match": "そして、汚れを削り、菌を寄せつけない、塩。",
+  "photo": true,
+  "q": "coarse salt in a wooden bowl",
+  "min_score": 0.9
+ },
+ {
+  "match": "最初の知恵は、お湯と重曹です。",
+  "photo": false,
+  "lines": [
+   "第一の知恵",
+   "お湯と重曹"
+  ],
+  "accent": true
+ },
+ {
+  "match": "この油の汚れには、一つの弱点があります。",
+  "photo": true,
+  "q": "greasy dirty stainless kitchen sink",
+  "min_score": 0.9
+ },
+ {
+  "match": "アルカリ性のものに出会うと、水になじみやすい形に変わり、つるりとはがれ落ちるのです。",
+  "photo": true,
+  "q": "oil droplets floating in water macro",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "油汚れ ＋ アルカリ",
+   "head": "水になじむ形へ",
+   "body": [
+    "つるりと、はがれ落ちる"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "重曹は、そのおだやかなアルカリの、代表選手。",
+  "photo": true,
+  "q": "baking soda in glass jar on wooden table",
+  "min_score": 0.9
+ },
+ {
+  "match": "粉のまま排水口にふりかけ、しばらく置きます。",
+  "video": true,
+  "qv": "sprinkling white powder close up"
+ },
+ {
+  "match": "そこへ、お湯を注ぎます。",
+  "video": true,
+  "qv": "pouring water from a kettle into a sink"
+ },
+ {
+  "match": "冷たい水では、固まった油はびくともしません。",
+  "photo": true,
+  "q": "steam rising from hot water in a pot",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "冷たい水では",
+   "head": "油は動かない",
+   "body": [
+    "温度が上がると、ゆるむ"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "やかんや鍋の煮え湯を、使い終わったあとに流しへ流す。",
+  "video": true,
+  "qv": "kettle steaming on stove boiling water"
+ },
+ {
+  "match": "石けんが庶民に広まる前、日本の家庭では、かまどに残った草木の灰を、水に浸していました。",
+  "photo": true,
+  "q": "wood ash in a bucket of water grey",
+  "min_score": 0.9
+ },
+ {
+  "match": "その上澄みは、灰汁と呼ばれ、ぬるりとした、れっきとしたアルカリ性の液体です。",
+  "photo": true,
+  "q": "wooden bucket of grey ash and water",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "草木の灰の上澄み",
+   "head": "灰汁（あく）",
+   "body": [
+    "昔の、天然のアルカリ"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "人々はこれで、鍋の油汚れを落とし、衣類の汚れまで洗っていました。",
+  "photo": true,
+  "q": "old fashioned laundry washboard wooden tub",
+  "min_score": 0.9
+ },
+ {
+  "match": "洗濯や掃除のための合成洗剤が、日本の家庭のすみずみまで広まったのは、昭和三十年代のこと。",
+  "photo": true,
+  "q": "vintage japanese shop shelf products",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "合成洗剤が広まったのは",
+   "head": "昭和三十年代",
+   "body": [
+    "それ以前の何百年は",
+    "灰汁・酢・塩だけ"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "排水管の多くは、塩化ビニルという樹脂でできています。",
+  "photo": true,
+  "q": "white pvc drain pipe under sink",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "排水管は塩化ビニル",
+   "head": "沸きたての熱湯はNG",
+   "body": [
+    "六十〜七十度のお湯で十分"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "第二の知恵は、重曹と、酢、あるいはクエン酸を合わせる方法です。",
+  "photo": false,
+  "lines": [
+   "第二の知恵",
+   "重曹 ＋ 酢"
+  ],
+  "accent": true
+ },
+ {
+  "match": "重曹をまいたところへ酢をかけると、しゅわしゅわと、白い泡が立ちのぼる。",
+  "video": true,
+  "qv": "tablet dissolving in water bubbles rising"
+ },
+ {
+  "match": "そのときに、二酸化炭素の細かな泡が生まれます。",
+  "photo": true,
+  "q": "macro shot of bubbles effervescence texture",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "アルカリ ＋ 酸",
+   "head": "二酸化炭素の泡",
+   "body": [
+    "汚れのすき間にもぐり込み、",
+    "下から持ち上げてはがす"
+   ],
+   "side": "left",
+   "zoom": 1.15
+  }
+ },
+ {
+  "match": "排水口に重曹をふりかけ、その上から、酢、またはクエン酸を溶かした水を、回しかける。",
+  "video": true,
+  "qv": "liquid poured into a stainless steel sink"
+ },
+ {
+  "match": "泡が立ったら、三十分ほど置いて、お湯で流す。",
+  "photo": true,
+  "q": "foam bubbles in a sink close up",
+  "min_score": 0.9
+ },
+ {
+  "match": "シンクや蛇口の根元に、白くこびりついた、ざらざらの固まり。",
+  "photo": true,
+  "q": "row of aged metal taps over dirty sink",
+  "min_score": 0.9
+ },
+ {
+  "match": "アルカリ性の汚れには、アルカリの洗剤は、ほとんど効きません。",
+  "photo": true,
+  "split": {
+   "title": "白い水垢は「アルカリ性」",
+   "sub": "同じ性質では落ちない。反対の性質で溶かす",
+   "left": {
+    "label": "アルカリの洗剤",
+    "mark": "x",
+    "verdict": "ほとんど効かない"
+   },
+   "right": {
+    "label": "酢・クエン酸（酸）",
+    "mark": "o",
+    "verdict": "すっと溶ける"
+   }
+  }
+ },
+ {
+  "match": "昔の家庭で、酢が台所の万能薬として大切にされてきたのには、こうした、理にかなった訳があったのです。",
+  "photo": true,
+  "q": "pickled vegetables jars rustic kitchen",
+  "min_score": 0.9
+ },
+ {
+  "match": "ここまでご覧いただき、ありがとうございます。",
+  "photo": true,
+  "q": "warm japanese living room evening light",
+  "min_score": 0.9
+ },
+ {
+  "match": "三つ目の知恵は、どの家にもある、塩です。",
+  "photo": false,
+  "lines": [
+   "第三の知恵",
+   "塩"
+  ],
+  "accent": true
+ },
+ {
+  "match": "まな板やシンクのぬめりが気になるとき、昔の人は、塩をひとつまみ、ふりかけて、こすりました。",
+  "photo": true,
+  "q": "salt sprinkled on a wooden cutting board",
+  "min_score": 0.9
+ },
+ {
+  "match": "一つは、細かな粒が、おだやかな研磨剤になること。",
+  "photo": true,
+  "q": "coarse salt grains macro close up",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "塩のはたらき ①",
+   "head": "やさしい研磨剤",
+   "body": [
+    "傷つけずに、削り落とす"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "塩には、まわりの水分を引き寄せる力があります。",
+  "photo": true,
+  "q": "salt crystals with water droplets macro",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "塩のはたらき ②",
+   "head": "菌から水を奪う",
+   "body": [
+    "水がなければ、菌は生きられない"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "いわば、静かな兵糧攻めのようなものなのです。",
+  "photo": true,
+  "q": "white salt pile dark background",
+  "min_score": 0.9
+ },
+ {
+  "match": "塩は、食べ物を長く保つためにも、神社のお清めにも、使われてきました。",
+  "photo": true,
+  "q": "shinto shrine purification salt cone",
+  "min_score": 0.9
+ },
+ {
+  "match": "四つ目は、これまでの三つを、家じゅうの水回りに応用していく話です。",
+  "photo": false,
+  "lines": [
+   "第四",
+   "家じゅうの水回りへ"
+  ],
+  "accent": true
+ },
+ {
+  "match": "まず、お風呂場です。",
+  "photo": true,
+  "q": "clean japanese bathroom bathtub tiled",
+  "min_score": 0.9
+ },
+ {
+  "match": "一つは、体から出る皮脂や湯あか。",
+  "photo": true,
+  "q": "bathtub edge soap scum close up",
+  "min_score": 0.9
+ },
+ {
+  "match": "粉を湯あかにふりかけ、スポンジで軽くこすれば、ぬるつきが取れていきます。",
+  "photo": true,
+  "q": "cleaning sponge on the edge of a white bathtub",
+  "min_score": 0.9
+ },
+ {
+  "match": "もう一つが、鏡にこびりつく、白いうろこ模様です。",
+  "photo": true,
+  "q": "bathroom mirror with water spots limescale",
+  "min_score": 0.9
+ },
+ {
+  "match": "クエン酸を溶かした水を、キッチンペーパーにしみ込ませ、鏡にはりつけます。",
+  "video": true,
+  "qv": "wiping a mirror with a cloth close up"
+ },
+ {
+  "match": "なぜ、ラップをかぶせるのでしょうか。",
+  "photo": true,
+  "q": "transparent plastic cling film texture",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "酸は、触れている間だけ働く",
+   "head": "ラップで乾燥を防ぐ",
+   "body": [
+    "酸が水垢と向き合う時間を、延ばす"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "昔の人が、湿布で薬を患部になじませたのと、よく似た知恵です。",
+  "photo": true,
+  "q": "folded damp towel on a wooden table",
+  "min_score": 0.9
+ },
+ {
+  "match": "次は、お手洗いです。",
+  "photo": true,
+  "q": "clean white toilet bowl in a bathroom",
+  "min_score": 0.9
+ },
+ {
+  "match": "便器の内側につく、あの黄ばみ。",
+  "photo": true,
+  "q": "toilet brush and cleaning bottle in a bathroom",
+  "min_score": 0.95
+ },
+ {
+  "match": "アルカリ性の汚れには、反対の性質、酸が効く。",
+  "photo": true,
+  "q": "citric acid powder in a spoon",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "尿石もアルカリ性",
+   "head": "酸で ゆるむ",
+   "body": [
+    "強い薬に頼らずとも"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "もう一つ、毎日使うのに見落とされがちなのが、やかんや、電気ポットの内側です。",
+  "photo": true,
+  "q": "electric kettle on kitchen counter",
+  "min_score": 0.9
+ },
+ {
+  "match": "水を沸かすたび、底に白いざらつきがたまっていく。",
+  "photo": true,
+  "q": "white mineral scale on a metal surface",
+  "min_score": 0.9
+ },
+ {
+  "match": "水を張り、クエン酸を大さじ一杯ほど入れて、一度、沸かす。",
+  "video": true,
+  "qv": "kettle boiling water steam close up"
+ },
+ {
+  "match": "急須や湯呑みにこびりついた茶渋には、ひとつまみの塩が役立ちます。",
+  "photo": true,
+  "q": "japanese teapot kyusu with tea stains",
+  "min_score": 0.9
+ },
+ {
+  "match": "そして、いちばん見えにくいのが、洗濯槽の裏側です。",
+  "video": true,
+  "qv": "washing machine drum spinning clothes"
+ },
+ {
+  "match": "ふだん目に触れないその裏に、黒いカビが、ひっそりと育っていることがあります。",
+  "photo": true,
+  "q": "black mold on white surface close up",
+  "min_score": 0.9
+ },
+ {
+  "match": "お湯を張った洗濯槽に、酸素系の粉、過炭酸ナトリウムと呼ばれる、重曹の親戚のようなものを溶かし、しばらく回してから、",
+  "photo": true,
+  "q": "oxygen bleach powder scoop",
+  "min_score": 0.9
+ },
+ {
+  "match": "この粉は、温かい水に溶けると、細かな泡を生みます。",
+  "photo": true,
+  "q": "fine bubbles foam in water macro",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "過炭酸ナトリウム ＋ お湯",
+   "head": "細かな泡が生まれる",
+   "body": [
+    "槽の裏の汚れを、はがし上げる"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "仕上げに、これまでの知恵を、毎日の暮らしに根づかせる話をします。",
+  "photo": false,
+  "lines": [
+   "仕上げ",
+   "ためない暮らしへ"
+  ],
+  "accent": true
+ },
+ {
+  "match": "そもそも、なぜ嫌な臭いは、何度掃除しても、戻ってくるのでしょうか。",
+  "photo": true,
+  "q": "empty stainless kitchen sink close up",
+  "min_score": 0.9
+ },
+ {
+  "match": "そしてもう一つ、意外と知られていないのが、排水口の底にたまった水、封水と呼ばれる水が、乾いて切れてしまうことです。",
+  "photo": true,
+  "diagram": "fusui"
+ },
+ {
+  "match": "週に一度、重曹とお湯で、さっと流しておくこと。",
+  "photo": false,
+  "lines": [
+   "週に一度",
+   "重曹＋お湯で流す"
+  ],
+  "accent": false
+ },
+ {
+  "match": "そして、しばらく使わない排水口には、コップ一杯の水を、足しておくこと。",
+  "photo": true,
+  "q": "glass of water on kitchen counter",
+  "min_score": 0.9
+ },
+ {
+  "match": "昔の人の掃除は、いつも、この考え方が土台にありました。",
+  "photo": true,
+  "q": "traditional japanese house tatami room quiet",
+  "min_score": 0.9
+ },
+ {
+  "match": "冒頭でお約束した、「売られなくなった知恵」の正体です。",
+  "photo": false,
+  "lines": [
+   "売られなくなった知恵"
+  ],
+  "accent": true
+ },
+ {
+  "match": "あなたの家の棚を、思い浮かべてみてください。",
+  "photo": true,
+  "q": "shelf full of cleaning product bottles",
+  "min_score": 0.9
+ },
+ {
+  "match": "その多くは、アルカリと酸、たった二つの性質で、片がつくのです。",
+  "photo": true,
+  "split": {
+   "title": "同じ汚れ、二つの答え",
+   "sub": "用途別に何本も ／ アルカリと酸だけ",
+   "left": {
+    "label": "用途別の専用洗剤",
+    "mark": "x",
+    "verdict": "一本ずつ 数百円"
+   },
+   "right": {
+    "label": "重曹・クエン酸・塩",
+    "mark": "o",
+    "verdict": "一箱 五十〜百円"
+   }
+  }
+ },
+ {
+  "match": "重曹も、クエン酸も、塩も、一箱、五十円から百円ほど。",
+  "photo": true,
+  "q": "japanese yen coins stacked on a table",
+  "min_score": 0.9,
+  "telop": {
+   "kicker": "重曹・クエン酸・塩",
+   "head": "一箱 五十〜百円",
+   "body": [
+    "家じゅうに、使い回せる"
+   ],
+   "side": "left",
+   "zoom": 1.0
+  }
+ },
+ {
+  "match": "かたや、用途ごとに分かれた専用洗剤は、一本が数百円。",
+  "photo": true,
+  "q": "blurred supermarket shelves bokeh background",
+  "min_score": 0.9
+ },
+ {
+  "match": "ただ、一つの素材で何にでも使える知恵は、くり返し買ってもらう商いとは、あまり相性が良くない。",
+  "photo": true,
+  "q": "paper receipt on a wooden table",
+  "min_score": 0.9
+ },
+ {
+  "match": "昔の家では、灰も、酢も、塩も、最後のひとかけらまで使い尽くしました。",
+  "photo": true,
+  "q": "old wooden shelf clay pots rustic",
+  "min_score": 0.9
+ },
+ {
+  "match": "これもまた、古代の秘訣の一つです。",
+  "photo": true,
+  "q": "warm evening light in old japanese room",
+  "min_score": 0.9
+ },
+ {
+  "match": "髪の毛や固形物で、奥の管がすっかり詰まってしまったとき。",
+  "photo": true,
+  "q": "clogged drain pipe with hair",
+  "min_score": 0.9
+ },
+ {
+  "match": "そうした場合は、無理をなさらず、専門の業者にご相談ください。",
+  "photo": true,
+  "q": "plumber tools pipe wrench",
+  "min_score": 0.9
+ },
+ {
+  "match": "そのうえで、今日いちばんお伝えしたかったのは、これです。",
+  "photo": false,
+  "lines": [
+   "今日いちばん",
+   "お伝えしたいこと"
+  ],
+  "accent": false
+ },
+ {
+  "match": "アルカリ、酸、そして塩。",
+  "photo": false,
+  "lines": [
+   "アルカリ・酸・塩",
+   "この三つだけ"
+  ],
+  "accent": true
+ },
+ {
+  "match": "高価な薬ではなく、自分の手と、昔ながらの知恵で暮らしを守れると気づいたとき、日々は、少しだけ軽く、そして、豊かになります。",
+  "photo": true,
+  "q": "hands holding a wooden bowl warm light",
+  "min_score": 0.9
+ },
+ {
+  "match": "古代の秘訣は、これからも暮らしの中に眠る宝を、静かに掘り起こしていきます。",
+  "photo": true,
+  "q": "warm lamp light in a traditional japanese room",
+  "min_score": 0.9
+ }
+]

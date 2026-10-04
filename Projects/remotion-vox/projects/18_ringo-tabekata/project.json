@@ -1,0 +1,10107 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "18_ringo-tabekata",
+  "channel": "shokutaku",
+  "templateRef": "shokutaku",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-08-21T11:16:00.563974+00:00",
+  "modifiedAt": "2026-08-21T11:16:00.563974+00:00"
+ },
+ "timeline": {
+  "durationInFrames": 32279
+ },
+ "sceneMarkers": [],
+ "tracks": [
+  {
+   "id": "trk-slides",
+   "name": "Slides",
+   "type": "video",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "slide-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 413,
+     "asset": "assets/slide_00.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-1",
+     "kind": "video",
+     "from": 399,
+     "durationInFrames": 259,
+     "asset": "assets/slide_01.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-2",
+     "kind": "video",
+     "from": 643,
+     "durationInFrames": 454,
+     "asset": "assets/slide_02.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-3",
+     "kind": "video",
+     "from": 1083,
+     "durationInFrames": 373,
+     "asset": "assets/slide_03.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-4",
+     "kind": "video",
+     "from": 1442,
+     "durationInFrames": 190,
+     "asset": "assets/slide_04.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-5",
+     "kind": "video",
+     "from": 1618,
+     "durationInFrames": 278,
+     "asset": "assets/slide_05.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-6",
+     "kind": "video",
+     "from": 1882,
+     "durationInFrames": 270,
+     "asset": "assets/slide_06.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-7",
+     "kind": "video",
+     "from": 2139,
+     "durationInFrames": 314,
+     "asset": "assets/slide_07.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-8",
+     "kind": "video",
+     "from": 2438,
+     "durationInFrames": 254,
+     "asset": "assets/slide_08.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-9",
+     "kind": "video",
+     "from": 2678,
+     "durationInFrames": 381,
+     "asset": "assets/slide_09.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-10",
+     "kind": "video",
+     "from": 3045,
+     "durationInFrames": 543,
+     "asset": "assets/slide_10.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-11",
+     "kind": "video",
+     "from": 3574,
+     "durationInFrames": 378,
+     "asset": "assets/slide_11.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-12",
+     "kind": "video",
+     "from": 3938,
+     "durationInFrames": 528,
+     "asset": "assets/slide_12.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-13",
+     "kind": "video",
+     "from": 4452,
+     "durationInFrames": 425,
+     "asset": "assets/slide_13.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-14",
+     "kind": "video",
+     "from": 4864,
+     "durationInFrames": 534,
+     "asset": "assets/slide_14.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-15",
+     "kind": "video",
+     "from": 5384,
+     "durationInFrames": 254,
+     "asset": "assets/slide_15.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-16",
+     "kind": "video",
+     "from": 5624,
+     "durationInFrames": 537,
+     "asset": "assets/slide_16.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-17",
+     "kind": "video",
+     "from": 6147,
+     "durationInFrames": 476,
+     "asset": "assets/slide_17.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-18",
+     "kind": "video",
+     "from": 6609,
+     "durationInFrames": 326,
+     "asset": "assets/slide_18.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-19",
+     "kind": "video",
+     "from": 6921,
+     "durationInFrames": 298,
+     "asset": "assets/slide_19.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-20",
+     "kind": "video",
+     "from": 7205,
+     "durationInFrames": 736,
+     "asset": "assets/slide_20.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-21",
+     "kind": "video",
+     "from": 7927,
+     "durationInFrames": 339,
+     "asset": "assets/slide_21.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-22",
+     "kind": "video",
+     "from": 8252,
+     "durationInFrames": 573,
+     "asset": "assets/slide_22.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-23",
+     "kind": "video",
+     "from": 8811,
+     "durationInFrames": 311,
+     "asset": "assets/slide_23.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-24",
+     "kind": "video",
+     "from": 9108,
+     "durationInFrames": 348,
+     "asset": "assets/slide_24.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-25",
+     "kind": "video",
+     "from": 9442,
+     "durationInFrames": 457,
+     "asset": "assets/slide_25.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-26",
+     "kind": "video",
+     "from": 9885,
+     "durationInFrames": 228,
+     "asset": "assets/slide_26.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-27",
+     "kind": "video",
+     "from": 10098,
+     "durationInFrames": 295,
+     "asset": "assets/slide_27.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-28",
+     "kind": "video",
+     "from": 10379,
+     "durationInFrames": 455,
+     "asset": "assets/slide_28.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-29",
+     "kind": "video",
+     "from": 10821,
+     "durationInFrames": 350,
+     "asset": "assets/slide_29.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-30",
+     "kind": "video",
+     "from": 11156,
+     "durationInFrames": 521,
+     "asset": "assets/slide_30.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-31",
+     "kind": "video",
+     "from": 11664,
+     "durationInFrames": 369,
+     "asset": "assets/slide_31.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-32",
+     "kind": "video",
+     "from": 12019,
+     "durationInFrames": 358,
+     "asset": "assets/slide_32.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-33",
+     "kind": "video",
+     "from": 12362,
+     "durationInFrames": 257,
+     "asset": "assets/slide_33.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-34",
+     "kind": "video",
+     "from": 12605,
+     "durationInFrames": 330,
+     "asset": "assets/slide_34.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-35",
+     "kind": "video",
+     "from": 12921,
+     "durationInFrames": 467,
+     "asset": "assets/slide_35.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-36",
+     "kind": "video",
+     "from": 13374,
+     "durationInFrames": 286,
+     "asset": "assets/slide_36.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-37",
+     "kind": "video",
+     "from": 13646,
+     "durationInFrames": 664,
+     "asset": "assets/slide_37.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-38",
+     "kind": "video",
+     "from": 14295,
+     "durationInFrames": 238,
+     "asset": "assets/slide_38.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-39",
+     "kind": "video",
+     "from": 14520,
+     "durationInFrames": 369,
+     "asset": "assets/slide_39.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-40",
+     "kind": "video",
+     "from": 14875,
+     "durationInFrames": 328,
+     "asset": "assets/slide_40.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-41",
+     "kind": "video",
+     "from": 15189,
+     "durationInFrames": 1077,
+     "asset": "assets/slide_41.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-42",
+     "kind": "video",
+     "from": 16251,
+     "durationInFrames": 275,
+     "asset": "assets/slide_42.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-43",
+     "kind": "video",
+     "from": 16512,
+     "durationInFrames": 571,
+     "asset": "assets/slide_43.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-44",
+     "kind": "video",
+     "from": 17070,
+     "durationInFrames": 364,
+     "asset": "assets/slide_44.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-45",
+     "kind": "video",
+     "from": 17419,
+     "durationInFrames": 346,
+     "asset": "assets/slide_45.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-46",
+     "kind": "video",
+     "from": 17751,
+     "durationInFrames": 345,
+     "asset": "assets/slide_46.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-47",
+     "kind": "video",
+     "from": 18082,
+     "durationInFrames": 195,
+     "asset": "assets/slide_47.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-48",
+     "kind": "video",
+     "from": 18262,
+     "durationInFrames": 407,
+     "asset": "assets/slide_48.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-49",
+     "kind": "video",
+     "from": 18656,
+     "durationInFrames": 441,
+     "asset": "assets/slide_49.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-50",
+     "kind": "video",
+     "from": 19083,
+     "durationInFrames": 198,
+     "asset": "assets/slide_50.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-51",
+     "kind": "video",
+     "from": 19266,
+     "durationInFrames": 286,
+     "asset": "assets/slide_51.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-52",
+     "kind": "video",
+     "from": 19538,
+     "durationInFrames": 273,
+     "asset": "assets/slide_52.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-53",
+     "kind": "video",
+     "from": 19797,
+     "durationInFrames": 499,
+     "asset": "assets/slide_53.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-54",
+     "kind": "video",
+     "from": 20282,
+     "durationInFrames": 238,
+     "asset": "assets/slide_54.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-55",
+     "kind": "video",
+     "from": 20506,
+     "durationInFrames": 665,
+     "asset": "assets/slide_55.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-56",
+     "kind": "video",
+     "from": 21157,
+     "durationInFrames": 510,
+     "asset": "assets/slide_56.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-57",
+     "kind": "video",
+     "from": 21653,
+     "durationInFrames": 316,
+     "asset": "assets/slide_57.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-58",
+     "kind": "video",
+     "from": 21955,
+     "durationInFrames": 239,
+     "asset": "assets/slide_58.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-59",
+     "kind": "video",
+     "from": 22180,
+     "durationInFrames": 573,
+     "asset": "assets/slide_59.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-60",
+     "kind": "video",
+     "from": 22740,
+     "durationInFrames": 180,
+     "asset": "assets/slide_60.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-61",
+     "kind": "video",
+     "from": 22905,
+     "durationInFrames": 257,
+     "asset": "assets/slide_61.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-62",
+     "kind": "video",
+     "from": 23148,
+     "durationInFrames": 210,
+     "asset": "assets/slide_62.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-63",
+     "kind": "video",
+     "from": 23344,
+     "durationInFrames": 392,
+     "asset": "assets/slide_63.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-64",
+     "kind": "video",
+     "from": 23722,
+     "durationInFrames": 505,
+     "asset": "assets/slide_64.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-65",
+     "kind": "video",
+     "from": 24212,
+     "durationInFrames": 479,
+     "asset": "assets/slide_65.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-66",
+     "kind": "video",
+     "from": 24678,
+     "durationInFrames": 589,
+     "asset": "assets/slide_66.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-67",
+     "kind": "video",
+     "from": 25252,
+     "durationInFrames": 402,
+     "asset": "assets/slide_67.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-68",
+     "kind": "video",
+     "from": 25640,
+     "durationInFrames": 304,
+     "asset": "assets/slide_68.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-69",
+     "kind": "video",
+     "from": 25930,
+     "durationInFrames": 373,
+     "asset": "assets/slide_69.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-70",
+     "kind": "video",
+     "from": 26289,
+     "durationInFrames": 247,
+     "asset": "assets/slide_70.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-71",
+     "kind": "video",
+     "from": 26522,
+     "durationInFrames": 631,
+     "asset": "assets/slide_71.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-72",
+     "kind": "video",
+     "from": 27139,
+     "durationInFrames": 284,
+     "asset": "assets/slide_72.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-73",
+     "kind": "video",
+     "from": 27409,
+     "durationInFrames": 426,
+     "asset": "assets/slide_73.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-74",
+     "kind": "video",
+     "from": 27821,
+     "durationInFrames": 429,
+     "asset": "assets/slide_74.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-75",
+     "kind": "video",
+     "from": 28236,
+     "durationInFrames": 360,
+     "asset": "assets/slide_75.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-76",
+     "kind": "video",
+     "from": 28582,
+     "durationInFrames": 381,
+     "asset": "assets/slide_76.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-77",
+     "kind": "video",
+     "from": 28949,
+     "durationInFrames": 604,
+     "asset": "assets/slide_77.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-78",
+     "kind": "video",
+     "from": 29539,
+     "durationInFrames": 907,
+     "asset": "assets/slide_78.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-79",
+     "kind": "video",
+     "from": 30432,
+     "durationInFrames": 254,
+     "asset": "assets/slide_79.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-80",
+     "kind": "video",
+     "from": 30673,
+     "durationInFrames": 1166,
+     "asset": "assets/slide_80.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-81",
+     "kind": "video",
+     "from": 31825,
+     "durationInFrames": 454,
+     "asset": "assets/slide_81.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "Voice",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "voice-1",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 32279,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-overlay",
+   "name": "Overlay",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "wm",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 32279,
+     "content": "60代の食卓",
+     "preset": "tag",
+     "color": "#FFD24A",
+     "animation": "none",
+     "animationParams": {},
+     "layout": {
+      "x": 1586,
+      "y": 40,
+      "rotation": 0
+     },
+     "fontSize": 40
+    },
+    {
+     "id": "tx-2",
+     "kind": "text",
+     "from": 655,
+     "durationInFrames": 150,
+     "content": "1万回の坂道",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-2",
+     "kind": "sticker",
+     "from": 688,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-9",
+     "kind": "text",
+     "from": 2690,
+     "durationInFrames": 150,
+     "content": "皮は天然の鎧",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-12",
+     "kind": "text",
+     "from": 3950,
+     "durationInFrames": 150,
+     "content": "食物繊維 約2倍",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-12",
+     "kind": "sticker",
+     "from": 3983,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-13",
+     "kind": "text",
+     "from": 4464,
+     "durationInFrames": 150,
+     "content": "流水でこすり洗い",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-19",
+     "kind": "sticker",
+     "from": 6966,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-24",
+     "kind": "text",
+     "from": 9120,
+     "durationInFrames": 150,
+     "content": "1個 = 約200g",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-26",
+     "kind": "text",
+     "from": 9897,
+     "durationInFrames": 150,
+     "content": "腎臓の治療中の方",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-26",
+     "kind": "sticker",
+     "from": 9930,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-31",
+     "kind": "text",
+     "from": 11676,
+     "durationInFrames": 150,
+     "content": "静岡・道子さん",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-38",
+     "kind": "sticker",
+     "from": 14340,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-42",
+     "kind": "text",
+     "from": 16263,
+     "durationInFrames": 150,
+     "content": "② 仲間という鎧",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-42",
+     "kind": "sticker",
+     "from": 16296,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-48",
+     "kind": "text",
+     "from": 18274,
+     "durationInFrames": 150,
+     "content": "空腹に1人で",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-48",
+     "kind": "sticker",
+     "from": 18307,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-51",
+     "kind": "text",
+     "from": 19278,
+     "durationInFrames": 150,
+     "content": "私も試しました",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-56",
+     "kind": "text",
+     "from": 21169,
+     "durationInFrames": 150,
+     "content": "ジュースは別",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-61",
+     "kind": "text",
+     "from": 22917,
+     "durationInFrames": 150,
+     "content": "卵やご飯でも",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-65",
+     "kind": "text",
+     "from": 24224,
+     "durationInFrames": 150,
+     "content": "宮城・元運転手",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-69",
+     "kind": "sticker",
+     "from": 25975,
+     "durationInFrames": 120,
+     "asset": "assets/ex_mukumi.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-73",
+     "kind": "text",
+     "from": 27421,
+     "durationInFrames": 150,
+     "content": "皮 と 仲間",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-79",
+     "kind": "text",
+     "from": 30444,
+     "durationInFrames": 150,
+     "content": "今夜のデザートに",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-79",
+     "kind": "sticker",
+     "from": 30477,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "voicevox-mora",
+  "style": "karaoke",
+  "enabled": true,
+  "fontSize": 38,
+  "lines": [
+   {
+    "text": "朝、りんごを一つ。",
+    "startMs": 0,
+    "endMs": 2368
+   },
+   {
+    "text": "そのまま、パクリ。",
+    "startMs": 2968,
+    "endMs": 5101
+   },
+   {
+    "text": "そのひと口の糖分は、スプーン五杯分ほどと言われています。",
+    "startMs": 5701,
+    "endMs": 11131
+   },
+   {
+    "text": "一日一個。",
+    "startMs": 11731,
+    "endMs": 13160
+   },
+   {
+    "text": "それを、三十年続けたとします。",
+    "startMs": 13760,
+    "endMs": 17269
+   },
+   {
+    "text": "その口は、一万回を超えます。",
+    "startMs": 17869,
+    "endMs": 21315
+   },
+   {
+    "text": "一万回の、坂道です。",
+    "startMs": 21915,
+    "endMs": 24816
+   },
+   {
+    "text": "急な坂か、なだらかな坂か。",
+    "startMs": 25416,
+    "endMs": 28477
+   },
+   {
+    "text": "それを決めているのは、りんごの「守り」があるかどうか、です。",
+    "startMs": 29077,
+    "endMs": 35979
+   },
+   {
+    "text": "目の奥や、腎臓の血管は、急な坂を、一万回も上らされると、少しずつ、",
+    "startMs": 36579,
+    "endMs": 44555
+   },
+   {
+    "text": "傷んでいくと言われています。",
+    "startMs": 44555,
+    "endMs": 47939
+   },
+   {
+    "text": "そのりんご、何もない時間に、一人で食べていませんか。",
+    "startMs": 48539,
+    "endMs": 53797
+   },
+   {
+    "text": "健康診断の数字、去年より上がっていませんか。",
+    "startMs": 54397,
+    "endMs": 59155
+   },
+   {
+    "text": "食後、頭がぼんやりする。",
+    "startMs": 59755,
+    "endMs": 62603
+   },
+   {
+    "text": "それも、年のせいだと、思っていませんか。",
+    "startMs": 63203,
+    "endMs": 67640
+   },
+   {
+    "text": "皮でも、量でもありません。",
+    "startMs": 68240,
+    "endMs": 71152
+   },
+   {
+    "text": "守りを、剥がしているかどうか、です。",
+    "startMs": 71752,
+    "endMs": 75837
+   },
+   {
+    "text": "その意味は、後半で、必ずお話しします。",
+    "startMs": 76437,
+    "endMs": 81141
+   },
+   {
+    "text": "むいた皮が、くるくると、シンクに落ちていく。",
+    "startMs": 81741,
+    "endMs": 86083
+   },
+   {
+    "text": "あの音、覚えていますか。",
+    "startMs": 86683,
+    "endMs": 89136
+   },
+   {
+    "text": "りんごの表面にある、つるっとした光沢。",
+    "startMs": 89736,
+    "endMs": 93597
+   },
+   {
+    "text": "それを、農薬だと思って、ゴシゴシ洗い落とす方も、いらっしゃいます。",
+    "startMs": 94197,
+    "endMs": 101355
+   },
+   {
+    "text": "実は、それは、りんご自身が、自分の身を守るためにまとう、天然の鎧だと言われています。",
+    "startMs": 101955,
+    "endMs": 111480
+   },
+   {
+    "text": "雨や乾燥から、実を守っている、いわば、りんご自身のコートです。",
+    "startMs": 112080,
+    "endMs": 119003
+   },
+   {
+    "text": "その鎧を、皮ごと剥いでしまうと。",
+    "startMs": 119603,
+    "endMs": 123144
+   },
+   {
+    "text": "すぐ下にある、食物繊維やポリフェノールまで、一緒に失われることがあります。",
+    "startMs": 123744,
+    "endMs": 131147
+   },
+   {
+    "text": "文部科学省の食品成分のデータでは、皮つきと皮なしで、食物繊維の量に、",
+    "startMs": 131747,
+    "endMs": 139065
+   },
+   {
+    "text": "二倍近い差があるとされています。",
+    "startMs": 139065,
+    "endMs": 142509
+   },
+   {
+    "text": "けれども、鎧を脱がさなくても、農薬は落とせます。",
+    "startMs": 143109,
+    "endMs": 148272
+   },
+   {
+    "text": "流水で、指先を使って、くるくると、こすり洗いをする。",
+    "startMs": 148872,
+    "endMs": 155101
+   },
+   {
+    "text": "それだけで、表面の農薬は、かなり洗い流せると言われています。",
+    "startMs": 155701,
+    "endMs": 161984
+   },
+   {
+    "text": "塩を少しつけて、こすってもいいですね。",
+    "startMs": 162584,
+    "endMs": 166339
+   },
+   {
+    "text": "歯や、あごの力に自信がない方は、皮をむいても、もちろん大丈夫です。",
+    "startMs": 166939,
+    "endMs": 174619
+   },
+   {
+    "text": "無理をして、鎧ごと食べる必要はありません。",
+    "startMs": 175219,
+    "endMs": 179325
+   },
+   {
+    "text": "すりおろしたり、煮たりして、食べやすい形に変えるだけで、十分です。",
+    "startMs": 179925,
+    "endMs": 187339
+   },
+   {
+    "text": "ちなみに、お店で売られているりんごには、乾燥を防ぐために、食用のワックスが、",
+    "startMs": 187939,
+    "endMs": 195197
+   },
+   {
+    "text": "薄く塗られていることもあります。",
+    "startMs": 195197,
+    "endMs": 198253
+   },
+   {
+    "text": "これは、りんご自身の鎧とは別に、人の手で加えられたものです。",
+    "startMs": 198853,
+    "endMs": 204773
+   },
+   {
+    "text": "どちらも、体に害はないとされていますが、気になる方は、しっかり洗ってから、",
+    "startMs": 205373,
+    "endMs": 212421
+   },
+   {
+    "text": "召し上がってくださいね。",
+    "startMs": 212421,
+    "endMs": 214707
+   },
+   {
+    "text": "これは、りんご自身が持つ、鎧の話です。",
+    "startMs": 215307,
+    "endMs": 220160
+   },
+   {
+    "text": "今日、一番お伝えしたいのは、もう一つの鎧の話です。",
+    "startMs": 220760,
+    "endMs": 226744
+   },
+   {
+    "text": "それは、まだ、これからです。",
+    "startMs": 227344,
+    "endMs": 230565
+   },
+   {
+    "text": "皆さん、こんにちは。六十代からの食卓へ、ようこそ。案内人の、みのりです。",
+    "startMs": 231165,
+    "endMs": 240029
+   },
+   {
+    "text": "実は、私も、何年も、りんごの鎧を、すっかり剥いで食べていました。",
+    "startMs": 240629,
+    "endMs": 248277
+   },
+   {
+    "text": "母がそうしていたので、それが当たり前だと思っていたんです。",
+    "startMs": 248877,
+    "endMs": 254051
+   },
+   {
+    "text": "けれども、鎧ごと食べてみたら、シャリッとした歯ごたえが、少し増えて、悪くないな、",
+    "startMs": 254651,
+    "endMs": 262703
+   },
+   {
+    "text": "と思いました。",
+    "startMs": 262703,
+    "endMs": 264112
+   },
+   {
+    "text": "母が、りんごを剥いていた、あの、シュッシュッという音。",
+    "startMs": 264712,
+    "endMs": 270376
+   },
+   {
+    "text": "今でも、耳の奥に、残っています。",
+    "startMs": 270976,
+    "endMs": 274944
+   },
+   {
+    "text": "その前に、一つだけ教えてください。今日は、どちらの都道府県からご覧くださっていますか。",
+    "startMs": 275544,
+    "endMs": 284062
+   },
+   {
+    "text": "コメント欄に、お住まいの地域を書いていただけたら、嬉しいです。全て、",
+    "startMs": 284062,
+    "endMs": 290798
+   },
+   {
+    "text": "読ませていただいております。",
+    "startMs": 290798,
+    "endMs": 293571
+   },
+   {
+    "text": "さて、りんごは、一日に何個までが目安なのか。",
+    "startMs": 294171,
+    "endMs": 299216
+   },
+   {
+    "text": "気になる方も、多いのではないでしょうか。",
+    "startMs": 299816,
+    "endMs": 303475
+   },
+   {
+    "text": "りんご一個は、だいたい二百グラムほどです。",
+    "startMs": 304075,
+    "endMs": 308011
+   },
+   {
+    "text": "一日一個から二個くらいが、無理なく続けやすい量だと言われています。",
+    "startMs": 308611,
+    "endMs": 314605
+   },
+   {
+    "text": "三個、四個と、一度に召し上がると、糖分もカリウムも、それだけ増えてしまいます。",
+    "startMs": 315205,
+    "endMs": 323909
+   },
+   {
+    "text": "ここで、少しだけ、大切なことをお伝えします。",
+    "startMs": 324509,
+    "endMs": 329363
+   },
+   {
+    "text": "腎臓の治療を受けている方は、カリウムの制限が必要な場合があります。",
+    "startMs": 329963,
+    "endMs": 336480
+   },
+   {
+    "text": "りんごも、その対象に入ることがありますので、必ず、かかりつけの先生にご確認ください。",
+    "startMs": 337080,
+    "endMs": 345848
+   },
+   {
+    "text": "持病のない方にとっては、りんごのカリウムは、むしろ、味方になってくれることが多いです。",
+    "startMs": 346448,
+    "endMs": 354245
+   },
+   {
+    "text": "塩分を、体の外に出す手伝いをしてくれるという報告があります。",
+    "startMs": 354845,
+    "endMs": 360563
+   },
+   {
+    "text": "血圧が気になる、という方も多いのではないでしょうか。",
+    "startMs": 361163,
+    "endMs": 366016
+   },
+   {
+    "text": "あの、一日一個。スプーン五杯分の糖分。",
+    "startMs": 366616,
+    "endMs": 371747
+   },
+   {
+    "text": "それを、鎧のあるまま、正しい量で食べる。",
+    "startMs": 372347,
+    "endMs": 376944
+   },
+   {
+    "text": "一万回の坂道は、こうして、少しずつ、なだらかになっていきます。",
+    "startMs": 377544,
+    "endMs": 384456
+   },
+   {
+    "text": "例えば、こんな方がいらっしゃるとします。",
+    "startMs": 385056,
+    "endMs": 388651
+   },
+   {
+    "text": "静岡県にお住まいの、六十七歳の女性、道子さんです。",
+    "startMs": 389251,
+    "endMs": 395512
+   },
+   {
+    "text": "元は、学校の事務員をなさっていました。",
+    "startMs": 396112,
+    "endMs": 400485
+   },
+   {
+    "text": "何年も、りんごの鎧を剥いで、薄く切って、お皿に並べて出す。それが、道子さんのやり方でした。",
+    "startMs": 401085,
+    "endMs": 411944
+   },
+   {
+    "text": "台所に、りんごの甘い香りが漂う時間も、道子さんは、好きだったそうです。",
+    "startMs": 412544,
+    "endMs": 420043
+   },
+   {
+    "text": "ある日、健康診断で、去年より数字が少し上がっていることに気づきます。",
+    "startMs": 420643,
+    "endMs": 427789
+   },
+   {
+    "text": "「年だから仕方ないのかしら」",
+    "startMs": 428389,
+    "endMs": 430565
+   },
+   {
+    "text": "そう思いながらも、鎧ごと食べる、という話を聞いて、試してみることにしました。",
+    "startMs": 431165,
+    "endMs": 439347
+   },
+   {
+    "text": "最初は、皮の食感に慣れず、少し戸惑ったそうです。",
+    "startMs": 439947,
+    "endMs": 445664
+   },
+   {
+    "text": "けれども、二週間ほど続けるうちに、シャリッとした歯ごたえが、むしろ気に入るようになりました。",
+    "startMs": 446264,
+    "endMs": 454723
+   },
+   {
+    "text": "孫の一人が、「おばあちゃんのりんご、なんかカリカリしてる」と言って、喜んで食べたそうです。",
+    "startMs": 455323,
+    "endMs": 463931
+   },
+   {
+    "text": "三ヶ月後の診察で、先生から、「前より、少しいいですね」と言われ、道子さんは、",
+    "startMs": 464531,
+    "endMs": 473027
+   },
+   {
+    "text": "こっそり嬉しくなったそうです。",
+    "startMs": 473027,
+    "endMs": 476381
+   },
+   {
+    "text": "診察室を出たあと、待合室の椅子に、しばらく座っていたそうです。",
+    "startMs": 476981,
+    "endMs": 483861
+   },
+   {
+    "text": "「自分の体は、まだ自分で守れるんだな、って思えたんです」",
+    "startMs": 484461,
+    "endMs": 490328
+   },
+   {
+    "text": "そう、道子さんは、静かに話してくれました。",
+    "startMs": 490928,
+    "endMs": 495696
+   },
+   {
+    "text": "ここまでのお話が、お役に立っているようでしたら、コメント欄に、数字の「に」",
+    "startMs": 496296,
+    "endMs": 503738
+   },
+   {
+    "text": "を書いていただけますか。",
+    "startMs": 503738,
+    "endMs": 506152
+   },
+   {
+    "text": "ここまで聞いてくださって、ありがとうございます。今日のお話が良さそうだと思ってくださったら、",
+    "startMs": 506752,
+    "endMs": 515407
+   },
+   {
+    "text": "良いねと、この動画を離れて暮らすご家族やお友達にも、そっと分けてあげてください。そして、",
+    "startMs": 515407,
+    "endMs": 523686
+   },
+   {
+    "text": "気づいたことやご感想があれば、どうぞコメントで教えてくださいね。皆さんの声を励みに、",
+    "startMs": 523686,
+    "endMs": 531589
+   },
+   {
+    "text": "もっと良いお話をお届けしていきます。",
+    "startMs": 531589,
+    "endMs": 534976
+   },
+   {
+    "text": "さて、皮のことも、量のことも、大切なお話でした。",
+    "startMs": 535576,
+    "endMs": 541571
+   },
+   {
+    "text": "けれども、今日、一番お伝えしたかったことは、まだ、お話ししていません。",
+    "startMs": 542171,
+    "endMs": 550277
+   },
+   {
+    "text": "あの、一万回の坂道を、覚えていますか。",
+    "startMs": 550877,
+    "endMs": 555581
+   },
+   {
+    "text": "急な坂か、なだらかな坂か。それを決めているのは、りんごの「鎧」です。",
+    "startMs": 556181,
+    "endMs": 565077
+   },
+   {
+    "text": "皮という、りんご自身の鎧。",
+    "startMs": 565677,
+    "endMs": 568856
+   },
+   {
+    "text": "そして、もう一つ、皆さんが着せてあげる、鎧があります。",
+    "startMs": 569456,
+    "endMs": 575803
+   },
+   {
+    "text": "りんごを、一人ぼっちにしないこと。",
+    "startMs": 577003,
+    "endMs": 580107
+   },
+   {
+    "text": "これが、その、もう一つの鎧です。",
+    "startMs": 581107,
+    "endMs": 585064
+   },
+   {
+    "text": "朝、何も食べていない胃に、りんごだけを、ぽつんと入れる。",
+    "startMs": 585664,
+    "endMs": 591563
+   },
+   {
+    "text": "夜、歯を磨く前に、小腹が空いて、こっそり一口。",
+    "startMs": 592163,
+    "endMs": 597816
+   },
+   {
+    "text": "そのとき、りんごは、鎧を着ていません。",
+    "startMs": 598416,
+    "endMs": 602597
+   },
+   {
+    "text": "急な坂を、一人ぼっちで、上らせているようなものです。",
+    "startMs": 603197,
+    "endMs": 608616
+   },
+   {
+    "text": "ご飯の最後、デザートとして。おやつなら、無糖のヨーグルトを、大さじ二杯ほど。",
+    "startMs": 609216,
+    "endMs": 616885
+   },
+   {
+    "text": "ひとかけらのチーズ、少しのナッツでも構いません。",
+    "startMs": 616885,
+    "endMs": 621728
+   },
+   {
+    "text": "たんぱく質や脂質という、鎧を、着せてあげることになります。",
+    "startMs": 622328,
+    "endMs": 628141
+   },
+   {
+    "text": "一緒に入ってきたそれらが、糖の吸収を、ゆっくりにしてくれるとされています。",
+    "startMs": 628741,
+    "endMs": 635952
+   },
+   {
+    "text": "急な坂が、なだらかな坂に、変わっていくということです。",
+    "startMs": 636552,
+    "endMs": 642077
+   },
+   {
+    "text": "私も、試してみました。",
+    "startMs": 642677,
+    "endMs": 645493
+   },
+   {
+    "text": "ある朝、何もないときに、りんごだけ、ひと切れ。",
+    "startMs": 646093,
+    "endMs": 651149
+   },
+   {
+    "text": "そのあと、しばらくして、なんだか、体がふわっと重くなるような、感じがしました。",
+    "startMs": 651749,
+    "endMs": 659771
+   },
+   {
+    "text": "次の日は、ヨーグルトと一緒に、同じりんごを。",
+    "startMs": 660371,
+    "endMs": 664829
+   },
+   {
+    "text": "そのときは、そんな感じは、あまりしませんでした。",
+    "startMs": 665429,
+    "endMs": 670229
+   },
+   {
+    "text": "もちろん、これは、私一人の感覚にすぎません。",
+    "startMs": 670829,
+    "endMs": 675928
+   },
+   {
+    "text": "けれども、鎧があるかどうかで、何かが違う。そう感じた朝でした。",
+    "startMs": 676528,
+    "endMs": 683397
+   },
+   {
+    "text": "ちなみに、りんごジュースは、生のりんごとは、少し違います。",
+    "startMs": 683997,
+    "endMs": 690024
+   },
+   {
+    "text": "ミキサーの音が、ウィーンと鳴って、あっという間に、コップ一杯のジュースになります。",
+    "startMs": 690624,
+    "endMs": 697995
+   },
+   {
+    "text": "けれども、その速さこそが、鎧を脱がせている証拠なのかもしれません。",
+    "startMs": 698595,
+    "endMs": 705091
+   },
+   {
+    "text": "搾る過程で、鎧である食物繊維の多くが、失われてしまうことがあります。",
+    "startMs": 705691,
+    "endMs": 713531
+   },
+   {
+    "text": "ジュースだけを、空腹に飲むと、坂は、さらに急になりやすいとされています。",
+    "startMs": 714131,
+    "endMs": 721640
+   },
+   {
+    "text": "焼きりんごも、いいですね。",
+    "startMs": 722240,
+    "endMs": 724960
+   },
+   {
+    "text": "火を通すと、鎧である食物繊維が、少しやわらかくなります。",
+    "startMs": 725560,
+    "endMs": 731704
+   },
+   {
+    "text": "そのときも、ヨーグルトを添えるなど、仲間の鎧を、忘れずに一緒に。",
+    "startMs": 732304,
+    "endMs": 739216
+   },
+   {
+    "text": "反対に、避けたいのは、空腹のまま出かける前や、寝る直前に、りんごだけを、さっとかじること。",
+    "startMs": 739816,
+    "endMs": 750141
+   },
+   {
+    "text": "その一口が、鎧のない、一人ぼっちの坂を、作ってしまうかもしれません。",
+    "startMs": 750741,
+    "endMs": 757856
+   },
+   {
+    "text": "ヨーグルトやチーズが、いつも家にあるとは限りません。",
+    "startMs": 758456,
+    "endMs": 763373
+   },
+   {
+    "text": "そんな日は、卵一個や、少しのご飯でも、鎧の役目を果たしてくれます。",
+    "startMs": 763973,
+    "endMs": 771472
+   },
+   {
+    "text": "要は、りんごを、たった一人で、送り出さないことです。",
+    "startMs": 772072,
+    "endMs": 777992
+   },
+   {
+    "text": "りんごの鎧を、剥ぎすぎないこと。りんごを、一人ぼっちにしないこと。",
+    "startMs": 778592,
+    "endMs": 784992
+   },
+   {
+    "text": "それが、今日、一番大切な合言葉です。",
+    "startMs": 785592,
+    "endMs": 790584
+   },
+   {
+    "text": "ここまでのお話が、お役に立っているようでしたら、コメント欄に、数字の「さん」",
+    "startMs": 791184,
+    "endMs": 798707
+   },
+   {
+    "text": "を書いていただけますか。",
+    "startMs": 798707,
+    "endMs": 801083
+   },
+   {
+    "text": "もう一つ、こんな方の話も、耳にしたことがあります。",
+    "startMs": 801683,
+    "endMs": 806941
+   },
+   {
+    "text": "宮城県にお住まいの、七十二歳の男性、元トラックの運転手をなさっていた方です。",
+    "startMs": 807541,
+    "endMs": 815819
+   },
+   {
+    "text": "長距離の仕事の合間、目を覚ますために、りんごを一口二口。",
+    "startMs": 816419,
+    "endMs": 822456
+   },
+   {
+    "text": "運転席の窓を少し開けて、夜風にあたりながら、りんごをかじる。",
+    "startMs": 823056,
+    "endMs": 829307
+   },
+   {
+    "text": "カーラジオから、深夜の番組が、低く流れていたそうです。",
+    "startMs": 829907,
+    "endMs": 835421
+   },
+   {
+    "text": "それが、長距離の合間の、ささやかな楽しみだったそうです。",
+    "startMs": 836021,
+    "endMs": 841611
+   },
+   {
+    "text": "夜、車を降りたあとも、癖で、寝る前に、りんごを一つ、かじる。",
+    "startMs": 842211,
+    "endMs": 849955
+   },
+   {
+    "text": "そんな生活を、ずっと送っていたそうです。",
+    "startMs": 850555,
+    "endMs": 854533
+   },
+   {
+    "text": "「別に、体に悪い物を食べているわけじゃないから」",
+    "startMs": 855133,
+    "endMs": 859592
+   },
+   {
+    "text": "そう思っていたと、笑って話してくれました。",
+    "startMs": 860192,
+    "endMs": 864203
+   },
+   {
+    "text": "けれども、りんごを「一人ぼっちにしない」という話を聞いて、夕食のあと、",
+    "startMs": 864803,
+    "endMs": 872032
+   },
+   {
+    "text": "デザートとして食べる形に変えてみました。",
+    "startMs": 872032,
+    "endMs": 876163
+   },
+   {
+    "text": "最初の数日は、寝る前に何も食べないことが、どうも落ち着かなかったそうです。",
+    "startMs": 876763,
+    "endMs": 883920
+   },
+   {
+    "text": "一ヶ月ほど経った頃、奥さんから、「朝の顔のむくみが、前より減ったみたいね」",
+    "startMs": 884520,
+    "endMs": 891935
+   },
+   {
+    "text": "と言われたそうです。",
+    "startMs": 891935,
+    "endMs": 893939
+   },
+   {
+    "text": "「自分では、あまり分からなかったんですけど。誰かに気づいてもらえると、なんだか、",
+    "startMs": 894539,
+    "endMs": 902352
+   },
+   {
+    "text": "続ける気になりますね」",
+    "startMs": 902352,
+    "endMs": 904501
+   },
+   {
+    "text": "そう、少し照れたように、話していました。",
+    "startMs": 905101,
+    "endMs": 909272
+   },
+   {
+    "text": "今日のお話を、簡単にまとめますね。",
+    "startMs": 909872,
+    "endMs": 913499
+   },
+   {
+    "text": "りんごには、二つの鎧があります。",
+    "startMs": 914099,
+    "endMs": 917331
+   },
+   {
+    "text": "一つは、皮という、りんご自身の鎧。むきすぎず、気になる農薬は、洗って落とす。",
+    "startMs": 917931,
+    "endMs": 927232
+   },
+   {
+    "text": "もう一つは、一緒に食べる仲間という、皆さんが着せてあげる鎧。りんごを、",
+    "startMs": 927832,
+    "endMs": 935020
+   },
+   {
+    "text": "一人ぼっちにしないこと。",
+    "startMs": 935020,
+    "endMs": 937485
+   },
+   {
+    "text": "あの、一万回の坂道。",
+    "startMs": 938085,
+    "endMs": 941051
+   },
+   {
+    "text": "皮の鎧と、仲間の鎧、二つを大切にするだけで、坂の急さは、少しずつ、変わっていくはずです。",
+    "startMs": 941651,
+    "endMs": 952595
+   },
+   {
+    "text": "今夜、りんごを召し上がるなら、どうぞ、食後のデザートに。",
+    "startMs": 953195,
+    "endMs": 959083
+   },
+   {
+    "text": "それだけで、今日のお話は、もう実践できています。",
+    "startMs": 959683,
+    "endMs": 964835
+   },
+   {
+    "text": "皆さんは、りんごを、どんな時に、召し上がることが多いですか。よろしければ、",
+    "startMs": 965435,
+    "endMs": 973023
+   },
+   {
+    "text": "コメントで教えてください。次に知りたい食べ物があれば、それも、ぜひ書いてくださいね。全部、",
+    "startMs": 973023,
+    "endMs": 982251
+   },
+   {
+    "text": "読ませていただきます。",
+    "startMs": 982251,
+    "endMs": 984507
+   },
+   {
+    "text": "今日の夕食から、まずは一つ。りんごの鎧を、脱がせすぎないところから、始めてみませんか。",
+    "startMs": 985107,
+    "endMs": 994195
+   },
+   {
+    "text": "もし、今日のお話が、少しでも役に立ちそうだと思ってくださったら、チャンネル登録で、",
+    "startMs": 994795,
+    "endMs": 1003118
+   },
+   {
+    "text": "この食卓に、また遊びに来てください。そして、離れて暮らすご家族にも、りんごの話、",
+    "startMs": 1003118,
+    "endMs": 1011238
+   },
+   {
+    "text": "そっと伝えてあげてくださいね。",
+    "startMs": 1011238,
+    "endMs": 1014283
+   },
+   {
+    "text": "皆さんの食卓に、りんごが並ぶ日が、少しでも増えたら、嬉しく思います。",
+    "startMs": 1014883,
+    "endMs": 1022296
+   },
+   {
+    "text": "最後に、一つだけ、大切なお願いです。この動画でお伝えした内容は、",
+    "startMs": 1022896,
+    "endMs": 1029846
+   },
+   {
+    "text": "公表されている研究などをもとにした、健康に関する一般的な情報です。お一人おひとりに合わせた、",
+    "startMs": 1029846,
+    "endMs": 1039837
+   },
+   {
+    "text": "医療のアドバイスではありません。持病のある方や、お薬を飲んでいる方は、食事を変える前に、",
+    "startMs": 1039837,
+    "endMs": 1049394
+   },
+   {
+    "text": "必ず、かかりつけの先生にご相談ください。今日のお話が、先生との会話のきっかけになれば、",
+    "startMs": 1049394,
+    "endMs": 1058733
+   },
+   {
+    "text": "何より嬉しいです。",
+    "startMs": 1058733,
+    "endMs": 1060688
+   },
+   {
+    "text": "今夜の食卓が、皆さんの明日の元気に、つながりますように。六十代からの食卓、みのりでした。",
+    "startMs": 1061288,
+    "endMs": 1070778
+   },
+   {
+    "text": "どうか、ご自分の体を、大切になさってくださいね。",
+    "startMs": 1070778,
+    "endMs": 1075955
+   }
+  ],
+  "words": [
+   {
+    "text": "朝、",
+    "startMs": 0,
+    "endMs": 628,
+    "lineIndex": 0
+   },
+   {
+    "text": "りんごを",
+    "startMs": 1125,
+    "endMs": 1779,
+    "lineIndex": 0
+   },
+   {
+    "text": "一つ。",
+    "startMs": 1779,
+    "endMs": 2368,
+    "lineIndex": 0
+   },
+   {
+    "text": "そのま",
+    "startMs": 2968,
+    "endMs": 3401,
+    "lineIndex": 1
+   },
+   {
+    "text": "ま、パ",
+    "startMs": 3401,
+    "endMs": 3890,
+    "lineIndex": 1
+   },
+   {
+    "text": "クリ。",
+    "startMs": 4581,
+    "endMs": 5101,
+    "lineIndex": 1
+   },
+   {
+    "text": "その",
+    "startMs": 5701,
+    "endMs": 6124,
+    "lineIndex": 2
+   },
+   {
+    "text": "ひと口の糖",
+    "startMs": 6124,
+    "endMs": 6780,
+    "lineIndex": 2
+   },
+   {
+    "text": "分は、スプ",
+    "startMs": 6780,
+    "endMs": 7704,
+    "lineIndex": 2
+   },
+   {
+    "text": "ーン五杯",
+    "startMs": 8121,
+    "endMs": 8755,
+    "lineIndex": 2
+   },
+   {
+    "text": "分ほどと言",
+    "startMs": 8755,
+    "endMs": 10032,
+    "lineIndex": 2
+   },
+   {
+    "text": "われてい",
+    "startMs": 10032,
+    "endMs": 10576,
+    "lineIndex": 2
+   },
+   {
+    "text": "ます。",
+    "startMs": 10576,
+    "endMs": 11131,
+    "lineIndex": 2
+   },
+   {
+    "text": "一日一",
+    "startMs": 11731,
+    "endMs": 12612,
+    "lineIndex": 3
+   },
+   {
+    "text": "個。",
+    "startMs": 12612,
+    "endMs": 13160,
+    "lineIndex": 3
+   },
+   {
+    "text": "それを",
+    "startMs": 13760,
+    "endMs": 14417,
+    "lineIndex": 4
+   },
+   {
+    "text": "、三十年続",
+    "startMs": 14933,
+    "endMs": 15878,
+    "lineIndex": 4
+   },
+   {
+    "text": "けたとし",
+    "startMs": 15878,
+    "endMs": 16655,
+    "lineIndex": 4
+   },
+   {
+    "text": "ます。",
+    "startMs": 16655,
+    "endMs": 17269,
+    "lineIndex": 4
+   },
+   {
+    "text": "その",
+    "startMs": 17869,
+    "endMs": 18279,
+    "lineIndex": 5
+   },
+   {
+    "text": "口は、",
+    "startMs": 18279,
+    "endMs": 18997,
+    "lineIndex": 5
+   },
+   {
+    "text": "一万回を超",
+    "startMs": 19463,
+    "endMs": 20514,
+    "lineIndex": 5
+   },
+   {
+    "text": "えます。",
+    "startMs": 20514,
+    "endMs": 21315,
+    "lineIndex": 5
+   },
+   {
+    "text": "一万回の、",
+    "startMs": 21915,
+    "endMs": 23181,
+    "lineIndex": 6
+   },
+   {
+    "text": "坂道です。",
+    "startMs": 23627,
+    "endMs": 24816,
+    "lineIndex": 6
+   },
+   {
+    "text": "急な坂",
+    "startMs": 25416,
+    "endMs": 25978,
+    "lineIndex": 7
+   },
+   {
+    "text": "か、な",
+    "startMs": 25978,
+    "endMs": 26608,
+    "lineIndex": 7
+   },
+   {
+    "text": "だらかな",
+    "startMs": 27113,
+    "endMs": 27849,
+    "lineIndex": 7
+   },
+   {
+    "text": "坂か。",
+    "startMs": 27849,
+    "endMs": 28477,
+    "lineIndex": 7
+   },
+   {
+    "text": "それを",
+    "startMs": 29077,
+    "endMs": 29588,
+    "lineIndex": 8
+   },
+   {
+    "text": "決めて",
+    "startMs": 29588,
+    "endMs": 30080,
+    "lineIndex": 8
+   },
+   {
+    "text": "いる",
+    "startMs": 30080,
+    "endMs": 30269,
+    "lineIndex": 8
+   },
+   {
+    "text": "のは",
+    "startMs": 30269,
+    "endMs": 30690,
+    "lineIndex": 8
+   },
+   {
+    "text": "、りんごの「守り",
+    "startMs": 31050,
+    "endMs": 31778,
+    "lineIndex": 8
+   },
+   {
+    "text": "」があ",
+    "startMs": 32224,
+    "endMs": 32763,
+    "lineIndex": 8
+   },
+   {
+    "text": "る",
+    "startMs": 33519,
+    "endMs": 33716,
+    "lineIndex": 8
+   },
+   {
+    "text": "かどう",
+    "startMs": 33716,
+    "endMs": 34106,
+    "lineIndex": 8
+   },
+   {
+    "text": "か、で",
+    "startMs": 34106,
+    "endMs": 34663,
+    "lineIndex": 8
+   },
+   {
+    "text": "す。",
+    "startMs": 35417,
+    "endMs": 35979,
+    "lineIndex": 8
+   },
+   {
+    "text": "目の",
+    "startMs": 36579,
+    "endMs": 36927,
+    "lineIndex": 9
+   },
+   {
+    "text": "奥や、",
+    "startMs": 36927,
+    "endMs": 37498,
+    "lineIndex": 9
+   },
+   {
+    "text": "腎臓の血",
+    "startMs": 38078,
+    "endMs": 38767,
+    "lineIndex": 9
+   },
+   {
+    "text": "管は、急",
+    "startMs": 38767,
+    "endMs": 39693,
+    "lineIndex": 9
+   },
+   {
+    "text": "な坂を",
+    "startMs": 40288,
+    "endMs": 40764,
+    "lineIndex": 9
+   },
+   {
+    "text": "、一万",
+    "startMs": 40764,
+    "endMs": 41417,
+    "lineIndex": 9
+   },
+   {
+    "text": "回も上らされ",
+    "startMs": 41965,
+    "endMs": 42961,
+    "lineIndex": 9
+   },
+   {
+    "text": "ると、少しず",
+    "startMs": 42961,
+    "endMs": 44031,
+    "lineIndex": 9
+   },
+   {
+    "text": "つ、傷ん",
+    "startMs": 44520,
+    "endMs": 45403,
+    "lineIndex": 10
+   },
+   {
+    "text": "でいく",
+    "startMs": 45912,
+    "endMs": 46463,
+    "lineIndex": 10
+   },
+   {
+    "text": "と言わ",
+    "startMs": 46463,
+    "endMs": 46866,
+    "lineIndex": 10
+   },
+   {
+    "text": "れてい",
+    "startMs": 46866,
+    "endMs": 47398,
+    "lineIndex": 10
+   },
+   {
+    "text": "ます。",
+    "startMs": 47398,
+    "endMs": 47939,
+    "lineIndex": 10
+   },
+   {
+    "text": "その",
+    "startMs": 48539,
+    "endMs": 48967,
+    "lineIndex": 11
+   },
+   {
+    "text": "りんご",
+    "startMs": 48967,
+    "endMs": 49511,
+    "lineIndex": 11
+   },
+   {
+    "text": "、何も",
+    "startMs": 50139,
+    "endMs": 50608,
+    "lineIndex": 11
+   },
+   {
+    "text": "ない",
+    "startMs": 50608,
+    "endMs": 50836,
+    "lineIndex": 11
+   },
+   {
+    "text": "時間に、",
+    "startMs": 50836,
+    "endMs": 51547,
+    "lineIndex": 11
+   },
+   {
+    "text": "一人で食",
+    "startMs": 51956,
+    "endMs": 52489,
+    "lineIndex": 11
+   },
+   {
+    "text": "べてい",
+    "startMs": 52489,
+    "endMs": 52962,
+    "lineIndex": 11
+   },
+   {
+    "text": "ませんか。",
+    "startMs": 52962,
+    "endMs": 53797,
+    "lineIndex": 11
+   },
+   {
+    "text": "健康診",
+    "startMs": 54397,
+    "endMs": 55007,
+    "lineIndex": 12
+   },
+   {
+    "text": "断の数字、",
+    "startMs": 55007,
+    "endMs": 55722,
+    "lineIndex": 12
+   },
+   {
+    "text": "去年よ",
+    "startMs": 55722,
+    "endMs": 56289,
+    "lineIndex": 12
+   },
+   {
+    "text": "り上がっ",
+    "startMs": 56888,
+    "endMs": 57741,
+    "lineIndex": 12
+   },
+   {
+    "text": "ていま",
+    "startMs": 57741,
+    "endMs": 58289,
+    "lineIndex": 12
+   },
+   {
+    "text": "せんか。",
+    "startMs": 58289,
+    "endMs": 59155,
+    "lineIndex": 12
+   },
+   {
+    "text": "食後、",
+    "startMs": 59755,
+    "endMs": 60492,
+    "lineIndex": 13
+   },
+   {
+    "text": "頭がぼ",
+    "startMs": 61024,
+    "endMs": 61628,
+    "lineIndex": 13
+   },
+   {
+    "text": "んやりす",
+    "startMs": 61628,
+    "endMs": 62230,
+    "lineIndex": 13
+   },
+   {
+    "text": "る。",
+    "startMs": 62230,
+    "endMs": 62603,
+    "lineIndex": 13
+   },
+   {
+    "text": "それも",
+    "startMs": 63203,
+    "endMs": 63905,
+    "lineIndex": 14
+   },
+   {
+    "text": "、年の",
+    "startMs": 64497,
+    "endMs": 64923,
+    "lineIndex": 14
+   },
+   {
+    "text": "せいだと",
+    "startMs": 64923,
+    "endMs": 65700,
+    "lineIndex": 14
+   },
+   {
+    "text": "、思って",
+    "startMs": 66210,
+    "endMs": 66774,
+    "lineIndex": 14
+   },
+   {
+    "text": "いませんか。",
+    "startMs": 66774,
+    "endMs": 67640,
+    "lineIndex": 14
+   },
+   {
+    "text": "皮でも、",
+    "startMs": 68240,
+    "endMs": 69069,
+    "lineIndex": 15
+   },
+   {
+    "text": "量でもありません。",
+    "startMs": 69665,
+    "endMs": 71152,
+    "lineIndex": 15
+   },
+   {
+    "text": "守りを、剥が",
+    "startMs": 71752,
+    "endMs": 72460,
+    "lineIndex": 16
+   },
+   {
+    "text": "している",
+    "startMs": 72912,
+    "endMs": 73561,
+    "lineIndex": 16
+   },
+   {
+    "text": "かどう",
+    "startMs": 73561,
+    "endMs": 73910,
+    "lineIndex": 16
+   },
+   {
+    "text": "か、で",
+    "startMs": 73910,
+    "endMs": 74482,
+    "lineIndex": 16
+   },
+   {
+    "text": "す。",
+    "startMs": 75259,
+    "endMs": 75837,
+    "lineIndex": 16
+   },
+   {
+    "text": "その",
+    "startMs": 76437,
+    "endMs": 76876,
+    "lineIndex": 17
+   },
+   {
+    "text": "意味は",
+    "startMs": 76876,
+    "endMs": 77477,
+    "lineIndex": 17
+   },
+   {
+    "text": "、後半",
+    "startMs": 77926,
+    "endMs": 78796,
+    "lineIndex": 17
+   },
+   {
+    "text": "で、必ず",
+    "startMs": 79318,
+    "endMs": 79953,
+    "lineIndex": 17
+   },
+   {
+    "text": "お話しし",
+    "startMs": 79953,
+    "endMs": 80563,
+    "lineIndex": 17
+   },
+   {
+    "text": "ます。",
+    "startMs": 80563,
+    "endMs": 81141,
+    "lineIndex": 17
+   },
+   {
+    "text": "むいた",
+    "startMs": 81741,
+    "endMs": 82234,
+    "lineIndex": 18
+   },
+   {
+    "text": "皮が、",
+    "startMs": 82234,
+    "endMs": 82881,
+    "lineIndex": 18
+   },
+   {
+    "text": "くるくると、シ",
+    "startMs": 83363,
+    "endMs": 84181,
+    "lineIndex": 18
+   },
+   {
+    "text": "ンクに落",
+    "startMs": 84608,
+    "endMs": 85258,
+    "lineIndex": 18
+   },
+   {
+    "text": "ちてい",
+    "startMs": 85258,
+    "endMs": 85715,
+    "lineIndex": 18
+   },
+   {
+    "text": "く。",
+    "startMs": 85715,
+    "endMs": 86083,
+    "lineIndex": 18
+   },
+   {
+    "text": "あの",
+    "startMs": 86683,
+    "endMs": 87032,
+    "lineIndex": 19
+   },
+   {
+    "text": "音、",
+    "startMs": 87032,
+    "endMs": 87457,
+    "lineIndex": 19
+   },
+   {
+    "text": "覚えてい",
+    "startMs": 87864,
+    "endMs": 88449,
+    "lineIndex": 19
+   },
+   {
+    "text": "ますか。",
+    "startMs": 88449,
+    "endMs": 89136,
+    "lineIndex": 19
+   },
+   {
+    "text": "りんご",
+    "startMs": 89736,
+    "endMs": 90363,
+    "lineIndex": 20
+   },
+   {
+    "text": "の表面に",
+    "startMs": 90363,
+    "endMs": 91185,
+    "lineIndex": 20
+   },
+   {
+    "text": "ある",
+    "startMs": 91185,
+    "endMs": 91510,
+    "lineIndex": 20
+   },
+   {
+    "text": "、つるっ",
+    "startMs": 92037,
+    "endMs": 92660,
+    "lineIndex": 20
+   },
+   {
+    "text": "とし",
+    "startMs": 92660,
+    "endMs": 92891,
+    "lineIndex": 20
+   },
+   {
+    "text": "た光沢。",
+    "startMs": 92891,
+    "endMs": 93597,
+    "lineIndex": 20
+   },
+   {
+    "text": "それを",
+    "startMs": 94197,
+    "endMs": 94827,
+    "lineIndex": 21
+   },
+   {
+    "text": "、農薬だと思",
+    "startMs": 95342,
+    "endMs": 96212,
+    "lineIndex": 21
+   },
+   {
+    "text": "って、ゴ",
+    "startMs": 96212,
+    "endMs": 96912,
+    "lineIndex": 21
+   },
+   {
+    "text": "シゴシ洗",
+    "startMs": 97420,
+    "endMs": 98185,
+    "lineIndex": 21
+   },
+   {
+    "text": "い落とす方も",
+    "startMs": 98185,
+    "endMs": 99034,
+    "lineIndex": 21
+   },
+   {
+    "text": "、いら",
+    "startMs": 99034,
+    "endMs": 99607,
+    "lineIndex": 21
+   },
+   {
+    "text": "っしゃいます。",
+    "startMs": 100192,
+    "endMs": 101355,
+    "lineIndex": 21
+   },
+   {
+    "text": "実は、",
+    "startMs": 101955,
+    "endMs": 102649,
+    "lineIndex": 22
+   },
+   {
+    "text": "それは",
+    "startMs": 103100,
+    "endMs": 103782,
+    "lineIndex": 22
+   },
+   {
+    "text": "、りんご",
+    "startMs": 104160,
+    "endMs": 105468,
+    "lineIndex": 22
+   },
+   {
+    "text": "自身が、",
+    "startMs": 106004,
+    "endMs": 106619,
+    "lineIndex": 22
+   },
+   {
+    "text": "自分",
+    "startMs": 106619,
+    "endMs": 106929,
+    "lineIndex": 22
+   },
+   {
+    "text": "の身を",
+    "startMs": 106929,
+    "endMs": 107315,
+    "lineIndex": 22
+   },
+   {
+    "text": "守るた",
+    "startMs": 107315,
+    "endMs": 107734,
+    "lineIndex": 22
+   },
+   {
+    "text": "めにま",
+    "startMs": 107734,
+    "endMs": 108323,
+    "lineIndex": 22
+   },
+   {
+    "text": "とう、天然",
+    "startMs": 108983,
+    "endMs": 109703,
+    "lineIndex": 22
+   },
+   {
+    "text": "の鎧だと言",
+    "startMs": 109703,
+    "endMs": 110394,
+    "lineIndex": 22
+   },
+   {
+    "text": "われてい",
+    "startMs": 110394,
+    "endMs": 110935,
+    "lineIndex": 22
+   },
+   {
+    "text": "ます。",
+    "startMs": 110935,
+    "endMs": 111480,
+    "lineIndex": 22
+   },
+   {
+    "text": "雨や乾",
+    "startMs": 112080,
+    "endMs": 112564,
+    "lineIndex": 23
+   },
+   {
+    "text": "燥から、実を",
+    "startMs": 112564,
+    "endMs": 113619,
+    "lineIndex": 23
+   },
+   {
+    "text": "守っ",
+    "startMs": 114004,
+    "endMs": 114313,
+    "lineIndex": 23
+   },
+   {
+    "text": "ている、",
+    "startMs": 114313,
+    "endMs": 114925,
+    "lineIndex": 23
+   },
+   {
+    "text": "いわ",
+    "startMs": 114925,
+    "endMs": 115210,
+    "lineIndex": 23
+   },
+   {
+    "text": "ば、り",
+    "startMs": 115944,
+    "endMs": 116612,
+    "lineIndex": 23
+   },
+   {
+    "text": "んご自身のコ",
+    "startMs": 117053,
+    "endMs": 118132,
+    "lineIndex": 23
+   },
+   {
+    "text": "ートです。",
+    "startMs": 118132,
+    "endMs": 119003,
+    "lineIndex": 23
+   },
+   {
+    "text": "その",
+    "startMs": 119603,
+    "endMs": 120016,
+    "lineIndex": 24
+   },
+   {
+    "text": "鎧を、",
+    "startMs": 120016,
+    "endMs": 120671,
+    "lineIndex": 24
+   },
+   {
+    "text": "皮ごと剥",
+    "startMs": 121288,
+    "endMs": 121973,
+    "lineIndex": 24
+   },
+   {
+    "text": "いでし",
+    "startMs": 121973,
+    "endMs": 122380,
+    "lineIndex": 24
+   },
+   {
+    "text": "まうと。",
+    "startMs": 122380,
+    "endMs": 123144,
+    "lineIndex": 24
+   },
+   {
+    "text": "すぐ",
+    "startMs": 123744,
+    "endMs": 124191,
+    "lineIndex": 25
+   },
+   {
+    "text": "下にあ",
+    "startMs": 124191,
+    "endMs": 124626,
+    "lineIndex": 25
+   },
+   {
+    "text": "る、",
+    "startMs": 124626,
+    "endMs": 124914,
+    "lineIndex": 25
+   },
+   {
+    "text": "食物繊維やポ",
+    "startMs": 125455,
+    "endMs": 126686,
+    "lineIndex": 25
+   },
+   {
+    "text": "リフェノールま",
+    "startMs": 126686,
+    "endMs": 128008,
+    "lineIndex": 25
+   },
+   {
+    "text": "で、一緒",
+    "startMs": 128523,
+    "endMs": 129235,
+    "lineIndex": 25
+   },
+   {
+    "text": "に失われるこ",
+    "startMs": 129235,
+    "endMs": 130030,
+    "lineIndex": 25
+   },
+   {
+    "text": "とがあ",
+    "startMs": 130030,
+    "endMs": 130491,
+    "lineIndex": 25
+   },
+   {
+    "text": "ります。",
+    "startMs": 130491,
+    "endMs": 131147,
+    "lineIndex": 25
+   },
+   {
+    "text": "文部",
+    "startMs": 131747,
+    "endMs": 132154,
+    "lineIndex": 26
+   },
+   {
+    "text": "科学省の食",
+    "startMs": 132154,
+    "endMs": 132945,
+    "lineIndex": 26
+   },
+   {
+    "text": "品成分のデータでは、",
+    "startMs": 132945,
+    "endMs": 134319,
+    "lineIndex": 26
+   },
+   {
+    "text": "皮つきと",
+    "startMs": 134319,
+    "endMs": 135152,
+    "lineIndex": 26
+   },
+   {
+    "text": "皮なしで",
+    "startMs": 135687,
+    "endMs": 136401,
+    "lineIndex": 26
+   },
+   {
+    "text": "、食",
+    "startMs": 136401,
+    "endMs": 136691,
+    "lineIndex": 26
+   },
+   {
+    "text": "物繊",
+    "startMs": 136691,
+    "endMs": 137261,
+    "lineIndex": 26
+   },
+   {
+    "text": "維の量に、二倍",
+    "startMs": 137708,
+    "endMs": 138907,
+    "lineIndex": 26
+   },
+   {
+    "text": "近い",
+    "startMs": 138907,
+    "endMs": 139448,
+    "lineIndex": 27
+   },
+   {
+    "text": "差が",
+    "startMs": 139881,
+    "endMs": 140320,
+    "lineIndex": 27
+   },
+   {
+    "text": "ある",
+    "startMs": 140320,
+    "endMs": 140766,
+    "lineIndex": 27
+   },
+   {
+    "text": "とさ",
+    "startMs": 140766,
+    "endMs": 141144,
+    "lineIndex": 27
+   },
+   {
+    "text": "れて",
+    "startMs": 141144,
+    "endMs": 141511,
+    "lineIndex": 27
+   },
+   {
+    "text": "いま",
+    "startMs": 141511,
+    "endMs": 141971,
+    "lineIndex": 27
+   },
+   {
+    "text": "す。",
+    "startMs": 141971,
+    "endMs": 142509,
+    "lineIndex": 27
+   },
+   {
+    "text": "けれども",
+    "startMs": 143109,
+    "endMs": 143903,
+    "lineIndex": 28
+   },
+   {
+    "text": "、鎧を脱",
+    "startMs": 144390,
+    "endMs": 144998,
+    "lineIndex": 28
+   },
+   {
+    "text": "がさなくても",
+    "startMs": 144998,
+    "endMs": 146183,
+    "lineIndex": 28
+   },
+   {
+    "text": "、農薬は落",
+    "startMs": 146637,
+    "endMs": 147369,
+    "lineIndex": 28
+   },
+   {
+    "text": "とせます。",
+    "startMs": 147369,
+    "endMs": 148272,
+    "lineIndex": 28
+   },
+   {
+    "text": "流水で、指",
+    "startMs": 148872,
+    "endMs": 149781,
+    "lineIndex": 29
+   },
+   {
+    "text": "先を使って",
+    "startMs": 150363,
+    "endMs": 151216,
+    "lineIndex": 29
+   },
+   {
+    "text": "、くるく",
+    "startMs": 151216,
+    "endMs": 151977,
+    "lineIndex": 29
+   },
+   {
+    "text": "ると、こす",
+    "startMs": 152502,
+    "endMs": 153311,
+    "lineIndex": 29
+   },
+   {
+    "text": "り洗いをす",
+    "startMs": 153763,
+    "endMs": 154731,
+    "lineIndex": 29
+   },
+   {
+    "text": "る。",
+    "startMs": 154731,
+    "endMs": 155101,
+    "lineIndex": 29
+   },
+   {
+    "text": "それだけで",
+    "startMs": 155701,
+    "endMs": 156647,
+    "lineIndex": 30
+   },
+   {
+    "text": "、表面の農",
+    "startMs": 157098,
+    "endMs": 157918,
+    "lineIndex": 30
+   },
+   {
+    "text": "薬は、かな",
+    "startMs": 157918,
+    "endMs": 158761,
+    "lineIndex": 30
+   },
+   {
+    "text": "り洗い",
+    "startMs": 159271,
+    "endMs": 159716,
+    "lineIndex": 30
+   },
+   {
+    "text": "流せると言",
+    "startMs": 159716,
+    "endMs": 160881,
+    "lineIndex": 30
+   },
+   {
+    "text": "われてい",
+    "startMs": 160881,
+    "endMs": 161431,
+    "lineIndex": 30
+   },
+   {
+    "text": "ます。",
+    "startMs": 161431,
+    "endMs": 161984,
+    "lineIndex": 30
+   },
+   {
+    "text": "塩を少",
+    "startMs": 162584,
+    "endMs": 163263,
+    "lineIndex": 31
+   },
+   {
+    "text": "しつけ",
+    "startMs": 163263,
+    "endMs": 163721,
+    "lineIndex": 31
+   },
+   {
+    "text": "て、こ",
+    "startMs": 163721,
+    "endMs": 164259,
+    "lineIndex": 31
+   },
+   {
+    "text": "すってもい",
+    "startMs": 164736,
+    "endMs": 165497,
+    "lineIndex": 31
+   },
+   {
+    "text": "いですね。",
+    "startMs": 165497,
+    "endMs": 166339,
+    "lineIndex": 31
+   },
+   {
+    "text": "歯や",
+    "startMs": 166939,
+    "endMs": 167558,
+    "lineIndex": 32
+   },
+   {
+    "text": "、あご",
+    "startMs": 168176,
+    "endMs": 168650,
+    "lineIndex": 32
+   },
+   {
+    "text": "の力に自",
+    "startMs": 168650,
+    "endMs": 169242,
+    "lineIndex": 32
+   },
+   {
+    "text": "信がない",
+    "startMs": 169242,
+    "endMs": 169909,
+    "lineIndex": 32
+   },
+   {
+    "text": "方は",
+    "startMs": 169909,
+    "endMs": 170176,
+    "lineIndex": 32
+   },
+   {
+    "text": "、皮を",
+    "startMs": 170176,
+    "endMs": 170791,
+    "lineIndex": 32
+   },
+   {
+    "text": "むいて",
+    "startMs": 171251,
+    "endMs": 171704,
+    "lineIndex": 32
+   },
+   {
+    "text": "も、もち",
+    "startMs": 171704,
+    "endMs": 172431,
+    "lineIndex": 32
+   },
+   {
+    "text": "ろん大丈",
+    "startMs": 172942,
+    "endMs": 173545,
+    "lineIndex": 32
+   },
+   {
+    "text": "夫です。",
+    "startMs": 173545,
+    "endMs": 174619,
+    "lineIndex": 32
+   },
+   {
+    "text": "無理を",
+    "startMs": 175219,
+    "endMs": 175665,
+    "lineIndex": 33
+   },
+   {
+    "text": "して",
+    "startMs": 175665,
+    "endMs": 176071,
+    "lineIndex": 33
+   },
+   {
+    "text": "、鎧ごと食",
+    "startMs": 176579,
+    "endMs": 177311,
+    "lineIndex": 33
+   },
+   {
+    "text": "べる必",
+    "startMs": 177311,
+    "endMs": 177723,
+    "lineIndex": 33
+   },
+   {
+    "text": "要はありません。",
+    "startMs": 177723,
+    "endMs": 179325,
+    "lineIndex": 33
+   },
+   {
+    "text": "すりおろしたり",
+    "startMs": 179925,
+    "endMs": 181112,
+    "lineIndex": 34
+   },
+   {
+    "text": "、煮た",
+    "startMs": 181571,
+    "endMs": 182000,
+    "lineIndex": 34
+   },
+   {
+    "text": "りし",
+    "startMs": 182000,
+    "endMs": 182416,
+    "lineIndex": 34
+   },
+   {
+    "text": "て、食べや",
+    "startMs": 183341,
+    "endMs": 184151,
+    "lineIndex": 34
+   },
+   {
+    "text": "すい形に",
+    "startMs": 184151,
+    "endMs": 184733,
+    "lineIndex": 34
+   },
+   {
+    "text": "変えるだけで",
+    "startMs": 184733,
+    "endMs": 185693,
+    "lineIndex": 34
+   },
+   {
+    "text": "、十分です。",
+    "startMs": 186241,
+    "endMs": 187339,
+    "lineIndex": 34
+   },
+   {
+    "text": "ちなみに",
+    "startMs": 187939,
+    "endMs": 188693,
+    "lineIndex": 35
+   },
+   {
+    "text": "、お店で",
+    "startMs": 189122,
+    "endMs": 189730,
+    "lineIndex": 35
+   },
+   {
+    "text": "売られて",
+    "startMs": 189730,
+    "endMs": 190260,
+    "lineIndex": 35
+   },
+   {
+    "text": "いる",
+    "startMs": 190260,
+    "endMs": 190477,
+    "lineIndex": 35
+   },
+   {
+    "text": "りんごには",
+    "startMs": 190477,
+    "endMs": 191309,
+    "lineIndex": 35
+   },
+   {
+    "text": "、乾燥を防",
+    "startMs": 191755,
+    "endMs": 192449,
+    "lineIndex": 35
+   },
+   {
+    "text": "ぐため",
+    "startMs": 192449,
+    "endMs": 192855,
+    "lineIndex": 35
+   },
+   {
+    "text": "に、食",
+    "startMs": 192855,
+    "endMs": 193390,
+    "lineIndex": 35
+   },
+   {
+    "text": "用のワック",
+    "startMs": 193903,
+    "endMs": 194648,
+    "lineIndex": 35
+   },
+   {
+    "text": "スが、薄く",
+    "startMs": 194648,
+    "endMs": 195554,
+    "lineIndex": 35
+   },
+   {
+    "text": "塗られてい",
+    "startMs": 196060,
+    "endMs": 196987,
+    "lineIndex": 36
+   },
+   {
+    "text": "るこ",
+    "startMs": 196987,
+    "endMs": 197165,
+    "lineIndex": 36
+   },
+   {
+    "text": "ともあ",
+    "startMs": 197165,
+    "endMs": 197616,
+    "lineIndex": 36
+   },
+   {
+    "text": "ります。",
+    "startMs": 197616,
+    "endMs": 198253,
+    "lineIndex": 36
+   },
+   {
+    "text": "これは",
+    "startMs": 198853,
+    "endMs": 199472,
+    "lineIndex": 37
+   },
+   {
+    "text": "、りんご自",
+    "startMs": 199859,
+    "endMs": 200942,
+    "lineIndex": 37
+   },
+   {
+    "text": "身の鎧とは",
+    "startMs": 200942,
+    "endMs": 201632,
+    "lineIndex": 37
+   },
+   {
+    "text": "別に、",
+    "startMs": 201632,
+    "endMs": 202173,
+    "lineIndex": 37
+   },
+   {
+    "text": "人の手",
+    "startMs": 202588,
+    "endMs": 203003,
+    "lineIndex": 37
+   },
+   {
+    "text": "で加",
+    "startMs": 203003,
+    "endMs": 203269,
+    "lineIndex": 37
+   },
+   {
+    "text": "えられたも",
+    "startMs": 203269,
+    "endMs": 204078,
+    "lineIndex": 37
+   },
+   {
+    "text": "のです。",
+    "startMs": 204078,
+    "endMs": 204773,
+    "lineIndex": 37
+   },
+   {
+    "text": "どちらも",
+    "startMs": 205373,
+    "endMs": 206133,
+    "lineIndex": 38
+   },
+   {
+    "text": "、体に害",
+    "startMs": 206665,
+    "endMs": 207211,
+    "lineIndex": 38
+   },
+   {
+    "text": "はない",
+    "startMs": 207211,
+    "endMs": 207638,
+    "lineIndex": 38
+   },
+   {
+    "text": "とされ",
+    "startMs": 207638,
+    "endMs": 208067,
+    "lineIndex": 38
+   },
+   {
+    "text": "ていま",
+    "startMs": 208067,
+    "endMs": 208526,
+    "lineIndex": 38
+   },
+   {
+    "text": "すが、気",
+    "startMs": 208526,
+    "endMs": 209196,
+    "lineIndex": 38
+   },
+   {
+    "text": "にな",
+    "startMs": 209557,
+    "endMs": 209822,
+    "lineIndex": 38
+   },
+   {
+    "text": "る方",
+    "startMs": 209822,
+    "endMs": 210105,
+    "lineIndex": 38
+   },
+   {
+    "text": "は、し",
+    "startMs": 210105,
+    "endMs": 210722,
+    "lineIndex": 38
+   },
+   {
+    "text": "っかり洗",
+    "startMs": 211111,
+    "endMs": 211805,
+    "lineIndex": 38
+   },
+   {
+    "text": "ってから、召",
+    "startMs": 211805,
+    "endMs": 212640,
+    "lineIndex": 38
+   },
+   {
+    "text": "し上がってく",
+    "startMs": 213007,
+    "endMs": 213881,
+    "lineIndex": 39
+   },
+   {
+    "text": "ださいね。",
+    "startMs": 213881,
+    "endMs": 214707,
+    "lineIndex": 39
+   },
+   {
+    "text": "これは",
+    "startMs": 215307,
+    "endMs": 215933,
+    "lineIndex": 40
+   },
+   {
+    "text": "、りんご自",
+    "startMs": 216325,
+    "endMs": 217435,
+    "lineIndex": 40
+   },
+   {
+    "text": "身が",
+    "startMs": 217435,
+    "endMs": 217920,
+    "lineIndex": 40
+   },
+   {
+    "text": "持つ、鎧",
+    "startMs": 218644,
+    "endMs": 219237,
+    "lineIndex": 40
+   },
+   {
+    "text": "の話です。",
+    "startMs": 219237,
+    "endMs": 220160,
+    "lineIndex": 40
+   },
+   {
+    "text": "今日",
+    "startMs": 220760,
+    "endMs": 221359,
+    "lineIndex": 41
+   },
+   {
+    "text": "、一番",
+    "startMs": 221942,
+    "endMs": 222625,
+    "lineIndex": 41
+   },
+   {
+    "text": "お伝え",
+    "startMs": 222625,
+    "endMs": 223239,
+    "lineIndex": 41
+   },
+   {
+    "text": "した",
+    "startMs": 223239,
+    "endMs": 223591,
+    "lineIndex": 41
+   },
+   {
+    "text": "いの",
+    "startMs": 223591,
+    "endMs": 224033,
+    "lineIndex": 41
+   },
+   {
+    "text": "は、",
+    "startMs": 224435,
+    "endMs": 224721,
+    "lineIndex": 41
+   },
+   {
+    "text": "もう一",
+    "startMs": 224721,
+    "endMs": 225279,
+    "lineIndex": 41
+   },
+   {
+    "text": "つの鎧",
+    "startMs": 225279,
+    "endMs": 225830,
+    "lineIndex": 41
+   },
+   {
+    "text": "の話です。",
+    "startMs": 225830,
+    "endMs": 226744,
+    "lineIndex": 41
+   },
+   {
+    "text": "それは、",
+    "startMs": 227344,
+    "endMs": 228079,
+    "lineIndex": 42
+   },
+   {
+    "text": "まだ、",
+    "startMs": 228602,
+    "endMs": 229083,
+    "lineIndex": 42
+   },
+   {
+    "text": "これからです。",
+    "startMs": 229574,
+    "endMs": 230565,
+    "lineIndex": 42
+   },
+   {
+    "text": "皆さん、",
+    "startMs": 231165,
+    "endMs": 231857,
+    "lineIndex": 43
+   },
+   {
+    "text": "こんにちは",
+    "startMs": 232371,
+    "endMs": 233264,
+    "lineIndex": 43
+   },
+   {
+    "text": "。六十代からの",
+    "startMs": 233641,
+    "endMs": 234879,
+    "lineIndex": 43
+   },
+   {
+    "text": "食卓へ、よ",
+    "startMs": 234879,
+    "endMs": 235866,
+    "lineIndex": 43
+   },
+   {
+    "text": "うこそ。",
+    "startMs": 236517,
+    "endMs": 237279,
+    "lineIndex": 43
+   },
+   {
+    "text": "案内人の、み",
+    "startMs": 237725,
+    "endMs": 238796,
+    "lineIndex": 43
+   },
+   {
+    "text": "のりです。",
+    "startMs": 239202,
+    "endMs": 240029,
+    "lineIndex": 43
+   },
+   {
+    "text": "実は、",
+    "startMs": 240629,
+    "endMs": 241313,
+    "lineIndex": 44
+   },
+   {
+    "text": "私も、",
+    "startMs": 241735,
+    "endMs": 242486,
+    "lineIndex": 44
+   },
+   {
+    "text": "何年も、",
+    "startMs": 242991,
+    "endMs": 243914,
+    "lineIndex": 44
+   },
+   {
+    "text": "りんごの",
+    "startMs": 244434,
+    "endMs": 245040,
+    "lineIndex": 44
+   },
+   {
+    "text": "鎧を、す",
+    "startMs": 245040,
+    "endMs": 245695,
+    "lineIndex": 44
+   },
+   {
+    "text": "っかり剥",
+    "startMs": 246163,
+    "endMs": 246821,
+    "lineIndex": 44
+   },
+   {
+    "text": "いで食",
+    "startMs": 246821,
+    "endMs": 247210,
+    "lineIndex": 44
+   },
+   {
+    "text": "べてい",
+    "startMs": 247210,
+    "endMs": 247683,
+    "lineIndex": 44
+   },
+   {
+    "text": "ました。",
+    "startMs": 247683,
+    "endMs": 248277,
+    "lineIndex": 44
+   },
+   {
+    "text": "母がそ",
+    "startMs": 248877,
+    "endMs": 249421,
+    "lineIndex": 45
+   },
+   {
+    "text": "うし",
+    "startMs": 249421,
+    "endMs": 249767,
+    "lineIndex": 45
+   },
+   {
+    "text": "てい",
+    "startMs": 249767,
+    "endMs": 250029,
+    "lineIndex": 45
+   },
+   {
+    "text": "たので、",
+    "startMs": 250029,
+    "endMs": 250652,
+    "lineIndex": 45
+   },
+   {
+    "text": "それが",
+    "startMs": 251155,
+    "endMs": 251692,
+    "lineIndex": 45
+   },
+   {
+    "text": "当たり前だと",
+    "startMs": 251692,
+    "endMs": 252684,
+    "lineIndex": 45
+   },
+   {
+    "text": "思ってい",
+    "startMs": 252684,
+    "endMs": 253217,
+    "lineIndex": 45
+   },
+   {
+    "text": "たん",
+    "startMs": 253217,
+    "endMs": 253513,
+    "lineIndex": 45
+   },
+   {
+    "text": "です。",
+    "startMs": 253513,
+    "endMs": 254051,
+    "lineIndex": 45
+   },
+   {
+    "text": "けれども",
+    "startMs": 254651,
+    "endMs": 255426,
+    "lineIndex": 46
+   },
+   {
+    "text": "、鎧ごと食",
+    "startMs": 255895,
+    "endMs": 256592,
+    "lineIndex": 46
+   },
+   {
+    "text": "べてみ",
+    "startMs": 256592,
+    "endMs": 256989,
+    "lineIndex": 46
+   },
+   {
+    "text": "たら、",
+    "startMs": 256989,
+    "endMs": 257492,
+    "lineIndex": 46
+   },
+   {
+    "text": "シャリッ",
+    "startMs": 257959,
+    "endMs": 258604,
+    "lineIndex": 46
+   },
+   {
+    "text": "とし",
+    "startMs": 258604,
+    "endMs": 258826,
+    "lineIndex": 46
+   },
+   {
+    "text": "た歯ごたえ",
+    "startMs": 258826,
+    "endMs": 259774,
+    "lineIndex": 46
+   },
+   {
+    "text": "が、少",
+    "startMs": 260211,
+    "endMs": 260695,
+    "lineIndex": 46
+   },
+   {
+    "text": "し増え",
+    "startMs": 260695,
+    "endMs": 261276,
+    "lineIndex": 46
+   },
+   {
+    "text": "て、悪くないな、",
+    "startMs": 261792,
+    "endMs": 262690,
+    "lineIndex": 46
+   },
+   {
+    "text": "と",
+    "startMs": 263066,
+    "endMs": 263230,
+    "lineIndex": 47
+   },
+   {
+    "text": "思いました。",
+    "startMs": 263230,
+    "endMs": 264112,
+    "lineIndex": 47
+   },
+   {
+    "text": "母が、り",
+    "startMs": 264712,
+    "endMs": 265458,
+    "lineIndex": 48
+   },
+   {
+    "text": "んごを剥い",
+    "startMs": 265828,
+    "endMs": 266408,
+    "lineIndex": 48
+   },
+   {
+    "text": "ていた、",
+    "startMs": 266408,
+    "endMs": 266821,
+    "lineIndex": 48
+   },
+   {
+    "text": "あの",
+    "startMs": 266821,
+    "endMs": 267244,
+    "lineIndex": 48
+   },
+   {
+    "text": "、シ",
+    "startMs": 267960,
+    "endMs": 268427,
+    "lineIndex": 48
+   },
+   {
+    "text": "ュッシュッと",
+    "startMs": 268876,
+    "endMs": 269715,
+    "lineIndex": 48
+   },
+   {
+    "text": "いう",
+    "startMs": 269715,
+    "endMs": 269961,
+    "lineIndex": 48
+   },
+   {
+    "text": "音。",
+    "startMs": 269961,
+    "endMs": 270376,
+    "lineIndex": 48
+   },
+   {
+    "text": "今でも",
+    "startMs": 270976,
+    "endMs": 271722,
+    "lineIndex": 49
+   },
+   {
+    "text": "、耳の",
+    "startMs": 272189,
+    "endMs": 272659,
+    "lineIndex": 49
+   },
+   {
+    "text": "奥に、",
+    "startMs": 272659,
+    "endMs": 273161,
+    "lineIndex": 49
+   },
+   {
+    "text": "残ってい",
+    "startMs": 273728,
+    "endMs": 274355,
+    "lineIndex": 49
+   },
+   {
+    "text": "ます。",
+    "startMs": 274355,
+    "endMs": 274944,
+    "lineIndex": 49
+   },
+   {
+    "text": "その",
+    "startMs": 275544,
+    "endMs": 275949,
+    "lineIndex": 50
+   },
+   {
+    "text": "前に、",
+    "startMs": 275949,
+    "endMs": 276493,
+    "lineIndex": 50
+   },
+   {
+    "text": "一つだけ教",
+    "startMs": 276883,
+    "endMs": 277613,
+    "lineIndex": 50
+   },
+   {
+    "text": "えてくだ",
+    "startMs": 277613,
+    "endMs": 278211,
+    "lineIndex": 50
+   },
+   {
+    "text": "さい。今",
+    "startMs": 278211,
+    "endMs": 278778,
+    "lineIndex": 50
+   },
+   {
+    "text": "日は、",
+    "startMs": 279293,
+    "endMs": 279914,
+    "lineIndex": 50
+   },
+   {
+    "text": "どちらの",
+    "startMs": 280331,
+    "endMs": 280914,
+    "lineIndex": 50
+   },
+   {
+    "text": "都道府県からご",
+    "startMs": 280914,
+    "endMs": 282037,
+    "lineIndex": 50
+   },
+   {
+    "text": "覧くだ",
+    "startMs": 282037,
+    "endMs": 282426,
+    "lineIndex": 50
+   },
+   {
+    "text": "さっていま",
+    "startMs": 282426,
+    "endMs": 283104,
+    "lineIndex": 50
+   },
+   {
+    "text": "すか。コ",
+    "startMs": 283104,
+    "endMs": 283755,
+    "lineIndex": 50
+   },
+   {
+    "text": "メント欄に、お",
+    "startMs": 284186,
+    "endMs": 285265,
+    "lineIndex": 51
+   },
+   {
+    "text": "住まいの地",
+    "startMs": 285753,
+    "endMs": 286457,
+    "lineIndex": 51
+   },
+   {
+    "text": "域を書い",
+    "startMs": 286457,
+    "endMs": 287087,
+    "lineIndex": 51
+   },
+   {
+    "text": "ていた",
+    "startMs": 287087,
+    "endMs": 287502,
+    "lineIndex": 51
+   },
+   {
+    "text": "だけたら、嬉",
+    "startMs": 287502,
+    "endMs": 288345,
+    "lineIndex": 51
+   },
+   {
+    "text": "しいです。全",
+    "startMs": 288943,
+    "endMs": 290005,
+    "lineIndex": 51
+   },
+   {
+    "text": "て、読",
+    "startMs": 290546,
+    "endMs": 291251,
+    "lineIndex": 52
+   },
+   {
+    "text": "ませてい",
+    "startMs": 291664,
+    "endMs": 292297,
+    "lineIndex": 52
+   },
+   {
+    "text": "ただいてお",
+    "startMs": 292297,
+    "endMs": 292893,
+    "lineIndex": 52
+   },
+   {
+    "text": "ります。",
+    "startMs": 292893,
+    "endMs": 293571,
+    "lineIndex": 52
+   },
+   {
+    "text": "さて",
+    "startMs": 294171,
+    "endMs": 294811,
+    "lineIndex": 53
+   },
+   {
+    "text": "、りんご",
+    "startMs": 295195,
+    "endMs": 295959,
+    "lineIndex": 53
+   },
+   {
+    "text": "は、一日に",
+    "startMs": 296476,
+    "endMs": 297269,
+    "lineIndex": 53
+   },
+   {
+    "text": "何個までが",
+    "startMs": 297269,
+    "endMs": 298151,
+    "lineIndex": 53
+   },
+   {
+    "text": "目安なの",
+    "startMs": 298151,
+    "endMs": 298794,
+    "lineIndex": 53
+   },
+   {
+    "text": "か。",
+    "startMs": 298794,
+    "endMs": 299216,
+    "lineIndex": 53
+   },
+   {
+    "text": "気に",
+    "startMs": 299816,
+    "endMs": 300120,
+    "lineIndex": 54
+   },
+   {
+    "text": "なる",
+    "startMs": 300120,
+    "endMs": 300412,
+    "lineIndex": 54
+   },
+   {
+    "text": "方も、",
+    "startMs": 300412,
+    "endMs": 301074,
+    "lineIndex": 54
+   },
+   {
+    "text": "多いの",
+    "startMs": 301557,
+    "endMs": 301947,
+    "lineIndex": 54
+   },
+   {
+    "text": "ではないでしょうか。",
+    "startMs": 301947,
+    "endMs": 303475,
+    "lineIndex": 54
+   },
+   {
+    "text": "りんご",
+    "startMs": 304075,
+    "endMs": 304539,
+    "lineIndex": 55
+   },
+   {
+    "text": "一個は、",
+    "startMs": 304539,
+    "endMs": 305299,
+    "lineIndex": 55
+   },
+   {
+    "text": "だいたい",
+    "startMs": 305795,
+    "endMs": 306333,
+    "lineIndex": 55
+   },
+   {
+    "text": "二百グラムほどです。",
+    "startMs": 306333,
+    "endMs": 308011,
+    "lineIndex": 55
+   },
+   {
+    "text": "一日一個",
+    "startMs": 308611,
+    "endMs": 309371,
+    "lineIndex": 56
+   },
+   {
+    "text": "から二個く",
+    "startMs": 309371,
+    "endMs": 309974,
+    "lineIndex": 56
+   },
+   {
+    "text": "らいが、無",
+    "startMs": 309974,
+    "endMs": 311005,
+    "lineIndex": 56
+   },
+   {
+    "text": "理な",
+    "startMs": 311431,
+    "endMs": 311683,
+    "lineIndex": 56
+   },
+   {
+    "text": "く続けやすい",
+    "startMs": 311683,
+    "endMs": 312948,
+    "lineIndex": 56
+   },
+   {
+    "text": "量だと言",
+    "startMs": 312948,
+    "endMs": 313508,
+    "lineIndex": 56
+   },
+   {
+    "text": "われてい",
+    "startMs": 313508,
+    "endMs": 314054,
+    "lineIndex": 56
+   },
+   {
+    "text": "ます。",
+    "startMs": 314054,
+    "endMs": 314605,
+    "lineIndex": 56
+   },
+   {
+    "text": "三個、",
+    "startMs": 315205,
+    "endMs": 315904,
+    "lineIndex": 57
+   },
+   {
+    "text": "四個と、",
+    "startMs": 316452,
+    "endMs": 317234,
+    "lineIndex": 57
+   },
+   {
+    "text": "一度に召",
+    "startMs": 317754,
+    "endMs": 318342,
+    "lineIndex": 57
+   },
+   {
+    "text": "し上がると、",
+    "startMs": 318342,
+    "endMs": 319419,
+    "lineIndex": 57
+   },
+   {
+    "text": "糖分もカリ",
+    "startMs": 319919,
+    "endMs": 320580,
+    "lineIndex": 57
+   },
+   {
+    "text": "ウムも、そ",
+    "startMs": 320580,
+    "endMs": 321418,
+    "lineIndex": 57
+   },
+   {
+    "text": "れだけ増",
+    "startMs": 321939,
+    "endMs": 322595,
+    "lineIndex": 57
+   },
+   {
+    "text": "えてし",
+    "startMs": 322595,
+    "endMs": 323038,
+    "lineIndex": 57
+   },
+   {
+    "text": "まいます。",
+    "startMs": 323038,
+    "endMs": 323909,
+    "lineIndex": 57
+   },
+   {
+    "text": "ここで",
+    "startMs": 324509,
+    "endMs": 325083,
+    "lineIndex": 58
+   },
+   {
+    "text": "、少しだ",
+    "startMs": 325600,
+    "endMs": 326549,
+    "lineIndex": 58
+   },
+   {
+    "text": "け、大切な",
+    "startMs": 327118,
+    "endMs": 327752,
+    "lineIndex": 58
+   },
+   {
+    "text": "ことを",
+    "startMs": 327752,
+    "endMs": 328209,
+    "lineIndex": 58
+   },
+   {
+    "text": "お伝えし",
+    "startMs": 328209,
+    "endMs": 328754,
+    "lineIndex": 58
+   },
+   {
+    "text": "ます。",
+    "startMs": 328754,
+    "endMs": 329363,
+    "lineIndex": 58
+   },
+   {
+    "text": "腎臓の治療を",
+    "startMs": 329963,
+    "endMs": 330700,
+    "lineIndex": 59
+   },
+   {
+    "text": "受けて",
+    "startMs": 330700,
+    "endMs": 331301,
+    "lineIndex": 59
+   },
+   {
+    "text": "いる",
+    "startMs": 331301,
+    "endMs": 331711,
+    "lineIndex": 59
+   },
+   {
+    "text": "方は",
+    "startMs": 331711,
+    "endMs": 331938,
+    "lineIndex": 59
+   },
+   {
+    "text": "、カ",
+    "startMs": 331938,
+    "endMs": 332562,
+    "lineIndex": 59
+   },
+   {
+    "text": "リウムの",
+    "startMs": 333018,
+    "endMs": 333697,
+    "lineIndex": 59
+   },
+   {
+    "text": "制限が必",
+    "startMs": 333697,
+    "endMs": 334478,
+    "lineIndex": 59
+   },
+   {
+    "text": "要な場合",
+    "startMs": 334478,
+    "endMs": 335208,
+    "lineIndex": 59
+   },
+   {
+    "text": "があり",
+    "startMs": 335208,
+    "endMs": 335820,
+    "lineIndex": 59
+   },
+   {
+    "text": "ます。",
+    "startMs": 335820,
+    "endMs": 336480,
+    "lineIndex": 59
+   },
+   {
+    "text": "りんごも",
+    "startMs": 337080,
+    "endMs": 337823,
+    "lineIndex": 60
+   },
+   {
+    "text": "、そ",
+    "startMs": 338267,
+    "endMs": 338601,
+    "lineIndex": 60
+   },
+   {
+    "text": "の対象に",
+    "startMs": 338601,
+    "endMs": 339338,
+    "lineIndex": 60
+   },
+   {
+    "text": "入るこ",
+    "startMs": 339338,
+    "endMs": 339732,
+    "lineIndex": 60
+   },
+   {
+    "text": "とがあ",
+    "startMs": 339732,
+    "endMs": 340196,
+    "lineIndex": 60
+   },
+   {
+    "text": "りますので",
+    "startMs": 340196,
+    "endMs": 341121,
+    "lineIndex": 60
+   },
+   {
+    "text": "、必ず、",
+    "startMs": 341582,
+    "endMs": 342247,
+    "lineIndex": 60
+   },
+   {
+    "text": "かかりつけ",
+    "startMs": 342883,
+    "endMs": 343725,
+    "lineIndex": 60
+   },
+   {
+    "text": "の先生に",
+    "startMs": 343725,
+    "endMs": 344499,
+    "lineIndex": 60
+   },
+   {
+    "text": "ご確認く",
+    "startMs": 344499,
+    "endMs": 345220,
+    "lineIndex": 60
+   },
+   {
+    "text": "ださい。",
+    "startMs": 345220,
+    "endMs": 345848,
+    "lineIndex": 60
+   },
+   {
+    "text": "持病のな",
+    "startMs": 346448,
+    "endMs": 347095,
+    "lineIndex": 61
+   },
+   {
+    "text": "い方",
+    "startMs": 347095,
+    "endMs": 347352,
+    "lineIndex": 61
+   },
+   {
+    "text": "にとっ",
+    "startMs": 347352,
+    "endMs": 347776,
+    "lineIndex": 61
+   },
+   {
+    "text": "ては、り",
+    "startMs": 347776,
+    "endMs": 348599,
+    "lineIndex": 61
+   },
+   {
+    "text": "んごのカ",
+    "startMs": 348955,
+    "endMs": 349522,
+    "lineIndex": 61
+   },
+   {
+    "text": "リウムは、",
+    "startMs": 349522,
+    "endMs": 350387,
+    "lineIndex": 61
+   },
+   {
+    "text": "むしろ",
+    "startMs": 350748,
+    "endMs": 351365,
+    "lineIndex": 61
+   },
+   {
+    "text": "、味方に",
+    "startMs": 351673,
+    "endMs": 352227,
+    "lineIndex": 61
+   },
+   {
+    "text": "なって",
+    "startMs": 352227,
+    "endMs": 352586,
+    "lineIndex": 61
+   },
+   {
+    "text": "くれる",
+    "startMs": 352586,
+    "endMs": 352932,
+    "lineIndex": 61
+   },
+   {
+    "text": "ことが",
+    "startMs": 352932,
+    "endMs": 353384,
+    "lineIndex": 61
+   },
+   {
+    "text": "多いです。",
+    "startMs": 353384,
+    "endMs": 354245,
+    "lineIndex": 61
+   },
+   {
+    "text": "塩分を、体",
+    "startMs": 354845,
+    "endMs": 355653,
+    "lineIndex": 62
+   },
+   {
+    "text": "の外に",
+    "startMs": 356200,
+    "endMs": 356746,
+    "lineIndex": 62
+   },
+   {
+    "text": "出す",
+    "startMs": 356746,
+    "endMs": 357172,
+    "lineIndex": 62
+   },
+   {
+    "text": "手伝",
+    "startMs": 357172,
+    "endMs": 357475,
+    "lineIndex": 62
+   },
+   {
+    "text": "いをして",
+    "startMs": 357475,
+    "endMs": 358126,
+    "lineIndex": 62
+   },
+   {
+    "text": "くれ",
+    "startMs": 358126,
+    "endMs": 358357,
+    "lineIndex": 62
+   },
+   {
+    "text": "るとい",
+    "startMs": 358357,
+    "endMs": 358896,
+    "lineIndex": 62
+   },
+   {
+    "text": "う報",
+    "startMs": 358896,
+    "endMs": 359121,
+    "lineIndex": 62
+   },
+   {
+    "text": "告があり",
+    "startMs": 359121,
+    "endMs": 359897,
+    "lineIndex": 62
+   },
+   {
+    "text": "ます。",
+    "startMs": 359897,
+    "endMs": 360563,
+    "lineIndex": 62
+   },
+   {
+    "text": "血圧が気に",
+    "startMs": 361163,
+    "endMs": 361942,
+    "lineIndex": 63
+   },
+   {
+    "text": "なる",
+    "startMs": 361942,
+    "endMs": 362235,
+    "lineIndex": 63
+   },
+   {
+    "text": "、と",
+    "startMs": 362235,
+    "endMs": 362594,
+    "lineIndex": 63
+   },
+   {
+    "text": "い",
+    "startMs": 363305,
+    "endMs": 363448,
+    "lineIndex": 63
+   },
+   {
+    "text": "う方",
+    "startMs": 363448,
+    "endMs": 363681,
+    "lineIndex": 63
+   },
+   {
+    "text": "も多い",
+    "startMs": 363681,
+    "endMs": 364194,
+    "lineIndex": 63
+   },
+   {
+    "text": "のでは",
+    "startMs": 364194,
+    "endMs": 364524,
+    "lineIndex": 63
+   },
+   {
+    "text": "ないでしょうか。",
+    "startMs": 364524,
+    "endMs": 366016,
+    "lineIndex": 63
+   },
+   {
+    "text": "あの",
+    "startMs": 366616,
+    "endMs": 367193,
+    "lineIndex": 64
+   },
+   {
+    "text": "、一日",
+    "startMs": 367717,
+    "endMs": 368471,
+    "lineIndex": 64
+   },
+   {
+    "text": "一個",
+    "startMs": 368471,
+    "endMs": 368946,
+    "lineIndex": 64
+   },
+   {
+    "text": "。スプ",
+    "startMs": 369554,
+    "endMs": 370167,
+    "lineIndex": 64
+   },
+   {
+    "text": "ーン五杯分の",
+    "startMs": 370167,
+    "endMs": 371071,
+    "lineIndex": 64
+   },
+   {
+    "text": "糖分。",
+    "startMs": 371071,
+    "endMs": 371747,
+    "lineIndex": 64
+   },
+   {
+    "text": "それを",
+    "startMs": 372347,
+    "endMs": 373008,
+    "lineIndex": 65
+   },
+   {
+    "text": "、鎧の",
+    "startMs": 373584,
+    "endMs": 374201,
+    "lineIndex": 65
+   },
+   {
+    "text": "ある",
+    "startMs": 374201,
+    "endMs": 374417,
+    "lineIndex": 65
+   },
+   {
+    "text": "まま",
+    "startMs": 374417,
+    "endMs": 374871,
+    "lineIndex": 65
+   },
+   {
+    "text": "、正しい",
+    "startMs": 375439,
+    "endMs": 376097,
+    "lineIndex": 65
+   },
+   {
+    "text": "量で食",
+    "startMs": 376097,
+    "endMs": 376468,
+    "lineIndex": 65
+   },
+   {
+    "text": "べる。",
+    "startMs": 376468,
+    "endMs": 376944,
+    "lineIndex": 65
+   },
+   {
+    "text": "一万回の坂",
+    "startMs": 377544,
+    "endMs": 378558,
+    "lineIndex": 66
+   },
+   {
+    "text": "道は、こう",
+    "startMs": 378558,
+    "endMs": 379523,
+    "lineIndex": 66
+   },
+   {
+    "text": "して、少",
+    "startMs": 379978,
+    "endMs": 380618,
+    "lineIndex": 66
+   },
+   {
+    "text": "しずつ、な",
+    "startMs": 381049,
+    "endMs": 381924,
+    "lineIndex": 66
+   },
+   {
+    "text": "だらかにな",
+    "startMs": 382640,
+    "endMs": 383357,
+    "lineIndex": 66
+   },
+   {
+    "text": "ってい",
+    "startMs": 383357,
+    "endMs": 383743,
+    "lineIndex": 66
+   },
+   {
+    "text": "きます。",
+    "startMs": 383743,
+    "endMs": 384456,
+    "lineIndex": 66
+   },
+   {
+    "text": "例えば、",
+    "startMs": 385056,
+    "endMs": 385871,
+    "lineIndex": 67
+   },
+   {
+    "text": "こんな",
+    "startMs": 386351,
+    "endMs": 386770,
+    "lineIndex": 67
+   },
+   {
+    "text": "方がい",
+    "startMs": 386770,
+    "endMs": 387241,
+    "lineIndex": 67
+   },
+   {
+    "text": "らっしゃるとし",
+    "startMs": 387241,
+    "endMs": 388045,
+    "lineIndex": 67
+   },
+   {
+    "text": "ます。",
+    "startMs": 388045,
+    "endMs": 388651,
+    "lineIndex": 67
+   },
+   {
+    "text": "静岡県にお住",
+    "startMs": 389251,
+    "endMs": 390481,
+    "lineIndex": 68
+   },
+   {
+    "text": "まいの、",
+    "startMs": 390481,
+    "endMs": 391348,
+    "lineIndex": 68
+   },
+   {
+    "text": "六十七",
+    "startMs": 391779,
+    "endMs": 392381,
+    "lineIndex": 68
+   },
+   {
+    "text": "歳の女性",
+    "startMs": 392381,
+    "endMs": 393125,
+    "lineIndex": 68
+   },
+   {
+    "text": "、道",
+    "startMs": 393125,
+    "endMs": 393830,
+    "lineIndex": 68
+   },
+   {
+    "text": "子さんです。",
+    "startMs": 394313,
+    "endMs": 395512,
+    "lineIndex": 68
+   },
+   {
+    "text": "元は、",
+    "startMs": 396112,
+    "endMs": 396800,
+    "lineIndex": 69
+   },
+   {
+    "text": "学校の事",
+    "startMs": 397672,
+    "endMs": 398554,
+    "lineIndex": 69
+   },
+   {
+    "text": "務員をな",
+    "startMs": 398554,
+    "endMs": 399251,
+    "lineIndex": 69
+   },
+   {
+    "text": "さってい",
+    "startMs": 399251,
+    "endMs": 399867,
+    "lineIndex": 69
+   },
+   {
+    "text": "ました。",
+    "startMs": 399867,
+    "endMs": 400485,
+    "lineIndex": 69
+   },
+   {
+    "text": "何年も、り",
+    "startMs": 401085,
+    "endMs": 402033,
+    "lineIndex": 70
+   },
+   {
+    "text": "んごの鎧",
+    "startMs": 402548,
+    "endMs": 403150,
+    "lineIndex": 70
+   },
+   {
+    "text": "を剥いで",
+    "startMs": 403150,
+    "endMs": 403693,
+    "lineIndex": 70
+   },
+   {
+    "text": "、薄く",
+    "startMs": 403693,
+    "endMs": 404311,
+    "lineIndex": 70
+   },
+   {
+    "text": "切って、お",
+    "startMs": 405068,
+    "endMs": 406072,
+    "lineIndex": 70
+   },
+   {
+    "text": "皿に並べ",
+    "startMs": 406754,
+    "endMs": 407312,
+    "lineIndex": 70
+   },
+   {
+    "text": "て出す。",
+    "startMs": 407312,
+    "endMs": 407849,
+    "lineIndex": 70
+   },
+   {
+    "text": "それ",
+    "startMs": 407849,
+    "endMs": 408277,
+    "lineIndex": 70
+   },
+   {
+    "text": "が、道",
+    "startMs": 408890,
+    "endMs": 409589,
+    "lineIndex": 70
+   },
+   {
+    "text": "子さんのや",
+    "startMs": 410004,
+    "endMs": 410858,
+    "lineIndex": 70
+   },
+   {
+    "text": "り方でした。",
+    "startMs": 410858,
+    "endMs": 411944,
+    "lineIndex": 70
+   },
+   {
+    "text": "台所に、",
+    "startMs": 412544,
+    "endMs": 413464,
+    "lineIndex": 71
+   },
+   {
+    "text": "りんごの",
+    "startMs": 413841,
+    "endMs": 414452,
+    "lineIndex": 71
+   },
+   {
+    "text": "甘い香",
+    "startMs": 414452,
+    "endMs": 414817,
+    "lineIndex": 71
+   },
+   {
+    "text": "りが漂う",
+    "startMs": 414817,
+    "endMs": 415388,
+    "lineIndex": 71
+   },
+   {
+    "text": "時間も、",
+    "startMs": 415388,
+    "endMs": 415956,
+    "lineIndex": 71
+   },
+   {
+    "text": "道子さん",
+    "startMs": 415956,
+    "endMs": 416729,
+    "lineIndex": 71
+   },
+   {
+    "text": "は、好き",
+    "startMs": 417173,
+    "endMs": 418249,
+    "lineIndex": 71
+   },
+   {
+    "text": "だったそ",
+    "startMs": 418652,
+    "endMs": 419304,
+    "lineIndex": 71
+   },
+   {
+    "text": "うです。",
+    "startMs": 419304,
+    "endMs": 420043,
+    "lineIndex": 71
+   },
+   {
+    "text": "ある",
+    "startMs": 420643,
+    "endMs": 420913,
+    "lineIndex": 72
+   },
+   {
+    "text": "日",
+    "startMs": 420913,
+    "endMs": 421178,
+    "lineIndex": 72
+   },
+   {
+    "text": "、健康",
+    "startMs": 421901,
+    "endMs": 422454,
+    "lineIndex": 72
+   },
+   {
+    "text": "診断で、",
+    "startMs": 422454,
+    "endMs": 423308,
+    "lineIndex": 72
+   },
+   {
+    "text": "去年より",
+    "startMs": 423845,
+    "endMs": 424622,
+    "lineIndex": 72
+   },
+   {
+    "text": "数字が少",
+    "startMs": 424622,
+    "endMs": 425257,
+    "lineIndex": 72
+   },
+   {
+    "text": "し上が",
+    "startMs": 425257,
+    "endMs": 425778,
+    "lineIndex": 72
+   },
+   {
+    "text": "っている",
+    "startMs": 425778,
+    "endMs": 426291,
+    "lineIndex": 72
+   },
+   {
+    "text": "こと",
+    "startMs": 426291,
+    "endMs": 426491,
+    "lineIndex": 72
+   },
+   {
+    "text": "に気づ",
+    "startMs": 426491,
+    "endMs": 426906,
+    "lineIndex": 72
+   },
+   {
+    "text": "きます。",
+    "startMs": 426906,
+    "endMs": 427789,
+    "lineIndex": 72
+   },
+   {
+    "text": "「年だから",
+    "startMs": 428389,
+    "endMs": 429140,
+    "lineIndex": 73
+   },
+   {
+    "text": "仕方ないの",
+    "startMs": 429140,
+    "endMs": 429800,
+    "lineIndex": 73
+   },
+   {
+    "text": "かしら」",
+    "startMs": 429800,
+    "endMs": 430565,
+    "lineIndex": 73
+   },
+   {
+    "text": "そう",
+    "startMs": 431165,
+    "endMs": 431598,
+    "lineIndex": 74
+   },
+   {
+    "text": "思いながら",
+    "startMs": 431598,
+    "endMs": 432682,
+    "lineIndex": 74
+   },
+   {
+    "text": "も、鎧ごと",
+    "startMs": 433214,
+    "endMs": 433924,
+    "lineIndex": 74
+   },
+   {
+    "text": "食べる",
+    "startMs": 433924,
+    "endMs": 434433,
+    "lineIndex": 74
+   },
+   {
+    "text": "、",
+    "startMs": 435117,
+    "endMs": 435253,
+    "lineIndex": 74
+   },
+   {
+    "text": "とい",
+    "startMs": 435253,
+    "endMs": 435494,
+    "lineIndex": 74
+   },
+   {
+    "text": "う話を聞",
+    "startMs": 435494,
+    "endMs": 436160,
+    "lineIndex": 74
+   },
+   {
+    "text": "いて、",
+    "startMs": 436160,
+    "endMs": 436781,
+    "lineIndex": 74
+   },
+   {
+    "text": "試してみ",
+    "startMs": 437430,
+    "endMs": 438031,
+    "lineIndex": 74
+   },
+   {
+    "text": "るこ",
+    "startMs": 438031,
+    "endMs": 438261,
+    "lineIndex": 74
+   },
+   {
+    "text": "とにし",
+    "startMs": 438261,
+    "endMs": 438678,
+    "lineIndex": 74
+   },
+   {
+    "text": "ました。",
+    "startMs": 438678,
+    "endMs": 439347,
+    "lineIndex": 74
+   },
+   {
+    "text": "最初は",
+    "startMs": 439947,
+    "endMs": 440844,
+    "lineIndex": 75
+   },
+   {
+    "text": "、皮の",
+    "startMs": 441360,
+    "endMs": 441840,
+    "lineIndex": 75
+   },
+   {
+    "text": "食感に慣",
+    "startMs": 441840,
+    "endMs": 442570,
+    "lineIndex": 75
+   },
+   {
+    "text": "れず、",
+    "startMs": 442570,
+    "endMs": 443110,
+    "lineIndex": 75
+   },
+   {
+    "text": "少し戸",
+    "startMs": 443773,
+    "endMs": 444247,
+    "lineIndex": 75
+   },
+   {
+    "text": "惑ったそ",
+    "startMs": 444247,
+    "endMs": 444919,
+    "lineIndex": 75
+   },
+   {
+    "text": "うです。",
+    "startMs": 444919,
+    "endMs": 445664,
+    "lineIndex": 75
+   },
+   {
+    "text": "けれども",
+    "startMs": 446264,
+    "endMs": 447050,
+    "lineIndex": 76
+   },
+   {
+    "text": "、二週間ほど続ける",
+    "startMs": 447492,
+    "endMs": 448585,
+    "lineIndex": 76
+   },
+   {
+    "text": "うちに、",
+    "startMs": 448585,
+    "endMs": 449181,
+    "lineIndex": 76
+   },
+   {
+    "text": "シャリ",
+    "startMs": 449181,
+    "endMs": 449692,
+    "lineIndex": 76
+   },
+   {
+    "text": "ッとした",
+    "startMs": 450329,
+    "endMs": 451000,
+    "lineIndex": 76
+   },
+   {
+    "text": "歯ご",
+    "startMs": 451000,
+    "endMs": 451224,
+    "lineIndex": 76
+   },
+   {
+    "text": "たえが、む",
+    "startMs": 451224,
+    "endMs": 452213,
+    "lineIndex": 76
+   },
+   {
+    "text": "しろ気",
+    "startMs": 452568,
+    "endMs": 453018,
+    "lineIndex": 76
+   },
+   {
+    "text": "に入るよ",
+    "startMs": 453018,
+    "endMs": 453564,
+    "lineIndex": 76
+   },
+   {
+    "text": "うにな",
+    "startMs": 453564,
+    "endMs": 453964,
+    "lineIndex": 76
+   },
+   {
+    "text": "りました。",
+    "startMs": 453964,
+    "endMs": 454723,
+    "lineIndex": 76
+   },
+   {
+    "text": "孫の一",
+    "startMs": 455323,
+    "endMs": 455811,
+    "lineIndex": 77
+   },
+   {
+    "text": "人が、「",
+    "startMs": 455811,
+    "endMs": 456477,
+    "lineIndex": 77
+   },
+   {
+    "text": "おばあちゃんのりん",
+    "startMs": 456915,
+    "endMs": 457742,
+    "lineIndex": 77
+   },
+   {
+    "text": "ご、な",
+    "startMs": 457742,
+    "endMs": 458274,
+    "lineIndex": 77
+   },
+   {
+    "text": "んかカ",
+    "startMs": 458745,
+    "endMs": 459160,
+    "lineIndex": 77
+   },
+   {
+    "text": "リカリし",
+    "startMs": 459160,
+    "endMs": 459696,
+    "lineIndex": 77
+   },
+   {
+    "text": "てる」",
+    "startMs": 459696,
+    "endMs": 460215,
+    "lineIndex": 77
+   },
+   {
+    "text": "と",
+    "startMs": 460778,
+    "endMs": 460908,
+    "lineIndex": 77
+   },
+   {
+    "text": "言って",
+    "startMs": 460908,
+    "endMs": 461483,
+    "lineIndex": 77
+   },
+   {
+    "text": "、喜んで食",
+    "startMs": 462019,
+    "endMs": 462764,
+    "lineIndex": 77
+   },
+   {
+    "text": "べたそ",
+    "startMs": 462764,
+    "endMs": 463192,
+    "lineIndex": 77
+   },
+   {
+    "text": "うです。",
+    "startMs": 463192,
+    "endMs": 463931,
+    "lineIndex": 77
+   },
+   {
+    "text": "三ヶ月後の診",
+    "startMs": 464531,
+    "endMs": 465685,
+    "lineIndex": 78
+   },
+   {
+    "text": "察で、先生",
+    "startMs": 465685,
+    "endMs": 466593,
+    "lineIndex": 78
+   },
+   {
+    "text": "から、「前よ",
+    "startMs": 467050,
+    "endMs": 468080,
+    "lineIndex": 78
+   },
+   {
+    "text": "り、少し",
+    "startMs": 468591,
+    "endMs": 469258,
+    "lineIndex": 78
+   },
+   {
+    "text": "いいで",
+    "startMs": 469821,
+    "endMs": 470383,
+    "lineIndex": 78
+   },
+   {
+    "text": "すね」と言",
+    "startMs": 470383,
+    "endMs": 471175,
+    "lineIndex": 78
+   },
+   {
+    "text": "わ",
+    "startMs": 471583,
+    "endMs": 471736,
+    "lineIndex": 78
+   },
+   {
+    "text": "れ、道",
+    "startMs": 471736,
+    "endMs": 472282,
+    "lineIndex": 78
+   },
+   {
+    "text": "子さんは、こ",
+    "startMs": 472689,
+    "endMs": 473729,
+    "lineIndex": 79
+   },
+   {
+    "text": "っそり嬉",
+    "startMs": 474134,
+    "endMs": 474754,
+    "lineIndex": 79
+   },
+   {
+    "text": "しくなったそ",
+    "startMs": 474754,
+    "endMs": 475654,
+    "lineIndex": 79
+   },
+   {
+    "text": "うです。",
+    "startMs": 475654,
+    "endMs": 476381,
+    "lineIndex": 79
+   },
+   {
+    "text": "診察室を出",
+    "startMs": 476981,
+    "endMs": 478188,
+    "lineIndex": 80
+   },
+   {
+    "text": "たあ",
+    "startMs": 478188,
+    "endMs": 478519,
+    "lineIndex": 80
+   },
+   {
+    "text": "と、",
+    "startMs": 478519,
+    "endMs": 478960,
+    "lineIndex": 80
+   },
+   {
+    "text": "待合室の椅",
+    "startMs": 479553,
+    "endMs": 480639,
+    "lineIndex": 80
+   },
+   {
+    "text": "子に、",
+    "startMs": 480639,
+    "endMs": 481175,
+    "lineIndex": 80
+   },
+   {
+    "text": "しばらく",
+    "startMs": 481645,
+    "endMs": 482316,
+    "lineIndex": 80
+   },
+   {
+    "text": "座ってい",
+    "startMs": 482316,
+    "endMs": 482864,
+    "lineIndex": 80
+   },
+   {
+    "text": "たそ",
+    "startMs": 482864,
+    "endMs": 483120,
+    "lineIndex": 80
+   },
+   {
+    "text": "うです。",
+    "startMs": 483120,
+    "endMs": 483861,
+    "lineIndex": 80
+   },
+   {
+    "text": "「自分",
+    "startMs": 484461,
+    "endMs": 485089,
+    "lineIndex": 81
+   },
+   {
+    "text": "の体は",
+    "startMs": 485089,
+    "endMs": 485795,
+    "lineIndex": 81
+   },
+   {
+    "text": "、ま",
+    "startMs": 486219,
+    "endMs": 486527,
+    "lineIndex": 81
+   },
+   {
+    "text": "だ自分で",
+    "startMs": 486527,
+    "endMs": 487106,
+    "lineIndex": 81
+   },
+   {
+    "text": "守れるん",
+    "startMs": 487106,
+    "endMs": 487659,
+    "lineIndex": 81
+   },
+   {
+    "text": "だな、",
+    "startMs": 487659,
+    "endMs": 488242,
+    "lineIndex": 81
+   },
+   {
+    "text": "って",
+    "startMs": 488932,
+    "endMs": 489169,
+    "lineIndex": 81
+   },
+   {
+    "text": "思えたん",
+    "startMs": 489169,
+    "endMs": 489790,
+    "lineIndex": 81
+   },
+   {
+    "text": "です」",
+    "startMs": 489790,
+    "endMs": 490328,
+    "lineIndex": 81
+   },
+   {
+    "text": "そう",
+    "startMs": 490928,
+    "endMs": 491672,
+    "lineIndex": 82
+   },
+   {
+    "text": "、道子さんは",
+    "startMs": 492179,
+    "endMs": 493326,
+    "lineIndex": 82
+   },
+   {
+    "text": "、静かに",
+    "startMs": 493718,
+    "endMs": 494372,
+    "lineIndex": 82
+   },
+   {
+    "text": "話してく",
+    "startMs": 494372,
+    "endMs": 494942,
+    "lineIndex": 82
+   },
+   {
+    "text": "れました。",
+    "startMs": 494942,
+    "endMs": 495696,
+    "lineIndex": 82
+   },
+   {
+    "text": "ここまでの",
+    "startMs": 496296,
+    "endMs": 497010,
+    "lineIndex": 83
+   },
+   {
+    "text": "お話が、お",
+    "startMs": 497010,
+    "endMs": 497892,
+    "lineIndex": 83
+   },
+   {
+    "text": "役に立っているよ",
+    "startMs": 498299,
+    "endMs": 499226,
+    "lineIndex": 83
+   },
+   {
+    "text": "うで",
+    "startMs": 499226,
+    "endMs": 499452,
+    "lineIndex": 83
+   },
+   {
+    "text": "したら、コメ",
+    "startMs": 499452,
+    "endMs": 500381,
+    "lineIndex": 83
+   },
+   {
+    "text": "ント欄に、数字",
+    "startMs": 500777,
+    "endMs": 501867,
+    "lineIndex": 83
+   },
+   {
+    "text": "の「に」",
+    "startMs": 502270,
+    "endMs": 503045,
+    "lineIndex": 83
+   },
+   {
+    "text": "を",
+    "startMs": 503880,
+    "endMs": 504089,
+    "lineIndex": 84
+   },
+   {
+    "text": "書",
+    "startMs": 504618,
+    "endMs": 504744,
+    "lineIndex": 84
+   },
+   {
+    "text": "いてい",
+    "startMs": 504744,
+    "endMs": 505116,
+    "lineIndex": 84
+   },
+   {
+    "text": "ただけますか。",
+    "startMs": 505116,
+    "endMs": 506152,
+    "lineIndex": 84
+   },
+   {
+    "text": "ここまで",
+    "startMs": 506752,
+    "endMs": 507303,
+    "lineIndex": 85
+   },
+   {
+    "text": "聞いて",
+    "startMs": 507303,
+    "endMs": 507715,
+    "lineIndex": 85
+   },
+   {
+    "text": "くださっ",
+    "startMs": 507715,
+    "endMs": 508489,
+    "lineIndex": 85
+   },
+   {
+    "text": "て、ありが",
+    "startMs": 509086,
+    "endMs": 509821,
+    "lineIndex": 85
+   },
+   {
+    "text": "とうござい",
+    "startMs": 509821,
+    "endMs": 510660,
+    "lineIndex": 85
+   },
+   {
+    "text": "ます。",
+    "startMs": 511195,
+    "endMs": 511631,
+    "lineIndex": 85
+   },
+   {
+    "text": "今日のお話",
+    "startMs": 511631,
+    "endMs": 512380,
+    "lineIndex": 85
+   },
+   {
+    "text": "が良さそう",
+    "startMs": 512380,
+    "endMs": 513318,
+    "lineIndex": 85
+   },
+   {
+    "text": "だと思っ",
+    "startMs": 513318,
+    "endMs": 513798,
+    "lineIndex": 85
+   },
+   {
+    "text": "てくださっ",
+    "startMs": 513798,
+    "endMs": 514750,
+    "lineIndex": 85
+   },
+   {
+    "text": "たら、良",
+    "startMs": 515159,
+    "endMs": 515926,
+    "lineIndex": 86
+   },
+   {
+    "text": "いね",
+    "startMs": 516395,
+    "endMs": 516667,
+    "lineIndex": 86
+   },
+   {
+    "text": "と、この",
+    "startMs": 516667,
+    "endMs": 517195,
+    "lineIndex": 86
+   },
+   {
+    "text": "動画を離",
+    "startMs": 517195,
+    "endMs": 517756,
+    "lineIndex": 86
+   },
+   {
+    "text": "れて暮",
+    "startMs": 517756,
+    "endMs": 518193,
+    "lineIndex": 86
+   },
+   {
+    "text": "らすご家族",
+    "startMs": 518193,
+    "endMs": 518948,
+    "lineIndex": 86
+   },
+   {
+    "text": "やお友達に",
+    "startMs": 518948,
+    "endMs": 520051,
+    "lineIndex": 86
+   },
+   {
+    "text": "も、そ",
+    "startMs": 520456,
+    "endMs": 520905,
+    "lineIndex": 86
+   },
+   {
+    "text": "っと分",
+    "startMs": 520905,
+    "endMs": 521363,
+    "lineIndex": 86
+   },
+   {
+    "text": "けてあ",
+    "startMs": 521363,
+    "endMs": 521732,
+    "lineIndex": 86
+   },
+   {
+    "text": "げてくだ",
+    "startMs": 521732,
+    "endMs": 522284,
+    "lineIndex": 86
+   },
+   {
+    "text": "さい。",
+    "startMs": 522811,
+    "endMs": 523450,
+    "lineIndex": 86
+   },
+   {
+    "text": "そして、",
+    "startMs": 523793,
+    "endMs": 524339,
+    "lineIndex": 87
+   },
+   {
+    "text": "気づい",
+    "startMs": 524339,
+    "endMs": 524758,
+    "lineIndex": 87
+   },
+   {
+    "text": "たことやご",
+    "startMs": 524758,
+    "endMs": 525674,
+    "lineIndex": 87
+   },
+   {
+    "text": "感想が",
+    "startMs": 525674,
+    "endMs": 526206,
+    "lineIndex": 87
+   },
+   {
+    "text": "あれば",
+    "startMs": 526612,
+    "endMs": 527013,
+    "lineIndex": 87
+   },
+   {
+    "text": "、どうぞコ",
+    "startMs": 527013,
+    "endMs": 527716,
+    "lineIndex": 87
+   },
+   {
+    "text": "メントで",
+    "startMs": 527716,
+    "endMs": 528309,
+    "lineIndex": 87
+   },
+   {
+    "text": "教えてくだ",
+    "startMs": 528309,
+    "endMs": 529193,
+    "lineIndex": 87
+   },
+   {
+    "text": "さいね。皆",
+    "startMs": 529575,
+    "endMs": 530348,
+    "lineIndex": 87
+   },
+   {
+    "text": "さんの",
+    "startMs": 530348,
+    "endMs": 530804,
+    "lineIndex": 87
+   },
+   {
+    "text": "声を励み",
+    "startMs": 530804,
+    "endMs": 531536,
+    "lineIndex": 87
+   },
+   {
+    "text": "に、も",
+    "startMs": 532005,
+    "endMs": 532450,
+    "lineIndex": 88
+   },
+   {
+    "text": "っと",
+    "startMs": 532450,
+    "endMs": 532726,
+    "lineIndex": 88
+   },
+   {
+    "text": "良いお話を",
+    "startMs": 532726,
+    "endMs": 533515,
+    "lineIndex": 88
+   },
+   {
+    "text": "お届けし",
+    "startMs": 533515,
+    "endMs": 534052,
+    "lineIndex": 88
+   },
+   {
+    "text": "てい",
+    "startMs": 534052,
+    "endMs": 534311,
+    "lineIndex": 88
+   },
+   {
+    "text": "きます。",
+    "startMs": 534311,
+    "endMs": 534976,
+    "lineIndex": 88
+   },
+   {
+    "text": "さて",
+    "startMs": 535576,
+    "endMs": 536180,
+    "lineIndex": 89
+   },
+   {
+    "text": "、皮の",
+    "startMs": 536771,
+    "endMs": 537241,
+    "lineIndex": 89
+   },
+   {
+    "text": "ことも",
+    "startMs": 537241,
+    "endMs": 537829,
+    "lineIndex": 89
+   },
+   {
+    "text": "、量の",
+    "startMs": 538250,
+    "endMs": 538669,
+    "lineIndex": 89
+   },
+   {
+    "text": "ことも",
+    "startMs": 538669,
+    "endMs": 539268,
+    "lineIndex": 89
+   },
+   {
+    "text": "、大切なお",
+    "startMs": 539785,
+    "endMs": 540440,
+    "lineIndex": 89
+   },
+   {
+    "text": "話でした。",
+    "startMs": 540440,
+    "endMs": 541571,
+    "lineIndex": 89
+   },
+   {
+    "text": "けれども",
+    "startMs": 542171,
+    "endMs": 542938,
+    "lineIndex": 90
+   },
+   {
+    "text": "、今",
+    "startMs": 543490,
+    "endMs": 543993,
+    "lineIndex": 90
+   },
+   {
+    "text": "日、一番",
+    "startMs": 544579,
+    "endMs": 545253,
+    "lineIndex": 90
+   },
+   {
+    "text": "お伝えし",
+    "startMs": 545253,
+    "endMs": 545862,
+    "lineIndex": 90
+   },
+   {
+    "text": "たかったこと",
+    "startMs": 545862,
+    "endMs": 546468,
+    "lineIndex": 90
+   },
+   {
+    "text": "は、ま",
+    "startMs": 546468,
+    "endMs": 547037,
+    "lineIndex": 90
+   },
+   {
+    "text": "だ、",
+    "startMs": 547518,
+    "endMs": 548002,
+    "lineIndex": 90
+   },
+   {
+    "text": "お話しし",
+    "startMs": 548618,
+    "endMs": 549283,
+    "lineIndex": 90
+   },
+   {
+    "text": "てい",
+    "startMs": 549283,
+    "endMs": 549580,
+    "lineIndex": 90
+   },
+   {
+    "text": "ません。",
+    "startMs": 549580,
+    "endMs": 550277,
+    "lineIndex": 90
+   },
+   {
+    "text": "あの",
+    "startMs": 550877,
+    "endMs": 551456,
+    "lineIndex": 91
+   },
+   {
+    "text": "、一万回の坂道",
+    "startMs": 551961,
+    "endMs": 552980,
+    "lineIndex": 91
+   },
+   {
+    "text": "を、覚え",
+    "startMs": 552980,
+    "endMs": 553961,
+    "lineIndex": 91
+   },
+   {
+    "text": "ていま",
+    "startMs": 554369,
+    "endMs": 554924,
+    "lineIndex": 91
+   },
+   {
+    "text": "すか。",
+    "startMs": 554924,
+    "endMs": 555581,
+    "lineIndex": 91
+   },
+   {
+    "text": "急な坂",
+    "startMs": 556181,
+    "endMs": 556711,
+    "lineIndex": 92
+   },
+   {
+    "text": "か、な",
+    "startMs": 556711,
+    "endMs": 557304,
+    "lineIndex": 92
+   },
+   {
+    "text": "だらかな坂か",
+    "startMs": 557780,
+    "endMs": 558474,
+    "lineIndex": 92
+   },
+   {
+    "text": "。それ",
+    "startMs": 558474,
+    "endMs": 559088,
+    "lineIndex": 92
+   },
+   {
+    "text": "を決め",
+    "startMs": 559524,
+    "endMs": 559994,
+    "lineIndex": 92
+   },
+   {
+    "text": "ている",
+    "startMs": 559994,
+    "endMs": 560484,
+    "lineIndex": 92
+   },
+   {
+    "text": "のは",
+    "startMs": 560484,
+    "endMs": 560672,
+    "lineIndex": 92
+   },
+   {
+    "text": "、り",
+    "startMs": 560672,
+    "endMs": 561090,
+    "lineIndex": 92
+   },
+   {
+    "text": "んごの「",
+    "startMs": 561449,
+    "endMs": 562183,
+    "lineIndex": 92
+   },
+   {
+    "text": "鎧」で",
+    "startMs": 562671,
+    "endMs": 563301,
+    "lineIndex": 92
+   },
+   {
+    "text": "す。",
+    "startMs": 564471,
+    "endMs": 565077,
+    "lineIndex": 92
+   },
+   {
+    "text": "皮とい",
+    "startMs": 565677,
+    "endMs": 566282,
+    "lineIndex": 93
+   },
+   {
+    "text": "う、",
+    "startMs": 566282,
+    "endMs": 566714,
+    "lineIndex": 93
+   },
+   {
+    "text": "りんご自身",
+    "startMs": 567220,
+    "endMs": 568354,
+    "lineIndex": 93
+   },
+   {
+    "text": "の鎧。",
+    "startMs": 568354,
+    "endMs": 568856,
+    "lineIndex": 93
+   },
+   {
+    "text": "そして",
+    "startMs": 569456,
+    "endMs": 570164,
+    "lineIndex": 94
+   },
+   {
+    "text": "、も",
+    "startMs": 570587,
+    "endMs": 570867,
+    "lineIndex": 94
+   },
+   {
+    "text": "う一つ",
+    "startMs": 570867,
+    "endMs": 571479,
+    "lineIndex": 94
+   },
+   {
+    "text": "、皆さんが",
+    "startMs": 572051,
+    "endMs": 572880,
+    "lineIndex": 94
+   },
+   {
+    "text": "着せて",
+    "startMs": 572880,
+    "endMs": 573348,
+    "lineIndex": 94
+   },
+   {
+    "text": "あげる",
+    "startMs": 573348,
+    "endMs": 573838,
+    "lineIndex": 94
+   },
+   {
+    "text": "、鎧があ",
+    "startMs": 574520,
+    "endMs": 575149,
+    "lineIndex": 94
+   },
+   {
+    "text": "ります。",
+    "startMs": 575149,
+    "endMs": 575803,
+    "lineIndex": 94
+   },
+   {
+    "text": "りんごを",
+    "startMs": 577003,
+    "endMs": 577715,
+    "lineIndex": 95
+   },
+   {
+    "text": "、一人ぼっちにし",
+    "startMs": 578136,
+    "endMs": 579226,
+    "lineIndex": 95
+   },
+   {
+    "text": "ないこ",
+    "startMs": 579226,
+    "endMs": 579651,
+    "lineIndex": 95
+   },
+   {
+    "text": "と。",
+    "startMs": 579651,
+    "endMs": 580107,
+    "lineIndex": 95
+   },
+   {
+    "text": "これが",
+    "startMs": 581107,
+    "endMs": 581727,
+    "lineIndex": 96
+   },
+   {
+    "text": "、そ",
+    "startMs": 582311,
+    "endMs": 582862,
+    "lineIndex": 96
+   },
+   {
+    "text": "の、",
+    "startMs": 583302,
+    "endMs": 583602,
+    "lineIndex": 96
+   },
+   {
+    "text": "もう一つ",
+    "startMs": 583602,
+    "endMs": 584167,
+    "lineIndex": 96
+   },
+   {
+    "text": "の鎧です。",
+    "startMs": 584167,
+    "endMs": 585064,
+    "lineIndex": 96
+   },
+   {
+    "text": "朝、",
+    "startMs": 585664,
+    "endMs": 586225,
+    "lineIndex": 97
+   },
+   {
+    "text": "何も食",
+    "startMs": 586883,
+    "endMs": 587326,
+    "lineIndex": 97
+   },
+   {
+    "text": "べてい",
+    "startMs": 587326,
+    "endMs": 587785,
+    "lineIndex": 97
+   },
+   {
+    "text": "ない胃",
+    "startMs": 587785,
+    "endMs": 588190,
+    "lineIndex": 97
+   },
+   {
+    "text": "に、",
+    "startMs": 588190,
+    "endMs": 588594,
+    "lineIndex": 97
+   },
+   {
+    "text": "りんごだけを、ぽ",
+    "startMs": 589028,
+    "endMs": 590061,
+    "lineIndex": 97
+   },
+   {
+    "text": "つんと入",
+    "startMs": 590506,
+    "endMs": 591152,
+    "lineIndex": 97
+   },
+   {
+    "text": "れる。",
+    "startMs": 591152,
+    "endMs": 591563,
+    "lineIndex": 97
+   },
+   {
+    "text": "夜、",
+    "startMs": 592163,
+    "endMs": 592581,
+    "lineIndex": 98
+   },
+   {
+    "text": "歯を",
+    "startMs": 593105,
+    "endMs": 593454,
+    "lineIndex": 98
+   },
+   {
+    "text": "磨く前",
+    "startMs": 593454,
+    "endMs": 593929,
+    "lineIndex": 98
+   },
+   {
+    "text": "に、小",
+    "startMs": 593929,
+    "endMs": 594450,
+    "lineIndex": 98
+   },
+   {
+    "text": "腹が空",
+    "startMs": 594978,
+    "endMs": 595615,
+    "lineIndex": 98
+   },
+   {
+    "text": "いて、",
+    "startMs": 595615,
+    "endMs": 596143,
+    "lineIndex": 98
+   },
+   {
+    "text": "こっそ",
+    "startMs": 596527,
+    "endMs": 597147,
+    "lineIndex": 98
+   },
+   {
+    "text": "り一口。",
+    "startMs": 597147,
+    "endMs": 597816,
+    "lineIndex": 98
+   },
+   {
+    "text": "その",
+    "startMs": 598416,
+    "endMs": 598814,
+    "lineIndex": 99
+   },
+   {
+    "text": "とき",
+    "startMs": 598814,
+    "endMs": 599243,
+    "lineIndex": 99
+   },
+   {
+    "text": "、りんごは",
+    "startMs": 599700,
+    "endMs": 600474,
+    "lineIndex": 99
+   },
+   {
+    "text": "、鎧を着",
+    "startMs": 600929,
+    "endMs": 601528,
+    "lineIndex": 99
+   },
+   {
+    "text": "てい",
+    "startMs": 601528,
+    "endMs": 601870,
+    "lineIndex": 99
+   },
+   {
+    "text": "ません。",
+    "startMs": 601870,
+    "endMs": 602597,
+    "lineIndex": 99
+   },
+   {
+    "text": "急な坂",
+    "startMs": 603197,
+    "endMs": 603737,
+    "lineIndex": 100
+   },
+   {
+    "text": "を、一",
+    "startMs": 603737,
+    "endMs": 604353,
+    "lineIndex": 100
+   },
+   {
+    "text": "人ぼっちで、",
+    "startMs": 604779,
+    "endMs": 605947,
+    "lineIndex": 100
+   },
+   {
+    "text": "上らせてい",
+    "startMs": 606528,
+    "endMs": 607303,
+    "lineIndex": 100
+   },
+   {
+    "text": "るよ",
+    "startMs": 607303,
+    "endMs": 607514,
+    "lineIndex": 100
+   },
+   {
+    "text": "うなも",
+    "startMs": 607514,
+    "endMs": 607922,
+    "lineIndex": 100
+   },
+   {
+    "text": "のです。",
+    "startMs": 607922,
+    "endMs": 608616,
+    "lineIndex": 100
+   },
+   {
+    "text": "ご飯の最",
+    "startMs": 609216,
+    "endMs": 609849,
+    "lineIndex": 101
+   },
+   {
+    "text": "後、デ",
+    "startMs": 609849,
+    "endMs": 610469,
+    "lineIndex": 101
+   },
+   {
+    "text": "ザートとし",
+    "startMs": 611000,
+    "endMs": 611855,
+    "lineIndex": 101
+   },
+   {
+    "text": "て。",
+    "startMs": 611855,
+    "endMs": 612215,
+    "lineIndex": 101
+   },
+   {
+    "text": "おやつなら",
+    "startMs": 612702,
+    "endMs": 613491,
+    "lineIndex": 101
+   },
+   {
+    "text": "、無糖の",
+    "startMs": 613858,
+    "endMs": 614449,
+    "lineIndex": 101
+   },
+   {
+    "text": "ヨーグルトを",
+    "startMs": 614449,
+    "endMs": 615358,
+    "lineIndex": 101
+   },
+   {
+    "text": "、大さじ",
+    "startMs": 615713,
+    "endMs": 616280,
+    "lineIndex": 101
+   },
+   {
+    "text": "二杯ほど。",
+    "startMs": 616280,
+    "endMs": 617158,
+    "lineIndex": 101
+   },
+   {
+    "text": "ひとかけらの",
+    "startMs": 617527,
+    "endMs": 618345,
+    "lineIndex": 102
+   },
+   {
+    "text": "チーズ",
+    "startMs": 618345,
+    "endMs": 618925,
+    "lineIndex": 102
+   },
+   {
+    "text": "、少しの",
+    "startMs": 619502,
+    "endMs": 620071,
+    "lineIndex": 102
+   },
+   {
+    "text": "ナッツでも",
+    "startMs": 620071,
+    "endMs": 620735,
+    "lineIndex": 102
+   },
+   {
+    "text": "構いません。",
+    "startMs": 620735,
+    "endMs": 621728,
+    "lineIndex": 102
+   },
+   {
+    "text": "たんぱく質や",
+    "startMs": 622328,
+    "endMs": 623338,
+    "lineIndex": 103
+   },
+   {
+    "text": "脂質とい",
+    "startMs": 623338,
+    "endMs": 624019,
+    "lineIndex": 103
+   },
+   {
+    "text": "う、",
+    "startMs": 624019,
+    "endMs": 624492,
+    "lineIndex": 103
+   },
+   {
+    "text": "鎧を、着",
+    "startMs": 625096,
+    "endMs": 625805,
+    "lineIndex": 103
+   },
+   {
+    "text": "せてあ",
+    "startMs": 626240,
+    "endMs": 626682,
+    "lineIndex": 103
+   },
+   {
+    "text": "げるこ",
+    "startMs": 626682,
+    "endMs": 627043,
+    "lineIndex": 103
+   },
+   {
+    "text": "とにな",
+    "startMs": 627043,
+    "endMs": 627452,
+    "lineIndex": 103
+   },
+   {
+    "text": "ります。",
+    "startMs": 627452,
+    "endMs": 628141,
+    "lineIndex": 103
+   },
+   {
+    "text": "一緒に入",
+    "startMs": 628741,
+    "endMs": 629451,
+    "lineIndex": 104
+   },
+   {
+    "text": "ってきた",
+    "startMs": 629451,
+    "endMs": 629951,
+    "lineIndex": 104
+   },
+   {
+    "text": "それ",
+    "startMs": 629951,
+    "endMs": 630194,
+    "lineIndex": 104
+   },
+   {
+    "text": "らが、糖",
+    "startMs": 630194,
+    "endMs": 630927,
+    "lineIndex": 104
+   },
+   {
+    "text": "の吸収",
+    "startMs": 631381,
+    "endMs": 631777,
+    "lineIndex": 104
+   },
+   {
+    "text": "を、ゆっ",
+    "startMs": 631777,
+    "endMs": 632750,
+    "lineIndex": 104
+   },
+   {
+    "text": "くりにし",
+    "startMs": 633376,
+    "endMs": 634180,
+    "lineIndex": 104
+   },
+   {
+    "text": "てく",
+    "startMs": 634180,
+    "endMs": 634433,
+    "lineIndex": 104
+   },
+   {
+    "text": "れるとさ",
+    "startMs": 634433,
+    "endMs": 634933,
+    "lineIndex": 104
+   },
+   {
+    "text": "れてい",
+    "startMs": 634933,
+    "endMs": 635403,
+    "lineIndex": 104
+   },
+   {
+    "text": "ます。",
+    "startMs": 635403,
+    "endMs": 635952,
+    "lineIndex": 104
+   },
+   {
+    "text": "急な坂",
+    "startMs": 636552,
+    "endMs": 637086,
+    "lineIndex": 105
+   },
+   {
+    "text": "が、な",
+    "startMs": 637086,
+    "endMs": 637710,
+    "lineIndex": 105
+   },
+   {
+    "text": "だらかな坂",
+    "startMs": 638192,
+    "endMs": 638887,
+    "lineIndex": 105
+   },
+   {
+    "text": "に、変",
+    "startMs": 638887,
+    "endMs": 639455,
+    "lineIndex": 105
+   },
+   {
+    "text": "わってい",
+    "startMs": 640133,
+    "endMs": 640722,
+    "lineIndex": 105
+   },
+   {
+    "text": "くとい",
+    "startMs": 640722,
+    "endMs": 641146,
+    "lineIndex": 105
+   },
+   {
+    "text": "うこ",
+    "startMs": 641146,
+    "endMs": 641356,
+    "lineIndex": 105
+   },
+   {
+    "text": "とです。",
+    "startMs": 641356,
+    "endMs": 642077,
+    "lineIndex": 105
+   },
+   {
+    "text": "私も、",
+    "startMs": 642677,
+    "endMs": 643484,
+    "lineIndex": 106
+   },
+   {
+    "text": "試してみ",
+    "startMs": 644181,
+    "endMs": 644824,
+    "lineIndex": 106
+   },
+   {
+    "text": "ました。",
+    "startMs": 644824,
+    "endMs": 645493,
+    "lineIndex": 106
+   },
+   {
+    "text": "ある",
+    "startMs": 646093,
+    "endMs": 646389,
+    "lineIndex": 107
+   },
+   {
+    "text": "朝、",
+    "startMs": 646389,
+    "endMs": 646846,
+    "lineIndex": 107
+   },
+   {
+    "text": "何もな",
+    "startMs": 647424,
+    "endMs": 647886,
+    "lineIndex": 107
+   },
+   {
+    "text": "いと",
+    "startMs": 647886,
+    "endMs": 648098,
+    "lineIndex": 107
+   },
+   {
+    "text": "きに、",
+    "startMs": 648098,
+    "endMs": 648664,
+    "lineIndex": 107
+   },
+   {
+    "text": "りんごだけ、ひ",
+    "startMs": 649141,
+    "endMs": 650064,
+    "lineIndex": 107
+   },
+   {
+    "text": "と切れ。",
+    "startMs": 650479,
+    "endMs": 651149,
+    "lineIndex": 107
+   },
+   {
+    "text": "その",
+    "startMs": 651749,
+    "endMs": 652165,
+    "lineIndex": 108
+   },
+   {
+    "text": "あと",
+    "startMs": 652165,
+    "endMs": 652613,
+    "lineIndex": 108
+   },
+   {
+    "text": "、しばら",
+    "startMs": 652986,
+    "endMs": 653639,
+    "lineIndex": 108
+   },
+   {
+    "text": "くし",
+    "startMs": 653639,
+    "endMs": 654048,
+    "lineIndex": 108
+   },
+   {
+    "text": "て、なん",
+    "startMs": 654451,
+    "endMs": 655179,
+    "lineIndex": 108
+   },
+   {
+    "text": "だか、体",
+    "startMs": 655724,
+    "endMs": 656289,
+    "lineIndex": 108
+   },
+   {
+    "text": "がふわっ",
+    "startMs": 656289,
+    "endMs": 656922,
+    "lineIndex": 108
+   },
+   {
+    "text": "と重くなるよ",
+    "startMs": 656922,
+    "endMs": 657545,
+    "lineIndex": 108
+   },
+   {
+    "text": "うな、",
+    "startMs": 657545,
+    "endMs": 658097,
+    "lineIndex": 108
+   },
+   {
+    "text": "感じがし",
+    "startMs": 658521,
+    "endMs": 659088,
+    "lineIndex": 108
+   },
+   {
+    "text": "ました。",
+    "startMs": 659088,
+    "endMs": 659771,
+    "lineIndex": 108
+   },
+   {
+    "text": "次の日",
+    "startMs": 660371,
+    "endMs": 660891,
+    "lineIndex": 109
+   },
+   {
+    "text": "は、",
+    "startMs": 660891,
+    "endMs": 661382,
+    "lineIndex": 109
+   },
+   {
+    "text": "ヨーグルトと",
+    "startMs": 661829,
+    "endMs": 662709,
+    "lineIndex": 109
+   },
+   {
+    "text": "一緒に、",
+    "startMs": 662709,
+    "endMs": 663353,
+    "lineIndex": 109
+   },
+   {
+    "text": "同じり",
+    "startMs": 663785,
+    "endMs": 664198,
+    "lineIndex": 109
+   },
+   {
+    "text": "んごを。",
+    "startMs": 664198,
+    "endMs": 664829,
+    "lineIndex": 109
+   },
+   {
+    "text": "その",
+    "startMs": 665429,
+    "endMs": 665821,
+    "lineIndex": 110
+   },
+   {
+    "text": "ときは",
+    "startMs": 665821,
+    "endMs": 666428,
+    "lineIndex": 110
+   },
+   {
+    "text": "、そん",
+    "startMs": 666887,
+    "endMs": 667363,
+    "lineIndex": 110
+   },
+   {
+    "text": "な感じは",
+    "startMs": 667363,
+    "endMs": 668135,
+    "lineIndex": 110
+   },
+   {
+    "text": "、あま",
+    "startMs": 668626,
+    "endMs": 669028,
+    "lineIndex": 110
+   },
+   {
+    "text": "りしませんでした。",
+    "startMs": 669028,
+    "endMs": 670229,
+    "lineIndex": 110
+   },
+   {
+    "text": "もちろん",
+    "startMs": 670829,
+    "endMs": 671551,
+    "lineIndex": 111
+   },
+   {
+    "text": "、これ",
+    "startMs": 672200,
+    "endMs": 672812,
+    "lineIndex": 111
+   },
+   {
+    "text": "は、私",
+    "startMs": 673240,
+    "endMs": 673725,
+    "lineIndex": 111
+   },
+   {
+    "text": "一人の感",
+    "startMs": 673725,
+    "endMs": 674255,
+    "lineIndex": 111
+   },
+   {
+    "text": "覚にすぎ",
+    "startMs": 674255,
+    "endMs": 674976,
+    "lineIndex": 111
+   },
+   {
+    "text": "ません。",
+    "startMs": 674976,
+    "endMs": 675928,
+    "lineIndex": 111
+   },
+   {
+    "text": "けれど",
+    "startMs": 676528,
+    "endMs": 677310,
+    "lineIndex": 112
+   },
+   {
+    "text": "も、鎧が",
+    "startMs": 677784,
+    "endMs": 678403,
+    "lineIndex": 112
+   },
+   {
+    "text": "あるか",
+    "startMs": 678403,
+    "endMs": 678758,
+    "lineIndex": 112
+   },
+   {
+    "text": "どうかで",
+    "startMs": 678758,
+    "endMs": 679409,
+    "lineIndex": 112
+   },
+   {
+    "text": "、何かが",
+    "startMs": 680034,
+    "endMs": 680635,
+    "lineIndex": 112
+   },
+   {
+    "text": "違う。",
+    "startMs": 680635,
+    "endMs": 681161,
+    "lineIndex": 112
+   },
+   {
+    "text": "そう",
+    "startMs": 681650,
+    "endMs": 681985,
+    "lineIndex": 112
+   },
+   {
+    "text": "感じた朝",
+    "startMs": 681985,
+    "endMs": 682602,
+    "lineIndex": 112
+   },
+   {
+    "text": "でした。",
+    "startMs": 682602,
+    "endMs": 683397,
+    "lineIndex": 112
+   },
+   {
+    "text": "ちなみに",
+    "startMs": 683997,
+    "endMs": 684767,
+    "lineIndex": 113
+   },
+   {
+    "text": "、りんごジュースは",
+    "startMs": 685205,
+    "endMs": 686413,
+    "lineIndex": 113
+   },
+   {
+    "text": "、生の",
+    "startMs": 686880,
+    "endMs": 687452,
+    "lineIndex": 113
+   },
+   {
+    "text": "りんごとは",
+    "startMs": 687452,
+    "endMs": 688317,
+    "lineIndex": 113
+   },
+   {
+    "text": "、少し",
+    "startMs": 688709,
+    "endMs": 689177,
+    "lineIndex": 113
+   },
+   {
+    "text": "違います。",
+    "startMs": 689177,
+    "endMs": 690024,
+    "lineIndex": 113
+   },
+   {
+    "text": "ミキサーの",
+    "startMs": 690624,
+    "endMs": 691352,
+    "lineIndex": 114
+   },
+   {
+    "text": "音が、",
+    "startMs": 691352,
+    "endMs": 691966,
+    "lineIndex": 114
+   },
+   {
+    "text": "ウィーン",
+    "startMs": 692343,
+    "endMs": 692909,
+    "lineIndex": 114
+   },
+   {
+    "text": "と鳴っ",
+    "startMs": 692909,
+    "endMs": 693420,
+    "lineIndex": 114
+   },
+   {
+    "text": "て、あっという間に、",
+    "startMs": 694030,
+    "endMs": 695226,
+    "lineIndex": 114
+   },
+   {
+    "text": "コップ",
+    "startMs": 695654,
+    "endMs": 696042,
+    "lineIndex": 114
+   },
+   {
+    "text": "一杯のジュ",
+    "startMs": 696042,
+    "endMs": 696716,
+    "lineIndex": 114
+   },
+   {
+    "text": "ースにな",
+    "startMs": 696716,
+    "endMs": 697309,
+    "lineIndex": 114
+   },
+   {
+    "text": "ります。",
+    "startMs": 697309,
+    "endMs": 697995,
+    "lineIndex": 114
+   },
+   {
+    "text": "けれども",
+    "startMs": 698595,
+    "endMs": 699382,
+    "lineIndex": 115
+   },
+   {
+    "text": "、そ",
+    "startMs": 699820,
+    "endMs": 700167,
+    "lineIndex": 115
+   },
+   {
+    "text": "の速さこそ",
+    "startMs": 700167,
+    "endMs": 701336,
+    "lineIndex": 115
+   },
+   {
+    "text": "が、鎧を",
+    "startMs": 701724,
+    "endMs": 702326,
+    "lineIndex": 115
+   },
+   {
+    "text": "脱がせて",
+    "startMs": 702326,
+    "endMs": 702986,
+    "lineIndex": 115
+   },
+   {
+    "text": "いる",
+    "startMs": 702986,
+    "endMs": 703190,
+    "lineIndex": 115
+   },
+   {
+    "text": "証拠なの",
+    "startMs": 703190,
+    "endMs": 703797,
+    "lineIndex": 115
+   },
+   {
+    "text": "かもし",
+    "startMs": 703797,
+    "endMs": 704225,
+    "lineIndex": 115
+   },
+   {
+    "text": "れません。",
+    "startMs": 704225,
+    "endMs": 705091,
+    "lineIndex": 115
+   },
+   {
+    "text": "搾る",
+    "startMs": 705691,
+    "endMs": 706236,
+    "lineIndex": 116
+   },
+   {
+    "text": "過程で",
+    "startMs": 706236,
+    "endMs": 707001,
+    "lineIndex": 116
+   },
+   {
+    "text": "、鎧である",
+    "startMs": 707579,
+    "endMs": 708417,
+    "lineIndex": 116
+   },
+   {
+    "text": "食物繊維の多くが、",
+    "startMs": 708417,
+    "endMs": 709656,
+    "lineIndex": 116
+   },
+   {
+    "text": "失われ",
+    "startMs": 709656,
+    "endMs": 710360,
+    "lineIndex": 116
+   },
+   {
+    "text": "てしまうこ",
+    "startMs": 711098,
+    "endMs": 711996,
+    "lineIndex": 116
+   },
+   {
+    "text": "とが",
+    "startMs": 711996,
+    "endMs": 712408,
+    "lineIndex": 116
+   },
+   {
+    "text": "あり",
+    "startMs": 712408,
+    "endMs": 712878,
+    "lineIndex": 116
+   },
+   {
+    "text": "ます。",
+    "startMs": 712878,
+    "endMs": 713531,
+    "lineIndex": 116
+   },
+   {
+    "text": "ジュースだけを",
+    "startMs": 714131,
+    "endMs": 715251,
+    "lineIndex": 117
+   },
+   {
+    "text": "、空腹に飲",
+    "startMs": 715783,
+    "endMs": 716441,
+    "lineIndex": 117
+   },
+   {
+    "text": "むと、",
+    "startMs": 716441,
+    "endMs": 717031,
+    "lineIndex": 117
+   },
+   {
+    "text": "坂は、",
+    "startMs": 717557,
+    "endMs": 718249,
+    "lineIndex": 117
+   },
+   {
+    "text": "さらに",
+    "startMs": 718705,
+    "endMs": 719230,
+    "lineIndex": 117
+   },
+   {
+    "text": "急にな",
+    "startMs": 719230,
+    "endMs": 719706,
+    "lineIndex": 117
+   },
+   {
+    "text": "りやすいとさ",
+    "startMs": 719706,
+    "endMs": 720634,
+    "lineIndex": 117
+   },
+   {
+    "text": "れてい",
+    "startMs": 720634,
+    "endMs": 721095,
+    "lineIndex": 117
+   },
+   {
+    "text": "ます。",
+    "startMs": 721095,
+    "endMs": 721640,
+    "lineIndex": 117
+   },
+   {
+    "text": "焼きりんごも、",
+    "startMs": 722240,
+    "endMs": 723472,
+    "lineIndex": 118
+   },
+   {
+    "text": "いいですね。",
+    "startMs": 724020,
+    "endMs": 724960,
+    "lineIndex": 118
+   },
+   {
+    "text": "火を",
+    "startMs": 725560,
+    "endMs": 725917,
+    "lineIndex": 119
+   },
+   {
+    "text": "通すと、",
+    "startMs": 725917,
+    "endMs": 726649,
+    "lineIndex": 119
+   },
+   {
+    "text": "鎧である食",
+    "startMs": 727194,
+    "endMs": 728043,
+    "lineIndex": 119
+   },
+   {
+    "text": "物繊維が、少し",
+    "startMs": 728043,
+    "endMs": 729431,
+    "lineIndex": 119
+   },
+   {
+    "text": "やわら",
+    "startMs": 729831,
+    "endMs": 730311,
+    "lineIndex": 119
+   },
+   {
+    "text": "かくなります。",
+    "startMs": 730311,
+    "endMs": 731704,
+    "lineIndex": 119
+   },
+   {
+    "text": "その",
+    "startMs": 732304,
+    "endMs": 732687,
+    "lineIndex": 120
+   },
+   {
+    "text": "ときも",
+    "startMs": 732687,
+    "endMs": 733269,
+    "lineIndex": 120
+   },
+   {
+    "text": "、ヨーグル",
+    "startMs": 733774,
+    "endMs": 734624,
+    "lineIndex": 120
+   },
+   {
+    "text": "トを添える",
+    "startMs": 734624,
+    "endMs": 735406,
+    "lineIndex": 120
+   },
+   {
+    "text": "など、仲",
+    "startMs": 736026,
+    "endMs": 736606,
+    "lineIndex": 120
+   },
+   {
+    "text": "間の鎧を",
+    "startMs": 736606,
+    "endMs": 737271,
+    "lineIndex": 120
+   },
+   {
+    "text": "、忘れずに",
+    "startMs": 737801,
+    "endMs": 738575,
+    "lineIndex": 120
+   },
+   {
+    "text": "一緒に。",
+    "startMs": 738575,
+    "endMs": 739216,
+    "lineIndex": 120
+   },
+   {
+    "text": "反対に、避",
+    "startMs": 739816,
+    "endMs": 740717,
+    "lineIndex": 121
+   },
+   {
+    "text": "けたいの",
+    "startMs": 741227,
+    "endMs": 741850,
+    "lineIndex": 121
+   },
+   {
+    "text": "は、",
+    "startMs": 741850,
+    "endMs": 742279,
+    "lineIndex": 121
+   },
+   {
+    "text": "空腹のまま",
+    "startMs": 742748,
+    "endMs": 743397,
+    "lineIndex": 121
+   },
+   {
+    "text": "出か",
+    "startMs": 743397,
+    "endMs": 743682,
+    "lineIndex": 121
+   },
+   {
+    "text": "ける前や",
+    "startMs": 743682,
+    "endMs": 744227,
+    "lineIndex": 121
+   },
+   {
+    "text": "、寝る",
+    "startMs": 744227,
+    "endMs": 744835,
+    "lineIndex": 121
+   },
+   {
+    "text": "直前",
+    "startMs": 745573,
+    "endMs": 745860,
+    "lineIndex": 121
+   },
+   {
+    "text": "に、りんご",
+    "startMs": 745860,
+    "endMs": 746742,
+    "lineIndex": 121
+   },
+   {
+    "text": "だけを、さ",
+    "startMs": 747204,
+    "endMs": 748249,
+    "lineIndex": 121
+   },
+   {
+    "text": "っとか",
+    "startMs": 748826,
+    "endMs": 749333,
+    "lineIndex": 121
+   },
+   {
+    "text": "じるこ",
+    "startMs": 749333,
+    "endMs": 749730,
+    "lineIndex": 121
+   },
+   {
+    "text": "と。",
+    "startMs": 749730,
+    "endMs": 750141,
+    "lineIndex": 121
+   },
+   {
+    "text": "その",
+    "startMs": 750741,
+    "endMs": 751159,
+    "lineIndex": 122
+   },
+   {
+    "text": "一口が、",
+    "startMs": 751159,
+    "endMs": 752028,
+    "lineIndex": 122
+   },
+   {
+    "text": "鎧のない",
+    "startMs": 752405,
+    "endMs": 752966,
+    "lineIndex": 122
+   },
+   {
+    "text": "、一",
+    "startMs": 752966,
+    "endMs": 753231,
+    "lineIndex": 122
+   },
+   {
+    "text": "人ぼっちの",
+    "startMs": 753630,
+    "endMs": 754644,
+    "lineIndex": 122
+   },
+   {
+    "text": "坂を、",
+    "startMs": 754644,
+    "endMs": 755236,
+    "lineIndex": 122
+   },
+   {
+    "text": "作ってし",
+    "startMs": 755697,
+    "endMs": 756288,
+    "lineIndex": 122
+   },
+   {
+    "text": "まうかもし",
+    "startMs": 756288,
+    "endMs": 756989,
+    "lineIndex": 122
+   },
+   {
+    "text": "れません。",
+    "startMs": 756989,
+    "endMs": 757856,
+    "lineIndex": 122
+   },
+   {
+    "text": "ヨーグルトや",
+    "startMs": 758456,
+    "endMs": 759361,
+    "lineIndex": 123
+   },
+   {
+    "text": "チーズが",
+    "startMs": 759361,
+    "endMs": 760261,
+    "lineIndex": 123
+   },
+   {
+    "text": "、いつ",
+    "startMs": 760843,
+    "endMs": 761351,
+    "lineIndex": 123
+   },
+   {
+    "text": "も家に",
+    "startMs": 761351,
+    "endMs": 761788,
+    "lineIndex": 123
+   },
+   {
+    "text": "あるとは",
+    "startMs": 761788,
+    "endMs": 762312,
+    "lineIndex": 123
+   },
+   {
+    "text": "限りません。",
+    "startMs": 762312,
+    "endMs": 763373,
+    "lineIndex": 123
+   },
+   {
+    "text": "そんな",
+    "startMs": 763973,
+    "endMs": 764437,
+    "lineIndex": 124
+   },
+   {
+    "text": "日は",
+    "startMs": 764437,
+    "endMs": 764894,
+    "lineIndex": 124
+   },
+   {
+    "text": "、卵一",
+    "startMs": 765373,
+    "endMs": 765813,
+    "lineIndex": 124
+   },
+   {
+    "text": "個や、",
+    "startMs": 765813,
+    "endMs": 766544,
+    "lineIndex": 124
+   },
+   {
+    "text": "少しの",
+    "startMs": 767005,
+    "endMs": 767588,
+    "lineIndex": 124
+   },
+   {
+    "text": "ご飯で",
+    "startMs": 767588,
+    "endMs": 768496,
+    "lineIndex": 124
+   },
+   {
+    "text": "も、鎧の",
+    "startMs": 769080,
+    "endMs": 769643,
+    "lineIndex": 124
+   },
+   {
+    "text": "役目を果",
+    "startMs": 769643,
+    "endMs": 770260,
+    "lineIndex": 124
+   },
+   {
+    "text": "たしてく",
+    "startMs": 770260,
+    "endMs": 770817,
+    "lineIndex": 124
+   },
+   {
+    "text": "れます。",
+    "startMs": 770817,
+    "endMs": 771472,
+    "lineIndex": 124
+   },
+   {
+    "text": "要は、",
+    "startMs": 772072,
+    "endMs": 772742,
+    "lineIndex": 125
+   },
+   {
+    "text": "りんごを",
+    "startMs": 773089,
+    "endMs": 773827,
+    "lineIndex": 125
+   },
+   {
+    "text": "、たっ",
+    "startMs": 774703,
+    "endMs": 775187,
+    "lineIndex": 125
+   },
+   {
+    "text": "た一人で",
+    "startMs": 775187,
+    "endMs": 775812,
+    "lineIndex": 125
+   },
+   {
+    "text": "、送り出さないこ",
+    "startMs": 776331,
+    "endMs": 777268,
+    "lineIndex": 125
+   },
+   {
+    "text": "とです。",
+    "startMs": 777268,
+    "endMs": 777992,
+    "lineIndex": 125
+   },
+   {
+    "text": "りんごの",
+    "startMs": 778592,
+    "endMs": 779191,
+    "lineIndex": 126
+   },
+   {
+    "text": "鎧を、剥",
+    "startMs": 779191,
+    "endMs": 779805,
+    "lineIndex": 126
+   },
+   {
+    "text": "ぎすぎないこ",
+    "startMs": 780213,
+    "endMs": 781139,
+    "lineIndex": 126
+   },
+   {
+    "text": "と。",
+    "startMs": 781139,
+    "endMs": 781605,
+    "lineIndex": 126
+   },
+   {
+    "text": "りんごを",
+    "startMs": 782050,
+    "endMs": 782712,
+    "lineIndex": 126
+   },
+   {
+    "text": "、一人ぼっちにし",
+    "startMs": 783113,
+    "endMs": 784152,
+    "lineIndex": 126
+   },
+   {
+    "text": "ないこ",
+    "startMs": 784152,
+    "endMs": 784557,
+    "lineIndex": 126
+   },
+   {
+    "text": "と。",
+    "startMs": 784557,
+    "endMs": 784992,
+    "lineIndex": 126
+   },
+   {
+    "text": "それが",
+    "startMs": 785592,
+    "endMs": 786321,
+    "lineIndex": 127
+   },
+   {
+    "text": "、今",
+    "startMs": 786965,
+    "endMs": 787497,
+    "lineIndex": 127
+   },
+   {
+    "text": "日、一",
+    "startMs": 788083,
+    "endMs": 788733,
+    "lineIndex": 127
+   },
+   {
+    "text": "番大切な",
+    "startMs": 788733,
+    "endMs": 789477,
+    "lineIndex": 127
+   },
+   {
+    "text": "合言葉です。",
+    "startMs": 789477,
+    "endMs": 790584,
+    "lineIndex": 127
+   },
+   {
+    "text": "ここまでの",
+    "startMs": 791184,
+    "endMs": 791898,
+    "lineIndex": 128
+   },
+   {
+    "text": "お話が、お",
+    "startMs": 791898,
+    "endMs": 792782,
+    "lineIndex": 128
+   },
+   {
+    "text": "役に立っているよ",
+    "startMs": 793190,
+    "endMs": 794118,
+    "lineIndex": 128
+   },
+   {
+    "text": "うで",
+    "startMs": 794118,
+    "endMs": 794344,
+    "lineIndex": 128
+   },
+   {
+    "text": "したら、コメ",
+    "startMs": 794344,
+    "endMs": 795275,
+    "lineIndex": 128
+   },
+   {
+    "text": "ント欄に、数字",
+    "startMs": 795671,
+    "endMs": 796763,
+    "lineIndex": 128
+   },
+   {
+    "text": "の「さん",
+    "startMs": 797166,
+    "endMs": 797951,
+    "lineIndex": 128
+   },
+   {
+    "text": "」を",
+    "startMs": 798537,
+    "endMs": 799023,
+    "lineIndex": 129
+   },
+   {
+    "text": "書",
+    "startMs": 799531,
+    "endMs": 799663,
+    "lineIndex": 129
+   },
+   {
+    "text": "いてい",
+    "startMs": 799663,
+    "endMs": 800045,
+    "lineIndex": 129
+   },
+   {
+    "text": "ただけますか。",
+    "startMs": 800045,
+    "endMs": 801083,
+    "lineIndex": 129
+   },
+   {
+    "text": "もう",
+    "startMs": 801683,
+    "endMs": 801982,
+    "lineIndex": 130
+   },
+   {
+    "text": "一つ、",
+    "startMs": 801982,
+    "endMs": 802573,
+    "lineIndex": 130
+   },
+   {
+    "text": "こんな",
+    "startMs": 803072,
+    "endMs": 803485,
+    "lineIndex": 130
+   },
+   {
+    "text": "方の話",
+    "startMs": 803485,
+    "endMs": 803927,
+    "lineIndex": 130
+   },
+   {
+    "text": "も、耳",
+    "startMs": 803927,
+    "endMs": 804748,
+    "lineIndex": 130
+   },
+   {
+    "text": "にした",
+    "startMs": 805097,
+    "endMs": 805575,
+    "lineIndex": 130
+   },
+   {
+    "text": "こと",
+    "startMs": 805575,
+    "endMs": 805822,
+    "lineIndex": 130
+   },
+   {
+    "text": "があり",
+    "startMs": 805822,
+    "endMs": 806278,
+    "lineIndex": 130
+   },
+   {
+    "text": "ます。",
+    "startMs": 806278,
+    "endMs": 806941,
+    "lineIndex": 130
+   },
+   {
+    "text": "宮城県にお",
+    "startMs": 807541,
+    "endMs": 808484,
+    "lineIndex": 131
+   },
+   {
+    "text": "住まいの",
+    "startMs": 808484,
+    "endMs": 809325,
+    "lineIndex": 131
+   },
+   {
+    "text": "、七十",
+    "startMs": 809893,
+    "endMs": 810553,
+    "lineIndex": 131
+   },
+   {
+    "text": "二歳の",
+    "startMs": 810553,
+    "endMs": 811163,
+    "lineIndex": 131
+   },
+   {
+    "text": "男性、",
+    "startMs": 811163,
+    "endMs": 811905,
+    "lineIndex": 131
+   },
+   {
+    "text": "元トラックの運",
+    "startMs": 812468,
+    "endMs": 813439,
+    "lineIndex": 131
+   },
+   {
+    "text": "転手をなさ",
+    "startMs": 813439,
+    "endMs": 814238,
+    "lineIndex": 131
+   },
+   {
+    "text": "ってい",
+    "startMs": 814238,
+    "endMs": 814827,
+    "lineIndex": 131
+   },
+   {
+    "text": "た方",
+    "startMs": 814827,
+    "endMs": 815081,
+    "lineIndex": 131
+   },
+   {
+    "text": "です。",
+    "startMs": 815081,
+    "endMs": 815819,
+    "lineIndex": 131
+   },
+   {
+    "text": "長距離",
+    "startMs": 816419,
+    "endMs": 817175,
+    "lineIndex": 132
+   },
+   {
+    "text": "の仕事",
+    "startMs": 817175,
+    "endMs": 817836,
+    "lineIndex": 132
+   },
+   {
+    "text": "の合間",
+    "startMs": 817836,
+    "endMs": 818389,
+    "lineIndex": 132
+   },
+   {
+    "text": "、目",
+    "startMs": 818871,
+    "endMs": 819169,
+    "lineIndex": 132
+   },
+   {
+    "text": "を覚ま",
+    "startMs": 819169,
+    "endMs": 819695,
+    "lineIndex": 132
+   },
+   {
+    "text": "すため",
+    "startMs": 819695,
+    "endMs": 820201,
+    "lineIndex": 132
+   },
+   {
+    "text": "に、り",
+    "startMs": 820650,
+    "endMs": 821234,
+    "lineIndex": 132
+   },
+   {
+    "text": "んごを一",
+    "startMs": 821234,
+    "endMs": 821813,
+    "lineIndex": 132
+   },
+   {
+    "text": "口二口。",
+    "startMs": 821813,
+    "endMs": 822456,
+    "lineIndex": 132
+   },
+   {
+    "text": "運転席の",
+    "startMs": 823056,
+    "endMs": 824104,
+    "lineIndex": 133
+   },
+   {
+    "text": "窓を少",
+    "startMs": 824104,
+    "endMs": 824533,
+    "lineIndex": 133
+   },
+   {
+    "text": "し開け",
+    "startMs": 824533,
+    "endMs": 825012,
+    "lineIndex": 133
+   },
+   {
+    "text": "て、夜",
+    "startMs": 825012,
+    "endMs": 825549,
+    "lineIndex": 133
+   },
+   {
+    "text": "風に",
+    "startMs": 826165,
+    "endMs": 826448,
+    "lineIndex": 133
+   },
+   {
+    "text": "あたり",
+    "startMs": 826448,
+    "endMs": 826943,
+    "lineIndex": 133
+   },
+   {
+    "text": "ながら、り",
+    "startMs": 826943,
+    "endMs": 827886,
+    "lineIndex": 133
+   },
+   {
+    "text": "んごをか",
+    "startMs": 828283,
+    "endMs": 828827,
+    "lineIndex": 133
+   },
+   {
+    "text": "じる。",
+    "startMs": 828827,
+    "endMs": 829307,
+    "lineIndex": 133
+   },
+   {
+    "text": "カーラジオか",
+    "startMs": 829907,
+    "endMs": 831083,
+    "lineIndex": 134
+   },
+   {
+    "text": "ら、深夜",
+    "startMs": 831494,
+    "endMs": 832214,
+    "lineIndex": 134
+   },
+   {
+    "text": "の番組が、",
+    "startMs": 832214,
+    "endMs": 833099,
+    "lineIndex": 134
+   },
+   {
+    "text": "低く流れてい",
+    "startMs": 833469,
+    "endMs": 834449,
+    "lineIndex": 134
+   },
+   {
+    "text": "たそ",
+    "startMs": 834449,
+    "endMs": 834682,
+    "lineIndex": 134
+   },
+   {
+    "text": "うです。",
+    "startMs": 834682,
+    "endMs": 835421,
+    "lineIndex": 134
+   },
+   {
+    "text": "それが",
+    "startMs": 836021,
+    "endMs": 836731,
+    "lineIndex": 135
+   },
+   {
+    "text": "、長距離の",
+    "startMs": 837219,
+    "endMs": 838012,
+    "lineIndex": 135
+   },
+   {
+    "text": "合間の、",
+    "startMs": 838012,
+    "endMs": 838664,
+    "lineIndex": 135
+   },
+   {
+    "text": "ささやかな",
+    "startMs": 839074,
+    "endMs": 839915,
+    "lineIndex": 135
+   },
+   {
+    "text": "楽しみだったそ",
+    "startMs": 839915,
+    "endMs": 840868,
+    "lineIndex": 135
+   },
+   {
+    "text": "うです。",
+    "startMs": 840868,
+    "endMs": 841611,
+    "lineIndex": 135
+   },
+   {
+    "text": "夜、",
+    "startMs": 842211,
+    "endMs": 842667,
+    "lineIndex": 136
+   },
+   {
+    "text": "車を降り",
+    "startMs": 843219,
+    "endMs": 843755,
+    "lineIndex": 136
+   },
+   {
+    "text": "たあと",
+    "startMs": 843755,
+    "endMs": 844142,
+    "lineIndex": 136
+   },
+   {
+    "text": "も、癖",
+    "startMs": 844142,
+    "endMs": 844705,
+    "lineIndex": 136
+   },
+   {
+    "text": "で、寝",
+    "startMs": 845146,
+    "endMs": 845704,
+    "lineIndex": 136
+   },
+   {
+    "text": "る前",
+    "startMs": 846394,
+    "endMs": 846678,
+    "lineIndex": 136
+   },
+   {
+    "text": "に、り",
+    "startMs": 846678,
+    "endMs": 847219,
+    "lineIndex": 136
+   },
+   {
+    "text": "んごを一",
+    "startMs": 847636,
+    "endMs": 848210,
+    "lineIndex": 136
+   },
+   {
+    "text": "つ、か",
+    "startMs": 848210,
+    "endMs": 848784,
+    "lineIndex": 136
+   },
+   {
+    "text": "じる。",
+    "startMs": 849463,
+    "endMs": 849955,
+    "lineIndex": 136
+   },
+   {
+    "text": "そんな",
+    "startMs": 850555,
+    "endMs": 851045,
+    "lineIndex": 137
+   },
+   {
+    "text": "生活を、",
+    "startMs": 851045,
+    "endMs": 852002,
+    "lineIndex": 137
+   },
+   {
+    "text": "ずっと",
+    "startMs": 852471,
+    "endMs": 852988,
+    "lineIndex": 137
+   },
+   {
+    "text": "送ってい",
+    "startMs": 852988,
+    "endMs": 853515,
+    "lineIndex": 137
+   },
+   {
+    "text": "たそ",
+    "startMs": 853515,
+    "endMs": 853774,
+    "lineIndex": 137
+   },
+   {
+    "text": "うです。",
+    "startMs": 853774,
+    "endMs": 854533,
+    "lineIndex": 137
+   },
+   {
+    "text": "「別に",
+    "startMs": 855133,
+    "endMs": 855742,
+    "lineIndex": 138
+   },
+   {
+    "text": "、体に悪",
+    "startMs": 856331,
+    "endMs": 856887,
+    "lineIndex": 138
+   },
+   {
+    "text": "い物を",
+    "startMs": 856887,
+    "endMs": 857306,
+    "lineIndex": 138
+   },
+   {
+    "text": "食べて",
+    "startMs": 857306,
+    "endMs": 857710,
+    "lineIndex": 138
+   },
+   {
+    "text": "いるわ",
+    "startMs": 857710,
+    "endMs": 858197,
+    "lineIndex": 138
+   },
+   {
+    "text": "けじ",
+    "startMs": 858197,
+    "endMs": 858411,
+    "lineIndex": 138
+   },
+   {
+    "text": "ゃないから」",
+    "startMs": 858411,
+    "endMs": 859592,
+    "lineIndex": 138
+   },
+   {
+    "text": "そう",
+    "startMs": 860192,
+    "endMs": 860636,
+    "lineIndex": 139
+   },
+   {
+    "text": "思ってい",
+    "startMs": 860636,
+    "endMs": 861201,
+    "lineIndex": 139
+   },
+   {
+    "text": "たと、",
+    "startMs": 861201,
+    "endMs": 861809,
+    "lineIndex": 139
+   },
+   {
+    "text": "笑って話",
+    "startMs": 862319,
+    "endMs": 862857,
+    "lineIndex": 139
+   },
+   {
+    "text": "してくれ",
+    "startMs": 862857,
+    "endMs": 863447,
+    "lineIndex": 139
+   },
+   {
+    "text": "ました。",
+    "startMs": 863447,
+    "endMs": 864203,
+    "lineIndex": 139
+   },
+   {
+    "text": "けれども",
+    "startMs": 864803,
+    "endMs": 865591,
+    "lineIndex": 140
+   },
+   {
+    "text": "、りんご",
+    "startMs": 866017,
+    "endMs": 866683,
+    "lineIndex": 140
+   },
+   {
+    "text": "を「一人ぼっ",
+    "startMs": 867079,
+    "endMs": 868106,
+    "lineIndex": 140
+   },
+   {
+    "text": "ちにし",
+    "startMs": 868106,
+    "endMs": 868542,
+    "lineIndex": 140
+   },
+   {
+    "text": "な",
+    "startMs": 869232,
+    "endMs": 869346,
+    "lineIndex": 140
+   },
+   {
+    "text": "い」",
+    "startMs": 869346,
+    "endMs": 869584,
+    "lineIndex": 140
+   },
+   {
+    "text": "という話",
+    "startMs": 869584,
+    "endMs": 870251,
+    "lineIndex": 140
+   },
+   {
+    "text": "を聞い",
+    "startMs": 870251,
+    "endMs": 870918,
+    "lineIndex": 140
+   },
+   {
+    "text": "て、夕食の",
+    "startMs": 871328,
+    "endMs": 872072,
+    "lineIndex": 140
+   },
+   {
+    "text": "あと",
+    "startMs": 872072,
+    "endMs": 872498,
+    "lineIndex": 141
+   },
+   {
+    "text": "、デザート",
+    "startMs": 873073,
+    "endMs": 873926,
+    "lineIndex": 141
+   },
+   {
+    "text": "とし",
+    "startMs": 873926,
+    "endMs": 874174,
+    "lineIndex": 141
+   },
+   {
+    "text": "て食べ",
+    "startMs": 874174,
+    "endMs": 874552,
+    "lineIndex": 141
+   },
+   {
+    "text": "る形に変",
+    "startMs": 874552,
+    "endMs": 875116,
+    "lineIndex": 141
+   },
+   {
+    "text": "えてみ",
+    "startMs": 875116,
+    "endMs": 875529,
+    "lineIndex": 141
+   },
+   {
+    "text": "ました。",
+    "startMs": 875529,
+    "endMs": 876163,
+    "lineIndex": 141
+   },
+   {
+    "text": "最初の数",
+    "startMs": 876763,
+    "endMs": 877492,
+    "lineIndex": 142
+   },
+   {
+    "text": "日は、寝る",
+    "startMs": 877492,
+    "endMs": 878434,
+    "lineIndex": 142
+   },
+   {
+    "text": "前に",
+    "startMs": 879037,
+    "endMs": 879317,
+    "lineIndex": 142
+   },
+   {
+    "text": "何も食",
+    "startMs": 879317,
+    "endMs": 879718,
+    "lineIndex": 142
+   },
+   {
+    "text": "べない",
+    "startMs": 879718,
+    "endMs": 880140,
+    "lineIndex": 142
+   },
+   {
+    "text": "ことが、",
+    "startMs": 880140,
+    "endMs": 880661,
+    "lineIndex": 142
+   },
+   {
+    "text": "どうも",
+    "startMs": 880661,
+    "endMs": 881272,
+    "lineIndex": 142
+   },
+   {
+    "text": "落ち着",
+    "startMs": 881661,
+    "endMs": 882125,
+    "lineIndex": 142
+   },
+   {
+    "text": "かなかったそ",
+    "startMs": 882125,
+    "endMs": 883183,
+    "lineIndex": 142
+   },
+   {
+    "text": "うです。",
+    "startMs": 883183,
+    "endMs": 883920,
+    "lineIndex": 142
+   },
+   {
+    "text": "一ヶ月ほど経",
+    "startMs": 884520,
+    "endMs": 885705,
+    "lineIndex": 143
+   },
+   {
+    "text": "った頃",
+    "startMs": 885705,
+    "endMs": 886092,
+    "lineIndex": 143
+   },
+   {
+    "text": "、奥",
+    "startMs": 886092,
+    "endMs": 886468,
+    "lineIndex": 143
+   },
+   {
+    "text": "さんから、「",
+    "startMs": 886762,
+    "endMs": 887640,
+    "lineIndex": 143
+   },
+   {
+    "text": "朝の顔",
+    "startMs": 888176,
+    "endMs": 888635,
+    "lineIndex": 143
+   },
+   {
+    "text": "のむく",
+    "startMs": 888635,
+    "endMs": 889089,
+    "lineIndex": 143
+   },
+   {
+    "text": "みが、前",
+    "startMs": 889089,
+    "endMs": 889829,
+    "lineIndex": 143
+   },
+   {
+    "text": "より減っ",
+    "startMs": 890348,
+    "endMs": 890943,
+    "lineIndex": 143
+   },
+   {
+    "text": "たみた",
+    "startMs": 890943,
+    "endMs": 891414,
+    "lineIndex": 143
+   },
+   {
+    "text": "いね」と",
+    "startMs": 891414,
+    "endMs": 892123,
+    "lineIndex": 143
+   },
+   {
+    "text": "言",
+    "startMs": 892524,
+    "endMs": 892690,
+    "lineIndex": 144
+   },
+   {
+    "text": "われたそ",
+    "startMs": 892690,
+    "endMs": 893205,
+    "lineIndex": 144
+   },
+   {
+    "text": "うです。",
+    "startMs": 893205,
+    "endMs": 893939,
+    "lineIndex": 144
+   },
+   {
+    "text": "「自分では",
+    "startMs": 894539,
+    "endMs": 895537,
+    "lineIndex": 145
+   },
+   {
+    "text": "、あま",
+    "startMs": 896032,
+    "endMs": 896435,
+    "lineIndex": 145
+   },
+   {
+    "text": "り分からなかったんで",
+    "startMs": 896435,
+    "endMs": 897472,
+    "lineIndex": 145
+   },
+   {
+    "text": "すけど。誰",
+    "startMs": 897472,
+    "endMs": 898272,
+    "lineIndex": 145
+   },
+   {
+    "text": "かに気づ",
+    "startMs": 899283,
+    "endMs": 899856,
+    "lineIndex": 145
+   },
+   {
+    "text": "いてもら",
+    "startMs": 899856,
+    "endMs": 900423,
+    "lineIndex": 145
+   },
+   {
+    "text": "えると、な",
+    "startMs": 900423,
+    "endMs": 901203,
+    "lineIndex": 145
+   },
+   {
+    "text": "んだか、",
+    "startMs": 901731,
+    "endMs": 902463,
+    "lineIndex": 145
+   },
+   {
+    "text": "続ける気",
+    "startMs": 902889,
+    "endMs": 903418,
+    "lineIndex": 146
+   },
+   {
+    "text": "にな",
+    "startMs": 903418,
+    "endMs": 903688,
+    "lineIndex": 146
+   },
+   {
+    "text": "りますね」",
+    "startMs": 903688,
+    "endMs": 904501,
+    "lineIndex": 146
+   },
+   {
+    "text": "そう",
+    "startMs": 905101,
+    "endMs": 905701,
+    "lineIndex": 147
+   },
+   {
+    "text": "、少し",
+    "startMs": 906191,
+    "endMs": 906680,
+    "lineIndex": 147
+   },
+   {
+    "text": "照れた",
+    "startMs": 906680,
+    "endMs": 907062,
+    "lineIndex": 147
+   },
+   {
+    "text": "ように",
+    "startMs": 907062,
+    "endMs": 907596,
+    "lineIndex": 147
+   },
+   {
+    "text": "、話してい",
+    "startMs": 907994,
+    "endMs": 908675,
+    "lineIndex": 147
+   },
+   {
+    "text": "ました。",
+    "startMs": 908675,
+    "endMs": 909272,
+    "lineIndex": 147
+   },
+   {
+    "text": "今日の",
+    "startMs": 909872,
+    "endMs": 910352,
+    "lineIndex": 148
+   },
+   {
+    "text": "お話を、",
+    "startMs": 910352,
+    "endMs": 911240,
+    "lineIndex": 148
+   },
+   {
+    "text": "簡単にま",
+    "startMs": 911752,
+    "endMs": 912445,
+    "lineIndex": 148
+   },
+   {
+    "text": "とめますね。",
+    "startMs": 912445,
+    "endMs": 913499,
+    "lineIndex": 148
+   },
+   {
+    "text": "りんごに",
+    "startMs": 914099,
+    "endMs": 915036,
+    "lineIndex": 149
+   },
+   {
+    "text": "は、二つ",
+    "startMs": 915420,
+    "endMs": 916023,
+    "lineIndex": 149
+   },
+   {
+    "text": "の鎧があ",
+    "startMs": 916023,
+    "endMs": 916647,
+    "lineIndex": 149
+   },
+   {
+    "text": "ります。",
+    "startMs": 916647,
+    "endMs": 917331,
+    "lineIndex": 149
+   },
+   {
+    "text": "一つは、",
+    "startMs": 917931,
+    "endMs": 918717,
+    "lineIndex": 150
+   },
+   {
+    "text": "皮とい",
+    "startMs": 919249,
+    "endMs": 919786,
+    "lineIndex": 150
+   },
+   {
+    "text": "う、",
+    "startMs": 919786,
+    "endMs": 920195,
+    "lineIndex": 150
+   },
+   {
+    "text": "りんご自身",
+    "startMs": 920672,
+    "endMs": 921743,
+    "lineIndex": 150
+   },
+   {
+    "text": "の鎧。",
+    "startMs": 921743,
+    "endMs": 922272,
+    "lineIndex": 150
+   },
+   {
+    "text": "むきすぎず",
+    "startMs": 922835,
+    "endMs": 923736,
+    "lineIndex": 150
+   },
+   {
+    "text": "、気",
+    "startMs": 924176,
+    "endMs": 924444,
+    "lineIndex": 150
+   },
+   {
+    "text": "にな",
+    "startMs": 924444,
+    "endMs": 924700,
+    "lineIndex": 150
+   },
+   {
+    "text": "る農薬は、",
+    "startMs": 924700,
+    "endMs": 925545,
+    "lineIndex": 150
+   },
+   {
+    "text": "洗って落",
+    "startMs": 926143,
+    "endMs": 926683,
+    "lineIndex": 150
+   },
+   {
+    "text": "とす。",
+    "startMs": 926683,
+    "endMs": 927232,
+    "lineIndex": 150
+   },
+   {
+    "text": "もう",
+    "startMs": 927832,
+    "endMs": 928123,
+    "lineIndex": 151
+   },
+   {
+    "text": "一つは、",
+    "startMs": 928123,
+    "endMs": 928876,
+    "lineIndex": 151
+   },
+   {
+    "text": "一緒に食",
+    "startMs": 929367,
+    "endMs": 929989,
+    "lineIndex": 151
+   },
+   {
+    "text": "べる仲",
+    "startMs": 929989,
+    "endMs": 930382,
+    "lineIndex": 151
+   },
+   {
+    "text": "間という",
+    "startMs": 930382,
+    "endMs": 931020,
+    "lineIndex": 151
+   },
+   {
+    "text": "、皆",
+    "startMs": 931020,
+    "endMs": 931471,
+    "lineIndex": 151
+   },
+   {
+    "text": "さんが着せ",
+    "startMs": 931988,
+    "endMs": 932787,
+    "lineIndex": 151
+   },
+   {
+    "text": "てあげ",
+    "startMs": 932787,
+    "endMs": 933247,
+    "lineIndex": 151
+   },
+   {
+    "text": "る鎧。",
+    "startMs": 933247,
+    "endMs": 933610,
+    "lineIndex": 151
+   },
+   {
+    "text": "りんご",
+    "startMs": 933610,
+    "endMs": 934049,
+    "lineIndex": 151
+   },
+   {
+    "text": "を、一人",
+    "startMs": 934595,
+    "endMs": 935234,
+    "lineIndex": 151
+   },
+   {
+    "text": "ぼっちにし",
+    "startMs": 935630,
+    "endMs": 936656,
+    "lineIndex": 152
+   },
+   {
+    "text": "ないこ",
+    "startMs": 936656,
+    "endMs": 937056,
+    "lineIndex": 152
+   },
+   {
+    "text": "と。",
+    "startMs": 937056,
+    "endMs": 937485,
+    "lineIndex": 152
+   },
+   {
+    "text": "あの",
+    "startMs": 938085,
+    "endMs": 938685,
+    "lineIndex": 153
+   },
+   {
+    "text": "、一万回の",
+    "startMs": 939207,
+    "endMs": 940262,
+    "lineIndex": 153
+   },
+   {
+    "text": "坂道。",
+    "startMs": 940262,
+    "endMs": 941051,
+    "lineIndex": 153
+   },
+   {
+    "text": "皮の鎧",
+    "startMs": 941651,
+    "endMs": 942165,
+    "lineIndex": 154
+   },
+   {
+    "text": "と、仲",
+    "startMs": 942165,
+    "endMs": 942880,
+    "lineIndex": 154
+   },
+   {
+    "text": "間の鎧",
+    "startMs": 943430,
+    "endMs": 944021,
+    "lineIndex": 154
+   },
+   {
+    "text": "、二つ",
+    "startMs": 944021,
+    "endMs": 944472,
+    "lineIndex": 154
+   },
+   {
+    "text": "を大切",
+    "startMs": 945020,
+    "endMs": 945596,
+    "lineIndex": 154
+   },
+   {
+    "text": "にするだ",
+    "startMs": 945596,
+    "endMs": 946336,
+    "lineIndex": 154
+   },
+   {
+    "text": "けで、坂",
+    "startMs": 946336,
+    "endMs": 947169,
+    "lineIndex": 154
+   },
+   {
+    "text": "の急さ",
+    "startMs": 947678,
+    "endMs": 948172,
+    "lineIndex": 154
+   },
+   {
+    "text": "は、少し",
+    "startMs": 948172,
+    "endMs": 948963,
+    "lineIndex": 154
+   },
+   {
+    "text": "ずつ、変",
+    "startMs": 949354,
+    "endMs": 950239,
+    "lineIndex": 154
+   },
+   {
+    "text": "わってい",
+    "startMs": 951024,
+    "endMs": 951613,
+    "lineIndex": 154
+   },
+   {
+    "text": "くは",
+    "startMs": 951613,
+    "endMs": 951898,
+    "lineIndex": 154
+   },
+   {
+    "text": "ずです。",
+    "startMs": 951898,
+    "endMs": 952595,
+    "lineIndex": 154
+   },
+   {
+    "text": "今夜、",
+    "startMs": 953195,
+    "endMs": 953900,
+    "lineIndex": 155
+   },
+   {
+    "text": "りんごを",
+    "startMs": 954351,
+    "endMs": 954935,
+    "lineIndex": 155
+   },
+   {
+    "text": "召し上がるなら、ど",
+    "startMs": 954935,
+    "endMs": 956101,
+    "lineIndex": 155
+   },
+   {
+    "text": "うぞ、",
+    "startMs": 956557,
+    "endMs": 957151,
+    "lineIndex": 155
+   },
+   {
+    "text": "食後のデ",
+    "startMs": 957585,
+    "endMs": 958201,
+    "lineIndex": 155
+   },
+   {
+    "text": "ザートに。",
+    "startMs": 958201,
+    "endMs": 959083,
+    "lineIndex": 155
+   },
+   {
+    "text": "それだけ",
+    "startMs": 959683,
+    "endMs": 960622,
+    "lineIndex": 156
+   },
+   {
+    "text": "で、今",
+    "startMs": 961180,
+    "endMs": 961636,
+    "lineIndex": 156
+   },
+   {
+    "text": "日のお話は",
+    "startMs": 961636,
+    "endMs": 962558,
+    "lineIndex": 156
+   },
+   {
+    "text": "、も",
+    "startMs": 962949,
+    "endMs": 963219,
+    "lineIndex": 156
+   },
+   {
+    "text": "う実践で",
+    "startMs": 963219,
+    "endMs": 963823,
+    "lineIndex": 156
+   },
+   {
+    "text": "きてい",
+    "startMs": 963823,
+    "endMs": 964278,
+    "lineIndex": 156
+   },
+   {
+    "text": "ます。",
+    "startMs": 964278,
+    "endMs": 964835,
+    "lineIndex": 156
+   },
+   {
+    "text": "皆さんは、",
+    "startMs": 965435,
+    "endMs": 966403,
+    "lineIndex": 157
+   },
+   {
+    "text": "りんごを",
+    "startMs": 966777,
+    "endMs": 967448,
+    "lineIndex": 157
+   },
+   {
+    "text": "、どん",
+    "startMs": 967961,
+    "endMs": 968369,
+    "lineIndex": 157
+   },
+   {
+    "text": "な時に",
+    "startMs": 968369,
+    "endMs": 968926,
+    "lineIndex": 157
+   },
+   {
+    "text": "、召し上が",
+    "startMs": 969369,
+    "endMs": 970154,
+    "lineIndex": 157
+   },
+   {
+    "text": "ること",
+    "startMs": 970154,
+    "endMs": 970600,
+    "lineIndex": 157
+   },
+   {
+    "text": "が多いですか。よろし",
+    "startMs": 970600,
+    "endMs": 971531,
+    "lineIndex": 157
+   },
+   {
+    "text": "ければ、コメ",
+    "startMs": 971961,
+    "endMs": 972994,
+    "lineIndex": 157
+   },
+   {
+    "text": "ントで教え",
+    "startMs": 973428,
+    "endMs": 974139,
+    "lineIndex": 158
+   },
+   {
+    "text": "てくださ",
+    "startMs": 974139,
+    "endMs": 974731,
+    "lineIndex": 158
+   },
+   {
+    "text": "い。次に",
+    "startMs": 974731,
+    "endMs": 975298,
+    "lineIndex": 158
+   },
+   {
+    "text": "知りた",
+    "startMs": 975762,
+    "endMs": 976227,
+    "lineIndex": 158
+   },
+   {
+    "text": "い食べ物",
+    "startMs": 976227,
+    "endMs": 976785,
+    "lineIndex": 158
+   },
+   {
+    "text": "があれば、",
+    "startMs": 976785,
+    "endMs": 977544,
+    "lineIndex": 158
+   },
+   {
+    "text": "それも",
+    "startMs": 977544,
+    "endMs": 978067,
+    "lineIndex": 158
+   },
+   {
+    "text": "、ぜひ",
+    "startMs": 978532,
+    "endMs": 979176,
+    "lineIndex": 158
+   },
+   {
+    "text": "書い",
+    "startMs": 979679,
+    "endMs": 980046,
+    "lineIndex": 158
+   },
+   {
+    "text": "てくだ",
+    "startMs": 980046,
+    "endMs": 980364,
+    "lineIndex": 158
+   },
+   {
+    "text": "さいね。全",
+    "startMs": 980364,
+    "endMs": 981209,
+    "lineIndex": 158
+   },
+   {
+    "text": "部、読",
+    "startMs": 981759,
+    "endMs": 982386,
+    "lineIndex": 158
+   },
+   {
+    "text": "ませてい",
+    "startMs": 982976,
+    "endMs": 983626,
+    "lineIndex": 159
+   },
+   {
+    "text": "ただきます。",
+    "startMs": 983626,
+    "endMs": 984507,
+    "lineIndex": 159
+   },
+   {
+    "text": "今日の",
+    "startMs": 985107,
+    "endMs": 985592,
+    "lineIndex": 160
+   },
+   {
+    "text": "夕食から、ま",
+    "startMs": 985592,
+    "endMs": 986602,
+    "lineIndex": 160
+   },
+   {
+    "text": "ずは一",
+    "startMs": 987092,
+    "endMs": 987577,
+    "lineIndex": 160
+   },
+   {
+    "text": "つ。り",
+    "startMs": 987577,
+    "endMs": 988187,
+    "lineIndex": 160
+   },
+   {
+    "text": "んごの鎧",
+    "startMs": 988655,
+    "endMs": 989253,
+    "lineIndex": 160
+   },
+   {
+    "text": "を、脱が",
+    "startMs": 989253,
+    "endMs": 989891,
+    "lineIndex": 160
+   },
+   {
+    "text": "せすぎないと",
+    "startMs": 990407,
+    "endMs": 991519,
+    "lineIndex": 160
+   },
+   {
+    "text": "ころから、",
+    "startMs": 991519,
+    "endMs": 992307,
+    "lineIndex": 160
+   },
+   {
+    "text": "始めてみ",
+    "startMs": 992735,
+    "endMs": 993329,
+    "lineIndex": 160
+   },
+   {
+    "text": "ませんか。",
+    "startMs": 993329,
+    "endMs": 994195,
+    "lineIndex": 160
+   },
+   {
+    "text": "もし",
+    "startMs": 994795,
+    "endMs": 995263,
+    "lineIndex": 161
+   },
+   {
+    "text": "、今日",
+    "startMs": 995829,
+    "endMs": 996261,
+    "lineIndex": 161
+   },
+   {
+    "text": "のお話が、",
+    "startMs": 996261,
+    "endMs": 997134,
+    "lineIndex": 161
+   },
+   {
+    "text": "少しでも役",
+    "startMs": 997511,
+    "endMs": 998185,
+    "lineIndex": 161
+   },
+   {
+    "text": "に立ちそうだと",
+    "startMs": 998185,
+    "endMs": 999498,
+    "lineIndex": 161
+   },
+   {
+    "text": "思ってく",
+    "startMs": 999498,
+    "endMs": 999980,
+    "lineIndex": 161
+   },
+   {
+    "text": "ださったら、",
+    "startMs": 999980,
+    "endMs": 1000899,
+    "lineIndex": 161
+   },
+   {
+    "text": "チャンネル登録",
+    "startMs": 1001331,
+    "endMs": 1002673,
+    "lineIndex": 161
+   },
+   {
+    "text": "で、",
+    "startMs": 1003155,
+    "endMs": 1003423,
+    "lineIndex": 162
+   },
+   {
+    "text": "この食卓に",
+    "startMs": 1003423,
+    "endMs": 1004209,
+    "lineIndex": 162
+   },
+   {
+    "text": "、ま",
+    "startMs": 1004680,
+    "endMs": 1005001,
+    "lineIndex": 162
+   },
+   {
+    "text": "た遊びに",
+    "startMs": 1005001,
+    "endMs": 1005582,
+    "lineIndex": 162
+   },
+   {
+    "text": "来て",
+    "startMs": 1005582,
+    "endMs": 1005838,
+    "lineIndex": 162
+   },
+   {
+    "text": "ください",
+    "startMs": 1005838,
+    "endMs": 1006388,
+    "lineIndex": 162
+   },
+   {
+    "text": "。そし",
+    "startMs": 1006917,
+    "endMs": 1007549,
+    "lineIndex": 162
+   },
+   {
+    "text": "て、離れ",
+    "startMs": 1007897,
+    "endMs": 1008470,
+    "lineIndex": 162
+   },
+   {
+    "text": "て暮ら",
+    "startMs": 1008470,
+    "endMs": 1008908,
+    "lineIndex": 162
+   },
+   {
+    "text": "すご家族にも",
+    "startMs": 1008908,
+    "endMs": 1009920,
+    "lineIndex": 162
+   },
+   {
+    "text": "、りんご",
+    "startMs": 1010383,
+    "endMs": 1010969,
+    "lineIndex": 162
+   },
+   {
+    "text": "の話、",
+    "startMs": 1010969,
+    "endMs": 1011523,
+    "lineIndex": 163
+   },
+   {
+    "text": "そっと",
+    "startMs": 1012050,
+    "endMs": 1012541,
+    "lineIndex": 163
+   },
+   {
+    "text": "伝えてあ",
+    "startMs": 1012541,
+    "endMs": 1013087,
+    "lineIndex": 163
+   },
+   {
+    "text": "げてく",
+    "startMs": 1013087,
+    "endMs": 1013463,
+    "lineIndex": 163
+   },
+   {
+    "text": "ださいね。",
+    "startMs": 1013463,
+    "endMs": 1014283,
+    "lineIndex": 163
+   },
+   {
+    "text": "皆さんの食",
+    "startMs": 1014883,
+    "endMs": 1015646,
+    "lineIndex": 164
+   },
+   {
+    "text": "卓に、りん",
+    "startMs": 1015646,
+    "endMs": 1016445,
+    "lineIndex": 164
+   },
+   {
+    "text": "ごが並ぶ",
+    "startMs": 1016914,
+    "endMs": 1017515,
+    "lineIndex": 164
+   },
+   {
+    "text": "日が、",
+    "startMs": 1017515,
+    "endMs": 1017940,
+    "lineIndex": 164
+   },
+   {
+    "text": "少し",
+    "startMs": 1017940,
+    "endMs": 1018405,
+    "lineIndex": 164
+   },
+   {
+    "text": "でも増えた",
+    "startMs": 1018806,
+    "endMs": 1019532,
+    "lineIndex": 164
+   },
+   {
+    "text": "ら、嬉し",
+    "startMs": 1019532,
+    "endMs": 1020246,
+    "lineIndex": 164
+   },
+   {
+    "text": "く思います。",
+    "startMs": 1020897,
+    "endMs": 1022296,
+    "lineIndex": 164
+   },
+   {
+    "text": "最後に",
+    "startMs": 1022896,
+    "endMs": 1023749,
+    "lineIndex": 165
+   },
+   {
+    "text": "、一つだ",
+    "startMs": 1024128,
+    "endMs": 1025013,
+    "lineIndex": 165
+   },
+   {
+    "text": "け、大切",
+    "startMs": 1025562,
+    "endMs": 1026194,
+    "lineIndex": 165
+   },
+   {
+    "text": "なお願いで",
+    "startMs": 1026194,
+    "endMs": 1027172,
+    "lineIndex": 165
+   },
+   {
+    "text": "す。",
+    "startMs": 1027773,
+    "endMs": 1028046,
+    "lineIndex": 165
+   },
+   {
+    "text": "この動",
+    "startMs": 1028046,
+    "endMs": 1028609,
+    "lineIndex": 165
+   },
+   {
+    "text": "画でお",
+    "startMs": 1028609,
+    "endMs": 1029167,
+    "lineIndex": 165
+   },
+   {
+    "text": "伝え",
+    "startMs": 1029167,
+    "endMs": 1029411,
+    "lineIndex": 165
+   },
+   {
+    "text": "した内容",
+    "startMs": 1029411,
+    "endMs": 1030212,
+    "lineIndex": 165
+   },
+   {
+    "text": "は、公",
+    "startMs": 1030587,
+    "endMs": 1031135,
+    "lineIndex": 166
+   },
+   {
+    "text": "表され",
+    "startMs": 1031135,
+    "endMs": 1031583,
+    "lineIndex": 166
+   },
+   {
+    "text": "てい",
+    "startMs": 1031583,
+    "endMs": 1031782,
+    "lineIndex": 166
+   },
+   {
+    "text": "る研究などを",
+    "startMs": 1031782,
+    "endMs": 1032823,
+    "lineIndex": 166
+   },
+   {
+    "text": "もとに",
+    "startMs": 1032823,
+    "endMs": 1033248,
+    "lineIndex": 166
+   },
+   {
+    "text": "した",
+    "startMs": 1033248,
+    "endMs": 1033653,
+    "lineIndex": 166
+   },
+   {
+    "text": "、健康に",
+    "startMs": 1034054,
+    "endMs": 1034751,
+    "lineIndex": 166
+   },
+   {
+    "text": "関する",
+    "startMs": 1034751,
+    "endMs": 1035338,
+    "lineIndex": 166
+   },
+   {
+    "text": "一般的な情報",
+    "startMs": 1035338,
+    "endMs": 1036234,
+    "lineIndex": 166
+   },
+   {
+    "text": "です。お一",
+    "startMs": 1036234,
+    "endMs": 1037286,
+    "lineIndex": 166
+   },
+   {
+    "text": "人",
+    "startMs": 1037838,
+    "endMs": 1037962,
+    "lineIndex": 166
+   },
+   {
+    "text": "おひと",
+    "startMs": 1037962,
+    "endMs": 1038389,
+    "lineIndex": 166
+   },
+   {
+    "text": "りに合わ",
+    "startMs": 1038389,
+    "endMs": 1039091,
+    "lineIndex": 166
+   },
+   {
+    "text": "せた、",
+    "startMs": 1039091,
+    "endMs": 1039785,
+    "lineIndex": 166
+   },
+   {
+    "text": "医療の",
+    "startMs": 1040304,
+    "endMs": 1040835,
+    "lineIndex": 167
+   },
+   {
+    "text": "アドバイスではありません。持病",
+    "startMs": 1040835,
+    "endMs": 1042528,
+    "lineIndex": 167
+   },
+   {
+    "text": "のある",
+    "startMs": 1043089,
+    "endMs": 1043718,
+    "lineIndex": 167
+   },
+   {
+    "text": "方や",
+    "startMs": 1043718,
+    "endMs": 1043942,
+    "lineIndex": 167
+   },
+   {
+    "text": "、お薬",
+    "startMs": 1043942,
+    "endMs": 1044534,
+    "lineIndex": 167
+   },
+   {
+    "text": "を飲んで",
+    "startMs": 1044930,
+    "endMs": 1045605,
+    "lineIndex": 167
+   },
+   {
+    "text": "いる方",
+    "startMs": 1045605,
+    "endMs": 1046010,
+    "lineIndex": 167
+   },
+   {
+    "text": "は、",
+    "startMs": 1046010,
+    "endMs": 1046229,
+    "lineIndex": 167
+   },
+   {
+    "text": "食事を",
+    "startMs": 1046229,
+    "endMs": 1046839,
+    "lineIndex": 167
+   },
+   {
+    "text": "変える",
+    "startMs": 1047197,
+    "endMs": 1047831,
+    "lineIndex": 167
+   },
+   {
+    "text": "前に、",
+    "startMs": 1047831,
+    "endMs": 1048236,
+    "lineIndex": 167
+   },
+   {
+    "text": "必ず、",
+    "startMs": 1048236,
+    "endMs": 1048749,
+    "lineIndex": 167
+   },
+   {
+    "text": "かかり",
+    "startMs": 1049301,
+    "endMs": 1049960,
+    "lineIndex": 168
+   },
+   {
+    "text": "つけの先生",
+    "startMs": 1050578,
+    "endMs": 1051397,
+    "lineIndex": 168
+   },
+   {
+    "text": "にご相談",
+    "startMs": 1051397,
+    "endMs": 1052154,
+    "lineIndex": 168
+   },
+   {
+    "text": "ください",
+    "startMs": 1052154,
+    "endMs": 1052847,
+    "lineIndex": 168
+   },
+   {
+    "text": "。今日",
+    "startMs": 1052847,
+    "endMs": 1053411,
+    "lineIndex": 168
+   },
+   {
+    "text": "のお話",
+    "startMs": 1053952,
+    "endMs": 1054383,
+    "lineIndex": 168
+   },
+   {
+    "text": "が、先生",
+    "startMs": 1054383,
+    "endMs": 1055256,
+    "lineIndex": 168
+   },
+   {
+    "text": "との会話の",
+    "startMs": 1055634,
+    "endMs": 1056540,
+    "lineIndex": 168
+   },
+   {
+    "text": "きっか",
+    "startMs": 1056540,
+    "endMs": 1057130,
+    "lineIndex": 168
+   },
+   {
+    "text": "けになれ",
+    "startMs": 1057130,
+    "endMs": 1057834,
+    "lineIndex": 168
+   },
+   {
+    "text": "ば、何",
+    "startMs": 1057834,
+    "endMs": 1058388,
+    "lineIndex": 168
+   },
+   {
+    "text": "より嬉",
+    "startMs": 1058969,
+    "endMs": 1059616,
+    "lineIndex": 169
+   },
+   {
+    "text": "しいです。",
+    "startMs": 1059616,
+    "endMs": 1060688,
+    "lineIndex": 169
+   },
+   {
+    "text": "今夜の食",
+    "startMs": 1061288,
+    "endMs": 1061882,
+    "lineIndex": 170
+   },
+   {
+    "text": "卓が、皆",
+    "startMs": 1061882,
+    "endMs": 1062753,
+    "lineIndex": 170
+   },
+   {
+    "text": "さんの明",
+    "startMs": 1063157,
+    "endMs": 1063941,
+    "lineIndex": 170
+   },
+   {
+    "text": "日の元気",
+    "startMs": 1063941,
+    "endMs": 1064430,
+    "lineIndex": 170
+   },
+   {
+    "text": "に、つな",
+    "startMs": 1064430,
+    "endMs": 1065047,
+    "lineIndex": 170
+   },
+   {
+    "text": "がりますよ",
+    "startMs": 1065517,
+    "endMs": 1066415,
+    "lineIndex": 170
+   },
+   {
+    "text": "うに。",
+    "startMs": 1066415,
+    "endMs": 1066875,
+    "lineIndex": 170
+   },
+   {
+    "text": "六十代からの食卓",
+    "startMs": 1067258,
+    "endMs": 1068497,
+    "lineIndex": 170
+   },
+   {
+    "text": "、みのり",
+    "startMs": 1068497,
+    "endMs": 1069239,
+    "lineIndex": 170
+   },
+   {
+    "text": "でした。ど",
+    "startMs": 1069658,
+    "endMs": 1070570,
+    "lineIndex": 170
+   },
+   {
+    "text": "うか、",
+    "startMs": 1070979,
+    "endMs": 1071577,
+    "lineIndex": 171
+   },
+   {
+    "text": "ご自分の",
+    "startMs": 1072007,
+    "endMs": 1072748,
+    "lineIndex": 171
+   },
+   {
+    "text": "体を、大",
+    "startMs": 1072748,
+    "endMs": 1073389,
+    "lineIndex": 171
+   },
+   {
+    "text": "切になさ",
+    "startMs": 1073950,
+    "endMs": 1074585,
+    "lineIndex": 171
+   },
+   {
+    "text": "ってくだ",
+    "startMs": 1074585,
+    "endMs": 1075138,
+    "lineIndex": 171
+   },
+   {
+    "text": "さいね。",
+    "startMs": 1075138,
+    "endMs": 1075955,
+    "lineIndex": 171
+   }
+  ]
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#2A3A58"
+ }
+}

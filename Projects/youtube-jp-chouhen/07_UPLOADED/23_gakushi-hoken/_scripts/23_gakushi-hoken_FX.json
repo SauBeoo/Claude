@@ -1,0 +1,44 @@
+{
+  "speakers": {
+    "和佳子": "hero",
+    "結衣": "hero",
+    "多恵": "villain",
+    "亜紀": "villain",
+    "修平": "villain"
+  },
+  "lines": [
+    {"match": "「これに判を押しなさい。結衣の学資保険、今月で解約するから」", "speaker": "多恵"},
+    {"match": "「昨日、書かせたのよ。いい子よね」", "speaker": "多恵"},
+    {"match": "「この家はね、みんなで支えるものなの。あんたはこの家の財布よ」", "speaker": "多恵"},
+    {"match": "「昨日、私は仕事でした」", "speaker": "和佳子"},
+    {"match": "「……お母さんが、困ってるって」", "speaker": "結衣"},
+    {"match": "「私、助けたかった」", "speaker": "結衣"},
+    {"match": "「いい子だから、騙せると思ったんですよね」", "speaker": "結衣"},
+    {"match": "「紙を書いたのは私だよ」", "speaker": "結衣"},
+    {"match": "「お金だけ守って。あとはいい」", "speaker": "結衣"},
+    {"match": "「娘が止めました」", "speaker": "和佳子"}
+  ],
+  "events": [
+    {"type": "ambience", "from": "盆の中日、仏間には親族が十人いた。", "to": "台所に立ったのは、それから二十分後だった。", "name": "room_still", "gain": -27},
+    {"type": "ambience", "from": "「はい、契約課の岡野が承ります」", "to": "「口座振替の停止は、いつからできますか」", "name": "office_hum", "gain": -24},
+    {"type": "ambience", "from": "三日目の夜、私は押し入れから箱を出した。", "to": "数えられないままにされることを、止めたかった。", "name": "rain_window", "gain": -24},
+    {"type": "ambience", "from": "多恵が来たのは、大晦日の午後だった。", "to": "門の外で、一度だけ振り返った。", "name": "blizzard", "gain": -25},
+    {"type": "ambience", "from": "親族が集まったのは、年明け一月の第二日曜、", "to": "「三つだけ、申し上げます」", "name": "room_still", "gain": -27},
+
+    {"type": "sfx", "match": "書いたのは、結衣だった。", "name": "sub_drop", "offset": -0.2, "gain": -6},
+    {"type": "sfx", "match": "「私、助けたかった」", "name": "sub_drop", "offset": -0.15, "gain": -7},
+    {"type": "sfx", "match": "九月の初め、結衣の携帯が鳴った。", "name": "phone_buzz", "offset": -0.3, "gain": -8},
+    {"type": "sfx", "match": "息が、止まった。", "name": "heartbeat", "offset": 0.1, "gain": -8},
+    {"type": "sfx", "match": "玄関のチャイムが鳴った。", "name": "door_knock", "offset": -0.3, "gain": -8},
+    {"type": "sfx", "match": "年末に、保険会社から電話が鳴った。", "name": "phone_buzz_urgent", "offset": -0.3, "gain": -8},
+    {"type": "sfx", "match": "「娘が止めました」", "name": "sub_drop", "offset": -0.2, "gain": -5},
+
+    {"type": "bgm_tense_cut", "from": "私は、紙を五枚、座卓に並べた。", "cut": "「十二月だ」", "resume": "「娘が止めました」"},
+    {"type": "bgm_swell", "from": "多恵の膝が、崩れた。", "to": "「本人が受け取れる日に、もう一度おっしゃってください」"},
+
+    {"type": "card", "match": "「この家はね、みんなで支えるものなの。あんたはこの家の財布よ」", "text": "あんたはこの家の財布よ", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "「昨日、私は仕事でした」", "text": "昨日、私は仕事でした", "style": "hero", "hold": 1.2},
+    {"type": "card", "match": "「お金だけ守って。あとはいい」", "text": "お金だけ守って。あとはいい", "style": "hero", "hold": 1.4},
+    {"type": "card", "match": "「娘が止めました」", "text": "娘が止めました", "style": "hero", "hold": 1.4}
+  ]
+}

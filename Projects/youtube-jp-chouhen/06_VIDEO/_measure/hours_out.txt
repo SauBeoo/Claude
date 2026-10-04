@@ -1,0 +1,152 @@
+---- [chouhen] 嫁子のスカッと朗読劇場【スカッとする話】  sub=233,000 | long-form 50/50 | 2026-07-16 -> 2026-08-26 (40d) | 8.75 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     12h  41       33,073           1891.2       21.2
+     18h  4        22,958           1142.9       20.9
+     19h  2        37,380           1018.2       35.4
+     01h  1         6,481           6481.0        1.0
+     13h  1        28,066            873.0       32.2
+     20h  1        32,623            861.7       37.9
+     => gio co n>=3: [12, 18] | SO DUOC gio trong kenh nay
+
+---- [chouhen] 苦しみの物語【スカッとする話】  sub=2,770 | long-form 50/50 | 2026-08-09 -> 2026-08-26 (17d) | 20.59 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     07h  18        2,573            529.5        8.9
+     09h  17        2,364            621.0        9.3
+     18h  14        3,207            554.8        7.4
+     11h  1         2,684           1201.5        2.2
+     => gio co n>=3: [7, 9, 18] | SO DUOC gio trong kenh nay
+
+---- [chouhen] 毎日スカッと  sub=26,200 | long-form 50/50 | 2026-07-24 -> 2026-08-26 (33d) | 10.61 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     06h  16       63,167           8885.3        7.9
+     18h  14       38,424           4336.4        8.4
+     11h  11       65,796           5245.2        7.2
+     12h  3        88,613          13530.3        5.2
+     19h  3        89,990           3707.2       19.9
+     15h  2       138,197           5757.5       23.6
+     08h  1       148,086           6082.9       24.3
+     => gio co n>=3: [6, 11, 12, 18, 19] | SO DUOC gio trong kenh nay
+
+---- [chouhen] 語り茶屋  sub=6,720 | long-form 40/40 | 2026-06-19 -> 2026-08-26 (67d) | 4.18 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     18h  12       38,308           1224.1       45.4
+     11h  11       18,925            784.9       19.2
+     06h  7        10,491           1163.3       11.4
+     17h  4        15,092           2170.6       12.9
+     09h  3        15,449            704.2       24.3
+     10h  1         9,793            211.6       46.3
+     12h  1        43,149            729.1       59.2
+     19h  1       154,279           2452.8       62.9
+     => gio co n>=3: [6, 9, 11, 17, 18] | SO DUOC gio trong kenh nay
+
+---- [chouhen] 孤独な桜の木  sub=4,240 | long-form 50/50 | 2026-08-10 -> 2026-08-26 (16d) | 21.88 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     13h  17        3,865            610.2        8.2
+     05h  17        6,445           1761.3        8.5
+     18h  16        3,090            721.1        8.4
+     => gio co n>=3: [5, 13, 18] | SO DUOC gio trong kenh nay
+
+---- [co-dai] 昔の人の知恵  sub=15,200 | long-form 32/32 | 2026-06-25 -> 2026-08-26 (62d) | 3.61 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     11h  23        9,988           1188.4       24.2
+     13h  4       115,855           5626.6       37.1
+     15h  2        24,086            422.6       30.5
+     12h  2         1,478            102.3       15.2
+     18h  1        14,956            468.2       31.9
+     => gio co n>=3: [11, 13] | SO DUOC gio trong kenh nay
+
+---- [co-dai] 驚きの世界  sub=1,670 | long-form 19/19 | 2026-06-19 -> 2026-08-17 (58d) | 2.29 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     19h  6           406             11.7       34.9
+     11h  4         2,053             35.4       36.2
+     10h  2           308             20.6       15.2
+     18h  2           110              3.9       26.9
+     20h  2            82              2.7       29.3
+     12h  2         8,656            135.7       65.7
+     21h  1            89              3.2       27.8
+     => gio co n>=3: [11, 19] | SO DUOC gio trong kenh nay
+
+---- [health] 高齢者健康の真実  sub=16,200 | long-form 50/50 | 2026-07-02 -> 2026-08-25 (53d) | 6.60 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     18h  42        4,507            296.7       24.4
+     20h  5         4,782            241.2       43.8
+     19h  2        18,526            412.6       34.4
+     22h  1        13,791            375.3       36.7
+     => gio co n>=3: [18, 20] | SO DUOC gio trong kenh nay
+
+---- [health] 健康長寿の知恵袋TV  sub=1,560 | long-form 19/19 | 2026-07-14 -> 2026-08-21 (38d) | 3.50 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     17h  9         2,782             86.9       33.0
+     19h  5           119              5.4       11.9
+     18h  2            91             13.9       14.4
+     20h  2            72              4.6       15.8
+     00h  1            42              2.1       19.7
+     => gio co n>=3: [17, 19] | SO DUOC gio trong kenh nay
+
+---- [health] 健康栄養研究室  sub=962 | long-form 17/17 | 2026-07-21 -> 2026-08-25 (35d) | 3.40 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     18h  10          163             10.5       22.9
+     20h  3            54             33.0        2.8
+     19h  2         1,303            100.3       14.4
+     17h  2        25,549            710.3       35.0
+     => gio co n>=3: [18, 20] | SO DUOC gio trong kenh nay
+
+---- [health] みんなの若返りアカデミア  sub=47,400 | long-form 18/18 | 2025-02-13 -> 2026-07-09 (511d) | 0.25 vid/tuan
+     gio   n   median view    median VIEW/NGAY   tuoi TB (ngay) <- N3
+     17h  18      147,106            646.0      343.5
+     => gio co n>=3: [17] | KHOA 1 GIO -> KHONG so duoc gio trong kenh nay
+
+============================================================================================
+TONG HOP THEO NGACH — gop video moi kenh trong ngach
+!! CONFOUND KENH: bang nay do lan ca chat luong kenh voi gio. Doc cung phan within-channel.
+============================================================================================
+
+### chouhen  (240 video long-form / 5 kenh)
+  gio   n   #kenh   median view    median VIEW/NGAY
+  05h  17  1            6,445           1761.3
+  06h  23  2           41,809           4373.3
+  07h  18  1            2,573            529.5
+  09h  20  2            3,536            648.6
+  11h  23  3           28,639           2849.0
+  12h  45  3           37,173           1952.9
+  13h  18  2            4,093            645.1
+  17h  4   1           15,092           2170.6
+  18h  60  5            9,406           1036.8
+  19h  6   3           81,876           2783.5
+  -> xep theo view/ngay: 06h(4373/d,n=23,2kenh) > 11h(2849/d,n=23,3kenh) > 19h(2783/d,n=6,3kenh) > 17h(2171/d,n=4,1kenh) > 12h(1953/d,n=45,3kenh) > 05h(1761/d,n=17,1kenh) > 18h(1037/d,n=60,5kenh) > 09h(649/d,n=20,2kenh) > 13h(645/d,n=18,2kenh) > 07h(530/d,n=18,1kenh)
+
+### co-dai  (51 video long-form / 2 kenh)
+  gio   n   #kenh   median view    median VIEW/NGAY
+  11h  27  2            9,059           1036.0
+  12h  4   2            2,101            102.3
+  13h  4   1          115,855           5626.6
+  18h  3   2              170              5.5
+  19h  6   1              406             11.7
+  -> xep theo view/ngay: 13h(5627/d,n=4,1kenh) > 11h(1036/d,n=27,2kenh) > 12h(102/d,n=4,2kenh) > 19h(12/d,n=6,1kenh) > 18h(5/d,n=3,2kenh)
+
+### health  (104 video long-form / 4 kenh)
+  gio   n   #kenh   median view    median VIEW/NGAY
+  17h  29  3           73,713            367.7
+  18h  54  3            3,041            159.0
+  19h  9   3              176             25.6
+  20h  10  3              871             50.3
+  -> xep theo view/ngay: 17h(368/d,n=29,3kenh) > 18h(159/d,n=54,3kenh) > 20h(50/d,n=10,3kenh) > 19h(26/d,n=9,3kenh)
+
+============================================================================================
+WITHIN-CHANNEL — phep so DUY NHAT sach confound kenh
+============================================================================================
+  [chouhen] 嫁子のスカッと朗読劇場【スカッとする話】: 12h 1891 v/d (n=41, tuoi 21d) > 18h 1143 v/d (n=4, tuoi 21d)
+  [chouhen] 苦しみの物語【スカッとする話】: 09h 621 v/d (n=17, tuoi 9d) > 18h 555 v/d (n=14, tuoi 7d) > 07h 530 v/d (n=18, tuoi 9d)
+  [chouhen] 毎日スカッと: 12h 13530 v/d (n=3, tuoi 5d) > 06h 8885 v/d (n=16, tuoi 8d) > 11h 5245 v/d (n=11, tuoi 7d) > 18h 4336 v/d (n=14, tuoi 8d) > 19h 3707 v/d (n=3, tuoi 20d)
+       !! CANH BAO RECENCY: gio thang (12h) co video TRE hon nhieu (5d vs 20d) -> con so nay co the la artifact tuoi, KHONG phai hieu ung gio.
+  [chouhen] 語り茶屋: 17h 2171 v/d (n=4, tuoi 13d) > 18h 1224 v/d (n=12, tuoi 45d) > 06h 1163 v/d (n=7, tuoi 11d) > 11h 785 v/d (n=11, tuoi 19d) > 09h 704 v/d (n=3, tuoi 24d)
+       !! CANH BAO RECENCY: gio thang (17h) co video TRE hon nhieu (13d vs 24d) -> con so nay co the la artifact tuoi, KHONG phai hieu ung gio.
+  [chouhen] 孤独な桜の木: 05h 1761 v/d (n=17, tuoi 8d) > 18h 721 v/d (n=16, tuoi 8d) > 13h 610 v/d (n=17, tuoi 8d)
+  [co-dai] 昔の人の知恵: 13h 5627 v/d (n=4, tuoi 37d) > 11h 1188 v/d (n=23, tuoi 24d)
+  [co-dai] 驚きの世界: 11h 35 v/d (n=4, tuoi 36d) > 19h 12 v/d (n=6, tuoi 35d)
+  [health] 高齢者健康の真実: 18h 297 v/d (n=42, tuoi 24d) > 20h 241 v/d (n=5, tuoi 44d)
+       !! CANH BAO RECENCY: gio thang (18h) co video TRE hon nhieu (24d vs 44d) -> con so nay co the la artifact tuoi, KHONG phai hieu ung gio.
+  [health] 健康長寿の知恵袋TV: 17h 87 v/d (n=9, tuoi 33d) > 19h 5 v/d (n=5, tuoi 12d)
+       (gio thang lai la gio video GIA hon: 33d vs 12d -> ket luan CHAC hon, vi bias recency dang chay NGUOC lai)
+  [health] 健康栄養研究室: 20h 33 v/d (n=3, tuoi 3d) > 18h 10 v/d (n=10, tuoi 23d)
+       !! CANH BAO RECENCY: gio thang (20h) co video TRE hon nhieu (3d vs 23d) -> con so nay co the la artifact tuoi, KHONG phai hieu ung gio.

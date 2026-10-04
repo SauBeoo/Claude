@@ -1,0 +1,331 @@
+# -*- coding: utf-8 -*-
+"""Video 13 — 昭和の子育ての常識5つ (162 shot). Cong thuc duy nhat v2.
+
+⛔ KHONG chep hang so. STYLE / MOTION / AVOID / FRAMING / EXTRAS deu lay tu videogen_lib.
+
+HAI THU KHAC VIDEO 12:
+ 1. Bai nay la bai SO SANH => moi muc ket bang mot canh `ima_*`, va cap xua/nay phai
+    CUNG BO CUC (cung goc may, cung khoang cach) thi nguoi xem moi nhan ra la mot cap.
+ 2. User chot 2026-09-13: NHIEU POV HON. Video 12 = 32/165 (19%). Bai nay ~52/162 (32%).
+
+⭐ AP §10 moi cua 04_VIDEOGEN_PROMPTS.md (chot 2026-09-12, sau 3 vong gen slot 72):
+   canh DI CHUYEN NGANG QUA phai GIAO DU VIEC CHO 8 GIAY bang quan he MEP KHUNG
+   (vao mep nao -> di het cai gi -> ra mep nao), KHONG viet cau cam.
+"""
+import sys
+sys.path.insert(0, r"E:\Claude\Projects\youtube-jp-showa\tools")
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+from videogen_lib import build, gate, write_outputs, autochain, linkage, act_report
+
+P = {
+ "koutei":  "the bare dirt yard of a Showa primary school on a clear morning, white lime lines still on the ground, a low wooden school building with tall windows along one side and a wire fence and trees beyond",
+ "koudou":  "the assembly hall of a Showa primary school, a worn wooden floor, high windows down one wall, a low stage at the far end, a long table set up near the front with a white cloth over it",
+ "kyoushitsu":"a Showa primary school classroom, wooden desks and chairs in rows, a blackboard across the front wall, tall windows down one side letting in flat daylight",
+ "ima_shinsatsu":"a present-day Japanese clinic consulting room, plain white walls, an examination bed with paper over it, a computer and a keyboard on the desk, a sealed plastic sharps box mounted on the wall",
+ "kuruma_soto":"the dirt ground in front of a Showa house in the afternoon, a small family car parked with its doors open, a tin bucket and a wet cloth on the ground beside the front wheel, low fences and the lane behind",
+ "kuruma_naka":"inside a small Showa family car going along the lane, five seats in all, two separate front seats covered in woven fabric and a rear bench seat with room for three behind them, a thin steering wheel on the right hand side of the car, a dashboard of round dials, no headrests anywhere, both front windows wound all the way down, a man in a plain white cotton undershirt and loose grey trousers sits at the wheel on the right driving, both his hands on the rim and both his feet down in the footwell on the pedals, sitting square to the windscreen and seen only from behind and from the far side of his head, his eyes on the road the whole time, his face never turning into the car, the lane going past outside the open windows",
+ "kuruma_tomaru":"inside a small Showa family car standing still with the engine off, five seats in all, two separate front seats covered in woven fabric and a rear bench seat with room for three behind them, a thin steering wheel on the right hand side of the car, a dashboard of round dials, no headrests anywhere, both front windows wound all the way down, the dirt ground and the low fences of the lane standing still outside the open windows",
+ "ima_kuruma":"inside a present-day car, a moulded safety seat strapped into the rear seat with a five point harness, headrests on every seat, a plastic dashboard and a screen in the middle",
+ "chanoma": "the living room of a Showa house, a low wooden table in the middle of the tatami with a heavy glass ashtray on it, flat floor cushions around it, a television on a wooden stand against the wall",
+ "densha":  "the inside of a Showa commuter train, fabric bench seats down both sides, hanging straps in a row",
+ "densha_box":"the inside of a Showa long distance train carriage, rows of facing box seats in worn fabric, a wide window between each pair of seats with a narrow wooden sill under it, a small metal ashtray fixed to that sill beside the window, luggage racks running along above the seats",
+ "machiai": "the waiting room of a Showa hospital, wooden benches along the wall, a large round clock above the door, a tall metal ashtray stand at the end of the bench row",
+ "tabakoya":"a Showa cigarette stall built into the front of a house, a small wooden serving window with a worn counter, a glass case of plain unmarked packets behind it, the lane running past",
+ "engawa_asa":"the open wooden veranda of a Showa house in the morning, the glass doors slid fully back, a straw mat laid out along the boards, early sun falling straight down the veranda, a small garden in front",
+ "hokenjo": "a room in a Showa public health centre, a long table with a white cloth, a set of scales for weighing small bundles at one end, a row of wooden chairs along the wall, a paper notice board behind",
+ "ima_kouen":"a present-day Japanese park in summer, a shaded path under tall trees, a pushchair with a wide sun canopy parked in the shade, a drinks vending machine at the edge of the path",
+ "chabudai":"the living room of a Showa house at dinner, a low round wooden table with rice bowls and chopsticks set on it, flat floor cushions around it, a single bare bulb hanging over the table",
+ "rouka":   "the corridor of a wooden Showa school building, tall windows down one side, a scuffed board floor, sliding classroom doors down the other side",
+ "roji_yuugata":"an unpaved residential lane in Showa Japan in the late afternoon, low wooden fences, open doorways, washing still hanging out on bamboo poles",
+ "ima_ie":  "a present-day Japanese living room, a low sofa and a plain rug, a wall clock, daylight coming in through a large window, no clutter on the floor",
+}
+
+C = {
+ "haha":   "a woman in a plain unmarked pale blue cotton apron over a plain short-sleeved summer dress, with a white cotton towel tucked into the waist",
+ "chichi": "a man in a plain white cotton undershirt and loose grey trousers",
+ "sensei": "a man in a plain white short-sleeved shirt and dark trousers",
+ "hakui":  "a person in a plain white coat and a plain white cloth cap",
+ "seito":  "a small figure in a plain white gym shirt and navy shorts",
+ "seito2": "a second small figure in a plain white gym shirt and navy shorts",
+ "seito2_hadaka":"a second small figure bare to the waist in plain navy shorts, his plain white gym shirt off and folded",
+ "ko":     "a small figure in a plain white cotton undershirt and navy shorts, barefoot",
+ "ko2":    "a second small figure in a plain sleeveless white undershirt and pale grey shorts, barefoot",
+ "akachan":"a very small figure wrapped in a plain white cotton cloth",
+ "tonari": "a woman in a plain grey summer kimono and a plain white apron",
+ "ima":    "a woman in plain modern summer clothes, a plain pale short-sleeved blouse and plain dark cotton trousers",
+ "imachichi":"a man in a plain modern short-sleeved shirt and plain dark trousers",
+ "seito_pov":"their own bare arms and their own bare chest",
+ "seito_pov_hand":"their own forearms and the backs of their own hands",
+ "seito_pov_walk":"only one of their own hands, nothing else of themselves",
+ "ko_pov":"their own bare arms and the white cotton undershirt on their own chest, their navy shorts and bare knees",
+ "ko_pov_hand":"their own forearms and the backs of their own hands",
+ "ko_pov_walk":"only one of their own hands, nothing else of themselves",
+ "ko_pov_stand":"their own bare arms and the white cotton undershirt on their own chest",
+ "ko2_pov":"their own bare arms and the sleeveless white undershirt on their own chest, their pale grey shorts and bare knees",
+ "ko2_pov_stand":"their own bare arms and the sleeveless white undershirt on their own chest",
+ "tonari_pov":"their own lap and the grey kimono and white apron across the bottom of the frame",
+ "haha_pov":"their own lap and the pale blue apron across the bottom of the frame",
+ "haha_pov_hand":"their own forearms and hands, the short sleeves of a summer dress at the edge",
+ "haha_pov_walk":"only their own hands where the work needs them, nothing else of themselves",
+ "chichi_pov_hand":"their own forearms and the backs of their own hands",
+ "ima_pov_hand":"their own forearms and hands, plain modern short sleeves at the edge",
+}
+
+CROWD = {
+ "koutei": "full", "koudou": "full", "kyoushitsu": "full", "densha": "full",
+ "hokenjo": "full", "roji_yuugata": "full",
+ "chanoma": "few", "chabudai": "few", "machiai": "few", "rouka": "few",
+ "densha_box": "full",
+ "kuruma_soto": "few", "kuruma_naka": "few", "engawa_asa": "few",
+ "kuruma_tomaru":  ("solo", "xe dung yen — canh MOT NGUOI co y (ghe trong / long trong)"),
+ "ima_shinsatsu": ("solo", "phong kham thoi nay — mot nguoi mot luot, do la LUAN DIEM"),
+ "ima_kuruma":    ("solo", "trong xe thoi nay — ghe tre em la chu the"),
+ "ima_kouen":     ("solo", "cong vien thoi nay"),
+ "ima_ie":        ("solo", "nha thoi nay"),
+ "tabakoya":      ("solo", "quay thuoc la — mot dua tre di mua"),
+}
+
+S = []
+
+# =====================================================================================
+# HOOK 00-06 — E7: hanh vi -> he qua -> chung nhan -> 3 cu soc -> dan nhan
+# =====================================================================================
+S += [
+('H0','HOOK',"A_SEITO stands at the head of a long line of small figures that runs away across the dirt yard, bare to the waist with the shirt held in one hand, then turns his head once to look back down the length of the line behind him, then faces the front again and shuffles one pace forward as the line moves, while dust lifts off the dry ground, the whole move running left to right across the frame, as further down the line two of the others are laughing about something and a third turns round to join in",'koutei','wide','Q',None,None),
+('H1','HOOK',"A_SEITO: their own bare chest and folded arms fill the bottom of the view with the dirt of the yard close beyond them, then the view tips down to their own feet scuffing the ground, then the whole view swings to the left toward the front of the line where the crying is coming from and holds there, while dust lifts off the dry ground",'koutei','pov_stand','Q',None,None),
+('H2','HOOK',"A_TONARI settles on the veranda boards with her hands folded in her lap and looks out into the garden, then lifts one hand and turns it over slowly as if reading something on the palm, then lowers it back into her lap and keeps looking out, while the shadows of the leaves move across the boards, as two neighbours talk and laugh over the hedge at the far end of the garden",'engawa_asa','medium','Q',None,None),
+('H3','HOOK',"A_HAHA sits in the left hand front passenger seat beside the driver with a small figure sitting up on her lap facing the windscreen, then braces one arm across the small figure as the car leans into a bend, then settles back and looks out through the open window at the lane going past, while the ones in the back seat talk and laugh",'kuruma_naka','medium','Q',None,None),
+('H4','HOOK',"A_CHICHI leans over the low table and taps ash into the heavy glass ashtray, then leans back while the smoke climbs past the bulb above the table, then draws again while an open notebook and a pencil lie waiting at the far corner of the same table with nobody sitting there, as the others in the room talk across the table and laugh",'chanoma','wide','Q',None,None),
+('H5','HOOK',"A_KO: their own knees and the edge of the low round table fill the bottom of the view with a rice bowl standing on it, then their own hands come up off their knees and one palm presses flat against their own cheek and stays there, then both hands lower slowly back onto their own knees while the light from the single bulb sways a little",'chabudai','pov_sit','Q',None,None),
+('H6','HOOK',"A_TONARI halts at the open glass doors with her back to the garden and looks into the empty room, then lets one hand fall from the door frame to her side, then walks slowly out along the veranda and out of frame, while the shadows of the leaves move across the boards",'engawa_asa','behind','Q',None,None),
+]
+
+# =====================================================================================
+# INTRO 07-10
+# =====================================================================================
+S += [
+('A0','INTRO',"A_HAHA comes in through the doorway with a small paper booklet in one hand and crosses to the low table, then turns it to face the room, then folds her hands in her lap and looks down at it, while the light from the window moves across the matting, the whole move running left to right across the frame",'chanoma','medium','Q',None,None),
+('A1','INTRO',"A_SEITO2 walks the whole length of the school corridor from the far end toward the view, passing one classroom door after another, then slows near the middle and looks in through a glass pane without stopping, then walks on past the side of the frame, while the light from the tall windows moves along the floor",'rouka','wide','Q',None,None),
+('A2','INTRO',"A_IMA pauses in the middle of the bright room and looks down at a low sofa, then crosses to the window and puts one hand flat on the glass, then turns back to face the empty room, the whole move running left to right across the frame, while someone in the next room laughs at something",'ima_ie','wide','Q',None,None),
+('A3','INTRO',"A_HAHA: the low table fills the bottom of the view with the paper booklet lying closed on it, then their own hands come into the frame and open the cover, then the hands flatten the first page and stay resting at its edge, while the light from the window moves across the matting, as someone out of sight in the next room laughs at something",'chanoma','pov_hand','Q',None,None),
+]
+
+# =====================================================================================
+# MUC 1 — 予防接種 (11-46) — 36 shot
+# =====================================================================================
+S += [
+('B0','M1',"A_SENSEI walks along the front of the classroom past the blackboard, then stops at the middle of it and speaks to the rows of desks, then turns and writes two short marks on the board while every small figure at the desks sits up, as the curtain at the tall window stirs, the whole move running left to right across the frame, as two at the back desks lean together talking and one of them laughs out loud",'kyoushitsu','wide','Q','B','A_SENSEI standing at the blackboard with one hand still raised'),
+('B1','M1',"A_SENSEI lowers his hand from the board and looks along the rows, then walks down the aisle between the desks to the back of the room, then turns at the back wall and looks forward again over all their heads, while the curtain at the tall window stirs, the whole move running left to right across the frame",'kyoushitsu','medium','Q','B','the class sitting very still at their desks'),
+('B2','M1',"A_SEITO slides into a wooden desk with both hands flat on the lid, then turns his head to look at the small figure beside him, then faces front again and grips the front edge of the desk, while the curtain at the tall window stirs",'kyoushitsu','medium','Q',None,None),
+('B3','M1',"A_SEITO: the desk lid fills the bottom of the view with two hands resting flat on it, then one of their own hands closes slowly into a fist on the wood, then opens again and presses the palm down on the lid, while the curtain at the tall window stirs, as a group by the window talk across the desks until the room quietens",'kyoushitsu','pov_hand','Q',None,None),
+('B4','M1',"A_SEITO2 pulls his gym shirt off over his head at the edge of the yard and folds it under one arm, then walks the width of the yard to the end of the long line, then joins it and faces the front as the line shuffles forward, while dust lifts off the dry ground, the whole move running left to right across the frame",'koutei','wide','Q','C','A_SEITO2_HADAKA standing bare shouldered at the end of the line'),
+('B5','M1',"A_SEITO2_HADAKA waits in the line with the shirt folded under his arm and works his shoulders once against the cold, then rubs the top of his own arm with the other hand, then drops both arms and waits, while a knot of them near the fence are all talking at once and shoving each other",'koutei','medium','Q','C',None),
+('B6','M1',"A_HAKUI sets out a shallow metal tray on the white cloth at the long table, then lays a folded pad of cotton wool beside it, then squares the tray to the edge of the table and steps back, while the ones already finished stand together near the doors talking and laughing",'koudou','ots','Q',None,None),
+('B7','M1',"A_SEITO: the line of bare shoulders runs away from the camera toward the long table at the far end, then their own hand comes up and rubs the back of their own neck, then lowers again as the whole view edges one pace forward, while dust lifts off the dry ground",'koutei','pov_stand','Q',None,None),
+('B8','M1',"A_SEITO2_HADAKA waits in the line with his back to the view and the folded shirt held in both hands, then hunches his shoulders and presses the folded shirt flat against his own bare chest for the warmth of it as the wind moves along the yard, then takes it away from the chest and tucks it back under one arm, the shirt staying folded in his hands the whole time and never going on over his head or over his shoulders",'koutei','behind','Q',None,None),
+('B9','M1',"A_HAKUI works at the long table and turns the shallow metal tray a little so it catches the light from the high windows, then lifts the folded cotton and sets it down again on the cloth, then looks up along the waiting line",'koudou','medium','Q',None,None),
+('B10','M1',"A_SEITO: the long table stands at the end of the view with the metal tray on the white cloth catching the light, then their own hand rises into the corner of the frame and drops again, then the view moves one pace closer to the table",'koudou','pov_stand','Q',None,None),
+('B11','M1',"A_SEITO2_HADAKA edges up near the front of the line and turns his head sharply toward the table, then looks back down at his own feet, then lifts his head again and faces the front, while the light from the high windows catches the metal tray, as two of them by the stage are showing each other their arms and laughing",'koudou','medium','Q',None,None),
+('B12','M1',"A_SEITO: the gap to the two figures ahead closes until their backs fill the view, with the white cloth of the table showing in the space between them, then one of their own hands comes up and takes hold of their own other arm just above the elbow, then that hand lets go and both arms drop as the line shuffles one pace forward",'koudou','pov_stand','Q',None,None),
+('B13','M1',"A_HAKUI takes hold of a bare arm at the table and steadies it flat against the cloth, then works over it for a moment with the other hand, then releases the arm and reaches for the cotton pad",'koudou','ots','Q','D','A_HAKUI holding the cotton pad out over the table'),
+('B14','M1',"A_SEITO2_HADAKA walks away from the table holding a pad of cotton against the top of his own arm, then crosses the whole width of the hall floor toward the far doors, then goes out through them and out of frame, while a group at the back keep up a low chatter that carries across the floor",'koudou','wide','Q','D',None),
+('B15','M1',"A_SEITO: their own bare arm lies across the bottom of the view with a pad of cotton pressed on it by their own other hand, then the hand lifts the pad a little and presses it back down, then both arms lower out of the frame, while the light from the high windows catches the metal tray",'koudou','pov_stand','Q',None,None),
+('B16','M1',"A_SEITO stands in front of the teacher desk and holds his own bare arm out flat with the inside upward, then turns the arm a little toward the window light, then lowers it and steps back into the aisle",'kyoushitsu','medium','Q','E','A_SEITO standing in the aisle with his arm still half raised'),
+('B17','M1',"A_SENSEI leans over the held out arm and looks closely at the inside of it, then straightens up and makes a short mark on a sheet of paper on the desk, then looks up toward the next small figure waiting in the aisle, while the curtain at the tall window stirs",'kyoushitsu','ots','Q','E',None),
+('B18','M1',"A_SEITO: their own bare forearm fills the lower half of the view with the inside turned upward, then their own other hand comes in and presses two fingers beside a small mark on the skin, then both hands lower and the arm turns over, while the curtain at the tall window stirs, as one of them says something under his breath and the desk behind him laughs",'kyoushitsu','pov_hand','Q',None,None),
+('B19','M1',"A_SENSEI walks along the front of the classroom past the rows with the sheet of paper in one hand, then stops and looks down the whole length of one row, then goes on to the far side and turns to face the class, while the curtain at the tall window stirs, the whole move running left to right across the frame",'kyoushitsu','wide','Q',None,None),
+('B20','M1',"A_HAKUI leans on the long table and looks down the full length of the waiting line, then lifts one hand and beckons the front of it forward, then lowers the hand and turns back to the tray, while the light from the high windows catches the metal tray",'koudou','medium','Q',None,None),
+('B21','M1',"A_SEITO2_HADAKA reaches the head of the line and looks back along it at all the bare shoulders behind him, then turns to the front again, then steps forward to the table as the line closes up behind him, while the light from the high windows catches the metal tray, as the ones already finished stand together near the doors talking and laughing",'koudou','wide','Q',None,None),
+('B22','M1',"A_SENSEI comes into the frame at one edge of the yard already walking and goes the whole width of it beside the waiting line at one steady pace, then turns at the far edge without stopping, then walks back the same way and out of frame, while dust lifts off the dry ground, as one of them says something that sets the two behind him laughing",'koutei','wide','Q',None,None),
+('B23','M1',"A_SEITO: the long line of bare shoulders runs away across the yard in front of the view, then their own hand comes up and shields their own eyes from the sun, then lowers again as the line shuffles forward one more pace, while dust lifts off the dry ground, the whole move running left to right across the frame",'koutei','pov_stand','Q',None,None),
+('B24','M1',"A_HAKUI lifts the shallow metal tray from the white cloth with both hands, then carries it the whole length of the table to the far end, then sets it down there and squares it to the edge",'koudou','ots','Q',None,None),
+('B25','M1',"A_SEITO2 drops back into his desk in the classroom and pulls the gym shirt down over his head, then smooths it flat at the front, then puts both hands on the desk lid and faces the blackboard, while the curtain at the tall window stirs",'kyoushitsu','medium','Q',None,None),
+('B26','M1',"A_HAKUI works at the far end of the long table with the tray in front of him, then lays something down in the tray, then draws the white cloth straight where it has rucked up",'koudou','ots','Q',None,None),
+('B27','M1',"A_SENSEI comes to the front of the hall and looks along the whole line from the side, then walks three paces down beside it, then stops and turns to look back at the table, while the light from the high windows catches the metal tray, the whole move running left to right across the frame, as two of them by the stage are showing each other their arms and laughing",'koudou','wide','Q',None,None),
+('B28','M1',"A_HAKUI: the white cloth of the long table fills the bottom of the view with the metal tray on it, then their own hands lift the folded cotton from the tray, then set it down again beside it and rest at the cloth",'koudou','pov_hand','Q',None,None),
+('B29','M1',"A_SEITO2_HADAKA steps up to the table and holds his own arm out to the white coat, then looks away toward the high windows while it is held, then takes his arm back and presses his own hand over the place",'koudou','medium','Q',None,None),
+('B30','M1',"A_HAKUI sets the tray down at the end of the table, then carries it away across the whole width of the hall floor toward the far doors, then goes out through them and out of frame, while a group at the back keep up a low chatter that carries across the floor",'koudou','wide','Q',None,None),
+('B31','M1',"A_SENSEI comes into the frame at the far end of the corridor already walking and goes the whole length of it past one classroom door after another, then slows at the last door and looks in without stopping, then carries on and out of frame, while the light from the tall windows moves along the floor",'rouka','wide','Q',None,None),
+('B32','M1',"A_SEITO: the corridor runs away ahead of the view with light falling in bars from the tall windows, then one of their own hands swings into the bottom corner of the frame, then the view carries on the whole length of the corridor and past the last door, the whole move running left to right across the frame",'rouka','pov_walk','Q',None,None),
+('B33','M1',"A_HAKUI folds the white cloth back from the long table and lays it over one arm, then lifts the empty tray from the bare wood, then carries both away toward the stage end of the hall",'koudou','medium','Q',None,None),
+('B34','M1',"A_IMA perches on the edge of the examination bed in the bright clinic room with one sleeve pushed up, then holds the bare arm out in front of her, then lowers it again and rests both hands in her lap",'ima_shinsatsu','medium','Q','F','A_IMA sitting with her sleeve still pushed up'),
+('B35','M1',"A_IMA swings down off the examination bed and pulls the sleeve back down over her arm, then crosses the small room to the door, then goes out through it and the room stands empty, the whole move running left to right across the frame",'ima_shinsatsu','wide','Q','F',None),
+]
+
+# =====================================================================================
+# MUC 2 — 車とひざの上 (47-62) — 16 shot
+# =====================================================================================
+S += [
+('C0','M2',"A_CHICHI walks around the parked car wiping the roof with a wet cloth, then crouches at the front wheel and works the cloth over the hub, then stands and wrings the cloth out over the bucket, the whole move running left to right across the frame, while the neighbours at the fence talk and laugh about the car",'kuruma_soto','wide','Q','G','A_CHICHI standing at the front wheel with the wet cloth in his hand'),
+('C1','M2',"A_TONARI leans on the low fence in the lane and looks in at the parked car, then walks the whole width of the frame along the fence left to right to get a better view of it, then stops at the far end and folds her arms, while dust lifts off the dry ground",'kuruma_soto','medium','Q','G',None),
+('C2','M2',"A_KO climbs up into the open front seat of the car and settles himself behind the thin steering wheel, then puts both hands on the rim of it, then turns it as far as it will go one way, while dust lifts off the dry ground",'kuruma_soto','medium','Q',None,None),
+('C3','M2',"A_KO: the thin steering wheel and the round dials of the dashboard fill the view, then their own two hands come up and take hold of the wheel rim, then turn it slowly as far as it will go, while the air from the open window moves along the seat fabric",'kuruma_tomaru','pov_hand','Q',None,None),
+('C4','M2',"A_HAHA settles into the left hand front passenger seat beside the driver with a small figure sitting up on her lap facing the windscreen, then folds one arm around the small figure and puts the other hand on the door frame, then looks out through the open window",'kuruma_naka',"static medium shot from the side of the car at chest height, looking straight in across both front seats so the driver and the woman are both seen in profile facing forward, the figure from the knees up in frame",'Q','H','A_HAHA sitting with the small figure on her lap and one arm around it'),
+('C5','M2',"A_HAHA sits facing forward beside the driver and braces her arm across the small figure sitting up on her lap as the car leans into a bend, then draws it back against her own body, then settles again and looks forward through the windscreen past the driver beside her, while the ones in the back seat talk and laugh",'kuruma_naka',"static medium shot from the side of the car at chest height, looking straight in across both front seats so the driver and the woman are both seen in profile facing forward, the figure from the knees up in frame",'Q','H',None),
+('C6','M2',"A_KO: seen from the woman's lap in the left hand front passenger seat, her pale blue apron and the woven fabric of the front seat fill the bottom of the view and the open left hand window lies beyond, then their own hand takes hold of the edge of the window frame, then the arm straightens as the view leans with the bend",'kuruma_naka','pov_sit','Q',None,None),
+('C7','M2',"A_KO2 stands up on the rear bench seat of the car and holds the top of the front seat with both hands, then leans forward between the driver on the right and the woman on the left to see out of the windscreen, then sits back down on his heels",'kuruma_naka','medium','Q',None,None),
+('C8','M2',"A_KO2: the backs of the two front seats and the windscreen beyond them fill the view, then their own hands take hold of the top of the front seat, then the view rises between the driver on the right and the woman on the left until the road ahead fills the windscreen, while the ones in the back seat talk and laugh",'kuruma_naka','pov_sit','Q',None,None),
+('C9','M2',"A_KO sits across the woman's lap in the left hand front passenger seat, with the driver and the steering wheel away over on the far right side of the car, and puts one arm out through the open left hand window beside him into the wind, then opens the hand flat and lets the air push it back, then draws the arm in again and rests it on the sill",'kuruma_naka',"static medium shot from the side of the car at chest height, looking straight in across both front seats so the driver and the woman are both seen in profile facing forward, the figure from the knees up in frame",'Q',None,None),
+('C10','M2',"A_KO: seen from the woman's lap in the left hand front passenger seat, the open left hand window fills one side of the view with the lane going past beyond it, then their own hand goes out through the window and opens flat into the wind, then comes back in and rests on the sill",'kuruma_naka','pov_hand','Q',None,None),
+('C11','M2',"A_CHICHI opens the driver door of the parked car and stands holding it, then looks back along the lane at the house, then gets in and pulls the door to, while dust lifts off the dry ground, as two of them lean over the fence pointing and laughing",'kuruma_soto','wide','Q',None,None),
+('C12','M2',"A_HAHA sits in the left hand front passenger seat beside the driver with both hands folded over the small figure sitting up on her lap, then turns her head to look out of the side window, then faces forward again and settles her arms, while the ones in the back seat talk and laugh",'kuruma_naka',"static medium shot from the side of the car at chest height, looking straight in across both front seats so the driver and the woman are both seen in profile facing forward, the figure from the knees up in frame",'Q',None,None),
+('C13','M2',"A_CHICHI drives the car into the frame at one edge of the lane and takes it the whole width of the frame at one even speed, then passes the low fences without slowing, then carries it out of frame, while dust lifts off the dry ground",'kuruma_soto','wide','Q',None,None),
+('C14','M2',"A_IMA leans in through the open rear door of the car and draws the harness straps of the moulded safety seat together, then clicks the buckle shut at the middle, then pulls the slack through and straightens up, while the buckle catches the light",'ima_kuruma','ots','Q','I','A_IMA standing at the open rear door with her hand on the buckle'),
+('C15','M2',"A_IMA closes the rear door of the car on the fitted moulded safety seat, then walks around the back of the car to the driver side, then opens that door and gets in, while the buckle catches the light, the whole move running left to right across the frame, as the buckle catches the light",'ima_kuruma','wide','Q','I',None),
+]
+
+# =====================================================================================
+# MUC 3 — 部屋の中の煙 (63-82) — 20 shot
+# =====================================================================================
+S += [
+('D0','M3',"A_CHICHI comes in through the doorway and crosses the room to the low table, then sets the heavy glass ashtray down in the middle of it, then squares it with one finger, then leans back on the floor cushion, while a cigarette left burning in the glass ashtray sends its smoke up through the light above, the whole move running left to right across the frame",'chanoma','medium','Q',None,None),
+('D1','M3',"A_CHICHI taps ash into the glass ashtray at the middle of the table, then leans back while the smoke climbs past the bulb, then draws again and lets it go slowly",'chanoma','medium','Q','J','A_CHICHI leaning back from the table with smoke around the bulb'),
+('D2','M3',"A_TONARI leans in from the far side of the low table and takes something small from A_CHICHI across it, then sits back on her heels, then turns toward the open doorway with it in her hand, while smoke drifts through the light above, as two of them by the wall keep talking quietly to each other",'chanoma','wide','Q','J',None),
+('D3','M3',"A_KO folds down at the corner of the same low table with an open notebook in front of him and the glass ashtray standing empty away at the far end of the table, then writes a line across the page, then stops and rubs one eye with the back of his hand, while the light from the window moves across the matting",'chanoma','medium','Q',None,None),
+('D4','M3',"A_KO: the open notebook fills the bottom of the view on the low table, then their own hand moves the pencil along one line of the page, then stops at the end of it and lifts away while the light from the window moves across the matting",'chanoma','pov_sit','Q',None,None),
+('D5','M3',"A_HAHA crouches on the tatami beside the low table and runs her fingertips over a small dark mark burnt into the matting, then presses it flat with her thumb, then sits back and looks at it, while a cigarette left burning in the glass ashtray sends its smoke up through the light above, as the others in the room talk across the table and laugh",'chanoma','ots','Q',None,None),
+('D6','M3',"A_HAHA: the tatami matting fills the view with a small dark burn mark in the weave, then their own fingers come into the frame and rub across it twice, then lift away and rest flat on the matting beside it, while a cigarette left burning in the glass ashtray sends its smoke up through the light above",'chanoma','pov_hand','Q',None,None),
+('D7','M3',"A_CHICHI sits at the low table with an unlit cigarette already held between his lips and strikes a match along the side of the box in one smooth stroke, then lifts the small steady flame to the end of the cigarette until it catches, then shakes the match out and drops the dead match into the glass ashtray, while the first of the smoke drifts up through the light above the table",'chanoma','medium','Q',None,None),
+('D8','M3',"A_CHICHI: the low table and the glass ashtray fill the bottom of the view, then their own two hands come into the frame and strike a match, then the hands shake it out and drop it into the ashtray while the room goes a little white above, as smoke drifts through the light above, as someone out of sight in the next room laughs at something",'chanoma','pov_hand','Q',None,None),
+('D9','M3',"A_HAHA lifts a heavy winter coat off a hook by the doorway and holds it up in front of her, then turns it around once, then folds it over her arm and carries it out of the frame, while a cigarette left burning in the glass ashtray sends its smoke up through the light above",'chanoma','medium','Q',None,None),
+('D10','M3',"A_KO2 walks the whole length of the lane toward the cigarette stall at one even pace, then reaches the worn counter and puts one hand up on it, then waits there with the lane empty behind him, while dust lifts in the lane behind, the whole move running left to right across the frame, as two women stop in the lane behind to talk and laugh",'tabakoya','wide','Q','K','A_KO2 standing at the counter with one hand on it'),
+('D11','M3',"A_KO2: the worn wooden counter of the stall fills the bottom of the view with the glass case behind it, then their own hand comes up onto the counter and opens flat with coins in it, then closes again around a small plain packet, while dust lifts in the lane behind",'tabakoya','pov_hand','Q','K',None),
+('D12','M3',"A_KO2 turns away from the stall counter with a small plain packet held in both hands, then walks back the whole length of the lane the way he came, then goes out of frame, while dust lifts in the lane behind",'tabakoya','behind','Q',None,None),
+('D13','M3',"A_CHICHI settles into the window side of a facing box seat and taps ash into the small metal ashtray on the sill under the window, then turns his head to the window and watches the fields going past, then leans back into the worn fabric of the seat, while the smoke from his hand drifts along the window glass",'densha_box','medium','Q',None,None),
+('D14','M3',"A_TONARI settles onto the wooden bench of the waiting room with her hands in her lap, then turns her head toward the tall metal ashtray stand at the end of the row, then faces front again and looks up at the clock, while a shadow moves slowly along the bench, as two people on the next bench talk quietly and one of them smiles",'machiai','medium','Q',None,None),
+('D15','M3',"A_KO: the row of hanging straps runs away down the whole length of the carriage high above the view, well out of reach, then their own hand stretches up as far as the arm will go and the fingertips just brush the bottom of the nearest strap, then the arm stretches up out of frame after it and comes back down into frame empty, and the hand takes hold of the edge of a coat sleeve beside them instead, while the whole carriage sways together on the rails",'densha','pov_stand','Q',None,None),
+('D16','M3',"A_CHICHI stubs out into the glass ashtray at the low table, then pushes the ashtray away across the wood, then folds both hands on the table edge, while smoke drifts through the light above",'chanoma','medium','Q',None,None),
+('D17','M3',"A_HAHA slides the paper door of the room fully open onto the garden, then stands in the opening while the air moves through, then walks back to the low table and lifts the glass ashtray off it, as a cigarette left burning in the glass ashtray sends its smoke up through the light above, the whole move running left to right across the frame, as two of them by the wall keep talking quietly to each other",'chanoma','wide','Q',None,None),
+('D18','M3',"A_IMA crosses the bright modern room to the window and pushes it open, then stands there with one hand on the frame, then turns back to the clean low table where nothing is set out, the whole move running left to right across the frame",'ima_ie','wide','Q','L','A_IMA standing by the open window with one hand on the frame'),
+('D19','M3',"A_IMA crouches by the low sofa and picks a toy up off the plain rug, then carries it the whole width of the room to a basket by the wall, then drops it in and straightens up",'ima_ie','medium','Q','L',None),
+]
+
+# =====================================================================================
+# CTA 83-89 — 7 shot
+# =====================================================================================
+S += [
+('E0','CTA',"A_HAHA comes out through the open glass doors onto the veranda with a folded straw mat under one arm, then smooths it flat with both hands, then sits back on her heels at the edge of it, while the shadows of the leaves move across the boards",'engawa_asa','medium','Q',None,None),
+('E1','CTA',"A_HAHA: the straw mat and the sunlit veranda boards fill the bottom of the view with the garden beyond, then their own hands come into the frame and press the mat flat at one corner, then lift away and rest on the boards, while the shadows of the leaves move across the boards, as voices and laughing carry in from the lane beyond the hedge",'engawa_asa','pov_hand','Q',None,None),
+('E2','CTA',"A_TONARI walks the whole length of the veranda from the far end toward the view at one even pace, then stops at the open glass doors, then turns and looks back out at the garden, while the shadows of the leaves move across the boards",'engawa_asa','wide','Q',None,None),
+('E3','CTA',"A_HAHA carries a small paper booklet across the room to the low table, then sets it down and squares it with both hands, then kneels beside it, while the light from the window moves across the matting",'chanoma','wide','Q',None,None),
+('E4','CTA',"A_KO swings himself onto the veranda edge with his bare feet hanging over the boards, then swings them once, then leans back on both hands and looks up into the garden",'engawa_asa','medium','Q',None,None),
+('E5','CTA',"A_TONARI settles on the veranda with her hands in her lap and looks out at the garden, then turns her head toward the open room behind her, then looks out again and settles, while the shadows of the leaves move across the boards, as two neighbours talk and laugh over the hedge at the far end of the garden",'engawa_asa','medium','Q',None,None),
+('E6','CTA',"A_HAHA: the veranda boards run away ahead of the view toward the open glass doors, then one of their own hands swings into the bottom corner of the frame, then the view carries the whole length of the veranda and turns in at the doors, the whole move running left to right across the frame",'engawa_asa','pov_walk','Q',None,None),
+]
+
+# =====================================================================================
+# MUC 4 — 日光浴 (90-113) — 24 shot
+# =====================================================================================
+S += [
+('F0','M4',"A_HAHA comes back to the low table and kneels at it, then opens the small paper booklet flat, then turns one page with her fingertips, then rests both hands at the edge of the open page, while the light from the window moves across the matting",'chanoma','medium','Q','M','A_HAHA kneeling with the booklet open flat in front of her'),
+('F1','M4',"A_HAHA: the open booklet fills the bottom of the view on the low table, then their own finger comes into the frame and moves slowly along one printed line, then lifts away at the end of it, while the light from the window moves across the matting, as the others in the room talk across the table and laugh",'chanoma','pov_hand','Q','M',None),
+('F2','M4',"A_HAHA turns the booklet around on the table so it faces the room, then sits back on her heels, then folds her hands in her lap and looks down at it, while the light from the window moves across the matting",'chanoma','medium','Q',None,None),
+('F3','M4',"A_HAHA slides the glass doors of the veranda fully back onto the morning garden, then stands in the opening while the sun comes along the boards, then turns back into the room, as the shadows of the leaves move across the boards",'engawa_asa','wide','Q','N','A_HAHA standing in the open doorway with the sun on the boards'),
+('F4','M4',"A_HAHA carries a rolled straw mat out along the veranda and sets it down on the boards, then unrolls it the whole length of the sunlit stretch, then kneels at one end and smooths it flat, while the shadows of the leaves move across the boards, as voices and laughing carry in from the lane beyond the hedge",'engawa_asa','medium','Q','N','the straw mat laid out flat in the sun'),
+('F5','M4',"A_HAHA kneels at the straw mat and lays a very small figure lying on its back in nothing but a cloth nappy, its bare arms and legs kicking a little in the sun down on it, then draws a light cloth back off its legs so the bare feet are in the sun, then sits back on her heels beside it",'engawa_asa','high','Q',None,None),
+('F6','M4',"A_HAHA: the straw mat and the sunlit boards fill the view with a very small figure lying on its back in nothing but a cloth nappy, its bare arms and legs kicking a little in the sun, then their own hands come into the frame and fold a light cloth back from its feet, then rest on the mat beside it",'engawa_asa','pov_hand','Q',None,None),
+('F7','M4',"A_HAHA crouches beside the mat and turns her wrist to look at the light on the boards, then looks up at the angle of the sun over the garden, then looks back down at the mat, while the shadows of the leaves move across the boards, as two neighbours talk and laugh over the hedge at the far end of the garden",'engawa_asa','medium','Q',None,None),
+('F8','M4',"A_HAHA kneels beside the straw mat where a very small figure lies on its back in nothing but a cloth nappy, its bare arms and legs kicking a little in the sun, and lays the flat of her palm on its bare chest, then holds it there a moment, then lifts the hand away and turns the palm up to feel how much heat the sun has put into the skin, while the shadows of the leaves move across the boards",'engawa_asa','ots','Q',None,None),
+('F9','M4',"A_HAHA: the sunlit mat fills the bottom of the view, then their own palm comes into the frame and rests flat for a moment on the warm boards beside a very small figure lying on its back in nothing but a cloth nappy, its bare arms and legs kicking a little in the sun, then lifts and turns over in front of the view, while the shadows of the leaves move across the boards",'engawa_asa','pov_hand','Q',None,None),
+('F10','M4',"A_TONARI comes along the lane to the fence and looks in over it at the sunlit veranda, then lifts a hand toward it, then walks on the whole length of the fence and out of frame, while the washing sways on the poles, as the neighbours stand out at the fences talking and laughing to each other",'roji_yuugata','wide','Q',None,None),
+('F11','M4',"A_HAHA gathers a very small figure lying on its back in nothing but a cloth nappy, its bare arms and legs kicking a little in the sun up off the mat into both arms, then stands with it, then carries it in through the open glass doors and out of the frame, while the shadows of the leaves move across the boards, as voices and laughing carry in from the lane beyond the hedge",'engawa_asa','wide','Q',None,None),
+('F12','M4',"A_HAKUI stands behind the long cloth covered table in the health centre and lifts a very small figure wrapped in a plain white cotton cloth onto the flat pan of the scales, then steadies it with both hands while the pan settles, then lifts it off again, as the women along the wall talk and laugh quietly together",'hokenjo','ots','Q','O','A_HAKUI holding the very small figure clear of the scales'),
+('F13','M4',"A_HAHA takes one of the chairs along the wall of the health centre with the small paper booklet open on her knee, then looks up at the white coat across the room, then looks back down and turns a page",'hokenjo','medium','Q','O',None),
+('F14','M4',"A_HAKUI writes a short line into the open booklet on the long table, then turns it around to face A_HAHA, then pushes it across the cloth toward her",'hokenjo','ots','Q',None,None),
+('F15','M4',"A_HAHA: the long white cloth of the table fills the bottom of the view with the open booklet pushed across it, then their own hands come into the frame and draw the booklet nearer, then hold it flat at the edges, while two of them by the door compare their booklets and laugh",'hokenjo','pov_hand','Q',None,None),
+('F16','M4',"A_TONARI walks the whole length of the health centre room past the row of chairs at one even pace, then reaches the far end and turns, then sits down on the last chair, the whole move running left to right across the frame",'hokenjo','wide','Q',None,None),
+('F17','M4',"A_HAHA closes the small paper booklet on the low table and lays both hands flat on the cover, then slides it away from her across the wood, then sits back, while the light from the window moves across the matting",'chanoma','medium','Q',None,None),
+('F18','M4',"A_HAHA: the closed booklet lies on the low table at the bottom of the view, then their own hands open the cover and turn through several pages at once, then stop flat on one page and stay there, while the light from the window moves across the matting, as someone out of sight in the next room laughs at something",'chanoma','pov_hand','Q',None,None),
+('F19','M4',"A_HAHA kneels at the low table with the booklet open and looks at the page for a long moment, then closes it slowly, then rests one hand flat on the closed cover, while the light from the window moves across the matting",'chanoma','medium','Q',None,None),
+('F20','M4',"A_IMA pushes a pushchair with a wide sun canopy the whole length of the shaded path under the trees, then stops at the far end in the shade, then draws the canopy further forward over it, while two people on the bench further along talk and laugh together",'ima_kouen','wide','Q','P','A_IMA standing in the shade with both hands on the pushchair'),
+('F21','M4',"A_IMA: the shaded path runs away ahead of the view under the trees with the canopy of a pushchair in the bottom of the frame, then one of their own hands draws the canopy further forward, then the view carries on down the path into deeper shade, the whole move running left to right across the frame",'ima_kouen','pov_walk','Q','P',None),
+('F22','M4',"A_HAHA stays on the sunlit veranda boards beside the rolled up straw mat, then draws her knees up and folds her arms over them, then looks out at the garden",'engawa_asa','medium','Q',None,None),
+('F23','M4',"A_HAHA: the empty sunlit veranda runs away ahead of the view toward the open garden, then their own hand comes into the bottom of the frame and rests flat on the warm boards, then lifts away and the boards stand empty, while the shadows of the leaves move across the boards, the whole move running left to right across the frame",'engawa_asa','pov_sit','Q',None,None),
+]
+
+# =====================================================================================
+# MUC 5 — しつけと体罰 (114-134) — 21 shot
+# =====================================================================================
+S += [
+('G0','M5',"A_CHICHI comes in and sits down at the low round dinner table, then takes up a rice bowl, then sets the bowl down, then lays his chopsticks across the top of it and folds his hands, while the light from the single bulb sways a little",'chabudai','medium','Q','R','A_CHICHI sitting with his hands folded over the set down bowl'),
+('G1','M5',"A_KO kneels at the same round table across from A_CHICHI and looks down into his own bowl, then puts his own chopsticks down beside it, then sits very still with both hands on his knees, while the light from the single bulb sways a little",'chabudai','medium','Q','R',None),
+('G2','M5',"A_KO: the round table fills the bottom of the view with a rice bowl and chopsticks on it, then their own hands come into the frame and lay the chopsticks down across the bowl, then withdraw to their own knees and stay there, while the light from the single bulb sways a little",'chabudai','pov_sit','Q',None,None),
+('G3','M5',"A_HAHA settles at the end of the round table and looks from one side of it to the other, then reaches out and moves a bowl a little, then draws her hand back into her lap, while the light from the single bulb sways a little",'chabudai','medium','Q',None,None),
+('G4','M5',"A_KO2 waits in the school corridor facing the wall with both hands at his sides, then shifts his weight from one foot to the other, then stands still again",'rouka','wide','Q',None,None),
+('G5','M5',"A_KO2: the corridor wall stands close in front of the view with the tall windows away to one side, then their own hand comes up and rests flat on the wall, then slides down it and drops out of the frame",'rouka','pov_stand','Q',None,None),
+('G6','M5',"A_SENSEI comes into the frame at the far end of the corridor already walking and goes the whole length of it at one even pace, then passes the standing figure without stopping, then carries on and out of frame, while the light from the tall windows moves along the floor",'rouka','wide','Q',None,None),
+('G7','M5',"A_TONARI leans on the low fence in the lane and calls across it into the next yard, then folds her arms, then goes on standing there looking in, while the washing sways on the poles",'roji_yuugata','medium','Q','S','A_TONARI standing at the fence with her arms folded'),
+('G8','M5',"A_KO hangs back in the lane in front of the fence with his head down, then scuffs one foot in the dirt, then turns and walks away the whole length of the lane and out of frame, while the washing sways on the poles",'roji_yuugata','wide','Q','S',None),
+('G9','M5',"A_KO: the lane runs away ahead of the view between the low fences with a figure standing at one of them, then one of their own hands swings into the bottom corner of the frame, then the view carries the whole length of the lane and past the last fence, the whole move running left to right across the frame",'roji_yuugata','pov_walk','Q',None,None),
+('G10','M5',"A_HAHA waits just inside the doorway of the house and looks out into the lane, then steps back from the doorway, then turns and looks into the room behind her, while the washing sways on the poles",'roji_yuugata','medium','Q',None,None),
+('G11','M5',"A_KO sinks onto the tatami of the living room with his back to the low table, then draws his knees up, then puts his forehead down on them",'chanoma','medium','Q',None,None),
+('G12','M5',"A_CHICHI pushes back from the round table and looks across it for a long moment, then lays one hand flat on the wood, then draws it back to his own knee, while the light from the single bulb sways a little",'chabudai','medium','Q',None,None),
+('G13','M5',"A_KO: the round table and the single bulb above it fill the view, then their own hand comes into the frame and closes around the edge of the table, then lets go and withdraws, while the light from the single bulb sways a little",'chabudai','pov_sit','Q',None,None),
+('G14','M5',"A_HAHA carries the bowls from the round table two at a time across the room, then sets them down by the wall, then comes back and lifts the last one",'chabudai','wide','Q',None,None),
+('G15','M5',"A_SENSEI comes to the front of the empty classroom with both hands behind his back, then walks the whole width of the room past the blackboard, then stops at the far window and looks out, the whole move running left to right across the frame",'kyoushitsu','wide','Q',None,None),
+('G16','M5',"A_TONARI walks the whole length of the lane past one open doorway after another at one even pace, then slows near the far end without stopping, then carries on and out of frame, while the washing sways on the poles",'roji_yuugata','wide','Q',None,None),
+('G17','M5',"A_KO stays behind on the tatami beside the low table and turns his own hand over in front of him, then closes it, then lets it fall into his lap, while the light from the window moves across the matting",'chanoma','medium','Q',None,None),
+('G18','M5',"A_KO: their own open hand lies in the bottom of the view against the tatami, then the fingers close slowly into a fist, then open flat again and stay there, while the light from the window moves across the matting",'chanoma','pov_hand','Q',None,None),
+('G19','M5',"A_IMA gets down on the plain rug to the height of a small figure and holds both hands open in front of her, then speaks with them open, then lowers them onto her own knees",'ima_ie','medium','Q','T','A_IMA kneeling on the rug with both hands on her knees'),
+('G20','M5',"A_IMA pushes up off the rug and crosses the whole width of the bright room to the window, then stops there, then turns back to look into the room, the whole move running left to right across the frame",'ima_ie','wide','Q','T',None),
+]
+
+# =====================================================================================
+# TRUC — quay ve cau hoi mo bai (135-145) — 11 shot
+# =====================================================================================
+S += [
+('K0','TRUC',"A_TONARI comes out along the veranda and sits down on the sunlit boards, then lifts her head and looks out at the garden, then lowers it again, while the shadows of the leaves move across the boards",'engawa_asa','medium','Q',None,None),
+('K1','TRUC',"A_TONARI: the garden stands out beyond the veranda boards and her own lap fills the bottom of the view, then their own hands unfold in the lap, then fold together again and rest, while the shadows of the leaves move across the boards",'engawa_asa','pov_sit','Q',None,None),
+('K2','TRUC',"A_SENSEI comes to the front of the empty classroom and looks along the rows of empty desks, then walks down one aisle to the back, then turns at the back wall and looks forward again, while the curtain at the tall window stirs, the whole move running left to right across the frame",'kyoushitsu','wide','Q',None,None),
+('K3','TRUC',"A_HAHA climbs into the empty left hand front passenger seat of the standing car with both hands flat on her own lap, nobody at the wheel beside her, then looks down at the lap, then puts one hand on the door frame and looks out of the open window",'kuruma_tomaru','medium','Q',None,None),
+('K4','TRUC',"A_HAHA: the open booklet lies flat on the low table at the bottom of the view, then their own finger moves along one printed line, then stops and stays resting on the page, while the light from the window moves across the matting",'chanoma','pov_hand','Q',None,None),
+('K5','TRUC',"A_CHICHI lingers alone at the low table with the empty glass ashtray in front of him, then turns it once with one finger, then takes the hand away and leaves it standing",'chanoma','medium','Q',None,None),
+('K6','TRUC',"A_HAHA sinks onto the tatami of the empty room with both hands on her knees, then looks down at them, then lifts her head and looks toward the open doorway",'chanoma','medium','Q',None,None),
+('K7','TRUC',"A_TONARI walks the whole length of the sunlit veranda left to right from one end to the other at one even pace, then stops at the far end, then turns and looks back the way she came, while the shadows of the leaves move across the boards",'engawa_asa','wide','Q',None,None),
+('K8','TRUC',"A_SENSEI closes the last sliding door of the corridor, then walks the whole length of it away from the view past every door, then goes out of frame at the far end, while the light from the tall windows moves along the floor",'rouka','behind','Q',None,None),
+('K9','TRUC',"A_HAHA: the empty tatami room stands ahead of the view with the low table in the middle of it, then one of their own hands enters the bottom corner of the frame, then the view carries forward across the whole room to the open doorway, while the light from the window moves across the matting",'chanoma','pov_walk','Q',None,None),
+('K10','TRUC',"A_TONARI settles on the veranda in the sun and puts one hand flat on the warm boards beside her, then leaves it there, then draws it back into her lap",'engawa_asa','medium','Q',None,None),
+]
+
+# =====================================================================================
+# KET 146-161 — 16 shot
+# =====================================================================================
+S += [
+('L0','KET',"A_IMA comes into the bright room with a small blanket over one arm, then lays it over the arm of the sofa, then smooths it flat, while the curtain at the window stirs",'ima_ie','medium','Q',None,None),
+('L1','KET',"A_HAKUI drops something into the sealed plastic box on the clinic wall, then closes the flap of it, then turns back to the desk",'ima_shinsatsu','ots','Q',None,None),
+('L2','KET',"A_IMA leans into the car through the open rear door and tugs the harness of the moulded safety seat to test it, then lets it go, then straightens up and closes the door, while the buckle catches the light",'ima_kuruma','ots','Q',None,None),
+('L3','KET',"A_IMA gets down on the plain rug with both hands open and speaks toward the floor beside her, then lowers the hands, then sits back on her heels, while the curtain at the window stirs",'ima_ie','medium','Q',None,None),
+('L4','KET',"A_TONARI sits on the sunlit veranda and turns her own hand over in her lap, then closes it, then opens it again and rests it flat on her knee, while the shadows of the leaves move across the boards",'engawa_asa','medium','Q',None,None),
+('L5','KET',"A_HAHA crouches on the sunlit veranda beside the straw mat and rolls it up from the far end, then carries the roll the whole length of the boards, then stands it against the wall at the end, while the shadows of the leaves move across the boards",'engawa_asa','wide','Q',None,None),
+('L6','KET',"A_HAHA: the sunlit boards run away ahead of the view toward the garden, then their own hands come into the frame and press flat on them, then push down once and lift away",'engawa_asa','pov_hand','Q',None,None),
+('L7','KET',"A_HAHA sits in the left hand front passenger seat of the standing car and folds both arms across her own lap where a small figure used to sit, nobody at the wheel beside her, then looks down at the empty lap, then looks out of the open window",'kuruma_tomaru','medium','Q',None,None),
+('L8','KET',"A_TONARI walks out along the veranda from the open doors away from the camera at one even pace, then goes the whole length of it, then sits down at the far end in the sun, while the shadows of the leaves move across the boards",'engawa_asa','wide','Q',None,None),
+('L9','KET',"A_KO swings himself onto the veranda edge with his feet over the boards and swings them once, then leans back on both hands, then looks up into the garden",'engawa_asa','medium','Q',None,None),
+('L10','KET',"A_TONARI: the garden fills the view beyond the veranda boards and her own lap lies at the bottom of the frame, then their own hand lifts and opens toward the garden, then lowers and settles in the lap, while the shadows of the leaves move across the boards",'engawa_asa','pov_sit','Q',None,None),
+('L11','KET',"A_HAHA slides the glass doors of the veranda halfway across the garden, then stops with one hand on the frame, then looks out through the gap, while the shadows of the leaves move across the boards",'engawa_asa','medium','Q',None,None),
+('L12','KET',"A_TONARI settles on the veranda with both hands in her lap and looks out at the garden, then turns her head toward the open room behind, then looks out again, while the shadows of the leaves move across the boards",'engawa_asa','medium','Q',None,None),
+('L13','KET',"A_HAHA walks the whole length of the veranda away from the camera toward the far end, then stops there, then sits down on the boards in the sun, while the shadows of the leaves move across the boards",'engawa_asa','behind','Q',None,None),
+('L14','KET',"A_TONARI: the veranda boards run away from the camera to the open garden at the far end, then one of their own hands enters the bottom corner of the frame, then the view carries the whole length of the boards and out toward the garden, while the shadows of the leaves move across the boards",'engawa_asa','pov_walk','Q',None,None),
+('L15','KET',"A_HAHA drops to her knees at the low table and closes the small paper booklet, then lays both hands flat on the cover, then lifts them away and leaves it lying there",'chanoma','medium','Q',None,None),
+]
+
+CUT = {"A3", "B10", "B12", "B14", "B15", "B17", "B18", "B20", "B21", "B23", "B26", "B27", "B28", "B29", "B3", "B30", "B32", "B35", "B5", "B7", "C10", "C15", "C3", "C6", "C8", "D0", "D11", "D15", "D16", "D17", "D2", "D4", "D6", "D8", "E1", "E4", "E5", "E6", "F1", "F15", "F18", "F21", "F23", "F4", "F6", "F7", "F8", "F9", "G13", "G18", "G2", "G20", "G5", "G8", "G9", "H1", "H5", "K1", "K4", "K5", "K6", "K9", "L10", "L11", "L12", "L13", "L14", "L4", "L5", "L6", "L8", "L9"}
+S = autochain(S, cut=CUT)
+
+rows = build(S, P, C, crowd=CROWD)
+n_red, n_warn = gate(rows, S, P, C,
+                     interior={"kyoushitsu", "chanoma", "chabudai", "machiai",
+                               "densha", "hokenjo", "koudou", "rouka",
+                               "kuruma_naka", "kuruma_tomaru", "densha_box", "ima_kuruma", "ima_ie", "ima_shinsatsu"},
+                     strict=True, crowd=CROWD)
+act_report(S, C)
+safe, risky, pct = linkage(S)
+print("\nNOI AN TOAN: %d/%d moi noi cung boi canh co it nhat mot canh CHAT (%.0f%%)"
+      % (safe, risky, pct))
+
+OUTDIR = r"E:\Claude\Projects\youtube-jp-showa\06_VIDEO\13_kosodate-joushiki"
+if n_red == 0:
+    write_outputs(rows, OUTDIR)
+    print("\nXUAT -> %s\\videogen_FLOW.txt | _TENFILE.txt | _BLOCKS.md" % OUTDIR)
+else:
+    print("\n[CHAN] %d loi do — KHONG xuat file. Sua roi chay lai." % n_red)

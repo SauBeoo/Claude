@@ -1,0 +1,42 @@
+{
+ "file": "YTSave_YouTube_Media_kK9Zx7q2UNc_002_720p.mp4",
+ "stem": "YTSave_YouTube_Media_kK9Zx7q2UNc_002_720p",
+ "views": 67437,
+ "label": "HIT-nakaniwa",
+ "dur": 3127.7,
+ "chars": 16963,
+ "cps": 5.42,
+ "entry_s": 1880.0,
+ "entry_t": "外壁大き窓屋には暮らしの中心 を内側の中庭へ向けます",
+ "n_free45": 6,
+ "n_win": 9,
+ "gap_payoff_s": 174.0,
+ "n_flip": 35,
+ "first_flip_s": 22.0,
+ "n_open": 12,
+ "n_wave": 14,
+ "loop_close_pct": null,
+ "money_pct": null,
+ "cta_pct": 98,
+ "cuts": 392,
+ "cuts_per_min": 7.52,
+ "cuts_first60": 7,
+ "hold_max_s": 8.0,
+ "hold_median_s": 8.0,
+ "fails": [
+  "O1 vào bài ở ~1880s (+10406 ký quá trần 30s)",
+  "O6 giây 0–45 có 6 câu KHÔNG TRẢ TIỀN (trần 1) → đây là cái vách làm @45s tụt còn 41–50%",
+  "O9 gap payoff dài nhất 3′54″ từ ~37′25″ (trần 2′30″) → đó là một cái hố",
+  "O11 KHÔNG thấy chỗ đóng LOOP LỚN (câu gọi lại lời hứa cold open: 「冒頭でお約束した…」) → lời hứa mở mà không đóng = mất đuôi bài",
+  "O12 cú lật đầu ở ~32′37″ (trần phút 6) → nửa đầu không có gì xảy ra",
+  "O14 CTA ở ~51′13″ đứng ngay sau một payoff, KHÔNG có câu MỞ loop trong 3 câu trước → đây là cú rớt −14,7đ của video 07",
+  "O13 chỉ 12 câu MỞ loop / cần ≥13 (bài 52′ ≈ 14 sóng) → có sóng đóng gọn, không dẫn sang sóng kế"
+ ],
+ "warns": [
+  "O10 60s đầu chưa tuyên bố 'mẹo mạnh nhất để CUỐI' → khán giả lấy được mẹo 1 rồi bỏ đi, sàn không lên nổi",
+  "O18 KHÔNG dò được chương 「vì sao bị mất」 (dòng tiền) sau 40% bài — thiếu chương, hoặc từ vựng ngoài MONEY_CH",
+  "O15 có 55 chỗ ≥4 câu LIỀN không trả tiền → nghi phạm, ĐỌC BẰNG MẮT: trang trí → CẮT · cơ chế → giữ. ⛔ cấm chèn số"
+ ],
+ "sheet": "E:\\Claude\\Projects\\youtube-jp-co-dai\\01_SOURCES\\_peer\\YTSave_YouTube_Media_kK9Zx7q2UNc_002_720p_sheet.jpg",
+ "frames": 105
+}

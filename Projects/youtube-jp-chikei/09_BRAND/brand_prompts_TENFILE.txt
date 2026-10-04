@@ -1,0 +1,25 @@
+BO v2 — RUC RO / HOA LA CANH (user che ban v1 kho khan, 2026-09-16).
+Ban v1 toi gian van giu o brand_prompts_v1plain_*.txt.
+
+FLOW.txt  (bake san chu 地形 — AVATAR)
+  dong 1 = A1  -> 09_BRAND/ai_avatar_A1.png   ukiyo-e song+nui+sakura trong huy hieu vang
+  dong 2 = A2  -> 09_BRAND/ai_avatar_A2.png   ban do kho bau + la ban vang + day leo
+  dong 3 = A3  -> 09_BRAND/ai_avatar_A3.png   bon mua xoay quanh dia + song lam
+
+PLATE.txt (KHONG chu — Claude dong chu bang font)
+  dong 1 = A1p -> 09_BRAND/ai_avatar_A1_plate.png
+  dong 2 = A2p -> 09_BRAND/ai_avatar_A2_plate.png
+  dong 3 = A3p -> 09_BRAND/ai_avatar_A3_plate.png
+  dong 4 = B1  -> 09_BRAND/ai_banner_B1.png   ukiyo-e song cuon song + cau do + sakura
+  dong 5 = B2  -> 09_BRAND/ai_banner_B2.png   ban do kho bau vien hoa van vang
+  dong 6 = B3  -> 09_BRAND/ai_banner_B3.png   mot thung lung qua BON MUA
+  dong 7 = B4  -> 09_BRAND/ai_banner_B4.png   hoang hon vang tren thung lung + thi tran
+
+BANNER : gen o lo 2752x1536 neu chon duoc (thu nho ve 2560x1440 = net).
+AVATAR : crop vuong giua khung sau khi gen.
+
+Sau khi gen:
+  1. xoa watermark ✦ (lo 2752x1536 co HAI dau; soi 1:1 ca 4 goc)
+  2. crop
+  3. python tools/make_brand.py --bg 09_BRAND/ai_banner_B3.png
+     (tu cat ti le + dai toi mo sau vung an toan + chu vien den => doc duoc tren nen ruc)

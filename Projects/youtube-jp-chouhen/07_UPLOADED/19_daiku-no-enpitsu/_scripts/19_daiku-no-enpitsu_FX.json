@@ -1,0 +1,320 @@
+{
+  "speakers": {
+    "澄子": "hero",
+    "秀雄": "villain",
+    "岩室": "hero",
+    "谷口": "hero",
+    "桧山": "hero",
+    "ちよ": "villain"
+  },
+  "lines": [
+    {
+      "match": "施主側の挨拶はお前がやれ",
+      "speaker": "秀雄"
+    },
+    {
+      "match": "この家に一円も出してないんだからな",
+      "speaker": "秀雄"
+    },
+    {
+      "match": "「素人が口を出すな。",
+      "speaker": "秀雄"
+    },
+    {
+      "match": "図面が読める人間の顔をするな",
+      "speaker": "秀雄"
+    },
+    {
+      "match": "「あんたは黙って座ってればいいのに」",
+      "speaker": "ちよ"
+    },
+    {
+      "match": "母の世話だけは長くやってくれましたので",
+      "speaker": "秀雄"
+    },
+    {
+      "match": "この梁、図面のと違うな",
+      "speaker": "岩室"
+    },
+    {
+      "match": "「たわみだけなら、まだいいんです」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "「儂は奥さんに聞いとる」",
+      "speaker": "岩室"
+    },
+    {
+      "match": "「本で読みました」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "基礎の写真、見たことありますか",
+      "speaker": "谷口"
+    },
+    {
+      "match": "「四軒目は、お母さんの家ですね」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "「僕の母の家、雪、大丈夫ですか」",
+      "speaker": "谷口"
+    },
+    {
+      "match": "「儂は今日、棟上げをやらん」",
+      "speaker": "岩室"
+    },
+    {
+      "match": "儂の名前は使わんでくれ",
+      "speaker": "岩室"
+    },
+    {
+      "match": "名簿に名前がないんです",
+      "speaker": "秀雄"
+    },
+    {
+      "match": "嫁さんの話は、もういいだろう",
+      "speaker": "秀雄"
+    },
+    {
+      "match": "消えています」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "「代わりに、これで申し上げます」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "雪が一メートル乗ります",
+      "speaker": "澄子"
+    },
+    {
+      "match": "「その鉛筆、どこで手に入れた」",
+      "speaker": "岩室"
+    },
+    {
+      "match": "「あの子か」",
+      "speaker": "岩室"
+    },
+    {
+      "match": "その人間の腕も消えるのか",
+      "speaker": "岩室"
+    },
+    {
+      "match": "「九月に、この土地で雪は降りません」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "「上がっていなくてよかったと思います」",
+      "speaker": "桧山"
+    },
+    {
+      "match": "「誰も来ませんでした」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "「三回目は、開けませんでした」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "同じ名前です」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "二年遅れで、言いました」",
+      "speaker": "澄子"
+    },
+    {
+      "match": "自分の名前です",
+      "speaker": "澄子"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "「明日の上棟式、施主側の挨拶はお前がやれ」",
+      "to": "削り口が、まだ斜めに残っていた。",
+      "name": "blizzard",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "翌日は、みぞれが上がって、低い雲だけが残った。",
+      "to": "基礎の写真、見たことありますか",
+      "name": "blizzard",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "四十年前の話を、少しさせてほしい。",
+      "to": "返しそびれたまま、四十年、道具箱の底にあった。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "餅撒きが終わって、人が座敷に移るまでの短い時間だった。",
+      "to": "上着の内側に入れた。",
+      "name": "office_hum",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "午後二時、人が現場に戻ってきた。",
+      "to": "あんた、建築士になったのか",
+      "name": "blizzard",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "「写真です。",
+      "to": "私が、その身内だった。",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "「四十歳の冬に、お義母さんが玄関で転んで、大腿骨を折りました」",
+      "to": "覚えていないくらい、どうでもよくなっていたんです」",
+      "name": "hospital_night",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "新しい実家が建った日、",
+      "to": "線を引く人間に戻ったのだ。",
+      "name": "room_still",
+      "gain": -28
+    },
+    {
+      "type": "sfx",
+      "match": "みぞれが青いシートを叩く音がした。",
+      "name": "heartbeat",
+      "offset": 0.15,
+      "gain": -11
+    },
+    {
+      "type": "sfx",
+      "match": "木口が、五本だけ見えた。",
+      "name": "sub_drop",
+      "offset": -0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "そして、平べったい、大工の鉛筆だ。",
+      "name": "sub_drop",
+      "offset": -0.15,
+      "gain": -7
+    },
+    {
+      "type": "sfx",
+      "match": "岩室が、木口を指の背で二度叩いた。",
+      "name": "door_knock",
+      "offset": -0.05,
+      "gain": -13
+    },
+    {
+      "type": "sfx",
+      "match": "ぱん、と乾いた音がして、木に真っすぐな黒い線が残る。",
+      "name": "door_knock",
+      "offset": -0.05,
+      "gain": -14
+    },
+    {
+      "type": "sfx",
+      "match": "「僕の母の家、雪、大丈夫ですか」",
+      "name": "heartbeat",
+      "offset": 0.2,
+      "gain": -10
+    },
+    {
+      "type": "sfx",
+      "match": "計算を終えたところで、スマートフォンが震えた。",
+      "name": "phone_buzz_urgent",
+      "offset": -0.1,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "「儂は今日、棟上げをやらん」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -5
+    },
+    {
+      "type": "sfx",
+      "match": "長かった。",
+      "name": "heartbeat",
+      "offset": 0.1,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "車椅子の車輪が、畳を擦る音がした。",
+      "name": "door_knock",
+      "offset": -0.05,
+      "gain": -15
+    },
+    {
+      "type": "sfx",
+      "match": "岩室は、木口を二度叩いた。",
+      "name": "door_knock",
+      "offset": -0.05,
+      "gain": -13
+    },
+    {
+      "type": "sfx",
+      "match": "「九月に、この土地で雪は降りません」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "その時、座敷の襖が乱暴に開いた。",
+      "name": "door_knock",
+      "offset": -0.1,
+      "gain": -7
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "そして、ケーブルを差した。",
+      "cut": "「九月に、この土地で雪は降りません」",
+      "resume": "座敷が、爆発した。"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "やがて彼は、膝で畳を這って、私の足元まで来た。",
+      "to": "畳に額をつけたまま、肩だけが動いていた。"
+    },
+    {
+      "type": "card",
+      "match": "この家に一円も出してないんだからな",
+      "text": "一円も出してないお前が",
+      "style": "villain",
+      "hold": 1.5
+    },
+    {
+      "type": "card",
+      "match": "名簿に名前がないんです",
+      "text": "この女は建築士じゃない",
+      "style": "villain",
+      "hold": 1.6
+    },
+    {
+      "type": "card",
+      "match": "ちよはそれを、私の方へ差し出した。",
+      "text": "それを持つ人間が施主だ",
+      "style": "hero",
+      "hold": 1.8
+    },
+    {
+      "type": "card",
+      "match": "自分の名前です",
+      "text": "盾にしたのは自分の名前",
+      "style": "hero",
+      "hold": 1.8
+    }
+  ]
+}

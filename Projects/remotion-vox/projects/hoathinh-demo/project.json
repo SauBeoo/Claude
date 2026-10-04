@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "hoathinh-demo",
+    "channel": "nagaiki",
+    "templateRef": "nagaiki",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "createdAt": "2026-08-15T18:21:07.061478+00:00",
+    "modifiedAt": "2026-08-16T10:54:14.350Z"
+  },
+  "timeline": {
+    "durationInFrames": 2340
+  },
+  "sceneMarkers": [
+    {
+      "id": "m1",
+      "atFrame": 0,
+      "label": "c1 Riverside_village_"
+    },
+    {
+      "id": "m2",
+      "atFrame": 240,
+      "label": "c2 Cat_gazing_at_red_"
+    },
+    {
+      "id": "m3",
+      "atFrame": 450,
+      "label": "c3 Cat_reaching_for_r"
+    },
+    {
+      "id": "m4",
+      "atFrame": 630,
+      "label": "c4 Orange_tabby_cat_l"
+    },
+    {
+      "id": "m5",
+      "atFrame": 780,
+      "label": "c5 Cat_dashing_throug"
+    },
+    {
+      "id": "m6",
+      "atFrame": 930,
+      "label": "c6 Cat_looking_at_red"
+    },
+    {
+      "id": "m7",
+      "atFrame": 1140,
+      "label": "c7 Cat_climbing_tree"
+    },
+    {
+      "id": "m8",
+      "atFrame": 1320,
+      "label": "c8 Tabby_cat_touching"
+    },
+    {
+      "id": "m9",
+      "atFrame": 1560,
+      "label": "c9 Cat_falling_with_r"
+    },
+    {
+      "id": "m10",
+      "atFrame": 1680,
+      "label": "c10 Cat_landing_in_gol"
+    },
+    {
+      "id": "m11",
+      "atFrame": 1860,
+      "label": "c11 Cat_hanging_red_la"
+    },
+    {
+      "id": "m12",
+      "atFrame": 2070,
+      "label": "c12 Cat_sleeping_under"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "trk-film",
+      "name": "Film",
+      "type": "video",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "sc01",
+          "from": 0,
+          "durationInFrames": 240,
+          "kind": "video",
+          "asset": "assets/scene_01.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 0,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc02",
+          "from": 225,
+          "durationInFrames": 225,
+          "kind": "video",
+          "asset": "assets/scene_02.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc03",
+          "from": 435,
+          "durationInFrames": 195,
+          "kind": "video",
+          "asset": "assets/scene_03.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "zoom-punch",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc04",
+          "from": 615,
+          "durationInFrames": 165,
+          "kind": "video",
+          "asset": "assets/scene_04.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc05",
+          "from": 765,
+          "durationInFrames": 165,
+          "kind": "video",
+          "asset": "assets/scene_05.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc06",
+          "from": 915,
+          "durationInFrames": 225,
+          "kind": "video",
+          "asset": "assets/scene_06.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 0,
+          "wipeInFrames": 12,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc07",
+          "from": 1125,
+          "durationInFrames": 195,
+          "kind": "video",
+          "asset": "assets/scene_07.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc08",
+          "from": 1305,
+          "durationInFrames": 255,
+          "kind": "video",
+          "asset": "assets/scene_08.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc09",
+          "from": 1545,
+          "durationInFrames": 135,
+          "kind": "video",
+          "asset": "assets/scene_09.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "zoom-punch",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc10",
+          "from": 1665,
+          "durationInFrames": 195,
+          "kind": "video",
+          "asset": "assets/scene_10.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc11",
+          "from": 1845,
+          "durationInFrames": 225,
+          "kind": "video",
+          "asset": "assets/scene_11.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        },
+        {
+          "id": "sc12",
+          "from": 2055,
+          "durationInFrames": 285,
+          "kind": "video",
+          "asset": "assets/scene_12.jpeg",
+          "trimStartFrames": 0,
+          "fit": "cover",
+          "layout": {},
+          "motion": "pan",
+          "speed": 1,
+          "mirror": false,
+          "volume": 0,
+          "fadeInFrames": 15,
+          "wipeInFrames": 0,
+          "wipeDir": "left",
+          "filter": {}
+        }
+      ]
+    },
+    {
+      "id": "trk-text",
+      "name": "Thoại",
+      "type": "text",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "title",
+          "from": 15,
+          "durationInFrames": 165,
+          "kind": "text",
+          "content": "Mèo Cam và Ngọn Đèn Bay Mất",
+          "preset": "plain",
+          "color": "#FFE9B0",
+          "animation": "drop",
+          "animationParams": {
+            "restDeg": 0
+          },
+          "layout": {
+            "x": 330,
+            "y": 120
+          },
+          "fontSize": 76
+        },
+        {
+          "id": "line1",
+          "from": 20,
+          "durationInFrames": 210,
+          "kind": "text",
+          "content": "Ngôi làng bên sông, mùa đèn lồng.",
+          "preset": "plain",
+          "color": "#FFF3D6",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": 0
+          },
+          "layout": {
+            "x": 120,
+            "y": 900
+          },
+          "fontSize": 54
+        },
+        {
+          "id": "line3",
+          "from": 470,
+          "durationInFrames": 150,
+          "kind": "text",
+          "content": "Á! Cơn gió!",
+          "preset": "plain",
+          "color": "#FFF3D6",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": 0
+          },
+          "layout": {
+            "x": 120,
+            "y": 900
+          },
+          "fontSize": 54
+        },
+        {
+          "id": "line6",
+          "from": 950,
+          "durationInFrames": 180,
+          "kind": "text",
+          "content": "Cao quá…",
+          "preset": "plain",
+          "color": "#FFF3D6",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": 0
+          },
+          "layout": {
+            "x": 120,
+            "y": 900
+          },
+          "fontSize": 54
+        },
+        {
+          "id": "line8",
+          "from": 1340,
+          "durationInFrames": 210,
+          "kind": "text",
+          "content": "…một chút nữa thôi.",
+          "preset": "plain",
+          "color": "#FFF3D6",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": 0
+          },
+          "layout": {
+            "x": 120,
+            "y": 900
+          },
+          "fontSize": 54
+        },
+        {
+          "id": "line11",
+          "from": 1880,
+          "durationInFrames": 180,
+          "kind": "text",
+          "content": "Về chỗ cũ nhé.",
+          "preset": "plain",
+          "color": "#FFF3D6",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": 0
+          },
+          "layout": {
+            "x": 120,
+            "y": 900
+          },
+          "fontSize": 54
+        },
+        {
+          "id": "line12",
+          "from": 2090,
+          "durationInFrames": 240,
+          "kind": "text",
+          "content": "Hết.",
+          "preset": "plain",
+          "color": "#FFF3D6",
+          "animation": "pop",
+          "animationParams": {
+            "restDeg": 0
+          },
+          "layout": {
+            "x": 120,
+            "y": 900
+          },
+          "fontSize": 54
+        }
+      ]
+    },
+    {
+      "id": "trk-music",
+      "name": "Music",
+      "type": "audio",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "music-1",
+          "from": 0,
+          "durationInFrames": 2340,
+          "kind": "audio",
+          "asset": "assets/music.wav",
+          "volume": 0.7,
+          "trimStartFrames": 0
+        }
+      ]
+    },
+    {
+      "id": "trk-sfx",
+      "name": "SFX",
+      "type": "audio",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": [
+        {
+          "id": "sfx3",
+          "from": 445,
+          "durationInFrames": 60,
+          "kind": "audio",
+          "asset": "sfx/whoosh.wav",
+          "volume": 0.3,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx4",
+          "from": 625,
+          "durationInFrames": 60,
+          "kind": "audio",
+          "asset": "sfx/pop.wav",
+          "volume": 0.3,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx5",
+          "from": 775,
+          "durationInFrames": 60,
+          "kind": "audio",
+          "asset": "sfx/swipe.wav",
+          "volume": 0.3,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx7",
+          "from": 1135,
+          "durationInFrames": 60,
+          "kind": "audio",
+          "asset": "sfx/riser.wav",
+          "volume": 0.3,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx9",
+          "from": 1555,
+          "durationInFrames": 60,
+          "kind": "audio",
+          "asset": "sfx/drop.wav",
+          "volume": 0.3,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx10",
+          "from": 1675,
+          "durationInFrames": 60,
+          "kind": "audio",
+          "asset": "sfx/boing.wav",
+          "volume": 0.3,
+          "trimStartFrames": 0
+        },
+        {
+          "id": "sfx11",
+          "from": 1855,
+          "durationInFrames": 60,
+          "kind": "audio",
+          "asset": "sfx/coin.wav",
+          "volume": 0.3,
+          "trimStartFrames": 0
+        }
+      ]
+    },
+    {
+      "id": "trk-msupmleo-0",
+      "name": "Stickers",
+      "type": "sticker",
+      "muted": false,
+      "hidden": false,
+      "locked": false,
+      "clips": []
+    }
+  ],
+  "captions": {
+    "source": "none",
+    "style": "outline",
+    "enabled": false,
+    "fontSize": 44,
+    "lines": [],
+    "words": []
+  },
+  "theme": {
+    "palette": {
+      "bgTop": "#2A3A58",
+      "bgBottom": "#182236",
+      "accent": "#FFD700"
+    },
+    "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+    "canvasColor": "#2A3A58"
+  }
+}

@@ -1,0 +1,10 @@
+# BAI THU REALISM — 6 canh x 3 file. Dong i cua moi FLOW = canh i.
+# still_FLOW -> anh khung dau (che do Image)  |  motion_FLOW -> Frames-to-Video voi anh do
+# t2v_FLOW -> cung canh, khong anh (doi chung). Tai clip ve dat ten theo cot 2/3.
+#
+1	R_04_shutter_i2v.mp4	R_04_shutter_t2v.mp4	dawn	THAP xa
+2	R_09_mizumaki_i2v.mp4	R_09_mizumaki_t2v.mp4	day	THAP xa
+3	R_11_yaoya_i2v.mp4	R_11_yaoya_t2v.mp4	day	THAP xa
+4	R_14_shokudou_i2v.mp4	R_14_shokudou_t2v.mp4	interior	khong thap
+5	R_21_sentou_i2v.mp4	R_21_sentou_t2v.mp4	dusk	THAP xa
+6	R_27_yuushoku_i2v.mp4	R_27_yuushoku_t2v.mp4	night	khong thap

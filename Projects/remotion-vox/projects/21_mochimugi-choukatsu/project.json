@@ -1,0 +1,2000 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "21_mochimugi-choukatsu",
+  "channel": "shokutaku",
+  "templateRef": "shokutaku",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-08-27T12:54:59.932184+00:00",
+  "modifiedAt": "2026-08-27T12:54:59.932184+00:00"
+ },
+ "timeline": {
+  "durationInFrames": 28898
+ },
+ "sceneMarkers": [],
+ "tracks": [
+  {
+   "id": "trk-slides",
+   "name": "Slides",
+   "type": "video",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "slide-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 850,
+     "asset": "assets/slide_00.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 0,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-1",
+     "kind": "video",
+     "from": 836,
+     "durationInFrames": 485,
+     "asset": "assets/slide_01.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-2",
+     "kind": "video",
+     "from": 1307,
+     "durationInFrames": 637,
+     "asset": "assets/slide_02.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-3",
+     "kind": "video",
+     "from": 1931,
+     "durationInFrames": 512,
+     "asset": "assets/slide_03.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-4",
+     "kind": "video",
+     "from": 2429,
+     "durationInFrames": 616,
+     "asset": "assets/slide_04.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-5",
+     "kind": "video",
+     "from": 3030,
+     "durationInFrames": 390,
+     "asset": "assets/slide_05.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-6",
+     "kind": "video",
+     "from": 3407,
+     "durationInFrames": 324,
+     "asset": "assets/slide_06.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-7",
+     "kind": "video",
+     "from": 3717,
+     "durationInFrames": 575,
+     "asset": "assets/slide_07.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-8",
+     "kind": "video",
+     "from": 4278,
+     "durationInFrames": 832,
+     "asset": "assets/slide_08.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-9",
+     "kind": "video",
+     "from": 5096,
+     "durationInFrames": 427,
+     "asset": "assets/slide_09.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-10",
+     "kind": "video",
+     "from": 5508,
+     "durationInFrames": 564,
+     "asset": "assets/slide_10.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-11",
+     "kind": "video",
+     "from": 6058,
+     "durationInFrames": 629,
+     "asset": "assets/slide_11.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-12",
+     "kind": "video",
+     "from": 6673,
+     "durationInFrames": 725,
+     "asset": "assets/slide_12.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-13",
+     "kind": "video",
+     "from": 7384,
+     "durationInFrames": 568,
+     "asset": "assets/slide_13.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-14",
+     "kind": "video",
+     "from": 7938,
+     "durationInFrames": 697,
+     "asset": "assets/slide_14.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-15",
+     "kind": "video",
+     "from": 8621,
+     "durationInFrames": 1089,
+     "asset": "assets/slide_15.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-16",
+     "kind": "video",
+     "from": 9696,
+     "durationInFrames": 474,
+     "asset": "assets/slide_16.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-17",
+     "kind": "video",
+     "from": 10156,
+     "durationInFrames": 537,
+     "asset": "assets/slide_17.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-18",
+     "kind": "video",
+     "from": 10679,
+     "durationInFrames": 472,
+     "asset": "assets/slide_18.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-19",
+     "kind": "video",
+     "from": 11137,
+     "durationInFrames": 618,
+     "asset": "assets/slide_19.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-20",
+     "kind": "video",
+     "from": 11741,
+     "durationInFrames": 796,
+     "asset": "assets/slide_20.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-21",
+     "kind": "video",
+     "from": 12524,
+     "durationInFrames": 724,
+     "asset": "assets/slide_21.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-22",
+     "kind": "video",
+     "from": 13234,
+     "durationInFrames": 284,
+     "asset": "assets/slide_22.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-23",
+     "kind": "video",
+     "from": 13504,
+     "durationInFrames": 486,
+     "asset": "assets/slide_23.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-24",
+     "kind": "video",
+     "from": 13976,
+     "durationInFrames": 667,
+     "asset": "assets/slide_24.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-25",
+     "kind": "video",
+     "from": 14629,
+     "durationInFrames": 440,
+     "asset": "assets/slide_25.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-26",
+     "kind": "video",
+     "from": 15054,
+     "durationInFrames": 630,
+     "asset": "assets/slide_26.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-27",
+     "kind": "video",
+     "from": 15671,
+     "durationInFrames": 1073,
+     "asset": "assets/slide_27.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-28",
+     "kind": "video",
+     "from": 16729,
+     "durationInFrames": 257,
+     "asset": "assets/slide_28.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-29",
+     "kind": "video",
+     "from": 16972,
+     "durationInFrames": 677,
+     "asset": "assets/slide_29.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-30",
+     "kind": "video",
+     "from": 17636,
+     "durationInFrames": 510,
+     "asset": "assets/slide_30.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-31",
+     "kind": "video",
+     "from": 18132,
+     "durationInFrames": 834,
+     "asset": "assets/slide_31.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-32",
+     "kind": "video",
+     "from": 18952,
+     "durationInFrames": 985,
+     "asset": "assets/slide_32.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-33",
+     "kind": "video",
+     "from": 19923,
+     "durationInFrames": 735,
+     "asset": "assets/slide_33.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-34",
+     "kind": "video",
+     "from": 20644,
+     "durationInFrames": 641,
+     "asset": "assets/slide_34.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-35",
+     "kind": "video",
+     "from": 21271,
+     "durationInFrames": 421,
+     "asset": "assets/slide_35.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-36",
+     "kind": "video",
+     "from": 21678,
+     "durationInFrames": 1036,
+     "asset": "assets/slide_36.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-37",
+     "kind": "video",
+     "from": 22700,
+     "durationInFrames": 301,
+     "asset": "assets/slide_37.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-38",
+     "kind": "video",
+     "from": 22987,
+     "durationInFrames": 560,
+     "asset": "assets/slide_38.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-39",
+     "kind": "video",
+     "from": 23533,
+     "durationInFrames": 575,
+     "asset": "assets/slide_39.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-40",
+     "kind": "video",
+     "from": 24094,
+     "durationInFrames": 407,
+     "asset": "assets/slide_40.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-41",
+     "kind": "video",
+     "from": 24487,
+     "durationInFrames": 577,
+     "asset": "assets/slide_41.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-42",
+     "kind": "video",
+     "from": 25050,
+     "durationInFrames": 592,
+     "asset": "assets/slide_42.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-43",
+     "kind": "video",
+     "from": 25628,
+     "durationInFrames": 593,
+     "asset": "assets/slide_43.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    },
+    {
+     "id": "slide-44",
+     "kind": "video",
+     "from": 26208,
+     "durationInFrames": 511,
+     "asset": "assets/slide_44.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "left"
+    },
+    {
+     "id": "slide-45",
+     "kind": "video",
+     "from": 26705,
+     "durationInFrames": 674,
+     "asset": "assets/slide_45.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "up"
+    },
+    {
+     "id": "slide-46",
+     "kind": "video",
+     "from": 27365,
+     "durationInFrames": 1053,
+     "asset": "assets/slide_46.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "right"
+    },
+    {
+     "id": "slide-47",
+     "kind": "video",
+     "from": 28404,
+     "durationInFrames": 494,
+     "asset": "assets/slide_47.jpg",
+     "trimStartFrames": 0,
+     "fit": "cover",
+     "layout": {},
+     "motion": "none",
+     "volume": 0,
+     "fadeInFrames": 0,
+     "wipeInFrames": 14,
+     "wipeDir": "down"
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "Voice",
+   "type": "audio",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "voice-1",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 28898,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-overlay",
+   "name": "Overlay",
+   "type": "sticker",
+   "muted": false,
+   "hidden": false,
+   "locked": false,
+   "clips": [
+    {
+     "id": "wm",
+     "kind": "text",
+     "from": 0,
+     "durationInFrames": 28898,
+     "content": "60代の食卓",
+     "preset": "tag",
+     "color": "#FFD24A",
+     "animation": "none",
+     "animationParams": {},
+     "layout": {
+      "x": 1586,
+      "y": 40,
+      "rotation": 0
+     },
+     "fontSize": 40
+    },
+    {
+     "id": "st-0",
+     "kind": "sticker",
+     "from": 45,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hatena.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-1",
+     "kind": "text",
+     "from": 848,
+     "durationInFrames": 150,
+     "content": "誰も知らない台所",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-4",
+     "kind": "sticker",
+     "from": 2474,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-8",
+     "kind": "text",
+     "from": 4290,
+     "durationInFrames": 150,
+     "content": "壁を修理する",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-16",
+     "kind": "text",
+     "from": 9708,
+     "durationInFrames": 150,
+     "content": "続けやすさが力",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-18",
+     "kind": "text",
+     "from": 10691,
+     "durationInFrames": 150,
+     "content": "免疫にも関係",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-18",
+     "kind": "sticker",
+     "from": 10724,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "st-21",
+     "kind": "sticker",
+     "from": 12569,
+     "durationInFrames": 120,
+     "asset": "assets/ex_zzz.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-26",
+     "kind": "text",
+     "from": 15066,
+     "durationInFrames": 150,
+     "content": "軽くなった",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "tx-28",
+     "kind": "text",
+     "from": 16741,
+     "durationInFrames": 150,
+     "content": "腎臓・お薬の方へ",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-28",
+     "kind": "sticker",
+     "from": 16774,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-30",
+     "kind": "text",
+     "from": 17648,
+     "durationInFrames": 150,
+     "content": "1週間で挫折",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-30",
+     "kind": "sticker",
+     "from": 17681,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hiyari.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 200,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-33",
+     "kind": "text",
+     "from": 19935,
+     "durationInFrames": 150,
+     "content": "答えは食べ過ぎ",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-33",
+     "kind": "sticker",
+     "from": 19968,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    },
+    {
+     "id": "tx-41",
+     "kind": "text",
+     "from": 24499,
+     "durationInFrames": 150,
+     "content": "冬でも風邪なし",
+     "preset": "tag",
+     "color": "#FFD700",
+     "animation": "pop",
+     "animationParams": {},
+     "layout": {
+      "x": 330,
+      "y": 745,
+      "rotation": -2
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "st-42",
+     "kind": "sticker",
+     "from": 25095,
+     "durationInFrames": 120,
+     "asset": "assets/ex_hirameki.png",
+     "layout": {
+      "x": 56,
+      "y": 148,
+      "w": 93,
+      "rotation": -8
+     },
+     "entrance": {
+      "variant": "peel",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "exit": {
+      "variant": "fade",
+      "delayFrames": 0,
+      "params": {}
+     },
+     "idle": {
+      "amp": 0,
+      "phase": 0
+     },
+     "shadow": "lg"
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "voicevox-mora",
+  "style": "karaoke",
+  "enabled": true,
+  "fontSize": 38,
+  "lines": [
+   {
+    "text": "体重は、増えていない。",
+    "startMs": 0,
+    "endMs": 2581
+   },
+   {
+    "text": "食べる量も、変えていない。",
+    "startMs": 3181,
+    "endMs": 5805
+   },
+   {
+    "text": "それなのに、なぜか、体が、重い。",
+    "startMs": 6405,
+    "endMs": 11109
+   },
+   {
+    "text": "そんな毎日が、続いていませんか。",
+    "startMs": 11709,
+    "endMs": 15059
+   },
+   {
+    "text": "その重さの理由を、考えたことは、ありませんか。",
+    "startMs": 15659,
+    "endMs": 20661
+   },
+   {
+    "text": "じつは、皆さんの体の中に、もう一つ、台所があります。",
+    "startMs": 21261,
+    "endMs": 27747
+   },
+   {
+    "text": "誰も、教えてくれなかった台所です。",
+    "startMs": 28347,
+    "endMs": 32037
+   },
+   {
+    "text": "疲れが、なかなか取れない。",
+    "startMs": 32637,
+    "endMs": 35261
+   },
+   {
+    "text": "風邪を、ひきやすくなった。",
+    "startMs": 35861,
+    "endMs": 38293
+   },
+   {
+    "text": "お通じの調子も、いつも、はっきりしない。",
+    "startMs": 38893,
+    "endMs": 43448
+   },
+   {
+    "text": "それを、ただの「歳のせい」だと、片づけていませんか。",
+    "startMs": 44048,
+    "endMs": 50896
+   },
+   {
+    "text": "その台所からの、小さなSOSかもしれません。",
+    "startMs": 51496,
+    "endMs": 56264
+   },
+   {
+    "text": "その台所は、長いあいだ、材料切れのまま、働かされ続けています。",
+    "startMs": 56864,
+    "endMs": 64224
+   },
+   {
+    "text": "今日は、その台所に、材料を届けるお話です。",
+    "startMs": 64824,
+    "endMs": 70072
+   },
+   {
+    "text": "特別な食事制限は、いりません。",
+    "startMs": 70672,
+    "endMs": 74395
+   },
+   {
+    "text": "スーパーに、いつでも並んでいる、ある穀物のお話です。",
+    "startMs": 74995,
+    "endMs": 80829
+   },
+   {
+    "text": "その、もう一つの台所とは、大腸のことです。",
+    "startMs": 81429,
+    "endMs": 86251
+   },
+   {
+    "text": "台所で、黙々と働く、小さな料理人たちの姿を、思い浮かべてみてください。",
+    "startMs": 86851,
+    "endMs": 94755
+   },
+   {
+    "text": "大腸には、目には見えない、無数の菌たちが住んでいます。",
+    "startMs": 95355,
+    "endMs": 100880
+   },
+   {
+    "text": "腸内細菌と呼ばれる、小さな住人たちです。",
+    "startMs": 101480,
+    "endMs": 106035
+   },
+   {
+    "text": "彼らは、私たちが消化しきれなかった食べ物のカスを、発酵させています。",
+    "startMs": 106635,
+    "endMs": 113429
+   },
+   {
+    "text": "まるで、味噌や納豆を、仕込むときのように。",
+    "startMs": 114029,
+    "endMs": 118221
+   },
+   {
+    "text": "そうして作られるのが、短鎖脂肪酸という物質です。",
+    "startMs": 118821,
+    "endMs": 123760
+   },
+   {
+    "text": "短鎖脂肪酸には、酢酸、酪酸、プロピオン酸など、いくつかの種類があります。",
+    "startMs": 124360,
+    "endMs": 133160
+   },
+   {
+    "text": "なかでも酪酸は、大腸の壁をつくる細胞たちの、いちばんの栄養源になっていると言われています。",
+    "startMs": 133760,
+    "endMs": 142464
+   },
+   {
+    "text": "この短鎖脂肪酸が、大腸の壁を、内側から支えています。",
+    "startMs": 143064,
+    "endMs": 149752
+   },
+   {
+    "text": "壁を修理する材料であり、住人たちを働かせる燃料でもあります。",
+    "startMs": 150352,
+    "endMs": 156763
+   },
+   {
+    "text": "けれども、住人たちには、仕込む材料がなければ、何も作れません。",
+    "startMs": 157363,
+    "endMs": 164243
+   },
+   {
+    "text": "その材料こそが、水に溶けるタイプの食物繊維です。",
+    "startMs": 164843,
+    "endMs": 169717
+   },
+   {
+    "text": "そして今日、皆さんにお伝えしたい穀物が、もち麦です。",
+    "startMs": 170317,
+    "endMs": 176109
+   },
+   {
+    "text": "もち麦には、この水溶性の食物繊維が、たっぷり含まれています。",
+    "startMs": 176709,
+    "endMs": 183472
+   },
+   {
+    "text": "白いご飯だけを、何十年も食べ続けてきた台所には、この材料が、ほとんど届いていません。",
+    "startMs": 184072,
+    "endMs": 193256
+   },
+   {
+    "text": "今日から、少しだけ、届けてあげてください。",
+    "startMs": 193856,
+    "endMs": 198165
+   },
+   {
+    "text": "数字で、確かめておきます。",
+    "startMs": 198765,
+    "endMs": 201816
+   },
+   {
+    "text": "厚生労働省の「日本人の食事摂取基準」、二千二十五年版では、食物繊維の目標量が示されています。",
+    "startMs": 202416,
+    "endMs": 213381
+   },
+   {
+    "text": "六十五歳以上で、男性は、にじゅうグラム。",
+    "startMs": 213981,
+    "endMs": 218653
+   },
+   {
+    "text": "女性は、じゅうななグラムです。",
+    "startMs": 219253,
+    "endMs": 222304
+   },
+   {
+    "text": "もち麦、ひゃくグラムには、およそじゅうにグラムの食物繊維が含まれているとされています。",
+    "startMs": 222904,
+    "endMs": 230669
+   },
+   {
+    "text": "白米だけのご飯茶碗一杯では、この量には、遠く及びません。",
+    "startMs": 231269,
+    "endMs": 237627
+   },
+   {
+    "text": "だからこそ、もち麦が、必要なのです。",
+    "startMs": 238227,
+    "endMs": 242280
+   },
+   {
+    "text": "では、どのくらい混ぜればいいのか。",
+    "startMs": 242880,
+    "endMs": 246005
+   },
+   {
+    "text": "多くのメーカーが勧める基本の割合は、白米三に対して、もち麦一です。",
+    "startMs": 246605,
+    "endMs": 253667
+   },
+   {
+    "text": "けれども、いきなりその割合にする必要は、ありません。",
+    "startMs": 254267,
+    "endMs": 259696
+   },
+   {
+    "text": "はじめの一歩は、もっと小さくて大丈夫です。",
+    "startMs": 260296,
+    "endMs": 264477
+   },
+   {
+    "text": "今夜のご飯を炊くとき、いつもの分量に、大さじ一杯だけ、もち麦を混ぜてみてください。",
+    "startMs": 265077,
+    "endMs": 273685
+   },
+   {
+    "text": "洗ってから、白米と一緒に、炊飯器に入れるだけです。",
+    "startMs": 274285,
+    "endMs": 279416
+   },
+   {
+    "text": "たったそれだけで、今日から、もう一つの台所に、材料が届き始めます。",
+    "startMs": 280016,
+    "endMs": 287248
+   },
+   {
+    "text": "皆さん、こんにちは。",
+    "startMs": 287848,
+    "endMs": 290173
+   },
+   {
+    "text": "六十代からの食卓へ、ようこそ。",
+    "startMs": 290773,
+    "endMs": 294549
+   },
+   {
+    "text": "案内人の、みのりです。",
+    "startMs": 295149,
+    "endMs": 297688
+   },
+   {
+    "text": "その前に、一つだけ教えてください。",
+    "startMs": 298288,
+    "endMs": 301776
+   },
+   {
+    "text": "今日は、どちらの都道府県からご覧くださっていますか。",
+    "startMs": 302376,
+    "endMs": 307037
+   },
+   {
+    "text": "コメント欄に、お住まいの地域を書いていただけたら、嬉しいです。",
+    "startMs": 307637,
+    "endMs": 313621
+   },
+   {
+    "text": "全て、読ませていただいております。",
+    "startMs": 314221,
+    "endMs": 317517
+   },
+   {
+    "text": "新しいことを続けるのは、なかなか大変なものですよね。",
+    "startMs": 318117,
+    "endMs": 323067
+   },
+   {
+    "text": "じつは私も、最初は面倒に感じていました。",
+    "startMs": 323667,
+    "endMs": 328136
+   },
+   {
+    "text": "わざわざ別の袋を用意して、計って、混ぜて。",
+    "startMs": 328736,
+    "endMs": 333611
+   },
+   {
+    "text": "そんな手間、続くはずがないと思っていたのです。",
+    "startMs": 334211,
+    "endMs": 338403
+   },
+   {
+    "text": "けれど、大さじ一杯だけなら、洗うついでに、ぱらりと入れるだけ。",
+    "startMs": 339003,
+    "endMs": 345477
+   },
+   {
+    "text": "続けやすさこそが、体を守る、いちばんの力になります。",
+    "startMs": 346077,
+    "endMs": 351773
+   },
+   {
+    "text": "もう一つ、大切なことがあります。",
+    "startMs": 352373,
+    "endMs": 355840
+   },
+   {
+    "text": "短鎖脂肪酸には、免疫にかかわる働きもあると言われています。",
+    "startMs": 356440,
+    "endMs": 362349
+   },
+   {
+    "text": "冬になると、決まって、風邪をひきやすい。",
+    "startMs": 362949,
+    "endMs": 367333
+   },
+   {
+    "text": "そんな方も、少なくありません。",
+    "startMs": 367933,
+    "endMs": 371101
+   },
+   {
+    "text": "腸には、体全体の免疫にかかわる細胞の、多くが集まっているとも言われています。",
+    "startMs": 371701,
+    "endMs": 379467
+   },
+   {
+    "text": "台所がきちんと働いている人は、風邪を引きにくく、引いても長引きにくい。",
+    "startMs": 380067,
+    "endMs": 386883
+   },
+   {
+    "text": "そう感じている方が、少なくありません。",
+    "startMs": 387483,
+    "endMs": 391248
+   },
+   {
+    "text": "さらに、水溶性の食物繊維には、もう一つの役目があります。",
+    "startMs": 391848,
+    "endMs": 398173
+   },
+   {
+    "text": "胃や腸の中で、水を含んで、とろりとした膜のようなものを作ります。",
+    "startMs": 398773,
+    "endMs": 404981
+   },
+   {
+    "text": "その膜が、糖の吸収を、ゆっくりにしてくれるのです。",
+    "startMs": 405581,
+    "endMs": 411043
+   },
+   {
+    "text": "食後に、急に眠くなる。",
+    "startMs": 411643,
+    "endMs": 414256
+   },
+   {
+    "text": "体が、だるくなる。",
+    "startMs": 414856,
+    "endMs": 417331
+   },
+   {
+    "text": "台所仕事の途中で、ふっと、手が止まってしまう。",
+    "startMs": 417931,
+    "endMs": 423435
+   },
+   {
+    "text": "そんな午後は、ありませんか。",
+    "startMs": 424035,
+    "endMs": 426755
+   },
+   {
+    "text": "それは、糖が、急に吸収されているサインかもしれません。",
+    "startMs": 427355,
+    "endMs": 433147
+   },
+   {
+    "text": "もち麦を混ぜたご飯は、その急な上がり方を、穏やかにしてくれると言われています。",
+    "startMs": 433747,
+    "endMs": 441000
+   },
+   {
+    "text": "例えば、こんな方がいらっしゃるとします。",
+    "startMs": 441600,
+    "endMs": 445195
+   },
+   {
+    "text": "富山県にお住まいの、恵子さんという方です。",
+    "startMs": 445795,
+    "endMs": 450008
+   },
+   {
+    "text": "六十六歳、長年、小さなお弁当屋さんを、切り盛りされてきた方です。",
+    "startMs": 450608,
+    "endMs": 458299
+   },
+   {
+    "text": "「お通じの調子が、いつもすっきりしなくて」",
+    "startMs": 458899,
+    "endMs": 462867
+   },
+   {
+    "text": "そうおっしゃっていたそうです。",
+    "startMs": 463467,
+    "endMs": 465728
+   },
+   {
+    "text": "お店を閉めたあと、鉢植えに水をやるのが、恵子さんの毎晩の日課でした。",
+    "startMs": 466328,
+    "endMs": 473155
+   },
+   {
+    "text": "その日課だけは、体調がどうであれ、欠かしたことがなかったそうです。",
+    "startMs": 473755,
+    "endMs": 480069
+   },
+   {
+    "text": "店に流れる小さなラジオの音を聞きながらの、五分ほどの時間だったそうです。",
+    "startMs": 480669,
+    "endMs": 487496
+   },
+   {
+    "text": "ご飯に、もち麦を混ぜ始めて、二週間ほど経った頃。",
+    "startMs": 488096,
+    "endMs": 493483
+   },
+   {
+    "text": "「あら、今朝は、すっきりしてる」",
+    "startMs": 494083,
+    "endMs": 497400
+   },
+   {
+    "text": "そう気づいたのが、始まりだったといいます。",
+    "startMs": 498000,
+    "endMs": 501680
+   },
+   {
+    "text": "一ヶ月経つ頃には、お腹の張りも、ずいぶん楽になっていたそうです。",
+    "startMs": 502280,
+    "endMs": 508723
+   },
+   {
+    "text": "「毎晩、鉢植えに水をやりながら、今日も一日、体が軽かったなあって、思うんです」",
+    "startMs": 509323,
+    "endMs": 518656
+   },
+   {
+    "text": "そう、笑っておられました。",
+    "startMs": 519256,
+    "endMs": 522221
+   },
+   {
+    "text": "ここまでのお話が、お役に立っているようでしたら、コメント欄に、数字の「に」",
+    "startMs": 522821,
+    "endMs": 530263
+   },
+   {
+    "text": "を書いていただけますか。",
+    "startMs": 530263,
+    "endMs": 532677
+   },
+   {
+    "text": "そして、今日の内容が良さそうだと思ってくださったら、良いねと、",
+    "startMs": 533277,
+    "endMs": 539094
+   },
+   {
+    "text": "離れて暮らすご家族やお友達にも、そっと分けてあげてください。",
+    "startMs": 539094,
+    "endMs": 544723
+   },
+   {
+    "text": "気づいたことやご感想があれば、どうぞコメントで教えてくださいね。",
+    "startMs": 545323,
+    "endMs": 550869
+   },
+   {
+    "text": "皆さんの声を励みに、もっと良いお話を、お届けしていきます。",
+    "startMs": 551469,
+    "endMs": 557507
+   },
+   {
+    "text": "さて、ここからは、もち麦を続けていくうえで、知っておいていただきたいお話です。",
+    "startMs": 558107,
+    "endMs": 565605
+   },
+   {
+    "text": "腎臓の治療を受けている方は、少しだけ、注意が必要です。",
+    "startMs": 566205,
+    "endMs": 572371
+   },
+   {
+    "text": "もち麦は、白米に比べて、カリウムやリンを多く含んでいます。",
+    "startMs": 572971,
+    "endMs": 578923
+   },
+   {
+    "text": "量については、必ず、かかりつけの先生にご相談ください。",
+    "startMs": 579523,
+    "endMs": 585571
+   },
+   {
+    "text": "そしてもう一つ。",
+    "startMs": 586171,
+    "endMs": 587717
+   },
+   {
+    "text": "じつは、もち麦を始めた方のうち、少なくない数が、一週間もたたずに、",
+    "startMs": 588317,
+    "endMs": 595247
+   },
+   {
+    "text": "やめてしまうと言われています。",
+    "startMs": 595247,
+    "endMs": 598397
+   },
+   {
+    "text": "味が苦手だからでも、続けるのが面倒だからでもありません。",
+    "startMs": 598997,
+    "endMs": 604256
+   },
+   {
+    "text": "もち麦を始めた方の多くが、最初の数日で、「なんだか、お腹の調子が、いつもと違う」",
+    "startMs": 604856,
+    "endMs": 613938
+   },
+   {
+    "text": "と感じるそうです。",
+    "startMs": 613938,
+    "endMs": 615981
+   },
+   {
+    "text": "張ったり、ゴロゴロと音がしたり。",
+    "startMs": 616581,
+    "endMs": 619717
+   },
+   {
+    "text": "体に良いことをしているはずなのに、なぜか、うまくいかない。",
+    "startMs": 620317,
+    "endMs": 625864
+   },
+   {
+    "text": "そう感じて、戸惑ってしまう方が、少なくありません。",
+    "startMs": 626464,
+    "endMs": 631605
+   },
+   {
+    "text": "多くの場合、理由は、たった一つです。",
+    "startMs": 632205,
+    "endMs": 636675
+   },
+   {
+    "text": "それを知っているかどうかで、続く人と、続かない人が、はっきり分かれます。",
+    "startMs": 637275,
+    "endMs": 644155
+   },
+   {
+    "text": "せっかく始めたのに、そこでやめてしまうのは、本当に、もったいないことです。",
+    "startMs": 644755,
+    "endMs": 651923
+   },
+   {
+    "text": "よろしければ、コメント欄に、数字の「さん」を書いていただけますか。",
+    "startMs": 652523,
+    "endMs": 659509
+   },
+   {
+    "text": "その理由を、これから、お伝えします。",
+    "startMs": 660109,
+    "endMs": 663981
+   },
+   {
+    "text": "答えは、「いきなり、たくさん食べてしまうこと」です。",
+    "startMs": 664581,
+    "endMs": 670875
+   },
+   {
+    "text": "体にいいと聞いて、初日から、ご飯の半分をもち麦にしてしまう。",
+    "startMs": 671475,
+    "endMs": 677789
+   },
+   {
+    "text": "すると、急に増えた食物繊維に、お腹がびっくりして、張ったり、",
+    "startMs": 678389,
+    "endMs": 684531
+   },
+   {
+    "text": "ゆるくなったりすることがあります。",
+    "startMs": 684531,
+    "endMs": 688011
+   },
+   {
+    "text": "住人たちが、もち麦という新しい材料に慣れるまでには、少し、時間が必要です。",
+    "startMs": 688611,
+    "endMs": 696760
+   },
+   {
+    "text": "だいたい、二週間ほどかかると言われています。",
+    "startMs": 697360,
+    "endMs": 701563
+   },
+   {
+    "text": "大さじ一杯から始めて、体の様子を見ながら、少しずつ増やしていく。",
+    "startMs": 702163,
+    "endMs": 708904
+   },
+   {
+    "text": "たとえば、最初の一週間は、大さじ一杯だけ。",
+    "startMs": 709504,
+    "endMs": 714795
+   },
+   {
+    "text": "体が慣れてきたな、と感じたら、次の一週間は、大さじ一杯半に。",
+    "startMs": 715395,
+    "endMs": 722477
+   },
+   {
+    "text": "三週目、四週目と、少しずつ増やしていって、最後に、白米三、もち麦一の割合に近づけていく。",
+    "startMs": 723077,
+    "endMs": 734128
+   },
+   {
+    "text": "ご飯に混ぜるのが続かない日は、お味噌汁に、大さじ一杯、そのまま加えるだけでも構いません。",
+    "startMs": 734728,
+    "endMs": 743677
+   },
+   {
+    "text": "急がば回れ、という言葉が、そのまま当てはまります。",
+    "startMs": 744277,
+    "endMs": 749611
+   },
+   {
+    "text": "これが、多くのかたが知らずに損をしている、いちばんの落とし穴です。",
+    "startMs": 750211,
+    "endMs": 756536
+   },
+   {
+    "text": "例えば、こんな方も、いらっしゃいます。",
+    "startMs": 757136,
+    "endMs": 761307
+   },
+   {
+    "text": "秋田県にお住まいの、正雄さんという方です。",
+    "startMs": 761907,
+    "endMs": 766109
+   },
+   {
+    "text": "七十二歳、長年、除雪車の運転を、生業にされてきた方です。",
+    "startMs": 766709,
+    "endMs": 774400
+   },
+   {
+    "text": "冬になるたび、風邪をひいて、なかなか抜けない。",
+    "startMs": 775000,
+    "endMs": 779736
+   },
+   {
+    "text": "そんな年が、何年も続いていたそうです。",
+    "startMs": 780336,
+    "endMs": 784293
+   },
+   {
+    "text": "正雄さんは、仕事帰りに、行きつけのお店で温かいお茶を一杯飲んでから帰るのが、",
+    "startMs": 784893,
+    "endMs": 792871
+   },
+   {
+    "text": "長年の習慣でした。",
+    "startMs": 792871,
+    "endMs": 794760
+   },
+   {
+    "text": "湯呑みから立つ湯気を眺める、その数分間が、何よりの息抜きだったといいます。",
+    "startMs": 795360,
+    "endMs": 803008
+   },
+   {
+    "text": "大さじ一杯のもち麦を、毎晩のご飯に混ぜ始めて、迎えた、初めての冬。",
+    "startMs": 803608,
+    "endMs": 811491
+   },
+   {
+    "text": "「今年は、まだ、風邪をひいていないんだ」",
+    "startMs": 812091,
+    "endMs": 816112
+   },
+   {
+    "text": "十二月の終わりに、そうおっしゃっていたと聞きました。",
+    "startMs": 816712,
+    "endMs": 821224
+   },
+   {
+    "text": "「歳のせいだと、ずっと思ってたんだけどな」",
+    "startMs": 821824,
+    "endMs": 825600
+   },
+   {
+    "text": "そう続けて、少し照れたように、笑っておられたそうです。",
+    "startMs": 826200,
+    "endMs": 831533
+   },
+   {
+    "text": "今日の話を、まとめます。",
+    "startMs": 832133,
+    "endMs": 834875
+   },
+   {
+    "text": "大腸には、もう一つの台所があり、腸内細菌という住人が働いています。",
+    "startMs": 835475,
+    "endMs": 842920
+   },
+   {
+    "text": "材料となるのが、もち麦に多く含まれる、水溶性の食物繊維です。",
+    "startMs": 843520,
+    "endMs": 850560
+   },
+   {
+    "text": "大さじ一杯から、少しずつ。",
+    "startMs": 851160,
+    "endMs": 854147
+   },
+   {
+    "text": "そして何より、無理をしないことが、いちばんの近道ではないでしょうか。",
+    "startMs": 854747,
+    "endMs": 861029
+   },
+   {
+    "text": "これが、続けるいちばんのこつです。",
+    "startMs": 861629,
+    "endMs": 864787
+   },
+   {
+    "text": "今夜のご飯を炊くとき、まずは、大さじ一杯だけ、もち麦を足してみてください。",
+    "startMs": 865387,
+    "endMs": 873461
+   },
+   {
+    "text": "今日のお話について、ご感想や、次に取り上げてほしい食材があれば、",
+    "startMs": 874061,
+    "endMs": 880539
+   },
+   {
+    "text": "ぜひコメントでお寄せください。",
+    "startMs": 880539,
+    "endMs": 883576
+   },
+   {
+    "text": "いただいたコメントは、一つ残らず、目を通させていただいています。",
+    "startMs": 884176,
+    "endMs": 890021
+   },
+   {
+    "text": "もしよろしければ、高評価のボタンと、チャンネル登録も、お願いできますでしょうか。",
+    "startMs": 890621,
+    "endMs": 898269
+   },
+   {
+    "text": "それは、離れて暮らすご家族の台所と、そっとつながる、小さな贈り物にもなります。",
+    "startMs": 898869,
+    "endMs": 906923
+   },
+   {
+    "text": "最後に、一つだけ、大切なお願いです。",
+    "startMs": 907523,
+    "endMs": 912035
+   },
+   {
+    "text": "この動画でお伝えした内容は、公表されている研究などをもとにした、",
+    "startMs": 912635,
+    "endMs": 919251
+   },
+   {
+    "text": "健康に関する一般的な情報です。",
+    "startMs": 919251,
+    "endMs": 922352
+   },
+   {
+    "text": "お一人おひとりに合わせた、医療のアドバイスではありません。",
+    "startMs": 922952,
+    "endMs": 927933
+   },
+   {
+    "text": "持病のある方や、お薬を飲んでいる方は、食事を変える前に、必ず、",
+    "startMs": 928533,
+    "endMs": 935347
+   },
+   {
+    "text": "かかりつけの先生にご相談ください。",
+    "startMs": 935347,
+    "endMs": 939083
+   },
+   {
+    "text": "今日のお話が、先生との会話のきっかけになれば、何より嬉しいです。",
+    "startMs": 939683,
+    "endMs": 946669
+   },
+   {
+    "text": "今夜の食卓が、皆さんの明日の元気に、つながりますように。",
+    "startMs": 947269,
+    "endMs": 953051
+   },
+   {
+    "text": "六十代からの食卓、みのりでした。",
+    "startMs": 954051,
+    "endMs": 957517
+   },
+   {
+    "text": "どうか、ご自分の体を、大切になさってくださいね。",
+    "startMs": 958117,
+    "endMs": 963259
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#2A3A58"
+ }
+}

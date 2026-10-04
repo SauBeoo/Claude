@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Flow Prompt Batch</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #111; color: #eee; max-width: 900px; margin: 24px auto; padding: 0 16px; }
+  h1 { font-size: 20px; } h1 span { color: #fbbf24; }
+  textarea { width: 100%; height: 260px; background: #1c1c1c; color: #ddd; border: 1px solid #333; border-radius: 8px; padding: 10px; font-size: 12px; font-family: monospace; }
+  .row { display: flex; gap: 12px; align-items: center; margin: 12px 0; flex-wrap: wrap; }
+  select, input[type=number] { background: #1c1c1c; color: #eee; border: 1px solid #333; border-radius: 6px; padding: 6px 10px; }
+  button { border: 0; border-radius: 8px; padding: 10px 22px; font-weight: 700; cursor: pointer; font-size: 14px; }
+  #start { background: #22c55e; color: #06230f; }
+  #pause { background: #f59e0b; color: #231a02; }
+  #reset { background: #333; color: #ccc; }
+  #status { background: #1a1a2a; border: 1px solid #2c2c4a; border-radius: 8px; padding: 10px 14px; margin-top: 10px; min-height: 40px; white-space: pre-line; }
+  progress { width: 100%; height: 14px; }
+  .hint { color: #999; font-size: 12px; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <h1>🍌 Flow Prompt <span>Batch</span></h1>
+  <div class="hint">① Mở <b>flow.google.com</b> rồi <b>vào MỘT PROJECT</b> (trang chủ không có ô prompt), chọn đúng model/tỉ lệ → ② chọn tab đó ở dưới → ③ bấm <b>🔍 KIỂM TRA TAB</b> (phải ra ✅ Sẵn sàng) → ④ dán danh sách prompt (mỗi dòng 1 prompt) hoặc nạp file → ⑤ Start. Tab Flow phải ĐỂ MỞ (không cần nhìn), tab này cũng để mở. Chuột/bàn phím của bạn tự do — nhưng <b>đừng mở F12 trên tab Flow</b> và đừng bấm "Hủy" trên dải vàng.<br>🔴 <b>Bật "Clear prompt on submit"</b> trong ⚙ của project Flow: extension nhận biết "đã gửi" bằng việc ô prompt SẠCH sau khi Enter — tắt nó thì mọi prompt bị chấm là thất bại rồi gửi lại (gen trùng, tốn credit).</div>
+
+  <div class="row">
+    <label>Tab Flow: <select id="tabsel" style="max-width:420px"></select></label>
+    <button id="refresh" style="background:#333;color:#ccc;padding:6px 12px">↻ quét lại tab</button>
+  </div>
+
+  <textarea id="prompts" placeholder="Mỗi dòng 1 prompt — dán nội dung flow_prompts.txt vào đây"></textarea>
+  <div class="row">
+    <input type="file" id="loadfile" accept=".txt">
+    <label>Nghỉ giữa 2 prompt: <input type="number" id="delay" value="18" min="5" max="120" style="width:64px"> giây</label>
+    <label>Bắt đầu từ dòng: <input type="number" id="startidx" value="1" min="1" style="width:72px"></label>
+  </div>
+  <div class="row">
+    <button id="start">▶ START</button>
+    <button id="pause">⏸ PAUSE</button>
+    <button id="diag" style="background:#38bdf8;color:#052733">🔍 KIỂM TRA TAB</button>
+    <button id="reset">↺ reset tiến độ</button>
+  </div>
+  <progress id="bar" value="0" max="100"></progress>
+  <div id="status">Chưa chạy.</div>
+
+<script src="panel.js"></script>
+</body>
+</html>

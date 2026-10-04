@@ -1,0 +1,119 @@
+# 20 — 昭和の住まいとお金の当たり前5選（間借り・銭湯・団地の抽選・公庫・マイホーム）
+
+Kịch bản đọc: `20_sumai-okane_TTS.md` · Video: `06_VIDEO/20_sumai-okane/` (chưa dựng)
+Trục **B** (阿井田茂 / Calm / 0.90, AivisSpeech :10101, profile `showa-b`) · hệ số đọc **5,59 ký/s** (đo video 19)
+🔴 Mốc thật chỉ chốt từ `timeline.json` SAU render (CLAUDE.md §Sản xuất — hệ số đọc đã sai 5 lần).
+Khuôn hình: **v08** (ảnh THẬT cận đúng vật được đọc, ~6–7s/hình, AI chỉ lấp).
+
+---
+
+## 0. VÌ SAO ĐỀ TÀI NÀY
+
+User chọn 2026-09-26 (trong 3 phương án: 住まい · 電話 · 病院). Số đo kênh (bench_channels, 2026-09-26, v/ngày):
+職場の常識 **706** · お金の常識 264 · 母のお金 175 · 結婚 152 · 給料袋 145 — cụm **tiền × 常識** thắng; bài đời thường (子育て 1 · 夏 2) chết.
+Xu hướng kênh: 5 video mới median **152 v/ngày** vs 5 video trước **9** ⇒ khuôn 「今では信じられない〜5選」 đang chạy, giữ nguyên.
+
+### 0.1 CHỒNG LẤN — đã kiểm (grep 18 script đã đăng)
+| bài cũ | trùng? | xử lý |
+|---|---|---|
+| 17 会社がくれたもの (寮・社宅・給与住宅) | cùng "chỗ ở" | ⭐ bài này là **mặt kia**: gia đình **không có công ty nào lo chỗ ở** (bố làm 町の印刷所). ⛔ không nhắc 社宅/寮/給与住宅 |
+| 16 結婚の常識 | nối tiếp | bài này bắt đầu **ngay sau đám cưới** — "cưới xong thì ở đâu". Không nhắc お見合い/仲人 |
+| 15 母のお金 (団地 1 câu về 小口の貸金) | chữ 団地 | bài này không nói tới vay nóng |
+| 06 · 07 · 11 (銭湯 giá vé / tiếng 銭湯) | 銭湯 | bài này nói **vì sao phải đi 銭湯** + **ai định giá vé** (物価統制令) — không lặp giá vé của 06 |
+| 19 買い物 (月賦) | vay trả góp | bài này là vay **nhà** (公庫), không nhắc 割賦販売法 |
+
+### 0.2 HÀNG XÓM MỤC TIÊU (`youtube-suggested-growth.md` §1)
+| video | kênh | vì sao mình là "next watch" |
+|---|---|---|
+| 結婚の常識5選 (video 16) | 昭和くらし図鑑 | 16 kết ở đám cưới; bài này mở bằng **đêm đầu tiên trong 六畳一間** |
+| 職場の常識5選 (video 14, 706 v/ngày) | 昭和くらし図鑑 | 14 là lương vào; bài này là **khoản chi lớn nhất đời**: chỗ ở |
+| 【昭和30〜50年代】昭和の常識20選 | 昭和の音がする | khung 「今では信じられない」; ⚠️ đo lại view trước khi đóng gói |
+
+---
+
+## 1. FACT SHEET — ✅ VERIFY 2026-09-26 (3 agent đọc văn bản gốc)
+
+| # | Con số / mốc (lời đọc) | Nguồn | TT |
+|---|---|---|---|
+| 1 | 借家法 **大正10年** 法律第50号 → 借地借家法 **平成3年** 法律第90号 | e-Gov 403AC0000000090 | ✅ |
+| 2 | 礼金 **không có trong luật nào**, 「長年の慣習」 | 国交省 相談対応事例集 R4.3 (001399558.pdf) Q2 | ✅ |
+| 3 | 敷金 được định nghĩa ở 民法 第622条の2, thi hành **令和2年4月1日** (⚠️ chữ 敷金 đã có từ trước ⇒ lời đọc 「はっきり意味が定められた」) | 平成29年法律第44号 · 国交省 001258039.pdf | ✅ |
+| 4 | 民営借家 **便所共用 30,0%** năm **昭和43** ⇒ 「およそ三軒に一軒」 | 総務省 長期統計 21-05-a (住宅統計調査), tự tính | ✅ |
+| 5 | **Tokyo** nhà có 浴室 **42,2%** năm **昭和43** (toàn quốc 65,6% ⇒ ⛔ không nói "cả nước") | 東京都 資料1 23-3siryou1.pdf | ✅ |
+| 6 | 銭湯 Tokyo **2.687 軒 昭和43 (戦後最多)** → **444 令和5** ⇒ 「六分の一ほど」 | 東京都 資料1 | ✅ |
+| 7 | 物価統制令 **昭和21年** 勅令第118号 · 知事 định 統制額 (省令 昭和32 厚生省令38) · vẫn áp dụng | e-Gov 321IO0000000118 · 厚労省 省令 | ✅ |
+| 8 | 日本住宅公団法 **昭和30年** 7月8日 法律第53号 · 第1条 「住宅に困窮する勤労者」「耐火性能」 | 衆議院 houritsu/02219550708053 | ✅ |
+| 9 | 賃貸第1号 **金岡団地 堺市 昭和31年** · 「ダイニングキッチンが日本に登場した第1号」 · 浴室・水洗トイレ | UR 年表 PDF · UR PRESS 43/82 | ✅ |
+| 10 | **昭和41年 東日本 新規賃貸: 6.564戸 募集 / 337.613人 申込 = 51,4倍** (⛔ không nói "trung bình thời 昭和30年代") | UR PRESS 43 「数字で見るUR」 | ✅ |
+| 11 | 公団住宅 **50万戸突破 昭和45年1月** | UR 年表 | ✅ |
+| 12 | 「団地族」 — chỉ nói **đã có từ này**, ⛔ không gắn năm/nguồn | (🟡 週刊朝日 1958 / 白書 S35 qua sách thứ cấp) | 🟡 |
+| 13 | 住宅金融公庫法 **昭和25年** 5月6日 法律第156号 · 第21条 **年五分五厘** · 耐火 **≤30年** | 衆議院 houritsu/00719500506156 | ✅ |
+| 14 | 公庫 基準金利 **昭和50年 5,50%** | JHF 旧公庫融資基準金利の推移 S50–H10 | ✅ |
+| 15 | 住宅取得控除 **昭和47年** (租特法 第41条): 3年, **trần 2万円/năm** | 衆議院 houritsu/06819720415014 | ✅ |
+| 16 | 公庫 廃止 **平成19年4月1日** → 住宅金融支援機構 | e-Gov 417AC0000000082 | ✅ |
+| 17 | 持ち家率 **昭和48 59,1%** | e-Stat 住宅・土地統計調査 時系列 第9-1表 | ✅ |
+| 18 | 『日本列島改造論』 **昭和47年** | NDLサーチ | ✅ năm |
+| 19 | 市街地価格指数 toàn quốc: **1973.3 +25,1% · 1974 +23,0% · 1961 (昭和36) +42,5%** — lời đọc ghi rõ 「日本不動産研究所」 | 内閣府 長期経済統計「物価」 | 🟡 (chỉ số tư nhân trong bảng chính phủ) |
+| 20 | 地価公示法 **昭和44年** 法律第49号 · công bố hằng năm từ 昭和45 | e-Gov 344AC0000000049 | ✅ số hiệu · 🟡 năm đầu |
+| 21 | 公示地価 住宅地 bình quân toàn quốc **平成3 306.500円/㎡ = đỉnh** · **平成4 −5,6%** | 国交省 地価公示 (tái bản lic.or.jp K1991/K1992) | ✅ |
+
+### ⛔ Ý ĐỊNH DÙNG NHƯNG ĐÃ BỎ
+- **Điều kiện "月収が家賃の◯倍"** của 公団 — không có nguồn thời 昭和 (mức 4倍 là hiện nay).
+- **Tiền thuê 金岡** — 2 nguồn lệch (4.050 vs 4.900–5.150円) ⇒ không nói giá thuê.
+- **Lãi vay nhà ngân hàng thập niên 50** — không có số gốc; 長期プライムレート không phải lãi vay nhà ⇒ bỏ so sánh "公庫 rẻ hơn ngân hàng bao nhiêu".
+- **Năm ngân hàng bắt đầu cho vay nhà** — NDL chỉ suy đoán ⇒ bỏ.
+- **"Đất tăng 30% năm 昭和48"** — không có nguồn ⇒ dùng +25,1% có tên nguồn.
+- **礼金 "2 tháng" thời 昭和** — không có số ⇒ không nói số tháng.
+- **公庫 có bốc thăm hay không** — chưa verify ⇒ bỏ câu so với 抽選 団地.
+- Giá vé 銭湯 — bảng Tokyo chỉ từ 組合 (🟡) + video 06 đã dùng 38円 ⇒ không nhắc giá.
+
+---
+
+## 2. CẤU TRÚC — MỘT CHIẾC CHÌA KHOÁ, HAI CÂU HỎI
+
+Mạch: **chuỗi nhân quả một gia đình, 昭和42→51** — cưới xong không công ty nào lo chỗ ở → 六畳一間 (礼金/敷金) → không có bồn tắm ⇒ 銭湯 mỗi tối với con nhỏ → vì thế nộp đơn 団地 (có 内風呂) → trượt 6 lần, trúng lần 7 → trong 団地 dành dụm 頭金, vay 公庫 → mua đất xa lúc giá đất phi mã → nhà riêng. **Tráo khối là gãy.**
+**Q1 (cảm xúc, treo từ 0:25 tới ~86%):** 「その願い（うちのお風呂に娘を）は、いつ、どの家で、かなったのか」 — kỳ vọng tự nhiên = マイホーム; đáp án **đảo**: ở **団地 thuê**, đêm đầu tiên mở chiếc chìa bạc. Mục 3 cố ý giữ lại đêm đó (「最後に、お話しします」).
+**Q2 (số, trả ở mục 3 ≈45%):** 「抽選は何倍だったのか」 → **51,4倍**. Mục 5 có cú lật phụ: năm đất tăng mạnh nhất không phải 列島改造 mà **昭和36 +42,5%**.
+**Trung thực:** câu 「何組もの家族をひとつにまとめた姿」; mọi số là luật/thống kê thật; chi tiết gia đình (印刷所, 7 lần bốc thăm, 3.000円/tháng, 1 tiếng rưỡi đi làm) là hư cấu gộp.
+
+| # | ① TUYÊN BỐ | ③ では、なぜ | ④ MỐC / E3 | ⑤ HẠ CÁNH |
+|---|---|---|---|---|
+| HOOK | 銭湯 22h, bà chủ giục, ước bồn tắm nhà mình → Q1 → Q2 | | | vào mục 1 **53,5s** (ước) |
+| 1 | 新婚の部屋は、六畳一間 | vì sao cần tiền trước khi ở | **E3** 礼金 không luật nào ghi · 借家法 大正10 · 敷金 định nghĩa 令和2 · 便所共用 1/3 (S43) | 「最初の城」 |
+| 2 | お風呂は、銭湯に行くもの | vì sao nhà không có bồn tắm | Tokyo 42,2% (S43) · 2.687軒 · **E3** 物価統制令 S21 vẫn định giá vé · 444軒 (R5) | 「同じ湯につかる」 |
+| 3 | 団地は、抽選で当てるもの | vì sao cửa hẹp | 公団法 S30 · 金岡 S31 · **51,4倍 (S41)** · 50万戸 (S45) · trúng lần 7, nhận chìa | 「一年あまり」 |
+| CTA ~49% | | | | |
+| 4 | 家は、国からお金を借りて建てるもの | vì sao vay nhà nước | 公庫法 S25 5,5% · S50 vẫn 5,5% · 住宅取得控除 S47 · 持ち家 59,1% (S48) · 廃止 H19 | 「壁や柱に」 |
+| 5 ⭐ | 土地は、決して値下がりしないもの | vì sao ai cũng tin | 列島改造 S47 · +25,1% · **lật: S36 +42,5%** · 地価公示法 S44 · nhà S51 · đỉnh H3 → H4 −5,6% | 「未来への約束」 |
+| KẾT ~86% | trả Q1: 団地, đêm đầu, 「今日から、ここは、うちのお風呂」 · chìa giữ lại | | | đỉnh `[間1.2][速0.8][後間1.0]` 「自分たちの時間の鍵」 → 認める→裏返す (順番 · điểm danh 3 người/vật) → xin 体験談 |
+
+---
+
+## 3. SỐ ĐO GATE (2026-09-26, `check_script_formula --truc B --rate 5.59`)
+
+| gate CHẶN | **v1** | ngưỡng |
+|---|---|---|
+| động cơ | **LIST** (pháp/chế độ 15) | ≥1 trong 2 |
+| số ký | **5.106 (15,2′)** | 4.863–6.037 |
+| mốc năm | **28 (1/182)** | ≥8 và ≥1/500 |
+| đóng mềm | **6** | ≥5 |
+| vào mục 1 | **53,5s** (ước) | ≤60s |
+| tag giữa dòng / dòng riêng | **0 / 0** | 0 |
+| cụm tag | **43** | ~32–41 |
+| thoại 「」 | **9** (8 cặp trong TTS) | ≥4 |
+| なぜ | **5** (1/mục) | — |
+
+⚠️ Cảnh báo (không chặn, giống v19): ngũ quan 1/851 (bài LIST, không cần) · 今では 5 · 証人 0 (bài dùng câu "gộp nhiều gia đình" thay 証人 — cùng lựa chọn với v19).
+⚠️ 15,2′ là ƯỚC; sàn 14,5′. Render ra dưới sàn → nối thêm chi tiết giác quan vào mục 2/3 (không thêm số).
+
+## 4. COMPLIANCE (`youtube-compliance.md`)
+- Thân bài: 0 từ nhóm §3. Title/thumbnail: chưa viết.
+- Tên người thật: **田中角栄** (chỉ nêu việc xuất bản sách, fact công khai, trung tính). Tổ chức: 日本住宅公団 · 都市再生機構 · 住宅金融公庫/支援機構 · 日本不動産研究所 (dẫn nguồn). Không tên công ty tư nhân.
+- YMYL: mọi số có nguồn §1; số 🟡 (#12, #19) lời đọc đã ghi tên nguồn hoặc không gắn năm.
+- Ảnh AI (nếu lấp) → tick altered/synthetic. Nhạc Kevin MacLeod → credit CC BY.
+
+## 5. VIỆC CÒN LẠI
+1. ⏳ **Đo Trends gprop=youtube 30 ngày** (rổ gợi ý: 団地 · 銭湯 · 昭和の暮らし · 住宅ローン · マイホーム · 昭和の常識) → gói CTR (Title CHỐT + 3 title A/B + 3 thumbnail + 概要欄 + タグ).
+2. Demo giọng hook + KẾT bằng `showa-b` (mở AivisSpeech :10101) → nghe.
+3. Ảnh THẬT khuôn v08: 木造アパート/共同流し · 銭湯 (番台・富士山・黄色い洗面器) · 団地 1950s–70s (UR/Commons) · ダイニングキッチン · 抽選はがき · 公団の鍵 · 建売ちらし · 郊外分譲地 · 満員バス · 風呂釜. Cảnh mẹ tắm con ở 銭湯 / 団地 ⇒ gần như chắc AI (⚠️ trẻ em + tắm: dùng khung vai-trở-lên, hơi nước che, không khoả thân) ⇒ tick altered/synthetic.
+4. Render → `timeline.json` chốt mốc → `06_HOOK_SCORECARD.md` ≥8/10.

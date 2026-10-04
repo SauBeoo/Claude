@@ -1,0 +1,124 @@
+[
+ {
+  "idx": 1,
+  "id": "a9bafe14-1428-468c-be4f-833f4daa9918",
+  "file": "sb_01_s01sh01.jpg",
+  "scene": "01",
+  "shot": "01",
+  "sceneTitle": "Int. 実家の玄関 - Day",
+  "title": "The Identical Envelopes",
+  "visual": "A close-up shot of the top of a wooden shoe cupboard in a sunlit entryway. Two identical white envelopes lie slightly overlapping on the surface. The afternoon light casts long, soft shadows across the wood, highlighting the blank, unprinted surface of the stationery.",
+  "motion": "The camera remains static, focusing on the texture of the envelopes and the play of light on the wood.",
+  "assets": [
+   "実家の玄関",
+   "白い封筒"
+  ],
+  "kb": 91,
+  "flowPrompt": null
+ },
+ {
+  "idx": 2,
+  "id": "489ccaf4-cd5c-4b12-b5b6-4d255af12b44",
+  "file": "sb_02_s01sh02.jpg",
+  "scene": "01",
+  "shot": "02",
+  "sceneTitle": "Int. 実家の玄関 - Day",
+  "title": "Kazuko's Hesitation",
+  "visual": "Kazuko, a woman in her 70s, stands in the entryway looking down at the two envelopes. She is captured in a medium shot from the chest up. Her expression is one of quiet contemplation and slight confusion as she stares at the identical objects.",
+  "motion": "A slow, subtle zoom-in on Kazuko's face to capture her internal conflict.",
+  "assets": [
+   "Kazuko",
+   "実家の玄関"
+  ],
+  "kb": 119,
+  "flowPrompt": null
+ },
+ {
+  "idx": 3,
+  "id": "64ba9db1-3eaa-4eda-b91c-ca96158efe3a",
+  "file": "sb_03_s01sh03.jpg",
+  "scene": "01",
+  "shot": "03",
+  "sceneTitle": "Int. 実家の玄関 - Day",
+  "title": "Making a Choice",
+  "visual": "A tight shot on Kazuko's weathered hand as she reaches out. She gently picks up the envelope closer to her. Her fingers move slowly, treating the paper with a sense of fragile importance.",
+  "motion": "The camera tilts down to follow the movement of her hand as it lifts the envelope.",
+  "assets": [
+   "Kazuko",
+   "白い封筒"
+  ],
+  "kb": 108,
+  "flowPrompt": null
+ },
+ {
+  "idx": 4,
+  "id": "9b9c2cf6-ce36-4430-a4e1-208307b9bfd6",
+  "file": "sb_04_s01sh04.jpg",
+  "scene": "01",
+  "shot": "04",
+  "sceneTitle": "Int. 実家の玄関 - Day",
+  "title": "Departing the Entryway",
+  "visual": "Kazuko walks away from the camera, heading deeper into the hallway toward the back of the house. She holds the envelope at her side. The light from the entryway fades as she moves into the dimmer interior shadows of the home.",
+  "motion": "The camera remains fixed in the entryway, watching her back as she disappears into the depth of the house.",
+  "assets": [
+   "Kazuko",
+   "実家の玄関"
+  ],
+  "kb": 87,
+  "flowPrompt": null
+ },
+ {
+  "idx": 5,
+  "id": "676833d6-9a6d-4191-a986-26449981f5ff",
+  "file": "sb_05_s02sh01.jpg",
+  "scene": "02",
+  "shot": "01",
+  "sceneTitle": "Int. 研究室 - Day",
+  "title": "Nakamura Facing the Void",
+  "visual": "Nakamura stands alone in the research lab, positioned in front of a large, pristine whiteboard. The room is quiet, and the white surface of the board fills most of the background, emphasizing its emptiness. Nakamura looks at the blank space with a contemplative expression.",
+  "motion": "A static wide shot captures the scale of the whiteboard compared to Nakamura, emphasizing the start of a process.",
+  "assets": [
+   "Nakamura",
+   "研究室",
+   "ホワイトボード"
+  ],
+  "kb": 65,
+  "flowPrompt": null
+ },
+ {
+  "idx": 6,
+  "id": "998dec60-153f-47bd-a36a-100f392a10a7",
+  "file": "sb_06_s02sh02.jpg",
+  "scene": "02",
+  "shot": "02",
+  "sceneTitle": "Int. 研究室 - Day",
+  "title": "The First Mark",
+  "visual": "A close-up shot focuses on Nakamura's hand as they hold a marker against the whiteboard. Nakamura draws a single, deliberate circle on the smooth surface. The composition is tight on the hand and the newly formed shape.",
+  "motion": "The camera performs a slow zoom-in toward the point where the marker touches the board.",
+  "assets": [
+   "Nakamura",
+   "ホワイトボード",
+   "研究室"
+  ],
+  "kb": 82,
+  "flowPrompt": null
+ },
+ {
+  "idx": 7,
+  "id": "d00b9274-97a7-43fa-8ce1-9fa4954f1920",
+  "file": "sb_07_s02sh03.jpg",
+  "scene": "02",
+  "shot": "03",
+  "sceneTitle": "Int. 研究室 - Day",
+  "title": "The Path Indicated",
+  "visual": "Nakamura draws a single arrow pointing away from the circle. There are no words or complex formulas, just the two abstract symbols on the vast white expanse. Nakamura's profile is partially visible at the edge of the frame.",
+  "motion": "A slight pan follows the direction of the arrow, moving from the circle toward the empty space the arrow points to.",
+  "assets": [
+   "Nakamura",
+   "ホワイトボード",
+   "研究室"
+  ],
+  "kb": 73,
+  "flowPrompt": null
+ }
+]

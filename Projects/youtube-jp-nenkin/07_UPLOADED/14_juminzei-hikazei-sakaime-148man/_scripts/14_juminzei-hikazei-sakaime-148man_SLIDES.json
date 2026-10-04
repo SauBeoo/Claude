@@ -1,0 +1,2685 @@
+[
+ {
+  "match": "中村さんの台所のテーブルに",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "台所のテーブルに、封筒が《2通》",
+   "img": "art_futatsu_no_fuutou.png",
+   "fly": "up",
+   "cap": "新潟県上越市・中村さん（71）。おひとり暮らし",
+   "left": "sensei_serious",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    5.17
+   ]
+  }
+ },
+ {
+  "match": "「年金額改定通知書」。今年から",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "同じころに届いた、2通の通知書",
+   "panels": [
+    {
+     "label": "年金額改定通知書\n《＋3万円》",
+     "img": "art_tsuchi_nenkin.png",
+     "tone": "green"
+    },
+    {
+     "label": "介護保険料決定通知書\n《＋4万9600円》",
+     "img": "art_tsuchi_kaigo.png",
+     "tone": "red"
+    }
+   ],
+   "cap": "増えたより、増やされたほうが《大きい》",
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    10.27,
+    16.94
+   ]
+  }
+ },
+ {
+  "match": "中村さんは71歳、新潟県上越市で",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "去年と今年で、何が変わったか",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.1805,
+      0.228
+     ],
+     "label": "147万円",
+     "lw": 300,
+     "s": 1.143
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7782,
+      0.228
+     ],
+     "label": "150万円",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.143
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6633,
+      0.5628
+     ],
+     "label": "去年から今年で\n3万円ふえました",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.143
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "それなのに、手元のお金は減りました",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "sub": null,
+   "beats": [
+    1.6,
+    5.0,
+    5.8,
+    6.6
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "なぜ、そんなことが起きるのか",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "答えは、《一本の線》です",
+   "nodes": [
+    {
+     "id": "in",
+     "kind": "label",
+     "at": [
+      0.15163368421052634,
+      0.2195
+     ],
+     "label": "非課税",
+     "lw": 300,
+     "dim": false,
+     "s": 1.508
+    },
+    {
+     "id": "sen",
+     "kind": "label",
+     "at": [
+      0.5417726315789473,
+      0.2195
+     ],
+     "label": "線",
+     "lw": 400,
+     "hero": true,
+     "under": true,
+     "s": 1.508
+    },
+    {
+     "id": "out",
+     "kind": "label",
+     "at": [
+      0.895402105263158,
+      0.2195
+     ],
+     "label": "課税",
+     "lw": 300,
+     "dim": false,
+     "s": 1.508
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.58,
+      0.58
+     ],
+     "label": "線の内側か\n外側か",
+     "tail": "up",
+     "lw": 470,
+     "s": 1.508
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "この線を、今日いっしょに確かめます",
+     "w": 950
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "sub": null,
+   "beats": [
+    3.07,
+    3.87,
+    4.67,
+    5.47,
+    6.27
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "その線を超えるのに必要だったのは",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "線を超えるのに必要な額",
+   "value": "1",
+   "unit": "円",
+   "cap": "《1円》多いか、少ないか。それだけで差がつきます",
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    3.95
+   ]
+  }
+ },
+ {
+  "match": "この線の話は、中村さんだけの話ではありません",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "この線に触れるかた",
+   "panels": [
+    {
+     "label": "年金《200万円》",
+     "img": "art_hito_200man.png"
+    },
+    {
+     "label": "年金《150万円》",
+     "img": "art_hito_150man.png"
+    },
+    {
+     "label": "年金《80万円》",
+     "img": "art_hito_80man.png"
+    }
+   ],
+   "cap": "金額にかかわらず、《全員》が関わります",
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    4.47,
+    5.27,
+    6.07
+   ]
+  }
+ },
+ {
+  "match": "いちばん多い落とし穴は",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "いちばん多い《落とし穴》",
+   "nodes": [
+    {
+     "id": "me",
+     "kind": "circle",
+     "at": [
+      0.1214,
+      0.2019
+     ],
+     "icon": "person",
+     "label": "ご自分",
+     "s": 1.145
+    },
+    {
+     "id": "ie",
+     "kind": "circle",
+     "at": [
+      0.6779,
+      0.2019
+     ],
+     "icon": "house",
+     "label": "ご家族",
+     "s": 1.145
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.7217,
+      0.6184
+     ],
+     "label": "ご家族に、線を\n越えさせてしまう",
+     "tail": "up",
+     "lw": 460,
+     "s": 1.145
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "このお話は、動画の後半で",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "me",
+     "to": "ie",
+     "style": "arrow",
+     "tone": "ink"
+    }
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    7.27,
+    14.81,
+    15.61
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "中村さんは、市役所に電話をしました",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "中村さんは、市役所に電話をしました",
+   "nodes": [
+    {
+     "id": "me",
+     "kind": "circle",
+     "at": [
+      0.1601,
+      0.3318
+     ],
+     "icon": "phone",
+     "label": "中村さん",
+     "s": 1.545
+    },
+    {
+     "id": "shi",
+     "kind": "panel",
+     "at": [
+      0.758,
+      0.3318
+     ],
+     "icon": "madoguchi",
+     "label": "市役所",
+     "s": 1.545
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "返ってきた答えは、ひとことでした",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "me",
+     "to": "shi",
+     "style": "arrow",
+     "tone": "ink"
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    3.6,
+    4.4
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "「去年までは、非課税でした",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "市役所の、ひとこと",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.1551,
+      0.2184
+     ],
+     "label": "非課税",
+     "lw": 300,
+     "s": 1.556
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7088,
+      0.2184
+     ],
+     "label": "課税",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.556
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6059,
+      0.5822
+     ],
+     "label": "「今年から、課税に\nなりました」",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.556
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "そのふたつの言葉のあいだに、線があります",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "sub": null,
+   "beats": [
+    2.9,
+    3.7,
+    5.8,
+    6.6
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "こちらが、日本年金機構のページです",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：日本年金機構『令和8年度税制改正による主な改正事項』",
+   "img": "genten_01_kikou_kyuchi.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝「級地区分ごとの非課税限度額（単身者の場合）」",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    5.17
+   ]
+  }
+ },
+ {
+  "match": "65歳以上の欄を、横に見ていきます",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "65歳以上・おひとりの線（年金額）",
+   "nodes": [
+    {
+     "id": "c0",
+     "kind": "group",
+     "at": [
+      0.14105263157894737,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "house",
+     "foot": "1級地\n155万円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c1",
+     "kind": "group",
+     "at": [
+      0.5184210526315789,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "house",
+     "foot": "2級地\n151万5千円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c2",
+     "kind": "group",
+     "at": [
+      0.8957894736842106,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "house",
+     "foot": "3級地\n148万円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "x",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "どの線かは、住んでいる町で決まります",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    2.4,
+    3.2,
+    4.0
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "線は、1本ではありません",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "線は、いくつあるか",
+   "value": "3",
+   "unit": "本",
+   "cap": "1級地・2級地・3級地。《町ごと》に違います",
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    3.95
+   ]
+  }
+ },
+ {
+  "match": "中村さんの線は、148万円でした",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "上越市は3級地。線は《148万円》",
+   "nodes": [
+    {
+     "id": "in",
+     "kind": "label",
+     "at": [
+      0.14621052631578946,
+      0.2345
+     ],
+     "label": "去年\n147万円",
+     "lw": 300,
+     "dim": false,
+     "s": 0.86
+    },
+    {
+     "id": "sen",
+     "kind": "label",
+     "at": [
+      0.5184210526315789,
+      0.2345
+     ],
+     "label": "148万円",
+     "lw": 400,
+     "hero": true,
+     "under": true,
+     "s": 0.86
+    },
+    {
+     "id": "out",
+     "kind": "label",
+     "at": [
+      0.8906315789473683,
+      0.2345
+     ],
+     "label": "今年\n150万円",
+     "lw": 300,
+     "dim": false,
+     "s": 0.86
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.58,
+      0.5494
+     ],
+     "label": "線そのものは\n動いていません",
+     "tail": "up",
+     "lw": 470,
+     "s": 0.86
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "去年は内側、今年は外側になりました",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "sub": null,
+   "beats": [
+    1.6,
+    2.4,
+    3.2,
+    4.0,
+    4.8
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "超えた額は、2万円",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "線を超えた額",
+   "value": "2",
+   "unit": "万円",
+   "cap": "たった《2万円》で、席が変わりました",
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "beats": [
+    2.2,
+    3.0
+   ]
+  }
+ },
+ {
+  "match": "では、ご自分の町の線が、どれなのか",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "うちの町は、何級地か",
+   "nodes": [
+    {
+     "id": "q",
+     "kind": "circle",
+     "at": [
+      0.1414,
+      0.2821
+     ],
+     "icon": "magnifier",
+     "label": "うちは\n何級地?",
+     "s": 1.351
+    },
+    {
+     "id": "m",
+     "kind": "panel",
+     "at": [
+      0.7917,
+      0.2821
+     ],
+     "icon": "docs",
+     "label": "厚生労働省",
+     "s": 1.351
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "機構のページから、直接つながっています",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "q",
+     "to": "m",
+     "style": "arrow",
+     "tone": "ink"
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    7.72,
+    8.52
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "厚生労働省の、こちらのページです",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：厚生労働省『お住まいの地域の級地』",
+   "img": "genten_02_mhlw_kyuchi.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝ 新潟市は2級地、上越市は3級地",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    5.0
+   ]
+  }
+ },
+ {
+  "match": "この表が、そのまま住民税の線になります",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "同じ新潟県のなかで",
+   "nodes": [
+    {
+     "id": "c0",
+     "kind": "group",
+     "at": [
+      0.14105263157894737,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "house",
+     "foot": "新潟市\n2級地",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c1",
+     "kind": "group",
+     "at": [
+      0.5184210526315789,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "house",
+     "foot": "長岡市\n2級地",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c2",
+     "kind": "group",
+     "at": [
+      0.8957894736842106,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "house",
+     "foot": "上越市\n3級地",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "x",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "同じ県でも、線が2本に分かれています",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    10.42,
+    11.22,
+    12.02
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "収入とも、持ち家かどうかとも、関係ありません",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "線は、《市の名前》で決まります",
+   "bgimg": "bg_machinami.png",
+   "ok": [
+    "市の名前で決まります"
+   ],
+   "no": [
+    "収入では決まりません",
+    "持ち家かどうかでも決まりません"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    6.74,
+    11.04
+   ]
+  }
+ },
+ {
+  "match": "「電車で1時間のところにいる姉には",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "電車で1時間の、お姉さん",
+   "nodes": [
+    {
+     "id": "a",
+     "kind": "circle",
+     "at": [
+      0.1074,
+      0.1802
+     ],
+     "icon": "house",
+     "label": "上越市\n中村さん"
+    },
+    {
+     "id": "b",
+     "kind": "circle",
+     "at": [
+      0.7796,
+      0.1802
+     ],
+     "icon": "house",
+     "label": "新潟市\nお姉さん"
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.7516,
+      0.6329
+     ],
+     "label": "「あちらには、\n何も来ないんですよ」",
+     "tail": "up",
+     "lw": 470
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "年金の額は、ほとんど同じだそうです",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "a",
+     "to": "b",
+     "style": "line",
+     "tone": "ink",
+     "label": "電車で1時間"
+    }
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    7.44,
+    8.24,
+    10.69
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "そのあいだの3万5千円のなかに",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "ふたりの線のあいだ",
+   "nodes": [
+    {
+     "id": "in",
+     "kind": "label",
+     "at": [
+      0.13773684210526319,
+      0.2361
+     ],
+     "label": "148万円\n上越市",
+     "lw": 300,
+     "dim": false,
+     "s": 0.79
+    },
+    {
+     "id": "sen",
+     "kind": "label",
+     "at": [
+      0.48931578947368426,
+      0.2361
+     ],
+     "label": "3万5千円",
+     "lw": 400,
+     "hero": true,
+     "under": true,
+     "s": 0.79
+    },
+    {
+     "id": "out",
+     "kind": "label",
+     "at": [
+      0.87,
+      0.2361
+     ],
+     "label": "151万5千円\n新潟市",
+     "lw": 300,
+     "dim": false,
+     "s": 0.79
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.58,
+      0.5461
+     ],
+     "label": "同じ県のなかに\n線が2本あります",
+     "tail": "up",
+     "lw": 470,
+     "s": 0.79
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "中村さんの150万円は、ちょうどこのなか",
+     "w": 950
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_surprised",
+   "sub": null,
+   "beats": [
+    1.6,
+    2.4,
+    3.2,
+    4.0,
+    4.8
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "暮らしにかかる費用が、地域で違うからです",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "なぜ、町によって違うのか",
+   "bgimg": "bg_shotengai.png",
+   "ok": [
+    "暮らしの費用が地域で違う",
+    "物価の高い町は、線も高い",
+    "法律の施行令に書かれています"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    8.42,
+    9.22
+   ]
+  }
+ },
+ {
+  "match": "ただ、電車で1時間の距離に、線が2本ある",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "電車で1時間の距離に",
+   "value": "線が2本",
+   "unit": "",
+   "cap": "それが、いま起きていることです",
+   "left": "sensei_serious",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    4.12
+   ]
+  }
+ },
+ {
+  "match": "線を越えると、動くものはふたつです",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "線を越えると、動くものは《ふたつ》",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.13157894736842105,
+      0.4
+     ],
+     "w": 230,
+     "h": 300,
+     "tone": "ink",
+     "head": "線を\n越える",
+     "icon": "warning",
+     "iconsize": 140,
+     "fix": true
+    },
+    {
+     "id": "i0",
+     "kind": "group",
+     "at": [
+      0.49968421052631584,
+      0.4
+     ],
+     "w": 196,
+     "h": 300,
+     "tone": "amber",
+     "head": "① 住民税",
+     "icon": "cityhall",
+     "iconsize": 100,
+     "fix": true
+    },
+    {
+     "id": "i1",
+     "kind": "group",
+     "at": [
+      0.9231578947368421,
+      0.4
+     ],
+     "w": 196,
+     "h": 300,
+     "tone": "amber",
+     "head": "② 介護\n保険料",
+     "icon": "hospital",
+     "iconsize": 100,
+     "fix": true
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "w": 950,
+     "tone": "ink",
+     "label": "ひとつずつ、見ていきます",
+     "fix": true
+    }
+   ],
+   "edges": [
+    {
+     "from": "L",
+     "to": "i0",
+     "style": "arrow",
+     "tone": "ink",
+     "w": 16
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    7.62,
+    8.42,
+    9.22
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "内訳は、市民税が3千円、県民税が1千円",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "5千円の内訳",
+   "nodes": [
+    {
+     "id": "c0",
+     "kind": "group",
+     "at": [
+      0.14105263157894737,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "cityhall",
+     "foot": "市民税\n3千円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c1",
+     "kind": "group",
+     "at": [
+      0.5184210526315789,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "cityhall",
+     "foot": "県民税\n1千円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c2",
+     "kind": "group",
+     "at": [
+      0.8957894736842106,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "env",
+     "foot": "森林環境税\n1千円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "x",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "令和6年度から、3つ目が加わりました",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    3.95,
+    4.75,
+    5.55
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "上越市のページは、この3つを、ひとつの見出しで並べています",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "原典：上越市『課税の基準』",
+   "org": "新潟県上越市（掲載日 2025年1月27日）",
+   "doc": "「市民税・県民税・\n　森林環境税が\n　課税されない人」",
+   "note": "※3つが、同じ非課税の基準で並んでいます",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "線の内側にいるあいだは、この5千円が",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "5千円は、《どちら側》で決まるか",
+   "nodes": [
+    {
+     "id": "in",
+     "kind": "label",
+     "at": [
+      0.09551368421052638,
+      0.2289
+     ],
+     "label": "内側\n0円",
+     "lw": 300,
+     "dim": false,
+     "s": 1.103
+    },
+    {
+     "id": "sen",
+     "kind": "label",
+     "at": [
+      0.49066421052631587,
+      0.2289
+     ],
+     "label": "5千円",
+     "lw": 400,
+     "hero": true,
+     "under": true,
+     "s": 1.103
+    },
+    {
+     "id": "out",
+     "kind": "label",
+     "at": [
+      0.9125189473684211,
+      0.2289
+     ],
+     "label": "外側\n5千円",
+     "lw": 300,
+     "dim": false,
+     "s": 1.103
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.58,
+      0.5609
+     ],
+     "label": "均等割と\n森林環境税です",
+     "tail": "up",
+     "lw": 470,
+     "s": 1.103
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "内側にいるあいだは、まるごと来ません",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_relieved",
+   "sub": null,
+   "beats": [
+    1.6,
+    5.35,
+    11.39,
+    17.43,
+    18.23
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "「なんだ、5千円か」",
+  "video": true,
+  "stage": {
+   "layout": "pict",
+   "title": "通知書を見たときの、ひとこと",
+   "panels": [
+    {
+     "label": "「なんだ、5千円か」",
+     "img": "art_gosen_anshin.png",
+     "tone": "paper"
+    }
+   ],
+   "cap": "ここで安心してしまうかたが、いちばん《損》をします",
+   "left": "sensei_caution",
+   "right": "kikite_nod",
+   "beats": [
+    2.2,
+    6.67
+   ]
+  }
+ },
+ {
+  "match": "介護保険料です",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "ふたつめが、《本命》です",
+   "value": "介護保険料",
+   "unit": "",
+   "cap": "本当に動くのは、税金のほうではありません",
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "beats": [
+    1.85,
+    6.14
+   ]
+  }
+ },
+ {
+  "match": "上越市の表を、ご覧ください",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "原典：上越市『介護保険料』（令和6年度から令和8年度）",
+   "img": "genten_03_joetsu_kaigo.png",
+   "fly": "up",
+   "cap": "赤で囲んだところ ＝ 第3段階と第6段階",
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    2.4
+   ]
+  }
+ },
+ {
+  "match": "世帯全員が住民税非課税で、年金収入が120万円を超える方は",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "介護保険料の段階（上越市・年額）",
+   "label_w": 270,
+   "max": 95000,
+   "rows": [
+    [
+     "第1段階",
+     15500,
+     "grey",
+     "1万5500円"
+    ],
+    [
+     "第2段階",
+     20200,
+     "grey",
+     "2万200円"
+    ],
+    [
+     "第3段階",
+     39500,
+     "ok",
+     "3万9500円"
+    ],
+    [
+     "第4段階",
+     69700,
+     "grey",
+     "6万9700円"
+    ],
+    [
+     "第5段階",
+     77400,
+     "grey",
+     "7万7400円"
+    ],
+    [
+     "第6段階",
+     89100,
+     "bad",
+     "8万9100円"
+    ]
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    8.67,
+    9.47,
+    16.63,
+    17.43,
+    19.88
+   ]
+  }
+ },
+ {
+  "match": "第4段階と第5段階は、",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "なぜ、ふたつ飛び越えるのか",
+   "bgimg": "bg_hitori_ie.png",
+   "ok": [
+    "第4・第5 ＝ 世帯に課税の方がいて",
+    "　　　　　ご本人は非課税のかたの席"
+   ],
+   "no": [
+    "中村さんは、おひとり暮らし",
+    "世帯にいるのは、ご本人だけ"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    8.14,
+    11.04,
+    13.94
+   ]
+  }
+ },
+ {
+  "match": "差額は、4万9600円",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "段階が動いた差額",
+   "value": "49600",
+   "unit": "円",
+   "cap": "月にならすと、4100円ほど。ひと月ぶんの《電気代》です",
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "beats": [
+    2.55,
+    11.32
+   ]
+  }
+ },
+ {
+  "match": "同じ上越市の、おふたりです",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "同じ上越市の、おふたり",
+   "panels": [
+    {
+     "cap": "年金 147万円",
+     "icon": "avatar_seniors"
+    },
+    {
+     "cap": "年金 150万円",
+     "icon": "avatar_watanabe"
+    }
+   ],
+   "rows": [
+    "住民税　　　0円　→　5千円",
+    "介護保険料　3万9500円　→　8万9100円",
+    "手元に残る　143万500円　→　140万5900円"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    6.04,
+    6.84,
+    7.64,
+    8.44
+   ]
+  }
+ },
+ {
+  "match": "手元に残るのは、143万500円",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "手元に残るお金",
+   "nodes": [
+    {
+     "id": "old",
+     "kind": "label",
+     "at": [
+      0.20536842105263162,
+      0.2305
+     ],
+     "label": "143万500円",
+     "lw": 300,
+     "s": 1.034
+    },
+    {
+     "id": "new",
+     "kind": "label",
+     "at": [
+      0.7988210526315791,
+      0.2305
+     ],
+     "label": "140万5900円",
+     "lw": 360,
+     "hero": true,
+     "under": true,
+     "s": 1.034
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.62,
+      0.5576
+     ],
+     "label": "年金を3万円\n多くもらったほうが",
+     "tail": "up",
+     "lw": 480,
+     "s": 1.034
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "手元に残るお金は、少なくなります",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "old",
+     "to": "new",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_surprised",
+   "sub": null,
+   "beats": [
+    1.6,
+    7.09,
+    9.99,
+    13.59
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "手元に残るお金は、2万4600円、少ない",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "3万円多くもらったかたの手取り",
+   "value": "－24600",
+   "unit": "円",
+   "cap": "多くもらっているほうが、《少なく残ります》",
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    7.72
+   ]
+  }
+ },
+ {
+  "match": "147万円のかたに、手取りで追いつくには",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "では、いくらあれば追いつくのか",
+   "nodes": [
+    {
+     "id": "a",
+     "kind": "label",
+     "at": [
+      0.20553684210526316,
+      0.2288
+     ],
+     "label": "147万円の手取り",
+     "lw": 280,
+     "s": 1.109
+    },
+    {
+     "id": "b",
+     "kind": "label",
+     "at": [
+      0.8021210526315788,
+      0.2288
+     ],
+     "label": "152万5千円",
+     "lw": 330,
+     "hero": true,
+     "under": true,
+     "s": 1.109
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6,
+      0.5612
+     ],
+     "label": "5万4600円ぶん\n取り返して、やっと同じ",
+     "tail": "up",
+     "lw": 470,
+     "s": 1.109
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "追いつくのに、5万5千円ちかく必要です",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "a",
+     "to": "b",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    5.35,
+    6.15,
+    6.95
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "148万円から、152万5千円まで",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "《逆転》の帯",
+   "nodes": [
+    {
+     "id": "in",
+     "kind": "label",
+     "at": [
+      0.13773684210526319,
+      0.2361
+     ],
+     "label": "148万円",
+     "lw": 300,
+     "dim": false,
+     "s": 0.79
+    },
+    {
+     "id": "sen",
+     "kind": "label",
+     "at": [
+      0.48931578947368426,
+      0.2361
+     ],
+     "label": "4万5千円",
+     "lw": 400,
+     "hero": true,
+     "under": true,
+     "s": 0.79
+    },
+    {
+     "id": "out",
+     "kind": "label",
+     "at": [
+      0.87,
+      0.2361
+     ],
+     "label": "152万5千円",
+     "lw": 300,
+     "dim": false,
+     "s": 0.79
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.58,
+      0.5461
+     ],
+     "label": "この帯のなかでは\n多いほど減ります",
+     "tail": "up",
+     "lw": 470,
+     "s": 0.79
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "このあいだは、多くもらうほど手元が減ります",
+     "w": 950
+    }
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "sub": null,
+   "beats": [
+    1.6,
+    3.6,
+    8.77,
+    11.66,
+    12.46
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "いまの数字は、上越市の令和8年度の表で計算しています",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "ひとつ、お断りです",
+   "no": [
+    "介護保険料は、段階の数も金額も",
+    "市区町村ごとに違います",
+    "帯の幅も、町によって変わります"
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    5.17,
+    10.52
+   ]
+  }
+ },
+ {
+  "match": "ここで、ひとつだけお願いです",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "この研究室について",
+   "org": "年金と老後のお金研究室",
+   "doc": "高評価・シェア・コメントが\n次の研究テーマになります",
+   "note": "※ご感想や、調べてほしいテーマをお寄せください",
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "皆さまの声が、次の研究テーマになります",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "皆さまの声が、次の研究テーマに",
+   "nodes": [
+    {
+     "id": "c",
+     "kind": "circle",
+     "at": [
+      0.1601,
+      0.3318
+     ],
+     "icon": "phone",
+     "label": "コメント",
+     "s": 1.545
+    },
+    {
+     "id": "k",
+     "kind": "panel",
+     "at": [
+      0.758,
+      0.3318
+     ],
+     "icon": "docs",
+     "label": "次の研究テーマ",
+     "s": 1.545
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "調べてほしいテーマを、お寄せください",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "c",
+     "to": "k",
+     "style": "arrow",
+     "tone": "amber"
+    }
+   ],
+   "left": "sensei_present",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    3.95,
+    8.37
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "では、内側にいると、何があるのか",
+  "video": true,
+  "stage": {
+   "layout": "compare",
+   "title": "新潟市の渡辺さん（66）",
+   "panels": [
+    {
+     "cap": "渡辺さんの年金",
+     "icon": "avatar_watanabe"
+    },
+    {
+     "cap": "新潟市の線",
+     "icon": "house"
+    }
+   ],
+   "rows": [
+    "年金　　1年で86万4千円",
+    "線　　　151万5千円",
+    "どちら側　ずっと内側です"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    2.4,
+    10.07,
+    10.87,
+    11.67
+   ]
+  }
+ },
+ {
+  "match": "内側にいるから、受け取れているものがあります",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "線の内側にあるもの",
+   "nodes": [
+    {
+     "id": "c0",
+     "kind": "group",
+     "at": [
+      0.14105263157894737,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "money_pouch",
+     "foot": "支援給付金\n月2529円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c1",
+     "kind": "group",
+     "at": [
+      0.5184210526315789,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "hospital",
+     "foot": "介護保険料\n低い段階",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c2",
+     "kind": "group",
+     "at": [
+      0.8957894736842106,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "shield_check",
+     "foot": "医療費の\n上限も低い",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "x",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "内側にいるから、受け取れています",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_relieved",
+   "beats": [
+    1.6,
+    9.72,
+    19.53,
+    24.0
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "中村さんが失ったのは、5千円ではありませんでした",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "中村さんが失ったもの",
+   "nodes": [
+    {
+     "id": "L",
+     "kind": "group",
+     "at": [
+      0.16,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "tone": "ink",
+     "head": "払うことになった額",
+     "icon": "cityhall",
+     "iconsize": 165,
+     "fix": true
+    },
+    {
+     "id": "R",
+     "kind": "group",
+     "at": [
+      0.84,
+      0.34
+     ],
+     "w": 386,
+     "h": 330,
+     "tone": "ink",
+     "head": "本当に失ったもの",
+     "hero": "資格",
+     "foot": "住民税非課税世帯",
+     "under": true,
+     "fix": true
+    },
+    {
+     "id": "B",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.97
+     ],
+     "w": 950,
+     "icon": "lock",
+     "label": "5千円ではなく、資格のほうでした",
+     "fix": true
+    }
+   ],
+   "edges": [
+    {
+     "from": "L",
+     "to": "R",
+     "style": "arrow",
+     "tone": "ink",
+     "w": 18
+    }
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    2.4,
+    3.2
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "そして、ここからが、冒頭で申し上げたお話です",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "冒頭のお約束",
+   "value": "ご家族の線",
+   "unit": "",
+   "cap": "ご自分の年金が、どちら側にあっても関係します",
+   "left": "sensei_caution",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    4.47
+   ]
+  }
+ },
+ {
+  "match": "給付金の条件を、もう一度ご覧ください",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "年金生活者支援給付金の3つの条件",
+   "bgimg": "bg_kyufu_fuutou.png",
+   "ok": [
+    "① 65歳以上で老齢基礎年金",
+    "② 前年の収入が基準額以下",
+    "③ 世帯全員が住民税非課税"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    14.81,
+    20.96
+   ]
+  }
+ },
+ {
+  "match": "もし来年、息子さんが仕事の都合で戻ってきて",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "もし、息子さんが戻ってきたら",
+   "nodes": [
+    {
+     "id": "s",
+     "kind": "circle",
+     "at": [
+      0.1105,
+      0.1802
+     ],
+     "icon": "person",
+     "label": "息子さん\n住民税あり"
+    },
+    {
+     "id": "h",
+     "kind": "circle",
+     "at": [
+      0.7674,
+      0.1802
+     ],
+     "icon": "house",
+     "label": "渡辺さんの\n世帯"
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.7674,
+      0.6329
+     ],
+     "label": "住民票を移した\nその日から",
+     "tail": "up",
+     "lw": 440
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "世帯は、非課税ではなくなります",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "h",
+     "style": "arrow",
+     "tone": "ink"
+    }
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    6.74,
+    7.54,
+    8.34
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "渡辺さんの年金は、1円も変わっていません",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "渡辺さんに起きること",
+   "no": [
+    "給付金が止まります",
+    "介護保険料が第4・第5段階へ"
+   ],
+   "ok": [
+    "年金の額は、1円も変わりません"
+   ],
+   "left": "sensei_serious",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    7.19,
+    7.99
+   ]
+  }
+ },
+ {
+  "match": "年金が200万円あるかたにも関わります、と申し上げたのは",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "線を越えさせるのは、《ご自分ではありません》",
+   "nodes": [
+    {
+     "id": "me",
+     "kind": "circle",
+     "at": [
+      0.1253,
+      0.1802
+     ],
+     "icon": "person",
+     "label": "あなた\n年金200万円"
+    },
+    {
+     "id": "mo",
+     "kind": "circle",
+     "at": [
+      0.7621,
+      0.1802
+     ],
+     "icon": "couple_senior",
+     "label": "お母さま\n線の内側"
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.7621,
+      0.6329
+     ],
+     "label": "実家に住民票を\n移したその日に",
+     "tail": "up",
+     "lw": 450
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "お母さまを、線の外へ連れ出してしまう",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "me",
+     "to": "mo",
+     "style": "arrow",
+     "tone": "ink"
+    }
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    9.99,
+    17.43,
+    21.56
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "「息子が帰ってくるのを、待っていたんですけどねえ」",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "「息子が帰ってくるのを、待っていたんですけどねえ」",
+   "img": "art_madobe_watanabe.png",
+   "fly": "up",
+   "cap": "待たなくていい、というお話ではありません",
+   "left": "sensei_serious",
+   "right": "kikite_down",
+   "beats": [
+    1.6,
+    8.94
+   ]
+  }
+ },
+ {
+  "match": "住民票をどうするかは、移す前に",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "決める前に、できること",
+   "bgimg": "bg_madoguchi.png",
+   "ok": [
+    "移す前に、市区町村の窓口で聞けます",
+    "知ったうえで決めれば、それでいい"
+   ],
+   "no": [
+    "知らずに決めると、あとで戻せません"
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    2.4,
+    3.2
+   ]
+  }
+ },
+ {
+  "match": "引っ越しは、税金の話でもある",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "今日、覚えて帰っていただきたい一行",
+   "value": "引っ越しは、税金の話",
+   "unit": "",
+   "cap": "同居を決める前に、この一行だけ",
+   "left": "sensei_conclude",
+   "right": "kikite_nod",
+   "beats": [
+    3.07,
+    9.59
+   ]
+  }
+ },
+ {
+  "match": "横浜の田中さんから、こんな質問をいただいています",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "横浜の田中さん（67）からのご質問",
+   "nodes": [
+    {
+     "id": "me",
+     "kind": "circle",
+     "at": [
+      0.12538105263157892,
+      0.3263
+     ],
+     "icon": "avatar_tanaka",
+     "label": "田中さん",
+     "s": 1.186
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6829410526315788,
+      0.3263
+     ],
+     "label": "「ふたりになったら、\n線も変わるんですか」",
+     "tail": "left",
+     "lw": 490,
+     "s": 1.186
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "変わります。しかも、上がります",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_think",
+   "beats": [
+    1.6,
+    12.01,
+    20.26
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "ご夫婦の表は、どこにも出ていません",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "ここから先は、お断りをさせてください",
+   "ok": [
+    "おひとりの表 ＝ 機構が出しています"
+   ],
+   "no": [
+    "ご夫婦の表 ＝ どこにも出ていません",
+    "市区町村の式から、当研究室で計算しました"
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    3.6,
+    4.4
+   ]
+  }
+ },
+ {
+  "match": "「35万円かける、ご本人と配偶者の人数",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "計算のもと：横浜市『均等割・所得割の納税義務者』",
+   "org": "横浜市（1級地）",
+   "doc": "35万円 ×（ご本人＋配偶者）\n＋ 10万円 ＋ 21万円",
+   "note": "※級地ごとに、35万円と21万円の数字が変わります",
+   "left": "sensei_point",
+   "right": "kikite_think"
+  }
+ },
+ {
+  "match": "ご夫婦2人で計算すると、年金額でおよそ211万円",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "ご夫婦2人の線（当研究室の計算）",
+   "nodes": [
+    {
+     "id": "c0",
+     "kind": "group",
+     "at": [
+      0.14105263157894737,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "couple",
+     "foot": "1級地\n211万円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c1",
+     "kind": "group",
+     "at": [
+      0.5184210526315789,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "couple",
+     "foot": "2級地\n201万9千円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "c2",
+     "kind": "group",
+     "at": [
+      0.8957894736842106,
+      0.42
+     ],
+     "w": 248,
+     "h": 430,
+     "icon": "couple",
+     "foot": "3級地\n192万8千円",
+     "iconsize": 190,
+     "fix": true
+    },
+    {
+     "id": "x",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "おひとりのときより、45万〜56万円ほど上がります",
+     "w": 950
+    }
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_surprised",
+   "beats": [
+    1.6,
+    6.74,
+    14.99,
+    15.79
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "奥さまご自身にも年金があるときは",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "ご夫婦の落とし穴",
+   "no": [
+    "奥さまが線を越えていれば",
+    "世帯は、非課税ではありません"
+   ],
+   "ok": [
+    "まず奥さまが、おひとりの表で判定されます"
+   ],
+   "left": "sensei_caution",
+   "right": "kikite_worried",
+   "beats": [
+    1.6,
+    7.09,
+    7.89
+   ]
+  }
+ },
+ {
+  "match": "そして、この線は、どちらかが亡くなった年に",
+  "video": true,
+  "stage": {
+   "layout": "bars",
+   "title": "線は、もう一度《動きます》",
+   "label_w": 330,
+   "max": 230,
+   "rows": [
+    [
+     "ご夫婦2人の線",
+     211,
+     "ok",
+     "211万円"
+    ],
+    [
+     "おひとりの線",
+     155,
+     "bad",
+     "155万円"
+    ]
+   ],
+   "note": "世帯の人数が変わった年に。前回の遺族年金の回と地続きです",
+   "left": "sensei_serious",
+   "right": "kikite_down",
+   "beats": [
+    1.6,
+    8.14,
+    17.38
+   ]
+  }
+ },
+ {
+  "match": "日本年金機構は、非課税所得とは",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "原典：日本年金機構 年金Q&A『非課税所得とは』",
+   "org": "日本年金機構（更新日 2019年9月2日）",
+   "doc": "「死亡を支給事由とする年金」\n「障害を支給事由とする年金」",
+   "note": "※前回の13万9千円は、今日の線の計算に乗りません",
+   "left": "sensei_point",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "この判定に、手続きは要りません",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "間違えやすいところ ②",
+   "ok": [
+    "市区町村が、自動で判定します",
+    "申請しそこねることは、ありません"
+   ],
+   "no": [
+    "こちらから止めることも、できません"
+   ],
+   "left": "sensei_explain",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    8.07,
+    12.01
+   ]
+  }
+ },
+ {
+  "match": "それでは、今日の研究ノートです",
+  "video": true,
+  "stage": {
+   "layout": "check",
+   "title": "今日の研究ノート",
+   "ok": [
+    "おひとりの線 148万・151万5千・155万",
+    "町の級地は、厚労省の一覧表で決まる",
+    "越えて払う税金は5千円。動くのは介護保険料"
+   ],
+   "no": [
+    "上越市では 第3段階→第6段階で年4万9600円",
+    "線を越えるのは、世帯の顔ぶれでも起きる"
+   ],
+   "left": "sensei_conclude",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    11.21,
+    12.01,
+    20.93,
+    21.73
+   ]
+  }
+ },
+ {
+  "match": "線を越えるのは、自分の年金だけではありません",
+  "video": true,
+  "stage": {
+   "layout": "big",
+   "title": "今日いちばん、覚えて帰っていただきたいこと",
+   "value": "世帯の顔ぶれ",
+   "unit": "",
+   "cap": "線を越えるのは、自分の年金だけではありません",
+   "left": "sensei_conclude",
+   "right": "kikite_nod",
+   "beats": [
+    1.6,
+    2.4
+   ]
+  }
+ },
+ {
+  "match": "中村さんに、最後にお会いしたときのことです",
+  "video": true,
+  "stage": {
+   "layout": "art",
+   "title": "40年、学校給食の大鍋をかき回してきたかた",
+   "img": "art_kyushoku_oonabe.png",
+   "fly": "up",
+   "cap": "新潟の冬、朝いちばんに火を入れるのは、いつも自分だったと",
+   "left": "sensei_serious",
+   "right": "kikite_listen",
+   "beats": [
+    1.6,
+    22.08
+   ]
+  }
+ },
+ {
+  "match": "「知らないままだったら、あの通知書を見て",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "中村さんの、ひとこと",
+   "nodes": [
+    {
+     "id": "me",
+     "kind": "circle",
+     "at": [
+      0.12867368421052633,
+      0.3255
+     ],
+     "icon": "avatar_seniors",
+     "label": "中村さん",
+     "s": 1.22
+    },
+    {
+     "id": "bb",
+     "kind": "bubble",
+     "at": [
+      0.6854526315789474,
+      0.3255
+     ],
+     "label": "「役所が間違えたと、\n思ってたわ」",
+     "tail": "left",
+     "lw": 470,
+     "s": 1.22
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "線は動かせません。けれど、確かめられます",
+     "w": 950
+    }
+   ],
+   "left": "sensei_reassure",
+   "right": "kikite_relieved",
+   "beats": [
+    1.6,
+    6.57,
+    8.77
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "3つだけ、お願いします",
+  "video": true,
+  "stage": {
+   "layout": "steps",
+   "title": "今日、できること3つ",
+   "bgimg": "bg_denwa_techou.png",
+   "steps": [
+    "厚労省のページで級地を見る",
+    "去年の年金額を通知書で確かめる",
+    "線から5万円以内なら電話を1本"
+   ],
+   "left": "sensei_present",
+   "right": "kikite_nod"
+  }
+ },
+ {
+  "match": "さて、次回です",
+  "video": true,
+  "stage": {
+   "layout": "zu",
+   "title": "次回：10月15日の振込",
+   "nodes": [
+    {
+     "id": "chip",
+     "kind": "chip",
+     "at": [
+      0.02,
+      0.02
+     ],
+     "label": "次回予告",
+     "spark": true,
+     "fix": true
+    },
+    {
+     "id": "n0",
+     "kind": "circle",
+     "at": [
+      0.10736842105263159,
+      0.44
+     ],
+     "icon": "calendar",
+     "label": "10月15日",
+     "fix": true
+    },
+    {
+     "id": "n1",
+     "kind": "circle",
+     "at": [
+      0.5184210526315789,
+      0.44
+     ],
+     "icon": "passbook",
+     "label": "振込額",
+     "fix": true
+    },
+    {
+     "id": "n2",
+     "kind": "circle",
+     "at": [
+      0.9294736842105263,
+      0.44
+     ],
+     "icon": "warning",
+     "label": "8月と違う",
+     "fix": true,
+     "tone": "amber"
+    },
+    {
+     "id": "cl",
+     "kind": "banner",
+     "at": [
+      0.5,
+      0.99
+     ],
+     "label": "住民税と介護保険料が、10月から本徴収に変わります",
+     "w": 950
+    }
+   ],
+   "edges": [
+    {
+     "from": "n0",
+     "to": "n1",
+     "style": "arrow",
+     "tone": "ink",
+     "w": 16
+    },
+    {
+     "from": "n1",
+     "to": "n2",
+     "style": "arrow",
+     "tone": "ink",
+     "w": 16
+    }
+   ],
+   "left": "sensei_point",
+   "right": "kikite_think",
+   "beats": [
+    1.85,
+    4.75,
+    8.87,
+    16.14,
+    16.94
+   ],
+   "_fit": true
+  }
+ },
+ {
+  "match": "なお、この動画は2026年8月時点の情報です",
+  "video": true,
+  "stage": {
+   "layout": "source",
+   "title": "ご確認のお願い",
+   "org": "年金と老後のお金研究室",
+   "doc": "金額は、お住まいの\n市区町村で変わります",
+   "note": "※ご自分の数字は、市区町村の税務担当と年金事務所でご確認ください",
+   "left": "sensei_conclude",
+   "right": "kikite_nod"
+  }
+ }
+]

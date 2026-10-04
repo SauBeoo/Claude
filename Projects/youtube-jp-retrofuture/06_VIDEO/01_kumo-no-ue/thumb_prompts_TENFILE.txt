@@ -1,0 +1,3 @@
+1	thumb_T1_zenkei.png	T1 baseline — toan canh thi tran tren cot da, bien may hoang hon, KHONG nguoi
+2	thumb_T2_hahaoya.png	T2 doi 1 bien HINH — them NGUOI (me o lan can, quay lung), chu giu nguyen
+3	thumb_T3_mado.png	T3 doi LAYOUT — can o cua sang den, chu chiem nua trai

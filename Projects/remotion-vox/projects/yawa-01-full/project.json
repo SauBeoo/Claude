@@ -1,0 +1,3124 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "yawa-01-full",
+  "channel": "yawa",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080
+ },
+ "timeline": {
+  "durationInFrames": 34593
+ },
+ "tracks": [
+  {
+   "id": "trk-foot",
+   "name": "footage",
+   "type": "video",
+   "clips": [
+    {
+     "id": "s0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 132,
+     "asset": "assets/clip_00.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 0
+    },
+    {
+     "id": "s1",
+     "kind": "video",
+     "from": 120,
+     "durationInFrames": 252,
+     "asset": "assets/clip_01.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s2",
+     "kind": "video",
+     "from": 360,
+     "durationInFrames": 240,
+     "asset": "assets/clip_02.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s3",
+     "kind": "video",
+     "from": 588,
+     "durationInFrames": 245,
+     "asset": "assets/clip_03.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s4",
+     "kind": "video",
+     "from": 821,
+     "durationInFrames": 222,
+     "asset": "assets/clip_04.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s5",
+     "kind": "video",
+     "from": 1031,
+     "durationInFrames": 161,
+     "asset": "assets/clip_05.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s6",
+     "kind": "video",
+     "from": 1180,
+     "durationInFrames": 198,
+     "asset": "assets/clip_06.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s7",
+     "kind": "video",
+     "from": 1366,
+     "durationInFrames": 162,
+     "asset": "assets/clip_07.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s8",
+     "kind": "video",
+     "from": 1516,
+     "durationInFrames": 147,
+     "asset": "assets/clip_08.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s9",
+     "kind": "video",
+     "from": 1651,
+     "durationInFrames": 223,
+     "asset": "assets/clip_09.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s10bg",
+     "kind": "video",
+     "from": 1862,
+     "durationInFrames": 187,
+     "asset": "assets/bg_10.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s11",
+     "kind": "video",
+     "from": 2037,
+     "durationInFrames": 184,
+     "asset": "assets/clip_11.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s12",
+     "kind": "video",
+     "from": 2209,
+     "durationInFrames": 213,
+     "asset": "assets/clip_12.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s13",
+     "kind": "video",
+     "from": 2410,
+     "durationInFrames": 217,
+     "asset": "assets/clip_13.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s14",
+     "kind": "video",
+     "from": 2615,
+     "durationInFrames": 233,
+     "asset": "assets/clip_14.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s16",
+     "kind": "video",
+     "from": 3016,
+     "durationInFrames": 158,
+     "asset": "assets/clip_16.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s17",
+     "kind": "video",
+     "from": 3162,
+     "durationInFrames": 190,
+     "asset": "assets/clip_17.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s18",
+     "kind": "video",
+     "from": 3340,
+     "durationInFrames": 155,
+     "asset": "assets/clip_18.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s19",
+     "kind": "video",
+     "from": 3483,
+     "durationInFrames": 144,
+     "asset": "assets/clip_19.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s20",
+     "kind": "video",
+     "from": 3615,
+     "durationInFrames": 277,
+     "asset": "assets/clip_20.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s21",
+     "kind": "video",
+     "from": 3880,
+     "durationInFrames": 195,
+     "asset": "assets/clip_21.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s22",
+     "kind": "video",
+     "from": 4063,
+     "durationInFrames": 119,
+     "asset": "assets/clip_22.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s23",
+     "kind": "video",
+     "from": 4170,
+     "durationInFrames": 226,
+     "asset": "assets/clip_23.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s24",
+     "kind": "video",
+     "from": 4384,
+     "durationInFrames": 226,
+     "asset": "assets/clip_24.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s25",
+     "kind": "video",
+     "from": 4598,
+     "durationInFrames": 185,
+     "asset": "assets/clip_25.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s26bg",
+     "kind": "video",
+     "from": 4771,
+     "durationInFrames": 256,
+     "asset": "assets/bg_26.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s27",
+     "kind": "video",
+     "from": 5015,
+     "durationInFrames": 275,
+     "asset": "assets/clip_27.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s28",
+     "kind": "video",
+     "from": 5278,
+     "durationInFrames": 254,
+     "asset": "assets/clip_28.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s29",
+     "kind": "video",
+     "from": 5520,
+     "durationInFrames": 362,
+     "asset": "assets/clip_29.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s30",
+     "kind": "video",
+     "from": 5870,
+     "durationInFrames": 120,
+     "asset": "assets/clip_30.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s31",
+     "kind": "video",
+     "from": 5978,
+     "durationInFrames": 259,
+     "asset": "assets/clip_31.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s32",
+     "kind": "video",
+     "from": 6225,
+     "durationInFrames": 211,
+     "asset": "assets/clip_32.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s33",
+     "kind": "video",
+     "from": 6424,
+     "durationInFrames": 265,
+     "asset": "assets/clip_33.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s34bg",
+     "kind": "video",
+     "from": 6677,
+     "durationInFrames": 303,
+     "asset": "assets/bg_34.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s35",
+     "kind": "video",
+     "from": 6968,
+     "durationInFrames": 242,
+     "asset": "assets/clip_35.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s36",
+     "kind": "video",
+     "from": 7198,
+     "durationInFrames": 231,
+     "asset": "assets/clip_36.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s38",
+     "kind": "video",
+     "from": 7581,
+     "durationInFrames": 191,
+     "asset": "assets/clip_38.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s39",
+     "kind": "video",
+     "from": 7760,
+     "durationInFrames": 215,
+     "asset": "assets/clip_39.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s40",
+     "kind": "video",
+     "from": 7963,
+     "durationInFrames": 237,
+     "asset": "assets/clip_40.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s41",
+     "kind": "video",
+     "from": 8188,
+     "durationInFrames": 233,
+     "asset": "assets/clip_41.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s42",
+     "kind": "video",
+     "from": 8409,
+     "durationInFrames": 149,
+     "asset": "assets/clip_42.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s43",
+     "kind": "video",
+     "from": 8546,
+     "durationInFrames": 164,
+     "asset": "assets/clip_43.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s44bg",
+     "kind": "video",
+     "from": 8698,
+     "durationInFrames": 392,
+     "asset": "assets/bg_44.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s45",
+     "kind": "video",
+     "from": 9078,
+     "durationInFrames": 204,
+     "asset": "assets/clip_45.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s46",
+     "kind": "video",
+     "from": 9270,
+     "durationInFrames": 280,
+     "asset": "assets/clip_46.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s47",
+     "kind": "video",
+     "from": 9538,
+     "durationInFrames": 170,
+     "asset": "assets/clip_47.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s48",
+     "kind": "video",
+     "from": 9696,
+     "durationInFrames": 137,
+     "asset": "assets/clip_48.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s49",
+     "kind": "video",
+     "from": 9821,
+     "durationInFrames": 172,
+     "asset": "assets/clip_49.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s50",
+     "kind": "video",
+     "from": 9981,
+     "durationInFrames": 118,
+     "asset": "assets/clip_50.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s51",
+     "kind": "video",
+     "from": 10087,
+     "durationInFrames": 198,
+     "asset": "assets/clip_51.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s52",
+     "kind": "video",
+     "from": 10273,
+     "durationInFrames": 280,
+     "asset": "assets/clip_52.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s53bg",
+     "kind": "video",
+     "from": 10541,
+     "durationInFrames": 329,
+     "asset": "assets/bg_53.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s55",
+     "kind": "video",
+     "from": 11031,
+     "durationInFrames": 151,
+     "asset": "assets/clip_55.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s56",
+     "kind": "video",
+     "from": 11170,
+     "durationInFrames": 200,
+     "asset": "assets/clip_56.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s57",
+     "kind": "video",
+     "from": 11358,
+     "durationInFrames": 243,
+     "asset": "assets/clip_57.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s58",
+     "kind": "video",
+     "from": 11589,
+     "durationInFrames": 190,
+     "asset": "assets/clip_58.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s59",
+     "kind": "video",
+     "from": 11767,
+     "durationInFrames": 128,
+     "asset": "assets/clip_59.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s60",
+     "kind": "video",
+     "from": 11883,
+     "durationInFrames": 146,
+     "asset": "assets/clip_60.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s61",
+     "kind": "video",
+     "from": 12017,
+     "durationInFrames": 296,
+     "asset": "assets/clip_61.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s63",
+     "kind": "video",
+     "from": 12559,
+     "durationInFrames": 207,
+     "asset": "assets/clip_63.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s64bg",
+     "kind": "video",
+     "from": 12754,
+     "durationInFrames": 215,
+     "asset": "assets/bg_64.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s65",
+     "kind": "video",
+     "from": 12957,
+     "durationInFrames": 194,
+     "asset": "assets/clip_65.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s66",
+     "kind": "video",
+     "from": 13139,
+     "durationInFrames": 250,
+     "asset": "assets/clip_66.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s67",
+     "kind": "video",
+     "from": 13377,
+     "durationInFrames": 255,
+     "asset": "assets/clip_67.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s68",
+     "kind": "video",
+     "from": 13620,
+     "durationInFrames": 203,
+     "asset": "assets/clip_68.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s69",
+     "kind": "video",
+     "from": 13811,
+     "durationInFrames": 258,
+     "asset": "assets/clip_69.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s70bg",
+     "kind": "video",
+     "from": 14057,
+     "durationInFrames": 221,
+     "asset": "assets/bg_70.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s72",
+     "kind": "video",
+     "from": 14437,
+     "durationInFrames": 273,
+     "asset": "assets/clip_72.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s73",
+     "kind": "video",
+     "from": 14698,
+     "durationInFrames": 214,
+     "asset": "assets/clip_73.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s74",
+     "kind": "video",
+     "from": 14900,
+     "durationInFrames": 246,
+     "asset": "assets/clip_74.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s75",
+     "kind": "video",
+     "from": 15134,
+     "durationInFrames": 244,
+     "asset": "assets/clip_75.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s76",
+     "kind": "video",
+     "from": 15366,
+     "durationInFrames": 258,
+     "asset": "assets/clip_76.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s77",
+     "kind": "video",
+     "from": 15612,
+     "durationInFrames": 285,
+     "asset": "assets/clip_77.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s78",
+     "kind": "video",
+     "from": 15885,
+     "durationInFrames": 268,
+     "asset": "assets/clip_78.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s79",
+     "kind": "video",
+     "from": 16141,
+     "durationInFrames": 168,
+     "asset": "assets/clip_79.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s80",
+     "kind": "video",
+     "from": 16297,
+     "durationInFrames": 220,
+     "asset": "assets/clip_80.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s81",
+     "kind": "video",
+     "from": 16505,
+     "durationInFrames": 86,
+     "asset": "assets/clip_81.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s82",
+     "kind": "video",
+     "from": 16579,
+     "durationInFrames": 186,
+     "asset": "assets/clip_82.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s83bg",
+     "kind": "video",
+     "from": 16753,
+     "durationInFrames": 212,
+     "asset": "assets/bg_83.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s84",
+     "kind": "video",
+     "from": 16953,
+     "durationInFrames": 197,
+     "asset": "assets/clip_84.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s85",
+     "kind": "video",
+     "from": 17138,
+     "durationInFrames": 266,
+     "asset": "assets/clip_85.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s86bg",
+     "kind": "video",
+     "from": 17392,
+     "durationInFrames": 230,
+     "asset": "assets/bg_86.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s88",
+     "kind": "video",
+     "from": 17785,
+     "durationInFrames": 216,
+     "asset": "assets/clip_88.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s89",
+     "kind": "video",
+     "from": 17989,
+     "durationInFrames": 173,
+     "asset": "assets/clip_89.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s90",
+     "kind": "video",
+     "from": 18150,
+     "durationInFrames": 275,
+     "asset": "assets/clip_90.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s91",
+     "kind": "video",
+     "from": 18413,
+     "durationInFrames": 215,
+     "asset": "assets/clip_91.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s92",
+     "kind": "video",
+     "from": 18616,
+     "durationInFrames": 242,
+     "asset": "assets/clip_92.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s93",
+     "kind": "video",
+     "from": 18846,
+     "durationInFrames": 146,
+     "asset": "assets/clip_93.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s94",
+     "kind": "video",
+     "from": 18980,
+     "durationInFrames": 205,
+     "asset": "assets/clip_94.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s95",
+     "kind": "video",
+     "from": 19173,
+     "durationInFrames": 215,
+     "asset": "assets/clip_95.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s96",
+     "kind": "video",
+     "from": 19376,
+     "durationInFrames": 246,
+     "asset": "assets/clip_96.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s97",
+     "kind": "video",
+     "from": 19610,
+     "durationInFrames": 269,
+     "asset": "assets/clip_97.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s98",
+     "kind": "video",
+     "from": 19867,
+     "durationInFrames": 130,
+     "asset": "assets/clip_98.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s99",
+     "kind": "video",
+     "from": 19985,
+     "durationInFrames": 216,
+     "asset": "assets/clip_99.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s100",
+     "kind": "video",
+     "from": 20189,
+     "durationInFrames": 138,
+     "asset": "assets/clip_100.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s101",
+     "kind": "video",
+     "from": 20315,
+     "durationInFrames": 174,
+     "asset": "assets/clip_101.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s102",
+     "kind": "video",
+     "from": 20477,
+     "durationInFrames": 210,
+     "asset": "assets/clip_102.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s103bg",
+     "kind": "video",
+     "from": 20675,
+     "durationInFrames": 260,
+     "asset": "assets/bg_103.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s104",
+     "kind": "video",
+     "from": 20923,
+     "durationInFrames": 257,
+     "asset": "assets/clip_104.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s106",
+     "kind": "video",
+     "from": 21364,
+     "durationInFrames": 179,
+     "asset": "assets/clip_106.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s107",
+     "kind": "video",
+     "from": 21531,
+     "durationInFrames": 128,
+     "asset": "assets/clip_107.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s108",
+     "kind": "video",
+     "from": 21647,
+     "durationInFrames": 245,
+     "asset": "assets/clip_108.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s109",
+     "kind": "video",
+     "from": 21880,
+     "durationInFrames": 197,
+     "asset": "assets/clip_109.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s110",
+     "kind": "video",
+     "from": 22065,
+     "durationInFrames": 201,
+     "asset": "assets/clip_110.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s111",
+     "kind": "video",
+     "from": 22254,
+     "durationInFrames": 156,
+     "asset": "assets/clip_111.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s112",
+     "kind": "video",
+     "from": 22398,
+     "durationInFrames": 176,
+     "asset": "assets/clip_112.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s113",
+     "kind": "video",
+     "from": 22562,
+     "durationInFrames": 262,
+     "asset": "assets/clip_113.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s114",
+     "kind": "video",
+     "from": 22812,
+     "durationInFrames": 224,
+     "asset": "assets/clip_114.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s115",
+     "kind": "video",
+     "from": 23024,
+     "durationInFrames": 163,
+     "asset": "assets/clip_115.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s116",
+     "kind": "video",
+     "from": 23175,
+     "durationInFrames": 315,
+     "asset": "assets/clip_116.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s117bg",
+     "kind": "video",
+     "from": 23478,
+     "durationInFrames": 200,
+     "asset": "assets/bg_117.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s118",
+     "kind": "video",
+     "from": 23666,
+     "durationInFrames": 137,
+     "asset": "assets/clip_118.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s119",
+     "kind": "video",
+     "from": 23791,
+     "durationInFrames": 158,
+     "asset": "assets/clip_119.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s120",
+     "kind": "video",
+     "from": 23937,
+     "durationInFrames": 275,
+     "asset": "assets/clip_120.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s122",
+     "kind": "video",
+     "from": 24431,
+     "durationInFrames": 242,
+     "asset": "assets/clip_122.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s123",
+     "kind": "video",
+     "from": 24661,
+     "durationInFrames": 93,
+     "asset": "assets/clip_123.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s124",
+     "kind": "video",
+     "from": 24742,
+     "durationInFrames": 190,
+     "asset": "assets/clip_124.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s125",
+     "kind": "video",
+     "from": 24920,
+     "durationInFrames": 173,
+     "asset": "assets/clip_125.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s126",
+     "kind": "video",
+     "from": 25081,
+     "durationInFrames": 119,
+     "asset": "assets/clip_126.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s127",
+     "kind": "video",
+     "from": 25188,
+     "durationInFrames": 252,
+     "asset": "assets/clip_127.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s128",
+     "kind": "video",
+     "from": 25428,
+     "durationInFrames": 268,
+     "asset": "assets/clip_128.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s129",
+     "kind": "video",
+     "from": 25684,
+     "durationInFrames": 197,
+     "asset": "assets/clip_129.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s130bg",
+     "kind": "video",
+     "from": 25869,
+     "durationInFrames": 292,
+     "asset": "assets/bg_130.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s131",
+     "kind": "video",
+     "from": 26149,
+     "durationInFrames": 212,
+     "asset": "assets/clip_131.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s133",
+     "kind": "video",
+     "from": 26566,
+     "durationInFrames": 197,
+     "asset": "assets/clip_133.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s134",
+     "kind": "video",
+     "from": 26751,
+     "durationInFrames": 119,
+     "asset": "assets/clip_134.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s135",
+     "kind": "video",
+     "from": 26858,
+     "durationInFrames": 393,
+     "asset": "assets/clip_135.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s136",
+     "kind": "video",
+     "from": 27239,
+     "durationInFrames": 169,
+     "asset": "assets/clip_136.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s137",
+     "kind": "video",
+     "from": 27396,
+     "durationInFrames": 186,
+     "asset": "assets/clip_137.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s138",
+     "kind": "video",
+     "from": 27570,
+     "durationInFrames": 205,
+     "asset": "assets/clip_138.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s139bg",
+     "kind": "video",
+     "from": 27763,
+     "durationInFrames": 267,
+     "asset": "assets/bg_139.jpg",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s140",
+     "kind": "video",
+     "from": 28018,
+     "durationInFrames": 179,
+     "asset": "assets/clip_140.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s141",
+     "kind": "video",
+     "from": 28185,
+     "durationInFrames": 175,
+     "asset": "assets/clip_141.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s142",
+     "kind": "video",
+     "from": 28348,
+     "durationInFrames": 303,
+     "asset": "assets/clip_142.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s143",
+     "kind": "video",
+     "from": 28639,
+     "durationInFrames": 291,
+     "asset": "assets/clip_143.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s144",
+     "kind": "video",
+     "from": 28918,
+     "durationInFrames": 269,
+     "asset": "assets/clip_144.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s145",
+     "kind": "video",
+     "from": 29175,
+     "durationInFrames": 157,
+     "asset": "assets/clip_145.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s146",
+     "kind": "video",
+     "from": 29320,
+     "durationInFrames": 214,
+     "asset": "assets/clip_146.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s149",
+     "kind": "video",
+     "from": 29931,
+     "durationInFrames": 260,
+     "asset": "assets/clip_149.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s151",
+     "kind": "video",
+     "from": 30524,
+     "durationInFrames": 163,
+     "asset": "assets/clip_151.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s153",
+     "kind": "video",
+     "from": 30950,
+     "durationInFrames": 180,
+     "asset": "assets/clip_153.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s154",
+     "kind": "video",
+     "from": 31118,
+     "durationInFrames": 155,
+     "asset": "assets/clip_154.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s155",
+     "kind": "video",
+     "from": 31261,
+     "durationInFrames": 241,
+     "asset": "assets/clip_155.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s156",
+     "kind": "video",
+     "from": 31490,
+     "durationInFrames": 286,
+     "asset": "assets/clip_156.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s157",
+     "kind": "video",
+     "from": 31764,
+     "durationInFrames": 93,
+     "asset": "assets/clip_157.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s158",
+     "kind": "video",
+     "from": 31845,
+     "durationInFrames": 238,
+     "asset": "assets/clip_158.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s159",
+     "kind": "video",
+     "from": 32071,
+     "durationInFrames": 235,
+     "asset": "assets/clip_159.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s160",
+     "kind": "video",
+     "from": 32294,
+     "durationInFrames": 220,
+     "asset": "assets/clip_160.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s161",
+     "kind": "video",
+     "from": 32502,
+     "durationInFrames": 405,
+     "asset": "assets/clip_161.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s162bg",
+     "kind": "video",
+     "from": 32895,
+     "durationInFrames": 316,
+     "asset": "assets/bg_162.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s163",
+     "kind": "video",
+     "from": 33199,
+     "durationInFrames": 172,
+     "asset": "assets/clip_163.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s164",
+     "kind": "video",
+     "from": 33359,
+     "durationInFrames": 270,
+     "asset": "assets/clip_164.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s165",
+     "kind": "video",
+     "from": 33617,
+     "durationInFrames": 162,
+     "asset": "assets/clip_165.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s166",
+     "kind": "video",
+     "from": 33767,
+     "durationInFrames": 220,
+     "asset": "assets/clip_166.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s167",
+     "kind": "video",
+     "from": 33975,
+     "durationInFrames": 234,
+     "asset": "assets/clip_167.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s168",
+     "kind": "video",
+     "from": 34197,
+     "durationInFrames": 208,
+     "asset": "assets/clip_168.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    },
+    {
+     "id": "s169",
+     "kind": "video",
+     "from": 34393,
+     "durationInFrames": 200,
+     "asset": "assets/clip_169.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 12
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "fx",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "dust",
+     "kind": "fx",
+     "variant": "dust",
+     "from": 0,
+     "durationInFrames": 34593,
+     "density": 22,
+     "color": "#FFE7B0",
+     "seed": 7,
+     "fadeInFrames": 20,
+     "fadeOutFrames": 20
+    },
+    {
+     "id": "vig",
+     "kind": "fx",
+     "variant": "vignette-soft",
+     "from": 0,
+     "durationInFrames": 34593,
+     "color": "#0E0C14",
+     "opacity": 0.55,
+     "fadeInFrames": 0,
+     "fadeOutFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-text",
+   "name": "text",
+   "type": "text",
+   "clips": [
+    {
+     "id": "s10",
+     "kind": "text",
+     "from": 1874,
+     "durationInFrames": 181,
+     "preset": "yawa-reveal",
+     "content": "一つずつほどけば、押し入れも、心も、軽くなります。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0
+      ]
+     }
+    },
+    {
+     "id": "s15",
+     "kind": "text",
+     "from": 2848,
+     "durationInFrames": 186,
+     "preset": "yawa-chapter",
+     "content": "その一\n「いつか使うかも」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s26",
+     "kind": "text",
+     "from": 4783,
+     "durationInFrames": 250,
+     "preset": "yawa-reveal",
+     "content": "けれど、今の暮らしでは、その「いつか」は、たいてい、来ません。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0
+      ]
+     }
+    },
+    {
+     "id": "s34",
+     "kind": "text",
+     "from": 6689,
+     "durationInFrames": 297,
+     "preset": "yawa-reveal",
+     "content": "今日は、紙袋だけ。\n明日は、空き箱だけ。\n一日一種類なら、疲れる前に、終わります。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       2.44,
+       4.93
+      ]
+     }
+    },
+    {
+     "id": "s37",
+     "kind": "text",
+     "from": 7429,
+     "durationInFrames": 170,
+     "preset": "yawa-chapter",
+     "content": "その二\n「もったいない」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s44",
+     "kind": "text",
+     "from": 8710,
+     "durationInFrames": 386,
+     "preset": "yawa-reveal",
+     "content": "物を粗末にしない心は、とても大切なものです。\nけれど、しまい込んだまま使わないことは、大事にしていることとは、少し違います。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       4.8
+      ]
+     }
+    },
+    {
+     "id": "s53",
+     "kind": "text",
+     "from": 10553,
+     "durationInFrames": 323,
+     "preset": "yawa-reveal",
+     "content": "いちばんいい物は、いちばんよく会う人のために。\nつまり、毎日の、あなた自身のために使っていいんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       4.38
+      ]
+     }
+    },
+    {
+     "id": "s54",
+     "kind": "text",
+     "from": 10870,
+     "durationInFrames": 179,
+     "preset": "yawa-chapter",
+     "content": "その三\n「失礼かしら」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s62",
+     "kind": "text",
+     "from": 12313,
+     "durationInFrames": 264,
+     "preset": "yawa-quote",
+     "content": "爲やせまし、／爲ずやあらましと思ふことは、／おほやう爲ぬはよきなり。\n— 兼好法師『徒然草』第九十八段",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s64",
+     "kind": "text",
+     "from": 12766,
+     "durationInFrames": 209,
+     "preset": "yawa-reveal",
+     "content": "迷うということは、心の中では、もう答えが出ているということなんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0
+      ]
+     }
+    },
+    {
+     "id": "s70",
+     "kind": "text",
+     "from": 14069,
+     "durationInFrames": 215,
+     "preset": "yawa-reveal",
+     "content": "ひとりぼっちになるのではありません。\n大事な人と、もっと近くなるんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       2.81
+      ]
+     }
+    },
+    {
+     "id": "s71",
+     "kind": "text",
+     "from": 14278,
+     "durationInFrames": 177,
+     "preset": "yawa-chapter",
+     "content": "その四\n「ちゃんとしなきゃ」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s83",
+     "kind": "text",
+     "from": 16765,
+     "durationInFrames": 206,
+     "preset": "yawa-reveal",
+     "content": "片付けは、完璧でなくていいんです。\n引き出し一つで、十分です。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       3.55
+      ]
+     }
+    },
+    {
+     "id": "s86",
+     "kind": "text",
+     "from": 17404,
+     "durationInFrames": 224,
+     "preset": "yawa-reveal",
+     "content": "今日、あなたが、できなかったことがあっても、それで、いいんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0
+      ]
+     }
+    },
+    {
+     "id": "s87",
+     "kind": "text",
+     "from": 17622,
+     "durationInFrames": 181,
+     "preset": "yawa-chapter",
+     "content": "その五\n「子どもが心配」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s103",
+     "kind": "text",
+     "from": 20687,
+     "durationInFrames": 254,
+     "preset": "yawa-reveal",
+     "content": "手放しても、つながりは切れません。\nむしろ、相手が、手を伸ばせる場所ができるんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       3.49
+      ]
+     }
+    },
+    {
+     "id": "s105",
+     "kind": "text",
+     "from": 21180,
+     "durationInFrames": 202,
+     "preset": "yawa-chapter",
+     "content": "その六\n「私だけ取り残される」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s117",
+     "kind": "text",
+     "from": 23490,
+     "durationInFrames": 194,
+     "preset": "yawa-reveal",
+     "content": "比べる相手は、ほかの誰かではなく、昨日のあなたで十分です。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0
+      ]
+     }
+    },
+    {
+     "id": "s121",
+     "kind": "text",
+     "from": 24212,
+     "durationInFrames": 237,
+     "preset": "yawa-chapter",
+     "content": "その七\n「捨てたら、思い出まで消えてしまう」という迷いを、手放す。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s130",
+     "kind": "text",
+     "from": 25881,
+     "durationInFrames": 286,
+     "preset": "yawa-reveal",
+     "content": "手放すというのは、全部捨てることではありません。\nこれからも一緒にいたい物を、自分で選ぶことなんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       4.37
+      ]
+     }
+    },
+    {
+     "id": "s132",
+     "kind": "text",
+     "from": 26361,
+     "durationInFrames": 223,
+     "preset": "yawa-quote",
+     "content": "行く川のながれは絶えずして、／しかも本の水にあらず。\n— 鴨長明『方丈記』",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s139",
+     "kind": "text",
+     "from": 27775,
+     "durationInFrames": 261,
+     "preset": "yawa-reveal",
+     "content": "全部を手放さなくていい。\nこれからも一緒にいたい物を、あなたが、選べばいいんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       2.38
+      ]
+     }
+    },
+    {
+     "id": "s147",
+     "kind": "text",
+     "from": 29534,
+     "durationInFrames": 184,
+     "preset": "yawa-letter",
+     "content": "和子へ\nこの万年筆は、孫が高校生になったら、渡してやってくれ。",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {
+      "holdOut": true
+     }
+    },
+    {
+     "id": "s148",
+     "kind": "text",
+     "from": 29718,
+     "durationInFrames": 231,
+     "preset": "yawa-letter",
+     "content": "和子へ\nこの万年筆は、孫が高校生になったら、渡してやってくれ。\n紙袋の中に入れておけば、お前は絶対に捨てないだろうから、ここにしまっておく",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {
+      "shown": 2
+     }
+    },
+    {
+     "id": "s150",
+     "kind": "text",
+     "from": 30191,
+     "durationInFrames": 351,
+     "preset": "yawa-letter",
+     "content": "お前は、何も持っていなくても、十分に、いい女房だった。四十年、ありがとう",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s152",
+     "kind": "text",
+     "from": 30687,
+     "durationInFrames": 281,
+     "preset": "yawa-quote",
+     "content": "遁世者は、／なきに事かけぬやうを／はからひて過ぐる、／最上のやうにてあるなり。\n— 兼好法師『徒然草』第九十八段",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {}
+    },
+    {
+     "id": "s162",
+     "kind": "text",
+     "from": 32907,
+     "durationInFrames": 310,
+     "preset": "yawa-reveal",
+     "content": "何もない場所は、足りない場所ではありません。\nこれから出会う、大切な何かのために、あけておく場所なんです。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.0,
+       4.03
+      ]
+     }
+    },
+    {
+     "id": "chip0",
+     "kind": "text",
+     "from": 3028,
+     "durationInFrames": 4401,
+     "preset": "yawa-chip",
+     "content": "その一 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip1",
+     "kind": "text",
+     "from": 7593,
+     "durationInFrames": 3277,
+     "preset": "yawa-chip",
+     "content": "その二 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip2",
+     "kind": "text",
+     "from": 11043,
+     "durationInFrames": 3235,
+     "preset": "yawa-chip",
+     "content": "その三 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip3",
+     "kind": "text",
+     "from": 14449,
+     "durationInFrames": 3173,
+     "preset": "yawa-chip",
+     "content": "その四 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip4",
+     "kind": "text",
+     "from": 17797,
+     "durationInFrames": 3383,
+     "preset": "yawa-chip",
+     "content": "その五 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip5",
+     "kind": "text",
+     "from": 21376,
+     "durationInFrames": 2836,
+     "preset": "yawa-chip",
+     "content": "その六 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip6",
+     "kind": "text",
+     "from": 24443,
+     "durationInFrames": 3577,
+     "preset": "yawa-chip",
+     "content": "その七 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip7",
+     "kind": "text",
+     "from": 28020,
+     "durationInFrames": 4230,
+     "preset": "yawa-chip",
+     "content": "最後の手紙",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "chip8",
+     "kind": "text",
+     "from": 32250,
+     "durationInFrames": 2343,
+     "preset": "yawa-chip",
+     "content": "まとめ",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "kw1",
+     "kind": "text",
+     "from": 7983,
+     "durationInFrames": 253,
+     "preset": "yawa-keyword",
+     "content": "「いいものは、特別な日に」",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "kw2",
+     "kind": "text",
+     "from": 9841,
+     "durationInFrames": 188,
+     "preset": "yawa-keyword",
+     "content": "いちばんいい湯呑みで、お茶を",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "kw3",
+     "kind": "text",
+     "from": 12977,
+     "durationInFrames": 210,
+     "preset": "yawa-keyword",
+     "content": "本当に書きたい人にだけ、丸を",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "kw4",
+     "kind": "text",
+     "from": 16525,
+     "durationInFrames": 240,
+     "preset": "yawa-keyword",
+     "content": "このままで、いいじゃない",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "kw5",
+     "kind": "text",
+     "from": 17327,
+     "durationInFrames": 77,
+     "preset": "yawa-keyword",
+     "content": "家は、職場ではありません",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "kw6",
+     "kind": "text",
+     "from": 19317,
+     "durationInFrames": 341,
+     "preset": "yawa-keyword",
+     "content": "心配は、愛情です",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    }
+   ]
+  },
+  {
+   "id": "trk-grain",
+   "name": "grain",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "grain",
+     "kind": "fx",
+     "variant": "grain",
+     "from": 0,
+     "durationInFrames": 34593,
+     "opacity": 0.1,
+     "seed": 3,
+     "fadeInFrames": 0,
+     "fadeOutFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "audio",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "voice",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 34593,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "bgm0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 10912,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01
+    },
+    {
+     "id": "bgm1",
+     "kind": "audio",
+     "from": 10912,
+     "durationInFrames": 10912,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01
+    },
+    {
+     "id": "bgm2",
+     "kind": "audio",
+     "from": 21824,
+     "durationInFrames": 10912,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01
+    },
+    {
+     "id": "bgm3",
+     "kind": "audio",
+     "from": 32736,
+     "durationInFrames": 1857,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 50,
+  "lines": [
+   {
+    "text": "「お母さん、なんで、こんなに取っておいたの」",
+    "startMs": 0,
+    "endMs": 4400
+   },
+   {
+    "text": "いつか、あなたの子どもが、あなたの押し入れの前で、そうつぶやく日が来るかもしれません。",
+    "startMs": 4400,
+    "endMs": 12400
+   },
+   {
+    "text": "仕事を休んで、ごみ袋を何十枚も広げて、一つずつ、詰めていく。",
+    "startMs": 12400,
+    "endMs": 20000
+   },
+   {
+    "text": "その中には、あなたが本当に大切にしていた物も、紛れているかもしれない。",
+    "startMs": 20000,
+    "endMs": 27267
+   },
+   {
+    "text": "でも、子どもには、どれが大切だったのか、もう、分からないんです。",
+    "startMs": 27767,
+    "endMs": 34767
+   },
+   {
+    "text": "想像するだけで、胸が、苦しくなりませんか。",
+    "startMs": 34767,
+    "endMs": 39733
+   },
+   {
+    "text": "それなのに、今夜もまた、押し入れの戸を、そっと閉めてしまう。",
+    "startMs": 39733,
+    "endMs": 45933
+   },
+   {
+    "text": "でもね、それは、あなたがだらしないからではありません。",
+    "startMs": 45933,
+    "endMs": 50933
+   },
+   {
+    "text": "物を大事にしすぎる、やさしい人だからなんです。",
+    "startMs": 50933,
+    "endMs": 55433
+   },
+   {
+    "text": "捨てられないのは、心の中の、七つの「迷い」のせいです。",
+    "startMs": 55433,
+    "endMs": 62467
+   },
+   {
+    "text": "七つ目は、ほとんどの人が、最後までほどけない迷いです。",
+    "startMs": 68300,
+    "endMs": 74033
+   },
+   {
+    "text": "そして最後に、紙袋の底から出てきた、一通の手紙の話も。",
+    "startMs": 74033,
+    "endMs": 80733
+   },
+   {
+    "text": "もし、子どもが紙袋ごと捨てていたら、誰にも読まれなかった手紙です。",
+    "startMs": 80733,
+    "endMs": 87567
+   },
+   {
+    "text": "さあ、温かいお茶でもいれて、今夜はゆっくり、お付き合いください。",
+    "startMs": 87567,
+    "endMs": 94333
+   },
+   {
+    "text": "押し入れの上の段に、紙袋の束はありませんか。",
+    "startMs": 100933,
+    "endMs": 105800
+   },
+   {
+    "text": "百貨店の袋、お菓子の空き箱、きれいに畳んだ包装紙。",
+    "startMs": 105800,
+    "endMs": 111733
+   },
+   {
+    "text": "捨てようとすると、頭の中で、声がします。",
+    "startMs": 111733,
+    "endMs": 116500
+   },
+   {
+    "text": "捨てたあとで、必要になったら、どうしよう。",
+    "startMs": 116500,
+    "endMs": 120900
+   },
+   {
+    "text": "私の知人の、七十代の女性は、ある日、紙袋を一枚ずつ数えてみたそうです。",
+    "startMs": 120900,
+    "endMs": 129733
+   },
+   {
+    "text": "百十七枚ありました。",
+    "startMs": 129733,
+    "endMs": 132033
+   },
+   {
+    "text": "「全部、何かに使えそうに見えたのよ」",
+    "startMs": 132033,
+    "endMs": 135833
+   },
+   {
+    "text": "そう言って、彼女は笑っていました。",
+    "startMs": 135833,
+    "endMs": 139400
+   },
+   {
+    "text": "取っておいてしまうのは、私たちが、物のない時代を知っている世代だからです。",
+    "startMs": 139400,
+    "endMs": 146533
+   },
+   {
+    "text": "紙一枚、紐一本も無駄にしなかった親の背中を、見て育ってきました。",
+    "startMs": 146533,
+    "endMs": 153667
+   },
+   {
+    "text": "それは、だらしなさではなく、暮らしを守ってきた知恵なんです。",
+    "startMs": 153667,
+    "endMs": 159433
+   },
+   {
+    "text": "そして、「いつか」で埋まった押し入れは、本当に大事な物を、見えなくしてしまいます。",
+    "startMs": 167567,
+    "endMs": 176333
+   },
+   {
+    "text": "実はこの知人も、たった一本の万年筆を探すのに、二時間半かかったそうです。",
+    "startMs": 176333,
+    "endMs": 184400
+   },
+   {
+    "text": "風水では、押し入れやたんすに物を詰め込みすぎると、家の中の「気」の通り道がふさがれる、と言われています。",
+    "startMs": 184400,
+    "endMs": 196067
+   },
+   {
+    "text": "信じるかどうかは、人それぞれです。",
+    "startMs": 196067,
+    "endMs": 199667
+   },
+   {
+    "text": "でも、窓を開けて風を通したときの、あのすっとした軽さは、誰でも知っているはずです。",
+    "startMs": 199667,
+    "endMs": 207900
+   },
+   {
+    "text": "おすすめしたいのは、「いつか」の置き場所を、一つだけ決めることです。",
+    "startMs": 207900,
+    "endMs": 214533
+   },
+   {
+    "text": "箱を一つ用意して、その箱に入るぶんだけ、取っておく。",
+    "startMs": 214533,
+    "endMs": 220233
+   },
+   {
+    "text": "あふれたら、それが答えです。",
+    "startMs": 220233,
+    "endMs": 222967
+   },
+   {
+    "text": "探し物の時間が減ると、一日が、ほんの少し、長くなります。",
+    "startMs": 232667,
+    "endMs": 240333
+   },
+   {
+    "text": "あなたの押し入れにも、「いつか」のまま眠っている物が、ありませんか。",
+    "startMs": 240333,
+    "endMs": 247033
+   },
+   {
+    "text": "食器棚のいちばん奥に、箱に入ったままの器はありませんか。",
+    "startMs": 253100,
+    "endMs": 259067
+   },
+   {
+    "text": "結婚式の引き出物、いただきものの湯呑み、お客さま用のティーカップ。",
+    "startMs": 259067,
+    "endMs": 265833
+   },
+   {
+    "text": "「いいものは、特別な日に」。",
+    "startMs": 265833,
+    "endMs": 268567
+   },
+   {
+    "text": "そう思っているうちに、何十年も過ぎてしまいます。",
+    "startMs": 268567,
+    "endMs": 273333
+   },
+   {
+    "text": "そして毎朝使っているのは、縁の欠けた、いちばん安い器だったりするんです。",
+    "startMs": 273333,
+    "endMs": 280700
+   },
+   {
+    "text": "いい物を使えないのは、割ってしまうのが怖いから。",
+    "startMs": 280700,
+    "endMs": 285267
+   },
+   {
+    "text": "使わずにいれば、申し訳なさを感じずにすむからです。",
+    "startMs": 285267,
+    "endMs": 290333
+   },
+   {
+    "text": "昔から、欠けた器は、縁起がよくない、と言われてきました。",
+    "startMs": 303000,
+    "endMs": 309400
+   },
+   {
+    "text": "風水でも、欠けたり、ひびの入ったりした食器は、良い運を逃がすと考えられているそうです。",
+    "startMs": 309400,
+    "endMs": 318333
+   },
+   {
+    "text": "毎日いちばん長く触れる器が、いちばん傷んだ器。",
+    "startMs": 318333,
+    "endMs": 323600
+   },
+   {
+    "text": "それは、少しさみしいことだと思いませんか。",
+    "startMs": 323600,
+    "endMs": 327767
+   },
+   {
+    "text": "今日から、いちばんいい湯呑みで、お茶を飲んでみてください。",
+    "startMs": 327767,
+    "endMs": 333100
+   },
+   {
+    "text": "急須から注ぐ、とくとくという音。",
+    "startMs": 333100,
+    "endMs": 336633
+   },
+   {
+    "text": "両手で包んだときの、薄い器越しの、じんわりとした温かさ。",
+    "startMs": 336633,
+    "endMs": 342833
+   },
+   {
+    "text": "いい器でお茶を飲むと、自分を大切にしている、という気持ちが、ちゃんと戻ってきます。",
+    "startMs": 342833,
+    "endMs": 351767
+   },
+   {
+    "text": "年賀状の束を、一枚ずつめくってみてください。",
+    "startMs": 368100,
+    "endMs": 372733
+   },
+   {
+    "text": "顔が思い浮かぶ人は、何人いるでしょうか。",
+    "startMs": 372733,
+    "endMs": 376833
+   },
+   {
+    "text": "義理で続けている集まり。",
+    "startMs": 376833,
+    "endMs": 379000
+   },
+   {
+    "text": "断りきれずに入った会。",
+    "startMs": 379000,
+    "endMs": 381333
+   },
+   {
+    "text": "行くたびに、帰り道が、なんだか重くなる食事会。",
+    "startMs": 381333,
+    "endMs": 386700
+   },
+   {
+    "text": "やめたいのに、やめられない。",
+    "startMs": 386700,
+    "endMs": 389500
+   },
+   {
+    "text": "やめたら、嫌われるかもしれない。",
+    "startMs": 389500,
+    "endMs": 392633
+   },
+   {
+    "text": "ひとりぼっちに、なってしまうかもしれない。",
+    "startMs": 392633,
+    "endMs": 396500
+   },
+   {
+    "text": "その怖さが、あなたを、引き止めているんです。",
+    "startMs": 396500,
+    "endMs": 400967
+   },
+   {
+    "text": "七百年前、兼好法師は、「徒然草」の中に、こんな言葉を書き留めています。",
+    "startMs": 400967,
+    "endMs": 409833
+   },
+   {
+    "text": "しようか、よそうかと迷うことは、たいていは、しないほうがいい。",
+    "startMs": 419033,
+    "endMs": 425533
+   },
+   {
+    "text": "来年も、本当に書きたい人にだけ、丸をつけてみてください。",
+    "startMs": 432300,
+    "endMs": 438367
+   },
+   {
+    "text": "残りのかたには、次の年賀状で、そっとお礼を書いて、区切りにすればいいんです。",
+    "startMs": 438367,
+    "endMs": 446300
+   },
+   {
+    "text": "あの知人は、八十三枚のうち、丸がついたのは、二十一枚だったそうです。",
+    "startMs": 446300,
+    "endMs": 454400
+   },
+   {
+    "text": "「減らしたらね、一枚一枚に、ちゃんと言葉が書けるようになったの」",
+    "startMs": 454400,
+    "endMs": 460767
+   },
+   {
+    "text": "義理のお付き合いが減ると、本当に会いたい人に会う時間と、元気が、戻ってきます。",
+    "startMs": 460767,
+    "endMs": 468967
+   },
+   {
+    "text": "タオルにも、ハンカチにも、アイロンをかける。",
+    "startMs": 481633,
+    "endMs": 485800
+   },
+   {
+    "text": "来客がなくても、毎日、床を磨く。",
+    "startMs": 485800,
+    "endMs": 490333
+   },
+   {
+    "text": "一日でも手を抜くと、だらしないと思われるような気がして、落ち着かない。",
+    "startMs": 490333,
+    "endMs": 497067
+   },
+   {
+    "text": "長く働いてきた人ほど、この「ちゃんと」が、体に染みついています。",
+    "startMs": 497067,
+    "endMs": 504867
+   },
+   {
+    "text": "それは、誰かに迷惑をかけないように、ずっと、気を張って生きてきた証です。",
+    "startMs": 504867,
+    "endMs": 512600
+   },
+   {
+    "text": "けれど、六十を過ぎた体に、その張りつめた糸は、少しずつ、こたえてきます。",
+    "startMs": 512600,
+    "endMs": 520800
+   },
+   {
+    "text": "そして、完璧にできないと分かっているから、片付けそのものに、手がつけられなくなってしまうんです。",
+    "startMs": 520800,
+    "endMs": 529900
+   },
+   {
+    "text": "紙袋を数えたあの知人は、信用金庫の窓口で、三十年働いてきた人でした。",
+    "startMs": 529900,
+    "endMs": 538433
+   },
+   {
+    "text": "一円でも数字が合わなければ、誰も帰れない職場です。",
+    "startMs": 538433,
+    "endMs": 543633
+   },
+   {
+    "text": "ある晴れた午後、取り込んだタオルに顔をうずめると、お日さまの匂いがしました。",
+    "startMs": 543633,
+    "endMs": 550567
+   },
+   {
+    "text": "「……このままで、いいじゃない」",
+    "startMs": 550567,
+    "endMs": 553033
+   },
+   {
+    "text": "そう口に出したら、急に、肩が軽くなったと言っていました。",
+    "startMs": 553033,
+    "endMs": 558833
+   },
+   {
+    "text": "今日は、タオルのアイロンを、一回だけ、やめてみてください。",
+    "startMs": 565500,
+    "endMs": 571667
+   },
+   {
+    "text": "その時間に、夕方のお茶を一杯、飲んでみてください。",
+    "startMs": 571667,
+    "endMs": 577300
+   },
+   {
+    "text": "家は、職場ではありません。",
+    "startMs": 577300,
+    "endMs": 580133
+   },
+   {
+    "text": "ちゃんと食べているかしら。",
+    "startMs": 593233,
+    "endMs": 595133
+   },
+   {
+    "text": "寒くないかしら。",
+    "startMs": 595133,
+    "endMs": 596733
+   },
+   {
+    "text": "仕事は、うまくいっているのかしら。",
+    "startMs": 596733,
+    "endMs": 600033
+   },
+   {
+    "text": "子どもがいくつになっても、親の心配は、止まりません。",
+    "startMs": 600033,
+    "endMs": 605400
+   },
+   {
+    "text": "心配をやめたら、親として、冷たいのではないか。",
+    "startMs": 605400,
+    "endMs": 610633
+   },
+   {
+    "text": "子どもを、見捨てるようで、こわい。",
+    "startMs": 610633,
+    "endMs": 614167
+   },
+   {
+    "text": "そう感じるのは、あなたが、ずっと、子どものために生きてきたからです。",
+    "startMs": 614167,
+    "endMs": 620933
+   },
+   {
+    "text": "子育てが終わって、自分の役目が、急に、なくなってしまったような気がする。",
+    "startMs": 620933,
+    "endMs": 628600
+   },
+   {
+    "text": "心配しているあいだは、まだ、親でいられる。",
+    "startMs": 628600,
+    "endMs": 633067
+   },
+   {
+    "text": "けれど、毎晩の電話に、少しだけ、ため息をつかれてしまう。",
+    "startMs": 633067,
+    "endMs": 639500
+   },
+   {
+    "text": "「お母さん、私、もう四十五よ」",
+    "startMs": 639500,
+    "endMs": 643633
+   },
+   {
+    "text": "心配は、愛情です。",
+    "startMs": 643633,
+    "endMs": 646267
+   },
+   {
+    "text": "でも、ときどき、その愛情が、相手にとっての荷物になってしまうことがあるんです。",
+    "startMs": 646267,
+    "endMs": 654067
+   },
+   {
+    "text": "紙袋のあの知人も、ある晩、七時になっても、娘さんに電話をかけなかったそうです。",
+    "startMs": 654067,
+    "endMs": 662633
+   },
+   {
+    "text": "かわりに、豆から挽くコーヒーを入れてみた。",
+    "startMs": 662633,
+    "endMs": 666567
+   },
+   {
+    "text": "ごり、ごり、と手回しのミルが鳴るうちに、七時は過ぎていきました。",
+    "startMs": 666567,
+    "endMs": 673367
+   },
+   {
+    "text": "八時を少し回った頃、電話が鳴りました。",
+    "startMs": 673367,
+    "endMs": 677567
+   },
+   {
+    "text": "「お母さん、今日は電話がないから、どうしたのかと思って」",
+    "startMs": 677567,
+    "endMs": 682967
+   },
+   {
+    "text": "娘さんの声は、いつもより、ずっと、やわらかだったそうです。",
+    "startMs": 682967,
+    "endMs": 689567
+   },
+   {
+    "text": "あなたが毎日かけている、その電話も、一日だけ、お休みしてみませんか。",
+    "startMs": 697833,
+    "endMs": 705400
+   },
+   {
+    "text": "久しぶりに会った友人の、孫と海外旅行に行った話。",
+    "startMs": 712533,
+    "endMs": 718100
+   },
+   {
+    "text": "建て替えたばかりの、新しい家の話。",
+    "startMs": 718100,
+    "endMs": 721967
+   },
+   {
+    "text": "にこにこと相づちを打ちながら、帰り道、胸の奥が、少しずつ冷えていく。",
+    "startMs": 721967,
+    "endMs": 729733
+   },
+   {
+    "text": "みんな、ちゃんとやっているのに、私だけ、何も持っていない。",
+    "startMs": 729733,
+    "endMs": 735900
+   },
+   {
+    "text": "私だけ、取り残されていく。",
+    "startMs": 735900,
+    "endMs": 738900
+   },
+   {
+    "text": "そんな帰り道は、ありませんか。",
+    "startMs": 738900,
+    "endMs": 742200
+   },
+   {
+    "text": "比べてしまうのは、あなたが欲張りだからではありません。",
+    "startMs": 742200,
+    "endMs": 747000
+   },
+   {
+    "text": "成績、就職、結婚、子どもの学校。",
+    "startMs": 747000,
+    "endMs": 752467
+   },
+   {
+    "text": "いつも、誰かと並べられてきた私たちは、比べることが、癖になってしまっているんです。",
+    "startMs": 752467,
+    "endMs": 760800
+   },
+   {
+    "text": "でもね、人の家の庭は、垣根の外から見るから、きれいに見えるんです。",
+    "startMs": 760800,
+    "endMs": 767867
+   },
+   {
+    "text": "中に入れば、どこの家にも、草むしりがあります。",
+    "startMs": 767867,
+    "endMs": 772900
+   },
+   {
+    "text": "海外旅行の話をしていたあの友人も、本当は、ご主人との会話が、もう何年もないのかもしれません。",
+    "startMs": 772900,
+    "endMs": 783000
+   },
+   {
+    "text": "昨日より、押し入れが、少しだけ軽い。",
+    "startMs": 789267,
+    "endMs": 793433
+   },
+   {
+    "text": "昨日より、一つだけ、いい湯呑みでお茶を飲めた。",
+    "startMs": 793433,
+    "endMs": 798300
+   },
+   {
+    "text": "そう数えられるようになると、帰り道が、少しずつ、あたたかくなっていきます。",
+    "startMs": 798300,
+    "endMs": 806467
+   },
+   {
+    "text": "ほとんどの人が、最後までほどけないのが、この迷いです。",
+    "startMs": 814767,
+    "endMs": 820367
+   },
+   {
+    "text": "亡くなった人の洋服。",
+    "startMs": 820367,
+    "endMs": 822433
+   },
+   {
+    "text": "子どもが小さい頃に描いた絵。",
+    "startMs": 822433,
+    "endMs": 825133
+   },
+   {
+    "text": "開けると、樟脳の匂いがふわりと広がる、たんすの引き出し。",
+    "startMs": 825133,
+    "endMs": 831067
+   },
+   {
+    "text": "これを手放したら、あの人まで、手放してしまうみたいで。",
+    "startMs": 831067,
+    "endMs": 836433
+   },
+   {
+    "text": "そう感じるのは、当たり前のことです。",
+    "startMs": 836433,
+    "endMs": 840000
+   },
+   {
+    "text": "けれど、勢いで何もかも捨ててしまうと、あとで、深く後悔することがあります。",
+    "startMs": 840000,
+    "endMs": 848000
+   },
+   {
+    "text": "知人の友人は、引っ越しのとき、ご主人からの手紙の束まで、捨ててしまったそうです。",
+    "startMs": 848000,
+    "endMs": 856533
+   },
+   {
+    "text": "片付いた部屋を見て、せいせいしたのは、三日だけだった、と。",
+    "startMs": 856533,
+    "endMs": 862700
+   },
+   {
+    "text": "鴨長明は、「方丈記」の冒頭に、こう書きました。",
+    "startMs": 872033,
+    "endMs": 878100
+   },
+   {
+    "text": "川の水は、同じように見えて、いつも新しく入れ替わっている。",
+    "startMs": 885933,
+    "endMs": 892100
+   },
+   {
+    "text": "人も、住まいも、同じなのだと。",
+    "startMs": 892100,
+    "endMs": 895667
+   },
+   {
+    "text": "風水でも、思い出の品は、箱の奥にしまい込むより、目に入る場所に一つだけ飾るほうが、家に良い気が巡る、と言われます。",
+    "startMs": 895667,
+    "endMs": 908367
+   },
+   {
+    "text": "洋服なら、一着だけ残して、自分で羽織ってみる。",
+    "startMs": 908367,
+    "endMs": 913600
+   },
+   {
+    "text": "子どもの絵なら、一枚だけ選んで、額に入れて飾ってみる。",
+    "startMs": 913600,
+    "endMs": 919400
+   },
+   {
+    "text": "しまい込んでいた思い出が、毎日の暮らしの中に、戻ってきます。",
+    "startMs": 919400,
+    "endMs": 925833
+   },
+   {
+    "text": "最後に、お約束した、手紙の話をさせてください。",
+    "startMs": 934333,
+    "endMs": 939900
+   },
+   {
+    "text": "百十七枚の紙袋を数えた、あの知人の話です。",
+    "startMs": 939900,
+    "endMs": 945333
+   },
+   {
+    "text": "ご主人を見送って三年目の冬、彼女は、孫にせがまれて、ご主人の万年筆を探していました。",
+    "startMs": 945333,
+    "endMs": 955033
+   },
+   {
+    "text": "二時間半かかって、万年筆は、紙袋の中の、もう一つの紙袋の底から出てきました。",
+    "startMs": 955033,
+    "endMs": 964333
+   },
+   {
+    "text": "そして、その下に、ご主人の字で「和子へ」と書かれた、一通の封筒。",
+    "startMs": 964333,
+    "endMs": 972900
+   },
+   {
+    "text": "彼女は、それを、なかなか開けられなかったそうです。",
+    "startMs": 972900,
+    "endMs": 977733
+   },
+   {
+    "text": "開けたのは、ひと月も経ってからのことでした。",
+    "startMs": 977733,
+    "endMs": 981700
+   },
+   {
+    "text": "便箋は、一枚だけ。",
+    "startMs": 981700,
+    "endMs": 984467
+   },
+   {
+    "text": "彼女は、声を出して笑ってしまったそうです。",
+    "startMs": 998100,
+    "endMs": 1002267
+   },
+   {
+    "text": "そして、続きを読みました。",
+    "startMs": 1002267,
+    "endMs": 1005167
+   },
+   {
+    "text": "「徒然草」には、こんな一行もあります。",
+    "startMs": 1017867,
+    "endMs": 1022300
+   },
+   {
+    "text": "物がなくても、困らないように、暮らしを整えて過ごす。",
+    "startMs": 1032067,
+    "endMs": 1037667
+   },
+   {
+    "text": "それが、いちばん上等な暮らし方なのだ、と。",
+    "startMs": 1037667,
+    "endMs": 1042433
+   },
+   {
+    "text": "七百年前の一行と、一人の夫の最後の一行が、同じことを言っていました。",
+    "startMs": 1042433,
+    "endMs": 1050067
+   },
+   {
+    "text": "彼女は今、百十七枚の中から一枚だけ残した紙袋に、その手紙をしまっているそうです。",
+    "startMs": 1050067,
+    "endMs": 1059200
+   },
+   {
+    "text": "そして、こう言っていました。",
+    "startMs": 1059200,
+    "endMs": 1061900
+   },
+   {
+    "text": "「子どもたちが、紙袋ごと捨ててしまう前に、自分で見つけられて、よかった」",
+    "startMs": 1061900,
+    "endMs": 1069433
+   },
+   {
+    "text": "「これで、あの子たちに、押し入れを残さなくてすむわ」",
+    "startMs": 1069433,
+    "endMs": 1074433
+   },
+   {
+    "text": "いかがでしたでしょうか。",
+    "startMs": 1075033,
+    "endMs": 1076867
+   },
+   {
+    "text": "捨てられなかったのは、物ではなく、七つの「迷い」でした。",
+    "startMs": 1076867,
+    "endMs": 1083800
+   },
+   {
+    "text": "その迷いを一つずつほどいていくと、探し物が減り、人を家に呼べるようになり、子どもに押し入れを残す心配も、少しずつ消えていきます。",
+    "startMs": 1083800,
+    "endMs": 1096900
+   },
+   {
+    "text": "あなたが、いちばんほどけずにいる迷いは、どれでしょうか。",
+    "startMs": 1107033,
+    "endMs": 1112367
+   },
+   {
+    "text": "「いつか使うかも」でも、「もったいない」でも、ご主人の洋服でも、構いません。",
+    "startMs": 1112367,
+    "endMs": 1120967
+   },
+   {
+    "text": "よろしければ、コメント欄で、そっと教えてください。",
+    "startMs": 1120967,
+    "endMs": 1125967
+   },
+   {
+    "text": "あなたの一言が、同じように迷っている誰かの、背中を押すかもしれません。",
+    "startMs": 1125967,
+    "endMs": 1132900
+   },
+   {
+    "text": "このチャンネルでは、これからも、人生の夜に寄り添うお話をお届けしていきます。",
+    "startMs": 1132900,
+    "endMs": 1140300
+   },
+   {
+    "text": "よろしければ、チャンネル登録をして、また聞きにいらしてください。",
+    "startMs": 1140300,
+    "endMs": 1146233
+   },
+   {
+    "text": "今夜のあなたの心が、ほんの少しでも、軽くなりますように。",
+    "startMs": 1146833,
+    "endMs": 1153100
+   }
+  ]
+ },
+ "theme": {
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", sans-serif"
+ },
+ "brand": null
+}

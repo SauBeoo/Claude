@@ -1,0 +1,283 @@
+# -*- coding: utf-8 -*-
+"""make_tts.py — sinh `<stem>_TTS.md` TỪ bản `.md` sạch (nguồn sự thật duy nhất).
+
+VÌ SAO CÓ TOOL NÀY:
+Trước đây `.md` và `_TTS.md` được viết tay riêng → sửa 1 file quên file kia
+(bẫy đã ghi ở `.claude/rules/humanize-script-voice.md` §4: "sửa TTS xong .md còn
+cold open cũ → 2 file cùng video nói 2 chuyện"). Giờ: **sửa .md rồi chạy lại tool**.
+
+TOOL LO 3 VIỆC:
+  ① 漢数字 → số Ả Rập theo convention kênh (video 06), CHỪA các từ đọc bằng kana
+     (十分に / 一日仕事 / 一人ひとり / 三つ / 一言 …) — đây là chỗ dễ sai nhất.
+  ② tách dòng = 1 nhịp đọc, GỘP dòng quá ngắn (<MIN_LEN) vào dòng trước
+     → giữ mật độ ~28 ký/dòng như video 06. Dòng nhiều = nhiều gap 0,45s = video phình.
+  ③ chèn tag nhấn nhá ở ĐẦU DÒNG (tag giữa câu bị TTS đọc thành lời).
+     Đoạn trống (\n\n) chỉ ở ranh giới CHƯƠNG + chỗ có `[間]` trong .md — mỗi đoạn
+     tốn thêm 1,0s, 170 đoạn = +3 phút im lặng.
+
+CHẠY:  python tools/make_tts.py 07_tokubetsu-shikyu-rourei-kosei-nenkin
+       python tools/make_tts.py <stem> --dry     (chỉ in thống kê, không ghi)
+
+ĐỔI TAG — 2 cách (từ 2026-08-05 ưu tiên cách ①):
+  ① **Bảng tag NẰM TRONG chính file `.md` của script** (mỗi video một bộ, không đè nhau):
+
+         ```tts-tags
+         <tiền tố đầu dòng> || <tag> || <lý do, tùy chọn>
+         ```
+
+     Có block này → tool dùng nó và BỎ QUA bảng TAGS mặc định bên dưới.
+  ② Không có block → dùng bảng TAGS hardcode dưới đây (bộ của video 07, giữ để 07 tái dựng đúng).
+
+Mốc đặt tag theo `.claude/rules/humanize-script-voice.md` §2 (6 khoảnh khắc).
+
+MỐC CẮT THÂN BÀI: `# === KỊCH BẢN HOÀN CHỈNH ===` → tới `=== HẾT KỊCH BẢN ===`
+nếu có (chuẩn từ video 08 — cần thiết vì sau nó còn mục RETENTION AUDIT không được đọc),
+ngược lại tới `## 📦 ĐÓNG GÓI CTR` (video ≤07).
+"""
+import re
+import sys
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+PROJ = Path(__file__).resolve().parents[1]
+MIN_LEN = 14          # dòng ngắn hơn → gộp vào dòng trước
+CH_PER_SEC = 5.72     # tốc độ đọc thuần, đo từ video 06 (雀松朱司 / ノーマル / 0.9)
+GAP_LINE = 0.45
+GAP_PARA = 1.0
+
+# ---- ① số: cụm PHẢI giữ kanji (đọc bằng kana, đổi là sai giọng) ----
+KEEP = ['一人ひとり', 'もう一人', '一言', '一度', '一枚', '一本', '一生', '一日仕事',
+        '十分に', '十分', '一問', '二問', '三問', 'ひとつ', 'ふたつ', 'みっつ', 'よっつ',
+        'いつつ', '三つ', '二つ', '四つ', '三ステップ', '一部', '三十年代', '一方']
+NUM = {
+    # 🔴 VÁ 2026-09-21 (v29): tool ĐÃ sort key theo ĐỘ DÀI giảm dần (dòng ~123), nên lỗi
+    # KHÔNG phải thứ tự — mà là mấy cụm này **thiếu hẳn** khỏi bảng, nên `五歳` ngắn ăn vào
+    # giữa số: `七十五歳`→`七十5歳`, `二〇二五年`→`二5年`, `十二月`→`十2月`. 16 chỗ hỏng trong
+    # một script. Kênh này nói 75歳/85歳 liên tục ⇒ thiếu là sẽ tái phát.
+    '八月一日': '8月1日', '八月二日': '8月2日', '十二月一日': '12月1日',
+    '七月三十一日': '7月31日', '七月': '7月', '三千円': '3千円', '三万円': '3万円',
+    '八十五歳': '85歳', '八十四歳': '84歳', '七十五歳': '75歳', '七十四歳': '74歳',
+    '二〇二五年': '2025年', '二〇二六年': '2026年', '二〇二七年': '2027年',
+    '十二月': '12月', '十一月': '11月', '十二か月': '12か月', '三十一日': '31日',
+    '四十二パーセント': '42パーセント', '八十四パーセント': '84パーセント', '〇・七パーセント': '0.7パーセント',
+    '百五十六万円': '156万円', '百四十四か月': '144か月', '百二十万円': '120万円',
+    '二万七千円': '2万7千円', '一万四千円': '1万4千円', '五十八か月': '58か月',
+    '三十六か月': '36か月', '五十万円': '50万円', '二万円': '2万円',
+    '六十八歳': '68歳', '六十六歳': '66歳', '六十五歳': '65歳', '六十四歳': '64歳',
+    '六十三歳': '63歳', '六十二歳': '62歳', '六十一歳': '61歳', '六十歳': '60歳',
+    '七十歳': '70歳', '十八歳': '18歳', '六十五の': '65の', '五歳': '5歳', '一歳': '1歳',
+    '昭和三十三年': '昭和33年', '昭和三十四年': '昭和34年', '昭和三十五年': '昭和35年',
+    '昭和三十六年': '昭和36年', '昭和三十七年': '昭和37年', '昭和三十八年': '昭和38年',
+    '昭和三十九年': '昭和39年', '昭和四十年': '昭和40年', '昭和四十一年': '昭和41年',
+    '三十三年': '33年', '三十四年': '34年', '三十五年': '35年', '三十六年': '36年',
+    '三十七年': '37年', '三十八年': '38年', '三十九年': '39年', '四十年': '40年', '四十一年': '41年',
+    '令和二年': '令和2年', '令和五年': '令和5年', '令和七年': '令和7年',
+    '令和八年': '令和8年', '令和十年': '令和10年',
+    '十一月': '11月', '八月': '8月', '九月': '9月', '六月': '6月',
+    '四月一日': '4月1日', '四月二日': '4月2日', '四月': '4月', '十四日': '14日',
+    'たった一日': 'たった1日', '一日違い': '1日違い', '三十分': '30分',
+    '三か月': '3か月', '二か月': '2か月', '一か月': '1か月',
+    '二十年': '20年', '十五年': '15年', '十二年': '12年', '十年': '10年',
+    '八年': '8年', '五年': '5年', '三年': '3年', '二年': '2年', '一年': '1年', '一円': '1円',
+}
+
+# ---- ③ tag nhấn nhá: (tiền tố đầu dòng, tag) — khớp lần đầu tiên ----
+TAGS = [
+    ("あなたが受け取れるはずの年金が", "[間0.4][抑揚1.2]"),
+    ("「もう2か月遅かったら", "[抑揚1.3]"),
+    ("仙台の佐藤さん、66歳。", "[速0.9]"),
+    ("あと2か月で、まるごと消える", "[間0.8][速0.85]"),
+    ("もし消えていたとしても", "[速0.85][抑揚1.2]"),
+    ("あなたの期限が、何年の何月なのか", "[間0.6][速0.82][後間0.8]"),
+    ("分かっているのに、あなたが紙を出すまでは", "[速0.82][抑揚1.3]"),
+    ("ここ、聞き逃さないでください", "[抑揚1.25]"),
+    ("女性の方。", "[間0.6][速0.88]"),
+    ("2年ごとに、1歳ずつ後ろへずれる", "[抑揚1.25]"),
+    ("「年金って、65歳からもらうものだと", "[抑揚1.25][速0.9]"),
+    ("この一言に、今日の全部が", "[速0.85][後間0.8]"),
+    ("始まる年齢のお誕生日に、5年を足す", "[間1.2][速0.8][後間1.0]"),
+    ("残っていたのは、2か月です", "[間0.8][速0.82][後間0.8]"),
+    ("いま、ご自身の年を当てはめて", "[速0.88]"),
+    ("2万7千円かける、58か月。", "[速0.82][後間0.6]"),
+    ("「特別支給の老齢厚生年金には", "[速0.85]"),
+    ("2年ありますが――2年しか", "[抑揚1.3][速0.85]"),
+    ("そして大事なのは、ここです", "[間0.5][抑揚1.25]"),
+    ("分からない損は、悔しがることすら", "[速0.8][抑揚1.2][後間0.8]"),
+    ("熱心な方ほど、損をする", "[速0.82][抑揚1.3]"),
+    ("止まるかもしれないから請求しない", "[抑揚1.25]"),
+    ("30分です。", "[間0.5][速0.85]"),
+    ("いま、あなたの期限の月が", "[速0.88]"),
+    ("あなたの期限は、始まる年齢のお誕生日に", "[速0.85][抑揚1.2]"),
+    ("ここは、筋が通っているとは", "[間0.6][速0.82][抑揚1.25]"),
+    ("年金は、知っている人にだけ優しく", "[間1.0][速0.8][後間1.0]"),
+    ("何も買っていません。", "[間0.8][速0.85][後間0.8]"),
+    ("「1年、パートを休んでも", "[速0.85][抑揚1.2]"),
+    ("それでは、また次回の研究で", "[間0.6][速0.85]"),
+]
+
+
+# cụm phải đổi TRƯỚC khi mask (nếu không, '十分' trong KEEP ăn mất '三十分')
+PRE = {'三十分': '30分'}
+
+
+def to_arabic(s: str) -> str:
+    for k, v in PRE.items():
+        s = s.replace(k, v)
+    hold = {}
+    for i, k in enumerate(KEEP):
+        tok = f"\x00{i}\x00"
+        hold[tok] = k
+        s = s.replace(k, tok)
+    for k in sorted(NUM, key=len, reverse=True):
+        s = s.replace(k, NUM[k])
+    for tok, k in hold.items():
+        s = s.replace(tok, k)
+    return s
+
+
+def load_tags(md_text: str):
+    """Bảng tag riêng của script (block ```tts-tags``` trong .md). Không có → dùng TAGS mặc định."""
+    m = re.search(r'```tts-tags\n(.*?)```', md_text, re.S)
+    if not m:
+        return TAGS, False
+    rows = []
+    for ln in m.group(1).split('\n'):
+        ln = ln.strip()
+        if not ln or ln.startswith('#'):
+            continue
+        parts = [p.strip() for p in ln.split('||')]
+        if len(parts) >= 2 and parts[0] and parts[1]:
+            rows.append((parts[0], parts[1]))
+    return rows, True
+
+
+def cut_body(md_text: str) -> str:
+    """Thân bài đọc. Mốc kết ưu tiên HẾT KỊCH BẢN (sau nó là RETENTION AUDIT, không được đọc)."""
+    after = md_text.split('# === KỊCH BẢN HOÀN CHỈNH ===')[1]
+    for end in ('=== HẾT KỊCH BẢN ===', '## 📦 ĐÓNG GÓI CTR', '# 📦 ĐÓNG GÓI CTR'):
+        if end in after:
+            return after.split(end)[0]
+    return after
+
+
+def build(md_text: str):
+    global TAGS
+    TAGS, per_script = load_tags(md_text)
+    if per_script:
+        print(f"bảng tag: lấy TỪ CHÍNH FILE .md ({len(TAGS)} tag)")
+    else:
+        print(f"bảng tag: dùng TAGS mặc định trong tool ({len(TAGS)} tag) — script này chưa có block ```tts-tags```")
+    body = cut_body(md_text)
+    blocks = []          # [[dòng,...], ...] — mỗi block = 1 đoạn TTS
+    cur = []
+    in_comment = False   # comment <!-- … --> NHIỀU DÒNG: phải nhớ trạng thái,
+                         # không thì dòng thứ 2 trở đi lọt vào lời đọc (bug video 08)
+    for raw in body.split('\n'):
+        p = raw.strip()
+        if in_comment:
+            if '-->' in p:
+                in_comment = False
+            continue
+        if p.startswith('<!--') and '-->' not in p:
+            in_comment = True
+            continue
+        if p.startswith('#'):                      # ranh giới chương → ngắt đoạn
+            if cur:
+                blocks.append(cur); cur = []
+            continue
+        if re.fullmatch(r'(\[[^\]]*\])+', p):      # [間] trong .md → ngắt đoạn
+            if cur:
+                blocks.append(cur); cur = []
+            continue
+        # 🔴 CUE HÌNH 【原典ショット…】【notebook…】【drawn…】 = chỉ thị dựng, KHÔNG PHẢI LỜI ĐỌC.
+        # Thiếu nhánh này thì VOICEVOX đọc to cả ghi chú tiếng Việt (bắt được ở video 08).
+        # Cue = một lần đổi hình ⇒ cũng là chỗ nghỉ tự nhiên → ngắt đoạn.
+        if p.startswith('【'):
+            if cur:
+                blocks.append(cur); cur = []
+            continue
+        # comment dựng <!-- … --> cũng là chỉ thị, KHÔNG đọc (bắt được ở video 08:
+        # dòng mốc CTA lọt vào _TTS.md và suýt được đọc thành lời)
+        # 🔴 VÁ 2026-09-21: marker PAYOFF là HỢP ĐỒNG giữa hai tool — biên kịch khai trong
+        # `.md`, `check_pace` G14 lại đọc chúng TỪ `_TTS.md` (kind 'cmt'). Trước đây tool này
+        # xoá MỌI `<!--` nên marker không bao giờ tới được gate ⇒ G14 luôn 'KHÔNG KHAI', và
+        # cách duy nhất để qua là gõ tay vào `_TTS.md` — thứ bị ghi đè ở lần sinh kế tiếp.
+        # Cho marker PAYOFF đi qua nguyên văn; mọi comment dựng khác vẫn bị bỏ như cũ.
+        if p.startswith('<!--') and 'PAYOFF:' in p:
+            cur.append(p)          # đứng RIÊNG một dòng — xem chặn gộp ở dưới
+            continue
+        if not p or p.startswith('---') or p.startswith('>') or p.startswith('<!--'):
+            continue
+        p = to_arabic(p.replace('**', ''))
+        for s in re.split(r'(?<=。)(?![」』])', p):
+            s = s.strip()
+            if not s:
+                continue
+            # dòng mang tag / nhịp nhận diện = có chủ ý → KHÔNG gộp, kể cả khi ngắn
+            tagged = any(s.startswith(pre) for pre, _ in TAGS) or \
+                s.startswith(('当研究室です', 'では、', 'さて。'))
+            # 🔴 marker PAYOFF phải đứng RIÊNG một dòng: gộp câu vào nó là TTS ĐỌC MARKER
+            # THÀNH LỜI (đúng ca video 08 mà chú thích ở trên cảnh báo), và gate G14 cũng
+            # không nhận ra dòng đó là 'cmt' nữa.
+            if cur and cur[-1].startswith('<!--'):
+                cur.append(s)
+                continue
+            if cur and len(s) < MIN_LEN and not tagged:
+                cur[-1] += s
+            else:
+                cur.append(s)
+    if cur:
+        blocks.append(cur)
+
+    used = set()
+    out = []
+    for b in blocks:
+        for s in b:
+            tag = ''
+            for pre, tg in TAGS:
+                if pre not in used and s.startswith(pre):
+                    tag = tg; used.add(pre); break
+            out.append(tag + s)
+        out.append('')
+    return '\n'.join(out).strip() + '\n', blocks, used
+
+
+def main():
+    stem = sys.argv[1] if len(sys.argv) > 1 else None
+    if not stem:
+        sys.exit("dùng: python tools/make_tts.py <stem script, không .md>")
+    src = PROJ / "03_SCRIPTS" / f"{stem}.md"
+    dst = PROJ / "03_SCRIPTS" / f"{stem}_TTS.md"
+    txt, blocks, used = build(src.read_text(encoding='utf-8'))
+
+    lines = [l for l in txt.split('\n') if l.strip()]
+    ch = sum(len(re.sub(r'\[[^\]]*\]|\s', '', l)) for l in lines)
+    sec = ch / CH_PER_SEC + len(lines) * GAP_LINE + len(blocks) * GAP_PARA
+    print(f"dòng={len(lines)}  đoạn={len(blocks)}  ký={ch}  ký/dòng={ch/len(lines):.1f}")
+    print(f"ƯỚC dài = {int(sec)//60}:{int(sec)%60:02d}   (đọc {ch/CH_PER_SEC/60:.1f}′ + lặng {(sec-ch/CH_PER_SEC)/60:.1f}′)")
+    print(f"tag: {len(used)}/{len(TAGS)} khớp", "" if len(used) == len(TAGS) else
+          "  ⚠️ KHÔNG KHỚP: " + ", ".join(p for p, _ in TAGS if p not in used))
+    bad = re.findall(r'[。、][^\n]*?\[[^\]]*\]', txt)
+    print("tag giữa câu (phải 0):", len(bad))
+
+    # Ký hiệu công thức / mũi tên: TTS phát âm sai hoặc bỏ qua → lời đọc phải là CÂU VĂN,
+    # ký hiệu chỉ được nằm trên slide (bắt được ở video 08: 「＝（年額 − …）÷ 3」 lọt vào dòng đọc).
+    # ⚠️ KHÔNG đưa ○ và × vào đây: trong tiếng Nhật đó là maru/batsu của ○×クイズ
+    # (VOICEVOX đọc đúng) — video 07 dùng 「○か×か」 hợp lệ, thêm vào là báo động sai.
+    sym = sorted(set(re.findall(r'[＝−÷→←⇒％±①-⑳／〈〉]', txt)))
+    print("ký hiệu TTS đọc sai (phải rỗng):", sym if sym else "—")
+    # Số có dấu phẩy nghìn: VOICEVOX dễ đọc vỡ → dùng dạng 万/千
+    comma = re.findall(r'\d,\d{3}', txt)
+    print("số còn dấu phẩy nghìn (phải rỗng):", sorted(set(comma)) if comma else "—")
+    if bad or sym or comma:
+        print("🔴 CÓ LỖI Ở TRÊN — sửa file .md rồi chạy lại tool.")
+    left = sorted(set(re.findall(r'[一二三四五六七八九十百千]+(?:年|歳|円|か月|月|日|分|パーセント)', txt)))
+    print("kanji-số còn lại (phải toàn bộ là từ đọc kana):", left)
+    if '--dry' not in sys.argv:
+        dst.write_text(txt, encoding='utf-8')
+        print("→ ghi", dst)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,24 @@
+{
+  "speakers": {"沙織": "hero", "玲奈": "villain", "隆之": "villain"},
+  "lines": [
+    {"match": "離婚してくれ。俺の金だけが目当ての女とは", "speaker": "隆之"},
+    {"match": "あ、やっと出た。お久しぶりでーす", "speaker": "玲奈"},
+    {"match": "調べはついています", "speaker": "沙織"},
+    {"match": "う、うそ。なんで、それ", "speaker": "玲奈"},
+    {"match": "うるさい、あんたはただの財布よ", "speaker": "玲奈"},
+    {"match": "お二人とも、続きは弁護士を通してどうぞ", "speaker": "沙織"}
+  ],
+  "events": [
+    {"type": "sfx", "match": "リビングの扉を開けた瞬間、息が止まった", "name": "sub_drop", "offset": -0.2, "gain": -7},
+    {"type": "sfx", "match": "扉を開けて、息が止まった", "name": "sub_drop", "offset": -0.2, "gain": -7},
+    {"type": "sfx", "match": "私のスマートフォンが震えた", "name": "phone_buzz", "offset": -0.1, "gain": -9},
+    {"type": "card", "match": "役員借入金の帳簿も、あなたが書斎のゴミ箱に破り捨てた督促状も", "text": "ゴミ箱の督促状も、拝見しました", "style": "hero", "hold": 1.2},
+    {"type": "sfx", "match": "私の祖母の着物です", "name": "sub_drop", "offset": -0.15, "gain": -5},
+    {"type": "bgm_tense_cut", "from": "私の祖母の着物です", "cut": "玲奈が凍りつくのが分かった", "resume": "調べはついています"},
+    {"type": "sfx", "match": "玲奈が凍りつくのが分かった", "name": "heartbeat", "offset": -0.6, "gain": -8},
+    {"type": "card", "match": "ご実家のご両親と、婚約者の方にも", "text": "ご両親と婚約者にも、お送りしました", "style": "hero", "hold": 1.2},
+    {"type": "sfx", "match": "鬼のように着信が来てる", "name": "phone_buzz_urgent", "offset": 0.6, "gain": -9},
+    {"type": "bgm_swell", "from": "蜂の巣をつついたような騒ぎ", "to": "私は静かに告げた"},
+    {"type": "card", "match": "うるさい、あんたはただの財布よ", "text": "「あんたは、ただの財布よ」", "style": "villain", "hold": 1.0}
+  ]
+}

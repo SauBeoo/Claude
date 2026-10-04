@@ -1,0 +1,498 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "kinishinai-01yawa",
+  "channel": "kinishinai",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080
+ },
+ "timeline": {
+  "durationInFrames": 3720
+ },
+ "tracks": [
+  {
+   "id": "trk-foot",
+   "name": "footage",
+   "type": "video",
+   "clips": [
+    {
+     "id": "s9",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 178,
+     "asset": "assets/clip_09.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 0,
+     "trimStartFrames": 132
+    },
+    {
+     "id": "s10bg",
+     "kind": "video",
+     "from": 154,
+     "durationInFrames": 200,
+     "asset": "assets/hostbg_10.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "filter": {
+      "blur": 5,
+      "brightness": 0.78,
+      "saturate": 0.9
+     }
+    },
+    {
+     "id": "s10",
+     "kind": "video",
+     "from": 154,
+     "durationInFrames": 200,
+     "asset": "assets/clip_10_pad24.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0,
+     "layout": {
+      "x": 730,
+      "y": 164,
+      "w": 1100,
+      "h": 619
+     },
+     "frame": {
+      "radius": 26,
+      "border": 6,
+      "borderColor": "#F6EEDE",
+      "shadow": "0 18px 48px rgba(0,0,0,0.45)"
+     },
+     "filter": {
+      "sepia": 0.18,
+      "saturate": 0.9,
+      "contrast": 0.96,
+      "brightness": 1.03
+     }
+    },
+    {
+     "id": "s11bg",
+     "kind": "video",
+     "from": 330,
+     "durationInFrames": 710,
+     "asset": "assets/chbg_11.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24
+    },
+    {
+     "id": "s13",
+     "kind": "video",
+     "from": 1016,
+     "durationInFrames": 245,
+     "asset": "assets/clip_13.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "s14",
+     "kind": "video",
+     "from": 1237,
+     "durationInFrames": 422,
+     "asset": "assets/clip_14.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "s15",
+     "kind": "video",
+     "from": 1635,
+     "durationInFrames": 362,
+     "asset": "assets/clip_15.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "s16",
+     "kind": "video",
+     "from": 1973,
+     "durationInFrames": 358,
+     "asset": "assets/clip_16.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "s17",
+     "kind": "video",
+     "from": 2307,
+     "durationInFrames": 206,
+     "asset": "assets/clip_17.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "s18",
+     "kind": "video",
+     "from": 2489,
+     "durationInFrames": 363,
+     "asset": "assets/clip_18.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "s19bg",
+     "kind": "video",
+     "from": 2828,
+     "durationInFrames": 537,
+     "asset": "assets/bg_19.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s20bg",
+     "kind": "video",
+     "from": 3341,
+     "durationInFrames": 367,
+     "asset": "assets/bg_20.png",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "filter": {
+      "blur": 14,
+      "brightness": 0.62,
+      "saturate": 0.85
+     }
+    },
+    {
+     "id": "s21",
+     "kind": "video",
+     "from": 3684,
+     "durationInFrames": 36,
+     "asset": "assets/clip_21.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "fadeInFrames": 24,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "fx",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "dust",
+     "kind": "fx",
+     "variant": "dust",
+     "from": 0,
+     "durationInFrames": 3720,
+     "density": 22,
+     "color": "#FFE7B0",
+     "seed": 7,
+     "fadeInFrames": 20,
+     "fadeOutFrames": 20
+    },
+    {
+     "id": "vig",
+     "kind": "fx",
+     "variant": "vignette-soft",
+     "from": 0,
+     "durationInFrames": 3720,
+     "color": "#0E0C14",
+     "opacity": 0.4,
+     "fadeInFrames": 0,
+     "fadeOutFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-text",
+   "name": "text",
+   "type": "text",
+   "clips": [
+    {
+     "id": "s11",
+     "kind": "text",
+     "from": 354,
+     "durationInFrames": 369,
+     "preset": "yawa-chapter",
+     "content": "その一\n「すみません」",
+     "animation": "none",
+     "color": "#FFFFFF",
+     "animationParams": {
+      "scrim": 0.64,
+      "fadeIn": 24
+     }
+    },
+    {
+     "id": "s19",
+     "kind": "text",
+     "from": 2852,
+     "durationInFrames": 519,
+     "preset": "yawa-reveal",
+     "content": "「ありがとう」のひとことで\n次も手伝ってくれた人が\n約3割から、約6割へ",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.3,
+       10.22,
+       12.72
+      ]
+     }
+    },
+    {
+     "id": "s20",
+     "kind": "text",
+     "from": 3365,
+     "durationInFrames": 349,
+     "preset": "yawa-reveal",
+     "content": "「すみません」を、\n「ありがとう」に。",
+     "animation": "none",
+     "color": "#3A2E24",
+     "animationParams": {
+      "times": [
+       0.3,
+       0.8999999999999999
+      ]
+     }
+    },
+    {
+     "id": "chip0",
+     "kind": "text",
+     "from": 717,
+     "durationInFrames": 3003,
+     "preset": "yawa-chip",
+     "content": "その一 ／ 七",
+     "animation": "none",
+     "color": "#F6EEDE"
+    },
+    {
+     "id": "kw0",
+     "kind": "text",
+     "from": 725,
+     "durationInFrames": 351,
+     "preset": "yawa-keyword",
+     "content": "「すみません」は、見張り番の声",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    },
+    {
+     "id": "kw1",
+     "kind": "text",
+     "from": 2339,
+     "durationInFrames": 210,
+     "preset": "yawa-keyword",
+     "content": "見張り番は、心配性",
+     "animation": "none",
+     "color": "#3A2E24",
+     "layout": {
+      "x": 140,
+      "y": 150
+     },
+     "fontSize": 58
+    }
+   ]
+  },
+  {
+   "id": "trk-grain",
+   "name": "grain",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "grain",
+     "kind": "fx",
+     "variant": "grain",
+     "from": 0,
+     "durationInFrames": 3720,
+     "opacity": 0.1,
+     "seed": 3,
+     "fadeInFrames": 0,
+     "fadeOutFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "audio",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "a0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 3720,
+     "asset": "assets/audio.wav",
+     "volume": 1
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 50,
+  "lines": [
+   {
+    "text": "一度もこたつに座らなかった私が、今年、",
+    "startMs": 0,
+    "endMs": 3333
+   },
+   {
+    "text": "はじめて座った日の話も。",
+    "startMs": 3333,
+    "endMs": 6067
+   },
+   {
+    "text": "家事をしながら、ラジオのように、",
+    "startMs": 6067,
+    "endMs": 9000
+   },
+   {
+    "text": "気楽に聞いてくださいね。",
+    "startMs": 9000,
+    "endMs": 11200
+   },
+   {
+    "text": "うれしいはずなのに、口から出るのは、「すみません」。",
+    "startMs": 23900,
+    "endMs": 28333
+   },
+   {
+    "text": "見張り番は、こうささやいています。「相手に、",
+    "startMs": 28333,
+    "endMs": 32200
+   },
+   {
+    "text": "手間をかけさせたでしょう」。",
+    "startMs": 32200,
+    "endMs": 34667
+   },
+   {
+    "text": "私が立っていたのは、デパートの呉服売り場です。今年、",
+    "startMs": 34667,
+    "endMs": 40133
+   },
+   {
+    "text": "六十八になります。",
+    "startMs": 40133,
+    "endMs": 42033
+   },
+   {
+    "text": "いまでも、いただき物の包装紙を、",
+    "startMs": 42033,
+    "endMs": 44900
+   },
+   {
+    "text": "折り目どおりにたたんで、",
+    "startMs": 44900,
+    "endMs": 47100
+   },
+   {
+    "text": "引き出しにしまってしまいます。",
+    "startMs": 47100,
+    "endMs": 49800
+   },
+   {
+    "text": "ありがとうって言うと、なんだか、",
+    "startMs": 49800,
+    "endMs": 52633
+   },
+   {
+    "text": "厚かましい気がしていたんです。",
+    "startMs": 52633,
+    "endMs": 55300
+   },
+   {
+    "text": "売り場では、お客さまより先に頭を下げるのが、",
+    "startMs": 55300,
+    "endMs": 59700
+   },
+   {
+    "text": "礼儀でした。",
+    "startMs": 59700,
+    "endMs": 60900
+   },
+   {
+    "text": "私の見張り番は、きっと、",
+    "startMs": 60900,
+    "endMs": 63200
+   },
+   {
+    "text": "そこで生まれたんだと思います。",
+    "startMs": 63200,
+    "endMs": 66067
+   },
+   {
+    "text": "アメリカの研究では、感謝の手紙を書いた人は、",
+    "startMs": 66567,
+    "endMs": 70800
+   },
+   {
+    "text": "受け取った相手のうれしさを、実際よりも、",
+    "startMs": 70800,
+    "endMs": 74633
+   },
+   {
+    "text": "ずっと小さく見積もっていました。",
+    "startMs": 74633,
+    "endMs": 77700
+   },
+   {
+    "text": "見張り番は、いつも、危ないほうに、",
+    "startMs": 77700,
+    "endMs": 81267
+   },
+   {
+    "text": "多めに見積もるんですね。",
+    "startMs": 81267,
+    "endMs": 83767
+   },
+   {
+    "text": "このままだと、謝られた相手は、「迷惑だったかな」と、",
+    "startMs": 83767,
+    "endMs": 89000
+   },
+   {
+    "text": "かえって気をつかいます。親切が、",
+    "startMs": 89000,
+    "endMs": 92233
+   },
+   {
+    "text": "そこで止まってしまうんです。",
+    "startMs": 92233,
+    "endMs": 95067
+   },
+   {
+    "text": "去年の春、私は、バスで席をゆずってくれた高校生に、",
+    "startMs": 123600,
+    "endMs": 124000
+   }
+  ]
+ },
+ "theme": {
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", sans-serif"
+ },
+ "brand": null
+}

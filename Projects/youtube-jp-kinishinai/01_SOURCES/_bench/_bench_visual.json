@@ -1,0 +1,130 @@
+[
+ {
+  "video": "3ZiG9HjSyBA",
+  "dur_s": 1074.6,
+  "cuts_per_min": 55.05,
+  "hold_median_s": 0.5,
+  "hold_max_s": 16.5,
+  "MAD_mean": 10.66,
+  "bright": 202,
+  "sat": 70,
+  "palette": [
+   [
+    "#DBC9A8",
+    29
+   ],
+   [
+    "#F1E9DB",
+    28
+   ],
+   [
+    "#B5986E",
+    20
+   ],
+   [
+    "#81633E",
+    15
+   ],
+   [
+    "#2B241E",
+    8
+   ]
+  ]
+ },
+ {
+  "video": "PO5fcKbaHTc",
+  "dur_s": 1276.8,
+  "cuts_per_min": 52.4,
+  "hold_median_s": 0.5,
+  "hold_max_s": 23.0,
+  "MAD_mean": 12.36,
+  "bright": 170,
+  "sat": 97,
+  "palette": [
+   [
+    "#9B7B61",
+    24
+   ],
+   [
+    "#694A3D",
+    23
+   ],
+   [
+    "#CCAF8C",
+    20
+   ],
+   [
+    "#E9E0D2",
+    19
+   ],
+   [
+    "#261A18",
+    14
+   ]
+  ]
+ },
+ {
+  "video": "WATghdSAZ4g",
+  "dur_s": 1081.2,
+  "cuts_per_min": 108.99,
+  "hold_median_s": 0.5,
+  "hold_max_s": 14.5,
+  "MAD_mean": 17.12,
+  "bright": 142,
+  "sat": 91,
+  "palette": [
+   [
+    "#372725",
+    28
+   ],
+   [
+    "#65483B",
+    26
+   ],
+   [
+    "#99725C",
+    17
+   ],
+   [
+    "#E4D7CF",
+    16
+   ],
+   [
+    "#D5AB85",
+    13
+   ]
+  ]
+ },
+ {
+  "video": "t55fheAhicE",
+  "dur_s": 915.6,
+  "cuts_per_min": 103.8,
+  "hold_median_s": 0.5,
+  "hold_max_s": 11.5,
+  "MAD_mean": 17.51,
+  "bright": 135,
+  "sat": 92,
+  "palette": [
+   [
+    "#362926",
+    33
+   ],
+   [
+    "#5F4941",
+    27
+   ],
+   [
+    "#977157",
+    15
+   ],
+   [
+    "#E6D6CE",
+    13
+   ],
+   [
+    "#CDAA8A",
+    12
+   ]
+  ]
+ }
+]

@@ -1,0 +1,41 @@
+{
+  "name": "akiya",
+  "displayName": "実家とお金の整理ノート",
+  "sourceHash": "6e09f0be2e50",
+  "theme": {
+    "palette": {
+      "bgTop": "#2A3A58",
+      "bgBottom": "#182236",
+      "accent": "#FFD700"
+    },
+    "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+    "canvasColor": "#2A3A58"
+  },
+  "captions": {
+    "style": "outline",
+    "fontSize": 44
+  },
+  "voice": {
+    "engine": "voicevox",
+    "speaker": "剣崎雌雄",
+    "style": "ノーマル",
+    "speed": 0.9,
+    "intonation": 1.1
+  },
+  "video": {
+    "transition": "dissolve",
+    "transitionDur": 0.4,
+    "bgmGain": -40.0,
+    "watermark": null,
+    "finalCrf": 20
+  },
+  "entranceRotation": [
+    "rise",
+    "grow",
+    "flip",
+    "punch",
+    "wobble",
+    "peel",
+    "zoom-through"
+  ]
+}

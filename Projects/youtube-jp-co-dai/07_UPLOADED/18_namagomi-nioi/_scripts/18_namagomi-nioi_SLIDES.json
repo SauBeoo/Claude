@@ -1,0 +1,873 @@
+[
+ {
+  "match": "同じ町の、同じような間取りの",
+  "photo": true
+ },
+ {
+  "match": "なのに、片方の家は、夏でも匂",
+  "photo": true
+ },
+ {
+  "match": "消臭スプレーにひと夏3000",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "bg": "photo",
+   "kicker": "ひと夏の消臭代",
+   "big": "3000",
+   "unit": "円",
+   "sub": "スプレーと防臭袋に",
+   "note": "匂わないのは、0円の家でした",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Identical_spray_cans_on_shelf_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "今夜、どちら側か確かめられま",
+  "photo": true
+ },
+ {
+  "match": "ぬるりとしたら、あなたの家は",
+  "photo": true
+ },
+ {
+  "match": "そのぬるりは、明日にはもう戻",
+  "photo": true
+ },
+ {
+  "match": "差は、掃除の回数ではありませ",
+  "photo": true
+ },
+ {
+  "match": "先に、いちばん多い勘違いから",
+  "photo": true
+ },
+ {
+  "match": "古代の秘訣へようこそ。時代に",
+  "photo": true
+ },
+ {
+  "match": "とくに、この時季です。お盆に",
+  "photo": true
+ },
+ {
+  "match": "来た人は、何も言いません。言",
+  "photo": true
+ },
+ {
+  "match": "一つ目の勘違い。匂っているの",
+  "photo": true
+ },
+ {
+  "match": "切ったばかりのキャベツの芯を",
+  "photo": true
+ },
+ {
+  "match": "匂うのは、生ゴミを食べている",
+  "photo": true
+ },
+ {
+  "match": "細菌は、野菜や魚に含まれるタ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "匂いの出どころ",
+   "head": "生ゴミではなく、細菌が出している",
+   "pins": [
+    [
+     1300,
+     300,
+     "タンパク質を分解"
+    ],
+    [
+     1300,
+     470,
+     "アンモニア・硫黄"
+    ]
+   ],
+   "arrows": [
+    [
+     1260,
+     350,
+     980,
+     450,
+     0.18
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Clogged_kitchen_sink_strainer_ba…_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "あの、鼻の奥をつくような匂い",
+  "photo": true
+ },
+ {
+  "match": "つまり、匂いは消すものではあ",
+  "photo": true
+ },
+ {
+  "match": "そして細菌が増えるために、ど",
+  "photo": true
+ },
+ {
+  "match": "水です。",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "bg": "photo",
+   "kicker": "細菌が要るもの",
+   "title": "水",
+   "note": "自由に動ける水がなければ、増えられない",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Water_droplet_clinging_to_steel_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "細菌は、自分のまわりに自由に",
+  "photo": true
+ },
+ {
+  "match": "塩漬けが、いちばん分かりやす",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "bg": "photo",
+   "kicker": "塩漬けが要る塩",
+   "big": "1",
+   "unit": "割",
+   "sub": "重さに対して",
+   "note": "塩が水を抱えて、菌に飲ませない",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Salt_sprinkled_on_fish_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "食べ物の中の水には、二種類あ",
+  "photo": true
+ },
+ {
+  "match": "干し椎茸は、水分が1割ほどま",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "水分の量（％）",
+   "title": "干すと、水が消える",
+   "bars": [
+    [
+     "干し椎茸",
+     10
+    ],
+    [
+     "生ゴミ",
+     80
+    ]
+   ],
+   "hot": 1,
+   "note": "同じ台所から出るものでも、これだけ違う"
+  }
+ },
+ {
+  "match": "じつは、環境省の資料では、家",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "source",
+   "bg": "photo",
+   "kicker": "出典",
+   "org": "環境省",
+   "asof": "一般廃棄物処理事業の資料",
+   "number": "8割",
+   "quote": "家庭から出る生ゴミは、重さのおよそ8割が水分",
+   "note": "餌ではなく、水を捨てていることになります",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Clogged_kitchen_sink_strainer_ba…_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり細菌にとって、三角コー",
+  "photo": true
+ },
+ {
+  "match": "白状しますと、私も長いあいだ",
+  "photo": true
+ },
+ {
+  "match": "夏の三角コーナーは、水を張っ",
+  "photo": true
+ },
+ {
+  "match": "では、水を抜けばよいのでしょ",
+  "photo": true
+ },
+ {
+  "match": "新聞紙を1枚、4つに折って広",
+  "photo": true
+ },
+ {
+  "match": "端から巻いて、口をねじる。輪",
+  "photo": true
+ },
+ {
+  "match": "新聞紙1枚で、だいたい大さじ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "bg": "photo",
+   "kicker": "新聞紙1枚が抱える水",
+   "big": "3",
+   "unit": "杯",
+   "sub": "大さじで",
+   "note": "木の繊維の隙間が吸い上げる",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Water_wicking_up_newsprint_paper_202608112155.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "チラシでもかまいませんが、つ",
+  "photo": true
+ },
+ {
+  "match": "もう一つ、効いていることがあ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "新聞紙のもう一つの仕事",
+   "title": "紙は光も止める",
+   "left": {
+    "label": "むき出しの三角コーナー",
+    "mark": "x",
+    "verdict": "中が温まる"
+   },
+   "right": {
+    "label": "新聞紙で包む",
+    "mark": "o",
+    "verdict": "光を通さない"
+   }
+  }
+ },
+ {
+  "match": "昔の魚屋さんが、魚を新聞紙で",
+  "photo": true
+ },
+ {
+  "match": "近所の魚屋のおじさんは、包み",
+  "photo": true
+ },
+ {
+  "match": "水を吸わせて、光を切る。冷蔵",
+  "photo": true
+ },
+ {
+  "match": "じつは、その匂わない家は、う",
+  "photo": true
+ },
+ {
+  "match": "去年の夏、思いきって聞いてみ",
+  "photo": true
+ },
+ {
+  "match": "隣の奥さんは、少し困った顔を",
+  "photo": true
+ },
+ {
+  "match": "何もしていない人の台所が匂わ",
+  "photo": true
+ },
+ {
+  "match": "ところが、これをやっても、匂",
+  "photo": true
+ },
+ {
+  "match": "二つ目の勘違い。洗えば止まる",
+  "photo": true
+ },
+ {
+  "match": "前の晩にきれいに洗った日ほど",
+  "photo": true
+ },
+ {
+  "match": "順番を思い出してみてください",
+  "photo": true
+ },
+ {
+  "match": "洗剤が落とすのは、細菌の一部",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "洗った翌朝ほど匂う理由",
+   "head": "洗剤が落とすのは細菌の一部だけ",
+   "pins": [
+    [
+     1280,
+     300,
+     "表面の水は残る"
+    ],
+    [
+     1280,
+     470,
+     "プールを張り替えただけ"
+    ]
+   ],
+   "arrows": [
+    [
+     1240,
+     350,
+     960,
+     440,
+     0.16
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Hands_scrubbing_plastic_sink_str…_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり、洗ったつもりで、細菌",
+  "photo": true
+ },
+ {
+  "match": "では、どうすればよいでしょう",
+  "photo": true
+ },
+ {
+  "match": "台所の酢を、水で3倍から4倍",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "酢のやり方",
+   "title": "洗ったあとを酸っぱく",
+   "steps": [
+    {
+     "label": "水で3〜4倍",
+     "sub": "台所の酢を薄める"
+    },
+    {
+     "label": "霧吹きで2、3回",
+     "sub": "コーナー・シンク・蓋の裏"
+    },
+    {
+     "label": "拭かずに乾かす",
+     "sub": "拭くと元に戻る",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Spray_bottle_with_vinegar_water_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "一つ、こつがあります。拭き取",
+  "photo": true
+ },
+ {
+  "match": "細菌が食べ物を分解するとき、",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "flow",
+   "bg": "photo",
+   "kicker": "なぜ酸が効くのか",
+   "head": "酵素は、酸っぱいと形が変わる",
+   "pins": [
+    [
+     1300,
+     310,
+     "分解の道具が鈍る"
+    ]
+   ],
+   "arrows": [
+    [
+     1260,
+     360,
+     1000,
+     460,
+     0.15
+    ]
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Hand_pressing_cucumber_in_bran_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "料理で酢を使うと日持ちがよく",
+  "photo": true
+ },
+ {
+  "match": "梅干しも、ぬか漬けも、同じ側",
+  "photo": true
+ },
+ {
+  "match": "一つだけ、大事なお願いがあり",
+  "photo": true
+ },
+ {
+  "match": "三つ目の勘違い。強い薬が要る",
+  "photo": true
+ },
+ {
+  "match": "台所の生ゴミに、重曹を小さじ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "bg": "photo",
+   "kicker": "振る量は",
+   "big": "1",
+   "unit": "杯",
+   "sub": "小さじで",
+   "note": "翌朝、目に見えて減っている",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Powder_sprinkled_on_vegetable_sc…_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "重曹は、水に溶けると弱いアル",
+  "photo": true
+ },
+ {
+  "match": "正反対の二つが、どちらも効く",
+  "photo": true
+ },
+ {
+  "match": "答えは、腐敗をおこす細菌の好",
+  "photo": true
+ },
+ {
+  "match": "つまり、敵は酸でもアルカリで",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "どちらへ振っても効く",
+   "title": "敵は、真ん中だった",
+   "left": {
+    "label": "酢＝酸性へ振る",
+    "mark": "o",
+    "verdict": "酵素が働きにくい"
+   },
+   "right": {
+    "label": "重曹・灰＝アルカリへ振る",
+    "mark": "o",
+    "verdict": "同じく住みにくい"
+   },
+   "note": "腐敗菌がいちばん育つのは、真ん中あたり"
+  }
+ },
+ {
+  "match": "これが分かると、昔の台所の風",
+  "photo": true
+ },
+ {
+  "match": "木の灰は、水に溶けるとアルカ",
+  "photo": true
+ },
+ {
+  "match": "どれくらい大事にされていたか",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "timeline",
+   "bg": "photo",
+   "kicker": "灰がたどった道",
+   "title": "灰に、値段が付いた",
+   "marks": [
+    [
+     "江戸",
+     "灰を売り買いする灰屋"
+    ],
+    [
+     "昭和",
+     "勝手口の灰箱"
+    ],
+    [
+     "今",
+     "1袋100円の重曹"
+    ]
+   ],
+   "note": "道具は消えたが、理屈は同じ",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Merchant_shop_with_goods_for_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "祖母の家の勝手口には、灰を入",
+  "photo": true
+ },
+ {
+  "match": "私は長いあいだ、あれを掃除に",
+  "photo": true
+ },
+ {
+  "match": "今の家にかまどはありませんか",
+  "photo": true
+ },
+ {
+  "match": "ところが、ここまでの三つを全",
+  "photo": true
+ },
+ {
+  "match": "ここまでご覧いただき、ありが",
+  "photo": true
+ },
+ {
+  "match": "四つ目の勘違い。蓋は、きっち",
+  "photo": true
+ },
+ {
+  "match": "夏の台所は、昼で30度を超え",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "bg": "photo",
+   "kicker": "夏の台所は",
+   "big": "20",
+   "unit": "分",
+   "sub": "で数が倍になる",
+   "note": "昼で30度を超えれば、朝の生ゴミは夕方には",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Closed_kitchen_bin_in_sunlight_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "そして、その温度をいちばん上",
+  "photo": true
+ },
+ {
+  "match": "蓋を閉めると、湿った空気が逃",
+  "photo": true
+ },
+ {
+  "match": "魚や肉の切れはし、とうもろこ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "bar",
+   "kicker": "菌の元気さ",
+   "title": "10度で、ほぼ止まる",
+   "bars": [
+    [
+     "夏の30度",
+     100
+    ],
+    [
+     "冷凍庫",
+     12
+    ]
+   ],
+   "hot": 0,
+   "note": "冷凍庫の中は、彼らにとって冬です"
+  }
+ },
+ {
+  "match": "10度を下回ると、多くの細菌",
+  "photo": true
+ },
+ {
+  "match": "冷たい場所に食べ物を置く工夫",
+  "photo": true
+ },
+ {
+  "match": "祖母の家では、西瓜を井戸のつ",
+  "photo": true
+ },
+ {
+  "match": "雪の多い土地には氷室があり、",
+  "photo": true
+ },
+ {
+  "match": "生ゴミを冷凍庫に入れるのは抵",
+  "photo": true
+ },
+ {
+  "match": "やってみて驚いたのは、匂いよ",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "同じ生ゴミでも",
+   "title": "密閉がいちばん臭い",
+   "left": {
+    "label": "空気が通る",
+    "mark": "o",
+    "verdict": "ほぼ匂わない"
+   },
+   "right": {
+    "label": "空気を抜いて密閉",
+    "mark": "x",
+    "verdict": "硫黄の匂い"
+   }
+  }
+ },
+ {
+  "match": "ところが、冷凍まで始めたのに",
+  "photo": true
+ },
+ {
+  "match": "五つ目の勘違い。空気を抜いて",
+  "photo": true
+ },
+ {
+  "match": "誰もがやっていることです。私",
+  "photo": true
+ },
+ {
+  "match": "酸素があるうちは、栄養はおお",
+  "photo": true
+ },
+ {
+  "match": "酸素がなくなると、彼らは硫黄",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "昔の畑のやり方",
+   "title": "切り返しは、匂い対策",
+   "steps": [
+    {
+     "label": "鍬を入れる",
+     "sub": "2週間に一度ほど"
+    },
+    {
+     "label": "上下をひっくり返す",
+     "sub": "空気を混ぜる"
+    },
+    {
+     "label": "土の匂いになる",
+     "sub": "放つと、あの匂い",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Farmer_turning_compost_with_hoe_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "つまり、密閉は匂いを閉じ込め",
+  "photo": true
+ },
+ {
+  "match": "だから、袋の口は、空気を抜か",
+  "photo": true
+ },
+ {
+  "match": "昔の畑では、これをずっと前か",
+  "photo": true
+ },
+ {
+  "match": "空気を入れた山は、土の匂いに",
+  "photo": true
+ },
+ {
+  "match": "ここまで、五つ。生ゴミではな",
+  "photo": true
+ },
+ {
+  "match": "五つとも本当です。ですが、匂",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "stat",
+   "bg": "photo",
+   "kicker": "ひと夏3000円を10年",
+   "big": "3",
+   "unit": "万円",
+   "sub": "消臭剤に消えた分",
+   "note": "新聞紙は、売り場に置けません",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Identical_spray_cans_on_shelf_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "では、なぜ誰も教えてくれなか",
+  "photo": true
+ },
+ {
+  "match": "新聞紙、酢、重曹。どれも家に",
+  "photo": true
+ },
+ {
+  "match": "売るものが、無いからです。",
+  "photo": true
+ },
+ {
+  "match": "消臭スプレーも、防臭袋も、専",
+  "photo": true
+ },
+ {
+  "match": "新聞紙は、売り場に置けません",
+  "photo": true
+ },
+ {
+  "match": "もう一つあります。安い方法は",
+  "photo": true
+ },
+ {
+  "match": "誰かが悪いという話ではありま",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "compare",
+   "kicker": "五つと、一つ",
+   "title": "手当て五つか、原因ひとつか",
+   "left": {
+    "label": "水を切る・酢・灰・冷やす・空気",
+    "mark": "x",
+    "verdict": "濡れたあとの手当て"
+   },
+   "right": {
+    "label": "最初から濡らさない",
+    "mark": "o",
+    "verdict": "手当ては要らない"
+   }
+  }
+ },
+ {
+  "match": "だから、こういう知恵は店では",
+  "photo": true
+ },
+ {
+  "match": "さて、いちばん最後に置いてお",
+  "photo": true
+ },
+ {
+  "match": "その家には、三角コーナーがあ",
+  "photo": true
+ },
+ {
+  "match": "あの夏の終わりに、台所を見せ",
+  "photo": true
+ },
+ {
+  "match": "シンクの隅に、あの水切りかご",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "process",
+   "bg": "photo",
+   "kicker": "濡らさない段取り",
+   "title": "水に触れる前に、紙の上へ",
+   "steps": [
+    {
+     "label": "切る前に紙を敷く",
+     "sub": "まな板の横に1枚"
+    },
+    {
+     "label": "皮やへたは紙の上",
+     "sub": "水に触れさせない"
+    },
+    {
+     "label": "そのまま包んで捨てる",
+     "sub": "シンクに一度も入らない",
+     "hot": true
+    }
+   ],
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Folded_newspaper_beside_cutting_…_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "野菜の皮は、包丁から離れたら",
+  "photo": true
+ },
+ {
+  "match": "「別に、何も」と言ったのは、",
+  "photo": true
+ },
+ {
+  "match": "シンクの隅にある、あの水切り",
+  "photo": true
+ },
+ {
+  "match": "水を切る。酢を吹く。灰を振る",
+  "photo": true
+ },
+ {
+  "match": "最初から濡らさなければ、手当",
+  "photo": true
+ },
+ {
+  "match": "やり方は、こうです。野菜を切",
+  "photo": true
+ },
+ {
+  "match": "シンクに、生ゴミが一度も入り",
+  "photo": true
+ },
+ {
+  "match": "道具も、費用も、洗い物も、い",
+  "photo": true
+ },
+ {
+  "match": "魚や肉のように、どうしても濡",
+  "photo": true
+ },
+ {
+  "match": "私がこれを試した夏、三角コー",
+  "photo": false,
+  "video": true,
+  "vox": {
+   "kind": "title",
+   "bg": "photo",
+   "kicker": "今日の一つ",
+   "title": "始めさせない",
+   "note": "匂いは、消すものではなかった",
+   "photo": "E:/Claude/Projects/youtube-jp-co-dai/06_VIDEO/18_namagomi-nioi/ai_clean/Empty_stainless_steel_kitchen_sink_202608112136.jpeg",
+   "photo_style": "darken"
+  }
+ },
+ {
+  "match": "昔の台所に三角コーナーが無か",
+  "photo": true
+ },
+ {
+  "match": "今日の話は、万能ではありませ",
+  "photo": true
+ },
+ {
+  "match": "家の造りも、家族の人数も、台",
+  "photo": true
+ },
+ {
+  "match": "それでも、一つだけ持ち帰って",
+  "photo": true
+ },
+ {
+  "match": "匂いは、消すものではなく、始",
+  "photo": true
+ },
+ {
+  "match": "問題は、消臭剤の強さではあり",
+  "photo": true
+ },
+ {
+  "match": "今夜、指でなぞった、あのぬる",
+  "photo": true
+ },
+ {
+  "match": "灰を使っていた、という方がい",
+  "photo": true
+ },
+ {
+  "match": "次に掘り起こす知恵には、もう",
+  "photo": true
+ },
+ {
+  "match": "古代の秘訣。今日も一つ、掘り",
+  "photo": true
+ }
+]

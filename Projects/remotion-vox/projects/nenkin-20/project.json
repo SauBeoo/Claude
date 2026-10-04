@@ -1,0 +1,2067 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-20",
+  "channel": "nenkin",
+  "templateRef": "nenkin",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "2026-09-03T00:00:00.000Z",
+  "modifiedAt": "2026-09-03T00:00:00.000Z"
+ },
+ "timeline": {
+  "durationInFrames": 25348
+ },
+ "sceneMarkers": [
+  {
+   "id": "sc-0",
+   "atFrame": 0,
+   "label": "届いたお知らせ"
+  },
+  {
+   "id": "sc-1",
+   "atFrame": 502,
+   "label": "年に六十三万円"
+  },
+  {
+   "id": "sc-2",
+   "atFrame": 687,
+   "label": "始まる歳なのに"
+  },
+  {
+   "id": "sc-3",
+   "atFrame": 871,
+   "label": "いつか必ず来ます"
+  },
+  {
+   "id": "sc-4",
+   "atFrame": 1068,
+   "label": "対象は、お勤めだったかた"
+  },
+  {
+   "id": "sc-5",
+   "atFrame": 1341,
+   "label": "なぜ、減るのか"
+  },
+  {
+   "id": "sc-6",
+   "atFrame": 1677,
+   "label": "四分の三"
+  },
+  {
+   "id": "sc-7",
+   "atFrame": 2185,
+   "label": "まず、事実から"
+  },
+  {
+   "id": "sc-8",
+   "atFrame": 2569,
+   "label": "年金は二階建て"
+  },
+  {
+   "id": "sc-9",
+   "atFrame": 3347,
+   "label": "どちらでしょうか"
+  },
+  {
+   "id": "sc-10",
+   "atFrame": 3576,
+   "label": "原典①・遺族厚生年金"
+  },
+  {
+   "id": "sc-11",
+   "atFrame": 4000,
+   "label": "つまり、二階だけ"
+  },
+  {
+   "id": "sc-12",
+   "atFrame": 4321,
+   "label": "ゼロになります"
+  },
+  {
+   "id": "sc-13",
+   "atFrame": 4909,
+   "label": "仙台の佐藤さん"
+  },
+  {
+   "id": "sc-14",
+   "atFrame": 5613,
+   "label": "仮に置いてみます"
+  },
+  {
+   "id": "sc-15",
+   "atFrame": 6243,
+   "label": "百八十万の四分の三"
+  },
+  {
+   "id": "sc-16",
+   "atFrame": 6704,
+   "label": "実際に計算されるのは"
+  },
+  {
+   "id": "sc-17",
+   "atFrame": 7107,
+   "label": "差は、年に六十万円"
+  },
+  {
+   "id": "sc-18",
+   "atFrame": 7335,
+   "label": "ご自身の分は、別"
+  },
+  {
+   "id": "sc-19",
+   "atFrame": 8187,
+   "label": "お子さんが小さいうちに"
+  },
+  {
+   "id": "sc-20",
+   "atFrame": 8895,
+   "label": "子の加算"
+  },
+  {
+   "id": "sc-21",
+   "atFrame": 9253,
+   "label": "お子さん、という言葉"
+  },
+  {
+   "id": "sc-22",
+   "atFrame": 9972,
+   "label": "受け取れる条件"
+  },
+  {
+   "id": "sc-23",
+   "atFrame": 10744,
+   "label": "受け取る順番"
+  },
+  {
+   "id": "sc-24",
+   "atFrame": 11347,
+   "label": "ひとつだけ、お願いです"
+  },
+  {
+   "id": "sc-25",
+   "atFrame": 12187,
+   "label": "六十五歳の段差"
+  },
+  {
+   "id": "sc-26",
+   "atFrame": 12550,
+   "label": "窓口まで行きました"
+  },
+  {
+   "id": "sc-27",
+   "atFrame": 13193,
+   "label": "中高齢寡婦加算"
+  },
+  {
+   "id": "sc-28",
+   "atFrame": 13803,
+   "label": "年に六十三万五千五百円"
+  },
+  {
+   "id": "sc-29",
+   "atFrame": 14248,
+   "label": "経過的寡婦加算"
+  },
+  {
+   "id": "sc-30",
+   "atFrame": 14685,
+   "label": "二十年の壁"
+  },
+  {
+   "id": "sc-31",
+   "atFrame": 15690,
+   "label": "ねんきん定期便で確かめる"
+  },
+  {
+   "id": "sc-32",
+   "atFrame": 16147,
+   "label": "三つ目です"
+  },
+  {
+   "id": "sc-33",
+   "atFrame": 16589,
+   "label": "増えるはずが"
+  },
+  {
+   "id": "sc-34",
+   "atFrame": 17036,
+   "label": "二つの計算で比べます"
+  },
+  {
+   "id": "sc-35",
+   "atFrame": 17833,
+   "label": "原典②・併給の調整"
+  },
+  {
+   "id": "sc-36",
+   "atFrame": 18343,
+   "label": "合計は、変わりません"
+  },
+  {
+   "id": "sc-37",
+   "atFrame": 18681,
+   "label": "そっくり相殺される"
+  },
+  {
+   "id": "sc-38",
+   "atFrame": 19129,
+   "label": "税金は、かかりません"
+  },
+  {
+   "id": "sc-39",
+   "atFrame": 19505,
+   "label": "改正の話"
+  },
+  {
+   "id": "sc-40",
+   "atFrame": 20020,
+   "label": "影響を受けません"
+  },
+  {
+   "id": "sc-41",
+   "atFrame": 20528,
+   "label": "新しく五年の期限"
+  },
+  {
+   "id": "sc-42",
+   "atFrame": 21353,
+   "label": "今日の研究ノート"
+  },
+  {
+   "id": "sc-43",
+   "atFrame": 22592,
+   "label": "確かめる三つ"
+  },
+  {
+   "id": "sc-44",
+   "atFrame": 23716,
+   "label": "ご判断の前に"
+  },
+  {
+   "id": "sc-45",
+   "atFrame": 24233,
+   "label": "次回・扶養親族等申告書"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-bg",
+   "name": "nen",
+   "type": "background",
+   "clips": [
+    {
+     "id": "bg",
+     "kind": "background",
+     "from": 0,
+     "durationInFrames": 25348,
+     "paper": "assets/paper.jpg",
+     "tint": "#F2EDE4",
+     "tintOpacity": 0.55
+    }
+   ]
+  },
+  {
+   "id": "trk-video",
+   "name": "footage",
+   "type": "video",
+   "clips": [
+    {
+     "id": "v-0-0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 185,
+     "asset": "assets/a20_todoku.mp4",
+     "fit": "cover",
+     "volume": 0
+    },
+    {
+     "id": "v-0-1",
+     "kind": "video",
+     "from": 167,
+     "durationInFrames": 185,
+     "asset": "assets/a20_hiraku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-0-2",
+     "kind": "video",
+     "from": 334,
+     "durationInFrames": 168,
+     "asset": "assets/a20_meutagau.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-2-0",
+     "kind": "video",
+     "from": 687,
+     "durationInFrames": 202,
+     "asset": "assets/a20_hazu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-3-0",
+     "kind": "video",
+     "from": 871,
+     "durationInFrames": 215,
+     "asset": "assets/a20_anata.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-4-0",
+     "kind": "video",
+     "from": 1068,
+     "durationInFrames": 155,
+     "asset": "assets/a20_taishou.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-4-1",
+     "kind": "video",
+     "from": 1205,
+     "durationInFrames": 154,
+     "asset": "assets/a20_taishou_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-5-0",
+     "kind": "video",
+     "from": 1341,
+     "durationInFrames": 186,
+     "asset": "assets/a20_naze.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-5-1",
+     "kind": "video",
+     "from": 1509,
+     "durationInFrames": 186,
+     "asset": "assets/a20_omoichigai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-6-0",
+     "kind": "video",
+     "from": 1677,
+     "durationInFrames": 188,
+     "asset": "assets/a20_yonbunno3.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-6-1",
+     "kind": "video",
+     "from": 1847,
+     "durationInFrames": 187,
+     "asset": "assets/a20_nanno.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-6-2",
+     "kind": "video",
+     "from": 2016,
+     "durationInFrames": 187,
+     "asset": "assets/a20_keisan.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-7-0",
+     "kind": "video",
+     "from": 2185,
+     "durationInFrames": 210,
+     "asset": "assets/a20_kenkyu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-7-1",
+     "kind": "video",
+     "from": 2377,
+     "durationInFrames": 210,
+     "asset": "assets/a20_kenkyu_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-0",
+     "kind": "video",
+     "from": 2569,
+     "durationInFrames": 212,
+     "asset": "assets/a20_nikaidate.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-1",
+     "kind": "video",
+     "from": 2763,
+     "durationInFrames": 213,
+     "asset": "assets/a20_ikkai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-2",
+     "kind": "video",
+     "from": 2958,
+     "durationInFrames": 212,
+     "asset": "assets/a20_nikai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-8-3",
+     "kind": "video",
+     "from": 3152,
+     "durationInFrames": 213,
+     "asset": "assets/a20_awaseta.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-9-0",
+     "kind": "video",
+     "from": 3347,
+     "durationInFrames": 247,
+     "asset": "assets/a20_dochira.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-10-0",
+     "kind": "video",
+     "from": 3576,
+     "durationInFrames": 159,
+     "asset": "assets/genten20_01.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-10-1",
+     "kind": "video",
+     "from": 3717,
+     "durationInFrames": 160,
+     "asset": "assets/genten20_02.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-10-2",
+     "kind": "video",
+     "from": 3859,
+     "durationInFrames": 159,
+     "asset": "assets/genten20_03.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-11-0",
+     "kind": "video",
+     "from": 4000,
+     "durationInFrames": 178,
+     "asset": "assets/a20_nikai_dake.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-11-1",
+     "kind": "video",
+     "from": 4160,
+     "durationInFrames": 179,
+     "asset": "assets/a20_ikkai_hairanai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-12-0",
+     "kind": "video",
+     "from": 4321,
+     "durationInFrames": 214,
+     "asset": "assets/a20_gokai_shin.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-12-1",
+     "kind": "video",
+     "from": 4517,
+     "durationInFrames": 214,
+     "asset": "assets/a20_zero.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-12-2",
+     "kind": "video",
+     "from": 4713,
+     "durationInFrames": 214,
+     "asset": "assets/a20_hikitsugarenai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-13-0",
+     "kind": "video",
+     "from": 4909,
+     "durationInFrames": 253,
+     "asset": "assets/a20_sato.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-13-1",
+     "kind": "video",
+     "from": 5144,
+     "durationInFrames": 253,
+     "asset": "assets/a20_sato_boutou.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-13-2",
+     "kind": "video",
+     "from": 5379,
+     "durationInFrames": 234,
+     "asset": "assets/a20_furikomi.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-0",
+     "kind": "video",
+     "from": 7335,
+     "durationInFrames": 231,
+     "asset": "assets/a20_jibun_kiso.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-1",
+     "kind": "video",
+     "from": 7548,
+     "durationInFrames": 231,
+     "asset": "assets/a20_mangaku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-2",
+     "kind": "video",
+     "from": 7761,
+     "durationInFrames": 231,
+     "asset": "assets/a20_chigau.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-18-3",
+     "kind": "video",
+     "from": 7974,
+     "durationInFrames": 231,
+     "asset": "assets/a20_chigau_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-19-0",
+     "kind": "video",
+     "from": 8187,
+     "durationInFrames": 254,
+     "asset": "assets/a20_kodomo.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-19-1",
+     "kind": "video",
+     "from": 8423,
+     "durationInFrames": 254,
+     "asset": "assets/a20_izoku_kiso.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-19-2",
+     "kind": "video",
+     "from": 8659,
+     "durationInFrames": 236,
+     "asset": "assets/a20_izoku_kiso_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-21-0",
+     "kind": "video",
+     "from": 9253,
+     "durationInFrames": 257,
+     "asset": "assets/a20_jyuhassai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-21-1",
+     "kind": "video",
+     "from": 9492,
+     "durationInFrames": 258,
+     "asset": "assets/a20_sotsugyou.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-21-2",
+     "kind": "video",
+     "from": 9732,
+     "durationInFrames": 258,
+     "asset": "assets/a20_kakei_kawaru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-22-0",
+     "kind": "video",
+     "from": 9972,
+     "durationInFrames": 275,
+     "asset": "assets/a20_seikei.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.932,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-22-1",
+     "kind": "video",
+     "from": 10229,
+     "durationInFrames": 276,
+     "asset": "assets/a20_happyakugojuu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.932,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-22-2",
+     "kind": "video",
+     "from": 10487,
+     "durationInFrames": 275,
+     "asset": "assets/a20_mikomi.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.932,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-23-0",
+     "kind": "video",
+     "from": 10744,
+     "durationInFrames": 219,
+     "asset": "assets/a20_junban.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-23-1",
+     "kind": "video",
+     "from": 10945,
+     "durationInFrames": 219,
+     "asset": "assets/a20_junban_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-23-2",
+     "kind": "video",
+     "from": 11146,
+     "durationInFrames": 219,
+     "asset": "assets/a20_saki_no_juni.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-24-0",
+     "kind": "video",
+     "from": 11347,
+     "durationInFrames": 228,
+     "asset": "assets/a20_cta.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-24-1",
+     "kind": "video",
+     "from": 11557,
+     "durationInFrames": 228,
+     "asset": "assets/a20_cta_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-24-2",
+     "kind": "video",
+     "from": 11767,
+     "durationInFrames": 228,
+     "asset": "assets/a20_cta_c.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-24-3",
+     "kind": "video",
+     "from": 11977,
+     "durationInFrames": 228,
+     "asset": "assets/a20_cta_d.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-25-0",
+     "kind": "video",
+     "from": 12187,
+     "durationInFrames": 199,
+     "asset": "assets/a20_dansa.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-25-1",
+     "kind": "video",
+     "from": 12368,
+     "durationInFrames": 200,
+     "asset": "assets/a20_dansa_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-26-0",
+     "kind": "video",
+     "from": 12550,
+     "durationInFrames": 232,
+     "asset": "assets/a20_madoguchi.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-26-1",
+     "kind": "video",
+     "from": 12764,
+     "durationInFrames": 233,
+     "asset": "assets/a20_kotae.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-26-2",
+     "kind": "video",
+     "from": 12979,
+     "durationInFrames": 232,
+     "asset": "assets/a20_owatta.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-27-0",
+     "kind": "video",
+     "from": 13193,
+     "durationInFrames": 221,
+     "asset": "assets/a20_kafu_kasan.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-27-1",
+     "kind": "video",
+     "from": 13396,
+     "durationInFrames": 222,
+     "asset": "assets/a20_yonjuu_rokujuugo.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-27-2",
+     "kind": "video",
+     "from": 13600,
+     "durationInFrames": 203,
+     "asset": "assets/a20_uwanose.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-29-0",
+     "kind": "video",
+     "from": 14248,
+     "durationInFrames": 237,
+     "asset": "assets/a20_keikateki.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-29-1",
+     "kind": "video",
+     "from": 14467,
+     "durationInFrames": 236,
+     "asset": "assets/a20_keikateki_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-30-0",
+     "kind": "video",
+     "from": 14685,
+     "durationInFrames": 269,
+     "asset": "assets/a20_mikkosare.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.955,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-30-1",
+     "kind": "video",
+     "from": 14936,
+     "durationInFrames": 269,
+     "asset": "assets/a20_nijuunen.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.955,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-30-2",
+     "kind": "video",
+     "from": 15187,
+     "durationInFrames": 270,
+     "asset": "assets/a20_tsukanai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.955,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-30-3",
+     "kind": "video",
+     "from": 15439,
+     "durationInFrames": 269,
+     "asset": "assets/a20_kekka_kawaru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.955,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-31-0",
+     "kind": "video",
+     "from": 15690,
+     "durationInFrames": 246,
+     "asset": "assets/a20_teikibin.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-31-1",
+     "kind": "video",
+     "from": 15918,
+     "durationInFrames": 247,
+     "asset": "assets/a20_riyuu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-32-0",
+     "kind": "video",
+     "from": 16147,
+     "durationInFrames": 239,
+     "asset": "assets/a20_mittsume.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-32-1",
+     "kind": "video",
+     "from": 16368,
+     "durationInFrames": 239,
+     "asset": "assets/a20_super.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-33-0",
+     "kind": "video",
+     "from": 16589,
+     "durationInFrames": 167,
+     "asset": "assets/a20_fueru.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-33-1",
+     "kind": "video",
+     "from": 16738,
+     "durationInFrames": 167,
+     "asset": "assets/a20_tedori.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-33-2",
+     "kind": "video",
+     "from": 16887,
+     "durationInFrames": 149,
+     "asset": "assets/a20_naranai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-35-0",
+     "kind": "video",
+     "from": 17833,
+     "durationInFrames": 273,
+     "asset": "assets/genten20_04.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-35-1",
+     "kind": "video",
+     "from": 18088,
+     "durationInFrames": 255,
+     "asset": "assets/genten20_05.png",
+     "fit": "cover",
+     "volume": 0,
+     "motion": "pan",
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-37-0",
+     "kind": "video",
+     "from": 18681,
+     "durationInFrames": 242,
+     "asset": "assets/a20_sousai.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-37-1",
+     "kind": "video",
+     "from": 18905,
+     "durationInFrames": 242,
+     "asset": "assets/a20_shirazu.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-38-0",
+     "kind": "video",
+     "from": 19129,
+     "durationInFrames": 206,
+     "asset": "assets/a20_zeikin.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-38-1",
+     "kind": "video",
+     "from": 19317,
+     "durationInFrames": 206,
+     "asset": "assets/a20_zeikin_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-39-0",
+     "kind": "video",
+     "from": 19505,
+     "durationInFrames": 276,
+     "asset": "assets/a20_kaisei.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.932,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-39-1",
+     "kind": "video",
+     "from": 19763,
+     "durationInFrames": 275,
+     "asset": "assets/a20_ochitsuite.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.932,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-40-0",
+     "kind": "video",
+     "from": 20020,
+     "durationInFrames": 272,
+     "asset": "assets/a20_eikyou_nashi.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.945,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-40-1",
+     "kind": "video",
+     "from": 20274,
+     "durationInFrames": 254,
+     "asset": "assets/a20_korekara.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.945,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-44-0",
+     "kind": "video",
+     "from": 23716,
+     "durationInFrames": 276,
+     "asset": "assets/a20_chuui.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.927,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-44-1",
+     "kind": "video",
+     "from": 23974,
+     "durationInFrames": 277,
+     "asset": "assets/a20_chuui_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "speed": 0.927,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-45-0",
+     "kind": "video",
+     "from": 24233,
+     "durationInFrames": 241,
+     "asset": "assets/a20_yokoku.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-45-1",
+     "kind": "video",
+     "from": 24456,
+     "durationInFrames": 241,
+     "asset": "assets/a20_takahashi_b.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-45-2",
+     "kind": "video",
+     "from": 24679,
+     "durationInFrames": 241,
+     "asset": "assets/a20_fuyo.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-45-3",
+     "kind": "video",
+     "from": 24902,
+     "durationInFrames": 241,
+     "asset": "assets/a20_hirogatta.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    },
+    {
+     "id": "v-45-4",
+     "kind": "video",
+     "from": 25125,
+     "durationInFrames": 223,
+     "asset": "assets/a20_mata.mp4",
+     "fit": "cover",
+     "volume": 0,
+     "fadeInFrames": 18
+    }
+   ]
+  },
+  {
+   "id": "trk-text",
+   "name": "so lieu",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t-1",
+     "kind": "text",
+     "from": 502,
+     "durationInFrames": 185,
+     "content": "減った分|年 63万円\nひと月あたり|5万3千円\n*それが起きたのが|65歳の誕生月",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 480,
+      "y": 409,
+      "w": 1150
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "t-14",
+     "kind": "text",
+     "from": 5613,
+     "durationInFrames": 630,
+     "content": "二階・報酬比例部分|年 100万円\n一階・老齢基礎年金|年 80万円\n*合わせて|年 180万円（月15万円）",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 446,
+      "y": 409,
+      "w": 1150
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "t-15",
+     "kind": "text",
+     "from": 6243,
+     "durationInFrames": 461,
+     "content": "180万円 × 3/4 ＝ 135万円",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 396,
+      "y": 478,
+      "w": 1150
+     },
+     "fontSize": 80
+    },
+    {
+     "id": "t-16",
+     "kind": "text",
+     "from": 6704,
+     "durationInFrames": 403,
+     "content": "100万円 × 3/4 ＝ 75万円",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 419,
+      "y": 478,
+      "w": 1150
+     },
+     "fontSize": 80
+    },
+    {
+     "id": "t-17-0",
+     "kind": "text",
+     "from": 7107,
+     "durationInFrames": 114,
+     "content": "135万円 − 75万円 ＝ 60万円",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 387,
+      "y": 471,
+      "w": 1150
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "t-17-1",
+     "kind": "text",
+     "from": 7221,
+     "durationInFrames": 114,
+     "content": "60万円 × 10年 ＝ 600万円",
+     "preset": "papercut-formula",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 400,
+      "y": 468,
+      "w": 1150
+     },
+     "fontSize": 80
+    },
+    {
+     "id": "t-20",
+     "kind": "text",
+     "from": 8895,
+     "durationInFrames": 358,
+     "content": "遺族基礎年金|年 84万7300円\n子 1人目・2人目|各 24万3800円\n*3人目から|8万1300円",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 469,
+      "y": 409,
+      "w": 1150
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "t-28",
+     "kind": "text",
+     "from": 13803,
+     "durationInFrames": 445,
+     "content": "中高齢寡婦加算|年 63万5500円\nひと月あたり|約 5万3000円\n*65歳で|終わる",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 488,
+      "y": 409,
+      "w": 1150
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "t-34",
+     "kind": "text",
+     "from": 17036,
+     "durationInFrames": 797,
+     "content": "① 報酬比例部分の|3/4\n② その3/4の2/3 ＋ 自分の老齢厚生年金の|1/2\n*大きいほうが|遺族厚生年金の額",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 438,
+      "y": 442,
+      "w": 1150
+     },
+     "fontSize": 42
+    },
+    {
+     "id": "t-36",
+     "kind": "text",
+     "from": 18343,
+     "durationInFrames": 338,
+     "content": "自分の厚生年金|＋1万円\n遺族厚生年金|−1万円\n*合計は|変わらず",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 582,
+      "y": 409,
+      "w": 1150
+     },
+     "fontSize": 56
+    },
+    {
+     "id": "t-41",
+     "kind": "text",
+     "from": 20528,
+     "durationInFrames": 825,
+     "content": "新しく5年の期限がつくのは|施行時40歳未満・子のいない女性\n見込み人数|年 およそ250人\n*男性は|55歳未満にも広がる",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 328,
+      "y": 447,
+      "w": 1150
+     },
+     "fontSize": 40
+    },
+    {
+     "id": "t-42",
+     "kind": "text",
+     "from": 21353,
+     "durationInFrames": 1239,
+     "content": "一 4分の3になるのは|夫の二階だけ\n二 自分の老齢基礎年金は|まるごと別に\n三 中高齢寡婦加算は|65歳で終わる\n四 自分の厚生年金が増えた分|遺族厚生年金が止まる\n*五 遺族年金に|税金はかからない",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 412,
+      "y": 385,
+      "w": 1150
+     },
+     "fontSize": 40
+    },
+    {
+     "id": "t-43",
+     "kind": "text",
+     "from": 22592,
+     "durationInFrames": 1124,
+     "content": "ひとつ 年金振込通知書の|「年金の種類」の欄\nふたつ 夫の厚生年金は|20年以上あったか\n*みっつ 自分の老齢厚生年金を|請求してあるか",
+     "preset": "papercut-stat",
+     "color": "#E0A32A",
+     "animation": "pop",
+     "animationParams": {
+      "restDeg": -1.5
+     },
+     "layout": {
+      "x": 429,
+      "y": 437,
+      "w": 1150
+     },
+     "fontSize": 44
+    }
+   ]
+  },
+  {
+   "id": "trk-voice",
+   "name": "giong",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "v",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 25348,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-bgm",
+   "name": "bgm",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "b0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 10914,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "b10914",
+     "kind": "audio",
+     "from": 10914,
+     "durationInFrames": 10914,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    },
+    {
+     "id": "b21828",
+     "kind": "audio",
+     "from": 21828,
+     "durationInFrames": 3520,
+     "asset": "assets/bgm.mp3",
+     "volume": 0.01,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "六十五歳の誕生月に、年金額のお知らせが届きます。",
+    "startMs": 0,
+    "endMs": 4811
+   },
+   {
+    "text": "ご主人を早くに亡くされた女性が、その紙を開いて、目を疑いました。",
+    "startMs": 5411,
+    "endMs": 11235
+   },
+   {
+    "text": "年金が、増えるどころか、減っていたんです。",
+    "startMs": 11835,
+    "endMs": 15717
+   },
+   {
+    "text": "年に、六十三万円。月にすると、五万三千円ほど。",
+    "startMs": 16717,
+    "endMs": 22307
+   },
+   {
+    "text": "六十五歳は、年金が始まる歳です。それなのに、減る。",
+    "startMs": 22907,
+    "endMs": 28421
+   },
+   {
+    "text": "あなたが遺族年金を受け取っていらっしゃるなら、この段差は、いつか必ず来ます。",
+    "startMs": 29021,
+    "endMs": 35016
+   },
+   {
+    "text": "対象は、ご主人が会社にお勤めだったかた。これから受け取るかただけでなく、いま受け取っているかたも同じです。",
+    "startMs": 35616,
+    "endMs": 44107
+   },
+   {
+    "text": "なぜ、減るのか。それは今日、はっきりお話しします。",
+    "startMs": 44707,
+    "endMs": 49528
+   },
+   {
+    "text": "ただ、その前に。もっと大きな思い違いが、ひとつあります。",
+    "startMs": 50128,
+    "endMs": 55312
+   },
+   {
+    "text": "夫の年金の、四分の三。よく聞く言葉ですね。",
+    "startMs": 55912,
+    "endMs": 60381
+   },
+   {
+    "text": "この四分の三は、いったい、何の四分の三なのでしょうか。",
+    "startMs": 61281,
+    "endMs": 66380
+   },
+   {
+    "text": "ここを取り違えたまま老後の計算をされているかたが、とても多いんです。",
+    "startMs": 66980,
+    "endMs": 72228
+   },
+   {
+    "text": "まず、事実から。",
+    "startMs": 72828,
+    "endMs": 74780
+   },
+   {
+    "text": "年金と老後のお金研究室です。今日も、日本年金機構の原典を画面で開きながら、一緒に確かめていきます。",
+    "startMs": 75380,
+    "endMs": 85033
+   },
+   {
+    "text": "日本の年金は、二階建てだと言われます。",
+    "startMs": 85633,
+    "endMs": 89143
+   },
+   {
+    "text": "一階が、老齢基礎年金。二十歳から六十歳まで納めた期間で決まる部分です。",
+    "startMs": 89743,
+    "endMs": 96825
+   },
+   {
+    "text": "二階が、老齢厚生年金。会社にお勤めだったかたが、給料に応じて上乗せされる部分。",
+    "startMs": 97425,
+    "endMs": 105223
+   },
+   {
+    "text": "ご主人が受け取っていた年金は、この一階と二階を足したものでした。",
+    "startMs": 105823,
+    "endMs": 110953
+   },
+   {
+    "text": "では、亡くなったあと、遺族厚生年金として四分の三になるのは、どちらでしょうか。",
+    "startMs": 111553,
+    "endMs": 118604
+   },
+   {
+    "text": "こちらが、日本年金機構のページです。赤で囲んだところを、ご覧ください。",
+    "startMs": 119204,
+    "endMs": 125711
+   },
+   {
+    "text": "亡くなられたかたの老齢厚生年金の、報酬比例部分の、四分の三。",
+    "startMs": 126311,
+    "endMs": 132327
+   },
+   {
+    "text": "報酬比例部分。つまり、二階だけです。",
+    "startMs": 133327,
+    "endMs": 137668
+   },
+   {
+    "text": "一階の老齢基礎年金は、この計算に、入っていません。",
+    "startMs": 138468,
+    "endMs": 143428
+   },
+   {
+    "text": "そして、ここが誤解の芯にあたる部分です。ご主人の一階部分は、四分の三になるのではありません。",
+    "startMs": 144028,
+    "endMs": 152199
+   },
+   {
+    "text": "ゼロになります。",
+    "startMs": 153099,
+    "endMs": 154464
+   },
+   {
+    "text": "ご主人が亡くなられた時点で、そのかたの老齢基礎年金は、そこで終わります。誰にも引き継がれません。",
+    "startMs": 155064,
+    "endMs": 163021
+   },
+   {
+    "text": "数字で見たほうが早いですね。仙台の佐藤さん、六十六歳。ご主人を早くに亡くされたかたです。",
+    "startMs": 163621,
+    "endMs": 171696
+   },
+   {
+    "text": "冒頭で、六十五歳の通知を開いて目を疑った女性。あれが、佐藤さんです。",
+    "startMs": 172496,
+    "endMs": 179333
+   },
+   {
+    "text": "今日は、佐藤さんが毎年受け取っている、年金振込通知書を見ながら進めます。",
+    "startMs": 179933,
+    "endMs": 186515
+   },
+   {
+    "text": "ご主人が生きていらしたら、受け取っていたはずの年金を、仮に置いてみます。二階の報酬比例部分が、年に百万円。一階の基礎年金が、年に八十万円。",
+    "startMs": 187115,
+    "endMs": 200683
+   },
+   {
+    "text": "合わせて、年に百八十万円。月にすると、十五万円ほどですね。",
+    "startMs": 201283,
+    "endMs": 207501
+   },
+   {
+    "text": "さて。この百八十万円の四分の三は、いくらでしょうか。",
+    "startMs": 208101,
+    "endMs": 213264
+   },
+   {
+    "text": "百三十五万円です。月に、十一万二千五百円。",
+    "startMs": 213864,
+    "endMs": 218888
+   },
+   {
+    "text": "多くのかたが、この数字を思い浮かべます。",
+    "startMs": 219488,
+    "endMs": 222869
+   },
+   {
+    "text": "ですが、実際に計算されるのは、二階の百万円だけ。",
+    "startMs": 223469,
+    "endMs": 228483
+   },
+   {
+    "text": "その四分の三で、七十五万円。月にすると、六万二千五百円です。",
+    "startMs": 229083,
+    "endMs": 235696
+   },
+   {
+    "text": "差は、年に六十万円。",
+    "startMs": 236896,
+    "endMs": 239755
+   },
+   {
+    "text": "十年で、六百万円になります。",
+    "startMs": 240755,
+    "endMs": 243891
+   },
+   {
+    "text": "もちろん、佐藤さんご自身の老齢基礎年金は、別に受け取れます。それは、佐藤さんが納めてこられた分ですから、なくなりません。",
+    "startMs": 244491,
+    "endMs": 255093
+   },
+   {
+    "text": "令和八年度の満額で、年に八十四万七千三百円。",
+    "startMs": 255693,
+    "endMs": 260824
+   },
+   {
+    "text": "ですから、生活が成り立たなくなる、という話ではないんです。ただ、思っていた額とは違う。そこは、先に知っておいたほうがいい。",
+    "startMs": 261424,
+    "endMs": 272293
+   },
+   {
+    "text": "それから、お子さんが小さいうちに、ご主人を亡くされたかた。このかたには、もうひとつ、一階の年金が出ます。",
+    "startMs": 272893,
+    "endMs": 282067
+   },
+   {
+    "text": "遺族基礎年金です。",
+    "startMs": 282667,
+    "endMs": 284395
+   },
+   {
+    "text": "こちらは、お子さんがいらっしゃる配偶者か、お子さんご本人だけが対象になります。令和八年度で、年に八十四万七千三百円。",
+    "startMs": 284995,
+    "endMs": 295885
+   },
+   {
+    "text": "そこに、お子さんの加算がつきます。ひとり目とふたり目が、それぞれ年に二十四万三千八百円。三人目からは、八万千三百円。",
+    "startMs": 296485,
+    "endMs": 307824
+   },
+   {
+    "text": "ただし、お子さんという言葉には、決まった意味があります。十八歳になった年度の、三月三十一日まで。障害のあるお子さんなら、二十歳未満まで。",
+    "startMs": 308424,
+    "endMs": 320936
+   },
+   {
+    "text": "ですから、お子さんが高校を卒業される年の春に、この一階部分は終わります。そこで、家計が変わるかたが、多いんです。",
+    "startMs": 321536,
+    "endMs": 331787
+   },
+   {
+    "text": "もうひとつ。受け取れるかどうかを分ける条件も、確かめておきましょう。",
+    "startMs": 332387,
+    "endMs": 337752
+   },
+   {
+    "text": "ご主人が亡くなられた当時、生計を同じくしていたこと。そして、ご自身の年収が、原則として八百五十万円未満であること。",
+    "startMs": 338352,
+    "endMs": 348987
+   },
+   {
+    "text": "八百五十万円を超えていても、数年のうちに下回る見込みがあるかたは、対象になる場合があります。",
+    "startMs": 349587,
+    "endMs": 357544
+   },
+   {
+    "text": "そして、受け取る順番も決まっています。お子さんのいる配偶者が最初。次に、お子さん。そのあとに、お子さんのいない配偶者、父母、孫、祖父母と続きます。",
+    "startMs": 358144,
+    "endMs": 372032
+   },
+   {
+    "text": "先の順位のかたがいらっしゃると、あとの順位のかたには回りません。",
+    "startMs": 372632,
+    "endMs": 377624
+   },
+   {
+    "text": "ここで、ひとつだけお願いです。今日の内容が分かりやすいと感じていただけたら、高評価と、",
+    "startMs": 378224,
+    "endMs": 385500
+   },
+   {
+    "text": "同じように年金が気になるご家族やご友人へのシェアで、この研究室を応援していただけると嬉しいです。",
+    "startMs": 385500,
+    "endMs": 393623
+   },
+   {
+    "text": "ご感想や、調べてほしいテーマがあれば、ぜひコメントでお寄せください。皆さまの声が、次の研究テーマになります。",
+    "startMs": 393623,
+    "endMs": 402760
+   },
+   {
+    "text": "それでは、続きを見ていきましょう。",
+    "startMs": 402760,
+    "endMs": 405637
+   },
+   {
+    "text": "さて。ここから、もうひとつの話をします。六十五歳の段差です。",
+    "startMs": 406237,
+    "endMs": 412093
+   },
+   {
+    "text": "佐藤さんは、六十五歳になった年に、年金が減りました。",
+    "startMs": 412693,
+    "endMs": 417728
+   },
+   {
+    "text": "「何か出し忘れた紙があるんじゃないかと思って、通帳を持って窓口まで行きました」。ご本人は、そうおっしゃっていたそうです。",
+    "startMs": 418328,
+    "endMs": 427480
+   },
+   {
+    "text": "窓口の答えは、こうでした。手続きの漏れではありません、と。",
+    "startMs": 428280,
+    "endMs": 433720
+   },
+   {
+    "text": "そうではありません。制度どおりに、終わったものがあったんです。",
+    "startMs": 434320,
+    "endMs": 439163
+   },
+   {
+    "text": "中高齢寡婦加算といいます。",
+    "startMs": 439763,
+    "endMs": 441992
+   },
+   {
+    "text": "ご主人を亡くされたとき、四十歳以上六十五歳未満で、お子さんがいらっしゃらないかた。あるいは、お子さんが大きくなって遺族基礎年金が終わったかた。",
+    "startMs": 442592,
+    "endMs": 454197
+   },
+   {
+    "text": "そういうかたに、六十五歳になるまで上乗せされる加算です。",
+    "startMs": 454797,
+    "endMs": 459512
+   },
+   {
+    "text": "令和八年度で、年に六十三万五千五百円。月にすると、五万三千円ほど。",
+    "startMs": 460112,
+    "endMs": 467525
+   },
+   {
+    "text": "決して小さくありません。そして、これが六十五歳で、すっと終わります。",
+    "startMs": 468125,
+    "endMs": 474344
+   },
+   {
+    "text": "生年月日によっては、経過的寡婦加算という形で一部が続くこともありますが、額は下がります。こちらは、昭和三十一年四月一日より前にお生まれのかたが対象です。",
+    "startMs": 474944,
+    "endMs": 488896
+   },
+   {
+    "text": "それから、この加算には、見落とされやすい条件がひとつあります。",
+    "startMs": 489496,
+    "endMs": 494712
+   },
+   {
+    "text": "ご主人が、老齢厚生年金を受け取れる立場で亡くなられた場合。このときは、ご主人の厚生年金の加入期間が、",
+    "startMs": 495312,
+    "endMs": 504072
+   },
+   {
+    "text": "二十年以上あったかどうかで、加算のつくつかないが変わります。",
+    "startMs": 504072,
+    "endMs": 509328
+   },
+   {
+    "text": "二十年に足りないと、この六十三万円は、つきません。同じように四十代で夫を亡くされても、ご主人の勤め先での年数で、結果が変わってしまう。",
+    "startMs": 509928,
+    "endMs": 522397
+   },
+   {
+    "text": "ご自身が対象かどうかは、ねんきん定期便やねんきんネットで、ご主人の加入月数を確かめるのが早道です。",
+    "startMs": 522997,
+    "endMs": 531467
+   },
+   {
+    "text": "六十五歳で年金が減った。その理由の多くは、ここにあります。",
+    "startMs": 532067,
+    "endMs": 537635
+   },
+   {
+    "text": "そして、三つ目です。ここがいちばん、知られていないところかもしれません。",
+    "startMs": 538235,
+    "endMs": 544133
+   },
+   {
+    "text": "佐藤さんは、六十六歳のいまも、スーパーでお仕事を続けていらっしゃいます。野菜の売り場です。",
+    "startMs": 544733,
+    "endMs": 552360
+   },
+   {
+    "text": "働いた分、ご自身の老齢厚生年金も、少しずつ増えていきます。",
+    "startMs": 552960,
+    "endMs": 558731
+   },
+   {
+    "text": "増えた分は、そのまま手取りが増える。そう思われますよね。",
+    "startMs": 559331,
+    "endMs": 563960
+   },
+   {
+    "text": "ところが、そうならないんです。",
+    "startMs": 564860,
+    "endMs": 567260
+   },
+   {
+    "text": "六十五歳を過ぎると、まず、遺族厚生年金の額そのものを、二つの計算で比べます。",
+    "startMs": 567860,
+    "endMs": 575465
+   },
+   {
+    "text": "ひとつは、いま申し上げた、報酬比例部分の四分の三。",
+    "startMs": 576065,
+    "endMs": 580972
+   },
+   {
+    "text": "もうひとつは、その四分の三の三分の二に、ご自身の老齢厚生年金の二分の一を足したもの。",
+    "startMs": 581572,
+    "endMs": 589348
+   },
+   {
+    "text": "大きいほうが、遺族厚生年金の額になります。",
+    "startMs": 589948,
+    "endMs": 593841
+   },
+   {
+    "text": "そのうえで、こう決まっています。日本年金機構のページ、赤で囲んだところです。",
+    "startMs": 594441,
+    "endMs": 601300
+   },
+   {
+    "text": "老齢厚生年金は全額支給となり、遺族厚生年金は、老齢厚生年金に相当する額が支給停止。",
+    "startMs": 601900,
+    "endMs": 610849
+   },
+   {
+    "text": "つまり、ご自身の厚生年金が一万円増えたら、遺族厚生年金が一万円止まる。",
+    "startMs": 611449,
+    "endMs": 618521
+   },
+   {
+    "text": "合計は、変わりません。",
+    "startMs": 619321,
+    "endMs": 621689
+   },
+   {
+    "text": "働いて増やしたはずの分が、そっくり相殺される。そういう作りになっています。",
+    "startMs": 622689,
+    "endMs": 629441
+   },
+   {
+    "text": "ここを知らないまま、年金を増やすつもりで働きかたを決めると、思っていた結果になりません。",
+    "startMs": 630041,
+    "endMs": 637049
+   },
+   {
+    "text": "なお、遺族年金そのものには、所得税も相続税もかかりません。国税庁が、そう示しています。ここは、安心していただいて大丈夫です。",
+    "startMs": 637649,
+    "endMs": 649575
+   },
+   {
+    "text": "最後に、改正の話にも触れておきます。",
+    "startMs": 650175,
+    "endMs": 653705
+   },
+   {
+    "text": "令和七年に成立した法律で、遺族厚生年金の仕組みが変わります。施行は、令和十年の四月です。",
+    "startMs": 654305,
+    "endMs": 663084
+   },
+   {
+    "text": "ただし、ここは落ち着いて聞いてください。",
+    "startMs": 663684,
+    "endMs": 666745
+   },
+   {
+    "text": "いま受け取っていらっしゃるかたは、影響を受けません。厚生労働省が、はっきりそう書いています。",
+    "startMs": 667345,
+    "endMs": 674961
+   },
+   {
+    "text": "六十歳を過ぎて権利が発生するかたも、これまでどおりです。お子さんを育てているかたも、変わりません。",
+    "startMs": 675561,
+    "endMs": 683679
+   },
+   {
+    "text": "新しく五年の期限がつくのは、施行の時点で四十歳より若い、お子さんのいない女性のかた。人数にして、年に二百五十人ほどと見込まれています。",
+    "startMs": 684279,
+    "endMs": 696044
+   },
+   {
+    "text": "そして男性のかたは、これまで五十五歳未満だと受け取れませんでしたが、そこが広がります。",
+    "startMs": 696644,
+    "endMs": 703769
+   },
+   {
+    "text": "ですから、この改正を、遺族年金が打ち切られる、と受け取る必要はありません。",
+    "startMs": 704369,
+    "endMs": 711153
+   },
+   {
+    "text": "それでは、今日の研究ノートです。",
+    "startMs": 711753,
+    "endMs": 714623
+   },
+   {
+    "text": "一。四分の三になるのは、ご主人の二階部分、報酬比例部分だけ。一階の老齢基礎年金は、引き継がれない。",
+    "startMs": 715223,
+    "endMs": 725281
+   },
+   {
+    "text": "二。ご自身の老齢基礎年金は、別に、まるごと受け取れる。",
+    "startMs": 725881,
+    "endMs": 731215
+   },
+   {
+    "text": "三。中高齢寡婦加算は、六十五歳で終わる。年金が減るのは、多くの場合これが理由。",
+    "startMs": 731815,
+    "endMs": 739708
+   },
+   {
+    "text": "四。六十五歳以降は、ご自身の厚生年金が増えた分だけ、遺族厚生年金が止まる。",
+    "startMs": 740308,
+    "endMs": 748137
+   },
+   {
+    "text": "五。遺族年金に、税金はかからない。",
+    "startMs": 748737,
+    "endMs": 752460
+   },
+   {
+    "text": "最後に、三つだけ、確かめてみてください。",
+    "startMs": 753060,
+    "endMs": 756911
+   },
+   {
+    "text": "ひとつ。年金振込通知書の、年金の種類の欄。遺族厚生年金と、ご自身の老齢基礎年金が、別々に書かれていますか。",
+    "startMs": 757511,
+    "endMs": 768732
+   },
+   {
+    "text": "ふたつ。ご主人の厚生年金の加入期間は、二十年以上ありましたか。ここで、加算のつくかつかないかが変わります。",
+    "startMs": 769332,
+    "endMs": 778740
+   },
+   {
+    "text": "みっつ。ご自身の老齢厚生年金を、まだ請求されていないかたはいませんか。請求していないと、そもそも計算が始まりません。",
+    "startMs": 779340,
+    "endMs": 789921
+   },
+   {
+    "text": "なお、今日の内容は、令和八年八月時点の情報です。金額は年度ごとに改定されますし、実際の額は加入記録によって一人ひとり違います。",
+    "startMs": 790521,
+    "endMs": 802719
+   },
+   {
+    "text": "ご判断の前に、必ず年金事務所でご確認ください。",
+    "startMs": 802719,
+    "endMs": 807172
+   },
+   {
+    "text": "さて、次回です。",
+    "startMs": 807772,
+    "endMs": 809639
+   },
+   {
+    "text": "東京の高橋さん、六十五歳。毎年、秋になると、一通の封筒が届くかたです。",
+    "startMs": 810239,
+    "endMs": 818153
+   },
+   {
+    "text": "扶養親族等申告書。この紙を出すか出さないかで、年金から引かれる税金が変わります。",
+    "startMs": 818753,
+    "endMs": 825964
+   },
+   {
+    "text": "そして今年、この紙が届く人の範囲が、大きく広がりました。これまで一度も受け取ったことのないかたにも、届きます。",
+    "startMs": 826864,
+    "endMs": 836837
+   },
+   {
+    "text": "次回の研究で、一緒に確かめます。",
+    "startMs": 837437,
+    "endMs": 840808
+   },
+   {
+    "text": "それでは、また次回の研究でお会いしましょう。",
+    "startMs": 841408,
+    "endMs": 844939
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F2EDE4"
+ }
+}

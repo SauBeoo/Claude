@@ -1,0 +1,18 @@
+# dong FLOW -> ten file luu vao 06_VIDEO/01_teinengo-kurashi-7chigai/img_sono1/ (Nano Banana / Flow, xoa watermark ✦ ca lo truoc khi dung)
+01 -> A_left.png
+02 -> B_right.png
+03 -> 01_tie.png
+04 -> 02_gate.png
+05 -> 03_closet.png
+06 -> 04_sofa.png
+07 -> 05_dusk.png
+08 -> 06_dress.png
+09 -> 07_door.png
+10 -> 08_mailbox.png
+11 -> 09_porch.png
+12 -> 10_hall.png
+
+# NHAN LO 1 (2026-10-01, zip "Thang 10 01 - 21_14"): 13 anh -> dung 12, cat ✦ o 0,905W + trim 16:9 chia doi tren/duoi
+# ✦ cung vi tri ca lo (~0,929W x 0,874H, ban kinh ~25px). Soi 1:1 ca 4 goc ban cat: sach 12/12.
+# LOAI: Man_watering_potted_plants (dai pho ghep o mep phai ~0,74W) -> 07_door dung Man_watering_plants_at_home
+# CO Y NHAN: 04_sofa to bao tren ban o goc duoi-phai co vet in li ti (manh o ria, khong doc duoc) · 02_gate bien tran nha mo

@@ -1,0 +1,490 @@
+{
+ "measured_utc": "2026-08-26T07:37:22.789845",
+ "channels": [
+  {
+   "group": "chouhen",
+   "name": "嫁子のスカッと朗読劇場【スカッとする話】",
+   "cid": "UCYASX2PAaV_7aEX6EPpP8Dg",
+   "sub": 233000,
+   "n_long": 50,
+   "span_days": 40,
+   "hours": {
+    "1": {
+     "n": 1,
+     "med_view": 6481,
+     "med_vpd": 6481.0,
+     "med_age": 1.0
+    },
+    "12": {
+     "n": 41,
+     "med_view": 33073,
+     "med_vpd": 1891.2,
+     "med_age": 21.2
+    },
+    "13": {
+     "n": 1,
+     "med_view": 28066,
+     "med_vpd": 873.0,
+     "med_age": 32.2
+    },
+    "18": {
+     "n": 4,
+     "med_view": 22958,
+     "med_vpd": 1142.9,
+     "med_age": 20.9
+    },
+    "19": {
+     "n": 2,
+     "med_view": 37380,
+     "med_vpd": 1018.2,
+     "med_age": 35.4
+    },
+    "20": {
+     "n": 1,
+     "med_view": 32623,
+     "med_vpd": 861.7,
+     "med_age": 37.9
+    }
+   },
+   "usable_hours": [
+    12,
+    18
+   ]
+  },
+  {
+   "group": "chouhen",
+   "name": "苦しみの物語【スカッとする話】",
+   "cid": "UC-EgddGPbeKgbZKERv1XTXA",
+   "sub": 2770,
+   "n_long": 50,
+   "span_days": 17,
+   "hours": {
+    "7": {
+     "n": 18,
+     "med_view": 2573,
+     "med_vpd": 529.5,
+     "med_age": 8.9
+    },
+    "9": {
+     "n": 17,
+     "med_view": 2364,
+     "med_vpd": 621.0,
+     "med_age": 9.3
+    },
+    "11": {
+     "n": 1,
+     "med_view": 2684,
+     "med_vpd": 1201.5,
+     "med_age": 2.2
+    },
+    "18": {
+     "n": 14,
+     "med_view": 3207,
+     "med_vpd": 554.8,
+     "med_age": 7.4
+    }
+   },
+   "usable_hours": [
+    7,
+    9,
+    18
+   ]
+  },
+  {
+   "group": "chouhen",
+   "name": "毎日スカッと",
+   "cid": "UCr06YgwC3IQp_x0qxsy3hwA",
+   "sub": 26200,
+   "n_long": 50,
+   "span_days": 33,
+   "hours": {
+    "6": {
+     "n": 16,
+     "med_view": 63167,
+     "med_vpd": 8885.3,
+     "med_age": 7.9
+    },
+    "8": {
+     "n": 1,
+     "med_view": 148086,
+     "med_vpd": 6082.9,
+     "med_age": 24.3
+    },
+    "11": {
+     "n": 11,
+     "med_view": 65796,
+     "med_vpd": 5245.2,
+     "med_age": 7.2
+    },
+    "12": {
+     "n": 3,
+     "med_view": 88613,
+     "med_vpd": 13530.3,
+     "med_age": 5.2
+    },
+    "15": {
+     "n": 2,
+     "med_view": 138197,
+     "med_vpd": 5757.5,
+     "med_age": 23.6
+    },
+    "18": {
+     "n": 14,
+     "med_view": 38424,
+     "med_vpd": 4336.4,
+     "med_age": 8.4
+    },
+    "19": {
+     "n": 3,
+     "med_view": 89990,
+     "med_vpd": 3707.2,
+     "med_age": 19.9
+    }
+   },
+   "usable_hours": [
+    6,
+    11,
+    12,
+    18,
+    19
+   ]
+  },
+  {
+   "group": "chouhen",
+   "name": "語り茶屋",
+   "cid": "UCdRX0G2uAsqWvgCErQcdCqg",
+   "sub": 6720,
+   "n_long": 40,
+   "span_days": 67,
+   "hours": {
+    "6": {
+     "n": 7,
+     "med_view": 10491,
+     "med_vpd": 1163.3,
+     "med_age": 11.4
+    },
+    "9": {
+     "n": 3,
+     "med_view": 15449,
+     "med_vpd": 704.2,
+     "med_age": 24.3
+    },
+    "10": {
+     "n": 1,
+     "med_view": 9793,
+     "med_vpd": 211.6,
+     "med_age": 46.3
+    },
+    "11": {
+     "n": 11,
+     "med_view": 18925,
+     "med_vpd": 784.9,
+     "med_age": 19.2
+    },
+    "12": {
+     "n": 1,
+     "med_view": 43149,
+     "med_vpd": 729.1,
+     "med_age": 59.2
+    },
+    "17": {
+     "n": 4,
+     "med_view": 15092,
+     "med_vpd": 2170.6,
+     "med_age": 12.9
+    },
+    "18": {
+     "n": 12,
+     "med_view": 38308,
+     "med_vpd": 1224.1,
+     "med_age": 45.4
+    },
+    "19": {
+     "n": 1,
+     "med_view": 154279,
+     "med_vpd": 2452.8,
+     "med_age": 62.9
+    }
+   },
+   "usable_hours": [
+    6,
+    9,
+    11,
+    17,
+    18
+   ]
+  },
+  {
+   "group": "chouhen",
+   "name": "孤独な桜の木",
+   "cid": "UC8oKWtvsFdR1vLSWRKIEiDA",
+   "sub": 4240,
+   "n_long": 50,
+   "span_days": 16,
+   "hours": {
+    "5": {
+     "n": 17,
+     "med_view": 6445,
+     "med_vpd": 1761.3,
+     "med_age": 8.5
+    },
+    "13": {
+     "n": 17,
+     "med_view": 3865,
+     "med_vpd": 610.2,
+     "med_age": 8.2
+    },
+    "18": {
+     "n": 16,
+     "med_view": 3090,
+     "med_vpd": 721.1,
+     "med_age": 8.4
+    }
+   },
+   "usable_hours": [
+    5,
+    13,
+    18
+   ]
+  },
+  {
+   "group": "co-dai",
+   "name": "昔の人の知恵",
+   "cid": "UCYJ2D_D1q7_sYGorIB2_6iA",
+   "sub": 15200,
+   "n_long": 32,
+   "span_days": 62,
+   "hours": {
+    "11": {
+     "n": 23,
+     "med_view": 9988,
+     "med_vpd": 1188.4,
+     "med_age": 24.2
+    },
+    "12": {
+     "n": 2,
+     "med_view": 1478,
+     "med_vpd": 102.3,
+     "med_age": 15.2
+    },
+    "13": {
+     "n": 4,
+     "med_view": 115855,
+     "med_vpd": 5626.6,
+     "med_age": 37.1
+    },
+    "15": {
+     "n": 2,
+     "med_view": 24086,
+     "med_vpd": 422.6,
+     "med_age": 30.5
+    },
+    "18": {
+     "n": 1,
+     "med_view": 14956,
+     "med_vpd": 468.2,
+     "med_age": 31.9
+    }
+   },
+   "usable_hours": [
+    11,
+    13
+   ]
+  },
+  {
+   "group": "co-dai",
+   "name": "驚きの世界",
+   "cid": "UCRtqwdwjc-5M9lqEIUa-kGg",
+   "sub": 1670,
+   "n_long": 19,
+   "span_days": 58,
+   "hours": {
+    "10": {
+     "n": 2,
+     "med_view": 308,
+     "med_vpd": 20.6,
+     "med_age": 15.2
+    },
+    "11": {
+     "n": 4,
+     "med_view": 2053,
+     "med_vpd": 35.4,
+     "med_age": 36.2
+    },
+    "12": {
+     "n": 2,
+     "med_view": 8656,
+     "med_vpd": 135.7,
+     "med_age": 65.7
+    },
+    "18": {
+     "n": 2,
+     "med_view": 110,
+     "med_vpd": 3.9,
+     "med_age": 26.9
+    },
+    "19": {
+     "n": 6,
+     "med_view": 406,
+     "med_vpd": 11.7,
+     "med_age": 34.9
+    },
+    "20": {
+     "n": 2,
+     "med_view": 82,
+     "med_vpd": 2.7,
+     "med_age": 29.3
+    },
+    "21": {
+     "n": 1,
+     "med_view": 89,
+     "med_vpd": 3.2,
+     "med_age": 27.8
+    }
+   },
+   "usable_hours": [
+    11,
+    19
+   ]
+  },
+  {
+   "group": "health",
+   "name": "高齢者健康の真実",
+   "cid": "UC58rGTlnLfvViwxO5_37yUA",
+   "sub": 16200,
+   "n_long": 50,
+   "span_days": 53,
+   "hours": {
+    "18": {
+     "n": 42,
+     "med_view": 4507,
+     "med_vpd": 296.7,
+     "med_age": 24.4
+    },
+    "19": {
+     "n": 2,
+     "med_view": 18526,
+     "med_vpd": 412.6,
+     "med_age": 34.4
+    },
+    "20": {
+     "n": 5,
+     "med_view": 4782,
+     "med_vpd": 241.2,
+     "med_age": 43.8
+    },
+    "22": {
+     "n": 1,
+     "med_view": 13791,
+     "med_vpd": 375.3,
+     "med_age": 36.7
+    }
+   },
+   "usable_hours": [
+    18,
+    20
+   ]
+  },
+  {
+   "group": "health",
+   "name": "健康長寿の知恵袋TV",
+   "cid": "UCMXi6TOZA2NBpUKsIcLtNWQ",
+   "sub": 1560,
+   "n_long": 19,
+   "span_days": 38,
+   "hours": {
+    "0": {
+     "n": 1,
+     "med_view": 42,
+     "med_vpd": 2.1,
+     "med_age": 19.7
+    },
+    "17": {
+     "n": 9,
+     "med_view": 2782,
+     "med_vpd": 86.9,
+     "med_age": 33.0
+    },
+    "18": {
+     "n": 2,
+     "med_view": 91,
+     "med_vpd": 13.9,
+     "med_age": 14.4
+    },
+    "19": {
+     "n": 5,
+     "med_view": 119,
+     "med_vpd": 5.4,
+     "med_age": 11.9
+    },
+    "20": {
+     "n": 2,
+     "med_view": 72,
+     "med_vpd": 4.6,
+     "med_age": 15.8
+    }
+   },
+   "usable_hours": [
+    17,
+    19
+   ]
+  },
+  {
+   "group": "health",
+   "name": "健康栄養研究室",
+   "cid": "UCd21DCYmbpJfAHPM1GNEENQ",
+   "sub": 962,
+   "n_long": 17,
+   "span_days": 35,
+   "hours": {
+    "17": {
+     "n": 2,
+     "med_view": 25549,
+     "med_vpd": 710.3,
+     "med_age": 35.0
+    },
+    "18": {
+     "n": 10,
+     "med_view": 163,
+     "med_vpd": 10.5,
+     "med_age": 22.9
+    },
+    "19": {
+     "n": 2,
+     "med_view": 1303,
+     "med_vpd": 100.3,
+     "med_age": 14.4
+    },
+    "20": {
+     "n": 3,
+     "med_view": 54,
+     "med_vpd": 33.0,
+     "med_age": 2.8
+    }
+   },
+   "usable_hours": [
+    18,
+    20
+   ]
+  },
+  {
+   "group": "health",
+   "name": "みんなの若返りアカデミア",
+   "cid": "UCMNjTg2ihpmNWvpdg_0WT8g",
+   "sub": 47400,
+   "n_long": 18,
+   "span_days": 511,
+   "hours": {
+    "17": {
+     "n": 18,
+     "med_view": 147106,
+     "med_vpd": 646.0,
+     "med_age": 343.5
+    }
+   },
+   "usable_hours": [
+    17
+   ]
+  }
+ ]
+}

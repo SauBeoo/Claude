@@ -1,0 +1,640 @@
+# -*- coding: utf-8 -*-
+r"""build_remotion_18.py — `project.json` cho TRỌN video 18 (13 chương, ~15:35).
+
+Copy khuôn từ `build_remotion_17.py` (đã user chốt), chỉ đổi SCENES/PUNCH/STAT theo
+kịch bản video 18 (60歳繰上げ｜窓口の一言). NEO SCENE BẰNG CHỈ SỐ DÒNG timeline, không
+hardcode giây — sửa lời, re-synth, chạy lại builder là khớp lại.
+
+3 hero là ẢNH THẬT (không AI): card_genten_01/02/03 — screenshot 日本年金機構 đã
+khoanh đỏ + nhãn nguồn (`tools/ingest_genten_18.py`), bọc torn-paper qua make_photocard.
+
+CHẠY:  python tools/build_remotion_18.py
+"""
+import json
+import math
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+from PIL import Image
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+PROJ = Path(__file__).resolve().parents[1]
+RV = Path(r"E:\Claude\Projects\remotion-vox")
+ML = Path(r"E:\Claude\Projects\_media_library")   # tool dùng chung (check_frame_pace…)
+STEM = "18_nenkin-60sai-kuriage-tsuki4man3sen"
+NAME = "nenkin-18"
+FPS = 30
+NL = chr(10)
+INK, RED, AMBER = "#1C2A4A", "#A82026", "#E0A32A"
+# ⭐ COLOR AXIS — học 1 lần dùng cả bài (đo từ りょう 970K: 繰上げ=1 màu · 繰下げ=1 màu giữ 36′).
+KURIAGE, KURISAGE, BASE65 = RED, "#2E6B4F", AMBER      # 60歳/減る · 70歳/待つ · 65歳 gốc
+SP_KURIAGE, SP_KURISAGE = "#C87A72", "#7FA893"          # splash nền theo trục
+# ⭐ ÂM THANH — video 17 lên sóng CHỈ CÓ giọng (0 BGM · 0 SFX · 0 CTA). Đường Remotion chưa nối
+# tới channels.py; nối lại ở đây. BGM đọc từ hồ sơ kênh, KHÔNG hằng-số-hoá đường dẫn.
+sys.path.insert(0, r"E:\Claude\Projects\youtube-jp-health\tools")
+import channels  # noqa: E402
+_CH = channels.CHANNELS["nenkin"]
+# channels.py ghi bgm là đường tương đối "../youtube-jp-health/…" tính từ THƯ MỤC PROJECT
+# của kênh (video_render.py resolve từ cwd = project). Resolve theo đúng gốc đó.
+BGM_SRC = (PROJ / _CH["bgm"]).resolve()
+BGM_VOL = 10 ** (float(_CH["bgm_gain"]) / 20)          # −40 dB → 0.01 (Remotion volume tuyến tính)
+# SFX: đúng 1 chùm mỗi đỉnh bài, ≤1 chùm/5′ (audience-45plus §2 mục 4). Đỉnh = dòng đã gắn
+# [間1.2][速0.8][後間1.0] trong _TTS.md — lớp hình + tiếng làm CÙNG việc với lớp giọng.
+SFX = {3: ("sfx/paper.wav", 0.35), 57: ("sfx/thud.wav", 0.30), 81: ("sfx/drop.wav", 0.30)}
+
+CAST_H, CAST_FEET_Y, CAST_MARGIN = 500, 1052, 4
+CAST_RATIO = {
+    "sensei_serious": 801 / 1280, "sensei_caution": 990 / 1280,
+    "sensei_point": 1044 / 1280, "sensei_reassure": 965 / 1280,
+    "sensei_conclude": 806 / 1280, "sensei_present": 1101 / 1280,
+    "kikite_worried": 871 / 1280, "kikite_surprised": 1028 / 1280,
+    "kikite_listen": 967 / 1280, "kikite_nod": 908 / 1280,
+    "kikite_think": 923 / 1280, "kikite_relieved": 863 / 1280,
+}
+_CW = round(CAST_H * max(CAST_RATIO.values()))
+STAGE_X0 = CAST_MARGIN + _CW + 24
+STAGE_X1 = 1920 - CAST_MARGIN - _CW - 24
+CX = (STAGE_X0 + STAGE_X1) // 2
+HERO_Y = 140
+HERO_BOTTOM = 900
+HW = round((HERO_BOTTOM - HERO_Y) * 1.49)
+HX = (1920 - HW) // 2
+HERO_BLEED = (CAST_MARGIN + _CW) - HX
+SUP_ENTER0, SUP_ENTER1 = 0.12, 0.88
+SUP_ROT = (-7, 7, -5)
+OUT_W = 330
+OUT_XY = ((1555, 110), (25, 185))
+OUT_ROT = (-6, 6)
+TBL_INK_X1 = 1140
+SW_TBL = 280
+_EXT_TBL = round((SW_TBL * math.cos(math.radians(7))
+                  + SW_TBL * math.sin(math.radians(7)) - SW_TBL) / 2) + 4
+SW_TBL_X = STAGE_X1 - SW_TBL - _EXT_TBL
+SW_TBL_Y = (250, 480, 610)
+PX = STAGE_X0 + 20
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 39 SCENE — `L` = chỉ số dòng timeline nơi scene BẮT ĐẦU.
+# ══════════════════════════════════════════════════════════════════════════════
+SCENES = [
+    # ── 第1章 cold open (0–83s) — timeline v3 2026-08-30 ────────────────────
+    dict(L=0,  tag="年金請求書",   hero="card_18_madoguchi", sup=["el_nenkin_techo"],
+         l="sensei_point",   r="kikite_listen",   sp=["#8FA9C0", "#C8B88A"]),
+    dict(L=1,  tag="釣り仲間のひと言", hero="card_18_tsuri", sup=["el_two_anglers"],
+         l="sensei_serious", r="kikite_think",    sp=["#C8B88A", "#9FB6C8"]),
+    dict(L=2,  tag="三つの金額",   hero="card_18_madoguchi_close", sup=[],
+         l="sensei_present", r="kikite_listen",   sp=["#9FB6C8", "#8A93A8"]),
+    # L=3 gộp cả câu hỏi L=4 (4,8s — dưới trần 6s): hero ngòi bút + slam đúng câu 丸をつけようとした
+    dict(L=3,  tag="ペン先",      hero="card_18_pen",       sup=[], peak=3,
+         l="sensei_caution", r="kikite_surprised", sp=["#B44A4A", "#8A93A8"]),
+    dict(L=5,  tag="なぜ病院の話", hero="card_18_kakari",    sup=["el_hand_stop"],
+         l="sensei_serious", r="kikite_worried",   sp=["#C87A72", "#C8B88A"]),
+    dict(L=6,  tag="十一行目",    hero="card_18_kenkyu",    sup=["el_magnifying_glass"],
+         l="sensei_present", r="kikite_think",     sp=["#9FB6C8", "#C8B88A"]),
+    dict(L=7,  tag="松本さん",     hero="card_18_matsumoto_counter", sup=[],
+         l="sensei_present", r="kikite_nod",       sp=["#8A93A8", "#C8B88A"]),
+    # ── 第3章 三段の階段 (97–196s) ───────────────────────────────────────
+    dict(L=8,  tag="三段の階段",  hero=None,                sup=["el_chart_up"],
+         l="sensei_point",   r="kikite_think",     sp=["#C87A72", "#C8B88A"], stat="sandan"),
+    dict(L=14, tag="月4万3千円",  hero="card_18_madoguchi", sup=["el_house_bills"],
+         l="sensei_serious", r="kikite_surprised", sp=["#C87A72", "#C8B88A"]),
+    dict(L=18, tag="原典",       hero="card_genten_01",    sup=["el_newspaper"],
+         l="sensei_present", r="kikite_listen",    sp=["#C87A72", "#C8B88A"]),
+    # ── 第2章 松本さんのこと (196–259s) — dời xuống sau 原典 theo bản sửa ─────
+    dict(L=22, tag="定年、継続雇用", hero="card_18_matsumoto", sup=[],
+         l="sensei_present", r="kikite_nod",       sp=["#8A93A8", "#C8B88A"]),
+    dict(L=24, tag="奥さまとトマト", hero="card_18_tomato",  sup=["el_teacup"],
+         l="sensei_reassure", r="kikite_nod",      sp=["#8FA9C0", "#C8B88A"]),
+    dict(L=25, tag="増やしたい",   hero=None,                sup=["el_coin_stack"],
+         l="sensei_point",   r="kikite_think",     sp=["#C8B88A", "#9FB6C8"]),
+    dict(L=27, tag="正しいのか",  hero="card_18_tsuri",     sup=[],
+         l="sensei_point",   r="kikite_think",     sp=["#C87A72", "#9FB6C8"]),
+    # ── 第4章 損益分岐点 ────────────────────────────────────────────────
+    dict(L=30, tag="損益分岐点",  hero=None,                sup=[],
+         l="sensei_serious", r="kikite_worried",   sp=["#C87A72", "#C8B88A"],
+         formula="820万8,000円 ÷ 51万8,400円 ≒ 15.8年", fcolor=KURIAGE),
+    dict(L=33, tag="八十歳十か月", hero=None,               sup=["el_calendar"],
+         l="sensei_conclude", r="kikite_nod",      sp=["#C87A72", "#C8B88A"]),
+    # ── 第5章 平均余命 ─────────────────────────────────────────────────
+    dict(L=37, tag="平均余命",    hero=None,                sup=["el_heart_pulse"],
+         l="sensei_present", r="kikite_listen",    sp=["#C87A72", "#8A93A8"],
+         stat="yomei"),
+    dict(L=41, tag="百四十三万円", hero=None,               sup=[],
+         l="sensei_point",   r="kikite_think",     sp=["#C87A72", "#9FB6C8"],
+         formula="23年 待って ≒ 143万円（月5千円）", fcolor=BASE65),
+    dict(L=45, tag="なぜ聞いたのか", hero="card_18_kakari_explain", sup=["el_hand_stop"],
+         l="sensei_serious", r="kikite_worried",   sp=["#C87A72", "#8A93A8"]),
+    # ── 第6章 CTA ─────────────────────────────────────────────────────
+    dict(L=49, tag="お願い",      hero="card_18_kazoku",    sup=["el_teacup"],
+         l="sensei_reassure", r="kikite_nod",      sp=["#C8B88A", "#9FB6C8"]),
+    # ── 第7章 十三行 → 十一行目 ────────────────────────────────────────
+    dict(L=50, tag="十三行",     hero="card_genten_02",    sup=["el_newspaper"],
+         l="sensei_point",   r="kikite_listen",    sp=["#C87A72", "#8FA9C0"]),
+    dict(L=55, tag="十一行目の答え", hero="card_genten_02", sup=[], peak=57,
+         l="sensei_serious", r="kikite_surprised", sp=["#C87A72", "#C8B88A"]),
+    dict(L=59, tag="閉じた道",    hero="card_18_kakari_explain", sup=[],
+         l="sensei_caution", r="kikite_worried",   sp=["#C87A72", "#8A93A8"]),
+    dict(L=65, tag="はい",       hero="card_18_matsumoto", sup=["el_medicine_bottle"],
+         l="sensei_present", r="kikite_nod",       sp=["#C87A72", "#9FB6C8"]),
+    # ── 第8章 残りの行 ────────────────────────────────────────────────
+    dict(L=67, tag="選べる道",    hero=None,                sup=["el_percent_badge"],
+         l="sensei_point",   r="kikite_think",     sp=["#C87A72", "#C8B88A"]),
+    dict(L=69, tag="九・四・七行目", hero=None,             sup=["el_passbook"],
+         l="sensei_point",   r="kikite_think",     sp=["#C87A72", "#9FB6C8"], stat="mokuromi"),
+    dict(L=72, tag="松本さんの場合", hero="card_18_kakari_explain", sup=[],
+         l="sensei_serious", r="kikite_worried",   sp=["#C87A72", "#8A93A8"]),
+    # ── 第9章 加給年金の落とし穴 (trục 繰下げ = xanh) ─────────────────────
+    # L=75 lời: 「七十歳まで待てば、四十二パーセント増える」 → bảng 増額率 (42.0% khoanh)
+    dict(L=75, tag="加給年金",    hero="card_genten_03",    sup=["el_calendar"],
+         l="sensei_present", r="kikite_listen",    sp=["#7FA893", "#C8B88A"]),
+    # L=79–81 lời: 「繰下げ待機期間中は、加給年金額を受け取ることができません」 → dòng 1 注意点
+    dict(L=79, tag="繰下げのページ", hero="card_genten_03b", sup=["el_newspaper"], peak=81,
+         l="sensei_point",   r="kikite_think",     sp=["#7FA893", "#9FB6C8"]),
+    dict(L=82, tag="高橋さんの場合", hero=None,             sup=[],
+         l="sensei_serious", r="kikite_nod",       sp=["#7FA893", "#C8B88A"]),
+    # ── 第10章 松本さんの決断 ─────────────────────────────────────────
+    dict(L=85, tag="持ち帰った",  hero="card_18_matsumoto_home", sup=[],
+         l="sensei_conclude", r="kikite_relieved", sp=["#8FA9C0", "#C8B88A"]),
+    dict(L=88, tag="決めた三つ",  hero=None,                sup=["el_signpost"],
+         l="sensei_point",   r="kikite_nod",       sp=["#C8B88A", "#9FB6C8"], stat="kimeta"),
+    dict(L=92, tag="決めるのを待てる", hero="card_18_kakari", sup=[],
+         l="sensei_reassure", r="kikite_relieved", sp=["#8FA9C0", "#C8B88A"]),
+    dict(L=95, tag="トマトが採れたら", hero="card_18_tomato", sup=["el_teacup"],
+         l="sensei_reassure", r="kikite_nod",      sp=["#C8B88A", "#9FB6C8"]),
+    # ── 第11章 誤解 ───────────────────────────────────────────────────
+    dict(L=97, tag="よくある誤解", hero=None,              sup=[],
+         l="sensei_caution", r="kikite_worried",   sp=["#B44A4A", "#8A93A8"], stat="gokai"),
+    # ── 第12章 研究ノート + できること ────────────────────────────────
+    dict(L=100, tag="研究ノート",  hero=None,                sup=["el_nenkin_techo"],
+         l="sensei_conclude", r="kikite_nod",      sp=["#8A93A8", "#C8B88A"], stat="note"),
+    dict(L=105, tag="できること三つ", hero=None,             sup=["el_smartphone"],
+         l="sensei_point",   r="kikite_think",     sp=["#C8B88A", "#9FB6C8"], stat="dekiru"),
+    dict(L=111, tag="情報時点",    hero=None,                sup=[],
+         l="sensei_present", r="kikite_listen",    sp=["#9FB6C8", "#8A93A8"]),
+    # ── 第13章 次回予告 ───────────────────────────────────────────────
+    dict(L=112, tag="次回予告",    hero="card_18_jikai",     sup=["el_coin_stack", "el_chart_up"],
+         l="sensei_present", r="kikite_listen",    sp=["#9FB6C8", "#C8B88A"]),
+]
+
+# banner PUNCH — chữ đâm, neo theo chỉ số dòng
+PUNCH = [
+    (3,  "丸を、つけようとした",       INK),
+    (4,  "「いま、通院はされていますか」", RED),
+    (16, "月4万3千円、減る",          KURIAGE),
+    (21, "一生、です。",              KURIAGE),
+    (33, "八十歳と、十か月",           INK),
+    (43, "23年待って、143万円",        BASE65),
+    (57, "障害年金を、請求できない",   KURIAGE),
+    (66, "血圧の薬、五年前から",       INK),
+    (81, "212万円が、消える",          KURISAGE),
+    (86, "丸は、つけなかった",         INK),
+    (94, "「聞いてくれなかったらね」", INK),
+]
+
+# bảng số liệu — key khớp `stat=` ở SCENES
+STAT = {
+    "sandan": (f"{KURIAGE}|60歳|月13万6,800円" + NL + f"{BASE65}|65歳|月18万円"
+               + NL + f"*{KURISAGE}|70歳|月25万5,600円", 46),
+    "yomei": ("60歳男性の平均余命|23.63年" + NL + "*60歳＋23.63年|83歳7か月ごろ", 46),
+    "mokuromi": ("九行目｜遺族厚生年金と併給不可" + NL + "四行目｜任意加入・追納 不可"
+                 + NL + "*七行目｜雇用保険との調整", 40),
+    "kimeta": (f"{KURIAGE}|60歳の繰上げ|しない" + NL + f"{KURISAGE}|70歳までの繰下げ|しない"
+               + NL + f"*{BASE65}|65歳|老齢厚生年金を受給", 40),
+    "gokai": ("*「65歳になれば元に戻る」|✕ 一生続く", 44),
+    "note": ("一｜最大24%減り、一生続く" + NL + "二｜差は月4万3,200円"
+             + NL + "三｜取り消せず、障害年金も不可" + NL
+             + "*四｜繰下げ待機中は加給年金なし", 40),
+    "dekiru": ("① 見込み額を書き出す|×0.76", NL.join([
+        "① 見込み額を書き出す|×0.76",
+        "② 持病・配偶者の年齢を書き添える",
+        "*③ 窓口で先に聞くことを決める",
+    ]).split("\x00")[0], 44) if False else (
+        "① 見込み額を書き出す|×0.76" + NL + "② 持病・配偶者の年齢を書き添える"
+        + NL + "*③ 窓口で先に聞くことを決める", 42),
+}
+
+
+CAP_MAX = 78
+CAP_CUT = "。、」）"
+
+
+def split_caption(line):
+    t = line["text"]
+    if len(t) <= CAP_MAX:
+        return [line]
+    parts, buf = [], ""
+    for ch in t:
+        buf += ch
+        if ch in CAP_CUT and len(buf) >= CAP_MAX * 0.55:
+            parts.append(buf)
+            buf = ""
+    if buf:
+        if parts and len(parts[-1]) + len(buf) <= CAP_MAX:
+            parts[-1] += buf
+        else:
+            parts.append(buf)
+    fixed = []
+    for p in parts:
+        while len(p) > CAP_MAX:
+            fixed.append(p[:CAP_MAX])
+            p = p[CAP_MAX:]
+        if p:
+            fixed.append(p)
+    span = line["end"] - line["start"]
+    tot = sum(len(p) for p in fixed)
+    out, t0 = [], line["start"]
+    for p in fixed:
+        d = span * len(p) / tot
+        out.append({"start": round(t0, 3), "end": round(t0 + d, 3), "text": p})
+        t0 += d
+    return out
+
+
+def stick(i, asset, f, dur, x, y, w, rot=0, ent="rise", amp=5, ph=0.0, sh="lg"):
+    return {"id": i, "kind": "sticker", "from": f, "durationInFrames": max(1, dur),
+            "asset": f"assets/{asset}.png",
+            "layout": {"x": x, "y": y, "w": w, "rotation": rot, "opacity": 1},
+            "entrance": {"variant": ent, "delayFrames": 0, "params": {}},
+            "exit": None, "idle": {"amp": amp, "phase": ph}, "shadow": sh}
+
+
+_HB = {}
+
+
+def hero_box(asset):
+    """(x, y, w) của hero — fit theo CHIỀU CAO khi ảnh cao (genten card ratio ~1,3 fit bề ngang
+    1132px là cao 1121px ⇒ TRÀN xuống dải phụ đề, thấy ở still 20322 lượt 2026-08-30).
+    Ảnh ngang (ratio ≥1,49) giữ nguyên HW. Canh giữa khung."""
+    if asset not in _HB:
+        p = PROJ / "06_VIDEO" / STEM / "photocard" / f"{asset}.png"
+        w = HW
+        if p.exists():
+            with Image.open(p) as im:
+                w = min(HW, round((HERO_BOTTOM - HERO_Y) * im.width / im.height))
+        _HB[asset] = ((1920 - w) // 2, HERO_Y, w)
+    return _HB[asset]
+
+
+def footage(i, asset, f, dur, x, y, w):
+    """Ảnh tĩnh làm clip `video` với zoom-punch — cú slam 1.28→1.0 trong 8 frame (Footage.tsx)."""
+    return {"id": i, "kind": "video", "from": f, "durationInFrames": max(1, dur),
+            "asset": f"assets/{asset}.png", "trimStartFrames": 0, "fit": "contain",
+            "layout": {"x": x, "y": y, "w": w, "opacity": 1}, "motion": "zoom-punch",
+            "speed": 1, "mirror": False, "volume": 0, "fadeInFrames": 0,
+            "wipeInFrames": 0, "wipeDir": "left", "filter": {}}
+
+
+def txt(i, content, f, dur, preset, color=INK, layout=None, size=None):
+    return {"id": i, "kind": "text", "from": f, "durationInFrames": max(1, dur),
+            "content": content, "preset": preset, "color": color,
+            "animation": "pop", "animationParams": {"restDeg": -1.5},
+            "layout": layout or {}, "fontSize": size}
+
+
+def bgm_clips(DUR):
+    """BGM lặp vừa đủ DUR. Độ dài file đo bằng ffprobe, không hằng-số-hoá."""
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                          "-of", "csv=p=0", str(BGM_SRC)], capture_output=True, text=True)
+    sec = float(out.stdout.strip() or 0)
+    if sec <= 0:
+        raise SystemExit(f"🔴 không đo được BGM {BGM_SRC}")
+    L = int(sec * FPS)
+    clips, f, i = [], 0, 0
+    while f < DUR:
+        clips.append({"id": f"bgm-{i}", "kind": "audio", "from": f,
+                      "durationInFrames": min(L, DUR - f), "asset": "assets/bgm.mp3",
+                      "volume": BGM_VOL, "trimStartFrames": 0})
+        f += L
+        i += 1
+    return clips
+
+
+def main():
+    tl = json.loads((PROJ / "06_VIDEO" / STEM / "timeline.json").read_text(encoding="utf-8"))
+    lines = tl["lines"]
+    F = lambda idx: round(lines[idx]["start"] * FPS)          # noqa: E731
+    DUR = round(tl["total"] * FPS)
+
+    for k, s in enumerate(SCENES):
+        s["f"] = F(s["L"])
+        s["to"] = F(SCENES[k + 1]["L"]) if k + 1 < len(SCENES) else DUR
+
+    bad = [f"  scene {k} (dòng {s['L']}) chỉ {(s['to']-s['f'])/FPS:.1f}s"
+           for k, s in enumerate(SCENES) if s["to"] - s["f"] < 6 * FPS]
+    if bad:
+        print("🔴 scene ngắn hơn 6s (audience-45plus §2 mục 2):")
+        print(NL.join(bad))
+        return 1
+
+    clash = [f"  scene {k} (dòng {s['L']}) tag={s['tag']} hero={s['hero']} +{s.get('stat') or s.get('formula')}"
+             for k, s in enumerate(SCENES)
+             if (s.get("stat") or s.get("formula")) and s.get("hero")]
+    if clash:
+        print("🔴 scene có bảng/công thức MÀ VẪN có hero — bảng sẽ bị ảnh che:")
+        print(NL.join(clash))
+        return 1
+
+    # 🔴 GATE peak: phải có hero ẢNH và KHÔNG có bảng/công thức (zoom-punch lên chữ là phá chữ).
+    badpk = [f"  scene {k} L={s['L']} tag={s['tag']}" for k, s in enumerate(SCENES)
+             if s.get("peak") is not None
+             and (not s.get("hero") or s.get("stat") or s.get("formula")
+                  or not (s["L"] <= s["peak"] < (SCENES[k+1]["L"] if k+1 < len(SCENES) else 10**9)))]
+    if badpk:
+        print("🔴 peak sai: cần hero ảnh, không stat/formula, dòng peak nằm trong scene:")
+        print(NL.join(badpk))
+        return 1
+    npk = sum(1 for s in SCENES if s.get("peak") is not None)
+    if npk > math.ceil(DUR / FPS / 300):
+        print(f"🔴 {npk} chùm SFX > trần ≤1 chùm/5′ (audience-45plus §2 mục 4)")
+        return 1
+
+    trk_bg, cl, cr, hero, sup1, sup2, sup3 = [], [], [], [], [], [], []
+    tag, punch, stat, formula, peak, sfx = [], [], [], [], [], []
+    cy = CAST_FEET_Y - CAST_H
+
+    for k, s in enumerate(SCENES):
+        f, to = s["f"], s["to"]
+        d = to - f
+        trk_bg.append(dict(id=f"bg-{k}", kind="background", **{"from": f},
+                           durationInFrames=d, paper="assets/paper.jpg",
+                           tint="#F2EDE4", tintOpacity=0.55, grid=True, dots=True,
+                           splash=s["sp"]))
+        wl = round(CAST_H * CAST_RATIO[s["l"]])
+        wr = round(CAST_H * CAST_RATIO[s["r"]])
+        ent = "rise" if k == 0 else "none"
+        cl.append(stick(f"cl-{k}", s["l"], f, d, CAST_MARGIN, cy, wl, ent=ent,
+                        amp=3, ph=0.4, sh="sm"))
+        cr.append(stick(f"cr-{k}", s["r"], f, d, 1920 - wr - CAST_MARGIN, cy, wr,
+                        ent=ent, amp=3, ph=2.7, sh="sm"))
+        pk_f = F(s["peak"]) if s.get("peak") is not None else None
+        # 🔴 Đỉnh rơi NGAY đầu scene (L=3 ペン先): hero sticker bay vào (zoom-through) cùng lúc
+        # footage slam ⇒ hai chuyển động chồng, still 1460 ra nền nhòe toàn khung. Khi đó footage
+        # LÀ hero — bỏ sticker. Đỉnh rơi giữa scene thì sticker hiện trước, footage đè sau (đúng ý).
+        if s.get("hero") and not (pk_f is not None and pk_f <= f + 6):
+            hx, hy, hw = hero_box(s["hero"])
+            hero.append(stick(f"h-{k}", s["hero"], f + 6, d - 6, hx, hy, hw,
+                              ent=["grow", "rise", "flip", "zoom-through"][k % 4], amp=5))
+        if pk_f is not None:
+            # footage nằm TRÊN hero, CÙNG HỘP hero_box ⇒ slam đúng vào ảnh đang hiện, không nhảy vị trí
+            hx, hy, hw = hero_box(s["hero"])
+            peak.append(footage(f"pk-{k}", s["hero"], pk_f, to - pk_f, hx, hy, hw))
+            a, v = SFX[s["peak"]]
+            sfx.append({"id": f"sfx-{k}", "kind": "audio", "from": pk_f, "durationInFrames": 90,
+                        "asset": a, "volume": v, "trimStartFrames": 0})
+        tbl = bool(s.get("stat") or s.get("formula"))
+        sups = s.get("sup") or []
+        n = len(sups)
+        st = [f + max(18, int(d * (SUP_ENTER0 + i * (SUP_ENTER1 - SUP_ENTER0) / n)))
+              for i in range(n)]
+        npos = len(SW_TBL_Y) if tbl else len(OUT_XY)
+        step = 1 if tbl else len(OUT_XY)
+        for j, el in enumerate(sups):
+            trk = (sup1, sup2, sup3)[j % 3]
+            f0 = st[j]
+            nxt = j + step
+            fend = st[nxt] if nxt < n else to
+            if tbl:
+                sx, sy, sw = SW_TBL_X, SW_TBL_Y[j % npos], SW_TBL
+                rot = SUP_ROT[j % 3]
+            else:
+                sx, sy = OUT_XY[j % npos]
+                sw, rot = OUT_W, OUT_ROT[j % npos]
+            ex = None
+            if pk_f is not None and fend > pk_f:
+                fend = max(f0 + 24, pk_f)          # sticker rút đi đúng lúc ảnh slam vào
+                ex = {"variant": "fade", "params": {}}
+            sc = stick(f"s{j}-{k}", el, f0, fend - f0, sx, sy, sw,
+                       rot=rot, ent="pop", amp=5, ph=1.2 + j * 2, sh="sm")
+            sc["exit"] = ex
+            trk.append(sc)
+        tag.append(txt(f"tag-{k}", s["tag"], f + 4, d - 4, "papercut-banner",
+                       layout={"x": 74, "y": 58}, size=64))
+        if s.get("stat"):
+            body, sz = STAT[s["stat"]]
+            f_st = f + max(20, int(d * 0.10))
+            stat.append(txt(f"st-{k}", body, f_st, to - f_st - 4, "papercut-stat",
+                            color=AMBER, layout={"x": STAGE_X0 + 16, "y": 240, "w": 810},
+                            size=sz))
+        if s.get("formula"):
+            stat_off = 150 if s.get("stat") else 0
+            formula.append(txt(f"fm-{k}", s["formula"], f + int(d * 0.55),
+                               d - int(d * 0.55) - 6, "papercut-formula",
+                               color=s.get("fcolor", AMBER),
+                               layout={"x": STAGE_X0 + 16, "y": 430 + stat_off, "w": 830},
+                               size=58))
+
+    for idx, body, col in PUNCH:
+        f = F(idx)
+        end = round(lines[idx]["end"] * FPS)
+        punch.append(txt(f"p-{idx}", body, f + 8, max(60, end - f - 8),
+                         "papercut-banner", color=col, layout={"x": PX}, size=62))
+
+    T = lambda i, n, ty, c: {"id": i, "name": n, "type": ty, "muted": False,   # noqa: E731
+                             "hidden": False, "locked": False, "clips": c}
+    tracks = [
+        T("trk-bg", "nền giấy", "background", trk_bg),
+        T("trk-hero", "hero ảnh", "sticker", hero),
+        T("trk-peak", "đỉnh bài (zoom-punch)", "video", peak),
+        T("trk-sup1", "phụ 1", "sticker", sup1),
+        T("trk-sup2", "phụ 2", "sticker", sup2),
+        T("trk-sup3", "phụ 3", "sticker", sup3),
+        T("trk-cast-l", "cast trái", "sticker", cl),
+        T("trk-cast-r", "cast phải", "sticker", cr),
+        T("trk-stat", "bảng số liệu", "text", stat),
+        T("trk-formula", "công thức", "text", formula),
+        T("trk-tag", "tag", "text", tag),
+        T("trk-punch", "punch", "text", punch),
+        T("trk-voice", "giọng", "audio",
+          [{"id": "v", "kind": "audio", "from": 0, "durationInFrames": DUR,
+            "asset": "assets/voice.mp3", "volume": 1, "trimStartFrames": 0}]),
+        T("trk-sfx", "SFX đỉnh bài", "audio", sfx),
+        T("trk-bgm", "BGM −40dB", "audio", bgm_clips(DUR)),
+    ]
+    proj = {
+        "version": 1,
+        "meta": {"name": NAME, "channel": "nenkin", "templateRef": "nenkin", "fps": FPS,
+                 "width": 1920, "height": 1080,
+                 "createdAt": "2026-08-29T00:00:00.000Z",
+                 "modifiedAt": "2026-08-29T00:00:00.000Z"},
+        "timeline": {"durationInFrames": DUR},
+        "sceneMarkers": [{"id": f"sc-{k}", "atFrame": s["f"], "label": s["tag"]}
+                         for k, s in enumerate(SCENES)],
+        "tracks": tracks,
+        "captions": {"source": "srt-interpolated", "style": "outline", "enabled": True,
+                     "fontSize": 44,
+                     "lines": [{"text": c["text"],
+                                "startMs": round(c["start"] * 1000),
+                                "endMs": round(c["end"] * 1000)}
+                               for l in lines for c in split_caption(l)],
+                     "words": []},
+        "theme": {"palette": {"bgTop": "#2A3A58", "bgBottom": "#182236",
+                              "accent": "#FFD700"},
+                  "fontFamily": '"Yu Gothic", "Meiryo", Arial Black, sans-serif',
+                  "canvasColor": "#F2EDE4"},
+    }
+
+    out = RV / "projects" / NAME
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "project.json").write_text(json.dumps(proj, ensure_ascii=False, indent=1),
+                                      encoding="utf-8")
+
+    ad = RV / "public" / "projects" / NAME / "assets"
+    ad.mkdir(parents=True, exist_ok=True)
+    src = PROJ / "06_VIDEO" / STEM
+    for p in list((src / "photocard").glob("*.png")) + list((src / "sticker").glob("*.png")):
+        shutil.copy(p, ad / p.name)
+    for c in CAST_RATIO:
+        f = PROJ / "assets" / "cast" / f"{c}.png"
+        if f.exists():
+            shutil.copy(f, ad / f.name)
+    voice = src / "voice_full.wav"
+    mp3 = ad / "voice.mp3"
+    if voice.exists() and not mp3.exists():
+        import subprocess
+        subprocess.run(["ffmpeg", "-y", "-i", str(voice), "-b:a", "192k", str(mp3)],
+                       check=True, capture_output=True)
+    if not (ad / "bgm.mp3").exists():
+        shutil.copy(BGM_SRC, ad / "bgm.mp3")
+    old = RV / "public" / "projects" / "nenkin-17-demo" / "assets" / "paper.jpg"
+    if old.exists() and not (ad / "paper.jpg").exists():
+        shutil.copy(old, ad / "paper.jpg")
+
+    want = {c["asset"].split("/")[-1] for t in tracks if t["type"] == "sticker"
+            for c in t["clips"]}
+    want |= {"paper.jpg"}
+    miss = sorted(w for w in want if not (ad / w).exists())
+
+    HERO_BLEED_MAX = 90
+    aspect = {}
+    for p in (src / "sticker").glob("*.png"):
+        with Image.open(p) as im:
+            aspect[p.name] = im.width / im.height
+    for p in (src / "photocard").glob("*.png"):
+        with Image.open(p) as im:
+            aspect[p.name] = im.width / im.height
+
+    def _rect(c):
+        L = c["layout"]
+        w = L["w"]
+        h = w / aspect.get(c["asset"].split("/")[-1], 1.0)
+        th = math.radians(abs(L.get("rotation", 0)))
+        ww = w * math.cos(th) + h * math.sin(th)
+        hh = h * math.cos(th) + w * math.sin(th)
+        cx, cy = L["x"] + w / 2, L["y"] + h / 2
+        return (cx - ww / 2, cy - hh / 2, cx + ww / 2, cy + hh / 2)
+
+    def _hit(a, b, pad=0):
+        return (a[0] < b[2] - pad and b[0] < a[2] - pad
+                and a[1] < b[3] - pad and b[1] < a[3] - pad)
+
+    supclips = [c for t in tracks if t["id"] in ("trk-sup1", "trk-sup2", "trk-sup3")
+                for c in t["clips"]]
+    tbl_scene = {k for k, s in enumerate(SCENES) if s.get("stat") or s.get("formula")}
+    heroR = (HX, HERO_Y, HX + HW, HERO_BOTTOM)
+    lost, onhero, oncast = [], [], []
+    for c in supclips:
+        k = int(c["id"].split("-")[1])
+        r = _rect(c)
+        if r[0] < 4 or r[2] > 1916 or r[1] < 4 or r[3] > HERO_BOTTOM:
+            lost.append(c["id"])
+        if k not in tbl_scene and _hit(r, heroR, pad=6):
+            onhero.append(c["id"])
+        s = SCENES[k]
+        for side, ratio in (("l", CAST_RATIO[s["l"]]), ("r", CAST_RATIO[s["r"]])):
+            cw = round(CAST_H * ratio)
+            cx0 = CAST_MARGIN if side == "l" else 1920 - cw - CAST_MARGIN
+            if _hit(r, (cx0, CAST_FEET_Y - CAST_H, cx0 + cw, CAST_FEET_Y), pad=6):
+                oncast.append(c["id"])
+    pairs = []
+    for i, a in enumerate(supclips):
+        for b in supclips[i + 1:]:
+            if a["from"] < b["from"] + b["durationInFrames"] \
+               and b["from"] < a["from"] + a["durationInFrames"] \
+               and _hit(_rect(a), _rect(b), pad=6):
+                pairs.append((a["id"], b["id"]))
+    for lab, bad in (("lọt khỏi khung / chạm phụ đề", lost),
+                     ("ĐÈ LÊN ẢNH HERO", onhero),
+                     ("đè lên cast", oncast),
+                     ("đè lên nhau", pairs)):
+        if bad:
+            print(f"🔴 sticker {lab}: {len(bad)} — {bad[:8]}")
+            return 1
+    if HERO_BLEED > HERO_BLEED_MAX:
+        print(f"🔴 hero lấn vào cast {HERO_BLEED}px > trần {HERO_BLEED_MAX}px")
+        return 1
+
+    ns = sum(len(t["clips"]) for t in tracks if t["type"] == "sticker")
+    nt = sum(len(t["clips"]) for t in tracks if t["type"] == "text")
+    print(f"✓ {out / 'project.json'}")
+    print(f"   {DUR} frame ({DUR/FPS/60:.2f}′) · {len(SCENES)} scene · {ns} sticker "
+          f"· {nt} text · {len(lines)} dòng phụ đề")
+    print(f"   dải sân khấu {STAGE_X0}–{STAGE_X1} ({STAGE_X1-STAGE_X0}px) · "
+          f"cast rộng {_CW}px")
+    print(f"   HERO {HW}px = {HW*100//1920}% khung (lấn cast {HERO_BLEED}px/bên)")
+    print(f"   ⭐ peak ×{len(peak)} (zoom-punch) · sfx ×{len(sfx)} · bgm {len(bgm_clips(DUR))} clip "
+          f"@{BGM_VOL:.3f} ({_CH['bgm_gain']} dB) · trục màu 繰上げ={KURIAGE} 繰下げ={KURISAGE}")
+    print(f"   scene ngắn nhất {min((s['to']-s['f'])/FPS for s in SCENES):.1f}s · "
+          f"dài nhất {max((s['to']-s['f'])/FPS for s in SCENES):.1f}s · "
+          f"{len(SCENES)/(DUR/FPS/60):.2f} scene/phút")
+
+    over = [s["tag"] for s in SCENES
+            if (s.get("stat") or s.get("formula")) and (s.get("sup") or [])
+            and SW_TBL_X < TBL_INK_X1]
+    if over:
+        print(f"🔴 sticker đè mực bảng ở {len(over)} scene")
+        return 1
+    if max(SW_TBL_Y) + SW_TBL > HERO_BOTTOM:
+        print(f"🔴 sticker bảng slot cuối chạm vùng phụ đề")
+        return 1
+
+    dupe = []
+    for t in tracks:
+        if t["type"] != "sticker":
+            continue
+        iv = sorted((c["from"], c["from"] + c["durationInFrames"], c["id"])
+                    for c in t["clips"])
+        for a, b in zip(iv, iv[1:]):
+            if b[0] < a[1]:
+                dupe.append(f"{t['id']}: {a[2]} × {b[2]}")
+    if dupe:
+        print(f"🔴 clip trùng thời gian trên CÙNG track: {len(dupe)} — {dupe[:6]}")
+        return 1
+
+    caps = proj["captions"]["lines"]
+    longc = [c for c in caps if len(c["text"]) > CAP_MAX]
+    print(f"   phụ đề: {len(lines)} dòng timeline → {len(caps)} khối · "
+          f"dài nhất {max(len(c['text']) for c in caps)} ký (trần {CAP_MAX})")
+    if longc:
+        print(f"🔴 {len(longc)} khối phụ đề > {CAP_MAX} ký ⇒ sẽ ra ≥3 dòng:")
+        for c in longc[:5]:
+            print(f"     · {len(c['text'])} ký | {c['text'][:40]}")
+        return 1
+    if miss:
+        print(f"🔴 THIẾU {len(miss)} asset:")
+        for m in miss:
+            print(f"     · {m}")
+        return 1
+    if lost:
+        print(f"🔴 sticker lọt khỏi dải (cast sẽ đè): {lost}")
+        return 1
+    print(f"   ✓ {len(want)} asset đủ · mọi sticker trong dải")
+
+    # ── GATE NHỊP HÌNH (audience-45plus.md §2.0, user chốt 2026-08-30) ──────────
+    # Gọi tool DÙNG CHUNG, không chép logic vào đây: một phép đo, một chỗ sửa.
+    # ⛔ Đừng gỡ gate này khi copy builder sang video sau — nó chính là thứ bắt được
+    #    ca video 18 (87,2% thời lượng frame đứng yên, khe dài nhất 40,6s).
+    pace = subprocess.run(
+        [sys.executable, str(ML / "check_frame_pace.py"), str(out / "project.json")],
+        capture_output=True, text=True, encoding="utf-8", errors="replace")
+    print(pace.stdout.rstrip())
+    if pace.returncode != 0:
+        print("🔴 GATE NHỊP HÌNH ĐỎ — cách chữa in ở trên; luật: audience-45plus.md §2.0")
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,45 @@
+{
+  "speakers": {
+    "和代": "hero",
+    "千代": "villain",
+    "由紀": "villain",
+    "修一": "other",
+    "青柳": "other"
+  },
+  "lines": [
+    {"match": "その茶碗に、他人の嫁の手を触らせないで", "speaker": "千代"},
+    {"match": "お前は器の係でいい", "speaker": "修一"},
+    {"match": "かしこまりました。では、蔵の鍵をお返しします", "speaker": "和代"},
+    {"match": "あら。私はあの線が、いちばん品があると思うけれど", "speaker": "青柳"},
+    {"match": "柏木先生。この器、今夜のうちに", "speaker": "青柳"},
+    {"match": "私はもう、持っておりません", "speaker": "和代"},
+    {"match": "この女よ。この女がすり替えたの", "speaker": "千代"},
+    {"match": "この家のものではございません", "speaker": "和代"}
+  ],
+  "events": [
+    {"type": "sfx", "match": "継ぎ目が、ない", "name": "sub_drop", "offset": -0.15, "gain": -6},
+    {"type": "sfx", "match": "箸が、膳の上に落ちた", "name": "heartbeat", "offset": 0.1, "gain": -9},
+    {"type": "sfx", "match": "九十度の礼だった", "name": "sub_drop", "offset": -0.2, "gain": -7},
+    {"type": "sfx", "match": "台の上の器に、金の線はなかった", "name": "sub_drop", "offset": -0.15, "gain": -5},
+    {"type": "sfx", "match": "蔵の中の空気が、止まった", "name": "heartbeat", "offset": 0.15, "gain": -8},
+    {"type": "sfx", "match": "青柳先生が携帯電話を取り出し", "name": "phone_buzz", "offset": 0.2, "gain": -9},
+
+    {"type": "bgm_tense_cut",
+     "from": "保険の対象は",
+     "cut": "台の上の器に、金の線はなかった",
+     "resume": "高台の削りが粗い"},
+
+    {"type": "bgm_swell",
+     "from": "千代が、四つん這いのまま",
+     "to": "この家のものではございません"},
+
+    {"type": "card", "match": "その茶碗に、他人の嫁の手を触らせないで",
+     "text": "他人の嫁の手を触らせないで", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "私はもう、持っておりません",
+     "text": "私はもう、持っておりません", "style": "hero", "hold": 1.4},
+    {"type": "card", "match": "この女よ。この女がすり替えたの",
+     "text": "この女がすり替えたの", "style": "villain", "hold": 1.2},
+    {"type": "card", "match": "この家のものではございません",
+     "text": "もう、この家のものではございません", "style": "hero", "hold": 1.6}
+  ]
+}

@@ -1,0 +1,21 @@
+================================================================
+ THU MUC NAY LA THE GIOI v1 — DA BI DE, DUNG BOM PROMPT O DAY
+================================================================
+
+v1 = cot da khong lo + bien may + cau treo + nha tren cay.
+     Da BO HAN 2026-09-22: video mau khong co mot thu nao trong so do.
+
+  FILE DUNG DE BOM:
+     ..\01_tou-no-fumoto\videogen_FLOW.txt      (34 canh, the gioi v3)
+
+  3 canh thu da duyet (de doi chieu):
+     _test_world_FLOW.txt                        (v3, giu lai)
+
+  File ZZ_OBSOLETE_* = prompt v1, giu de tra cuu, KHONG dung de gen.
+
+Cach nhan ra prompt v1 khi dan nham: no co cum
+  "rock pillars rooted in the earth far below the cloud layer"
+  "sea of cloud" / "suspension bridge" / "plank street"
+Prompt v3 thi co
+  "COLOSSAL CITY STACKED IN LAYERS" / "impossible spiralling ziggurats"
+  "right here in the foreground within arm's reach" (vat retro tien canh)

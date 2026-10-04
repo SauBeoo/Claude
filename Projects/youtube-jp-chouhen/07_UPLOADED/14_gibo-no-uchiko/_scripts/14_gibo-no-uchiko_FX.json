@@ -1,0 +1,245 @@
+{
+  "speakers": {
+    "奈津美": "hero",
+    "悠真": "hero",
+    "源治": "hero",
+    "岩井": "hero",
+    "咲江": "villain",
+    "康平": "villain",
+    "千鶴": "villain"
+  },
+  "lines": [
+    {
+      "match": "「奈津美さんの分だけは、",
+      "speaker": "咲江"
+    },
+    {
+      "match": "今すぐ」",
+      "speaker": "悠真"
+    },
+    {
+      "match": "「あの袋、そば粉だった」",
+      "speaker": "悠真"
+    },
+    {
+      "match": "「体の弱い嫁は、この家にはいらないんだよ。",
+      "speaker": "康平"
+    },
+    {
+      "match": "「奈津美先生。",
+      "speaker": "岩井"
+    },
+    {
+      "match": "「私がこの家に来た日と、私が熱を出した日です。",
+      "speaker": "奈津美"
+    },
+    {
+      "match": "「悪いのはあんたでしょう」",
+      "speaker": "咲江"
+    },
+    {
+      "match": "「康平さんが着手金を払った弁護士は、",
+      "speaker": "奈津美"
+    },
+    {
+      "match": "「許しません」",
+      "speaker": "奈津美"
+    },
+    {
+      "match": "「六年間で、十九回だよ」",
+      "speaker": "悠真"
+    },
+    {
+      "match": "「今、そこに水があって、よかったですね」",
+      "speaker": "奈津美"
+    }
+  ],
+  "events": [
+    {
+      "type": "ambience",
+      "from": "長机の真ん中で、義母の咲江がそう言った。",
+      "to": "そして咲江も、まだ知らなかった。",
+      "name": "sea_deck",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "日が落ちてから、私たちはもう一度あの庭へ戻った。",
+      "to": "自分の料理教室が、誰の判で、あの部屋を借りているのかを。",
+      "name": "sea_deck",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "康平と初めて会ったのは、給食センターの厨房だった。",
+      "to": "けれど、私の我慢も、今日で終わる。",
+      "name": "office_hum",
+      "gain": -26
+    },
+    {
+      "type": "ambience",
+      "from": "その夜、私は台所の机に、六年分のノートを並べた。",
+      "to": "「そ」の字だった。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "翌週、かかりつけの先生に、二冊のノートを持って行った。",
+      "to": "日付を合わせましょう」",
+      "name": "hospital_night",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "弁護士の柏木先生に会ったのは、雨の日だった。",
+      "to": "片付けられる前に、そちらを固めます」",
+      "name": "rain_window",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "軽トラックの脇に立っていた源治さんは、",
+      "to": "俺も、そこにいる」",
+      "name": "sea_deck",
+      "gain": -25
+    },
+    {
+      "type": "ambience",
+      "from": "家に帰ると、玄関に康平が座っていた。",
+      "to": "窓の外で、防風林が鳴っていた。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "ambience",
+      "from": "十一月の第二日曜、町内会の反省会が、また義実家の庭で開かれた。",
+      "to": "「お前は、俺たちの老後の金を、女に渡した。",
+      "name": "sea_deck",
+      "gain": -24
+    },
+    {
+      "type": "ambience",
+      "from": "二年が過ぎた。",
+      "to": "本当の意味で始まったのだ。",
+      "name": "room_still",
+      "gain": -27
+    },
+    {
+      "type": "sfx",
+      "match": "「あの袋、そば粉だった」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "「奈津美先生。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "一度も、ずれていない。",
+      "name": "heartbeat",
+      "offset": 0.2,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "その夜、咲江から電話が来た。",
+      "name": "phone_buzz",
+      "offset": -0.3,
+      "gain": -8
+    },
+    {
+      "type": "sfx",
+      "match": "奈津美さんの分と。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "咲江は、椅子に崩れるように座った。",
+      "name": "heartbeat",
+      "offset": 0.1,
+      "gain": -9
+    },
+    {
+      "type": "sfx",
+      "match": "康平の顔から、色が引いた。",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -7
+    },
+    {
+      "type": "bgm_tense_cut",
+      "from": "私は鞄から、油で黒くなった帳面を出して、長机の上に開いた。",
+      "cut": "衣の打ち粉、そば粉、少々。",
+      "resume": "「私がこの家に来た日と、私が熱を出した日です。"
+    },
+    {
+      "type": "bgm_swell",
+      "from": "「悪いのはあんたでしょう」",
+      "to": "咲江は、椅子に崩れるように座った。"
+    },
+    {
+      "type": "card",
+      "match": "「奈津美さんの分だけは、",
+      "text": "奈津美さんの分だけは、別に作ってあるの",
+      "style": "villain",
+      "hold": 1.2
+    },
+    {
+      "type": "card",
+      "match": "「体の弱い嫁は、この家にはいらないんだよ。",
+      "text": "体の弱い嫁は、この家にいらない",
+      "style": "villain",
+      "hold": 1.2
+    },
+    {
+      "type": "card",
+      "match": "「私がこの家に来た日と、私が熱を出した日です。",
+      "text": "六年で十九回。一度もずれていません",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "「康平さんが着手金を払った弁護士は、",
+      "text": "その弁護士は、存在しません",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "sfx",
+      "match": "「六年間で、十九回だよ」",
+      "name": "sub_drop",
+      "offset": -0.2,
+      "gain": -6
+    },
+    {
+      "type": "sfx",
+      "match": "私はその日も、夜に熱を出した。",
+      "name": "heartbeat",
+      "offset": 0.2,
+      "gain": -9
+    },
+    {
+      "type": "card",
+      "match": "「今、そこに水があって、よかったですね」",
+      "text": "今、そこに水があって、よかったですね",
+      "style": "hero",
+      "hold": 1.4
+    },
+    {
+      "type": "card",
+      "match": "「あの天ぷらのことは、死ぬまで忘れません。",
+      "text": "粉より、そちらのほうが重いです",
+      "style": "hero",
+      "hold": 1.4
+    }
+  ]
+}

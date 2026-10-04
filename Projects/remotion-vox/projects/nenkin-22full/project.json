@@ -1,0 +1,4434 @@
+{
+ "version": 1,
+ "meta": {
+  "name": "nenkin-22full",
+  "channel": "nenkin",
+  "templateRef": null,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "createdAt": "",
+  "modifiedAt": ""
+ },
+ "timeline": {
+  "durationInFrames": 19881
+ },
+ "sceneMarkers": [
+  {
+   "id": "m0",
+   "atFrame": 0,
+   "label": "{葬儀}のあと"
+  },
+  {
+   "id": "m1",
+   "atFrame": 101,
+   "label": "通帳で{手が止まる}"
+  },
+  {
+   "id": "m2",
+   "atFrame": 201,
+   "label": "{36万円}が入った"
+  },
+  {
+   "id": "m3",
+   "atFrame": 372,
+   "label": "二か月後{もう一度}"
+  },
+  {
+   "id": "m4",
+   "atFrame": 532,
+   "label": "見た目は{同じ}"
+  },
+  {
+   "id": "m5",
+   "atFrame": 652,
+   "label": "片方は{返金}"
+  },
+  {
+   "id": "m6",
+   "atFrame": 839,
+   "label": "線は{どこ}に"
+  },
+  {
+   "id": "m7",
+   "atFrame": 924,
+   "label": "いつか必ず{並ぶ}"
+  },
+  {
+   "id": "m8",
+   "atFrame": 1144,
+   "label": "黙っていて{入る}？"
+  },
+  {
+   "id": "m9",
+   "atFrame": 1304,
+   "label": "ここが{取り逃し}"
+  },
+  {
+   "id": "m10",
+   "atFrame": 1402,
+   "label": "まず{事実}から"
+  },
+  {
+   "id": "m11",
+   "atFrame": 1716,
+   "label": "なぜお金が{残る}"
+  },
+  {
+   "id": "m12",
+   "atFrame": 1840,
+   "label": "年金は{後払い}"
+  },
+  {
+   "id": "m13",
+   "atFrame": 1913,
+   "label": "{原典}で確かめる"
+  },
+  {
+   "id": "m14",
+   "atFrame": 2421,
+   "label": "四月の振込は"
+  },
+  {
+   "id": "m15",
+   "atFrame": 2553,
+   "label": "いまの口座は{二か月前}"
+  },
+  {
+   "id": "m16",
+   "atFrame": 2742,
+   "label": "必ず{残る}分がある"
+  },
+  {
+   "id": "m17",
+   "atFrame": 2923,
+   "label": "これが{未支給年金}"
+  },
+  {
+   "id": "m18",
+   "atFrame": 3003,
+   "label": "相続財産では{ない}"
+  },
+  {
+   "id": "m19",
+   "atFrame": 3266,
+   "label": "{数字}で見る"
+  },
+  {
+   "id": "m20",
+   "atFrame": 3340,
+   "label": "上越市の{中村さん}"
+  },
+  {
+   "id": "m21",
+   "atFrame": 3536,
+   "label": "新潟市の{お姉さま}"
+  },
+  {
+   "id": "m22",
+   "atFrame": 3905,
+   "label": "「まだ{入ってくる}」"
+  },
+  {
+   "id": "m23",
+   "atFrame": 4106,
+   "label": "月{18万円}ほど"
+  },
+  {
+   "id": "m24",
+   "atFrame": 4279,
+   "label": "二つの振込を{並べる}"
+  },
+  {
+   "id": "m25",
+   "atFrame": 4387,
+   "label": "四月十五日の振込"
+  },
+  {
+   "id": "m26",
+   "atFrame": 4529,
+   "label": "亡くなった月{まで}"
+  },
+  {
+   "id": "m27",
+   "atFrame": 4830,
+   "label": "受け取れる金額"
+  },
+  {
+   "id": "m28",
+   "atFrame": 4951,
+   "label": "請求すれば{受け取れる}"
+  },
+  {
+   "id": "m29",
+   "atFrame": 5108,
+   "label": "六月分は{どうか}"
+  },
+  {
+   "id": "m30",
+   "atFrame": 5214,
+   "label": "六月十五日の振込"
+  },
+  {
+   "id": "m31",
+   "atFrame": 5423,
+   "label": "同じ{36万円}だが"
+  },
+  {
+   "id": "m32",
+   "atFrame": 5656,
+   "label": "機構は{こう書く}"
+  },
+  {
+   "id": "m33",
+   "atFrame": 5943,
+   "label": "片方は{返す}"
+  },
+  {
+   "id": "m34",
+   "atFrame": 6090,
+   "label": "だから{混ざる}"
+  },
+  {
+   "id": "m35",
+   "atFrame": 6243,
+   "label": "通帳は「{年金}」だけ"
+  },
+  {
+   "id": "m36",
+   "atFrame": 6440,
+   "label": "線は{亡くなった日}"
+  },
+  {
+   "id": "m37",
+   "atFrame": 6690,
+   "label": "{応援}おねがいします"
+  },
+  {
+   "id": "m38",
+   "atFrame": 7363,
+   "label": "答えは{届出}"
+  },
+  {
+   "id": "m39",
+   "atFrame": 7492,
+   "label": "{死亡届}を出す"
+  },
+  {
+   "id": "m40",
+   "atFrame": 7685,
+   "label": "届出の期限"
+  },
+  {
+   "id": "m41",
+   "atFrame": 7919,
+   "label": "{葬儀}の最中に"
+  },
+  {
+   "id": "m42",
+   "atFrame": 8060,
+   "label": "救いが{ひとつ}"
+  },
+  {
+   "id": "m43",
+   "atFrame": 8158,
+   "label": "{マイナンバー}で省略"
+  },
+  {
+   "id": "m44",
+   "atFrame": 8480,
+   "label": "ここで{安心しない}"
+  },
+  {
+   "id": "m45",
+   "atFrame": 8652,
+   "label": "届出は{必要}"
+  },
+  {
+   "id": "m46",
+   "atFrame": 8750,
+   "label": "止めるは自動 {受取は手動}"
+  },
+  {
+   "id": "m47",
+   "atFrame": 8916,
+   "label": "請求しないと{渡らない}"
+  },
+  {
+   "id": "m48",
+   "atFrame": 9078,
+   "label": "誰が{請求}できる"
+  },
+  {
+   "id": "m49",
+   "atFrame": 9217,
+   "label": "請求できる順番"
+  },
+  {
+   "id": "m50",
+   "atFrame": 9654,
+   "label": "もうひとつ{条件}"
+  },
+  {
+   "id": "m51",
+   "atFrame": 9799,
+   "label": "{生計同一}"
+  },
+  {
+   "id": "m52",
+   "atFrame": 9867,
+   "label": "住所が同じなら{OK}"
+  },
+  {
+   "id": "m53",
+   "atFrame": 10082,
+   "label": "離れていても{道はある}"
+  },
+  {
+   "id": "m54",
+   "atFrame": 10212,
+   "label": "離れて暮らす場合"
+  },
+  {
+   "id": "m55",
+   "atFrame": 10592,
+   "label": "施設の{ご両親}"
+  },
+  {
+   "id": "m56",
+   "atFrame": 10858,
+   "label": "{諦めないで}"
+  },
+  {
+   "id": "m57",
+   "atFrame": 11073,
+   "label": "職員が{証明}"
+  },
+  {
+   "id": "m58",
+   "atFrame": 11329,
+   "label": "{門前払い}ではない"
+  },
+  {
+   "id": "m59",
+   "atFrame": 11570,
+   "label": "何を{持っていく}"
+  },
+  {
+   "id": "m60",
+   "atFrame": 11721,
+   "label": "請求に持っていくもの"
+  },
+  {
+   "id": "m61",
+   "atFrame": 12332,
+   "label": "ずいぶん{多い}"
+  },
+  {
+   "id": "m62",
+   "atFrame": 12382,
+   "label": "マイナンバーで{省ける}"
+  },
+  {
+   "id": "m63",
+   "atFrame": 12713,
+   "label": "公金受取口座なら{不要}"
+  },
+  {
+   "id": "m64",
+   "atFrame": 12857,
+   "label": "死亡診断書は{要らない}"
+  },
+  {
+   "id": "m65",
+   "atFrame": 13108,
+   "label": "この{四つか五つ}だけ"
+  },
+  {
+   "id": "m66",
+   "atFrame": 13363,
+   "label": "請求書は{一枚}"
+  },
+  {
+   "id": "m67",
+   "atFrame": 13524,
+   "label": "この書類の正式名"
+  },
+  {
+   "id": "m68",
+   "atFrame": 14073,
+   "label": "省略される人は{機会なし}"
+  },
+  {
+   "id": "m69",
+   "atFrame": 14312,
+   "label": "そこが{危ない}"
+  },
+  {
+   "id": "m70",
+   "atFrame": 14526,
+   "label": "みっつ目{期限}"
+  },
+  {
+   "id": "m71",
+   "atFrame": 14623,
+   "label": "時効"
+  },
+  {
+   "id": "m72",
+   "atFrame": 14710,
+   "label": "数えはじめが{ちがう}"
+  },
+  {
+   "id": "m73",
+   "atFrame": 14893,
+   "label": "五年の数えかた"
+  },
+  {
+   "id": "m74",
+   "atFrame": 15037,
+   "label": "まだ{間に合う}かも"
+  },
+  {
+   "id": "m75",
+   "atFrame": 15414,
+   "label": "混同{注意}"
+  },
+  {
+   "id": "m76",
+   "atFrame": 15566,
+   "label": "最後に{税金}"
+  },
+  {
+   "id": "m77",
+   "atFrame": 15666,
+   "label": "相続税は{かからない}"
+  },
+  {
+   "id": "m78",
+   "atFrame": 15890,
+   "label": "でも{無税ではない}"
+  },
+  {
+   "id": "m79",
+   "atFrame": 15992,
+   "label": "国税庁は{こう書く}"
+  },
+  {
+   "id": "m80",
+   "atFrame": 16131,
+   "label": "一時所得の計算"
+  },
+  {
+   "id": "m81",
+   "atFrame": 16481,
+   "label": "他の収入と{合算}"
+  },
+  {
+   "id": "m82",
+   "atFrame": 16663,
+   "label": "今日の研究ノート"
+  },
+  {
+   "id": "m83",
+   "atFrame": 17731,
+   "label": "三つだけ{確かめる}"
+  },
+  {
+   "id": "m84",
+   "atFrame": 17838,
+   "label": "確かめる三つ"
+  },
+  {
+   "id": "m85",
+   "atFrame": 18626,
+   "label": "{令和八年八月}時点"
+  },
+  {
+   "id": "m86",
+   "atFrame": 19035,
+   "label": "{次回}です"
+  },
+  {
+   "id": "m87",
+   "atFrame": 19229,
+   "label": "受け取りはじめも{同じ}"
+  },
+  {
+   "id": "m88",
+   "atFrame": 19392,
+   "label": "65歳でも{届かない}"
+  },
+  {
+   "id": "m89",
+   "atFrame": 19533,
+   "label": "理由は{四つ}"
+  },
+  {
+   "id": "m90",
+   "atFrame": 19796,
+   "label": "また{次回}"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk-video",
+   "name": "footage t2v",
+   "type": "video",
+   "clips": [
+    {
+     "id": "v0",
+     "kind": "video",
+     "from": 0,
+     "durationInFrames": 186,
+     "asset": "assets/c22_00.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     }
+    },
+    {
+     "id": "v1",
+     "kind": "video",
+     "from": 186,
+     "durationInFrames": 186,
+     "asset": "assets/c22_02.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v2",
+     "kind": "video",
+     "from": 373,
+     "durationInFrames": 186,
+     "asset": "assets/c22_03.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v3",
+     "kind": "video",
+     "from": 559,
+     "durationInFrames": 186,
+     "asset": "assets/c22_05_1.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v4",
+     "kind": "video",
+     "from": 745,
+     "durationInFrames": 186,
+     "asset": "assets/c22_05_2.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v5",
+     "kind": "video",
+     "from": 931,
+     "durationInFrames": 186,
+     "asset": "assets/c22_07.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v6",
+     "kind": "video",
+     "from": 1118,
+     "durationInFrames": 186,
+     "asset": "assets/c22_08.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v7",
+     "kind": "video",
+     "from": 1716,
+     "durationInFrames": 197,
+     "asset": "assets/c22_11.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9747,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v8",
+     "kind": "video",
+     "from": 2553,
+     "durationInFrames": 157,
+     "asset": "assets/c22_15.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v9",
+     "kind": "video",
+     "from": 2703,
+     "durationInFrames": 157,
+     "asset": "assets/c22_16.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v10",
+     "kind": "video",
+     "from": 2853,
+     "durationInFrames": 157,
+     "asset": "assets/c22_17.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v11",
+     "kind": "video",
+     "from": 3266,
+     "durationInFrames": 187,
+     "asset": "assets/c22_20.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v12",
+     "kind": "video",
+     "from": 3453,
+     "durationInFrames": 187,
+     "asset": "assets/c22_21_1.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v13",
+     "kind": "video",
+     "from": 3639,
+     "durationInFrames": 187,
+     "asset": "assets/c22_21_2.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v14",
+     "kind": "video",
+     "from": 3826,
+     "durationInFrames": 187,
+     "asset": "assets/c22_22.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v15",
+     "kind": "video",
+     "from": 4013,
+     "durationInFrames": 187,
+     "asset": "assets/c22_23.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v16",
+     "kind": "video",
+     "from": 4200,
+     "durationInFrames": 187,
+     "asset": "assets/c22_24.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v17",
+     "kind": "video",
+     "from": 4951,
+     "durationInFrames": 138,
+     "asset": "assets/c22_28.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v18",
+     "kind": "video",
+     "from": 5083,
+     "durationInFrames": 138,
+     "asset": "assets/c22_29.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v19",
+     "kind": "video",
+     "from": 5423,
+     "durationInFrames": 233,
+     "asset": "assets/c22_31_2.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.8258,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v20",
+     "kind": "video",
+     "from": 5943,
+     "durationInFrames": 194,
+     "asset": "assets/c22_33.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v21",
+     "kind": "video",
+     "from": 6137,
+     "durationInFrames": 194,
+     "asset": "assets/c22_34.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v22",
+     "kind": "video",
+     "from": 6330,
+     "durationInFrames": 194,
+     "asset": "assets/c22_35.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v23",
+     "kind": "video",
+     "from": 6524,
+     "durationInFrames": 194,
+     "asset": "assets/c22_36.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v24",
+     "kind": "video",
+     "from": 6717,
+     "durationInFrames": 194,
+     "asset": "assets/c22_37_1.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v25",
+     "kind": "video",
+     "from": 6911,
+     "durationInFrames": 194,
+     "asset": "assets/c22_37_2.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v26",
+     "kind": "video",
+     "from": 7105,
+     "durationInFrames": 194,
+     "asset": "assets/c22_37_3.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v27",
+     "kind": "video",
+     "from": 7298,
+     "durationInFrames": 194,
+     "asset": "assets/c22_38.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v28",
+     "kind": "video",
+     "from": 7492,
+     "durationInFrames": 194,
+     "asset": "assets/c22_39.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9918,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v29",
+     "kind": "video",
+     "from": 7919,
+     "durationInFrames": 148,
+     "asset": "assets/c22_41.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v30",
+     "kind": "video",
+     "from": 8480,
+     "durationInFrames": 191,
+     "asset": "assets/c22_44.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v31",
+     "kind": "video",
+     "from": 8664,
+     "durationInFrames": 191,
+     "asset": "assets/c22_46.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v32",
+     "kind": "video",
+     "from": 8848,
+     "durationInFrames": 191,
+     "asset": "assets/c22_47.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v33",
+     "kind": "video",
+     "from": 9033,
+     "durationInFrames": 191,
+     "asset": "assets/c22_48.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v34",
+     "kind": "video",
+     "from": 9799,
+     "durationInFrames": 207,
+     "asset": "assets/c22_52.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9295,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v35",
+     "kind": "video",
+     "from": 10005,
+     "durationInFrames": 207,
+     "asset": "assets/c22_53.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.9295,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v36",
+     "kind": "video",
+     "from": 10592,
+     "durationInFrames": 188,
+     "asset": "assets/c22_55.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v37",
+     "kind": "video",
+     "from": 10780,
+     "durationInFrames": 188,
+     "asset": "assets/c22_56_1.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v38",
+     "kind": "video",
+     "from": 10968,
+     "durationInFrames": 188,
+     "asset": "assets/c22_56_2.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v39",
+     "kind": "video",
+     "from": 11157,
+     "durationInFrames": 188,
+     "asset": "assets/c22_57.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v40",
+     "kind": "video",
+     "from": 11345,
+     "durationInFrames": 188,
+     "asset": "assets/c22_58.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v41",
+     "kind": "video",
+     "from": 11533,
+     "durationInFrames": 188,
+     "asset": "assets/c22_59.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v42",
+     "kind": "video",
+     "from": 12332,
+     "durationInFrames": 199,
+     "asset": "assets/c22_62_1.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.966,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v43",
+     "kind": "video",
+     "from": 12530,
+     "durationInFrames": 199,
+     "asset": "assets/c22_62_2.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.966,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v44",
+     "kind": "video",
+     "from": 12729,
+     "durationInFrames": 199,
+     "asset": "assets/c22_63.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.966,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v45",
+     "kind": "video",
+     "from": 12928,
+     "durationInFrames": 199,
+     "asset": "assets/c22_64.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.966,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v46",
+     "kind": "video",
+     "from": 13127,
+     "durationInFrames": 199,
+     "asset": "assets/c22_65.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.966,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v47",
+     "kind": "video",
+     "from": 13325,
+     "durationInFrames": 199,
+     "asset": "assets/c22_66.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 0.966,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v48",
+     "kind": "video",
+     "from": 14073,
+     "durationInFrames": 190,
+     "asset": "assets/c22_68.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    },
+    {
+     "id": "v49",
+     "kind": "video",
+     "from": 14256,
+     "durationInFrames": 190,
+     "asset": "assets/c22_69.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 7
+    },
+    {
+     "id": "v50",
+     "kind": "video",
+     "from": 14439,
+     "durationInFrames": 190,
+     "asset": "assets/c22_70.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 13,
+     "curlDir": "br"
+    },
+    {
+     "id": "v51",
+     "kind": "video",
+     "from": 15037,
+     "durationInFrames": 188,
+     "asset": "assets/c22_74_1.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 10,
+     "wipeDir": "left"
+    },
+    {
+     "id": "v52",
+     "kind": "video",
+     "from": 15226,
+     "durationInFrames": 188,
+     "asset": "assets/c22_74_2.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 10
+    },
+    {
+     "id": "v53",
+     "kind": "video",
+     "from": 15566,
+     "durationInFrames": 149,
+     "asset": "assets/c22_76.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 15,
+     "curlDir": "tr"
+    },
+    {
+     "id": "v54",
+     "kind": "video",
+     "from": 15708,
+     "durationInFrames": 149,
+     "asset": "assets/c22_77.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 12,
+     "wipeDir": "up"
+    },
+    {
+     "id": "v55",
+     "kind": "video",
+     "from": 15850,
+     "durationInFrames": 149,
+     "asset": "assets/c22_78.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 5
+    },
+    {
+     "id": "v56",
+     "kind": "video",
+     "from": 19035,
+     "durationInFrames": 176,
+     "asset": "assets/c22_86.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 11,
+     "curlDir": "bl"
+    },
+    {
+     "id": "v57",
+     "kind": "video",
+     "from": 19204,
+     "durationInFrames": 176,
+     "asset": "assets/c22_87.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 9,
+     "wipeDir": "right"
+    },
+    {
+     "id": "v58",
+     "kind": "video",
+     "from": 19374,
+     "durationInFrames": 176,
+     "asset": "assets/c22_88.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "fadeInFrames": 8
+    },
+    {
+     "id": "v59",
+     "kind": "video",
+     "from": 19543,
+     "durationInFrames": 176,
+     "asset": "assets/c22_89.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "curlInFrames": 14,
+     "curlDir": "tl"
+    },
+    {
+     "id": "v60",
+     "kind": "video",
+     "from": 19712,
+     "durationInFrames": 169,
+     "asset": "assets/c22_90.mp4",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "filter": {
+      "brightness": 1.04,
+      "contrast": 1.0,
+      "saturate": 1.08
+     },
+     "wipeInFrames": 11,
+     "wipeDir": "down"
+    }
+   ]
+  },
+  {
+   "id": "trk-genten",
+   "name": "genten",
+   "type": "video",
+   "clips": [
+    {
+     "id": "g13_0",
+     "kind": "video",
+     "from": 1913,
+     "durationInFrames": 74,
+     "asset": "assets/genten_shiharai.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g13_1",
+     "kind": "video",
+     "from": 1987,
+     "durationInFrames": 145,
+     "asset": "assets/genten_shiharai_all.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g13_2",
+     "kind": "video",
+     "from": 2132,
+     "durationInFrames": 144,
+     "asset": "assets/genten_shiharai_col.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g13_3",
+     "kind": "video",
+     "from": 2276,
+     "durationInFrames": 145,
+     "asset": "assets/genten_shiharai_row.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g32_0",
+     "kind": "video",
+     "from": 5656,
+     "durationInFrames": 121,
+     "asset": "assets/genten_gessuu.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g32_1",
+     "kind": "video",
+     "from": 5777,
+     "durationInFrames": 166,
+     "asset": "assets/genten_gessuu_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g43_0",
+     "kind": "video",
+     "from": 8158,
+     "durationInFrames": 129,
+     "asset": "assets/genten_mynumber.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g43_1",
+     "kind": "video",
+     "from": 8287,
+     "durationInFrames": 193,
+     "asset": "assets/genten_mynumber_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    },
+    {
+     "id": "g79_0",
+     "kind": "video",
+     "from": 15992,
+     "durationInFrames": 56,
+     "asset": "assets/genten_ichiji.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 7
+    },
+    {
+     "id": "g79_1",
+     "kind": "video",
+     "from": 16048,
+     "durationInFrames": 84,
+     "asset": "assets/genten_ichiji_box.png",
+     "fit": "cover",
+     "motion": "none",
+     "speed": 1.0,
+     "volume": 0,
+     "fadeInFrames": 0
+    }
+   ]
+  },
+  {
+   "id": "trk-fx",
+   "name": "hoa la canh",
+   "type": "fx",
+   "clips": [
+    {
+     "id": "fx2",
+     "kind": "fx",
+     "from": 207,
+     "durationInFrames": 158,
+     "variant": "coins",
+     "density": 18,
+     "color": "#FFC83A",
+     "seed": 114,
+     "area": {
+      "x": 2,
+      "y": 8,
+      "w": 32,
+      "h": 84
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx6",
+     "kind": "fx",
+     "from": 845,
+     "durationInFrames": 73,
+     "variant": "vignette",
+     "density": 10,
+     "color": "#FFC83A",
+     "seed": 142,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx10",
+     "kind": "fx",
+     "from": 1408,
+     "durationInFrames": 303,
+     "variant": "sparkle",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 170,
+     "area": {
+      "x": 66,
+      "y": 6,
+      "w": 30,
+      "h": 40
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx18",
+     "kind": "fx",
+     "from": 3009,
+     "durationInFrames": 250,
+     "variant": "stampx",
+     "density": 1,
+     "color": "#1C2A4A",
+     "seed": 226,
+     "area": {
+      "x": 6,
+      "y": 26,
+      "w": 24,
+      "h": 30
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx26",
+     "kind": "fx",
+     "from": 4535,
+     "durationInFrames": 289,
+     "variant": "glow",
+     "density": 22,
+     "color": "#FFC83A",
+     "seed": 282,
+     "area": {
+      "x": 4,
+      "y": 4,
+      "w": 30,
+      "h": 44
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx30",
+     "kind": "fx",
+     "from": 5220,
+     "durationInFrames": 197,
+     "variant": "coins",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 310,
+     "area": {
+      "x": 64,
+      "y": 34,
+      "w": 32,
+      "h": 52
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx33",
+     "kind": "fx",
+     "from": 5949,
+     "durationInFrames": 135,
+     "variant": "stampx",
+     "density": 1,
+     "color": "#1C2A4A",
+     "seed": 331,
+     "area": {
+      "x": 6,
+      "y": 26,
+      "w": 24,
+      "h": 30
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx42",
+     "kind": "fx",
+     "from": 8066,
+     "durationInFrames": 85,
+     "variant": "rays",
+     "density": 14,
+     "color": "#FFC83A",
+     "seed": 394,
+     "area": {
+      "x": 6,
+      "y": 40,
+      "w": 28,
+      "h": 48
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx47",
+     "kind": "fx",
+     "from": 8922,
+     "durationInFrames": 150,
+     "variant": "vignette",
+     "density": 10,
+     "color": "#FFC83A",
+     "seed": 429,
+     "area": {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx50",
+     "kind": "fx",
+     "from": 9660,
+     "durationInFrames": 132,
+     "variant": "sparkle",
+     "density": 14,
+     "color": "#FFC83A",
+     "seed": 450,
+     "area": {
+      "x": 68,
+      "y": 14,
+      "w": 26,
+      "h": 62
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx74",
+     "kind": "fx",
+     "from": 15043,
+     "durationInFrames": 365,
+     "variant": "confetti",
+     "density": 16,
+     "color": "#FFC83A",
+     "seed": 618,
+     "area": {
+      "x": 66,
+      "y": 6,
+      "w": 30,
+      "h": 40
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    },
+    {
+     "id": "fx83",
+     "kind": "fx",
+     "from": 17737,
+     "durationInFrames": 95,
+     "variant": "rays",
+     "density": 12,
+     "color": "#FFC83A",
+     "seed": 681,
+     "area": {
+      "x": 2,
+      "y": 8,
+      "w": 32,
+      "h": 84
+     },
+     "opacity": 1,
+     "fadeInFrames": 8,
+     "fadeOutFrames": 10,
+     "dir": "upright"
+    }
+   ]
+  },
+  {
+   "id": "trk-stat",
+   "name": "khoi chu font",
+   "type": "text",
+   "clips": [
+    {
+     "id": "b9",
+     "kind": "text",
+     "from": 1312,
+     "durationInFrames": 86,
+     "content": "受け取っていい|お金\n返さなければ|ならないお金\n*見分けが|つかない",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b10",
+     "kind": "text",
+     "from": 1410,
+     "durationInFrames": 303,
+     "content": "日本年金機構|原典\n国税庁|原典\n*画面で|確かめます",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b14",
+     "kind": "text",
+     "from": 2429,
+     "durationInFrames": 120,
+     "content": "四月に入るお金|二月分と三月分\nつまり|二か月前の分\n*年金は|後払い",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b18",
+     "kind": "text",
+     "from": 3011,
+     "durationInFrames": 250,
+     "content": "相続財産|ではない\n請求するのは|ご家族自身\n*ご自身の|権利として",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 606,
+      "y": 378,
+      "w": 1020
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b25",
+     "kind": "text",
+     "from": 4395,
+     "durationInFrames": 130,
+     "content": "四月十五日|二月分＋三月分\n亡くなったのは|三月五日\n*その月の分まで|受け取れる",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b26",
+     "kind": "text",
+     "from": 4537,
+     "durationInFrames": 289,
+     "content": "亡くなったのは|三月五日\n受け取れるのは|亡くなった月の分まで\n*だから|二月分も三月分も",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b27",
+     "kind": "text",
+     "from": 4838,
+     "durationInFrames": 110,
+     "content": "ひと月|十八万円\n二か月分|三十六万円\n*これが|未支給年金",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b30",
+     "kind": "text",
+     "from": 5222,
+     "durationInFrames": 197,
+     "content": "六月十五日|四月分＋五月分\n四月には|もういない\n*こちらは|受け取れない",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b40",
+     "kind": "text",
+     "from": 7693,
+     "durationInFrames": 222,
+     "content": "厚生年金のかた|十日以内\n国民年金だけ|十四日以内\n*葬儀の|最中です",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b42",
+     "kind": "text",
+     "from": 8068,
+     "durationInFrames": 85,
+     "content": "ここに|救いがひとつ\n*このあと|原典で確かめます",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b49",
+     "kind": "text",
+     "from": 9225,
+     "durationInFrames": 425,
+     "content": "一番目|配偶者\nつぎに|子・父母・孫\nそのあと|祖父母・兄弟姉妹\n*先の順位がいると|あとには回らない",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 350,
+      "w": 1326
+     },
+     "fontSize": 66
+    },
+    {
+     "id": "b50",
+     "kind": "text",
+     "from": 9662,
+     "durationInFrames": 132,
+     "content": "順位だけでは|足りない\n*もうひとつ|条件がある",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b54",
+     "kind": "text",
+     "from": 10220,
+     "durationInFrames": 368,
+     "content": "日常生活を|共にしていた\nまたは|経済的な援助＋音信\n*出す書類|生計同一関係の申立書",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b60",
+     "kind": "text",
+     "from": 11729,
+     "durationInFrames": 598,
+     "content": "①|年金証書\n②|マイナンバーが分かるもの\n③|戸籍の謄本か抄本\n④|住民票の除票と世帯全員のもの\n*⑤|振込先の通帳の写し",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 322,
+      "w": 1326
+     },
+     "fontSize": 60
+    },
+    {
+     "id": "b67",
+     "kind": "text",
+     "from": 13532,
+     "durationInFrames": 537,
+     "content": "名前|年金受給権者死亡届\nそのうしろに|未支給年金請求書\n*報告と請求が|一枚になっている",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b71",
+     "kind": "text",
+     "from": 14631,
+     "durationInFrames": 75,
+     "content": "未支給年金|五年\n死亡一時金|二年\n*混同|しやすい",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b72",
+     "kind": "text",
+     "from": 14718,
+     "durationInFrames": 172,
+     "content": "数えはじめは|亡くなった日ではない\n*では|いつからか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 431,
+      "w": 1326
+     },
+     "fontSize": 80
+    },
+    {
+     "id": "b73",
+     "kind": "text",
+     "from": 14901,
+     "durationInFrames": 132,
+     "content": "起点は|亡くなった日ではない\n起点は|支払日の翌月初日\n*そこから|五年",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 378,
+      "w": 1326
+     },
+     "fontSize": 76
+    },
+    {
+     "id": "b75",
+     "kind": "text",
+     "from": 15422,
+     "durationInFrames": 140,
+     "content": "五年と二年|混同しやすい\n*ここだけ|覚えておく",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b80",
+     "kind": "text",
+     "from": 16139,
+     "durationInFrames": 338,
+     "content": "受け取った額|三十六万円\n特別控除|五十万円\n*三十六万円は五十万円より少ない|税金はかからない",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 417,
+      "w": 1326
+     },
+     "fontSize": 59
+    },
+    {
+     "id": "b81",
+     "kind": "text",
+     "from": 16489,
+     "durationInFrames": 170,
+     "content": "ほかに一時的な|収入があった年\n*合わせて|計算されます",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b82",
+     "kind": "text",
+     "from": 16671,
+     "durationInFrames": 1056,
+     "content": "一|年金は二か月分の後払い\n二|亡くなった月の分までが受け取れる分\n三|死亡届は十日か十四日以内\n四|未支給年金の請求は省略できない\n*五|時効は五年・支払日の翌月初日から",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 322,
+      "w": 1326
+     },
+     "fontSize": 60
+    },
+    {
+     "id": "b83",
+     "kind": "text",
+     "from": 17739,
+     "durationInFrames": 95,
+     "content": "最後に|三つだけ\n*確かめて|みてください",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 424,
+      "w": 1326
+     },
+     "fontSize": 84
+    },
+    {
+     "id": "b84",
+     "kind": "text",
+     "from": 17846,
+     "durationInFrames": 777,
+     "content": "ひとつ|二か月分はいくらか\nふたつ|マイナンバーは結びついているか\n*みっつ|仕送りや連絡の記録はあるか",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 396,
+      "w": 1326
+     },
+     "fontSize": 68
+    },
+    {
+     "id": "b85",
+     "kind": "text",
+     "from": 18634,
+     "durationInFrames": 397,
+     "content": "この内容|令和八年八月時点\n手続きと添付書類|記録によって変わります\n*ご判断の前に|年金事務所かねんきんダイヤル",
+     "preset": "papercut-stat",
+     "color": "#1C2A4A",
+     "animation": "none",
+     "layout": {
+      "x": 300,
+      "y": 408,
+      "w": 1326
+     },
+     "fontSize": 63
+    }
+   ]
+  },
+  {
+   "id": "trk-telop",
+   "name": "telop",
+   "type": "text",
+   "clips": [
+    {
+     "id": "t0",
+     "kind": "text",
+     "from": 3,
+     "durationInFrames": 96,
+     "content": "{葬儀}のあと",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "from": 104,
+     "durationInFrames": 95,
+     "content": "通帳で{手が止まる}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t2",
+     "kind": "text",
+     "from": 204,
+     "durationInFrames": 165,
+     "content": "{36万円}が入った",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t3",
+     "kind": "text",
+     "from": 375,
+     "durationInFrames": 155,
+     "content": "二か月後{もう一度}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t4",
+     "kind": "text",
+     "from": 535,
+     "durationInFrames": 115,
+     "content": "見た目は{同じ}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t5",
+     "kind": "text",
+     "from": 655,
+     "durationInFrames": 182,
+     "content": "片方は{返金}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t6",
+     "kind": "text",
+     "from": 842,
+     "durationInFrames": 80,
+     "content": "線は{どこ}に",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t7",
+     "kind": "text",
+     "from": 927,
+     "durationInFrames": 215,
+     "content": "いつか必ず{並ぶ}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t8",
+     "kind": "text",
+     "from": 1147,
+     "durationInFrames": 155,
+     "content": "黙っていて{入る}？",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t9",
+     "kind": "text",
+     "from": 1307,
+     "durationInFrames": 93,
+     "content": "ここが{取り逃し}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t10",
+     "kind": "text",
+     "from": 1405,
+     "durationInFrames": 310,
+     "content": "まず{事実}から",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t11",
+     "kind": "text",
+     "from": 1719,
+     "durationInFrames": 119,
+     "content": "なぜお金が{残る}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t12",
+     "kind": "text",
+     "from": 1843,
+     "durationInFrames": 68,
+     "content": "年金は{後払い}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t13",
+     "kind": "text",
+     "from": 1916,
+     "durationInFrames": 503,
+     "content": "{原典}で確かめる",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t14",
+     "kind": "text",
+     "from": 2424,
+     "durationInFrames": 127,
+     "content": "四月の振込は",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t15",
+     "kind": "text",
+     "from": 2556,
+     "durationInFrames": 185,
+     "content": "いまの口座は{二か月前}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t16",
+     "kind": "text",
+     "from": 2745,
+     "durationInFrames": 176,
+     "content": "必ず{残る}分がある",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t17",
+     "kind": "text",
+     "from": 2926,
+     "durationInFrames": 75,
+     "content": "これが{未支給年金}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t18",
+     "kind": "text",
+     "from": 3006,
+     "durationInFrames": 257,
+     "content": "相続財産では{ない}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t19",
+     "kind": "text",
+     "from": 3269,
+     "durationInFrames": 70,
+     "content": "{数字}で見る",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t20",
+     "kind": "text",
+     "from": 3343,
+     "durationInFrames": 190,
+     "content": "上越市の{中村さん}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t21",
+     "kind": "text",
+     "from": 3539,
+     "durationInFrames": 365,
+     "content": "新潟市の{お姉さま}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t22",
+     "kind": "text",
+     "from": 3908,
+     "durationInFrames": 195,
+     "content": "「まだ{入ってくる}」",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t23",
+     "kind": "text",
+     "from": 4109,
+     "durationInFrames": 169,
+     "content": "月{18万円}ほど",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t24",
+     "kind": "text",
+     "from": 4282,
+     "durationInFrames": 102,
+     "content": "二つの振込を{並べる}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t25",
+     "kind": "text",
+     "from": 4390,
+     "durationInFrames": 137,
+     "content": "四月十五日の振込",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t26",
+     "kind": "text",
+     "from": 4532,
+     "durationInFrames": 296,
+     "content": "亡くなった月{まで}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t27",
+     "kind": "text",
+     "from": 4833,
+     "durationInFrames": 117,
+     "content": "受け取れる金額",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t28",
+     "kind": "text",
+     "from": 4954,
+     "durationInFrames": 152,
+     "content": "請求すれば{受け取れる}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t29",
+     "kind": "text",
+     "from": 5111,
+     "durationInFrames": 101,
+     "content": "六月分は{どうか}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t30",
+     "kind": "text",
+     "from": 5217,
+     "durationInFrames": 204,
+     "content": "六月十五日の振込",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t31",
+     "kind": "text",
+     "from": 5426,
+     "durationInFrames": 228,
+     "content": "同じ{36万円}だが",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t32",
+     "kind": "text",
+     "from": 5659,
+     "durationInFrames": 282,
+     "content": "機構は{こう書く}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t33",
+     "kind": "text",
+     "from": 5946,
+     "durationInFrames": 142,
+     "content": "片方は{返す}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t34",
+     "kind": "text",
+     "from": 6093,
+     "durationInFrames": 148,
+     "content": "だから{混ざる}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t35",
+     "kind": "text",
+     "from": 6246,
+     "durationInFrames": 192,
+     "content": "通帳は「{年金}」だけ",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t36",
+     "kind": "text",
+     "from": 6443,
+     "durationInFrames": 245,
+     "content": "線は{亡くなった日}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t37",
+     "kind": "text",
+     "from": 6693,
+     "durationInFrames": 667,
+     "content": "{応援}おねがいします",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t38",
+     "kind": "text",
+     "from": 7366,
+     "durationInFrames": 125,
+     "content": "答えは{届出}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t39",
+     "kind": "text",
+     "from": 7495,
+     "durationInFrames": 188,
+     "content": "{死亡届}を出す",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t40",
+     "kind": "text",
+     "from": 7688,
+     "durationInFrames": 229,
+     "content": "届出の期限",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t41",
+     "kind": "text",
+     "from": 7922,
+     "durationInFrames": 136,
+     "content": "{葬儀}の最中に",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t42",
+     "kind": "text",
+     "from": 8063,
+     "durationInFrames": 92,
+     "content": "救いが{ひとつ}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t43",
+     "kind": "text",
+     "from": 8161,
+     "durationInFrames": 317,
+     "content": "{マイナンバー}で省略",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t44",
+     "kind": "text",
+     "from": 8483,
+     "durationInFrames": 167,
+     "content": "ここで{安心しない}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t45",
+     "kind": "text",
+     "from": 8655,
+     "durationInFrames": 93,
+     "content": "届出は{必要}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t46",
+     "kind": "text",
+     "from": 8753,
+     "durationInFrames": 161,
+     "content": "止めるは自動\n{受取は手動}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t47",
+     "kind": "text",
+     "from": 8919,
+     "durationInFrames": 157,
+     "content": "請求しないと{渡らない}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t48",
+     "kind": "text",
+     "from": 9081,
+     "durationInFrames": 134,
+     "content": "誰が{請求}できる",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t49",
+     "kind": "text",
+     "from": 9220,
+     "durationInFrames": 432,
+     "content": "請求できる順番",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t50",
+     "kind": "text",
+     "from": 9657,
+     "durationInFrames": 139,
+     "content": "もうひとつ{条件}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t51",
+     "kind": "text",
+     "from": 9802,
+     "durationInFrames": 63,
+     "content": "{生計同一}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t52",
+     "kind": "text",
+     "from": 9870,
+     "durationInFrames": 210,
+     "content": "住所が同じなら{OK}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t53",
+     "kind": "text",
+     "from": 10085,
+     "durationInFrames": 125,
+     "content": "離れていても{道はある}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t54",
+     "kind": "text",
+     "from": 10215,
+     "durationInFrames": 375,
+     "content": "離れて暮らす場合",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t55",
+     "kind": "text",
+     "from": 10595,
+     "durationInFrames": 261,
+     "content": "施設の{ご両親}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t56",
+     "kind": "text",
+     "from": 10861,
+     "durationInFrames": 210,
+     "content": "{諦めないで}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t57",
+     "kind": "text",
+     "from": 11076,
+     "durationInFrames": 252,
+     "content": "職員が{証明}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t58",
+     "kind": "text",
+     "from": 11332,
+     "durationInFrames": 235,
+     "content": "{門前払い}ではない",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t59",
+     "kind": "text",
+     "from": 11573,
+     "durationInFrames": 147,
+     "content": "何を{持っていく}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t60",
+     "kind": "text",
+     "from": 11724,
+     "durationInFrames": 605,
+     "content": "請求に持っていくもの",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t61",
+     "kind": "text",
+     "from": 12335,
+     "durationInFrames": 46,
+     "content": "ずいぶん{多い}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t62",
+     "kind": "text",
+     "from": 12385,
+     "durationInFrames": 326,
+     "content": "マイナンバーで{省ける}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t63",
+     "kind": "text",
+     "from": 12716,
+     "durationInFrames": 139,
+     "content": "公金受取口座なら{不要}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t64",
+     "kind": "text",
+     "from": 12860,
+     "durationInFrames": 246,
+     "content": "死亡診断書は{要らない}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t65",
+     "kind": "text",
+     "from": 13111,
+     "durationInFrames": 250,
+     "content": "この{四つか五つ}だけ",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t66",
+     "kind": "text",
+     "from": 13366,
+     "durationInFrames": 156,
+     "content": "請求書は{一枚}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t67",
+     "kind": "text",
+     "from": 13527,
+     "durationInFrames": 544,
+     "content": "この書類の正式名",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t68",
+     "kind": "text",
+     "from": 14076,
+     "durationInFrames": 234,
+     "content": "省略される人は{機会なし}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t69",
+     "kind": "text",
+     "from": 14315,
+     "durationInFrames": 209,
+     "content": "そこが{危ない}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t70",
+     "kind": "text",
+     "from": 14529,
+     "durationInFrames": 92,
+     "content": "みっつ目{期限}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t71",
+     "kind": "text",
+     "from": 14626,
+     "durationInFrames": 82,
+     "content": "時効",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t72",
+     "kind": "text",
+     "from": 14713,
+     "durationInFrames": 179,
+     "content": "数えはじめが{ちがう}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t73",
+     "kind": "text",
+     "from": 14896,
+     "durationInFrames": 139,
+     "content": "五年の数えかた",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t74",
+     "kind": "text",
+     "from": 15040,
+     "durationInFrames": 372,
+     "content": "まだ{間に合う}かも",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t75",
+     "kind": "text",
+     "from": 15417,
+     "durationInFrames": 147,
+     "content": "混同{注意}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t76",
+     "kind": "text",
+     "from": 15569,
+     "durationInFrames": 96,
+     "content": "最後に{税金}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t77",
+     "kind": "text",
+     "from": 15669,
+     "durationInFrames": 218,
+     "content": "相続税は{かからない}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t78",
+     "kind": "text",
+     "from": 15893,
+     "durationInFrames": 97,
+     "content": "でも{無税ではない}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t79",
+     "kind": "text",
+     "from": 15995,
+     "durationInFrames": 134,
+     "content": "国税庁は{こう書く}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t80",
+     "kind": "text",
+     "from": 16134,
+     "durationInFrames": 345,
+     "content": "一時所得の計算",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t81",
+     "kind": "text",
+     "from": 16484,
+     "durationInFrames": 177,
+     "content": "他の収入と{合算}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t82",
+     "kind": "text",
+     "from": 16666,
+     "durationInFrames": 1063,
+     "content": "今日の研究ノート",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t83",
+     "kind": "text",
+     "from": 17734,
+     "durationInFrames": 102,
+     "content": "三つだけ{確かめる}",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t84",
+     "kind": "text",
+     "from": 17841,
+     "durationInFrames": 784,
+     "content": "確かめる三つ",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t85",
+     "kind": "text",
+     "from": 18629,
+     "durationInFrames": 404,
+     "content": "{令和八年八月}時点",
+     "preset": "telop-band",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t86",
+     "kind": "text",
+     "from": 19038,
+     "durationInFrames": 188,
+     "content": "{次回}です",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t87",
+     "kind": "text",
+     "from": 19232,
+     "durationInFrames": 158,
+     "content": "受け取りはじめも{同じ}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t88",
+     "kind": "text",
+     "from": 19395,
+     "durationInFrames": 136,
+     "content": "65歳でも{届かない}",
+     "preset": "telop-gold",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t89",
+     "kind": "text",
+     "from": 19536,
+     "durationInFrames": 258,
+     "content": "理由は{四つ}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    },
+    {
+     "id": "t90",
+     "kind": "text",
+     "from": 19799,
+     "durationInFrames": 80,
+     "content": "また{次回}",
+     "preset": "telop",
+     "color": "#FFD34E",
+     "animation": "pop",
+     "layout": {},
+     "fontSize": null
+    }
+   ]
+  },
+  {
+   "id": "trk-audio",
+   "name": "voice",
+   "type": "audio",
+   "clips": [
+    {
+     "id": "a0",
+     "kind": "audio",
+     "from": 0,
+     "durationInFrames": 19881,
+     "asset": "assets/voice.wav",
+     "volume": 1,
+     "trimStartFrames": 0
+    }
+   ]
+  }
+ ],
+ "captions": {
+  "source": "srt-interpolated",
+  "style": "outline",
+  "enabled": true,
+  "fontSize": 44,
+  "lines": [
+   {
+    "text": "お葬式が終わって、一か月ほど経ったころ。",
+    "startMs": 0,
+    "endMs": 3627
+   },
+   {
+    "text": "通帳を記帳したご家族が、手を止めました。",
+    "startMs": 4227,
+    "endMs": 7789
+   },
+   {
+    "text": "亡くなったはずのご主人の年金が、振り込まれていたんです。三十六万円。",
+    "startMs": 8389,
+    "endMs": 14491
+   },
+   {
+    "text": "そして、その二か月後。もう一度、三十六万円が振り込まれました。",
+    "startMs": 15491,
+    "endMs": 21549
+   },
+   {
+    "text": "同じ金額です。通帳の見た目も、まったく同じ。",
+    "startMs": 22149,
+    "endMs": 26565
+   },
+   {
+    "text": "ですが、片方は受け取っていいお金で、もう片方は、返さなければならないお金でした。",
+    "startMs": 27165,
+    "endMs": 34141
+   },
+   {
+    "text": "どこで、線が引かれているのでしょうか。",
+    "startMs": 34941,
+    "endMs": 37896
+   },
+   {
+    "text": "あなたのご両親、ご主人、奥さまが年金を受け取っていらっしゃるなら、この二つは、いつか必ず並びます。",
+    "startMs": 38496,
+    "endMs": 47083
+   },
+   {
+    "text": "そして、もうひとつ。受け取れるほうのお金は、黙っていても入ってくるのか。",
+    "startMs": 47683,
+    "endMs": 53731
+   },
+   {
+    "text": "ここが、いちばん取り逃されているところです。",
+    "startMs": 54331,
+    "endMs": 57797
+   },
+   {
+    "text": "まず、事実から。",
+    "startMs": 58397,
+    "endMs": 60349
+   },
+   {
+    "text": "年金と老後のお金研究室です。今日も、日本年金機構と国税庁の原典を画面で開きながら、確かめていきます。",
+    "startMs": 60949,
+    "endMs": 70912
+   },
+   {
+    "text": "はじめに、なぜお金が残るのか。仕組みから見ていきます。",
+    "startMs": 71512,
+    "endMs": 76077
+   },
+   {
+    "text": "年金は、後払いです。",
+    "startMs": 76677,
+    "endMs": 79120
+   },
+   {
+    "text": "こちらが、日本年金機構のページです。赤で囲んだところを、ご覧ください。",
+    "startMs": 79720,
+    "endMs": 86227
+   },
+   {
+    "text": "年金は、原則、年六回に分けて、偶数月の十五日に支払われます。各支払月には、原則、その前月までの二か月分の年金が支払われます。",
+    "startMs": 86827,
+    "endMs": 100267
+   },
+   {
+    "text": "たとえば、四月に振り込まれるのは、二月分と三月分。",
+    "startMs": 100867,
+    "endMs": 105763
+   },
+   {
+    "text": "つまり、いま口座に入っているお金は、二か月前と、三か月前に生きていた分なんです。",
+    "startMs": 106363,
+    "endMs": 113669
+   },
+   {
+    "text": "ですから、亡くなった時点では、必ず、まだ振り込まれていない月の分が残っています。",
+    "startMs": 114269,
+    "endMs": 121192
+   },
+   {
+    "text": "これを、未支給年金といいます。",
+    "startMs": 121792,
+    "endMs": 124544
+   },
+   {
+    "text": "そして、この未支給年金は、亡くなったかたの相続財産ではありません。ご家族が、ご自身の権利として請求するお金です。",
+    "startMs": 125144,
+    "endMs": 135480
+   },
+   {
+    "text": "では、数字で見ていきましょう。",
+    "startMs": 136080,
+    "endMs": 138587
+   },
+   {
+    "text": "新潟県上越市の中村さん、七十一歳。以前の研究にも登場していただいたかたです。",
+    "startMs": 139187,
+    "endMs": 146717
+   },
+   {
+    "text": "中村さんには、新潟市にお姉さまがいらっしゃいます。今年の春、そのお姉さまのご主人が、亡くなられました。",
+    "startMs": 147317,
+    "endMs": 156331
+   },
+   {
+    "text": "冒頭で、通帳を記帳して手が止まったご家族。あのかたです。",
+    "startMs": 157131,
+    "endMs": 162123
+   },
+   {
+    "text": "「もう止めてもらったはずなのに、どうしてまだ入ってくるの」。お姉さまは、電話口でそうおっしゃったそうです。",
+    "startMs": 162723,
+    "endMs": 170477
+   },
+   {
+    "text": "三月五日のことでした。年金は、月に十八万円ほど受け取っていらしたそうです。",
+    "startMs": 171077,
+    "endMs": 177712
+   },
+   {
+    "text": "さて。ここで、二つの振込を並べてみます。",
+    "startMs": 178312,
+    "endMs": 182173
+   },
+   {
+    "text": "四月十五日の振込。これは、二月分と三月分です。",
+    "startMs": 182773,
+    "endMs": 188107
+   },
+   {
+    "text": "亡くなったのは三月五日ですが、年金は、亡くなった月の分まで受け取れます。ですから、二月分も三月分も、正当に受け取れるお金です。",
+    "startMs": 188707,
+    "endMs": 200643
+   },
+   {
+    "text": "十八万円が、二か月分。三十六万円。",
+    "startMs": 201243,
+    "endMs": 205712
+   },
+   {
+    "text": "これが、未支給年金です。請求すれば、お姉さまが受け取れます。",
+    "startMs": 206312,
+    "endMs": 212243
+   },
+   {
+    "text": "では、六月十五日の振込はどうでしょうか。",
+    "startMs": 212843,
+    "endMs": 216651
+   },
+   {
+    "text": "これは、四月分と五月分です。",
+    "startMs": 217251,
+    "endMs": 220195
+   },
+   {
+    "text": "四月には、もう、いらっしゃいません。",
+    "startMs": 221395,
+    "endMs": 224979
+   },
+   {
+    "text": "十八万円の二か月分で、三十六万円。同じ金額です。ですが、こちらは受け取る権利がありません。",
+    "startMs": 225979,
+    "endMs": 235067
+   },
+   {
+    "text": "機構のページに、こう書かれています。届出が遅れ、亡くなった日の翌日以後に年金を受け取ったときは、その分を後日お返しいただくことになります。",
+    "startMs": 235667,
+    "endMs": 247027
+   },
+   {
+    "text": "同じ三十六万円が、片方は受け取れて、片方は返す。",
+    "startMs": 247627,
+    "endMs": 253152
+   },
+   {
+    "text": "口座に入ってくる姿は、まったく同じです。だから、混ざるんです。",
+    "startMs": 253752,
+    "endMs": 259533
+   },
+   {
+    "text": "通帳には、年金、としか印字されません。何月分なのかは、どこにも書いてありません。",
+    "startMs": 260133,
+    "endMs": 267739
+   },
+   {
+    "text": "だから、線は、通帳ではなく、亡くなった日で引きます。そこだけ覚えて帰っていただければ、今日は十分です。",
+    "startMs": 268339,
+    "endMs": 278163
+   },
+   {
+    "text": "ここで、ひとつだけお願いです。今日の内容が分かりやすいと感じていただけたら、高評価と、",
+    "startMs": 278763,
+    "endMs": 286039
+   },
+   {
+    "text": "同じように年金が気になるご家族やご友人へのシェアで、この研究室を応援していただけると嬉しいです。",
+    "startMs": 286039,
+    "endMs": 294162
+   },
+   {
+    "text": "ご感想や、調べてほしいテーマがあれば、ぜひコメントでお寄せください。皆さまの声が、次の研究テーマになります。",
+    "startMs": 294162,
+    "endMs": 303299
+   },
+   {
+    "text": "それでは、続きを見ていきましょう。",
+    "startMs": 303299,
+    "endMs": 306176
+   },
+   {
+    "text": "では、どうすれば混ざらないのか。答えは、届出です。",
+    "startMs": 306776,
+    "endMs": 311587
+   },
+   {
+    "text": "年金受給権者死亡届。これを出すと、六月十五日の振込は、そもそも止まります。",
+    "startMs": 312187,
+    "endMs": 319621
+   },
+   {
+    "text": "期限があります。厚生年金を受け取っていらしたかたなら、十日以内。国民年金だけのかたなら、十四日以内。",
+    "startMs": 320221,
+    "endMs": 329373
+   },
+   {
+    "text": "ずいぶん短い、と思われるかもしれません。ご葬儀の最中です。",
+    "startMs": 329973,
+    "endMs": 335253
+   },
+   {
+    "text": "ただ、ここに、救いがひとつあります。",
+    "startMs": 335853,
+    "endMs": 339107
+   },
+   {
+    "text": "マイナンバーが年金の記録に結びついているかたは、この死亡届を、原則、省略できます。",
+    "startMs": 339907,
+    "endMs": 347608
+   },
+   {
+    "text": "機構のほうで、亡くなられたことが分かる仕組みになっているんです。",
+    "startMs": 348208,
+    "endMs": 352731
+   },
+   {
+    "text": "ですが、ここで安心してはいけません。同じページに、続きが書かれています。",
+    "startMs": 353331,
+    "endMs": 359880
+   },
+   {
+    "text": "未支給年金の届出などは、必要です。",
+    "startMs": 360480,
+    "endMs": 363968
+   },
+   {
+    "text": "つまり、止めるほうは自動でも、受け取るほうは自動ではない、ということです。",
+    "startMs": 364568,
+    "endMs": 370595
+   },
+   {
+    "text": "三十六万円は、請求しないかぎり、誰の手にも渡りません。",
+    "startMs": 371495,
+    "endMs": 377660
+   },
+   {
+    "text": "では、誰が請求できるのか。順番が、決まっています。",
+    "startMs": 378260,
+    "endMs": 383433
+   },
+   {
+    "text": "配偶者。子。父母。孫。祖父母。兄弟姉妹。そして、それ以外の、三親等内の親族。",
+    "startMs": 384033,
+    "endMs": 393793
+   },
+   {
+    "text": "この七つの順番です。先の順位のかたがいらっしゃると、あとの順位のかたには回りません。",
+    "startMs": 394393,
+    "endMs": 401657
+   },
+   {
+    "text": "そして、順位だけでは足りません。もうひとつ、条件があります。",
+    "startMs": 402257,
+    "endMs": 407676
+   },
+   {
+    "text": "生計を同じくしていたこと。",
+    "startMs": 408276,
+    "endMs": 410505
+   },
+   {
+    "text": "同じ世帯であれば、問題ありません。世帯は別でも、住民票の住所が同じなら、大丈夫です。",
+    "startMs": 411105,
+    "endMs": 419468
+   },
+   {
+    "text": "住まいが離れていた場合はどうか。それでも、道はあります。",
+    "startMs": 420068,
+    "endMs": 424889
+   },
+   {
+    "text": "日常生活を共にしていた。あるいは、経済的な援助と、定期的な音信や訪問があった。そういう場合は、生計同一関係に関する申立書という書類を添えて、請求できます。",
+    "startMs": 425489,
+    "endMs": 440732
+   },
+   {
+    "text": "施設に入っていらしたご両親の場合。ここが、よく問題になります。住所が違うから諦めた、というかたが、いらっしゃるんです。",
+    "startMs": 441332,
+    "endMs": 451807
+   },
+   {
+    "text": "諦めないでください。施設の職員のかたに、第三者として証明していただく道が、用意されています。",
+    "startMs": 452407,
+    "endMs": 460759
+   },
+   {
+    "text": "その申立書には、施設の名前、所在地、証明してくださるかたの役職、お名前、電話番号を書く欄があります。",
+    "startMs": 461359,
+    "endMs": 471460
+   },
+   {
+    "text": "つまり、証明する人がいれば通る、という前提で作られている書類なんです。門前払いのための紙ではありません。",
+    "startMs": 472060,
+    "endMs": 481468
+   },
+   {
+    "text": "では、請求のときに何を持っていくのか。ここも、まとめておきます。",
+    "startMs": 482068,
+    "endMs": 487785
+   },
+   {
+    "text": "亡くなられたかたの年金証書。請求されるかたのマイナンバーが分かるもの。",
+    "startMs": 488385,
+    "endMs": 494081
+   },
+   {
+    "text": "そして、亡くなられたことと、ご関係が分かる書類。戸籍の謄本か抄本です。",
+    "startMs": 494681,
+    "endMs": 501284
+   },
+   {
+    "text": "さらに、亡くなられたかたの住民票の除票と、請求されるかたの世帯全員の住民票。",
+    "startMs": 501884,
+    "endMs": 509191
+   },
+   {
+    "text": "最後に、振込先の通帳の写し。",
+    "startMs": 509791,
+    "endMs": 513119
+   },
+   {
+    "text": "ずいぶん多いですね。",
+    "startMs": 513819,
+    "endMs": 515333
+   },
+   {
+    "text": "ただ、ここでもマイナンバーが効きます。請求書にマイナンバーを記入すると、配偶者とお子さんの場合は戸籍が省けますし、住民票のほうも、原則いらなくなります。",
+    "startMs": 515933,
+    "endMs": 529107
+   },
+   {
+    "text": "公金受取口座を登録されているかたなら、通帳の写しも要りません。",
+    "startMs": 529707,
+    "endMs": 535125
+   },
+   {
+    "text": "ちなみに、死亡診断書は、この一覧に入っていません。亡くなられたことを示すのは、戸籍か、住民票の除票です。",
+    "startMs": 535725,
+    "endMs": 545581
+   },
+   {
+    "text": "葬儀のあと、書類の山を前にすると、どれが年金の分か分からなくなります。この四つか五つだけ、と覚えておいてください。",
+    "startMs": 546181,
+    "endMs": 556197
+   },
+   {
+    "text": "それから、もうひとつ。この請求書は、死亡届と一枚になっています。",
+    "startMs": 556797,
+    "endMs": 562909
+   },
+   {
+    "text": "正式な名前が、年金受給権者死亡届、報告書、兼、未支給年金・未支払給付金請求書。長いですね。",
+    "startMs": 563509,
+    "endMs": 574699
+   },
+   {
+    "text": "報告と請求が、一枚。ですから、死亡届だけ出して、請求を忘れる、ということが起きにくい作りにはなっています。",
+    "startMs": 575299,
+    "endMs": 585784
+   },
+   {
+    "text": "ただし、先ほど申し上げたとおり、マイナンバーで死亡届が省略されるかたは、この一枚を出す機会そのものがありません。",
+    "startMs": 586384,
+    "endMs": 595728
+   },
+   {
+    "text": "自動で止まったから、手続きは終わった。そう思ってしまう。そこが、いちばん危ないところです。",
+    "startMs": 596328,
+    "endMs": 604552
+   },
+   {
+    "text": "そして、みっつ目。期限の話です。",
+    "startMs": 605252,
+    "endMs": 608676
+   },
+   {
+    "text": "未支給年金の時効は、五年です。",
+    "startMs": 609276,
+    "endMs": 612305
+   },
+   {
+    "text": "ただし、ここが少し変わっています。数えはじめるのは、亡くなった日からではありません。",
+    "startMs": 612905,
+    "endMs": 619561
+   },
+   {
+    "text": "年金の支払日の、翌月の初日から。",
+    "startMs": 620561,
+    "endMs": 624369
+   },
+   {
+    "text": "五年です。",
+    "startMs": 624969,
+    "endMs": 625951
+   },
+   {
+    "text": "ですから、亡くなられてから何年か経っているかたも、まだ間に合う可能性があります。",
+    "startMs": 626551,
+    "endMs": 633228
+   },
+   {
+    "text": "ちなみに、似た名前の制度で、死亡一時金というものがあります。こちらの時効は、二年です。",
+    "startMs": 633828,
+    "endMs": 641657
+   },
+   {
+    "text": "五年と二年。混同されやすいところですので、覚えておいてください。",
+    "startMs": 642257,
+    "endMs": 647975
+   },
+   {
+    "text": "最後に、税金の話にも触れておきます。",
+    "startMs": 648575,
+    "endMs": 652169
+   },
+   {
+    "text": "先ほど、未支給年金は相続財産ではない、と申し上げました。ですから、相続税はかかりません。",
+    "startMs": 652769,
+    "endMs": 661281
+   },
+   {
+    "text": "では、無税かというと、そうでもないんです。",
+    "startMs": 662081,
+    "endMs": 665740
+   },
+   {
+    "text": "国税庁のページです。受け取ったかたの、一時所得になります。",
+    "startMs": 666340,
+    "endMs": 671545
+   },
+   {
+    "text": "ただ、一時所得には、五十万円の特別控除があります。",
+    "startMs": 672145,
+    "endMs": 677223
+   },
+   {
+    "text": "お姉さまの三十六万円は、五十万円を下回っていますから、これだけなら、税金はかかりません。",
+    "startMs": 677823,
+    "endMs": 686111
+   },
+   {
+    "text": "ほかに一時的な収入があった年は、合わせて計算されますので、そこだけご注意ください。",
+    "startMs": 686711,
+    "endMs": 693676
+   },
+   {
+    "text": "それでは、今日の研究ノートです。",
+    "startMs": 694276,
+    "endMs": 697145
+   },
+   {
+    "text": "一。年金は二か月分の後払い。だから、亡くなったとき、必ず未支給年金が残る。",
+    "startMs": 697745,
+    "endMs": 705681
+   },
+   {
+    "text": "二。亡くなった月の分までが、受け取れる分。それより後の分は、返す分。",
+    "startMs": 706281,
+    "endMs": 713193
+   },
+   {
+    "text": "三。死亡届は、厚生年金なら十日、国民年金なら十四日以内。マイナンバー登録があれば省略できる。",
+    "startMs": 713793,
+    "endMs": 723372
+   },
+   {
+    "text": "四。ただし、未支給年金の請求は、省略できない。こちらから出さないと、渡らない。",
+    "startMs": 723972,
+    "endMs": 732089
+   },
+   {
+    "text": "五。時効は五年。数えはじめは、支払日の翌月初日から。",
+    "startMs": 732689,
+    "endMs": 738183
+   },
+   {
+    "text": "最後に、三つだけ、確かめてみてください。",
+    "startMs": 738783,
+    "endMs": 742633
+   },
+   {
+    "text": "ひとつ。ご両親、ご主人、奥さまの年金は、いくらですか。二か月分がいくらになるか、一度、計算してみてください。",
+    "startMs": 743233,
+    "endMs": 754252
+   },
+   {
+    "text": "ふたつ。マイナンバーは、年金の記録に結びついていますか。ねんきんネットで確認できます。",
+    "startMs": 754852,
+    "endMs": 762265
+   },
+   {
+    "text": "みっつ。ご家族と離れて暮らしていらっしゃるかた。仕送りや、定期的な連絡の記録は、残っていますか。それが、生計同一を示す材料になります。",
+    "startMs": 762865,
+    "endMs": 775495
+   },
+   {
+    "text": "なお、今日の内容は、令和八年八月時点の情報です。手続きや添付書類は、お一人おひとりの記録によって変わります。",
+    "startMs": 776095,
+    "endMs": 786075
+   },
+   {
+    "text": "ご判断の前に、必ず年金事務所、またはねんきんダイヤルでご確認ください。",
+    "startMs": 786075,
+    "endMs": 792543
+   },
+   {
+    "text": "さて、次回です。",
+    "startMs": 793143,
+    "endMs": 795009
+   },
+   {
+    "text": "今日は、こちらから請求しないと渡らないお金の話をしました。",
+    "startMs": 795609,
+    "endMs": 800591
+   },
+   {
+    "text": "実は、それは、年金を受け取りはじめるときも、まったく同じなんです。",
+    "startMs": 801191,
+    "endMs": 807100
+   },
+   {
+    "text": "六十五歳になっても、請求書が届かないかたがいらっしゃいます。",
+    "startMs": 808000,
+    "endMs": 813280
+   },
+   {
+    "text": "届かない理由は、四つ。そして、その紙は、二度と送ってもらえません。",
+    "startMs": 813880,
+    "endMs": 820259
+   },
+   {
+    "text": "次回の研究で、一緒に確かめます。",
+    "startMs": 820859,
+    "endMs": 824229
+   },
+   {
+    "text": "それでは、また次回の研究でお会いしましょう。",
+    "startMs": 824829,
+    "endMs": 828360
+   }
+  ],
+  "words": []
+ },
+ "theme": {
+  "palette": {
+   "bgTop": "#2A3A58",
+   "bgBottom": "#182236",
+   "accent": "#FFD700"
+  },
+  "fontFamily": "\"Yu Gothic\", \"Meiryo\", Arial Black, sans-serif",
+  "canvasColor": "#F3EAD8"
+ },
+ "brand": {
+  "logo": "assets/brand_logo.png",
+  "mascot": null,
+  "mascotPoses": [
+   {
+    "atSec": 0.0,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 4.227,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 8.389,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 15.491,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 22.149,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 27.165,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 34.941,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 38.496,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 47.683,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 54.331,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 58.397,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 71.512,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 76.677,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 79.72,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 100.867,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 106.363,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 114.269,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 121.792,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 125.144,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 136.08,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 139.187,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 147.317,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 162.723,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 171.077,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 178.312,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 182.773,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 188.707,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 201.243,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 206.312,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 212.843,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 217.251,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 225.979,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 235.667,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 247.627,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 253.752,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 260.133,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 268.339,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 278.763,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 306.776,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 312.187,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 320.221,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 329.973,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 335.853,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 339.907,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 353.331,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 360.48,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 364.568,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 371.495,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 378.26,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 384.033,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 402.257,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 408.276,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 411.105,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 420.068,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 425.489,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 441.332,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 452.407,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 461.359,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 472.06,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 482.068,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 488.385,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 513.819,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 515.933,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 529.707,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 535.725,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 546.181,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 556.797,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 563.509,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 586.384,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 596.328,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 605.252,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 609.276,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 612.905,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 620.561,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 626.551,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 642.257,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 648.575,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 652.769,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 662.081,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 666.34,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 672.145,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 686.711,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 694.276,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 738.783,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 743.233,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 776.095,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 793.143,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 801.191,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 808.0,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 813.88,
+    "asset": "assets/owl_idle/f_%04d.png"
+   },
+   {
+    "atSec": 824.829,
+    "asset": "assets/owl_idle/f_%04d.png"
+   }
+  ],
+  "mascotVideo": "assets/owl_idle/f_%04d.png",
+  "mascotVideoFrames": 192,
+  "mascotH": 300,
+  "logoH": 110,
+  "subscribe": true,
+  "bottomOffset": 186,
+  "subscribeBottom": 200
+ }
+}
